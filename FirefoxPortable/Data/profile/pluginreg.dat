@@ -1,0 +1,19 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+
+[INVALID]
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\npAdobeAAMDetect32.dll|$
+1622612963308|$
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\npAdobeAAMDetect64.dll|$
+1622612963317|$
+C:\Program Files (x86)\VideoLAN\VLC\npvlc.dll|$
+1591284988000|$
+C:\Program Files\Microsoft Office 15\root\Office15\NPSPWRAP.DLL|$
+1610079685577|$
+C:\Program Files\Lightspark\nplightsparkplugin.dll|$
+1593946456000|$

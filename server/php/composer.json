@@ -1,0 +1,23 @@
+{
+	"name": "mdlayher/serial",
+	"version": "0.0.1",
+	"description": "PHP class utilizing Direct IO to interact with a RS232 serial port",
+	"keywords": ["serial", "rs232", "dio"],
+	"homepage": "https://github.com/mdlayher/serial",
+	"type": "library",
+	"license": "MIT",
+	"authors":[
+		{
+			"name": "Matt Layher",
+			"email": "mdlayher@gmail.com",
+			"homepage": "http://mdlayher.com/"
+		}
+	],
+	"require":{
+		"php": ">=5.3.0",
+		"ext-dio": "*"
+	},
+	"autoload": {
+		"psr-0": { "serial": "src/" }
+	}
+}

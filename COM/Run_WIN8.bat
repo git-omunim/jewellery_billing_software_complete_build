@@ -1,0 +1,1 @@
+regsvr32  C:\COM\OMDongleCom_WIN8.dll

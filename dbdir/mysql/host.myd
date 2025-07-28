@@ -1,0 +1,7 @@
+220125 11:40:41 [ERROR] Can't open and lock privilege tables: Table 'mysql.servers' doesn't exist
+220125 11:40:41 [ERROR] Column count of mysql.db is wrong. Expected 22, found 20. Created with MySQL 50041, now running 50146. Please use mysql_upgrade to fix this error.
+220125 11:40:41 [ERROR] mysql.user has no `Event_priv` column at position 29
+220125 11:40:41 [ERROR] Cannot open mysql.event
+220125 11:40:41 [ERROR] Event Scheduler: An error occurred when initializing system tables. Disabling the Event Scheduler.
+220125 11:40:41 [Note] D:\live\Online_Munim_Releases\OMUNIM_SALES_SVN\server\mysql\bin\mysqld.exe: ready for connections.
+Version: '5.1.46-community'  socket: ''  port: 7188  MySQL Community Server (GPL)

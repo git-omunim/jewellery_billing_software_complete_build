@@ -1,0 +1,1 @@
+regsvr32  C:\COM\OMDongleCom_X86.dll
