@@ -1,0 +1,711 @@
+body {
+    background-color: #FFFFFF;
+    font-size: 9.5px;
+    font-family: Calibri;
+    text-align:center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+@media print {
+    .noPrint {
+        display:none;
+    }
+    .noPrintHidden {
+        visibility:hidden;
+    }
+    a {
+        text-decoration:none;
+        color:#000000;
+        border:0px;
+        vertical-align: middle;
+    }
+    .h5 {
+        color:#000000;
+        font-size:12px;
+        font-family: Calibri;
+    }
+    .lgn-txtfield-without-borderAndBackground13-Arial-right {
+        border:none;
+        background-color:transparent;
+        font-family: Calibri;
+        color:#000000;
+        font-size:13px;
+        font-weight:bold;
+        text-align: right;
+    }
+    /*to change text at the time of printing @AUTHOR: SANDY12JUL13 */  
+    .blueTextArial14 {
+        color: #000000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }  
+
+    .blueTextArial12 {
+        color: #000000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+
+    .blueTextArial11 {
+        color: #000000;
+        font-size:11px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .blueTextArial14Normal {
+        color: #000000;
+        font-size:14px;
+        font-family: Calibri;
+    }
+    .blueTextArial16 {
+        color: #000000;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .brownTextArial12 {
+        color: #000000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .brownTextArial14 {
+        color: #000000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .brownTextArial16 {
+        color: #000000;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+
+
+    #form4InchDiv{
+        /*        width:101.6mm;*/
+        width:93.6mm;
+
+    }
+    #a5widthdiv{
+        width:135mm;
+        padding-left: 8px;
+    }
+
+    /* Item 24L BarCode Girvi Sheet */
+    /********* Close 65L and 84L ************/   
+    .blackMess11 {
+        color:#000000;
+        font-size:8px;
+        float:left;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: Calibri;
+    }
+    .blackMess11Arial {
+        color:#000000;
+        font-size:8px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess12Arial {
+        color:#000000;
+        font-size:9px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess14Arial {
+        color:#000000;
+        font-size:10px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess16Arial {
+        color:#000000;
+        font-size:11px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess18Arial {
+        color:#000000;
+        font-size:12px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess20Arial {
+        color:#000000;
+        font-size:14px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess24Arial {
+        color:#000000;
+        font-size:16px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .blackMess28Arial {
+        color:#000000;
+        font-size:18px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess11Arial {
+        color:#800000;
+        font-size:8px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess12Arial {
+        color:#800000;
+        font-size:9px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess14Arial {
+        color:#800000;
+        font-size:10px;
+        font-weight:bold;
+        margin:0px 0 0 0;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess16Arial {
+        color:#800000;
+        font-size:11px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess18Arial {
+        color:#800000;
+        font-size:12px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess20Arial {
+        color:#800000;
+        font-size:14px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess24Arial {
+        color:#800000;
+        font-size:16px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .brownMess28Arial {
+        color:#800000;
+        font-size:18px;
+        font-weight:bold;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .form8-main-table{
+        width: 134mm;
+    }
+    .form8-logo-image{
+        width: 40px;
+        height: 50px;
+    }  
+    .lgn-txtfield-without-borderAndBackground16 {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:Calibri;
+        font-size:12px;
+        font-weight:bold;
+    }
+    .lgn-txtfield-without-borderAndBackground16:focus {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:Calibri;
+        font-size:12px;
+        font-weight:bold;
+    }
+    .lgn-txtfield-without-borderAndBackground16:hover {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:Calibri;
+        font-size:12px;
+        font-weight:bold;
+    }
+    .lgn-txtfield {
+        border:solid 1px #AF7817;
+        background-color:#F9F9F9;
+        color: #804000;
+        font-family:Calibri;
+        font-size:8px;
+        font-weight:bold;
+    }
+    .lgn-txtfield-without-background{
+        border:solid 1px #AF7817;
+        background-color:transparent;
+        color: #804000;
+        font-family:"Times New Roman", Times, serif;
+        font-size:8px;
+        font-weight:bold;
+    }
+    .frm-lbl {
+        color: #804000;
+        font-family:Calibri;
+        font-size:8px;
+        font-weight:bold;
+    }
+    .lgn-field-without-order {
+        border:none;
+        background:none;
+        color: #000000;
+        font-family:Calibri;
+        font-size:8px;
+        font-weight:bold;
+        vertical-align: bottom;
+    }
+    .lgn-field-without-order:hover {
+        border:none;
+        background:none;
+        color: #000000;
+        font-family:Calibri;
+        font-size:8px;
+        font-weight:bold;
+    }
+    .lgn-field-without-order:focus {
+        border:none;
+        background:none;
+        color: #000000;
+        font-family:Calibri;
+        font-size:8px;
+        font-weight:bold;
+    }
+    .lgn-txtfield-without-borderAndBackground14 {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:"Times New Roman", Times, serif;
+        font-size:11px;
+        font-weight:bold;
+        margin: 0px;
+        padding: 0px;
+    }
+    .lgn-txtfield-without-borderAndBackground14:focus {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:"Times New Roman", Times, serif;
+        font-size:11px;
+        font-weight:bold;
+        margin: 0px;
+        padding: 0px;
+    }
+    .lgn-txtfield-without-borderAndBackground14:hover {
+        border:none;
+        background-color:transparent;
+        color: #804000;
+        font-family:"Times New Roman", Times, serif;
+        font-size:11px;
+        font-weight:bold;
+        margin: 0px;
+        padding: 0px;
+    }
+    /*For Item Tag  @AUTHOR: SANDY25JUL13 */
+    .block55x13{
+        width: 52mm;
+        height: 12mm;
+    }
+    /*For Item Tag @AUTHOR: SANDY25JUL13 */
+    /**********Start Code To Add Class For Item Quotation @Author:PRIYA02AUG13**************/
+    /**********Start Code To Change Padding @Author:PRIYA03AUG13**************/
+    #cust_quotation_3Inch{
+        width:78mm;
+        min-height:350px;
+        margin: 0px;
+        padding: 10px 0px 15px 0px;
+        vertical-align:middle;
+        border: #000000 0px solid;
+    }
+    /**********End Code To Change Padding @Author:PRIYA03AUG13**************/
+    /**********Start Code To Add Class For Item Quotation @Author:PRIYA02AUG13**************/
+    #cust_quotation{
+        width:101.6mm;
+        min-height:80mm;
+        height:auto;
+        margin: 0px;
+        padding: 10px 7px 15px 7px;
+        vertical-align:middle;
+        border: #000000 0px solid;
+    }
+    /**********End Code To Add Class For Item Quotation @Author:PRIYA02AUG13**************/
+    .paddingRight5{
+        padding-right: 5px;    
+    }
+    .paddingRight7{
+        padding-right: 7px;    
+    }
+    /**Start to add classes @AUTHOR: SANDY9DEC13**********/
+    .border-color-grey-r {
+        border-right: #A4A4A4 1px solid;
+    }
+    .border-color-grey-top {
+        border-top:  #A4A4A4 1px solid;
+    }
+    .border-color-grey-rbu {
+        border-top: #A4A4A4 1px solid;
+        border-bottom: #A4A4A4 1px solid;
+        border-right: #A4A4A4 1px solid;
+    }
+    .border-color-grey-bu {
+        border-top: #A4A4A4 1px solid;
+        border-bottom: #A4A4A4 1px solid;
+    }
+    /**Start to add classes @AUTHOR: SANDY10DEC13**********/
+    .girvi_head_maron {
+        color:#800000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black {
+        color:#000000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_16 {
+        color:#000080;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green_14 {
+        color:#008000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_maron_left {
+        color:#800000;
+        font-size:14px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_maron_left16 {
+        color:#800000;
+        font-size:16px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green_left {
+        color:#008000;
+        font-size:13px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green_14 {
+        color:#008000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green_12 {
+        color:#008000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_14 {
+        color:#000080;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_brown_14 {
+        color:#800000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_15 {
+        color:#000080;
+        font-size:15px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_16 {
+        color:#000080;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_20 {
+        color:#000080;
+        font-size:20px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_24 {
+        color:#000080;
+        font-size:24px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_12 {
+        color:#000080;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_right {
+        color:#000080;
+        font-size:13px;
+        float:right;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_maron_right {
+        color:#800000;
+        font-size:13px;
+        float:right;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black_left {
+        color:#000000;
+        font-size:14px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black_left16 {
+        color:#000000;
+        font-size:16px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_blue_left16 {
+        color:#0000FF;
+        font-size:16px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_red_left {
+        color:#ff0000;
+        font-size:14px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_red {
+        color:#ff0000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_red14 {
+        color:#ff0000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_red12 {
+        color:#ff0000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green_left {
+        color:#008000;
+        font-size:14px;
+        float:left;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_green {
+        color:#008000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+
+    .girvi_head_maron {
+        color:#800000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_maron16 {
+        color:#800000;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_maron14 {
+        color:#800000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black {
+        color:#000000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black14 {
+        color:#000000;
+        font-size:14px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .girvi_head_black16 {
+        color:#000000;
+        font-size:16px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .boxdatabx-t{
+        background-image: url(../images/boxtop-t.gif);
+        background-repeat: repeat-x;
+        background-position: left  bottom;	
+        width:100%;
+        height:auto;
+    }
+
+    .boxdatabx-b{
+        background-image: url(../images/boxbottom-b.gif);
+        background-repeat: repeat-x;
+        background-position: left top;	
+        width:100%;
+        height:auto;
+    }
+    .boxdatabx-r{
+        background-image: url(../images/boxright-r.gif);
+        background-repeat: repeat-y;
+        background-position: right top;	
+        width:3px;
+        height:100%;
+    }
+    .boxdatabx-l{
+        background-image: url(../images/boxleft-l.gif);
+        background-repeat: repeat-y;
+        background-position: left top;	
+        width:3px;
+        height:100%;
+    }
+    .textBoxCurve2px{
+        border-radius: 8px;
+        border: solid 2px #ccc;
+    }
+    .blackMess11ArialNormal {
+        color:#000000;
+        font-size:8px;
+        font-weight: normal;
+        margin:0px;
+        padding:0px 0 0 0;
+        font-family: Calibri;
+    }
+    .main_link_brown10 {
+        color:#800000;
+        font-size:9px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+
+    /**End to add classes @AUTHOR: SANDY10DEC13**********/
+    .main_link_brown9 {
+        color:#800000;
+        font-size:9px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    /*********Classes for column width @AUTHOR: SANDY11DEC13*****************
+    
+    .main_link_brown9 {
+        color:#800000;
+        font-size:9px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .width_203mm{
+        width:203mm;
+    }
+    .width_16mm{
+        width:16mm;
+    }
+    .width_30mm{
+        width:30mm;
+    }
+    .width_23mm{
+        width:22mm;
+    }
+    .width_21mm{
+        width:21mm;
+    }
+    .width_8mm{
+        width:8mm;
+    }
+    .width_46mm{
+        width:46mm;
+    }
+    .width_15mm{
+        width:15mm;
+    }
+    .width_17mm{
+        width:17mm;
+    }
+    .width_14mm{
+        width:14mm;
+    }
+    .width_12mm{
+        width:12mm;
+    }
+    .width_18mm{
+        width:18mm;
+    }
+    .width_28mm{
+        width:27.9mm;/*****change in width @AUTHOR: SANDY12DEC12*******
+    }
+    .width_20mm{
+        width:20mm;
+    }
+    ********Classes for column width @AUTHOR: SANDY11DEC13 comment by @AUTHOR: SANDY12DEC13******************/
+}

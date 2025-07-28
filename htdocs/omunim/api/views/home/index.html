@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html>
+    <title>Online Munim API Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+    <body class="w3-light-grey">
+
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+
+                <!-- Left Column -->
+                <div class="w3-third">
+
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <!-- <img src="images/OnlineMunim_Color_1000.jpg" style="width:100%" alt="Avatar"> -->
+                            <div class="w3-display-bottomleft w3-container w3-text-black">
+                                <h2>Online Munim API Document</h2>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>info@omunim.com</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>+91 8551958585</p>
+                            <hr>
+
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-orange"></i>Programming Language PHP</b></p>
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-orange"></i>Language - English</b></p>
+                            <br>
+                        </div>
+                    </div><br>
+
+                    <!-- End Left Column -->
+                </div>
+
+                <!-- Right Column -->
+                <div class="w3-twothird">
+
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Firms Details - om_firm.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                ALL_FIRMS (This is the function to get all firms names and ids)
+                            </h6>
+
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                CRUD_FIRM (This is the function to get all firms names and ids)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation (insert / update / delete)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                firm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                firm_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                firm_owner
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                firm_name
+                            </h6>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Accounts Details - om_account.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ACCOUNT_LIST (This is the function to get all accounts names and ids)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_main_acc Like " 'Loans','Current Assets','Current Liabilities' "
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_firm_id
+                            </h6>
+
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_FIRMS_ACCNTS (This is the function to get all firms and accounts names and ids)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_main_acc Like " 'Loans','Current Assets','Current Liabilities' "
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_firm_id (In case firm id is not pass, will return all firms and first firm accounts.)
+                            </h6>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            User Details - om_user.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SEARCH_USER (This is the function to get all searched users)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_search_str
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                page_no
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                ALL_USER_LIST (This is the function to get all users)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_type
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_USER_DETAILS (This is the function to get user details)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                USER_CRUD (This is the function to add a new user)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation - insert / update / delete
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id (For update and delete operation)
+                            </h6>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            User Transactions Details - om_utin.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                USER_TRANS_CRUD (This is the function use to perform all transactions like Insert / Update / Delete)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_transaction_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_status
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation - insert / update / delete
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_CRDR
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_user_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_user_name
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_total_amt
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_cr_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_dr_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_date
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_cash_CRDR
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_cash_balance
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                USER_UDHAAR_DEPOSIT (This is the function use to perform USER_UDHAAR_DEPOSIT)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id / cust_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                udhaar_deposit_amount
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                udhaar_discount_amount
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                dob_day
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                dob_month
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                dob_year
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                udhaar_other_info
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                udhaar_deposit_amt_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                deposit_amt_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                deposit_int_rec_amt_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                deposit_disc_amt_acc_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                deposit_int_amt_acc_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                DR_UDHAAR (This is the function to add new udhaar details)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation - insert / update / delete
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Add new customer - in case user_id is null
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                In case user_id is null
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Search for user_name. In case user_name not found through the error!
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_CRDR (This is the function to get all CR(DEPOSITS) and DR(UDHAAR) Transactions)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id OR cust_id (In case user id is not present then will provide you all transactions)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                order_by By default - DESC or pass ASC
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_DR (This is the function to get all DR(UDHAAR) Transactions)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id OR cust_id (In case user id is not present then will provide you all transactions)
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_CR (This is the function to get all CR(DEPOSITS) Transactions)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id OR cust_id (In case user id is not present then will provide you all transactions)
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_CRDR_DETAILS (This is the function to get CR(DEPOSITS) or DR(UDHAAR) Transaction Details)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_id (The CR or DR id need to pass, then will provide the transaction details)
+                            </h6>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Image Details - om_image.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                Function_name - No need to pass
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation // insert update delete
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                productMainImageCount // Total no of Images.
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_image_id_0
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                imageLoadOption0
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                compressedImageSize0
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                fileName0
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Util Details - om_util.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_UNITS (You will get all the units)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                unit_panel
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                order_by_column // In which column u need ORDER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                order_by // ASC or DESC
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_INDICATORS (You will get all the indicators)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_panel // omin_option (You can pass one parameter)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_option_distinct // YES or blank
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_input_field // true or false
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_row_no // NULL or NOT_NULL
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                order_by_column // In which column u need ORDER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                order_by // ASC or DESC
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SET_INDICATOR (You will set/update the indicators)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_option
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_value // Value or blank
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_contents // Value or blank
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_input_field // Value or blank
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_indicator // Value or blank
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_option_arr (Array or Without Array)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left">
+                                <pre>
+[0] => Array
+(
+[omin_option] => SaleInvoiceList
+[omin_value] => INV NO
+[omin_contents] => CONCAT(utin_pre_invoice_no,CAST(utin_invoice_no AS UNSIGNED))
+[omin_input_field] => true
+[omin_indicator] => Yes
+)
+[1] => Array
+(
+[omin_option] => SaleInvoiceList
+[omin_value] => DATE
+[omin_contents] => STR_TO_DATE(utin_date,'%d %b %Y')
+[omin_input_field] => true
+[omin_indicator] => Y
+)
+                                </pre>
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                DELETE_INDICATOR (You will delete the indicators)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omin_own_id
+                            </h6>
+
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_LAYOUT (You will get all the layouts)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omly_option
+                            </h6>
+
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SET_LAYOUT (Set Layout Value omly_value and Option omly_option)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omly_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omly_option
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                omly_value
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GOOGLE_SUGGESTION (You will get google suggestion drop down)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                tableName
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                columnName
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                searchValue
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                whereConditionColumns
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ACCESS (You will get all the access)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_emp_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_panel (Optional
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_type  (Optional)
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SET_ACCESS (You will set the access)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                accMainFieldCount (For single entry pass '' // For more than one pass counter)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_emp_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_check_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                acc_name  (Optional)
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_CN_ST_CITY (You will get all the Countries, States, Cities)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                get_country  (Optional - Y or N to get all countries
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                country_name (Optional - Pass country name to get details)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                get_state    (Optional - Y or N to get all states)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                state_name   (Optional - Pass state name to get details)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                get_city     (Optional - Y or N to get all cities)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                city_name    (Optional - Pass city name to get details)
+                            </h6>
+
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Forget Password - om_login.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                FORGET_PASSWORD (Pass the email id, then will get OTP on email and reg mobile no.)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_email_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                FORGET_PASS_OTP_VERI (Pass the OTP, then will get OTP matched or not.)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_email_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_fp_otp
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                FORGET_PASS_RESET (Pass the new password, then password will update.)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_email_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_fp_otp
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                owner_user_password
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Master - om_master.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                MAIN_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_id (Update/Delete)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                fileName with counter (For Image)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                MasterItemId
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                To check entry already present or not
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_pre_id (Optional)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_category
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_name
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - 'Master Product Already Present' 
+                            </h6>
+
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_MAIN_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Success) - Item Row
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Fail) - Master Prod Not Found
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_MAIN_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Success) - Item Rows Array
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (No Master Items) - Master Prod Not Found
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SUB_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_sub_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_sub_itm_id (Update/Delete)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_cgroup_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_SUB_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_sub_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_sub_itm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Success) - Item Row
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Fail) - Master Prod Not Found
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_SUB_MASTER
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ms_sub_itm_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (Success) - Item Rows Array 
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output (No Master Items) - Master Prod Not Found
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Stock - om_stock.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_PROD_DETAILS
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_indicator (IN Parameter - stock  or stock','stockCrystal )
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ESTIMATE_DETAILS
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id OR sttr_user_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                DELETE_ESTIMATE
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id OR sttr_user_id OR sttr_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_STOCK_TRANSACTION
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id OR sttr_user_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_transaction_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                last_prod (Y or N)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_product_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_item_category
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_SELL_TRANSACTION
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id OR sttr_user_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                last_prod (Y or N)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_product_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_item_category
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ECOM_TRANSACTION
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id OR sttr_user_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                utin_prod_details='Gift Card'
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Rows Details Array
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SET_STOCK_FINAL_VALUE_BY
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_final_valuation_by
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Updated Successfully!
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                ROLLBACK_DELETED_STOCK
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Updated Successfully!
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SET_PERMANENT_DELETE_STOCK
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_owner_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                sttr_id
+                            </h6>
+                            <h6 class="w3-text-purple w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                Output - Deleted Successfully!
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Loan Details - om_loan.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                CRUD_LOAN
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                girv_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                girv_id
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            Loan Details - om_loan.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                CRUD_LOAN
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                girv_own_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                girv_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_LOAN_DETAILS
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                girv_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                GET_ALL_LOANS (Customer All Loans)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                cust_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                loan_status (All or Blank, Active, Released)
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-grey w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            E-Commerce API Document - om_omecom.php
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                SAVE_CONTENT
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_own_id (Mandatory)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_website (Mandatory)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_theme (Mandatory)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_page (Mandatory)
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_option (Mandatory)
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_value (Mandatory)
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_font_name
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_font_size
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_font_color
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_font_bgcolor
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_image_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_image_name
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_info
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                LOAD_HOMEPAGE
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_own_id (Mandatory)
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_website (Mandatory)
+                            </h6><!-- comment -->
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_theme (Mandatory)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_page (Mandatory)
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                ecom_option
+                            </h6>
+                            
+                            <hr>
+                        </div>
+                        
+                    </div>
+                    <br/>
+                    <!-- End Right Column -->
+                </div>
+                <!-- End Grid -->
+            </div>
+
+            <!-- End Page Container -->
+        </div>
+
+        <footer class="w3-container w3-orange w3-center w3-margin-top">
+            <p>Powered by <a href="https://www.omunim.com" target="_blank">www.omunim.com</a></p>
+        </footer>
+
+    </body>
+</html>

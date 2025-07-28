@@ -1,0 +1,1395 @@
+/* Start code for Udhaar Notice Panel @Author: KHUSH16JAN13 */
+.textareaUdhaarNoticeContent {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaUdhaarNoticeContent:hover {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaUdhaarNoticeContent:focus {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+
+.textareaUdhaarOtherInfo {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaUdhaarOtherInfo:hover {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaUdhaarOtherInfo:focus {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+/* End code for Udhaar Notice Panel @Author: KHUSH16JAN13 */
+
+/* End code for Form Setup @Author: KHUSH05JAN13 */
+
+/* Start code for T&C in Udhaar Panel @Author: KHUSH20JAN13 */
+.textareaTNCSetup {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaTNCSetup:hover {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaTNCSetup:focus {
+    width: 590px;
+    height: 300px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+/* End code for T&C in Udhaar Panel @Author: KHUSH20JAN13 */
+
+
+/* Start code for T&C Setup @Author: KHUSH21JAN13 */
+.textareaTNCSetup {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaTNCSetup:hover {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+.textareaTNCSetup:focus {
+    width: 590px;
+    height: 100px;
+    border: 1px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: royalblue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+    text-align:justify;
+}
+/* End code for T&C Setup @Author: KHUSH21JAN13 */
+
+/*start code for girvi panel @AUTHOR: LINA21JUN13*/
+.girviDetailswithoutborder11 {
+    color:#800000;
+    border:none;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.girviDetailswithoutborder11:focus {
+    color:#800000;
+    border:none;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.girviDetailswithoutborder11:hover {
+    color:#800000;
+    border:none;
+    font-size:12px;
+    font-weight:bold;
+    font-family:Calibri;
+    background-color:transparent;
+}
+/*start code for girvi panel @AUTHOR: LINA21JUN13*/
+
+/* Start add id balanceSheetPrintSubDiv @AUTHOR:SANDY27JUL13 */
+#girviPanelTrId{
+    width:987px; /*change in width @AUTHOR: SANDY29DEC13*/
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 999; 
+}
+/* End add id balanceSheetPrintSubDiv @AUTHOR:SANDY27JUL13 */
+/* Start add id headerTable @AUTHOR:SANDY27JUL13 */
+/*********Start Code To Change Width @Author:@Author:PRIYA19AUG13**********/
+/*********Start Code To Change Width @Author:PRIYA23AUG13**********/
+#headerTable{
+    width:985px;/*****Change in width @AUTHOR: SANDY9DEC13***********/
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    /*background: url('../images/abs-bg.png') repeat;*/
+    background :none;
+}
+#silverStockheaderTable{
+    width:989px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;
+    background :none; 
+}
+/*********Start Code To Change Width @Author:PRIYA23AUG13**********/
+/*********End Code To Change Width @Author:@Author:PRIYA19AUG13**********/
+/* Start add id headerTableNext @AUTHOR:SANDY27JUL13 */
+/************ Start to Change width @Author: PRIYA19AUG13************/
+/************ Start to Change width @Author: PRIYA23AUG13************/
+/************ Start code to comment @Author: PRIYA24OCT13************/
+/*#headerOfGirviTable{
+    width:978px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;
+}*/
+/************ End code to comment @Author: PRIYA24OCT13************/
+/************ End to Change width @Author: PRIYA23AUG13************/
+/************ End to Change width @Author: PRIYA19AUG13************/
+/* End add id headerTableNext @AUTHOR:SANDY27JUL13 */
+/* Start add id headerOfUdharTable @AUTHOR:SANDY27JUL13 */
+/********* Start Code To Change Width @AUTHOR:PRIYA23AUG13 *******/
+/************ Start code to comment @Author: PRIYA24OCT13************/
+/*#headerOfUdharTable{
+    width:978px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;
+}*/
+/************ End code to comment @Author: PRIYA24OCT13************/
+/********* End Code To Change Width @AUTHOR:PRIYA23AUG13 *******/
+/* End add id headerOfUdharTable @AUTHOR:SANDY27JUL13 */
+/* Start to add classes for constatant heading @AUTHOR:SANDY27JUL13 */
+/************ Start code to comment @Author: PRIYA24OCT13************/
+/*#transGirviListHeader{
+    width:980px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat; 
+}
+#releaseGirviListHeader{
+    width:980px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;  
+}
+#lossGirviListHeader{
+    width:980px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;  
+}*/
+/************ End code to comment @Author: PRIYA24OCT13************/
+.goldIdListDivToAddGoldIdSelect {
+    position: absolute;
+    width:300px;
+    height:80px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 200;
+    width:100%;
+    left:0;
+}
+/* End to add classes for constatant heading @AUTHOR:SANDY27JUL13 */
+/* Start to add classes for constatant heading  @AUTHOR: SANDY17AUG13 */
+/********* Start Code To Change Width @AUTHOR:PRIYA23AUG13 *******/
+/************ Start code to comment @Author: PRIYA24OCT13************/
+/*#sellReportHeading{
+    width:978px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat;
+}*/
+/********* End Code To Change Width @AUTHOR:PRIYA23AUG13 *******/
+/*#expiredGirviListHead{
+    width:980px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat; 
+}*/
+/************ End code to comment @Author: PRIYA24OCT13************/
+/*************Start code to change image @Author:PRIYA24DEC13*****************/
+/*************Start code to change image @Author:PRIYA17FEB14*****************/
+#stockListHeader{
+    width:990px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+}
+/*************End code to change image @Author:PRIYA17FEB14*****************/
+/*************End code to change image @Author:PRIYA24DEC13*****************/
+/* End to add classes for constatant heading @AUTHOR: SANDY27JUL13 */
+
+/* start code to add class marginLeftBarCode55x13 @AUTHOR: SANDY31JUL13 */
+/*.marginLeftBarCode55x13{
+    margin-left: 78mm;    
+    margin-top: -53px;
+    position: absolute;
+}*/
+/* End code to add class marginLeftBarCode55x13 @AUTHOR: SANDY31JUL13 */
+/* Start to add class for constant heading  @AUTHOR: SANDY6AUG13 */
+/************ Start code to comment @Author: PRIYA24OCT13************/
+/*#headerOfTransGirviTable{
+    width:978px;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background: url('../images/abs-bg.png') repeat; 
+}*/
+/************ End code to comment @Author: PRIYA24OCT13************/
+/* End to add class for constant heading  @AUTHOR: SANDY17AUG13 */
+.lgn-txtfieldarial12 {
+    border:solid 1px #AF7817;
+    background-color:#F9F9F9;
+    color: #A4A4A4;
+    font-family:"Arial";
+    font-size:8px;
+    font-weight:bold;
+}
+/****Start To add class for METAL ID list in raw metal payment panel @AUTHOR: SANDY19OCT13**************/
+.rawMetalIdListDiv{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    width:62px;
+    /* height:80px; comment @AUTHOR: SANDY30DEC13*/
+    text-align: left;
+}
+/****End To add class for  METAL ID list in raw metal payment panel @AUTHOR: SANDY19OCT13**************/
+/****Start To add class for no of rows input textfield @AUTHOR: SANDY19OCT13**************/
+/****Start of changes in classes @AUTHOR: SANDY31OCT13******************************/
+.inputFieldWithotBorder{
+    text-align: center;
+    height:15px;
+    border: 0px;
+    background: transparent;
+    font-family: arial;
+    font-size:11px;
+    width:42px;
+    font-weight: bold;
+}
+.inputFieldWithotBorder:hover{
+    text-align: center;
+    height:15px;
+    border: 0px;
+    background: transparent;
+    font-family: arial;
+    font-size:11px;
+    width:42px;
+    font-weight: bold;
+}
+.inputFieldWithotBorder:focus{
+    text-align: center;
+    height:15px;
+    border: 0px;
+    background: transparent;
+    font-family:  arial;
+    font-size:11px;
+    width:42px;
+    font-weight: bold;
+}
+/****End of changes in classes @AUTHOR: SANDY31OCT13******************************/
+/****End To add class for no of rows input textfield @AUTHOR: SANDY19OCT13**************/
+
+/*************Start to add class for last column of list table @AUTHOR: SANDY19OCT13*****************/
+.border-color-grey-only-bottom{
+    border-bottom: #A4A4A4 1px solid;
+}
+/*************End to add class for last column of list table @AUTHOR: SANDY19OCT13*****************/
+/************Start to define classes for barcode background color @AUTHOR: SANDY21OCT13***********/
+.barcode_background_color_red{
+    background-color:#FF3333;
+    color:black;
+}
+.barcode_background_color_lightred{
+    background-color:#CC3366;
+    color:black;
+}
+.barcode_background_color_yellow{
+    background-color:yellow;
+    color:black;
+}
+.barcode_background_color_lightyellow{
+    background-color:#FFFF99;
+    color:black;
+}
+.barcode_background_color_green{
+    background-color:#66CC33;
+    color:black;
+}
+.barcode_background_color_lightgreen{
+    background-color:#00FFCC;
+    color:black;
+}
+.barcode_background_color_white{
+    background-color:#FFFFFF ;
+    color:black;
+}
+/*********Start to add colors @AUTHOR: SANDY21DEC13*********************/
+.barcode_background_color_seashell{
+    background-color:#FFF5EE ;
+    color:black;
+}
+.barcode_background_color_pearl{
+    background-color:#FDEEF4 ;
+    color:black;
+}
+.barcode_background_color_cottoncandy{
+    background-color:#FCDFFF;
+    color:black;
+}
+.barcode_background_color_peach{
+    background-color:#FFE5B4 ;
+    color:black;
+}
+.barcode_background_color_cornsilk{
+    background-color:#FFF8DC ;
+    color:black;
+}
+.barcode_background_color_beige{
+    background-color:#F5F5DC ;
+    color:black;
+}
+.barcode_background_color_tronblue{
+    background-color:#7DFDFE;
+    color:black;
+}
+.barcode_background_color_lightcyan{
+    background-color:#E0FFFF;
+    color:black;
+}
+.barcode_background_color_seablue{
+    background-color:#C2DFFF;
+    color:black;
+}
+.barcode_background_color_pink{
+    background-color:#FDD7E4;
+    color:black;
+}
+.barcode_background_color_lavender{
+    background-color:#E6E6FA;
+    color:black;  
+}
+/*********End to add colors @AUTHOR: SANDY21DEC13*********************/
+@media print {
+    .barcode_background_color_red{
+        background-color:#FF3333;
+        color:black;
+    }
+    .barcode_background_color_lightred{
+        background-color:#CC3366;
+        color:black;
+    }
+    .barcode_background_color_yellow{
+        background-color:yellow;
+        color:black;
+    }
+    .barcode_background_color_lightyellow{
+        background-color:#FFFF99;
+        color:black;
+    }
+    .barcode_background_color_green{
+        background-color:#66CC33;
+        color:black;
+    }
+    .barcode_background_color_lightgreen{
+        background-color:#00FFCC;
+        color:black;
+    }
+    .barcode_background_color_white{
+        background-color:#FFFFFF ;
+        color:black;
+    }    
+}
+/************End to define classes for barcode background color @AUTHOR: SANDY21OCT13***********/
+/*****Class for barcode display div @AUTHOR: SANDY27OCT13*******************/
+.displayBarcode{
+    position: absolute;
+    width:382px;
+    height: auto;
+    border:#ffe4a4 1px solid;
+    border-radius:4px;
+    background-color:#FFFAF2; 
+    text-align: center; 
+    left: 15%;
+    /*top: 32%;*/
+    z-index:999;
+    bottom:-20%;
+}
+.displayBarcodeBorder{
+    width:350px;
+    height: 180px;
+    border: #000000 1px solid;
+    border-radius:10px;
+}
+/*****Class for barcode display div @AUTHOR: SANDY27OCT13*******************/
+/*************class for table border @AUTHOR: SANDY24OCT13**************/
+.tableBorder{
+    border: #A4A4A4 0.5px solid;
+}
+/*************class for table border @AUTHOR: SANDY24OCT13**************/
+
+/****Start to add class for paging links @AUTHOR: SANDY29OCT13************
+.pagingLink{
+    color: blue;
+    font-size:14px; 
+    font-weight:bold;
+}
+.activePage{
+    color: Red;
+    font-size:14px; 
+    font-weight:bold;
+}
+**End to add class for paging links @AUTHOR: SANDY29OCT13 COMMENT @AUTHOR: SANDY30OCT13****************/
+
+/********Start of Classes for page no button in paging @AUTHOR: SANDY30OCT13**********/
+/*******START of Changes in classes used for page no button @AUTHOR: SANDY6NOV13*************/ 
+.pageNoButton{
+    border:solid 0px blue;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight: normal;
+    cursor:pointer;
+    background:transparent;
+    background-repeat:repeat-x;
+    color: #000;
+    border-radius: 2px;
+    text-align: center;
+}
+/*.pageNoButton:focus {
+    border:solid 0px blue;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:transparent;
+    background-repeat:repeat-x;
+    color: #FF8000;
+    border-radius: 2px;
+    text-align: center;
+}*/
+/*.pageNoButton:hover {
+    border:solid 0px blue;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:transparent;
+    background-repeat:repeat-x;
+    color: #FF8000;
+    border-radius: 2px;
+    text-align: center;
+}*/
+.currentPageNoButton{
+    border:solid 0px #736F6E;
+    font-family: Calibri;
+    font-size:13px;
+    font-weight:normal;
+    cursor:pointer;
+    background: #007bff;
+    background-repeat:repeat-x;
+    color: #fff;
+    text-align: center;
+    width: 20px;
+height: 20px;
+border-radius: 50px !important;
+font-weight: 600;
+}
+/*.currentPageNoButton:focus {
+    border:solid 1px #736F6E;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:transparent;
+    background-repeat:repeat-x;
+    color: #736F6E;
+    border-radius: 2px;
+    text-align: center;
+}*/
+/*.currentPageNoButton:hover{
+    border:solid 1px #736F6E;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:transparent;
+    background-repeat:repeat-x;
+    color: #736F6E;
+    border-radius: 2px;
+    text-align: center;
+}*/
+.padBott4{
+    padding-bottom: 4px;
+}
+.padBott7{
+    padding-bottom: 7px;
+}
+/*******End of Changes in classes used for page no button @AUTHOR: SANDY6NOV13*************/ 
+/********End of Classes for page no button in paging @AUTHOR: SANDY30OCT13**********/
+/*******CLASS To assign fixed height to girvi list div @AUTHOR: SANDY6NOV13**************/
+.girviListDivSize{
+    height: 100%;
+    overflow-x: scroll;
+}
+/*******CLASS To assign fixed height to girvi list div @AUTHOR: SANDY6NOV13**************/
+/***Start of class for same input field in ADD LOAN in money lender panel @AUTHOR: SANDY14NOV13***/
+/*.inputFieldSize{
+    width:140px;
+    height:20px;
+}*/
+/***Change in class @AUTHOR: SANDY27DEC13***/
+.loanNoListDiv{
+    position: absolute;
+    width:100%;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: 0px solid #F9F9F9;
+    background:#F9F9F9;
+    z-index:100;
+}
+/***Change in class @AUTHOR: SANDY27DEC13***/
+/*** End of class for same input field in ADD LOAN in money lender panel @AUTHOR: SANDY14NOV13***/
+/***start To add class @AUTHOR: SANDY16NOV13***/
+/*.width_190{
+    width:190px;
+}*/
+.textField16_without_border{
+    border:none;
+    background-color:transparent;
+    color: #A4A4A4;
+    font-family: Calibri; /**change in font family @AUTHOR: SANDY21NOV13***/
+    font-size:16px;
+    font-weight:normal;
+    text-align: center;
+}
+.textField16_without_border:focus{
+    border:none;
+    background-color:transparent;
+    color: #A4A4A4;
+    font-family: Calibri;/**change in font family @AUTHOR: SANDY21NOV13***/
+    font-size:16px;
+    font-weight:normal;
+    text-align: center;
+}
+.textField16_without_border:hover{
+    border:none;
+    background-color:transparent;
+    color: #A4A4A4;
+    font-family: Calibri;/**change in font family @AUTHOR: SANDY21NOV13***/
+    font-size:16px;
+    font-weight:normal;
+    text-align: center;
+}
+.grey16_font{
+    color: #A4A4A4;
+    font-size:16px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+/***End To add class @AUTHOR: SANDY16NOV13***/
+/***Start to change class @AUTHOR: SANDY29NOV13*****/
+.main_link_orange_normal16{
+    color:#FF9900;
+    font-size:16px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.lgn-txtfield-without-border-greyText {
+    border:solid 0px #AF7817;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.lgn-txtfield-without-border-greyText:focus {
+    border:solid 0px #AF7817;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.lgn-txtfield-without-border-greyText:hover {
+    border:solid 0px #AF7817;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.text_right{
+    text-align:right;
+}
+/***End to change class @AUTHOR: SANDY29NOV13*****/
+/***********Start to add css classes for themes in layout panel @AUTHOR: SANDY4DEC13**************/
+
+.inputBox12CalibriGrey{
+    color: #A4A4A4;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+.inputBox12CalibriGrey:hover{
+    color: #A4A4A4;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+.inputBox12CalibriGrey:focus{
+    color: #A4A4A4;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+
+/***********End to add css classes for themes in layout panel @AUTHOR: SANDY4DEC13**************/
+/************Class for header theme @AUTHOR: SANDY7DEC13*******************/
+#main_header_beige {
+    position: fixed;
+    width:100%;
+    height:62px;
+    z-index:1000;
+    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background: #F9F9F9;
+    background:url('../images/beigeBack.png') top repeat;
+    border-bottom:#C7C5C8 1px solid;
+}
+#main_header_periwinkle {
+    position: fixed;
+    width:100%;
+    height:62px;
+    z-index:1000;
+    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background: #F9F9F9;
+    background:url('../images/periWinkleBack.png') top repeat;
+    border-bottom:#C7C5C8 1px solid;
+}
+#main_header_cream {
+    position: fixed;
+    width:100%;
+    height:62px;
+    z-index:1000;
+    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background: #F9F9F9;
+    background:url('../images/creamBack.png') top repeat;
+    border-bottom:#C7C5C8 1px solid;
+}
+/************Class for header theme @AUTHOR: SANDY7DEC13*******************/
+/*********Classes for column width @AUTHOR: SANDY11DEC13******************/
+.main_link_brown9 {
+    color:#800000;
+    font-size:14px;/**Change in font size @AUTHOR: SANDY09JAN14***/
+    font-weight:bold;
+    font-family: Calibri;
+}
+.width_203mm{
+    width:243mm; /******Change in width while display @AUTHOR: SANDY12DEC13******/
+}
+.width_16mm{
+    width:16mm;
+}
+.width_30mm{
+    width:30mm;
+}
+.width_23mm{
+    width:22mm;
+}
+.width_21mm{
+    width:21mm;
+}
+.width_8mm{
+    width:8mm;
+}
+.width_46mm{
+    width:46mm;
+}
+.width_15mm{
+    width:15mm;
+}
+.width_17mm{
+    width:17mm;
+}
+.width_14mm{
+    width:14mm;
+}
+.width_12mm{
+    width:12mm;
+}
+.width_18mm{
+    width:18mm;
+}
+.width_28mm{
+    width:27.9mm;/*****change in width @AUTHOR: SANDY12DEC12*******/
+}
+.width_20mm{
+    width:20mm;
+}
+/********Classes FOR column width while print @AUTHOR: SANDY12DEC13*****/
+.textLabel12CalibriOrange{
+    color: #D76B00;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+/****Start to add classes @AUTHOR: SANDY06JAN14*************/
+.hideProfCol{
+    width: auto;
+}
+.hideProfColRedText{
+    color:#FF0000;
+    font-size:14px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+.hideProfColGreenText{
+    color:#00A000;
+    font-size:14px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+.text14CalibriBrownBold{
+    color:#800000;
+    font-size:14px;
+    font-weight: bold;
+    font-family: Calibri;
+}
+.text14CalibriHideAtPrint{
+    color:#000000;
+    font-size:13px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+.text13CalibriHideAtPrint{
+    color:#000000;
+    font-size:14px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+.text12CalibriHideAtPrint{
+    color:#000000;
+    font-size:14px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+.text12CalibriHideAtPrintBrown{
+    color:#800000;
+    font-size:13px;
+    font-weight:normal;
+    margin:0px;
+    padding:0px 0 0 0px;
+    font-family: Calibri;
+}
+/****End to add classes @AUTHOR: SANDY06JAN14*************/
+
+@media print {
+    .main_link_brown9 {
+        color:#800000;
+        font-size:9px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .width_203mm{
+        width:196mm;
+    }
+    .width_16mm{
+        width:16mm;
+    }
+    .width_30mm{
+        width:30mm;
+    }
+    .width_23mm{
+        width:22mm;
+    }
+    .width_21mm{
+        width:21mm;
+    }
+    .width_8mm{
+        width:8mm;
+    }
+    .width_46mm{
+        width:46mm;
+    }
+    .width_15mm{
+        width:15mm;
+    }
+    .width_17mm{
+        width:17mm;
+    }
+    .width_14mm{
+        width:14mm;
+    }
+    .width_12mm{
+        width:12mm;
+    }
+    .width_18mm{
+        width:18mm;
+    }
+    .width_28mm{
+        width:27.9mm;
+    }
+    .width_20mm{
+        width:20mm;
+    }
+    .width_24mm{
+        width:24mm;
+    }
+    .width_25mm{
+        width:25mm;
+    }
+    /****Start to add classes @AUTHOR: SANDY06JAN14*************/
+    .hideProfCol{
+        width:0px;
+    }
+    .hideProfColRedText{
+        color:#000000;
+        font-size:0px;
+        font-weight:normal;
+        margin:0px;
+        padding:0px 0 0 0px;
+        font-family: Calibri;
+    }
+    .hideProfColGreenText{
+        color:#000000;
+        font-size:0px;
+        font-weight:normal;
+        margin:0px;
+        padding:0px 0 0 0px;
+        font-family: Calibri;
+    }
+    .text14CalibriBrownBold{
+        color:#800000;
+        font-size:0px;
+        font-weight: bold;
+        font-family: Calibri;
+    }
+    .text14CalibriHideAtPrint{
+        color:#000000;
+        font-size:0px;
+        font-weight:normal;
+        margin:0px;
+        padding:0px 0 0 0px;
+        font-family: Calibri;
+    }
+    /****End to add classes @AUTHOR: SANDY06JAN14*************/
+}
+/********Classes FOR column width while print @AUTHOR: SANDY12DEC13*****/
+/*******Start to add new class @AUTHOR: SANDY23DEC13************/
+.blackMess10Arial {
+    color:#810000;
+    font-size:10px;
+    font-weight: bold;
+    margin:0px;
+    padding:0px 0 0 0;
+    font-family: Calibri;
+}
+/*******End to add new class @AUTHOR: SANDY23DEC13************/
+/*******Start to add new class @AUTHOR: SANDY24DEC13************/
+.trGirvi_Release_panel{
+    position: absolute; 
+    padding: 8px 0 0 -10px;
+    margin: 0px;
+    background: #FFFFFF; 
+    text-align: left; 
+    border: 1px solid #F0F0F0;
+    width:970px;
+}
+/*******Start to add new class @AUTHOR: SANDY24DEC13************/
+/*****Start to add new classes @AUTHOR: SANDY26DEC13****/
+.header_div{
+    position: fixed;
+    width:100%;
+    height:65px;
+    z-index:1000;
+    margin: 0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background:#fef7ea;
+    border-bottom:#f5cba7 3px dashed;
+}
+/*****End to add new classes @AUTHOR: SANDY26DEC13****/
+/****Start to add new Class @AUTHOR: SANDY29DEC13***/
+.heading_brown{
+    color:#800000;
+    font-size:16px;
+    font-weight:bold;
+    margin:0px;
+    padding:10px 0 5px 0;
+    font-family: Calibri;
+}
+.main_link_blue14{
+    color:blue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.main_link_red14 {
+    color:red;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.main_link_orange14 {
+    color:orange;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+/****End to add new Class @AUTHOR: SANDY29DEC13***/
+/***Start to add new classes @AUTHOR: SANDY11JAN14****************/
+.frm-btn-update {
+    border:solid 0px #000000;
+    cursor:pointer;
+    background:url('../images/update16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+.frm-btn-update:hover {
+    border:solid 0px #000000;
+    cursor:pointer;
+    background:url('../images/update16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+.frm-btn-update:focus {
+    border:solid 0px #000000;
+    outline:1px dotted #000000;
+    cursor:pointer;
+    background:url('../images/update16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+.frm-btn-delete{
+    border:solid 0px #000000;
+    cursor:pointer;
+    background:url('../images/delete16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+.frm-btn-delete:hover {
+    border:solid 0px #000000;
+    cursor:pointer;
+    background:url('../images/delete16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+.frm-btn-delete:focus {
+    border:solid 0px  #000000;
+    outline:1px dotted  #000000;
+    cursor:pointer;
+    background:url('../images/delete16.png') no-repeat center;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+}
+/***End to add new classes @AUTHOR: SANDY11JAN14****************/
+
+
+/*****Start to add class @AUTHOR: SANDY16JAN14*****************/
+.firmName{
+    color: #D76B00;
+    font-size:13px;
+    font-weight:normal;
+    font-family: Calibri;
+    padding-top: 5px;
+}
+.acnt_det_heading{
+    color: blue;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.acnt-btn-lnk{
+    border:none;
+    font-size:13px;
+    float:left;
+    cursor:pointer;
+    background:none;
+    color:blue;
+    height:20px;
+    width:auto;
+    text-align:left;
+    font-family: Calibri;
+}
+.acnt-btn-lnk:focus{
+    border:none;
+    font-family: Calibri;
+    font-size:13px;
+    cursor:pointer;
+    background:none;
+    color: #FF8000;
+}
+.acnt-btn-lnk:hover{
+    border:none;
+    font-family: Calibri;
+    font-size:13px;
+    cursor:pointer;
+    background:none;
+    color: #FF8000;
+}
+/*****End to add  class @AUTHOR: SANDY16JAN14*****************/
+/****Start to add class @AUTHOR: SANDY25JAN14*********************/
+.lgn-txtfield-without-borderAndBackground11-Arial {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#B80000;
+    font-size:11px;
+    font-weight:normal;
+}
+.lgn-txtfield-without-borderAndBackground11-Arial:focus {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#B80000;
+    font-size:11px;
+    font-weight:normal;
+}
+.lgn-txtfield-without-borderAndBackground11-Arial:hover {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#B80000;
+    font-size:11px;
+    font-weight:normal;
+}
+.text_14_brown{
+    color:#B80000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+
+/****End to add class @AUTHOR: SANDY28JAN14*********************/
+/****Change in class  @AUTHOR: SANDY08FEB14*********************/
+.text_14_brown_Calibri{
+    color:#B80000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.text_11_brown{
+    color:brown;
+    font-size:11px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.green_14_font{
+    color:green;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.green_12_font{
+    color:green;
+    font-size:12px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.orange11{
+    color: chocolate;
+    font-size:11px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.black12{
+    color:black;
+    font-size:12px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+/***********Start code to add class @Author:PRIYA02APR14****************/
+@media print {
+    .noPrint {
+        display:none;
+    }
+    .black12{
+        color:black;
+        font-size:12px;
+        font-weight:normal;
+        font-family: Calibri;
+    }
+    /*********Start code to add class at print @Author:PRIYA29MAY14********************/
+    .text_11_brown{
+        color:#000000;
+        font-size:11px;
+        font-weight:normal;
+        font-family: Calibri;
+    }
+    .orange11{
+        color: #000000;
+        font-size:11px;
+        font-weight:normal;
+        font-family: Calibri;
+    }
+    /*********End code to add class at print @Author:PRIYA29MAY14********************/
+}
+/***********End code to add class @Author:PRIYA02APR14****************/
+.padLeft90{
+    margin:0px 0px 0px 90px;
+}
+.blue12{
+    color:blue;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+/****Change in class  @AUTHOR: SANDY08FEB14*********************/
+/********** Start code to add class udhdepamt-Upadate-Div  @Author:SHRI10JUN15***************/
+.udhdepamt-Upadate-Div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 0px 0px 0px 32px;
+    text-align: right; 
+    border: 1px solid #FD9A00;
+    /*border: 1px solid #A4A4A4;*/
+    border-radius: 6px;
+    width:200px;
+    height: 60px;
+    background-color: #FFF8C6; 
+}
+.udhdepamt-divide-Upadate-Div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 0px 0px 0px 160px;
+    text-align: left; 
+    border: 1px solid #FD9A00;
+    width:120px;
+    height: 28px;
+    background-color: #FFF8C6; 
+}
+.girviDepAmt-Update-Div{
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 0px 0px 0px 50px;
+    text-align: left; 
+    border: 1px solid #FD9A00;
+    width:120px;
+    height: 28px;
+    background-color: #FFF8C6;
+}
+.width_24mm{
+    width:23mm;
+}
+.width_25mm{
+    width:24mm;
+}
+/********** End code to add class udhdepamt-Upadate-Div  @Author:SHRI10JUN15***************/
+/**********START TO ADD CLASS FOR BOLD RED AND GREEN @AUTHOR:SHRI12AUG20**************/
+.textLabel14CalibriBoldGreen{
+    color: #008000;
+    font-size:18px;
+    font-weight: bold;
+    font-family: Calibri;
+}
+.textLabel14CalibriBoldRed{
+    color: #B80000;
+    font-size:18px;
+    font-weight: bold;
+    font-family: Calibri;
+}
+/**********END TO ADD CLASS FOR BOLD RED AND GREEN @AUTHOR:SHRI12AUG20**************/
+/**********END TO ADD CODE TO CSS NEW LAYOUT CSS MODIFY @AUTHOR:RANI5APRIL2023**************/
+@media only screen and (max-width:1230px) {
+.girviListDivSize{
+  width:1080px;   
+}
+
+@media only screen and (max-width: 1380px) {
+ .girviListDivSize{
+  width:1234px;  
+}   
+    
+}
+}
+@media only screen and (max-width:1170px){
+  .girviListDivSize{
+  width:1030px;
+}
+}
+@media only screen and (min-width: 1380px){
+    .girviListDivSize{
+        /*width: 1390px;*/
+        overflow-x: scroll;
+    }   
+}

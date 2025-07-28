@@ -1,0 +1,5116 @@
+
+/*****START Code to add class Item Webcam Image @AUTHOR:PRIYA23JAN13*******/
+.border-item-color-golden {
+    border: #AF7817 2px solid;
+    position: absolute;
+    margin: -100px 0px 0px -290px;  
+    background:#FFF8C6;
+}
+/*****END Code to add class Item Webcam Image @AUTHOR:PRIYA23JAN13*******/
+/* -------------------------- Add New Girvi Item Image @AUTHOR:PRIYA23JAN13---------------------------------*/
+.file_item_input_div
+{
+    position: relative; 
+    width: 40px; 
+    height:30px; 
+    overflow: hidden;
+    text-align: center;
+    border:solid 0px #800000;
+}
+.file_stock_form_image_input_div
+{
+    position: relative; 
+    width: 32px; 
+    height: 20px; 
+    overflow: hidden;
+    text-align: right;
+    border:solid 0px #800000;
+}
+
+.file_button_add_image_div
+{
+    position: relative; 
+    width: 64px; 
+    height: 64px; 
+    overflow: hidden;
+    text-align: right;
+    border:solid 0px #800000;
+}
+
+.frm-img-btn{
+    width: 50px;
+    height: 20px; 
+    position: absolute; 
+    right: 0px; 
+    top: 0px;
+    border:solid 1px #000000;
+    color:#000000;
+    background:#FDD017;
+}
+.file_input_hidden_gItem
+{
+    font-size: 10px; 
+    position: absolute; 
+    right: 0px; 
+    top: 0px; 
+    opacity: 0; 
+
+    filter: alpha(opacity=0); 
+    -ms-filter: "alpha(opacity=0)"; 
+    -khtml-opacity: 0; 
+    -moz-opacity: 0;
+}
+.ajaxCloseGirviItemImage {
+    position: absolute; 
+    margin-top: -9px;
+    margin-left: 214px;
+    z-index: 2147483647;
+}
+/* -------------------------- Add New Girvi Item Image @AUTHOR:PRIYA23JAN13---------------------------------*/
+/*****START CODE To Add CLASS FOR Journal Entry Total @AUTHOR:PRIYA03FEB13********/
+/*****Start Code To Remove extra ; @Author:PRIYA22OCT13***************/
+.itemAddPnLabels12ArialLink {
+    color: #800000;
+    font-size:14px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLink {
+    color: #0000FF;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLinkBlack {
+    color: #000000;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLinkGreen {
+    color: #00A000;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLinkRed {
+    color: #EF0000;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLinkBlackItalic {
+    color: #000000;
+    font-size:14px;
+    font-style: italic;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.itemAddPnLabels14ArialLinkBoldBlack {
+    color: #000000;
+    font-size:14px;
+    font-weight: bold;
+    font-family: Calibri;
+}
+.itemAddPnLabels16ArialLinkBoldBlack {
+    color: #000000;
+    font-size:16px;
+    font-weight: bold;
+    font-family: Calibri;
+}
+/*****End Code To Remove extra ; @Author:PRIYA22OCT13***************/
+/*****END CODE To Add CLASS FOR Journal Entry Total @AUTHOR:PRIYA03FEB13*********/
+
+/*****START CODE To Add CLASS FOR Delete Bar Code Item @AUTHOR:PRIYA03FEB13********/
+/*.marginLeftBarCode{
+    margin-left: 35mm;    
+    margin-top: -23mm;
+    position: absolute;
+}*/
+/*****END CODE To Add CLASS FOR Delete Bar Code Item @AUTHOR:PRIYA03FEB13********/
+
+/*****START CODE To Add CLASS FOR Delete Bar Code Item @AUTHOR:PRIYA13FEB13********/
+/*.marginLeftBarCode84L{
+    margin-left: 45mm;    
+    margin-top: -51px;
+    position: absolute;
+}*/
+/*****END CODE To Add CLASS FOR Delete Bar Code Item @AUTHOR:PRIYA13FEB13********/
+
+
+/*****START CODE To Add CLASS FOR SellPr Image In Existing Customer List @AUTHOR:PRIYA13FEB13********/
+.frm-btn-custSellPurchase {
+    border:solid 0px #000000;
+    cursor:pointer;
+    width:16px;
+    height:16px;
+    background-image:url('../images/img/sell.png');
+    background-color: transparent;
+    background-size:contain;
+     background-repeat: no-repeat;
+}
+/*.frm-btn-custSellPurchase:hover {
+    border:solid 0px #000000;
+    cursor:pointer;
+    width: 16px;
+    height: 16px;
+    background-image:url('../images/sell_Purchase16.png');
+    background-color: #FF8000;
+}
+.frm-btn-custSellPurchase:focus {
+    border:solid 0px #000000;
+    cursor:pointer;
+    width: 16px;
+    height: 16px;
+    background-image:url('../images/sell_Purchase16.png');
+    background-color: #FF8000;
+}*/
+/*****END CODE To Add CLASS FOR SellPr Image In Existing Customer List @AUTHOR:PRIYA13FEB13********/
+/*****************START Code To Add Class For Staff Comp Button @AUTHOR:PRIYA20FEB13************/
+.file_input_button_staff{
+
+    width: 128px;
+    height: 128px; 
+    position: absolute; 
+    right: 0px; 
+    top: 0px;
+    background-image: url('../images/staff128.png');
+    border:solid 1px #800000;
+}
+/*****************START Code To Add Class For SellPurchase Invoive @AUTHOR:PRIYA25FEB13************/
+.sp-border-color-grey-rb {
+    border-right: #A4A4A4 1px solid;
+}
+.sp-title-border-color-grey-rb {
+    border-top: #A4A4A4 1px solid;
+    border-bottom: #A4A4A4 1px solid;
+    border-right: #A4A4A4 1px solid;
+}
+/*****************END Code To Add Class For SellPurchase Invoive @AUTHOR:PRIYA25FEB13************/
+/*****************START Code To Add Class For Journal Entry @AUTHOR:PRIYA02MARCH13************/
+.border-color-grey-b {
+    border-bottom: #A4A4A4 1px solid;
+}
+.border-color-grey-bu {
+    border-top: #A4A4A4 1px solid;
+    border-bottom: #A4A4A4 1px solid;
+}
+.border-color-grey-b2u {
+    border-top: #A4A4A4 1px solid;
+    border-bottom: #A4A4A4 2px solid;
+}
+.border-color-grey-r {
+    border-right: #A4A4A4 1px solid;
+}
+.border-color-grey-b-dotted {
+    border-bottom:  #A4A4A4 1px dotted;
+
+}
+/*****************END Code To Add Class For Journal Entry @AUTHOR:PRIYA02MARCH13************/
+
+/*****************START Code To Add Class For SellPurchase Itrm Details @AUTHOR:PRIYA05MARCH13************/
+.itemAddPnLabels13Arial {
+    color:#000000;
+    font-size:13px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+/*****************END Code To Add Class For SellPurchase Itrm Details @AUTHOR:PRIYA05MARCH13************/
+/*********START Code To Add Class For SellPurchase Item Details @AUTHOR:PRIYA08MARCH13**********/
+.lgn-txtfield12-req-sp{
+    border:none;
+    background-color:transparent;
+    color: #A52A2A;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.lgn-txtfield12-req-sp:focus {
+    border:solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.lgn-txtfield12-req-sp:hover {
+    border:solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.lgn-txtfield-sp {
+    border:none;
+    background-color:transparent;
+    color:#000000;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+.lgn-txtfield-sp:focus {
+    border:none;
+    background-color:transparent;
+    color: #A52A2A;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+.lgn-txtfield-sp:hover {
+    border:none;
+    background-color:transparent;
+    color: #A52A2A;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+/*********END Code To Add Class For SellPurchase Item Details @AUTHOR:PRIYA08MARCH13**********/
+/*********Start Code To Add Class For Add Stock Item Details @AUTHOR:PRIYA09MARCH13************/
+
+.stockDetailsTable{
+    margin-top: 1mm;
+    margin-left: 2mm;
+    margin-right:2mm;
+    border: none;
+}
+/***Class For Space Between Blocks****/
+.stockDetailsblock{
+    width: 55mm;
+    height: 70mm;
+    border: none;
+}
+/***Class For Space In Single Block****/
+.stockDetailsblockDiv{
+    width: 50mm;
+    height: 68mm;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+    background-color: #ffffff;
+}
+.stockDetailsItemImage
+{
+    margin-top: 0px;
+}
+.stockDetailsItemImageDiv
+{
+    width:  165px; 
+    height: 165px; 
+    text-align: center;
+    background-color:transparent;
+    border:solid 0px #800000;
+}
+.grey
+{
+    color:#444444;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+}
+.red14
+{
+    color:#A52A2A;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.red
+{
+    color: firebrick;
+}
+.blue
+{
+    color: #059BD8;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+}
+.blue14Normal
+{
+    color:#0000FF;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+
+/*********End Code To Add Class For Add Stock Item Details @AUTHOR:PRIYA09MARCH13************/
+/***********Start Code To Add Class For Stock Item Details Update @AUTHOR:PRIYA18MARCH13**************/
+.display-item-Details-popup {
+    position: absolute; 
+    padding: 0px 0px 0 0px;
+    margin: 0px 0px -80px -920px; 
+    background: #FFFFFF; 
+    text-align: left; 
+    border: 0px solid #000000;	
+}
+/***********End Code To Add Class For Stock Item Details Update @AUTHOR:PRIYA18MARCH13**************/
+/***********Start Code To Add Class To Display Stock Item Image @AUTHOR:PRIYA18MARCH13**************/
+.item_details_image_button
+{
+    width: 210px;
+    height: 240px;
+    background-color: #ffffff;
+    border:solid 0px #000000;	
+}
+/***********End Code To Add Class To Display Stock Item Image @AUTHOR:PRIYA18MARCH13**************/
+/**************** Start Code To Add Class For Update Firm In Update Girvi Panel @AUTHOR:PRIYA02APR13****************/
+.firmId-Upadate-Div {
+    position: absolute; 
+    padding: 5px 0 0 0px;
+    margin: 7px 0px 0px 0px;
+    text-align: left; 
+    border: 1px solid #FD9A00;
+    width:140px;
+    height: 28px;
+    background-color: #FFF8C6; 
+}
+/**************** Start Code To Add Class For Update Firm In Update Girvi Panel @AUTHOR:PRIYA02APR13****************/
+/********Start Code To Add Class For Repair Table @AUTHOR:PRIYA10APR13**********/
+.repair-btn {
+    width: 130px;
+    height: 35px;
+    border:solid 0px #000000;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+    background-image:url('../images/btn_bg.png');
+    background-repeat:repeat-x;
+    color: #059BD8;
+    margin: 10px 0px 0px 0px;
+}
+.repair-btn:focus {
+    width: 130px;
+    height: 35px;
+    border:solid 0px #000000;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+    background-image:url('../images/btn_bg.png');
+    background-repeat:repeat-x;
+    color: #FF8000;
+    margin: 10px 0px 0px 0px;
+
+}
+.repair-btn:hover {
+    width: 130px;
+    height: 35px;
+    border:solid 0px #000000;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    cursor:pointer;
+    background-image:url('../images/btn_bg.png');
+    background-repeat:repeat-x;
+    color: #FF8000;
+    margin: 10px 0px 0px 0px;
+}
+/********End Code To Add Class For Repair Table @AUTHOR:PRIYA10APR13**********/
+/***********Start Code To Add Class In Cust Details Panel @AUTHOR:PRIYA25APR13*************/
+.textarea-cust-det-comm {
+    width: 310px;
+    height: 30px;
+    border: 1px solid #AF7817;
+    padding: 5px;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Tahoma, sans-serif;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+}
+.custComm-Upadate-Div {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: left; 
+    border: 1px solid #FD9A00;
+    background-color: #FFF8C6; 
+}
+/***********End Code To Add Class In Cust Details Panel @AUTHOR:PRIYA25APR13*************/
+/***********Start Code To Add Class Without Border In Cust Details Panel @AUTHOR:PRIYA26APR13*******/
+/***********Start code to change font @Author:PRIYA21JUN14****************/
+.custDetailswithoutborder {
+    border:none;
+    font-size:13px;
+    /*    font-weight:bold;*/
+    font-family:Calibri;
+    background-color:transparent;
+}
+.custDetailswithoutborder:focus {
+    border:none;
+    font-size:13px;
+    /*    font-weight:bold;*/
+    font-family:Calibri;
+    background-color:transparent;
+}
+.custDetailswithoutborder:hover {
+    border:none;
+    font-size:13px;
+    /*    font-weight:bold;*/
+    font-family:Calibri;
+    background-color:transparent;
+}
+/***********End code to change font @Author:PRIYA21JUN14****************/
+.custDetailswithoutborder11 {
+    border:none;
+    font-size:13px;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.custDetailswithoutborder11:focus {
+    border:none;
+    font-size:13px;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.custDetailswithoutborder11:hover {
+    border:none;
+    font-size:13px;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.custDetailsDivToAddCustInterest {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    background:#FFFFFF;
+}
+/***********End Code To Add Class Without Border In Cust Details Panel @AUTHOR:PRIYA26APR13*******/
+/************Start Code To Add Class For Display Cust In Interest DropDown List @AUTHOR:PRIYA27APR13***********/
+.custDetailsCustInterestList {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+}
+/************End Code To Add Class For Display Cust Interest DropDown List @AUTHOR:PRIYA27APR13***********/
+/********Start Code To Add Class For Purchase Details In DD Panel @AUTHOR:PRIYA01MAY13****/
+.purchaseDetailsDivClass {
+    position: inherit;
+}
+/********End Code To Add Class For Purchase Details In DD Panel @AUTHOR:PRIYA01MAY13****/
+/********Start Code To Add Class For City List In Add New Cust Panel @AUTHOR:PRIYA21MAY13***********/
+.cityListDivToAddNewCustSelect {
+    position: absolute;
+    width:100%;
+    height:100px;
+    z-index: 1001;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+}
+.cityListDivToAddNewCustSelect.SelectStyle{
+ margin-left: 20px;
+margin-top: 54px;
+width: 40%;
+z-index: 0;
+box-shadow: 1px 2px 10px rgba(191, 189, 189, 0.5);
+border: 1px solid #a7c7f1;  
+z-index:998;
+}
+.cityListDivToAddNewCustSelect.SelectCss{
+    position: absolute;
+    width:50%;
+    left:25%;
+    top:50px;
+    box-shadow: 1px 2px 10px rgba(191, 189, 189, 0.5);
+border: 1px solid #a7c7f1;  
+}
+/********End Code To Add Class For City List In Add New Cust Panel @AUTHOR:PRIYA21MAY13***********/
+/*******Start Code To Add Class For Delete Message In Transfer Girvi Panel @AUTHOR:PRIYA23MAY13***********/
+.transGirviDelMessDiv {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: -24px 0px 0px 80px;
+    text-align: left; 
+    border: 0px solid #000000;
+    color: #008000;
+}
+/*******End Code To Add Class For Delete Message In Transfer Girvi Panel @AUTHOR:PRIYA23MAY13***********/
+/********Start Code To Add Class For Supplier Add Stock @AUTHOR:PRIYA27MAY13**************/
+/********Start Code To add width @Author:PRIYA04OCT13*************/
+.display-supp-add-stock-popup {
+    position: absolute; 
+    padding: 0px 0px 0 0px;
+    margin: 3px 0px 0px -835px; 
+    background: #FFFFFF; 
+    text-align: left; 
+    border: 0px solid #000000;	
+    width:978px;
+}
+/********End Code To add width @Author:PRIYA04OCT13*************/
+/********End Code To Add Class For Supplier Add Stock @AUTHOR:PRIYA27MAY13**************/
+/********Start Code To Add Class For Delete All Bar Code Slips @AUTHOR:PRIYA31MAY13**************/
+.deleteAllBarCodeSlips{
+    margin : 0px 10px 5px 0px;
+}
+/********End Code To Add Class For Delete All Bar Code Slips @AUTHOR:PRIYA31MAY13**************/
+/********Start Code To Add Class For Quatation Button In Item Details Panel @AUTHOR:PRIYA31MAY13*****/
+.marginTop20{
+    margin: 20px 0px 0px 0px;
+}
+/********End Code To Add Class For Quatation Button In Item Details Panel @AUTHOR:PRIYA31MAY13*****/
+/*********Start Code To Add Class For Cust Quatation Print Panel @AUTHOR:PRIYA01JUNE13*******************/
+/*********Start Code To Change Margin @Author:PRIYA30JUL13**************/
+#cust_quotation{
+    width:105.6mm;
+    min-height:80mm;
+    height:auto;
+    margin: 0px;
+    padding: 10px 7px 15px 7px;
+    vertical-align:middle;
+    border: #000000 1px solid;
+}
+/*********End Code To Change Margin @Author:PRIYA30JUL13**************/
+/*********End Code To Add Class For Cust Quatation Print Panel @AUTHOR:PRIYA01JUNE13*******************/
+/*********Start Code To Add Class For Cust Quatation Print Panel @AUTHOR:PRIYA01JUNE13*******************/
+.itemAddPnLabels10 {
+    color:#800000;
+    font-size:10px;
+    font-weight:bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.paymentLabels10 {
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    padding: 0px 4px;
+}
+/*********End Code To Add Class For Cust Quatation Print Panel @AUTHOR:PRIYA01JUNE13*******************/
+/*********Start Code To Add Class For Ledger Book @AUTHOR:PRIYA19JUNE13********/
+/*********Start Code To Change Class Name @AUTHOR:PRIYA21JUNE13********/
+.lightBlue{
+    background: #F2F9F8;
+}
+.lightOrange {
+    background: #F9F3EC;
+}
+.lightYellow{
+    background: #F5F5E2;	
+}
+/*********End Code To Change Class Name @AUTHOR:PRIYA21JUNE13********/
+/*********End Code To Add Class For Ledger Book @AUTHOR:PRIYA19JUNE13********/
+/**********Start Code To Add Class For Udhaar Final total @AUTHOR:PRIYA21JUNE13********/
+.lightGreen{
+    background: #EFFAEA;
+}
+/**********Start Code To Add Class For Udhaar Final total @AUTHOR:PRIYA21JUNE13********/
+/**********Start Code To Add Class For Form Size 4Inch @Author:PRIYA28DEC13*****/
+#form4InchDiv{
+    /*    width:101.6mm;*/
+    width:93.6mm;
+}
+/***********Start code to change class @Author:PRIYA28DEC13*******************/
+#a5widthdiv{
+    width:135mm;
+    padding-left: 8px;
+}
+/***********End code to change class @Author:PRIYA28DEC13*******************/
+/* notice page setup */
+.blackTextArial10 {
+    color:#000000;
+    font-size:10px;
+    font-weight:bold;
+    font-family: Arial,helvetica,sans-serif; 
+}
+.blackTextArial11 {
+    color:#000000;
+    font-size:11px;
+    font-weight:bold;
+    font-family: Arial,helvetica,sans-serif; 
+}
+.blueTextArial11 {
+    color: #003366;
+    font-size:11px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+
+/*********Start Code To Change width @Author:PRIYA28JUN13*******/
+.form7-logo-image{
+/*    width:100%;
+    height:100%;*/
+max-width: 140px;
+max-height: 100px;
+} 
+
+/*********Start Code To Change width @Author:PRIYA28JUN13*******/
+.formA6-logo-image{
+    width: 120px;
+    height: 120px;
+    margin-top: 16px;
+} 
+
+/*********End Code To Change width @Author:PRIYA28JUN13*******/
+.blueTextArial12Normal {
+    color: #003366;
+    font-size:12px;
+    font-family: Calibri;
+}
+/*********Start Code To Change Height @Author:PRIYA28JUN13*******/
+.textarea-girvi-form7 {
+    width: 100mm;
+    height: 20px;
+    border: 0px solid #AF7817;
+    font-size:11px;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+/*********Start Code To Change Height @Author:PRIYA28JUN13*******/
+/**********End Code To Add Class For Form Size 4Inch @AUTHOR:PRIYA25JUNE13*****/
+/**********Start Code To Delete Class From Form8 Div @Author:PRIYA28JUN13*******************/
+/*#form8Div{
+    width:101.6mm;
+    border: #000000 1px solid;
+    margin-left: 15px;
+}*/
+/**********End Code To Delete Class From Form8 Div @Author:PRIYA28JUN13*******************/
+/**********Start Code To Add Class For sms Log Panel @Author:PRIYA08JUL13***/
+/**********Start Code To Delete Class For sms Log Panel @Author:PRIYA09JUL13***/
+/*.border-color-grey_right {
+    border-bottom: #A4A4A4 1px solid;
+    border-right: #A4A4A4 1px solid;
+}*/
+/**********End Code To Delete Class For sms Log Panel @Author:PRIYA09JUL13***/
+/**********Start Code To Add Class For sms Log Panel  @Author:PRIYA09JUL13***************/
+.main_link_orange12 {
+    color:#D76B00;
+    font-size:14px;
+    font-weight:bold;
+    font-family: inherit;
+}
+.darkblueFont{
+    color:  navy;
+}
+.greenFont{
+    color:  #008000;
+}
+.tealFont{
+    color:  teal;
+}
+
+.blueFont{
+    color:  #0000C8;
+}
+
+.lightBlueFont{
+    color:#059BD8;
+}
+/**********End Code To Add Class For sms Log Panel  @Author:PRIYA09JUL13***************/
+/**********Start Code To Add Class For Text Right Align @Author:PRIYA17JUL13************/
+.lgn-txtfield-without-borderAndBackground13-Arial-right {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+}
+.lgn-txtfield-without-borderAndBackground13-Arial-right:focus {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+}
+.lgn-txtfield-without-borderAndBackground13-Arial-right:hover {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+}
+/**********End Code To Add Class For Text Right Align @Author:PRIYA17JUL13************/
+/**********Start Code To Add Class For Staff Access Error Mess @Author:PRIYA25JUL13******/
+.erMessage{
+    margin-top: 100px;
+    text-align: center;
+    height: 150px;
+    color:#D76B00;
+    font-size:18px;
+    font-weight:bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+/**********End Code To Add Class For Staff Access Error Mess @Author:PRIYA25JUL13******/
+/**********Start Code To Add Class In Item Details Panel @Author:PRIYA27JUL13**********/
+.textLabel18CalibriNormalBlack{
+    color: #000000;
+    font-size:18px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+/**********End Code To Add Class In Item Details Panel @Author:PRIYA27JUL13**********/
+/**********Start Code To Add Class For Item Quotation @Author:PRIYA27JUL13**********/
+.border-color-grey-left {
+    border-left:  #A4A4A4 1px solid;
+}
+/**********End Code To Add Class For Item Quotation @Author:PRIYA27JUL13**********/
+/**********Start Code To Add Class For Cust Quot 3Inch Print @Author:PRIYA29JUL13*******/
+/**********Start Code To change width @Author:PRIYA30JUL13*******/
+/**********Start Code To Change Padding @Author:PRIYA03AUG13**************/
+#cust_quotation_3Inch{
+    width:78mm;
+    min-height:350px;
+    height:auto;
+    margin: 0px;
+    padding: 10px 0px 15px 7px;
+    vertical-align:middle;
+    border: #000000 1px solid;
+}
+/**********End Code To Change Padding @Author:PRIYA03AUG13**************/
+/**********End Code To change Height @Author:PRIYA02AUG13*******/
+/**********Start Code To change width @Author:PRIYA30JUL13*******/
+/**********End Code To change width @Author:PRIYA30JUL13*******/
+/**********End Code To Add Class For Cust Quot 3Inch Print @Author:PRIYA29JUL13*******/
+/**********Start Code To Add Class For Item Quotation @Author:PRIYA02AUG13************/
+.itemAddPnLabels11ArialBold {
+    color:#000000;
+    font-size:11px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+
+.border-color-grey-top {
+    border-top:  #A4A4A4 1px solid;
+}
+/**********End Code To Add Class For Item Quotation @Author:PRIYA02AUG13************/
+/**********Start Code To Add Class For Sell Invoice @Author:PRIYA03AUG13**************/
+/**********Start Code To Change Height @Author:PRIYA08AUG13**************/
+/**********Start Code To Change Height @Author:PRIYA18AUG13**************/
+#sell_Inv_3Inch{
+    width:80mm;
+    min-height:550px;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+    border: #000000 0px solid;
+}
+/**********End Code To Change Height @Author:PRIYA18AUG13**************/
+/**********End Code To Change Height @Author:PRIYA08AUG13**************/
+@media print {
+    .noPrint {
+        display:none;
+    }
+    #sell_Inv_3Inch{
+        width:80mm;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        vertical-align:middle;
+        border: #000000 0px solid;
+    }
+    /**********Start Code To Add Class In  @Author:PRIYA28DEC13**************/
+    table.sell_Inv_table{
+        width:80mm;
+        border: #000000 0px solid;
+        padding: 0px;
+    }
+    table.sell_4InchInv_table{
+        /*        width:101.6mm;*/
+        width:92.6mm;
+        border: #000000 1px solid;
+    }
+    /**********End Code To Add Class In  @Author:PRIYA28DEC13**************/
+    /**********Start Code To Add Class For Sell Invoice @Author:PRIYA28SEP13**************/
+    table.sellInvA5-main-table{
+        width: 134mm;
+        border: #000000 1px solid;
+    }
+    /**********End Code To Add Class For Sell Invoice @Author:PRIYA28SEP13**************/
+    /**********Start Code To Add Class For Stock Invoice @Author:PRIYA05AUG13**************/
+    table.A4-Inv-Table{
+        width:210mm;
+    }
+    table.A4-Inv-Table1{
+        width:200mm;
+    }
+    .printLRBorder{
+        border-right: #A4A4A4 1px solid;
+        border-left: #A4A4A4 1px solid;
+    }
+/*    table.A4-Inv-Table .posAbsolute{
+        z-index: 1;
+    }*/
+    /**********End Code To Add Class For Stock Invoice @Author:PRIYA05AUG13**************/
+}
+.sellInv-logo-image{
+    width: 60px;
+    height: 70px;
+} 
+.spaceRight30
+{
+    margin:0px 38px 0px 0px;
+}
+.spaceRight35
+{
+    margin:0px 35px 0px 0px;
+}
+.spaceRight50
+{
+    margin:0px 50px 0px 0px;
+}
+.blueTextArialBold12 {
+    color: #003366;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+/**********End Code To Add Class For Sell Invoice @Author:PRIYA03AUG13**************/
+/**********Start Code To Add Class For Sell Invoice @Author:PRIYA04AUG13**************/
+.paddingRight3{
+    padding-right: 3px;    
+}
+.padding1{
+    padding: 1px;    
+}
+.textarea-3InchInv-otherinfo {
+    width: 159px;
+    height: 45px;
+    border: 1px solid #000;
+    padding: 2px;
+    color: #000000;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+    background: none;
+    overflow: auto;
+    resize: none;
+}
+.textLabel22TrebuchetMSWithBlueBack{
+    color:#FFFFFF;
+    font-size:18px;
+    font-weight:bold;
+    width: 160px;
+    margin-bottom: 0px;
+    background-color: #1b5fa8;
+    font-family: Trebuchet MS;
+}
+/**********Start Code To Add border @Author:PRIYA05AUG13**************/
+.sell_Inv_table{
+    width:80mm;
+    border: #000000 1px solid;
+}
+#sell_4InchInv_table{
+    width:101.6mm;
+    border: #000000 0px solid;
+}
+.sell_4InchInv_table{
+    /*    width:101.6mm;*/
+    width:92.6mm;
+    border: #000000 1px solid;
+}
+/**********End Code To Add border @Author:PRIYA05AUG13**************/
+/**********End Code To Add Class For Sell Invoice @Author:PRIYA04AUG13**************/
+/**********Start Code To Add Class For Sell Invoice @Author:PRIYA05AUG13**************/
+.sellInvA5-main-table{
+    width: 134mm;
+    border: #000000 1px solid;
+}
+.A4-Inv-Table{
+    width:100%;
+    height: auto;
+}
+.A4-Inv-Table1{
+    width:200mm;
+    height: auto;
+}
+.marginBottom5{
+    margin-bottom:  5px;    
+}
+/**********End Code To Add Class @Author:PRIYA05AUG13************/
+/**********Start Code To Add Class @Author:PRIYA12AUG13*****************/
+#A4-Inv-Table{
+    width:210mm;
+    height: auto;
+}
+/**********End Code To Add Class @Author:PRIYA12AUG13******************/
+.width{
+    width:14.29mm;
+}
+/*********Start Code To Add Class For New Order Panel @Author:PRIYA15AUG13**********/
+.blackArial12Font{
+    color:#000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+    font-weight:600;
+}
+/********End Code To Add Class For New Order Panel @Author:PRIYA15AUG13***********/
+/********Start Code To Add Class @Author:PRIYA16AUG13**************/
+.frm-lbl-Arial {
+    color: #804000;
+    font-family:Calibri;
+    font-size:13px;
+    font-weight:bold;
+    text-align: left;
+}
+.brwn-12Bold-TNR {
+    color: #804000;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:12px;
+    font-weight:bold;
+    text-align: left;
+}
+/********End Code To Add Class @Author:PRIYA16AUG13**************/
+/********Start Code To Add Class For Mob No Display Without border @Author:PRIYA19AUG13***************/
+.mobNowithoutborder {
+    border:none;
+    font-size:12px;
+    font-weight:normal;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.mobNowithoutborder:focus {
+    border:none;
+    font-size:12px;
+    font-weight:normal;
+    font-family:Calibri;
+    background-color:transparent;
+}
+.mobNowithoutborder:hover {
+    border:none;
+    font-size:12px;
+    font-weight:normal;
+    font-family:Calibri;
+    background-color:transparent;
+}
+/********End Code To Add Class For Mob No Display Without border @Author:PRIYA19AUG13***************/
+/********Start Code To Add Class For Girvi Panel @Author:PRIYA19AUG13***************/
+.lightVoilet{
+    background: #F2F6FB;
+}
+.lightPink{
+    background: #EAF4FE;
+}
+/********End Code To Add Class For Girvi Panel @Author:PRIYA19AUG13***************/
+/********Start Code To Add Class For 4inch Girvi Notice @Author:PRIYA29AUG13************/
+.textareaLoanNoticeContent4Inch {
+    width: 101.6mm;
+    height: 300px;
+    border: 0px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:13px;
+    font-weight: normal;
+    font-family: Calibri;
+    background: transparent;
+    overflow: auto;
+    resize: vertical;
+    text-align:justify;
+}
+.textareaLoanNoticeContent4Inch:hover {
+    width: 101.6mm;
+    height: 300px;
+    border: 0px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:13px;
+    font-weight: normal;
+    font-family: Calibri;
+    background: transparent;
+    overflow: auto;
+    resize: vertical;
+    text-align:justify;
+}
+.textareaLoanNoticeContent4Inch:focus {
+    width: 101.6mm;
+    height:300px;
+    border: 0px solid #AF7817;
+    padding: 0px 10px 0px 10px;
+    color: #1F1F1F;
+    font-size:13px;
+    font-weight: normal;
+    font-family: Calibri;
+    background: transparent;
+    overflow: auto;
+    resize: vertical;
+    text-align:justify;
+}
+/********Start Code To Add Class For 4inch Girvi Notice @Author:PRIYA29AUG13************/
+/********Start code to add class for roi select list display @Author:PRIYA07SEP13*************/
+.roiListDivToAddroiSelect {
+    position: absolute;
+    width:100%;
+    height:100px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 200;
+    left:0;
+}
+/********End code to add class for roi select list display @Author:PRIYA07SEP13*************/
+/********Start code to display roi @Author:PRIYA10SEP13**********/
+.lgn-txtfield12black-without-borderAndBackground{
+    border: none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+.lgn-txtfield12black-without-borderAndBackground:focus {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+.lgn-txtfield12black-without-borderAndBackground:hover {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:12px;
+    font-weight:bold;
+}
+.lgn-txtfield14black-without-borderAndBackground{
+    border: none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: center;
+}
+.lgn-txtfield14black-without-borderAndBackground:focus {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: center;
+}
+.lgn-txtfield14black-without-borderAndBackground:hover {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: center;
+}
+.lgn-txtfield16black-without-borderAndBackground{
+    border: none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:16px;
+    font-weight:bold;
+    text-align: center;
+}
+.lgn-txtfield16black-without-borderAndBackground:focus {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:16px;
+    font-weight:bold;
+    text-align: center;
+}
+.lgn-txtfield16black-without-borderAndBackground:hover {
+    border:none;
+    background-color:transparent;
+    font-family: Calibri;
+    font-size:16px;
+    font-weight:bold;
+    text-align: center;
+}
+/********End code to display roi @Author:PRIYA10SEP13**********/
+/********Start Code to add class for new order @Author:PRIYA11SEP13*************/
+/********Start Code to change width @Author:PRIYA27OCT13*************/
+.textarea-addNewOrder {
+    width: 179px;
+    height: 30px;
+    border: 1px solid #AF7817;
+    padding: 0px;
+    color: #A4A4A4;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+}
+/********End Code to change width @Author:PRIYA27OCT13*************/
+/********End Code to add class for new order @Author:PRIYA11SEP13*************/
+/********Start Code to add class @Author:PRIYA12SEP13*************/
+.spaceLeft15
+{
+    margin:0px 0px 0px 15px;
+
+}
+/********End Code to add class @Author:PRIYA12SEP13*************/
+/********Start Code to add class @Author:PRIYA14SEP13*************/
+.spaceLeft9
+{
+    margin:0px 0px 0px 9px;
+
+}
+.spaceLeft7
+{
+    margin:0px 0px 0px 7px;
+
+}
+.spaceLeft8
+{
+    margin:0px 0px 0px 8px;
+}
+.padBott2Right13
+{
+    padding: 0px 13px 2px 0px;
+}
+/*****************Start code to comment @Author:PRIYA15NOV13***************/
+/*.whitBgRightBorderWhite{
+    width: 25px;
+    background: white;
+    border-left: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-right: white;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.whitBgRightBorderWhite:focus{
+    width: 25px;
+    background: white;
+    border-left: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-right: white;
+    background-color:#F9F9F9;
+    color: royalblue;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.whitBgRightBorderWhite:hover{
+    width: 25px;
+    background: white;
+    border-left: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-right: white;
+    background-color:#F9F9F9;
+    color: royalblue;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}*/
+/*.whitBgLeftBorderWhite{
+    background: white;
+    border-right: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-left: white;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.whitBgLeftBorderWhite:focus{
+    background: white;
+    border-right: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-left: white;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+.whitBgLeftBorderWhite:hover{
+    background: white;
+    border-right: solid 1px crimson;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    border-left: white;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}*/
+/*****************End code to comment @Author:PRIYA15NOV13***************/
+/****************Start code to change font @Author:PRIYA25NOV13********************/
+.transparentTextBox{
+    background: white;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+.transparentTextBox:focus{
+    background: white;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+.transparentTextBox:hover{
+    background: white;
+    border-top: solid 1px crimson;
+    border-bottom: solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+/****************End code to change font @Author:PRIYA25NOV13********************/
+/********End Code to add class @Author:PRIYA14SEP13*************/
+/********Start code to add class @Author:PRIYA16SEP13*************/
+.spaceLeft12
+{
+    margin:0px 0px 0px 12px;
+}
+.brwn12BoldArial {
+    color:#800000;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+/********End code to add class @Author:PRIYA16SEP13*************/
+/********Start code to change color @Author:PRIYA26DEC13*************/
+.textareaArial250w43h {
+    width: 250px;
+    height: 43px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.border-color-grey-top-dotted {
+    border-top:  #A4A4A4 1px dotted;
+}
+/********End code to change color @Author:PRIYA26DEC13*************/
+/********Start code to add class For Met rate select @Author:PRIYA20SEP13*************/
+/********Start code to change width @Author:PRIYA25SEP13*************/
+.dropDownToSelectMetRate {
+    position: absolute;
+    width:86px;
+    height:80px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 200;
+}
+/********End code to change width @Author:PRIYA25SEP13*************/
+.bgTransNoBorderArial12Right {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgTransNoBorderArial12Right:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgTransNoBorderArial12Right:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+/********Start code to change class name @Author:PRIYA21SEP13*************/
+.lgn-txtfield12-req-145w {
+    border:solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size:12px;
+    font-weight:bold;
+    width:145px;
+}
+/********End code to add class @Author:PRIYA21SEP13*************/
+.lgn-txtfield-req-arial-110w {
+    border:solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+    width:110px;
+}
+/********End code to add class For Met rate select @Author:PRIYA20SEP13*************/
+/********Start code to add class @Author:PRIYA21SEP13*************/
+.TNR_brwn_16 {
+    color:#800000;
+    font-size:16px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+.marginTop10{
+    margin: 10px 0px 0px 0px;
+}
+.margin-Top10{
+    margin-top: 10px;
+}
+.lgn-txtfield11-req-arial {
+    border:solid 1px crimson;
+    background-color:#F9F9F9;
+    color: #B8860B;
+    font-family: Calibri;
+    font-size:11px;
+    font-weight:bold;
+}
+/********End code to add class @Author:PRIYA21SEP13*************/
+/********Start code to add class @Author:PRIYA27SEP13*************/
+.paddingRight6{
+    padding-right: 6px;    
+}
+.TNR_brwn_bold11 {
+    color:#800000;
+    font-size:11px;
+    font-weight:bold;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+/********End code to add class @Author:PRIYA27SEP13*************/
+
+.itemDetailsClass {
+    position:  fixed;
+    padding: 0px 0 0 0px;
+    margin: 250px 0px 0px -2px;
+    text-align: left; 
+    width:978px;
+}
+.itemDetails{
+    position:  absolute;
+    padding: 0px 0 0 0px;
+    margin: 70px 0px 0px -2px;
+    text-align: left; 
+    width:978px;
+}
+/*******Start code to add class @Author:PRIYA07OCT13***********/
+.border-color-grey-bottom-dotted {
+    border-bottom:   #A4A4A4 1px dotted;
+}
+.vertical_line{
+    width: 0px;
+    height: 100%;
+    background-color: silver;
+    float: left;
+    border: ridge 1px silver;
+}
+.border-grey-top{
+    border-top: #A4A4A4 1px solid;
+    width:100%
+}
+
+.bgTransNoBorderBlackArial12Left{
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#000000;
+    font-size:12px;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+/*******Start code to change border @Author:PRIYA09OCT13***********/
+.bgTransNoBorderBlackArial12Left:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#000000;
+    font-size:12px;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgTransNoBorderBlackArial12Left:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#000000;
+    font-size:12px;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+/*******End code to change border @Author:PRIYA09OCT13***********/
+.right_align{
+    text-align: right;
+}
+.dropDownToSelectWt{
+    position: absolute;
+    width:40px;
+    height:40px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 200;
+    font-size:10px;
+    color:#000000;
+}
+.bgTransNoBorderGreenArial12Left {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#00A000;
+    font-size:12px;
+    font-weight:bold;
+    text-align: left;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgTransNoBorderRedArial12Left {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#FF0000;
+    font-size:12px;
+    font-weight:bold;
+    text-align: left;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.redFont{
+    color:#FF0000;  
+}
+.greenFont{
+    color: #068106;
+/*background: #d8f6d8;
+border: 1px solid #0d0;*/
+}
+/*******End code to add class @Author:PRIYA07OCT13***********/
+/*******Start code to add class @Author:PRIYA11OCT13***********/
+.borderLavender{
+    border:solid 1px lavender;
+    background-color:transparent;
+}
+.borderLavender:focus{
+    border:solid 1px lavender;
+    background-color:transparent;
+}
+.borderLavender:hover{
+    border:solid 1px lavender;
+    background-color:transparent;
+}
+/*******End code to add class @Author:PRIYA11OCT13***********/
+/*******Start code to add class @Author:PRIYA15OCT1"***************/
+.lgn-txtfield-right{
+    border:solid 1px #AF7817;
+    background-color:#F9F9F9;
+    color: #A4A4A4;
+    width: 150px;
+}
+.textfield_space-right{
+    border:none;
+    background-color:#F9F9F9;
+    color: #804000;
+    font-family:Calibri;
+    font-size:11px;
+    font-weight:bold;
+    text-align: right;
+    width: 120px;
+    height: 12px;
+}
+.textfield_space-right:focus{
+    border:none;
+    background-color:#F9F9F9;
+    color: #804000;
+    font-family:Calibri;
+    font-size:11px;
+    font-weight:bold;
+    text-align: right;
+    width: 120px;
+    height: 12px;
+}
+.textfield_space-right:hover{
+    border:none;
+    background-color:#F9F9F9;
+    color: #804000;
+    font-family:Calibri;
+    font-size:11px;
+    font-weight:bold;
+    text-align: right;
+    width: 120px;
+    height: 12px;
+}
+/*******End code to add class @Author:PRIYA15OCT13***************/
+/*******Start code to add class @Author:PRIYA22OCT13***************/
+.brown_bold12_arial {
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+.blueNormal{
+    color: #059BD8;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:Normal;
+}
+.blueNormal:focus{
+    color: #000080;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:Normal;
+}
+.blueNormal:hover{
+    color: #000080;
+    font-family:Calibri;
+    font-size:12px;
+    font-weight:Normal;
+}
+.spaceLeft175
+{
+    margin:0px 0px 0px 175px;
+
+}
+.lgn-txtfield14withoutborderFixedBlue {
+    border:none;
+    background-color:transparent;
+    color: #0000FF;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+}
+.lgn-txtfield14withoutborderFixedBlue:focus {
+    border:none;
+    background-color:transparent;
+    color: #0000FF;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+}
+.lgn-txtfield14withoutborderFixedBlue:hover {
+    border:none;
+    background-color:transparent;
+    color: #0000FF;
+    font-family:Calibri;
+    font-size:14px;
+    font-weight:bold;
+    text-align: right;
+}
+.darkblueFont{
+    color:#0000FF;
+}
+.blue12ArialNormal {
+    color:#000080;
+    font-size:12px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.cust-btn-lnk12-orange{
+    border:solid 0px #D76B00;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:12px;
+    font-weight:normal;
+    float:left;
+    cursor:pointer;
+    background:none;
+    color:#D76B00;
+    height:18px;
+    text-align:right;
+}
+.cust-btn-lnk12-orange:focus{
+    border:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:none;
+    color:#800000;
+}
+.cust-btn-lnk12-orange:hover{
+    border:none;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:12px;
+    font-weight:normal;
+    cursor:pointer;
+    background:none;
+    color:#800000;
+}
+
+/*******End code to add class @Author:PRIYA22OCT13***************/
+/*******Start code to add class @Author:PRIYA24OCT13***************/
+.paddingTop4{
+    padding-top: 4px;    
+}
+.blackArial11Font{
+    color:#000000;
+    font-size:14px;
+    font-weight:500;
+    font-family: Calibri;
+}
+.blackArial10Font{
+    color:#000000;
+    font-size:10px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.blue11ArialNormal {
+    color:#000080;
+    font-size:11px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.brown{
+    color:#800000;
+}
+.black{
+    color:#000000;
+}
+@media print {
+    .noPrint {
+        display:none;
+    }.brownMess13Arial{
+        color:#000000;
+    }.blueNormal{
+        color:#000000;
+    }.redFont{
+        color:#000000; 
+    }.greenFont{
+        color:#000000; 
+    }.darkblueFont{
+        color:#000000; 
+    }.brown_bold12_arial{
+        color:#000000;  
+    }.cust-btn-lnk12-orange{
+        color:#000000;  
+    }.blue12ArialNormal{
+        color:#000000;  
+    }
+}
+.posAbsolute {
+    position: absolute;
+}
+/******Start code to chnage width @Author:PRIYA22NOV13***********/
+.ddDelButt{
+    padding-left:302px;
+    padding-top:1px;
+}
+/*********Start code to add class @Author:PRIYA26FEB14**********/
+.ddDelBut{
+    padding-left: 243px;
+    padding-top:1px;
+}
+/*********End code to add class @Author:PRIYA26FEB14**********/
+/******End code to chnage width @Author:PRIYA22NOV13***********/
+/*******End code to add class @Author:PRIYA24OCT13***************/
+/********Start code to add class @Author:PRIYA25OCT13******************/
+.ddDelButtMargin15{
+    margin-left: 3px;
+    margin-top: -15px;
+}
+/********End code to add class @Author:PRIYA25OCT13******************/
+/********Start code to add class @Author:PRIYA26OCT13******************/
+.dblue{
+    color:#000080;
+}
+.checkbox:focus  {
+    outline:1px dotted #2cadff;
+} 
+.padLeft6
+{
+    padding: 0px 0px 0px 6px;
+}
+.selectfieldsize{
+    width:82px;
+}
+.orange{
+    color:#D76B00;
+}
+/********End code to add class @Author:PRIYA26OCT13******************/
+/********Start code to add class @Author:PRIYA27OCT13******************/
+.padLeft7{
+    padding: 0px 0px 0px 7px;
+}
+.tnr_nr_11_red {
+    color:#B80000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.reddish{
+    color:#810000;  
+}
+/********End code to add class @Author:PRIYA27OCT13******************/
+/********Start code to add class @Author:PRIYA31OCT13*************/
+.fw_b{
+    font-weight:bold; 
+}
+.fw_n{
+    font-weight:normal; 
+}
+.ff_tnr{
+    font-family: Calibri;
+}
+.ff_calibri{
+    font-family: Calibri;    
+    color: #000;
+    
+}
+/*.ff_arial{
+    font-family: Calibri;
+}*/
+.sell_Inv_table{
+    font-size:10px; 
+}
+.fs_9Half{
+    font-size:9.5px; 
+}
+.fs_10{
+    font-size:10px; 
+}
+.fs_11{
+    font-size:14px; 
+}
+.fs_12{
+    font-size:12px; 
+}
+.fs_13{
+    font-size:14px; 
+}
+.fs_14{
+    font-size:14px; 
+}.fs_15{
+    font-size:15px; 
+}
+.fs_16{
+    font-size:16px; 
+}
+.fs_18{
+    font-size:18px; 
+}
+.fs_20{
+    font-size:20px; 
+}
+.fs_22{
+    font-size:22px; 
+}
+.fs_16:focus{
+    font-size:16px; 
+}
+.fs_16:hover{
+    font-size:16px; 
+}
+/******Start code to add class @Author:PRIYA07NOV13*********/
+.fs_24{
+    font-size:24px; 
+}
+/******End code to add class @Author:PRIYA07NOV13*********/
+/******Start code to change classname @Author:PRIYA07NOV13******/
+.bc_color_darkblue{
+    /*background-color: #1b5fa8;*/
+    background:#92c7ff;
+    color:#FFFFFF;
+}
+/******End code to change classname @Author:PRIYA07NOV13******/
+.br_1{
+    border: #A4A4A4 1px solid;
+}
+/********End code to add class @Author:PRIYA31OCT13*************/
+/******Start code to add class @Author:PRIYA07NOV13******/
+/******Start code to chnge font weight @Author:PRIYA26NOV13********************/
+.bc_color_brown{
+    border:solid 1px #AF7817;
+}
+.bg_transparent{
+    background : transparent; 
+}
+.textarea_220w {
+    width: 220px;
+    height: 55px;
+    border: 1px solid #AF7817;
+    padding: 0px;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    overflow: auto;
+    resize: none;
+}
+.select_border_none {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #B8860B;
+    font-family:calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+/*******************Start code to change color @Author:PRIYA15NOV13****************/
+.select_border_none:focus {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #2cadff;
+    font-family:calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+.select_border_none:hover {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #2cadff;
+    font-family:calibri;
+    font-size:13px;
+    font-weight:normal;
+}
+/*******************End code to change color @Author:PRIYA26NOV13*****************/
+/*******************Start code to add shadow @Author:PRIYA26NOV13 ****************/
+.input_border_red {
+    border:solid 1px #a9a9a9!important;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow:none!important;
+}
+.input_border_red_middle {
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.input_border_grey {
+    background-color:#FFFFFF;
+    color: #524F4F!important;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 0px;
+    box-shadow: none!important;
+    border: solid 1px #a9a9a9!important;
+}
+/*******************End code to add shadow @Author:PRIYA26NOV13 ****************/
+.textarea_border_grey{
+    width: 198px;
+    border: 1px solid #a9a9a9!important;
+    padding: 0px;
+    color: #524F4F!important;;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: none!important;
+}
+.height_30{
+    height: 30px;
+}
+.width_196{
+    width: 196px;
+}
+/**************Start code to change class name @Author:PRIYA26NOV13******************/
+.width_198{
+    width: 198px;
+}
+/**************End code to change class name @Author:PRIYA26NOV13******************/
+.width_85{
+    width: 85px;
+}
+/**************Start code to add shadow @Author:PRIYA26NOV13*****************/
+/***************Start code to change font family @Author:PRIYA12NOV13****************/
+.select_border_red{
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+/***************End code to change font family @Author:PRIYA12NOV13****************/
+/*.select_border_grey{
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family:calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}*/
+/**************End code to add shadow @Author:PRIYA26NOV13*****************/
+/**************Start code to add border_radius @Author:PRIYA08NOV13****************/
+/***************Start code to change color on focus @Author:PRIYA28NOV13***********/
+.whitBgRightBorderWhite{
+    width: 25px;
+    background: white;
+    border-radius: 6px;
+    border-left: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.whitBgRightBorderWhite:focus{
+    width: 25px;
+    background: white;
+    border-left: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#FFFFFF;
+    color: #2cadff;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.whitBgRightBorderWhite:hover{
+    width: 25px;
+    background: white;
+    border-left: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#FFFFFF;
+    color: #2cadff;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.whitBgLeftBorderWhite{
+    background: white;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.whitBgLeftBorderWhite:focus{
+    background: white;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:#FFFFFF;
+    color: #2cadff;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.whitBgLeftBorderWhite:hover{
+    background: white;
+    border-right: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    background-color:#FFFFFF;
+    color: #2cadff;
+    font-family: calibri;
+    font-size:13px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+/***************End code to change color on focus @Author:PRIYA28NOV13***********/
+/**************End code to add border_radius @Author:PRIYA08NOV13****************/
+/**************Start code to add class @Author:PRIYA15NOV13***************/
+.border-bottom_palegrey {
+    border-bottom: #F2F2F2 1px solid;
+}
+.border-right_grey {
+    border-right: #F2F2F2 2px solid;
+}
+.border-right_grey_1px {
+    border-right: #F2F2F2 1px solid;
+}
+/**************End code to add class @Author:PRIYA15NOV13***************/
+/**************Start code to add class @Author:PRIYA19NOV13*****************/
+.selectWithoutArrow_calibri_12 {
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    font-size:12px;
+    border:none;
+    color: #000000;
+    background-color: transparent;
+    font-family:calibri;
+}
+.selectWithoutArrow_calibri_12:focus {
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    font-size:12px;
+    border:none;
+    color: #000000;
+    background-color: transparent;
+    font-family:calibri;
+}
+.selectWithoutArrow_calibri_12:hover {
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    font-size:12px;
+    border:none;
+    color: #000000;
+    background-color: transparent;
+    font-family:calibri;
+}
+/**************End code to add class @Author:PRIYA19NOV13*****************/
+/**************Start code to add class @Author:PRIYA13DEC13************/
+#ddHeader
+{
+    width:92%;
+    margin:0;
+    border-bottom:0px solid #FDD017; 
+    position: relative;
+    top: 0px;
+    z-index: 2000; 
+    background:url('../images/gbxbg.png') top repeat;
+}
+/**************End code to add class @Author:PRIYA13DEC13************/
+/**************Start code to add class @Author:PRIYA22NOV13************/
+.bc_grey{
+    background-color: #FAFAFA;
+}
+.select_border_none_black {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:11px;
+    font-weight:normal;
+}
+.select_border_none_black:focus {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:11px;
+    font-weight:normal;
+}
+.select_border_none_black:hover {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:11px;
+    font-weight:normal;
+}
+.select_border_none_black_14 {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.select_border_none_black_14:focus {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+.select_border_none_black_14:hover {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-family:calibri;
+    font-size:14px;
+    font-weight:normal;
+}
+/**************End code to add class @Author:PRIYA22NOV13************/
+/**************Start code to add class @Author:PRIYA24NOV13*******************/
+.padLeft3{
+    padding-left: 3px;    
+}
+.height_43{
+    height: 43px;
+}
+/**************End code to add class @Author:PRIYA24NOV13*******************/
+/***************Start code to add class @Author:PRIYA26NOV13****************/
+.select_border_grey_14{
+    border:solid 1px #AF7817;
+    border-radius: 5px;
+    background-color:#F9F9F9;
+    color: #A4A4A4;
+    font-family:calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.padLeft100
+{
+    padding: 0px 0px 0px 100px;
+}
+.padLeft4{
+    padding-left: 4px;    
+}
+.padLeft1{
+    padding-left: 1px;    
+}
+.margin1pxAll {
+    padding: 1px 4px 1px 4px;
+}
+/***************Start code to add class @Author:PRIYA26NOV13****************/
+/***************Start code to add class @Author:PRIYA27NOV13****************/
+.paddingTop3{
+    padding-top: 3px;    
+}
+.width_50{
+    width: 50px;  
+}
+.width_115{
+    width: 115px;    
+}
+.width_147{
+    width: 147px;    
+}
+div.selectStyled_red {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: transparent url('../images/selectBack.png') no-repeat right;
+    border-radius:5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+    min-width: 55px;
+    height: 20px;
+}
+div.selectStyled_red select {
+    width:140% /* this percentage effectively extends the drop down button out of view */;
+    background-color:transparent /* this hides the select's background making any styling visible from the div */;
+    background-image:none;
+    -webkit-appearance: none /* this is required for Webkit browsers */;
+    border:none;
+    box-shadow:none;
+}
+/***************End code to add class @Author:PRIYA27NOV13****************/
+/***************Start code to add class @Author:PRIYA28NOV13****************/
+/***************Start code to change width @Author:ANUJA30JUN15****************/
+.input_border_grey_right {
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+    text-align: right;
+    width: 140px;
+    padding-right: 66px;
+}
+/***************Start code to change width @Author:ANUJA30JUN15****************/
+/***************End code to add class @Author:PRIYA28NOV13****************/
+/***************Start code to add class @Author:PRIYA29NOV13****************/
+.padLeft9
+{
+    padding: 0px 0px 0px 9px;
+}
+.selectWithoutArrow_noFont {
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    border:none;
+    color: #000000;
+    background-color: transparent;
+    font-family:calibri;
+}
+.selectWithoutArrow_noFont:focus {
+    -moz-appearance: none;
+    /*text-indent: 10px;*/
+    text-overflow: '';
+    border:none;
+    background: #fff;
+color: #007bff;
+border: 1px solid #007bff;
+    background-color: transparent;
+    font-family:calibri;
+}
+.selectWithoutArrow_noFont:hover {
+    -moz-appearance: none;
+    text-indent: 10px;
+    text-overflow: '';
+    border:none;
+    color: #000000;
+    background-color: transparent;
+    font-family:calibri;
+}
+/***************End code to add class @Author:PRIYA29NOV13****************/
+/***************Start code to add class @Author:PRIYA30NOV13************/
+.input_border_red_center{
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.input_border_grey_center{
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow:none!important;
+    border: solid 1px #9b9898!important;
+    text-align: center;
+}
+.input_border_grey_center:focus { 
+    outline: none; 
+}
+/***************Start code to add class @Author:SHE15DEC15************/
+.input_border_red_without_shadow{
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    text-align: center;
+}
+.input_border_without_shadow{
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    border: solid 1px #ccc;
+    text-align: center;
+}
+.input_border_grey_wd_shdw {
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    border: solid 1px #ccc;
+}
+.textarea_border_grey_wd_shdw{
+    width: 198px;
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+}
+
+.input_border_red_middle_wd_shdw {
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+}
+
+div.selectStyledWdShdw {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: white no-repeat right;
+    border-radius:0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    border: solid 1px #ccc;
+    height: 20px;
+}
+/*start code to change height from @Author:SHE28JAN16*/
+div.selectStyledWdShdw {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: white no-repeat right;
+    border-radius:0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0);
+    border: solid 1px #ccc;
+    height: 24px;
+}
+/* end code to change height from @Author:SHE28JAN16*/
+div.selectStyledWdShdw select {
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border:none;
+    background-color: transparent;
+    font-family:Calibri;
+}
+
+.select_border_redWdShdw{
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    /*color: #B8860B;*/
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.margRight{ margin-right:10px;}
+
+/***************End code to add class @Author:SHE15DEC15***********/
+
+.hrPaleGrey {
+    border: 0;
+    width: 100%;
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+    height: 1px;
+}
+/***************End code to add class @Author:PRIYA30NOV13************/
+/***************Start code to add class @Author:PRIYA03DEC13************/
+.spaceLeft36
+{    margin:0px 0px 0px 36px;
+}
+/***************End code to add class @Author:PRIYA03DEC13************/
+/***************Start code to add class @Author:PRIYA08DEC13************/
+.padding2pxAll {
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left:  4px;
+}
+.textBoxCurveTop0px{
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-top: solid 0px #ccc;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right:  solid 1px #ccc;
+}
+.textBoxCurveTop0px:hover{
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-top: solid 0px #ccc;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right:  solid 1px #ccc;
+}
+.textBoxCurveTop0px:focus{
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-top: solid 0px #ccc;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right:  solid 1px #ccc;
+}
+/***************Start code to chnage width @Author:PRIYA28DEC13**********/
+.textarea-A5{
+    width:135mm;
+    height: 40px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+.textarea-A5:focus{
+    width:135mm;
+    height: 40px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+.textarea-A5:hover{      
+    width:135mm;
+    height: 40px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+
+.textarea-4Inch{
+    width: 101.6mm;
+    height: 20px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+.textarea-4Inch:focus{
+    width: 101.6mm;
+    height: 20px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+.textarea-4Inch:hover{
+    width: 101.6mm;
+    height: 20px;
+    border: 0px solid #AF7817;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: vertical;
+}
+/***************End code to chnage width @Author:PRIYA28DEC13**********/
+.blue_dark{
+    color: #003366;
+}
+/***************End code to add class @Author:PRIYA08DEC13************/
+.border-color-left-dotted {
+    border-left:   #A4A4A4 1px dotted;
+}
+.border-color-right-dotted {
+    border-right:   #A4A4A4 1px dotted;
+}
+.tnr_nr_12_red {
+    color:#B80000;
+    font-size:12px;
+    font-weight:normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.paddingRight15{
+    padding-right: 15px;   
+}
+.padLeft8{
+    padding-left: 15px;   
+}
+.padLeft20{
+    padding-left: 20px;  
+}
+.paddingRight40{
+    padding-right: 40px;     
+}
+.border_bottom_palegrey_1px{
+    border-bottom: #E6E6E6 solid 1px;
+}
+.border_top_palegrey_1px{
+    border-top: #E6E6E6 solid 1px;
+}
+.height_25{
+    height: 25px;
+}
+/**********Start code to add class @Author:PRIYA03JUN14******************/
+.height_25:focus{
+    height: 25px;
+}
+.height_25:hover{
+    height: 25px;
+}
+
+.height_20{
+    height: 20px;
+}
+/**********Start code to add class @Author:PRIYA03JUN14******************/
+.height_20:focus{
+    height: 20px;
+}
+.height_20:hover{
+    height: 20px;
+}
+/**********End code to add class @Author:PRIYA03JUN14******************/
+.inv_3inch_image{
+    width: 20px;
+    height: 50px;
+}  
+/********Start code to add class @Author:PRIYA06JAN14**********/
+.width_67{
+    width: 67px;  
+}
+/********End code to add class @Author:PRIYA06JAN14**********/
+/********Start code to add class @Author:PRIYA07JAN14**********/
+.width_125{
+    width: 123px;  
+}
+/********End code to add class @Author:PRIYA07JAN14**********/
+/********Start code to add class @Author:PRIYA19JAN14*******************/
+.blackCalibri13Font{
+    color:#000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+}
+.brwnCalibri13Font{
+    color:#B80000;
+    font-size:14px;
+    font-weight:600;
+    font-family: calibri;
+    text-align: center
+}
+.orangeCalibriLink {
+    color: #D76B00;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+}
+/********End code to add class @Author:PRIYA19JAN14*******************/
+.padBott5{
+    padding-bottom: 5px;
+}
+/*******Start code to add class @Author:PRIYA30JAN14**********/
+.textareaCalibri{
+    border: 1px solid #ccc;
+    padding: 0px;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.textareaCalibri:focus{
+    border: 1px solid #ccc;
+    padding: 0px;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+.textareaCalibri:hover{
+    border: 1px solid #ccc;
+    padding: 0px;
+    background-color:#FFFFFF;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+/*******End code to add class @Author:PRIYA30JAN14**********/
+.input_border_blackFont_center{
+    background-color:#FFFFFF;
+    color: #000000;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+    text-align: center;
+    width: 95px;  /* this add for chrome @Author:RUTUJA31MAR20 */
+
+}
+/******Start code to add class @Author:PRIYA06FEB14**********/
+@media print {
+    .noPrint{
+        display: none;
+    }
+    .printVisibilityHidden{
+        visibility: hidden;
+    }
+}
+/******End code to add class @Author:PRIYA06FEB14**********/
+/***********Start code to add class @Author:PRIYA06FEB14*************/
+.noBorder {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-size:14px!important;
+}
+.noBorder:focus {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-size:14px;
+}
+.noBorder:hover {
+    border:none;
+    background-color:transparent;
+    font-family:calibri;
+    color: #000000;
+    font-size:14px;
+}
+/***********End code to add class @Author:PRIYA06FEB14*************/
+.marTopMin15{
+    margin-top: -15px;
+}
+.paddingRight30{
+    padding-right: 28px;
+}
+/********Start code to add class @Author:PRIYA10FEB14**************/
+.inputBox12CalibriRed{
+    color: #B8860B;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+.inputBox12CalibriRed:hover{
+    color: #B8860B;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+.inputBox12CalibriRed:focus{
+    color: #B8860B;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+    border: 1px solid #A4A4A4;
+}
+/*.inputBox14CalibriReqCenter:focus{
+    color: #B8860B;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}*/
+.inputBox14CalibriReqCenter{
+    color: #B8860B;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+    text-align: center;
+}
+/*.inputBox14CalibriReqCenter:hover{
+    color: #B8860B;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+    text-align: center;
+}*/
+/********End code to add class @Author:PRIYA10FEB14**************/
+/********Start code to add class @Author:PRIYA17FEB14***********/
+.blackCalibri13FontBold{
+    color:#000000;
+    font-size:14px;
+    font-weight:bold;
+    font-family: calibri;
+}
+/********End code to add class @Author:PRIYA17FEB14***********/
+/********Start code to add class @Author:PRIYA20FEB14**************/
+.blue_bright{
+    color:  #2E64FE;
+}
+.lavender{
+    color:  #8181F7;
+}
+.border_none {
+    border:none;
+    background-color:transparent;
+}
+.border_none:focus {
+    border:none;
+    background-color:transparent;
+}
+.border_none:hover {
+    border:none;
+    background-color:transparent;
+}
+.textarea_sms {
+    border:solid 1px #ccc;
+    border-radius: 6px;
+    background-color:#FFFFFF;
+    color: #B8860B;
+    font-family: calibri;
+    font-size:14px;
+    font-weight:normal;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    width: 206px;
+    height: 50px;
+}
+.padLeft50{
+    padding:0px 0px 0px 200px;
+}
+.paddingBott15{
+    padding-bottom: 15px;    
+}
+/********End code to add class @Author:PRIYA20FEB14**************/
+/********Start code to add class @Author:PRIYA22FEB14**************/
+/*.textarea{
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}*/
+.width330 {
+    width: 339px;
+}
+.height_50{
+    height: 50px;
+}
+div.selectStyledBorderGrey {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    background: transparent url('../images/selectBack.png') no-repeat right;
+    border-radius:6px;
+    min-width: 55px;
+}
+div.selectStyledBorderGrey select {
+    width:140%;
+    background-color:transparent;
+    background-image:none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    box-shadow:none;
+}
+.brown_pale{
+    color: #804000;
+}
+.btn-lnk{
+    border:none;
+    font-family:calibri;
+    cursor:pointer;
+    background:none;
+    color:#D76B00;
+    height:20px;
+    width:150px;
+    text-align:left;
+}
+.btn-lnk:focus{
+    border:none;
+    font-family:calibri;
+    cursor:pointer;
+    background:none;
+    color:#D76B00;
+    height:20px;
+    width:150px;
+    text-align:left;
+}
+.btn-lnk:hover{
+    border:none;
+    font-family:calibri;
+    cursor:pointer;
+    background:none;
+    color:#D76B00;
+    height:20px;
+    width:150px;
+    text-align:left;
+}
+.grey_dark{
+    color: #6c7b83;
+}
+/********End code to add class @Author:PRIYA22FEB14**************/
+/**********Start code to add class @Author:PRIYA25FEB14*****************/
+.itemListDiv {
+    position: absolute;
+    width:190px;
+    height:100px;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 2100;
+}
+/**********End code to add class @Author:PRIYA25FEB14*****************/
+/**********Start code to add class @Author:PRIYA28FEB14*****************/
+.border_none_right {
+    text-align: right;
+    border:none;
+    background-color:transparent;
+}
+.border_none_right:focus {
+    text-align: right;
+    border:none;
+    background-color:transparent;
+}
+.border_none_right:hover {
+    text-align: right;
+    border:none;
+    background-color:transparent;
+}
+/**********End code to add class @Author:PRIYA28FEB14*****************/
+@media print {
+    .border-color-grey-rb{
+        border-bottom: #A4A4A4 1px solid;
+        border-right: #A4A4A4 1px solid;
+    }
+    .border-color-grey-left {
+        border-left:  #A4A4A4 1px solid;
+    }
+    .border-color-grey-b {
+        border-bottom: #A4A4A4 1px solid;
+    }
+
+}
+/**********Start code to add class @Author:PRIYA21MAR14******************/
+.paddingLeft40{
+    padding-left: 40px;    
+}
+/**********End code to add class @Author:PRIYA21MAR14******************/
+/**********Start code to add class @Author:PRIYA24MAR14*********************/
+.font_color_white{
+    color:#fff;
+}
+.font_color_black{
+    color: #000000;
+}
+.font_color_blue{
+    color: #0000C8;
+}
+.font_color_lightBlue{
+    color: #059BD8;
+}
+.font_color_brightBlue{
+    color: #2E64FE;
+}
+.font_color_darkBlue{
+    color: #003366;
+}
+.font_color_maroon{
+    color: #800000;
+}
+.font_color_red{
+    color: #B80000;
+}
+.font_color_brown{
+    color: #804000;
+}
+.font_color_green{
+    color: #00A000;
+}
+.font_color_orange{
+    color: #D76B00;
+}
+.font_color_grey{
+    color: #444444;
+}
+.font_color_yellow{
+    color: #FFFF00;
+}
+.spaceLeft27
+{
+    margin:0px 0px 0px 27px;
+
+}
+.spaceLeft33
+{
+    margin:0px 0px 0px 33px;
+
+}
+.A4-size{
+    width:100%;
+    height: auto;
+}
+#A4-size{
+    width:100%;
+    height: auto;
+}
+.A4-size1{
+    width:100%;
+    height: auto;
+}
+/**********End code to add class @Author:PRIYA24MAR14*********************/
+/**********Start code to add class @Author:PRIYA25MAR14*****************/
+
+.textarea_a5_content{
+    border: 0px solid #ccc;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+}
+.textarea_a5_content:focus{
+    border: 0px solid #AF7817;
+    color: #000000;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    float: left;
+    resize: none;
+}
+.textarea_a5_content:hover{
+    border: 0px solid #AF7817;
+    color: #000000;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    float: left;
+    resize: none;
+}
+/**********End code to add class @Author:PRIYA25MAR14*****************/
+/**********Start code to add class @Author:PRIYA31MAR14*****************/
+.cust_textarea{
+    border: 1px solid #ccc;
+    padding: 0px;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+/**********End code to add class @Author:PRIYA31MAR14*****************/
+/**********Start code to add class @Author:PRIYA08APR14*****************/
+.textarea{
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow:none!important;
+    padding:5px!important;
+}
+.textarea:focus{
+    outline: none;
+}
+#a6widthdiv{
+    width:92mm;
+}
+.A6-main-table{
+    width: 96mm;
+    border: #000000 1px solid;
+}
+.a5-logo-image{
+    width: 70px;
+    height: 70px;
+/*max-width: 160px;
+max-height: 120px;*/
+} 
+/*##################################################################################################################################*/
+/*START YUVRAJ ADD THIS CLASS FOR RETAILS SOFTWARE FOR INVOICE A5 LOGO IMAGES SHOW 100PX AND ADD CSS OGCSS.CSS LINE @YUVRAJ 02082022*/
+/*###############################################################################################################################*/
+.omretailImgWidthheight{
+    width: 100px;
+    height: 100px;
+} 
+/*###############################################################################################################################*/
+/*END YUVRAJ ADD THIS CLASS FOR RETAILS SOFTWARE FOR INVOICE A5 LOGO IMAGES SHOW 100PX AND ADD CSS OGCSS.CSS LINE @YUVRAJ 02082022*/
+/*###############################################################################################################################*/
+/**********Start code to add class @Author:PRIYA18APR14************/
+.paddingBott2 {
+    padding-bottom: 2px;
+}
+/**********End code to add class @Author:PRIYA18APR14************/
+.paddingRight2{
+    padding-right: 2px;    
+}
+.border {
+    border: 1px solid #000000;
+}
+/*****************Start code to add class @Author:PRIYA25APR14*********/
+/*****************End code to add class @Author:PRIYA25APR14*********/
+.textarea_black{
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.textarea_black:focus{
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.textarea_black:hover{
+    border: 1px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.paddBott3 {
+    padding-bottom: 3px;
+}
+.width_260mm{
+    width:260mm; 
+}
+/**************Start code to add class @Author:PRIYA27APR14*************/
+.display_loan_notice_lang {
+    position: fixed; 
+    padding: 0px 0 0 0px;
+    margin-left: 100px;
+    margin-top: 235px;
+    background-color: white; 
+    text-align: left; 
+    border: 0px solid #000000;	
+    z-index:99999;
+}
+/**************End code to add class @Author:PRIYA27APR14*************/
+/*****************Start code to add class @Author:PRIYA27MAY14*********/
+.width_450pr{
+    width:450px;    
+}
+.width_150pr{
+    width:150px;    
+}
+.widthPX97{
+    width:97px;
+}
+/*****************End code to add class @Author:PRIYA27MAY14*********/
+/*****************Start code to add class @Author:PRIYA28MAY14*********/
+.width_627pr{
+    width:727px;  
+}
+.width_120pr{
+    width:120px;  
+}
+.width_50pr{
+    width:50px;    
+}
+.width{
+    width: 1000px;  
+}
+.width_300pr{
+    width:300px;    
+}
+/*****************End code to add class @Author:PRIYA28MAY14*********/
+/*****************Start code to add class @Author:PRIYA29MAY14*********/
+.spaceLeft2{
+    margin:0px 0px 0px 2px;
+}
+.spaceLeft5{
+    margin:0px 0px 0px 5px;
+}
+.widthPX70{
+    width:70px;
+}
+.widthPX60{
+    width:60px;
+}
+.widthPX50{
+    width:50px;
+}
+.widthPX100{
+    width:100px;
+}
+.widthPX200{
+    width:200px;
+}
+.width_110pr{
+    width:90px;
+}
+.widthPX980{
+    width:980px;
+}
+.main_link_blue14_pr{
+    color:blue;
+    font-size:15px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.fs_14_pr{
+    font-size:14px;    
+}
+.fs_11_pr{
+    font-size:11px; 
+}
+.fs_13_pr{
+    font-size:13px; 
+}
+.fs_12_pr{
+    font-size:12px; 
+}
+.print{
+    visibility: hidden;
+}
+.widthPX115{
+    width:115px;
+}
+.widthPX125{
+    width:125px;
+}
+.width_60{
+    width:60px;
+}
+.width_85_pr{
+    width:70px;  
+}
+.widthPX55{
+    width:55px; 
+}
+.widthPX55_DATE{
+    width:55px; 
+}
+.widthPX55_VALUE{
+    width:55px; 
+}
+.widthPX65{
+    width:65px; 
+}
+.widthPX10{
+    width:10px;
+}
+.widthPX30{
+    width:30px;
+}
+.spaceRight5_pr
+{
+    margin:0px 5px 0px 0px;
+}
+.spaceLeft5_pr{
+    margin:0px 0px 0px 5px;
+}
+.bc_pale_grey{
+    background-color:#EEE;
+}
+.width_100_dd{
+    width:100px;  
+}
+.width_295_dd{
+    width:295px;  
+}
+.width_80_dd{
+    width:80px;  
+}
+.width_132_dd{
+    width:132px;  
+}
+.width_627_dd{
+    width:727px;   
+}
+.width_120_dd{
+    width:120px;   
+}
+.width_300_dd{
+    width:400px;
+}
+.width_70_dd{
+    width:70px;
+}
+.width_240_dd{
+    width:240px;
+}
+.width_75_dd{
+    width:75px;
+}
+/*****Start code to add class @Author:PRIYA29OCT14****************/
+.width_90_dd{
+    width:90px;  
+}
+.width_60_dd{
+    width:60px;  
+}
+/*****End code to add class @Author:PRIYA29OCT14****************/
+.brown_normal12_calibri {
+    color:#800000;
+    font-size:14px;
+    font-family: calibri;
+    font-weight:600;
+}
+.brown_normal11_calibri {
+    color:#800000;
+    font-size:14px;
+    font-family: calibri;
+    font-weight:600;
+}
+.black_normal11_calibri {
+    color:#000000;
+    font-size:14px;
+    font-family: calibri;
+    font-weight:600;
+}
+.red_normal11_calibri {
+    color:#FF0000;
+    font-size:14px;
+    font-family: calibri;
+    font-weight:600;
+}
+/**********Start code to add class @Author:PRIYA31MAY14 *******************/
+.zIndex9999{
+    position: relative;
+    z-index: 99999;
+}
+/**********End code to add class @Author:PRIYA31MAY14 *******************/
+/**********Start code to add class @Author:PRIYA04JUN14 *******************/
+.widthPX10{
+    width:10px;
+}
+.widthPX300{
+    width:300px;
+}
+.widthPX225{
+    width:225px;
+}
+.widthPX100_ud{
+    width:100px;
+}
+.widthPX50_ud{
+    width:50px; 
+}
+.widthPX80_ud1{
+    width:80px; 
+}
+.widthPX80_ud2{
+    width:80px; 
+}
+/**********End code to add class @Author:PRIYA04JUN14 *******************/
+.hrPaleDashedGrey {
+    border-left: 1px dashed #E6E6E6;	
+    width: 100%;
+}
+#cust_not2_size {
+    width:120mm;
+}
+/*****************End code to add class @Author:PRIYA29MAY14*********/
+@media print {
+    .noPrint {
+        display:none;
+    }
+    #cust_not2_size {
+        width:120mm;
+    }
+    #a6widthdiv{
+        width:92mm;  
+    }
+    table.A6-main-table{
+        width: 96mm;
+        border: #000000 1px solid;
+    }
+    .a5-logo-image{
+        width: 50px;
+        height: 50px;
+    } 
+    table.A4-size1{
+        width:200mm;
+        height: auto;
+    }
+    #A4-size{
+        width:100%;
+        height: auto;
+    }
+    .width_260mm{
+        width:96mm; /******Change in width while display @AUTHOR: SANDY12DEC13******/
+    }
+    /*****************Start code to add class @Author:PRIYA25APR14*********/
+    table.center_atprint_left {
+        text-align: left;
+        float: left;
+    }
+    .textarea_black{
+        border: 0px solid #ccc;
+        padding: 0px;
+        color: #000000;
+        font-size:14px;
+        font-weight:normal;
+        font-family: calibri;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-color:#FFFFFF;
+        overflow: auto;
+        resize: none;
+        border-radius: 0px;
+        float: left;
+        text-align: left;
+        box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    }
+    /*****************End code to add class @Author:PRIYA25APR14*********/
+    /*****************Start code to add class @Author:PRIYA13MAY14*********/
+    .textLabel14CalibriGrey{
+        color: #000000;
+        font-size:14px;
+        font-weight: normal;
+        font-family: Calibri;
+    }
+    /*****************End code to add class @Author:PRIYA13MAY14*********/
+    /*****************Start code to add class @Author:PRIYA27MAY14*********/
+    .a4Width{
+        width:210mm;
+    }
+    .a4Half{
+        width:105mm;
+    }
+    .width_450pr{
+        width:363px;    
+    }
+    .width_150pr{
+        width:100px;    
+    }
+    /*****************End code to add class @Author:PRIYA27MAY14*********/
+    /*****************Start code to add class @Author:PRIYA28MAY14*********/
+    .width_627pr{
+        width:493px;  
+    }
+    .width_120pr{
+        width:100px;  
+    }
+    .width_50pr{
+        width:50px;    
+    }
+    table.width{
+        width: 793px;  
+    }
+    div.width{
+        width: 793px;  
+    }
+    .ff_arial{
+        font-family: Calibri;
+    }
+    .fw_b{
+        font-weight:bold; 
+    }
+    .fs_12{
+        font-size:12px; 
+    }
+    .orange {
+        color:#000000;
+    }
+    .width_300pr{
+        width:400px;    
+    }
+    /*****************End code to add class @Author:PRIYA28MAY14*********/
+    /*****************Start code to add class @Author:PRIYA29MAY14*********/
+    .widthPX96{
+        width:96px;
+    }
+    .widthPX70{
+        width:70px;
+    }
+    .widthPX60{
+        width:60px;
+    }
+    .widthPX50{
+        width:50px;
+    }
+    .tnr_nr_11_red {
+        color:black;
+        font-size:11px;
+        font-weight:normal;
+        font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .lightBlueFont{
+        color:#000000;
+    }
+
+    .widthPX100{
+        width:80px;
+    }
+    .widthPX200{
+        width:150px;
+    }
+    .width_110pr{
+        width:80px;
+    }
+    .blueFont{
+        color:  #000000;
+    }
+    .widthPX980{
+        width:793px;
+    }
+    .width_70pr{
+        width:50px;
+    }
+    .main_link_blue14_pr{
+        color:blue;
+        font-size:12px;
+        font-weight: normal;
+        font-family: Calibri;
+    }
+    .fs_14_pr{
+        font-size:10px;    
+    }
+    .fs_11_pr{
+        font-size:10px; 
+    }
+    .fs_13_pr{
+        font-size:10px; 
+    }
+    .fs_12_pr{
+        font-size:10px; 
+    }
+    .print{
+        visibility: visible;
+    }
+    .widthPX115{
+        width:90px;
+    }
+    .widthPX125{
+        width:95px;
+    }
+    .width_60{
+        width:60px;
+    }
+    .width_85_pr{
+        width:70px;  
+    }
+    .widthPX55{
+        width:40px; 
+    }
+    .widthPX55_DATE{
+        width:45px; 
+    }
+    .widthPX55_VALUE{
+        width:35px; 
+    }
+    .widthPX65{
+        width:65px; 
+    }
+    .widthPX10{
+        width:10px;
+    }
+    .widthPX30{
+        width:30px;
+    }
+    .spaceRight5_pr
+    {
+        margin:0px 2px 0px 0px;
+    }
+    .spaceLeft5_pr{
+        margin:0px 0px 0px 1px;
+    }
+    .width_100_dd{
+        width:100px;  
+    }
+    .width_80_dd{
+        width:70px;  
+    }
+    .width_70_dd{
+        width:70px;
+    }
+    /*****Start code to add class @Author:PRIYA29OCT14****************/
+    .width_90_dd{
+        width:90px;  
+    }
+    .width_60_dd{
+        width:60px;  
+    }
+    /*****End code to add class @Author:PRIYA29OCT14****************/
+    .brown_normal12_calibri {
+        color:#000000;
+        font-size:12px;
+        font-family: calibri;
+    }
+    .bc_grey{
+        background-color:  #E6EEE6;
+    }
+    .text_red_Arial_12_bold {
+        color:#0000FF;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .text_green_Arial_12_bold {
+        color:#0000FF;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    /*****************End code to add class @Author:PRIYA29MAY14*********/
+    /**********Start code to add class @Author:PRIYA04JUN14 *******************/
+    .widthPX10{
+        width:10px;
+    }
+    .widthPX300{
+        width:20px;
+    }
+    .widthPX225{
+        width:20px;
+    }
+    .widthPX100_ud{
+        width:20px;
+    }
+    .widthPX50_ud{
+        width:20px; 
+    }
+    .widthPX80_ud1{
+        width:20px;
+    }
+    /**********End code to add class @Author:PRIYA04JUN14 *******************/
+    .hrPaleDashedGrey {
+        border-left: 1px dashed #000000;	
+        width: 100%;
+    }
+}
+/************Start code to add class @Author:PRIYA10JUN14**************/
+.a4_table{
+    width:200mm;
+    height: auto;
+    border: #C7C5C8 1px solid;
+}
+/************End code to add class @Author:PRIYA10JUN14**************/  
+.textarea_1{
+    border: 0px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    suppressReturn:false;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+}
+.textarea_1:focus{
+    border: 0px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+    suppressReturn:false;
+}
+.textarea_1:hover{
+    border: 0px solid #ccc;
+    padding: 0px;
+    color: #000000;
+    suppressReturn:false;
+    font-family: calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color:#FFFFFF;
+    overflow: auto;
+    resize: none;
+
+}
+.ltblue{
+    color:#A9E2F3
+}
+.margin5 {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: -10px 0px 0px -8px;
+}
+.display_acit_not {
+    position: fixed; 
+    padding: 0px 0 0 0px;
+    float: left;
+    margin-left: -300px;
+    margin-top: 10px;
+    background-color: white; 
+    text-align: left; 
+    border: 0px solid #000000;			
+}
+.calender_class {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin-right: -200px;
+    margin-top: 2px;
+    background-color: white; 
+    text-align: left; 
+    border: 0px solid #000000;	
+    z-index: 100;
+}
+.rad_2{
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.bodyCalender {
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    font-family: Verdana;
+    background-color : #E5E4E2;
+}
+
+.tr {
+    background-color : #E5E4E2;
+}
+
+.th {
+    font-family: Verdana;
+}
+
+a.buttonbar:link, a.buttonbar:visited {
+    font-size        : 9px;
+    padding-top      : 1px;
+    padding-bottom   : 1px;
+    text-decoration  : none;
+    background-color : #E5E4E2;
+    color            : #82CAFA;
+    border           : 0px solid #0000A0;
+}
+a.buttonbar:focus {
+    font-size        : 9px;
+    padding-top      : 1px;
+    padding-bottom   : 1px;
+    background-color : #C2DFFF;
+    border           : 1px solid #0000A0;
+}
+a.buttonbar:hover {
+    font-size        : 9px;
+    padding-top      : 1px;
+    padding-bottom   : 1px;
+    background-color : #C2DFFF;
+    border-radius    : 3px;
+}
+.normal {
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #000000;
+}
+.today {
+    font-family: Verdana;
+    font-size: 8pt;
+    font-weight:bold;
+    color:#0000A0;
+    background-color: #E5E4E2;
+}
+.weekend {
+    font-family: Verdana;
+    font-size: 8pt;
+    color:#FF0000;
+}
+.selected {
+    color: #FFFFFF;
+    background-color: #C00000;
+}
+.event {
+    font-family: Verdana;
+    font-size: 8pt;
+    color: #000000;
+    background-color: #C6D1DC;
+}
+.head {
+    color:black;
+    font:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+.title {
+    color:#000066;
+    font:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+}
+.button {
+    font-family      : Verdana, Arial, Helvetica, sans-serif;
+    font-style       : normal;
+    font-weight      : bold;
+    font-size        : 10px;
+    color            : #000000;
+    background-color : #F0F0F0;
+    border           : 1px solid #000066;
+}
+div.selectStyledBorderLes {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    border-radius:6px;
+    border: none;
+    min-width: 55px;
+    cursor: pointer;
+}
+div.selectStyledBorderLes select {
+    width:140%;
+    background-color:transparent;
+    background-image:none;
+    -webkit-appearance: none;
+    border:none;
+    box-shadow:none;
+}
+.blackGrey{
+    color:#404040;
+}
+/************Start code to add class @Author:PRIYA25JUL14*************/
+.dropDown{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    vertical-align: top;
+    border: #A4A4A4 1px solid;
+    background:#F9F9F9;
+    z-index: 200;
+}
+/************End code to add class @Author:PRIYA25JUL14*************/
+/************Start code to add class @Author:PRIYA26JUL14*************/
+.inputBox14CalibriReq{
+    color: #B8860B;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.inputBox14CalibriReqRight{
+    color: #B8860B;
+    font-size:14px;
+    font-weight: normal;
+    text-align: right;
+    font-family: Calibri;
+}
+.display_supp_pur_div {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: 0px;
+    margin-left: -6px;
+    background-color: ivory; 
+    text-align: left; 
+    border: 1px solid #A4A4A4;	
+    z-index: 10;
+}
+/************End code to add class @Author:PRIYA26JUL14*************/
+/************Start code to add class @Author:PRIYA04AUG14*************/
+.inputBox14CalibriGreyCenter{
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight: normal;
+    font-family: Calibri;
+    text-align: center;
+}
+.inputBox14CalibriGreyRight{
+    color: #A4A4A4;
+    font-size:14px;
+    font-weight: normal;
+    text-align: right;
+    font-family: Calibri;
+}
+/************End code to add class @Author:PRIYA04AUG14*************/
+.border-color-grey-rbbold {
+    border-bottom: #000000 1px solid;
+    border-right: #A4A4A4 1px solid;
+}
+/*********Start code to add class @Author:PRIYA05SEP14***********/
+.file_cust_input_div
+{
+    position: relative; 
+    width:100%; 
+    height:30px; 
+    overflow: hidden;
+    text-align: center;
+    border:solid 0px #800000;
+}
+.border-web-color-golden {
+    border: #AF7817 2px solid;
+    position: absolute;
+    margin: 0px 0px 0px -150px;  
+    background:#FFF8C6;
+}
+/*********End code to add class @Author:PRIYA05SEP14***********/
+.form-control {
+    width:100%;
+    font-size:16px;
+    font-weight: normal;
+    color:#535353;
+    background-color: white;
+    border: 1px solid #b7b6b6;
+    height:35px;
+    margin-bottom:1px;
+    /*border-radius: 3px!important;*/
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+
+/************Start code to add class @Author:PRIYA10SEP14*************/
+.form-control-font13{
+    font-size: 14px !important;  
+}
+.form-control:focus {
+    border-color: #999999;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  
+}
+.form-control-req {
+    font-size: 15px;
+    font-weight: normal;
+    color: #B8860B;
+    background-color: white;
+    border: 1px solid  #b03a2e;
+    height: 26px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/************Start code to add class @Author:PRIYA10SEP14*************/
+.form-control-req:focus {
+    outline: none !important;
+    border:1px solid   #e74c3c;
+    box-shadow: 0 0 8px   #e74c3c;
+}
+.form-control-select_ddown {
+    width: 45px;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: normal;
+    color: grey;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    /*    padding-top: 2px;*/
+    height: 26px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-select_ddown:focus {
+    border: 1px solid #999999;
+}
+.form-control-select_ddown:hover {
+    color: #333333;
+}
+/************End code to add class @Author:PRIYA10SEP14*************/
+/************Start code to add class @Author:PRIYA06OCT14***********/
+.main_middle_common{
+    width:100%;
+    text-align: left;
+    float:left;
+    padding:0px 0px 0px 5px;
+    margin:0px;
+    border:#FD9A00 0px solid;
+}
+.paddingTopBott10{
+    padding:5px 0px 5px 0px;
+}
+.paddingTopBott5{
+    padding:5px 0px 5px 0px;
+}
+.select-control-req-height20 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #B8860B;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    height: 20px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.select-control-req-height20:focus {
+    border-color: #ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control-req-height20 {
+    width:100%;
+    font-size: 14px;
+    font-weight: normal;
+    color:  brown;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    height:28px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-req-height20:focus {
+    border-color: #ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.form-control-height20 {
+    width:100%;
+    font-size:15px;
+    font-weight: normal;
+    color: grey;
+    background-color: #fff;
+    border: 1px solid #9d9d9d;
+    height:28px;
+    /*border-radius:13px !important;*/
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-height20:focus {
+    border-color: #ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.align_center{
+    text-align: center;
+}
+.paddingBott5{
+    padding:0px 0px 5px 0px;
+}
+.align_left{
+    text-align: left;
+}
+.green-wisteria {
+    color: white;
+    background-color: #67c6bf;
+    border-color: "";
+}
+.orange-wisteria {
+    color: white;
+    background-color: #fed7ab;
+    border-color: "";
+}
+.blue-wisteria {
+    color: white;
+    background-color: #5bc0de;
+    border-color: "";
+}
+.blue1 {
+    color: #66CCEE;
+}
+.blue2 {
+    color: #66CCBB;
+}
+.orange1 {
+    color: #FFDDBB;
+}
+.dark_orange1 {
+    color: #e5e5e5;
+    background-color: #EEEEEE;
+    border-color: "";
+}
+.color_white{
+    color: white;  
+}
+.color_white:focus{
+    color: white;  
+}
+.color_white:hover{
+    color: white;  
+}
+/************End code to add class @Author:PRIYA06OCT14***********/
+/************Start code to add class @Author:PRIYA29OCT14***********/
+.girvi-info-popup {
+    z-index: 1000;
+    position: fixed;
+    margin: 50px 0px 0 87px;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left:45%;
+}
+.maroonCalibri13Font{
+    color:#800000;
+    font-size:13px;
+    font-weight:bold;
+    font-family: calibri;
+}
+/************End code to add class @Author:PRIYA29OCT14***********/
+.bc_auto_print{
+    border: 0px solid #000000;
+}
+.girvi-info-popup_list {
+    z-index: 1000;
+    position: fixed;
+    margin: -20px 0px 0 85px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left:45%;
+}
+.disp_girvi-info-popup {
+    z-index: 1000;
+    position: fixed;
+    padding: 0px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left:45%;
+}
+.girvi_info_popup_loans_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 81px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left:45%;
+}
+.girvi_info_popup_trans_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 55px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.girvi_info_popup_tpexp_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 77px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.girvi_info_popup_exp_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 89px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.girvi_info_popup_rel_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 84px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.girvi_info_popup_loss_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 21px 0px 0 77px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.girvi-info-search_list {
+    z-index: 1000;
+    position: fixed;
+    margin: 28px 0px 0 -75px;
+    text-align: left;
+    /*border: 1px solid #F0F0F0;*/
+    width: 80%;
+    top: 5%;
+    transform: translate(-50%, 10%);
+    left: 45%;
+}
+.paddingTop30{
+    padding-top: 30px;    
+}
+.paddingLeft150
+{
+    padding-left: 150px;
+}
+.add_prin_trans_update_div {
+    position: absolute; 
+    padding: 0px 0px 0px 0px;
+    margin: 6px 0px 0px -5px;
+    text-align: left; 
+    border: 2px solid #A4A4A4;
+    border-radius: 6px;
+    width:252px;
+    height: 42px;
+    background-color: #FFFFFF; 
+}
+.textLabel24Calibri:focus{
+    color:#000000;
+    font-size:24px;
+    font-weight:normal;
+    font-family: Calibri;
+}
+.textLabel24Calibri:hover{
+    color:#000000;
+    font-size:24px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+.add_prin_dob_div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 5px 0px 0px -5px;
+    text-align: left; 
+    border: 2px solid #A4A4A4;
+    border-radius: 6px;
+    width:230px;
+    height: 30px;
+    background-color: #FFFFFF; 
+}
+.z_index_1000{
+    z-index: 1000;
+}
+.add_prin_release_panel{
+    position: absolute; 
+    margin: 0px 0 0 -6px;
+    background: #EDEDED; 
+    text-align: left; 
+    border: 1px solid #F0F0F0;
+    width:970px;
+}
+@media print {
+    .main_link_brown18 {
+        color:#000000;
+        font-size:18px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .itemAddPnLabels14ArialLinkGreen {
+        color: #000000;
+        font-size:14px;
+        font-weight: normal;
+        font-family: Calibri;
+    }
+    .itemAddPnLabels14ArialLinkRed {
+        color: #000000;
+        font-size:14px;
+        font-weight: normal;
+        font-family: Calibri;
+    }
+    .brown{
+        color:#000000;
+    }
+    .main_link_brown12 {
+        color:#000000;
+        font-size:12px;
+        font-weight:bold;
+        font-family: Calibri;
+    }
+    .reddish{
+        color:#000000;  
+    }
+    .green {
+        color:  #000000;
+    }
+    .font_color_black{
+        color: #000000;
+    }
+    .font_color_blue{
+        color: #0000C8;
+    }
+    .font_color_lightBlue{
+        color: #059BD8;
+    }
+    .font_color_brightBlue{
+        color: #2E64FE;
+    }
+    .font_color_darkBlue{
+        color: #003366;
+    }
+    .font_color_maroon{
+        color: #800000;
+    }
+    .font_color_red{
+        color: #B80000;
+    }
+    .font_color_brown{
+        color: #804000;
+    }
+    .font_color_green{
+        color: #00A000;
+    }
+    .font_color_orange{
+        color: #D76B00;
+    }
+    .font_color_grey{
+        color: #444444;
+    }
+    .font_color_yellow{
+        color: #FFFF00;
+    }
+}
+div.selectStyledNoBack select {
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border:none;
+    font-family:Calibri;
+}
+div.selectStyledNoBack {
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0;
+    border-radius:6px;
+    border: none;
+    
+}
+div.selectStyledNoBack select {
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border:none;
+    font-family:Calibri;
+}
+.bg_yellow{
+    background-color:#FFFFCC;
+}
+.bg_red{
+    background-color:#FF9999;  
+}
+.bg_green{
+    background-color:#66CC00;  
+}
+.circular{
+    width:80px;
+    height:80px;
+    border-radius:50px;
+    text-align:center;
+    border: 1px solid #d9d8d8;
+padding: 3px;
+}
+.leftAbsoluteBorder{
+    position: absolute;  
+    border-left: #d3d3d3 1px solid;
+    margin-left: 35px;
+    /*    margin-top:70px;*/
+    height: 75px;
+}
+.bottomAbsoluteBorder{
+    position: absolute;  
+    border-bottom: #d3d3d3 1px solid;
+    margin-left:35px;
+    margin-top:35px;
+    width:35px;
+}
+.trans_serialno_upadate_div {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: 5px 0px 0px -5px;
+    text-align: left; 
+    border: 1px solid #A4A4A4;
+    border-radius: 6px;
+    width:180px;
+    height: 30px;
+    background-color: #FFF8C6; 
+}
+.girvi_head_green_12:focus {
+    color:#008000;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+/*.girvi_head_green_12:hover {
+    color:#008000;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+}*/
+.textarea-addprintrans-otherInfo {
+    width: 265px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 5px;
+    font-size:14px;
+    font-weight:normal;
+    font-family: Calibri;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    overflow: auto;
+    resize: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border: solid 1px #ccc;
+}
+.hrOrange {
+    border: 0;
+    width: 100%;
+    color: #FD9A00;
+    background-color: #FD9A00;
+    height: 1px;
+}
+/*******Start code to add class for circle image @Author:PRIYA25DEC14***********************/
+.circleImage{
+    width: 24px;
+    height:25px;
+    background-image: url('../images/circle24.png');
+    border:none;
+}
+.circleImage:focus{
+    width: 24px;
+    height:25px;
+    background-image: url('../images/circle24.png');
+    border:none;
+}
+.circleImage:hover{
+    width: 24px;
+    height:25px;
+    background-image: url('../images/circle24.png');
+    border:none;
+}
+/*******End code to add class for circle image @Author:PRIYA25DEC14***********************/
+.paddingLeft50{
+    padding-left: 50px;    
+}
+.wholeMar{
+    position: absolute;   
+    margin-top: -200px;    
+    margin-left: -200px;
+}
+.paddingLeft41{
+    padding-left: 70px;    
+}
+.paddingLeft150{
+    padding-left: 150px;    
+}
+
+.bgTransNoBorderArial12 {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:14px;
+    font-weight:bold;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+/*.bgTransNoBorderArial12:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:12px;
+    font-weight:bold;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+    outline:none;
+}*/
+/*.bgTransNoBorderArial12:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#800000;
+    font-size:12px;
+    font-weight:bold;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}*/
+.border_none {
+    border:none;
+}
+.girvihindidob_upadate_div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 5px 0px 0px -5px;
+    text-align: left; 
+    border: 2px solid #FD9A00;
+    border-radius: 6px;
+    width:300px;
+    height: 30px;
+    background-color: #FFF8C6; 
+}
+.textLabel12CalibriBlack{
+    color:black;
+    font-size:12px;
+    font-weight: normal;
+    font-family: Calibri;
+}
+.addPrincipal-hindidate-release-Div {
+    position: absolute; 
+    padding: 0px 0 0 0px;
+    margin: 2px 0px 0px 5px;
+    text-align: left; 
+    border: 1px solid #FD9A00;
+    width:950px;
+    /*    height: 44px;*/
+    height: 80px;
+    background-color: #FFF8C6; 
+}
+/*<!--------------Start code to change style ANUJA24JUN15-------------->*/
+/*******Start  code to add class for date popup image @Author:ANUJA18JUN15***********************/
+.display_girvi_eng_date {
+    position: fixed; 
+    padding: 0px 0 0 0px;
+    /*    margin: 100px;*/
+    background-color: #D8D8D8;
+    text-align: left; 
+    border: 0px solid #000000;
+    margin-left: 250px;
+    margin-bottom: 800px;
+}   
+/*******End  code to add class for date popup image @Author:ANUJA18JUN15***********************/
+/*<!--------------Start code to change style ANUJA24JUN15-------------->*/
+/**********Start code to add style @Author:SHRI11JUL15**************/
+.display_eng_dt{
+    position: fixed;
+    width:350px;
+    height:auto;
+    margin-top: 68px;
+    margin-left: 273px;
+    border: #AF7817 1px solid;
+    background-color: #D8D8D8;
+    z-index: 1000;
+}
+.ff_arial{
+    font-family: Arial;
+}
+.grayFont{
+    /*color:#737373;*/
+    color:#3c3c3c;
+}
+/*****Start to add width @OMMODTAG SHRI_07OCT15 *********/
+.widthPX108{
+    width:108px;
+}
+.widthPX122{
+    width:122px;
+}
+.border-color-grey-bottom {
+    border-bottom: #A4A4A4 1px solid;
+}
+/*****End to add width @OMMODTAG SHRI_07OCT15 *********/
+/**********End code to add style @Author:SHRI11JUL15**************/
+/**********Start code to add style @OMMODTAG_SHE23DEC15**************/
+.bgBlueTransNoBorderArial12Right {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:rgb(0,0,255);
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgBlueTransNoBorderArial12Right:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:rgb(0,0,255);
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgBlueTransNoBorderArial12Right:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:rgb(0,0,255);
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.bgGreenTransNoBorderArial12Right {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:  #008000;
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgGreenTransNoBorderArial12Right:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:  #008000;
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgGreenTransNoBorderArial12Right:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:  #008000;
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.bgRedTransNoBorderArial12Right {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#FF0000;  
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgRedTransNoBorderArial12Right:focus {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#FF0000;  
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+.bgRedTransNoBorderArial12Right:hover {
+    border:none;
+    background-color:transparent;
+    font-family:Calibri;
+    color:#FF0000;  
+    font-size:12px;
+    font-weight:bold;
+    text-align: right;
+    left:0;
+    margin: 0px;
+    padding: 0px;
+}
+
+/**********End code to add style @OMMODTAG_SHE23DEC15**************/
+/****** Start code to add css for gold prev bal field OMMODTAG_SHE23DEC15***/
+
+.itemRawBal {
+    color:black;
+    font-size:12px;
+    font-weight:bold;
+    font-family: Calibri;
+}
+
+/*** End code to add css for gold prev bal field OMMODTAG_SHE23DEC15***/
+/****** Start code to add css for gold prev bal field OMMODTAG_SHE29DEC15***/
+#noRateCut{
+    width:100%;
+
+}
+.greenColor{
+    color:rgb(0,128,0);
+}
+
+#rateCut{
+    /*width: 30%;*/
+    /*margin-right: -1%;*/
+    /*margin-left: -27%;*/
+    margin-left:10px;
+}
+
+
+
+
+.diabledButton{
+    cursor: pointer;
+    /*pointer-events: none;*/
+    /*background-color:#E8E8E8 ;*/
+    /*border:#E8E8E8 ;*/
+    color:gray;
+    /*Button disabled - CSS color class*/
+
+    /*background: #dddddd;*/
+    /*        border:none;*/
+    /*box-shadow:none;*/
+}
+
+.border-color-black-top {
+    border-top:  black 1px solid;
+}
+
+.border-color-black-bottom{
+    border-bottom:  black 1px solid;
+}
+.border-color-black{
+    border:  black 1px solid;
+}
+
+.lableBox{
+    width: 58px;
+    border: 1px solid rgb(204,204,204);
+    height: 22px;
+    margin-right:-1px;
+    text-align:center;
+    padding-top:2px;
+}
+/*** End code to add css for gold prev bal field OMMODTAG_SHE29DEC15***/
+/*** Start code to add css for gold prev bal field OMMODTAG_SHE25FEB15***/
+.blackCalibri12FontBold{
+    color:#000000;
+    font-size:12px;
+    font-weight:bold;
+    font-family: calibri;
+}
+/*** End code to add css for gold prev bal field OMMODTAG_SHE25FEB15***/
+/**Start to add css for form 8 @Author:SHRI17AUG16*******/
+.form8-cust-image{
+    width: 120px;
+    height: 120px;
+}
+/**End to add css for form 8 @Author:SHRI17AUG16*******/
+.brwnCalibri12Font{
+    color:#B80000;
+    font-size:13px;
+    font-weight:600;
+    font-family: calibri;
+}
+.blackCalibri12Font{
+    color:#000000;
+    font-size:12px;
+    font-weight:normal;
+    font-family: calibri;
+}
+.blueCalibri14Font{
+    color:#000099;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+}
+.darkBlueCalibri13Font{
+    color:#1F497D;
+    font-size:14px;
+    font-weight:normal;
+    font-family: calibri;
+}
+.portlet > .portlet-body.green-crusta,
+.portlet.green-crusta {
+    background-color:#aedf7f;
+}
+.portlet > .portlet-body.green-crusta,
+.portlet.blue-crusta {
+    background-color:#0078A9;
+}
+.portlet > .portlet-body.green-crusta,
+.portlet.red-crusta {
+    background-color:#FFC4C4;
+}
+.form-control-req-height20New{
+    font-size: 14px;
+    font-weight: bold;
+    background-color:#e3e2e2;
+    border: none;
+    height: 20px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-req-height20-without-border{
+    font-size: 13px;
+    font-weight: normal;
+    border: none;
+    font-family: calibri;
+}
+/*.portlet > .portlet-body.dark-grey-crusta,
+.portlet.dark-grey-crusta {
+    background-color: #999999;
+}*/
+/* start code for style packets @Author ATHU23nOV16 */
+.packets-lbr-charge-Div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 0px 0px 0px 160px;
+    text-align: left; 
+    width:120px;
+    height: 28px;
+    background-color: #FFF8C6; 
+}
+/* start code for style packets @Author ATHU30NOV16 */
+.packets-lbr-charge-Div {
+    position: absolute; 
+    padding: 1px 0 0 0px;
+    margin: 0px 0px 0px 160px;
+    text-align: left; 
+    width:120px;
+    height: 28px;
+    /*    background-color: #FFF8C6; */
+}
+.ontop {
+    z-index: 999;
+    width: 100%;
+    height: 176%;
+    top: 0;
+    left: 0;
+    display: none;
+    position: absolute;
+    background-color: #2F4F4F;
+    color: #aaaaaa;
+    /*    opacity: 0.9;*/
+}
+#popup {
+    position: fixed; 
+    margin: 0px 0px 0 0px;
+    text-align: left; 
+    color: #000000;
+    background-color: #ffffff;
+    top: 30%;
+    left: 2%;
+    width: 95%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0px;
+    top: 0px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 573px; /* Full height */
+}
+
+/* The Close Button */
+.closeFinePopUp {
+    color: #aaaaaa;
+    float: right;
+    font-size: 35px;
+    margin-top: -35px;
+    position: absolute;
+    font-weight: bold;
+    right: 15px;
+}
+
+.closeFinePopUp:hover,
+.closeFinePopUp:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+::-moz-placeholder {
+    color: grey;
+    opacity: 1;
+    font-size:14    px!important;
+}
+
+/* Modal Rem Content */
+.modalRem {
+    display: none;  
+    position: fixed;  
+    z-index: 1;  
+    padding-top: 100px;  
+    left: 16px;
+    top: 0px;
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);  
+}
+
+.modalRem-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 8px;
+    border: 1px solid #888;
+    width: 1090px;
+    height: 215px;  
+}
+/* Modal Scheme Content */
+.modalScheme {
+    display: none;  
+    position: absolute!important;  
+    z-index: 100;   
+    left: 50%;
+    background:#fff;
+    transform: translate(-50%, -17%);
+width: 90%;
+box-shadow: 1px 2px 10px rgba(162, 162, 162, 0.5);
+border-radius: 5px;
+padding:5px;
+}
+
+.modalScheme-content {
+    background-color: #fefefe;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 1090px;
+    height: 215px; 
+}
+
+.modalchit-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+    width: 1180px;
+    height: 530px; /* Full height */
+}
+.form-control-height25 {
+    padding-left: 6px !important;
+    width:100%;
+    font-size: 16px !important;
+    font-weight: normal;
+    color: black !important;
+    background-color: #FFFFFF;
+    border: 1px solid #6F6B6B;
+    height: 25px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-height25:focus {
+    border-color: #ccc;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.placeholderClass12::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #685F5F !important;
+    background:transparent;
+    text-transform:uppercase;
+}
+.placeholderClass12::-moz-placeholder {
+    font-size: 14px;
+    color: #685F5F !important;
+    background:transparent;
+    text-transform:uppercase;
+}
+/*---- add css Rani 29 june2023--*/
+.Helpvideo{
+    border:1px solid #c1c1c1;
+    width: 100%;
+height: 230px;
+overflow: hidden;
+border-radius: 5px;
+margin-bottom:20px;
+}
+.Helpvideo .videoCaption{
+  text-align: center;
+height:40px;
+background:#1976b9;  
+}
+.Helpvideo .videoCaption h5{
+  font-size:20px;
+text-transform: uppercase;
+height: 40px;
+color: #fff;
+font-weight: 600;
+line-height: 40px;  
+}
+.DocSection{
+border: 1px dashed #b4b3b3;
+border-radius: 5px;
+padding: 5px;
+margin-bottom: 8px;
+background: #f8f7f7;
+}
+.DocSection h1{
+ text-transform: uppercase;
+padding: 5px;
+text-decoration: underline;
+color: #000;
+font-size: 18px;
+}
+.DocSection h1 img{
+    height:22px;
+    margin-right:5px;
+}
+
+.DocSection ul{
+    margin:5px;
+}
+.DocSection ul li{
+ font-size: 16px;
+line-height: 2rem;
+font-weight: 500;   
+}
+@media print { div.page-break { display: block; page-break-before: always; } }
+

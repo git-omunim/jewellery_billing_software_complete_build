@@ -1,0 +1,139 @@
+/* here you can put your own css to customize and override the theme */
+.showNewWindows{
+    position: absolute;
+    margin: 115px 0px 0px 600px;
+    alignment-adjust: middle;
+    z-index: 1000;
+    font-family: Calibri;
+    color: #0000FF;
+    font-size: 24px;
+    background: #FBFBFB;
+}
+.box_text_details2 {
+    margin-top: 8px;
+    width: 385px;
+    height: 210px;
+    font-size:11px;
+    background-color:#DEE7F7;
+}
+.box_text_download {
+    width: 325px;
+}
+/** End to add classes @AUTHOR: SANDY29AUG13 **/
+/****************** Start Code for Silver Box *********************/
+.small{
+    font-size:0px;
+}
+.abx-lt{
+    background-image: url(../../../../images/abx-lt.gif);
+    background-repeat: no-repeat;
+    background-position: left top;	
+    width:13px;
+    height:13px;
+}
+.abx-rt{
+    background-image: url(../../../../images/abx-rt.gif);
+    background-repeat: no-repeat;
+    background-position: left top;	
+    width:13px;
+    height:13px;
+}
+.abx-t{
+    background-image: url(../../../../images/abx-t.gif);
+    background-repeat: repeat-x;
+    background-position: left top;	
+    width:100%;
+    height:13px;
+}
+.abx-lb{
+    background-image: url(../../../../images/abx-lb.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;	
+    width:13px;
+    height:13px;
+}
+.abx-rb{
+    background-image: url(../../../../images/abx-rb.gif);
+    background-repeat: no-repeat;
+    background-position: left bottom;	
+    width:13px;
+    height:13px;
+}
+.abx-b{
+    background-image: url(../../../../images/abx-b.gif);
+    background-repeat: repeat-x;
+    background-position: left bottom;	
+    width:100%;
+    height:13px;
+}
+.abx-r{
+    background-image: url(../../../../images/abx-r.gif);
+    background-repeat: repeat-y;
+    background-position: left top;	
+    width:6px;
+    height:100%;
+}
+.abx-l{
+    background-image: url(../../../../images/abx-l.gif);
+    background-repeat: repeat-y;
+    background-position: left top;	
+    width:6px;
+    height:100%;
+}
+.abx-bg{
+    background-color:#DEE7F7;
+}
+.h2 {
+    color: #0065CA;
+    font-size:16px;
+    font-weight:bold;
+}
+.lgn-txtfield-input2 {
+    border:1px solid #000;
+    background:#fff url("../images/form_bg.gif")  repeat-x;
+    font-family: tahoma,sans-serif;
+    font-size:14px;
+    vertical-align:middle;
+    height:22px;
+    width:200px;
+    max-width:200px
+}
+.lgn-txtfield-input2:hover {
+    border:1px solid #FF6600;
+    background:#fff url("../images/form_bg.gif")  repeat-x;
+    font-family: tahoma,sans-serif;
+    font-size:14px;
+    vertical-align:middle;
+    height:22px;
+    width:200px;
+    max-width:200px
+}
+.lgn-txtfield-input2:focus {
+    border:1px solid #FF6600;
+    background:#fff url("../images/form_bg.gif")  repeat-x;
+    font-family: tahoma,sans-serif;
+    font-size:14px;
+    vertical-align:middle;
+    height:22px;
+    width:200px;
+    max-width:200px
+}
+.textField{
+    border-radius: 6px;
+}
+.padTop2{
+    padding-top: 4px;
+}
+.box_text_prodKeyForm {
+    width: 300px;
+    height:200px;
+}
+.box_text_prodKeyForm2{
+    width: 350px;
+    height:210px; 
+} 
+.orange_text
+{font-size:16px;
+ font-family:Verdana, Arial, Helvetica, sans-serif;
+ color:orange;
+}

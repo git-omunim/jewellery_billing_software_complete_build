@@ -1,0 +1,1 @@
+wget -q "http://127.0.0.1:8080/omunim/2/include/php/invoice/om_current_invoice.html" -O D:\lrearth\live\live\htdocs\omunim\exe\Test.html

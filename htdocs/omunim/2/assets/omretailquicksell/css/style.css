@@ -1,0 +1,667 @@
+/*
+ * **************************************************************************************
+ * @tutorial: quick sell CSS PAGE NEW DESIGN 
+ * **************************************************************************************
+ * 
+ * Created on 06102022  2:51:25 PM
+ *
+ * @FileName: style.css
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: YUVRAJ KAMBLE 06102022
+ *  REASON:
+ *
+ */
+
+@charset "UTF-8";
+
+/*=== fonts ====*/
+
+/*@import url(../css/color.css);*/
+@import url(../fonts/Calibri.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;900&display=swap");
+/*===== color =====*/
+/*====================================================*/
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.row.m0 {
+  margin: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+p{
+  margin-bottom: 0;
+  font-size:var(--f14);
+  line-height: 1.5rem;
+}
+i:before {
+  margin-left: 0px !important;
+}
+input:focus-visible{
+  outline:0px solid transparent!important;
+}
+
+body {
+  font-family:"calibri", sans-serif;
+  letter-spacing: 0px;
+  color: #677294;
+  padding: 0px;
+  overflow-x: hidden;
+  z-index: 0;
+}
+.body_wrapper {
+  z-index: 20;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height:7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2e2e2;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray); 
+  border-radius:20px;
+}
+
+.index-nav .nav-item .nav-link.active{
+  color:var(--orange);
+}
+
+@media (min-width: 1250px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.container.custom_container {
+  max-width: 1520px;
+}
+
+
+@media(min-width:768px){
+  .heading-title h2{
+    font-size: var(--f36);
+  }
+}
+
+/*------------Rani Csss Code With Product Page----------*/
+.wrapper .topheader{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.topheader .accoutDetails .userProfile p{
+  font-size:13px;
+  font-weight: 600;
+}
+.topheader .topRight .logOut img{
+  height:18px;
+  }
+.accoutDetails .NbillBtn{
+  border:1px solid #fff;
+  background: #F6A200;
+  color: #fff;
+  padding: 2px 14px;
+  font-size: 13px;
+  border-radius: 0;
+  margin: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease 0s;
+}
+.accoutDetails .NbillBtn:hover{
+border:1px solid #fff;
+background:transparent;
+color:#fff;
+}
+.topheader{
+  background:#1714b5;
+}
+.searchSection .input-group .form-control{
+  border:1px solid #dfebff;
+  border-radius: 20px;
+  padding: 20px;
+  /* background-color: #F3F6FB; */
+  z-index: 10;
+}
+.searchSection .input-group .form-control::placeholder{
+  color:rgb(120, 120, 120);
+}
+.searchSection .input-group .input-group-append .btn-search{
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  right: 0;
+  background: #1714b5;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  z-index: 12;
+  border:1px solid #dfebff;
+}
+.divider{
+  border-bottom:1px solid #d3e6ff;
+  height:1px;
+}
+.form-group .userForm .innerform{
+  /* margin:5px; */
+}
+.userForm .innerform .input-group .QtyInput {
+width: 100%;
+height: 49px;
+}
+.userForm .innerform .input-group .QtyInput{
+  border-radius: 0;
+  border-left: 1px solid #D0D0D0;
+}
+.userForm .innerform .input-group .form-control{
+  border-radius: 0;
+  border-left: 1px solid #D0D0D0;
+}
+
+  .form-group .FormBtn{
+    border:1px solid #d0d0d0;
+    width: 100%;
+    height: 27px;
+    text-align: center;
+  }
+  .form-group .FormBtn .btn{
+  padding:1px;
+  background-color: transparent;
+  }
+  .userForm .innerform .input-group .btnWeightOn{
+    width: 100%;
+    height: 28px;
+    line-height: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    background: #5FD068;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease 0s;
+  }
+   .userForm .innerform .input-group .btnWeightOff{
+    width: 100%;
+    height: 28px;
+    line-height: 15px;
+    border-radius: 0;
+    text-transform: uppercase;
+    background: #888;
+    color: #000;
+    font-weight: 600;
+    transition: color 0.3s ease 0s;
+  }
+  .userForm .innerform .input-group .btnWeightOn:hover{
+    background-color: #d5d5d5;
+    color:#000;
+  }
+   .userForm .innerform .input-group .btnWeightOff:hover{
+    background-color: #5FD068;
+    color:#fff;
+  }
+  
+  .deleteBtn{
+    border:1px solid #F6A200;
+    text-align: center;
+    padding: 24px;
+    background:#F6A200;
+    cursor: pointer;
+  }
+  .deleteBtn .btn{
+    background:transparent;
+  padding: 0;
+  }
+  .deleteBtn i{
+    font-size:26px;
+  color:#fff;
+  }
+  .userForm .innerform .form-select{
+    border: 1px solid #D0D0D0;
+    outline: 0;
+    width: 100%;
+    height:38px;
+    font-size:16px;
+    padding-left: 5px;
+    background-color: #fff;
+    font-weight: bold;
+    border-radius: 0;
+    text-transform: uppercase;
+    color:rgb(120, 120, 120);
+    }
+    .headingdis{
+      height: 48px;
+    }
+.headingdis::placeholder{
+  font-size:22px;
+}
+.innerform .input-group .DisInput{
+  font-size:16px;
+  font-weight: 600;
+}
+.innerformp{
+  margin-top: 9px;
+  color:#d92f2c;
+  font-size:18px;
+  font-weight: 600;
+}
+.card{
+  border:0;
+  border-radius:0;
+  position: relative;
+}
+.card-body{
+  border: 1px solid #eaeaea;
+}
+.card-body .topImg{
+  width: 100%;
+  height: 100px;
+  line-height: 88px;
+  padding: 5px;
+  overflow: hidden;
+}
+.card-body .topImg img{
+width:100%;
+height:80%;
+object-fit: contain;
+transition: 0.5s all ease-in-out;
+}
+.card-body .topImg:hover img{
+  transform: scale(1.2);
+}
+.btn_card {
+  background-color: #F6A200;
+  border: none;
+  color: white;
+  padding: 7px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: -7px -21px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 120px;
+  height: 35px;
+}
+.card-body .CardName h6{
+  padding: 5px;
+  background-color: #8f8d89;
+  color: #fff;
+  font-weight: 600;
+  font-size:16px;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ProductImgSec{
+  height:398px;
+  overflow-y:auto;
+}
+.ProductImgSecBtn{
+  height:398px;
+  overflow-y:auto;
+}
+.bg-Gray{
+  background:#f7f7f7;
+}
+.form-group .tableForm{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1714b5;
+  font-size:14px;
+}
+.form-group .tableForm-group .form-control{
+  padding:3px;
+  border-radius: 0;
+}
+.toDoListDetails thead{
+  font-size: 15px;
+text-transform: uppercase;
+border: 1px solid #e7e7e7;
+text-align: center;
+background: #1714b5;
+}
+
+.table-section .toDoListDetails.stockFrom thead tr th{
+  text-align: center;
+padding-left: 10px;
+color:#fff;
+font-size:15px;
+}
+.toDoListDetails tbody tr td{
+  text-align: center;
+font-size:15px;
+padding: 7px 5px;
+margin-bottom: 3px;
+border: 0;
+text-transform: capitalize;
+color:#2e2e2e;
+border: 1px solid #e7e7e7;
+}
+.toDoListDetails thead tr th {
+  border-bottom: 0px;
+  padding: 8px 5px;
+  color:#fff;
+}
+.stockTabsele{
+  position: relative;
+  height: 400px;
+  overflow-y: auto;
+  width: 108%;
+margin-left: -15px;
+}
+.priceSec .qty-content p{
+  font-size:18px;
+  color: #1714b5;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.priceSec .qty-content p span{
+  color:#2e2e2e;
+}
+.priceSec .qty-content .totlNumber{
+  font-size:32px;
+  color:#2e2e2e;
+}
+.priceSec .qty-content .btn-Pay{
+  background-color: #F6A200;
+  font-size:22px;
+  padding:10px 30px;
+  color:#fff;
+  font-weight:600;
+  display: inline-block;
+  border-radius: 2px;
+  width:200px;
+}
+#priceSectwo{
+background-color: #F6A200;
+font-size: 18px;
+padding: 12px 6px;
+color: #fff;
+font-weight: 600;
+display: inline-block;
+border-radius: 2px;
+width: 100px; 
+}
+
+.productBtn{
+  margin:0 0 3px;
+}
+.productBtn .proBtn,
+.productBtn .proBtnCls{
+  width:100%;
+  height: 55px;
+  line-height:40px;
+  font-size:18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: linear-gradient(45deg, #f2a613, #ffbe42); 
+  color: #fff;
+  border:1px solid #e0960c;
+}
+.productBtn .proBtn:active,
+.productBtn .proBtnCls:active{
+  background: linear-gradient(45deg, #f2a613, #ffbe42);
+  color:#F6A200;
+}
+.productBtn .proBtn{
+  /* width:158px!important; */
+  height:55px;
+  font-size:18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom:4px;
+}
+.headingdis{
+  font-weight: 600;
+font-size: 23px;
+}
+
+@media (min-width:768px) {
+.productBtn .proBtnCls{
+  width: 158px;
+  }
+  .productBtn .proBtn{
+    width:100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .productBtn .proBtnCls{
+    width: 158px;
+    }
+    .productBtn .proBtn{
+      /* width:160px!important; */
+    }
+  }
+  
+@media (min-width:1400px) {
+  .productBtn .proBtnCls{
+    width: 158px;
+    }
+    .productBtn .proBtn{
+      /* width:172px!important; */
+    }
+  }
+  
+   #custMobileForAddNew {
+        appearance: none;
+        outline: 0;
+        background: green;
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        color: black;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+     
+    .livesearch_customer_mobile {
+        position: relative;
+        display: block;
+        width: 15em;
+        height: 2em;
+        line-height: 3;
+        overflow: hidden;
+        border-radius: .25em;
+        padding-bottom: 10px;
+    }
+    
+.selectpickerquicksell option
+{
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance : none;
+        color: #14B1B2;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+        padding-left: 0;
+        margin-top: -20px;
+        background: none;
+    }
+.selectpickerquicksell
+{
+        border: none;
+        background-color: white;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance : none;
+        color: #14B1B2;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0;
+        padding-left: 0;
+        margin-top: -20px;
+        background: none;
+    }
+    
+
+/*    .customeroption{
+        border:1px solid red;
+    }*/
+
+/*######################################################*/
+/*############## weight schecle css code yuvraj start code ##################*/
+/*#########################################################*/
+.switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 28px;
+  padding: 0px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -moz-linear-gradient(top, #eeeeee, white 25px);
+  background-image: -o-linear-gradient(top, #eeeeee, white 25px);
+  background-image: linear-gradient(to bottom, #eeeeee, white 25px);
+}
+
+.switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  text-transform: uppercase;
+  background: #eceeef;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity background;
+  -moz-transition-property: opacity background;
+  -o-transition-property: opacity background;
+  transition-property: opacity background;
+}
+.switch-label:before, .switch-label:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  -webkit-transition: inherit;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+  font-size: 22px;
+}
+.switch-label:before {
+  content: attr(data-off);
+  right: 11px;
+  color: #aaa;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label:after {
+  content: attr(data-on);
+  left: 11px;
+  color: white;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  font-size: 22px;
+}
+.switch-input:checked ~ .switch-label {
+  background: #47a8d8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+  opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+  opacity: 1;
+}
+
+.switch-handle {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-image: -webkit-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -moz-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: -o-linear-gradient(top, white 40%, #f0f0f0);
+  background-image: linear-gradient(to bottom, white 40%, #f0f0f0);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.switch-handle:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+  background-image: -webkit-linear-gradient(top, #eeeeee, white);
+  background-image: -moz-linear-gradient(top, #eeeeee, white);
+  background-image: -o-linear-gradient(top, #eeeeee, white);
+  background-image: linear-gradient(to bottom, #eeeeee, white);
+}
+.switch-input:checked ~ .switch-handle {
+  left: 195px;
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch-green > .switch-input:checked ~ .switch-label {
+  background: #4fb845;
+}
+
+/*######################################################*/
+/*############## weight schecle css code yuvraj start code ##################*/
+/*#########################################################*/
+ .imageProdQuicksell
+  {
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #000;
+    width:100%;
+    height:100px;
+  }

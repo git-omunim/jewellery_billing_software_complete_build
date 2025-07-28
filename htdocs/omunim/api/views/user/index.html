@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <title>Online Munim API Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {
+            font-family: "Roboto", sans-serif
+        }
+    </style>
+    <body class="w3-light-grey">
+        <!-- Page Container -->
+        <div class="w3-content w3-margin-top" style="max-width:1400px;">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+                <!-- Left Column -->
+                <div class="w3-third">
+                    <div class="w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container">
+                            <!-- <img src="images/OnlineMunim_Color_1000.jpg" style="width:100%" alt="Avatar"> -->
+                            <div class="w3-container w3-text-black">
+                                <h2>Online Munim API Document</h2>
+                            </div>
+                        </div>
+                        <div class="w3-container">
+                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-orange"></i>info@omunim.com</p>
+                            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-orange"></i>+91 8551958585</p>
+                            <hr>
+                            <p class="w3-large"><b><i class="fa fa-laptop fa-fw w3-margin-right w3-text-orange"></i>Programming Language - PHP</b></p>
+                            <p class="w3-large w3-text-theme"><b><i class="fa fa-language fa-fw w3-margin-right w3-text-orange"></i>Language - English</b></p>
+                            <p class="w3-large"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-orange"></i>Online Host - https://xzyapi.omunim.in/</b></p>
+                            <p class="w3-large"><b><i class="fa fa-chain-broken fa-fw w3-margin-right w3-text-orange"></i>Offline Host - localhost:8080/api/</b></p>
+                            <br>
+                        </div>
+                    </div><br>
+                    <!-- End Left Column -->
+                </div>
+                <!-- Right Column -->
+                <div class="w3-twothird">
+                    <div class="w3-container w3-card w3-white">
+                        <h2 class="w3-text-red w3-padding-16">
+                            <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-orange"></i>
+                            <b>User Details - /user/</b>
+                        </h2>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/search <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_search_str
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                page_no
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/user_list <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_type
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/details <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/crud <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                operation - insert / update / delete
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_firm_id
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_type
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id (For update and delete operation)
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/login <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/register <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/send_otp <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/verify_otp <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/verify_mobile_no <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                        <div class="w3-container">
+                            <h6 class="w3-text-blue"><i class="fa fa-asterisk fa-fw w3-margin-right"></i>
+                                /user/quick_verify_otp <span class="w3-text-grey">(This is the function to get all searched users)</span>
+                            </h6>
+                            <h6 class="w3-text-green w3-margin-left"><i class="fa fa-angle-double-right fa-fw"></i>
+                                user_id
+                            </h6>
+                            <hr>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <!-- End Grid -->
+            </div>
+            <!-- End Page Container -->
+        </div>
+        <footer class="w3-container w3-orange w3-center w3-margin-top">
+            <p>Powered by <a href="https://www.omunim.com" target="_blank">www.omunim.com</a></p>
+        </footer>
+    </body>
+</html>

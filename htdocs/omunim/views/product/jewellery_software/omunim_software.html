@@ -1,0 +1,103 @@
+<div class="pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="softtop text-center">
+                    <h1 class="softwaretitle">Jewellery Software can help you to Manage your Billing And Accounting</h1>
+                    <p>Jewellery Software. In Which you can Billing Management, Jewellery Business, Software Features, Inventory Management, Sales Tracking and Customer Management.</p>
+                    <h2 class="softwaresubtitle">Jewellery Software can helps you to managing billing and accounting</h2>
+                    <p class="minitxt">Online Munim GST Billing Software<p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center mt-4">
+                <div class="col-12 col-lg-6 px-lg-0">
+                    <div class="ommanagediv">
+                        <p>In Online Munim, you can manage </p>
+                        <div class="d-sm-flex align-items-center justify-content-between">
+                            <ul class="list-unstyled mb-0 mb-sm-3">
+                                <li><img src="../../webroot/theme/saas/common/img/login/barcode_scanner.png" class="mr-2" alt="Image">Stock with bar-code</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/chat.png" class="mr-2" alt="Image">Daily SMS</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/analysis.png" class="mr-2" alt="Image">Daily Sale and Orders</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/calendar.png" class="mr-2" alt="Image">Daily Expenses</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><img src="../../webroot/theme/saas/common/img/login/rfid.png" class="mr-2" alt="Image">RFID Tags</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/payment_method.png" class="mr-2" alt="Image">Credit or Debit Note</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/seo_report.png" class="mr-2" alt="Image">GST & Accounting Reports</li>
+                                <li><img src="../../webroot/theme/saas/common/img/login/invoice1.png" class="mr-2" alt="Image">Create Invoices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 px-lg-0">
+                    <div>
+                        <img src="../../webroot/theme/saas/common/img/login/omunim_software.webp" class="w-100" alt="Jewellery Software">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="demodiv py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>Start Your Free Trial</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <div class="form-group">
+                    <input type="text" id="lgname" name="lgname" class="form-control" placeholder="Enter Name" oninput="validateName(this)">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <div class="form-group">
+                    <input type="text" id="lgemailid" name="lgemailid" class="form-control" placeholder="Enter Email ID">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <div class="form-group">
+                    <input type="text" id="lgmobileno" name="lgmobileno" class="form-control" placeholder="Enter Mobile No." maxlength="10" oninput="validatePhone(this)">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                <div class="form-group">
+                    <div class="captchapic mb-4">
+                        <input class="form-control d-none" id="captchaImgId" type="hidden" value="">
+                        <input class="form-control" id="captchaValidId" type="hidden" value="">
+                        <canvas id="captchaCanvas" class="captchaCanvas" width="120" height="48"></canvas>
+                        <input type="text" id="captchaAns" class="form-control" onkeyup="checkCaptcha()" placeholder="Enter Captcha">
+                        <i id="captchaValidIcon" class="d-none bi bi-check-square-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3 mx-auto mt-4">
+                <div class="text-center">
+                    <a class="signin2 mx-auto text-center" onclick="validateForm();">Get Started For Free</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="loadingModalButton" type="button" style="display:none;"  data-toggle="modal" data-target="#ThankyouModal"></button>
+<div class="modal fade " id="myModal" tabindex="-1" >
+    <div class="demodiv modal-dialog">
+        <div class="modal-content" id="demoFormContent">
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="ThankyouModal" tabindex="-1" >
+    <div class="demodiv modal-dialog">
+        <div class="modal-content" id="demoFormContent123">
+            <div class="demodiv modal-dialog">
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" ><i class="bi bi-x"></i></button>
+                <div class="thanklogo d-flex flex-column gap-4 align-items-center p-3">
+                    <img src="../../webroot/theme/saas/common/img/login/jewellery_software1.jpg" alt="jewellery software" width="200px">
+                    <div class="mt-4">
+                        <h3 class="font-weight-bold">Thank You!</h3>
+                    </div>
+                </div>
+                <div class="thankyou-text pb-2 fs-5">Your demo has been confirmed. Our team will contact you.</div>
+            </div>
+        </div>
+    </div>
+</div>

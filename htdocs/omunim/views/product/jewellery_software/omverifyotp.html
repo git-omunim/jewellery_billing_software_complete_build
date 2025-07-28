@@ -1,0 +1,31 @@
+<div class="demodiv modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" id="closebtm" ><i class="bi bi-x"></i></button>
+            <div class="row my-5">
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">                        
+                        <input  class="form-control" type="number" id="verifymobileno" name="verifymobileno" readonly placeholder="Enter Mobile No">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="form-group">                        
+                        <input  class="form-control" type="number" id="verifyotp" name="verifyotp" placeholder="Enter OTP" oninput="validateOtp(this)" maxlength="4">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="resendtxt" id="displayresendmsg"></div>
+                        <span class="errortxt" id="displaymsg"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-center mt-4">
+                        <button class="resendotpbtn mr-2" type="button" onclick="resendotpofvisitor();">Resend OTP</button>
+                        <button class="verifyotpbtn mr-2" type="button" onclick="verifyotpofvisitor();">Verify OTP</button>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>

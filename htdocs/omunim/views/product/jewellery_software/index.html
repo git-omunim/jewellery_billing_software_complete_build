@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <!-- ************************ -->
+    <!-- Start Code for head -->
+    <?=View::renderPath('product/jewellery_software/head');?>
+    <!-- End Code for head   -->
+    <!-- ======================== -->
+    <!-- ************************ -->
+    <?php
+    // Start Code One time block for website settings
+    //
+    require $_SERVER["DOCUMENT_ROOT"] . '/2/include/php/system/omstoresetup.php';
+    //
+    // End Code One time block for website settings
+    //
+    if($personalStore =='Y' ){ ?>   
+    <?php } else { ?>
+    <!-- Start Code for header -->
+    <div class="mt_120"> <?=View::renderPath('product/jewellery_software/header');?></div>
+    <!-- End Code for header   -->
+    <!-- ======================== -->
+    <?php }  ?>
+
+    <body>
+        <div class="body_wrapper" id="mainMiddleDiv">
+            <?php 
+            if($personalStore =='Y' ){ ?>
+
+            <!-- Start Code for slider -->
+            <div class="bgColor pb-5"><?=View::renderPath('product/jewellery_software/login');?></div>
+            <!-- End Code for slider   -->
+
+            <?php } else { ?>
+            <div class="bgColor"> 
+                <!--Start Code For login-->
+                <?=View::renderPath('product/jewellery_software/login');?>
+                <!--End code for Login-->
+                <!-- ======================== -->
+                <!--Start code for Omunim Software-->
+                <?=View::renderPath('product/jewellery_software/omunim_software');?>
+                <!--End code for Omunim Software-->
+                <!-- ======================== -->
+            </div>
+            <!-- Start Code for product_feature -->
+            <?=View::renderPath('product/jewellery_software/product_feature');?>
+            <!-- End Code for product_feature   -->
+            <!-- ======================== -->
+            <!-- Start Code for content -->
+            <?=View::renderPath('product/jewellery_software/content');?>
+            <!-- End Code for content   -->
+            <!-- ======================== --> 
+            <!-- Start Code for product_details -->
+            <?=View::renderPath('product/jewellery_software/product');?> 
+            <!-- End Code for product_details   -->
+            <!-- Start Code for price_details -->
+            <?=View::renderPath('product/jewellery_software/why_omunim');?>
+            <!-- End Code for price_details   -->
+            <!-- Start Code for product_details -->
+            <?=View::renderPath('product/jewellery_software/awards');?>
+            <!-- End Code for product_details   -->
+            <!-- Start Code for customer_review -->
+            <?=View::renderPath('product/jewellery_software/customer_review');?> 
+            <!-- End Code for customer_review   -->
+            <!-- ======================== --> 
+            <!-- Start Code for footer -->
+            <?=View::renderPath('product/jewellery_software/footer');?>
+            <!-- End Code for footer   -->
+            <!-- ======================== --> 
+            <?php }  ?>
+        </div>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/propper.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/wow/wow.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/sckroller/jquery.parallax-scroll.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/isotope/isotope-min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/magnify-pop/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/nice-select/jquery.nice-select.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/vendors/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/plugins.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/main.js"></script>
+        <script type="text/javascript" src="<?=HTTP_HOST_WEBROOT?>/theme/saas/common/js/global.js"></script>
+    </body>
+
+</html>

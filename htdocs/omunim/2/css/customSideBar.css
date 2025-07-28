@@ -1,0 +1,264 @@
+/*
+ * **************************************************************************************
+ * @tutorial: Forms Layout ad File 
+ * **************************************************************************************
+ * 
+ * Created on : Jan 22, 2021, 1:24:53 PM
+ 
+ * @FileName: customSideBar.css
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+*/
+
+.custom-side-menu {
+    position: fixed;
+    text-align: center;
+    bottom:5%;
+    left:1px;
+    width: 25px;
+    height:100px;
+/*    border-top: 30px solid transparent;
+    border-right: 10px solid #C7C5C8;
+    border-bottom: 30px solid transparent;*/
+    background-color:#CADFFF;
+    border-radius: 5px;
+    color: #0b0d87;
+    border: 1px solid #7db3ff;
+    z-index: 100;
+}
+.custom-side-menu .custom-sidebar-menu {
+    display: none;
+}
+.custom-side-menu h3 {
+    transform: rotate(-90deg);
+    position: relative;
+    top: 38px;
+    right: 25px;
+    color: #0F128A;
+}
+/*.custom-side-menu:hover {
+    border-right: 10px solid #9FE2BF;
+}*/
+.custom-side-menu:hover .custom-sidebar-menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 18px;
+    text-align: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 80px;
+    height: 90px;
+}
+.custom-side-menu:hover .custom-sidebar-menu .sidebar-menu-item {
+    background-color: inherit;
+    margin: 0px 5px 5px 5px;  
+    height: 90px;
+    width: 70px;
+    background-color: rgba(200, 200, 200, 0.1);
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0.1);
+    z-index: 1;
+    overflow: hidden;
+    /*filter: blur(1px);*/
+}
+.custom-side-menu:hover .sidebar-menu-item:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 100px rgba(200, 200, 200, .4);
+  filter: blur(10px);
+  margin: -2px;
+}
+.custom-side-menu .custom-sidebar .custom-menu {
+    list-style-type: none;
+    margin: 25px 25px 0px -37px;
+    padding-top: 5px;
+    background: -webkit-linear-gradient(#04B4AE, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.modal {
+    
+    text-align: center;
+    z-index: 10001;
+}
+.modal .modal-dialog {
+    /*margin-left: 70px;*/
+    width: 1100px;
+    height: 100%;
+}
+.modal .modal-dialog .modal-content {
+    width: 1100px;
+    overflow:auto;  
+}
+.modal .modal-dialog .modal-content .modal-header span img {
+    margin-left: 0px; 
+    margin-top: -25px;
+    padding: 10px;
+    float: left;
+    height: 60px;
+    width: 60px;
+    /*border: 2px solid #F7930E;*/
+    /*border-radius: 50%;*/
+}
+.modal .modal-dialog .modal-content .modal-body .reminder-head .col-md-4 {
+    text-align: center;
+    margin: 0px 0px;
+}
+.modal .modal-dialog .modal-content .modal-body .reminder-head .col-md-4 .btn {
+    font-size: 16px;
+    color: #0000CC;
+    background-color: #EBEDF2;
+    padding: 5px 10px 5px 5px;
+    border: 1px solid #A4A4A4;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.modal .modal-dialog .modal-content .modal-body .reminder-head .col-md-4 .btn img {
+    height: 18px;
+    position: relative;
+    top: 3px;
+}
+.highlight {
+    background-color: lightblue;
+}
+
+#calendar-body td:empty {
+    cursor: text;
+    border: none;
+}
+
+#calendar-body td {
+    cursor: pointer;
+}
+
+#calendar thead {
+    border-bottom: 2px solid #cecece;
+}
+
+#calendar th {
+    border: none;
+    text-align: center;
+    padding: 0;
+    width: 10%;
+}
+
+#calendar td {
+    border: 1px solid rgba(0,0,0,.125);
+    text-align: center;
+    padding: 5px;
+    width: 10%;
+}
+
+.previous {
+    padding-left: initial;
+}
+
+.next {
+    padding-right: initial;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.month-selected {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.header {
+    margin-bottom: 0px;
+    background-color: #e7e7e7;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.header-row {
+    background-color: lightgray;
+    margin: 0px;
+    padding: 5px;
+}
+
+#monthAndYear {
+    border-bottom: none;
+    background-color: transparent;
+    padding-left: 1px;
+    padding-right: 1px;
+    display: none;
+}
+
+#previous, #next {
+    color: darkslategrey;
+}
+
+.today-color {
+    background-color: #D3D3D3;
+}
+
+#parent {
+    width: 250px;
+    border: 2px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 5px;
+}
+
+.date-values {
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+}
+
+
+.buttonPanel td {
+    border: none !important;
+    padding: 6px 0 0 0 !important;
+}
+
+    .buttonPanel td div:nth-of-type(odd) {
+        padding: 5px;
+        /*border: 1px solid #cecece;*/
+        width: 100%;
+        text-align: left;
+    }
+
+    .buttonPanel td div:nth-of-type(even) {
+        padding: 5px;
+        /*border: 1px solid #cecece;*/
+        width: 100%;
+        text-align: right;
+        margin-top: -34px;
+    }
+
+.buttonPanel-row {
+    margin: 0;
+    border-top: 2px solid lightgray;
+}

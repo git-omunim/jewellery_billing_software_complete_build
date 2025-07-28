@@ -1,0 +1,101 @@
+   <header class="header_area">
+             <div class="container" style="margin-top: 5px; margin-right: 30px;">
+            <div class="row">
+                <div class="col-lg-1 col-md-1">
+                    <div class="dropdown black-text">
+                        <a href="/../en/" class="dropdown-toggle black-text" data-toggle="dropdown"><?=__('lng.header.english','English')?></a>
+                        <div class="dropdown-menu white-text">
+                            <a href="/../mr/" class="dropdown-item"><?=__('lng.header.marathi','Marathi')?></a>
+                            <a href="/../hi/" class="dropdown-item"><?=__('lng.header.hindi','Hindi')?></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 black-text">
+                    <table style="margin-top: -16px;">
+                    <tr>
+                        <td width="">
+                            <b><?=__('lng.latestnews.news','Latest News :')?></b> 
+                        </td>
+                        <td width="600px">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner black-text" style="padding-top: 16px;">
+                                    <div class="carousel-item active">
+                                        <p class="black-text">Lorem ipsum dolor sit amet. </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p class="black-text">Allum ea, amet quibusdam totam.</p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <p class="black-text">Fuga ratione magnam asperiores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td width="30%"align="right">
+                            <a class="login" href="#"><i class="fa fa-lock text-gold"></i></a> <a href="#" class="black-text"><i></i><?=__('lng.login.login','Login')?></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+        <nav class="navbar navbar-expand-lg menu_one"style="margin-top: -20px;">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/images/omunim_logo_64.png" srcset="img/logo2x.png 2x" alt="logo"></a>
+                <a class="btn_get btn_hover mobile_btn ml-auto" href="#get-app">Sign Up Free</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu_toggle">
+                        <span class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                        <span class="hamburger-cross">
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto menu">
+                        <li class="nav-item dropdown submenu mega_menu mega_menu_two active">
+                           <a href="/../" class="nav-link"><?=__('lng.header.home','Home')?></a>
+ 
+                        </li>
+                         <li class="nav-item dropdown submenu">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <?=__('lng.header.product','Products')?>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="jewellery_software" class="nav-link"><?=__('lng.productname.jewellery_software','Jewellery Software')?></a></li>
+                                    <li class="nav-item"><a href="money_lending_software" class="nav-link"><?=__('lng.productname.money_lending_software','Money Lending Software')?></a></li>
+                                    <li class="nav-item"><a href="" class="nav-link"><?=__('lng.productname.nidhi_software','Nidhi Software')?></a></li>
+                                    <li class="nav-item"><a href="retail_software" class="nav-link"><?=__('lng.productname.retail_software','Retail Software')?></a></li>
+                                    <li class="nav-item"><a href="garments_software" class="nav-link"><?=__('lng.productname.garment_software','Garment Software')?></a></li>
+                                    <li class="nav-item"><a href="billing_software" class="nav-link"><?=__('lng.productname.billing_software','Billing Software')?></a></li>
+                                    <li class="nav-item"><a href="crm_software" class="nav-link"><?=__('lng.productname.crm_software','CRM Software')?></a></li>
+                                    <li class="nav-item"><a href="hr_software" class="nav-link"><?=__('lng.productname.hr_software','HR Software')?></a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown submenu nav-item">
+                            <a href="../download" class="nav-link"><?=__('lng.header.downloads','Downloads')?> </a>
+                         
+                        </li>
+                         <li class="dropdown submenu nav-item"><a title="" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"> <?=__('lng.header.purchase','Buy')?></a>
+                         
+                        </li>
+                         <li class="dropdown submenu nav-item">
+                             <a href="../faq" class="nav-link"><?=__('lng.header.blog','Blog')?> </a>
+                         
+                        </li>
+                         <li class="dropdown submenu nav-item"><a title="" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"> <?=__('lng.header.contact','ContactUs')?></a>
+                         
+                        </li>
+                    </ul>
+            
+                </div>
+            </div>
+        </nav>
+    </header>

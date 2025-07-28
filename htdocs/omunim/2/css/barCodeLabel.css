@@ -1,0 +1,191 @@
+/*@font-face {
+    font-family: "Calibri"; 
+    src:url("Calibri.TTF") format("truetype"); 
+
+}*/
+.pad0mar0{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.marTopMin2{
+    margin-top: -2px;
+}
+.marTopMin1{
+    margin-top: -1px;
+}
+.marTopMin4{
+    margin-top: -4px;
+}
+.padTop0{
+    padding-top: 0px;
+}
+.padBottom0{
+    padding-bottom: 0px;
+}
+.padLeft0{
+    padding-left: 0px;
+}
+.padRight0{
+    padding-right: 0px;
+}
+.marginTop0{
+    margin-top: 0px;
+}
+.marginBottom0{
+    margin-bottom: 0px;
+}
+.marginLeft0{
+    margin-left: 0px;
+}
+.marginRight0{
+    margin-right: 0px;
+}
+.block84LText10{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 10px;
+}
+.block84LText11{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 11px;
+}
+.block84LText9{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 9px;
+}
+.block84LText8{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 8px;
+}
+.block84LText7{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 7px;
+}
+.block84LText6{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 6px;
+}
+.block84LText{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 14px;
+}
+.block84LText16{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 16px;
+}
+.block84LText16Blue{
+    font-weight:normal;
+    font-family:  Calibri;
+    font-size: 16px;
+    color: #0000FF;
+}
+.padBottMin1{
+    padding-bottom: -7px;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.borderblack {
+    border: 1px solid #000000;
+}
+.paddingLeft2{
+    padding-left: 2px;    
+}
+
+.paddingRight2{
+    padding-right: 2px;    
+}
+
+.paddingRight5{
+    padding-right: 5px;    
+}
+
+@media print {
+    .noPrint {
+        display:none;
+    }
+    .pad0mar0{
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+    .block84LText10{
+        font-weight:normal;
+        font-family: Calibri; 
+        font-size: 10px;
+    }
+    .block84LText11{
+        font-weight:normal;
+        font-family: Calibri; 
+        font-size: 11px;
+    }
+    .block84LText9{
+        font-weight:normal;
+        font-family: Calibri; 
+        font-size: 9px;
+    }
+    .block84LText{
+        font-weight:normal;
+        font-family:  Calibri;
+        font-size: 14px;
+    }
+    .block84LText16{
+        font-weight:normal;
+        font-family:  Calibri;
+        font-size: 16px;
+    }
+    .block84LText16Blue{
+        font-weight:normal;
+        font-family:  Calibri;
+        font-size: 16px;
+        color: #0000FF;
+    }
+    .paddingRight5{
+        padding-right: 5px;    
+    }
+    .paddingRight7{
+        padding-right: 7px;    
+    }
+    .paddingTop1{
+        padding-top: 1px;    
+    }
+    .marTopMin2{
+        margin-top: -2px;
+    }
+    .marTopMin1{
+        margin-top: -1px;
+    }
+    .floatLeft {
+        float: left;
+    }
+    .floatRight {
+        float: right;
+    }
+    .borderblack {
+        border: 1px solid #000000;
+    }
+    .marginTop0{
+        margin-top: 0px;
+    }
+    .marginBottom0{
+        margin-bottom: 0px;
+    }
+    .marginLeft0{
+        margin-left: 0px;
+    }
+    .marginRight0{
+        margin-right: 0px;
+    }
+    .paddingRight2{
+        padding-right: 2px;    
+    }
+}

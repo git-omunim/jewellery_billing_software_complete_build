@@ -1,0 +1,450 @@
+#footer, #footerLinks, #copyright{
+    margin: auto;
+    display:block;
+    width:1062px;
+    border:0px solid #FDD017;
+}
+#socialise{
+    padding:0px 0px 15px 0px;
+    display: inline;
+    list-style-type: none;
+
+}
+
+#socialise ul{
+    display:inline;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    list-style:none;
+    font-size:20px;
+    font-family: tahoma,sans-serif;
+}
+
+#socialise li{
+    display:block;
+    float: right;
+    display: inline;
+    text-align:center;
+}
+
+#socialise li a{
+    color:#1C5E82;
+}
+
+.img-center{
+    padding: 0px 0px 0px 25px;
+}
+
+#socialise li span{
+    display:block;
+    margin:8px 0 0 0;
+}
+
+#socialise li.last{
+    margin-right:0;
+}
+
+#footerLast {
+    width:auto;
+    height:75px;
+    padding-top:10px;
+}
+
+#footerIndexLast {
+    width:auto;
+    height:auto;
+    padding-top:5px;
+}
+
+#footerIndexLast a {
+    width:auto;
+    height:auto;
+    padding-top:4px;
+    font-size: 11px;
+}
+
+#footerLast ul {
+    list-style:none;
+    margin:0px;
+    padding: 0px;
+    display:block;
+    font-family: tahoma,sans-serif;
+    text-align:center;
+}
+#footerLast ul li {
+    list-style:none;
+    display:inline;
+    width:75px;
+    height:25px;
+    padding:0px;
+    line-height:35px;
+    font-size:12px ;
+    font-family: tahoma,sans-serif;
+    color:#A4A4A4;
+}
+#footerLast ul li a {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    padding:0px;
+    margin:0 3px 0 3px;
+    color:#6c7b83;
+    text-align:center;
+    font-size:12px ;
+    font-family: tahoma,sans-serif;
+    color:#A4A4A4;
+}
+#footerLast ul li a:hover {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    font-size:12px ;
+    font-family: tahoma,sans-serif;
+    color:#000;	
+}
+#footerLast ul li a.current {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    padding:0px;
+    margin:0px;
+    font-size:12px ;
+    font-family: tahoma,sans-serif;
+    color:#000;
+}
+.textCalibri40{
+    font-size: 40px;
+    font-family: calibri;
+}
+.textCalibri36{
+    font-size: 36px;
+    font-family: calibri;
+}
+.textCalibri32{
+    font-size: 32px;
+    font-family: calibri;
+}
+.textCalibri30{
+    font-size: 30px;
+    font-family: calibri;
+}
+.textCalibri28{
+    font-size: 28px;
+    font-family: calibri;
+}
+.textCalibri26{
+    font-size: 26px;
+    font-family: calibri;
+}
+.textCalibri24{
+    font-size: 24px;
+    font-family: calibri;
+}
+.textCalibri20{
+    font-size: 20px;
+    font-family: calibri;
+}
+.textCalibri16{
+    font-size: 16px;
+    font-family: calibri;
+}
+.textCalibri18{
+    font-size: 18px;
+    font-family: calibri;
+}
+.textCalibri14{
+    font-size: 14px;
+    font-family: calibri;
+}
+.textCalibri8{
+    font-size: 10px;
+    font-family: calibri;
+}
+.color12{
+    color: #800000;
+}
+.textBold {
+    font-weight: bold;
+}
+.white-back {
+    background: white;
+}
+.fbg_resize { margin:0px; width:auto; padding:0px; background:none;}
+.fbg ul li { padding:4px 0;}
+.fbg  h2 { }
+.fbg img { padding:3px; border:0px solid #cfd2d4;}
+.fbg .col { margin:0; float:left;}
+.fbg .c1 { padding:0 5px 0 5px; margin:0 3px 0 0px; width:306px; height: 500px; border-bottom: 1px solid #FD9A00;}
+.fbg .c2 { padding:0 5px 0 5px; margin:0 3px 0 0px; width:306px; height: 500px; border-bottom: 1px solid #FD9A00;}
+.fbg .c3 { padding:0 5px 0 5px; margin:0 3px 0 0px; width:306px; height: 500px; border-bottom: 1px solid #FD9A00;}
+
+/* footer */
+.footer {border:solid 0px #800000; }
+.footer_resize { margin:0 auto; padding:10px 10px; width:auto; background:none; border:solid 0px #800000;}
+p.lf { margin:0; padding:4px 0; float:right; width:auto; line-height:1.5em; background:none; text-decoration:none; font-size: 12px; border:solid 0px #800000;}
+.footer p.lf a { color:#D76B00; text-decoration:none; border:solid 0px #800000;}
+ul.fmenu { margin:0; padding:0; list-style:none; float:left; width:auto;}
+ul.fmenu li { margin:0; padding:0 16px 0 0; float:left; font-size: 11px;}
+ul.fmenu li a { color:#A4A4A4; text-decoration:none;}
+ul.fmenu li a:hover, ul.fmenu li.active a { color:#000;}
+ul.fmenu li a:hover { text-decoration:underline;}
+.img-center{
+    padding: 0px 0px 0px 25px;
+}
+
+#footerLast {
+    width:auto;
+    height:75px;
+    padding-top:10px; 
+}
+#footerLast ul {
+    list-style:none;
+    margin:0px;
+    padding: 0px;
+    display:block;
+    font:bold 11px Calibri;
+    text-align:center; 
+}
+#footerLast ul li {
+    list-style:none;
+    display:inline;
+    padding:0px;
+    line-height:35px;
+    font: 11px Calibri;
+    color:#A4A4A4; 
+}
+#footerLast ul li a {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    padding:0px;
+    margin:0 1px 0 0px;
+    color:#6c7b83;
+    text-align:center;
+    font:10px Calibri;
+    color:#A4A4A4; 
+}
+#footerLast ul li a:hover {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    font:11px Calibri;
+    color:#000;	
+}
+#footerLast ul li a.current {
+    height:25px;
+    width:75px;
+    text-decoration:none;
+    padding:0px;
+    margin:0px;
+    font:11px Calibri;
+    color:#000;
+}
+#mainFooter{
+    height: auto;
+    width: auto;
+    border-top: #C7C5C8 1px solid;
+}
+
+#footer {
+    clear: both;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.footerBack{
+    background: #F6F6F6;
+}
+
+#footer .row {
+    margin: 0 auto 10px;
+    color: #8e8e8e;
+    font-size: 11px;
+    
+}
+
+#footer a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #FF8000;
+    text-decoration: none;
+}
+
+#footer #tray {
+    padding: 5px 0 20px;
+    text-align: left; 
+}
+body.rtl #footer #tray {
+    text-align: right;
+}
+
+#tray .aspect {
+    padding: 0 20px 0em 0;
+    width: 300px;
+    float: left;
+    border: solid 0px #000;
+}
+#tray .aspect h3 {
+    width: 300px;
+    padding:0px 0px 6px 0px;
+    font: 16px calibri;
+    font-weight: normal;
+    color: #808080;
+}
+#tray .aspect2 {
+    padding: 0 20px 0em 70px;
+    width: 260px;
+    float: left;
+    border: solid 0px #000;
+}
+#tray .aspect2 h3 {
+    width: 260px;
+    padding:0px 0px 6px 0px;
+    font: 16px calibri;
+    font-weight: normal;
+    color: #808080;
+}
+#tray .aspect ul {
+    margin:0px 0px 0px 6px;
+    font-size:11px;
+}
+#tray .aspect li {
+    padding-bottom: 2px;
+}
+
+body.rtl #tray .aspect {
+    padding: 0 0 3em 20px;
+    float: right;
+}
+
+#footer .footer_right {
+    margin-bottom: 1em;
+    padding: 1em 0 0;
+    float: right;
+    width: 290px;
+    text-align: right;
+}
+
+body.rtl #footer .footer_right {
+    text-align: left;
+}
+
+#footer .footer_right > div {
+    margin-bottom: 1em;
+}
+
+#footer #social_icons img {
+    margin-left: 10px;
+}
+
+body.rtl #footer #social_icons img {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+#copyright span {
+    display: block;
+}
+
+.nav_home #copyright span {
+    display: inline;
+}
+.gadget { 
+    margin:0 0 0px 0; 
+    padding:0px 0 0px 0; 
+    width:290px; 
+    height:250px; 
+    border: none;
+    background: url("../images/facebookOff.png") no-repeat center;
+}
+.gadgetLink { 
+    margin:0 0 0px 0; 
+    padding:0 0 0px 0;
+    width:290px; 
+    height:250px; 
+    border: none;
+    display: block;
+    position: absolute;
+}
+
+/* add class headingText @AUTHOR: SANDY27AUG13 */
+.headingText{
+    color: #D76B00;
+}
+.floatLeft {
+    float: left;
+}
+.cursor{
+    cursor: pointer;
+}
+
+.ajax_p{
+    font-size: 14px;
+    font-family: Calibri;
+    color: #FD9A00;
+}
+.ajax_p_blue{
+    font-size: 16px;
+    font-family: Calibri;
+    color: #0000FF;
+}
+/*************Start code To Change Color and classname from blue12Verdana to blue14Verdana @Author:PRIYA03SEP13*************/
+.blue14Verdana{
+    color:#0065CA;
+    font-size: 14px;
+    font-family:Verdana, Calibri;
+}
+/*************End code To Change Color and classname from blue12Verdana to blue14Verdana @Author:PRIYA03SEP13*************/
+/**********End Code To Add class @Author:PRIYA31AUG13******/
+/**********Start Code To Add Class @Author:PRIYA04SEP13**********/
+#spaceLeft20{
+    padding: 0px 0px 0px 20px;
+}
+/**********End Code To Add Class @Author:PRIYA04SEP13**********/
+/**********Start Code To Add Class @AUTHOR: SANDY30DEC13**********/
+.floatLeft
+{
+    float: left;
+}
+/**********End Code To Add Class @AUTHOR: SANDY30DEC13**********/
+.justify{text-align:justify;}
+.bold{font-weight:bold;}
+.center{text-align:center;}
+.right{text-align:right;}
+.nostart{list-style-type:none; margin:0; padding:0;}
+.clear{clear:both;}
+br.clear{clear:both; margin-top:0px;}
+.font-arial{
+    font-family: Calibri;
+}
+.height10{
+    height: 10px;
+}
+.height5{
+    height: 5px;
+}
+.heightAuto{
+    height: auto;
+    width:100%;
+}
+/* ----------------------------------------------Copyright-------------------------------------*/
+
+#copyright p{
+    margin:0;
+    padding:0;
+}
+
+#copyright{
+    margin:0 auto 0;
+    padding-top: 5px;
+    display:block;
+    border-top: 2px solid #E3E3E3;
+}
+.spaceLeft50
+{
+    margin:0px 0px 0px 50px;
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+/*
+ * **************************************************************************************
+ * @tutorial: START CODE FOR INDEX PAGE : AUTHOR @DARSHANA 6 JAN 2021
+ * **************************************************************************************
+ * 
+ * Created on JAN 09, 2020
+ *
+ * @FileName: index.html
+ * @Author: SoftwareGen Developement Team 
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ 
+-->
+<html>
+    <!-- *************************************-->
+    <!-- Start Code For Head-->
+    <?=View::renderPath('home/head');?>
+    <!--End Code For Head-->
+    <!--*************************************-->
+    <body>
+        <button id="modalButton" type="button" style="display:none;" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <div class="modal fade unsetPadding" id="myModal" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- YUVRAJ ADD THIS MODAL LARGE MODAL CLASS 22/02/2022 --> 
+                <div id="customizeModalPopupForm" class="modal-content customizeModalPopupFormCustom">
+
+                </div>
+            </div>
+        </div>
+        <?php
+        //echo '<pre>';
+        //print_r($data);
+        //echo '</pre>';
+        ?>
+        <!-- *************************************-->
+        <!-- Start Code For Login Pop up form-->
+        <?=View::renderPath('home/login_popup');?>
+        <!--End Code For Login Pop up form-->
+        <!--*************************************-->
+        <!-- *************************************-->
+        <!-- Start Code For Top Navigation Header-->
+        <?=View::renderPath('home/top_header_nav');?>
+        <!--End Code For Top Navigation Header-->
+        <!--*************************************-->
+        <!-- Start Code For Main Navigation Header-->
+        <?=View::renderPath('home/main_nav_header');?>
+        <!--End Code For Main Navigation Header-->
+        <div id="mainMiddleDiv">
+            <!--*************************************-->
+            <!-- Start Code For Slider-->
+            <?=View::renderPath('home/slider');?>
+            <!--End Code For Slider-->
+            <!--*************************************-->
+            <!-- Start Code For Slider-->
+            <?=View::renderPath('home/recommended_product');?>
+            <!--End Code For Slider-->
+            <!--*************************************-->
+            <!-- Start Code For Today Saver-->
+            <?=View::renderPath('home/todaysaver');?>
+            <!--End Code For Today Saver-->
+            <!--*************************************-->
+            <!-- Start Code For BEST OFFERS-->
+            <?=View::renderPath('home/offers');?>
+            <!--End Code For BEST OFFERS-->
+            <!--*************************************-->
+            <!-- Start Code For shop_by_category-->
+            <?=View::renderPath('home/why_us');?>
+            <!--End Code For shop_by_category-->
+            <!--*************************************-->
+            <!-- Start Code For WHAT CUSTOMER SAYS-->
+            <?=View::renderPath('home/what_customer_says');?>
+            <!--End Code For WHAT CUSTOMER SAYS-->
+            <!--*************************************-->
+        </div>
+        <!-- Start Code For BEST footer-->
+        <?=View::renderPath('home/footer');?> 
+        <!--End Code For BEST footer-->
+        <!--*************************************-->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/js/app.js"></script>
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/vendor/jquery/jquery.min.js"></script>
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- select2 Js -->
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/vendor/select2/js/select2.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/vendor/owl-carousel/owl.carousel.js"></script>
+        <!-- Custom -->
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/js/custom.min.js"></script>
+        <script src="<?=HTTP_HOST_WEBROOT?>/<?=Config::get('default_theme');?>/js/custom.js"></script>
+
+    </body>
+</html>

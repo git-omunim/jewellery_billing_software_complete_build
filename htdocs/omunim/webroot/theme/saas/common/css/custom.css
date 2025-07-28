@@ -1,0 +1,557 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16 Jan, 2021, 10:11:52 PM
+    Author     : sgen
+*/
+::placeholder{
+    color: #202326 !important;
+}
+body{
+    font: 400 15px/28px "calibri", sans-serif !important;
+}
+.text-gold
+{
+    color: #f3a61e;
+}
+.product_features_row{  
+    font-size: 14px;
+    padding-top: 50px;
+}
+.awards_section{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(78,120,244,1) 0%, rgba(248,251,251,1) 100%);
+}
+.alliance_img_100{
+    height: 100px;
+}
+.alliance_img_200{
+    height: 200px;
+    vertical-align: middle;
+}
+.alliance_img{
+    background-color: #fff;
+}
+.testomonial_text{
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 50px;
+
+}
+.contact_form{
+    margin-top: 90px;
+}
+.prize_3{
+    width: 200px;
+    height: 204px;
+}
+.prize_3 img{
+    width: 100%;
+    height: 100%;
+}
+.prize_row_2{
+    padding-left:100px;
+}
+.contact_form{
+    padding: 30px;
+    background:  rgba(3, 25, 91, 0.77) 0%;
+}
+.footer_area{
+    color: #bbbbc4 ;
+}
+.h_footer_dark_two{
+    background: #bea042 !important;   
+}
+.free_demo_area{
+    background: #d0cfcc !important;
+}
+.prize_4{
+    height: 204px;
+}
+.prize_4 img{
+    height: 100%;
+}
+.prize_5{
+    height: 204px;
+}
+.prize_5 img{
+    height: 100%;
+}
+.app_google{
+    width: 160px;
+}
+.app_google img{
+    width: 100%;
+}
+.award_text{
+    font-size: 55px;  
+}
+.h_action_area_three{
+    background: #4e78f4 !important;
+}
+
+.more_feature_img img{
+    width: 700px;
+}
+.pos_developer_product_area{
+    background: #fafafc;
+    .tab_img_info,  .tab_img_info_2,  .tab_img_info_3,  .tab_img_info_4{
+        z-index: 1;
+        .tab_img, .tab_img_2, .tab_img_3, .tab_img_4{
+            padding-bottom: 30px;
+            overflow: visible;
+            margin-left: -50px;
+            img{
+                position: relative;
+                z-index: 1;
+                opacity: 0;
+                transform: scale(0.9);
+                transition: all 0.9s linear, opacity 0.2s linear;
+            }
+            .pattern_shap{
+                top: auto;
+                bottom: -30px;
+                left: 100px;
+                z-index: 1;
+            }
+            &.active{
+                img{
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .tab_round{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 5px solid #f9edcf;
+                position: absolute;
+                top: 100px;
+                left: -20px;
+            }
+            .tab_triangle{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 12.5px 0 12.5px 20px;
+                border-color: transparent transparent transparent #c8ede9;
+                position: absolute;
+                top: -15px;
+                left: 170px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .developer_product_content{
+        padding-right: 0px;
+        .develor_tab , .develor_tab_2,.develor_tab_3,.develor_tab_4{
+            padding-left: 0;
+            margin-bottom: 50px;
+            .nav-item{
+                .nav-link{
+                    color: #2c2c51;
+                    &:before{
+                        background: #5f54fd;
+                    }
+                    &.active{
+                        color: #5f54fd;
+                    }
+                }
+            }
+        }
+        h4{
+            font-size: 30px;
+            line-height: 40px;
+            color: #2c2c51;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            color: #7b7b93;
+            margin-bottom: 0;
+        }
+    } 
+}
+/*.carousel-indicators li{
+  background: #17a2b8;  
+}*/
+.carousel-indicators .active{
+     background: #17a2b8; 
+}
+.menu > .nav-item.submenu .dropdown-menu .nav-item{
+    border-bottom: solid 1px #eceff7;
+}
+.menu > .nav-item:hover .dropdown-menu{
+    border-top: solid 5px #bea042;
+}
+.sec_pad{
+    padding: 60px 0px 84px;
+}
+@media (max-width:1280px){
+    .alliance_img_1{
+        width: 259px;
+        height: 100px;
+    }
+    .alliance_img_1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_2{
+        width: 240px;
+        height: 204px; 
+    }
+    .alliance_img_2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_3{
+        width: 250px;
+        height: 160px;
+    }
+    .alliance_img_3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_4{
+        width: 241px;
+        height: 100px;
+    }
+    .alliance_img_4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_row_1{
+        padding-left: 20px;
+    } 
+    .prize{
+        width: 215px;
+        height: 160px;
+    }
+    .prize img{
+        width: 100%;
+        height: 100%;
+    } 
+    .prize_row_2{
+        padding-left: unset;
+    }
+    .prize_4{
+        width: 175px;
+        height: 160px;
+    } 
+    .prize_4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_5{
+        width: 175px;
+        height: 160px;
+    }
+    .prize_5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_3{
+        width: 175px;
+        height: 160px;
+    }
+    .prize_3 img{
+        width: 100%;
+        height: 100%; 
+    }
+}
+@media (max-width:991px)
+{
+    .award_text{
+        font-size: 40px;  
+    }
+    .prize_row_1{
+        padding-left: 20px;
+    } 
+    .prize{
+        width: 150px;
+    }
+    .prize img{
+        width: 100%;
+        height: 100%;
+    } 
+    .prize_row_2{
+        padding-left: unset;
+    }
+    .prize_4{
+        width: 150px;
+        height: 102px;
+    } 
+    .prize_4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_5{
+        width: 150px;
+        height: 102px;
+    }
+    .prize_5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_3{
+        width: 150px;
+        height: 102px;
+    }
+    .prize_3 img{
+        width: 100%;
+        height: 100%; 
+    }
+    .alliance_img_1{
+        width: 176px;
+        height: 100px;
+    }
+    .alliance_img_1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_2{
+        width: 196px;
+        height: 180px; 
+    }
+    .alliance_img_2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_3{
+        width: 195px;
+        height: 150px;
+    }
+    .alliance_img_3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_4{
+        width: 213px;
+        height: 93px;
+    }
+    .alliance_img_4 img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:769px)
+{
+    .award_text{
+        font-size: 40px;  
+    }
+    .prize{
+        width: 150px;
+        height: 170px;
+    }
+    .prize img{
+        width: 100%;
+        height: 100%;
+    } 
+    .prize_row_2{
+        padding-left: unset;
+    }
+    .prize_4{
+        height: 170px;
+    } 
+    .prize_4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_5{
+        height: 170px;
+    }
+    .prize_5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_3{
+        height: 170px;
+    }
+    .prize_3 img{
+        width: 100%;
+        height: 100%; 
+    }
+    .alliance_img_1{
+        width: 205px;
+        height: 100px;
+    }
+    .alliance_img_1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_2{
+        width: 205px;
+        height: 165px; 
+    }
+    .alliance_img_2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_3{
+        width: 205px;
+        height: 150px;
+    }
+    .alliance_img_3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_4{
+        width: 155px;
+        height: 92px;
+    }
+    .alliance_img_4 img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:575px){
+    .award_text{
+        font-size: 40px;  
+    }
+    .prize_row_2{
+        padding-left: unset;
+    }
+    .prize_4{
+        width: 130px;
+        height: 120px;
+    } 
+    .prize_4 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_5{
+        width: 130px;
+        height: 120px; 
+    }
+    .prize_5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_3{
+        width: 130px;
+        height: 120px;
+    }
+    .prize_3 img{
+        width: 100%;
+        height: 100%; 
+    }
+    .prize{
+        width: 130px;
+        height: 120px;
+    }
+    .prize img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_1{
+        width: 211px;
+        height: 100px;
+    }
+    .alliance_img_1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_2{
+        width: 211px;
+        height: 157px; 
+    }
+    .alliance_img_2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_3{
+        width: 209px;
+        height: 124px;
+    }
+    .alliance_img_3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_4{
+        width: 173px;
+        height: 95px;
+    }
+    .alliance_img_4 img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width:360px){
+    .award_text{
+        font-size: 40px;  
+    }
+    .prize{
+        width: 105px;
+        height: 100px;
+    }
+    .prize img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_row_2{
+        padding-left: unset;
+    }
+    .prize_4{
+        width: 115px;
+        height: 100px;
+    } 
+    .prize_4 img{
+        width: 115%;
+        height: 100%;
+    }
+    .prize_5{
+        width: 130px;
+        height: 100px; 
+    }
+    .prize_5 img{
+        width: 100%;
+        height: 100%;
+    }
+    .prize_3{
+        width: 115px;
+        height: 100px;
+    }
+    .prize_3 img{
+        width: 100%;
+        height: 100%; 
+    }
+    .alliance_img_1{
+        width: 172px;
+        height: 100px;
+    }
+    .alliance_img_1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_2{
+        width: 171px;
+        height: 155px; 
+    }
+    .alliance_img_2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_3{
+        width: 175px;
+        height: 121px;
+    }
+    .alliance_img_3 img{
+        width: 100%;
+        height: 100%;
+    }
+    .alliance_img_4{
+        width: 151px;
+        height: 91px;
+    }
+    .alliance_img_4 img{
+        width: 100%;
+        height: 100%;
+    }
+}

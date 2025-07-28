@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jewellery-test.omunim.in//sitemap.xml

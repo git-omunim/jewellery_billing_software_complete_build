@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>VISITOR SCAN</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+        .body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            border:1px solid red;
+        }
+       .screenPageDiv{
+            width:100%;
+            height:100vh;
+            margin:0 auto;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+        }
+        .screenPageDiv .container-fluid{
+            /* background:#ffff7e; */
+            background:url("img/bg-img.jpeg")no-repeat;
+            background-size:cover;
+        }
+        .screenPageDiv .rightside .img{
+         border:1px solid #dedada;
+         background:#fff;
+         padding:10px;
+         width:90%;
+         height:400px;
+         margin:auto;
+        }
+        .screenPageDiv .rightside .img img{
+          width:100%;
+          height:100%;
+          object-fit: contain; 
+          
+
+        }
+        .leftSide .logoName h1{
+            font-size:95px;
+            font-weight:600;
+            letter-spacing: -2px;
+            color:#000;
+            position: relative;
+        }
+        .leftSide .logoName img{
+            position: relative;
+            height:100px;
+        }
+       .leftSide .logoName p{
+          font-weight:600;
+          margin-top:-10px;
+          font-size:18px;
+        color: #fff;
+        border-top: 2px solid #fff;
+        width:30%;
+        margin-top:3px;
+        }
+        .leftSide .persInfo h4{
+            font-size:32px;
+            letter-spacing: -1.5px;
+            line-height: 3rem;
+        }
+        .leftSide .persInfo span{
+           color:#ffd100;
+        }
+        .leftSide .persInfo h4 .labal{
+            font-size:34px;
+           width:130px;
+           display: inline-block;
+           font-weight: 600;
+           color:#fff;
+        }
+        .leftSide{
+            padding-left:50px;
+        }
+        @media (max-width: 992px) { 
+            .leftSide .persInfo h4 .labal{
+                font-size:28px;
+                width:110px;
+               
+            }
+            .leftSide{
+            padding-left:0px;
+        }
+         }
+    </style>
+</head>
+<body>
+    <section class="screenPageDiv">
+        <div class="container-fluid p-3">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="leftSide">
+                        <div class="logoName mb-3">
+                            <img src="img/image.png" class="img-fluid">
+                            <!-- <h1 class="text-uppercase fw-bold mb-0">IIJS</h1> -->
+                            <p class="mb-0">Jewellery Exhibition</p>
+                        </div>
+                        <div class="persInfo">
+                            <h4 class="text-capitilize"><span class="labal" id="userName">Name:</span>&nbsp;<span id="userFullName"></span></h4>
+                            <h4><span class="labal" id="userPhone">Mobile:</span>&nbsp;<span id="userMobile"></span></h4>
+                            <h4><span class="labal" id="userEmail">Email:</span>&nbsp;<span id="userEmailValue"></span></h4>
+                            <h4><span class="labal" >City:</span>&nbsp;<span id="userCity"></span></h4>
+                            <h4><span class="labal">In Time:</span>&nbsp;<span id="userintime">9:00 AM</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="rightside img text-center">
+                        <div class="img" >
+                            <img src="" alt="user-img" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="largeImg mt-2 text-center">
+                        <img src="img/largeimage.jpg" alt="large=img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+    // Function to fetch and update visitor details
+    function fetchVisitorDetails() {
+        $.ajax({
+            url: 'omvisitorinout.php',
+            type: 'GET',
+            dataType: 'json',
+            success: function(response) {
+                if (response) {
+                    var visitorDetails = response;
+                    // Update the HTML with the fetched data
+                    $('#userFullName').text(visitorDetails.visitor_name);
+                    $('#userMobile').text(visitorDetails.visitor_mobile);
+                    $('#userEmailValue').text(visitorDetails.visitor_email);
+                    $('#userCity').text(visitorDetails.visitor_city);
+                    $('#userintime').text(visitorDetails.visitor_intime);
+                    //console.log(imageId);
+                    $('.rightside .img img').attr('src', 'img/' + visitorDetails.visitor_image + '.jpg');
+                    
+                }
+            },
+            error: function(xhr, status, error) {
+                console.log('AJAX request error:', error);
+            },
+        });
+    }
+    // Fetch visitor details immediately
+    fetchVisitorDetails();
+
+    // Schedule the next fetch every second
+    setInterval(fetchVisitorDetails, 1000);
+});
+
+</script>

@@ -1,0 +1,822 @@
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: OMGOLD NEW DESIGN HOME PANEL PAGE @AUTHOR:MADHUREE-06MARCH2020
+ * **************************************************************************************
+ *
+ * Created on 06 MARCH, 2020 1:49:47 PM
+ *
+ * @FileName: omhpmnpn_3.0.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+
+require_once 'system/omssopin.php';
+$message = $_GET['message'];
+?>
+<!-- stats -->
+<div id="mainMiddle" class="main_middle" >
+    <section id="basic-form-layouts">
+        <div class="row match-height">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title" id="basic-layout-form text-gold">OMUNIM HOME PANEL</h4>
+                        <div class="main_link_red_12" id="homeMessDispDiv">
+                                    <?php
+                                    if ($message != NULL) {
+                                        echo $message;
+                                    }
+                                    ?>
+                        </div>
+                        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                        <div class="heading-elements">
+                            <ul class="list-inline mb-0">
+                                <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                                <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                                <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                                <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body collapse in">
+                        <div class="card-block">
+                            <form class="form">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-md-2 pr-0">
+                                            <div class="form-group">
+                                                <input type="text" id="projectinput1" class="form-control" placeholder="Customer First Name" name="fname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 pr-0">
+                                            <div class="form-group">
+                                                <input type="text" id="projectinput2" class="form-control" placeholder="Customer Last Name" name="lname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-1 pr-0">
+                                            <div class="form-group">
+                                                <select id="" name="" class="form-control">
+                                                    <option value="S/o">S/o</option>
+                                                    <option value="D/o">D/o</option>
+                                                    <option value="W/o">W/o</option>
+                                                    <option value="C/o">C/o</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 pr-0">
+                                            <div class="form-group">
+
+                                                <input type="text" id="projectinput2" class="form-control" placeholder="Customer Father Name" name="lname">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2  pr-0 font-small-3">
+                                            <div class="form-group">
+
+                                                <div class="input-group">
+                                                    <label class="display-inline-block custom-control custom-radio ml-1">
+                                                        <input type="radio" name="customer1" class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description ml-0">Male</span>
+                                                    </label>
+                                                    <label class="display-inline-block custom-control custom-radio">
+                                                        <input type="radio" name="customer1" checked class="custom-control-input">
+                                                        <span class="custom-control-indicator"></span>
+                                                        <span class="custom-control-description ml-0">Female</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+
+                                                <input type="text" id="projectinput4" class="form-control" placeholder="Customer Village / City / State" name="city">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+
+                                                <input type="text" id="projectinput4" class="form-control" placeholder="Customer Mobile Number" name="Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+
+                                                <select id="" name="" class="form-control">
+
+                                                    <option value="S/o">Firm Name </option>
+                                                    <option value="D/o">XYZ </option>
+                                                    <option value="W/o">Dinesh</option>
+                                                    <option value="C/o">Nliesh </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" Value="Finger scan" disabled>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            <button type="submit" class="btn btn-outline-success w-100 mb-1">
+                                                <i class="icon-user-plus"></i> Add Customers
+                                            </button>
+                                        </div>
+                                        <div class="col-md-3">
+
+                                            <button type="button" class="btn btn-outline-success mr-1  w-100">
+                                                <i class="icon-user-plus"></i> Add Girvi Customers
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php 
+    $selHomePageIcons = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'homePageIcons'";
+    $resHomePageIcons = mysqli_query($conn, $selHomePageIcons);
+    $rowHomePageIcons = mysqli_fetch_array($resHomePageIcons);
+    $homePageIconsOpt = $rowHomePageIcons['omly_value'];
+    if ($homePageIconsOpt == 'YES') {
+    ?>
+    <div class="content-body">
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Customer List</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/user.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Barcode Tags</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/barcode.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Firm Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/firm.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Add Customer</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/add-customer.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Loan   Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/loan.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Control Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/setting.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Search Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/user-search.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Loan   Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/loan.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">SMS Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/sms.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Add Stocks</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/add-stock.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center"> Udhaar  Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/loan.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Daily Diary</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/daily-diary.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Stocks List</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/stock.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Transaction</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/transaction.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Journal Book</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/journal-book.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Sell/ Purchase</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/salepurc.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Analysis</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/analysis.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Ledger Book</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/legaerbook.png" class="colordrakgold" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Balance Sheet </span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/balancesheet.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">GST Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/gst.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Trial Balance</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/salepurc.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Profit and Loss</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/profitloss.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">System Log Panel</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/logs.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-12 box">
+
+            <a href="" class="card bg-goldbox">
+                <div class="card-body">
+                    <div class="card-block">
+                        <div class="media">
+                            <div class="media-body textbox text-xs-left">
+
+                                <span class="text-center">Calculator</span>
+                            </div>
+                            <div class="media-right media-middle">
+                                <img src="assets_3.0/app-assets/images/icons/cal.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <?php } ?>
+</div>
+<!-- Statistics -->
+<?php
+                    $selFirmId = $_SESSION['setFirmSession'];  //to assign session firm to show its details on home panel @AUTHOR: SANDY2AUG13
+                    if ($selFirmId == '' || $selFirmId == NULL)
+                        $qSelectFirm = "SELECT * FROM firm where firm_own_id = '$_SESSION[sessionOwnerId]' order by firm_since asc";
+                    else
+                        $qSelectFirm = "SELECT * FROM firm where firm_own_id = '$_SESSION[sessionOwnerId]' and firm_id=' $selFirmId' order by firm_since asc";
+                    $resultFirm = mysqli_query($conn, $qSelectFirm);
+                    $rowFirm = mysqli_fetch_array($resultFirm);
+
+                    $firmId = $rowFirm['firm_id'];
+                    $firmRegNo = $rowFirm['firm_reg_no'];
+                    $firmFullName = $rowFirm['firm_long_name']; //substr removed @Author:PRIYA02MAR14
+                    if ($firmFullName == NULL || $firmFullName == '') {
+                        $firmFullName = 'Online Munim Accounting Software';
+                    }
+                    $firmDesc = $rowFirm['firm_desc'];
+                    $firmAddress = $rowFirm['firm_address'];
+                    if ($firmAddress == NULL || $firmAddress == '') {
+                        $firmAddress = 'www.OnlineMunim.com  or  info@omunim.com';
+                    }
+                    $firmPhoneDetail = $rowFirm['firm_phone_details'];
+                    if ($firmPhoneDetail == NULL || $firmPhoneDetail == '') {
+                        $firmPhoneDetail = 'Contact Us - +91 8551958585, +91 8087458585';
+                    }
+                    $firmHeaderInfo = $rowFirm['firm_form_header'];
+                    $firmFooterInfo = $rowFirm['firm_form_footer'];
+                    $firmLeftLogoType = $rowFirm['firm_left_thumb_ftype'];
+                    $firmRightLogoType = $rowFirm['firm_right_thumb_ftype'];
+                    ?>
+<div class="row">
+    <div class="col-xl-8 col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-inline text-xs-center pt-2 m-0">
+                    <h1 class="text-sm-center text-gold"><?php echo $firmFullName;?></h1>
+                    <h5><?php echo $firmDesc;?></h5>
+                    <span><i class="icon-location text-blue"></i><?php echo $firmAddress;?></span>
+                    <br>
+                    <strong><i class="icon-phone"></i><?php echo $firmPhoneDetail;?></strong>
+                </ul>
+                <div class="text-md-center pt-2">
+                    <?php if ($firmLeftLogoType != NULL || $firmLeftLogoType != '') { ?>
+                    <img src=src="<?php echo $documentRootBSlash; ?>/include/php/omffgfli.php?firm_id=<?php echo $firmId; ?>" style="height: 200px;" />
+                    <?php } else { ?>
+                    <img src="assets_3.0/app-assets/images/companylogo.png" style="height: 200px;" />   
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-12">
+        <div class="card card-inverse bg-gold">
+            <div class="card-body">
+                <div class="position-relative">
+                    <div class="chart-title position-absolute mt-2 ml-2 white">
+                        <h1 class="display-4">84%</h1>
+                        <span>ACCOUNT LEDGER</span>
+                    </div>
+                    <canvas id="emp-satisfaction" class="height-350 block"></canvas>
+                    <div class="chart-stats position-absolute position-bottom-0 position-right-0 mb-2 mr-3 white">
+                        <a href="#" class="btn bg-info bg-darken-3 mr-1 white">Statistics <i class="icon-stats-bars"></i></a> for the last year.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ project charts -->
+<!-- Recent invoice with Statistics -->
+<div class="row match-height">
+    <div class="col-xl-4 col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="media">
+                    <div class="p-2 text-xs-center bg-deep-orange media-left media-middle">
+                        <i class="icon-user1 font-large-2 white"></i>
+                    </div>
+                    <div class="p-2 media-body">
+                        <h5 class="deep-orange">Total Customers</h5>
+                        <h5 class="text-bold-400">55,0000</h5>
+                        <progress class="progress progress-sm progress-deep-orange mt-1 mb-0" value="45" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="media">
+                    <div class="p-2 text-xs-center bg-cyan media-left media-middle">
+                        <i class="icon-camera7 font-large-2 white"></i>
+                    </div>
+                    <div class="p-2 media-body">
+                        <h5>Total Products</h5>
+                        <h5 class="text-bold-400">300</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="media">
+                    <div class="p-2 media-body text-xs-left">
+                        <h5>Low Product Quantity</h5>
+                        <h5 class="text-bold-400">Rings <span class="red">left 5</span></h5>
+                    </div>
+                    <div class="p-2 text-xs-center bg-red media-right media-middle">
+                        <i class="icon-camera7  font-large-2 white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-8 col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Recent Invoices</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="card-block">
+                    <p>Total paid invoices 240, unpaid 150. <span class="float-xs-right"><a href="#">Invoice Summary <i class="icon-arrow-right2"></i></a></span></p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th>Invoice#</th>
+                                <th>Customer Name</th>
+                                <th>Status</th>
+                                <th>Due</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-truncate"><a href="#">INV-001001</a></td>
+                                <td class="text-truncate">Elizabeth W.</td>
+                                <td class="text-truncate"><span class="tag tag-default tag-success">Paid</span></td>
+                                <td class="text-truncate">10/05/2016</td>
+                                <td class="text-truncate"> 1200.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate"><a href="#">INV-001012</a></td>
+                                <td class="text-truncate">Andrew D.</td>
+                                <td class="text-truncate"><span class="tag tag-default tag-success">Paid</span></td>
+                                <td class="text-truncate">20/07/2016</td>
+                                <td class="text-truncate"> 152.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate"><a href="#">INV-001401</a></td>
+                                <td class="text-truncate">Megan S.</td>
+                                <td class="text-truncate"><span class="tag tag-default tag-success">Paid</span></td>
+                                <td class="text-truncate">16/11/2016</td>
+                                <td class="text-truncate"> 1450.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate"><a href="#">INV-01112</a></td>
+                                <td class="text-truncate">Doris R.</td>
+                                <td class="text-truncate"><span class="tag tag-default tag-warning">Overdue</span></td>
+                                <td class="text-truncate">11/12/2016</td>
+                                <td class="text-truncate"> 5685.00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-truncate"><a href="#">INV-008101</a></td>
+                                <td class="text-truncate">Walter R.</td>
+                                <td class="text-truncate"><span class="tag tag-default tag-warning">Overdue</span></td>
+                                <td class="text-truncate">18/05/2016</td>
+                                <td class="text-truncate"> 685.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Recent invoice with Statistics -->
+<div class="row match-height">
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="card" style="height: 458px;">
+            <div class="card-body">
+                <div class="card-block">
+                    <h4 class="card-title">Online Munim</h4>
+                    <h6 class="card-subtitle text-muted">210 subscribers</h6>
+                </div>
+                <div class="embed-responsive embed-responsive-item embed-responsive-16by9">
+                    <a href="https://www.youtube.com/onlinemunim" target="_blank" >
+                        <img src="<?php echo $documentMainRoot; ?>/2/assets/frontend/onepage/img/video_image.png" alt="JEWELLERY SOFTWARE" class="marginLeftMinus10" />
+                    </a>
+                </div>
+                <div class="card-block">
+                    <p class="card-text">Online Munim provides Jewellery Software, Money Lending Software, Girvi Software, Retail Accounting and Billing Software and Small ‐ Large Scale Business Accounting Software. We provide best possible solutions with latest technology to our customers to run their business more effectively. Our products have wide range of features including accounting, customer management, inventory management and other business transactions.
+
+                    </p>
+                    <a href="#" class="card-link">Read More</a>
+                    <a href="#" class="card-link">More Videos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-8 col-md-10 col-sm-12">
+        <div class="card" style="height: 440px;">
+            <div class="card-body">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <?php if ($_SESSION['sessionInternetWorking']) { ?>
+                        <iframe height="400px" width="1082px" src="https://ads.omunim.in/slider/slider_15MAR2021.html" 
+                                style="border: 0px solid black;overflow:hidden;"> 
+                        </iframe>
+                        <?php } else { ?>
+                        <iframe height="400px" width="1080px" src="../2/slider/slider_15MAR2021.html" 
+                                style="border: 0px solid black;overflow:hidden;"> 
+                        </iframe>
+                                    <?php } ?>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="icon-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="icon-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
