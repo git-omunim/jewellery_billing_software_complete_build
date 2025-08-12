@@ -1,3 +1,130 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @tutorial: STOCK TRANSFER REPORT COUNTER FIELD FILE @AUTHOR:PRIYANKA-04DEC2021
+ * *************************************************************************************************
+ * 
+ * Created on 04 DEC, 2021 03:00:00 PM
+ *
+ * @FileName: omStockTransferReportCounter.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA-04DEC2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+//**************************************************************************************
+// Start code to get product counter details @AUTHOR:PRIYANKA-04DEC2021
+//**************************************************************************************
+//
+// This is the main division class for input filed
+//
+$inputMainDivClass = '';
+$inputMainDivStyle = '';
+//
+// Input Box Type and Ids
+$inputType = 'dropdown';
+$inputId = 'productCounter';
+$inputName = 'productCounter';
+//
+// This is the main class for input flied
+$inputFieldClass = 'form-control text-center';
+//
+//if ($inputStyle === '' || $inputStyle === NULL) {    
+    $inputStyle = 'width:100%; height:30px;text-align: left; '
+                . 'border-color:#b5d8ff;background:#bed8fd; color:#000080!important; border-radius: 5px !important;text-align:center;font-weight:600;';
+//}
+//
+$inputLabel = ''; // Display Label below the text box
+//       
+//
+// This class is for Pencil Icon                                                           
+$inputIconClass = '';
+//
+// Query for drop down select options
+$inputFieldDBQuery = "SELECT sttr_counter_name FROM stock_transaction "
+                   . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                   . "AND sttr_counter_name IS NOT NULL "
+                   . "AND sttr_counter_name != '' "
+                   . "AND sttr_firm_id IN ($strFrmId) GROUP BY sttr_counter_name";
+//
+//echo '$inputFieldDBQuery == '.$inputFieldDBQuery;
+//
+$inputFieldDBOptionColumnValue = 'sttr_counter_name';
+$inputFieldDBOptionColumnValueDisplay = 'sttr_counter_name';
+$selectFieldSelectedColumn = 'sttr_counter_name';
+//
+if ($productCounter != '' && $productCounter != NULL && $productCounter != 'NotSelected') {
+    $selectFieldSelected = $productCounter;
+}
+// 
+// For drop down select options
+$selectOptionLabel = 'SELECT COUNTER';
+//
+// Place Holder inside input box
+//
+$len = strlen($placeHolder);
+$position = strpos($placeHolder, '|');
+$inputPlaceHolder = substr($placeHolder, $position, $len);
+$inputLabelDivText = substr($placeHolder, 0, $position);
+//
+//$inputLabelBoxClass = 'hidden_box_dropdown';
+//
+// Place Holder in span outside input box
+$spanPlaceHolderClass = '';
+$spanPlaceHolder = '';
+// 
+//
+//
+// Event Options
+//
+// On Change Function
+// On Change Function
+$inputOnChange = "getStockTransferReportSelectedOptionsFunc(this.value, document.getElementById('selectedStaff').value, 
+                                                            document.getElementById('FirmName').value, '$stockTransferNavPanelName', 
+                                                            document.getElementById('FromDay'), document.getElementById('FromMonth'), document.getElementById('FromYear'),
+                                                            document.getElementById('ToDateDay'), document.getElementById('ToDateMonth'), document.getElementById('ToDateYear'));";
+$inputKeyUpFun = '';
+$inputOnBlurFun = 'getStockTransferReportSelectedOptionsFunc(this.value, document.getElementById("selectedStaff").value, 
+                                                             document.getElementById("FirmName").value, "' . $stockTransferNavPanelName . '", 
+                                                             document.getElementById("FromDay"), document.getElementById("FromMonth"), document.getElementById("FromYear"),
+                                                             document.getElementById("ToDateDay"), document.getElementById("ToDateMonth"), document.getElementById("ToDateYear"));';
+$inputDropDownCls = '';               // This is the main division class for drop down 
+$inputselDropDownCls = '';            // This is class for selection in drop down
+$inputMainClassButton = '';           // This is the main division for Button
+// 
+// 
+//echo '$selectOptionLabel == ' . $selectOptionLabel . '<br />';
+// 
+//**************************************************************************************
+//* End code to get product counter details @AUTHOR:PRIYANKA-04DEC2021
+//**************************************************************************************
+//
+//
+include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+//
+//
 ?>

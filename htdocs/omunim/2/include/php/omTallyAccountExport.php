@@ -1,3 +1,115 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: TAllY MIGRATION FILE
+ * **************************************************************************************
+ * 
+ * Created on 10 SEP 2022 03:15:52 pm
+ *
+ * @FileName: omTallyAccountExport.php
+ * @Author: RENUKA SHARMA
+ * @AuthorEmailId:  renukas@omunim.com
+ * @version 1.0.0
+ * @Copyright (c) 2022 www.omunim.com
+ * @All rights reserved
+ */
+?>
+<?php
+
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$firmid = $_SESSION['setFirmSession'];
+$queryfirminfo = "select * from firm where firm_id='$firmid'";
+$resAllfirminfo = mysqli_query($conn, $queryfirminfo) or die(mysqli_error($conn));
+while ($rowfirminfo = mysqli_fetch_array($resAllfirminfo, MYSQLI_ASSOC)) {
+    $firm_id = $rowfirminfo['firm_id'];
+    $firm_name = $rowfirminfo['firm_name'];
+    $firm_Lname = $rowfirminfo['firm_long_nmae'];
+    $qSelAllAccount = "SELECT * FROM accounts";
+    $resAllAccount = mysqli_query($conn, $qSelAllAccount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllAccount);
+    $tallyGroup = '
+<ENVELOPE>
+ <HEADER>
+  <TALLYREQUEST>Import Data</TALLYREQUEST>
+ </HEADER>
+ <BODY>
+  <IMPORTDATA>
+   <REQUESTDESC>
+    <REPORTNAME>All Masters</REPORTNAME>
+    <STATICVARIABLES>
+     <SVCURRENTCOMPANY>' . $firm_name . '</SVCURRENTCOMPANY>
+    </STATICVARIABLES>
+   </REQUESTDESC>
+   <REQUESTDATA>';
+    $readWritefile = fopen("group.xml", "w");
+    fwrite($readWritefile, "\n" . $tallyGroup);
+    fclose($readWritefile);
+    while ($rowAllAccounts = mysqli_fetch_array($resAllAccount, MYSQLI_ASSOC)) {
+        $grpname = $rowAllAccounts['acc_user_acc'];
+        $grpname = str_replace("&", "and", $grpname);
+        $group = array("Branch/Divisions", "Capital Accounts", "Loans", "Suspense Account", "Current Liabilities", "Current Assets", "Fixed Assets", "Investments", "Sales Accounts", "Indirect Expenses", "
+Indirect Income", "Miscellaneous Expenses", "Purchase Accounts", "Direct Incomes", "Direct Expenses", "Sundry Creditors", "Stock in Hand", "Duties & Taxes", "Unsecured Loans", "
+Reserves & Surplus", "Secured Loans", "Deposits", "Banks OD Accounts", "Provisions", "Sundry Debtors", "Bank Accounts", "Cash in Hand", "Loan & Advances (Assets)", "Indirect Incomes", "Deposits (Asset)", "Capital Account");
+        if (in_array($grpname, $group)) {
+            
+        } else {
+            $tallyGroup = '<TALLYMESSAGE xmlns:UDF="TallyUDF">
+<GROUP NAME="' . $grpname . '" ACTION="Create">
+<NAME.LIST>
+<NAME>' . $grpname . '</NAME>
+</NAME.LIST>
+    <PARENT>Sundry Debtors</PARENT>
+<ISSUBLEDGER>No</ISSUBLEDGER>
+<ISBILLWISEON>No</ISBILLWISEON>
+<ISCOSTCENTRESON>No</ISCOSTCENTRESON>
+</GROUP>
+    </TALLYMESSAGE>';
+        }
+        $readWritefile = fopen("group.xml", "a");
+        fwrite($readWritefile, "\n" . $tallyGroup);
+        fclose($readWritefile);
+    }
+    $endvar = '</REQUESTDATA>
+  </IMPORTDATA>
+ </BODY>
+</ENVELOPE>';
+    $readWritefile = fopen("group.xml", "a");
+    fwrite($readWritefile, "\n" . $endvar);
+    fclose($readWritefile);
+}
+//
+//
+?>
+<?php
+
+if (isset($_GET['path'])) {
+//Read the filename
+    $filename = $_GET['path'];
+//Check the file exists or not
+    if (file_exists($filename)) {
+
+//Define header information
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header("Cache-Control: no-cache, must-revalidate");
+        header("Expires: 0");
+        header('Content-Disposition: attachment; filename="' . basename($filename) . '"');
+        header('Content-Length: ' . filesize($filename));
+        header('Pragma: public');
+
+//Clear system output buffer
+        flush();
+
+//Read the size of the file
+        readfile($filename);
+
+//Terminate from the script
+        die();
+    } else {
+        echo "File does not exist.";
+    }
+} else
+    echo "Filename is not defined.";
 ?>

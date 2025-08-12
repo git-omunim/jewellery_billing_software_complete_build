@@ -1,3 +1,175 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 5, 2011 11:41:33 PM
+ *
+ * @FileName: omticiti.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Other','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','New Delhi','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Mumbai','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Chennai','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bangalore','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Hyderabad','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Kolkata','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+
+
+/*
+
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bisauli','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Budaun','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bareilly','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Chandausi','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Moradabad','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+
+// Cities Near by Bisauli
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Ahmed Ganj','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Adupura','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Asafpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Ajnawar','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Angthara','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Apgana / Parvejnagar','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Banjaria','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Basai','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Behta Pathak','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bhanpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bhatpura','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Chandpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Chani','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Dabtori','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Dharmpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Disauli Ganj','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Dhilwari','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Daulatpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Faizganj Behta','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Fatehpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Firozpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Gahora','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Gadgaon','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Guladiya','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Hatsa','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Harraipur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Husainpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Kaloopur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Karanpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Karkheri','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Khajuria','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Kot','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Kudhauli','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Kuwan Daire','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Madanjudi','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Maithra','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Manakpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Maujampur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Maukampur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Mithamai','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Mundia','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Nagpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Nasrol','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Bhikampur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Panaudi','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Parauli','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Pivari','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Pindara','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Raipur Kalan','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Ranet','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Ratanpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Sahanpur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Sarera','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Sarva','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Saidaula','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Siddh Baraulia','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Sichauli','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Siddhpur Kaithauli','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Svaroop Pur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Tarapur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+$qInsertCity  = "insert into city(city_own_id,city_name,city_upd_sts,city_comm) values ('$ownerId','Wazirganj','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCity)){die('Error: ' . mysqli_error($conn));}
+*/
 ?>

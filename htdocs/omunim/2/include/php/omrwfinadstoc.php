@@ -1,3 +1,271 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/* * ******************************************************************************************
+ * START CODE RAW METAL STOCK CONVERTED INTO FINE STOCK : AUTHOR @DARSHANA 14 FEB 2022
+ * ******************************************************************************************
+ * 
+ * Created on 14 FEB 2022
+ *
+ * @FileName: omrwfinadstoc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 2.7.33
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+?>
+<div id="mainAddStockDiv">
+    <?php
+    $panelName = $_GET['panelName'];
+    $invPanelName = $_GET['invPanel'];
+    $utransInvId = $_GET['utransInvId'];
+//    echo '$utransInvId=2='.$utransInvId.'<br>';
+    $suppPurId = $_GET['utransUserId'];
+    $utinId = $_GET['utinId'];
+    $utansMetalType = $_GET['utansMetalType'];
+    $userId = $suppPurId;
+    $stockType = $_GET['stockType'];
+    $stockDetPanel = $_GET['stockDetPanel'];
+    
+    $sttrId = $utransInvId;
+    //
+    //
+    if ($transPanelDetailsDisplay == '' || $transPanelDetailsDisplay == NULL)
+        $transPanelDetailsDisplay = $_GET['transPanelDetailsDisplay'];
+    //
+    //
+    if ($transPanelDetailsDisplay == '' || $transPanelDetailsDisplay == NULL)
+        $transPanelDetailsDisplay = $_REQUEST['transPanelDetailsDisplay'];
+    //
+    //
+    //echo '$utransInvId = '.$utransInvId.'<br />';
+    //echo '$utinId = '.$utinId.'<br />';
+    //
+    //
+    $mainPanelNew = 'StockPanel';
+    //
+    //
+    if ($stockType == '') {
+        $selStockTypOption = callOmLayoutTable('StockTypOption', '', 'select');
+        if ($selStockTypOption == '')
+            callOmLayoutTable('StockTypOption', 'wholeSaleStock', 'insert');
+        $stockType = $selStockTypOption;
+    }
+    //
+    if ($panelName == 'importStockFromAddStockPanel') {
+        $importClass = "greenFont";
+        $retailClass = "grayFont";
+        $wholeSaleClass = "grayFont";
+    } else {
+        if ($stockType == 'wholeSaleStock') {
+            $wholeSaleClass = "greenFont";
+            $retailClass = "grayFont";
+            $importClass = "grayFont";
+        } else {
+            $wholeSaleClass = "grayFont";
+            $retailClass = "greenFont";
+            $importClass = "grayFont";
+        }
+    }
+    //
+    //
+    $showDiv = $_GET['divSubPanel'];
+    //
+    //
+    ?>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" class="portlet grey-crusta box">
+                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <?php if ($panelName == 'importStockFromAddStockPanel') { ?>
+                                <td class="portlet-title caption" >
+                                    <div class="main_link_brown16" 
+                                         style="margin-left: 10px;font-weight:bold;">
+                                        IMPORT STOCK PANEL
+                                    </div>
+                                </td>
+                        <?php } else { ?>
+                        <?php if ($invPanelName != 'RawMoveToStock') { ?>
+                            <td width="26px" style="text-align:center;vertical-align: middle;padding-top: 2px;">
+                                <img src="<?php echo $documentRootBSlash; ?>/images/addGold20.png" alt="Add Stock" />
+                            </td>
+                            <td class="portlet-title caption" >
+                                <div class="main_link_brown16">
+                                    <?php if ($panelName == 'catalogueStock' || $panelName == 'updateCatalogueStock') { ?>
+                                        ADD FINE CATALOGUE STOCK
+                                    <?php } else { ?>
+                                        <?php if ($stockType == "retailStock" || $stockType == "retail") { 
+                                                    //
+                                                    if ($transPanelDetailsDisplay == 'UpdateStockMismatchProductDetails' || 
+                                                        $transPanelDetailsDisplay == 'StockMismatchStockPurityPanel') { ?>
+                                                        UPDATE STOCK 
+                                                    <?php } else { ?>
+                                                        ADD JEWELLERY RETAIL STOCK - (OPENING STOCK)
+                                                    <?php } ?>
+                                        <?php } else { ?>
+                                            ADD JEWELLERY WHOLESALE STOCK - (OPENING STOCK)
+                                        <?php } ?>
+                                    </div>
+                                </td>
+                            <?php } ?>
+                        <?php } ?>
+                        <?php } ?>  
+                        <td align="center" valign="middle">
+                            <div id="messDisplayDiv"></div>
+                            <div <?php if ($panelName == 'importStockFromAddStockPanel' || $showDiv == 'DataImportedSuccessfully') { ?>
+                                    class="analysis_div_rows main_link_green12"
+                                <?php } else { ?>
+                                    class="analysis_div_rows main_link_red_12"
+                                <?php } ?> >
+                                    <?php if ($showDiv == 'StockAlreadyExists') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Product Code Already Present, Please Enter Different ~ </div>
+                                <?php } else if ($showDiv == 'InvAlreadyExists') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Invoice Already Present, Please Enter Different Invoice Number ~ </div>
+                                <?php } else if ($showDiv == 'Please Enter Remaining GS WT') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Please Enter Remaining GS WT ~ </div>
+                                <?php } else if ($showDiv == 'Please Enter Remaining QTY') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Please Enter Remaining QTY ~ </div>
+                                <?php } else if ($showDiv == 'GreaterQTYExists') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ You Have Enter More QTY Than Your Stock, Please Enter Correct QTY ~ </div>
+                                <?php } else if ($showDiv == 'GreaterGSWTExists') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ You Have Enter More GS WT Than Your Stock, Please Enter Correct GS WT ~ </div>
+                                <?php } else if ($showDiv == 'StockImportedSuccessfully') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Imported Successfully! ~ </div>
+                                <?php } else if ($showDiv == 'DataImportedSuccessfully') { // FOR ALL TAG IMPORT MESSAGE DISPLAY @PRIYANKA-16DEC2021 ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Data Imported Successfully! ~ </div>                                
+                                <?php } ?>  
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div id="main_ajax_loading_div" style="visibility: hidden; background:none;">
+                                <img src="<?php echo $documentRootBSlash; ?>/images/ajaxMainLoading.gif" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div id="stockPanelSubDiv">
+        <?php
+        //
+        // Start Code for Import Data From CSV File to Mysql Database for TAG Entries @PRIYANKA-13DEC2021
+//        if ($invPanelName == 'AddByInv') {
+            //
+            if ($utransInvId == '' || $utransInvId == NULL) {
+                //
+                $mainEntryId = $_GET['mainEntryId'];
+                //
+                if ($mainEntryId != '' && $mainEntryId != NULL) {
+                    $utransInvId = $mainEntryId;
+                }
+                //
+            }
+            //
+            //action="omAddJwelleryRetailStockImportFile.php"
+            //
+            ?>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="right">
+                <tr>                                      
+                    <td  valign="top">
+                        <div class="main_link_brown16" align="left" style="font-weight:bold;">
+                            IMPORT TAG STOCK                    
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" class="border-color-grey-b">
+                        <table align="left" border="0" cellspacing="0" cellpadding="2" width="100%">
+                            <tr>
+                                <td align="left" class="printVisibilityHidden paddingTop4 textLabel14CalibriBrownBold">
+                                    <form name="fileUpload" id="fileUpload" enctype="multipart/form-data" method="post"
+                                          action="omTagStockImportFile.php">
+                                        <input type="hidden" id="tag_st_id" name="tag_st_id" value="<?php echo $utransInvId; ?>"/>
+                                        <input type="hidden" id="user_id" name="user_id" value="<?php echo $userId; ?>"/>
+                                        <input type="hidden" name="tagStockType" id="tagStockType" value="retail" />
+                                        <table border="0" cellspacing="0" cellpadding="0" valign="top" >
+                                            <tr>                                      
+                                                <td align="right" valign="top">
+                                                    <input type="file" name="CVSFile" id="CVSFile" required="required" />
+                                                </td>
+                                                <td align="right" valign="top">
+                                                    <!---Start to Changes button----->
+                                                    <div>
+                                                        <?php
+                                                        $inputId = "submit";
+                                                        $inputType = 'submit';
+                                                        $inputFieldValue = 'Submit';
+                                                        $inputIdButton = "submit";
+                                                        $inputNameButton = '';
+                                                        $inputTitle = '';
+                                                        //
+                                                        // This is the main class for input flied
+                                                        $inputFieldClass = 'btn ' . $om_btn_style;
+                                                        $inputStyle = "background:#BED8FD;color: #0F118A;border: 1px solid #7ab0fe;border-radius: 5px !important;font-size: 15px;";
+                                                        $inputLabel = 'Import'; // Display Label below the text box
+                                                        //
+                                                        // This class is for Pencil Icon                                                           
+                                                        $inputIconClass = '';
+                                                        $inputPlaceHolder = '';
+                                                        $spanPlaceHolderClass = '';
+                                                        $spanPlaceHolder = '';
+                                                        $inputOnChange = "";
+                                                        $inputOnClickFun = '';
+                                                        $inputKeyUpFun = '';
+                                                        $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                        $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                        $inputMainClassButton = '';           // This is the main division for Button
+                                                        include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+//                                                      
+                                                        ?>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <?php
+//        }
+        // End Code for Import Data From CSV File to Mysql Database for TAG Entries @PRIYANKA-13DEC2021
+        ?>
+        <?php
+        //
+        $stockDetPanel = $_GET['stockDetPanel'];
+        $itemPreId = $_GET['preId'];
+        //
+        if ($panelName == 'importStockFromAddStockPanel') {
+            //
+            include 'omImportStockAddStockPanel.php';
+            //
+        } else {
+            //START CODE FOR FINE STOCK : AUTHOR @DARSHANA 14 FEB 2022
+            include 'omadrwmtfnst.php';
+        }
+        //
+        ?>
+    </div>
+</div>
+
+

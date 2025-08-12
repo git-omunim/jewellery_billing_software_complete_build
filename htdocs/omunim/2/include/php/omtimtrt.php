@@ -1,3 +1,65 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 14, 2011 9:37:06 PM
+ *
+ * @FileName: omtimtrt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+if ($systemOnOrOff == 'ON') {
+    $mcxURL = 'https://mapi.omunim.in/rates/mcx';
+} else {
+    $mcxURL = $_SERVER['HTTP_HOST'] . "/api/rates/mcx";
+}
+
+// $qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp) values ('$ownerId','GOLD','Gold','31000','Default','Created By oMunim','10','GM')";
+// if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
+// //echo "\nMetal Rate Inserted Successfully.";
+// $qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp) values ('$ownerId','SILVER','Silver','41000','Default','Created By oMunim','1','KG')";
+// if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
+// //echo "\nMetal Rate Inserted Successfully.";
+// $qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp) values ('$ownerId','GOLD','Gold','30000','Default','Created By oMunim','10','GM')";
+// if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
+// //echo "\nMetal Rate Inserted Successfully.";
+// $qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp) values ('$ownerId','SILVER','Silver','40000','Default','Created By oMunim','1','KG')";
+// if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
+//echo "\nMetal Rate Inserted Successfully.";
+//include '../php/emCloseDatabase.php';
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $mcxURL);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, "23492384982390480");
+    $result_stock = curl_exec($ch);
+    //
+    //echo '$mcxURL : ' . $mcxURL . '<br>';
+    //echo '$result_stock : ' . $result_stock . '<br>';
+    //
+    $result_MCX_arr = json_decode($result_stock, true);
+    curl_close($ch);
+    //
+    //
+    $goldMCXrate = $result_MCX_arr['gold']['price'];
+    $silverMCXrate = $result_MCX_arr['silver']['price'];
+    $currentDateTime = $GLOBALS['currentDateTime'];
+    //
+$qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp,met_rate_ent_dat) values ('$ownerId','GOLD','Gold','$goldMCXrate','Default','Created By oMunim','10','GM','$currentDateTime')";
+if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
+//echo "\nMetal Rate Inserted Successfully.";
+$qInsertMetalRate  = "insert into metal_rates(met_rate_own_id,met_rate_metal_id,met_rate_metal_name,met_rate_value,met_rate_upd_sts,met_rate_comm,met_rate_per_wt,met_rate_per_wt_tp,met_rate_ent_dat) values ('$ownerId','SILVER','Silver','$silverMCXrate','Default','Created By oMunim','1','KG','$currentDateTime')";
+if (!mysqli_query($conn,$qInsertMetalRate)){die('Error: ' . mysqli_error($conn));}
 ?>

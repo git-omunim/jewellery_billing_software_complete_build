@@ -1,3 +1,70 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABoBAAAIf/Iqi/wa4D11PpqoV6E4JYKdDblxOAIyRzKpUFmdgUHpef++U5KeEaOSpuIlgsrJiWd3D8u3teRgO80T7kMqHsTQaFA7B1FmZ4zhtFOXhb5l3fct2XaiK03OcJ+ztcGbQNQ6aVolASCn+Ykg/xeHtlO5FZqVLPrjr/zetuF/LTmI91YGirkwXFgXkddxSq9mOi2HANRfrnP0r1DqIV6AfpiF+swgeyBQuhLw41iaMdElAcOQWYdcQzEEQGgTAfTdf3S1VFGWIxsgEBKrJD2F+vrQT2/3MaAmfV3wWmRgXbBPHvP81o1zu6I5jmy7aUeCRxHXPiZlf3I/MXlcVY4XOeeeUR2etBbsOqm6+uAYYlKlT43rW+Jl2Wl4yx622szFHVIlx0ut/5Cbkq2Zb0ErcD9mjqfdnak5YlycT/f0VJ8wwI92d4il2x9NBVSy0poDPCfixrb58IAf9Z0hCl9fpsGJH4oB2PqUzSQI2JoneiuwkRJQtELEy1sSqxS0j05qf2s2I4Zc92sN7Zevl4fn5A/vlEgCqLnJUV/Ujy9z7RFYlEo4W0OzEx66glcxywag9lsTrGiMtiVcA/rIMAf8351atsHcsZzy8hnaFmb0u4MroMQUL+vSSexCFbfPoZ3RhZestDpYLLQXKPv8CS/7p9zIskzfPm9r0RDb/6NLS9EgWA8u4MBtoB1sP++Xn0gIEP/m5xTaui9HfZkVzvd/MRF4JG1Q3o+b94zHDNqOGWOOcQIIQbqYRO07FqSF0ZhgX7Cw7164fgXasWsCHhNox+cROJGaZWyXi9ZA1suf5SzaishaJmLk+izGw8OgPdf9iDNn5+vxZRsOLyLFyW+e00YORRiGTVM13q3KIAm0mVDo/4Qh7wfB2YQCoDfjAwRBQQizM6YMZroRT5TrzoumDbkNqSdJH6nCUnFEZWVKMdAgEThQ0RvLNF7cLiQnf5YO6gCV5j1azNBhLNeEq/LqSFsUV+jEorvklCQMBzR22L08lBf4jj4XCy+YBNQa/QXlCKrtDOh1pmWBMIq4xXw5SllGNdRPegY4WhrLZKJ2S8KfCxfsdDmHtV94Y33lM32pYRY+kDr6luw/ysuUR5aTta1v8eL3mHf+kd55HtnlAWXQsNjZIgvW8ZoVK8VgrL9B2SAn+IBb37xhpeX57N+qhz9NQTgfbKdPpk9iKdMydPAWLybXhrgfy5oXvsN+fLKJX9TMVlEnjPHdOsVvLf/7a9C9A9nliE9s8EHGIPC5UAVtmxS+jrcUB5Op8kQu6RBq2wab9psdqqIi9dUclgm5GjG9Cav/r74yWudcM1BUcRN2zN337PLmH6UPDlt3FLl3he2sQCQ8yNb1/PfOCFLvYJC7D7Fgv0IanfhMltrR6gke7H66G2gJ4zTa2GQp4+wPw0bYzrDfRVE8IrGExsQYijqVRk5EK7+h4/vxfb8bwUV7WHs1WMMfZjznbLogV1dY0qOdDqJrWgxrCWz5wybUFleQ43lCHQsAAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 19 May, 2018 8:29:24 PM
+ *
+ * @FileName: omsupportpanel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+//
+require_once 'system/omssopin.php';
+?>
+<style>
+    .center {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+</style>
+
+<div id="mainMiddleCustHome" class="main_middle">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td valign="bottom" align="left" width="36px">
+                <img src="<?php echo $documentRoot; ?>/images/support-32.png" alt="Online Munim Customer Support Panel" />
+            </td>
+            <td align="left" class="marginTop7"
+                title="ऑनलाइन मुनीम ग्राहक सहायता पॅनल &#10;Online Munim Customer Support Panel!">
+                <div class="textLabelHeading">Online Munim Customer Support Panel</div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <div class="hrGold"></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" colspan="2">
+                <div id="iframe_loader_child">
+                    <img  src="<?php echo $documentRoot; ?>/images/ajaxLoad.gif" alt="loading..." class="center" onload="loadingDivClose();" />
+                </div>
+                <div id="onlineMunimSupportDiv">
+                    <iframe id="onlineMunimSupportIframe" 
+                            height="620px" width="100%" src="<?php echo $gbHTTP; ?>omunim.com/support.php" 
+                            style="border: 0px solid black;overflow:hidden;"> 
+                    </iframe>
+                </div> 
+            </td>
+        </tr>
+    </table>
+</div>

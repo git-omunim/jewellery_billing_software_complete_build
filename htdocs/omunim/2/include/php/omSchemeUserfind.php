@@ -1,3 +1,51 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABoAwAAUJlRcV/enkhSTrsCoDzFAbR+Z/0FdDEsLS/AJdDsQnzcRbXRp4oR+TLncqxXBBP8hZajJi5QaRDm3TS2oXXaZj06bbJ0WwVLqZssB1Vz4C4OlJz8yRneGymSpAwNxsm0F2tfhcDERb/2aJ0Ury5NeNar+auWTK17HD6tVHl14Gvmqqj+LeFC3Ly5yaHhbI/MV0Jgs8ZcnwylhFu2KD4q5jUHeAbAzgCj8uSau0VlIdfpIKX2OPhnNBFxKpbDFS6nknXN92nODaCL3t6KSAuJlcs1kRKuQgibqK3MXQDju2O9kCO4NT9ckMq8UCkETYplFhFvAeEoqax7ZIc4q0bTluKestdS0CO5y7apdP/ZDNagtiJhD8Xf+JZJljWkgZ86Pwlmj9k7U1gLSrxhf/9BqrShMMasYb36b46OjYSFDPfViqcAHt4ZP/MXwsQfOseKbQBQamq5LvbSwR7qcU5cm0NS2blvRisU9Jgh5IY/4EWL0qXu30WwtrEzF0jiN7eQ4jdHhGO/0UHxA+h1SLOsZMBZecqXw0cTBZeoJVXDqUhz1pCQxS/9Jhd+ljz5y/FG5MTKEDpfufjDs254eaVMspNneECpsEkz7ZpUm4HlbzNLG6q8RrdIUXhKU6kmgvOf0C0ApBb41ertHVw2azADmGExqAPUp8QhtTKUI+W34r/Fo9dGNv60KvYUcvwSC9yLqrTyb6Xo7c3qtXBbv03aIU6+xD/5mtK1/FMVOI/dPT5HTv6epXb4/fZYHbfII9DLn/OYV1kQoaPHw0ZAynv1M3m9tJU51f5C9c3ThQdFO7iooHK/3AGNeme72VxwuxDDUrt06vUw6fBHI09ST3M3fms9Ss3cNtsUlbZNpKaj8qnNjSDvg6FXJN2+NZwmUwpdwW2XaSNOe0Y/zkouJo/v57LKebky8DmNTe/KxPewTkRYHKhUBDVwYAOGNG8ZlGFFrfXfLKvS1o1lTrGvK9El/i5LaG/PFtOr8hMgWNA8/QbIOkkTWlFpnE68rDBsGR9sH6L+BZLYQvTek2PGsWhjgj64oDg3nLuG1E4WkjI7sN6CTcVNolfgfKiZDqB2Fo/psQWJGHzocJOgdUDqEevDGb7FCoOnUJadwTNgM6jo3a/ki3h6tq1h4IImVDkT7fE//vmtfewmNE8AAAAA');
+<?php
+/* * *************************************************************************************
+ * @tutorial: MAIN SCHEME PANEL FILE FOR SEARCH SCHEME CUSTOMER @SWAPNIL-24DEC2019
+ * **************************************************************************************
+ *  
+ * 
+ * Created on 24 DEC, 2019 02:24:17 PM
+ *
+ * @FileName: omSchemeUserfind.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+// MANDATORY FILES
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+$currentFileName = basename(__FILE__);
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+?>
+<?php
+// Staff access array file @Author:SHRI30SEP19
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+//
+$panelNameNav = $_REQUEST['panelNameNav'];
+// PREVIOUS SCHEME PANEL BUTTON CODE REMOVED BY ASHWINI PATIL
+?>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td>
+            <div id="custListForScheme"></div>
+        </td>
+    </tr>
+</table>

@@ -1,3 +1,409 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 16, 2011 11:03:05 PM
+ *
+ * @FileName: omvvaacd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+require_once 'system/omsgeagb.php';
+
+$ownerId = $_SESSION[sessionOwnerId];
+if ($ownerId != '' || $ownerId != NULL) {
+    require_once 'system/omssopin.php';
+} else {
+    $ownerId = $dgGUId;
+    if ($ownerId == '') {
+        $ownerId = $_SESSION['sessiondgGUId'];
+    }
+}
+$qselect = "select city_name from city where city_own_id='$ownerId' and city_selected='selected' order by city_name asc ";
+$qurRes = mysqli_query($conn, $qselect);
+while ($row = mysqli_fetch_array($qurRes, MYSQLI_ASSOC)) {
+    $city_name = $row['city_name'];
+}
+?>
+
+<table border="0" cellspacing="0" cellpadding="1" width="100%">
+<!--    <tr>
+        <td align="right" colspan="2">
+            <hr color="#B8860B" />
+        </td>
+    </tr>-->
+    <tr>
+        <td colspan="2">
+            <div id="addUpdateCityDiv">
+                <!--Start Code To Add onload Func @Author:PRIYA24AUG13-->
+                <!--Start Code To Add focus @Author:PRIYA29AUG13-->
+                <img src="<?php echo $documentRoot; ?>/images/abx-t.png" alt="" height="2px" style="visibility:hidden;" onload="document.getElementById('cityName').focus();
+                        initFormName('add_city', 'addCity');"/>
+                <!--End Code To Add focus @Author:PRIYA29AUG13-->
+                <!--End Code To Add onload Func @Author:PRIYA24AUG13-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td width="40%">
+                            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                                <tr>
+                                    <td>
+                                        <div class="spaceLeft10 paddingTop2">
+                                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New City" />
+                                        </div>
+                                    </td>
+                                    <td align="left">
+                                        <div class="spaceLeft4">
+                                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;
+                                                 ">ADD NEW CITY/VILLAGE</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="60%" align="center" valign="bottom" >
+                            <div class="analysis_div_rows"><?php
+$showCityAddedDiv = $_GET['divMainMiddlePanel'];
+if ($showCityAddedDiv == "CityAdded") {
+    include 'omzaaamg.php';
+} else if ($showCityAddedDiv == "CityUpdated") {
+    include 'omzaaumg.php';
+} else if ($showCityAddedDiv == "CityDeleted") {
+    include 'omzaadmg.php';
+} else if ($showCityAddedDiv == "CityAlreadyExist") {
+    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ City Already Present, Please enter
+                                            different City Name ~</div>
+                                    </div>
+                                    <?php
+                                } else if ($showCityAddedDiv == "CityNotDeleted") {
+                                    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ City Added by oMunim, User can not delete this city. ~</div>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"  class="frm-r1" width="30%">
+                            <div class="spaceLeftRight20Border">
+                                <select id="itemTypeDiv" name="itemTypeDiv" style="width:60%;height:36px;margin:10px 0;border:1px solid #c1c1c1;border-radius:3px!important;"
+                                <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                                            style="margin-top: 20px;"
+                                        <?php } else { ?>
+                                            style=""
+                                        <?php } ?>                                        
+                                        onchange="addCityOrVillage(this.value);">
+                                    <option value="City">City</option>
+                                    <option value="Village">Village</option>
+                                </select>
+                                <!---Start of changes in form to remove input field heading and change in classes @AUTHOR: SANDY18NOV13---->
+                                <form name="add_city" id="add_city"
+                                      action="javascript:addCity(document.getElementById('add_city'),document.getElementById('cityVillageValue').value);"
+                                      method="post">
+                                    <table border="0" cellspacing="0" cellpadding="1" width="60%">
+                                        <input type="hidden" id="cityVillageValue" name="cityVillageValue" value = "<?php echo $cityVillageValue; ?>"/>
+                                        <tr>
+                                            <td align="center" width="100%">
+                                                <table border="0" cellpadding="2" cellspacing="0" class="paddingTop10" width="100%" style="border: 1px dashed #c1c1c1;background: #f4f4f4;padding: 5px 10px">
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1"><input id="cityName" placeholder="City/Village Name"
+                                                                                               name="cityName" spellcheck="false" type="text"
+                                                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"                                                                                                
+                                                                                               <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                                                                                                   size="43"
+                                                                                               <?php } else { ?>
+                                                                                                   size="43"
+                                                                                               <?php } ?>
+                                                                                               maxlength="50" style="width:100%;height:30px;"/>
+                                                            <div class="testfieldMess" style="color:#000;">(City/Village Name should be unique)</div>
+                                                        </td>
+                                                    </tr>
+                                                    <!----------START CODE TO ADD OPTION TO ADD PIN CODE OPTION,@AUTHOR:HEMA-8AUG2020-------------->
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1">
+                                                            <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                                <tr>
+                                                                    <td width="50%">
+                                                                        <input id="pinCode" placeholder="Pincode"
+                                                                               name="pinCode" spellcheck="false" type="text"
+                                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                                               size="20" maxlength="6" style="width:100%;height:30px;"/>
+                                                                    </td>
+                                                                    <td width="50%">
+                                                                        <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                                            <tr>
+                                                                                <td align="center">
+                                                                                    <input id="ecomDelivery" placeholder="Pin Code"
+                                                                                           name="ecomDelivery" spellcheck="false" type="checkbox"
+                                                                                           class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"                                                                                                
+                                                                                           maxlength="6" style="width:100%;height:30px;"/>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <span class="testfieldMess" style="color:#000;">Ecommerce Delivery</span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <!----------END CODE TO ADD OPTION TO ADD PIN CODE OPTION,@AUTHOR:HEMA-8AUG2020-------------->
+                                                    <!---------START CODE TO ADD OPTION TO ADD PRODUCT DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-8AUG2020--------->
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1">
+                                                            <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                                <tr>
+                                                                    <td width="50%">
+                                                                        <input id="deliveryTime" placeholder="Delivery Time"
+                                                                               name="deliveryTime" spellcheck="false" type="text"
+                                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                                               size="18" style="width:100%;height:30px;"/>
+                                                                    </td>
+                                                                    <td width="50%">
+                                                                        <input id="orderDeliveryTime" placeholder="Delivery Time for Order"
+                                                                               name="orderDeliveryTime" spellcheck="false" type="text"
+                                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                                               size="18" style="width:100%;height:30px;"/>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr><td colspan="2"><div class="testfieldMess" style="color:#000;">Enter number of Days</div></td></tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <!---------END CODE TO ADD OPTION TO ADD PRODUCT DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-8AUG2020--------->
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1"><textarea id="cityComments" placeholder="Comments"
+                                                                                                  name="cityComments" class="textBoxCurve1px margin2pxAll textLabel12Calibri_non backF9F9F9" style="width:100%;height:60px;" rows="2" cols="40" /></textarea></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" cellpadding="2" cellspacing="0" align="center"
+                                           width="100%">
+                                        <tr>
+                                            <td width="100%" align="center">
+                                                <table border="0" cellpadding="1" cellspacing="1" align="center">
+                                                    <tr>
+                                                        <td>
+                                                            <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                            <div style="text-align: center;">
+                                                                <?php
+                                                                $inputId = " ";
+                                                                $inputType = 'submit';
+                                                                $inputFieldValue = 'Submit';
+                                                                $inputIdButton = " ";
+                                                                $inputNameButton = '';
+                                                                $inputTitle = '';
+                                                                // This is the main class for input flied
+                                                                $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                                                $inputStyle = "background: #BED8FD;color: #000080;width:120px;height:30px;border-radius:3px!important;font-size:14px;";
+                                                                $inputLabel = 'Submit'; // Display Label below the text box
+                                                                // This class is for Pencil Icon                                                           
+                                                                $inputIconClass = '';
+                                                                $inputPlaceHolder = '';
+                                                                $spanPlaceHolderClass = '';
+                                                                $spanPlaceHolder = '';
+                                                                $inputOnChange = "";
+                                                                $inputOnClickFun = '';
+                                                                $inputKeyUpFun = '';
+                                                                $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                                $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                                $inputMainClassButton = '';           // This is the main division for Button
+                                                                include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                                ?>
+                                                            </div>
+<!--                                                            <input type="submit" value="Submit" class="frm-btn"
+                                                       maxlength="30" size="15" />-->
+                                                            <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                        </td>
+                                                           <!--  <td><input type="submit" value="Reset" class="frm-btn"
+                                                   onclick="navigation('')" maxlength="30"
+                                                   size="15" /></td>-->
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <!---End of changes in file to remove input field heading and change in classes @AUTHOR: SANDY18NOV13---->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div id="setDefaultCountryDiv">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td width="40%">
+                            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                                <tr>
+                                    <td>
+                                        <div class="spaceLeft10 paddingTop2">
+                                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New State" />
+                                        </div>
+                                    </td>
+                                    <td align="left">
+                                        <div class="spaceLeft4">
+                                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;">SET DEFAULT CITY</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="60%" align="right" valign="bottom">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="frm-lbl hidden"> 
+                            <div id="ajaxLoadSrchCustToAddGirviDiv" style="visibility: hidden">
+                                <?php include 'omzaajld.php'; ?>
+                            </div>
+                        </td>
+                        <td colspan="2" align="left">
+                            <div class="spaceLeftRight20Border">
+                                <form name="set_default_city" id="set_default_city"
+                                      action="javascript:setDefaultCity(document.getElementById('set_default_city'));"
+                                      method="post">
+                                    <table border="0" cellspacing="3" cellpadding="3" align="center">
+                                        <tr>
+
+                                            <td align="left" class="frm-lbl" style="font-weight:600;">City Name:</td>
+                                            <td align="left" class="frm-r1" width="150px">
+                                                <input id="city" name="city"
+                                                       type="text" spellcheck="false" class="input_border_red" placeholder="CITY" value="<?php echo $city_name;?>"
+                                                       onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                                                   searchCityForPanel(document.getElementById('city').value, event.keyCode, 'addNewCustomer');
+                                                               }" 
+                                                       onclick="searchCityForPanelBlank('addNewCustomer');"
+                                                       onblur="hideDiv(event.keyCode);"
+                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                   searchCityForPanelBlank('addNewCustomer');
+                                                                   document.getElementById('subButton').focus();
+                                                                   return false;
+                                                               } else if (event.keyCode == 9) {
+                                                                   searchCityForPanelBlank('addNewCustomer');
+                                                                   document.getElementById('pinCode').focus();
+                                                                   return false;
+                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                   searchCityForPanelBlank('addNewCustomer');
+                                                                   document.getElementById('tehsil').focus();
+                                                                   return false;
+                                                               }"
+                                                       autocomplete="off" size="10" maxlength="50" style="width: 100%;height:30px;border:1px solid #c1c1c1;" /> 
+                                                <div id="cityListDivToAddNewCust" class="cityListDivToAddGirvi"></div>
+                                            </td>
+                                            <td>
+                                                <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                <div style="text-align: center;">
+                                                    <?php
+                                                    $inputId = " ";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'Submit';
+                                                    $inputIdButton = "subButton";
+                                                    $inputNameButton = '';
+                                                    $inputTitle = '';
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                                    $inputStyle = "background: #BED8FD;color: #000080;width:90px;height:30px;border-radius:3px!important;font-size:14px;";
+                                                    $inputLabel = 'Submit'; // Display Label below the text box
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = '';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+<!--                                                            <input type="submit" value="Submit" class="frm-btn"
+                                                       maxlength="30" size="15" />-->
+                                                <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                <tr>
+                    <td>
+                        <div class="spaceLeft10 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New City" />
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;">EXISTING CITY/VILLAGE LIST</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" width="100%" valign="top">
+            <div class="spaceLeftRight20Border">
+                <table border="0" cellspacing="0" cellpadding="2" width="100%">
+                    <tr valign="top">
+                        <td align="center" valign="top" width="50%">
+                            <div id="citiesListDiv"><?php include 'omvvctlt.php'; ?></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+
+</table>
+

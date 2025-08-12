@@ -1,3 +1,543 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Sell Invoice SAMPLE 4 FOMART
+ * **************************************************************************************
+ *
+ * @FileName: omspinvheader.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:@SANSKRUTI
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpnmwd.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+include_once 'conversions.php';
+include 'phpqrcode/qrlib.php';
+?>
+<?php
+//
+//Start Code to get Cust and Firm Details 
+//Start Code To Select FirmId
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+// salepurchase to  stock_sell @Author: GAUR18MAR16
+$userId = $_GET['userId'];
+//echo '$userId=='.$userId.'<br>';
+//
+if ($invName == 'XRF_PAYMENT') {
+//
+//    $qSelCustId = "SELECT xrf_user_id,xrf_firm_id,xrf_metal_type FROM xrf_entries WHERE xrf_owner_id = '$sessionOwnerId' "
+//            . "and xrf_pre_invoice_no = '$slPrPreInvoiceNo' and "
+//            . "xrf_invoice_no = '$slPrInvoiceNo' and xrf_firm_id IN ($strFrmId) AND xrf_status NOT IN ('DELETED') AND "
+//            . "xrf_user_id = '$userId' order by xrf_id asc";
+//
+////echo '$qSelCustId == '.$qSelCustId;
+//
+//    $resCustId = mysqli_query($conn, $qSelCustId);
+//    $rowCustId = mysqli_fetch_array($resCustId, MYSQLI_ASSOC);
+//    $firmId = $rowCustId['xrf_firm_id'];
+//    $metal_type = $rowCustId['xrf_metal_type'];
+//    $sttr_transaction_type = 'sell';
+//
+} else if ($invName == 'TRANS_PAYMENT') {
+//
+//    $qSelCustId = "SELECT transaction_firm_id FROM transaction WHERE transaction_own_id = '$sessionOwnerId' "
+//            . "and transaction_pre_vch_id = '$slPrPreInvoiceNo' and "
+//            . "transaction_post_vch_id = '$slPrInvoiceNo' and transaction_firm_id IN ($strFrmId) "
+//            . "AND transaction_upd_sts IN ('PaymentDone') "
+//            . "order by transaction_id asc";
+//
+////echo '$qSelCustId == '.$qSelCustId;
+//
+//    $resCustId = mysqli_query($conn, $qSelCustId);
+//    $rowCustId = mysqli_fetch_array($resCustId, MYSQLI_ASSOC);
+    $firmId = $getUserTransDetails['invoice'][0]['utin_firm_id'];
+    $metal_type = "TransPayment";
+    $sttr_transaction_type = "TransPayment";
+//
+} else {
+//
+//
+//    $qSelCustId = "SELECT sttr_user_id, sttr_firm_id, sttr_metal_type, sttr_transaction_type,sttr_staff_id FROM stock_transaction "
+//            . "WHERE sttr_owner_id='$sessionOwnerId' and sttr_pre_invoice_no='$slPrPreInvoiceNo' and "
+//            . "sttr_invoice_no='$slPrInvoiceNo' and sttr_firm_id IN ($strFrmId) AND sttr_status NOT IN ('DELETED') "
+//            . "and sttr_indicator IN ('stock','PURCHASE','rawMetal','crystal','imitation','strsilver','ItemReturn','APPROVAL', 'PurchaseReturn') "
+//            . "and sttr_transaction_type IN('STOCK', 'newOrder','sell','ESTIMATESELL','PURCHASE','PURBYSUPP','ESTIMATE','ItemReturn','APPROVAL', 'PurchaseReturn') "
+//            . "and sttr_user_id='$userId' order by sttr_id asc";
+//
+//    $resCustId = mysqli_query($conn, $qSelCustId);
+//    $resDet = mysqli_query($conn, $qSelCustId);
+//    $rowCustId = mysqli_fetch_array($resCustId, MYSQLI_ASSOC);
+    $firmId =$getStockTransDetails[0]['sttr_firm_id'];
+    $metal_type = $getStockTransDetails[0]['sttr_metal_type'];
+    $sttr_transaction_type = $getStockTransDetails[0]['sttr_transaction_type'];
+    $sttr_staff_id = $getStockTransDetails[0]['sttr_staff_id'];
+//
+//   
+}
+//
+//
+//parse_str(getTableValues("SELECT firm_id,firm_reg_no,firm_form_header,firm_name,firm_long_name,firm_address,firm_phone_details,firm_email,firm_desc,firm_pan_no,"
+//                . "firm_owner_sign_ftype,firm_tin_no,firm_left_thumb_ftype,firm_right_thumb_ftype,"
+//                . "firm_bank_details, firm_bank_acc_no, firm_bank_ifsc_code, firm_bank_declaration "
+//                . " FROM firm where firm_own_id='$sessionOwnerId' and firm_id='$firmId' $sessionFirmStr"));
+$firm_id = $getFirmDetails['firm_id'];
+$firm_reg_no = $getFirmDetails['firm_reg_no'];
+$firm_form_header = $getFirmDetails['firm_form_header'];
+$firm_name = $getFirmDetails['firm_name'];
+$firm_long_name = $getFirmDetails['firm_long_name'];
+$firm_address = $getFirmDetails['firm_address'];
+$firm_phone_details = $getFirmDetails['firm_phone_details'];
+$firm_email = $getFirmDetails['firm_email'];
+$firm_desc = $getFirmDetails['firm_desc'];
+$firm_pan_no = $getFirmDetails['firm_pan_no'];
+$firm_owner_sign_ftype = $getFirmDetails['firm_owner_sign_ftype'];
+$firm_tin_no = $getFirmDetails['firm_tin_no'];
+$firm_left_thumb_ftype = $getFirmDetails['firm_left_thumb_ftype'];
+$firm_right_thumb_ftype = $getFirmDetails['firm_right_thumb_ftype'];
+$firm_bank_details = $getFirmDetails['firm_bank_details'];
+$firm_bank_acc_no = $getFirmDetails['firm_bank_acc_no'];
+$firm_bank_ifsc_code = $getFirmDetails['firm_bank_ifsc_code'];
+$firm_bank_declaration = $getFirmDetails['firm_bank_declaration'];
+
+//************************Start change code for data from customer to user Author@:SANT12JAN16******************************************************************************************
+//
+//$qSelFirm = "SELECT firm_id,firm_reg_no,firm_form_header,firm_name,firm_long_name,firm_address,firm_phone_details,firm_email,firm_desc,firm_pan_no,"
+//        . "firm_tin_no,firm_left_thumb_ftype,firm_right_thumb_ftype FROM firm where firm_own_id='$sessionOwnerId' and firm_id='$firmId' $sessionFirmStr";
+//$resFirmCount = mysqli_query($conn, $qSelFirm);
+////
+//while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+//    $firm_long_name = $rowFirm['firm_long_name'];
+//}
+if ($_REQUEST['directOrderAssign'] == 'YES') {
+    $directOrderAssignUserId = $_REQUEST['directOrderAssignUserId'];
+//    parse_str(getTableValues("SELECT user_type,user_fname,user_lname,user_prefix_name,user_father_name,user_pan_it_no,user_sale_tax_no,user_add,"
+//            . "user_official_address,user_city,user_pincode,user_state,user_country,user_cst_no,user_phone,"
+//                    . "user_adhaar_card,user_shipping_address,user_mobile,user_shop_name, user_current_address, user_village, "
+//            . "user_tehsil,user_ward_no FROM user where user_owner_id='$sessionOwnerId' and user_id='$directOrderAssignUserId'"));
+   foreach($getUserDetails as $getUserDet){
+   if($getUserDet['user_id'] == $directOrderAssignUserId){
+   $user_type = $getUserDet['user_type'];
+   $user_fname = $getUserDet['user_fname'];
+   $user_lname = $getUserDet['user_lname'];
+   $user_prefix_name = $getUserDet['user_prefix_name'];
+   $user_father_name = $getUserDet['user_father_name'];
+   $user_pan_it_no = $getUserDet['user_pan_it_no'];
+   $user_sale_tax_no = $getUserDet['user_sale_tax_no'];
+   $user_add = $getUserDet['user_add'];
+   $user_official_address = $getUserDetails['user_official_address'];
+   $user_city = $getUserDet['user_city'];
+   $user_pincode = $getUserDet['user_pincode'];
+   $user_state = $getUserDet['user_state'];
+   $user_country = $getUserDet['user_country'];
+   $user_cst_no = $getUserDet['user_cst_no'];
+   $user_phone = $getUserDet['user_phone'];
+   $user_adhaar_card = $getUserDet['user_adhaar_card'];
+   $user_shipping_address = $getUserDet['user_shipping_address'];
+   $user_mobile = $getUserDet['user_mobile'];
+   $user_shop_name = $getUserDet['user_shop_name'];
+   $user_current_address = $getUserDet['user_current_address'];
+   $user_village = $getUserDet['user_village'];
+   $user_tehsil = $getUserDet['user_tehsil'];
+   $user_ward_no = $getUserDet['user_ward_no'];
+    }
+}
+} else {
+//--------Start code for prefix by Ashwini Patil-----
+//    parse_str(getTableValues("SELECT user_type,user_fname,user_lname,user_prefix_name,user_father_name,user_pan_it_no,user_sale_tax_no,"
+//            . "user_add,user_official_address,user_city,user_pincode,user_state,user_country,user_cst_no,"
+//                    . "user_phone,user_adhaar_card,user_shipping_address,user_mobile,user_shop_name,user_current_address,user_village,"
+//            . " user_tehsil,user_ward_no FROM user where user_owner_id='$sessionOwnerId' and user_id='$userId'"));
+   $user_type = $getUserDetails['user_type'];
+   $user_fname = $getUserDetails['user_fname'];
+   $user_lname = $getUserDetails['user_lname'];
+   $user_prefix_name = $getUserDetails['user_prefix_name'];
+   $user_father_name = $getUserDetails['user_father_name'];
+   $user_pan_it_no = $getUserDetails['user_pan_it_no'];
+   $user_sale_tax_no = $getUserDetails['user_sale_tax_no'];
+   $user_add = $getUserDetails['user_add'];
+   $user_official_address = $getUserDetails['user_official_address'];
+   $user_city = $getUserDetails['user_city'];
+   $user_pincode = $getUserDetails['user_pincode'];
+   $user_state = $getUserDetails['user_state'];
+   $user_country = $getUserDetails['user_country'];
+   $user_cst_no = $getUserDetails['user_cst_no'];
+   $user_phone = $getUserDetails['user_phone'];
+   $user_adhaar_card = $getUserDetails['user_adhaar_card'];
+   $user_shipping_address = $getUserDetails['user_shipping_address'];
+   $user_mobile = $getUserDetails['user_mobile'];
+   $user_shop_name = $getUserDetails['user_shop_name'];
+   $user_current_address = $getUserDetails['user_current_address'];
+   $user_village = $getUserDetails['user_village'];
+   $user_tehsil = $getUserDetails['user_tehsil'];
+   $user_ward_no = $getUserDetails['user_ward_no'];
+   
+      
+//--------Start code for USER ADDRESS by RUTUJA KORPE 20NOV2020-----
+}
+if ($user_type == 'CUSTOMER') {
+    if ($user_add == '' || $user_add == NULL) {
+        $user_add = $user_current_address;
+    } else {
+        $user_add = $user_add;
+    }
+}
+
+if ($user_type == 'SUPPLIER') {
+    if ($user_add == '' || $user_add == NULL) {
+        $user_add = $user_official_address;
+    } else {
+        $user_add = $user_add;
+    }
+}
+
+//$showSecPagePrint = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'showSecPagePrint'";
+//$resShowSecPagePrint = mysqli_query($conn, $showSecPagePrint);
+//$rowShowSecPagePrint = mysqli_fetch_array($resShowSecPagePrint);
+$showSecPagePrint = $getLayoutDetails['showSecPagePrint'];
+?>
+
+<style>
+    .invoicecenter .left-content img{
+        float: left;
+        width: 101.1%;
+        height: 48px;
+        margin-left: -5px;
+        margin-top:-5px;
+    }
+</style>
+<?php if ($showSecPagePrint == 'YES') {?>
+<thead>
+<?php }?>
+<tr>
+    <td>
+        <table width="100%" >
+                <tr>
+                    <td class="left-content">
+                        <p style="text-align:right">
+                            <?php
+//                        $fieldName = 'firmPhone';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            if ($firm_phone_details != NULL && $firmPhone_check == 'true') {
+                                ?>
+                                <b><?php echo $firmPhone_content ?>:</b> <?php echo $firm_phone_details; ?></br>
+                                <?php
+                            }
+//                        $fieldName = 'firmEmail';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            if ($firm_email != NULL && $firmEmail_check == 'true') {
+                                ?>
+                                <b><?php echo $firmEmail_content; ?>:</b> <?php echo $firm_email; ?>
+                            <?php } ?>
+                        </p>
+                        <img src="<?php echo $documentRootBSlash; ?>/images/invoice/inv-topImg.png" alt="">
+                    </td>
+                </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td>
+        <table width="100%" height="130px;">
+            <tr>
+                <?php
+                $fieldName = 'firmLeftLogoCheck';
+//                parse_str(getTableValues("SELECT label_field_check as firmLeftLogoCheck_check  FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+              
+                $firmLeftLogoCheck_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];                
+//echo '$label_field_check==' . $label_field_check . '<br>';
+                //echo '$firm_left_thumb_ftype==' . $firm_left_thumb_ftype . '<br>';
+                if ($firmLeftLogoCheck_check == 'true') {
+                    if ($firm_left_thumb_ftype != NULL || $firm_left_thumb_ftype != '') {
+                        $firmId = $firm_id;
+                        $noEcho = 'Y';
+                        include('omffgfli.php');
+                        $noEcho = '';
+                        ?>
+                        <td class="left-img">
+                            <?php // echo '$userId==' . $userId . '<br>';     ?>
+                            <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($firmThumb); ?>" 
+                                 alt="" style="margin-top:5px;"  class="<?php
+                                 if ($logoImageActualSizeOnInvoice == 'YES') {
+                                     echo '';
+                                 } else {
+                                     echo $imageClass;
+                                 }
+                                 ?>" />
+                        </td>
+                        <?php
+                    } else {
+                        $firmId = $firm_id;
+                        $noEcho = 'Y';
+                        include('omffgfli.php');
+                        $noEcho = '';
+                        ?>
+                        <td class="left-img">
+                            <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($firmThumb); ?>"  
+                                 alt="" style="margin-top:5px;"  class="<?php
+                                 if ($logoImageActualSizeOnInvoice == 'YES') {
+                                     echo '';
+                                 } else {
+                                     echo $imageClass;
+                                 }
+                                 ?>" style="visibility:hidden;"/>
+                        </td>
+                        <?php
+                    }
+                }
+                ?>
+                <td class="center-content" width="55%" align="center">
+                    <table>
+                        
+                        <?php
+//                        $fieldName = 'firmLongName';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($firm_form_header != NULL && $firmFormHeader_check == 'true') {
+            ?>
+                                                            <tr> 
+                                                                <td valign="middle" align="center" class="ff_calibri
+                                                            <?php if ($firmFormHeader_noPrintCheck == 'true') { ?>
+                                                                        noPrintHidden <?php } ?>
+                                                                    " style="color:<?php echo $firmFormHeader_color; ?>;font-size:<?php echo $firmFormHeader_size; ?>px"  onClick="this.contentEditable = 'true';">
+                                                            <?php echo ($firm_form_header); ?>
+                                                                </td>
+                                                            </tr>
+                                                                <?php
+                                                            }
+                                                            if ($firm_long_name != NULL && $firmLongName_check == 'true') {
+                            ?>
+                            <tr>
+                                <td align="center">
+                                    <h2 style="text-align:center;font-size:<?php echo $firmLongName_size; ?>px;text-transform:uppercase;font-weight:600; float: none;" class="font_color_<?php echo $firmLongName_color; ?>">
+                                        <?php echo $firm_long_name; ?>
+                                    </h2>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+//                        $fieldName = 'firmDesc';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($firm_desc != NULL && $firmDesc_check == 'true') {
+                            ?>
+                            <tr>
+                                <td  align="center">
+                                    <p class="font_color_<?php echo $firmDesc_color; ?>" style="font-size:<?php echo $firmDesc_size; ?>px;margin-left:-30px;font-weight: 500;text-align: center;margin-top: -5px;">
+                                        <?php echo $firm_desc; ?>
+                                    </p> 
+                                </td>
+                            </tr>
+                            <?php
+                        }
+//                        $fieldName = 'firmRegNo';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                        $firmRegiNofont = $label_field_font_size;
+//                        $firmReginoColor = $label_field_font_color;
+                        if ($firm_reg_no != NULL && $firmRegNo_check == 'true') {
+                            ?>
+                            <tr>
+                                <?php
+//                                $fieldName = 'firmRegNoLabel';
+//                                $label_field_font_size = '';
+//                                $label_field_font_color = '';
+//                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                ?>
+                                <td  class="address font_color_<?php echo $firmRegNoLabel_color; ?>" align="center" style="font-size:<?php echo $firmRegNoLabel_size; ?>px;">
+                                    <?php echo $firmRegNoLabel_content; ?> : 
+                                    <span class="address font_color_<?php echo $firmReginoColor; ?>" style="font-size:<?php echo $firmRegiNofont; ?>px;" ><?php echo ($firm_reg_no); ?></span>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+//                        $fieldName = 'firmAddress';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($firm_address != NULL && $firmAddress_check == 'true') {
+                            ?>
+                            <tr> 
+                                <td  class="address font_color_<?php echo $firmAddress_color; ?>" valign="middle" align="center" style="font-size:<?php echo $firmAddress_size; ?>px; text-align: center; ">
+                                    <?php echo $firm_address; ?>
+                                </td>
+                            </tr> 
+                        <?php } ?> 
+<!--<p class="trust">(A sign of trust)</p>-->
+                    </table>
+                </td>
+                <td class="gst-content">
+                    <div class="inner-content" style="text-align: right;" valign="bottom">
+                        <?php
+//                        $fieldName = 'firmTinTop';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $gstFontSizeLb = $firmTinTop_size;
+                        if ($firm_tin_no != NULL && $firmTinTop_check == 'true') {
+//                            $fieldName = 'firmTinTopLb';
+//                            $label_field_font_size = '';
+//                            $label_field_font_color = '';
+//                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>          
+                            <p class="gstNo" style="padding-bottom: unset; margin-bottom:0px; float:left; padding: unset !important; margin-right: 12px; font-size: <?php echo $gstFontSizeLb; ?>px; ">
+                                <span font_color_<?php echo $firmGstNocolor; ?> style="font-size: <?php echo $firmTinTopLb_size; ?>px; ">
+                                    <?php echo $firmTinTopLb_content; ?>:</span>
+                                <?php echo ($firm_tin_no); ?></p>
+                        <?php } else { ?>
+                            <p class="gstNo"> </p>
+                        <?php } ?>
+                    </div>
+                </td>
+                <?php 
+                $utin_einvoice_signed_qrcode = '';
+                                            $utin_tot_payable_amt = '';
+                                            $utin_einvoice_act_no = '';
+                                            $utin_einvoice_irn_no = '';
+                                            $utin_eway_bill_no = '';
+                                            $utin_eway_bill_date = '';
+                                            $utin_eway_bill_validity = '';
+                                            $utin_eway_bill_transid = '';
+                                            $utin_eway_bill_transname = '';
+                                            $utin_eway_bill_distance = '';
+                                            $utin_eway_bill_transdocno = '';
+                                            $utin_eway_bill_transdocDt = '';
+                                            $utin_eway_bill_vehno = '';
+                                            $utin_eway_bill_vehtype = '';
+                                            $utin_eway_bill_transMode = '';
+                                            $utin_einvoice_ack_date = '';
+//                                            parse_str(getTableValues("SELECT utin_tot_payable_amt,utin_einvoice_signed_qrcode,utin_einvoice_irn_no,utin_einvoice_ack_no,utin_einvoice_ack_date,"
+//                                                    . "utin_eway_bill_no,utin_eway_bill_date,utin_eway_bill_validity,utin_eway_bill_transid , utin_eway_bill_transname, utin_eway_bill_distance,"
+//                                                    . " utin_eway_bill_transdocno, utin_eway_bill_transdocDt, utin_eway_bill_vehno, utin_eway_bill_vehtype, utin_eway_bill_transMode "
+//                                                            . "FROM user_transaction_invoice where utin_owner_id = '$sessionOwnerId' and "
+//                                                            . "utin_pre_invoice_no = '$slPrPreInvoiceNo' and utin_invoice_no = '$slPrInvoiceNo' $utin_date_str and "
+//                                                            . "utin_type IN ('APPROVAL', 'stock','rawMetal','ItemReturn','XRF','imitation','strsilver','RetailStock','PurchaseReturn') "
+//                                                            . "and utin_transaction_type IN ('sell','ESTIMATESELL','PURBYSUPP','ItemReturn','APPROVAL', 'PurchaseReturn') and "
+//                                                            . "utin_user_id = '$userId' and utin_firm_id IN ($strFrmId)"));
+                                            $utin_tot_payable_amt = $getUserTransDetails[0]['utin_tot_payable_amt'];
+                                            $utin_einvoice_signed_qrcode = $getUserTransDetails[0]['utin_einvoice_signed_qrcode'];
+                                            $utin_einvoice_irn_no = $getUserTransDetails[0]['utin_einvoice_irn_no'];
+                                            $utin_einvoice_ack_no = $getUserTransDetails[0]['utin_einvoice_ack_no'];
+                                            $utin_einvoice_ack_date = $getUserTransDetails[0]['utin_einvoice_ack_date'];
+                                            $utin_eway_bill_no = $getUserTransDetails[0]['utin_eway_bill_no'];
+                                            $utin_eway_bill_date = $getUserTransDetails[0]['utin_eway_bill_date'];
+                                            $utin_eway_bill_validity = $getUserTransDetails[0]['utin_eway_bill_validity'];
+                                            $utin_eway_bill_transid = $getUserTransDetails[0]['utin_eway_bill_transid'];
+                                            $utin_eway_bill_transname = $getUserTransDetails[0]['utin_eway_bill_transname'];
+                                            $utin_eway_bill_distance = $getUserTransDetails[0]['utin_eway_bill_distance'];
+                                            $utin_eway_bill_transdocno = $getUserTransDetails[0]['utin_eway_bill_transdocno'];
+                                            $utin_eway_bill_transdocDt = $getUserTransDetails[0]['utin_eway_bill_transdocDt'];
+                                            $utin_eway_bill_vehno = $getUserTransDetails[0]['utin_eway_bill_vehno'];
+                                            $utin_eway_bill_vehtype = $getUserTransDetails[0]['utin_eway_bill_vehtype'];
+                                            $utin_eway_bill_transMode = $getUserTransDetails[0]['utin_eway_bill_transMode'];
+               
+                                            //echo '$utin_einvoice_signed_qrcode : '.$utin_einvoice_signed_qrcode.'<br>';
+                                            $documentRoots = $_SESSION['documentRoot'];
+                                            if ($utin_einvoice_signed_qrcode != '' && $utin_einvoice_signed_qrcode != NULL) {
+                                                $einvoiceQRPresent = 'YES';
+                                                $path = 'phpqrcode/images/';
+                                                $file = $path . uniqid() . "." . "png";
+                                                QRcode::png($utin_einvoice_signed_qrcode, $file, 'H', 14, 5);
+                                                //
+                                            } else {
+                                                $einvoiceQRPresent = 'NO';
+                                            }
+                ?>
+                  <?php
+                                                            if ($einvoiceQRPresent == 'YES') {
+                                                                ?>
+                                                                <td align="right" valign="top" class="<?php if ($firmRightLogoCheck_noPrintCheck == 'true') { ?>
+                                                                        noPrintHidden <?php } ?>">
+                                                                    <img src="<?php echo $documentRoots . '/include/php/' . $file; ?>" 
+                                                                         alt="" class="<?php echo $imageClass; ?>" />
+                                                                </td>
+                                                                <?php
+                                                            }else {?>
+                <?php
+                $fieldName = 'firmRightLogoCheck';
+//                $label_field_font_size = '';
+//                $label_field_font_color = '';
+//                parse_str(getTableValues("SELECT label_field_check as firmRightLogoCheck_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                
+                $firmRightLogoCheck_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                if ($firmRightLogoCheck_check == 'true') {
+                    if ($firm_right_thumb_ftype != NULL || $firm_right_thumb_ftype != '') {
+//                        echo 'hiii';
+                        ?>
+                        <td class="left-img" style="margin-top:10px;">
+                            <?php
+                            // echo '$userId==' . $userId . '<br>';
+                            //
+                            $firmId = $firm_id;
+                            $noEcho = 'Y';
+                            include('omffgfri.php');
+                            $noEcho = '';
+                            ?>
+                            <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($firmThumb); ?>"  
+                                 alt=""  style="margin-top:8px;" class="<?php
+                                 if ($logoImageActualSizeOnInvoice == 'YES') {
+                                     echo '';
+                                 } else {
+                                     echo $imageClass;
+                                 }
+                                 ?>" />
+                        </td>
+                        <?php
+                    } else {
+                        $firmId = $firm_id;
+                        $noEcho = 'Y';
+                        include('omffgfri.php');
+                        $noEcho = '';
+                        ?>
+                        <td class="left-img" style="margin-top:10px;">
+                            <img src="<?php echo 'data:image/jpeg;base64,' . base64_encode($firmThumb); ?>"  
+                                 alt="" style="margin-top:8px;"  class="<?php
+                                 if ($logoImageActualSizeOnInvoice == 'YES') {
+                                     echo '';
+                                 } else {
+                                     echo $imageClass;
+                                 }
+                                 ?>" style="visibility:hidden;"/>
+                        </td>
+                        <?php
+                    }
+                }
+                                                            }
+                ?>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td width="100%" style="border-bottom:1px solid #C4C4C4">
+       <!--<table ></table>-->
+    </td>
+</tr>
+
+

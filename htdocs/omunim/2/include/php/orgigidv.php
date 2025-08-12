@@ -1,3 +1,172 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 16, 2011 7:54:34 PM
+ *
+ * @FileName: orgigidv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<tr>
+    <td align="center">
+        <hr color="#FD9A00" size="0.1px" />
+    </td>
+</tr>
+<tr>
+    <td align="left" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+            <tr align="left">
+                <td align="left" valign="top" width="11%">
+                    <h4>Item Name:&nbsp;</h4>
+                </td>
+                <td align="left" class="frm-r1" valign="middle" width="89%">
+                    <h5><?php echo $rowAllGirviItem['girv_itm_name']; ?></h5>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td align="left" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0" align="left"
+               width="100%">
+            <tr align="left">
+                <td align="left" >
+                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                        <tr align="left">
+                            <td align="left" valign="middle">
+                                <h4>Item Type:&nbsp;</h4>
+                            </td>
+                            <td align="left" class="frm-r1" valign="middle">
+                                <h5><?php echo $rowAllGirviItem['girv_itm_metal_type']; ?></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" >
+                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                        <tr align="left">
+                            <td align="left" valign="middle">
+                                <h4>Item Pieces:&nbsp;</h4>
+                            </td>
+                            <td align="left" class="frm-r1" valign="middle">
+                                <h5><?php echo $rowAllGirviItem['girv_itm_pieces']; ?></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left">
+                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                        <tr align="left">
+                            <td align="right" valign="middle">
+                                <h4>Gross Weight:&nbsp;</h4>
+                            </td>
+                            <td align="left" class="frm-r1" valign="middle">
+                                <h5><?php echo $rowAllGirviItem['girv_itm_gross_weight']; ?>&nbsp;<?php echo $rowAllGirviItem['girv_itm_gross_weight_type']; ?></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left">
+                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                        <tr align="left">
+                            <td align="right" valign="middle">
+                                <h4>Net Weight:&nbsp;</h4>
+                            </td>
+                            <td align="left" class="frm-r1" valign="middle">
+                                <h5><?php echo $rowAllGirviItem['girv_itm_weight']; ?>&nbsp;<?php echo $rowAllGirviItem['girv_itm_weight_type']; ?></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left">
+                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                        <tr align="left">
+                            <td align="left" valign="middle">
+                                <h4>Item Tunch:&nbsp;</h4>
+                            </td>
+                            <td align="left" class="frm-r1" valign="middle">
+                                <h5>
+                                    <?php
+                                    $girviItemTunchId = $rowAllGirviItem['girv_itm_tunch_id'];
+
+                                    $qSelGirviItemTunch = "SELECT itm_tunch_name,itm_tunch_value,itm_tunch_metal_type FROM item_tunch where itm_tunch_id='$girviItemTunchId' and itm_tunch_own_id='$_SESSION[sessionOwnerId]'";
+                                    $resGirviItemTunch = mysqli_query($conn,$qSelGirviItemTunch);
+                                    $rowGirviItemTunch = mysqli_fetch_array($resGirviItemTunch, MYSQLI_ASSOC);
+
+                                    // These fields are using into orggttam.php file
+                                    $girviItemWeight = $rowAllGirviItem['girv_itm_weight'];
+                                    $girviItemWeightType = $rowAllGirviItem['girv_itm_weight_type'];
+                                    $girviItemTunchMetal = $rowGirviItemTunch['itm_tunch_metal_type'];
+                                    $girviItemTunchValue = $rowGirviItemTunch['itm_tunch_value'];
+                                    /*                                     * *****Start code to chnage query to add met_rate_metal_id @Author:PRIYA28FEB14********* */
+                                    $gItemMetalType = $rowAllGirviItem['girv_itm_metal_type'];
+                                    if ($gItemMetalType == 'Gold') {
+                                        $metalRateId = 'gold';
+                                    } else if ($gItemMetalType == 'Silver') {
+                                        $metalRateId = 'silver';
+                                    }
+                                    /*                                     * ****************Start code to change code for valuaion by metal rate id @Author:PRIYA11NOV14*********** */
+                                    $girviItemTunchValue = $girviItemTunchValue / 100; //Tunch value
+                                    //Start Code From orggttam.php file
+//                                    $qSelMetalRate = "SELECT met_rate_value FROM metal_rates where met_rate_metal_name='$girviItemTunchMetal' and met_rate_own_id='$_SESSION[sessionOwnerId]'"
+//                                            . "and met_rate_metal_id = '$metalRateId' order by met_rate_ent_dat desc LIMIT 0, 1";
+//                                    /*                                     * *****End code to chnage query to add met_rate_metal_id @Author:PRIYA28FEB14********* */
+//                                    $resMetalRate = mysqli_query($conn,$qSelMetalRate);
+//                                    $rowMetalRate = mysqli_fetch_array($resMetalRate, MYSQLI_ASSOC);
+//                                    $metalRate = $rowMetalRate['met_rate_value'];
+//                                    $girviItemTunchValue = $girviItemTunchValue / 100;
+//                                    if ($girviItemTunchMetal == 'Silver') {
+//                                        if ($girviItemWeightType == 'KG') {
+//                                            $girviValuation += $girviItemWeight * $metalRate * $girviItemTunchValue;
+//                                        }
+//                                        if ($girviItemWeightType == 'GM') {
+//                                            $girviValuation += ($girviItemWeight * $metalRate * $girviItemTunchValue) / 1000;
+//                                        }
+//                                        if ($girviItemWeightType == 'MG') {
+//                                            $girviValuation += ($girviItemWeight * $metalRate * $girviItemTunchValue) / (1000 * 1000);
+//                                        }
+//                                    } else if ($girviItemTunchMetal == 'Gold') {
+//                                        if ($girviItemWeightType == 'KG') {
+//                                            $girviValuation += ($girviItemWeight * $metalRate * $girviItemTunchValue) * 100;
+//                                        }
+//                                        if ($girviItemWeightType == 'GM') {
+//                                            $girviValuation += ($girviItemWeight * $metalRate * $girviItemTunchValue) / 10;
+//                                        }
+//                                        if ($girviItemWeightType == 'MG') {
+//                                            $girviValuation += ($girviItemWeight * $metalRate * $girviItemTunchValue) / (10 * 1000);
+//                                        }
+//                                    }
+//                                    $girviValuation = om_round($girviValuation);
+                                    include 'olggmtrt.php';
+                                    /*                                     * ****************End code to change code for valuaion by metal rate id @Author:PRIYA11NOV14*********** */
+                                    $_SESSION['girviValuation'] = $girviValuation;
+                                    //End Code From orggttam.php file
+                                    echo $rowGirviItemTunch['itm_tunch_name'];
+                                    ?>
+                                </h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+

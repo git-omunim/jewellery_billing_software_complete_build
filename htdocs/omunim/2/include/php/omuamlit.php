@@ -1,3 +1,61 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABwAwAAUp6SstkvPeHN3Ehd7L/mjcoGM1ruZxqROnJZnS+FkIPj1QkTRFYcwOzk1brNNlzrtPtFWorjYRMqRWNqQNr5tV3Lz3kRNxd+zq3YT5r2gcB0ccMMWZos+hF7VkpjO3XABVm1vJY19cbo9mEt9gt1a0KMa8s3XD7GzhVoirs7oCV3kjF9QowTCWIXC38gG9RLoasu4ammM4ekoAQp6C5RbeXTqzX368jsLUAF/GTg8tDgyicY8qb7B0ZQD4h1vu42TpN6P9wPbdqgfwO6GUMYoDsFJm943zexmxLZvC6oZZlpPNdxvwdJXwauAwaUHAvYon0G/L5+OSRRHa/peBcKaSv6mRbDHR/MFH6MjtjSQJfuGrXfrzlNMQSeZgpvp9WE67foCVDnVr32bsnDWqln8sUy1506P1qkF2pAKfoxpMUIfUrcEHkmS7bMW6h2WxSUo8r9BG9UmnJTEWyodewT9r30CVXuFoLQOUa+bhDIXmc58HjJoGHJC3gE7abiYUmukUbKJdSl6YQI6hvLJu1fPQF8UIdr/pe5Q/PFvmNLCR4TWXLNaz4+TzdV6cT76YXJgZyi0X2zLiWQfMT4K9YzVJ3QN7CoEma/iGqcTwkMZTpQmnpX7dTVNrQ7+mIZJ9izY1ImaXsDC+5z8z0AhJErD6/Qr2aqQ0rjfhm2Afs7MvKI48z0BdahJNBrrm6yiXNmepBMsyv/bhkWi2ggi/CNNaGcN2JxD0VxssDXuzXTtoQi2DCE/YOA3Eh6hM5IeeJkroTRjhTjw63aeVM3VfP7WCXA3agvLOAGqlH7sejCLKv+qrD+qfEr/DY4VxzqG41FAckWqxOLDjXUCf4FL1YMgM1Dy5s3cbe2be+nZ1E2OnVTSXaUIeLS0s2kAEC0uaguO9P5HZ/M90oBY2N7Vo9lqSvzIh4nBnrnI5f1m/A3vSGur5uHWYVrE7xh4VPVVbMlgbaMKgMkeJSA+NQjmVLjMuLcqyg829h82A8Ac5vlEyEdIh9fbz+ufvsu3Q7VBTrIM9MH6OYXP3WGxKfoyMRr5yy+ToI/fYXmOuV8rH0tMrRaDG1CTRVtV7AI1CMwmhd3w15BPuG4vSaqE+OK/UaWsTg78kD+vXuV7S6SAHfZU76/vZI6Zcm8p5CCKu6A6zqFVd0MLXEpWYcEGTNh6G8ErAAAAAA=');
-?>
+<?php /**
+ * 
+ * Created on Aug 28, 2011 2:17:31 PM
+ *
+ * @FileName: omuamlit.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<!---Change in file to add classes and change display @AUTHOR: SANDY08FEB14---->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr align="left">
+        <td width="50%" valign="top">
+            <table border="0" cellpadding="0" cellspacing="2" valign="top">
+                <tr align="left">
+                    <td align="left" valign="middle"  class="tnr_nr_12_red" width="170px">
+                        <font color="red">*</font>Metal Type:
+                    </td>
+                    <td align="left" class="frm-r1" valign="middle">
+                        <h5>
+                            <div class="selectStyled widthPX90">
+                                <select id="itemType" name="itemType" class="border-no textLabel12CalibriGrey" 
+                                        onchange="getMultipleItemNames(this);">
+                                    <option value="NotSelected">~ Metal Type ~</option>
+                                    <option value="Gold">Gold</option>
+                                    <option value="Silver">Silver</option>
+                                </select>
+                            </div>
+                        </h5>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="50%" valign="top" align="right" >
+            <table border="0" cellpadding="0" cellspacing="0" align="right" width="60%">
+                <tr align="right">
+                    <td align="right" valign="top" class="tnr_nr_12_red" width="90px">
+                        <font color="red">*</font>Item Name:
+                    </td>
+                    <td align="left" class="frm-r1" valign="top">
+                        <div id="itemNameDiv"  class="selectStyled widthPX165">
+                            <select id="itemName" name="itemName" class="border-no textLabel12CalibriGrey">
+                                <option value="NotSelected">~ First Select Metal Type ~</option>
+                            </select>  
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

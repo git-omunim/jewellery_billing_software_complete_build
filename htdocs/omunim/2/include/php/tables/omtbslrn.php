@@ -1,3 +1,84 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABYBAAAEl2nwskaozT4SvNRBzg/oAa1A7q3RgIYRtzoUzkS7lRjrkNQw/aWrpg36UFpQe8PUSJqlz//JD4zRaT0gBHKgLPja2fVDXOUsSSV3NvNBHNjzVZ7jek87AmOojzwHMFGT772euoBX4TMJq5ZbMchvElYx988dCWQB52R5x25FePv/qvIcvZiuDcDdY7+xlxh7Y2pom/oB1z6HCdVrrhe9upjnbqfZahdd0ThhKbR2YEuHh3ca3TE5G6LDrt3rRle15oS/aVYFKhUU5A0Am/GcNH21Px5tzSGfqf7P8vsQT+KtSpau6H6EMesINU4+xFxBq/fjlDsnMWJfrhqsC89OV58C6UQ8bQfMTJIAbFBAp+bcBUAD8/stG4jPiViJSbkFj23ZYF058Clp0P6jpSQN9Lda4FZZRiQGvkeBGtxxPFsRNj0PuPO7Qmb298UzVVtZPOQ9CS18vJXacFfVVLlWVPv8eNolgTR08gGhkgTItj/jrvfeKrg/QCK77PgFh+eFSqeRG8dQaSVie3iCUW9Y8+wO/lFgC7x0Be7B40TgZJeiaKYJMjuRoIvo6UF1CXYK9tdEkH3+2xd0bBnGmh/VE5q8SUJfY+IOd3bHtYDhziPBj4btWW1gx+b8hbrYpDSJzODkded1+rllUb7GNtvD9In4qP6vaQZBfnaY3A8N7lreYv1YB4B73hkdHLO/149C4h3twOvuc3T1+DM4QqBtR0yngcc3F54B1ZCSt3BzquAw8oU4Algm7lq66vrn49LDjiqjPDHkH7U7GaVHW10WTE5tbu5mPh88Q4UawL8rAkapO9RiPe/DPs+oMOLM/HALc1UxFWHKjhHqrI5aC3uyWowauglrxVcLaosDnwJEUu7mZwMIuTYowQCjl2H3137sqLO3NqhtUDtoHjbZ/8gfxIA0uR442o5qVgveTXmSi9E1aT/TI7l9bNvoPjBrBaC4tUMPSfYCiDxQhQeI5oHtnPh0mxzB3TGJPVHgzjj6ENdO34PBtDA9JtOokfdAc0A24unYg4F3T4rqP9ekr/gmUIPhtWn66VPX47C2Lqkqm8UH4zUEYEEwHow5q0FlRLzSe6AdZwAHq1OHEpHvP54T5jGy9yZLBIJHRbZ1kiCj+zzU03fbizRs0GghmxZ5r6kfChbUZvVZ8W8opgECOyfqI0Uxcefzrv2sMnRzek1ke9FaNRpw6ecAUin3nLw7I+ZBsafCSH3+Ez2ANrUI6r7xL9MvGXQ3e91Ei8Ll7aguLySOIaXqEZUAuu6KKUh+A4AarrZjnQX8YQqjNVOGGzQMug2Qk8kyRjIzvsDsVBua797pGDmbhwZ8ls0UcHM7wKRypiq6NqXKyP4/js2YI4J8+dAVFB4pRn3kv13kygsrExlGTvM14xGWIYyEYmJUD6+AMyQa/a3g1PxM2eYMqCLqVI7unhnyWAAkMqa45Chyky2bq/wxbt2ex51x1TrWVnOkhyW8wTFuN8AAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Sell Return table
+ * **************************************************************************************
+ * 
+ * Created on Dec 13, 2013 5:56:56 PM
+ *
+ * @FileName: omtbslrn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS slpr_return_inv (
+slprrn_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+slprrn_owner_id                   VARCHAR(16),
+slprrn_jrnl_id                    INT,
+slprrn_firm_id                    VARCHAR(16),
+slprrn_cust_id                    INT,
+slprrn_supp_id                    VARCHAR(16),
+slprrn_date                       VARCHAR(50),
+slprrn_slprin_id                  VARCHAR(16),
+slprrn_raw_gd_pre_Id              VARCHAR(6), 
+slprrn_raw_gd_post_Id             VARCHAR(16),
+slprrn_raw_sr_pre_Id              VARCHAR(6), 
+slprrn_raw_sr_post_Id             VARCHAR(16),
+slprrn_pre_invoice_no             VARCHAR(10),
+slprrn_invoice_no                 VARCHAR(50),
+slprrn_gd_frmid                   VARCHAR(16),
+slprrn_sl_frmid                   VARCHAR(16),
+slprrn_gd_accid                   VARCHAR(16),
+slprrn_sl_accid                   VARCHAR(16),
+slprrn_gd_tt_wgt                  VARCHAR(15),
+slprrn_gd_tt_wgt_typ              VARCHAR(10),
+slprrn_sl_tt_wgt                  VARCHAR(15),
+slprrn_sl_tt_wgt_typ              VARCHAR(10),
+slprrn_gd_rc_nt_wgt               VARCHAR(15),
+slprrn_gd_rc_nt_wgt_typ           VARCHAR(10),
+slprrn_sl_rc_nt_wgt               VARCHAR(15),
+slprrn_sl_rc_nt_wgt_typ           VARCHAR(10),
+slprrn_gd_rc_tunch                VARCHAR(15),
+slprrn_sl_rc_tunch                VARCHAR(15),
+slprrn_gd_rc_fn_wgt               VARCHAR(15),
+slprrn_sl_rc_fn_wgt               VARCHAR(15),
+slprrn_gd_rc_rate                 VARCHAR(15),
+slprrn_sl_rc_rate                 VARCHAR(15),
+slprrn_gd_rc_val                  VARCHAR(20),
+slprrn_sl_rc_val                  VARCHAR(20),
+slprrn_gd_wgt_bal                 VARCHAR(15),
+slprrn_gd_wgt_bal_typ             VARCHAR(10),
+slprrn_sl_wgt_bal                 VARCHAR(15),
+slprrn_sl_wgt_bal_typ             VARCHAR(10),
+slprrn_total_amt                  VARCHAR(20),
+slprrn_tot_amt_rec                VARCHAR(20),
+slprrn_paym_acc_id                VARCHAR(10),
+slprrn_cheque_no                  VARCHAR(50),
+slprrn_pay_card_type              VARCHAR(20),
+slprrn_paym_oth_info              VARCHAR(200),
+slprrn_cash_amt_rec               VARCHAR(50),
+slprrn_discount_amt               VARCHAR(50),
+slprrn_fnl_due_bal                VARCHAR(50),
+slprrn_since                      DATETIME,
+slprrn_staff_id	                  VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (slprrn_pre_invoice_no,slprrn_invoice_no))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

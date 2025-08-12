@@ -1,3 +1,250 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAQDQAAimrXSzRJbvXNOwRmIy391SMqIkKyK6pyY1ikdTrDQfW4csFghlrcK75sIMvumdZNkynsecu1nzYsbJ33a8oWb3AG9Hi+haz+M2zYf3V49B6FdENRi+UDsFNUNxuGqO/X7aUNAuSiw+pO6rI/F9+lvpz7aQhEBl8VlGwzrAoHBlsE31kP+hSURWQbgwSBbAUP2YwjTb7hXfX/fUByuiBLPhIljhZmuPIKW7HX7TLGE13jc2wp+xCfTMw08dtSa70YVk4qMEPZCj05mtjYWr3JypK40zsZSkZijv9IdzuShYnUZJJJSwXPqhv7WJfOGyaKlfxU23NGUNreX+AqY7CJF030DWDnPbNv+sAJ0blPYfKa4aNUhMLr25v40bMbCQKVNbg1OSjUTmbdq2QCf5I3vf2QzpzXae33PoxIYBLpGyT66Psa1J7iRiMplRgOTFKzM1FQix24brLs1km1AB4AvxIM8W4BfiuydBrVYuOiuNf7ea8/fnK5oRTTXPtI1KZVwrmr04G+9LJ7bhOKXVK/aAS+QvfQq/YInam2scL3okTaWZQGNKhp8oPc3EI7Rmx1aECWd4DTv05wTs23AddiaSBmPrLEH3N6BOzzUpc6PfJLgKIUVBqoG3EGE7zXdNIOhVyKunwz5DSC2Z5VKAIYdSP9m6xFZpby6Rpk7b8JBHafXfPX4boms5mzfsnq+xFOwcoKihDJ5T7YTCClT9ZRKNXkjlf826hgEDTb4VJLxW0FFk3d24uPunksHGPTEDJPt/AifNUQcj+8fFOPAcj6auG/JhJU5Nj3HUiRggXisgefzhmVCrqo7yofE9Lg+INNrHDDRDL8/lGx59l/SqFaoogv5cn6369/TtD3RXWz6e3/oQ0t7QxDdRuqqSMOaQOPslibdjlJbnQ5Xf8fqEgY/a/OzYhGVeHJO+Uox2FCPzmSCuh+SqWaibJbNZ36oxl6qMrMsJhlRKEgJSC4gh5XzQvvDOJieSd0rD9afcAiK6EFm4B2nAOAuP1b4qRf/sil/hq2+7wqke+MSDaSlYWDxVmN8umyjuq1fgMaYN4UMFjYBaxeT1ionFcpuz92LGGNjLTvGmpDyEMfhGX/2/q3X64DtRsACFT+wUZn37jJTYOYk5V+7a8QIOS4Exs2bCA4Ho+BBvU7LCQAazuIKuLDCPUoY98euxz50HeUnhIo6EGFRONrZ8NXFoiF06nxUV74hRJXPOP+p7vSJim9RsecuuQTkM+kMTLEIM/1fEegk0Rdb2+oxklDG7v+gwKP8JDtN23byelGNELCGVNlbL7CwnwzHpyL78KyMVvQAXHpBYvhuMnl4dWJN3TG3KJC1vp8J2L+lJYIP0OCPmQ5pr8hIaok23r4XI62E7rvQikDldMgrfwobhgJRmhASFvCi/TCDCxMdBFpd1+Cwd/fLJcDTQdOhP7btfgPfycFi/YUcWbfTp9FsKQ47gvMTR4pY26Q+lt9B8eQlA3oKtxA4M4qvUOlfuvXsXeA6AINURk4K4olYqG24zF/MwSbk5oSXzn7PwaOjeRwt5yNwsGxk8FMOhRd37v+sbGNWpZm1wsJHx5bPRT56jhCNpTMyccP55lY830PNB0u2RNhijo0AN9acebmMxQvcWL+VwNEEd8kPtq0FK6KMPD3nQUNi/Jw5fruphT0IJpBOfMbtrr2VmFkHo6pVNhK6RVfzD7bUl3zqa3cEJnwCmuNygGGPvd0Tcx2P4MSCR/9efWrBoxuP/i0KDZPr18wV8KE0w/MrPudDclxGM92ph2H0bckqGpUZgFUkULXKqhUpFN5T4XPVEHfS6t+9Nq0FMdm3KvuwZJ0yQPGy9ow0vcZSy08m4jJYgQydQ2Z1/ltTatOcGhudxvdufPMTKTvDn6iNXru+juDBWSFbeJRS0f7OKYmLO+9X8MbTmnK6g3gpNehEJdpcSOUr6dQd2u1KtH0WlMD6FhTnhI5DV5PRX6a4oJ4UD2tHi+ByLXot/p+R1UuR2aGDwZVjCPI04Su+e6GsDWvNP+uz9ooslqRjsDMMjrU/EhqO464de0IJxTCJ5huhpCbLcHq0t40VVD2hUsYB3E0pD1x2TYg6GCRPoZofujoM6MB2CNSIzGkZqAiR8ihVdcYhD+n3OqtQ1e9bCqz2P7h7u1OqsYNrhQVDyzJP6E9ARBaE+k6BR5VqSosw6owUqOOHCKAb7sjMk4NGGC4256/d5X/ZHgXKQ0uzlXsPJgIgad7+N6eEoL92dWATC4vJJ31Gtui4W9YSUDoEUkt/+6YdgRdKxYGZWFcGA9xS72R3lg1AKk0rB+ArQZmxzC/E2CV8u3seWyK4B/fU5/5lLGsUlFN6uIbY2JIN4iowglB3lINqK5AT7YQCgi3TUMKubB947NFyC/EdyS/NnXxz1TgscmMf5z9wfGtPOOY3wdEDvAcbUf+1sF8CTjkldZDiVcjXbCu8bOp6v7+GZyw3N03oWvKt6S5xWT9RclZ6HCVwvJ1wFigCD7+qOgvoqhSCRHzY2nkSZBxxG4gM3gPyiyhSzquQZQMabsZxEMFPFVA8YRFNbDP7lMvJg96oSR140aZuOR0DPZkts5JQIsUbdaTaZaCmHO17SjOVEgmTTfqWXspm3+6GTZ9ZhZ/spXJupDaUIAQAY0LWiTQDfbhjtwCHiYcmnZ97HO6lYH7fHUyE3lZMFHGBu9vrbNm7BAe49aKabxCGeKKJfLb9tKt3fpyrRuHyD5cZARm7bmPynp4zgMIG71uoUp9JqEOAqejCGz5UU2Htr878axhTXqaRMEo6kvQoopM1Ke1pEis3ayZvYWQz0iNQ0f1pCNtyFVHpaJGm1WrS+J7hQuWbJVTdfuUmBZPcWc1wOewDxjrFT40+2v76vuggR76H3hoEhLGMOa/Bzy9pRe/AJ2dTL2ZNJb5UJgqNKwyMjiUWqw0QmpAH1HHGm2drjhw2bONF3gjcAk7hqHOSYqSeX/oz6Q2hx+CMJ4zdzWKlfMYITQ7PKeLM7AhKod3ykvnjNHhgal4W32CRlUJvEfsbkOONeQ2Xf5X9FemxzeIQXk7YjbXrTuZE2cGLnKXjH7o2IQ8WBu4T6HLDqbAWxTmbAWUQfMpnM0tztz35YxZTWLPyjs39Jtc5x0NgkKFmsHJalIi7Q7gNuKCPMl+lWJmKGZIMxa0BDjQe9DwTfx9rCkA7UmZi1HLVBAkW45mBZ0QnWkMPn9eggGRuhP+3duJldGivAmh0Jm76hgKekMJW7PFfOcbrZknaYhCdGHixn3xVAEbRx/88oFBfLrojXPMNfZdFWQ1TGLECpkFtQIt8rPQg5dOgIJtTwnin/xf6zjSwe8ivxWcIASasCUokENLBRIVRLsRS0oQ08OiosyrLUeurQgiEJ7QFN+gPtcvrJ/jv3FV1dl5zoYa2aw9j/1rHbDGEcEUPdDaSkKrnw40tMU5Y1jxveqFxi8jQOqA8HrfuEYey8gYoUOsYw4z/9XSvbU8Km8p8k+bxMjHtT8J8TajoJxN0iTpee5kkCuv5+xN0AhqF3zb96uR5rnxBld0CI76bvDkrDHuEeyHEU3AKOTd+X7qQRYkBDHJ/poPGOFKfbhve9WAs1aCYGWAdWXcJBLic5sqMVrHmaO93XXAu2aDJivC+QLa6XiIWNRGhBF9JPxtlp5iaJTd10mT9dhA7HXR4w3Z99bZ3M6txPHvCoDEctg+djUY3IHHjZHhhQwT9kXuSAC1NUHKjUxYhuNBEhM8WzMmG6PqimGhfh5sVwvEcvtERHsV4Cc7oGdVZaZM0bi1gLzDxF/oNTGEXd0lb//5qcrJ0+lq+/xrkHlMcBBjk2lcHHoDznJZ8whjPz1l2uqRdXbNqclVsZ3k7nEMFufhLLgr3VBniVJxdIRog/fYbBzXcmOLiQxKNeM8Z+W+WOIRVQ5BvVvT3aV3EgPiSVoeggmH9phyyTyH/lh2dIK30Rpaf3xHizm1EAoW51oo0jFfS1rCn041kYR4PwG98flBaiSoNyMSqyQ4PAQtuSFgkOwH1G90xRxopoVxwchPboaFaLMR8ta2D2Qbv2uBjHpFtXke7EOIuOp99XUc/As51djU5C7mkP3Z12mL2Aze2FGrtiD6WYot5mw0s49PD0FuCdkXhBzUdcomJl4OPbHQk1xoiXG0f2BRsmsXIkLug/6zMLqBRqvQ+6WXDPa4TwKAIb0qMoGP4+PoeNN4RhoBQgeBNWY9NIfiCPut0soyJvYEIN4WgNfq7c6IGOUczWs/2rYgN51v37rKLD62w+9jI/O+QutbtKLuQaxEmzm892nq+TUvvWwNEgnezow+5tbH77j7iVDuUym/QbCxGigqYodbdGzzW2ALuoawFoPuJ+QXWKkuRu8DSF1KlChzlOJG4J7/PS11I+FiuarMvjSBaPtbDcdhuPn3wKJ3kWVbUgbQLyXRfDbql3OYgMyfr4CxPckD/RCAifMg6+sAAAAA');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description:  STOCK TALLY REPORT MAIN PAGE @AUTHOR:YUVRAJKAMBLE-28OCT2022
+ * **************************************************************************************************
+ *
+ * Created on OCT 14, 2021 04:29:58 PM 
+ * **************************************************************************************************
+ * @FileName: omStockLedgerSummaryOpeningCal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM  
+ * @version 2.7.90
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * *************************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:14OCT2021
+ *  AUTHOR: YUVRAJ 
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.84
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//
+$OpeningQTY = 0;
+$OpeningGsWeight = 0;
+$OpeningNtWeight = 0;
+$OpeningFnWeight = 0;
+//
+//
+$OpeningQTYOp = 0;
+$OpeningGsWeightOp = 0;
+$OpeningNtWeightOp = 0;
+$OpeningFnWeightOp = 0;
+//
+$OpeningGsWeightMG = 0;
+$OpeningGsWeightGM = 0;
+$OpeningGsWeightKG = 0;
+$OpeningGsWeightCT = 0;
+//
+$OpeningNtWeightMG = 0;
+$OpeningNtWeightGM = 0;
+$OpeningNtWeightKG = 0;
+$OpeningNtWeightCT = 0;
+//
+$OpeningFnWeightMG = 0;
+$OpeningFnWeightGM = 0;
+$OpeningFnWeightKG = 0;
+$OpeningFnWeightCT = 0;
+//
+//
+// START CODE TO GET OPENING QTY, GS WEIGHT, NET WEIGHT FOR TYPE MG, GM, KG, CT 
+$openingStockDet = "SELECT "
+        . "OpeningQTYOp, "
+        . "OpeningGsWeightMG, "
+        . "OpeningGsWeightGM, "
+        . "OpeningGsWeightKG, "
+        . "OpeningGsWeightCT, "
+        . "OpeningNtWeightMG, "
+        . "OpeningNtWeightGM, "
+        . "OpeningNtWeightKG, "
+        . "OpeningNtWeightCT, "
+        . "OpeningFnWeightMG, "
+        . "OpeningFnWeightGM, "
+        . "OpeningFnWeightKG, "
+        . "OpeningFnWeightCT, "
+        . "multi_barcode_indicator "
+        . "FROM TEMP_BARCODE_OPENING_STOCK "
+        . "WHERE multi_barcode_owner_id = '$sessionOwnerId' "
+        . "and multi_barcode_firm_id = '$FirmName' "
+        . "and multi_barcode_product_category = '$Category' "
+        . "and multi_barcode_product_name = '$Name' "
+        . "and multi_barcode_stock_type = '$StockType' "
+        . "and multi_barcode_purity = '$Purity' "
+        . "and multi_barcode_reporting_preiod = '$rfidtlyReportingPreiod' "
+        . "and multi_barcode_metal_type = '$MetalType' ";
+//
+//echo '$openingStockDet == ' . $openingStockDet . '<br />';
+//echo "Category 22 :- ".strtoupper($Category)."<br>"; 
+//
+$resOpeningStockDet = mysqli_query($conn, $openingStockDet);
+$rowOpeningStockDet = mysqli_fetch_array($resOpeningStockDet, MYSQLI_ASSOC);
+//
+$OpeningGsWeightMG = ($rowOpeningStockDet[OpeningGsWeightMG] / 1000);
+$OpeningNtWeightMG = ($rowOpeningStockDet[OpeningNtWeightMG] / 1000);
+$OpeningFnWeightMG = ($rowOpeningStockDet[OpeningFnWeightMG] / 1000);
+//
+$OpeningGsWeightGM = ($rowOpeningStockDet[OpeningGsWeightGM]);
+$OpeningNtWeightGM = ($rowOpeningStockDet[OpeningNtWeightGM]);
+$OpeningFnWeightGM = ($rowOpeningStockDet[OpeningFnWeightGM]);
+//
+$OpeningGsWeightKG = ($rowOpeningStockDet[OpeningGsWeightKG] * 1000);
+$OpeningNtWeightKG = ($rowOpeningStockDet[OpeningNtWeightKG] * 1000);
+$OpeningFnWeightKG = ($rowOpeningStockDet[OpeningFnWeightKG] * 1000);
+//
+$OpeningGsWeightCT = ($rowOpeningStockDet[OpeningGsWeightCT] / 5);
+$OpeningNtWeightCT = ($rowOpeningStockDet[OpeningNtWeightCT] / 5);
+$OpeningFnWeightCT = ($rowOpeningStockDet[OpeningFnWeightCT] / 5);
+//
+//
+//echo '$OpeningGsWeightGM == ' . $OpeningGsWeightGM . '<br />';
+//echo '$OpeningNtWeightGM == ' . $OpeningNtWeightGM . '<br />';
+//echo '$OpeningFnWeightGM == ' . $OpeningFnWeightGM . '<br />'; 
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+// OPENING QTY @AUTHOR:YUVRAJ-28OCT2022
+$OpeningQTYOp = $rowOpeningStockDet[OpeningQTYOp];
+//
+if ($OpeningQTYOp == '' || $OpeningQTYOp == NULL) {
+    $OpeningQTYOp = 0;
+}
+//
+//
+// OPENING GS WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OpeningGsWeightOp = ($OpeningGsWeightMG + $OpeningGsWeightGM + $OpeningGsWeightKG + $OpeningGsWeightCT);
+//
+//
+// OPENING NT WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OpeningNtWeightOp = ($OpeningNtWeightMG + $OpeningNtWeightGM + $OpeningNtWeightKG + $OpeningNtWeightCT);
+//
+//
+// OPENING FN WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OpeningFnWeightOp = ($OpeningFnWeightMG + $OpeningFnWeightGM + $OpeningFnWeightKG + $OpeningFnWeightCT);
+//
+//  
+//                                              
+//
+//echo '$OpeningQTYOp == ' . $OpeningQTYOp . '<br />';
+//echo '$OpeningGsWeightOp == ' . $OpeningGsWeightOp . '<br />';
+//echo '$OpeningNtWeightOp == ' . $OpeningNtWeightOp . '<br />'; 
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:YUVRAJ-28OCT2022
+//***********************************************************************************************************
+//
+include 'omStockTallyBarcodeSummaryOpeningOutwardCal.php';
+//include 'omStockLedgerSummaryOpeningOutwardCal.php';
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:YUVRAJ-28OCT2022
+//***********************************************************************************************************
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+//echo '$OpeningQTYOp == ' . $OpeningQTYOp . '<br />';
+//echo '$OutwardQTYOp == ' . $OutwardQTYOp . '<br />';
+//
+//
+//echo '$OpeningGsWeightOp == ' . $OpeningGsWeightOp . '<br />';
+//echo '$OutwardGsWeightOp == ' . $OutwardGsWeightOp . '<br />';
+//
+//
+$OpeningQTY = ($OpeningQTYOp - $OutwardQTYOp);
+$OpeningGsWeight = ($OpeningGsWeightOp - $OutwardGsWeightOp);
+$OpeningNtWeight = ($OpeningNtWeightOp - $OutwardNtWeightOp);
+$OpeningFnWeight = ($OpeningFnWeightOp - $OutwardFnWeightOp);
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+//echo '$OpeningQTY == ' . $OpeningQTY . '<br />';
+//echo '$OpeningGsWeight == ' . $OpeningGsWeight . '<br />';
+//echo '$OpeningNtWeight == ' . $OpeningNtWeight . '<br />'; 
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+// ADDED CODE FOR ALL STOCK LEDGER REPORT @YUVRAJ-28OCT2022
+if ($_REQUEST['subPanelName'] == 'AllStockList') {
+    //
+    //
+    $totalOpeningQty += $OpeningQTY;
+    //
+    //
+    $totalOpeningGsWt += $OpeningGsWeight;
+    //
+    //
+    $totalOpeningNtWt += $OpeningNtWeight;
+    //
+    //
+    $totalOpeningFnWt += $OpeningFnWeight;
+    //
+    //
+} else {
+    //
+    //
+    if ($OpeningGsWeight > 0 && $OpeningQTY > 0) {
+        $totalOpeningQty += $OpeningQTY;
+    }
+    //
+    //
+    if ($OpeningGsWeight > 0) {
+        $totalOpeningGsWt += $OpeningGsWeight;
+    }
+    //
+    //
+    if ($OpeningNtWeight > 0) {
+        $totalOpeningNtWt += $OpeningNtWeight;
+    }
+    //
+    //
+    if ($OpeningFnWeight > 0) {
+        $totalOpeningFnWt += $OpeningFnWeight;
+    }
+    //
+    //
+}
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
 ?>

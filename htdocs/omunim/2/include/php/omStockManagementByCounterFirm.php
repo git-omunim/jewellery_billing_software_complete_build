@@ -1,3 +1,123 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACIDAAA2s6jNPcFR9nB5n0LTWGw/jPLwvOzUweGKP8gKHHJJBHRx1ddUtSpP+oIKsFiSgZrfchmgizdOvg3gB/HakFQfvwYJ7BrggM5R6Fv+5Him7DWH6iGkbfEuoYfhj4CVeNOh6hyWHdBsGt8wpI6eitSQrbGPeuy4htrW6BwVFNZbrhmU4NFspZLcFJGOqUDpeZqjCL85Gc62I05daQ3vhqqKbHQZ0N2xD1xler0Ug54RIil70+YtaKDOYvlsJW6Vbylc4W2WgHuH2AFO8bYceEdpfVkt3oz91qtyfqxw3uv0wW0DaAZeqD1cz+BMklrZtZAy3GL/vz3+7BTYjxEx5f9VlCmgJfOcW8C2SuNQgKCVwhJxAT4/7uQV6UajTunyniUO7Nqxza5jZdnA+r7n9eS0/On6jNHO+Ya3diKUdqTXwfgrtjITA5zngza4IGhliRpOd3zjXuqcIIIM8tbBBo9kTcSbCpW7PExgAhN3qS2LgKfoe1ymrZBKaDKkKW3M9ft7ZRjwSn2GGVGPyJ1RjpcgsweT0smXRvtwmd1OwxQ6Y2fTdoA5TT4ejSQlQJF9PQMULvMX9wp62XUsPTLbkfyA9u0i0obMzkKozAxb+oOFyw89bfYDlWCx3FagNxp9wlUC0kRtvTN4boENqO/xUj/BZbEFelX+ZJXlCWp2HsObd1Axf0Hhb9KpD8ksoeIz9ZLE3f7j5si19kjNNqxDIKC8akv7/wXWWFeMDNG0TGr+t6f9J7MsCb9LzLxXaaNJEBzyx42nhuaMAcnhLOw9bD2QOO3GOIuE8BQb60EQL/oaAdwUU9aXCu+SVA+jv1nHWQMg/c2MG5P4QVIGuloXPwnd/XolNGFQFWMo8i2IdeqaixYU3Svia/u7EtXxbUu9q9UvQm6MA6xmY2d8KhFpGzKyRuzXJ19CyjBK2pXoUWr7+PlxJ52KkJc8dxUxFA6hzxkZf9T0jKwmXoyrYFMa4VALJTfp1AVK7Vy3ySmkSmCbJulvB+oJcJsrVL6R1YvMvkuVSApyGXlUfm7JH/mvpl3LapjNZm6sQ+H0rBY/tqsgK1/CNqSbUus9JtT/ugDyNoALq9dDNeN7qU5kE1FHulG1c6srqEwpW1yHDCi4bi+xxiJqSq1iN2yyneqkeeq+Z73m3aiixWXQOOgjVBVwQw3lJ56KmuE8D3ky1byZkva2OfBU7s8EvMCNxLkVY3oi+OFyD5S0H4rZRHjPJ0tzpv90JD/CQTEsXA3afqDnGBMDaH55D7r5PNw0qvga66x1YBhninqQT7nUWyYCRUaZ8FegmppkPKwndSGeX/j0WGTYvzvduJ37ClWBVkVi2K1NwM15Ec43T4aYMn1MaZbRrwe2iuzPDBv5tiUxwNqxFM4cwB9rCIK28s1Nf48ldMmXxshzRA1jTrJlHQxXiN1b1mq3dY0b6VNpygzqAXKjfTsZBYsZtY1GzS0M8SXP1C8PZ8zvHGKoTHGdS5Zp/l9Z8byXkCTsU83wBG1X1rvYo5H6XKQFFc7HVGeLd+KeqgLe7TuV+b7O1UjP58NcTYP2eBqJNJIhFQlOdh0v9sa+CCZkDPXv6Ottw1DPcyZk0OartRH4JvQVq5V671reF8RgqJ0iOKBO7Jzu65h1brI/DT9GK5TntOcdeoj8ocyQAhxFBBb64Rb0IzJuckdlsGKQO3Oyr0ZGlz0Tk85xbhuIueHCzHUogiyi43aDZwH57Z5O2PA36D00qBm97ze8mhQyVZ1lBL4lMxae+ShhCwjtWoc5NLtKqA01ICOKE/rDeA/Ut4amexE1fGtk3JPhFcEBLekgAHHRPl2PoNUi5vs2cQTSQLmmWYDGGa0fM9C07Mak2dib5k5Blyh+2Ytkw9D5wP3IjtB4Lzpzp9pb7nSVeJjxMZfuB7Ynmso9Lwm5w332ryMMLHTQZm+GQATphtYkisppTawXS86w0ghfCkRjsT0lzsMQH6fG3i6soMPs/TvMopVmSScG23TES8kqlvvwL4ghymYuh8Hhb+iIEMJeQulZ1xClMV/7r4nRRvk0cTR+v6Cl3+pTHwxrhtbD+LPIiEpBQmSqJTRTf6v9WDRt9qHnXYCtZIbF7dJbIixKllmJPwdeJqTnmZiNOFYaIkk+fUGplzyrtBXOyEcin/NS+R1eDRKnjA2niyr0+2liewxdsH/AcwOXARudQoBdGYmRgSai0V/HlOVO6mgPLoyMvU8TjH/DZtVVn0aEmlqsBglayw36PSPGZ9hYoyPFhlYLZ+hvgYmLNKGsftJxPt9JAoGqGbZPvFs1w8mmbWTcTGqhK1sYdmqTMp/TBsJ5aQmk4c8qdj6BYqRHu9Q2pDUHeLzvzTPS9Sj6epzVwW7o+IKRohL9OugAYUaWP15GqpL+eYsNQtxOnGAf6OUIujWmBBevUbC8cCXdNgneaIWMXb2uiQ03fb5Zx9qN8jpz1g42y0/Z17WG1kWp1Z67hDmQ0c0Pu2Judfh/tZGQ4d7wTVwkS0OxX7ZnYWylbr6vsRfLlo7iPmBHD7mvKxgvdzc+n6XEMguix/sKFwPkNLM+zaK1GgpeTfITNS03nOs3kjNdNfrrMe6hgq+bJG8ohAdfgNMXxomUWIQiH4HCAa4KzoWKiwob2kZcMOFfMdVZwF9yzYk0bwg2UZ05AAHF+/aeWcf2XZtXd/XvDX9vpaauIi+3+DIaAGYFCDH+NQk+ywahM9WNhBOwcReYf1T0qySzI/HC+mWqjy/eRrp+SLy846mrrE9De3uR2bKMB8iAfdZ5UguqcFI5ngu7S33+pzvHp67HiP2FTLyNZAC+K7HIpgCTOAT9gxe9stFGN2cU+f3ZUTIVnRnBUc/DX7+fSq1j3dRQUP88VWD6s1GCyPZMLW2DACb/VAKcjNpsgq8IwXMwUYjhOQLWuiCs40Lpm2F75AGN76gTpwzefxwXnQaEgieVXFcDidW8Wt1eQMxhI0BdQ8GHBZ2sRh3Uyr6qN84ik+Wnqjw074Jka7D7KsnNEPrP3LvKbLIHcPhSfK6wWBUqwGgwKdt7u5koDSefVyrObYZ7aUNZN8vXI7zghldbcDCNfRjMBqlgVIiWc5yhiChNCMSYTy6xW+pZDT+WXqjHZNH2GNHS0NbaF9ZYc2oec7tgSGNFgH4HyDqdENJNWd76/chyhXf7AbnG0pmlrHkH3V0kKxh8MRzm8+orKTB/u1kkLHIdrYI22T8lB+UlU8JMqtk44HPBEuKoNkUcRpoKrr4+mnsCnrc6B5XMh7tUAecd+9FVrw6lzlgKHdDkbvQ7J/LcxFGdLCIbcYrOtoLU2irtN9HeZQh5TBp3n0uOOQAbgdRw6UxUrri03qcVSturhfJByGkbZ8hnxIw4+NhhJXRynXnMdHjcAs1JZ/5ZW1Feq6UJcSb5q/vdjJ0o/ecNHvWNgh8FOKC1Ppi7OXqVnuPD6QimaK2pyycr06H//f29yTpNe4QbyCaB4M27WowgDxayXl8E7nxohti76q+Gorb8fomgjuZGT3nLnPP3Xw5TgjRLxUjrmhunnNL9++8T10dqzSNLTGS8LG+VfA6W5wR/yaB17B7eMSJ1H4I5qa0W8D9b60t5hiohhckxgEriujyMDWVhNJH4GN0qta/cdkEDbWYNNduSNxt4rSQ2ki9L2e+xObJvo3rohOYqBXTOQPCdcOoM2BwseHjEvNJSPLxgihcCwx5B3Yil9Z5AgaDLlZ5GgZN/7zxbq7dRdGoZCcZxsXDoZx9tV80c6kbc101nb9MIFQwyU3iJIlHvmYD8IXEEPRSClVwmSEMrITYAfW1VtU/i4UFDwr0AxHN1v1U85epMJothWGTdZnfJLWFp4yLefrcrtLa92LJIA9IVGz++UapehDTcQo+ycJjaETQyz8HW5pplJ2FGxAjZyMhV3tj8Tudj/neNfIqbMojyy8d69zNxGjeirY7HMfjKiAvRU/hl5TzaxiDu+Qfi16YK0zQ2UfOejxnx1zKmdxBjwfgU35f5PR17DqXdtvKv0yLCQSl19OT1gD9LBQKcn4FbGETaPymjanaiXw/64k2w3UU+XqlzcpxYBHdLs+P0dqzbNXOWphbSC1s/2HKa23HuMSNe8tIvTTFFFpowUM7mC1MFtqWRYFg4lmHZ94ehEskh7OaNfsFO7rmNJGF5gmJmbQ5+FV5pjdHkdMeCLKGULbdCe6/HIFeOTpzrHHm0/fp5tikxB2aoDNb1DXy3Ks1ntPXA6c7i3AOfbB7saztbuW9y3tL+CGsle0o7Xw+5xjOHXOvSNmH033mNgAAAAA=');
+<?php
+/*
+ * *************************************************************************************************
+ * @tutorial: STOCK MANAGEMENT BY FIRM FIELD FILE @AUTHOR:PRIYANKA-26NOV2021
+ * *************************************************************************************************
+ * 
+ * Created on 26 NOV, 2021 04:30:00 PM
+ *
+ * @FileName: omStockManagementByCounterFirm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA-26NOV2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+//
+//**************************************************************************************
+// Start code to get selected firm details @AUTHOR:PRIYANKA-26NOV2021
+//**************************************************************************************
+//
+//
+if ($inputStyleFirm === '' || $inputStyleFirm === NULL) {
+    //
+    $inputStyleFirm = 'width:100%; height:30px; color:#AA6600;font-weight:600; text-align:center; font-size: 16px !important; '
+                    . 'border-color:#FFDBA4;background-color: #FFDBA4; border-radius: 3px !important;padding-left:3px;';
+    //
+}
+//
+//
+?>
+<SELECT class="form-control-select" style="<?php echo $inputStyleFirm; ?>"
+        id="FirmName" name="FirmName" 
+        onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('FromDay').focus();
+                                   return false;
+                               } else if (event.keyCode == 8) {
+                                   document.getElementById('FirmName').focus();
+                                   return false;
+                               }"
+        onchange="getStockTransferSelectedOptionsFunc(document.getElementById('productCounter').value, document.getElementById('selectedStaff').value, 
+                                                      document.getElementById('FirmName').value, '<?php echo $stockTransferNavPanelName; ?>','');">
+    <OPTION  VALUE="" class="textLabel14CalibriGrey">ALL FIRMS</OPTION>
+<?php
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        //
+        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where "
+                     . "firm_own_id = '$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        //
+        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+        //
+        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+            //
+            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                $firmSelected = "selected";
+            }
+            //
+            if ($rowPerFirm['firm_type'] == "Public") {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            } else {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            }
+            //
+            $firmSelected = "";
+            //
+        }
+        //
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        //
+        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_type = 'Public' and "
+                     . "firm_own_id = '$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        //
+        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+        //
+        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+            //
+            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                $firmSelected = "selected";
+            }
+            //
+            if ($rowPerFirm['firm_type'] == "Public") {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            } else {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            }
+            //
+            $firmSelected = "";
+            //
+        }
+    }
+?>
+</SELECT>
+<?php 
+// 
+// 
+//**************************************************************************************
+//* End code to get selected firm details @AUTHOR:PRIYANKA-26NOV2021
+//**************************************************************************************
+//
+//
 ?>

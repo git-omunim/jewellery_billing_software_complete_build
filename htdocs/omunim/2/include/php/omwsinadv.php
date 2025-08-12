@@ -1,3 +1,1466 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SUPPLIER STOCK PURCHASE SUB FORM FILE @PRIYANKA-02MAR2021
+ * **************************************************************************************
+ * 
+ * Created on MARCH 02, 2021 01:15:00 PM
+ *
+ * @FileName: omwsinadv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.37
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-02MAR2021
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//******include file for conversion according to type
+include 'ogiartdv.php';
+$suppSimilarItem[$suppItemCount] = $_GET['suppSimItemPanel'];
+if ($suppItemCount == '')
+    $suppItemCount = 1;
+if ($payPanelName == 'InvoicePayment') {
+    $sttr_gs_weight = '';
+    $sttr_stone_valuation = '';
+    $sttr_pkt_weight = '';
+    $sttr_lab_charges = '';
+    $sttr_final_valuation = '';
+    $sttr_nt_weight = '';
+}
+//echo 'stock_transaction:' . $sttr_transaction_type;
+if ($payPanelName == 'UpdateItem' || $payPanelName == 'InvoicePayUp') {
+    if ($sttr_transaction_type == 'PURCHASE')
+        $qSelCryDet = "SELECT * FROM stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' and sttr_sttr_id = '$sttr_id' and sttr_transaction_type= 'PURCHASE' "
+                . "and sttr_indicator = 'stockCrystal' and sttr_status NOT IN ('DELETED') order by sttr_id asc";
+    else
+        $qSelCryDet = "SELECT * FROM stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' and sttr_sttr_id = '$sttr_id' and sttr_indicator = 'stockCrystal' and sttr_status NOT IN ('DELETED') order by sttr_id asc";
+    $resCryDet = mysqli_query($conn, $qSelCryDet);
+    $noOfCry = mysqli_num_rows($resCryDet);
+}
+?>
+<div id="stockMiddleDiv">
+    <table align="center" border="0" cellspacing="0" cellpadding="1" width="99.6%" class="brdrgry-dashed margtp10">
+        <tr class="height28 goldBack">
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="8%">
+                <div class="text-center font-dark">
+                    <strong>
+                        TYPE
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="10%">
+                <div class="text-center font-dark">
+                    <strong>
+                        PROD CAT
+                    </strong>
+                </div>
+            </td>
+            <td <?php if ($HSNOptionInForms == 'NO') { ?>colspan="2"<?php } ?>
+                                                         align="center" title="" class="textLabel14CalibriBrownBold" width="10%">
+                <div class="text-center font-dark">
+                    <strong>
+                        NAME
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="5%">
+                <div class="text-center font-dark">
+                    <strong>
+                        P.CODE
+                    </strong>
+                </div>
+            </td>
+            <?php if ($HSNOptionInForms != 'NO') { ?>
+                <td align="center" title="" class="textLabel14CalibriBrownBold" width="5%">
+                    <div class="text-center font-dark">
+                        <strong>
+                            HSN
+                        </strong>
+                    </div>
+                </td>
+            <?php } ?>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="5%">
+                <div class="text-center font-dark">
+                    <strong>
+                        QTY
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="10%">
+                <div class="text-center font-dark">
+                    <strong>
+                        GS WT
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="10%">
+                <div class="text-center font-dark">
+                    <strong>
+                        PKT WT
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" width="10%">
+                <div class="text-center font-dark">
+                    <strong>
+                        NT WT
+                    </strong>
+                </div>
+            </td>
+            <td align="left" title="" class="textLabel14CalibriBrownBold" width="5%">
+                <div class="text-center font-dark">
+                    <strong>
+                        PURITY
+                    </strong>
+                </div>
+            </td>
+            <td align="left" title="" class="textLabel14CalibriBrownBold" width="5%">
+                <div class="text-center font-dark">
+                    <strong>
+                        WSTG
+                    </strong>
+                </div>
+            </td>
+            <td align="left" title="" class="textLabel14CalibriBrownBold" width="8%">
+                <div class="text-center font-dark">
+                    <strong>
+                        F. PURITY
+                    </strong>
+                </div>
+            </td>
+            <td align="left" title="" class="textLabel14CalibriBrownBold" width="8%">
+                <div class="text-center font-dark">
+                    <strong>
+                        FFN WT
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="" class="textLabel14CalibriBrownBold" colspan="2" width="15%">
+                <div class="text-center font-dark">
+                    <strong>
+                        CUSTOMER WS / WT
+                    </strong>
+                </div>
+            </td>
+<!--            <td align="center" title="FINE WEIGHT" class="textLabel12CalibriBrown">
+                FN WT
+            </td>-->
+<!--            <td align="center" title="LABOUR CHARGES" class="textLabel14CalibriBrownBold">
+                <div class="text-center font-dark">
+                    <strong>
+                        LAB CHRG
+                    </strong>
+                </div>
+            </td>
+            <td align="center" title="TOTAL LABOUR CHARGES" class="textLabel14CalibriBrownBold">
+                <div class="text-center font-dark">
+                    <strong>
+                        TOT. LAB 
+                    </strong>
+                </div>
+            </td>-->
+            <td align="" title="" class="textLabel14CalibriBrownBold"></td>
+
+        </tr>
+        <tr>
+        <input type="hidden" id="metalType" name="metalType" value="<?php echo $sttr_metal_type; ?>"/>
+        <input type="hidden" id="commonPanel" name="commonPanel" value="<?php echo $commonPanel; ?>" />
+        <input type="hidden" id="noOfCry" name="noOfCry" value="<?php echo $noOfCry; ?>"/>
+        <input type="hidden" id="addItemCryCount" name="addItemCryCount"/>
+        <input type="hidden" id="addItemCryFinVal" name="addItemCryFinVal"/>
+        <input type="hidden" id="itemDivCnt" name="itemDivCnt" value="" />
+        <input type="hidden" id="itemTotalCrystalVal" name="itemTotalCrystalVal"/>
+        <input type="hidden" id="sttr_stone_wt" name="sttr_stone_wt"/>
+        <input type="hidden" id="sttr_stone_wt_type" name="sttr_stone_wt_type"/>
+        <input type="hidden" id="suppPanelName" name="suppPanelName" value='AddSuppStock'/>
+        <input type="hidden" id="openLotItemDetDiv" name="openLotItemDetDiv"/>
+        <input type="hidden" id="globSuppItemCount" name="globSuppItemCount"/>
+        <input type="hidden" id="addItemValuation" name="addItemValuation"  />   <!-- FUNCTION REQUIRED-->
+        <input type="hidden" id="subPanel" name="subPanel" value="SuppPurByInv"/>
+        <input type="hidden" id="metalRateCalculation" name="metalRateCalculation" value="<?php echo $sttr_metal_rate; ?>" />  <!--  ADDED TO MANAGE METAL RATE --> 
+        <input type="hidden" id="addPanelInfo" name="addPanelInfo" value = ''/>
+
+        <?php if ($payPanelName == "ItemApprovalRec") { ?>
+            <input type="hidden" id="sttr_indicator" name="sttr_indicator" value = 'APPROVALREC'/>
+            <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value = 'APPROVALREC'/>
+        <?php } else { ?>
+            <input type="hidden" id="sttr_indicator" name="sttr_indicator" value = 'AddInvoice'/>
+            <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value = 'PURBYSUPP'/>
+        <?php } ?>
+
+        <input type="hidden" id="sttr_sell_status" name="sttr_sell_status" value = 'No'/>
+        <input type="hidden" id="sttr_final_val_by" name="sttr_final_val_by" value="<?php echo $sttr_final_val_by; ?>"/><!-- change value of field @OMMODTAG SHRI_19NOV15 -->
+        <input type="hidden" id="sttr_other_charges_by" name="sttr_other_charges_by" value="<?php echo $sttr_other_charges_by; ?>"/>
+
+        <input type="hidden" id="sttr_user_id" name="sttr_user_id" value = '<?php echo $suppId; ?>'/>
+
+        <input type="hidden" id="ms_sub_itm_from_wt" name="ms_sub_itm_from_wt" />
+        <input type="hidden" id="ms_sub_itm_to_wt" name="ms_sub_itm_to_wt"  />
+        <input type="hidden" id="ms_sub_itm_wstg_max" name="ms_sub_itm_wstg_max" />
+        <input type="hidden" id="ms_sub_itm_wstg_min" name="ms_sub_itm_wstg_min"/>
+        <input type="hidden" id="ms_sub_itm_wstg_max_per" name="ms_sub_itm_wstg_max_per" />
+        <input type="hidden" id="ms_sub_itm_wstg_min_per" name="ms_sub_itm_wstg_min_per" />       
+        <input type="hidden" id="ms_sub_itm_mkg_max" name="ms_sub_itm_mkg_max" />
+        <input type="hidden" id="ms_sub_itm_mkg_min" name="ms_sub_itm_mkg_min" />
+        <input type="hidden" id="ms_sub_itm_mkg_max_pp" name="ms_sub_itm_mkg_max_pp" />
+        <input type="hidden" id="ms_sub_itm_mkg_min_pp" name="ms_sub_itm_mkg_min_pp" />
+        <input type="hidden" id="ms_sub_itm_mkg_max_fx" name="ms_sub_itm_mkg_max_fx" />
+        <input type="hidden" id="ms_sub_itm_mkg_min_fx" name="ms_sub_itm_mkg_min_fx" />
+        <input type="hidden" id="ms_sub_itm_disc_max_gm" name="ms_sub_itm_disc_max_gm" />
+        <input type="hidden" id="ms_sub_itm_disc_min_gm" name="ms_sub_itm_disc_min_gm" />
+        <input type="hidden" id="ms_sub_itm_disc_max_pp" name="ms_sub_itm_disc_max_pp" />
+        <input type="hidden" id="ms_sub_itm_disc_min_pp" name="ms_sub_itm_disc_min_pp" />
+        <input type="hidden" id="ms_sub_itm_disc_mkg_max_fx" name="ms_sub_itm_disc_mkg_max_fx" />
+        <input type="hidden" id="ms_sub_itm_disc_mkg_min_fx" name="ms_sub_itm_disc_mkg_min_fx" />
+
+        <input type="hidden" id="sttr_tax" name="sttr_tax" />
+        <input type="hidden" id="sttr_tot_tax" name="sttr_tot_tax" />
+        <input type="hidden" id="sttr_valuation" name="sttr_valuation" />
+        <input type="hidden" id="sttr_stone_valuation" name="sttr_stone_valuation" />
+        <input type="hidden" id="sttr_final_valuation" name="sttr_final_valuation" />
+
+        <input type="hidden" id="sttr_item_model_no" name="sttr_item_model_no" />
+
+        <input type="hidden" id="sttr_cust_wastg_by" name="sttr_cust_wastg_by" value='<?php echo $sttr_cust_wastg_by; ?>'/>
+        <input type="hidden" id="sttr_value_added" name="sttr_value_added" value='<?php echo $sttr_value_added; ?>'/>
+
+        <div id="metalRateDiv">
+            <input type="hidden" id="sttr_metal_rate" name="sttr_metal_rate" value="" />
+            <div id="metalIdSelectDiv"></div>
+        </div>
+
+        <div id="display_supp_pur_div"></div>
+        <td align="left" class="" title="" width ="8% !important">
+            <div id="itemTypeDiv">
+                <input type="hidden" id="suppItemTotVal" name="suppItemTotVal"/>
+                <select id="sttr_metal_type" name="sttr_metal_type"
+                        <?php if ($supp_idt_id != '') { ?>disabled ="disabled"<?php } ?>
+                        onkeydown="javascript: if (event.keyCode == 13) {
+                                    document.getElementById('sttr_item_category').focus();
+                                    return false;
+                                } else if (event.keyCode == 8) {
+                        <?php if ($suppItemCount > 1) { ?>
+                                        document.getElementById('sttr_final_valuation<?php echo $suppItemCount - 1; ?>').focus();
+                                        return false;
+                        <?php } else { ?>document.getElementById('sttr_account_id').focus();
+                                        return false;<?php } ?>
+                                }"
+                        class="form-control form-control-font13 text-center font-dark input-focus"
+                        onchange="//document.getElementById('sttr_item_category').value = this.value + 'Stock';
+                                //document.getElementById('sttr_item_name').value = this.value + 'Stock';
+                                javascript: //if (this.value == 'Gold') {
+                                        //document.getElementById('sttr_item_pre_id').value = 'GWHS';
+                                        //} else {
+                                        //document.getElementById('sttr_item_pre_id').value = 'SWHS';
+                                        //}
+                                        getSuppPurMetalRate(this.value, 'sttr_metal_rate');
+                                changeItemTunchOption(this, 'AddInvoice');">
+                            <?php
+                            $metalType = array(Gold, Silver, Other);
+                            for ($i = 0; $i <= 2; $i++)
+                                if ($metalType[$i] == $sttr_metal_type)
+                                    $optionMetalSel[$i] = 'selected';
+                            ?>
+                    <option value="Gold" <?php echo $optionMetalSel[0]; ?>>GD</option>
+                    <option value="Silver" <?php echo $optionMetalSel[1]; ?>>SL</option>
+                    <option value="Other" <?php echo $optionMetalSel[2]; ?>>OT</option>
+                    <?php $optionMetalSel = ''; ?>
+                </select>
+            </div>
+        </td>
+
+        <?php if ($payPanelName == 'UpdateItem') { ?>  
+
+
+            <!-- START CODE FOR MASTER ITEM DETAILS FUNCTIONALITY @PRIYANKA-20MAR18 -->
+            <td valign="middle" align="left" title="" class="" width ="10%!important">
+                <input id="sttr_item_category" name="sttr_item_category" 
+                       type="text"  disabled placeholder="CATEGORY" 
+                       value="<?php
+                       if ($sttr_item_category != '')
+                           echo $sttr_item_category;
+                       else
+                           echo 'GoldStock';
+                       ?>"
+                       onclick="this.value = '';
+                               clearDivision('itemListDivToAddStock');"
+                       onblur ="if (this.value == '') {
+                       <?php if ($sttr_item_category == '') { ?>
+                                       document.getElementById('sttr_item_category').value = document.getElementById('sttr_metal_type').value + 'Stock';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_category; ?>';
+                       <?php } ?>
+                           validateInput(this);
+                               }
+                               if (event.keyCode == 13) {
+                                   clearDivision('itemListDivToAddStock');
+                               }
+                               document.getElementById('category_label_box').style.visibility = 'hidden';"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('itemListDivToAddStock');
+                                   document.getElementById('sttr_item_name').focus();
+                                   document.getElementById('sttr_item_name').value = '';
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('itemListDivToAddStock');
+                                   document.getElementById('sttr_metal_type').focus();
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchAddStockItemNames(document.getElementById('sttr_item_category').value, document.getElementById('sttr_metal_type').value, 'sttr_item_category', event.keyCode, '<?php echo $documentRootBSlash; ?>', 'JewelleryPanel');
+                               }
+                               validateInput(this);"
+
+                       autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="7" maxlength="80">
+                <div id="itemCategoryListDivToAddStock" class="itemListDivToAddStock placeholderClass"></div>
+            </td> 
+            <td <?php if ($HSNOptionInForms == 'NO') { ?>colspan="2"<?php } ?>
+                                                         valign="middle" align="left" title="" class="" width ="10% !important">
+
+                <input id="sttr_item_name" name="sttr_item_name" disabled 
+                       type="text" placeholder="NAME" 
+                       value="<?php
+                       if ($sttr_item_name != '')
+                           echo $sttr_item_name;
+                       else
+                           echo 'GoldStock';
+                       ?>"
+                       onclick="clearDivision('itemListDivToAddStockItem');
+                               this.value = '';"
+                       onblur ="if (this.value == '') {
+                       <?php if ($sttr_item_name == '') { ?>
+                                       document.getElementById('sttr_item_name').value = document.getElementById('sttr_metal_type').value + 'Stock';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_name; ?>';
+                       <?php } ?>
+                           validateInput(this);
+                               }
+                               clearDivision('itemListDivToAddStockItem');
+                               getProductCodeByName(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_metal_type').value);
+                               document.getElementById('name_label_box').style.visibility = 'hidden';"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('itemListDivToAddStockItem');
+                                   document.getElementById('sttr_item_pre_id').focus();
+                                   document.getElementById('sttr_item_pre_id').value = '';
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('itemListDivToAddStockItem');
+                                   document.getElementById('sttr_item_category').focus();
+                                   document.getElementById('sttr_item_category').value = '';
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchStockItemNames(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_metal_type').value, 'sttr_item_name', event.keyCode, '', '', '<?php echo $documentRootBSlash; ?>', 'JewelleryPanel');
+                               }
+                               validateInput(this);"
+                       onfocus="document.getElementById('name_label_box').style.visibility = 'visible';"
+                       autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="7" maxlength="80">
+                <div id="itemListDivToAddStockItem"></div>
+            </td> 
+            <td valign="middle" align="left" title="" class="" width="8%">
+                <input id="sttr_item_pre_id" name="sttr_item_pre_id" disabled 
+                       type="text" placeholder="PROD CODE" 
+                       value="<?php
+                       if ($sttr_item_pre_id != '') {
+                           echo $sttr_item_pre_id;
+                       } else {
+                           if ($met_rate_value != '') {
+                               echo 'GWHS';
+                           } else {
+                               echo 'SWHS';
+                           }
+                       }
+                       ?>"
+                       onclick="this.value = '';"
+                       onblur ="if (this.value == '') {
+                       <?php if ($sttr_item_pre_id == '') { ?>
+                                       document.getElementById('sttr_item_pre_id').value = document.getElementById('sttr_item_pre_id').value + 'GWHS';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_pre_id; ?>';
+                       <?php } ?>
+                               }
+                               validateInput(this);"
+                       onkeyup ="validateInput(this);"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('metalIdSelectDiv');
+                       <?php if ($HSNOptionInForms == 'NO') { ?>
+                                       document.getElementById('sttr_quantity').focus();
+                                       document.getElementById('sttr_quantity').value = '';
+                       <?php } else { ?>
+                                       document.getElementById('sttr_hsn_no').focus();
+                                       document.getElementById('sttr_hsn_no').value = '';
+                       <?php } ?>
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('metalIdSelectDiv');
+                                   document.getElementById('sttr_item_name').focus();
+                                   document.getElementById('sttr_item_name').value = '';
+                                   return false;
+                               }"
+                       autocomplete="off" spellcheck="false" class="form-control-req-height20 placeholderClass" size="7" maxlength="15">
+
+            </td> 
+            <!-- END CODE FOR MASTER ITEM DETAILS FUNCTIONALITY @PRIYANKA-20MAR18 -->
+        <?php } else { ?>
+
+
+            <!-- START CODE FOR MASTER ITEM DETAILS FUNCTIONALITY @PRIYANKA-20MAR18 -->
+            <td valign="middle" align="left" title="" class="" width ="8% !important">
+                <div name="box" id="category_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    PRODUCT CATEGORY
+                </div>
+                <input id="sttr_item_category" name="sttr_item_category" 
+                       type="text" placeholder="CATEGORY" 
+                       value="<?php
+                       if ($sttr_item_category != '')
+                           echo $sttr_item_category;
+                       else
+                           echo 'GoldStock';
+                       ?>"
+                       onclick="this.value = '';
+                               clearDivision('itemListDivToAddStock');"
+                       onblur ="document.getElementById('category_label_box').style.visibility = 'hidden';
+                               if (this.value == '') {
+                       <?php if ($sttr_item_category == '') { ?>
+                                       document.getElementById('sttr_item_category').value = document.getElementById('sttr_metal_type').value + 'Stock';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_category; ?>';
+                       <?php } ?>
+                           validateInput(this);
+                               }
+                               if (event.keyCode == 13) {
+                                   clearDivision('itemListDivToAddStock');
+                               }
+                               checkProdMasterToGetPrice(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_item_pre_id').value, '<?php echo $suppId; ?>');
+
+                               /*setPurityAccUserItmCode(document.getElementById('sttr_item_pre_id').value,'<?php echo $suppId; ?>');*/"
+
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+
+                                   document.getElementById('sttr_item_name').focus();
+                                   document.getElementById('sttr_item_name').value = '';
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+    //                                   clearDivision('itemListDivToAddStock');
+                                   document.getElementById('sttr_metal_type').focus();
+                                   return false;
+                               }
+                               clearDivision('itemListDivToAddStock');"
+
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchAddStockItemNames(document.getElementById('sttr_item_category').value, document.getElementById('sttr_metal_type').value, '', 'sttr_item_category', event.keyCode, '<?php echo $documentRootBSlash; ?>', 'JewelleryPanel');
+                               }
+                               validateInput(this);"
+                       onfocus="document.getElementById('category_label_box').style.visibility = 'visible';"
+                       autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="7" maxlength="80">
+                <div id="itemCategoryListDivToAddStock" class="itemListDivToAddStock placeholderClass" style="position:relative;"></div>
+            </td> 
+            <td <?php if ($HSNOptionInForms == 'NO') { ?>colspan="2"<?php } ?>
+                                                         valign="middle" align="left" title="" class="" width ="10% !important">
+                <div name="box" id="name_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    PRODUCT NAME
+                </div>
+                <input id="sttr_item_name" name="sttr_item_name" 
+                       type="text" placeholder="NAME" 
+                       value="<?php
+                       if ($sttr_item_name != '')
+                           echo $sttr_item_name;
+                       else
+                           echo 'GoldStock';
+                       ?>"
+                       onclick="clearDivision('itemListDivToAddStockItem');
+                               this.value = '';"
+                       onblur ="if (this.value == '') {
+                       <?php if ($sttr_item_name == '') { ?>
+                                       document.getElementById('sttr_item_name').value = document.getElementById('sttr_metal_type').value + 'Stock';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_name; ?>';
+                       <?php } ?>
+                           validateInput(this);
+                               }
+                               document.getElementById('name_label_box').style.visibility = 'hidden';
+                               checkProdMasterToGetPrice(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_item_pre_id').value, '<?php echo $suppId; ?>');
+                               getProductCodeByName(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_metal_type').value);
+
+                               //setPurityAccUserItmCode(document.getElementById('sttr_item_pre_id').value,'<?php echo $suppId; ?>');
+                               //setStockMasterUserDetails(document.getElementById('sttr_item_category').value, this.value, '<?php echo $suppId; ?>');"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('itemListDivToAddStockItem');
+                                   document.getElementById('sttr_item_pre_id').focus();
+                                   document.getElementById('sttr_item_pre_id').value = '';
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('itemListDivToAddStockItem');
+                                   document.getElementById('sttr_item_category').focus();
+                                   document.getElementById('sttr_item_category').value = '';
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchStockItemNames(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_metal_type').value, 'sttr_item_name', event.keyCode, '', '', '<?php echo $documentRootBSlash; ?>', 'JewelleryPanel');
+                               }
+                               validateInput(this);"
+                       onfocus="document.getElementById('name_label_box').style.visibility = 'visible';"
+                       autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="7" maxlength="80">
+                <div id="itemListDivToAddStockItem" style="position:relative;"></div>
+            </td>
+            <td valign="middle" align="left" title="" class="" width="5%">
+                <div name="box" id="prod_code_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    PRODUCT CODE
+                </div>
+                <input id="sttr_item_pre_id" name="sttr_item_pre_id" 
+                       type="text" placeholder="PROD CODE" 
+                       value="<?php
+                       if ($sttr_item_pre_id != '')
+                           echo $sttr_item_pre_id;
+                       else
+                           echo 'GWHS';
+                       ?>"
+                       onclick="this.value = '';
+                               clearDivision('searchSuppProductCodeDiv');"
+                       onblur ="if (this.value == '') {
+                       <?php if ($sttr_item_pre_id == '') { ?>
+                                       document.getElementById('sttr_item_pre_id').value = document.getElementById('sttr_item_pre_id').value + 'GWHS';
+                       <?php } else { ?>
+                                       this.value = '<?php echo $sttr_item_pre_id; ?>';
+                       <?php } ?>
+                           validateInput(this);
+                               }
+                               if (event.keyCode == 13) {
+                                   clearDivision('searchSuppProductCodeDiv');
+                               }
+                               document.getElementById('prod_code_label_box').style.visibility = 'hidden';
+                               checkProdMasterToGetPrice(document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, document.getElementById('sttr_item_pre_id').value, '<?php echo $suppId; ?>');
+                               //setPurityAccUserItmCode(this.value,'<?php echo $suppId; ?>');"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('searchSuppProductCodeDiv');
+                       <?php if ($HSNOptionInForms == 'NO') { ?>
+                                       document.getElementById('sttr_quantity').focus();
+                                       document.getElementById('sttr_quantity').value = '';
+                       <?php } else { ?>
+                                       document.getElementById('sttr_hsn_no').focus();
+                                       document.getElementById('sttr_hsn_no').value = '';
+                       <?php } ?>
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('searchSuppProductCodeDiv');
+                                   document.getElementById('sttr_item_name').focus();
+                                   document.getElementById('sttr_item_name').value = '';
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchSuppProductCode(this.value, '<?php echo $suppId; ?>', document.getElementById('sttr_metal_type').value, document.getElementById('sttr_item_category').value, document.getElementById('sttr_item_name').value, 'sttr_item_pre_id', event.keyCode, '<?php echo $documentRootBSlash; ?>', 'suppJewelleryPanel');
+                               }
+                               validateInput(this);"  
+                       onfocus="document.getElementById('prod_code_label_box').style.visibility = 'visible';"
+                       autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" 
+                       size="7" maxlength="15">
+                <div id="searchSuppProductCodeDiv" class="searchSuppProductCodeDiv placeholderClass"></div>
+            </td>
+        <?php } ?>
+        <!-- END CODE FOR MASTER ITEM DETAILS FUNCTIONALITY @PRIYANKA-20MAR18 -->
+
+        <?php if ($HSNOptionInForms != 'NO') { ?>
+            <td valign="middle" title="" align="left" class="" width ="5% !important">
+                <div name="box" id="hsn_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    HSN
+                </div>
+                <input id="sttr_hsn_no" name="sttr_hsn_no" type="text" placeholder="HSN NO."
+                       value="<?php
+                       if ($sttr_hsn_no == '') {
+                           $sttr_hsn_no = '';
+                       } echo $sttr_hsn_no;
+                       ?>"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   document.getElementById('sttr_quantity').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('sttr_item_pre_id').focus();
+                                   document.getElementById('sttr_item_pre_id').value = '';
+                                   return false;
+                               }"
+                       onkeypress="javascript:return valKeyPressedForNumber(event);" 
+                       onblur="document.getElementById('hsn_label_box').style.visibility = 'hidden';"
+                       onfocus="document.getElementById('hsn_label_box').style.visibility = 'visible';"
+                       spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="2" maxlength="10" />
+            </td>
+        <?php } ?>
+
+        <td valign="middle" title="" align="left" class="" width="5%">
+            <div name="box" id="quantity_label_box" class="hidden_box" style="visibility:hidden;"> 
+                PRODUCT QUANTITY
+            </div>
+            <input id="sttr_quantity" name="sttr_quantity" type="text" placeholder="QTY"
+                   value="<?php
+                   if ($sttr_quantity != '') {
+                       echo $sttr_quantity;
+                   } else {
+                       echo '';
+                   }
+                   ?>"
+                   onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                               document.getElementById('sttr_gs_weight').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                   <?php if ($HSNOptionInForms == 'NO') { ?>
+                                   document.getElementById('sttr_item_pre_id').focus();
+                   <?php } else { ?>
+                                   document.getElementById('sttr_hsn_no').focus();
+                   <?php } ?>
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"    
+                   onblur="//setPurityAccUserItmCode(document.getElementById('sttr_item_pre_id').value,'<?php echo $suppId; ?>');
+                           document.getElementById('quantity_label_box').style.visibility = 'hidden';
+                           purFormB2CalFunc();" 
+                   onfocus="document.getElementById('quantity_label_box').style.visibility = 'visible';"
+                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="2" maxlength="10" />
+        </td>
+        <td align="left" title="" width="10%">
+            <table border="0" cellspacing="1" cellpadding="0" align="left" width="100%">  
+                <tr>
+                    <td align="left" width="60%">
+                        <div name="box" id="gs_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                            PRODUCT GROSS WT
+                        </div>
+                        <input id="sttr_gs_weight" name="sttr_gs_weight" 
+                               type="text" placeholder="GS WT" 
+                               value="<?php echo $sttr_gs_weight; ?>" 
+                               onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                           document.getElementById('sttr_gs_weight_type').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8 && this.value == '') {
+                                           document.getElementById('sttr_quantity').focus();
+                                           document.getElementById('sttr_quantity').value = '';
+                                           return false;
+                                       }
+                                       purFormB2CalFunc();"
+                               onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                           searchSuppPurWtType(this.value, event.keyCode, 'suppGswtTypeListDiv', 'sttr_gs_weight_type', '');
+                                       }"
+                               onblur="document.getElementById('gs_wt_label_box').style.visibility = 'hidden';
+                                       if (this.value != '') {
+                                           document.getElementById('sttr_nt_weight').value = this.value - document.getElementById('sttr_pkt_weight').value;
+                                           document.getElementById('netWeight').value = this.value;
+                                       }
+                                       //setPurityAccUserItmCode(document.getElementById('sttr_item_pre_id').value,'<?php echo $suppId; ?>');
+                                       purFormB2CalFunc();
+                                       document.getElementById('suppGswtTypeListDiv').innerHTML = '';
+                               " 
+
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               onfocus="document.getElementById('gs_wt_label_box').style.visibility = 'visible';"
+                               autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="6" maxlength="20" title=""/>
+                    </td>
+                    <td align="right" title="" width="40%">
+                        <select id="sttr_gs_weight_type" name="sttr_gs_weight_type" style="width:100%" 
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('sttr_pkt_weight').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('sttr_gs_weight').focus();
+                                            return false;
+                                        }"
+                                onblur="if (this.value != '') {
+                                            document.getElementById('sttr_nt_weight_type').value = this.value;
+                                            document.getElementById('utransFinalWeightTyp').value = this.value;
+                                        }"
+                                onchange="javascript:
+                                                if (document.getElementById('sttr_gs_weight').value != '') {
+                                            purFormB2CalFunc();
+                                        }"
+                                class="form-control form-control-font13 text-center font-dark input-focus">
+                                    <?php
+                                    $itemGsWtType = array(GM, KG, MG);
+                                    for ($i = 0; $i <= 2; $i++)
+                                        if ($itemGsWtType[$i] == $sttr_gs_weight_type)
+                                            $optionGSWTypeSel[$i] = 'selected';
+                                    ?>
+                            <option value="GM" <?php echo $optionGSWTypeSel[0]; ?>>GM</option>
+                            <option value="KG" <?php echo $optionGSWTypeSel[1]; ?>>KG</option>
+                            <option value="MG" <?php echo $optionGSWTypeSel[2]; ?>>MG</option>
+                        </select> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="left" title="" width="10%">
+            <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">  
+                <tr>
+                    <td align="left" width="60%">
+                        <div name="box" id="pkt_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                            PRODUCT PKT WT
+                        </div>
+                        <input id="sttr_pkt_weight" name="sttr_pkt_weight" 
+                               type="text" placeholder="PKT WT" value="<?php echo $sttr_pkt_weight; ?>"
+                               <?php if ($staffId && $array['addStockAccessAutoWtRdOnly'] == 'true') { ?>readonly="true"<?php } ?>
+                               onblur="
+                                       if (this.value == '')
+                                           this.value = '<?php echo $sttr_pkt_weight; ?>';
+                                       if (this.value != '') {
+                                           changeNetWeightByPktWt();
+                                           purFormB2CalFunc();
+                                       }
+                                       document.getElementById('pkt_wt_label_box').style.visibility = 'hidden';
+                                       return false;"
+                               onkeydown="javascript: if (event.keyCode == 13) {
+                                           document.getElementById('sttr_pkt_weight_type').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8 && this.value == '') {
+                                           document.getElementById('sttr_gs_weight_type').focus();
+                                           return false;
+                                       }
+                                       purFormB2CalFunc();"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);" 
+                               onfocus="document.getElementById('pkt_wt_label_box').style.visibility = 'visible';"
+                               autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="10" maxlength="20"  title=""/>
+                    </td>
+                    <input type="hidden" id="sttr_less_weight"/>
+                    <input type="hidden" id="sttr_less_weight_type" />
+                    <td align="left" title="" width="40%" class="paddingLeft2">
+                        <select id="sttr_pkt_weight_type" name="sttr_pkt_weight_type" title=""
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('sttr_nt_weight').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('sttr_pkt_weight').focus();
+                                            document.getElementById('sttr_pkt_weight').value = '';
+                                            return false;
+                                        }"
+                                onchange="javascript:
+                                                if (document.getElementById('sttr_gs_weight').value != '') {
+                                            changeNetWeightByPktWt();
+                                        }"
+                                class="form-control form-control-font13 text-center" style="width:100%;">
+                                    <?php
+                                    $itemPktWtType = array(GM, KG, MG);
+                                    for ($i = 0; $i <= 2; $i++)
+                                        if ($itemPktWtType[$i] == $sttr_pkt_weight_type)
+                                            $optionPKTWTypeSel[$i] = 'selected';
+                                    ?>
+                            <option value="GM" <?php echo $optionPKTWTypeSel[0]; ?>>GM</option>
+                            <option value="KG" <?php echo $optionPKTWTypeSel[1]; ?>>KG</option>
+                            <option value="MG" <?php echo $optionPKTWTypeSel[2]; ?>>MG</option>
+                        </select> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td align="left" title="" width="10%">
+            <table border="0" cellspacing="1" cellpadding="0" align="left" width="100%">  
+                <tr>
+                    <td align="left" title="" width="60%">
+                        <div name="box" id="net_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                            PRODUCT NET WT
+                        </div>
+                        <input type="hidden" id="netWeight" name="netWeight" value="<?php echo $sttr_nt_weight; ?>" />
+                        <input id="sttr_nt_weight" name="sttr_nt_weight" 
+                               type="text" placeholder="NT WT" 
+                               value="<?php echo $sttr_nt_weight; ?>" 
+                               onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                           document.getElementById('sttr_nt_weight_type').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8 && this.value == '') {
+                                           document.getElementById('sttr_pkt_weight_type').focus();
+                                           return false;
+                                           purFormB2CalFunc();
+                                       }"
+                               onblur="document.getElementById('net_wt_label_box').style.visibility = 'hidden';
+                                        if (this.value != '') {
+                                           document.getElementById('suppGdNetWeight').value = this.value;
+                                       }
+                                       purFormB2CalFunc();"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               onfocus="document.getElementById('net_wt_label_box').style.visibility = 'visible';"
+                               autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="10" maxlength="20" title=""/>
+                    </td>
+                    <td align="right" title="" width="40%">
+                        <select id="sttr_nt_weight_type" name="sttr_nt_weight_type" 
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('sttr_purity').focus();
+                                            document.getElementById('sttr_purity').value = '';
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('sttr_nt_weight').focus();
+                                            return false;
+                                        }"
+                                class="form-control form-control-font13 text-center" style="width:100%;">
+                                    <?php
+                                    $itemNtWtType = array(GM, KG, MG);
+                                    for ($i = 0; $i <= 2; $i++)
+                                        if ($itemNtWtType[$i] == $sttr_nt_weight_type)
+                                            $optionNtWTypeSel[$i] = 'selected';
+                                    ?>
+                            <option value="GM" <?php echo $optionNtWTypeSel[0]; ?>>GM</option>
+                            <option value="KG" <?php echo $optionNtWTypeSel[1]; ?>>KG</option>
+                            <option value="MG" <?php echo $optionNtWTypeSel[2]; ?>>MG</option>
+                        </select> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="middle" title="" align="left" width="5%" style="position:relative">
+            <div name="box" id="purity_label_box" class="hidden_box" style="visibility:hidden;"> 
+                PRODUCT PURITY
+            </div>
+            <div id = "itemFineTunchDiv">
+                <?php
+                $tunchDivId = 'sttr_purity';
+                $nextFieldId = 'sttr_wastage';
+                $prevFieldId = 'sttr_nt_weight_type';
+                $netWeightFieldId = 'sttr_nt_weight';
+                $fineWeightFieldId = 'utransFinalWeightTyp';
+                $tunchDivClass = 'form-control form-control-font13 text-center font-dark input-focus';
+                $metalType = $metalTyp;
+                $TunchValue = $sttr_purity;
+                $itemDivCount = 'AddInvoice';
+                include 'ogiatnch.php';
+                ?>
+            </div>
+        </td>
+        <td valign="middle" align="left" title="" width="5%">
+            <div name="box" id="wastage_label_box" class="hidden_box" style="visibility:hidden;"> 
+                PRODUCT WASTAGE
+            </div>
+            <input type="hidden" id="addItemWastageChanged" name="addItemWastageChanged" value="<?php echo $sttr_wastage; ?>" />
+            <input type="hidden" id="sttr_fine_weight" name="sttr_fine_weight" value="<?php echo $sttr_fine_weight; ?>"/>
+            <input id="sttr_wastage" name="sttr_wastage" 
+                   type="text" placeholder="WSTG"
+                   value="<?php echo $sttr_wastage; ?>"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_cust_wastage').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('sttr_purity').focus();
+                               return false;
+                           }"
+                   onclick="this.value = '';"
+                   onblur=" javascript:  document.getElementById('wastage_label_box').style.visibility = 'hidden';
+                           if (document.getElementById('sttr_wastage').value == '') {
+                               document.getElementById('sttr_wastage').value = document.getElementById('addItemWastageChanged').value;
+                           }
+                           if (this.value == '' || this.value == null) {
+                               this.value = 0;
+                               document.getElementById('sttr_final_purity').value = (parseFloat(this.value) + parseFloat(document.getElementById('sttr_purity').value)); //added @Author:SHRI24FEB17
+                           }
+                           if (document.getElementById('sttr_purity').value != '') {
+                               document.getElementById('sttr_final_purity').value = (parseFloat(this.value) + parseFloat(document.getElementById('sttr_purity').value));
+                   <?php if ($payPanelName != 'UpdateItem' && $payPanelName != 'InvoicePayUp') { ?>
+                                   document.getElementById('sttr_cust_wastage').value = parseFloat(100 - (parseFloat(parseFloat(this.value) + parseFloat(document.getElementById('sttr_purity').value)))).toFixed(2);
+                   <?php } ?>
+                               calculateAddCustWastageWt();
+                               purFormB2CalFunc();
+                           }
+                           return false;"  
+                   onfocus="document.getElementById('wastage_label_box').style.visibility = 'visible';"
+                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="2" />
+        </td>
+
+        <td align="left" title="" width="5%">
+            <div name="box" id="final_tunch_label_box" class="hidden_box" style="visibility:hidden;"> 
+                FINAL TUNCH
+            </div>
+            <input id="sttr_final_purity" name="sttr_final_purity" 
+                   type="text" placeholder="FINAL TUNCH" title=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_cust_wastage').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('sttr_wastage').focus();
+                               return false;
+                           }"
+                   readonly="true" value = "<?php echo $sttr_final_purity; ?>"
+                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                   onfocus="document.getElementById('final_tunch_label_box').style.visibility = 'visible';"
+                   onblur="document.getElementById('final_tunch_label_box').style.visibility = 'hidden';"
+                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="6" maxlength="15" />
+        </td>
+        <td align="left" title="" class="" width="8%">
+            <table border="0" cellspacing="0" cellpadding="0" align="left">  
+                <tr>
+                    <td align="left">
+                        <div name="box" id="ffn_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                            FINAL FINE WEIGHT
+                        </div>
+                        <input id="sttr_final_fine_weight" name="sttr_final_fine_weight" 
+                               type="text" placeholder="FFN WT" 
+                               value="<?php echo $sttr_final_fine_weight; ?>" 
+                               onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                           document.getElementById('utransFinalWeightTyp').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8) {
+                                           document.getElementById('sttr_cust_wastage_wt').focus();
+                                           return false;
+                                       }"
+                               onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                           searchSuppPurWtType(this.value, event.keyCode, 'suppFnWtTypeListDiv', 'utransFinalWeightTyp', '');
+                                       }"
+                               onblur="document.getElementById('ffn_wt_label_box').style.visibility = 'hidden';
+                                       purFormB2CalFunc();
+                                       document.getElementById('ffn_wt_label_box').value = this.value;"
+                               onfocus="document.getElementById('size_lebgth_label_box').style.visibility = 'visible';"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               autocomplete="off" spellcheck="false" readonly 
+                               style="width: 102%;"
+                               class="form-control form-control-font13 text-center font-dark input-focus" 
+                               size="10" maxlength="20" title=""/>
+                    </td>
+                <input type="hidden" id="utransFinalWeightTyp" name="utransFinalWeightTyp" value="<?php echo $sttr_nt_weight_type; ?>">
+
+                </tr>
+            </table>
+        </td>
+        <td align="left" title="" width="10%">
+            <div name="box" id="cust_wastage_per_label_box" class="hidden_box" style="visibility:hidden;"> 
+                CUSTOMER WASTAGE %
+            </div>
+            <input type="hidden" id="sttr_cust_wastg_by" name="sttr_cust_wastg_by" 
+                   value="<?php echo $sttr_cust_wastg_by; ?>"/>
+            <input type="hidden" id="addItemCustWastageChng" name="addItemCustWastageChng" 
+                   value="<?php echo $sttr_cust_wastage; ?>" />
+            <input id="sttr_cust_wastage" name="sttr_cust_wastage" type="text" 
+                   placeholder="C. WSTG" title=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_cust_wastage_wt').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('sttr_wastage').focus();
+                               return false;
+                           }"
+                   value="<?php echo $sttr_cust_wastage; ?>"
+                   onblur="javascript: document.getElementById('cust_wastage_per_label_box').style.visibility = 'hidden';
+                           if (this.value == '') {
+                               this.value = document.getElementById('addItemCustWastageChng').value;
+                           }
+                           if (document.getElementById('sttr_nt_weight').value > 0) {
+                               calculateAddCustWastageWt();
+                               purFormB2CalFunc();
+                               return false;
+                           }
+                           if (document.getElementById('sttr_cust_wastage_wt').value == 'NaN') {
+                               document.getElementById('sttr_cust_wastage_wt').value = 0;
+                           }
+                           if (document.getElementById('sttr_value_added').value == 'NaN') {
+                               document.getElementById('sttr_value_added').value = 0;
+                           }"  
+                   ondblclick="if (event.keyCode != 8 && event.keyCode != 13) {
+                               custWastageByWt('custWastageSelDiv', 'sttr_cust_wastage', event.keyCode, 'AddStock');
+                           }"
+                   onfocus="document.getElementById('cust_wastage_per_label_box').style.visibility = 'visible';"
+                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" 
+                   size="8" maxlength="15" style="width:60px;"/> 
+            <div id="custWastageSelDiv" style="margin-left:-45px"></div>
+        </td>
+
+        <td align="left" title="" width="10%">
+            <div name="box" id="cust_wastage_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                CUSTOMER WASTAGE WT
+            </div>
+            <input id="sttr_cust_wastage_wt" name="sttr_cust_wastage_wt" type="text" 
+                   placeholder="C. WSTG WT" title=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_lab_charges').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('sttr_cust_wastage').focus();
+                               return false;
+                           }"
+                   value="<?php echo $sttr_cust_wastage_wt; ?>"
+                   onblur="javascript: document.getElementById('cust_wastage_wt_label_box').style.visibility = 'hidden';
+                           if (document.getElementById('sttr_gs_weight').value > 0) {
+                               calStockItemCustWastage(this.value);
+                               calculateAddCustWastageWt();
+                               purFormB2CalFunc();
+                               return false;
+                           }
+                           if (document.getElementById('sttr_cust_wastage_wt').value == 'NaN') {
+                               document.getElementById('sttr_cust_wastage_wt').value = 0;
+                           }"                                 
+                   onchange="javascript:
+                                   if (document.getElementById('sttr_gs_weight').value > 0) {
+                               purFormB2CalFunc();
+                               return false;
+                           }"
+                   onfocus="document.getElementById('cust_wastage_wt_label_box').style.visibility = 'visible';"
+                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" 
+                   size="8" maxlength="15" />  
+        </td>
+
+<!--        <td align="left" title="ITEM FINE WEIGHT" class="">
+    <table border="0" cellspacing="0" cellpadding="0" align="left">  
+        <tr>
+            <td align="left">
+                <input id="sttr_final_fine_weight" name="sttr_final_fine_weight" 
+                       type="text" placeholder="FFN WT" 
+                       value="<?php echo $sttr_final_fine_weight; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   document.getElementById('utransFinalWeightTyp').focus();
+                                   return false;
+                               } else if (event.keyCode == 8) {
+                                   document.getElementById('sttr_wastage').focus();
+                                   return false;
+                               }"
+                       onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                   searchSuppPurWtType(this.value, event.keyCode, 'suppFnWtTypeListDiv', 'utransFinalWeightTyp', '');
+                               }"
+                       onblur="purFormB2CalFunc();
+                               document.getElementById('sttr_fine_weight').value = this.value;"
+
+                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                       autocomplete="off" spellcheck="false" readonly class="form-control-req-height20 bold placeholderClass" size="7" maxlength="20" title="FULL FINAL WEIGHT"/>
+            </td>
+            <td align="right" title="FINE WEIGHT TYPE">
+                <select id="utransFinalWeightTyp" name="utransFinalWeightTyp" 
+                        onkeydown="javascript: if (event.keyCode == 13) {
+                                    document.getElementById('sttr_lab_charges').focus();
+                                    return false;
+                                } else if (event.keyCode == 8) {
+                                    document.getElementById('sttr_final_fine_weight').focus();
+                                    return false;
+                                }"
+                        class="form-control-height20 placeholderClass">
+        <?php
+        $itemFnWtType = array(GM, KG, MG);
+        for ($i = 0; $i <= 2; $i++)
+            if ($itemFnWtType[$i] == $sttr_nt_weight_type)
+                $optionFnWTypeSel[$i] = 'selected';
+        ?>
+                    <option value="GM" <?php echo $optionFnWTypeSel[0]; ?>>GM</option>
+                    <option value="KG" <?php echo $optionFnWTypeSel[1]; ?>>KG</option>
+                    <option value="MG" <?php echo $optionFnWTypeSel[2]; ?>>MG</option>
+                </select> 
+            </td>
+        </tr>
+    </table>
+</td>-->
+
+        </tr>
+
+        <tr>
+
+            <td align="left" title="" colspan="3">
+                <div name="box" id="other_info_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    OTHER INFO
+                </div>
+                <input id="sttr_other_info" name="sttr_other_info" 
+                       type="text" placeholder="OTHER INFO" title=""
+                       value = "<?php echo $sttr_other_info; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('addInvItemSubButt').focus();
+                                   return false;
+                               } else if (event.keyCode == 8) {
+                                   document.getElementById('sttr_total_lab_charges').focus();
+                                   return false;
+                               }"
+                       spellcheck="false" 
+                       onblur="document.getElementById('other_info_label_box').style.visibility = 'hidden';"
+                       onfocus="document.getElementById('other_info_label_box').style.visibility = 'visible';"
+                       class="form-control form-control-font13 text-center font-dark input-focus" 
+                       size="15" maxlength="30" />
+            </td>
+            <td colspan="" align="left" title="">
+                <div name="box" id="size_lebgth_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    ITEM SIZE / LENGTH
+                </div>
+                <input id="sttr_size" name="sttr_size" 
+                       type="text" placeholder="SIZE / LENGTH" 
+                       value="<?php echo $sttr_size; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('sttr_fine_weight').focus();
+                                   clearDivision('itemListDivToAddStockItem');
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('sttr_item_other_info').focus();
+                                   clearDivision('itemListDivToAddStockItem');
+                                   return false;
+                               }"
+                       onclick="clearDivision('itemListDivToAddStockItem');
+                               this.value = '';"
+                       onblur="document.getElementById('size_lebgth_label_box').style.visibility = 'hidden';"
+                       onfocus="document.getElementById('size_lebgth_label_box').style.visibility = 'visible';"
+                       autocomplete="off" spellcheck="false" 
+                       class="form-control form-control-font13 text-center font-dark input-focus" maxlength="15" />
+            </td>
+            <!--
+                        <td colspan="3"></td>-->
+            <td align="left" title="" colspan="2" class="">
+                <table border="0" cellspacing="1" cellpadding="0" align="left" width="100%">  
+                    <tr>
+                        <td align="left"  width="60%">
+                            <div name="box" id="lab_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                LABOUR CHARGES
+                            </div>
+                            <input id="addItemFfnWtBy" name="addItemFfnWtBy" type="hidden" value="<?php echo $sttr_lab_charges; ?>" />
+                            <input id="sttr_lab_charges" name="sttr_lab_charges" 
+                                   type="text" placeholder="LAB.CHRG" 
+                                   value="<?php echo $sttr_lab_charges; ?>" 
+                                   onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                               clearDivision('itemLabChrgsSelDiv');
+                                               document.getElementById('sttr_lab_charges_type').focus();
+                                               return false;
+                                           } else if ( this.value == '' && event.keyCode == 8) {
+                                               document.getElementById('sttr_cust_wastage_wt').focus();
+                                               return false;
+                                           }"
+                                   onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                               clearDivision('itemLabChrgsSelDiv');
+                                               searchSuppPurWtType(this.value, event.keyCode, 'suppLabTypeListDiv', 'sttr_lab_charges_type', '');
+                                           }"
+                                   ondblclick ="if (event.keyCode != 8 && event.keyCode != 13) {
+                                               getItemLabChrgsByWt('itemLabChrgsSelDiv', 'sttr_lab_charges', event.keyCode, 'AddInvoice');
+                                           }"
+                                   onblur="document.getElementById('lab_chrg_label_box').style.visibility = 'hidden';
+                                           purFormB2CalFunc();"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                   onfocus="document.getElementById('lab_chrg_label_box').style.visibility = 'visible';"
+                                   autocomplete="off" spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="4" maxlength="20" title="" style="width:100%;"/>
+                            <div id="itemLabChrgsSelDiv"></div>
+                        </td>
+                        <td align="right" width="40%">
+                            <select id="sttr_lab_charges_type" name="sttr_lab_charges_type" 
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('sttr_total_lab_charges').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('sttr_lab_charges').focus();
+                                                return false;
+                                            }"
+                                    onchange="purFormB2CalFunc();"
+                                    class="form-control form-control-font13 text-center" style="width:100%;">
+                                        <?php
+                                        if ($sttr_lab_charges_type != '') {
+                                            $itemLabChargesType = array(GM, KG, MG, PP);
+                                            for ($i = 0; $i <= 3; $i++)
+                                                if ($itemLabChargesType[$i] == $sttr_lab_charges_type)
+                                                    $optionLbChTypeSel[$i] = 'selected';
+                                        } else {
+                                            $optionLbChTypeSel[3] = 'selected';
+                                        }
+                                        ?>
+                                <option value="GM" <?php echo $optionLbChTypeSel[0]; ?>>GM</option>
+                                <option value="KG" <?php echo $optionLbChTypeSel[1]; ?>>KG</option>
+                                <option value="MG" <?php echo $optionLbChTypeSel[2]; ?>>MG</option>
+                                <option value="PP" <?php echo $optionLbChTypeSel[3]; ?>>PP</option>
+                            </select> 
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td valign="middle" align="left" title="" class="paddingRight2" width="8%">
+                <div name="box" id="lab_chrg_val_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    LABOUR CHARGES VALUATION
+                </div>
+                <input id="sttr_total_lab_charges" name="sttr_total_lab_charges" 
+                       type="text" placeholder="TOT.LAB"
+                       value="<?php echo $sttr_total_lab_charges; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('sttr_making_charges').focus();
+                                   return false;
+                               } else if (event.keyCode == 8) {
+                                   document.getElementById('sttr_lab_charges_type').focus();
+                                   return false;
+                               }"
+                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                       onblur="document.getElementById('lab_chrg_val_label_box').style.visibility = 'hidden';
+                               purFormB2CalFunc();" 
+                       onfocus="document.getElementById('lab_chrg_val_label_box').style.visibility = 'visible';"
+                       spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" size="8" maxlength="15"/>
+            </td>
+            <td colspan="" aling="left">
+                <table border="0" cellspacing="1" cellpadding="0" align="left" width="100%">
+                    <tr>
+                        <td title="" width="60%">
+                            <div name="box" id="mkg_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                MAKING CHARGES
+                            </div>
+                            <input  id="sttr_making_charges" name="sttr_making_charges" 
+                                    type="text" placeholder="MK CHRG" 
+                                    value="<?php echo $sttr_making_charges; ?>"
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('sttr_making_charges_type').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8 && this.value == '') {
+                                                document.getElementById('sttr_total_lab_charges').focus();
+                                                document.getElementById('sttr_total_lab_charges').setSelectionRange(document.getElementById('sttr_total_lab_charges').value.length,document.getElementById('sttr_total_lab_charges').value.length);
+                                                return false;
+                                            }"
+                                    onblur="//javascript: document.getElementById('mkg_chrg_label_box').style.visibility = 'hidden';
+//                                            if (document.getElementById('slPrItemGSW').value != '') {
+//
+//                                                return false;
+//                                            }
+                                    purFormB2MakFunc();return false;"
+                                    ondblclick ="if (event.keyCode != 8 && event.keyCode != 13) {
+                                                getItemMkgChrgsByWt('itemMkgChrgsSelDiv', 'SellPanel', event.keyCode);
+                                            }"
+                                    onchange="<?php if ($staffId && ($array['sellMakgingIncreaseCharges'] == 'true')) { ?>
+                                                if (this.value < <?php echo $itst_item_cust_lbcrg; ?>) {
+                                                    this.value = '<?php echo $itst_item_cust_lbcrg; ?>';
+                                                    return false;
+                                                }
+                                    <?php } ?>"
+                                    onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                    onfocus="document.getElementById('mkg_chrg_label_box').style.visibility = 'visible';"
+                                    spellcheck="false" autocomplete="off" 
+                                    class="form-control form-control-font13 text-center font-dark input-focus" 
+                                    size="8" maxlength="10" title=""/>
+                            <!-- END CODE for Making Charges apply on GS WT, NT WT or FFine WT @PRIYANKA-28MAR18 -->
+                            <div id="itemMkgChrgsSelDiv"></div> 
+                        </td>
+                        <td class="" width="40%">
+                            <select id="sttr_making_charges_type" name="sttr_making_charges_type" 
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('sttr_total_making_charges').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('sttr_making_charges').focus();
+                                                return false;
+                                            }
+                                            purFormB2MakFunc();"
+                                    onchange="//javascript: if (document.getElementById('slPrItemLabCharges').value != '') {
+//                                                calculateSellPrice();
+//                                                return false;
+//                                            }
+                                             purFormB2MakFunc(); return false; "
+                                    class="form-control form-control-font13 text-center " title="" style="width:100%;">
+                                        <?php
+                                        if ($sttr_making_charges_type != '') {
+                                            $itemCustMakChType = array(PP, GM, MG, KG, per, Fixed);
+                                            for ($i = 0; $i <= 5; $i++)
+                                                if ($itemMkgChType[$i] == $sttr_making_charges_type)
+                                                    $optionMkgChTypeSel[$i] = 'selected';
+                                        } else {
+                                            $optionCustMakChTypeSel[2] = 'selected';
+                                        }
+                                        ?>
+                                <option value="PP" <?php echo $optionMkgChTypeSel[0]; ?>>PP</option>
+                                <option value="GM" <?php echo $optionMkgChTypeSel[1]; ?>>GM</option>
+                                <option value="MG" <?php echo $optionMkgChTypeSel[2]; ?>>MG</option>                                                                
+                                <option value="KG" <?php echo $optionMkgChTypeSel[3]; ?>>KG</option>
+                                <option value="per" <?php echo $optionMkgChTypeSel[4]; ?>>%</option>
+                                <option value="Fixed" <?php echo $optionMkgChTypeSel[5]; ?>>FX</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div name="box" id="tot_mkg_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    TOT MAKING CHARGES
+                </div>
+                <input id="sttr_total_making_charges" name="sttr_total_making_charges" 
+                       type="text" placeholder="TOT MKG CH" 
+                       value="<?php echo $sttr_total_making_charges; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('sttr_other_charges').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('sttr_making_charges_type').focus();
+                                   return false;
+                               }
+                               document.getElementById('valueAdd').value = 'false';"
+                       onblur="document.getElementById('tot_mkg_chrg_label_box').style.visibility = 'hidden';"
+                       onfocus="document.getElementById('tot_mkg_chrg_label_box').style.visibility = 'visible';"
+                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                    
+                       spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" 
+                       size="2" maxlength="20" />
+            </td>
+            <td align="left" title="" class="" colspan="2">
+                <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+                    <tr>
+                        <td title="" align="left">
+                            <div name="box" id="oth_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                OTHER CHARGES
+                            </div>
+                            <input type="hidden" id="addItemOtherChrgsChanged" name="addItemOtherChrgsChanged" 
+                                   value="<?php echo $sttr_other_charges; ?>" />
+                            <input id="sttr_other_charges" name="sttr_other_charges" type="text" placeholder="OTH CHRGS" 
+                                   value="<?php echo $sttr_other_charges; ?>"
+                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                               document.getElementById('sttr_other_charges_type').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('sttr_total_making_charges').focus();
+                                               return false;
+                                           }"
+                                   onblur="document.getElementById('oth_chrg_label_box').style.visibility = 'hidden';
+                                           if (this.value == '') {
+                                               this.value = document.getElementById('addItemOtherChrgsChanged').value;
+                                           }
+                                           if (document.getElementById('sttr_gs_weight').value != '') {
+                                               calStockItemPrice();
+                                               return false;
+                                           }"
+                                   onfocus="document.getElementById('oth_chrg_label_box').style.visibility = 'visible';"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"                       
+                                   spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus"
+                                   maxlength="10" title="" style="width: 107px;"/>
+                        </td>
+                        <td title="" align="left" class="padLeft3">
+                            <select id="sttr_other_charges_type" name="sttr_other_charges_type" 
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('sttr_total_other_charges').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('sttr_other_charges').focus();
+                                                document.getElementById('sttr_other_charges').value = '';
+                                                return false;
+                                            }"
+                                    onchange="javascript: if (document.getElementById('sttr_other_charges').value != '') {
+                                                calStockItemPrice();
+                                                return false;
+                                            }"
+                                    class="form-control form-control-font13 text-center" title="" style="width:42px;">
+                                        <?php
+                                        if ($sttr_other_charges_type != '' && $sttr_other_charges_type != null) {
+                                            if ($itemSubPanel == 'addByItemsUp' || $itemSubPanel == 'itemsAddUp' || $simItem == 'SimilarItem' ||
+                                                    $payPanelName == 'SuppOrderUp' ||
+                                                    $panelSimilarDiv == 'SimilarItem' || $UpPanel == 'UpPanel' || $AddItemPanel == 'AddItem') {
+                                                $itemOtherChrgsType = array(GM, KG, MG, PP, per, Fixed);
+                                                for ($i = 0; $i <= 5; $i++)
+                                                    if ($itemOtherChrgsType[$i] == $sttr_other_charges_type)
+                                                        $optionOtherChargesTypeSel[$i] = 'selected';
+                                            }
+                                        } else {
+                                            $optionOtherChargesTypeSel[0] = 'selected';
+                                        }
+                                        ?>
+                                <option value="GM" <?php echo $optionOtherChargesTypeSel[0]; ?>>GM</option>
+                                <option value="KG" <?php echo $optionOtherChargesTypeSel[1]; ?>>KG</option>
+                                <option value="MG" <?php echo $optionOtherChargesTypeSel[2]; ?>>MG</option>
+                                <option value="PP" <?php echo $optionOtherChargesTypeSel[3]; ?>>PP</option>
+                                <option value="per" <?php echo $optionOtherChargesTypeSel[4]; ?>>%</option>
+                                <option value="Fixed" <?php echo $optionOtherChargesTypeSel[5]; ?>>FX</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td align="left" title="" width="90px;" colspan="2">
+                <div name="box" id="tot_oth_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                    TOT OTH CHRGS
+                </div>
+                <input id="sttr_total_other_charges" name="sttr_total_other_charges" 
+                       type="text" value="<?php echo $sttr_total_cust_price; ?>" 
+                       placeholder="TOT OTH CHRG" 
+                       onkeydown="// document.getElementById('valueAdd').value = 'false';
+                               javascript: if(event.ctrlKey && event.keyCode == 13){
+                                   document.getElementById('add_item').submit(); 
+                                   return false;
+                               } else if (event.keyCode == 13) {
+                                   document.getElementById('addInvItemSubButt').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('sttr_other_charges_type').focus();
+                                   return false;
+                               }"
+                       onblur="javascript: document.getElementById('tot_oth_chrg_label_box').style.visibility = 'hidden';
+                               if (document.getElementById('sttr_gs_weight').value != '') {
+                                   calStockItemPrice();
+                                   return false;
+                               }
+                               disableField1();"
+                       onfocus="document.getElementById('tot_oth_chrg_label_box').style.visibility = 'visible'"
+                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                    
+                       spellcheck="false" class="form-control form-control-font13 text-center font-dark input-focus" 
+                       size="10" maxlength="30" />
+            </td>
+            <td colspan="1"></td>
+            <td>
+                <a style="cursor: pointer;" 
+                   onclick ="getStockCrystalFunc('', 'crystalAddDiv', '<?php echo $commonPanel; ?>', '<?php echo $documentRootBSlash; ?>','');">
+                    <table border="0" cellspacing="2" cellpadding="0" width="100%" align="left">
+                        <tr>
+                            <?php //if($payPanelName != 'UpdateItem' && $payPanelName != 'InvoicePayUp') {   ?>
+                            <td valign="middle" align="right">
+                                <img src="<?php echo $documentRootBSlash; ?>/images/img/diamond-icon.png" 
+                                     alt="" style="padding-top: 5px;"
+                                     onload="<?php if ($payPanelName == 'UpdateItem' || $payPanelName != 'InvoicePayUp') { ?>
+                               purFormB2CalFunc();
+                               calcItemCryPrice();
+                               return false;
+                                         <?php //}  ?>"/>
+                                </td>
+                                <td>
+                                    <b>STONE</b>
+                                </td>
+                            <?php } ?>
+                        </tr>
+                    </table>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="16">
+                <div id="crystalAddDiv">
+                    <?php
+                    if ($payPanelName == 'InvoicePayment' || $payPanelName == 'UpdateItem' ||
+                            $payPanelName == 'InvoicePayUp') {
+
+                        if ($noOfCry > 0) {
+
+                            include 'ogwhcrdv.php';
+                        }
+                    }
+                    ?>
+                </div>
+            </td>
+        </tr>
+<!--        <tr>
+            <td align="left" class="paddingTopBott10" colspan="16">
+                <div class="hrGrey"></div>
+            </td>
+        </tr>-->
+        <tr>
+            <td align="center" colspan="16">
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td align="right" width="48%">
+                            <div id="addItemSimButtDiv" title="Shortcut Key(+ key) !">
+
+                            </div>
+                            <div id="addItemExItButtDiv" title="Shortcut Key(+ key) !">
+
+                            </div>
+                        </td>
+                        <td align="left" width="20px" title="Shortcut Key(Ctrl + Enter) !">
+                            <div id="addItemSubButtDiv">
+                                <input type="submit" value="<?php
+                                if ($payPanelName == 'UpdateItem' || $payPanelName == 'InvoicePayUp' ||
+                                        $payPanelName == 'ItemApprovalRecUp')
+                                    echo 'UPDATE ITEM';
+                                else
+                                    echo 'SUBMIT';
+                                ?>" 
+                                       class="btn btn-info" id="addInvItemSubButt" 
+                                       maxlength="30" size="15" 
+                                       style="height:30px;width:150px;font-weight:bold;font-size:14px;padding-top:0px;margin-top: 5px;margin-bottom: 5px;text-align:center;color: #006400;background: #D8F6D8;border: 1px solid #76c176;border-radius:5px!important; "
+                                       onclick="getCRDRAccountID('<?php echo $custId; ?>', document.getElementById('firmId').value, '', document.getElementById('sttr_account_id').value);" 
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('sttr_item_category1').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('sttr_total_other_charges').focus();
+                                                  return false;
+                                            }"/>
+                            </div>  
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="SetPurityMainDiv"></div>

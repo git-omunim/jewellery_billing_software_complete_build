@@ -1,3 +1,87 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: List all firms for Supplier
+ * **************************************************************************************
+ *
+ * Created on 12 Dec, 2012 10:32:36 AM
+ *
+ * @FileName: omschminstsms.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+include 'ommpdpmsg.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+//
+//echo '$setSetSchemeInstT =='.$setSetSchemeInstT;
+//
+?>
+<!--START CODE TO ADD ONKEYDOWN FIELDS @AUTHOR:SHUBHAM-->
+<SELECT id="schemeSmsTemplate" name="schemeSmsTemplate"> 
+    <OPTION  VALUE="NotSelected">SELECT SMS TEMPLATE</OPTION>
+    <?php
+    $qSelPerFirm = "SELECT smtp_sub FROM sms_templates where smtp_own_id='$_SESSION[sessionOwnerId]'";
+    $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+    while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+        if ($rowPerFirm['smtp_sub'] == $setSetSchemeInstT) {
+            $setSchemeInstTempSel = "selected";
+        }
+        echo "<OPTION  VALUE=" . "\"{$rowPerFirm['smtp_sub']}\"" . " class=" . "\"content-mess-blue\"" . " $setSchemeInstTempSel>{$rowPerFirm['smtp_sub']}</OPTION>";
+        $setSchemeInstTempSel = "";       
+        }
+    ?>
+</SELECT>
+<tr>
+    <td>
+        <div style="margin-left: 54px;">
+            <?php
+            $inputId = "submit";
+            $inputType = 'submit';
+            $inputFieldValue = 'Submit';
+            $inputIdButton = "submit";
+            $inputNameButton = '';
+            $inputTitle = '';
+            // This is the main class for input flied
+            $inputFieldClass = 'btn ' . $om_btn_style;
+            $inputStyle = " ";
+            $inputLabel = 'Submit'; // Display Label below the text box
+            //
+            // This class is for Pencil Icon                                                            
+            $inputIconClass = '';
+            $inputPlaceHolder = '';
+            $spanPlaceHolderClass = '';
+            $spanPlaceHolder = '';
+            $inputOnChange = "";
+            $inputOnClickFun = 'setLayoutFieldInDb("schemeSmsTemplate", document.getElementById("schemeSmsTemplate").value);';
+            $inputKeyUpFun = '';
+            $inputDropDownCls = '';               // This is the main division class for drop down 
+            $inputselDropDownCls = '';            // This is class for selection in drop down
+            $inputMainClassButton = '';           // This is the main division for Button
+            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+            ?>
+        </div>
+    </td>
+</tr>

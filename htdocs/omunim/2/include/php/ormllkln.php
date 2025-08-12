@@ -1,3 +1,72 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @Description: Linked loan No @AUTHOR: SANDY13JAN14
+ * **************************************************************************************
+ *
+ * Created on 29 Dec, 2012 11:41:07 AM
+ *
+ * @FileName: ormllkln.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$mlId = $_GET['mlId'];
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+//query to get serial number
+$qSelLoanPreSerialNo = "SELECT ml_pre_serial_num FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_lender_id='$mlId' order by UNIX_TIMESTAMP(ml_ent_dat) desc LIMIT 0,1";
+$resLoanPreSerialNo = mysqli_query($conn,$qSelLoanPreSerialNo) or die(mysqli_error($conn));
+$rowLoanPreSerialNo = mysqli_fetch_array($resLoanPreSerialNo);
+
+$newLoanPreSerialNo = $rowLoanPreSerialNo['ml_pre_serial_num'];
+
+if ($newLoanPreSerialNo == NULL || $newLoanPreSerialNo == '') {
+    $newLoanPreSerialNo = NULL;
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as mliSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num IS NULL and  ml_lender_id='$mlId'";
+    $resLoanSerialNo = mysqli_query($conn,$qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+} else {
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as mliSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num='$newLoanPreSerialNo' and  ml_lender_id='$mlId' ";
+    $resLoanSerialNo = mysqli_query($conn,$qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+}
+$newLoanSerialNo = $rowLoanSerialNo['mliSerialNo']+1;
+
+
+//Start Code to Check Serial Number
+$qSelSerialNo = "SELECT ml_serial_num FROM ml_loan where ml_serial_num='$newLoanSerialNo' and ml_pre_serial_num='$newLoanPreSerialNo' and ml_own_id='$sessionOwnerId'";
+$resSerialNo = mysqli_query($conn,$qSelSerialNo);
+$rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+
+$lSerialNo = $rowSerialNo['ml_serial_num'];
+
+if ($lSerialNo != '' || $lSerialNo != NULL) {
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as loanSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num='$newLoanPreSerialNo'";
+    $resLoanSerialNo = mysqli_query($conn,$qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+
+    $newLoanSerialNo = $rowLoanSerialNo['loanSerialNo']+1;
+}
+echo $newLoanPreSerialNo . ' - ' .$newLoanSerialNo;
 ?>

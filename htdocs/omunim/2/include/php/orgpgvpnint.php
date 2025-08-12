@@ -1,3 +1,333 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 09 MAY,2019 4:57:33 PM
+ *
+ * @FileName: orgpgvpnint.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId: 
+ * @ProjectName: oMunim
+ * @version 2.6.100
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+if ($_SESSION['sessionOwnIndStr'][1] == 'Y') {
+    ?>
+<div id="mainMiddle" class="main_middle">
+    <table width="100%" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" align="left" width="32px">
+                <div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/girviPanel32.png" alt="" /></div>
+            </td>
+            <td valign="middle" align="left">
+                <div id="GirviPanel" class="textLabelHeading">LOAN PANEL</div>
+            </td>
+            <td align="right" valign="bottom">
+                <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden" class="blackMess11">
+                    <?php include 'omzaajld.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <hr color="#B8860B" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="left">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td align="left" valign="bottom">
+                            <table>
+                                <tr>
+                                    <td align="right" valign="bottom">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "buttGirviTallyList";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'ITEM DET';
+                                            $inputIdButton = "buttGirviTallyList";
+                                            $inputNameButton = 'buttGirviTallyList';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                            $inputStyle = " ";
+                                            $inputLabel = 'ITEM DET'; // Display Label below the text box
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = 'showCustGirviITMListPanelInt()';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                                            $inputMainClassButton = '';           // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                    <td align="right" valign="bottom">
+                                        <form id="frmLoansList" name="frmLoansList" method="post" action="javascript:showLoansListPanelInt();">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "buttLoansList";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'ACTIVE';
+                                            $inputIdButton = "buttLoansList";
+                                            $inputNameButton = 'buttLoansList';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                            $inputStyle = " ";
+                                            $inputLabel = 'ACTIVE'; // Display Label below the text box
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                                            $inputMainClassButton = '';           // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                        </form>
+                                    </td>
+<!--                                    <td align="right" valign="bottom">
+                                        <div style="text-align:center;">-->
+                                            <?php
+//                                            $inputId = "buttTransGirviList";
+//                                            $inputType = 'submit';
+//                                            $inputFieldValue = 'UN-RELEASED TRANS';
+//                                            $inputIdButton = "buttTransGirviList";
+//                                            $inputNameButton = 'buttTransGirviList';
+//                                            $inputTitle = '';
+//                                            // This is the main class for input flied
+//                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+//                                            $inputStyle = " ";
+//                                            $inputLabel = 'UN-RELEASED TRANS'; // Display Label below the text box
+//                                            // This class is for Pencil Icon                                                           
+//                                            $inputIconClass = '';
+//                                            $inputPlaceHolder = '';
+//                                            $spanPlaceHolderClass = '';
+//                                            $spanPlaceHolder = '';
+//                                            $inputOnChange = "";
+//                                            $inputOnClickFun = "showTransGirviListPanelInt('UnRelTransLoanList');";
+//                                            $inputKeyUpFun = '';
+//                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+//                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+//                                            $inputMainClassButton = '';           // This is the main division for Button
+//                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+<!--                                        </div>
+                                    </td>-->
+                                    <td align="right" valign="bottom" title="Time Period Expired Loans">
+                                        <form id="frmTPExpiredGirviList" name="frmTPExpiredGirviList"
+                                            method="post" action="javascript:showTPExpiredGirviListPanelInt();">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "buttTPExpiredGirviList";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'TIME PR EXP';
+                                            $inputIdButton = "buttTPExpiredGirviList";
+                                            $inputNameButton = 'buttTPExpiredGirviList';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                            $inputStyle = " ";
+                                            $inputLabel = 'TIME PR EXP'; // Display Label below the text box
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = ''; 
+                                            $inputselDropDownCls = '';    
+                                            $inputMainClassButton = '';  
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                        </form>
+                                    </td>
+<!--                                    <td align="right" valign="bottom" title="Months Old Loans">
+                                        <form id="frmExpiredGirviList" name="frmExpiredGirviList"
+                                            method="post" action="javascript:showExpiredGirviListPanelInt();">
+                                        <div style="text-align:center;">-->
+                                            <?php
+//                                            $inputId = "buttExpiredGirviList";
+//                                            $inputType = 'submit';
+//                                            $inputFieldValue = 'OLD EXP';
+//                                            $inputIdButton = "buttExpiredGirviList";
+//                                            $inputNameButton = 'buttExpiredGirviList';
+//                                            $inputTitle = '';
+//                                            // This is the main class for input flied
+//                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+//                                            $inputStyle = " ";
+//                                            $inputLabel = 'OLD EXP'; // Display Label below the text box
+//                                            // This class is for Pencil Icon                                                           
+//                                            $inputIconClass = '';
+//                                            $inputPlaceHolder = '';
+//                                            $spanPlaceHolderClass = '';
+//                                            $spanPlaceHolder = '';
+//                                            $inputOnChange = "";
+//                                            $inputOnClickFun = '';
+//                                            $inputKeyUpFun = '';
+//                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+//                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+//                                            $inputMainClassButton = '';           // This is the main division for Button
+//                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+<!--                                        </div>
+                                        </form>
+                                    </td>-->
+                                    <td align="right" valign="bottom">
+                                        <form id="frmReleasedGirviList" name="frmReleasedGirviList"
+                                           method="post" action="javascript:showReleasedGirviListPanelInt();">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "buttReleasedGirviList";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'RELEASED';
+                                            $inputIdButton = "buttReleasedGirviList";
+                                            $inputNameButton = 'buttReleasedGirviList';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                            $inputStyle = " ";
+                                            $inputLabel = 'RELEASED'; // Display Label below the text box
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                                            $inputMainClassButton = '';           // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                        </form>
+                                    </td>
+                                    <?php if ($_SESSION['sessionOwnIndStr'][28] == 'Y' || $_SESSION['sessionOwnIndStr'][28] == 'A' || $_SESSION['sessionOwnIndStr'][28] == 'B') { ?>
+                                    <td align="right" valign="bottom">
+                                        <form id="frmLossGirviList" name="frmLossGirviList"
+                                                  method="post" action="javascript:showLossGirviListPanelInt();">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "buttLossGirviList";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'LOSSED';
+                                            $inputIdButton = "buttLossGirviList";
+                                            $inputNameButton = 'buttLossGirviList';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                            $inputStyle = " ";
+                                            $inputLabel = 'LOSSED'; // Display Label below the text box
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';      
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                                            $inputMainClassButton = '';           // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                        </form>
+                                    </td>
+                                    <?php }?>
+                                <td align="right" valign="bottom">
+                                    <div style="text-align:center;">
+                                        <?php
+                                        $inputId = "buttReleasedStatus";
+                                        $inputType = 'submit';
+                                        $inputFieldValue = 'LOAN STS.';
+                                        $inputIdButton = "buttReleasedStatus";
+                                        $inputNameButton = 'buttReleasedStatus';
+                                        $inputTitle = '';
+                                        // This is the main class for input flied
+                                        $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                        $inputStyle = " ";
+                                        $inputLabel = 'LOAN STS.'; // Display Label below the text box
+                                        // This class is for Pencil Icon                                                           
+                                        $inputIconClass = '';
+                                        $inputPlaceHolder = '';
+                                        $spanPlaceHolderClass = '';
+                                        $spanPlaceHolder = '';
+                                        $inputOnChange = "";
+                                        $inputOnClickFun = 'showCustGirvirelStsInt("")';
+                                        $inputKeyUpFun = '';
+                                        $inputDropDownCls = '';               // This is the main division class for drop down 
+                                        $inputselDropDownCls = '';            // This is class for selection in drop down
+                                        $inputMainClassButton = '';           // This is the main division for Button
+                                        include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                        ?>
+                                    </div>
+                                </td
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr align="left">
+            <td align="left" valign="middle" colspan="3">
+                <div id="searchGirviPanelDiv"></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <hr color="#B8860B" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div id="girviListPanelDiv" class="girviListDivSize"> <!---to add class for division @AUTHOR: SANDY6NOV13---->
+                    <?php include 'orgpglpdint.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><br/></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3" class="noPrint">
+                <a style="cursor: pointer;" onclick="printGirviListPanel('girviListPanelDiv')">
+                    <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print' class="printButtonPosition" width="32px" height="32px" /> 
+                </a> 
+            </td>
+        </tr>
+    </table>
+    <br />
+</div>
+<?php } ?>

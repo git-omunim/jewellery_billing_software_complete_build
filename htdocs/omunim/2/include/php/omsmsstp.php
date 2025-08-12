@@ -1,3 +1,52 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Oct 9, 2014 6:58:41 PM
+ *
+ * @FileName: omsmsstp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+
+$tempSub = trim($_POST['tempSub']);
+$qSelTemp = "SELECT smtp_id,smtp_sub FROM sms_templates where smtp_own_id='$_SESSION[sessionOwnerId]' and smtp_sub LIKE '$tempSub%' order by smtp_since asc";
+$resTemp = mysqli_query($conn, $qSelTemp);
+$totalTemp = mysqli_num_rows($resTemp);
+if ($totalTemp > 0) {
+    ?>
+    <SELECT class="cityListDivToAddNewCustSelect" id="tempListSelectDiv" name="tempListSelectDiv" 
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('smsTemplateId').value = this.value;
+                        searchSmsTempForPanelBlank();
+                    }"
+            onclick="document.getElementById('smsTemplateId').value = this.value;
+                    searchSmsTempForPanelBlank();"
+            multiple="multiple" size="4">
+                <?php
+                while ($row = mysqli_fetch_array($resTemp, MYSQLI_ASSOC)) {
+                    echo "<OPTION  VALUE=" . "\"{$row['smtp_sub']}\"" . " class=" . "\"content-mess-maron\"" . " >{$row['smtp_sub']}</OPTION>";
+                }
+                ?>
+    </select>
+<?php } ?>

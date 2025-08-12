@@ -1,3 +1,275 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 10, 2011 7:33:17 PM
+ *
+ * @FileName: omuspndv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+//to change layout of display @AUTHOR: SANDY08FEB14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
 ?>
+<table border="0" cellspacing="1" cellpadding="1" width="100%">
+    <tr>
+        <td valign="middle">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft100"><img src="<?php echo $documentRoot; ?>/images/calender.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="spaceLeft10 green_14_font">
+                            Search By Date:
+                        </div>
+                    </td>
+                    <td valign="bottom" align="right">
+                        <div id="ajaxCloseSearchUdhaarButt" style="visibility: visible" class="ajaxClose">
+                            <a style="cursor: pointer;" onclick="closeSearchUdhaarPanelDiv()">
+                                <?php include 'omzaajcl.php'; ?>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle">
+            <form name="search_udhaar_panel" id="search_udhaar_panel" 
+                  action="javascript:searchUdhaarByDate(document.getElementById('search_udhaar_panel'));" method="post">
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td valign="middle" width="350px" align="left">
+                            <div class="spaceLeft200 green_12_font">
+                                Select Date:
+                            </div>
+                        </td>
+                        <td valign="middle" width="250px">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td width="190px" class="textBoxCurve1px">
+                                        <?php include 'omdadsed.php'; ?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="middle">
+                            <div id="udhaarByDateSearchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft100"><img src="<?php echo $documentRoot; ?>/images/udhaar24.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="spaceLeft10 green_14_font">
+                            Search By Amount
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle">
+            <table border="0" cellspacing="0" cellpadding="1">
+                <tr>
+                    <td align="right">
+                        <form name="srch_udhaar_fixedAmt" id="srch_udhaar_fixedAmt" 
+                              action="javascript:searchUdhaarByFixedAmount(document.getElementById('srch_udhaar_fixedAmt'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td valign="middle" width="350px" align="left">
+                                        <div class="spaceLeft200 green_12_font">
+                                            Enter Amount:
+                                        </div>
+                                    </td>
+                                    <td valign="middle" align="left" width="250px">
+                                        <h5><table>
+                                                <tr>
+                                                    <td class="textBoxCurve1px">
+                                                        <input id="udhaarFixedAmt" type="text"
+                                                               class="border-no textLabel12CalibriGrey" value="Enter Udhaar Amount" maxlength="50"
+                                                               onfocus="if(this.value == 'Enter Udhaar Amount'){this.value = '';}"
+                                                               onblur="if (this.value ==''){this.value = 'Enter Udhaar Amount';}"
+                                                               size="32" spellcheck="false" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </h5>
+                                    </td>
+                                    <td valign="middle">
+                                        <div id="udhaarByFixedAmtSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <form name="srch_udhaar_amtRange" id="srch_udhaar_amtRange" 
+                              action="javascript:searchUdhaarByAmountRange(document.getElementById('srch_udhaar_amtRange'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2"> 
+                                <tr>
+                                    <td valign="middle" width="350px"  align="left">
+                                        <div class="spaceLeft200 green_12_font">
+                                            Select Amount Range:
+                                        </div>
+                                    </td>
+                                    <td valign="middle" align="left" width="250px">
+                                        <table>
+                                            <tr>
+                                                <td  width="200px">
+                                                    <div class="selectStyled">
+                                                        <h5><select id="udhaarAmtRange" name="udhaarAmtRange" class="lgn-txtfield">
+                                                                <option value="NotSelected">~ Udhaar Amount Range ~</option>
+                                                                <option value="1000"><?php echo $globalCurrency; ?> 1 to <?php echo $globalCurrency; ?> 1,000</option>    
+                                                                <option value="5000"><?php echo $globalCurrency; ?> 1,001 to <?php echo $globalCurrency; ?> 5,000</option>    
+                                                                <option value="10000"><?php echo $globalCurrency; ?> 5,001 to <?php echo $globalCurrency; ?> 10,000</option>    
+                                                                <option value="20000"><?php echo $globalCurrency; ?> 10,001 to <?php echo $globalCurrency; ?> 20,000</option>    
+                                                                <option value="30000"><?php echo $globalCurrency; ?> 20,001 to <?php echo $globalCurrency; ?> 30,000</option>    
+                                                                <option value="40000"><?php echo $globalCurrency; ?> 30,001 to <?php echo $globalCurrency; ?> 40,000</option>    
+                                                                <option value="50000"><?php echo $globalCurrency; ?> 40,001 to <?php echo $globalCurrency; ?> 50,000</option>    
+                                                                <option value="60000"><?php echo $globalCurrency; ?> 50,001 to <?php echo $globalCurrency; ?> 60,000</option>    
+                                                                <option value="70000"><?php echo $globalCurrency; ?> 60,001 to <?php echo $globalCurrency; ?> 70,000</option>    
+                                                                <option value="80000"><?php echo $globalCurrency; ?> 70,001 to <?php echo $globalCurrency; ?> 80,000</option>    
+                                                                <option value="90000"><?php echo $globalCurrency; ?> 80,001 to <?php echo $globalCurrency; ?> 90,000</option>    
+                                                                <option value="100000"><?php echo $globalCurrency; ?> 90,001 to <?php echo $globalCurrency; ?> 1,00,000</option>    
+                                                                <option value="150000"><?php echo $globalCurrency; ?> 1,00,001 to <?php echo $globalCurrency; ?> 1,50,000</option>    
+                                                                <option value="200000"><?php echo $globalCurrency; ?> 1,50,001 to <?php echo $globalCurrency; ?> 2,00,000</option>    
+                                                                <option value="Infinite"><?php echo $globalCurrency; ?> 2,00,001 to <?php echo $globalCurrency; ?> Infinite</option>    
+                                                            </select> 
+                                                        </h5>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="middle">
+                                        <div id="udhaarByAmtRangeSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr> 
+                <tr>
+                    <td align="left">
+                        <form name="srch_udhaar_customAmtRange" id="srch_udhaar_customAmtRange" 
+                              action="javascript:searchUdhaarByCustomAmountRange(document.getElementById('srch_udhaar_customAmtRange'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td valign="middle" width="350px"  align="left">
+                                        <div class="spaceLeft200 green_12_font">
+                                            Enter Amount Range:
+                                        </div>
+                                    </td>
+                                    <td valign="middle" align="left" width="250px">
+                                        <h5>
+                                            <table>
+                                                <tr>
+                                                    <td class="textBoxCurve1px"><input id="udhaarCustomAmtStartRange" type="text"
+                                                                                       class="border-no textLabel12CalibriGrey" value="Start Range" maxlength="50"
+                                                                                       onfocus="if(this.value == 'Start Range'){this.value = '';}"
+                                                                                       onblur="if (this.value ==''){this.value = 'Start Range';}"
+                                                                                       size="10" spellcheck="false" /></td>
+                                                    <td> TO</td>
+                                                    <td class="textBoxCurve1px"><input id="udhaarCustomAmtEndRange" type="text"
+                                                                                       class="border-no textLabel12CalibriGrey"value="End Range" maxlength="50"
+                                                                                       onfocus="if(this.value == 'End Range'){this.value = '';}"
+                                                                                       onblur="if (this.value ==''){this.value = 'End Range';}"
+                                                                                       size="11" spellcheck="false" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </h5>
+                                    </td>
+                                    <td valign="middle">
+                                        <div id="udhaarByCustomAmtRangeSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr> 
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table border="0" cellspacing="0" cellpadding="1">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft100"><img src="<?php echo $documentRoot; ?>/images/village.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="spaceLeft10 green_14_font">
+                            Search By City / Village:
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="left">
+            <form name="search_udhaar_by_city" id="search_udhaar_by_city" 
+                  action="javascript:searchUdhaarByCity(document.getElementById('search_udhaar_by_city'));" method="post">
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td valign="middle" width="350px"  align="left">
+                            <div class="spaceLeft200 green_12_font">
+                                Select City / Village:
+                            </div>
+                        </td>
+                        <td valign="middle" align="left" width="250px" >
+                            <h5>
+                                <table>
+                                    <tr>
+                                        <td width="200px">
+                                            <div class="selectStyled">
+                                                <SELECT class="lgn-txtfield" id="searchUdhaarCity" name="searchUdhaarCity" >
+                                                    <OPTION  VALUE="NotSelected">~&nbsp;&nbsp;&nbsp;&nbsp;Select Udhaar City / Village &nbsp;&nbsp;&nbsp;&nbsp;~</OPTION>
+                                                    <?php include 'omvvgtcc.php'; ?>
+                                                </SELECT>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </h5>
+                        </td>
+                        <td valign="middle">
+                            <div id="udhaarByCitySearchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </tr>
+    <tr>
+        <td align="center">
+            <hr color="#B8860B" />
+        </td>
+    </tr>
+</table>

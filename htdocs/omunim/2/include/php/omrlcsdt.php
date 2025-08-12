@@ -1,3 +1,238 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAwFAAAZMFXHL6i0kpu2FIS1GJfMPc7nZJ9T/umnKTZaR0ewEJS6B27E54HuO5EVP926aif0gp67gWaZRMBbtHW1OntPqsYb717LFw3zj87DoaF8fh+xSSzNe14sn29Lgc1VnHSW3y5ocfXBznHd3tpQeLoJ/gVem2AgvuDcE5sain4SrQ9pR7Ix/Og9iuEl53YHubzhBdU9Rjz0E0qgceyw+9XCcqAmvinuK5Gvfdf9CwL6wum4fbcMm9tHOSFqZaPSzIY06JNbQmhVCjdQVXhcmXv3aEtIu37EzDd1TjvlRAftMBw6/NWNIZN5qw+V3dp13hZQpK+xjOD4jSgGnGkMwdLxMqX3whO/shtUxNr76BgMSm5JJK+u5ysEaXRTSQ/0gqMjQMnBBFB8UDDsv0G6wuDVwaKLkAchNbukMH3w87XnAtXG5HVnPmSNZMXVj81B0Uo21/uoYnRyiWkRBd1EMO1TW7S8ApZbd9tVI0Q9qIuH7CyHkgF2ZvChR42XHzfz2u3ealWltf8VnQfYCICA5oC3qx20WhFFr+FbfaDub1o5ktu6MMW0Nh7UuLBRaw8+tcBSTVrHPYwtCIf3RVuemO9d5AbuG/EctIwidK/P2SKlXUbEm3skTkV2XJ5gymkzp5WQiEZ5Vq9HiNmu5XWqN9ITCuj9CzPdx3532j9MbkHNDjDP6FgIKVvpNi0htf4/hdyzX/rHxUDr/bsltGtqXo3ndBx7HFH4v0mGhof4nlwt1szc5PcDXx1TRlX1Swm832RoCLNalkxY/W3NFTRVLNriVa4RRa50Z7vShWQYxvbVnejJtAgIiP42Q9rUZvTs5ZXzy8Xyrl/3q7YxV6LVBYE3PTzat2N6+mLYSmeGyVsmHxuSaD3rqDNaIKAzagqyeo80LLEoFthSzNcsSD6rHRmS1g3rpZ+wLVdGGWx84g14su+QRgWMu6gATjCXGvQuqMS7t9YDWcCSofdVmaq3f99yHHAvVn4JWO6NK/41B/VyF4nNwqnemDDWYMT8IGsXall183w9Zu0T2mwVAR2Tc/Z1WV7TmcN4vqAX0WapjSPbOY5ZPdZCRguHxdJyCLFHV9RU40TyWxVwVTRO5kAmgH4anTCjUrm+DtBO1xGfFrQvTxaCWNptwh68MRhKxg8FqCb2CqZxVZJ29s4NlzgR9Csu1n42IQ4dPG7IuEsJcEDRv+Xi8z6r94B3kae24G8A8Qvt4h+wxaSVNjDhDa/AO6TRHuydAIAvhXTJZxjhp1lqemK58rVMwgL9A0yBOk2TMQAypJFbJU4010PLWGoeJmEfortNGZoN7qifRKipWa5IECLp4uZMIFI9UjtVUjADA8WzG3VcTLn4rd8Da7I7YpKZw3k0fdTzh9zutGDn4bSoZZujkLngyEIcX5ZlbHmOjRAPmWq5jPMSRiskb3oAPnUqQRK2fqiil1mm7AK47cT97CSAzmvefcwObmDLZPyvWcEImVf0jGmdTbMJ5IlZybTerxqSqKGdtGqTfqRQ0uQa4moKGVjvmCbdq1cQcSmQ9tHT0I+RHMR13h31G6apVhcIFnnB9ickvI7TzX5oTgbngvIEPXOZ6IHrDw2HSmAk6VElkfu9CukOstGCw7cPy97pa+B8kYux/5I1iE+6keqpp76i4QnjL7GaJL621dc2Qu7HBsdGdyfqh6Hgd7xo3PowH2JNe8OnNHDZvuxR/ycplnV+3ydFZq/QNIaJLT4D5njDvoB4UZ8eCi+eGIupaL4faBOjIz243w3wJrBg/2Aiuh5Fdhi/8Vjt7lJ6xdwL3fljx34SyuINrqb5HuJpoViA6o95qqcX9xzgKeDl4jsMDId9j9xZllnj9KiQO3iJhNFP7glRzZw+48CvdbeMvMzE0DhkvqPTUAvqxXJWAPjc+YgE8CiVRtAqVR08rKFW/LvYRm34CsdssIRxwhAKFFhVKpeUNgb/+nv6d44uPdlE+X77xawpQY8srkGPJ/40slVV9dZxu6kcRlKzOeV5enTEPvgjhx1pSlzTT5Iwqhs6ZWEhYjLk5t0UBcKlccuicuUHo9L1zo1rfyVcYo7i1WvaRPlL8+//IqrfEH/3jz4MpAYEAX1OAyg+DMrml1hmtt/1GWRrYokBH04p8jpRPbzv76+SstrouicVIzxwZ0zoQZTnGAaQ/kMpEKhyr3fbxZdAcqbD1n3AVSGBtqBj/K5ZCa9I884nFjRetmY7n1sPPuyAtkGoVBNggIdICfVeWCTpwUrsBZY5OK0wcsmV0VPTJQo7Frz6wJa7oXyPFtfkUT8LGq0CS2b7TtvYpeT+S7hjFBcz79UBJu6ooFG8Lwufnb5BxVcAIs6ITDSMjxxrY1qrdbwpgAbarvsEPFfIRmn0z/wT8g7w+ZZW7v2KKNv/PVtC1WuiXZHHgrO7lg+SZywLi9Rq6IYutBFGxp8HzdmhrL2/O2bpbjuvKZ2l/M00xzXnXcy4ztqpR375mk7Rw8Axa/A5XqecFWUdSQnObeKFHc0yd8xfauZmp0Jpru3RoqUIEEBN3dSVRuyR6C3z8YdZvXMrTs1pTDrMwo2TP9obP/NLFOWx8wkWUXbpiE7ehSGjvMjKn/nWNJ4RedPEBUKRRmXOO3Zvp25j3U5fwqVvLwIQPbvNK9P2xzSRWQWGiMO+BkTJybeqUiGAQdiodUP2EDqgEu1qHFTJVnxKgqci/9/9n8f/kZyEJDa8pPht5EQa9+2XSVU3lm4C7nSBI2UB0D8b2E7JBFt8AJM3BsD+dGkjXIlMLCsDcHAEjHBV4CzNkghVqKnCfLuvDP+KOFFGWMojAxZITEn3kAqDRuo3AfHQE8DGOhw/kRouB9BS9PXV24NT0uj37W15paGiGqcK8Ibr4x9wIg87IiOn1G9aBStfUIBkjIJKDKJf5s4yDvhpcyjM8kCoCJZcGx8WMHK18rxFHp9wB5ouR8OegtZea9JrqmFL+pchZPfal3f58dA1rTFqranIpfDYxW+XVCrB00tD6MG6OjVSQtHjPGGXyDvlHxyCQQ4qR+zKKbNbxD2sMcXTPUm8+zzS1wZmC36B85r50ZZarNkQwuWL2JFtNLgXOg4nV05tnrB4lfT5RyjVJ6ZbUsz7+7OMFD8hkjztFfV5arZELqleUfZLxFlJAs/yNtV1ZiD7wzX6N/IOilUBiNGEPCmLkHywPx2g6G9lt44yjkVQi0kM4SsPRKCfLwktQDHV8RGDL8LXKttCLwJNfsgRo898cRQceotf7Kw4tYYC9/OLdMUmZdbsHM2RUmIUT09t9D495kb3ytvoPrFWdReIjb0WXNF9hoCA0G28ix4TGjHRee5p8BqAvpZVpE+S4TGPzCvS+8dzTuoZTtdkMWclO5PYJIPMVyzUArUsR8tefBlTEkfqKbtGgSge6/Gok1r6gtLK/ObUdBkljbiOGC/oH+FRk1unek2L0WF8ER5iOcOykzO+5iHLr8G9ZAY9wtKDVy7lLmoc4wnNOP+bFMtnQU1yyBrkAnEECiS66eegY7orqVzfcYz7GlQ0lZer4cUcTQfEHdv2OHU2cp2i0qHJbSdWg/mshes5BTjU7zIq4uIlzXFGCXJBZg3JPPcrOKDQ/l3vLnoOIBNippz/J4n3Ytpk9M81zbutb8bp5Yq3+5ivHOieEpQo7qbckSWk8mzmGFwP0W4q0JH9SFqgxvx/zZHxTJKRpaTjBBeWpc9l1IpxKMl2QiyvFInQZumZZUKVq0mKC2l86ZWMmdfSQ06c77OEZX41JTNW/hI889ZtiwrHxVoyg1cMsQO8SuFsSVhNpbHu6J0KuNe10EKPDYPOcrB29DBhaxXFDBc21RNNakNGxOq2O+Ylbg/CBiP4fjP9YW1YCgTDDAjivFUQ9RVadkKZVlu2abUwHMw2wm9MOH7wmIVMma+k4IaJuSJsgSOGZ1gd5ochsTGDOymraI0lwN90faG9CN93x33ZAuo9CKq+6j9e1m9Yg+GQ81g7W0XpaLl3yEOwwuNaZsbKs7mgLGDyMHu1+kI3iAx024Rog1a7mnZCTCv+MPoJhfxzapz1nli1udNlNmzCZo2RVUok5jTlkUI2ownB4mFz33jDpkOMWbIQjL6Xo/+ZugUYHqrEXzN35esTHHWp5Ptf6zcwR7V0jM3xytcsVB4XtehmJ3AKvr+MB81uwTmJWA6O126klwRrSowtnjeGwqqGuqx8tH66akggOiuOzy12FEjISrTKRHg/calfJBkZMLXRzrUO7Tec1Omm6xlJs74hT4J9InC4+1039vXdhNPVwFK2NNt3T+WmKoX60EENUFTprpT7AMWW2VammQBBKFUBHQ8XSShXBgto5wyANodSgEsVPuEoNEGfixL8RaoifNRgFMQtheLIwKwTRVJN26q2lJdpkT4+ZVOHkd4HNVbSov+LHpdKLfTHdsN3r0HPU98dLDvOwF++mE6RfwMTOw9rsxnyKBGJVEEOv1OMhZ57VJqlkWHyBw3RF3a238nritLB9hnZPsuN8carYblosx5SRzLvAPF5DVHBycYFlOMYpcX+baNDaGzM0ZUdpq3R0twPxo/b4jfP6mHtR8Mnj8RYZIiPyBj/qT8R3baWLRgGnAKZdKBFd04/AGM1ARM7lIEyavmSTKYJGRtpWbGQzsVohSu4PnBqFzKD/wkSnCVJz7EaNomAdwBHJzY6CQZjb/1zTUorm6KYUVJz+iGXHB0H2UdbFfWBBqtt/+tbKe4ADciFZK3Xzw5xLEXuu5Hi7UyHC3NW/eI7RZbj4nWq1l6FR0fKZY1EMA07LJh05KmtaKAGa0/3kzudssDvalP6TEbNVPoH/vfUOxIUSs8mUyxKIYGq7ND2d0G21xBu51n2mcsDJI8bqGRQjKQZYUgnMk4M8AF2iybH6ko6ZIszlzflskz5z9XQe6RdrebvyhD/ey/wwQGTmObVmL9SRPyhJp0EyXME0fVK2S9p34KggZpAFdmD8wiJDBs7Jvci25kWZU+AIRmrUwgROUXrKpF+Vu6gxYq4kSpsaEo5UmCOO6MopdWmAz6jDVWsGZqJ3A1yJhIK2YfqPiwBmlB9UOxl4Pl/JuEtMTT+izqAkWS5VFJ2t8tDwPskiUaby7XRxn1/oY2+tdsFpKL8UgMBUkbDv0U2xyOsXsYzZ5wPSDAR7Z9JkSpmmBXjoY4PW9x9X5uWoucE+HSq+cWexFCF8VtkPtlrfQIWJYLzVMVS46VdNFTidPrfqtq4TBB5grW0I7w+p0tpTntq/RzccF2qmp8dISSI5b0VYSf6wQhPYWKJx7QeC6G+m+sFR24ZQMjJgRRGU67KfV+LOxngxGsiUFDbuLnFRm1UMG5Y+gHGHa82FVKOFB92mfjkHA7+q3aks5qoMVYRPeDj0AHma95DGYrMV/klfG4od3Oyra4/jMPbCBlsbq25bUsc4ahEOHerKjzqwr31/1GsnbHetM9tTSPsP4FMGvfqShN8LqrPhITXH2elix6LKmsu7mP+bHILJObDfdBi8NA3bY48RadOtDJyXNdlOwYV5EFKmU8SiI4s224Q20ALd8RdcWNi1gEvGnLW4B//vUYpXJdbgxZMr6R9qBG9WfoqnHA4ibiIO1xJb9k/zqLcw0abm0hsxiJOD2vB03sBpJeyEmIJbwZo66O/z3ICQN3CNkg3FER0AKV6u5aWPIHxyE1l2ERhHCHPcPdXCgjzJd6lyg5fxTd8o/4W59txz3boyCpFQVOFsJocM/aOslI29qMkDCyZGLD6C+JubfjkDr26fSdhfzgb2qLeYWxjz57X+hhbWvKBIEuiqXD+PQxiVUkXWmUYc6i610kiXPvQIIOl/uAN6rMnN8ZN/gzoMztGoO8VJK5pjnAVsJNmmuHo+XfgEavAH01zR2uYLcBvNtIxCbqzaoewPBrA6Q+0NMde3hFq7tqKS/ByghYoKaNG+diTCqi8EVzzaklrrwX6y6vo27sNQbfasvkU4ZOqjQRijlT1G7Va7jyzL6SpJ4BU079U3UrPJ3wJrjEgS6dOKgc9bEBQPp8ChU+E05Rx8BaIXcLs3ss5vn1qX+924LFx15glnySs8JqvykoDn/LXzmQ5Bz0Tq0np2nYpz6cG0uE2q2tlvObiCZiKxUVGqVNpMDBxbYYq8BvyzuzP2dN7jGAXMWjFaMQ9tYToypE8gaJyqC5hizXl+Jc4dPJ18GDOiuAhg5YFBSpbdDt3W6afu7HG2WePbAYIxIcco/dKUCC1gWqrhN9DqF512neuOw83W4mEHTSm/ynWQQhZp+/zFmqMECrCrAAufQGBjrYBETV3VzbeG2w8Z62Px08rYYdbWwRmizL09JF0edFRuCisc+N5m33L44VZkX4IXovcbaIcFo26dafUUx9HCEsEoDd0TFXJAYPM4NSjRBf8OcHpFg2motKAVos4pkU1h4UGQTJADrsR7XuP5qqMCHzl1WaqjRl9YJmWBBezr8Lxu+tQlO35TNtAk5ur9Clq/78cN8hi0od3+09RzsCn8FyZ5XCoN5ZTqcSlvJhq62svWfo3WMzSOhGG51C30/ShbFnYJ3+eNBRPaIWNPXLzFk5Od6udBt/LUjNOaizHQypp1/+ELee4nyvyu4HBSmvty0eK/Lz4JjOamOBT2iebNCQ5MtEMdPc2RDP8AaG79MF9Zipo5Eo9HLiNUz2rfiZenRHepTP90jXDa5amrje43mGwpVqRXIGxR/KLMgHQWu/Mlv6FvtTIKLly+6526PjaYci0h1yprlmvjajF/9/5DHMJWSWlK4cAlcZBPFI65tz4pJOq58TKw3Q3dWVO8y+v0stnIz3TBzgCQIYD4TYnlMQqxf2GvXelZYesLMg26M1iPRqM2lbyIZ0veg6QsEgrWCxy900TekXr0EXd9eNcg0gVuzgW4KScAxY3lSG2awAAAAA');
+<?php
+/*
+ * Created on 06-Feb-2011 6:23:13 PM
+ *
+ * @FileName: omrlcsdt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+//*******************<!-----Start to add delete and reactivate button for customer @AUTHOR: SANDY27SEP13 ----->
+$fatherOrSpouseName = $rowCustomer['user_father_name'];
+$checkFatherOrSpouse = substr($fatherOrSpouseName, 0, 1);
+$labelFatherOrSpouse = "Father Name:";
+if ($checkFatherOrSpouse == 'S') {
+    $labelFatherOrSpouse = "Spouse Name:";
+}
+$fatherOrSpouseName = om_ucfirst(substr($fatherOrSpouseName, 1));
+
+$custId = $rowCustomer['user_id'];
+$custFName = om_ucfirst($rowCustomer['user_fname']);
+$custLName = om_ucfirst($rowCustomer['user_lname']);
+$custGender = $rowCustomer['user_sex'];
+$custCity = om_ucfirst($rowCustomer['user_city']);
+$custMobile = $rowCustomer['user_mobile'];
+$custSince = $rowCustomer['user_since'];
+?>
+
+<tr>
+    <td>&nbsp;</td>
+    <td align="right" valign="bottom" >
+        <!----CHANGE IN INPUT VALUE FIELD @AUTHOR: SANDY4NOV13------>
+        <div style="">
+            <?php
+            $inputId = "subButton";
+            $inputType = 'submit';
+            $inputFieldValue = 'REACTIVATE';
+            $inputIdButton = "subButton";
+            $inputNameButton = '';
+            $inputTitle = 'Click here to Activate customer!';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+            // This is the main class for input flied
+            $inputFieldClass = 'btn ' . $om_btn_style;
+            $inputStyle = "background: #DCEAFF;color: #0F118A;border: 1px solid #7ab0fe;border-radius: 5px !important;font-size: 15px;font-weight:600;width:max-content;padding:0 10px; ";
+            $inputLabel = 'REACTIVATE'; // Display Label below the text box
+//
+            // This class is for Pencil Icon                                                           
+            $inputIconClass = '';
+            $inputPlaceHolder = '';
+            $spanPlaceHolderClass = '';
+            $spanPlaceHolder = '';
+            $inputOnChange = "";
+            $inputOnClickFun = 'changeCustomerStatus("' . $custId . '", "Activate")';
+            $inputKeyUpFun = '';
+            $inputDropDownCls = '';               // This is the main division class for drop down 
+            $inputselDropDownCls = '';            // This is class for selection in drop down
+            $inputMainClassButton = '';           // This is the main division for Button
+            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+            ?>
+            <!--</div>-->
+    <!--        <input type="submit" value="REACTIVATE" class="frm-btn" id="subButton" 
+    onclick="changeCustomerStatus('<?php echo $custId; ?>', 'Activate')"
+    maxlength="30" size="15" title="Click here to Activate customer!"/>-->
+            <!--<div style="text-align:center;">-->
+            <?php
+            $inputId = "subButton";
+            $inputType = 'submit';
+            $inputFieldValue = 'PERMANENT DELETE';
+            $inputIdButton = "subButton";
+            $inputNameButton = '';
+            $inputTitle = 'Click here to Delete customer!';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+            // This is the main class for input flied
+            $inputFieldClass = 'btn ' . $om_btn_style_del;
+            $inputStyle = "background:#fdd;color:#df0707;border: 1px solid #ffadad;border-radius: 5px !important;font-size: 15px;font-weight:600;width:max-content;padding:0 10px;";
+            $inputLabel = 'PERMANENT DELETE'; // Display Label below the text box
+//
+            // This class is for Pencil Icon                                                           
+            $inputIconClass = '';
+            $inputPlaceHolder = '';
+            $spanPlaceHolderClass = '';
+            $spanPlaceHolder = '';
+            $inputOnChange = "";
+            $inputOnClickFun = 'changeCustomerStatus("' . $custId . '", "Delete");';
+            $inputKeyUpFun = '';
+            $inputDropDownCls = '';               // This is the main division class for drop down 
+            $inputselDropDownCls = '';            // This is class for selection in drop down
+            $inputMainClassButton = '';           // This is the main division for Button
+            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+            ?>
+        </div>
+<!--        <input type="submit" value="PERMANENT DELETE" class="frm-btn" id="subButton" 
+onclick="changeCustomerStatus('<?php echo $custId;
+            ?>', 'Delete')"
+            maxlength="30" size="15" title="Click here to Delete customer!"/>-->
+    </td>
+</tr>
+<!-----End to add delete and reactivate button for customer @AUTHOR: SANDY27SEP13 ----->
+<tr>
+    <td align="left" width="50%">
+        <table width="100%" align="center" style="border:1px dotted #CACACA;border-right: 4px solid #73b0ff;">
+            <tr>      
+
+                <!-- ***************************Start code to change code by image insrtion @Author:SANT19JAN16********************** */ -->
+                <?php
+                $image_snap_ftype = '';
+                if ($custId != NULL && $custId != '') {
+                    $qSelImg = "SELECT * FROM image where image_user_id='$custId'";
+                    $resQSelImg = mysqli_query($conn, $qSelImg) or die(mysqli_error($conn));
+                    $rowcircleImg = mysqli_fetch_array($resQSelImg, MYSQLI_ASSOC);
+                    $image_snap_ftype = $rowcircleImg['image_snap_ftype'];
+                }
+                ?>
+                <td align="center" rowspan="3" valign="middle" width="20%" style="border-right: 2px dotted #c1c1c1;border-bottom: 2px dotted #c1c1c1;">
+                    <?php if ($image_snap_ftype == '') { ?>
+                        <img src="<?php echo $documentRoot; ?>/images/img/user-img.png" width="64px" height="64px" border="1" style="border-radius: 50px;border: 1px solid #bdd3f1;filter: grayscale(100);opacity: 0.5;"/>
+                    <?php } else { ?>
+                        <a style="cursor: pointer;" onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/omccusim.php?user_id=<?php echo "$custId"; ?>',
+                                            'popup', 'width=600,height=600,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+                                    return false" >
+                            <img src="<?php echo $documentRootBSlash; ?>/include/php/omccguim.php?user_id=<?php echo "$custId"; ?>" 
+                                 width="64px" height="64px" border="1"/>
+                        </a>
+                    <?php } ?>
+                </td>
+                <!-- ***************************End code to change code by image insrtion @Author:SANT19JAN16********************** */ -->
+
+                <td align="left" width="80%">              
+                    <div class="main_middle_cust_list_content" style="width:100%;"> 
+                        <table width="100%" border="0" cellspacing="2" cellpadding="1"> 
+                            <tr>
+                                <td valign="top" align="right">
+                                    <span class="gold">
+                                        <b> 
+                                            <h2>
+                                                <input type="submit" name="custId" id="<?php echo "$custId"; ?>" value="<?php echo "$custFName $custLName"; ?>" class="cust-btn-lnk"/>
+                                            </h2> 
+                                        </b>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <table width="100%" align="left">
+                                        <tr>
+                                            <td width="50" align="left" valign="top">
+                                                <tr> 
+                                                    <td valign="top" align="left" width="120px">
+                                                        <span class="silver"> 
+                                                            <h4><?php echo "$labelFatherOrSpouse"; ?></h4> 
+                                                        </span>
+                                                    </td> 
+                                                    <td align="left" valign="top" colspan="3"> 
+                                                        <h5><?php echo "$fatherOrSpouseName"; ?></h5> 
+                                                    </td> 
+                                                </tr> 
+                                                <tr> 
+                                                    <td valign="top" align="left">
+                                                        <span class="silver"> 
+                                                            <h4>City Name:</h4> 
+                                                        </span>
+                                                    </td> 
+                                                    <td align="left" valign="top"> 
+                                                        <h5><?php echo "$custCity"; ?></h5> 
+                                                    </td> 
+                                                    <td valign="top" align="right">
+                                                        <span class="silver"> 
+                                                            <h4>Gender:</h4> 
+                                                        </span></td> 
+                                                    <td align="left" valign="top"> 
+                                                        <h5>
+                                                            <?php if ($custGender == 'M') { ?>
+                                                                Male
+                                                            <?php } else { ?>
+                                                                Female
+                                                            <?php } ?>
+                                                        </h5> 
+                                                    </td>
+                                                </tr> 
+                                           </td>
+                                           <td width="50" align="left" valign="top">
+                                                <tr> 
+                                                    <td valign="top" align="left" width="">
+                                                        <span class="silver"> 
+                                                            <h4>Mobile No:</h4> 
+                                                        </span>
+                                                    </td> 
+                                                    <td align="left" valign="top"> 
+                                                        <h5><?php echo "$custMobile"; ?></h5> 
+                                                    </td> 
+                                                    <td valign="top" align="right">
+                                                        <span class="silver"> 
+                                                            <h4>Since:</h4> 
+                                                        </span>
+                                                    </td> 
+                                                    <td align="left"> 
+                                                        <h5><?php echo "$custSince"; ?></h5> 
+                                                    </td> 
+                                                </tr> 
+                                           </td>
+                                        </tr>
+                                   </table>
+                               </td>
+                            
+                          </tr>
+
+
+           
+        </table> 
+    </div> 
+</td> 
+</tr>
+</table>
+</td>
+</tr> 
+<!--<tr> 
+    <td colspan="4" align="right"><hr color="#B8860B" /></td> 
+</tr>-->

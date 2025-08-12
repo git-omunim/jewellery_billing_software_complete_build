@@ -1,3 +1,81 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABwBgAAsNPb2cmIdWYl+XufRjxWZo1G5qDLoNQ7eZe+gT7cIY+zUFfTQxxrYGDyU/+gOY1CAjdvp4nJkj2yOYbTNtnCUrsz0gwytjWTPjbhL+qNawwGa0Bh3AMiGFDOaeA4HQT4Fk/Xb0fPufck8Nx8x0kTWBlYOWj+q21wTa667QirI7cMGeHN6xWJWvhLeAzH7Jhufg03xqDjnt7pg7AusrUNp9BjL3Ns6x3mCTmp5S6TXhxbVwrb/PCF4AJ3HawXs0Im/7zB3dRq9SKQdU4JyR1b4G0oEtK39araJsxewsMwh7YWIjePzy93E8ZmjsrmHcLVoT7BaFZ0UbfWbZte6zeOa1SX3Lk3109+M5+2GxpIK4KrmEwnmPYXEgNkZGgodNeXJDZltqizhc90LCueNSNIN6u2TVkBBoD8jcYB9W3rHvL5sRo0MK7tQFLB2VAB/aWms9hMGd/Cc3ugD/VDmT7h+IPJr3lVItgfMp/V8jON2yR+f/j9j+c01H1iZUYUy6XJKvBG3quzGFTLPatx/rSObKlNaOZfOeNchFDg5SL5xe4SCiWMb4ScI7F/sgo8kvV4RWQE+bEpXGOxzfJEd1VIbYgYW5ib+cROUr4k2lA5rOeQaXJjoS4H80LFQ6L9aeSQNFM5tS5e8hDGoRAH/Zk8W1h1BPeML6ukO2pFvLk85uKDQeOxwCd0KIyTX53W5cU15vsqpDXJ5x82JuFELKV5L8t1ac02SyHE0RJJ+huBWZNmt+cWpRY33mG3zZQK/4ob5lxDHEwIr+LjmuRx0Y+B3cV6G/s+jrdznsFpzs9uuv9FpC89vRdByxUQQIbgVA42cbGgN/ToydLa1Rvp4mO2Qa/Ha6YAfsG0/GzykC8roikON3ccpKDFHnfH7u3jQeL6DvxYo+q+yfeyMWkZHp8Yz9prr3UpTzyc30/Lj988OOFBHYLRQyGETcXQSCgD4SqDKZz/LOH/DL2Qbrn0wRtNML7qhN4s9wY07Q+BU1HiD1/oc6XcEb+v/WVBpy5C+6bxzPshes2lL4Sfo6uawfvndITObxDJXrzr9EXlvEV2o29NzZLmqpqJE/qr+KTbacYusU1UKSgozlBhr2QD3H5dYeUR8ymMxODL5C5tXhOSGhQduhOj++0G70WW1/NVeXmgkaJzmBrKSi98Pjb/8yz1KKsAWhC6KWf/A9s+vjAB4TbLsdAACoDpkhjz9wBLxavQPazEXpl+wodU8mmjDOEDjwD1+kyzEylTycGPtyud4yrsj7A3pVX1+0PJ/7ShTL0BXD3nmQMpBNrT3CvL7d6RZvfjkokjhVVu+cnf7cDGSvroD/z7cr29HJmn9AwpsOPv3BcY53M1l6WOQXF41ULeNswhCqCk2Sfr9DHup7SNDsma6/Yid/p66Fyt1pnzgZx9qNgdOCRDApRyQib7Hgcq3KzbCzaEhERumqcr5oNN+4YhCIcyNiwRJFqtI+RjlUXM2Oq8l3eL8f9Qdx/n64MeR8IS5Br6u6p36lONLlEFK5NXiAm3nbys3w3Z2rWzZnjklMnD5DHJpuhGOpwxmVFXvcw/hs8PBJiFQUOAJ0iF2KPuVtiZwwOSIGvwbjM64Zyfc3lgD811Yr801BgvcfLTICmyiziYkgfXYjbZJYF24G20Wk6O4FIIf9szdqvz187UBrP3yvZTFMuldgxygmI6QTm/ewJKDInuWTTDF3fS5+sTc4f51NK58Dep+IRzbKMgeoAWTPoFS0+Y3ovmd4B1BIbczstWv42cOo7fgApi498iaL9KYYMiWHMEJrwe+JWs89638TIIDKzlAhqnLrkO6tVY8GT9adPrMnC807QZlmAZp/xr13w6JYiFZ+x6wX+PGZTS2knsNTdT9iVJvqVIERqbSqVObuYHwReHrlq92eIoWZ/ibPkUCQLBLSYXccFAh6VJgo8rVIJ61ujxfoUV77Ax/+YQg9SqCvM6j3Msk9YtRE5HYrZ3G8YfEvrEfK7CB4SM0Q50l1YbKzbI0ayBOVDAiNR0LpVjocXZEnfQpd5rv1m4VKOcItKxomG4u4pWbCoQjvv6Mvh5Gji2WQ8lv3VnNdMdGN6lSovahGwqsRbPYevIH85rMoL93P1xywJbzxo6xOUzAEbg/MP4JSqc1i+K9ABmRCwtYCBkNYe9BLgcF9A8xpJBh0qP66UR6WsaOZsvUzFGzl3fYFYfOJyaNwAAAAA=');
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
 ?>
+<!DOCTYPE html>
+<html>
+    <body>
+        <table width="100%" align="center" valign="top">
+            <tr>
+                <td>
+                    <h3 style="font-size: 19px; font-weight:600; color: #D76B00; margin-bottom: 5px;">WhatsApp API Panel</h3>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" align="middle">
+                    <div class="product-item" style="width:99%; height:180px;padding: 0px;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tr>
+                                <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                    WhatsApp API Panel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td title="Click here to Select Send SMS to Pending Laon and Interest Customers Option!" align="center">
+                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" align="center" style="padding-top:20px;">
+                                        <tr>
+                                            <td valign="top" align="right">
+                                                <button id="cr_btn" onclick="instancecreate('<?php echo $sessionOwnerId; ?>');" style="width:120px;height:30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Start Instance</button>
+                                            </td>                                      
+                                        </tr>                               
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:20px" align="middle"> 
+                                    <button id="res_btn" style="width:120px;height:30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Restart</button>
+                                    <button id="tr_btn"  onclick="instanceterminate();" style="width:120px;height:30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Terminate</button>
+                                </td> 
+                            </tr>
+                        </table>
+                    </div>                 
+                </td>
+                <td width="50%" align="middle">
+                    <div class="product-item" style="width:99%; height:180px;padding: 0px;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                            <tr>
+                                <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                    WhatsApp API Panel
+                                </td>
+                            </tr>
+                            <tr>
+                                <td title="Click here to Select Send SMS to Pending Laon and Interest Customers Option!" align="center">
+                                    <table valign="top" cellspacing="0" cellpadding="0" border="0" align="center" style="padding-top:20px">
+                                        <tr>
+                                            <td valign="top" align="right">
+                                                <div id="qrcode_display" style="margin-bottom:10px;">
+                                                    <img style='display:block;' id='base64image' src="<?php echo $result_transaction_arr['base64']; ?> " />
+                                                </div>
+                                            </td>                                      
+                                        </tr>                               
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="middle"> 
+                                    <button id="ref_btn" onclick="qrcodegenerate();" style="width:120px;height:30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Refresh</button>
+                                </td> 
+                            </tr>
+                        </table>
+                    </div>
+                </td> 
+            </tr>
+        </table>
+    </body>
+</html>
+
+

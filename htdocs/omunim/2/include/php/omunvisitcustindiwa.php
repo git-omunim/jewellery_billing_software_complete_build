@@ -1,3 +1,74 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Send whatsapp message to individaul unvisited customer
+ * **************************************************************************************
+ *
+ * Created on Feb 22, 2021 10:32:36 AM
+ *
+ * @FileName: omunvisitcustindiwa.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+
+$userID = $_REQUEST['userId'];
+
+$UnvisitCustSmsTemplateQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'unvisitCustSmsTemplate'";
+$resUnvisitCustSmsTemplateQuery = mysqli_query($conn, $UnvisitCustSmsTemplateQuery)or die("Error: " . mysqli_error($conn) . " with query " . $UnvisitCustSmsTemplateQuery);
+$rowUnvisitCustSmsTemplate = mysqli_fetch_array($resUnvisitCustSmsTemplateQuery);
+$setUnvisitCustSmsTemplate = $rowUnvisitCustSmsTemplate['omly_value'];
+
+$unvisitCustSmsQuery = "SELECT smtp_text FROM sms_templates WHERE smtp_sub = '$setUnvisitCustSmsTemplate'";
+$resUnvisitCustSmsQuery = mysqli_query($conn, $unvisitCustSmsQuery)or die("Error: " . mysqli_error($conn) . " with query " . $unvisitCustSmsQuery);
+$rowUnvisitCustSms = mysqli_fetch_array($resUnvisitCustSmsQuery);
+$setUnvisitCustSms = $rowUnvisitCustSms['smtp_text'];
+
+$selectCustomer = "SELECT user_id, user_fname, user_lname, user_mobile, user_city, user_firm_id FROM user JOIN .user_transaction_invoice ON utin_user_id = user_id where utin_id = '$userID'";
+$res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+
+$row = mysqli_fetch_array($res);
+$userId = $row['user_id'];
+$user_fname = $row['user_fname'];
+$user_lname = $row['user_lname'];
+$mobileNo = $row['user_mobile'];
+$userCity = $row['user_city'];
+$user_firm_id = $row['user_firm_id'];
+$custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+$smsTextTemp = $setUnvisitCustSms;
+$smsTemplateSub = $setUnvisitCustSmsTemplate;
+$sms_type = 'TSMS';
+
+if ($custFName == '' || $custFName == NULL)
+    $custFName = 'Customer';
+
+$userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+$row_firm = mysqli_fetch_array($res_firm);
+$firm_long_name = $row_firm['firm_long_name'];
+	
+$smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+//
+?>
+<img src="images/spacer.gif" alt="" onload="javascript:sendWhatsAppMess('<?php echo '91' . $mobileNo; ?>',' <?php echo $smsText; ?>');" />
+

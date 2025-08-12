@@ -1,3 +1,242 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 23 Dec, 2022 10:40:31 PM
+ *
+ * @FileName: oomvisitordashboardquery.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+//
+$staffId = $_SESSION['sessionStaffId'];
+//echo '$staffId'.$staffId;
+if ($staffId != '') {
+    parse_str(getTableValues("SELECT user_category,user_team FROM user WHERE user_id='$staffId'"));
+}
+$staffExtendedAccess = $acc_access;
+$staffType = $user_category;
+$staffTeam = $user_team;
+$bgcolorHeadingreq = $_REQUEST['backgroundHead'];
+$backgroundreq = $_REQUEST['background'];
+if ($bgcolorHeadingreq != '' && $backgroundreq != '') {
+    $bgcolorHeading = $bgcolorHeadingreq;
+    $bgcolor = $backgroundreq;
+}
+?>
+<div style="text-align: center;font-size: 16px;font-weight: 600;color: #F7F9F9;padding: 8px 0px;border-radius: 3px; background: <?php echo '#'.$bgcolorHeading; ?>">
+    <?php
+    if (isset($_REQUEST['currentVisitorShowing'])) {
+        $currentVisitorShowing = $_REQUEST['currentVisitorShowing'];
+    }
+    //
+    //
+    if ($staffId != '' && $staffId != NULL && $staffType != 'Administrator') {
+        if ($currentVisitorShowing == 'leads') {
+            $qvisitorStatic = "select * from visitor where (visitor_interest = '' OR visitor_interest is NULL) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorLeadDiv';
+            echo "New Lead's";
+        } else if ($currentVisitorShowing == 'todaysCall') {
+            $todayDate = date('d M Y');
+            $todayDateInTime = strtotime($todayDate);
+            $qvisitorStatic = "select * from visitor where visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorTodaysCallDiv';
+            echo "Today's Call";
+        } else if ($currentVisitorShowing == 'VINT') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorVintDiv';
+            echo "Very Interested";
+        } else if ($currentVisitorShowing == 'INT') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorintDiv';
+            echo 'Interested';
+        } else if ($currentVisitorShowing == 'DEMOARRN') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorDemoArrDiv';
+            echo 'Demo Arranged';
+        } else if ($currentVisitorShowing == 'DEMODONE') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId')";
+            $divId = 'visitorDemodoneDiv';
+            echo 'Demo Completed';
+        }
+    } elseif ($staffType == 'Administrator') {
+        if ($currentVisitorShowing == 'leads') {
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and (visitor_interest = '' OR visitor_interest is NULL) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorLeadDiv';
+            echo "New Lead's";
+        } else if ($currentVisitorShowing == 'todaysCall') {
+            $todayDate = date('d M Y');
+            $todayDateInTime = strtotime($todayDate);
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorTodaysCallDiv';
+            echo "Today's Call";
+        } else if ($currentVisitorShowing == 'VINT') {
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorVintDiv';
+            echo "Very Interested";
+        } else if ($currentVisitorShowing == 'INT') {
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorintDiv';
+            echo 'Interested';
+        } else if ($currentVisitorShowing == 'DEMOARRN') {
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorDemoArrDiv';
+            echo 'Demo Arranged';
+        } else if ($currentVisitorShowing == 'DEMODONE') {
+            $qvisitorStatic = "select * from visitor where visitor_lead_team='$staffTeam' and visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorDemodoneDiv';
+            echo 'Demo Completed';
+        }
+    } else {
+        if ($currentVisitorShowing == 'leads') {
+            $qvisitorStatic = "select * from visitor where (visitor_status = '' OR visitor_status is NULL) and (visitor_interest = '' OR visitor_interest is NULL) and (visitor_staff_id = '' OR visitor_staff_id is null) and (visitor_sec_staff_id = '' OR visitor_sec_staff_id is null) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorLeadDiv';
+            echo "New Lead's";
+        } else if ($currentVisitorShowing == 'todaysCall') {
+            $todayDate = date('d M Y');
+            $todayDateInTime = strtotime($todayDate);
+            $qvisitorStatic = "select * from visitor where visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorTodaysCallDiv';
+            echo "Today's Call";
+        } else if ($currentVisitorShowing == 'VINT') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorVintDiv';
+            echo "Very Interested";
+        } else if ($currentVisitorShowing == 'INT') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorintDiv';
+            echo 'Interested';
+        } else if ($currentVisitorShowing == 'DEMOARRN') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorDemoArrDiv';
+            echo 'Demo Arranged';
+        } else if ($currentVisitorShowing == 'DEMODONE') {
+            $qvisitorStatic = "select * from visitor where visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete')";
+            $divId = 'visitorDemodoneDiv';
+            echo 'Demo Completed';
+        }
+    }
+    $resvisitorStatic = mysqli_query($conn, $qvisitorStatic);
+    $totalvisitorStatic = mysqli_num_rows($resvisitorStatic);
+    ?>
+</div>
+<?php
+// how many rows to show per page
+$perRowsPerPage = 4;
+$doubleLimit = $perRowsPerPage * 2;
+
+// by default we show first page
+$perPageNum = 1;
+
+// if $_GET['page'] defined, use it as page number
+if (isset($_REQUEST['page'])) {
+    $perPageNum = $_REQUEST['page'];
+}
+
+// counting the offset
+$perOffset = ($perPageNum - 1) * $perRowsPerPage;
+$count = 1;
+if ($staffId != '' && $staffId != NULL && $staffType != 'Administrator') {
+    if ($currentVisitorShowing == 'leads') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and (visitor_last_comment_date ='' or visitor_last_comment_date is null) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'todaysCall') {
+        $queryLeads = "select * from visitor where visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'VINT') {
+        $queryLeads = "select * from visitor where visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'INT') {
+        $queryLeads = "select * from visitor where visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMOARRN') {
+        $queryLeads = "select * from visitor where visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMODONE') {
+        $queryLeads = "select * from visitor where visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') and (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    }
+} elseif ($staffType == 'Administrator') {
+    if ($currentVisitorShowing == 'leads') {
+        $queryLeads = "select * from visitor where (visitor_status = '' OR visitor_status is NULL) and (visitor_interest = '' OR visitor_interest is NULL) and (visitor_staff_id = '' OR visitor_staff_id is null) and (visitor_sec_staff_id = '' OR visitor_sec_staff_id is null) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'todaysCall') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'VINT') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'INT') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMOARRN') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMODONE') {
+        $queryLeads = "select * from visitor where (visitor_staff_id= '$staffId' or visitor_sec_staff_id='$staffId') and visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    }
+} else {
+    if ($currentVisitorShowing == 'leads') {
+        $queryLeads = "select * from visitor where (visitor_status = '' OR visitor_status is NULL) and (visitor_interest = '' OR visitor_interest is NULL) and (visitor_staff_id = '' OR visitor_staff_id is null) and (visitor_sec_staff_id = '' OR visitor_sec_staff_id is null) and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'todaysCall') {
+        $queryLeads = "select * from visitor where visitor_indicator IN ('OMCT','OMDT','download_log','OMCR') and (visitor_interest IN ('INT', 'VINT', 'CNR', 'WRNGNUM', 'INVDNUM', 'FAKE', 'NINT', 'NNINT', 'DEMODONE', 'DEMOARRN', 'DEMOINST', 'POSTPOND', 'PUROTHRP')) and UNIX_TIMESTAMP(STR_TO_DATE(visitor_next_date,'%d %b %Y')) <= $todayDateInTime and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'VINT') {
+        $queryLeads = "select * from visitor where visitor_interest ='VINT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'INT') {
+        $queryLeads = "select * from visitor where visitor_interest ='INT' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMOARRN') {
+        $queryLeads = "select * from visitor where visitor_interest ='DEMOARRN' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    } elseif ($currentVisitorShowing == 'DEMODONE') {
+        $queryLeads = "select * from visitor where visitor_interest ='DEMODONE' and (visitor_block_status IS NULL OR visitor_block_status != 'Delete') order by visitor_id desc LIMIT $perOffset, $doubleLimit";
+    }
+}
+$resLeads = mysqli_query($conn, $queryLeads);
+$resnoLeads = mysqli_num_rows($resLeads);
+if ($resnoLeads > 0) {
+    while ($totalLeadsAviable = mysqli_fetch_array($resLeads)) {
+        ?>
+        <div style="border: 1px solid #0000004f;border-radius: 3px;padding: 4px 4px;margin: 4px 0px;cursor: pointer;background: <?php echo '#'.$bgcolor; ?>;" onclick="leadPanelPopup('<?php echo $totalLeadsAviable['visitor_fname']; ?>', '<?php echo $totalLeadsAviable['visitor_id']; ?>', 'lead_contact_popup', 'lead_popup', '', '<?php echo $totalLeadsAviable['visitor_staff_name']; ?>', '');">
+            <div style="display: flex; justify-content: space-between; align-items: center;font-size: 14px;font-weight: 500;color: black;">
+                <span><?php echo $totalLeadsAviable['visitor_id']; ?></span> <span><?php echo $totalLeadsAviable['visitor_mobile']; ?></span> 
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;font-size: 14px;font-weight: 500;color: black;">
+                <span><?php echo $totalLeadsAviable['visitor_fname']; ?></span> <span><?php echo $totalLeadsAviable['visitor_city']; ?></span> 
+            </div>
+        </div>
+    <?php
+    }
+} else {
+    ?>
+    <div style="border: 1px solid #0000004f;border-radius: 3px;padding:7px 4px;margin: 4px 0px;cursor: pointer;color: black;text-align:center;background:#fff;font-weight: 600;font-size: 14px;">
+        NOTHING TO SHOW
+    </div>
+    <?php } ?>
+<div style="text-align: right;display: flex;justify-content: end;margin: 6px 0px;">
+    <?php
+    if ($perPageNum > 1) {
+        ?>
+        <form name="prev_Staff" id="prev_Staff"
+              action="javascript:dashboardNextPage('<?php echo $perPageNum - 1; ?>','<?php echo $divId; ?>','<?php echo $currentVisitorShowing; ?>','<?php echo $bgcolorHeading; ?>','<?php echo $bgcolor; ?>');"
+              method="get"><input type="submit" value="Previous" class="frm-btn"
+                            maxlength="30" size="15" style="margin-right: 5px;" /></form>
+        <?php } ?>
+        <?php
+        if ($totalvisitorStatic > $perOffset) {
+            ?>
+        <form name="next_Staff" id="next_Staff"
+              action="javascript:dashboardNextPage('<?php echo $perPageNum + 1; ?>','<?php echo $divId; ?>','<?php echo $currentVisitorShowing; ?>','<?php echo $bgcolorHeading; ?>','<?php echo $bgcolor; ?>','<?php echo $bgcolorHeading; ?>','<?php echo $bgcolor; ?>');"
+              method="get"><input type="submit" value="Next" class="frm-btn"
+                            maxlength="30" size="15" /></form>
+            <?php
+        }
+        ?>
+</div>

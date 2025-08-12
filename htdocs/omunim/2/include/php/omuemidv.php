@@ -1,3 +1,822 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: udhaar emi dv
+ * **************************************************************************************
+ * 
+ * Created on Nov 12, 2014 11:10:42 AM
+ *
+ * @FileName: omuemidv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+include 'ommpemac.php';
+include 'ommpdpmsg.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpsbac.php';
+require_once 'ommpincr.php';   // FILE ADDED  @AUTHOR:SHE18MAY16
+include_once 'ommpfndv.php';
+?>
+<?php
+$staffId = $_SESSION['sessionStaffId'];
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$custId = $_POST['custId'];
+if ($custId == '') {
+    $custId = $_GET['custId'];
+}
+$panelName = $_GET['panelName'];
+if ($panelName == 'UpdateUdhaar') {
+    $udhaarId = $_GET['udhaarId'];
+    parse_str(getTableValues("SELECT * FROM udhaar where udhaar_own_id='$sessionOwnerId' and udhaar_id = '$udhaarId'"));
+    $firmId = $udhaar_firm_id;
+    $selDOBDay = substr($udhaar_DOB, 0, 2);
+    $selDOBMnth = substr($udhaar_DOB, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($udhaar_DOB, -4);
+    $custId = $udhaar_cust_id;
+
+    $qSelAllUdhaarDep = "SELECT udhadepo_EMI_status FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_udhaar_id='$udhaarId' and (udhadepo_EMI_status  IN ('Paid') or udhadepo_EMI_status IS NULL)";//EMI Status condition added @Author:SHRI29MAY15
+    $resAllUdhaarDep = mysqli_query($conn,$qSelAllUdhaarDep);
+    $paidCounter = 0;
+    while ($rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDep, MYSQLI_ASSOC)) {
+        $emiStatus = $rowUdhaarDepMon['udhadepo_EMI_status'];
+        if ($emiStatus == 'Paid') {
+            $paidCounter++;
+        }
+    }
+} else {
+    //*************************************************Start code to change for send data from customer to user table Author@SANT12JAN16********************************************************************************
+    parse_str(getTableValues("SELECT user_firm_id FROM user WHERE user_id='$custId' and user_owner_id='$sessionOwnerId'"));
+    $firmId = $user_firm_id;
+    parse_str(getTableValues("SELECT udhaar_pre_serial_num FROM udhaar where udhaar_own_id='$sessionOwnerId' and udhaar_firm_id='$user_firm_id' order by UNIX_TIMESTAMP(udhaar_ent_dat) desc LIMIT 0,1"));
+    if ($udhaar_pre_serial_num == NULL || $udhaar_pre_serial_num == '') {
+        $udhaar_pre_serial_num = 'IEM'; //add new value @Author:ANUJA13MAR16
+        $qSelSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where (udhaar_pre_serial_num is NULL OR udhaar_pre_serial_num = '') and udhaar_own_id='$sessionOwnerId'";//query changed @Author:PRIYA17FEB15
+        $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    } else {
+        $qSelSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where udhaar_own_id='$sessionOwnerId' and udhaar_firm_id='$user_firm_id'";
+        $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    }
+    $udhaar_serial_num = $rowSerialNo['udhaarSerialNo'] + 1;
+//*************************************************End code to change for send data from customer to user table Author@SANT12JAN16*****************************************************************************************
+    $qSelSerialNo = "SELECT udhaar_serial_num FROM udhaar where udhaar_serial_num='$udhaar_serial_num' and udhaar_pre_serial_num='$udhaar_pre_serial_num' and udhaar_own_id='$sessionOwnerId'";
+    $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+    $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    $uSerialNo = $rowSerialNo['udhaar_serial_num'];
+
+    if ($uSerialNo != '' || $uSerialNo != NULL) {
+        $qSelSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where udhaar_pre_serial_num='$udhaar_pre_serial_num' and udhaar_own_id='$sessionOwnerId'";
+        $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+        $udhaar_serial_num = $rowSerialNo['udhaarSerialNo'] + 1;
+    }
+    $selDOBDay = date(j);
+    $todayMM = date(n) - 1;
+    $selDOBYear = date(Y);
+    $qSelQuery = "SELECT girv_sms_id FROM girvi where girv_own_id='$sessionOwnerId' and girv_upd_sts='New' order by girv_id desc LIMIT 0,1";
+    $resQuery = mysqli_query($conn,$qSelQuery);
+    $rowQuery = mysqli_fetch_array($resQuery, MYSQLI_ASSOC);
+    $loanSMSId = $rowQuery['girv_sms_id'];
+}
+$omPanelDiv = 'AddUdhaarEMI';
+?>
+<div>
+    <form name="add_udhaar_emi_frm" id="add_udhaar_emi_frm"
+          enctype="multipart/form-data" method="post"
+          action="include/php/omuemiad.php"  
+          onsubmit="return addNewUdhaarEMI();">    
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+<!--***************************Start code to change moneypanel home page Author:SANT28APR16********************************-->
+                  <tr>
+                <td align="left" valign="top" class="ff_calibri fs_16 orange"> 
+
+                </td>
+                <td></td>
+                <td align="right" valign="top" class="textLabel12CalibriBrown" title="Click to close panel ! ">
+
+                    <a style="cursor: pointer;position:absolute;margin-left:-20px;margin-top: -14px"  onclick="closeAdvMetalDiv1();">
+                        <?php include 'omzaajcl.php'; ?>
+                    </a>
+
+                </td>
+            </tr>
+<!--***************************End code to change moneypanel home page Author:SANT28APR16********************************-->            
+            <tr>
+                <td align="left" width="100%">
+                    <table border="0" cellpadding="0" cellspacing="2" width="100%" class="spaceLeftRight2">
+                        <tr align="left">
+                            <td align="left">
+                                <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                    <tr>
+                                        <td align="center" valign="top" width="240px"> 
+                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                <tr>  
+                                                    <td align="center" valign="top" class="textLabel12CalibriBrown">
+                                                        UDHAAR AMOUNT
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" valign="middle" width="235px" class="textBoxCurve2px margin2pxAll textLabel24Calibri backFFFFFF">
+                                                        <input id="udhaarMainAmount" name="udhaarMainAmount" type="text"
+                                                               placeholder="UDHAAR AMOUNT" value="<?php echo $udhaar_prin_amt; ?>" 
+                                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                                           document.getElementById('DOBDay').focus();
+                                                                           return false;
+                                                                       }
+                                                                       else if (event.keyCode == 8 && this.value == '') {
+                                                                           return false;
+                                                                       }"
+                                                               spellcheck="false" class="textFieldWOB20 height_30" size="16" maxlength="30" /><!-- value variable changed @Author:SHRI14JUL15-->
+                                                        <input id="custId" name="custId" value="<?php echo $custId; ?>" type="hidden" /> 
+                                                        <input id="mainPanel" name="mainPanel" value="udhaarWithEMI" type="hidden" /> 
+                                                        <input id="noOfUdhaarItems" name="noOfUdhaarItems" type="hidden" /> 
+                                                        <input id="panelName" name="panelName" value="<?php echo $panelName; ?>" type="hidden" /> 
+                                                        <input id="udhaarId" name="udhaarId" value="<?php echo $udhaarId; ?>" type="hidden" /> 
+                                                        <input id="paidCounter" name="paidCounter" value="<?php echo $paidCounter; ?>" type="hidden" /> 
+                                                        <input id="udharOccCheck" name="udharOccCheck" value="<?php echo $udhaar_EMI_occurrences; ?>" type="hidden" /> <!----added @Author:PRIYA08DEC14----->
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td align="center" valign="top" class="textLabel12CalibriBrown">
+                                                        UDHAAR START DATE
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" valign="middle"> 
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tr> 
+                                                                <td align="center" valign="middle"  class="textBoxCurve1px margin2pxAll backFFFFFF">
+                                                                    <?php
+                                                                    $class = 'textLabel14CalibriGrey';
+                                                                    include 'omuemidt.php';
+                                                                    ?>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" valign="top" width="190px"> 
+                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                <tr align="center">
+                                                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                        INTEREST OPTION
+                                                    </td>
+                                                </tr>
+                                                <tr> 
+                                                    <td align="center" valign="middle" width="150px" class="textBoxCurve1px margin2pxAll backFFFFFF">
+                                                        <div id="interestTypeDiv" class="selectStyledBorderLess background_transparent">
+                                                            <select
+                                                                id="interestType" name="interestType" class="textLabel14CalibriReq"
+                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                            document.getElementById('selROIValue').focus();
+                                                                            return false;
+                                                                        }
+                                                                        else if (event.keyCode == 8) {
+                                                                            document.getElementById('DOBYear').focus();
+                                                                            return false;
+                                                                        }"
+                                                                onchange="return changeUdhaarEMIROIOpt(this, document.getElementById('ROIOption'), '<?php echo $omPanelDiv; ?>');">
+                                                                    <?php
+                                                                    $intType = array(Monthly, Annually);
+                                                                    for ($i = 0; $i <= 1; $i++)
+                                                                        if ($intType[$i] == $udhaar_ROI_typ)
+                                                                            $optUdhaarIntTypeSel[$i] = 'selected';
+                                                                    ?>
+                                                                <option value="Monthly" <?php echo $optUdhaarIntTypeSel[0]; ?>>MONTHLY</option>
+                                                                <option value="Annually" <?php echo $optUdhaarIntTypeSel[1]; ?>>ANNUALLY</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr align="center">
+                                                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                        RATE OF INTEREST
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" valign="middle"> 
+                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                            <tr> 
+                                                                <td align="center" valign="middle" width="150px" class="textBoxCurve1px margin2pxAll backFFFFFF">
+                                                                    <div id="ROIOption">
+                                                                        <?php
+                                                                        $prevFieldId = 'interestType';
+                                                                        $nextFieldId = 'udhharFirmId';
+                                                                        include 'omuemroi.php';
+                                                                        ?>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" valign="top" width="480px"> 
+                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                <tr>
+                                                    <td align="center" valign="top" width="80px"> 
+                                                        <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td align="center" valign="middle">
+                                                                    <div class="girvi_head_green">
+                                                                        <img src="<?php echo $documentRootBSlash; ?>/images/grey48.png" 
+                                                                             alt="Add Udhaar" title="Add Udhaar" />
+                                                                    </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle">
+                                                                    <div id="ajaxLoadGetItemListDiv" style="visibility: hidden">
+                                                                        <?php include 'omzaajld.php'; ?>
+                                                                    </div>
+                                                                </td> 
+                                                            </tr>
+
+                                                        </table>
+                                                    </td>
+                                                    <td align="center" valign="top" width="200px"> 
+                                                        <table border="0" cellpadding="2" cellspacing="0">
+                                                            <tr align="center">
+                                                                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                                    FIRM NAME
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right" valign="middle" width="140px" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormal backFFFFFF">
+                                                                    <div id="selectFirmDiv" class="selectStyledBorderLess background_transparent">
+                                                                        <?php
+                                                                        $prevFieldId = 'selROIValue';
+                                                                        $nextFieldId = 'udhaarPreSerialNo';
+                                                                        $firmIdName = 'udhharFirmId';
+                                                                        $class = 'textLabel14CalibriReq';
+                                                                        $panel = 'AddNewUdhaar';
+                                                                        if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                            $firmIdSelected = $_SESSION['setFirmSession'];
+                                                                        } else {
+                                                                            $firmIdSelected = $firmId;
+                                                                        }
+                                                                        include 'omffrafs.php';
+                                                                        ?>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                                    CASH / ON PURCHASE
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td> 
+                                                                    <table border="0" cellpadding="2" cellspacing="0">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" width="140px" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormal backFFFFFF">
+                                                                                <div id="loanTypeDiv" class="selectStyledBorderLess background_transparent">
+
+                                                                                    <?php if ($staffId && $array['addUdhaarAccessUdhTyp'] != 'true') { ?>
+                                                                                        <select disabled="disabled" onchange="return showAddUdhaarItemDiv(this, document.getElementById('addUdhaarItemDiv'));" 
+                                                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                                document.getElementById('udhaarEMINoOfDays').focus();
+                                                                                                                return false;
+                                                                                                            }
+                                                                                                            else if (event.keyCode == 8) {
+                                                                                                                document.getElementById('udhaarSerialNo').focus();
+                                                                                                                return false;
+                                                                                                            }"
+                                                                                                id="udhaarType" name="udhaarType" class="textLabel14CalibriReq">
+                                                                                            <option value="Cash" selected>CASH</option>
+                                                                                            <option value="OnPurchase">ON PURCHASE</option>
+                                                                                        </select><input  id="udhaarType" name="udhaarType" type="hidden" value="Cash"  />
+                                                                                    <?php } else { ?>
+                                                                                        <select onchange="return showAddUdhaarItemDiv(this, document.getElementById('addUdhaarItemDiv'));"
+                                                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                                document.getElementById('udhaarPayAccId').focus();
+                                                                                                                return false;
+                                                                                                            }
+                                                                                                            else if (event.keyCode == 8) {
+                                                                                                                document.getElementById('udhaarSerialNo').focus();
+                                                                                                                return false;
+                                                                                                            }"
+                                                                                                id="udhaarType" name="udhaarType" class="textLabel14CalibriReq">
+                                                                                                    <?php
+                                                                                                    if ($panelName == 'UpdateUdhaar') {
+                                                                                                        $udhType = array(Cash, OnPurchase);
+                                                                                                        for ($i = 0; $i <= 1; $i++)
+                                                                                                            if ($udhType[$i] == $udhaar_type)
+                                                                                                                $optUdhaarTypeSel[$i] = 'selected';
+                                                                                                    }else {
+                                                                                                        $optUdhaarTypeSel[0] = 'selected';
+                                                                                                    }
+                                                                                                    ?>
+                                                                                            <option value="Cash" <?php echo $optUdhaarTypeSel[0]; ?>>CASH</option>
+                                                                                            <option value="OnPurchase" <?php echo $optUdhaarTypeSel[1]; ?>>ON PURCHASE</option>
+                                                                                        </select>
+                                                                                    <?php } ?>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                    <td align="center" valign="top" width="200px">
+                                                        <table border="0" cellpadding="2" cellspacing="0" valign="top">
+                                                            <tr align="center">
+                                                                <td align="center" valign="middle" colspan="2" class="textLabel12CalibriBrown">
+                                                                    UDHAAR SERIAL NO.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle" width="170px" colspan="2" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF">
+                                                                    <div id='udhaarSerialNoDiv'>
+                                                                        <table border="0" cellpadding="0" cellspacing="0">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input id="udhaarPreSerialNo" name="udhaarPreSerialNo" placeholder="SID"
+                                                                                           type="text" 
+                                                                                           value="<?php echo $udhaar_pre_serial_num; ?>" 
+                                                                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                       document.getElementById('udhaarSerialNo').focus();
+                                                                                                       return false;
+                                                                                                   }
+                                                                                                   else if (event.keyCode == 8 && this.value == '') {
+                                                                                                       document.getElementById('udhharFirmId').focus();
+                                                                                                       return false;
+                                                                                                   }"
+                                                                                           spellcheck="false" class="border-no inputBox14CalibriReqCenter background_transparent" size="3" maxlength="3"  />
+                                                                                    &nbsp;-&nbsp;
+                                                                                    <input id="udhaarSerialNo" name="udhaarSerialNo" placeholder="SNO"
+                                                                                           type="text" value="<?php echo $udhaar_serial_num; ?>"
+                                                                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                       document.getElementById('udhaarType').focus();
+                                                                                                       return false;
+                                                                                                   }
+                                                                                                   else if (event.keyCode == 8 && this.value == '') {
+                                                                                                       document.getElementById('udhaarPreSerialNo').focus();
+                                                                                                       return false;
+                                                                                                   }"
+                                                                                           spellcheck="false" class="border-no textLabel14CalibriReq background_transparent" size="10" maxlength="10" />
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="middle" width="170px" colspan="2">
+                                                                    <table border="0" cellpadding="0" cellspacing="1" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                                                NO OF DAYS
+                                                                            </td>
+                                                                            <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                                                OCCURRENCES
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="center" valign="middle" width="170px" colspan="2">
+                                                                    <table border="0" cellpadding="0" cellspacing="1">
+                                                                        <tr>
+                                                                            <td align="center" valign="middle" width="170px" colspan="2" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF">
+                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="text" id="udhaarEMINoOfDays" name="udhaarEMINoOfDays" placeholder="DAYS"
+                                                                                                   value="<?php echo $udhaar_EMI_days; ?>"
+                                                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                               document.getElementById('udhaarEMIOccurrences').focus();
+                                                                                                               return false;
+                                                                                                           }
+                                                                                                           else if (event.keyCode == 8 && this.value == '') {
+                                                                                                               document.getElementById('udhaarType').focus();
+                                                                                                               return false;
+                                                                                                           }"
+                                                                                                   onkeypress="javascript:return valKeyPressedForNumber(event);"    
+                                                                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter" size="6" maxlength="3"  />
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td align="center" valign="middle" width="170px" colspan="2" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF">
+                                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td>
+                                                                                            <input type="text"  id="udhaarEMIOccurrences" name="udhaarEMIOccurrences" placeholder="OCCURES"
+                                                                                                   value="<?php echo $udhaar_EMI_occurrences; ?>"
+                                                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                               document.getElementById('udhaarPayAccId').focus();
+                                                                                                               return false;
+                                                                                                           }
+                                                                                                           else if (event.keyCode == 8 && this.value == '') {
+                                                                                                               document.getElementById('udhaarEMINoOfDays').focus();
+                                                                                                               return false;
+                                                                                                           }"
+                                                                                                   onkeypress="javascript:return valKeyPressedForNumber(event);"    
+                                                                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter" size="6" maxlength="10" />
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                <div class="hrGold"></div>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td align="left" colspan="4">
+                                <div id="addUdhaarItemDiv"></div>
+                            </td>
+                        </tr>
+                        <?php if ($panelName == 'UpdateUdhaar' && $udhaar_type == 'OnPurchase') { ?>
+                            <tr>
+                                <td align="center" colspan="4" class="paddingTop3">
+                                    <?php
+                                    $qSelItemDet = "SELECT * FROM udhaar_items where udhaar_itm_own_id = '$_SESSION[sessionOwnerId]' and udhaar_itm_udhaar_id = '$udhaarId' order by udhaar_itm_since asc";
+                                    $resItemDet = mysqli_query($conn,$qSelItemDet);
+                                    $noOfItems = mysqli_num_rows($resItemDet);
+                                    $counter = 1;
+                                    while ($rowItemDet = mysqli_fetch_array($resItemDet)) {
+                                        $udhaarItemId = $rowItemDet['udhaar_itm_id'];
+                                        $metalType = $rowItemDet['udhaar_itm_metal_type'];
+                                        $udhaarItmName = $rowItemDet['udhaar_itm_name'];
+                                        $udhaarItmPieces = $rowItemDet['udhaar_itm_pieces'];
+                                        $udhaarGrossWeight = $rowItemDet['udhaar_itm_gross_weight'];
+                                        $udhaarGrossWeightType = $rowItemDet['udhaar_itm_gross_weight_type'];
+                                        $udhaarVal = $rowItemDet['udhaar_itm_valuation'];
+                                        $itemDivCount = $counter;
+                                        include 'omuuiadv.php';
+                                        $counter++;
+                                    }
+                                    ?>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                        <tr id="hrVisible" style="visibility: hidden;">
+                            <td align="right" colspan="4" class="paddingTop3">
+                                <div class="hrGold"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top" class="padLeft20">
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top">
+                                                <tr>
+                                                    <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                        PAYMENT TYPE
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" valign="top">
+                                                        <div id="selAccountDiv">
+                                                            <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top">
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top">
+                                                                            <tr>
+                                                                                <td align="right" class="ff_calibri fs_14 brown">DR</td>
+                                                                                <td align="left" class="padLeft5">
+                                                                                    <div id="selAccountDiv">
+                                                                                        <?php
+                                                                                        if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                                            $selFirmId = $_SESSION['setFirmSession'];
+                                                                                        } else {
+                                                                                            $selFirmId = $firmId;
+                                                                                        }
+                                                                                        $prevFieldId = 'udhaarEMIOccurrences';
+                                                                                        $nextFieldId = 'udhaarDrAccId';
+                                                                                        $selAccountId = 'udhaarPayAccId';
+                                                                                        if ($panelName == 'UpdateUdhaar') {
+                                                                                            $selAccountName = "'Loans'";
+                                                                                            $accIdSelected = $udhaar_pay_acc_id;
+                                                                                        } else {
+                                                                                            $selAccountName = "'Loans'";
+                                                                                            $accNameSelected = 'Unsecured Loans';
+                                                                                        }
+                                                                                        $selAccountClass = 'input_border_grey textBoxCurve1px6rad';
+                                                                                        include 'omacsalt.php';
+                                                                                        ?>
+                                                                                    </div>  
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="top">
+                                                                        <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top">
+                                                                            <tr>
+                                                                                <td align="right" class="ff_calibri fs_14 brown">CR</td>
+                                                                                <td align="left" class="padLeft5">
+                                                                                    <div id="selAccountDiv">
+                                                                                        <?php
+                                                                                        if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                                            $selFirmId = $_SESSION['setFirmSession'];
+                                                                                        } else {
+                                                                                            $selFirmId = $firmId;
+                                                                                        }
+                                                                                        $nextFieldId = 'udhaarPayOtherInfo';
+                                                                                        $prevFieldId = 'udhaarPayAccId';
+                                                                                        $selAccountId = 'udhaarDrAccId';
+                                                                                        if ($panelName == 'UpdateUdhaar') {
+                                                                                            $selAccountName = "'Current Assets'";
+                                                                                            $accIdSelected = $udhaar_dr_acc_id;
+                                                                                        } else {
+                                                                                            $selAccountName = "'Current Assets'";
+                                                                                            $accNameSelected = 'Cash in Hand';
+                                                                                        }
+                                                                                        $selAccountClass = 'textLabel14CalibriGrey textBoxCurve1px6rad';
+                                                                                        include 'omacsalt.php';
+                                                                                        ?>
+                                                                                    </div>  
+                                                                                </td> 
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="left" valign="top" class="paddingLeft15">
+                                            <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top">
+                                                <tr>
+                                                    <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                        PAYMENT OTHER INFORMATION &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" class="frm-r1"><textarea id="udhaarPayOtherInfo" 
+                                                                                              onkeydown="javascript:if (event.keyCode == 13) {
+                                                                                                          document.getElementById('udhaarOtherInfo').focus();
+                                                                                                          return false;
+                                                                                                      }
+                                                                                                      else if (event.keyCode == 8 && this.value == '') {
+                                                                                                          document.getElementById('udhaarDrAccId').focus();
+                                                                                                          return false;
+                                                                                                      }"
+                                                                                              spellcheck="false" name="udhaarPayOtherInfo" placeholder="Payment Other Information" 
+                                                                                              class="textarea" style="width:265px;height:50px;"><?php echo $udhaar_pay_other_info; ?></textarea>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="left" valign="top">
+                                            <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top">
+                                                <tr>
+                                                    <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                        &nbsp;OTHER INFORMATION &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" class="frm-r1"><textarea id="udhaarOtherInfo" placeholder="Other Information" 
+                                                                                              spellcheck="false" name="udhaarOtherInfo" 
+                                                                                              onkeydown="javascript:if (event.keyCode == 13) {
+                                                                                                          document.getElementById('smsTemplateId').focus();
+                                                                                                          return false;
+                                                                                                      } else if (event.keyCode == 8 && this.value == '') {
+                                                                                                          document.getElementById('udhaarPayOtherInfo').focus();
+                                                                                                          return false;
+                                                                                                      }"
+                                                                                              class="textarea" style="width:265px;height:50px;"><?php echo $udhaar_other_info; ?></textarea>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="left" valign="top">
+                                            <table border="0" cellpadding="2" cellspacing="1" align="left" valign="top">
+                                                <tr>
+                                                    <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                        &nbsp;TIME PERIOD &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" class="frm-r1">
+                                                        <input id="smsTemplateId" name="smsTemplateId" title="Click Here To See sms Template Id!"
+                                                               type="text" spellcheck="false"  class="input_border_red" placeholder="SMS TEMPLATE ID"
+                                                               value="<?php echo $udhaar_sms_id; ?>"
+                                                               onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) || (event.keyCode == 13 && this.value == '')) {
+                                                                           searchSMSTemplate(document.getElementById('smsTemplateId').value, event.keyCode);
+                                                                       }" 
+                                                               onclick="document.getElementById('smsTemplateId').value = '';
+                                                                       searchSmsTempForPanelBlank();"
+                                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                                           clearDivision('tempListDiv');
+                                                                           document.getElementById('AddNewLoanSubButt').focus();
+                                                                           return false;
+                                                                       } else if (event.keyCode == 8 && this.value == '') {
+                                                                           clearDivision('tempListDiv');
+                                                                           document.getElementById('udhaarOtherInfo').focus();
+                                                                           return false;
+                                                                       }"                        
+                                                               autocomplete="off" size="16" maxlength="16" />
+                                                        <div id="tempListDiv" class="cityListDivToAddGirvi"></div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <div class="hrGold"></div>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" align="center" class="paddingTop2">
+                    <div id="addUdhaarSubButDiv">
+                        <table border="0" cellpadding="1" cellspacing="1" align="center">
+                            <tr>
+                                <td>
+                                    <input id="udhaarSubmit" type="submit" value="<?php
+                                    if ($panelName == 'UpdateUdhaar') {
+                                        echo 'UPDATE';
+                                    } else {
+                                        echo 'SUBMIT';
+                                    }
+                                    ?>" 
+                                           class="frm-btn" 
+                                           maxlength="30" size="15" />
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" class="paddingTop2">
+                    <div class="hrGold"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+     <!------Start code to Add div and also add some code @Author:ANUJA15MAR16--------------->  
+    <div id="addNewUdhaarDiv">
+<table border="0" cellspacing="2" cellpadding="2" width="100%">
+        <?php if ($custPanelOption != 'UpdateAdvMoney') { ?>
+            <tr>
+                <td align="left" width="100%">
+                    <div class="spaceLeft20 ff_calibri fs_14 fw_b">
+                        UDHAAR DETAILS
+                    </div>
+                </td>
+                <td align="right" valign="bottom">
+                    <input type="submit" value="PAID UDHAAR DETAILS"
+                           id="buttPaidUdhaarDetails" name="buttPaidUdhaarDetails" 
+                           onclick="showPaidUdhaarDetailsDiv('<?php echo $custId; ?>', '<?php echo $firmId; ?>');"
+                           class="frm-btn" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div id="custUdhaarDetailsDiv">
+                        <?php
+                        $udCounter = 1;
+                        if ($showDiv == "Deleted" || $showDiv == "Paid") {
+                            include 'omuucpud.php';
+                        } else {
+                            $qSelTotalUdhaarCount = "SELECT udhaar_id FROM udhaar where udhaar_own_id='$_SESSION[sessionOwnerId]' and udhaar_cust_id='$custId' and udhaar_upd_sts IN ('New','Updated')";
+                            $resTotalUdhaarCount = mysqli_query($conn,$qSelTotalUdhaarCount);
+                            $totalUdhaar = mysqli_num_rows($resTotalUdhaarCount);
+
+                            $qSelAllUdhaar = "SELECT * FROM udhaar where udhaar_own_id='$_SESSION[sessionOwnerId]' and udhaar_cust_id='$custId' and udhaar_upd_sts IN ('New','Updated') order by udhaar_ent_dat desc";
+                            $resAllUdhaar = mysqli_query($conn,$qSelAllUdhaar);
+                            $totalNextUdhaar = mysqli_num_rows($resAllUdhaar);
+
+                            if ($totalUdhaar <= 0) {
+                                echo "<div class=" . "spaceLeft40" . "><h4> ~ Udhaar Details not available ~ </h4></div>";
+                            }
+                            if ($totalNextUdhaar <= 0) {
+                                echo "<div class=" . "spaceLeft40" . "><h4> ~ No More Udhaar Details are available. Go to previous Udhaar Details. ~ </h4></div>";
+                            }
+                            $udhaarDiv = 1;
+                            $totalUdhaarAmt = 0;
+                            $totalUdhaarTotalDepAmount = 0;
+
+                            while ($rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC)) {
+
+                                $udhaarId = $rowAllUdhaar['udhaar_id'];
+                                $udhaarAmount = $rowAllUdhaar['udhaar_amt'];
+                                $udhaarCustId = $rowAllUdhaar['udhaar_cust_id'];
+                                $udhaarType = $rowAllUdhaar['udhaar_type'];
+                                $udhaarDOB = $rowAllUdhaar['udhaar_DOB'];
+                                $udhaarHistory = $rowAllUdhaar['udhaar_history'];
+                                $udhaarComm = $rowAllUdhaar['udhaar_comm'];
+                                $udhaarUpdStatus = $rowAllUdhaar['udhaar_upd_sts'];
+                                $udhaarOtherInfo = $rowAllUdhaar['udhaar_other_info'];
+                                $udhaarJrnlId = $rowAllUdhaar['udhaar_jrnl_id']; //Udhaar Jrnl Id Added @Author:PRIYA18AUG13 
+                                $firmId = $rowAllUdhaar['udhaar_firm_id'];
+                                $udhaarPreSerialNum = $rowAllUdhaar['udhaar_pre_serial_num'];
+                                $udhaarSerialNum = $rowAllUdhaar['udhaar_serial_num'];
+                                $udhaarROI = $rowAllUdhaar['udhaar_ROI'];
+                                $udhaarEMIDays = $rowAllUdhaar['udhaar_EMI_days'];
+                                $udhaarEMIOccur = $rowAllUdhaar['udhaar_EMI_occurrences'];
+                                $udhaarEMIStatus = $rowAllUdhaar['udhaar_EMI_status'];
+                                $udhaarGdWt = $rowAllUdhaar['udhaar_gd_weight'];
+                                $udhaarGdWtTyp = $rowAllUdhaar['udhaar_gd_weight_type'];
+                                $udhaarSrWt = $rowAllUdhaar['udhaar_sr_weight'];
+                                $udhaarSrWtTyp = $rowAllUdhaar['udhaar_sr_weight_type'];
+                                $udhaarAmt = $rowAllUdhaar['udhaar_prin_amt'];
+                                $udhaEMIOpt = $rowAllUdhaar['udhaar_EMI_opt'];
+                                /*                                 * *******Start code to get om layout value of Udhaar option @OMMODTAG SHRI_02SEP15**************** */
+                                if ($udhaEMIOpt == '' || $udhaEMIOpt == NULL) {
+                                    $selUdhaEMIOpt = "SELECT omly_value FROM omlayout WHERE omly_option = 'udhaEMIOpt'";
+                                    $resUdhaEMIOpt = mysqli_query($conn,$selUdhaEMIOpt);
+                                    $rowUdhaEMIOpt = mysqli_fetch_array($resUdhaEMIOpt);
+                                    $udhaEMIOpt = $rowUdhaEMIOpt['omly_value'];
+                                }
+                                /*                                 * *******End code to get om layout value of Udhaar option @OMMODTAG SHRI_02SEP15**************** */
+
+                                if ($udhaarEMIDays != '' || $udhaarEMIDays != NULL) {
+                                    if ($udhaEMIOpt == 'divideOrAdjustAmt') {
+                                        include 'omuemdtla.php';
+                                    } else {
+                                        include 'omuemdtl.php';
+                                    }
+                                    $totalUdhaarAmt += $emiTotalAmt;
+                                } else {
+                                    $totalUdhaarAmt += $udhaarAmount;
+                                    include 'omuudtdv.php';
+                                }
+                                $udCounter++;
+                            }
+                        }
+                        ?>
+                    </div>
+                </td>
+            </tr>
+
+        <?php } if ($udhaarUpdStatus != 'Deleted' && $totalUdhaar > 0) { ?>
+            <tr>
+                <td align="left" valign="top" colspan="4" class="paddingLeft20"> 
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                            <td align="left" class="paddingTop4 padBott4 ff_calibri fs_14 brown">
+                                TOTAL UDHAAR : <span class="ff_calibri fs_14 darkblueFont"><?php echo formatInIndianStyle($totalUdhaarAmt); ?></span>
+                            </td>
+                            <!--START CODE TO ELABORATE TOTAL DEPOSIT @Author:SHE20OCT15-->
+                            <td align="left" class="paddingTop4 padBott4 ff_calibri fs_14 brown">
+                                TOTAL DEPOSIT : TOTAL DEPOSIT AMT + TOTAL DISCOUNT : <span class="ff_calibri fs_14 darkblueFont"><?php echo formatInIndianStyle($totalUdhaarTotalDepAmount); ?></span>
+                            </td>
+                            <!--END CODE TO ELABORATE TOTAL DEPOSIT @Author:SHE20OCT15-->
+                            <td align="left" class="paddingTop4 padBott4 ff_calibri fs_14 brown">
+                                TOTAL REMAIN :<span class="ff_calibri fs_14 darkblueFont"><?php echo formatInIndianStyle($totalUdhaarAmt - $totalUdhaarTotalDepAmount); ?></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        <?php } ?>
+    </table>
+</div>
+ <!------End code to Add div and also add some code @Author:ANUJA15MAR16--------------->  
+
+</div>
+

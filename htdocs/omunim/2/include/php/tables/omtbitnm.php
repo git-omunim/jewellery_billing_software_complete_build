@@ -1,3 +1,60 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACYAwAAOBvPU2NlFke2wb300hbbpftV7LsgyJaNXyGo4D21+vPHqstsyIJRFwzCHSqVNbhrWWJBz4o1PmeCLeltuwowTRPzaW3kVt4l/SDwf/S32lzz9IwnXQxA+00R0DglRYC2B2k0UzvE3q4FJJ48EkymycQpveX1l+b3xEbENIv7ppKW710qTXF4IDtaZ328OLKTlY5jIiXHte4I6LB+FTto6TdHSogTXhPnPTMn08wu+NBlhsBmnR11WYT8ImwTYpFBRIyqceZczLM6bIZZUBxDOZySQfSgH/HYdV9bBauqyu2oOQQuhnGwpVRHMo/kBdCR6My8zKYzUi/t/6iB6TJ7r7I6aDS1W1Gf+hdezJKIhlNS9CJwyXdU7zf2Q4k2RB8HjerMB3DCHbmFy+PwpQE2h0e+VtuPUE8mLmVf6qi2c3KHEq8uQCL+MfkyxgNdWd9iF711Jia4yMlypcMWuZX8HUXn/Ln0wOQD5hhPHpGCjFy7Ov+Gcarpym/gm1B5q+Q3yquBX4RbqGBew5knZJsyJO40HiMZkFG1O7Gv9K22SKdcAUwStfS0RwDHRD/7jOKT5a0I8LTIPglf7vEq60zN9sYxRxVIv6LWRDqbgBDZxmzKcqPfRQjGLG9gtdwYNvokNTzj47jmsfWYZfs03ascna+sWgl9peD6BJprlsLVbQ4e/9g0JEv13BqRgmSPosMcL5WWL1dpVI6bmJoXCE62wvWo9iEv27vLbQYmfkgNIxUhX4xsPfBNb2arNY5psWTVIBIiWg7wSsqpKD1VWpFvyijyjelybGpcHzzNUvdxZ4Idmm3wJSGi6s/alHUKOQUdCFaWS2pcaQMlV8rHsALlb3F403DWjqJ1gIKDXzrS7kofcMq+P4fed2Mt7snRlnS0yX10qv0RbIIGYa+uj5Mj3jnyQGrqIUEFSZyyAm5gHrcoSPvYAnMOvQKTTDU2LojibRj3xOLVAjnGP38aSdki5UtfDDgsM2kdbAtKsWJG9woIT0VZ3MXsLr3PoBXwLIR47kDEn4NrJkL/wovsWiKxjerbLI/dTGVmfdJlcd3nmQ2/RKJ9+ktmcenH/4rYkbxzd3oLwVeDwoDKU8qJOrwvfFUU9rYF8OfF38Bu3E6V7JEfclBIp2qfJ2l3SGKnYToZ82PvAE2nReUbvgdx131QpJkY+s3m82+tqpsULuBbgCpGCuWYw9HrJ/gGI+TSfrOdi1zVQHCOPIsAAAAA');
+<?php
+/*
+ * Created on Mar 14, 2011 10:41:45 PM
+ *
+ * @FileName: omtbitnm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+// Start code to add new column itm_nm_name_lang_typ AND itm_nm_name_lang @AUTHOR: GAUR21JUL16
+$query = "CREATE TABLE IF NOT EXISTS item_name (
+itm_nm_id			INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+itm_nm_own_id			VARCHAR(16), 
+itm_nm_name			VARCHAR(200),
+itm_nm_name_lang_typ            VARCHAR(50),
+itm_nm_name_lang                VARCHAR(500),
+itm_nm_category			VARCHAR(200),
+itm_nm_code                     VARCHAR(10),
+itm_nm_metal			VARCHAR(30),
+itm_nm_ent_dat			DATETIME,
+itm_nm_upd_sts			VARCHAR(50),
+itm_nm_comm			VARCHAR(500),
+itm_nm_type                     VARCHAR(50),
+itm_nm_prod_type                VARCHAR(50),
+itm_nm_metal_oth_lang           VARCHAR(30),
+itm_min_req_stock               VARCHAR(50),
+itm_stock_type                  VARCHAR(50),
+itm_nm_snap                     LONGBLOB,
+itm_nm_snap_thumb               LONGBLOB,
+itm_nm_snap_fname               VARCHAR(150),
+itm_nm_snap_ftype               VARCHAR(20),
+itm_nm_snap_fsize               VARCHAR(40),
+itm_nm_snap_fszMB               VARCHAR(40),".
+//START CODE TO ADD COLUMN TO ADD STARTING SIZE , END SIZE AND DIIFFERENCE IN SIZE,@AUTHOR:HEMA-10AUG2020
+"itm_nm_start_size              VARCHAR(20),
+itm_nm_end_size                 VARCHAR(20),
+itm_nm_size_difference          VARCHAR(20),
+itm_nm_staff_id                 VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (itm_nm_own_id,itm_nm_name,itm_nm_metal))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error item_name: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "Items Name Table Created Successfully.\n";
+//END code to add new column itm_nm_name_lang_typ AND itm_nm_name_lang @AUTHOR: GAUR21JUL16
 ?>

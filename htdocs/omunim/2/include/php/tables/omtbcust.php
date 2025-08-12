@@ -1,3 +1,146 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on 01-Feb-2011 10:56:17 PM
+ *
+ * @FileName: omtbcust.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//require_once 'system/omssopin.php';
+//ALTER TABLE AS IN OMMPTBUPD @AUTHOR: SANDY16DEC13
+$query = "CREATE TABLE IF NOT EXISTS customer (
+cust_id 		INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cust_owner_id		VARCHAR(16),
+cust_firm_id		VARCHAR(16), 
+cust_type               VARCHAR(16),
+cust_pcust_id	        VARCHAR(10),
+cust_ucust_id	        INT,
+cust_acc_id             VARCHAR(10),                                                      
+cust_fname 		VARCHAR(32),
+cust_lname 		VARCHAR(32),
+cust_father_name 	VARCHAR(50),
+cust_mother_name 	VARCHAR(50),        
+cust_DOB		VARCHAR(50),
+cust_sex		VARCHAR(2),
+cust_qualification	VARCHAR(50),
+cust_add 		VARCHAR(100),
+cust_city 		VARCHAR(50),
+cust_pincode 		VARCHAR(6),
+cust_state 		VARCHAR(50),
+cust_country 		VARCHAR(50),
+cust_phone 		VARCHAR(16),
+cust_mobile		VARCHAR(16), 
+cust_email 		VARCHAR(100),
+cust_since 		DATETIME,
+cust_reference		VARCHAR(50),
+cust_priority 		VARCHAR(16),
+cust_status 		VARCHAR(16),
+cust_loyal_points	VARCHAR(16),
+cust_snap 		LONGBLOB,
+cust_snap_desc 		VARCHAR(200),
+cust_snap_thumb         LONGBLOB,
+cust_snap_fname		VARCHAR(150),
+cust_snap_ftype		VARCHAR(20),
+cust_snap_fsize		VARCHAR(40),
+cust_snap_fszMB		VARCHAR(40),
+cust_no_of_girvi        INT,
+cust_other_info		VARCHAR(100),
+cust_staff_login_id	VARCHAR(8),
+cust_interest		VARCHAR(20),
+cust_comm_upd_date      VARCHAR(100),
+cust_snap1 		LONGBLOB,
+cust_snap1_desc 	VARCHAR(200),
+cust_snap1_thumb        LONGBLOB,
+cust_snap1_fname	VARCHAR(150),
+cust_snap1_ftype	VARCHAR(20),
+cust_snap1_fsize	VARCHAR(40),
+cust_snap1_fszMB	VARCHAR(40),
+cust_snap2 		LONGBLOB,
+cust_snap2_desc 	VARCHAR(200),
+cust_snap2_thumb        LONGBLOB,
+cust_snap2_fname	VARCHAR(150),
+cust_snap2_ftype	VARCHAR(20),
+cust_snap2_fsize	VARCHAR(40),
+cust_snap2_fszMB	VARCHAR(40),
+cust_snap3 		LONGBLOB,
+cust_snap3_desc 	VARCHAR(200),
+cust_snap3_thumb        LONGBLOB,
+cust_snap3_fname	VARCHAR(150),
+cust_snap3_ftype	VARCHAR(20),
+cust_snap3_fsize	VARCHAR(40),
+cust_snap3_fszMB	VARCHAR(40),
+cust_snap4 		LONGBLOB,
+cust_snap4_desc 	VARCHAR(200),
+cust_snap4_thumb        LONGBLOB,
+cust_snap4_fname	VARCHAR(150),
+cust_snap4_ftype	VARCHAR(20),
+cust_snap4_fsize	VARCHAR(40),
+cust_snap4_fszMB	VARCHAR(40),
+cust_snap5 		LONGBLOB,
+cust_snap5_desc 	VARCHAR(200),
+cust_snap5_thumb        LONGBLOB,
+cust_snap5_fname	VARCHAR(150),
+cust_snap5_ftype	VARCHAR(20),
+cust_snap5_fsize	VARCHAR(40),
+cust_snap5_fszMB	VARCHAR(40),
+cust_snap6 		LONGBLOB,
+cust_snap6_desc 	VARCHAR(200),
+cust_snap6_thumb        LONGBLOB,
+cust_snap6_fname	VARCHAR(150),
+cust_snap6_ftype	VARCHAR(20),
+cust_snap6_fsize	VARCHAR(40),
+cust_snap6_fszMB	VARCHAR(40),
+cust_snap7 		LONGBLOB,
+cust_snap7_desc 	VARCHAR(200),
+cust_snap7_thumb        LONGBLOB,
+cust_snap7_fname	VARCHAR(150),
+cust_snap7_ftype	VARCHAR(20),
+cust_snap7_fsize	VARCHAR(40),
+cust_snap7_fszMB	VARCHAR(40),
+cust_snap8 		LONGBLOB,
+cust_snap8_desc 	VARCHAR(200),
+cust_snap8_thumb        LONGBLOB,
+cust_snap8_fname	VARCHAR(150),
+cust_snap8_ftype	VARCHAR(20),
+cust_snap8_fsize	VARCHAR(40),
+cust_snap8_fszMB	VARCHAR(40),
+cust_snap9 		LONGBLOB,
+cust_snap9_desc 	VARCHAR(200),
+cust_snap9_thumb        LONGBLOB,
+cust_snap9_fname	VARCHAR(150),
+cust_snap9_ftype	VARCHAR(20),
+cust_snap9_fsize	VARCHAR(40),
+cust_snap9_fszMB	VARCHAR(40),
+cust_snap10 		LONGBLOB,
+cust_snap10_desc 	VARCHAR(200),
+cust_snap10_thumb        LONGBLOB,
+cust_snap10_fname	VARCHAR(150),
+cust_snap10_ftype	VARCHAR(20),
+cust_snap10_fsize	VARCHAR(40),
+cust_snap10_fszMB	VARCHAR(40),
+cust_relation_circle	VARCHAR(500),
+cust_shop_name         	VARCHAR(200),
+last_column                VARCHAR(1),UNIQUE KEY (cust_ucust_id))AUTO_INCREMENT=10001"; //change in UNIQUE KEY TO remove cust_pcust_id @AUTHOR: SANDY16DEC13
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "Customer Table Created Successfully.\n";
 ?>

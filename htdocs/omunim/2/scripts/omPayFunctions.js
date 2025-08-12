@@ -11474,8 +11474,26 @@ function OpenBankOTPVerificationPopup(firmid, apiType) {
 ///FIRM CODE: AFTER OTP VERIFICATION SHOW OPTION FOR  OTP @AUTHOR:VINOD-05-06-2023
 /***************************************************************************************************************/
 function closeOTPPopUp() {
-    document.getElementById('myModal1').style.display = "none";
+    // Abort running AJAX request if still in progress
+    if (typeof activeRequest !== 'undefined' && activeRequest && activeRequest.readyState !== 4) {
+        activeRequest.abort();
+        console.log("Active AJAX request aborted.");
     }
+
+    // Hide the modal popup
+    var modal = document.getElementById('myModal1');
+    if (modal) {
+        modal.style.display = "none";
+        modal.innerHTML = ""; // Optional: clear content if needed
+    }
+
+    // Hide loading indicator
+    var loader = document.getElementById('main_ajax_loading_div');
+    if (loader) {
+        loader.style.visibility = "hidden";
+    }
+}
+
 
 /***************************************************************************************************************/
 /////FIRM CODE: AFTER OTP VERIFICATION CLOSE OPTION FOR OTP@AUTHOR:VINOD-05-06-2023

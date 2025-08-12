@@ -1,3 +1,368 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************************
+ * @tutorial:  Import Data From CSV File to Mysql Database @HEMA-11FEB2020
+ * **********************************************************************************************************************************
+ *
+ * Created on 3 JAN 2020
+ * 
+ * @FileName: omSchemeImport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+//
+$currentFileName = basename(__FILE__);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+?>
+<?php
+$kittyOwnId = $_SESSION['sessionOwnerId']; 
+
+/* START CODE TO GET FILE NAME AS KITTY NAME, @AUTHOR:HEMA-11FEB2020 */
+$fileName = $_FILES['CVSFile']['name'];
+$kittyScheme = basename($fileName, ".csv");
+
+/* START CODE TO CHECK KITTY IS AVAILABLE OR NOT, @AUTHOR:HEMA-11FEB2020*/
+
+$selkittySchemeDetailsQuery = "SELECT * From kitty WHERE kitty_scheme= '$kittyScheme' and kitty_upd_sts = 'Planned Scheme'";
+$reskittySchemeDetails = mysqli_query($conn, $selkittySchemeDetailsQuery);
+$numOfRows = mysqli_num_rows ($reskittySchemeDetails);
+$rowkittySchemeDetails = mysqli_fetch_assoc($reskittySchemeDetails);
+$selkittyFirmId = $rowkittySchemeDetails['kitty_firm_id'];
+
+/* IF KITTY IS AVAILABLE, @AUTHOR:HEMA-11FEB2020 */
+
+if($numOfRows >0){
+    
+/* START CODE TO GET FIRM ID, @AUTHOR:HEMA-11FEB2020 */
+if (isset($_GET['selFirmId'])) {
+    $kittyFirmId = $_GET['selFirmId'];
+} else if($_SESSION['setFirmSession'] != null){
+    //if not selected assign session firm
+    $kittyFirmId = $_SESSION['setFirmSession'];
+}else{
+   $kittyFirmId = $selkittyFirmId;
+}
+
+//
+$accName = 'Sundry Debtors';
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' "
+                       . "and acc_firm_id='$selFirmId' and acc_user_acc='$accName'"));
+$user_acc_id = $acc_id;
+//
+// Input Field Name
+$importFile = $_FILES['CVSFile']['tmp_name'];
+// 
+$readImportFile = fopen($importFile, "r");
+//
+//
+while (($user = fgetcsv($readImportFile, 10000, ",")) !== false) {
+    //
+    $user_owner_id = $sessionOwnerId;
+    $user_firm_id = $kitty_firm_id;
+    //
+    $user_type = $user[0];
+    $user_category = $user[1];
+    $user_pid = $user[2];
+    $user_uid = $user[3];
+    $user_fname = $user[4];
+    $user_sex = $user[5];
+    $user_city = $user[6];
+    $user_village = $user[7];
+    $user_tehsil = $user[8];
+    $user_country = $user[9];
+    $user_mobile = $user[10];
+    $user_password = md5($user_mobile);
+    $user_status = $user[11];
+    $DOB = $user[12];
+    // 
+    if ($DOB != '' && $DOB != NULL) {
+        $arr = explode('/', $DOB);
+        $DOBDate = $arr[0].'-'.$arr[1].'-'.$arr[2];
+        $user_DOB = date("d M Y", strtotime($DOBDate));
+    } else {
+        $user_DOB = NULL;
+    }
+    //
+    $marriageDate = $user[13];
+   //
+    if ($marriageDate != '' && $marriageDate != NULL) {
+        $arr2 = explode('/', $marriageDate);
+        $AnniDate = $arr2[0].'-'.$arr2[1].'-'.$arr2[2];
+        $user_marriage_any = date("d M Y", strtotime($AnniDate));
+    } else {
+        $user_marriage_any = NULL;
+    }
+    //
+    $user_email = $user[14];
+   //
+    $kitty_frequency = $user[15];
+    $kitty_period = $user[16];
+    $kittyDOB = $user[17];
+    //
+      if ($kittyDOB != '' && $kittyDOB != NULL) {
+            $arr = explode('/', $kittyDOB);
+            $kittyDOBDate = $arr[0].'-'.$arr[1].'-'.$arr[2];
+            $kittyDOB = date("d M Y", strtotime($kittyDOBDate));
+      }else{
+        $kittyDOB = strtoupper(date('d M Y'));  
+      }
+    //
+     $kitty_csv_reference_no = $user[18];
+     $kitty_token_num = $user[19];
+     $kitty_metal_type = $user[20];
+    //
+    /* START CODE TO CHECK CUSTOMER IS ADDED OR NOT, @AUTHOR:HEMA-11FEB2020 */
+    $selCustomerQuery = "SELECT * FROM user WHERE user_uid = '$user_uid'";
+    $resCustomerSel = mysqli_query($conn, $selCustomerQuery);
+    $rowCustomer = mysqli_fetch_assoc($resCustomerSel);
+    $customerId = $rowCustomer['user_id'];
+   
+    if($customerId == NULL || $customerId == ''){
+       
+        /* START CODE TO ADD CUSTOMER IF NOT ADDED, @AUTHOR:HEMA-11FEB2020 */
+     
+        $addCustomer = "INSERT INTO user (user_owner_id, user_firm_id, user_type, user_category, user_pid, user_uid,	
+	user_fname, user_sex, user_city, user_village,
+        user_tehsil, user_country, user_mobile, user_since, user_status, 
+        user_DOB, user_marriage_any, user_email, user_acc_id, user_login_id, user_password) 
+	VALUES ('$user_owner_id', '$kittyFirmId', '$user_type', '$user_category', '$user_pid', '$user_uid',
+	'$user_fname', '$user_sex', '$user_city', '$user_village',
+        '$user_tehsil', '$user_country', '$user_mobile', '$currentDateTime', '$user_status',
+        '$user_DOB', '$user_marriage_any', '$user_email', '$user_acc_id','$user_email','$user_password')";
+    //
+        if (!mysqli_query($conn, $addCustomer)) {
+        die('Error: ' . mysqli_error($conn));
+        }
+       
+        /* START CODE TO SELECT CUSTOMER ID FROM DATABASE, @AUTHOR:HEMA-11FEB2020 */
+        $selCustomerQuery = "SELECT * FROM user WHERE user_uid = '$user_uid'";
+        $resCustomerSel = mysqli_query($conn, $selCustomerQuery);
+        $rowCustomer = mysqli_fetch_assoc($resCustomerSel);
+        $customerId = $rowCustomer['user_id'];
+
+  
+    }if($customerId != NULL || $customerId != ''){
+        
+    /* START CODE  TO SELECT CUSTOMER  INFORMATION, @AUTHOR:HEMA-11FEB2020 */
+    $selCustDetailsQuery = "SELECT * From user WHERE user_id= '$customerId'";
+    $resCustDetails = mysqli_query($conn, $selCustDetailsQuery);
+    $rowCustDetails = mysqli_fetch_assoc($resCustDetails);
+    $kittyFname = $rowCustDetails['user_fname'];
+    $kittyLname = $rowCustDetails['user_lname'];
+    $kittyCustCity = $rowCustDetails['user_city'];
+    $kittyAdd = $rowCustDetails['user_add'];
+    $kittyFirmId = $rowCustDetails['user_firm_id'];
+    $kittyCustMobileNo = $rowCustDetails['user_mobile'];
+    $kittyCustAddress = $rowCustDetails['kitty_cust_address'];
+    $kittyCustId =  $rowCustDetails['user_id'];
+    
+    
+    
+    /* START CODE TO CHECK CUSTOMER IS ALREADY ADDED INTO THET KITTY OR NOT, @AUTHOR:HEMA-11FEB2020 */
+//    $selKittyCustIdQuery = "SELECT * From kitty WHERE kitty_uid= '$kittyScheme' and kitty_cust_id = '$kittyCustId'";
+//    $resKittyCustIdQuery= mysqli_query($conn, $selKittyCustIdQuery);
+//    $rowKittyCustIdQuery = mysqli_fetch_assoc($resKittyCustIdQuery);
+//    $checkKittyCustId = $rowKittyCustIdQuery['kitty_cust_id'];
+    
+    /* START CODE TO CHECK KITTY REFFERENCE NUMBER FROM CSV FILE, @AUTHOR:HEMA-11FEB2020 */
+    $flag = FALSE;
+    $selKittyCSVIdQuery = "SELECT kitty_csv_reference_no From kitty WHERE kitty_cust_id= '$kittyCustId'";
+    $resKittyCSVIdQuery= mysqli_query($conn, $selKittyCSVIdQuery);
+    $rowCountKittyCSVId = mysqli_num_rows($resKittyCSVIdQuery);
+    /* IF ONLY ONE RECORD FOUND */
+    if($rowCountKittyCSVId < 1){
+      $checkKittyCSVId = $rowKittyCSVIdQuery['kitty_csv_reference_no'];
+    }else{
+        /* MORE THEN ONE RECORD FOUND */
+          while ($rowKittyCSVIdQuery = mysqli_fetch_array($resKittyCSVIdQuery, MYSQLI_ASSOC)) {
+            $kittyCSVId = $rowKittyCSVIdQuery['kitty_csv_reference_no'];
+          $kittyCSVIdArray = $kittyCSVIdArray.$kittyCSVId.'#';
+          }
+         
+        
+            $kittyCSVIdVal = explode("#",$kittyCSVIdArray);
+            for($j=0; $j<count($kittyCSVIdVal); $j++){
+                 if($kitty_csv_reference_no == $kittyCSVIdVal[$j]){
+                     $flag = TRUE;
+                 }
+            }
+    }
+    
+    /* START CODE TO ADD KITTY IF CUSTOMER IS NOT ADDED INTO THAT KITTY, @AUTHOR:HEMA-11FEB2020 */
+    //if($checkKittyCSVId == null || $checkKittyCSVId == ''){
+    if((($kitty_csv_reference_no != $checkKittyCSVId) || $checkKittyCSVId == null || $checkKittyCSVId == '') && $flag != TRUE){
+    $kittyGroup = $rowkittySchemeDetails['kitty_group'];
+    $kittyEMIAmt =  $rowkittySchemeDetails['kitty_EMI_amt'];
+    $kittyEMITotAmt = $kittyEMIAmt * $rowkittySchemeDetails['kitty_EMI_occurrences'];
+    $kittyBonusAmt = $rowkittySchemeDetails['kitty_bonus_amt'];
+    $kittyMainPrinAmt = $kittyEMITotAmt + $kittyBonusAmt ;
+    $kittyPrinAmt = $kittyMainPrinAmt;
+    $kittyEMIOccurrences = $rowkittySchemeDetails['kitty_EMI_occurrences'];
+ 
+    /* START CODE TO SELECT KITTY SERIAL NUM, @AUTHOR:HEMA-11FEB2020 */
+    
+    $selkittySchemeSerialNumQuery = "SELECT * From kitty WHERE kitty_scheme= '$kittyScheme' and kitty_EMI_amt= '$kittyEMIAmt' ORDER BY kitty_serial_num DESC";
+    $reskittySchemeSerialNum= mysqli_query($conn, $selkittySchemeSerialNumQuery);
+    $rowkittySchemeSerialNum = mysqli_fetch_assoc($reskittySchemeSerialNum);
+    $kittySerialNum = $rowkittySchemeSerialNum['kitty_serial_num'] + 1;
+    $kittyBarcode = $kittyScheme . '00A' . $kittyPreSerialNo . $kittySerialNum;
+//    if($kittyDOB == null || $kittyDOB == ''){
+//    $kittyDOB = strtoupper(date('d M Y'));
+//    }
+    $kittyMetalType = $kitty_metal_type;
+    if($kittyMetalType == null){
+    $kittyMetalType = 'CASH';
+    }else{
+        $kittyMetalType = $kitty_metal_type;
+    }
+    $kittyUpdSts = 'New';
+    $kittyFinalSts = 'pending';
+    if($kitty_frequency == NULL || $kitty_frequency == ' '){
+         $kittyEMIDays = 1;
+    }else{
+        $kittyEMIDays = $kitty_frequency;
+    }
+    $kittyTokenNum= $kitty_token_num;
+    if($kitty_period == null || $kitty_period == ' ' ){
+    $kittySchemePrdTyp = 'MONTH';
+    }else{
+        $kittySchemePrdTyp = $kitty_period;
+    }
+   
+       /* CODE TO CALCULATE END DATE, @AUTHOR:HEMA-11FEB2020 */
+
+for ($emiNo = 1; $emiNo <= $kittyEMIDays; $emiNo++) {
+    if ($emiNo == 1) {
+        if ($kittySchemePrdTyp == 'DAY') {
+            $kittyStartDate = $kittyDOB;
+            $endDate = strtotime("+" . $kittyEMIOccurrences . " days", strtotime($kittyStartDate));
+            $dueDate = om_strtoupper(date("d M Y", $endDate));
+        } else {
+            $kittyStartDate = $kittyDOB;
+            $kittyEndDOB = strtotime("+" . $kittyEMIOccurrences . " months", strtotime($kittyDOB));
+            $dueDate = strtoupper(date("d M Y", $kittyEndDOB));
+        }
+    } else {
+        if ($kittySchemePrdTyp == 'DAY') {
+            $kittyStartDate = $kittyDOB;
+            $kittyEndDOB = strtotime("+" . $kittyEMIOccurrences . " days", strtotime($kittyDOB));
+            $dueDate = strtoupper(date("d M Y", $kittyEndDOB));
+        } else {
+            $kittyStartDate = $kittyDOB;
+            $kittyEndDOB = strtotime("+" . $kittyEMIOccurrences . " months", strtotime($kittyDOB));
+            $dueDate = strtoupper(date("d M Y", $kittyEndDOB));
+        }
+    }
+}
+
+   
+     $insertKittyQuery =  "INSERT INTO kitty (
+		  kitty_cust_id, kitty_own_id, kitty_firm_id, kitty_cust_fname, kitty_cust_lname, kitty_cust_mobile_no, 
+                  kitty_cust_city, kitty_cust_Address, kitty_main_prin_amt, kitty_prin_amt,
+		  kitty_DOB, kitty_scheme, kitty_EMI_days, kitty_EMI_occurrences, kitty_scheme_prd_typ,
+                  kitty_group, kitty_pre_serial_num, kitty_serial_num, kitty_token_num, kitty_barcode, kitty_staff_id,
+		  kitty_dr_acc_id, kitty_cr_acc_id, kitty_pay_other_info, kitty_other_info, kitty_upd_sts,
+                  kitty_comm, kitty_EMI_amt, kitty_EMI_tot_amt, kitty_bonus_amt, kitty_gift_item, kitty_end_DOB, 
+                  kitty_metal_type, kitty_final_sts, kitty_frequency, kitty_period, kitty_csv_reference_no) 
+		  VALUES ('$kittyCustId', '$kittyOwnId', '$kittyFirmId', '$kittyFname', '$kittyLname', '$kittyCustMobileNo',"
+                    . "'$kittyCustCity', '$kittyCustAddress', '$kittyMainPrinAmt', '$kittyPrinAmt', "
+                    . "'$kittyDOB', '$kittyScheme', '$kittyEMIDays', '$kittyEMIOccurrences', '$kittySchemePrdTyp', "
+                    . "'$kittyGroup', '$kittyPreSerialNo', '$kittySerialNum', '$kittyTokenNum', '$kittyBarcode', '$kittyStaffId', "
+                    . "'$kittyDrAccId', '$kittyCrAccId', '$kittyPayOtherInfo', '$kittyOtherInfo', 'New', "
+                    . "'', '$kittyEMIAmt', '$kittyEMITotAmt', '$kittyBonusAmt', '$kittyGiftItem', '$dueDate', "
+                    . "'$kittyMetalType', 'pending', '$kitty_frequency', '$kitty_period', '$kitty_csv_reference_no')";
+//echo '$insertKittyQuery = '.$insertKittyQuery.'</br>';
+  
+    if (!mysqli_query($conn, $insertKittyQuery)) {
+    die('Error: ' . mysqli_error($conn));
+    }
+    
+            $queryKitty= "SELECT kitty_id FROM kitty where kitty_own_id='$kittyOwnId' order by kitty_id desc LIMIT 0,1";
+            $resKitty = mysqli_query($conn, $queryKitty);
+            $rowKitty = mysqli_fetch_assoc($resKitty);
+            $kittyId = $rowKitty['kitty_id'];
+            $kittyEMISatus = 'Due';
+            $currentDateTime =  date("Y-m-d h:i:s", strtotime($kittyDOB));
+//            if ($kittyBonusAmt > 0) {
+                $kittyEMIOccurrences = ($kittyEMIOccurrences + 1);
+//            }
+
+            for ($emiNo = 1; $emiNo <= $kittyEMIOccurrences; $emiNo++) {
+                //
+                if ($emiNo == 1) {
+                    if ($kittySchemePrdTyp == 'DAY') {
+                        $kittyStartDate = $kittyDOB;
+                        $endDate = strtotime("+" . $kittyEMIDays . " days", strtotime($kittyStartDate));
+                        $dueDate = strtoupper(date("d M Y", $endDate));
+                    } else {
+                        $kittyStartDate = $kittyDOB;
+                        $endDate = strtotime("+" . $kittyEMIDays . " months", strtotime($kittyStartDate));
+                        $dueDate = strtoupper(date("d M Y", $endDate));
+                    }
+                }
+                //
+                if ($emiNo == $kittyEMIOccurrences) { // && $kittyBonusAmt > 0 STATUS = "BonusAmount" WHEN BONUS AMOUNT ENTERED @AUTHOR:SHRI30NOV19
+                    $kittyEMISatus = 'BonusAmount';
+                }
+                
+                //
+                $queryItem = "INSERT INTO kitty_money_deposit"
+                        . "(kitty_mondep_kitty_id, kitty_mondep_cust_id, kitty_mondep_own_id, kitty_mondep_firm_id, "
+                        . "kitty_mondep_prin_amt, kitty_mondep_date, kitty_mondep_ent_dat, "
+                        . "kitty_mondep_upd_sts, kitty_mondepd_dr_acc_id, kitty_mondepd_cr_acc_id, kitty_mondepd_dr_cash_acc_id, "
+                        . "kitty_mondepd_loan_acc_id,"
+                        . "kitty_mondep_EMI_no, kitty_mondep_EMI_start_DOB, kitty_mondep_EMI_end_DOB, kitty_mondep_EMI_status, "
+                        . "kitty_mondep_EMI_paid_date, kitty_mondep_EMI_total_amt, kitty_mondepd_staff_id, "
+                        . "kitty_mondepd_recipit_no, kitty_final_sts) VALUES "
+                        . "('$kittyId', '$kittyCustId', '$kittyOwnId', '$kittyFirmId', '$kittyEMIAmt', '$kittyDOB', "
+                        . "'$currentDateTime', '$kittyMonDepStatus', '$kittyPayAccId', '$kittyDrAccId', "
+                        . "'', '', "
+                        . "'$emiNo', '$kittyStartDate', '$dueDate', '$kittyEMISatus', '', '$kittyEMIAmt', '$kittyStaffId', "
+                        . "'$newKittyRecipitNo', 'pending')";
+                
+                //
+                if (!mysqli_query($conn, $queryItem)) {
+                    die('Error: ' . mysqli_error($conn));
+                }
+                //
+                if ($kittySchemePrdTyp == 'DAY') {
+                    $kittyStartDate = $dueDate;
+                    $endDate = strtotime("+" . $kittyEMIDays . " days", strtotime($kittyStartDate));
+                    $dueDate = strtoupper(date("d M Y", $endDate));
+                } else {
+                    $kittyStartDate = $dueDate;
+                    $endDate = strtotime("+" . $kittyEMIDays . " months", strtotime($kittyStartDate));
+                    $dueDate = strtoupper(date("d M Y", $endDate));
+                }
+            }
+    }
+    }
+    
+}
+}
+?>
+

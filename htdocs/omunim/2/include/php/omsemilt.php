@@ -1,3 +1,697 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Pending udhaar emi list
+ * **************************************************************************************
+ * 
+ * Created on Apr 20, 2015 3:37:27 PM
+ *
+ * @FileName: omsemilt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+?>
+<div id="udhharListDiv">
+    <?php
+    $selFirmId = NULL;
+    $sortKeyword = NULL;
+    $searchColumn = NULL;
+    $searchValue = NULL;
+    $searchKeyword = NULL;
+    $columName = NULL;
+    $searchColumnStr = NULL;
+    $condStr = "STR_TO_DATE(udhadepo_EMI_end_DOB,'%d %b %Y') <= CURDATE() and udhadepo_EMI_status IN ('Due')";
+    if (isset($_GET['searchKeyword'])) {
+        $searchKeyword = $_GET['searchKeyword'];
+    }
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if (isset($_GET['sortKeyword'])) {
+        $sortKeyword = $_GET['sortKeyword'];
+    }
+    if (isset($_GET['searchColumn'])) {
+        $searchColumn = $_GET['searchColumn'];
+    }
+    if (isset($_GET['searchValue'])) {
+        $searchValue = $_GET['searchValue'];
+    }
+    if ($panel == '' || $panel == NULL) {
+        $panel=$_GET['panel'];
+    }
+    $searchColumnName = $searchColumn;
+    $searchColumnValue = $searchValue;
+
+    $sortKeyword = stripslashes($sortKeyword);
+    $searchColumn = stripslashes($searchColumn);
+
+    $sortKeywordValue = $sortKeyword;
+    $sortKeywordValue = stripslashes($sortKeywordValue);
+    /*     * *****End Code To Add $sortKeywordValue @Author:PRIYA24AUG13********* */
+    /*     * *************Start Code To Update No Of Rows @Author:PRIYA16JUL13******************* */
+    $updateRows = $_GET['updateRows'];
+    if ($updateRows == 'updateRows') {
+        $rowsPerPage = $_GET['rowsPerPage'];
+        $ominValue = $rowsPerPage;
+        $ominOption = 'indigvpnrw';
+        include 'ommpindc.php';
+    }
+    $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indigvpnrw'";
+    $resGNoOfRows = mysqli_query($conn,$qSelGNoOfRows);
+    $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+    $rowsPerPage = $rowGNoOfRows['omin_value'];
+    if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+        $rowsPerPage = 15;
+    }
+    $checkNextRows = $rowsPerPage * 2;
+// by default we show first page
+    $pageNum = 1;
+    $gCounter = 0;
+// if $_GET['page'] defined, use it as page number
+    if (isset($_GET['page'])) {
+        $pageNum = $_GET['page'];
+        $gCounter = ($pageNum - 1) * $rowsPerPage;
+    }
+// counting the offset
+    $perOffset = ($pageNum - 1) * $rowsPerPage;
+    $isAtrate = strpos($searchColumn, '@');
+
+    if ($isAtrate == true) {
+        $searchColumn = explode("@", $searchColumn);
+        $searchColumn1 = $searchColumn[0];
+        $searchColumn2 = $searchColumn[1];
+        $searchColumn3 = $searchColumn[2];
+        //Start Code to Get Pre and Post Girvi Serial Number
+
+        if ($searchColumn1 == 'udhaar_cust_fname') {
+            $isSpace = strpos($searchValue, ' ');
+            if ($isSpace == true) {
+                $searchValue = explode(" ", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchColumnStr = " and $searchColumn1 LIKE '$searchValue1%' and $searchColumn2 LIKE '$searchValue2%' ";
+            } else {
+                $searchColumnStr = " and ($searchColumn1 LIKE '$searchValue%' or $searchColumn2 LIKE '$searchValue%') ";
+            }
+        }
+        if ($searchColumn1 == "DAY(STR_TO_DATE(udhadepo_EMI_start_DOB,'%d %M %y'))" || $searchColumn1 == "DAY(STR_TO_DATE(udhadepo_EMI_end_DOB,'%d %M %y'))") {
+            $isDot = strpos($searchValue, '.');
+            if ($isDot == true) {
+                $searchValue = explode(".", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchValue3 = $searchValue[2];
+                if ($searchValue3 == '') {
+                    $searchColumnStr = " and $searchColumn2='$searchValue1' and $searchColumn3 = '$searchValue2' ";
+                } else if ($searchValue1 != '' && $searchValue2 != '' && $searchValue3 != '') {
+                    $searchColumnStr = " and $searchColumn1='$searchValue1' and $searchColumn2='$searchValue2' and $searchColumn3 = '$searchValue3' ";
+                }
+            } else {
+                $searchColumnStr = " and $searchColumn3='$searchValue' ";
+            }
+        }
+    } else if ($searchColumn == 'udhadepo_EMI_status') {
+        if ($searchValue == "")
+            $searchColumnStr = " and $searchColumn IN ('Due','Paid') ";
+        else
+            $searchColumnStr = " and $searchColumn = '$searchValue' ";
+    } else {
+        if ($searchColumn != NULL)
+            $searchColumnStr = " and $searchColumn LIKE '$searchValue%' ";
+    }
+    if ($searchColumn == 'udhadepo_EMI_amt' || $searchColumn == 'udhadepo_EMI_int_amt' || $searchColumn == 'udhadepo_EMI_total_amt') {
+        $prinStartRange = stristr($searchValue, '-', TRUE);
+        $endRange = stristr($searchValue, '-');
+        $prinEndRange = substr($endRange, 1);
+        if ($prinStartRange != '' && $prinEndRange != '') {
+            $searchColumnStr = " and $searchColumn >= '$prinStartRange' and $searchColumn <= '$prinEndRange'";
+        } else {
+            $searchColumnStr = " and $searchColumn = '$searchValue' ";
+        }
+    }
+    $rowsPanel = $_GET['updateRows'];
+    if ($rowsPanel == 'UdhaarUpdateRowsEMIList') {
+        $rowsPerPage = $_GET['rowsPerPage'];
+        $ominValue = $rowsPerPage;
+        $ominOption = 'indiuemipnrw';
+        include 'ommpindc.php';
+    }
+    $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiuemipnrw'";
+    $resGNoOfRows = mysqli_query($conn,$qSelGNoOfRows);
+    $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+    $rowsPerPage = $rowGNoOfRows['omin_value'];
+    if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+        $rowsPerPage = 15;
+    }
+    $checkNextRows = $rowsPerPage * 2;
+    $pageNum = 1;
+    $gCounter = 0;
+// if $_GET['page'] defined, use it as page number
+    if (isset($_GET['page'])) {
+        $pageNum = $_GET['page'];
+        $gCounter = ($pageNum - 1) * $rowsPerPage;
+    }
+// counting the offset
+    $perOffset = ($pageNum - 1) * $rowsPerPage;
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId != NULL) {
+        $strFrmId = $selFirmId;
+    } else {
+        $resFirmCount = mysqli_query($conn,$qSelFirmCount);
+        $strFrmId = '0';
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    }
+    $timePeriod = $_GET['timePeriod'];
+
+    if ($timePeriod != '') {
+        $todayDate = date('d M Y');
+        $todayDat = strtotime("+" . $timePeriod . " days", strtotime($todayDate));
+        $dueDate = om_strtoupper(date("d M Y", $todayDat));
+
+        if ($sortKeyword != NULL) {
+            if ($sortKeyword == 'udhadepo_EMI_amt' || $sortKeyword == 'udhadepo_EMI_int_amt') {
+                $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by convert($sortKeyword, decimal) asc";
+                $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by convert($sortKeyword, decimal) asc LIMIT $perOffset, $rowsPerPage";
+            } else {
+                $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by $sortKeyword asc";
+                $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by $sortKeyword asc LIMIT $perOffset, $rowsPerPage";
+            }
+        } else if ($searchColumnStr != NULL) {
+            $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' $searchColumnStr and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc";
+            $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' $searchColumnStr and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_end_DOB = '$dueDate' and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+        } else {
+            $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and udhadepo_EMI_end_DOB = '$dueDate' and $condStr order by udhadepo_ent_dat asc";
+            $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and udhadepo_EMI_end_DOB = '$dueDate' and $condStr order by udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+        }
+    } else {
+        if ($sortKeyword != NULL) {
+            if ($sortKeyword == 'udhadepo_EMI_amt' || $sortKeyword == 'udhadepo_EMI_int_amt' || $sortKeyword == 'udhadepo_EMI_total_amt') {
+                $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by convert($sortKeyword, decimal) asc,udhadepo_ent_dat asc";
+                $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by convert($sortKeyword, decimal) asc,udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+            } else {
+                $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by $sortKeyword asc,udhadepo_ent_dat asc";
+                $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by $sortKeyword asc,udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+            }
+        } else if ($searchColumnStr != NULL) {
+            $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' $searchColumnStr and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc";
+            $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' $searchColumnStr and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+        } else {
+            $qSelTotalUdhaarDepCount = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc";
+            $qSelAllUdhaarDep = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_firm_id IN ($strFrmId) and udhadepo_EMI_status != 'NULL' and $condStr order by udhadepo_ent_dat asc LIMIT $perOffset, $rowsPerPage";
+        }
+    }
+//    echo $qSelAllUdhaarDep;
+    $resTotalUdhaarDepCount = mysqli_query($conn,$qSelTotalUdhaarDepCount);
+    $totalUdhaarDep = mysqli_num_rows($resTotalUdhaarDepCount);
+
+    $resAllUdhaarDep = mysqli_query($conn,$qSelAllUdhaarDep);
+    $totalNextUdhaarDep = mysqli_num_rows($resAllUdhaarDep);
+    $sortKeyword = addslashes($sortKeyword);
+    ?>
+    <div id="udhaarSubDetailsDiv">
+        <div id="girviPanelTrId"></div><!-----Add div for print function @OMMODTAG SHRI_12AUG15--->
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td valign="top">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td width="155px">
+                                <div class="spaceLeft10 ff_tnr fs_14 fw_b">
+                                    EMI LIST
+                                </div>
+                            </td>
+                            <td align="left" valign="middle">(
+                                <input id="advMoneyRows" name="advMoneyRows" type="text" value="<?php echo $rowsPerPage; ?>" title="Enter number of rows To See In List"
+                                       size="4" maxlength="4" class="inputFieldWithotBorder orange"
+                                       onkeyup="if (event.keyCode == 13 && document.getElementById('advMoneyRows').value != '') {
+                                                   showNumberOfRowsInUdhaar('<?php echo $documentRoot; ?>', document.getElementById('advMoneyRows').value, '1', 'UdhaarUpdateRowsEMIList', 'udhharListDiv', '<?php echo $timePeriod; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');
+                                               }"
+                                       onblur="if (document.getElementById('advMoneyRows').value != '') {
+                                                   showNumberOfRowsInUdhaar('<?php echo $documentRoot; ?>', document.getElementById('advMoneyRows').value, '1', 'UdhaarUpdateRowsEMIList', 'udhharListDiv', '<?php echo $timePeriod; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');
+                                               }"
+                                       onclick="this.placeholder = 'ROWS';
+                                               this.value = '';"
+                                       onkeypress="javascript:return valKeyPressedForNumber(event);"/>
+                                )
+                            </td>
+                            <td valign="middle" align="right"  class="noPrint">
+                                <div>
+                                    <h4>Enter No. of Days: </h4>
+                                </div>
+                            </td>
+                            <td width="70px" class="paddingLeft5">
+                                <input id="udEMIDuePeriod" type="text" class="inputBox14CalibriGreyMiddle" maxlength="5"
+                                       size="5" spellcheck="false" value="<?php echo $timePeriod; ?>"
+                                       onkeyup="if (event.keyCode == 13 && document.getElementById('udEMIDuePeriod').value != '') {
+                                                   searchUdhaarEMIByPeriod(this.value, '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');
+                                                   document.getElementById('udEMIDuePeriod').value = '';
+                                               }"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <?php
+            if ($totalNextUdhaarDep <= 0) {
+                ?>
+                <tr>
+                    <td valign="middle" align="center" class="ff_calibri fs_13 fw_b brown">
+                        <?php if ($searchColumn != NULL) { ?>NO RECORED FOUND<?php } else { ?> ~ LIST IS EMPTY ~ <?php } ?>
+                    </td>
+                </tr>
+                <?php if ($searchColumn != NULL) { ?>
+                    <tr>
+                        <td valign="middle" align="center" width="58px" height="50px" title="System Logs Panel">
+                            <a onclick="showAllUdhaarDetailsDiv('emiList');"
+                               style="cursor: pointer;">
+                                <div id="SystemLog">
+                                    <img src="<?php echo $documentRoot; ?>/images/back32.png" alt="Udhaar Deposit Panel" 
+                                         title="Udhaar Deposit Panel"/>
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            }
+            ?>
+            <tr>
+                <td colspan="3"><br />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <?php
+                        if ($totalUdhaarDep <= 0) {
+                            //  echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ List is empty. ~ </div></div>";
+                        } else {
+                            ?>
+                            <tr>
+                                <td align="left"  class="h7 border-right-bottom" width="80px"><!--Change in width @AUTHOR: SANDY29DEC13---->
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="left">
+                                                S.N.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="left" class="h7 border-right-bottom" width="120px">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="right">
+                                                <input id="udharAmt" type="text" name="udharAmt" placeholder="UDHAAR AMT"
+                                                       value="<?php
+                                                       if ($searchColumnName == 'udhadepo_EMI_amt')
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'UDHAAR AMT';
+                                                       ?>" 
+                                                       onclick="this.value = '';"
+                                                       onblur="javascript:if (document.getElementById('udharAmt').value != '<?php
+                                                       if ($searchColumnName == 'udhadepo_EMI_amt')
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'UDHAAR AMT';
+                                                       ?>') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhadepo_EMI_amt', document.getElementById('udharAmt').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   } else {
+                                                                       document.getElementById('udharAmt').value = '';
+                                                                   }"
+                                                       onkeypress="javascript:return valKeyPressedForNumNDotNDash(event);"         
+                                                       onkeyup="if (event.keyCode == 13 && document.getElementById('udharAmt').value != '') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhadepo_EMI_amt', document.getElementById('udharAmt').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   }"
+                                                       size="15" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right" />
+                                            </td>
+                                            <td align="right">
+                                                <a style="cursor: pointer;" title="Click To View Udhaar By Amount"
+                                                   onclick="sortPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhadepo_EMI_amt', '<?php echo $selFirmId; ?>', 'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');">
+                                                       <?php if ($sortKeyword == 'udhadepo_EMI_amt') { ?>
+                                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+
+                                <td align="left"  class="h7 border-right-bottom" width="132px">
+                                    <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">CUST NAME</div>
+    <!--                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                     <tr>
+                                         <td align="left">
+                                             <input id="name" type="text" name="name" placeholder="CUST NAME"
+                                                    value="<?php
+//                                                       if ($searchColumnName == 'udhaar_cust_fname@udhaar_cust_lname')
+//                                                           echo $searchColumnValue;
+//                                                       else
+//                                                           echo 'CUST NAME';
+                                    ?>"
+                                                    onclick="this.value = '';"
+                                                    onblur="javascript:if (document.getElementById('name').value != '') {
+                                                                searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_fname@udhaar_cust_lname', document.getElementById('name').value, '<?php echo $selFirmId; ?>',
+                                                                        'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                            } else {
+                                                                document.getElementById('name').value = '<?php
+//                                                       if ($searchColumnName == 'udhaar_cust_fname@udhaar_cust_lname')
+//                                                           echo $searchColumnValue;
+//                                                       else
+//                                                           echo 'CUST NAME';
+                                    ?>';
+                                                            }"
+                                                    onkeyup="if (event.keyCode == 13 && document.getElementById('name').value != '') {
+                                                                searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_fname@udhaar_cust_lname', document.getElementById('name').value, '<?php echo $selFirmId; ?>',
+                                                                        'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                            }"
+                                                    size="10" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                         </td>
+                                         <td align="right">
+                                             <a style="cursor: pointer;" title="Click To View Udhaar By Customer Name"
+                                                onclick="sortPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_fname', '<?php echo $selFirmId; ?>', 'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');">
+                                    <?php if ($sortKeyword == 'udhaar_cust_fname') { ?>
+                                                                                                                                                                 <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                             </a>
+                                         </td>
+                                     </tr>
+                                 </table>-->
+                                </td>
+                                <td align="center"  class="border-right-bottom" width="80px">
+                                    <div class="lgn-txtfield-without-borderAndBackground13-Arial">MOB NO</div>
+                                </td>
+                                <td align="left"  class="h7 border-right-bottom" width="110px">
+                                    <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">CITY</div>
+    <!--                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                      <tr>
+                                          <td align="left">
+                                              <input id="city" type="text" name="city" placeholder="CITY"
+                                                     value="<?php
+//                                                       if ($searchColumnName == 'udhaar_cust_city')
+//                                                           echo $searchColumnValue;
+//                                                       else
+//                                                           echo 'CITY';
+                                    ?>" 
+                                                     onclick="this.value = '';"
+                                                     onblur="javascript:if (document.getElementById('city').value != '') {
+                                                                 searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_city', document.getElementById('city').value, '<?php echo $selFirmId; ?>',
+                                                                         'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                             } else {
+                                                                 document.getElementById('city').value = '<?php
+//                                                       if ($searchColumnName == 'udhaar_cust_city')
+//                                                           echo $searchColumnValue;
+//                                                       else
+//                                                           echo 'CITY';
+                                    ?>';
+                                                             }"
+                                                     onkeyup="if (event.keyCode == 13 && document.getElementById('city').value != '') {
+                                                                 searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_city', document.getElementById('city').value, '<?php echo $selFirmId; ?>',
+                                                                         'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                             }"
+                                                     size="6" maxlength="30"class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                          </td>
+                                          <td align="right">
+                                              <a style="cursor: pointer;" title="Click To View Girvi By Customer City"
+                                                 onclick="sortPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'udhaar_cust_city', '<?php echo $selFirmId; ?>', 'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');">
+                                    <?php if ($sortKeyword == 'udhaar_cust_city') { ?>
+                                                                                                                                                                  <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                              </a>
+                                          </td>
+                                      </tr>
+                                  </table>-->
+                                </td>
+                                <td align="right"  class="h7 border-right-bottom" width="91px">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="right" title="DD.MM.YY">
+                                                <input id="sDate" type="text" name="sDate" placeholder="DD.MM.YY"
+                                                       value="<?php
+                                                       if ($searchColumnName == "DAY(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %Y\'),\'%y\')")
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'S. DATE';
+                                                       ?>" 
+                                                       onclick="this.value = '';"
+                                                       onblur="javascript:if (document.getElementById('sDate').value != '') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('sDate').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   } else {
+                                                                       document.getElementById('sDate').value = '<?php
+                                                       if ($searchColumnName == "DAY(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %Y\'),\'%y\')")
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'S. DATE';
+                                                       ?>';
+                                                                   }"
+                                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                        
+                                                       onkeyup="if (event.keyCode == 13 && document.getElementById('sDate').value != '') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('sDate').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   }"
+                                                       size="4" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                                            </td>
+                                            <td align="right">
+                                                <a style="cursor: pointer;" title="Click To View Udhaar By Udhaar Date"
+                                                   onclick="sortPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'STR_TO_DATE(udhadepo_EMI_start_DOB,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', 'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');">
+                                                       <?php if ($sortKeywordValue == "STR_TO_DATE(udhadepo_EMI_start_DOB,'%d %M %Y')") { ?>
+                                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="right"  class="h7 border-right-bottom" width="80px">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="right" title="DD.MM.YY">
+                                                <input id="dueDate" type="text" name="dueDate" placeholder="DD.MM.YY"
+                                                       value="<?php
+                                                       if ($searchColumnName == "DAY(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %Y\'),\'%y\')")
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'DUE DATE';
+                                                       ?>" 
+                                                       onclick="this.value = '';"
+                                                       onblur="javascript:if (document.getElementById('dueDate').value != '') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('dueDate').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   } else {
+                                                                       document.getElementById('dueDate').value = '<?php
+                                                       if ($searchColumnName == "DAY(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %Y\'),\'%y\')")
+                                                           echo $searchColumnValue;
+                                                       else
+                                                           echo 'DUE DATE';
+                                                       ?>';
+                                                                   }"
+                                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                        
+                                                       onkeyup="if (event.keyCode == 13 && document.getElementById('dueDate').value != '') {
+                                                                       searchPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('dueDate').value, '<?php echo $selFirmId; ?>',
+                                                                               'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');
+                                                                   }"
+                                                       size="6" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                                            </td>
+                                            <td align="right">
+                                                <a style="cursor: pointer;" title="Click To View Udhaar By Udhaar Date"
+                                                   onclick="sortPendingUdhaarEMIList('<?php echo $documentRoot; ?>', 'STR_TO_DATE(udhadepo_EMI_end_DOB,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', 'udhharListDiv', 'UdhaarEMIList', '<?php echo $timePeriod; ?>');">
+                                                       <?php if ($sortKeywordValue == "STR_TO_DATE(udhadepo_EMI_end_DOB,'%d %M %Y')") { ?>
+                                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="right" class="h7 border-right-bottom" width="50px">
+                                    <div class="h7 spaceRight5">STATUS</div>
+                                </td>
+                                <td align="right"  width="70px" class="h7 border-bottom">
+                                    <div class="h7 spaceRight5">TYPE</div>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        while ($rowAllUdhaarDep = mysqli_fetch_array($resAllUdhaarDep, MYSQLI_ASSOC)) {
+
+                            $udhaarDepId = $rowAllUdhaarDep['udhadepo_id'];
+                            $udhaarId = $rowAllUdhaarDep['udhadepo_udhaar_id'];
+                            $custId = $rowAllUdhaarDep['udhadepo_cust_id'];
+                            $udhaarDepAmt = $rowAllUdhaarDep['udhadepo_amt'];
+                            $uDepDOB = $rowAllUdhaarDep['udhadepo_DOB'];
+                            $uDepJrnlId = $rowAllUdhaarDep['udhadepo_jrnl_id'];
+                            $emiStartDate = $rowAllUdhaarDep['udhadepo_EMI_start_DOB'];
+                            $dueDate = $rowAllUdhaarDep['udhadepo_EMI_end_DOB'];
+                            $totalEMIAmt = $rowAllUdhaarDep['udhadepo_EMI_total_amt'];
+                            $udEMIAmt = $rowAllUdhaarDep['udhadepo_EMI_amt'];
+                            $intAmt = $rowAllUdhaarDep['udhadepo_EMI_int_amt'];
+                            $emiStatus = $rowAllUdhaarDep['udhadepo_EMI_status'];
+
+                            $qSelAllUdhaar = "SELECT udhaar_cust_fname,udhaar_cust_lname,udhaar_cust_city,udhaar_type FROM udhaar where udhaar_id='$udhaarId'";
+                            $resAllUdhaar = mysqli_query($conn,$qSelAllUdhaar);
+                            $rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC);
+
+                            $uCustName = $rowAllUdhaar['udhaar_cust_fname'] . ' ' . $rowAllUdhaarDep['udhaar_cust_lname'];
+                            $uCustCity = $rowAllUdhaar['udhaar_cust_city'];
+                            $udhaarType = $rowAllUdhaar['udhaar_type'];
+                            ?>
+                            <tr>
+                                <td align="left" class="border-color-grey-rb" width="80px">
+                                    <input type="submit" name="sNo" id="sNo" value="<?php echo $gCounter + 1; ?>" 
+                                           onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $custId; ?>', '<?php echo $firmId; ?>');"
+                                           class="frm-btn-lnk-arial-Normal" readonly="true" title="Click Here To Select Udhaar Details!" /> 
+                                    <input type="hidden" name="udhaarId<?php echo $gCounter; ?>" id="udhaarId<?php echo $gCounter; ?>" value="<?php echo $udhaarId; ?>"/>
+                                </td>
+                                <td align="right" class="border-color-grey-rb" width="120px">
+                                    <div class="h5-no-pad spaceRight5"><?php echo formatInIndianStyle($udEMIAmt); ?></div>
+                                </td>
+
+                                <td align="left" class="border-color-grey-rb" title="<?php echo $fatherName; ?>" width="132px">
+                                    <div class="h5 spaceLeft5"><?php echo substr($uCustName, 0, 20); ?></div>
+                                </td>
+                                <td align="center"  class="border-color-grey-rb" width="80px">
+                                    <div class="h5">
+                                        <?php
+                                        if ($custMobNo != '' || $custMobNo != NULL)
+                                            echo $custMobNo;
+                                        else
+                                            echo '-';
+                                        ?>
+                                    </div>
+                                </td>
+                                <td align="left" class="border-color-grey-rb" title="<?php echo $uCustCity; ?>" width="110px">
+                                    <div class="h5 spaceLeft5"><?php echo substr($uCustCity, 0, 10); ?></div>
+                                </td>
+                                <td align="right" class="border-color-grey-rb" width="91px">
+                                    <div class="h5 spaceRight5"><?php echo om_strtoupper(date('d  M  y', strtotime($emiStartDate))); ?></div>
+                                </td>
+                                <td align="right" class="border-color-grey-rb" width="91px">
+                                    <div class="h5 spaceRight5"><?php echo om_strtoupper(date('d  M  y', strtotime($dueDate))); ?></div>
+                                </td>
+                                <td align="right" class="border-color-grey-rb" width="50px">
+                                    <div class="h5 spaceRight5" style="color: red"><?php echo 'Pending'; ?></div>
+                                </td>
+                                <td align="right" class="border-color-grey-b" width="50px">
+                                    <div class="h5 spaceRight5"><?php echo $udhaarType; ?></div>
+                                </td>
+                            </tr>
+                            <?php
+                            $gCounter++;
+                        }
+                        ?>
+                    </table>
+                    <div id="ajaxLoadNextAllDepUdhaarPanelList" style="visibility: hidden" align="right">
+                        <?php include 'omzaajld.php'; ?>
+                    </div>
+                    <?php
+                    if ($totalUdhaarDep > 0) {
+                        $noOfPagesAsLink = ceil($totalUdhaarDep / $rowsPerPage);
+                        if ($pageNum > $noOfPagesAsLink || $pageNum < 0) {
+                            echo "<h1> ~ This Page is not available. ~ </h1>";
+                        } else {
+                            ?>
+                            <table cellpadding="2" cellspacing="2" border="0" align="right">
+                                <tr>
+                                    <td align="right">
+                                        <?php if (($pageNum - 1) != '0') { ?>
+                                            <input type="submit" id="prvPageButt" name="prvPageButt" value="PREV" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarEMIPanel('<?php echo $pageNum - 1; ?>', 'UdhaarEMIList', '<?php echo $timePeriod; ?>', '<?php echo $rowsPerPage; ?>',
+                                                                               '<?php echo $noOfPagesAsLink; ?>', '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');" />
+                                               <?php } ?>
+                                    </td>
+                                    <?php
+                                    if ($pageNum == 1 || $pageNum < 10) {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            if (($noOfPagesAsLink >= $i) && ($noOfPagesAsLink != 1)) {
+                                                ?>
+                                                <td align="right">
+                                                    <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" <?php if (($i == 1) && ($pageNum == 1)) { ?>class="currentPageNoButton" <?php } else { ?>class="pageNoButton" <?php } ?>
+                                                           value="<?php echo $i ?>"
+                                                           onclick="javascript:pagingInUdhaarEMIPanel(this.value, 'UdhaarEMIList', '<?php echo $timePeriod; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>',
+                                                                                               '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');"/>
+                                                </td>
+                                                <?php
+                                            }
+                                        }
+                                    } else {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            ?>
+                                            <td align="right">
+                                                <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" class="pageNoButton" 
+                                                       onclick="javascript:pagingInUdhaarEMIPanel(this.value, 'UdhaarEMIList', '<?php echo $timePeriod; ?>', '<?php echo $rowsPerPage; ?>',
+                                                                                       '<?php echo $noOfPagesAsLink; ?>', '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');"/>
+                                            </td>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                    <td align="right">
+                                        <?php if (($pageNum + 1) <= $noOfPagesAsLink) { ?>
+                                            <input type="submit" id="nextPageButt" name="nextPageButt" value="NEXT" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarEMIPanel('<?php echo $pageNum + 1; ?>', 'UdhaarEMIList', '<?php echo $timePeriod; ?>',
+                                                                               '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');"
+                                                   />
+                                               <?php } ?>
+                                    </td>
+
+                                    <?php if ($noOfPagesAsLink > 1) { ?>
+                                        <td align="right" class="paddingLeft15">
+                                            <input type="text" id="enterPageNo" name="enterPageNo" placeholder="PAGENO" class="pageNoButton" size="5"
+                                                   onblur="if (this.value !== '') {
+                                                                           javascript:pagingInUdhaarEMIPanel(this.value, 'UdhaarEMIList', '<?php echo $timePeriod; ?>', '<?php echo $rowsPerPage; ?>',
+                                                                                   '<?php echo $noOfPagesAsLink; ?>', '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');
+                                                                       }"
+                                                   onkeypress="if (event.keyCode == '13') {
+                                                                           if (this.value !== '') {
+                                                                               javascript:pagingInUdhaarEMIPanel(this.value, 'UdhaarEMIList', '<?php echo $timePeriod; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>',
+                                                                                       '<?php echo $panel; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>');
+                                                                           }
+                                                                       }"
+                                                   onclick="this.value = '';"/>
+                                        </td>
+                                    <?php } ?>
+                                </tr>
+                            </table>
+                            <?php
+                        }
+                    }
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,3 +1,205 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 27, 2020 11:57:06 AM
+ *
+ * @FileName: omTransSubDiv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:SHRI
+ *  REASON:
+ *
+ */
 ?>
+<table border="0" cellspacing="1" cellpadding="1" width="100%">
+    <tr>
+        <td align="left" width="23%" class="textBoxCurve1px backFFFFFF" style="border:0">
+            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;">
+                <?php
+                $prevFieldId = 'transFromMainAcc';
+                $nextFieldId = 'transAmtDr1';
+                $allAccountDivId = 'transToAcc1';
+                if ($transDrMainAccountId != '') {
+                    $accIdSelected = $transDrMainAccountId;
+                } else {
+                    $accIdSelected = '';
+                }
+                $accNameSelected = '';
+                $allAccountDivClass = 'textLabel14CalibriReq';
+                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                include 'omacpalt.php';
+                ?>
+            </div>
+        </td>
+        <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+            <input id="transAmtDr1" style="padding-right:10px;width:250px;"
+                   name="transAmtDr1" spellcheck="false" type="text" placeholder="AMOUNT"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transFromAcc1').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transToAcc1').focus();
+                               return false;
+                           }"
+                   onblur="appendDecimalsOnTransAmts();"
+                   onkeyup="calcTotTransAmount();"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="20" maxlength="20" />
+        </td>
+        <td align="left" width="23%" class="textBoxCurve1px backFFFFFF" style="border:0">
+            <input type="hidden" id="del1" name="del1" value="1" />
+            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%">
+                <?php
+                $prevFieldId = 'transAmtDr1';
+                $nextFieldId = 'transAmtCr1';
+                $allAccountDivId = 'transFromAcc1';
+                if ($transCrMainAccountId != '') {
+                    $accIdSelected = $transCrMainAccountId;
+                } else {
+                    $accIdSelected = '';
+                }
+                $accNameSelected = '';
+                $allAccountDivClass = 'textLabel14CalibriReq';
+                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                include 'omacpalt.php';
+                ?>
+            </div>
+        </td>
+        <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+            <input id="transAmtCr1" style="padding-right: 10px;width:250px;"
+                   name="transAmtCr1" spellcheck="false" type="text" placeholder="AMOUNT"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transToAcc2').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transFromAcc1').focus();
+                               return false;
+                           }"
+                   onblur="appendDecimalsOnTransAmts();"
+                   onkeyup="calcTotTransAmount();"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+        </td>
+        <td width="2%" class="padLeft3">
+            <!--            <a style="cursor: pointer;" 
+                           onclick="if (document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == '' || document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == 'true')
+                                       getTransDivFunc('<?php echo $transactionEntryCount + 1; ?>', 'transactionAddDiv', '<?php echo $transactionId; ?>', '<?php echo $trans_id; ?>', '', '<?php echo $documentRootBSlash; ?>');">
+                            <img src="<?php echo $documentRootBSlash; ?>/images/update16.png" alt="Click Here To New Trans Div" class="marginTop5"
+                                 onload="<?php if ($panelName != 'updateusergroup') { ?>
+                                                                   document.getElementById('LastDiscountPercent').focus();
+            <?php } ?>"/>
+                        </a>-->
+        </td>
+        <td width="2%" class="padLeft3">
+            <!--            <a style="cursor: pointer;" 
+                           onclick ="closeTransFunc('<?php echo $transactionEntryCount; ?>', '<?php echo $panelName; ?>', '<?php echo $schemeBonusEMIId; ?>', '<?php echo $kitty_id; ?>', '<?php echo $documentRootBSlash; ?>');">
+                            <img src="<?php echo $documentRootBSlash; ?>/images/delete16.png" alt="delete" class="marginTop5"/>
+                        </a>-->
+        </td>
+    </tr>
+    <tr>
+        <td align="left" width="23%" class="textBoxCurve1px backFFFFFF" style="border:0">
+            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%">
+                <?php
+                $prevFieldId = 'transAmtCr1';
+                $nextFieldId = 'transAmtDr2';
+                $allAccountDivId = 'transToAcc2';
+                $accIdSelected = '';
+                $accNameSelected = '';
+                $allAccountDivClass = 'textLabel14CalibriReq';
+                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                include 'omacpalt.php';
+                ?>
+            </div>
+        </td>
+        <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+            <input id="transAmtDr2" style="padding-right: 10px;width:100%;"
+                   name="transAmtDr2" spellcheck="false" type="text" placeholder="AMOUNT"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transFromAcc2').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transToAcc2').focus();
+                               return false;
+                           }"
+                   onblur="appendDecimalsOnTransAmts();"
+                   onkeyup="calcTotTransAmount();"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+        </td>
+        <td align="left"  width="23%" class="textBoxCurve1px backFFFFFF" style="border:0">
+            <input type="hidden" id="del2" name="del2" value="2" />
+            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%">
+                <?php
+                $prevFieldId = 'transAmtDr2';
+                $nextFieldId = 'transAmtCr2';
+                $allAccountDivId = 'transFromAcc2';
+                $accIdSelected = '';
+                $accNameSelected = '';
+                $allAccountDivClass = 'textLabel14CalibriReq';
+                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                include 'omacpalt.php';
+                ?>
+            </div>
+        </td>
+        <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+            <input id="transAmtCr2" style="padding-right: 10px;;width: 250px;"
+                   name="transAmtCr2" spellcheck="false" type="text" placeholder="AMOUNT"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               if (this.value == '' && document.getElementById('transAmtDr2').value == '') {
+                                   document.getElementById('transSub').focus();
+                               } else {
+                                   document.getElementById('transToAcc3').focus();
+                               }
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transFromAcc2').focus();
+                               return false;
+                           }"
+                   onblur="appendDecimalsOnTransAmts();"
+                   onkeyup="calcTotTransAmount();"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+        </td>
+        <td class="padLeft3">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+        <td class="padLeft3">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6" width="100%">
+            <?php include 'omTransSubDiv_1.php'; ?>
+        </td>
+    </tr>
+    <tr>
+        <td width="23%" align="right" valign="middle" class="textLabel14CalibriBoldGreen">
+            <div style="font-size:18px">DR-TOTAL</div> 
+        </td>
+        <td width="24%" align="right" valign="middle" class="textBoxCurve1px  backFFFFFF margin1pxAll textLabel12CalibriBrown">
+            <input id="transAmtDrTotal" style="padding-right:10px;font-weight: bold;font-size:16px;width: 250px;"
+                   name="transAmtDrTotal" spellcheck="false" type="text" placeholder="AMOUNT" readonly="readonly"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+        </td>
+        <td width="23%" align="right" valign="middle" class="textLabel14CalibriBoldRed">
+            <div style="font-size:18px">CR-TOTAL</div>
+        </td>
+        <td width="25%" align="right" valign="middle" class="textBoxCurve1px  backFFFFFF margin1pxAll textLabel12CalibriBrown">
+            <input id="transAmtCrTotal" style="padding-right:10px;font-weight: bold;font-size:16px;width: 250px;"
+                   name="transAmtCrTotal" spellcheck="false" type="text" placeholder="AMOUNT" readonly="readonly"
+                   spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+        </td>
+        <td class="padLeft3">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </td>
+        <td class="padLeft3">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </td>
+    </tr>
+</table>

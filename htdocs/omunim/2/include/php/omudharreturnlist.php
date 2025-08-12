@@ -1,3 +1,507 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: PPREVIOUS INVOICE DETAILS DISPLAY DIVISION FOR SCHEME.
+ * **************************************************************************************
+ *
+ * Created on May 29, 2017 6:32:50 PM
+ *
+ * @FileName: ogprvindv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMGOLD
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ */
+
+
+//**********************************************************************************
+//*********************** INPUT PARAMETERS *****************************************
+//**********************************************************************************
+//                            => $count                    => TO COUNT NO OF INVOICE
+//  $invCount                 => $invCount                 => PREV. GOLD WEIGHT TYPE
+//                            => $invPreInvoiceId          => PREV. PRE INVOICE NO
+//                            => $invPostInvoiceId         => PREV. POST INVOICE NO
+//                            => $invGoldWeight            => PREV. INVOICE GOLD WEIGHT
+// goldWeight+ $invCount      => $invGoldWeight            => PREV. INV GOLD WEIGHT
+//                            
+//**********************************************************************************
+//***********************END INPUT PARAMETERS **************************************
+//**********************************************************************************
+//***********************************************************************************************
 ?>
+<?php
+if ($_REQUEST['panelName'] != "" || $_REQUEST['panelName'] != null) {
+    $panelName = $_REQUEST['panelName'];
+}
+// This we can remove also, but for reference we left this, prev it was working only for scheme
+if (1) {
+    if ($count == 0) {
+        ?>
+
+        <tr class="height28 trbggry">
+            <td align="center" class="darkBlueCalibri13Font" width="120px">
+                <div style="color:#000;"><b>INVOICE NO</b></div>
+            </td>
+            <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+                <td colspan="2" align="right">
+                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                        <tr>
+                            <td align="right" class="darkBlueCalibri13Font" >
+                                <div style="color:#000;"><b>GOLD WT</b></div>
+                            </td>                        
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" align="right">
+                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                        <tr>
+                            <td align="right" class="darkBlueCalibri13Font" >
+                                <div style="color:#000;"><b>SILVER WT</b></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td colspan="2" align="right">
+                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                        <tr>
+                            <td align="right" class="darkBlueCalibri13Font" >
+                                <div style="color:#000;"><b>STONE WT</b></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            <?php } ?>
+            <td colspan="2" align="right">
+                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                    <tr>
+                        <td align="right" class="darkBlueCalibri13Font" >
+                            <div style="color:#000;"><b>CASH BALANCE</b></div>
+                        </td>                    
+                    </tr>
+                </table>
+            </td>
+        <!--        <td align="right" class="darkBlueCalibri13Font">
+                <div class="spaceRight5"> TRANS TYPE </div>
+            </td>-->
+            <td colspan="2" width="80px">
+            </td>
+        </tr>
+    <?php }$count = 1; ?>
+    <input type="hidden" id="invId<?php echo $invCount; ?>" name="invId<?php echo $invCount; ?>" value="<?php echo $invId; ?>" />
+    <input type="hidden" id="scheme_deposit_check<?php echo $invCount; ?>" name="scheme_deposit_check<?php echo $invCount; ?>" />       
+    <input type="hidden" id="utin_utin_id<?php echo $invCount; ?>" name="utin_utin_id<?php echo $invCount; ?>" value="<?php echo $utin_utin_id; ?>" />
+    <input type="hidden" id="invoice_post_id_str" name="invoice_post_id_str" />
+    <input type="hidden" id="invoice_pre_id_str" name="invoice_pre_id_str" />
+    <input type="hidden" id="utin_utin_id_str" name="utin_utin_id_str" />
+    <input type="hidden" id="checkbox_id_str" name="checkbox_id_str" />
+    <input type="hidden" id="paySchemeTyp_id_str" name="paySchemeTyp_id_str" />
+    <?php
+    if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invGoldWeight != '' && $invGoldWeight != 0)) {
+        $dispaySchemeTyp_id_str = "GOLD-SCHEME";
+    } else if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invCashBalance != "" && $invCashBalance != 0)) {
+        $dispaySchemeTyp_id_str = "CASH-SCHEME";
+    }
+    ?>
+     <?php 
+     $querySettleMultipleScheme = "SELECT omly_value FROM omlayout WHERE omly_option = 'settleMultipleScheme'";
+     $resSettleMultipleScheme = mysqli_query($conn, $querySettleMultipleScheme);
+     $rowSettleMultipleScheme = mysqli_fetch_array($resSettleMultipleScheme);
+     $settleMultipleScheme = $rowSettleMultipleScheme['omly_value'];
+     ?>
+    <input type="hidden" id="total_sc_inv_cnt" name="total_sc_inv_cnt"  value="<?php echo $tot_inv; ?>" /> 
+    <input type="hidden" id="total_invoice_cnt" name="total_invoice_cnt" value="<?php echo $total_inv_no; ?>" />
+    <?php ?>
+    <tr>
+        <td align="center" class="darkBlueCalibri13Font">        
+            <input type="hidden" name="scheme_indicator<?php echo $invCount; ?>" id="scheme_indicator<?php echo $invCount; ?>" value="<?php echo $invSchemeDeposit; ?>" />
+            <div class="spaceRight5"> <?php echo $invPreInvoiceId . ' ' . $invPostInvoiceId; ?></div>
+
+        </td>
+        <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+            <td colspan="2" width="50px">
+                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                    <input type="hidden" id="invPreInvoiceId<?php echo $invCount; ?>" name="invPreInvoiceId<?php echo $invCount; ?>" value="<?php echo $invPreInvoiceId; ?>" />
+                    <input type="hidden" id="invPostInvoiceId<?php echo $invCount; ?>" name="invPostInvoiceId<?php echo $invCount; ?>" value="<?php echo $invPostInvoiceId; ?>" /> 
+                    <input type="hidden" id="checkboxidchekced<?php echo $invCount; ?>" name="checkboxidchekced<?php echo $invCount; ?>" />  
+                    <input type="hidden" id="paymentTypSc<?php echo $invCount; ?>" name="paymentTypSc<?php echo $invCount; ?>" value="<?php echo $dispaySchemeTyp_id_str; ?>" /> 
+                    <tr>
+                        <td align="right" >
+                            <div class="spaceRight5">
+                                <?php if ($invGoldWeight != '' && $invGoldWeight != 0) { ?>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                            <?php if ($invSchemeDeposit == "SCHEME_DEPOSIT") { ?>
+                                                <td> <p style="color:green;font-size:15px;font-weight:bold;">SCHEME GOLD DEPOSIT</p> </td>                                            
+                                            <?php } ?>
+                                            <td>
+                                                <input type="text" id="goldWeight<?php echo $invCount; ?>" 
+                                                       name="goldWeight<?php echo $invCount; ?>" value="<?php echo abs($invGoldWeight); ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invGdWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invGdWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;font-weight:bold;" <?php } ?> 
+                                                       class="darkBlueCalibri13Font" size="10" maxlength="20" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="goldWeightType<?php echo $invCount; ?>" 
+                                                       name="goldWeightType<?php echo $invCount; ?>" value="<?php echo $invGoldWeightTyp; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invGdWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invGdWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;font-size:16px;font-weight:bold;" <?php } ?> 
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="gdWtTransType<?php echo $invCount; ?>" 
+                                                       name="gdWtTransType<?php echo $invCount; ?>" value="<?php echo $invGdWtCRDR; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invGdWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invGdWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;font-size:16px;font-weight:bold;" <?php } ?> 
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>                                        
+                                        </tr>
+                                    </table>
+                                    <?php
+                                } else {
+                                    echo '-';
+                                }
+                                ?>
+                            </div>
+                        </td>
+                        <td align="left" width="30px">
+                            <div id="goldMetalDiv<?php echo $invCount; ?>"></div>
+                            <input type="hidden" id="prefix" name="prefix" value="<?php echo $prefix; ?>" />
+                            <?php
+                            if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invGoldWeight != "" && $invGoldWeight != 0)) {
+                                ?>  
+                                <input id="GoldschemeCheck<?php echo $invCount; ?>" name="GoldschemeCheck<?php echo $invCount; ?>" type="hidden" value="GOLD_SCHEME_CHECK" />
+                            <?php } ?>                                                
+                            <?php
+                            $inGoldch = "";
+                            if ($invGoldPayChk == 'checked') {
+                                $inGoldch = 'checked';
+                            } else {
+                                $inGoldch = 'unchecked';
+                            }
+                            ?><!-- disabled="true" --> 
+                            <?php if ($invGoldPayChk == 'checked') { ?>
+                                <INPUT id="selPayGold<?php echo $invCount; ?>" type="hidden" name="selPayGold<?php echo $invCount; ?>" value="checked" />
+                            <?php } else { ?>
+                                <INPUT id="selPayGold<?php echo $invCount; ?>" type="hidden" name="selPayGold<?php echo $invCount; ?>" value="unchecked" />
+                            <?php } ?>    
+
+                            <?php
+                            if ($panelName == 'SellPayUp' && ($invGoldPayChk == 'checked')) {
+                                if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invGoldWeight != '' && $invGoldWeight != 0)) {
+                                    ?>
+                                    <img src="<?php echo $documentRoot; ?>/images/abx-t.png" alt="" height="0.01px" style="display:none;"
+                                         onload="setTimeout(function () {
+                                                                     onloadSchemeMakAmt(this.checked, '<?php echo $invCount; ?>', 'GOLD-SCHEME', this.id)
+                                                                 }, 200);"/> 
+                                         <?php
+                                     }
+                                 }
+                                 ?>    
+                            <INPUT id="selPayGoldTr<?php echo $invCount; ?>" style="<?php echo $enabledGDW; ?>"
+                                   TYPE="checkbox" NAME="selPayGold<?php echo $invCount; ?>" class="lgn-field-without-order"
+                                   <?php echo $inGoldch;
+                                   if($invGoldPayChk == 'checked'){
+                                   ?>
+                                   disabled="true"
+                                   <?php
+                                    }
+                                   ?>
+                                   <?php if ($invSchemeDeposit == "SCHEME_DEPOSIT") { ?>
+                                       onclick="
+                                                           if (!this.checked) {
+                                                               document.getElementById('selPayGold<?php echo $invCount; ?>').value = 'unchecked';
+                                                           } else {
+                                                               document.getElementById('selPayGold<?php echo $invCount; ?>').value = 'checked';
+                                                           }
+                                                           document.getElementById('checkboxidchekced<?php echo $invCount; ?>').value = this.id;
+                                                           document.getElementById('paymentTypSc<?php echo $invCount; ?>').value = 'GOLD-SCHEME';
+                                                           document.getElementById('scheme_deposit_check<?php echo $invCount; ?>').value = 'SCHEME_DEPOSIT_CHECKED';
+                                                           calculateSchemeMkgAmt(this.checked, '<?php echo $invCount; ?>', 'GOLD-SCHEME', this.id);"  
+                                   <?php } else { ?>
+                                       onclick="
+                                                           if (!this.checked) {
+                                                               document.getElementById('selPayGold<?php echo $invCount; ?>').value = 'unchecked';
+                                                           } else {
+                                                               document.getElementById('selPayGold<?php echo $invCount; ?>').value = 'checked';
+                                                           }
+                                                           calcGoldWeightforrawetal(this.checked, '<?php echo $invCount; ?>','<?php echo $invGoldWeight;?>','<?php echo $invId;?>','Gold','selPayGoldTr<?php echo $invCount; ?>');
+                                                           "  
+                                   <?php } ?> 
+                                   />
+                                   <?php ?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="2" width="50px">
+                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                    <tr>
+                        <td align="right">
+                            <div class="spaceRight5">
+                                <?php if ($invSilverWeight != '' && $invSilverWeight != 0) { ?>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                            <td>
+                                                <input type="text" id="silverWeight<?php echo $invCount; ?>" name="silverWeight<?php echo $invCount; ?>" value="<?php echo abs($invSilverWeight); ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invSlWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invSlWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?>
+                                                       class="darkBlueCalibri13Font" size="10" 
+                                                       maxlength="20" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="silverWeightType<?php echo $invCount; ?>" 
+                                                       name="silverWeightType<?php echo $invCount; ?>" value="<?php echo $invSilverWeightTyp; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invSlWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invSlWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?>
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="slWtTransType<?php echo $invCount; ?>" 
+                                                       name="slWtTransType<?php echo $invCount; ?>" value="<?php echo $invSlWtCRDR; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invSlWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invSlWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?> 
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <?php
+                                } else {
+                                    echo '-';
+                                }
+                                ?>
+                            </div>
+                        </td>
+                        <td align="left" width="30px">
+                            <?php if ($invSilverPayChk == 'checked') { ?>
+                                <INPUT id="selPaySilver<?php echo $invCount; ?>" type="hidden" name="selPaySilver<?php echo $invCount; ?>" value="<?php echo $invSilverPayChk; ?>" />
+                                <INPUT id="selPaySilver" style="<?php echo $enabledSLW; ?>"
+                                       TYPE="checkbox" NAME="selPaySilver" class="lgn-field-without-order"
+                                       <?php echo $invSilverPayChk; ?> disabled="true" /> 
+                                   <?php } else { ?>
+                                <INPUT id="selPaySilver<?php echo $invCount; ?>" style="<?php echo $enabledSLW; ?>"
+                                       TYPE="checkbox" NAME="selPaySilver<?php echo $invCount; ?>" class="lgn-field-without-order"
+                                       onclick="calcGoldWeightforrawetal(this.checked, '<?php echo $invCount; ?>','<?php echo $invSilverWeight;?>','<?php echo $invId;?>','Silver','selPaySilver<?php echo $invCount; ?>');" />
+                                   <?php } ?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!--***************************************************************************************-->
+            <!--START CODE FOR CRYSTAL PREVIOUS BALANCE SETTLE : AUTHOR @DARSHANA 13 JULY 2021-->
+            <!--***************************************************************************************-->
+            <td colspan="2" width="50px">
+                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                    <tr>
+                        <td align="right">
+                            <div class="spaceRight5">
+                                <?php if ($invCrystalWeight != '' && $invCrystalWeight != 0) { ?>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                            <td>
+                                                <input type="text" id="crystalWeight<?php echo $invCount; ?>" name="crystalWeight<?php echo $invCount; ?>" value="<?php echo abs($invCrystalWeight); ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invStWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invStWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?>
+                                                       class="darkBlueCalibri13Font" size="10" 
+                                                       maxlength="20" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="crystalWeightType<?php echo $invCount; ?>" 
+                                                       name="crystalWeightType<?php echo $invCount; ?>" value="<?php echo $invCrystalWeightTyp; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invStWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invStWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?>
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="stWtTransType<?php echo $invCount; ?>" 
+                                                       name="stWtTransType<?php echo $invCount; ?>" value="<?php echo $invStWtCRDR; ?>"
+                                                       spellcheck="false" 
+                                                       <?php if ($invStWtCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;" 
+                                                       <?php } else if ($invStWtCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;" <?php } ?> 
+                                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <?php
+                                } else {
+                                    echo '-';
+                                }
+                                ?>
+                            </div>
+                        </td>
+                        <td align="left" width="30px">
+                            <?php if ($invCrystalPayChk == 'checked') { ?>
+                                <INPUT id="selPayCrystal<?php echo $invCount; ?>" type="hidden" name="selPayCrystal<?php echo $invCount; ?>" value="<?php echo $invCrystalPayChk; ?>" />
+                                <INPUT id="selPayCrystal" style="<?php echo $enabledSTW; ?>"
+                                       TYPE="checkbox" NAME="selPayCrystal" class="lgn-field-without-order"
+                                       <?php echo $invCrystalPayChk; ?> disabled="true" /> 
+                                   <?php } else { ?>
+                                <INPUT id="selPayCrystal<?php echo $invCount; ?>" style="<?php echo $enabledSTW; ?>"
+                                       TYPE="checkbox" NAME="selPayCrystal<?php echo $invCount; ?>" class="lgn-field-without-order"
+                                       onclick="calcCrystalWeight(this.checked, '<?php echo $invCount; ?>');
+                                                           calcWholeSaleRateCut('<?php echo $prefix; ?>');" />
+                                   <?php } ?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <!--***************************************************************************************-->
+            <!--END CODE FOR CRYSTAL PREVIOUS BALANCE SETTLE : AUTHOR @DARSHANA 13 JULY 2021-->
+            <!--***************************************************************************************-->
+        <?php } ?>
+        <td colspan="2" width="50px">
+            <table border="0" cellspacing="0" cellpadding="0" align="right">
+                <tr>
+                    <?php if ($invCashBalance != "" && $invCashBalance != 0) { ?>
+                        <!--Prathamesh-->
+                        <?php if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invCashBalance != "" && $invCashBalance != 0)) { ?>
+                            <td> 
+                                <p style="color:green;font-size:15px;font-weight: bold">SCHEME DEPOSIT</p> 
+                            </td>                                            
+                        <?php } ?>
+                        <td align="right" class="darkBlueCalibri13Font">
+                            <div class="spaceRight2">
+                                <input type="hidden" name="oldCashPayAmt<?php echo $invCount; ?>" id="oldCashPayAmt<?php echo $invCount; ?>" />
+                                <input type="hidden" name="scLastBonusPayAmt<?php echo $invCount; ?>" id="scLastBonusPayAmt<?php echo $invCount; ?>" />
+                                <input type="text" id="cashAmount<?php echo $invCount; ?>" 
+                                       name="cashAmount<?php echo $invCount; ?>" value="<?php echo abs($invCashBalance); ?>"
+                                       spellcheck="false" 
+                                       <?php if ($invCashBalCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;font-weight: bold;" 
+                                       <?php } else if ($invCashBalCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;font-weight: bold;" <?php } ?>
+                                       class="darkBlueCalibri13Font" size="10" 
+                                       maxlength="20" readonly="true"/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="spaceRight5">
+                                <input type="text" id="cashTransType<?php echo $invCount; ?>" name="cashTransType<?php echo $invCount; ?>" 
+                                       value="<?php echo $invCashBalCRDR; ?>"
+                                       spellcheck="false"
+                                       <?php if ($invCashBalCRDR == 'DR') { ?> style="border:none;text-align: right;color:red;font-weight: bold;" 
+                                       <?php } else if ($invCashBalCRDR == 'CR') { ?> style="border:none;text-align: right;color:green;font-weight: bold;" <?php } ?>
+                                       class="darkBlueCalibri13Font" size="2" maxlength="4" readonly="true"/>
+                            </div>
+                        </td>
+                        <?php
+                    } else {
+                        ?>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <div class="spaceRight5">
+                                <?php
+                                echo '-';
+                                ?>
+                            </div>
+                        </td>
+                        <?php
+                       
+                    }
+                    ?>
+                    <td align="left" width="30px">
+                        <div id="cashMetalDiv<?php echo $invCount; ?>"></div><!-- disabled="true"-->
+                        <?php
+                        $invAmtCh = "";
+                        if ($invAmtPayChk == 'checked') {
+                            $invAmtCh = 'checked';
+                        } else {
+                            $invAmtCh = 'unchecked';
+                        }
+                        ?>
+                        <?php
+                        if ($invAmtPayChk == 'checked') {
+                            ?>
+                            <INPUT id="selPayCash<?php echo $invCount; ?>" type="hidden" name="selPayCash<?php echo $invCount; ?>" value="on" />
+                        <?php } else { ?>
+                            <INPUT id="selPayCash<?php echo $invCount; ?>" type="hidden" name="selPayCash<?php echo $invCount; ?>" value="off" />
+                        <?php } ?>
+                        <?php
+                        if ($panelName == 'SellPayUp' && ($invAmtPayChk == 'checked') && ($invCashBalance != "" && $invCashBalance != 0)) {
+                            if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invCashBalance != "" && $invCashBalance != 0) && $settleMultipleScheme != 'YES') {
+                                ?>
+                                <img src="<?php echo $documentRoot; ?>/images/abx-t.png" alt="" height="0.01px" style="display:none;"
+                                     onload="setTimeout(function () {
+                                                             onloadSchemeMakAmt(this.checked, '<?php echo $invCount; ?>', 'CASH-SCHEME', this.id)
+                                                         }, 300);" /> 
+                                     <?php
+                                 }
+                             }
+                             ?>
+                             <?php
+                             if ($invSchemeDeposit == "SCHEME_DEPOSIT" && ($invCashBalance != "" && $invCashBalance != 0)) {
+                                 if ($panelName == 'SellPayUp' && ($invAmtPayChk == 'checked') && ($invCashBalance != "" && $invCashBalance != 0) && $settleMultipleScheme == 'YES') {
+                                     ?>
+                                     <input id="schemeDepCh<?php echo $invCount; ?>" name="schemeDepCh<?php echo $invCount; ?>" type="hidden" value="NOSCHEME_DEPOSIT_CHECKED" />    
+                                     <?php
+                                 } else { ?>
+                                    <input id="schemeDepCh<?php echo $invCount; ?>" name="schemeDepCh<?php echo $invCount; ?>" type="hidden" value="SCHEME_DEPOSIT_CHECKED" />
+                             <?php  }
+                              } else { ?>
+                            <input id="schemeDepCh<?php echo $invCount; ?>" name="schemeDepCh<?php echo $invCount; ?>" type="hidden" value="NOSCHEME_DEPOSIT_CHECKED" />
+                        <?php } ?>
+                        <INPUT id="selPayCash<?php echo $invCount; ?>" style="<?php echo $enabledAMT; ?>"
+                               TYPE="checkbox" NAME="selPayCash<?php echo $invCount; ?>" class="lgn-field-without-order" <?php echo $invAmtCh; 
+                               if($invAmtPayChk == 'checked'){
+                                   ?>
+                                   disabled="true" 
+                                   <?php
+                               }
+                               ?>                                 
+                               <?php if ($invSchemeDeposit == "SCHEME_DEPOSIT" && $settleMultipleScheme != 'YES' && $panelName != 'PAYMENT') { ?>
+                                   onclick="
+                                                   if (!this.checked) {
+                                                       document.getElementById('selPayCash<?php echo $invCount; ?>').value = 'unchecked';
+                                                   } else {
+                                                       document.getElementById('selPayCash<?php echo $invCount; ?>').value = 'checked';
+                                                   }
+                                                   document.getElementById('checkboxidchekced<?php echo $invCount; ?>').value = this.id;
+                                                   document.getElementById('paymentTypSc<?php echo $invCount; ?>').value = 'CASH-SCHEME';
+                                                   document.getElementById('scheme_deposit_check<?php echo $invCount; ?>').value = 'SCHEME_DEPOSIT_CHECKED';
+                                                   calculateSchemeMkgAmt(this.checked, '<?php echo $invCount; ?>', 'CASH-SCHEME', this.id);" 
+
+                               <?php } else { ?>
+                                   onclick="
+                                                   if (!this.checked) {
+                                                       document.getElementById('selPayCash<?php echo $invCount; ?>').value = 'unchecked';
+                                                   } else {
+                                                       document.getElementById('selPayCash<?php echo $invCount; ?>').value = 'checked';
+                                                   }
+                                                   calcCashAmount(this.checked, '<?php echo $invCount; ?>');
+                                                   calcWholeSaleRateCut('<?php echo $prefix; ?>');"
+                               <?php } ?> />                                     
+                    </td>                  
+                </tr>
+            </table>
+        </td>
+    <!--    <td align="right" class="darkBlueCalibri13Font" width="80px">
+            <div class="spaceRight5">
+                <input type="text" id="transType<?php echo $invCount; ?>" name="transType<?php echo $invCount; ?>" 
+                       value="<?php
+//    if ($invCRDR != '' && $invCRDR != NULL) {
+//        echo $invCRDR;
+//    } else {
+//        echo '-';
+//    }
+                               ?>"
+                       spellcheck="false" style="border:none;text-align: right;" class="darkBlueCalibri13Font" size="10" maxlength="20" readonly="true"/>
+            </div>
+        </td>-->
+        <td colspan="2" width="80px">
+        </td>
+    </tr> 
+<?php } ?>

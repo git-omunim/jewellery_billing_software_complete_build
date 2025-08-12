@@ -1,3 +1,154 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transfer loan list in Money lenders Add Loan Panel
+ * **************************************************************************************
+ *
+ * Created on 13 NOV, 2013 11:04:23 AM
+ *
+ * @FileName: ormltrln.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//change in file @AUTHOR: SANDY25DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<!--Start code to change code @Author:SHRI16MAY15-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" width="100%">
+    <tr>
+        <td align="left" width="100%">
+            <div class="textLabel12CalibriOrange" style="font-size:14px;color: #FF0000;"><b>SELECT LOAN</b></div>
+        </td>
+        <td align="right">
+            <div id="moreLoanDiv0" style="visibility:hidden">
+                <a style="cursor: pointer;" onclick="getMoreLoanTrDiv('0','1')">
+                    <img src="<?php echo $documentRoot; ?>/images/img/add.png" alt="Click Here To Add More Loans" height="16px" class="marginTop5" />
+                </a>
+            </div>
+        </td>
+    </tr>
+<!--    <tr>
+        <td align="center" valign="middle" width="100%" class="border-bottom-grey paddingTop2" colspan=2" >
+        </td>
+    </tr>-->
+    <tr>
+        <td colspan=2" width="100%" border="0"  cellpadding="0" cellspacing="0">
+            <div id="headingDiv">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <table width="100%" border="0"  cellpadding="0" cellspacing="0" class="brdrgry-dashed" style="border-radius:3px;">
+                                <tr style="background:#f2f2f2;">
+                                    <td align="center" width="100px">
+                                        <div class="textLabel12CalibriBrown"><b>SERIAL NO </b></div>
+                                    </td>
+                                    <td align="center" width="130px">
+                                        <div class="textLabel12CalibriBrown"><b>CUSTOMER </b></div>
+                                    </td>
+                                    <td align="center" width="110px">
+                                        <div class="textLabel12CalibriBrown"><b>PRINCIPLE AMT </b></div>
+                                    </td>
+                                    <td align="center" width="90px">
+                                        <div class="textLabel12CalibriBrown"><b>ROI </b></div>
+                                    </td>
+                                    <td align="center" width="120px">
+                                        <div class="textLabel12CalibriBrown"><b>FIRM </b></div>
+                                    </td>
+                                    <td align="center" width="100px">
+                                        <div class="textLabel12CalibriBrown"><b>PACKET NO. </b></div>
+                                    </td>
+                                    <td align="center" width="130px">
+                                        <div class="textLabel12CalibriBrown"><b>OTHER INFO </b></div>
+                                    </td>
+                                    <td align="center" width="150px">
+                                        <div class="textLabel12CalibriBrown"><b>DATE </b></div>
+                                    </td>
+<!--                                    <td align="center">
+                                    </td>-->
+                                    <td align="center" width="60px">
+                                        <div id="moreLoanDiv0" style="visibility:hidden">
+                                            <a style="cursor: pointer;" onclick="getMoreLoanTrDiv('0','1')">
+                                                <img src="<?php echo $documentRoot; ?>/images/img/add.png" alt="Click Here To Add More Loans" height="16px" class="marginTop5" />
+                                            </a>
+                                        </div>
+                                    </td>
+                                   <td align="center" width="5px"></td>
+                                   <!--  <td>      
+                                    </td>
+                                    <td>
+                                        
+                                    </td>-->
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="position:relative">
+            <input type = "hidden" id ="totalLoanTransferred" name = "totalLoanTransferred"/>
+            <?php include 'ormlsbln.php'; ?>
+            <div id="addMoreLnToTrList1"></div>
+        </td>
+    </tr>
+    <tr>
+        
+        <td align="left" width="20%" class="itemAddPnLabels12ArialLink">
+            <div style="padding-left:27%">
+               <label id="totTransAmtLabel" style="font-weight:600"></label>
+            </div>
+        </td>
+        <td   align="left" class="itemAddPnLabels12ArialLink">
+            &nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td align="left" width="100%">
+            <div class="textLabel12CalibriOrange paddingTop5" style="font-size:14px;color: #FF0000;"><b>SELECT ADDITIONAL LOAN</b></div>
+        </td>
+        <td align="right">
+            <div id="morePrinDiv0"  style="visibility:hidden">
+                <a style="cursor: pointer;"  onclick="getMorePrinToTrDiv('0','1')">
+                    <img src="<?php echo $documentRoot; ?>/images/img/add.png" alt="Click Here To Add More Loans" height="16px" class="marginTop5" />
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="paddingTop5" style="position: relative">
+            <input type = "hidden" id ="totalPrinTransferred" name = "totalPrinTransferred" />
+            <?php include 'ormlsbpr.php'; ?>
+            <div id="transferMorePrincipalDiv1"></div>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" class="itemAddPnLabels12ArialLink">
+            <div class="spaceLeft40"><label id="totAddPrinLabel" style="font-weight:600;"></label></div>
+        </td>
+        <td align="left" class="itemAddPnLabels12ArialLink">
+        </td>
+    </tr>
+</table>
+<!--End code to change code @Author:SHRI16MAY15-->
+
+

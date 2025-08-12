@@ -1,3 +1,100 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADICwAAWgQuxpFcnz7c03bBLmXCCkVbAzc77eRECOQHPkdt4bXAv3fWE6sT3iZIMxSwRYPRU651a/Gv9E8iu6FJNbf0qxD6DoAqEvp8j4zKzytGw8o7K4Bwze3bOcnnvmnPdKiFRUzw8O3UYm/khG9BiFPgfvWMpv+cl5homqiQDkX6Fk8RIc4RkP7xFO2/31nUbdCnFagc2LRLQoE5C6AIA1LIggkTIs3j8c26qSiHGJhsJWqaxPnbDYAMv6YggqtAs0QrGge+yQcExiZWK+aWeJ2DDHWrR7ehYcIiXJy+at9VMXx5vAfG2e7SrY4jMk1AWZIcBksFQwQHLzobiSw89kWIlyX0MoPUwe7lfikynmsbGHtFNzH6FSPz2pxrXQG2NJWgTkvL1pRccwhCcigaSeSNu6GF/u4M82/kApn7dlfH1QKSV3V2uXYIfrfDO8/n6PtLGRgd2LXKPtgblzW5PKY/OS/1eEhHeyUVZDFLvsSTqvyhNBcSH3736A5vssExhbkpjI6Masw7O7rqIgXx4/Kir8nQZDGv/k/o7UFrxS4IZ2J7TJZq/2CwtZQ9cqOp2kYZs+25GFn3nPexExvv7B5WiJucGb2xmbBmls1Tc9AUmAZeBqO+Hz+3LhTI5MjXq+9Vx2giGM07/T5yNLIru5H0UkVm9DSXzK55fwHGyoRYlmDoAaHCPx1pocdU/LPPT1R6Mis05P9IlEBEVEPV4mtcsn+R0bSZXl0mIDrWTqUYxv/P5Rm+2pgfJ9zWGA0Xf7VKrN0gzhvY42g2/MJ944S0fF1c65e5arYUYDRpea8VuSnDSXgNUygq+n5o6iSBjkS2d8tyeXR/yd6gaNN1gxfFNQI8118Bo79jiGeTy7QeNKFmEAenS7+Lofdf432x/kll+L3w+TZVx4VLZMp6hgUMJdb2K363bca+HG2HUyOsD+/QTPgFtWoFGUG6v6slIXl3oXOJJy5BH/2pheie23OyPmOlX8RCIZ+ZpT2ALKbSx45ARu1OzLmow224G/Ml6Rz4wtdkvipxIibCsgHHnPSLwBljJM3hTuinnZb+2z5IrLgoDE43+p1mvrUXHWiMuKpfMkMZf0uqTBi1pa+6trp6Xyky+yUa9kOtsiHR+BTf9O4AiEM/IRGh9tbVWYS0VjKUBXO3Kf36xILraTmpm43xlaJfiVV08N6rLXVXtRLAKxwtfh0qysB18lMINx4cqMOBcCGmFvJoFMuiv/48ruLYMDwIISBleZ0WYwAvie05l8BriNzCQMDPV8ZNtphwW+rChzbUKqFYxb5BK2xcfWH0GERcPo+aTyP+8o1dqplip6kof4GXm/UeH5sNETuCXtbq4X+a+D8uX8MgNXQU2mR2jGOAAO2045pCc7+VpiiiNm6osGR8qtZulwkwu1G5vKCBStoADjiVM03+YtjMpopZuspvksPrnKEod56yKxRqLhpyi47eC/GrJQfA37GKUG1pM3M5Qn7N77zEHoaVY+RpHqvyP88cXjuZkQm511E3bpU7K8CvZbyy/19k7gYIee//m0tyUSUftlE3tYZNla9gi9WpU+kqDyTIWfb/ZjOvMIopyIOe67n6hKAF15L69kg27lRne7BXHfu4W4v/hqc77eNNMKU44gzUYs66hASpEAp6jf7gQ7rZrGmbkUWLO5qvOP06mVNVJDr57gkeaqhQLHoUTqQQ32Ou011X6ZQ/zxFDS0MywweiCq0MHsveALNDyIegTwqtRhnx47j3N52p9GgEn3PIj7J6ClnwHaqGsXnz0lCd8Vn9Brp3ByO7p12tMFh26mYgK+MXB7r0ZocCDbX0O+GgS3tcvIwHFdZwxMjUps1yUG6iBZu5Wetj1umPEFwypgz7BXf2XjDRQdPPNpQ9tPf+7ZHilhaTreZOcA4deGpcSJ2qbCxjOK5gAqVBV7U69ARR3gEyyeS/EvyE1w9Ssyv1udMbeDD+pplRoS215qlisTmjvz4iGKSbTja9bpXtepe1LKbdP1iKhl1FGwgJZ9Xtc2HRg5ox+s994Oa9SRIVmV04l9oEZIfAGO7au/etMjDJk7JSETv3fPlRxu7pesWL/T6WblIUczPfor9mZj0BpyrLg371qQRs4JNDidNrrFiVVfuimId9WzsxeoUgQ/Y56uzaooHOJquVr7s7PKI+SHIGgjYuJ67UdCa+pAED7ARVqzVNxQnIV5Vp8QpE1IaB2oCi2mhFFwmVSXtSsf6QLjxe67FK/1SZLRspSLztDKAMQ3f/ubnrUotAU9aBYFOfLrh9bVTdaMHjf8eMt6a5w1tpGtf2Pp6jr0l4OHkGeF4Ccl714HuJKWF8+sxpWb0A2drQ4B0a61N5LQZGE5M6OezhHQj1x0+Rg86LTWDT9nRZcMOhDZsNBpLgWjtjQ+J4Ten87YN/mX+jyM21f4ZqsN+lP1jFVSzzNQzo37whTEIGPbUoy6bzn+vRbIuRbJkCW6p3zkwqlTurJ1Er6WvBmGJZ6D+8rQ1Q1KrHDCCRzwHvAiDAhNU5tYzE+y/D6+9XlMqV2h+cbKQHQ34WIUkLtx7leDjfdFTLINqUJniqEwIJPyqvjB1nyl2GPNY47YOmLc/DzFAUTjzrpPdqMO3wPdc80EYKUoTJnVBiV0NDxa4V3tO3a9A3nieI8+QFi4YJ6KHPEHwhLn6VcdRobS99R/sXu8hQIXo71QXjsC3Q/lIQ+76hZVbHdGy0MPee/WKujV6In+mQdmOxnnSGnidAxiNkLGynkhPZVJYKp14KBdFyRdAv8NCZNcXFm1plkUykleWjwt+zOxEU1ZmrAx2GmQvQ8TnvyBxVWibhDywNcrbWYsLCl1i0yoOpyron5KTPWeDaqIMoP1H0SXpgKL+vn8K46KrqRM7SVFpPsqeDURDdDflcQBZGgSpVu0yoGDuc3k6h7Jsv8J92kW4hAGyz50L/rgFrqUYIlTV2CVKkJ7wySJVfx/+5mp52QL1DEDiuQzJ9kscdGa16IIx5LXeHU+NsczFpnzTQd3r7rGIBkxdf/xcBmo94McsPArOgqyc8TlXg/4mdSpowSHfeR7uhDLn65VdI1bxB4BmzviaegeRVTMA8qdvSoQKChQtZPkeI1/lbwvB1b/wLVOcjpOokDCZdKysPBPqG/HU/LhQxwtsXwweitF7Ocspmoy278UVPv+puHfMTU3k1xt5S8pxuQZt6z1ZbiLLEZ+H/9NedQKiBuWLINlfiTRDRT93tXegLjhzQxcPUYIFB0OIO8iENyZlNzUKVklZj/BKNtuGTZnKNmnYQUfP4vs4tClL2nZCCIy4crTvxiyMgEL5nfy44xw1yUG8QpMOIKwLH26SXoxzWow60TXLT2QGjH/iDJbfeDoMQcDjjcWl8GIrFX6T/62PH009p+FGgT32TdxhtFXgqZbjUH9tY35+4GUZaeoBP4xO9/djWXMFvBWRL2LnlqVo1HyXdKx92JVUbpjGBmzLtrn90/ki2h4QfKKyo2GKN2L7Rf6GiOhkt4EkGOeD60ftkca2ddXzQP8wDVbGtaPQQgbnXwhcUvWQKswGetWHA+ZVsG+j/wg7t1jvfpqo2esOerBuLYoISAee7HrVk/FoxviEs1VYwzxgVPMTsRAt5BoObMv8j9UaPUwM5+L5dkyMRI9VBfCHJtEHzWsd4GSFuRuQUu2j8SG0WnrgFYxdXajzCVei5y8kD3oVuibYLhDwoOLd8zpmbS7eq2I4dF4tBDEWp+OjnxlwMk4h8Fbs54/cWbVlLwrvvQWlqzS5FX4NhQ6fC1rXGjIRVGXbjGxaOSAJ3EuywmmOplcVYT37IPxxTlNJA1GsNbAdp4gNz6QvU81E3U/R+nGBYifrVdAMqYQD2qng/+EddZF9Lg587hbr2vLXw1NDaSuLAYrC0yx4S2jHxt/I3EzEUtCnN8NmDw67LIUTd3NErNH/qTwt6rzoTHRNOqlp2Bwc00CNDj9Vr4CCGS5iLk9kGAgNbp88GHeCxAIbhGDakaaengIbRwL/3fMC+1U27R00sYEj60EXc8QAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Unvisit Customer SMS Templste
+ * **************************************************************************************
+ *
+ * Created on 08 Feb, 2021 10:32:36 AM
+ *
+ * @FileName: omunvisitcustSMStemplate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+include 'ommpdpmsg.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+//
+//echo '$setBirthdaySmsTemplate =='.$setBirthdaySmsTemplate;
+//
+$queryStaff = "SELECT omly_value FROM omlayout WHERE omly_option = 'smstemplatebystaff'";
+$resStaff  = mysqli_query($conn, $queryStaff);
+$rowStaff = mysqli_fetch_array($resStaff);
+$staffShoworhide= $rowStaff['omly_value'];
+?>
+<!--START CODE TO ADD ONKEYDOWN FIELDS @AUTHOR:SHUBHAM-->
+<SELECT id="unvisitCustSmsTemplate" name="unvisitCustSmsTemplate" style="width:100%;height:30px;border:1px solid #c1c1c1;-webkit-appearance: none;-moz-appearance: none;appearance: none;"
+        onchange="changeSMSTemplateDiv('<?php echo $documentRoot; ?>', this.value);"
+        class="input_border_red" > 
+    <OPTION  VALUE="NotSelected">SELECT SMS TEMPLATE</OPTION>
+    <?php
+    if($staffShoworhide =='hide' || $staffShoworhide =='' || $staffShoworhide ==null){
+    $qSelPerFirm = "SELECT smtp_sub,smtp_text FROM sms_templates where smtp_own_id='$_SESSION[sessionOwnerId]'";
+    }else{
+    $qSelPerFirm = "SELECT smtp_sub,smtp_text FROM sms_templates where smtp_own_id='$_SESSION[sessionOwnerId]' and smtp_staff_id='$staffId'";
+    }
+    $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+    while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+        if ($rowPerFirm['smtp_sub'] == $setUnvisitCustSmsTemplate) {
+            $setUnvisitCustTempSel = "selected";
+            $waMessageContent = $rowPerFirm['smtp_text'];
+        }
+        echo "<OPTION  VALUE=" . "\"{$rowPerFirm['smtp_sub']}\"" . " class=" . "\"content-mess-blue\"" . " $setUnvisitCustTempSel>{$rowPerFirm['smtp_sub']}</OPTION>";
+        $setUnvisitCustTempSel = "";
+    }
+    ?>
+</SELECT>
+<?php if ($needListOnly != 'YES') { ?>
+    <tr>
+        <td align="center">
+            <div style="margin-top:10px;">
+                <?php
+                $inputId = "submit";
+                $inputType = 'submit';
+                $inputFieldValue = 'Submit';
+                $inputIdButton = "submit";
+                $inputNameButton = '';
+                $inputTitle = '';
+                // This is the main class for input flied
+                $inputFieldClass = 'btn ' . $om_btn_style;
+                $inputStyle = "width: 100%;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-size:14px;font-weight:600;   ";
+                $inputLabel = 'Submit'; // Display Label below the text box
+                //
+                // This class is for Pencil Icon                                                            
+                $inputIconClass = '';
+                $inputPlaceHolder = '';
+                $spanPlaceHolderClass = '';
+                $spanPlaceHolder = '';
+                $inputOnChange = "";
+                $inputOnClickFun = 'setLayoutFieldInDb("unvisitCustSmsTemplate", document.getElementById("unvisitCustSmsTemplate").value);';
+                $inputKeyUpFun = '';
+                $inputDropDownCls = '';               // This is the main division class for drop down 
+                $inputselDropDownCls = '';            // This is class for selection in drop down
+                $inputMainClassButton = '';           // This is the main division for Button
+                include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                ?>
+            </div>
+        </td>
+    </tr>
+<?php } ?>

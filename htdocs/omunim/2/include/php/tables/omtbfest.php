@@ -1,3 +1,323 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Form N/8 Setup Table @Author: KHUSH11JAN13 
+ * **************************************************************************************
+ *
+ * Created on Jan 11, 2013 10:23:11 AM
+ *
+ * @FileName: omtbfest.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:  Modified by KHUSH21JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessionOwnerId'];
+} //cond added @Author:PRIYA29DEC13
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+
+
+
+
+
+//Start code to add the field and update field Author:GAUR30MAY16
+$query = "CREATE TABLE IF NOT EXISTS form_eight_setup (
+fes_id                          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+fes_own_id                      VARCHAR(50),
+fes_def_lang                    VARCHAR(20),
+fes_lang                        VARCHAR(20),
+fes_top_margin                  VARCHAR(6),
+fes_left_margin                 VARCHAR(6),
+fes_form_border_check           VARCHAR(16),
+fes_header_width                VARCHAR(20),
+fes_header_display              VARCHAR(30),
+fes_firm_left_logo_check        VARCHAR(16),
+fes_firm_right_logo_check       VARCHAR(16),
+fes_cust_image_check            VARCHAR(16),
+fes_cust_image_height            VARCHAR(10),
+fes_cust_image_width            VARCHAR(10),
+fes_header_left_section         VARCHAR(100),
+fes_header_left_section_font    VARCHAR(20),
+fes_header_left_section_color   VARCHAR(30),
+fes_header_left_sec_check       VARCHAR(16),
+fes_header_right_section        VARCHAR(100),
+fes_header_right_section_font   VARCHAR(20),
+fes_header_right_section_color  VARCHAR(30),
+fes_header_right_sec_check      VARCHAR(16),
+fes_header                      VARCHAR(100),
+fes_header_font                 VARCHAR(20),
+fes_header_color                VARCHAR(30),
+fes_header_check                VARCHAR(16),
+fes_header_content              VARCHAR(100),       
+fes_header_content_font         VARCHAR(20),       
+fes_header_content_color        VARCHAR(30),        
+fes_header_content_check        VARCHAR(16),
+fes_form_header_font            VARCHAR(20),
+fes_form_header_color           VARCHAR(30),
+fes_form_header_check           VARCHAR(16),
+fes_firm_name_font              VARCHAR(20),
+fes_firm_name_color             VARCHAR(30),
+fes_firm_name_check             VARCHAR(16),
+fes_firm_desc_font              VARCHAR(20),
+fes_firm_desc_color             VARCHAR(30),
+fes_firm_desc_check             VARCHAR(16),
+fes_firm_address_font           VARCHAR(20),
+fes_firm_address_color          VARCHAR(30),
+fes_firm_address_check          VARCHAR(16),
+fes_firm_phone_font             VARCHAR(20),
+fes_firm_phone_color            VARCHAR(30),
+fes_firm_phone_check            VARCHAR(16),
+fes_firm_email_font             VARCHAR(20),
+fes_firm_email_color            VARCHAR(30),
+fes_firm_email_check            VARCHAR(16),
+fes_firm_regno_label            VARCHAR(100),
+fes_firm_regno_font             VARCHAR(20),
+fes_firm_regno_color            VARCHAR(30),
+fes_firm_regno_check            VARCHAR(16),
+fes_s_no_lbl                    VARCHAR(100),
+fes_s_no_font                   VARCHAR(20),
+fes_s_no_color                  VARCHAR(30),
+fes_s_no_lbl_check              VARCHAR(16),
+fes_date_lbl                    VARCHAR(100),
+fes_date_font                   VARCHAR(20),
+fes_date_color                  VARCHAR(30),
+fes_due_date_lbl                    VARCHAR(100),
+fes_due_date_font                   VARCHAR(20),
+fes_due_date_color                  VARCHAR(30),
+fes_due_date_check                VARCHAR(16),
+fes_roi_value_bydefault           VARCHAR(16),
+fes_dur_oth_lang_lbl                   VARCHAR(100),
+fes_dur_oth_lang_font                   VARCHAR(20),
+fes_dur_oth_lang_color                  VARCHAR(30),
+fes_dur_oth_lang_check                VARCHAR(16),
+fes_duration_lbl                   VARCHAR(100),
+fes_duration_font                   VARCHAR(20),
+fes_duration_color                  VARCHAR(30),
+fes_duration_check                VARCHAR(16),
+fes_cust_pawner_lbl             VARCHAR(100),
+fes_cust_pawner_font            VARCHAR(20),
+fes_cust_pawner_color           VARCHAR(30),
+fes_cust_pawner_check           VARCHAR(16),
+fes_custId_lbl                  VARCHAR(100),      
+fes_custId_font                 VARCHAR(20),       
+fes_custId_color                VARCHAR(30),        
+fes_custId_check                VARCHAR(16),
+fes_father_lbl                  VARCHAR(100),
+fes_spouse_lbl                  VARCHAR(150),
+fes_guardian_lbl                VARCHAR(150),
+fes_father_font                 VARCHAR(20),
+fes_father_color                VARCHAR(30),
+fes_father_check                VARCHAR(16),
+fes_add_lbl                     VARCHAR(100),
+fes_add_font                    VARCHAR(20),
+fes_add_color                   VARCHAR(30),
+fes_add_check                   VARCHAR(16),
+fes_adhaar_lbl                  VARCHAR(100),
+fes_adhaar_font                 VARCHAR(20),
+fes_adhaar_color                VARCHAR(30),
+fes_adhaar_check                VARCHAR(16),
+fes_village_lbl                 VARCHAR(100),
+fes_village_font                VARCHAR(20),
+fes_village_color               VARCHAR(30),
+fes_village_check               VARCHAR(16),
+fes_tehsil_lbl                  VARCHAR(100),
+fes_tehsil_font                 VARCHAR(20),
+fes_tehsil_color                VARCHAR(30),
+fes_tehsil_check                VARCHAR(16),
+fes_city_lbl                    VARCHAR(100),
+fes_city_font                   VARCHAR(20),
+fes_city_color                  VARCHAR(30),
+fes_city_check                  VARCHAR(16),
+fes_pincode_lbl                 VARCHAR(100),
+fes_pincode_font                VARCHAR(20),
+fes_pincode_color               VARCHAR(30),
+fes_pincode_check               VARCHAR(16),
+fes_phone_lbl                   VARCHAR(100),
+fes_phone_font                  VARCHAR(20),
+fes_phone_color                 VARCHAR(30),
+fes_phone_check                 VARCHAR(16),"
+// START TO ADD COLUMN TO STORE USER INCOME FIELD DETAILS @AUTHOR:MADHUREE-19MARCH2020
+."fes_user_income                 VARCHAR(2000),
+fes_user_income_check           VARCHAR(16),
+fes_user_income_font            VARCHAR(20),
+fes_user_income_color           VARCHAR(30),"
+// END TO ADD COLUMN TO STORE USER INCOME FIELD DETAILS @AUTHOR:MADHUREE-19MARCH2020
+."fes_monthly_income              VARCHAR(2000),
+fes_monthly_income_check        VARCHAR(16),
+fes_monthly_income_font         VARCHAR(20),
+fes_monthly_income_color        VARCHAR(30),
+fes_article_item_lbl            VARCHAR(100),
+fes_article_item_font           VARCHAR(20),
+fes_article_item_color          VARCHAR(30),
+fes_article_lbl            VARCHAR(100),
+fes_article_font           VARCHAR(20),
+fes_article_color          VARCHAR(30),
+fes_design_lbl            VARCHAR(100),
+fes_design_check          VARCHAR(16),
+fes_article_item_check          VARCHAR(16),
+fes_pieces_quant_lbl            VARCHAR(100),
+fes_pieces_quant_font           VARCHAR(20),
+fes_pieces_quant_color          VARCHAR(30),
+fes_pieces_quant_check          VARCHAR(16),
+fes_metal_lbl                   VARCHAR(100),
+fes_metal_font                  VARCHAR(20),
+fes_metal_color                 VARCHAR(30),
+fes_metal_check                 VARCHAR(16),
+fes_gross_wt_lbl                VARCHAR(100),
+fes_gross_wt_font               VARCHAR(20),
+fes_gross_wt_color              VARCHAR(30),
+fes_gross_wt_check              VARCHAR(16),
+fes_less_wt_lbl                VARCHAR(100),
+fes_less_wt_font               VARCHAR(20),
+fes_less_wt_color              VARCHAR(30),
+fes_less_wt_check              VARCHAR(16),
+fes_net_wt_lbl                  VARCHAR(100),
+fes_net_wt_font                 VARCHAR(20),
+fes_net_wt_color                VARCHAR(30),
+fes_net_wt_check                VARCHAR(16),
+fes_fine_wt_lbl                 VARCHAR(100),
+fes_fine_wt_font                VARCHAR(20),
+fes_fine_wt_color               VARCHAR(30),
+fes_fine_wt_check               VARCHAR(16),
+fes_principal_lbl               VARCHAR(100),
+fes_principal_font              VARCHAR(20),
+fes_principal_color             VARCHAR(30),
+fes_principal_check             VARCHAR(16),
+fes_roi_lbl                     VARCHAR(100),
+fes_roi_font                    VARCHAR(20),
+fes_roi_color                   VARCHAR(30),
+fes_roi_check                   VARCHAR(16),
+fes_time_period_lbl             VARCHAR(100),
+fes_timeperiod_font             VARCHAR(20),
+fes_timeperiod_color            VARCHAR(30),
+fes_time_period_check           VARCHAR(16),
+fes_purity_lbl                  VARCHAR(100),      
+fes_purity_content_font         VARCHAR(20),       
+fes_purity_content_color        VARCHAR(30),        
+fes_purity_content_check        VARCHAR(16),
+fes_valuation_lbl               VARCHAR(100),
+fes_valuation_font              VARCHAR(20),
+fes_valuation_color             VARCHAR(30),
+fes_valuation_check             VARCHAR(16),
+fes_redemption_lbl              VARCHAR(100),
+fes_redemption_font             VARCHAR(20),
+fes_redemption_color            VARCHAR(30),
+fes_redemption_check            VARCHAR(16),
+fes_other_info_lbl              VARCHAR(100),
+fes_other_info_font             VARCHAR(20),
+fes_other_info_color            VARCHAR(30),
+fes_other_info_content_font     VARCHAR(20),
+fes_other_info_content_color    VARCHAR(30),
+fes_other_info_check            VARCHAR(16),
+fes_tnc_lbl                     VARCHAR(100),
+fes_tnc_font                    VARCHAR(20),
+fes_tnc_color                   VARCHAR(30),
+fes_tnc_content_font             VARCHAR(20),
+fes_tnc_content_color           VARCHAR(30),
+fes_tnc                         TEXT,
+fes_tnc_check                   VARCHAR(16),
+fes_cust_sign_lbl               VARCHAR(100),
+fes_cust_sign_font              VARCHAR(20),
+fes_cust_sign_color             VARCHAR(30),
+fes_cust_sign_check          VARCHAR(16),
+fes_owner_sign_lbl              VARCHAR(100),
+fes_owner_sign_font             VARCHAR(20),
+fes_owner_sign_color            VARCHAR(30),
+fes_owner_sign_check          VARCHAR(16),
+fes_footer                      VARCHAR(100),
+fes_footer_font                 VARCHAR(20),
+fes_footer_color                VARCHAR(30),
+fes_footer_check                VARCHAR(16),
+fes_form_size                   VARCHAR(20),
+fes_default_size                VARCHAR(20),
+fes_form_width                  VARCHAR(6),
+fes_form_height1                VARCHAR(6), 
+fes_form_height2                VARCHAR(6), 
+fes_form_staff_id           	VARCHAR(16),
+fes_form_right_logo           	VARCHAR(16),
+fes_form_date_format           	VARCHAR(16),
+fes_cotent_font_color           VARCHAR(16),
+fes_image_border_check          VARCHAR(16),
+fes_firm_name_font_family       VARCHAR(16),
+fes_form_article_chk            VARCHAR(16),
+fes_additional_principle_lbl    VARCHAR(20),
+fes_additional_principle_font   VARCHAR(10),
+fes_additional_principle_color  VARCHAR(20),
+fes_additional_principle_check  VARCHAR(20),
+fes_interest_slab_lbl           VARCHAR(32),
+fes_interest_slab_font          VARCHAR(8),
+fes_interest_slab_color         VARCHAR(16),
+fes_interest_slab               VARCHAR(8),
+fes_interest_slab_check         VARCHAR(8),
+fes_barcode_check               VARCHAR(8),
+fes_show_barcode_block          VARCHAR(8),
+fes_table_height               VARCHAR(8),
+fes_deposit_font VARCHAR(20),
+fes_deposit_check VARCHAR(16),
+fes_payment_font VARCHAR(20),
+fes_payment_check VARCHAR(16),
+fes_prod_img_check         VARCHAR(8),
+fes_end_date_lbl    VARCHAR(32),
+fes_end_date_font   VARCHAR(8),
+fes_end_date_color  VARCHAR(16),
+fes_end_date_check  VARCHAR(8),
+fes_form_sign_check           	VARCHAR(6),"
+// START TO ADD COLUMN TO STORE USER FIRST MONT INTREST DETAILS @AUTHOR:PRATIKSHA-4 APRIL 2025
+."fst_mn_int_lbl          VARCHAR(30), 
+fes_mn_int_item_font    VARCHAR(30),
+fes_mn_int_item_colour  VARCHAR(30),
+fes_mn_int_item_chk     VARCHAR(30),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+// END TO ADD COLUMN TO STORE USER FIRST MONT INTREST DETAILS @AUTHOR:PRATIKSHA-4 APRIL 2025
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+
+// Check if fes_tnc column is VARCHAR(2000) and update to TEXT if needed
+$checkQuery = "SELECT COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH 
+               FROM INFORMATION_SCHEMA.COLUMNS 
+               WHERE TABLE_NAME = 'form_eight_setup' 
+               AND COLUMN_NAME = 'fes_tnc' 
+               AND TABLE_SCHEMA = DATABASE()";
+
+$result = mysqli_query($conn, $checkQuery);
+
+if ($result && mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    
+    // Check if it's VARCHAR with length 2000
+    if ($row['DATA_TYPE'] === 'varchar' && $row['CHARACTER_MAXIMUM_LENGTH'] == 2000) {
+        $alterQuery = "ALTER TABLE form_eight_setup MODIFY COLUMN fes_tnc TEXT";
+        
+        if (mysqli_query($conn, $alterQuery)) {
+            // Optional: Log the successful update
+            // echo "Column fes_tnc successfully updated to TEXT datatype";
+        } else {
+            die('Error updating fes_tnc column: ' . mysqli_error($conn));
+        }
+    }
+}
+
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

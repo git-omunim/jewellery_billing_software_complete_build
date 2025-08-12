@@ -1,3 +1,87 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Raw Metal Select Div
+ * **************************************************************************************
+ * 
+ * Created on Dec 31, 2013 2:10:51 PM
+ *
+ * @FileName: omrmsldt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+?>
+<?php
+//
+$payMetalType1 = 'sttr_metal_type' . $metalCount;
+$payRawGoldPreId = 'sttr_item_pre_id' . $metalCount;
+$payRawGoldPostId = 'sttr_item_id' . $metalCount;
+$payMetal1FirmId = 'firmId' . $metalCount;
+$payMetal1AccId = 'sttr_account_id' . $metalCount;
+$payMetal1MetalDesc = 'sttr_item_name' . $metalCount;
+//
+// START CODE FOR LESS WEIGHT FUNCTIONALITY ON METAL REC/PAID @PRIYANKA-16MAR2019
+// GS WEIGHT AND GS WEIGHT TYPE @PRIYANKA-16MAR2019
+$payMetal1RecGsWt = 'sttr_gs_weight' . $metalCount;
+$payMetal1RecGsWtType = 'sttr_gs_weight_type' . $metalCount;
+//
+// PKT WEIGHT AND PKT WEIGHT TYPE @PRIYANKA-16MAR2019
+$payMetal1PktWt = 'sttr_pkt_weight' . $metalCount;
+$payMetal1PktWtType = 'sttr_pkt_weight_type' . $metalCount;
+//
+// END CODE FOR LESS WEIGHT FUNCTIONALITY ON METAL REC/PAID @PRIYANKA-16MAR2019
+//
+//
+// START CODE FOR ADD NEW METAL REC/PAID ENTRY - MAIN ENTRY UPDATE TIME - NEW FUNCTIONALITY @PRIYANKA-18MAR2019 
+$payMetal1RecGsWtHidden = 'sttr_gs_weight_hidden' . $metalCount;
+$payMetal1PktWtHidden = 'sttr_pkt_weight_hidden' . $metalCount;
+// END CODE FOR ADD NEW METAL REC/PAID ENTRY - MAIN ENTRY UPDATE TIME - NEW FUNCTIONALITY @PRIYANKA-18MAR2019
+//
+$payMetal1PktWeightHidden = 'sttr_pkt_wt_hidden' . $metalCount;
+//
+$payMetal1RecWt = 'sttr_nt_weight' . $metalCount;
+$payMetal1RecWtType = 'sttr_nt_weight_type' . $metalCount;
+//
+$payMetal1Tunch = 'sttr_purity' . $metalCount;
+$payMetal1ByTunch = 'sttr_metal_trans' . $metalCount;
+$payMetal1FnWt = 'sttr_fine_weight' . $metalCount;
+$lbrWtAddMinusValue = 'lbrWtAddMinusValue' . $metalCount;//ADDED FOR INDICATOR TO ADD/LESS LBR WT IN FINAL FINE WEIGHT@AUTHOR:MADHUREE-09JULY2021
+$payMetal1FFnWt = 'sttr_final_fine_weight' . $metalCount;//ADDED FOR FINAL FINE WEIGHT@AUTHOR:MADHUREE-09JULY2021
+$payMetal1LbrWt = 'sttr_lab_charges' . $metalCount;//ADDED FOR LABOUR CHARGES WEIGHT@AUTHOR:MADHUREE-09JULY2021
+$payMetal1Rate = 'sttr_metal_rate' . $metalCount;
+$payMetal1Val = 'sttr_valuation' . $metalCount;
+$payMetal1Bal = 'PayMetal1Bal' . $metalCount;
+$payMetal1BalType = 'PayMetalBal1Type' . $metalCount;
+$payMetal1MetalType = 'sttr_item_category' . $metalCount;
+$payMetal1AvgRate = 'PayMetal1AvgRate' . $metalCount;
+$payMetal1Pnl = 'PayMetal1Pnl' . $metalCount;
+$payMetal1Indicator = 'sttr_indicator' . $metalCount;
+$payMetal1TransType = 'sttr_transaction_type' . $metalCount;
+$payMetal1PreInvNo = 'sttr_pre_invoice_no';
+$payMetal1PostInvNo = 'sttr_invoice_no';
+$payMetal1UserId = 'sttr_user_id' . $metalCount;
+$payMetal1StocType = 'sttr_stock_type' . $metalCount;
+$payMetal1StockType = 'sttr_type' . $metalCount;
+//
+$firmPanelName = 'rawFirm';
 ?>

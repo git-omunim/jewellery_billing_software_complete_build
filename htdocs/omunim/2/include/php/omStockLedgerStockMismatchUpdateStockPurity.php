@@ -1,3 +1,163 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK LEDGER STOCK MISMATCH => UPDATE STOCK PURITY PANEL FILE @AUTHOR:PRIYANKA:08FEB2022
+ * **************************************************************************************************
+ *
+ * Created on FEB 08, 2022 07:00:00 PM 
+ * **************************************************************************************
+ * @FileName: omStockLedgerStockMismatchUpdateStockPurity.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 
+ * @version 2.7.122
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA:08FEB2022
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.122
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+$currentFileName = basename(__FILE__);
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+$size = '100%';
+$font_size = '12px'; 
+//
+//echo '$documentRoot == ' . $documentRoot . '<br />';
+//echo '$documentRootBSlash == ' . $documentRootBSlash . '<br />';
+//
+?>
+<?php
+//
+//
+//print_r($_REQUEST);
+//
+//
+$sttrId = $_REQUEST['sttrId'];
+//
+//
+parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_id = '$sttrId' "));
+//
+//
+if ($sttr_transaction_type == 'EXISTING' || $sttr_transaction_type == 'PURONCASH') {
+//
+//
+$_GET['sttrId'] = $_REQUEST['sttrId'];
+//
+//
+$_REQUEST['panelName'] = 'UpdateStock';
+$_GET['panelName'] = 'UpdateStock';
+//
+$_REQUEST['stockPanelName'] = 'UpdateStock';
+$_GET['stockPanelName'] = 'UpdateStock';
+//
+$_REQUEST['stockType'] = $_REQUEST['transStockType'];
+$_GET['stockType'] = $_REQUEST['transStockType'];
+//
+//
+if ($_REQUEST['stockType'] == '' || $_REQUEST['stockType'] == NULL) {
+    $_REQUEST['stockType'] = 'retailStock';
+}
+//
+//
+$panelName = 'UpdateStock';
+//
+//
+$stockPanelName = 'UpdateStock';
+//
+//
+$documentRoot = $_REQUEST['documentRoot'];
+//
+if ($documentRoot == 'undefined') {
+    $documentRoot = $documentRootBSlash;
+}
+//
+//
+//echo '$sttrId == ' . $sttrId . '<br />';
+//echo '$panelName == ' . $panelName . '<br />';
+//echo '$stockPanelName == ' . $stockPanelName . '<br />';
+//
+//
+//echo '$documentRoot == ' . $documentRoot . '<br />';
+//echo '$documentRootBSlash == ' . $documentRootBSlash . '<br />';
+//die;
+//
+//
+if ($startDate == '' || $startDate == NULL)
+    $startDate = $_GET['startDate'];
+//
+//
+if ($endDate == '' || $endDate == NULL)
+    $endDate = $_GET['endDate'];
+//
+//
+if ($transFirmId == '' || $transFirmId == NULL)
+    $transFirmId = $_GET['transFirmId'];
+//
+//
+if ($Category == '' || $Category == NULL)
+    $Category = $_GET['transCategory'];
+//
+//
+if ($transName == '' || $transName == NULL)
+    $transName = $_GET['transName'];
+//
+//
+if ($transStockType == '' || $transStockType == NULL)
+    $transStockType = $_GET['transStockType'];
+//
+//
+if ($transPurity == '' || $transPurity == NULL)
+    $transPurity = $_GET['transPurity'];
+//
+//
+if ($transPanelDetailsDisplay == '' || $transPanelDetailsDisplay == NULL)
+    $transPanelDetailsDisplay = $_GET['transPanelDetailsDisplay'];
+//
+//
+if ($stockLedgerPanelName == '' || $stockLedgerPanelName == NULL)
+    $stockLedgerPanelName = $_GET['stockLedgerPanelName'];
+//
+//
+//echo '$transPanelDetailsDisplay == ' . $transPanelDetailsDisplay . '<br />';
+//echo '$stockLedgerPanelName == ' . $stockLedgerPanelName . '<br />';
+//
+//
+include $_SESSION['documentRootIncludePhp'] . 'ogadstoc.php';
+//
+//
+include_once '../../omCommonFunc.php';
+//
+//
+}
+//
+//
+?>
+

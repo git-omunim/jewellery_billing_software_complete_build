@@ -1,3 +1,141 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: QUICK SELL SEARCH MOBILE NUMBER FOR CUSTOMER  @AUTHOR:YUVRAJ KAMBLE -06102022
+ * **************************************************************************************
+ *
+ * Created on YUVRAJ KAMBLE -15JUL2021 04:26:01 PM 
+ * **************************************************************************************
+ * @FileName: C:\Project\Retail\htdocs\omretail\2\include\php\omsearchcustomerMobile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.92
+ * @version 2.7.92
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * **************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:25OCT2021
+ *  AUTHOR: YUVRAJ KAMBLE
+ *  REASON:
+ * 
+ */
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommpsbac.php';
+//
+$keyup_customer = $_GET['str_user_name'];
+$keyup_customer_mob = $_GET['str_user_mobile'];
+//die();
+//product_id,product_name,product_category,product_barcode,product_hsn_no,product_price
+$product_id = $_GET['product_id'];
+$product_name = $_GET['product_name'];
+$product_category = $_GET['product_category'];
+$product_barcode = $_GET['product_barcode'];
+$product_hsn_no = $_GET['product_hsn_no'];
+$product_price = $_GET['product_price'];
+$panelName = $_GET['panel_name'];
+//echo '$keyup_customer_mob'.$keyup_customer_mob;
+$select_user = "SELECT * FROM user WHERE user_mobile LIKE '%$keyup_customer_mob%' ORDER BY user_mobile ASC";
+$query_user = mysqli_query($conn, $select_user);
+
+if (mysqli_num_rows($query_user) > 0) {
+      $checkDeviceType = $_SERVER["HTTP_USER_AGENT"];
+    $deviceTypeAndroid = strstr("$checkDeviceType", "Android");
+    $deviceTypeIphone = strstr("$checkDeviceType", "iPhone"); // sarvesh added code for iphone date:8DEC2021 19:27:01
+
+    if ($deviceTypeAndroid != NULL || $deviceTypeAndroid != '' || $deviceTypeIphone != NULL || $deviceTypeIphone != '') {
+        echo "<ul class='list-unstyled list-group' style='width: 94%;height: 150px;scrollbar-width: none;overflow: auto;background-color: white;'>";
+  
+                    while ($rowUser = mysqli_fetch_array($query_user)) {
+                        $user_id = $rowUser['user_id'];
+                        $user_fname = $rowUser['user_fname'];
+                        $user_lname = $rowUser['user_lname'];
+                        $user_mobile = $rowUser['user_mobile'];
+                        $selectOptionValue = $user_id . '*' . $user_fname . '*' . $user_lname . '*' . $user_mobile;
+                        ?>
+ <li class='list-group-item' style=" margin-left:0px;margin-right:0px"><a style="background-color: white;color:black; float: left;" class="" onclick="getUserDetails(<?php echo $user_id; ?>, '<?php echo $user_fname; ?>', '<?php echo $user_lname; ?>', '<?php echo $user_mobile; ?>', '<?php echo $product_id; ?>', '<?php echo $product_name; ?>', '<?php echo $product_category; ?>', '<?php echo $product_barcode; ?>', '<?php echo $product_hsn_no; ?>', '<?php echo $product_price; ?>', '<?php echo $panelName; ?>');" ><?php echo $user_mobile; ?></a></li>
+                <?php
+                     }
+            ?>
+           
+            <input type="hidden" id="user_fname" value="<?php echo $user_fname; ?>">
+            <?php // echo $user_fname; ?>
+            <input type="hidden" id="user_lname" value="<?php echo $user_lname; ?>">
+            <input type="hidden" id="user_mobile" value="<?php echo $user_mobile; ?>">
+            <input type="hidden" id="sttr_id" value="<?php echo $product_id; ?>">
+            <input type="hidden" id="sttr_item_name" value="<?php echo $product_name; ?>">
+            <input type="hidden" id="sttr_item_category" value="<?php echo $product_category; ?>">
+            <input type="hidden" id="sttr_final_valuation" value="<?php echo $product_price; ?>">
+            <input type="hidden" id="panel_name" value="<?php echo $panelName; ?>">
+            <input type="hidden" id="sttr_image_id">
+            <input type="hidden" id="user_id" value="<?php echo $user_id; ?>">
+
+            <?php
+        
+        echo "</ul>";
+    } else {
+        ?>
+     <select class="MobileForAddNew" id="MobileForAddNew" name="MobileForAddNew" 
+            onkeydown="javascript :if (event.keyCode == 13) {
+                            var str = this.value;
+                            var strArray;
+                            strArray = str.split('*');
+                            var user_id = strArray[0];
+                            var user_fname = strArray[1];
+                            var user_lname = strArray[2];
+                            var user_mobile = strArray[3];
+                            var product_id = '<?php echo $product_id; ?>';
+                            var product_name = '<?php echo $product_name; ?>';
+                            var product_category = '<?php echo $product_category; ?>';
+                            var product_barcode = '<?php echo $product_barcode; ?>';
+                            var product_hsn_no = '<?php echo $product_hsn_no; ?>';
+                            var product_price = '<?php echo $product_price; ?>';
+                            var panelname = '<?php echo $panelName; ?>';
+
+//                            alert('bye');
+                            getUserDetails(user_id, user_fname, user_lname, user_mobile, product_id, product_name, product_category, product_barcode, product_hsn_no, product_price, panelname);
+                            document.getElementById('mobileNoToAddGirvi').value = user_mobile;
+                            document.getElementById('mobileNoToAddGirvi').focus();
+                            productBlank('livesearch_customer_mobile');
+//                            document.getElementById('livesearch_customer').style.visibility = 'hidden';
+                            
+                         
+                        }"                       
+                        size="8" style="width: 165px; float: left;position: absolute;background: #fff;z-index: 1;">
+            <?php
+            while ($rowUser = mysqli_fetch_array($query_user)) {
+                $user_id = $rowUser['user_id'];
+                $user_fname = $rowUser['user_fname'];
+                $user_lname = $rowUser['user_lname'];
+                $user_mobile = $rowUser['user_mobile'];
+                $selectOptionValue = $user_id . '*' . $user_fname . '*' . $user_lname . '*' . $user_mobile;
+                ?>
+
+            <OPTION  VALUE="<?php echo $selectOptionValue; ?>"  class=" content-mess-maron" 
+                     onclick="getUserDetails(<?php echo $user_id;?>, '<?php echo $user_fname; ?>', '<?php echo $user_lname; ?>', '<?php echo $user_mobile; ?>', '<?php echo $product_id; ?>', '<?php echo $product_name; ?>', '<?php echo $product_category; ?>', '<?php echo $product_barcode; ?>', '<?php echo $product_hsn_no; ?>', '<?php echo $product_price; ?>', '<?php echo $panelName; ?>');"><?php echo $user_mobile; ?></OPTION>
+                     <?php
+            }
+                 }
+                 ?>
+    </select>
+
+    <input type="hidden" id="user_fname" value="<?php echo $user_fname; ?>">
+    <?php // echo $user_fname; ?>
+    <input type="hidden" id="user_lname" value="<?php echo $user_lname; ?>">
+    <input type="hidden" id="user_mobile" value="<?php echo $user_mobile; ?>">
+    <input type="hidden" id="sttr_id" value="<?php echo $product_id; ?>">
+    <input type="hidden" id="sttr_item_name" value="<?php echo $product_name; ?>">
+    <input type="hidden" id="sttr_item_category" value="<?php echo $product_category; ?>">
+    <input type="hidden" id="sttr_final_valuation" value="<?php echo $product_price; ?>">
+    <input type="hidden" id="panel_name" value="<?php echo $panelName; ?>">
+    <input type="hidden" id="sttr_image_id">
+    <input type="hidden" id="user_id" value="<?php echo $user_id;?>">
+    <?php
+}
+//END CODE FOR SEARCH CUSTOMER : AUTHOR @DARSHANA 22 FEB 2021
 ?>
+<!--START CODE FOR UPDATE CUSTOMER-->
+

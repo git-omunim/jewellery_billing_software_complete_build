@@ -1,3 +1,803 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAIRwAAV1yRZdFtODPDy4vd6bs7fcRWvrcNdeUmUALj3/vwSQro91lc6y3DiKKr7SfaGeRgVoa7AYjoMYuqOlBBpUdzIZBfUPA7BNKGUDH9UyBq8bHeGk8h9xs+Tf4pf/1aF8YjXRA8xqXMv5zptoVcfhUhIU4PzMQl2S8eldE3WL2D62RYxpbeYvybqUZmqXjkRnX7we+5ouwqxngrBskPI8qXvUQgVSSQ5q3i1kNY3sTvy0+vN4j09SuyRFxwj846L5bKuQE1bIOTlOm1eULjV/67//7EppoX0Hp/SF/iT3kcFi6Tb1uiID0Dcv0zG9b3axlIPljJmCor0LVfcNGIV1+Sgt8O4JF5sI2TAv/c/uoke1CkyZVDjqrq3RK3+mgnY1rWGF1HD7VG//wbHn5L1MHlegdijwlHFIKj6DlvVskQvr+Cqt67FRMmuMQ3EWB7TYUWIOiCuJuldClt4Sl26UvzjlQp9ViW2ZOeuL+g4AwuuSjoFzgzLc04tz1opyjjDldgYfL5m5Ksr6Cd3W/8qdQu/nz8OjuVF2NawDg5y0+tXiCvOWu5LH+tm/RaTzeOmwSJpD9cPEbaxgqUhzmoRTAFuEBYc+J9jfxe9FJ1jqbhG1tz+ODjC56ymON4m7UtU3Sj7aAf3ROQlukKg4lTY6wgN5CHvnMs1nyHcH6zIzYT+35JFBZVKnRDAHDO6/jw47dwZqoUZh2DHJQeVL/kGchxwqc0od+9bgpJIOKPhXY8TSRG6T8/60rptjPDjuC4Ydd8tj7cVGkUJ1gxv5RNs4BfL4l2qJ9gFOjjWGsfViyyM3xXJsYtmmm5MIuHPSkru0uL0T7yelmIcjyhF0FbNmyyoQLyzWzWDY7nSRG7b5U9fMVdC+D0RG7OvwIPGJVH2EJafQljHWa2QtD8bo5ZvKhUaDSsoGQZRUVDYhdPpRwueB308LrNgMCBdw0M8g0ohTn6wCxeiBzZiOTAJ+a3Z+GdFIPZvQ0plyp3xj/5Gv+w0jcYDpgoy0caOTTPob2X0E1GENqlLgPixvJZJcphunp+ocqBwVkEDPIAuBExdlOEUhX2HY4Bx7AZHPnCKGuac835ZI0S7FCJ83JQFJvWO/Cv4rYfdMpdrnfSen4WE3iit4oTbitbhFiXQaGe7b7HM7OtLxWW5SREfOt2vAslfjZbYQepHsmVpvf234D7p28WoKoY1zLPivYr/qyIiAsXgoZOBIMISN2fDywKv9LziwJo+i1HiatuOAevVH4qk5soV7te4bQt9lkC9z9b84LqXR8IhYr/IIpd8k1H9dQsiOFK2ybl+zzQrmR9LutSUVl09GxuPa1SDrioppdAFxb2YPFONj90tE13JcHFT3K8290oe+tJj5anHVLUTD3YY5y0MV3UcDOv3kjjwe2rtyatytfmcSUPYJF8aTYonQCWh96uPAd4lGZ9JyoWXNOZAhI0GCXNxEV1wVUaoIHyn7I5HFa/EQsKsaCFEKr8CZa20g1mwKAd3zcsUbGOA6WZDLfJtXuUEwFOwJxXw7cg2j7vaGzE9DvwOf/Yei9u3ecLoDyYcOUJxtWxnrOFQVWWHNAaBs4XXwZXvpdZ4AkDlQehH95+mzL96R/PC/mThqE2QdSqaK0I/dZUkurVwO1dptRkYNAlTZaGL0Kfro8OjrSIS4Jxysh4ADaOvGhQJUAWmBFAJp7oX8wU4RX3s8Zj843DQHnbugmKMor3yieVNg3D+HW8Zn7fTy5wYp3l8+h0yI2G9zTUbNdBb8WMaS0EjGnFz3y/+tefYGCuKaNioephJlAs65Ad8dfInBcVfMxobtJrlJgvoZi0QAAI/QmulV7nwEMRD9t5o3UTAmUGx6Cynsq2yzrZT+CX/ctHQfN3OFDgKER6DYK2lljUnujkFo/KaPjvhZH3MYdV6VlZXKjpEmA8XHCDz859mQmrVMwKqqZRFGfIwRh/oVYZRus16xPrkJe5mZTkkab/FJYh1f2Xos8/f6cKNv6clEpWz4Iv54Ac14DUctf5lrHdFZnH+NqFDEVS2tDjEcxQl2SMI8oqN/dArQJQoIK5L22Frcq1yvEwu2DoNBghfAXwDcu2c6ef3z6qQqkkV6EOuINWh+7iKSLghMKnLnR3agnabUVpRS/YVJ6zxJ3U79KmufY4z4CrwKXlmeqzVbY+dRw1xLlvtzLpnwPP2RIPskvIjLQg6/lnykF50BaLguVqCaU+gk2MhcoSDhQng+1PLxG4gSvEAFY/Qty0ucGIQvmTuCRboDKz36m3uNHJHQPTeiSIrS6I9h4fXDts/eW8GQWDxn4IPtOhKlgU3p9bclytPg18Vmhq2uZprCWWINnAXtHGL9P/ktQWoqOLLH/ifUwbowvIqd2hMQaRMffa62zS3tEHHlhxivqR7bfdy9utqNfGxla4NsDl5Thd9BWLCTqb+hclxGpUvWt4PtPnbHpY5TgsP9HIp7cERSw4AZrAhFNv/YAmlEwpq1DggYYifn8rgX8GEqpiUoesnWNU1ejFCyKoyl6Wlyvm5XehVJ1PL/f1kc/05NRbUMK5/6CLnhUuDY7DqlrzepkExc5FP1P5RTyEuZHjI182frdQiwZTtQ8vDlMqPqhoy8Tc1pwhjpMS2/ftMrpb6VIu0i5z17ni3549Cm+wX2aKR8k2v7wh+Axt+VBj//raHzaEa4dftL9KE/4RAk3JssJWJKEhq8nfp59D49KFkCtQMP6OhQD2ZfniLEG7b2jXTmk6Ysm/EXvMECHlULWPim8blyc4NpONsgvhfCGQJX0rng+bpfA4Y9Ztm9YnpV5p4piQEuNlD+QWGsEHTW/q69FbV2RWppFu4qCiJYwILiHO4O+XqJpWvqSr5QYjla0e1WowqFusFi65j68UPf35atkrafhwoxHyKdWIPvWb6WxoeyT1drNDGTDln92BMTEz45LTAq9OPTGinWPYLb3M1GgHLWbYHkLSHcaYlNjD8ycWaFk8IgKg/CLsPEisT1wkjJaXAR/OQs+nqFQ4zzFRLeOo7lSFmxQbR71imknaEFdCPRioNYPRe2KE+Vj59z5Vj88yDt9G73+4RM6LdVCRMijTsxJu4w1OCr3P2/2gxo894CkMfiyuA1E561XxxueYqTl5FB5v5J7Gz1RbCH08x77tjpF9aSyWNrCvUqWIK9+7+9zg5opRK4+4d9TBU+SqF2r73ze1bG/lWO26tMzMYGdWK1FbnFhnqCG8IZ42heQtCAZbE0nAOYpViyRNjGudR7vkDNmADVh88imfNT2I2PW0WMNCPINcRjYvKXcx26o+0mO4e+7Z8dlfuo9Rpni2/CkY/A8Pi3p456E0ipe51i1yXE8WxBcbJLFEF7txQj2qDVZFN05UAcubVZXbU4OZwYxWpctKQNAl/ywBJ4v2Mx0/fCXnBtM5c/FvWW2b5tfiapv1r4YcI9TVW06K4Qn8WsL/mG0tWeMJ7SDxPjuoEjNfyGYln52d+4KDge9W2xSss4N3AkttD1G0uLLLNCCvHCG9Nu6wYAYbYHj8LJ0zm8RtULo+pQq4j7oCUbmRCostfESMukU+gf45hUisOSZdMY81ndGe6bo9EOTVgIYhneFEryI7QMPhskDYxSlABMDGQ1tALih8b4tz8u2yRMniVgy+QfhDEemwcWDx4d6lkYa2rI+fPSHfoSrv9Nd0sudgWy8VoVGpNl9P+Psu+SK3PfUOUHdTlZI5FBbSurJO9V4V8RiWJApeslJQEHIS/H79349DdGVFaMORoaoGSD9E3LtlVtrFd1Iolq1JkLyqGL9eCaU8uZlxqsuTuMHmbHxP+xpSOtCej8yg9dU8buXH7blTx16J3+sekYms672x9rkFoiJSYxQ6wzRXwTp176tFrN2Hroe1WWWfskjMDKwdpMJwIAtw3MGUVPtToBVHgqutwh+4aohPRi7dDBpYEKZlN4k0kTTdHxIEcUnfkBh0uXdLkhRm3CWlTDYTlW5umUPIHZl019AhvqktAwpmWa6DFyzIyyQw96cc1aCDR8i9dLwM0AuyGW7emlBTu9aOrCe2monw3UUkH4ptqXzTNJfJAxe8jHKR4Ng5CAoV5UbdBPI6XPBBlaBkvGwtJmvqolbSKY3hP2CVfMqI4PHLOlNB/0f76xRJd+x4r3J+Rsr+bh+Omw9t0cG4cl9QjZx9kKRdSh1mpTB7rPSIOZsqC26Ko6Xj3YizNg9ixk8TK/NlADMlHMvggWdZXbPapBHOjpoJB7aLxcYIww2Hh3TyZQWZGnttJNGwFQk7JZCm+sAo0vH80+x2KHz6aqZhG9YXWJAena1Dj0PMKE1o32HnQt2ebXjESe1EOiEbCdgd189r4RWEzla+MQ3UW8lMb0J6QUWWfQaOUM1NNYH3eH4pgI7Ke+61ubBuXrS1mw1e92Sx3epsvqPXa7D0qcI/Dxs3SV1m6y/hc4Qc0B/SB3ZmlCTx476OS9q+jTZzW+y6Xrpa+eXmeeve7WsZ+gGXhBES0mDubDBg4pbekygRVLXNta2y4NPrBovIgv0RiTyxrACMt5nnWLsaahl42rT8H9bUst1GAikr+cvL5wPkhSvTxHHa8nEb9T7eSqqi8+BQ+8vSC8vxutQLInphLY+v7cA1q0TsI+Mk4juX8U7WoejT9pmMYkfbC0owknQtbnZvaA44f2jdRdIuZyX4eR28uy3cYWBJ40dCMN7iPoMWHoB9KTn/J9Csq1Sh8aHu3SQm+ZNHJLBBiMp6z9y63wMn0+Ji0PN3Wn+iwrjrXQZmy2Xr5OO5JyjaJJE2GRh7Uz7xJI1fONuK2ycpgSe9gQkVV5Nx5vBsEf1OdyGsf6ljOO/V7T+D1EhBX4CTMB2oUh7Bk3CB2sx6CGWdgC96lrrSmpv/zPs079/esisyxIk2qZEd+UZAL1fdLNvCu8pAmbSnHNrUMW1Bg1ELVuVWHG/eahkQPtA32tGpBosinUMICpREgMk8ZdkrG2sIDE+8xqvnhpEWf33AqFRhRwH9RSiQ9pv8cSd9PW/+JdoWID/llSekAW2KXxiBE9PUbl92PgFq6QH1gTB02mR67RkQBbQYPwlJvQnZ2AENE30y2RdQPKuTTXpaTNhUeY+04Atod7YmO10K3CHrmenU4WxDQK/2HNLSBegEdXJEDZjJeZ9lHQb/7o7kwtSSY6CpFu/g+cjX+J2yaToMFPBrFr/zYBJEJU+mlkF2WsKNXnRc4nNMjVL3hp1NZD6Lg2pldwVHjqL0FWNIGDiHe5aNLHdre3ChDfX7G15oZPIIwlL4CBtXxZFnsepG9hgXe9LshcrEjEBNSIN6WTqlKBRpCDJI4TI6OpDfKTCh1eQuNQ0ySGT5DEPTdK8wOu1VT3iZq9fQTsGxhEvTmdtdjEZuooTDEg4nIaHwh8QiaeUo2Z5ul5e0ICZ+XJaJ4bD3HPS9h7LR4fO88OtcoSIjYk8bZfirLmY19P1N/qPHbgKBNq/8L1uR4LfHLOYdL5GR5PKoWlhNPnQapRwflW3xETT1Z8UKpC4CwvBl5InfYcH+klluaXC7xMEYrCFugmnnkIE8RRfLbb6TmWx3qsKQKqWHVpkrDV/2j6CjPoTkEA4ObA7hEwwHGWHFfUhKzjppJLE05UM7ardNjYSHTSlLcPiSpOFfEdccLa3dhtFE1D/FOCJ5+A6Xz9bZsH89sd0s3HWkYRVxKVCuEwFuvsApmlUuRHiUtm81qshiC6irL3KDh6iz1XjHnj9nzKnbxPM+AW8M7ku0enSVKwb03sYUNjNahZTIXDnxzxqcnqFKYbqe6pIBImGFfD8D4Lp97/r8AshgUNC5TmwUu7JkSz0knfArzgtgNeuxu5jZb2o5b6CmVMIYkgzWn7eerEc61UZomhfq64f1V67KpV1nPL35LyegU0xJvOPV4kt01iFfAXdV+CfOI50MS9RJZgHzCeDa4kEwMwyYIJO0wVHMzg4bHIw1mpL0DXlxH8OMkIdcv1GH5R5UGen4LPAUf8z3k4HDYJI06v8XswBFFO0/FnJ+BSnIavddt3MxYYlGZ+qiJWHuPu4DsHL9HxfCQnzyrqyKUu1SOoSGN/14d9hwRwQ2pfidGF4rIXXfzlm+iC0wY2iyx7isIHUMdi1jdNNXqGtniRnol0kjqfBfOF1h43kR4NjL9aqok54qzuTXteZVNc+4iXQD8mG0/Qu4ZMfdKKStCAa5PHQDA3y+KR6UpuohPkXjvKwYI82ztf6+Bg0fGx4J8dggIpvXu27bq6UmTbS8VMsQU6wKdp69/emZfpSye8mIV6vmHl7iinkZ2SnT3l5UAanpnL/3uf8GyI1kqBmSrqgMIIRhVmJRUC6dCNkVjuGFNV+plhp9h11KaVrSxed9cpzIK+JzY00O6CK4ba+TcsUZizBsg4JyzEchFZMUknqq84Baz8uZ2/YBd0Mq+AtXGuyIk6s14WgJFggPzrfXpArxwZb5926NmewVG56U4YkGN6kjT+vrqFmdD1LT7cs75cqUIdWpRMv5fTr2SJlDrSdS0Oe+gaj3OlINa38+cuQXvyzznZf1fBr/ktS7Zf/5c6Sob9EzmiVbs2Ba4rFJbhCFxyfUi9cNYJL0KR7A0f4iIRHe2L2vUSq4SBAluC1tMiV5czPpT+OUfsdr5B5eUEd8XhiZNp48AsBffFLLyfZGMDarOhDl+obd8eTjxhfdB5D0czYtFThCjDPvm4V2TsXhXosjb0i5+1+l4DFUH9+IMzVDqxxzOb7JP9qlvEp3rH5e4PeBG+kKN2I23qUWDQxm/lxToAYELDVb0svSAxq3SIR9ZkcDZScaU5WeqW67uU1u6J5HAljMmQbi2s+L7AjwfF8VOmaj3Z45X8ZokgaiUu4yXJPXoqG3XJH/UNWrj1PKddz3BDlKVAxAdUPbsUdAdRXJqPIOn+7dJ6Eos1YOo/hbw0Xpi2yHxuH8ugohtsW1WHLzO31r97V4pHWQ8njoD+Tnm3WpS6/Wqo7nxoi66iW/V23rMALnDBVNLHnZ/3/ylbs2SscafYFZzxcQCjHPEX2jYI3Sm5ABQiHWMS583of5vR2h7kQyNwsY8M5MLh2rlwu1B3M0WB6VIfr1mUpE4jYRvdxtA0mWFJ+kFKTnIAlmCuC3CRzuCwEVEH8JPZpx50vbPvygtGYzoCOIaNEFirTAU/e1m+gVpPfAGQf+LGBDC0x3VXY5lT85wxPleCSqoFznwH5AXCuVrrDbDakcqOSSBuSoFgX8QAIAwkm8RZyKOP9g3fOZYKcddRlQv77PXR3ZwoUGctnCpEzklPt4zIsKJWdcEy+gA3gQ8p+otZwWxuDkJ/lZRkmBvBxDPg+oY5tWFIuZRjl6tGlmdjbsvO0SfLoNt+2NwtZH6h/tnLE5TzrjZMEsAC1JX9AYRk1uw1ecc7EsslhsRq8XCeVNu+xfU7Z4VpGIHMK4D//uo33JNO/Rm6JeyzbS5nm8Utg59L4R2EtIyO3M2wRm0gd93edZvdqUipDNA3DS53BNQjFGwLUmH+aKtCJ2VBSs61qdg9O+PgeZWUAW2CwhjQ3zrBr/INPdIuQx07QUVHPTzeRW4N8kQYMU/vhRl7nm+zSn5qGn2eW8hx5MeGaYyJf8KCf4Y5DJR00xesCHJO0N4a0acqt0rYY9QuQVHmxwroL8aazBYXmxVpCFxrT4UoGdlhA6IKmsjtJEhq1H+20X5m94Y8zjfikix59+XBoZuChzNnSaz/XJ3FS0jQN+tYKNX2WetDaxdDXYQY27rH+nnSk2xuU9mStIjjiqZtMhSmVSBre0orT65B/mtel9YsIX1f+dhRdobu0MXwbsKrtVbwwIH3wsc/6rUyRZFATj+zxLdkcT6nnziXR5HxIAYJ4lKYVw8OJ2Nqg966kXchc5qgt5pg7kiIAcZgzcUmT1CnH7q7AcuAIPr8LiD51LcDVw7ZV0l/K39Gl1zULUqS51UKLypM4zKccL6fW3QTv1r75xNemYNCE0PEBxUKVfV0Utdb3kqexf07cOrNrpB/aqzyWfNIY5b1CWOR80m4PIiujQ2JG+5h2aETAJluNm2u0zkIO/T696XbACzh7+4PCb1V/L7v4m2OE0Az53iN6xUfPMM7y132NVZqXOo3wlvUpVWquXPHZC7QQad09wsWWOEQ/fCjLLkdnyw8urQtMU5QK+S5a4HBaUnY7ax6U1GCztwiN7A5GsobFYEps97+lS9c4EyVlh6ROT/0qlwWzDhpPr8erpmjvt0ZFrHlEszCuS+hmLm7JXPlmMDl7kdMgIe+EHACt/LVyrOAlkSfxFAXLnD2wTsydUbKfLlpvVVlWfpnaJ9+fmQE3B2m2X+n8EnP6bYZR0O8iNeCJ1ZV+n5EDSUzsIAyZcWRHyg8t950ZLSEbFEADjzdz03taEhWW50CMylG5h+uiLm1d7F3zX60d1hckIRwkeujAH9Wlny7qqOwCaJ0HarAzjM+FsTw80VvTqabVzwfh3wj3//fxlJ6ciGAnJkg/ywrA0UP1pw3BrC5EIDomsFnr9+ueIMUUtKyJX6QS98JFZa1eC6zJ+S5j66I0CP+Y4cERnTlI/pmjR7S+PFHz1Zc95rK0UMKIHZIEX/HHbSx6KUXqeRkza//F6yEKtmfnpiMFbO+KaCT9a+ReiE/sfuboKlSVnsi9JVGvEcXXrhHTymTGJGXK0cprpkcqxKlzYvh536IjCoMRVzow77gq/nenl/Rw/D7SFh/9gOAXwWgGL5C21LXJunHc+fik3oqqUqU4Yim8U5IIYIWKx0wKnncWpaQ1qFes6yAK0XnnKlKFfaJyz7P58Q0m6CyWKj8Yqz76mv26mDoPgtAl+q1wrTFwRL85CvcAkjKk/ScrG9VGt2ByORFy18/yUQ4m3NL/g2euURZCc1VtZIe7WnqbZdCwmnOY4jPdL1NMJkunnkY6RB0v5RwbtAPO51mf8XOa/4WD314VxkIRbx7IK6y6HYquVSaNJjRw+n+DCJbzbneaIiaLQLUMaHFTyI9cD2LOUUTSuKwCq1Fd+m6wyi2fZPqbkAyKaCr8GIIkPgN/zvrDmrJ1MioFBO6nuRA2TKnnZ284YD0Eklb/i9zNCavRaLzkxiKObXc47M7dXB/OcTwwGkU7oLgZLxpRO0cwzgSI8YAPjzkiKSPAwAeC+zNafgJNzWTNbHakzbwsQMV4dAlKFzqjGVqC+v7JhqPxz69gftuYmO/YZG0gBxbeb6WYm6WTUCoKF0fQPDtt/nqMvJLUxQA3MP0MKJY6O065MCAmk0ft2UWfCDbMfxB2a+kQpLAKtxHNMq4SPO/MYgYKgPBPhmjOIZdpILhpfo4F6tYmyw9tm5JiRhFFEt97F8zgVtBNg1y68fP0DmFeGMVFTScP32c5MPoLfzQIGs+Lo/iuaXTYRFN/2wvUT8TFjDx/7DZ7LXxZTfRtEJXr8UykFgD5pGUVwXlyC29XctIEMsl6QcSq7xRpxjSpcSJevlCS+4KCNNDuFun5pA0bT72cviGJqeGo/YbgqCmrORlDhYgwIhfEYVlfgFa8VeK5jbp3Wab/0IOtVyAc7MuXfFN7Dmq17Emyr9lOpJ1XJXN2We1o+tugRfmYVVSkJ9Ykmtj24IwDV0kaRaRCSZ0cufqTxjoep1cTydplJ1hlSVa/aRBJmvfP7fHguViryygulGpjPSpd/ulUC8zl4QPeP1SzyUK7xcDAsTq6w09snM7ocgnVIYBANE9a/gpjBkn3b6N/YgC6C0VxdmFrgI7oDeLysb8eqj/zsWH5kaPizTSYZMk0+1PAKwKe2XEErLcZpRM649ZPHd1jhkLmpP9zOUgpfidnCSPWdW5kSYVdLRxQ3soOZAhmdllWzbnLkQ8ID7h795/IzSPte+WUoa5igCbcAXoDQbH3oi7Ish+DbRqvtlScVSqr1gROxuBL108U5447mFrNVXINycP/dcM0Mw+NwkdFY2Mn5OdiLgEg3PNimiwKKEwAMi/5lyucG6kOpqo3hUsgjqiIguWPOsf7rKaDQ/56OLAcDzUiOguZC3XsEZM92bZ7LrIz93xSFvddgzLftqpGx7TrNQQr2bA6+v0eIkHAMeN0yUejnz8ysTGaf/aDm62V/+/z/0bxnllYq4K0F6M79eoR4boDcF6T1yP/O+JJHoonBs9I7bsFzLztJvYW5VWNU0ah0QNCoY9o1J74PXp5Ost0q4hVBbq0olVLPkN4dDJzcyldWfl6yH9Mygziv94fufYoyvJS2G27ar+N1w/Qd+nAWn4WPUgYpwZe7y02pvprSbXZ1fJNS7MO+9k7pFvjyjHeChhxYOqwT8OTYfyZG1W/BreildBE1XSxjCf1xD118aJqUFBBb6XVXpXweSgiquIwPvY/JQsAVVblplq+qOJr8E4JZPTXtUa5Rm1Em5ea8PUPSnRy0GowaSgxBJrmMnXuyuBHJi0miSYw4TlHX+NSsUCgxUGOQ85rS5rrcbSdBta2gvBk/JXtqtjUtGH7FLFVLuRJvYfuCL2rq/agNJXZdW0EnbYRUnnq23dCgK/iinKHGJ3vqK7JGb2Cz0jwUFM2iPP2DFp3DeUefjvEELMyoL5BQzzRCe0xsYoiG4NNIuZqABOlvJ3kDVhmlGFBzZ3o1aQNxxyoZHsg0bGZo1XC6OpMqWbavz1cUiLk7EjpEYJjIWnjrIn/6sSl1E9ZcL4d4pdco1zeoPFEutUEBRSgACaqEN/l04VFlE2U/nVIxI4DeXOLTSlm2wYLP/3eM1ylv5Am2II/wst5QP9o03YoVeQkrLsB8zx9Wi1hQI+W2CSZI92ed8UeahxKTDKhG8AUdIjYwfiE8Y6OREQgf7M+Xq3RYkmC4YMmxnMTv+7CQNCNpdbdMGCjEIHYim6jlG7ZMxxbTfJ8tEf6dtkBAiRpCaKYC5RQEFpSPiL8gXIIF0r0vOjXQB+kpezP48DdAZ7z5GQpxDtiCcPAu6pv+rSq+FuGwNOXC8VKN+/zNnag7yw8SlhFuGVPnxbrHQNmFEMbRdBW8WEF2RPUWaXhHLn4jCzngjDO15d8gjx9TMiQDqohYAu5hKdwPrPHvZhI1VN/t5Bu165eiyk1P/SZnA6nZ+2WclWBUcphJefbNmZbLrff79LDGxmT+L/8P89shmYyn93bQ0N9nVTGXOG5P0s3SI7DIeY6OhWaXdbrb6ETUxEhmrOaTfbqY1zuE2VafKUSWWmP/HJRJMOUZhfUug0c0ZTR1hZ6s5MMOc0WsVA2WSdjJFFkY4gugfyK3HZDcMhySPbfFWwp9bzkcygZsz4TaBLJbMk3WNIPGZae/HV6m6BjPxFqpvuOItaMfy+J83KONgOCT0HF2tg7bX6hQBtFMhQsayjlAP7jwCu0B2dVKxK8Kyj20UPhsC9W4oUSVlpej3eBiHDllOK+h6KJoSCi5768a8mcm7fe7OCK+C/LMXy6KqaPfTy9SsxYn+66kUhRHFgE46yjcldT3Uq0gSF6nN8LkWtRtLW4xObJGuqkIAYNyEl1vTm8mUv08BvTRVIXcz09zTSmh1oCJ6XSpN0GVTyUwUhpGufIlZCRNHDgpvjkU9lkbuC2jeOcXdHq3e4VR3lTWEE7TiZ2Uv0Ox5IjcFVzEf57TnowVk2Lb4oGUYrKvHEy0YsqBOtHF9S65w0m5NI9QcPaqhacVMLCceQaIK7f3j8FE0lcx8ILYxfq5lRrTuiUlqlJBC39nhPm3aONVTO1m6M8+MuJ6qTZkr5NOzShx0rIZYzhWV2WYfuVVu4tz1Haj5H4ufXswP1wsrSKkuRcZsj9k5/b8UA76ewlhB5T7JdW96GCTYlIMRT6F9QMiGm66nHEOKlMlHh0Z7i9ts/tQRGwlMSTemmZDvCra2LrGpLZ4Bn2ZttlDoTDEyWFsqBKoyvWQuz6/i85eHKKYhVRuwfVv6LSLuuanjXBhm7tAeqdp77stbiGDd9piFjptFbGM7KB4pHsj/kSST5ZL5wHGdXxpf9SWtHo5Qp50eLuqUsI/71opyB0fg/FBF7AeAy2o5ip3o46fcmg9zg3e20hlErEUukFPbJO1o47Rvj2x7FWLqfGjpFvGOUX+XzcG9jvs1aXTJUD5HZ386g09KD+USaBm3ZpMN+r5m9x99UZEJ7P8e0E2IbCdtX3JHWuRB/5M7pHgVSS4Q/0uhzPFd+Zi2aiuliliAGPcHkXLSMzdGsN3kAF+y0GKybuampCSJF2okcE4iMzKzAz46LZK3/3VicV/WSG7A05QSB3Vo5YG6Z5tihBV2E4G7BD/eAinkx+NCi3aQWy8VCYbVOTrF+vgZqBmmdwQ6D9umh36VW3GGBbQLt0JvdrnsclZMVD9+KS4sd9hTKKmVOhOX3siq1zuI3aKLydl3UMgG6za8M1P/xP0YCNzcF7Pdu8M8ttyUJDk3tnCKdzVO0R4WTGHu4V1HouqCIzltxF8P/Bu30G/KS9UUo3kmDcAfPplz2b05kP8frSXVKBzYDKIs6KaoYKWsYJY7NgMyRtA2ngRrMyfKR7Wkw6ZSbgB1ivVVKYMttoJYQqW3RnhpYW+/3slXg6vx5TNO7+PirDBLix45VMD6jtfFmnYoF5YggDJXtlKXjrB1MyLJgtiN6mpXKycbvIrFcp860UF6TZWGKCPVRREJay858cbMmY9h/hK3RnJztTlY9piJHjTMy8NCK4NJw/s1zK+oSO+qsZPKgfjlI/DshJ2Pz3SIRjzrlkTjJbE8RbSJSZu48HJnU/E66omylxQ7Re0MBjC9qQg3nYWPNDJ3hvPTbP1JlK6DPEu09IYgNu3jd6G+fVzpYM5cYcErrp1NDpj5Gv9AoSEfrF44B2m7mXmcVD8FmXP3YwH8COUi0KteLqah0iWlbUGqkTLac/rjnyLogPDylYrSGEBCI0QGH/duXmMVxDF00316j7SFXNPPaFSHG04KV87XPOkuEfQS+OtF+Njzp9CixzUDkZjURPftX+NJS/Wmt50PHLZ1dwCocc6RNIDI0mgdR07GWTDCrIiU7U5+Nop+B1d8Y9kbEvRYZylJiYzbj9luQRWENh2n4COKKH9SfkJPFUzWMgjJWqQeS+Ro+OnDKgMvUAMt7Eu6BPKu0jsGpFGT9LpjNaWqRHzeJ1/ZmTYCYVEkeJgftPnxi369zxwAzQ0NYc3jyEMAFjreKk3aZCUgV4ortBnB/F5tu37B7A4Sp2ClUnw2rgikhCM8MRD6rBT6CHkwdE87UnQElB3D9rq3+Qh6qGPvA+KTfjQaPE8gC8FGu/YoRwkyZdlOqwvEV9q7IB2s1tJzvOhtW/TO7ISdpEw7hZob/B9j9OKlzj/oO6a4Oqgt6lloP5u9TCfhEWx3LrxSU0hIcscjVMHLr+8sEUGJFwxRr7GwaJrk/f6Jtpn629XHSOxGGA+7Cktdy0nP47ykiRwxL966Qy9lkQf+BLu2ie9r7NXMk7+PG+keHcyacJP+zbx4vIDQ/HKMx5/nb7FLobof8IseC7fAS4auBlilGkOKD83pTrw8X74d1l+RuARcSGORWp45SLwq4LL3Jn3wwpH3u12qOy4xgj3lwinN3J593bNYfnN/lYokDsbJYRrLpzHLIn4RK2kKzLxqvKpKUfiEq0/wZYuKOjAeP4W8DkBpM+7DiixDRD7S51DlSgJok56PFdt3N8VAnzl81IJgoiVe+7EsJzf6vN3O68BUofy9zMBN1FVMt3bfwgvOobW1YLsfzFy+6qaSaI0RIv3pf1aRoKwFQaPTTrPAr+vjFZRNx6Apl/F4n98e4MkzlOyuzX+voglC0VVt8xgKTbbIx0AqDfvbxMfysj/2PpmDsokvxPe5JYrEFwJrjTfmTCjW8kZXxQU/PYqr4fbs90ADxZYlev0D8MVCDdYNxQV1Jtuc2Cv8yXGNkwtn+OXwcNxy689FSkls/w/+c7mQDfCHtaQbFF2G0UqRGaBWlEmqjklc7OGipJimxnsno7jdawYFmbT4+lDS5u/iI9nkYBDkqm3WBRVNZwnXr4D5NzokL7VJb1ZPB4Zc5AN+ImoVNXf1fDxazMJgYU2EZqLqtRbK6v6nku4M7ae81qRVmTmoYkDDywRmXLvK3JXqZ0HYu0ni05WnBQ5T0rP4j5KKYHcrBdpCBS93HvM6MTgM4kSiatU9MzAMweXltL7dlOeQjGImCzeIi8wceBj5l9XskrYbPF1llrC7avf9gtqn8GJ+Itwcmdubb6mZUmguFI2HTasttmH3XxrnwxlVg6ipohYsnWYGIWMtk/6lxdoQWB5RO1gMi4nq7RQZOsUHf2Zvg42V8Ki5FNrA+enfr4yL4EOmCoU1JNM7h59Wp8nDAbR8vXzwXPKvA3vuImp/UsHv9dF6ODeV28dir+mYXdtuW+2mWNp/B9SEW7CiM5HIQSLlpFu5ho/ZbefL/sS8qiSL5S8qlzyHQ2tIC7BU3tx/lCEwVL6ZIVdnkdcbtpqDaIB81gTfVs+/t/3zqa+/vIk4RX4vL+GRo0i3R9V4J9ogcCjTKDA8/GdgKHqw95lQraU1UAW84XBXd3Hhruj9CtLVk4mbt7Uqdn2u/D/B7cXueR37d9D1ulVcX/qRdnneI20SqZI+gmdOTFy3WnKlUXmd40jLvTQ1kqyXs6S6XAN0oEPMcqLZgfuvuQxHHLsxjG9U7gh+kMBRXE+qmXfC2z1faKSAS+Jc+4eEtAERoTcBkyA5BgaS7OR1K2oCjKq1xhCOZiC/s6VjzvPCV6aK31voWh/DE5xR38AgS3MsAhriuwW3RCzRL+KL/SAguHNyfTrHB8zzIamPtE/WHGuuNSmD3aQACEe5e2X4lO2ZS5XnJ8aEa+KQ1t1EnyB5ujO47FfNYzbbicvKGfrJYwmjUa5BL1ep4klboEuxDlpr7v05cT+3MZroEAmnW21HwxC3uy4cCn3FZphiD0DX+B+Z0BChhGIArkfUyWE1LVo/j548sBeFo387aEAAskNFGyLSAeZHDs1vQKsIf5jfFEkBUkxu2PJcdj7C0oBVEhpn0OFTjVY+gp+rcDxB0ROOAaJbTFjf72wQ8spMKaXTRD4Leh+70+cCfznNvE0U+W2CodSHs43yR5BMXqtG5ghgBgmtR+O/54f+qDDUfhkw9Pfu8Foz45ZP3YWiupTeeKHaopWqI/oFkgF5QGGtMjzyU0yXAnj5osL83nP5l6BH9rbDv8WDtN59BBpzsZZBEZSqfsD4dC+GdeXNVnrFFnHRlEwbtrrNyxUD/gfnsAAWWeyE4vP82fDgeiGnJlu+Z9ssz3WNNCM3m07gSYfUEW8XV6dOJRdN1sKGSgnmi+NeDF4aM+Tj+LVmKgw4lIYgzWVUEBoMZ2qcpQ1tkobGdqHHmM/VM2rZxEl5yVa8p5vtnB6vJ6Ay6zcsB/9teDssHNngB30LXlOIqvxxSThxqZU++PXDazHGGBnGKP1IQryoUTerQQ6XcLqLa+BnozCO1yFbjpMbpFnTfvq5O6lYvnMSWz2g/iNncXs9O9I3xPQk6XuQTysEe2zjSuQxOP5X90WZYRZ99NNIxmmCO0xyEY6V/83fZ3Vqm2pklaSyDoRkIvZ1x3uXYmxJLwt+2HePuSbHsZb9r7Q25mTUAi48F6pzxFm4c6DnQZllhTnVrE4CzzIN+uTkcjiUBqIOOuhyKscnpcd5ee70aHQMHpu9AJu+CZWp6BpmhLxzQ1uYcg06xBajTTOJ5PQwhplHjsycciSXhuEiPzb1wVbThg7QRnZQYDYEPp3ZmkRjNKlnLlBtOJ2dswM85Yas8l62k53gwZzwf/MTLH/pilEJPuCeQ+DjLbJyd0uBXDpjK8wnpCC+7EoZlkEc10f3YadfYZ+9nfyvx2Kf+G+zQuL2z6v8eIVolw4Gkpx8O4w+crGT8ZmQ/0vGMYJfXAaKbAjYXLU3uoxKeXuTkB0DmLBRGu/4yejUsimuf+AR0VQQ6gcHwWStqfV9LtGLPs1iI59ZQezF1Lx2Elkniiy5bHmiKKrt3rrjTcvmaaT8QNW3jN0O+17Zw+j41Y90zfCIEHlV7mWhbYlcLpHKkP1dvaEiUFn4S1Bf5fwSp4ZxI2Fi4Xt0udgLdpqV8C9F1vYY1eI/yemR9SfZgwBDIYpuA5qFxNVDbmt7BU25sHpq94LrVI2KpKd5dXS0fzWBNAw8WhZblMghUfu//r+bhO0eK8raONvm2K+RGZRqdldu2bbvETa+5OkKtqETl8zb/8VuoH7OXbFvoxpG/Sa2f0QDnF8/LbWa87dkHNcLF+B6ItqXF+TD7x6QykebkulO12r4TouI/nAw4ikGHOpdjkwzygUub0s3uV3m+cWoAeK3dTD2Bl9X/3xhVDbBksupnQq8V5tbxLSzk3scj3JgOQroeqdsFyvpGcrY7JUzdSqZ8qTsNiG+oWTIG0Tq7fOV1DiRN25PTQ/3JIepUCpIcw5SoevCLTlGlO+AB6gwCKB9I2tiDX3g2TMvvWbzhHfPqR5gJj6Bbgj5DNFmr3gaMIzkvDd47YeC3EKDAtSKYg//DMxQPrtPTq0puMvrMWPlidg1lfteS73f3f2772EXxq3mFdSJJT0UXGeOuY0t91x+qDS0LV3s201WGuqEcOGfWuZ8pxZ7p2CaHJPg/w00ZApCzWeFibSlbtHF0YKj2qZpXGv2s5/v1JZydOkJiUhcAcouyTPZKrheTsfcYklDKWKB4s+/X3j1hBiTaaoXnHpxly47EBEcnDi6hrgsTUd1Y/ulF3fJSYvOHs//IfCPFZzb0uBwV+QVTN4F+Ga9942PPtHQbqFRxixyLSyWJktPecoiHNtQgkK+Ifh3ZnDxI+ZLJs5kFYk0QQjmCmhFO6uFZdfikwexh2HCShq1pgyGWLqGpcdQKKQdAjA4NJX//OS+ABJIaUC7Z3mVLv7mey4zTlaIO63hn0JwOuoiEey94KB1MzJMwzWH+bIrHx9X0cQsdXfQ1Iv9HIGP27Pq/1iV2l9mWSIDn5q03bGF/KBGWBE4zaQ2KsYX0uXkFVqJQV8HmCqZJfeA6AeUtMMSsy/dKjYcUnkWCeZPRegBPlfay3zKtHliY4eYcLY0Vv5s8ZRhwOpBfJGvxHFk8X0AZjfQWHZQuv9xx4c2mbkcRbhPMk3LKVDkZdMTQqMlNp0xn+ECvRRApH33FZL0PJ4s9DAs2f1VooS8XGWYSoKIwavUMu5kUemOIBuGaSyIScYslsnqPAuo0q8Tr+MDly8bkpTYioHWkvXaQFk/ZiGXqeqjOLJ5tDC7F0dier/8D9AIDcNwb65O/n93nAEfWPYYRI9BUno23ZMvPGvwyEoMIPy0AMq0Rhn5WDMMgZn6/U8WtSc7o9ePdWHwgxPn6Ga8K6B3I1EBGW411D5FXyZTgG+EMcu2hRb/Um5Rq6ds2DmeXsduNGU0qx1bKrWoQjYF04qB/IrTpaJxdcd744mknbIe1mR82Pp5Qmfwj/lZFkWtAeburvLHMnXZZDz1ZiZ1pnlbR35vcQqBOgQVSz3Zxa2yuO1ZWUo8B7bLfKtaoHyZEadBRVreVih8vNhMw9FZ7KwbID3GtEs//fQyVMWaY02NcTpxADLjFd4rogYrHCF9tc7OJS+F11w3OFBpFnU5VYVDjM0yawQK7Yyo11qPIXJRT7Xhu43kn1fhOKuyU2Cuqk8gNvUy+ctwcPR9m91cAhlyqlNcXdwvwTtuIGJQ8FWU+mXoASNd5TN/XsfLl0CNGm/NraozfmtdY8uwJdxZUFQT0uJV/yS/CwqmmGa0FbIWlOFSl6quT/jbkOeT6MDwO19mdCjNCAcZ8ED465BDCO4c7TN8ugLnOsd9MDia0MDHqDJgKZHFtfsDNcNNvEsKx7RaiuyN2kFYFGSpMwNfHjVLkZFxnCOZXJw7p5yVfPtE8rfqxzVK1h7sTyEMC5mJYd2j8+FQF/tKV30LpqOEsMrzI6yP0sCVurfcryzhrO0LbmnCh91QBJQB2agjfVjDeazUZu9l9KfMSsapjDqzv95dwcecwVXbdN93IoHjC21dIr0OvtzjF7oKg335l/Cu0iGY3otp2fJZfB8YKpDqHMD2Gy1vHvRbUat1IX+qhvIwlRJBXcIHk7ySNAR5G83ET6IFdZYkBWoVjAZE89Eg0fXXD8jrX/GO+ibOsebpwi/Dz69SkbrwyXiu2K3xaMN03zPwCp1iccrpqBKqUKRRNoScSeiG+duOZ8doceXHSetIvI/4M5ndjLKjYu8iR6BPxeLlaZXT0yAvkGHl+nm/sybuFsHGELtSvodvMcwvTL8cKHj0I1bLJErYnDXQbDMuAJzJLmiiNR91w73QlXxzdxEbQ0fMVdgDmdylu1ATDOWcwrOZFYuj9d6I1dnqmutXmv8gnWLmLU2/3sxjUmi0t/vCzOSJVcJAE82Qt4P5jwWbBbqm3Pj5QFn+Ymu9QsSbSmv6aTxPfLk+UYRpBMLrs6Z3ljex6X5HLtDyac3GzhHp4CwnHwrNmVriwTq+pzHTr+x1rENq6IE5npkEJc7VrFyLr1c1J0Cegiv2cRemDzoPYBhfQ5HH+MN9OKwUVLTXrfyA7yNIIKYCHDNV5bAqaS1RQneVjBpegCBdm7Jl32Z+ABHKl3P2FNlikkTM/z4O7iZ44WOdR2r7Kxgu1Ez4QygiE4V11nJ59P8jDH5MEX0C+5alIIDdmdnofjzzQW1B1tfIg5Uga+l6DAD7pkpH0kWnbdo73pJO4vZRoIEgSModBvul6j49v1qgV5YpB1hKeGBQC1PU4fr2az7SKmoz97oLWw8Iwk62PpaDRylLubkRBRw/1RETsIyqWLEGDGaNll0UmEuiGhXvrkvwYsWue5O6FWd9KPbfZcKfXL4vE4PW1SQod/xf16NOGHzNwwwqVWZee1cyIFpWPknfQdB1d4vNXNUGQVvMVAWC1hG7RDZ2e5wFMorYXKWfFdNJHCSk9BbJ0dJ+W36cDSO7vuhV7j7d/ELHY+4dAfyPClJgYsK/mbpgVj8XjR/7kakTuCJJCkhpLd+aNYxSHOFbMA9AnrGIpI98WpS5MMiGi6lPZdYEoB1QJFFVlcmoIdQSpcHXS84K7X78V9iKTO5PhjHAlrgr4xvaxl8kuWjrmSMYqs7IgC7QwD8qaYtEybIsiAvRv2h5WsQCWYlmFmKzBheCOZ8o0+MiqCYtj9CUg2PMjXkTicFMkifEtZRrlPbY2uV2SyEYlnoYe54p4OGSYKigjjRBM08zHwCPq9GN4zMx4zGoRa8lzLhYfYjMiq437KP2S/js61oGXgFG197LMSSLGA5sdiIDM/uR2wT0NceBbOS5XjdLhuGXhqyEjpF0SbqY9hmzCRs18mnqJNe0QnNl4lF9PJ/XD+5PljyIu4ciSfJachGglDU5U3JQUfLdt50Q1Y0xkUXFRiGKdYB5D9w6pRanT/RQUwKRXhxeA/faR0ibWs4/eIUvNJoybS7Alr+/EeFz+E05t+4/tewMduT9GicsDaeGQL4a+8Gx9UuuiOxhwc+jgh+FHsaUM6Dl1v952oR9xqlrKo1W3qXVlbOTkLHPi55slEAhcwnYjeUgycu9vz6D9bZVKjP5OmWumD79zeoOvqsZe4bMMKzHYV36Sgu/usMPy+uYwO0jbZQa3IckMXeIe2sQ1pehXpsxvC2AWsmDgwnwbxmdzBmjVhf6xNVs2cp8s80eUZ6PAUViq9QxFUxGGdaJCfS/+dx8p5wqQ4zc2B+2rQV+ER29/OHXTmknxwt4p0+kifHtAt0FSvaXvqvIlbNIvZOubGm4rcTGnGBvtothVHaV7/8qA85G6qTQiU4nGOq9OtUUUnMlg82dQKNuqVXxnAFZE3+EiIDlWxR6truDtty4mQ4BxhtuI5R4pqubAkl/YPZI8bqJeyoTzuwmrgCwOZPdM/GG0PFuFFfZub2JnN5QNiISEfjQB0mJtrJI1GUcrrQDAcQV/7HYHgzXUUoyASgRHNMDoMR5xnPEDdryDuNsFwrk5xNDbsfc+6ZXmNwKdmh21TdKW25AQ9mVMh+ofBtB0EqTHlnSUBA8zd66QXHvme+tleFWTX/eSER98ikrOK9LAkOQjvvf1J85rQgaRxAKWmrl9w3zQJzRpEsDLY/PE73Cb2itrgiShuuPpdp4/8DpZuZyeZcoIhHlxl8vhheAJf5jv4bM5VYbjjOji4BgAs49+deU4RIuKMxnhWUMihRY3G65sbIZfCOWmRNI3LBVE7vIPy9Dw6EHj6m5AaZWjXV+dMKwCYjtkzCAB+nN6wHpfXMhyhApI0HO8iahbB5vRTMCB9bRprk8WNtP+sFZb8V8QglycxFoZ3QsJ2BYvvrALB2bYFGTqx+9ZWgwQKD9Q++p5B3Z3AGZMI6XS2tnrKYN0UmznRG0HivwP2yAtnsbpHq586fXoIF3Dgw9LE/bGt4UnF9R4zSq3mfKUMK4UAeBowc8u0MH/8B6sXKYutoPRbTvpg615hSwPNc5ff02pOsHprJUcR63CFnngdadyhcDxg6IDKYBI06iLX3LY4+pc5yMVP2Q5eBpF6k8OJkXtBTk+CITkLpNj6qtdq9xe3eZ/QHqQpw9fA0t0GMmbOP7t4qcmYM+CEYNVtWxPgYySnnY6NotZYaLiKbl73dCtCduVNy9yZ+e2HrdvivGNw7MGk5LAOFxCy7Q+sCo3QPclZE12P+Jpsdxd0NbDCKMvbU0RmZGAZsoiylRXKmQHU1MBkaNdUZqPxCzgt1X19iAMhSjnqv8JVltYB4zqkX+XrWKdZkIWXdb4gd5Wc7YZpc3XqRZN87IpslSgSLkuf/Z/tX5K+GVTl5kFQx7EKkAb+Dsbq9fNa4s8stiNG93/Ox4dbEPcxp18rvbUj/LtDqK/ratGcTF+psgF1RUIXSYe4YMcUHgZvy66nRGZ7yVyuJ+AkkTmhCuNVAqGzVZI49hY3HtFxjFI7dnnsUPKqow/FvSeeaq58Iu3g7c46l25DJlvpJNzm5U63Iy6uYtDcIZPCKTFD+zZoX75mf1LTd4eh6LrbhnxwnJNJrveXQA7UKB/W0nX/73ZkkoGSYk23PT02c7kYb1Dzt8gDHs0DR/W67K8Q/4dKhHlK7JodZCxK3MYqXbc4m2F+8RJ+Zk9Om8eeEwis2aLWPPPvwq1B2duMhW9QxPpZ37MeDt5dbVqEeaSUOUsrAeyfZDlWkzuTst5d5mS6oNnRLoeO6fMi0VufRDj2AgP/bpRkTr+mXogAdk4b+oDFKbZJalBCr1TM7Jzqp+R7sGxMUJmP0opeWqg4DsRCGnZV8tcrYVibJwTT9wkMVs/QF2/7MsrQQZftvF3mplXSMPQ3eC5pqvabkbsgcgTb/4DrT5ocsGGNJcnnPxJUslSNWm8U7r+SQYpY3BCGEtZUYKZBCSydIOwaS8dqqX5XAGSMwRu/V+00tI8SsoMkXoFwBdyj+w6LpdLBmIZMicqX2OrOfzQAWPGNSDbF8wNriEP/67SG0rdylqrt1jKkfE1ZHUpE4EoNAi0W7b8LrsaeDjbUWAC2W86YFi+XtsvQ+WKVcjXLtOHRpfbPMwVBMIPdOijg1cuZh5AvZpDofuuErgk8CSg0bArtPSejRHHx4OO4Rzu/MCYp35+UUp8Fde4BdSQGd11d0yyOIrFOSgVVi7phBLjcqf7jSRvurGBp2c7rkkHdTwuNhifH9nLTjDXXzgOkAOmJ3rQ6ue4zJQBUAiuDxOtyOzg5fmrXBIpT28uKS0js0PkoNMq38aZku0aD/wxd7W+v3Tg6j2kAu/NZ1TNTTHBuTi1IOyov8yapPWIQi58TEb2LUUqqYvsNDjNhWVJBCg0orNztRuWkjep9M+53G9ebcjP52Gf/N0l8vBJTeIxaQZERFvoWUrpDjANgZpz62e/iPhC8RuCLCtjaSElOCxcWw5KZDzR8/FTJBcur63WVcofUeXNXGFR+rqlV+Xjw8QKvmbDkp3HxTmrIs5msl++q9kywN9Fl1UnxS5/nCQ6oo7I2QriJpALKugCg3bWCo9H77Bn8uffWG1uaxXATnZtG+5ZHCY9lLUWwuAHIcVisIpBb47jxwxsJVumHe3q4FOoGlzgDX7uhzPpyujOnaKvc2IPpG9uDIfVVze0eQjQ/XA02BFtkbOyt2Ww5m2RR7OLL+c7NQLMSqhjtnhWRlSzA4sHYbHqo43wAeqHxBSFRXW467LDTjYUnyJogYR6DDdqZngeCZm9QQVvb4PLCNZiBEcPkw6zR3c6fCBT3ycdCpKnyFE4BsJTihhwmmRYFsucCrI8MIoXziUE+NvlNFxJp1gvcDqfCc4azw8gNOvHGYorRVdUqbZ1aIQGWU9aC+A/A7+crQSJRNB0y3n4M5N8fHdSlIC+onTfeQ0yo0AA3B6UDkUhFZyMdIsq7rhoW5KsZuhS1XKrptD1xb8LNnhRREuh/P91pFGHr0bz3xL63etxCZR+ScnQQNk/caQrqiwZC6TJMMpPg0LLbSGXHAzMf+MHQ4fIOPF7QD89Oh4Shel+o+TAkFXDzPdJUZ7QG58FA0jbQEqfsxaPNyIQctxN3K6HyhfKTp+THk+Y2eF9r5V53o1QD88I7bRR9Gjveh/btWWy63QD5ZQa1jSfTiD9ZO5KT5+8I368NDSvP5HUq466oQ83jMpSrcDWuaAjUPY641oBl52Go1/YQ/qu93E5mvjFG9wDvwpgj1zE6HOOoBCMUlMIkB9oO7nHrWuypKRE4P7Mhhw4MMJxOdoLkRX+vP/N0dcOsq2/e4S+ZzskIqL/L3svEleNV3AGRGMGtElPNZJOFyRwWqUU7wlUDUYsTo42mD4qeqJyJbA/nQ6Iupe32HI66OsUw0efmRM8JL45YZochSvd4ugepPtMm+jYOcgRJwZBM6TtXZ+xtBsetrEPh0UF+QY0uyL4mT1MwH9Hc2xXbNPHODSmgUpJrvSJSN8LU9vsAfyid2wt9AvIwpeR5Y3tmEjwsbrRsB72omS+91Raxir65tZRMMCXhQfKnwuzH1zsYjhoJq+2umk4G5QJ1d2aY2bzn4Qe0TaTbcOOILVunpIUnukLqeuNabwcVvHIpcUIl6U2MMQof24WOa6R4zQjiKM6Su5Vu72Y9h7UmNT3cZIIQfT7F4MGlU6nZoVi/+dvjfV9yrBKzp2iwZj/eu/LILGkSRRFAb/eWBP++7V5ShQhPW5yGPOl6fNE7sd0euSKBGn6Laz9KrFjF/YNugwe32EX+Du01ZvycgOM8uwVgd6tT20iTrtYCJs1HmfE3MWc1nHj8ItSeGza/0vx8IHaxcBfvDXMJJjsYBvrFjCSvkYpL7k2cfgOBLkS66g6/6CK3mzMhHhRnb1Vxe7/QhIRGN7wUcmGTQ/teNhfwF/eDXRGgKPWmfwQCm8ipoFbRDuW0M3fuWkqAlJgolM9pj6MCIjPqIfLumFG7r6TES+mtnqKyAcWw3ZBjgQc1sTloAGifh6lEL2oUuKGudDffdrsx5BovjKyYns9gMjkxstJ/mBUWJx0gcyIvVEy3bUjtC6bUAQppsnL7gKJAreTOVsZt7uws5nV9RymUwbRRyOv0OSKQx//ZxW3SoE/vOqYOKI6p9zbXyGIpOTsvZQ2sFnNmeaWX/6cqZ9WF/cylmtAkfPOwD8+TnQ5pJM1L0VrkQNPUfdChV3B3Pnkw8oJ7m8akJfJ6cESdQi3/me+wxkGx+Xy4Bq272aQQPbmxGUS3dRNlmh+wXGh+e8Vn3SfQS48llCq0Izp3SWbdb/yJsC6mFdzmS7kJSPutVVyJnSCfODnobVZgRKI2/gwu7tDtBnkS4I0xfNDCYBDIo5ngNwg4yBxNUd0w2bdu3ExYm9kvXilki4KG0qtWl+MjhlsqUXaAoazb6vy4BWMcxNeXnJyJUi1KvX4bL73ZL4rFpqX8hz7CMOV5QX8wFF2ym1AURQVjFv1o1K/CV1r0OiGDCcFSQPNpcbEflPaF53DWeCmEuV/IUhsiOhFvlneSPhzBvy3jMn605U2RQJCgexfkfJ5C42pLv6LywhYAJOyWOzYG1xrqutsip6hzLj2wDd1xs/2U7dL6BZqKYyl4VCMY0VsRjN3x5BI8Tmw6j1nFpMDESQBWRlaBxYZqR0cDvKzuvoXxVLEhBNQHgqpoSMDmqHXiZ3Zt77wpk9c5cyIWEIgV06fQxpUvluKaiGXcCmnMtcX0v1r9A3YaV9eUI4PGS5ass/G+H887rhtKQW95rASZygfqHaI+yCqbX1bJ5bwI+baEv7jKnqFfaJhVH3a7l2S0cbdJObWwRMKM302cPqFZyfKh375kP2x/ji0yNhx57SSMs2YvP+KhrSZ7EKbPT5aDUPIbPoFPcRcI07gAAAAA=');
+<?php /**
+ * 
+ * Created on Jul 26, 2011 11:57:06 AM
+ *
+ * @FileName: omtatrndsb.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+//change in file @AUTHOR: SANDY08FEB14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+/* * **Start to get Firm iD to get accounts according to it @AUTHOR: SANDY02JAN14*** */
+/* * **Start to change code @AUTHOR: SANDY08FEB14***** */
+//
+$custId = $_REQUEST['custId'];
+//
+$selFirmId = NULL;
+if (isset($_GET['firmId'])) {
+    $selFirmId = $_GET['firmId'];
+    $todayDay = $_GET['day'];
+    if ($_GET['month'] != '') {
+        $todayMM = date("j", strtotime($_GET['month']));
+    } else {
+        $todayMM = date(m) - 1;
+    }
+    $todayYear = $_GET['year'];
+} else if (isset($_POST['firmId'])) {
+    $selFirmId = $_POST['firmId'];
+} else {
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'undefined') {
+    parse_str(getTableValues("SELECT firm_id FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_id asc"));
+    $selFirmId = $firm_id;
+}
+/* * **End to change code @AUTHOR: SANDY08FEB14***** */
+/* * **End to get Firm iD to get accounts according to it @AUTHOR: SANDY02JAN14*** */
+
+// GET TRANS VCH ID
+$qSelPreVoucherNo = "SELECT transaction_pre_vch_id FROM transaction where transaction_own_id='$sessionOwnerId' and transaction_firm_id='$selFirmId' order by UNIX_TIMESTAMP(transaction_ent_dat) desc LIMIT 0,1";
+$resPreVoucherNo = mysqli_query($conn, $qSelPreVoucherNo) or die(mysqli_error($conn));
+$rowPreVoucherNo = mysqli_fetch_array($resPreVoucherNo);
+
+$newTransPreVoucherNo = $rowPreVoucherNo['transaction_pre_vch_id'];
+
+/* Start code to display prevoucherId containing first letter of firm @AUTHOR:SANDY19JUL13 */
+$qselfname = "SELECT firm_name FROM firm where firm_id=' $selFirmId'";
+$rselfname = mysqli_query($conn, $qselfname);
+$rowselfname = mysqli_fetch_array($rselfname);
+$firm = $rowselfname['firm_name'];
+$firm = om_ucfirst($firm);
+$frm = substr($firm, 0, 1);
+
+/* End code to display prevoucherId containing first letter of firm @AUTHOR:SANDY19JUL13 */
+if ($newTransPreVoucherNo == NULL || $newTransPreVoucherNo == '') {
+    if ($selFirmId) {
+        $newTransPreVoucherNo = 'V' . $frm;  //to append first letter of firm name @AUTHOR: SANDY19JUL13 
+    } else {
+        $newTransPreVoucherNo = 'V';   //When all firm selected append * @AUTHOR: SANDY19JUL13
+    }
+    $qSelVoucherNo = "SELECT max(transaction_post_vch_id) as transVoucherId FROM transaction where transaction_own_id='$sessionOwnerId' and transaction_firm_id='$selFirmId'";
+    $resVoucherNo = mysqli_query($conn, $qSelVoucherNo);
+    $rowVoucherNo = mysqli_fetch_array($resVoucherNo, MYSQLI_ASSOC);
+} else {
+    $qSelVoucherNo = "SELECT max(transaction_post_vch_id) as transVoucherId FROM transaction where transaction_own_id='$sessionOwnerId' and transaction_firm_id='$selFirmId'";
+    $resVoucherNo = mysqli_query($conn, $qSelVoucherNo);
+    $rowVoucherNo = mysqli_fetch_array($resVoucherNo, MYSQLI_ASSOC);
+}
+$newTransPostVoucherNo = $rowVoucherNo['transVoucherId'] + 1;
 ?>
+<div id="changeTransactionPanel"> <!-----Use this id to check panel id Name modified :-Harshad// ------->
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="center">
+                <div id="addUpdateTransactionDiv">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border: 1px dashed #0079c2;background: #e9f7f5;padding-bottom:8px;">
+                        <tr>
+                            <td align="left" >
+                                <table align="left" border="0" cellspacing="2" cellpadding="2" class="spaceLeftRight10">
+<!--                                    <tr>
+                                        <td>
+                                            <img src="<?php echo $documentRoot; ?>/images/spacer.gif" alt="image" onload="document.getElementById('DOBDay').focus();"/>
+                                            <table  border="0" cellspacing="2" cellpadding="2">
+                                                <tr>
+                                                    <td align="center" valign="middle" class="textLabel12CalibriBrown" width="190px">
+                                                        DATE
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="textBoxCurve1px backFFFFFF margin2pxAll" width="190px">
+                                                        <?php
+                                                        //
+                                                        // **********************************************************************************
+                                                        // START CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                                                        // **********************************************************************************
+                                                        //
+                                                        $selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+                                                        $resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+                                                        $rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+                                                        $nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+                                                        //
+                                                        // ********************************************************************************
+                                                        // END CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                                                        // ********************************************************************************
+                                                        //
+                                                        if ($nepaliDateIndicator == 'YES') {
+                                                            $tableAlignStyle = 'center';
+                                                            $nepaliDatePanel = 'expensePanel';
+                                                            $selDayId = $selDayName = 'DOBDay';
+                                                            $selDayStyle = 'width:35px;height:26px;';
+                                                            $selMonthId = $selMonthName = 'DOBMonth';
+                                                            $selMonthStyle = 'width:55px;height:26px;';
+                                                            $selYearId = $selYearName = 'DOBYear';
+                                                            $selYearStyle = 'width:55px;height:26px;';
+                                                            $date_nepali = $transaction_other_lang_DOB;
+                                                            include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliDate.php';
+                                                        } else {
+                                                            ?>
+                                                            <table  border="0" cellspacing="0" cellpadding="0" >
+                                                                <tr>
+                                                                    <?php if ($staffId == '' || ($staffId && $array['currentTransactionAccess'] != 'true')) { ?>
+                                                                        <td>
+                                                                            <?php
+                                                                            if ($todayDay == '') {
+                                                                                $todayDay = date(j) - 1;
+                                                                            }
+                                                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                                            $optDay[$todayDay] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBDay" name="DOBDay"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">DAY</option>
+                                                                                    <?php
+                                                                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                                                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select> 
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBDay" name="DOBDay" type="hidden" value="<?php echo $selDOBDay; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    } else {
+                                                                        ?>
+                                                                        <td>
+                                                                            <?php
+                                                                            if ($todayDay == '') {
+                                                                                $todayDay = date(j) - 1;
+                                                                            }
+                                                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                                            $optDay[$todayDay] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBDay" name="DOBDay" disabled="true"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">DAY</option>
+                                                                                    <?php
+                                                                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                                                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select> 
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBDay" name="DOBDay" type="hidden" value="<?php echo $selDOBDay; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    }
+                                                                    ?>
+
+                                                                    <?php if ($staffId == '' || ($staffId && $array['currentTransactionAccess'] != 'true')) { ?>
+                                                                        <td>
+                                                                             *************** Start Code for Month *************** 
+                                                                            <?php
+                                                                            if ($todayMM == '') {
+                                                                                $todayMM = date(n) - 1;
+                                                                            }
+                                                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                                            $optMonth[$todayMM] = "selected";
+                                                                            ?>
+                                                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" />  ADD INPUT FIELD @AUTHOR: SANDY21AUG13 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBMonth" name="DOBMonth" class="textLabel14CalibriGrey"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBYear').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBDay').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>        
+                                                                                        > 
+                                                                                    <option value="NotSelected">MONTH</option>
+                                                                                    <?php           
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                for ($mm = 0; $mm <= 11; $mm++) {                                   
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                    } else {
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                    }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                            }
+                                                                                    ?>
+                                                                                </select> 
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBMonth" name="DOBMonth" type="hidden" value="<?php echo $selDOBMnth; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    } else {
+                                                                        ?>
+                                                                        <td>
+                                                                             *************** Start Code for Month *************** 
+                                                                            <?php
+                                                                            if ($todayMM == '') {
+                                                                                $todayMM = date(n) - 1;
+                                                                            }
+                                                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                                            $optMonth[$todayMM] = "selected";
+                                                                            ?>
+                                                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" />  ADD INPUT FIELD @AUTHOR: SANDY21AUG13 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBMonth" name="DOBMonth" class="textLabel14CalibriGrey" disabled="true"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBYear').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBDay').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>       
+                                                                                        > 
+                                                                                    <option value="NotSelected">MONTH</option>
+                                                                                    <?php           
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                for ($mm = 0; $mm <= 11; $mm++) {                                   
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                    } else {
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                    }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                             }
+                                                                                    ?>
+                                                                                </select>
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBMonth" name="DOBMonth" type="hidden" value="<?php echo $selDOBMnth; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    }
+                                                                    ?>
+                                                                    <?php if ($staffId == '' || ($staffId && $array['currentTransactionAccess'] != 'true')) { ?>
+                                                                        <td>
+                                                                             *************** Start Code for Year *************** 
+                                                                            <?php
+                                                                            if ($todayYear == '') {
+                                                                                $todayYear = date(Y);
+                                                                            }
+                                                                            $optYear[$todayYear] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBYear" name="DOBYear"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('transFirmId').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">YEAR</option>
+                                                                                    <?php
+                                                                                    for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBYear" name="DOBYear" type="hidden" value="<?php echo $selDOBYear; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    } else {
+                                                                        ?>
+                                                                        <td>
+                                                                             *************** Start Code for Year *************** 
+                                                                            <?php
+                                                                            if ($todayYear == '') {
+                                                                                $todayYear = date(Y);
+                                                                            }
+                                                                            $optYear[$todayYear] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select id="DOBYear" name="DOBYear" disabled="true"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('transFirmId').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">YEAR</option>
+                                                                                    <?php
+                                                                                    for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBYear" name="DOBYear" type="hidden" value="<?php echo $selDOBYear; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <?php
+                                                                    }
+                                                                    ?>
+                                                                </tr>
+                                                            </table>
+                                                        <?php } ?>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>-->
+                                    <tr>
+                                          <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                              <b>DATE</b>
+                                         
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>FIRM</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>VOUCHER NO</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>AMOUNT</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>TO&nbsp;&nbsp;(DR+)</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>FROM&nbsp;&nbsp;(CR-)</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>TYPE</b>
+                                        </td>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            <b>SUBJECT</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       
+                                                    <td class="textBoxCurve1px backFFFFFF margin2pxAll" width="240px">
+                                                        <?php
+                                                        //
+                                                        // **********************************************************************************
+                                                        // START CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                                                        // **********************************************************************************
+                                                        //
+                                                        $selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+                                                        $resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+                                                        $rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+                                                        $nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+                                                        //
+                                                        // ********************************************************************************
+                                                        // END CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                                                        // ********************************************************************************
+                                                        //
+                                                        if ($nepaliDateIndicator == 'YES') {
+                                                            $tableAlignStyle = 'center';
+                                                            $nepaliDatePanel = 'expensePanel';
+                                                            $selDayId = $selDayName = 'DOBDay';
+                                                            $selDayStyle = 'width:35px;height:26px;';
+                                                            $selMonthId = $selMonthName = 'DOBMonth';
+                                                            $selMonthStyle = 'width:55px;height:26px;';
+                                                            $selYearId = $selYearName = 'DOBYear';
+                                                            $selYearStyle = 'width:55px;height:26px;';
+                                                            $date_nepali = $transaction_other_lang_DOB;
+                                                            include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliDate.php';
+                                                        } else {
+                                                            ?>
+                                                            <table  border="0" cellspacing="0" cellpadding="0" >
+                                                                <tr>
+                                                                        <td>
+                                                                            <?php
+                                                                            if ($todayDay == '') {
+                                                                                $todayDay = date(j) - 1;
+                                                                            }
+                                                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                                            $optDay[$todayDay] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select  <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?> 
+                                                                                disabled <?php } ?>
+                                                                                    id="DOBDay" name="DOBDay"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">DAY</option>
+                                                                                    <?php
+                                                                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                                                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select> 
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBDay" name="DOBDay" type="hidden" value="<?php echo $selDOBDay; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <!-- *************** Start Code for Month *************** -->
+                                                                            <?php
+                                                                            if ($todayMM == '') {
+                                                                                $todayMM = date(n) - 1;
+                                                                            }
+                                                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                                            $optMonth[$todayMM] = "selected";
+                                                                            ?>
+                                                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                disabled <?php } ?> id="DOBMonth" name="DOBMonth" class="textLabel14CalibriGrey"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('DOBYear').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBDay').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>        
+                                                                                        > 
+                                                                                    <option value="NotSelected">MONTH</option>
+                                                                                    <?php           
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                for ($mm = 0; $mm <= 11; $mm++) {                                   
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                    } else {
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                    }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                            }
+                                                                                    ?>
+                                                                                </select> 
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBMonth" name="DOBMonth" type="hidden" value="<?php echo $selDOBMnth; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <!-- *************** Start Code for Year *************** -->
+                                                                            <?php
+                                                                            if ($todayYear == '') {
+                                                                                $todayYear = date(Y);
+                                                                            }
+                                                                            $optYear[$todayYear] = "selected";
+                                                                            ?> 
+                                                                            <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                                <select <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                disabled <?php } ?> id="DOBYear" name="DOBYear"
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('transFirmId').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('DOBMonth').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class="textLabel14CalibriGrey"
+                                                                                        <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                            disabled
+                                                                                        <?php } ?>
+                                                                                        >
+                                                                                    <option value="NotSelected">YEAR</option>
+                                                                                    <?php
+                                                                                    for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                                <?php if (($staffId && $array['addSellTransAccessDate'] != 'true') || ($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                                                                                    <input id="DOBYear" name="DOBYear" type="hidden" value="<?php echo $selDOBYear; ?>"/>
+                                                                                <?php } ?>
+                                                                            </div>
+                                                                        </td>
+                                                                </tr>
+                                                            </table>
+                                                        <?php } ?>
+                                                    </td>
+                                           
+                                        <td align="left"  width="140px;" class="textBoxCurve1px backFFFFFF margin1pxAll">
+                                            <input type="hidden" id="user_id" name="user_id" value="<?php echo $custId; ?>" />
+                                            <div id="selectFirmDiv" class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                <?php
+                                                $prevFieldId = 'DOBYear'; //
+                                                $nextFieldId = 'transPreVoucherNo';
+                                                $nextReqFieldId = 'transAmt';
+                                                $firmIdName = 'transFirmId';
+                                                $firmDivClass = 'textLabel14CalibriReq';
+                                                $panelName = 'AddNewTrans';
+                                                $firmIdSelected = $selFirmId;
+                                                //to assign default firm id @AUTHOR: SANDY10JUL13
+                                                if (!$firmIdSelected) {
+                                                    $firmIdSelected = $_SESSION['setFirmSession'];
+                                                }
+                                                //echo '$firmIdSelected'.$firmIdSelected;
+                                                include 'omffrafr.php';
+                                                ?>                                                                
+                                            </div>
+                                        </td>
+                                        <td align="left" class="textBoxCurve1px backFFFFFF margin1pxAll" width="50px">
+                                            <div id="transVoucherNoDiv">
+                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <!---Start to change @AUTHOR: SANDY27JAN14-------------->
+                                                        <td>
+                                                            <input id="transPreVoucherNo" name="transPreVoucherNo" type="text" placeholder="VCH" value="<?php echo $newTransPreVoucherNo; ?>"
+                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                               document.getElementById('transPostVoucherNo').focus();
+                                                                               return false;
+                                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                                               document.getElementById('transFirmId').focus();
+                                                                               return false;
+                                                                           }"
+                                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" /> 
+                                                            <input id="transFirmVoucherNo" name="transFirmVoucherNo" type="hidden" readonly="true" value="<?php echo $firmId; ?>"
+                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                               document.getElementById('transPostVoucherNo').focus();
+                                                                               return false;
+                                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                                               document.getElementById('transPreVoucherNo').focus();
+                                                                               return false;
+                                                                           }"
+                                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" />
+                                                        </td>
+                                                        <td align="left"  class="textLabel14CalibriReq">
+                                                            &minus;
+                                                        </td>
+                                                        <td>
+                                                            <input id="transPostVoucherNo" name="transPostVoucherNo" type="text" placeholder="Voucher No" value="<?php echo $newTransPostVoucherNo; ?>"
+                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                               document.getElementById('transAmt').focus();
+                                                                               return false;
+                                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                                               document.getElementById('transPreVoucherNo').focus();
+                                                                               return false;
+                                                                           }"
+                                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="5" maxlength="16" />
+                                                        </td>
+                                                        <!--End to change @AUTHOR: SANDY27JAN14-------------->
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td align="right" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+                                            <input id="transAmt"
+                                                   name="transAmt" spellcheck="false" type="text" placeholder="Amount"
+                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                               document.getElementById('transToAcc').focus();
+                                                               return false;
+                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                               document.getElementById('transPostVoucherNo').focus();
+                                                               return false;
+                                                           }"
+                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter backFFFFFF" size="15" maxlength="20" />
+                                        </td>
+                                        <td align="left"  width="170px" class="textBoxCurve1px backFFFFFF">
+                                            <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                <?php
+                                                $prevFieldId = 'transAmt';
+                                                $nextFieldId = 'transFromAcc';
+                                                $allAccountDivId = 'transToAcc';
+                                                $accIdSelected = '';
+                                                $accNameSelected = '';
+                                                $allAccountDivClass = 'textLabel14CalibriReq';
+                                                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                                                include 'omacpalt.php';
+                                                ?>
+                                            </div>
+                                        </td>
+                                        <td align="left"  width="170px" class="textBoxCurve1px backFFFFFF">
+                                            <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                <?php
+                                                $prevFieldId = 'transToAcc';
+                                                $nextFieldId = 'transactionCategory';
+                                                $allAccountDivId = 'transFromAcc';
+                                                $accIdSelected = '';
+                                                $accNameSelected = '';
+                                                $allAccountDivClass = 'textLabel14CalibriReq';
+                                                $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                                                include 'omacpalt.php';
+                                                ?>
+                                            </div>
+                                        </td>
+                                        <td align="left"  width="40px" class="textBoxCurve1px backFFFFFF">
+                                            <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                <SELECT class="textLabel14CalibriReq" id="transactionCategory" name="transactionCategory"
+                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                    document.getElementById('transSub').focus();
+                                                                    return false;
+                                                                } else if (event.keyCode == 8) {
+                                                                    document.getElementById('transFromAcc').focus();
+                                                                    return false;
+                                                                }"
+                                                        spellcheck="false">
+                                                    <OPTION value="Business" >BT</OPTION>
+                                                    <OPTION value="Personal" >PT</OPTION>
+                                                    <OPTION value="Other" >OT</OPTION>
+                                                </SELECT>
+                                            </div>
+                                        </td>
+                                        <td class="textBoxCurve1px backFFFFFF">
+                                            <input id="transSub"
+                                                   name="transSub" spellcheck="false" type="text" placeholder="Subject"
+                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                               document.getElementById('transSubButt').focus();
+                                                               return false;
+                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                               document.getElementById('transactionCategory').focus();
+                                                               return false;
+                                                           }"
+                                                   spellcheck="false" class="border-no inputBox14CalibriReqCenter" size="20" maxlength="50" />
+                                        </td>
+                                        <td align="center">
+                                            <input id="transSubButt" type="submit" value="SUBMIT" class="frm-btn"
+                                                   onkeydown="if (event.keyCode == 8) {
+                                                               document.getElementById('transSub').focus();
+                                                               return false;
+                                                           }"
+                                                   onclick="javascript:addTransaction(document.getElementById('add_transaction'));"
+                                                   maxlength="30" size="15" style="background:#2D67BF;color: #fff;border: 1px solid #7ab0fe;border-radius: 3px !important;height: 32px;width: 90px;font-size: 14px;"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                       <!---<tr align="left" valign="middle">
+                            <td align="left" colspan="2">
+                                <div id="transPanelSubDiv">
+                        <?php include 'omtatrsd.php'; ?>
+                                </div>
+                            </td>
+                        </tr> Comment by @AUTHOR: SANDY02JAN14---->
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!--<hr color="#FD9A00" size="0.1px" />-->
+    <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="2" align="center">
+                <div id="ajaxLoadNavigateTransactionList" style="visibility: hidden">
+                    <?php include 'omzaajld.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="transactionListDiv">
+                    <?php include 'omttlisd.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br />
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2" class="noPrint">
+                <a style="cursor: pointer;" 
+                   onclick="printGirviListPanel('transactionListDiv')">
+                    <img src="<?php echo $documentRoot; ?>/images/img/printer.png" alt='Print' title='Print'
+                         width="24px" height="24px" /> 
+                </a> 
+            </td>
+        </tr>
+    </table>
+</div>

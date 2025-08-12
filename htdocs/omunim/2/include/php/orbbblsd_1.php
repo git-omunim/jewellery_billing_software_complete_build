@@ -1,3 +1,695 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orbbblsd_1.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+
+<?php
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<div id="balanceSheetPrintDiv" class="balanceSheetPrintDiv">
+    <table border="1" cellspacing="0" cellpadding="1" width="100%" class="border-color-grey balanceSheetPrintDiv">
+        <tr id="headerTableNext">
+            <td colspan="12">
+                <table border="1" cellspacing="0" cellpadding="1" width="100%" >
+            <td align="center" width="96px" valign="top" class="border-color-grey">
+                <div class="main_link_brown">Date</div>
+            </td>
+            <td align="center" width="155px" colspan="2" class="border-color-grey">
+                <div class="main_link_brown">Opening Balance</div>
+            </td>
+            <td align="center" colspan="2" width="172px"class="border-color-grey">
+                <div class="main_link_brown">Received Girvi</div>
+            </td>
+            <td align="center" colspan="2" width="155px" class="border-color-grey">
+                <div class="main_link_brown">Total</div>
+            </td>
+            <td align="center" colspan="2" width="130px"class="border-color-grey">
+                <div class="main_link_brown">Release Girvi</div>
+            </td>
+            <td align="center" colspan="2" width="172px"class="border-color-grey">
+                <div class="main_link_brown">Final Total</div>
+            </td>
+            <td align="center" rowspan="2" width="62px" class="border-color-grey">
+                <div class="main_link_brown" >Interest</div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="border-color-grey" >
+                <div class="main_link_brown"></div>
+            </td>
+            <td align="center" class="border-color-grey" width="100px">
+                <div class="main_link_brown">Amount</div>
+            </td>
+            <td align="center" class="border-color-grey" width="32px" >
+                <div class="main_link_brown">Girvi</div>
+            </td>
+            <td align="center" class="border-color-grey"width="100px">
+                <div class="main_link_brown">Amount</div>
+            </td>
+            <td align="center" class="border-color-grey"width="31px">
+                <div class="main_link_brown">Girvi</div>
+            </td>
+            <td align="center" class="border-color-grey"width="100px">
+                <div class="main_link_brown">Amount</div>
+            </td>
+            <td align="center"  class="border-color-grey"width="25px">
+                <div class="main_link_brown">Girvi</div>
+            </td>
+            <td align="center"  class="border-color-grey" width="90px">
+                <div class="main_link_brown">Amount</div>
+            </td>
+            <td align="center"  class="border-color-grey" width="26px">
+                <div class="main_link_brown">Girvi</div>
+            </td>
+            <td align="center" class="border-color-grey"width="123px">
+                <div class="main_link_brown" >Amount</div>
+            </td>
+            <td align="center" class="border-color-grey"width="">
+                <div class="main_link_brown">Girvi</div>
+            </td>
+        </tr>
+    </table></td></tr>
+
+        <?php
+        /*         * *******Start Code To Hide Year & Month & Firm coz selected in prev file @Author:PRIYA24JUL13********** */
+        /* $getYear = $_GET['balanceSheetYear'];
+          $getMonth = $_GET['balanceSheetMonth'];
+
+          if ($getYear == '' && $getMonth == '') {
+          $getYear = $_POST['balanceSheetYear'];
+          $getMonth = $_POST['balanceSheetMonth'];
+          }
+          if ($selFirmId == '' || $selFirmId == NULL) {
+          $selFirmId = $_GET['firmId'];
+          } */
+        /*         * *******End Code To Hide Year & Month coz selected in prev file @Author:PRIYA24JUL13********** */
+        $mainGetYear = $getYear;
+
+        $totalFinalIntPaid = 0;
+        //echo  "Today date:  " . date("l dS \of F Y h:i:s A") . "  ";
+        $todayDate = date(d) . ' ' . date(M) . ' ' . date(Y);
+        $todayDateNum = strtotime($todayDate);
+
+        if ($getYear != '' && $getMonth != '') {
+
+            $todayMM = date(n, strtotime('01 ' . $getMonth . ' ' . $getYear));
+            $todayMonth = $getMonth;
+            $todayYear = $getYear;
+        } else {
+
+            $todayMM = date(n);
+            $todayMonth = date(M);
+            $todayYear = date(Y);
+        }
+
+        $finYear = 0;
+
+        if ($todayMM <= 3) {
+            $finYear = $todayYear + 1;
+        } else {
+            $finYear = $todayYear;
+        }
+
+        if ($finYear > date(Y) && date(M) <= 3 && $mainGetYear == '') {
+            $finYear = $finYear - 1;
+        }
+
+        if ($finYear != 0) {
+            $startDate = '01 ' . $todayMonth . ' ' . $finYear;
+        }
+        $startDate = strtotime($startDate);
+        $monthCounter = 1;
+        $monthCounterLimit = 0;
+
+        //START Code to fix counter for Month
+        $arrLeapYear = array(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+        $arrYear = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+        if (($finYear % 4) == 0) {
+            $monthCounterLimit = $arrLeapYear[$todayMM - 1];
+        } else {
+            $monthCounterLimit = $arrYear[$todayMM - 1];
+        }
+
+        //END code to fix Month Counter
+
+        $initialOpeningGirviPrincipal = 0;
+        $initialOpeningNoOfGirvi = 0;
+
+        $totalReceivedGirviPrincipal = 0;
+        $totalReceivedNoOfGirvi = 0;
+
+        $totalReleasedGirviPrincipal = 0;
+        $totalReleasedNoOfGirvi = 0;
+
+        $finalClosingGirviPrincipal = 0;
+        $finalClosingNoOfGirvi = 0;
+
+
+
+        $openingGirviPrincipal = 0;
+        $openingNoOfGirvi = 0;
+
+        $openingTotalGirviPrincipal = 0;
+        $openingTotalNoOfGirvi = 0;
+        $totalAdditionalGirviPrincipal = 0;
+
+        $openingReleasedGirviPrincipal = 0;
+        $openingReleasedNoOfGirvi = 0;
+
+        $receivedGirviPrincipal = 0;
+        $receivedNoOfGirvi = 0;
+        $totalAddGirviPrinRel = 0;
+
+        $totalAmtTillReceivedGirvi = 0;
+        $totalNoOfGirviTillReceivedGirvi = 0;
+        $totalDepositPrincMoneyGirvi = 0;
+
+        $releasedGirviPrincipal = 0;
+        $releasedNoOfGirvi = 0;
+
+        $totalAmtTillReleasedGirvi = 0;
+        $totalNoOfGirviTillReleasedGirvi = 0;
+        //Start Code To Add Frim Id @AUTHOR:PRIYA13MAR13
+        //End Code To Add Frim Id @AUTHOR:PRIYA13MAR1
+        if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+            if ($selFirmId != NULL) {
+                $strFrmId = $selFirmId;
+            } else {
+                //Get Public Firms
+                $qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+                $strFrmId = '0';
+
+                //Set String for Public Firms
+                while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+                    $strFrmId = $strFrmId . ",";
+                    $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+                }
+            }
+
+            //Get Total Principal Amount from Girvi Table
+            $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and girv_firm_id IN ($strFrmId)";
+            $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+            $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+            $openingTotalGirviPrincipal = $row['total_prin'];
+            $openingTotalNoOfGirvi = $row['no_of_girvi'];
+
+            $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOR,'%d %b %Y'))<$startDate and girv_upd_sts IN ('Released') and girv_firm_id IN ($strFrmId)";
+            $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+            $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+            $openingReleasedGirviPrincipal = $row['total_prin'];
+            $openingReleasedNoOfGirvi = $row['no_of_girvi'];
+            //echo '$openingReleasedGirviPrincipal:' . $openingReleasedGirviPrincipal;
+
+            $openingGirviPrincipal = $openingTotalGirviPrincipal - $openingReleasedGirviPrincipal;
+            $openingNoOfGirvi = $openingTotalNoOfGirvi - $openingReleasedNoOfGirvi;
+
+            if ($monthCounter == 1) {
+                $initialOpeningGirviPrincipal = $openingGirviPrincipal;
+                $initialOpeningNoOfGirvi = $openingNoOfGirvi;
+            }
+        } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+            //Get Total Principal Amount from Girvi Table
+            if ($selFirmId == '' || $selFirmId == NULL) {
+                $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate";
+            } else {
+                $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and girv_firm_id='$selFirmId'";
+            }
+            $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+            $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+            $openingTotalGirviPrincipal = $row['total_prin'];
+            $openingTotalNoOfGirvi = $row['no_of_girvi'];
+            //echo '$openingTotalNoOfGirvi:' . $openingTotalNoOfGirvi;
+
+            if ($selFirmId == '' || $selFirmId == NULL) {
+                $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOR,'%d %b %Y'))<$startDate and girv_upd_sts IN ('Released')";
+            } else {
+                $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOR,'%d %b %Y'))<$startDate and girv_upd_sts IN ('Released') and girv_firm_id='$selFirmId'";
+            }
+            $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+            $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+            $openingReleasedGirviPrincipal = $row['total_prin'];
+            $openingReleasedNoOfGirvi = $row['no_of_girvi'];
+            //echo '   $openingReleasedNoOfGirvi:' . $openingReleasedNoOfGirvi;
+            $openingGirviPrincipal = $openingTotalGirviPrincipal - $openingReleasedGirviPrincipal;
+            $openingNoOfGirvi = $openingTotalNoOfGirvi - $openingReleasedNoOfGirvi;
+
+            if ($monthCounter == 1) {
+                $initialOpeningGirviPrincipal = $openingGirviPrincipal;
+                $initialOpeningNoOfGirvi = $openingNoOfGirvi;
+            }
+        }
+        while ($monthCounter <= $monthCounterLimit) {
+            if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+
+                if ($monthCounter == 1) {
+                    $openingGirviPrincipal = $openingGirviPrincipal;
+                    $openingNoOfGirvi = $openingNoOfGirvi;
+                } else {
+
+                    $openingGirviPrincipal = $totalAmtTillReleasedGirvi;
+                    $openingNoOfGirvi = $totalNoOfGirviTillReleasedGirvi;
+                }
+
+                if ($openingNoOfGirvi == 0) {
+                    $openingNoOfGirvi = '-';
+                }
+                if ($startDate > $todayDateNum) {
+                    $openingGirviPrincipal = 0;
+                    $openingNoOfGirvi = '-';
+                }
+                //Recieved Girvi On Given Date
+                $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOB='" . date('d M Y', $startDate) . "' and girv_firm_id IN ($strFrmId)";
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $receivedGirviPrincipal = $row['total_prin'];
+                $receivedNoOfGirvi = $row['no_of_girvi'];
+
+                //Get Total Principal Amount from Additional Pricipal Table
+                $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_prin_amt) as total_prin FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOB='" . date('d M Y', $startDate) . "' and girv_prin_firm_id IN ($strFrmId)";
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalAdditionalGirviPrincipal = $rowTotalNewPrinGirvi['total_prin'];
+
+                $receivedGirviPrincipal += $totalAdditionalGirviPrincipal;
+
+                //
+                $totalReceivedGirviPrincipal += $receivedGirviPrincipal;
+                $totalReceivedNoOfGirvi += $receivedNoOfGirvi;
+
+                if ($receivedNoOfGirvi == 0) {
+                    $receivedNoOfGirvi = '-';
+                }
+
+                //
+                $totalAmtTillReceivedGirvi = $openingGirviPrincipal + $receivedGirviPrincipal;
+                $totalNoOfGirviTillReceivedGirvi = $openingNoOfGirvi + $receivedNoOfGirvi;
+
+                if ($startDate > $todayDateNum) {
+                    $totalAmtTillReceivedGirvi = 0;
+                    $totalNoOfGirviTillReceivedGirvi = '-';
+                }
+                //
+                //
+                                //
+                //Released Girvi On Given Date
+                $qSelect = "SELECT SUM(girv_total_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_firm_id IN ($strFrmId) and girv_upd_sts IN ('Released')";
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $releasedGirviPrincipal = $row['total_prin'];
+                $releasedNoOfGirvi = $row['no_of_girvi'];
+
+                //Get Total Released Principal Amount from Additional Pricipal Table
+                $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_total_amt) as total_prin_paid_amt FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_firm_id IN ($strFrmId) and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released')";
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalAddGirviPrinRel = $rowTotalNewPrinGirvi['total_prin_paid_amt'];
+
+                $releasedGirviPrincipal += $totalAddGirviPrinRel;
+
+                //Get Total Released Principal Amount from Money Deposit Table
+                $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_prin_amt) as deposit_prn_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_firm_id IN ($strFrmId) and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "')"; //and girv_prin_firm_id IN ($strFrmId)
+                $qResultTotalGirviDep = mysqli_query($conn,$qSelectTotalGirviDep);
+                $rowTotalGirviDep = mysqli_fetch_array($qResultTotalGirviDep, MYSQLI_ASSOC);
+
+                $totalDepositPrincMoneyGirvi = $rowTotalGirviDep['deposit_prn_amt'];
+
+                $totalAddGirviPrinRel += $totalDepositPrincMoneyGirvi;
+
+                $releasedGirviPrincipal += $totalDepositPrincMoneyGirvi;
+                //
+
+                $totalReleasedGirviPrincipal += $releasedGirviPrincipal;
+                $totalReleasedNoOfGirvi += $releasedNoOfGirvi;
+
+                if ($releasedNoOfGirvi == 0) {
+                    $releasedNoOfGirvi = '-';
+                }
+                //
+                $totalAmtTillReleasedGirvi = $totalAmtTillReceivedGirvi - $releasedGirviPrincipal;
+                $totalNoOfGirviTillReleasedGirvi = $totalNoOfGirviTillReceivedGirvi - $releasedNoOfGirvi;
+
+                if (($startDate == $todayDateNum || $monthCounter == $monthCounterLimit) && $finalClosingNoOfGirvi == 0) {
+                    $finalClosingGirviPrincipal = $totalAmtTillReleasedGirvi;
+                    $finalClosingNoOfGirvi = $totalNoOfGirviTillReleasedGirvi;
+                }
+                if ($startDate > $todayDateNum) {
+                    $totalAmtTillReleasedGirvi = 0;
+                    $totalNoOfGirviTillReleasedGirvi = '-';
+                }
+                //
+                //
+                    //
+                    ////Interest Paid on Girvi On Given Date
+                $qSelect = "SELECT SUM(girv_paid_int) as total_int_paid FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_firm_id IN ($strFrmId) and girv_upd_sts IN ('Released')";
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $totalIntPaid = $row['total_int_paid'];
+
+                //Get Total Interest Amount from Additional Pricipal Table
+                $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_paid_int) as total_prin_paid_int FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_firm_id IN ($strFrmId) and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released')";
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalIntPaid += $rowTotalNewPrinGirvi['total_prin_paid_int'];
+
+                $totalIntPaidOnAddPrin = $rowTotalNewPrinGirvi['total_prin_paid_int'];
+
+                //Get Total Int Paid Amount from Money Deposit Table
+                $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_int_amt) as deposit_int_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_firm_id IN ($strFrmId) and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "')";
+                $qResultTotalGirviDep = mysqli_query($conn,$qSelectTotalGirviDep);
+                $rowTotalGirviDep = mysqli_fetch_array($qResultTotalGirviDep, MYSQLI_ASSOC);
+
+                $totalDepositIntMoneyGirvi = $rowTotalGirviDep['deposit_int_amt'];
+
+                $totalIntPaidOnAddPrin = $totalIntPaidOnAddPrin + $totalDepositIntMoneyGirvi;
+
+                $totalIntPaid += $totalDepositIntMoneyGirvi;
+                //
+
+                if ($totalIntPaid == 0 || $totalIntPaid == NULL) {
+                    $totalIntPaid = 0;
+                }
+
+                if ($startDate > $todayDateNum) {
+                    $totalIntPaid = 0;
+                }
+                //For Intelligent Password
+            } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+//                //Get Total Principal Amount from Girvi Table
+//                if ($selFirmId == '' || $selFirmId == NULL) {
+//                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate";
+//                } else {
+//                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and girv_firm_id='$selFirmId'";
+//                }
+//                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+//                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+//
+//                $openingTotalGirviPrincipal = $row['total_prin'];
+//                $openingTotalNoOfGirvi = $row['no_of_girvi'];
+//                //echo '$openingTotalNoOfGirvi:' . $openingTotalNoOfGirvi;
+//
+//                if ($selFirmId == '' || $selFirmId == NULL) {
+//                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOR,'%d %b %Y'))<$startDate and girv_upd_sts IN ('Released')";
+//                } else {
+//                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOB,'%d %b %Y'))<$startDate and UNIX_TIMESTAMP(STR_TO_DATE(girv_DOR,'%d %b %Y'))<$startDate and girv_upd_sts IN ('Released') and girv_firm_id='$selFirmId'";
+//                }
+//                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+//                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+//
+//                $openingReleasedGirviPrincipal = $row['total_prin'];
+//                $openingReleasedNoOfGirvi = $row['no_of_girvi'];
+//                //echo '   $openingReleasedNoOfGirvi:' . $openingReleasedNoOfGirvi;
+//                $openingGirviPrincipal = $openingTotalGirviPrincipal - $openingReleasedGirviPrincipal;
+//                $openingNoOfGirvi = $openingTotalNoOfGirvi - $openingReleasedNoOfGirvi;
+//
+                if ($monthCounter == 1) {
+                    $openingGirviPrincipal = $openingGirviPrincipal;
+                    $openingNoOfGirvi = $openingNoOfGirvi;
+                } else {
+
+                    $openingGirviPrincipal = $totalAmtTillReleasedGirvi;
+                    $openingNoOfGirvi = $totalNoOfGirviTillReleasedGirvi;
+                }
+                if ($openingNoOfGirvi == 0) {
+                    $openingNoOfGirvi = '-';
+                }
+
+                if ($startDate > $todayDateNum) {
+                    $openingGirviPrincipal = 0;
+                    $openingNoOfGirvi = '-';
+                }
+
+                //Recieved Girvi On Given Date
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOB='" . date('d M Y', $startDate) . "'";
+                } else {
+                    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOB='" . date('d M Y', $startDate) . "' and girv_firm_id='$selFirmId'";
+                }
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $receivedGirviPrincipal = $row['total_prin'];
+                $receivedNoOfGirvi = $row['no_of_girvi'];
+
+                //Get Total Principal Amount from Additional Pricipal Table
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_prin_amt) as total_prin FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOB='" . date('d M Y', $startDate) . "'";
+                } else {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_prin_amt) as total_prin FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOB='" . date('d M Y', $startDate) . "' and girv_prin_firm_id='$selFirmId'";
+                }
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalAdditionalGirviPrincipal = $rowTotalNewPrinGirvi['total_prin'];
+
+                $receivedGirviPrincipal += $totalAdditionalGirviPrincipal;
+
+                //
+                $totalReceivedGirviPrincipal += $receivedGirviPrincipal;
+                $totalReceivedNoOfGirvi += $receivedNoOfGirvi;
+
+                if ($receivedNoOfGirvi == 0) {
+                    $receivedNoOfGirvi = '-';
+                }
+
+                //
+                $totalAmtTillReceivedGirvi = $openingGirviPrincipal + $receivedGirviPrincipal;
+                $totalNoOfGirviTillReceivedGirvi = $openingNoOfGirvi + $receivedNoOfGirvi;
+
+                if ($startDate > $todayDateNum) {
+                    $totalAmtTillReceivedGirvi = 0;
+                    $totalNoOfGirviTillReceivedGirvi = '-';
+                }
+
+                //
+                //Released Girvi On Given Date
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelect = "SELECT SUM(girv_total_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_upd_sts IN ('Released')";
+                } else {
+                    $qSelect = "SELECT SUM(girv_total_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_upd_sts IN ('Released') and girv_firm_id='$selFirmId'";
+                }
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $releasedGirviPrincipal = $row['total_prin'];
+                $releasedNoOfGirvi = $row['no_of_girvi'];
+
+                //Get Total Released Principal Amount from Additional Pricipal Table
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_total_amt) as total_prin_paid_amt FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released')";
+                } else {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_total_amt) as total_prin_paid_amt FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released') and girv_prin_firm_id='$selFirmId'";
+                }
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalAddGirviPrinRel = $rowTotalNewPrinGirvi['total_prin_paid_amt'];
+
+                $releasedGirviPrincipal += $totalAddGirviPrinRel;
+
+                //Get Total Released Principal Amount from Money Deposit Table
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_prin_amt) as deposit_prn_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "')"; //and girv_prin_firm_id IN ($strFrmId)
+                } else {
+                    $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_prin_amt) as deposit_prn_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_mondep_firm_id='$selFirmId'"; //and girv_prin_firm_id IN ($strFrmId)
+                }
+                $qResultTotalGirviDep = mysqli_query($conn,$qSelectTotalGirviDep);
+                $rowTotalGirviDep = mysqli_fetch_array($qResultTotalGirviDep, MYSQLI_ASSOC);
+
+                $totalDepositPrincMoneyGirvi = $rowTotalGirviDep['deposit_prn_amt'];
+
+                $totalAddGirviPrinRel += $totalDepositPrincMoneyGirvi;
+
+                $releasedGirviPrincipal += $totalDepositPrincMoneyGirvi;
+                //
+                //
+                $totalReleasedGirviPrincipal += $releasedGirviPrincipal;
+                $totalReleasedNoOfGirvi += $releasedNoOfGirvi;
+
+                if ($releasedNoOfGirvi == 0) {
+                    $releasedNoOfGirvi = '-';
+                }
+
+                //
+                $totalAmtTillReleasedGirvi = $totalAmtTillReceivedGirvi - $releasedGirviPrincipal;
+                $totalNoOfGirviTillReleasedGirvi = $totalNoOfGirviTillReceivedGirvi - $releasedNoOfGirvi;
+
+                if (($startDate == $todayDateNum || $monthCounter == $monthCounterLimit) && $finalClosingNoOfGirvi == 0) {
+                    $finalClosingGirviPrincipal = $totalAmtTillReleasedGirvi;
+                    $finalClosingNoOfGirvi = $totalNoOfGirviTillReleasedGirvi;
+                }
+                if ($startDate > $todayDateNum) {
+                    $totalAmtTillReleasedGirvi = 0;
+                    $totalNoOfGirviTillReleasedGirvi = '-';
+                }
+
+                //
+                ////Interest Paid on Girvi On Given Date
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelect = "SELECT SUM(girv_paid_int) as total_int_paid FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_upd_sts IN ('Released')";
+                } else {
+                    $qSelect = "SELECT SUM(girv_paid_int) as total_int_paid FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOR='" . date('d M Y', $startDate) . "' and girv_upd_sts IN ('Released') and girv_firm_id='$selFirmId'";
+                }
+                $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+                $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+                $totalIntPaid = $row['total_int_paid'];
+
+                //Get Total Principal Amount from Additional Pricipal Table
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_paid_int) as total_prin_paid_int FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released')";
+                } else {
+                    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_paid_int) as total_prin_paid_int FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts!='Deleted' and girv_prin_prin_DOR IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_prin_upd_sts IN ('Released') and girv_prin_firm_id='$selFirmId'";
+                }
+                $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+                $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+                $totalIntPaid += $rowTotalNewPrinGirvi['total_prin_paid_int'];
+
+                $totalIntPaidOnAddPrin = $rowTotalNewPrinGirvi['total_prin_paid_int'];
+
+                //Get Total Int Paid Amount from Money Deposit Table
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_int_amt) as deposit_int_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "')"; //and girv_prin_firm_id IN ($strFrmId)
+                } else {
+                    $qSelectTotalGirviDep = "SELECT SUM(girv_mondep_int_amt) as deposit_int_amt FROM girvi_money_deposit where girv_mondep_own_id='$_SESSION[sessionOwnerId]' and girv_mondep_upd_sts!='Deleted' and girv_mondep_date IN('" . date('d M Y', $startDate) . "','" . date('d M Y', $startDate) . "') and girv_mondep_firm_id='$selFirmId'"; //and girv_prin_firm_id IN ($strFrmId)
+                }
+                $qResultTotalGirviDep = mysqli_query($conn,$qSelectTotalGirviDep);
+                $rowTotalGirviDep = mysqli_fetch_array($qResultTotalGirviDep, MYSQLI_ASSOC);
+
+                $totalDepositIntMoneyGirvi = $rowTotalGirviDep['deposit_int_amt'];
+
+                $totalIntPaidOnAddPrin = $totalIntPaidOnAddPrin + $totalDepositIntMoneyGirvi;
+
+                $totalIntPaid += $totalDepositIntMoneyGirvi;
+                //
+
+                if ($totalIntPaid == 0 || $totalIntPaid == NULL) {
+                    $totalIntPaid = 0;
+                }
+
+                if ($startDate > $todayDateNum) {
+                    $totalIntPaid = 0;
+                }
+                //
+            //
+                    }
+            //else closed Of Firm Id Selected
+            ?>
+            <tr>
+                <td align="center" valign="top" class="border-color-grey" width="99px">
+                    <div class="blackMess13Arial grey-back"><?php echo date('d M Y', $startDate); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightYellow" >
+                    <div class="brownMess13Arial spaceRight5"><?php echo formatInIndianStyle($openingGirviPrincipal); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightGreen">
+                    <div class="brownMess13Arial spaceRight5"><?php echo $openingNoOfGirvi; ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightYellow" title="<?php echo 'Main Prin Rec: ' . ($receivedGirviPrincipal - $totalAdditionalGirviPrincipal) . '  Add Prin Rec: ' . $totalAdditionalGirviPrincipal; ?>">
+                    <div class="greenMess13Arial spaceRight5"><?php echo formatInIndianStyle($receivedGirviPrincipal); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightGreen">
+                    <div class="greenMess13Arial spaceRight5"><?php echo $receivedNoOfGirvi; ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightYellow">
+                    <div class="greyMess13Arial spaceRight5"><?php echo formatInIndianStyle($totalAmtTillReceivedGirvi); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightGreen">
+                    <div class="greyMess13Arial spaceRight5"><?php echo $totalNoOfGirviTillReceivedGirvi; ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightYellow" title="<?php echo 'Main Prin Rel: ' . ($releasedGirviPrincipal - $totalAddGirviPrinRel) . '  Add Prin Rel: ' . $totalAddGirviPrinRel; ?>" width="90px">
+                    <div class="redMess13Arial spaceRight5"><?php echo formatInIndianStyle($releasedGirviPrincipal); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightGreen"  width="36px">
+                    <div class="redMess13Arial spaceRight5"><?php echo $releasedNoOfGirvi; ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightYellow">
+                    <div class="blackMess13Arial spaceRight5"><?php echo formatInIndianStyle($totalAmtTillReleasedGirvi); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightGreen">
+                    <div class="blackMess13Arial spaceRight5"><?php echo $totalNoOfGirviTillReleasedGirvi; ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightOrange" title="<?php echo 'Main Int: ' . ($totalIntPaid - $totalIntPaidOnAddPrin) . '  Add Prin Int: ' . $totalIntPaidOnAddPrin; ?>">
+                    <div class="blueMess13Arial spaceRight5"><?php echo formatInIndianStyle($totalIntPaid); ?></div>
+                </td>
+            </tr>
+            <?php
+            $totalFinalIntPaid = $totalFinalIntPaid + $totalIntPaid;
+            $monthCounter++;
+            $startDate = $startDate + 60 * 60 * 24;
+        }
+        ?>
+        <tr>
+            <td align="right" valign="middle" class="border-color-grey">
+                <div class="blackMess14Arial-BalanceSheet spaceRight5">TOTAL -</div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess14Arial-BalanceSheet spaceRight5"><?php echo formatInIndianStyle($initialOpeningGirviPrincipal); ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess14Arial-BalanceSheet spaceRight5"><?php echo $initialOpeningNoOfGirvi; ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="greenMess14Arial spaceRight5"><?php echo formatInIndianStyle($totalReceivedGirviPrincipal); ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="greenMess14Arial spaceRight5"><?php echo $totalReceivedNoOfGirvi; ?></div>
+            </td>
+            <td align="right" valign="middle" class="border-color-grey" colspan="2">
+                <div class="blackMess14Arial-BalanceSheet spaceRight5"></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="redMess14Arial spaceRight5"><?php echo formatInIndianStyle($totalReleasedGirviPrincipal); ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="redMess14Arial spaceRight5"><?php echo $totalReleasedNoOfGirvi; ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="blackMess14Arial-BalanceSheet spaceRight5"><?php echo formatInIndianStyle($finalClosingGirviPrincipal); ?></div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="blackMess14Arial-BalanceSheet spaceRight5"><?php echo $finalClosingNoOfGirvi; ?></div>
+            </td>
+            <td align="right" class="border-color-grey" width="65px">
+                <div class="blueMess14Arial spaceRight5"><?php echo formatInIndianStyle($totalFinalIntPaid); ?></div>
+            </td>
+        </tr>
+    </table>
+</div>

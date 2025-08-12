@@ -1,3 +1,412 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Stock Item list @AUTHOR: SURAJ12FEB18
+ * **************************************************************************************
+ * 
+ * Created on Jun 18, 2013 11:00:58 AM
+ *
+ * @FileName: omStockleaderByProduct.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//change in file @AUTHOR: SANDY29DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include 'conversions.php';
+include_once 'ommpfndv.php';
+?>
+<div id="purchaseDetails" style="margin-left:5px;">
+    <?php
+    $searchBy = $_GET['searchBy'];
+    if ($_SESSION['sessionOwnIndStr'][35] == 'Y') {
+        //
+        $DOBDay = $_GET['DOBDay'];
+        $DOBMonth = $_GET['DOBMonth'];
+        $DOBYear = $_GET['DOBYear'];
+        //
+        if ($DOBYear == '' || $DOBYear == NULL) {
+            $DOBDay = $_POST['DOBDay'];
+            $DOBMonth = $_POST['DOBMonth'];
+            $DOBYear = $_POST['DOBYear'];
+        }
+        //
+        if ($DOBDay != '' || $DOBDay != NULL) {
+            $startDate = $DOBDay . $DOBMonth . $DOBYear;
+            $startDate = om_strtoupper(date("d M Y", strtotime($startDate)));
+            //
+            $todayDate = $startDate;
+            $todayDateNum = strtotime($todayDate);
+        } else {
+            $todayDate = om_strtoupper(date(d) . ' ' . date(M) . ' ' . date(Y));
+            $todayDateNum = strtotime($todayDate);
+        }
+        //
+        ?>
+        <?php
+        //
+        //
+        //
+        $panel = 'StockLedger';
+        //
+        //
+        //echo '$todayDate:' . $todayDateNum;
+        $sessionOwnerId = $_SESSION[sessionOwnerId];
+        //
+        //Start Code To Select FirmId
+        $selFirmId = $_GET['firmId'];
+        if (!isset($selFirmId)) {
+            $firmIdSelected = $_SESSION['setFirmSession'];
+            $selFirmId = $firmIdSelected;
+        } else {
+            $firmIdSelected = $selFirmId;
+        }
+        //End Code To Select FirmId
+        if ($selFirmId == '' || $selFirmId == NULL) {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='1'";
+        } else {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='$selFirmId'";
+        }
+        //To display data in this form
+        $resultFirm = mysqli_query($conn, $qSelectFirm);
+        $rowFirm = mysqli_fetch_array($resultFirm);
+        //
+        if ($selFirmId != NULL) {
+            $strFrmId = $selFirmId;
+        } else {
+            $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+        }
+        //echo '$strFrmId:' . $strFrmId;
+        // Create a view for the datatable
+        //       
+        include 'ogbbstdtview.php';
+        //
+        //
+        ?>
+        <div id="purchaseReportSubDiv">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+                <tr>
+                    <td align="left">
+                        <img src="<?php echo $documentRoot; ?>/images/sell_purchase24.png" alt=""  onLoad="setScrollIdFun('headerTable')"/>
+                    </td>
+                    <td class="padLeft5" valign="middle" >
+                        <!---CHANGE NAME HERE  STOCK LEDGER BY PRODUCT BY AUTHOR:SAGARL >-->
+                        <div class="itemAddPnLabels12"style="margin-right: 150px;"> STOCK LEDGER BY PRODUCT </div>
+
+                        <!--                       <div class="itemAddPnLabels12" ">STOCK LEDGER ITEM NAME</div>-->
+                    </td>
+                    <td valign="middle" align="center">
+                        <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden" class="blackMess11">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                    </td>
+                    <!--TAKE DATE CENTER & CHANGES BY AUTHOR:SAGARL >-->
+                    <td valign="middle" align="center" class="frm-lbl">
+                        DATE:
+                    </td>
+                    <td align="left" valign="middle" width="120px">
+                        <table>
+                            <tr>
+                                <td class="textBoxCurve1px backFFFFFF">
+                                    <?php
+                                    include 'ommptodaydate.php';
+                                    ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="left" valign="middle">
+                         <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                        <div style="margin-left:5px;">
+                            <?php
+                            $inputId = "stockGoButt";
+                            $inputType = 'submit';
+                            $inputFieldValue = 'GO';
+                            $inputIdButton = "stockGoButt";
+                            $inputNameButton = 'stockGoButt';
+                            $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                            // This is the main class for input flied
+                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                            $inputStyle = " ";
+                            $inputLabel = 'GO'; // Display Label below the text box
+//
+                            // This class is for Pencil Icon                                                           
+                            $inputIconClass = '';
+                            $inputPlaceHolder = '';
+                            $spanPlaceHolderClass = '';
+                            $spanPlaceHolder = '';
+                            $inputOnChange = "";
+                            $inputOnClickFun = 'javascript:getStockLedgerByDate(document.getElementById("DOBDay").value, document.getElementById("DOBMonth").value, document.getElementById("DOBYear").value);';
+                            $inputKeyUpFun = '';
+                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                            $inputMainClassButton = '';           // This is the main division for Button
+                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                            ?>
+                        </div>
+    <!--                        <input id="stockGoButt" name="stockGoButt" type="submit" 
+               onclick="javascript:getStockLedgerByDate(document.getElementById('DOBDay').value, document.getElementById('DOBMonth').value, document.getElementById('DOBYear').value);"
+               value="GO" class="frm-btn">-->
+                    </td>
+                    <td align="right" valign="middle" class="">
+                         <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                        <div style="text-align:center;">
+                            <?php
+                            $inputId = "stockitemname";
+                            $inputType = 'button';
+                            $inputFieldValue = 'STOCK LEDGER BY CATEGORY';
+                            $inputIdButton = "stockitemname";
+                            $inputNameButton = 'stockitemname';
+                            $inputTitle = '';
+                            // This is the main class for input flied
+                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                            $inputStyle = " ";
+                            $inputLabel = 'STOCK LEDGER BY CATEGORY'; // Display Label below the text box
+//
+                            // This class is for Pencil Icon                                                           
+                            $inputIconClass = '';
+                            $inputPlaceHolder = '';
+                            $spanPlaceHolderClass = '';
+                            $spanPlaceHolder = '';
+                            $inputOnChange = "";
+                            $inputOnClickFun = 'stockitemname();';
+                            $inputKeyUpFun = '';
+                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                            $inputMainClassButton = '';           // This is the main division for Button
+                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                            ?>
+                        </div>
+        <!--<input type="button" id="stockitemname" name="stockitemname" style="margin-left:60px;" class="frm-btn"  value="STOCK LEDGER BY CATEGORY" onclick="stockitemname();"/>-->
+                    <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                    </td>
+                    <!---add button here STOCK LEDGER BY PRODUCT :author:@Sagar(26 june18)-->
+                    <!-- START CODE TO ADD OPTION FOR STOCK SHORTFALL REPORT OPTION @AUTHOR:MADHUREE-29JUNE2020 -->
+                    <td align="right" valign="middle" style="padding: 0px 3px 0px 3px;; ">
+                        <div style="text-align:center;">
+                            <?php
+                            $inputId = "stockShortFallReport";
+                            $inputType = 'button';
+                            $inputFieldValue = 'STOCK SHORTFALL REPORT';
+                            $inputIdButton = "stockShortFallReport";
+                            $inputNameButton = 'stockShortFallReport';
+                            $inputTitle = '';
+                            // This is the main class for input flied
+                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                            $inputStyle = " ";
+                            $inputLabel = 'STOCK SHORTFALL REPORT'; // Display Label below the text box
+//
+                            // This class is for Pencil Icon                                                           
+                            $inputIconClass = '';
+                            $inputPlaceHolder = '';
+                            $spanPlaceHolderClass = '';
+                            $spanPlaceHolder = '';
+                            $inputOnChange = "";
+                            $inputOnClickFun = 'navigatationPanelByFileName("purchaseDetailsSubDiv", "omstockshfreport");';
+                            $inputKeyUpFun = '';
+                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                            $inputMainClassButton = '';           // This is the main division for Button
+                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                            ?>
+                        </div>
+                    </td>
+                    <!-- END CODE TO ADD OPTION FOR STOCK SHORTFALL REPORT OPTION @AUTHOR:MADHUREE-29JUNE2020 -->
+                    <td align="right" valign="middle" class="">
+                        <div style="text-align:center;">
+                            <?php
+                            $inputId = "stockbycat";
+                            $inputType = 'button';
+                            $inputFieldValue = 'STOCK LEDGER BY PRODUCT';
+                            $inputIdButton = "stockbycat";
+                            $inputNameButton = 'stockbycat';
+                            $inputTitle = '';
+                            // This is the main class for input flied
+                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                            $inputStyle = " ";
+                            $inputLabel = 'STOCK LEDGER BY PRODUCT'; // Display Label below the text box
+//
+                            // This class is for Pencil Icon                                                           
+                            $inputIconClass = '';
+                            $inputPlaceHolder = '';
+                            $spanPlaceHolderClass = '';
+                            $spanPlaceHolder = '';
+                            $inputOnChange = "";
+                            $inputOnClickFun = 'stockbycat();';
+                            $inputKeyUpFun = '';
+                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                            $inputMainClassButton = '';           // This is the main division for Button
+                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                            ?>
+                        </div>
+        <!--<input type="button" id="stockbycat" name="stockbycat"  class="frm-btn" value="STOCK LEDGER BY PRODUCT" onclick="stockbycat();"/>-->
+                    <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="center" colspan="9" class="paddingTop4 padBott4">
+                        <div class="hrGrey"></div><!----Change in line @AUTHOR: SANDY12DEC13----->
+                    </td>
+                </tr>
+            </table>
+            <div id="purchaseDetailsSubDiv">
+                <table  class="width_203mm paddingTop10" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <?php
+                    /*                     * *********** Start Code To GET Firm Details ********* */
+                    if (isset($_GET['selFirmId'])) {
+                        $selFirmId = $_GET['selFirmId'];
+                    } else {
+                        //if not selected assign session firm @AUTHOR: SANDY10JUL13
+                        $selFirmId = $_SESSION['setFirmSession'];
+                    }
+                    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                    }
+                    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+                        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+                        $strFrmId = '0';
+                        //Set String for Public Firms
+                        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                            $strFrmId = $strFrmId . ",";
+                            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+                        }
+                    } else {
+                        $strFrmId = $selFirmId;
+                    }
+                    //Data Table Main Columns
+                    include 'omdatatablesUnset.php';
+                    //
+                    $dataTableColumnsFields = array(
+                        array('dt' => 'FIRM'),
+                        array('dt' => 'METAL TYPE'),
+                        array('dt' => 'CATEGORY'),
+                        array('dt' => 'PROD NAME'),
+                        array('dt' => 'OPEN'),
+                        array('dt' => 'IN'),
+                        array('dt' => 'OUT'),
+                        array('dt' => 'SELL'),
+                        array('dt' => 'CLOSING')
+                    );
+                    //
+                    $dataTableColumnsFieldsInside = array(
+                        array('dt' => 'QTY'),
+                        array('dt' => 'GT'),
+                        array('dt' => 'NT'),
+                    );
+                    //
+                    if ($_SESSION['sessionProdName'] == 'OMRETL')
+                        array_splice($dataTableColumnsFields, 8, 2);
+                    //
+                    $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+                    $_SESSION['dataTableColumnsFieldsInside'] = $dataTableColumnsFieldsInside; // No Change
+                    //
+                    // Table Parameters
+                    $_SESSION['tableName'] = 'temp_view'; // Table Name
+                    $_SESSION['tableNamePK'] = 'sttr_id'; // Primary Key
+                    // DB Table Columns Parameters 
+                    $dbColumnsArray = array(
+                        "firm_name",
+                        "sttr_metal_type",
+                        "sttr_item_category",
+                        "sttr_item_name",
+                        "open_qty",
+                        "open_gswt",
+                        "open_ntwt",
+                        "in_qty",
+                        "in_gswt",
+                        "in_ntwt",
+                        "out_qty",
+                        "out_gswt",
+                        "out_ntwt",
+                        "sell_qty",
+                        "sell_gswt",
+                        "sell_ntwt",
+                        "close_qty",
+                        "close_gswt",
+                        "close_ntwt"
+                    );
+                    //
+                    if ($_SESSION['sessionProdName'] == 'OMRETL')
+                        array_splice($dbColumnsArray, 8, 2);
+                    //    print_r($dbColumnsArray);
+                    //   echo count($dbColumnsArray)."=".count($dataTableColumnsFields);die;
+                    $_SESSION['dbColumnsArray'] = $dbColumnsArray;  // No Change
+                    $_SESSION['multipleColCounter'] = 4;
+
+                    if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                        $_SESSION['dtSumColumn'] = '1,2,3';
+                    } else {
+                        $_SESSION['dtSumColumn'] = '';
+                    }
+                    $_SESSION['dtSortColumn'] = '1,2';
+                    $_SESSION['dtDeleteColumn'] = '';
+                    $_SESSION['dtASCDESC'] = 'desc,desc';
+                    //
+                    // Extra direct columns we need pass in SQL Query
+                    $_SESSION['sqlQueryColumns'] = "";
+                    //
+                    ////start code to include all session@auth:ATHU29may17
+                    //
+                    $_SESSION['colorfulColumn'] = "";
+                    $_SESSION['colorfulColumnCheck'] = '';
+                    $_SESSION['colorfulColumnTitle'] = '';
+                    //
+                    // On Click Function Parameters
+                    $_SESSION['onclickColumnImage'] = "";
+                    $_SESSION['onclickColumn'] = ""; // On which column
+                    $_SESSION['onclickColumnId'] = "";
+                    $_SESSION['onclickColumnValue'] = "";
+                    $_SESSION['onclickColumnFunction'] = "";
+                    $_SESSION['onclickColumnFunctionPara1'] = "";
+                    $_SESSION['onclickColumnFunctionPara2'] = "";
+                    $_SESSION['onclickColumnFunctionPara3'] = "";
+                    $_SESSION['onclickColumnFunctionPara4'] = "";
+                    $_SESSION['onclickColumnFunctionPara5'] = "";
+                    $_SESSION['onclickColumnFunctionPara6'] = "";
+// Delete Function Parameters
+                    $_SESSION['deleteColumn'] = ""; // On which column
+                    $_SESSION['deleteColumnId'] = "";
+                    $_SESSION['deleteColumnValue'] = "";
+                    $_SESSION['deleteColumnFunction'] = "";
+                    $_SESSION['deleteColumnFunctionPara1'] = ""; // Panel Name
+                    $_SESSION['deleteColumnFunctionPara2'] = "";
+                    $_SESSION['deleteColumnFunctionPara3'] = "";
+                    $_SESSION['deleteColumnFunctionPara4'] = "";
+                    $_SESSION['deleteColumnFunctionPara5'] = "";
+                    $_SESSION['deleteColumnFunctionPara6'] = "";
+                    //
+                    // Where Clause Condition 
+                    $_SESSION['tableWhere'] = "";
+                    // Table Joins
+                    $_SESSION['tableJoin'] = "";
+// Data Table Main File
+                    //add file here for  omdatable stock leader by product :@author:sagar(26june18)
+                    include 'omdatatables.php';
+                    ?>
+            </div>
+        </div>
+    </div>
+<?php } ?>

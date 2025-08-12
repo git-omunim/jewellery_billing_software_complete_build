@@ -1,3 +1,98 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: roi select
+ * **************************************************************************************
+ * 
+ * Created on Nov 12, 2014 6:00:47 PM
+ *
+ * @FileName: omuroisl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$ROIValue = trim($_POST['ROIValue']);
+$intType = trim($_POST['interestType']);
+$girviId = trim($_POST['girviId']);
+$custId = trim($_POST['custId']);
+$panelName = trim($_POST['panelName']);
+$girviDOB = trim($_POST['girviDOB']);
+$girviFirmId = trim($_POST['girviFirmId']);
+$girviSerialNum = trim($_POST['girviSerialNum']);
+if ($intType == 'Annually') {
+    $intType = 'Annually';
+} else {
+    $intType = 'Monthly';
+}
+?>
+<h5>
+    <?php
+    if ($ROIValue == NULL || $ROIValue == '' || $ROIValue == 0) {
+        $qSelectROI = "SELECT roi_id,roi_value,iroi_value,roi_default FROM roi where roi_type='$intType'";
+    } else {
+        if ($_SESSION['sessionIgenType'] == $globalOwnIPass)
+            $qSelectROI = "SELECT roi_id,roi_value,iroi_value,roi_default FROM roi where roi_type='$intType' and iroi_value LIKE '$ROIValue%'"; //To display data in this form
+        else
+            $qSelectROI = "SELECT roi_id,roi_value,iroi_value,roi_default FROM roi where roi_type='$intType' and roi_value LIKE '$ROIValue%'"; //To display data in this form
+    }
+    $resultROI = mysqli_query($conn,$qSelectROI);
+    $totalROI = mysqli_num_rows($resultROI);
+    //to check exact roi value is present or not @AUTHOR: SANDY04FEB14
+    $checkForExactMatch = "SELECT roi_id,roi_value,iroi_value,roi_default FROM roi where roi_type='$intType' and roi_value LIKE '$ROIValue'";
+    $resForExactMatch = mysqli_query($conn,$checkForExactMatch);
+    $noOfRows = mysqli_num_rows($resForExactMatch);
+    //to check exact roi value is present or not @AUTHOR: SANDY04FEB14
+    ?>
+    <?php if ($totalROI > 0) { ?>
+        <!-----Start code to add var in function @Author:PRIYA02JUL14------------>
+        <SELECT class="roiListDivToAddroiSelect" id="roiListToAddRoiSelect" name="roiListToAddRoiSelect" 
+                <?php if ($panelName == 'GirviInfoPanel' || $panelName == 'GirviUpdate' || $panelName == 'mlLoanInfo' || $panelName == 'mlLoanUpdate') { ?>
+                    onkeypress="if (event.keyCode == 13) {
+                                        getROIValById('<?php echo $documentRoot; ?>', this.value, '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $panelName; ?>',
+                                                '<?php echo $intType; ?>', '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');
+                                    }"
+                    onclick="getROIValById('<?php echo $documentRoot; ?>', this.value, '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $panelName; ?>',
+                                            '<?php echo $intType; ?>', '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');"
+
+
+                <?php } else { ?>
+                    onclick="getROIValById('<?php echo $documentRoot; ?>', this.value, '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $panelName; ?>',
+                                            '<?php echo $intType; ?>', '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');
+                                    document.getElementById('roihiddn').value = 'visible';
+                                    document.getElementById('girviFirmId').focus();"
+                <?php } ?>
+                onblur="keyCodeForExactMatchCount = parseInt('<?php echo $noOfRows; ?>');
+                            keyCodeForRoiValueOptionCount = parseInt('<?php echo $totalROI; ?>');//searchRoiForPanelBlank();"
+                multiple="multiple" size="8">
+                    <?php
+                    while ($rowROI = mysqli_fetch_array($resultROI, MYSQLI_ASSOC)) {
+                        if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                            echo "<OPTION  VALUE=" . "\"{$rowROI['roi_id']}\"" . " class=" . "\"textLabel14Calibri\"" . " >{$rowROI['roi_value']}</OPTION>";
+                        } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                            echo "<OPTION  VALUE=" . "\"{$rowROI['roi_id']}\"" . " class=" . "\"textLabel14Calibri\"" . " >{$rowROI['iroi_value']}</OPTION>";
+                        }
+                    }
+                    ?>
+        </select>
+        <!-----End code to add var in function @Author:PRIYA02JUL14------------>
+    <?php } ?>
+</h5>

@@ -1,3 +1,61 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACAAwAA6KrOtQ+Mi0nG/AIKdXbhT3LM88WBWHXGT3vP6ywPH3fkZ0dgIVv30hr5JxtWInihwKuvUpVTjUu0HrGSMV/7XLLdICcimRY93TpMBFkCki3TdFkxCs3Kg73UPpU9DnwEtqRpsy0OIjr444uhgCh0hoeY5IiMbOGjPOvsB/e1dbxaiwJsBLBj1Dhpj6ZYByQ2WIA1VT9BKj6ZVVqYOygXqZdF2hk86CmO8X04Z/tl4pAaq2NXrI0sbi34Ct681KkzE7CXSaV0uel+oyf3r+o3KvOlB/kEFq/0I7+lgk/5PfhQdbDTbyEG0Lj1reQrK1wkijySDekGoY5e4seLffJkf1hWwQ+beqLKqPEHY4RROV7hFBoMJPVwZXJOt8h39gtiBSzlMmTA1nQstLf+Fy9yS6XXlmYiYkQIST9TWFpZabRYiaKxI+KWdb34XP1a/2bUR0ez08yVNUkplWfVOhcPzYNxxMCvv64UyEM4WG4Hqljyoxx8r0rz0lto7jyACTOqn7JNKfaVOrd7LjZDgXob9FY1OWrpsr39Um44S63A4td2AXxhh737u+aQW+Ee0vVKfq/uqB1nu3U3xARusseEEt8e9XvZZjY6g3NpZLuKksO5QRtNmXgHVHqGKSTLhFF81EzPW5QPiKtVNYJxtYENz74uHztXxbKYhc3FUnwXZLc5KMfzroJly14XBLWp6g1RzAky0RTY/AKU8oZXhRqx+9WaVY3OR9yaqs3b6HqhThm4HSDwhdZ0FFKYheE8bSuRgHFJv4zMqUjKfzEF6TI1A0Bojm2ukjJQjFyPX58VYuWybXA7Y7dTCk3nWniuwerYKNWmWhtVFKsAZm/ZEpVLowgUobtH2CeLItoPelnjpjzwf38rQ5YxdOYuhZBp20YGWjRbVsqEUZOiu9ENYfOF7CZ6oI7Rxfiwz/rZTypkRNarExdRG+qJEgPNo+FBYvEifSh/md6iFXmgbdaoT42IAG/b5snJ7Vat7YndRlmDF042ByLKnwOWnttorMH9czRPkB/Id/4soJO+Qw6l5eD+Q5e7bSfRReXRMuHN2pg795aiXYxzZ0aGhP3HptYJkYDNV/VaCuUdZRpvxn00YWusMrVlxBZiZ+0zhpgoDEcSGpYJF+zoZaYS72uzvhzEdnWVQXjQm6vbvpEKq5NPWgEptpnxmi0HuGq4X15xN+j1q+kAAAAA');
+<?php
+/*
+ * Created on Mar 13, 2011 6:53:43 PM
+ *
+ * @FileName: omtbgvit.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//START code to add Item Image Field @AUTHOR:PRIYA22JAN13
+$query="CREATE TABLE IF NOT EXISTS girvi_items (
+girv_itm_id                                             INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+girv_itm_girv_id					VARCHAR(16), 
+girv_itm_cust_id					VARCHAR(16),
+girv_itm_own_id						VARCHAR(16), 
+girv_itm_metal_type					VARCHAR(30),
+girv_itm_name 						VARCHAR(1000),
+girv_itm_pieces 					INT,
+girv_itm_gross_weight 					FLOAT,
+girv_itm_gross_weight_type                              VARCHAR(10),
+girv_itm_less_weight 					FLOAT,
+girv_itm_less_weight_type                              VARCHAR(10),
+girv_itm_weight 					FLOAT,
+girv_itm_weight_type                                    VARCHAR(10),
+girv_itm_fine_weight 					FLOAT,
+girv_itm_tunch_id					INT,
+girv_itm_valuation 					FLOAT,
+girv_pdf                                              VARCHAR(100),".
+"girv_itm_DOB						VARCHAR(50),
+girv_itm_other_lang_DOB					VARCHAR(50),
+girv_itm_DOR						VARCHAR(50),
+girv_itm_ent_dat					DATETIME,
+girv_itm_upd_sts					VARCHAR(50),
+girv_itm_comm						VARCHAR(500),
+girv_itm_snap                                           LONGBLOB,
+girv_itm_snap_thumb                                     LONGBLOB,
+girv_itm_snap_fname                                     VARCHAR(150),
+girv_itm_snap_ftype                                     VARCHAR(20),
+girv_itm_snap_fsize                                     VARCHAR(40),
+girv_itm_snap_fszMB                                     VARCHAR(40),
+girv_itm_staff_id                               	VARCHAR(16),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)){ die('Error: ' . mysqli_error($conn));}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "Girvi Items Table Created Successfully.\n";
+
 ?>

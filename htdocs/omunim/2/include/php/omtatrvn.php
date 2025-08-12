@@ -1,3 +1,213 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Firm wise Voucher number
+ * **************************************************************************************
+ * 
+ * Created on May 21, 2013 11:49:26 AM
+ *
+ * @FileName: omtatrvn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpfndv.php';
+?>
+<?php
+//change in file @AUTHOR: SANDY27JAN14
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$firmId = $_POST['firmNo'];
+
+if ($firmId == '') {
+    $firmId = $_GET['firmNo'];
+}
+if ($panel == '' || $panel == null)
+    $panel = $_REQUEST['panel'];
+
+$selDateMonth = $_POST['selectedMonth'];
+$selDateYear = $_POST['selectedYear'];
+
+//echo '$selDateMonth:' . $selDateMonth . ' $selDateYear:' . $selDateYear;
+//echo '$panel == '.$panel.'<br />';
+//
+if ($panel == 'AddNewTransPayment') {
+    $id = "transToAcc1" . $prodCount;
+} else if ($panel == 'AddNewTransWithMultipleOpt' || $panel == 'updateTransaction' || $panel == 'AddNewTransDateChange') { // CONDITION ADDED @AUTHOR:SHRI14AUG20
+    $id = "transactionCategory";
+} else {
+    $id = "transAmt";
+}
+
+/* * ****Start code to select firm name @Author:PRIYA10FEB14********** */
+parse_str(getTableValues("SELECT firm_name FROM firm where firm_id=' $firmId'"));
+$frm = om_strtoupper(substr($firm_name, 0, 1));
+/* * ****End code to select firm name @Author:PRIYA10FEB14********** */
+/* * *********************************Modified By Harshad********************************** */
+/* * *******************Add Condition to Check Transaction Payment Panel Voucher no****************** */
+if ($_REQUEST[panel] == 'transactionPayment') {
+
+    $qSelPreVoucherNo = "SELECT utin_pre_invoice_no FROM user_transaction_invoice "
+            . "WHERE utin_owner_id='$sessionOwnerId' "
+            . "AND utin_firm_id='$firmId' "
+            . "AND utin_type IN ('Transaction') "
+            . "AND utin_transaction_type IN ('TransactionPayment')"
+            . "ORDER BY utin_id DESC LIMIT 0,1 ";
+
+    $resPreVoucherNo = mysqli_query($conn, $qSelPreVoucherNo) or die(mysqli_error($conn));
+    $rowPreVoucherNo = mysqli_fetch_array($resPreVoucherNo, MYSQLI_ASSOC);
+    $preVchNo = $rowPreVoucherNo['utin_pre_invoice_no'];
+
+    if ($preVchNo == NULL || $preVchNo == '') {
+        $preVchNo = 'V' . $frm;
+        $qSelPostVoucherNo = "SELECT max(utin_invoice_no) AS nextVchNo FROM user_transaction_invoice "
+                . "WHERE utin_owner_id='$sessionOwnerId' "
+                . "AND utin_pre_invoice_no IS NULL "
+                . "AND utin_firm_id='$firmId'"
+                . "AND utin_type IN ('Transaction') "
+                . "AND utin_transaction_type IN ('TransactionPayment')";
+        $resPostVoucherNo = mysqli_query($conn, $qSelPostVoucherNo) or die(mysqli_error($conn));
+        $rowPostVoucherNo = mysqli_fetch_array($resPostVoucherNo, MYSQLI_ASSOC);
+    } else {
+        $qSelPostVoucherNo = "SELECT max(utin_invoice_no) AS nextVchNo FROM user_transaction_invoice "
+                . "WHERE utin_owner_id='$sessionOwnerId' "
+                . "AND utin_pre_invoice_no='$preVchNo' "
+                . "AND utin_firm_id='$firmId'"
+                . "AND utin_type IN ('Transaction') "
+                . "AND utin_transaction_type IN ('TransactionPayment')";
+        $resPostVoucherNo = mysqli_query($conn, $qSelPostVoucherNo) or die(mysqli_error($conn));
+        $rowPostVoucherNo = mysqli_fetch_array($resPostVoucherNo, MYSQLI_ASSOC);
+    }
+
+    $postVchNo = $rowPostVoucherNo['nextVchNo'] + 1;
+} else {
+
+    // GET PRE VOUCHER NUMBER BY FINANCIAL YEAR
+    if ($panel == 'AddNewTransDateChange' || $panel == 'AddNewTransWithMultipleOpt' || $panel == 'AddNewTrans') {
+        $selDateMonth = date('m', strtotime($selDateMonth)) - 1;
+        if ($selDateMonth > 2) {
+            $currentEndFinYear = $selDateYear + 1;
+        } else {
+            $currentEndFinYear = $selDateYear;
+        }
+    } else {
+        $todayMMSel = date(n) - 1;
+        if ($todayMMSel > 2) {
+            $currentEndFinYear = date(Y) + 1;
+        } else {
+            $currentEndFinYear = date(Y);
+        }
+    }
+    
+    $currentStartFinYear = $currentEndFinYear - 1;
+    $currentEndFinYearDateTimestamp = strtotime($currentEndFinYear . '-03' . '-31');
+    $currentStartFinYearDateTimestamp = strtotime($currentStartFinYear . '-04' . '-01');
+
+    $qSelPreVoucherNo = "SELECT transaction_pre_vch_id FROM transaction "
+            . "where transaction_own_id='$sessionOwnerId' "
+            . "and transaction_firm_id='$firmId' AND UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %M %Y')) BETWEEN '$currentStartFinYearDateTimestamp' AND '$currentEndFinYearDateTimestamp' "
+            . "AND transaction_trans_id IS NULL "
+            . "order by transaction_ent_dat desc LIMIT 0,1";
+    $resPreVoucherNo = mysqli_query($conn, $qSelPreVoucherNo) or die(mysqli_error($conn));
+    $rowPreVoucherNo = mysqli_fetch_array($resPreVoucherNo, MYSQLI_ASSOC);
+    $preVchNo = $rowPreVoucherNo['transaction_pre_vch_id'];
+
+    
+    $qSelVoucherNo = "SELECT max(transaction_post_vch_id) as transVoucherId FROM transaction where transaction_own_id='$sessionOwnerId' AND transaction_firm_id='$firmId' "
+            . "AND UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %M %Y')) BETWEEN '$currentStartFinYearDateTimestamp' AND '$currentEndFinYearDateTimestamp' AND transaction_trans_id IS NULL";
+    $resVoucherNo = mysqli_query($conn, $qSelVoucherNo);
+    $rowVoucherNo = mysqli_fetch_array($resVoucherNo, MYSQLI_ASSOC);
+
+    if ($preVchNo == NULL || $preVchNo == '' || $rowVoucherNo['transVoucherId'] < 1) {
+        $preVchNo = 'V' . $frm; //pre Id added @Author:PRIYA10FEB14
+        $qSelPostVoucherNo = "SELECT max(transaction_post_vch_id) AS nextVchNo FROM transaction "
+                . "where transaction_own_id='$sessionOwnerId' AND UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %M %Y')) BETWEEN '$currentStartFinYearDateTimestamp' AND '$currentEndFinYearDateTimestamp' "
+                . "and transaction_pre_vch_id IS NULL and transaction_firm_id='$firmId' AND transaction_trans_id IS NULL";
+        $resPostVoucherNo = mysqli_query($conn, $qSelPostVoucherNo) or die(mysqli_error($conn));
+        $rowPostVoucherNo = mysqli_fetch_array($resPostVoucherNo, MYSQLI_ASSOC);
+    } else {
+        $qSelPostVoucherNo = "SELECT max(transaction_post_vch_id) AS nextVchNo FROM transaction "
+                . "where transaction_own_id='$sessionOwnerId' "
+                . "and transaction_pre_vch_id='$preVchNo' "
+                . "and transaction_firm_id='$firmId' AND transaction_trans_id IS NULL";
+        $resPostVoucherNo = mysqli_query($conn, $qSelPostVoucherNo) or die(mysqli_error($conn));
+        $rowPostVoucherNo = mysqli_fetch_array($resPostVoucherNo, MYSQLI_ASSOC);
+    }
+    $postVchNo = $rowPostVoucherNo['nextVchNo'] + 1;
+
+    //Start Code to transaction id
+    $qSelTrId = "SELECT transaction_post_vch_id FROM transaction "
+            . "where transaction_post_vch_id='$postVchNo' "
+            . "and transaction_pre_vch_id='$preVchNo' "
+            . "and transaction_own_id='$sessionOwnerId'";
+    $resSelTrId = mysqli_query($conn, $qSelTrId);
+    $rowSelTrId = mysqli_fetch_array($resSelTrId, MYSQLI_ASSOC);
+
+    $nextPostVchNo = $rowSelTrId['transaction_post_vch_id'];
+
+    if ($nextPostVchNo != '' || $nextPostVchNo != NULL) {
+        $qSelTrId = "SELECT max(transaction_post_vch_id) AS nextVchNo  FROM transaction  where transaction_pre_vch_id='$preVchNo' "
+                  . "and transaction_own_id='$sessionOwnerId'";
+        $resSelTrId = mysqli_query($conn, $qSelTrId);
+        $rowSelTrId = mysqli_fetch_array($resSelTrId, MYSQLI_ASSOC);
+        $postVchNo = $rowSelTrId['nextVchNo'] + 1;
+    }
+}
+//echo '$postVchNo:'.$postVchNo;
+//comment @AUTHOR: SANDY25JAN14*/
+?>
+<!---Change in class of input field @AUTHOR: SANDY06JAN14 --->
+<table border="0" cellpadding="0" cellspacing="0" >
+    <tr>
+        <td><!---CHANGE @AUTHOR: SANDY03FEB14---->
+            <input id="transPreVoucherNo" name="transPreVoucherNo" type="text" placeholder="VCH" value="<?php echo $preVchNo; ?>"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transPostVoucherNo').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transFirmId').focus();
+                               return false;
+                           }"
+                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" /> 
+
+            <input id="transFirmVoucherNo" name="transFirmVoucherNo" type="hidden" readonly="true" value="<?php echo $firmId; ?>"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transPostVoucherNo').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transPreVoucherNo').focus();
+                               return false;
+                           }"
+                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" />
+        </td>
+        <td align="left"  class="inputBox14CalibriReqCenter">
+            &minus;
+        </td>
+        <td>
+            <input id="transPostVoucherNo" name="transPostVoucherNo" type="text" placeholder="Voucher No" value="<?php echo $postVchNo; ?>"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('<?php echo $id ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transPreVoucherNo').focus();
+                               return false;
+                           }"
+                   spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="5" maxlength="16" />
+        </td>
+    </tr>
+</table>

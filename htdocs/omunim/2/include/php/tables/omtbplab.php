@@ -1,3 +1,127 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Labels
+ * **************************************************************************************
+ * 
+ * Created on Dec 22, 2016
+ *
+ * @FileName: omtbplab.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessionOwnerId'];
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+
+$qMetalPurDetailse = "SELECT label_field_name FROM labels WHERE label_type = 'MetalPurchase'";
+$resMetalPurDetailse = mysqli_query($conn,$qMetalPurDetailse) or die(mysqli_error($conn));
+$totalPurCounter = mysqli_num_rows($resMetalPurDetailse);
+$rowMetalPurDetails = mysqli_fetch_array($resMetalPurDetailse);
+if ($totalPurCounter <= 0) {
+
+    $labelType = 'MetalPurchase';
+    $query = "INSERT INTO labels(    
+           label_own_id, label_type, label_field_name, label_field_content,label_field_font_size,label_field_font_color,label_field_check)
+           VALUES
+           ('$ownerId', '$labelType', 'firmPurFormHeader', '', '22', 'blue', 'true'),"
+            . "('$ownerId', '$labelType', 'firmPurLongName', '', '20', 'brightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurDesc', '', '16', 'blue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurRegNoLabel', 'FIRM REGISTRATION NUMBER', '16', 'lightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurRegNo', '', '16', 'lightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurAddress', '', '16', 'lightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurPhone', 'PHONE', '14', 'lightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurEmail', 'EMAIL', '14', 'lightBlue', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurLeftLogoCheck', '', '', '', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurRightLogoCheck', '', '', '', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurTinLb', 'TIN', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurTin', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurPanLb', 'PAN', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'firmPurPan', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurNameLb', 'NAME', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurName', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurAddressLb', 'ADDRESS', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurAddress', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurContactLb', 'PHONE', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'userPurContact', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'invPurNoTitleLb', 'INVOICE NO', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'invPurNoTitle', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'datePurTitleLb', 'DATE', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'datePurTitle', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'invPurTitle', 'CASH INVOICE', '14', 'blue', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurIdLb', 'IT ID', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'designPurLb', 'DESIGN', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurDescLb', 'DESC', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurGsWtLb', 'GS WT', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurNtWtLb', 'NT WT', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'valPurAddedLb', 'VA WT', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'metalPurRateLb', 'RATE', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'labourPurLb', 'LABOUR', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'valPurLb', 'VAL', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'taxPurLb', 'TAX', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'valPurAddedAmtLb', 'VAL ADD', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'amtPurLb', 'AMOUNT', '14', 'white', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurId', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'designPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurDesc', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurGsWt', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'itemPurNtWt', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'valPurAdded', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'metalPurRate', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'labourPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'valPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'taxPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'valPurAddedAmt', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'amtPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'totalPurLb', 'TOTAL', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'totalPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'metalPurRecLb', 'METAL RECEIVED', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'metalPurRec', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'cashPurPaidLb', 'CASH PAID', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'cashPurPaid', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'discPurLb', 'DISCOUNT', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'discPur', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'totalPurBalLb', 'TOTAL BAL', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'totalPurBal', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'finPurBalLb', 'TOTAL', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'finPurBal', '', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'tncPurLb', 'Terms and Conditions', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'tncPur', 'All disputes are subject to the jurisdiction of the competent courts in Delhi.', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'authPurSignLb', 'Authorized Signatory', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'footerPur', 'Thank You For Your Business!', '14', 'black', 'true'), "
+            . "('$ownerId', '$labelType', 'slPrPurValueAddedOp', 'byAmount', '', '', 'true'), "
+            . "('$ownerId', '$labelType', 'udhaarPurEMI', '', '14', 'black', 'true'), "  //added @Author:SHRI10JUN15
+            . "('$ownerId', '$labelType', 'udhaarPurEMILb', 'TOT UDHAAR EMI AMT', '14', 'black', 'true'), " //added @Author:SHRI10JUN15
+            . "('$ownerId', '$labelType', 'rawMetalPurWt', 'METAL', '14', 'black', 'true'), "//added @Author:SHRI07AUG15 ,modified @Author:SHRI30JAN17
+            . "('$ownerId', '$labelType', 'rawPurMetalTnch', 'TUNCH', '14', 'black', 'true'), "//added @Author:SHRI07AUG15
+            . "('$ownerId', '$labelType', 'rawPurMetalFnWt', 'FN WT', '14', 'black', 'true'), "//added @Author:SHRI07AUG15
+            . "('$ownerId', '$labelType', 'rawPurMetalRt', 'RATE', '14', 'black', 'true')";
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //To check new columns added into table or not 
+//include 'ommptbauprdwrfl.php';
+}
 ?>

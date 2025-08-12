@@ -1,3 +1,96 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: XRF Invoice Details @PRIYANKA-01AUG18
+ * **************************************************************************************
+ * 
+ * Created on 01 AUG, 2018 11:29:49 AM
+ *
+ * @FileName: omspinvItemInfo.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.82
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<td colspan="<?php echo $colspan; ?>">
+    <?php
+//    $fieldName = 'itemDetTop';
+//    $label_field_content = '';
+//    parse_str(getTableValues("SELECT label_field_content,label_field_font_size "
+//                           . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+//                           . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    //
+    $itemDetTopVal = $itemDetTop;
+    ?>
+    <table border="0" cellpadding="0" width="100%" cellspacing="0" style="padding-top:<?php echo $itemDetTopVal; ?>mm">
+        <?php
+//        $fieldName = 'invTitle';
+//        $label_field_font_size = '';
+//        $label_field_font_color = '';
+//        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+//                               . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+//                               . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        //
+        if ($invTitle_check == 'true') {
+            ?>
+            <tr> 
+                <td valign="middle" align="center" colspan="<?php echo $colspan; ?>">
+                    <div class="ff_calibri fw_n font_color_<?php echo $invTitle_color; ?>" style="font-size:16px;" onClick="this.contentEditable = 'true';">
+                        <?php
+                        //
+                        $invTitle = 'XRF REPORT';
+                        //
+                        echo '<b>' . $invTitle . '</b>';
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        <?php } ?>
+        <tr>
+            <td align="center" colspan="<?php echo $colspan; ?>">
+                &nbsp;
+            </td>
+        </tr>
+        <?php
+        //
+        if ($invName == 'XRF_PAYMENT') {
+           //
+            $qSelSlPrItemDetails = "SELECT * FROM xrf_entries WHERE xrf_owner_id = '$sessionOwnerId' "
+                . "and xrf_pre_invoice_no = '$slPrPreInvoiceNo' and xrf_invoice_no = '$slPrInvoiceNo' "              
+                . "and xrf_user_id = '$userId' and xrf_status NOT IN('DELETED') order by xrf_id ASC";
+            //
+            $resSlPrItemDetails = mysqli_query($conn, $qSelSlPrItemDetails);
+            $noOf = mysqli_num_rows($resSlPrItemDetails);
+            //
+        } 
+        //
+        $SrNo = 1;
+        //
+        while ($rowSlPrItemDetails = mysqli_fetch_array($resSlPrItemDetails)) {
+            //
+            $xrf_id = $rowSlPrItemDetails['xrf_id'];
+            $xrf_metal_type = $rowSlPrItemDetails['xrf_metal_type'];
+            $xrf_prod_name = $rowSlPrItemDetails['xrf_prod_name'];
+            $xrf_hsn_no = $rowSlPrItemDetails['xrf_hsn_no'];
+            $xrf_prod_quantity = $rowSlPrItemDetails['xrf_prod_quantity'];
+            $xrf_prod_gs_weight = $rowSlPrItemDetails['xrf_prod_gs_weight'] . ' ' . $rowSlPrItemDetails['xrf_prod_gs_weight_type'];
+            $xrf_karat = $rowSlPrItemDetails['xrf_karat'];
+            $xrf_Gold = $rowSlPrItemDetails['xrf_Gold'];
+            $xrf_Silver = $rowSlPrItemDetails['xrf_Silver'];
+            $xrf_prod_other_info = $rowSlPrItemDetails['xrf_prod_other_info'];
+            //
+            include 'omspindtRight.php';
+            //
+            $SrNo++; 
+        }
 ?>

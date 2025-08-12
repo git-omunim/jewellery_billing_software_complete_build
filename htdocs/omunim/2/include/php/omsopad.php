@@ -1,3 +1,90 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Forms Layout ad File 
+ * **************************************************************************************
+ * 
+ * Created on Jun 24, 2013 6:31:51 PM
+ *
+ * @FileName: omsopad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$fieldName = $_GET['fieldName'];
+$value = $_GET['value'];
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+
+$selFormsLayoutDet = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = '$fieldName'";
+$resFormsLayoutDet = mysqli_query($conn,$selFormsLayoutDet);
+$rowFormsLayoutDet = mysqli_num_rows($resFormsLayoutDet);
+ 
+if ($rowFormsLayoutDet == 0) {
+   $query = "INSERT INTO omlayout(
+		omly_own_id,omly_option,omly_value)
+                VALUES(
+		'$sessionOwnerId','$fieldName','$value')";
+//  echo $query;
+   if (!mysqli_query($conn,$query)) {
+      die('Error: ' . mysqli_error($conn));
+   }
+   /*    * *******Start code to add sys_log api************* */
+   $sslg_trans_sub = om_ucfirst($fieldName) . ' OPTION CHANGED';
+   $sslg_trans_comment = om_ucfirst($fieldName) . ' - ' . $value . ' OPTION CHANGED';
+   include 'omslgapi.php';
+   /*    * *******End code to add sys_log api *********** */
+} else {
+   $query = "UPDATE omlayout SET
+     omly_value = '$value'
+    WHERE omly_own_id = '$sessionOwnerId' and omly_option = '$fieldName'";
+//     echo $query;
+   if (!mysqli_query($conn,$query)) {
+      die('Error: ' . mysqli_error($conn));
+   }
+   /*    * *******Start code to add sys_log api *********** */
+   $sslg_trans_sub = om_ucfirst($fieldName) . ' OPTION UPDATED';
+   $sslg_trans_comment = om_ucfirst($fieldName) . ' - ' . $value . ' OPTION UPDATED';
+   include 'omslgapi.php';
+   /*    * *******End code to add sys_log api ***************** */
+}
+
+//echo '$fieldName'.$fieldName;
+//echo '$value'.$value;
+
+/* * *******START TO ADD CODE TO NAVIGATE CORRECTLY  ******************** */
+//echo 'Session:'.$_SESSION['sessionProdOMUNIM'];exit();
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+   header("Location: $documentRoot/include/php/omppsbdv?divPanel=stockPanel&value=".$value ."&fieldName=". $fieldName);
+//    header("Location: $documentRoot/omHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel');
+        } else {
+   $showMess = 'Your session has expired. Please log in again!!!';
+   //$showMess = 'Your product expired for update, Please renew your product or dongle!<br/>आपके उत्पाद को अपडेट करने की सीमा समाप्त हो गयी है, कृपया अपना उत्पाद या डोंगल रिन्यू कीजिए!';
+   header('Location: ' . $documentRootBSlash . '/omLoginPage.php?showMess=' . $showMess);
+   //include 'omppsbdv.php';
+   exit;
+}
+/* * *******End TO ADD CODE TO NAVIGATE CORRECTLY ******************* */
 ?>

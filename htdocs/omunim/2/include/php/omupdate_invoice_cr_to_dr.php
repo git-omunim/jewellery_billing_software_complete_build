@@ -1,3 +1,78 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * *********************************************************************************
+ * @tutorial: JMK Customer Upd UPDATE utin_cash_CRDR FROM CR TO DR FOR SPECIFIC UDHAAR ENTRIES
+ * *********************************************************************************
+ *
+ * Created on 11-06-2024
+ *
+ * @FileName: update_udhaar_cr_to_dr.php
+ * @Author: kuldeep
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2024 www.softwaregen.com
+ * @All rights reserved
+ *
+ * @ModificationHistory
+ * MODIFICATION DATE: 11-06-2024
+ * AUTHOR: kuldeep
+ * REASON: To correct the transaction type for specific 'udhaar' entries.
+ *
+ */
+
+// Include necessary files for database connection and system functions
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php'; // This file should handle your database connection ($conn)
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+
+
+// 1. Disable autocommit to start a transaction for safety
+if (!mysqli_autocommit($conn, false)) {
+    error_log('Error disabling autocommit: ' . mysqli_error($conn));
+    die('Error: Could not start a transaction.');
+}
+
+$transaction_successful = false; // Flag to track the transaction status
+
+// The SQL query to update the 'utin_cash_CRDR' column in the 'user_transaction_invoice' table.
+$updateQuery = "
+    UPDATE user_transaction_invoice
+    SET utin_cash_CRDR = 'DR'
+    WHERE utin_id IN (3271, 2800);
+";
+
+// Execute the update query
+if (mysqli_query($conn, $updateQuery)) {
+    $affectedRows = mysqli_affected_rows($conn);
+
+    // 2. If the query was successful, commit the transaction to make the changes permanent
+    if (mysqli_commit($conn)) {
+        $transaction_successful = true;
+        echo "Transaction successful. <br>";
+        echo "<b>" . $affectedRows . "</b> record(s) have been updated in the 'user_transaction_invoice' table. The 'utin_cash_CRDR' column has been changed from 'CR' to 'DR'.";
+    } else {
+        // If the commit fails, roll back the transaction
+        mysqli_rollback($conn);
+        error_log('Error committing transaction (rolled back): ' . mysqli_error($conn));
+        die('Error: The transaction could not be committed and has been rolled back.');
+    }
+} else {
+    // If the update query fails, roll back the transaction
+    mysqli_rollback($conn);
+    error_log('Error updating records (rolled back): ' . mysqli_error($conn));
+    die('Error executing the update query (rolled back): ' . mysqli_error($conn));
+}
+
+// 3. Re-enable autocommit for subsequent database operations
+if (!mysqli_autocommit($conn, true)) {
+    error_log('Error re-enabling autocommit: ' . mysqli_error($conn));
+    // This is a non-critical error for this script's execution, but should be logged.
+}
+
+// Close the database connection
+mysqli_close($conn);
+
 ?>

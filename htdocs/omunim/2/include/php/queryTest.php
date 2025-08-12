@@ -1,3 +1,71 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @Description:
+ * **************************************************************************************
+ *
+ * Created on Oct 8, 2015 1:23:41 PM
+ *
+ * @FileName: queryTest.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+
+include 'omssopin.php';
+include_once 'ommpfndv.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$qSelAllSlprInv = "SELECT slprin_id,slprin_cust_id,slprin_fnl_due_bal,slprin_date,slprin_since FROM slpr_stock_inv WHERE slprin_owner_id = '$sessionOwnerId'";
+
+$resQSelAllSlprInv = mysqli_query($conn,$qSelAllSlprInv);
+echo "<table border='1'>";
+echo "<tr><th>Sr. No.</th><th>Slpr Inv Id</th><th>Rem Balance</th><th>Customer Id</th><th>Udhaar Id</th><th>Date</th><th>Add Date</th></tr>";
+$counter = 1;
+while ($rowQSelAllSlprInv = mysqli_fetch_array($resQSelAllSlprInv, MYSQLI_ASSOC)) {
+    $slprin_id = $rowQSelAllSlprInv['slprin_id'];
+    $slprin_fnl_due_bal = $rowQSelAllSlprInv['slprin_fnl_due_bal'];
+    $slprin_cust_id = $rowQSelAllSlprInv['slprin_cust_id'];
+    $slprin_date = $rowQSelAllSlprInv['slprin_date'];
+    $slprin_since = $rowQSelAllSlprInv['slprin_since'];
+
+    $selUdhaarId = "SELECT udhaar_id FROM udhaar WHERE udhaar_slprin_id=$slprin_id AND udhaar_own_id = '$sessionOwnerId'";
+    $resSelUdhaarId = mysqli_query($conn,$selUdhaarId);
+    $udhaarIdCount = mysqli_num_rows($resSelUdhaarId);
+//    echo "<tr>";
+//    echo "<td>$slprin_id</td><td>$slprin_fnl_due_bal</td><td>$slprin_cust_id</td><td>$udhaar_id</td>";
+//    echo "</tr>";
+
+    if (($udhaarIdCount == 0) && $slprin_fnl_due_bal > 0) {
+        echo "<tr>";
+        echo "<td>$counter</td><td>$slprin_id</td><td>$slprin_fnl_due_bal</td><td>$slprin_cust_id</td><td>$udhaar_id</td><td>$slprin_date</td><td>$slprin_since</td>";
+        echo "</tr>";
+        $counter++;
+    }
+}
+echo "</table>";
+//if (!mysqli_query($conn,$query)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
 ?>

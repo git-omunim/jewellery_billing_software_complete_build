@@ -1,3 +1,73 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on 01-Aug-2011 10:56:17 PM
+ *
+ * @FileName: omwithdrawadd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<?php
+
+include 'omfrpsck.php';
+if ($ddpanelName == 'dayBeforePanel') {
+    //$dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    $oneDayMinusStrToTime = $todayFromStrDate - 60 * 60 * 24;
+    if ($acc_cash_opening_strtodate != '')
+        if ($acc_cash_opening_strtodate == $todayFromStrDate)
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))>$acc_cash_opening_strtodate and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+        else
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $acc_cash_opening_strtodate AND $oneDayMinusStrToTime";
+    else
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+} else {
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+}
+//
+if ($ddMainPanel == 'custAccLedger'){
+    $accLedStrDepAdd = "and utin_user_id = '$custId'";
+} else {
+    $accLedStrDepAdd = NULL;
+}
+//
+$totalTodayNewUdhaarDeposit = 0;
+/*****************START code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17************************/
+$qSelect = "SELECT SUM(utin_tot_payable_amt) as total_udhadepo FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]'$dateStr $accLedStrDepAdd and "
+        . "utin_status IN ('New') and utin_firm_id IN ($strFrmId) "
+        . "and utin_type='udhaar' and  utin_transaction_type = 'UDHAAR' and utin_history = 'WITHDRAW'"; //EMI Status condition added @Author:SHRI29MAY15 //status deleted added @Author:PRIYA17OCT13
+//echo '$qSelect =='.$qSelect;
+$qResultdep = mysqli_query($conn,$qSelect);
+$rowdep = mysqli_fetch_array($qResultdep, MYSQLI_ASSOC); 
+$todaysudhaarDeposit = $rowdep['total_udhadepo'];
+//echo '$todaysudhaarDeposit =='.$todaysudhaarDeposit;
+
+if ($panelName != 'TodaysUdhaarDeposit') {
+    $qSelectTotalTillToday = "SELECT SUM(utin_tot_payable_amt) as total FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' "
+            . "and utin_date<='$todayDate' and utin_status IN ('New')"
+            . " and  utin_transaction_type = 'UDHAAR' and utin_history = 'WITHDRAW' and utin_firm_id IN ($strFrmId)"; //EMI Status condition added @Author:SHRI29MAY15 //status deleted added @Author:PRIYA17OCT13
+    $qResultTotalTillToday = mysqli_query($conn,$qSelectTotalTillToday);
+    $rowTotalTillToday = mysqli_fetch_array($qResultTotalTillToday, MYSQLI_ASSOC);
+    $totalTillToday = $rowTotalTillToday['total'];
+    echo formatInIndianStyle($totalTillToday);
+}
 ?>

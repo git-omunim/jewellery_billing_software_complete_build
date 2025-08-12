@@ -1,3 +1,655 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: omuulstp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+include_once 'ommpfndv.php';
+?>
+<div id="udhharListDiv">
+    <?php
+    /*     * ******************************************************************************************* */
+    /*                START CODE To Show Udhar Metal And Cash on Udhar Panel:Author:SANT25MAY17           */
+    /*     * ******************************************************************************************* */
+    $sortKeyword = NULL;
+    $searchColumn = NULL;
+    $searchValue = NULL;
+    $searchKeyword = NULL;
+    $columName = NULL;
+    $searchColumnStr = NULL;
+
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if (isset($_GET['searchKeyword'])) {
+        $searchKeyword = $_GET['searchKeyword'];
+    }
+    if (isset($_GET['sortKeyword'])) {
+        $sortKeyword = $_GET['sortKeyword'];
+    }
+    if (isset($_GET['searchColumn'])) {
+        $searchColumn = $_GET['searchColumn'];
+    }
+    if (isset($_GET['searchValue'])) {
+        $searchValue = $_GET['searchValue'];
+    }
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId != NULL) {
+        $strFrmId = $selFirmId;
+    } else {
+        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+
+        $strFrmId = '0';
+
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    }
+    $updateRows = $_GET['updateRows'];
+    if ($updateRows == 'updateRows') {
+        $rowsPerPage = $_GET['rowsPerPage'];
+        $ominValue = $rowsPerPage;
+        $ominOption = 'indigvpnrw';
+        include 'ommpindc.php';
+    }
+    $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiudpnrw'";
+    $resGNoOfRows = mysqli_query($conn, $qSelGNoOfRows);
+    $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+    $rowsPerPage = $rowGNoOfRows['omin_value'];
+    if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+        $rowsPerPage = 15;
+    }
+    $checkNextRows = $rowsPerPage * 2;
+// by default we show first page
+    $pageNum = 1;
+    $gCounter = 0;
+
+// if $_GET['page'] defined, use it as page number
+    if (isset($_GET['page'])) {
+        $pageNum = $_GET['page'];
+        $gCounter = ($pageNum - 1) * $rowsPerPage;
+    }
+
+// counting the offset
+    $perOffset = ($pageNum - 1) * $rowsPerPage;
+
+    $searchColumnName = $searchColumn;
+    $searchColumnValue = $searchValue;
+
+    $sortKeyword = stripslashes($sortKeyword);
+    $searchColumn = stripslashes($searchColumn);
+
+    $sortKeywordValue = $sortKeyword;
+    $sortKeywordValue = stripslashes($sortKeywordValue);
+
+    $isAtrate = strpos($searchColumn, '@');
+
+    if ($isAtrate == true) {
+        $searchColumn = explode("@", $searchColumn);
+        $searchColumn1 = $searchColumn[0];
+        $searchColumn2 = $searchColumn[1];
+        $searchColumn3 = $searchColumn[2];
+        //Start Code to Get Pre and Post Girvi Serial Number
+        if ($searchColumn1 == 'utin_pre_invoice_no') {
+            $grvSerialNoStr = $searchValue;
+            $grvSerialNoStrLen = strlen($searchValue);
+            for ($count = 0; $count <= $grvSerialNoStrLen; $count++) {
+                if (is_numeric($grvSerialNoStr)) {
+                    break;
+                }
+                $grvSerialNoStr = substr($grvSerialNoStr, 1);
+            }
+
+            $grvPreSerialNo = substr($searchValue, 0, $count);
+            $grvSerialNo = $grvSerialNoStr;
+            $searchColumnStr = " and $searchColumn1 = '$grvPreSerialNo' and $searchColumn2 = '$grvSerialNo' ";
+        }
+
+        if ($searchColumn1 == "DAY(STR_TO_DATE(utin_date,'%d %M %y'))") {
+            $isDot = strpos($searchValue, '.');
+            if ($isDot == true) {
+                $searchValue = explode(".", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchValue3 = $searchValue[2];
+
+                if ($searchValue3 == '') {
+                    $searchColumnStr = " and $searchColumn2='$searchValue1' and $searchColumn3 = '$searchValue2' ";
+                } else if ($searchValue1 != '' && $searchValue2 != '' && $searchValue3 != '') {
+                    $searchColumnStr = " and $searchColumn1='$searchValue1' and $searchColumn2='$searchValue2' and $searchColumn3 = '$searchValue3' ";
+                }
+            } else {
+                $searchColumnStr = " and $searchColumn3='$searchValue' ";
+            }
+            $dateStr = " order by STR_TO_DATE(utin_date,'%d %b %Y') asc ";
+        }
+    } else {
+        if ($searchColumn != NULL)
+            $searchColumnStr = " and $searchColumn LIKE '$searchValue%' ";
+    }
+    if ($searchColumn == 'utin_cash_balance') {
+
+        $prinStartRange = stristr($searchValue, '-', TRUE);
+        $endRange = stristr($searchValue, '-');
+        $prinEndRange = substr($endRange, 1);
+        if ($prinStartRange != '' && $prinEndRange != '') {
+            $searchColumnStr = " and $searchColumn >= '$prinStartRange' and $searchColumn <= '$prinEndRange'";
+        } else {
+            $searchColumnStr = " and $searchColumn = '$searchValue' ";
+        }
+    }
+    if ($sortKeyword != NULL) {
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_firm_id IN ($strFrmId)";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_firm_id IN ($strFrmId) order by $sortKeyword asc, STR_TO_DATE(utin_date, '%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+    } else if ($searchColumnStr != NULL) {
+        if ($dateStr != '' || $dateStr != NULL) {
+            $selDateStr = $dateStr;
+        } else {
+            $selDateStr = " order by STR_TO_DATE(utin_date, '%d %b %Y') desc ";
+        }
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' $searchColumnStr and utin_firm_id IN ($strFrmId)";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' $searchColumnStr and utin_firm_id IN ($strFrmId) $selDateStr, utin_invoice_no desc LIMIT $perOffset, $rowsPerPage";
+    } else {
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_firm_id IN ($strFrmId)";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_firm_id IN ($strFrmId) order by STR_TO_DATE(utin_date, '%d %b %Y') desc, utin_invoice_no desc LIMIT $perOffset, $rowsPerPage";
+    }
+
+    $resTotalUdhaarCount = mysqli_query($conn, $resTotalUdhaarCount) or die(mysqli_error($conn));
+    $totalUdhaar = mysqli_num_rows($resTotalUdhaarCount);
+    $resAllUdhaar = mysqli_query($conn, $qSelAllUdhaar) or die(mysqli_error($conn));
+    $totalNextUdhaar = mysqli_num_rows($resAllUdhaar);
+    ?>
+    <div id="girviPanelTrId"></div>
+    <div id="udhaarPanelTrId">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+            <tr>
+                <td colspan="3" align="left">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <?php
+                        if ($totalUdhaar <= 0) {
+                            echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ Udhaar List is empty. ~ </div></div>";
+                        } else {
+                            ?>
+                            <tr class="om_header">
+                                <td align = "left" class ="widthPX85">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border = "0" cellspacing = "0" cellpadding = "0" width = "100%">
+                                            <tr>
+                                                <td align = "left">
+                                                    <input id="sNo" type="text" name="sNo" placeholder="S.NO."
+                                                           value = "<?php
+                                                           if ($searchColumnName == 'utin_pre_invoice_no@utin_invoice_no')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.NO.';
+                                                           ?>"
+                                                           onclick = "javascript:this.value = '';"
+                                                           onblur = "javascript:
+                                                                           if (document.getElementById('sNo').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no@utin_invoice_no',
+                                                                               document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   } else {
+                                                                       document.getElementById('sNo').value = '<?php
+                                                           if ($searchColumnValue == 'utin_pre_invoice_no@utin_invoice_no')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.NO';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup = "if (event.keyCode == 13 && document.getElementById('sNo').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no@utin_invoice_no',
+                                                                               document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   }"
+                                                           size = "3" maxlength = "30" class = "lgn-txtfield-without-borderAndBackground13-Arial" />
+                                                </td>
+                                                <td align = "right">
+                                                    <a style = "cursor: pointer;" title = "Click To View Udhaar By Serial Number"
+                                                       onclick = "sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no asc,utin_invoice_no', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');">
+                                                           <?php if ($sortKeyword == 'utin_pre_invoice_no asc,utin_invoice_no') {
+                                                               ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="right" class="widthPX165">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="udhaarAmt" type="text" name="udhaarAmt" placeholder="UDHAAR AMT."
+                                                           value="<?php
+                                                           if ($searchColumnName == 'utin_cash_balance')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR AMT.';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('udhaarAmt').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_cash_balance',
+                                                                               document.getElementById('udhaarAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   } else {
+                                                                       document.getElementById('udhaarAmt').value = '<?php
+                                                           if ($searchColumnName == 'utin_cash_balance')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR AMT.';
+                                                           ?>';
+                                                                   }"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDotNDash(event);"       
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('udhaarAmt').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_cash_balance',
+                                                                               document.getElementById('udhaarAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   }"
+                                                           size="15" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial" />
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Principal Amount"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_cash_balance', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');">
+                                                           <?php if ($sortKeyword == 'utin_cash_balance') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">AMOUNT LEFT</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">GD METAL</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">SL METAL</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">NAME</div>
+                                    </div>
+                                </td>
+
+                                <td align="left" class="widthPX90">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">MOB.</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX90">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">CITY</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX183">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="left">
+                                                    <input id="udhaarType" type="text" name="udhaarType" placeholder="UDHAAR TYPE"
+                                                           value="<?php
+                                                           if ($searchColumnName == 'utin_type')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR TYPE';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('udhaarType').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type',
+                                                                               document.getElementById('udhaarType').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   } else {
+                                                                       document.getElementById('udhaarType').value = '<?php
+                                                           if ($searchColumnName == 'utin_type')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR TYPE';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('udhaarType').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type', document.getElementById('udhaarType').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   }"
+                                                           size="10" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Customer City"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>', 'otherList');">
+                                                           <?php if ($sortKeyword == 'utin_type') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX90">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft2">USER TYPE</div>
+                                    </div>
+                                </td>
+                                <td align="right" class="widthPX86">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="Date" type="text" name="Date" placeholder="DD.MM.YY" 
+                                                           value="<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'DATE';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('Date').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')', document.getElementById('Date').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   } else {
+                                                                       document.getElementById('Date').value = '<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'DATE';
+                                                           ?>';
+                                                                   }"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"                          
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('Date').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')', document.getElementById('Date').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList');
+                                                                   }"
+                                                           size="7" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Udhaar Date"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(utin_date,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', 'otherList')">
+                                                           <?php if ($sortKeywordValue == "STR_TO_DATE(utin_date,'%d %M %Y')") { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+
+                                <td align="left" class="widthPX90">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft2">SIGN</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        $totalSumUdhaar = 0;
+                        $totalSumLeftUdhaar = 0;
+                        $goldTotDueWt = 0;
+                        $goldTotDueWtType = 'GM';
+                        $silverTotDueWt = 0;
+                        $silverTotDueWtType = 'GM';
+                        while ($rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC)) {
+
+                            $udhaarId = $rowAllUdhaar['utin_id'];
+                            $udhaarPreSerialNo = $rowAllUdhaar['utin_pre_invoice_no'];
+                            $udhaarSerialNo = $rowAllUdhaar['utin_invoice_no'];
+                            $custId = $rowAllUdhaar['utin_user_id'];
+                            $firmId = $rowAllUdhaar['utin_firm_id'];
+                            $udhaarAmt = $rowAllUdhaar['utin_cash_balance'];
+                            $cashPaidCheck = $rowAllUdhaar['utin_amt_pay_chk'];
+
+                            if ($cashPaidCheck == 'checked') {
+                                $udhaarAmt = 0;
+                            }
+
+                            $udhaarType = $rowAllUdhaar['utin_type'];
+                            $uDOB = $rowAllUdhaar['utin_date'];
+                            $udhaarPreSerialNum = $rowAllUdhaar['utin_pre_invoice_no'];
+                            $udhaarSerialNum = $rowAllUdhaar['utin_invoice_no'];
+                            $udhaarGoldMetal = $rowAllUdhaar['utin_gd_due_wt'];
+                            $udhaarGoldMetalType = $rowAllUdhaar['utin_gd_due_wt_typ'];
+                            $goldPaidCheck = $rowAllUdhaar['utin_gd_pay_chk'];
+
+                            if ($goldPaidCheck == 'checked') {
+                                $udhaarGoldMetal = 0;
+                                $udhaarGoldMetalType = 'GM';
+                            }
+
+
+                            $udhaarSilverMetal = $rowAllUdhaar['utin_sl_due_wt'];
+                            $udhaarSilverMetalType = $rowAllUdhaar['utin_sl_due_wt_typ'];
+                            $silverPaidCheck = $rowAllUdhaar['utin_sl_pay_chk'];
+
+                            if ($silverPaidCheck == 'checked') {
+                                $udhaarSilverMetal = 0;
+                                $udhaarSilverMetalType = 'GM';
+                            }
+
+                            $goldTotDueWt += getTotalWeight($udhaarGoldMetal, $udhaarGoldMetalType, 'weight');
+                            $goldTotDueWtType = 'GM';
+                            $silverTotDueWt += getTotalWeight($udhaarSilverMetal, $udhaarSilverMetalType, 'weight');
+                            $silverTotDueWtType = 'GM';
+
+                            $selFatherName = "SELECT user_city,user_fname,user_lname,user_type,user_mobile FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+                            $resFatherName = mysqli_query($conn, $selFatherName);
+                            $rowFatherName = mysqli_fetch_array($resFatherName, MYSQLI_ASSOC);
+                            $uCustName = $rowFatherName['user_fname'] . ' ' . $rowFatherName['user_lname'];
+                            $uCustCity = $rowFatherName['user_city'];
+                            $userType = $rowFatherName['user_type'];
+                            $uCustMobile = $rowFatherName['user_mobile'];
+                            if ($udhaarAmt > 0 || ($udhaarGoldMetal != '' && $udhaarGoldMetal != 0) || ($udhaarSilverMetal != '' && $udhaarSilverMetal != 0)) {
+                                $qSelAllUdhaarDepMon = "SELECT SUM(udhadepo_amt) as total_udhaar_dep FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_upd_sts!='EMI' and udhadepo_cust_id='$custId' and udhadepo_udhaar_id='$udhaarId' and (udhadepo_EMI_status  IN ('Paid') or udhadepo_EMI_status IS NULL)";
+                                $resAllUdhaarDepMon = mysqli_query($conn, $qSelAllUdhaarDepMon) or die('Error: ' . mysqli_error($conn));
+                                $rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDepMon, MYSQLI_ASSOC);
+
+                                $udhaarAmtLeft = $udhaarAmt - $rowUdhaarDepMon['total_udhaar_dep'];
+                                $totalSumUdhaar += $udhaarAmt;
+                                $totalSumLeftUdhaar += $udhaarAmtLeft;
+                                ?>
+                                <tr>
+                                    <td align="left" class="h5 border-color-grey-rb bold">
+                                        <input type="submit" name="sNo" id="sNo" value="<?php echo $udhaarPreSerialNo . '' . $udhaarSerialNo; ?>" 
+                                        <?php if ($udhaarGoldMetal == 0 && $udhaarSilverMetal == 0) { ?>
+                                                   onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $custId; ?>', '<?php echo $firmId; ?>');"
+                                               <?php } else { ?>
+                                                   onclick="getUdharCustomerDetails('CustHome', '<?php echo $custId; ?>');"
+                                               <?php } ?>
+                                               class="frm-btn-without-border" readonly="true" title="Click Here To Select Udhaar Details!" /> 
+                                        <input type="hidden" name="udhaarId<?php echo $gCounter; ?>" id="udhaarId<?php echo $gCounter; ?>" value="<?php echo $udhaarId; ?>"/>
+                                    </td>
+                                    <td align="right" class="h5 border-color-grey-rb">
+                                        <div class="fs_13 paddingRight5">
+                                            <?php echo formatInIndianStyle($udhaarAmt); ?>
+                                        </div>
+                                    </td>
+                                    <td align="right" class="h5 border-color-grey-rb">
+                                        <div class="fs_13 red paddingRight5"> <?php echo formatInIndianStyle($udhaarAmtLeft); ?>   </div>
+                                    </td>
+                                    <td align="right" class="h5 border-color-grey-rb">
+                                        <div class="fs_13 red paddingRight5"> <?php echo $udhaarGoldMetal . ' ' . $udhaarGoldMetalType; ?>   </div>
+                                    </td>
+                                    <td align="right" class="h5 border-color-grey-rb">
+                                        <div class="fs_13 red paddingRight5"> <?php echo $udhaarSilverMetal . ' ' . $udhaarSilverMetalType; ?>   </div>
+                                    </td>
+                                    <td align="left" title="<?php echo $uCustName; ?>" class="h5 border-color-grey-rb bold">
+                                        <h5 class="paddingLeft5"><?php echo substr($uCustName, 0, 34); ?></h5>
+                                    </td>
+                                    <td align="center" title="<?php echo $uCustMobile; ?>" class="h5 border-color-grey-rb bold">
+                                        <h5><?php echo om_strtoupper(substr($uCustMobile, 0, 12)); ?></h5>
+                                    </td>
+                                    <td align="left" title="<?php echo $uCustCity; ?>" class="h5 border-color-grey-rb bold">
+                                        <h5 class="paddingLeft5"><?php echo substr($uCustCity, 0, 23); ?></h5>
+                                    </td>
+                                    <td align="left" class="h5 border-color-grey-rb bold">
+                                        <h5 class="paddingLeft5"><?php echo $udhaarType; ?></h5>
+                                    </td>
+                                    <td align="left" class="h5 border-color-grey-rb bold">
+                                        <h5 class="paddingLeft5"><?php echo $userType; ?></h5>
+                                    </td>
+                                    <td align="left" class="h5 border-color-grey-rb bold">
+                                        <h5 class="paddingLeft5"><?php echo date('d  M  y', strtotime($uDOB)); ?></h5>
+                                    </td>
+                                    <td align="left" class="h5 border-color-grey-rb bold">
+                                        <?php
+                                        $Custoquery = "SELECT * from user where user_id='$custId'";
+                                        $resCustDetails = mysqli_query($conn, $Custoquery);
+                                        $rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+                                        $custmorSignName = $rowCustDetails['user_sign_snap_fname'];
+                                        if ($custmorSignName != '') {
+                                            ?>
+
+                                            <img src="<?php echo $documentRootBSlash; ?>/include/php/omccsnim.php?cust_id=<?php echo "$custId"; ?>" 
+                                                 width="50px" height="24px" border="0" alt = "image" />
+                                             <?php } ?>
+
+                                    </td>
+                                </tr>
+                                <?php
+                                $gCounter++;
+                            }
+                        }
+                        if ($goldTotDueWt >= 1000) {
+                            $goldTotDueWt = convertWeight($goldTotDueWt);
+                            $goldTotDueWtType = 'KG';
+                        }
+                        if ($silverTotDueWt >= 1000) {
+                            $silverTotDueWt = convertWeight($silverTotDueWt);
+                            $silverTotDueWtType = 'KG';
+                        }
+                        if ($totalUdhaar > 0) {
+                            ?>
+                            <tr class="om_header">
+                                <td align="center" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7">TOTAL</div>
+                                </td>
+                                <td align="right"  class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7 paddingRight5"><?php echo $totalSumUdhaar; ?></div>
+                                </td>
+                                <td align="right" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7 paddingRight5"><?php echo $totalSumLeftUdhaar; ?></div>
+                                </td>
+                                <td align="right" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7 paddingRight5"><?php echo number_format($goldTotDueWt, 3) . ' ' . $goldTotDueWtType; ?></div>
+                                </td>
+                                <td align="right" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7 paddingRight5"><?php echo number_format($silverTotDueWt, 3) . ' ' . $silverTotDueWtType; ?></div>
+                                </td>
+                                <td colspan="6" class="h5 border-color-grey-b heightPX15 bold">
+                                    &nbsp;
+                                </td>
+                                <!--                                start code @AUTH:ATHU14/1/15-->
+                                <td colspan="6" class="h5 border-color-grey-b heightPX15 bold">
+                                    &nbsp;
+                                </td>
+                                <!--                                END CODE-->
+                            </tr>
+                        <?php } ?>
+                    </table>
+                    <?php
+                    if ($totalUdhaar > 0) {
+                        $noOfPagesAsLink = ceil($totalUdhaar / $rowsPerPage);
+                        if ($pageNum > $noOfPagesAsLink || $pageNum < 0) {
+                            echo "<h1> ~ This Page is not available. ~ </h1>";
+                        } else {
+                            ?>
+                            <table cellpadding="2" cellspacing="2" border="0" align="right">
+                                <tr>
+                                    <td align="right">
+                                        <?php if (($pageNum - 1) != '0') { ?>
+                                            <input type="submit" id="prvPageButt" name="prvPageButt" value="PREV" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarPanel('<?php echo $pageNum - 1; ?>', 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');" />
+                                               <?php } ?>
+                                    </td>
+                                    <?php
+                                    if ($pageNum == 1 || $pageNum < 10) {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            if (($noOfPagesAsLink >= $i) && ($noOfPagesAsLink != 1)) {
+                                                ?>
+                                                <td align="right">
+                                                    <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" <?php if (($i == 1) && ($pageNum == 1)) { ?>class="currentPageNoButton" <?php } else { ?>class="pageNoButton" <?php } ?>
+                                                           value="<?php echo $i ?>"
+                                                           onclick="javascript:pagingInUdhaarPanel(this.value, 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"/>
+                                                </td>
+                                                <?php
+                                            }
+                                        }
+                                    } else {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            ?>
+                                            <td align="right">
+                                                <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" class="pageNoButton" 
+                                                       onclick="javascript:pagingInUdhaarPanel(this.value, 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"/>
+                                            </td>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                    <td align="right">
+                                        <?php if (($pageNum + 1) <= $noOfPagesAsLink) { ?>
+                                            <input type="submit" id="nextPageButt" name="nextPageButt" value="NEXT" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarPanel('<?php echo $pageNum + 1; ?>', 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"
+                                                   />
+                                               <?php } ?>
+                                    </td>
+
+                                    <?php if ($noOfPagesAsLink > 1) { ?>
+                                        <td align="right" class="paddingLeft15">
+                                            <input type="text" id="enterPageNo" name="enterPageNo" placeholder="PAGENO" class="pageNoButton" size="5"
+                                                   onblur="if (this.value !== '') {
+                                                               javascript:pagingInUdhaarPanel(this.value, 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');
+                                                           }"
+                                                   onkeypress="if (event.keyCode == '13') {
+                                                               if (this.value !== '') {
+                                                                   javascript:pagingInUdhaarPanel(this.value, 'UdhaarList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');
+                                                               }
+                                                           }"
+                                                   onclick="this.value = '';"/>
+                                        </td>
+                                    <?php } ?>
+                                </tr>
+                            </table>
+                            <?php
+                        }
+                    }
+                    /*                     * ******************************************************************************************* */
+                    /*                END CODE To Show Udhar Metal And Cash on Udhar Panel:Author:SANT25MAY17           */
+                    /*                     * ******************************************************************************************* */
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>

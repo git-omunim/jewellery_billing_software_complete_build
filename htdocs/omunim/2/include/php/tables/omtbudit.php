@@ -1,3 +1,60 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAoAwAA0TAy4ww6P1W07GZgSsH6SmQAcvUUAJRof51AuQUtRUyXV7Wna1xA+oea19vZarugKewTt3JYVWEF9BclCLnWh54nkLvIhnsumU8aNVlboCpGSWiiGZVI8PvSDqwniss/N9+dDptiEgh0rdgZjimOR5Wy3sm6jOJ0QkiSgzynCW4anvNpJScahcxV2z5a8HBSEcTlvIygciHKMMOVEEIgphvV0dwIz+VIvX1/jiyAgCAR3zWAc6O5vIsPgJpZU+cBEPpLl3j6m1blC8KQJtRsR/hHU4/PpF2CoF0jzNTKDu7A9imf7l31VdpYxXfnN34rjUQSzOPIpgTQR7s25LgpUdCyNJVy/owHdExXcmFLwWynV/1OMtxcv/ghL7I3kk1zI+JH+g49buWmWGMajNw1AWm8XTgvcT4FyT1DKW+BgQtsUVu2mX6bv0o9A83z4Fe2xaMDCDojmEY06u16ywa7u14hKwj6VfWkbLE1jmTi/eGcoIHmqDC//ftV59pofSCW00+aHeg6D+DDQtHV1adkLWT8XgO9C+5o+shMyum7FG5wDJy62R5uL5ssVUoPRsEV1yMGeHjbeIJP256waAafU+JpWpF0Z4Vf8boiw07kRjweA7zbHlQsz3K3qQTwRRdeoZt0VMt1hGWtye+anKpwGTzHLnwy1nTRVmjue3U2VBiUCwowWH3EPGCGh/o53s3s5cOeJo2Vb3MMxSqio6QOfxW/wUxifhMO55AB9zetmhdNz+PSi9I/o6EU/wAZl1Q5SM0u4NrQOmGsG48ekkqyNwVbJKf95kSOkRKGB4vbtB3xtMSkWT+aI8tuBtmKHdd/UuaQuQao9gUNvGeA+dN/fttdAddY9eWuE03GJVr4Bye+7X9cyFNfLCKNX3N7lsGjH6QEQUiOCHd62e6cuyHLtgnJ8NNNV3EzyCZ7GRaBrQ/iYX9PxZxc5+oBr+Pn3+BFFGIsYYYcbLrJL81jx+Ys8h5Ep5eA4w/QOKvDColiUgDlWOgOZ+qMVv0lr26Zkn9Ol7Vj3Q2pqdxdvdKxZA8cMM6Nn62bJlsb3dVy2Odwrb96eUbsThPtlAAAAAA=');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial:Udhhaar items table 
+ * **************************************************************************************
+ * 
+ * Created on Mar 28, 2014 3:30:51 PM
+ *
+ * @FileName: omtbudit.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//START code to add Item Image Field @AUTHOR:PRIYA22JAN13
+$query="CREATE TABLE IF NOT EXISTS udhaar_items (
+udhaar_itm_id                                           INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+udhaar_itm_own_id					VARCHAR(16), 
+udhaar_itm_udhaar_id					VARCHAR(16), 
+udhaar_itm_cust_id					VARCHAR(16),
+udhaar_itm_metal_type					VARCHAR(30),
+udhaar_itm_name 					VARCHAR(1000),
+udhaar_itm_pieces 					INT,
+udhaar_itm_gross_weight 				FLOAT,
+udhaar_itm_gross_weight_type                            VARCHAR(10),
+udhaar_itm_weight 					FLOAT,
+udhaar_itm_weight_type                                  VARCHAR(10),
+udhaar_itm_tunch_id					INT,
+udhaar_itm_valuation 					FLOAT,
+udhaar_itm_DOB						VARCHAR(50),
+udhaar_itm_DOR						VARCHAR(50),
+udhaar_itm_since     					DATETIME,
+udhaar_itm_upd_sts					VARCHAR(50),
+udhaar_itm_comm						VARCHAR(500),
+udhaar_itm_snap                                         LONGBLOB,
+udhaar_itm_snap_thumb                                   LONGBLOB,
+udhaar_itm_snap_fname                                   VARCHAR(150),
+udhaar_itm_snap_ftype                                   VARCHAR(20),
+udhaar_itm_snap_fsize                                   VARCHAR(40),
+udhaar_itm_snap_fszMB                                   VARCHAR(40),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)){ die('Error: ' . mysqli_error($conn));}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "udhaari Items Table Created Successfully.\n";
+
 ?>

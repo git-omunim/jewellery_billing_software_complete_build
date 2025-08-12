@@ -1,3 +1,56 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADwAgAA/e35N+Ua9wIx13+o0UhgVXNAZpcCnwg7qWMgZ9aUHuMV05XjF1u2zea4NAzDooSDDu0wtTRGoTjjymKNqx+4tT6L2ipuBjPYsSgrZs8MffQwSeBkgw5sSlO432/0pp76cj/O/WFwFwwvAZFWsGs3xHeEQwWv22TrJYzr5VqYsKEN1GjwWiTOu7dRcFRk2zyJSJIhcjgEz7KheYY2Yz1qSrLW4dVpdvQUEP1jlcVRGXU+0+QtUgG5QCGONeK0/b/KGGvZbLZXkd6cPO/yLn7TZYBZFFng+NWGlvZxZ30mmgtikRwH8D6F+N0IirLwpZ/pGpWF62zqy6RLJKaiXvH0pnr7kIqp1qhTTmACB4nzvdLVF9nGnN7PFoTm9w0FVgZF46BSGmDMwHHl/Fa+Nb/5CCGjX/fjXAc7EAbvrcyXDf2C4pFdwL1wJzxqkcuWGh3ETA5YjacpXNHi6VaD8zIlN5A7743HHK7j5oe+g9BEaCzZ2l5j/h0jiNvmeIw7d9iaQbEbtluDXNw3dXZZH34ATbAZN5ZV+v6VKmyDv9E6Pmy8VbiVNvgZftBHI0D/Dgo7j/6I+xiBhtvYoO36syMUvxOvKueQDSKw0SnHwTXgBiFmzQboBy2SIjVJN0lA+8OPVrHPbjuwOrh8+3Y7JbN533sfYaW2Vxai2ePFTunGrOitHqhQefXxWTX924yYC5Q2MgzJNFmGhkHbsOjdYciyma6hqEgqs1cX6bbUS1i4d5ie/qGQ8B0o4kArr1fiseUYP63DkSfaFcdJNilTTAquL5BNXktI51yg6DspfUYydyzWKc1KvSwlxQYJ0JAQIPFaQwgpx6XpAsiNQHnWlQrw1VvkCpFQvllgE5egX6pCi5INpqm+rC5L7TqtLbybkxZI27s6LPQTww0YkSsWTVtjwmDCSVnfddX5HAxOFk9wGyfNmXDD9jECTZWLGQTUl9iRqR/3bCoBbuus4yBMuznyA5RW77fRTO5QVVPE4BxmV4wAAAAA');
+<?php 
+/*
+ * **************************************************************************************
+ * @tutorial:Attendance log @SANSKRUTI
+ * **************************************************************************************
+ * 
+ * Created on 20 FEB, 2023
+ *
+ * @FileName: omtbjapplog.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS japp_log (
+japp_log_id                   INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+japp_log_japp_code            VARCHAR(64),
+japp_log_owner_id             VARCHAR(10),
+japp_log_staff_id             VARCHAR(10),
+japp_log_own_login_id         VARCHAR(32),
+japp_log_user_id              VARCHAR(10),
+japp_log_user_login_id        VARCHAR(64),
+japp_log_user_email_id        VARCHAR(64),
+japp_log_user_mobile          VARCHAR(15),
+japp_log_user_name            VARCHAR(30),
+japp_log_ip                   VARCHAR(15),
+japp_log_country              VARCHAR(25),
+japp_log_state                VARCHAR(25),
+japp_log_city                 VARCHAR(25),
+japp_log_date                 VARCHAR(12),
+japp_log_time                 VARCHAR(12),
+japp_log_api_link             VARCHAR(50),
+japp_log_status               VARCHAR(12),
+japp_log_total_duration       VARCHAR(10),
+japp_log_plateform            VARCHAR(10),
+last_column                   VARCHAR(1))";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+
+?>
+

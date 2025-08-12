@@ -1,3 +1,189 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Aug 12, 2016
+ *
+ * @FileName: omslingl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<table border="0" cellpadding="2" cellspacing="2">
+    <tr align="center">
+        <td align="center">
+            <div class="firmList">
+                <form id="getSchemeName" name="getSchemeName" method="post"
+                      action="javascript:getSchemeName(document.getElementById('getSchemeName'));">
+                    <table border="0" cellpadding="2" cellspacing="2">
+                        <tr align="center">
+                            <td align="left" class="frm-lbl">Scheme List</td>
+                        </tr>
+                        <?php
+                        // how many rows to show per page
+                        $perRowsPerPage = 5;
+
+                        // by default we show first page
+                        $perPageNum = 1;
+
+                        // if $_GET['page'] defined, use it as page number
+                        if (isset($_GET['page'])) {
+                            $perPageNum = $_GET['page'];
+                        }
+
+                        // counting the offset
+                        $perOffset = ($perPageNum - 1) * $perRowsPerPage;
+
+                        $qSelItemNameCount = "SELECT acit_id FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' LIMIT $perOffset, 10";
+                        $resItemNameCount = mysqli_query($conn, $qSelItemNameCount);
+                        $totalItemNames = mysqli_num_rows($resItemNameCount);
+
+                        $qSelItemNames = "SELECT acit_id,acit_desc,acit_scheme_amt,acit_scheme_prd_typ,acit_scheme_prd FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' LIMIT $perOffset, $perRowsPerPage";
+                        $resItemNames = mysqli_query($conn, $qSelItemNames);
+                        $totalNextItemNames = mysqli_num_rows($resItemNames);
+
+                        if ($totalItemNames <= 0) {
+                            echo "<tr><td colspan=" . "2" . "><h5>Scheme Not Available.</h5></td></tr>";
+                        }
+
+                        while ($rowItemNames = mysqli_fetch_array($resItemNames, MYSQLI_ASSOC)) {
+
+//				$itemNameDate = date_create($rowItemNames['itm_nm_ent_dat']);
+//				$dateItemName = date_format($itemNameDate,'d-m-Y');
+                            //add item name in marathi Author:GAUR21JUL16
+                            echo "<tr><td><input type=" . "\"submit\"" . " name=" . "\"schemeName\"" . " id=" . "\"{$rowItemNames['acit_id']}\"" . " value=" . "\"{$rowItemNames['acit_desc']}\"" . " class=" . "\"frm-btn-lnk\"" . " onclick=" . "\"setSchemeNameId(this);\"" . "></td></tr>";
+                        }
+                        //add item name in marathi Author:GAUR21JUL16                       
+                        ?>
+                    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+    <!--Start Code To Pass PanelName blank @Author:PRIYA16AUG13-->
+    <?php
+    if ($totalNextItemNames > 0) {
+        ?>
+        <tr align="center">
+            <td align="center">
+                <table border="0" cellpadding="2" cellspacing="0" align="center">
+                    <tr>
+                        <?php
+                        if ($perPageNum > 1) {
+                            ?>
+                            <td align="center">
+                                <!---Start to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                <div style="text-align: center;">
+                                    <?php
+                                    $inputId = "prev_itemNames";
+                                    $inputType = 'submit';
+                                    $inputFieldValue = 'Previous';
+                                    $inputIdButton = "prev_itemNames";
+                                    $inputNameButton = 'prev_itemNames';
+                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                    // This is the main class for input flied
+                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                    $inputStyle = " ";
+                                    $inputLabel = 'Previous'; // Display Label below the text box
+//
+                                    // This class is for Pencil Icon                                                           
+                                    $inputIconClass = '';
+                                    $inputPlaceHolder = '';
+                                    $spanPlaceHolderClass = '';
+                                    $spanPlaceHolder = '';
+                                    $inputOnChange = "";
+                                    $perPageNumVar = $perPageNum - 1;
+                                    $inputOnClickFun = 'javascript:navigateGoldItemNames("' . $perPageNumVar . '","scheme");';
+                                    $inputKeyUpFun = '';
+                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                    $inputMainClassButton = '';           // This is the main division for Button
+                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                    ?>
+                                </div>
+                                <!--                                <form name="prev_itemNames" id="prev_itemNames"
+                                                                      action="javascript:navigateGoldItemNames(<?php echo $perPageNum - 1; ?>,'scheme');"
+                                                                      method="get"><input type="submit" value="Previous" class="frm-btn"
+                                                                                    maxlength="30" size="15" /></form>-->
+                                <!---End to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                            </td>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if ($totalItemNames > 5) {
+                            ?>
+                            <td align="center">
+                                <!---Start to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                <!--                                <form name="next_itemNames" id="next_itemNames"
+                                                                      action="javascript:navigateGoldItemNames(<?php echo $perPageNum + 1; ?>,'scheme');"
+                                                                      method="get">-->
+                                <div style="text-align: center;">
+                                    <?php
+                                    $inputId = "next_itemNames";
+                                    $inputType = 'submit';
+                                    $inputFieldValue = 'Next';
+                                    $inputIdButton = "next_itemNames";
+                                    $inputNameButton = 'next_itemNames';
+                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                    // This is the main class for input flied
+                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                    $inputStyle = " ";
+                                    $inputLabel = 'Next'; // Display Label below the text box
+//
+                                    // This class is for Pencil Icon                                                           
+                                    $inputIconClass = '';
+                                    $inputPlaceHolder = '';
+                                    $spanPlaceHolderClass = '';
+                                    $spanPlaceHolder = '';
+                                    $inputOnChange = "";
+                                    $perPageNumVar = $perPageNum + 1;
+                                    $inputOnClickFun = 'javascript:navigateGoldItemNames("' . $perPageNumVar . '","scheme");';
+                                    $inputKeyUpFun = '';
+                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                    $inputMainClassButton = '';           // This is the main division for Button
+                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                    ?>
+                                </div>
+        <!--                                <input type="submit" value="Next" class="frm-btn"
+                                            maxlength="30" size="15" />
+                        </form>-->
+                                <!---End to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                            </td>
+                            <?php
+                        }
+                        ?>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <?php
+    }
+    ?>
+    <!--End Code To Pass PanelName blank @Author:PRIYA16AUG13-->
+</table>

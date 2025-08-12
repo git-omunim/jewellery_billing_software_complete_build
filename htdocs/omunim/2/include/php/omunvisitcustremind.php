@@ -1,3 +1,314 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: unvisited customer datatable modal
+ * **************************************************************************************
+ *
+ * Created on Feb 02, 2021 10:32:36 AM
+ *
+ * @FileName: omunvisitcustremind.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'conversions.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+//include 'ommpemac.php';
+?>
+<div class="row reminder-table" id="reminder-table">
+    <h4 style="font-size: 20px; text-transform: uppercase; text-align: left; margin-left: 15px; position: absolute;">Unvisited Customer</h4>
+
+    <?php
+    $panelName = $_REQUEST['unvisitCustPanelDiv'];
+
+    if ($panelName == '3-months' || $panelName == '') {
+        ?>
+        <button onclick="unvisitCustRemind('3month')" class="btn" style="background-color: #428BCA; color: #FFFFFF; font-family: inherit; font-size: 13px; float: right; padding: 0px 5px; height: 22px; position: absolute; right: 378px">Send All</button>
+        <?php
+    } elseif ($panelName == '6-months') {
+        ?>
+        <button onclick="unvisitCustRemind('6month')" class="btn" style="background-color: #428BCA; color: #FFFFFF; font-family: inherit; font-size: 13px; float: right; padding: 0px 5px; height: 22px; position: absolute; right: 378px">Send All</button>
+        <?php
+    } elseif ($panelName == '9-months') {
+        ?>
+        <button onclick="unvisitCustRemind('9month')" class="btn" style="background-color: #428BCA; color: #FFFFFF; font-family: inherit; font-size: 13px; float: right; padding: 0px 5px; height: 22px; position: absolute; right: 378px">Send All</button>
+        <?php
+    } elseif ($panelName == '12-months') {
+        ?>
+        <button onclick="unvisitCustRemind('12month')" class="btn" style="background-color: #428BCA; color: #FFFFFF; font-family: inherit; font-size: 13px; float: right; padding: 0px 5px; height: 22px; position: absolute; right: 378px">Send All</button>
+        <?php
+    }
+    ?>
+
+
+    <SELECT id="unvisitCustSmsTemplate" name="unvisitCustSmsTemplate" class="custom-sms-dropdown bg-white" style="height: 22px; font-size: 13px; color: #000000; position: absolute; right: 180px"> 
+        <OPTION  VALUE="NotSelected">SELECT SMS TEMPLATE</OPTION>
+        <?php
+        $qSelPerFirm = "SELECT smtp_sub FROM sms_templates where smtp_own_id='$_SESSION[sessionOwnerId]'";
+        $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+            if ($rowPerFirm['smtp_sub'] == $setUnvisitCustSmsTemplate) {
+                $setUnvisitCustTempSel = "selected";
+            }
+            echo "<OPTION  VALUE=" . "\"{$rowPerFirm['smtp_sub']}\"" . " class=" . "\"content-mess-blue\"" . " $setUnvisitCustTempSel>{$rowPerFirm['smtp_sub']}</OPTION>";
+            $setUnvisitCustTempSel = "";
+        }
+        ?>
+    </SELECT>
+    <span style="font-size: 13px; color: #000000; position: absolute; right: 122px; margin-top: -5px">
+        <?php
+        $inputId = "submit";
+        $inputType = 'submit';
+        $inputFieldValue = 'Submit';
+        $inputIdButton = "submit";
+        $inputNameButton = '';
+        $inputTitle = '';
+        // This is the main class for input flied
+        $inputFieldClass = 'btn ' . $om_btn_style;
+        $inputStyle = " ";
+        $inputLabel = 'Submit'; // Display Label below the text box
+        //
+        // This class is for Pencil Icon                                                            
+        $inputIconClass = '';
+        $inputPlaceHolder = '';
+        $spanPlaceHolderClass = '';
+        $spanPlaceHolder = '';
+        $inputOnChange = "";
+        $inputOnClickFun = 'setLayoutFieldInDb("unvisitCustSmsTemplate", document.getElementById("unvisitCustSmsTemplate").value);';
+        $inputKeyUpFun = '';
+        $inputDropDownCls = '';        // This is the main division class for drop down 
+        $inputselDropDownCls = '';     // This is class for selection in drop down
+        $inputMainClassButton = '';    // This is the main division for Button
+        include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+        ?>
+    </span>
+
+    <select name="months" onchange="getUnvisitCustDiv(this.value)" id="customer-dropdown" class="custom-dropdown bg-white" style="margin-right: 15px; height: 22px; font-size: 13px; color: #000; margin-bottom: 15px;">
+        <option value="">SELECT MONTH</option>
+        <option value="3-months" <?php
+        if ($panelName == '3-months' || $panelName == '') {
+            echo 'selected';
+        }
+        ?>>3 Months</option>
+        <option value="6-months" <?php
+        if ($panelName == '6-months') {
+            echo 'selected';
+        }
+        ?>>6 Months</option>
+        <option value="9-months" <?php
+        if ($panelName == '9-months') {
+            echo 'selected';
+        }
+        ?>>9 Months</option>
+        <option value="12-months" <?php
+        if ($panelName == '12-months') {
+            echo 'selected';
+        }
+        ?>>1 Year</option>
+    </select>
+</div>    
+
+
+<div id="userListDiv">
+    <?php
+    /*     * ******* Start Code To GET Firm Details ********* */
+
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        //if not selected assign session firm
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+        $strFrmId = '0';
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    } else {
+        $strFrmId = $selFirmId;
+    }
+    /*     * ******* End Code To GET Firm Details ********* */
+    include 'omdatatablesUnset.php';
+    //Data Table Main Columns
+    if ($panelName == '3-months' || $panelName == '') {
+        $dataTableColumnsFields = array(
+            array('dt' => 'CUSTOMER ID'),
+            array('dt' => 'CUSTOMER NAME'),
+            array('dt' => 'FIRM'),
+            array('dt' => 'CITY'),
+            array('dt' => 'LAST VISIT DATE'),
+            array('dt' => 'SEND SMS'),
+            array('dt' => 'SEND WHATSAPP'),
+        );
+    } else if ($panelName == '6-months') {
+        $dataTableColumnsFields = array(
+            array('dt' => 'CUSTOMER ID'),
+            array('dt' => 'CUSTOMER NAME'),
+            array('dt' => 'FIRM'),
+            array('dt' => 'CITY'),
+            array('dt' => 'LAST VISIT DATE'),
+            array('dt' => 'SEND SMS'),
+            array('dt' => 'SEND WHATSAPP'),
+        );
+    } else if ($panelName == '9-months') {
+        $dataTableColumnsFields = array(
+            array('dt' => 'CUSTOMER ID'),
+            array('dt' => 'CUSTOMER NAME'),
+            array('dt' => 'FIRM'),
+            array('dt' => 'CITY'),
+            array('dt' => 'LAST VISIT DATE'),
+            array('dt' => 'SEND SMS'),
+            array('dt' => 'SEND WHATSAPP'),
+        );
+    } else if ($panelName == '12-months') {
+        $dataTableColumnsFields = array(
+            array('dt' => 'CUSTOMER ID'),
+            array('dt' => 'CUSTOMER NAME'),
+            array('dt' => 'FIRM'),
+            array('dt' => 'CITY'),
+            array('dt' => 'LAST VISIT DATE'),
+            array('dt' => 'SEND SMS'),
+            array('dt' => 'SEND WHATSAPP'),
+        );
+    }
+
+    $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+    // Table Parameters
+    $_SESSION['tableName'] = 'user_transaction_invoice'; // Table Name
+    $_SESSION['tableNamePK'] = 'utin_id'; // Primary Key
+    // DB Table Columns Parameters 
+    if ($panelName == '3-months' || $panelName == '') {
+        $dbColumnsArray = array(
+            "CONCAT(u.user_pid,COALESCE(u.user_uid, ''))",
+            "CONCAT(u.user_fname,' ',u.user_lname)",
+            "f.firm_name",
+            "u.user_city",
+            "STR_TO_DATE(utin_date,'%d %b %Y')",
+            "u.user_prod_key",
+            "u.user_mobile",
+        );
+    } else if ($panelName == '6-months') {
+        $dbColumnsArray = array(
+            "CONCAT(u.user_pid,COALESCE(u.user_uid, ''))",
+            "CONCAT(u.user_fname,' ',u.user_lname)",
+            "f.firm_name",
+            "u.user_city",
+            "STR_TO_DATE(utin_date,'%d %b %Y')",
+            "u.user_prod_key",
+            "u.user_mobile",
+        );
+    } else if ($panelName == '9-months') {
+        $dbColumnsArray = array(
+            "CONCAT(u.user_pid,COALESCE(u.user_uid, ''))",
+            "CONCAT(u.user_fname,' ',u.user_lname)",
+            "f.firm_name",
+            "u.user_city",
+            "STR_TO_DATE(utin_date,'%d %b %Y')",
+            "u.user_prod_key",
+            "u.user_mobile",
+        );
+    } else if ($panelName == '12-months') {
+        $dbColumnsArray = array(
+            "CONCAT(u.user_pid,COALESCE(u.user_uid, ''))",
+            "CONCAT(u.user_fname,' ',u.user_lname)",
+            "f.firm_name",
+            "u.user_city",
+            "STR_TO_DATE(utin_date,'%d %b %Y')",
+            "u.user_prod_key",
+            "u.user_mobile",
+        );
+    }
+
+    $_SESSION['dbColumnsArray'] = $dbColumnsArray;
+    $_SESSION['onprintColumnImage'] = "sms16.png";
+    $_SESSION['onprintColumn'] = "u.user_prod_key"; // On which column
+    $_SESSION['onprintColumnId'] = "u.user_prod_key";
+    $_SESSION['onprintColumnValue'] = "";
+    $_SESSION['onprintColumnFunction'] = "unvisitCustIndi";
+    $_SESSION['onprintColumnFunctionPara1'] = "utin_id";
+    $_SESSION['onprintColumnFunctionPara2'] = "";
+    $_SESSION['onprintColumnFunctionPara3'] = "";
+
+
+    $_SESSION['sqlQueryColumns'] = "utin_id,";
+
+    $_SESSION['dtSumColumn'] = '';
+    $_SESSION['dtDeleteColumn'] = '';
+    $_SESSION['dtSortColumn'] = '';
+    $_SESSION['dtASCDESC'] = '';
+    $_SESSION['exportOptions'] = "N";
+
+    //start code to include all session
+    $_SESSION['colorfulColumn'] = "";
+    $_SESSION['colorfulColumnCheck'] = '';
+    $_SESSION['colorfulColumnTitle'] = '';
+
+    // On Click Function Parameters
+    $_SESSION['onclickColumnImage'] = "";
+    $_SESSION['onclickColumn'] = "u.user_mobile"; // On which column
+    $_SESSION['onclickColumnId'] = "u.user_mobile";
+    $_SESSION['onclickColumnValue'] = "u.user_mobile";
+    $_SESSION['onclickColumnFunction'] = "unvisitindiwa";
+    $_SESSION['onclickColumnFunctionPara1'] = "utin_id";
+    $_SESSION['onclickColumnFunctionPara2'] = "";
+    $_SESSION['onclickColumnFunctionPara3'] = "";
+    $_SESSION['onclickColumnFunctionPara4'] = "";
+    $_SESSION['onclickColumnFunctionPara5'] = "";
+    $_SESSION['onclickColumnFunctionPara6'] = "";
+    //
+    $_SESSION['popupFunctionLink'] = "";
+    $_SESSION['popupColumn'] = "";
+    $_SESSION['popupFunctionWidth'] = "";
+    $_SESSION['popupFunctionHeight'] = "";
+    $_SESSION['popupFunctionPara1'] = "";
+    $_SESSION['popupFunctionPara2'] = "";
+    $_SESSION['popupFunctionPara3'] = "";
+    $_SESSION['popupFunctionPara4'] = "";
+    $_SESSION['popupFunctionPara5'] = "";
+    $_SESSION['popupFunctionPara6'] = "";
+    //
+    // Extra direct columns we need pass in SQL Query
+    if ($panelName == '3-months' || $panelName == '') {
+        $_SESSION['tableWhere'] = "UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 3 MONTH)";
+    } else if ($panelName == '6-months') {
+        $_SESSION['tableWhere'] = "UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 6 MONTH)";
+    } else if ($panelName == '9-months') {
+        $_SESSION['tableWhere'] = "UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 9 MONTH)";
+    } else if ($panelName == '12-months') {
+        $_SESSION['tableWhere'] = "UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 1 YEAR)";
+    }
+
+    // Table Joins
+    $_SESSION['tableJoin'] = " INNER JOIN firm AS f ON utin_firm_id = f.firm_id "
+            . "LEFT JOIN user AS u ON utin_user_id = u.user_id";
+
+    // Data Table Main File
+    include 'omdatatables.php';
+    ?>
+</div>
+<div id="unvisitCust"></div>

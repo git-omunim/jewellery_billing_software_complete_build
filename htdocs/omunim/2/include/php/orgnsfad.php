@@ -1,3 +1,112 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orgnsfad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+//unlink("temp/Months.png");
+//unlink("temp/GirviReceived.png");
+?>
+<?php
+$hfirm = $_GET['firmNmae'];
+if ($hfirm == null)
+    $hfirm = $_POST['firmNmae'];
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td width="20%" valign="middle">
+            <div class="spaceLeft20 main_link_orange">
+                LOAN ANALYSIS
+            </div>
+        </td>
+        <td  valign="middle" align="center">
+            <table border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td align="right" class="textBoxCurve1px margin1pxAll textLabel16CalibriNormal backFFFFFF">
+                        <div class="spaceRight5">
+                            <?php include 'omgndate.php'; ?>
+                        </div>
+                    </td>
+                    <td>
+                        <!---Start to Changes button @AUTHOR: DIKSHA26SEPT2018----->
+                        <div style="text-align: center;margin-left: 5px;">
+                            <?php
+                            $inputId = "getReport";
+                            $inputType = 'submit';
+                            $inputFieldValue = 'GO';
+                            $inputIdButton = "getReport";
+                            $inputNameButton = 'getReport';
+                            $inputTitle = '';
+                            // This is the main class for input flied
+                            $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                            $inputStyle = " ";
+                            $inputLabel = 'GO'; // Display Label below the text box
+                            // This class is for Pencil Icon                                                           
+                            $inputIconClass = '';
+                            $inputPlaceHolder = '';
+                            $spanPlaceHolderClass = '';
+                            $spanPlaceHolder = '';
+                            $inputOnChange = "";
+                            $inputOnClickFun = 'searchReportByDate(document.getElementById("ReportBookFirmName").value, document.getElementById("reportEntryDayDD"), document.getElementById("reportEntryMonth"), document.getElementById("reportEntryYYYY"));';
+                            $inputKeyUpFun = '';
+                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                            $inputMainClassButton = '';           // This is the main division for Button
+                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                            ?>
+                        </div>
+<!--                        <input id="getReport" name="getReport" value="GO" class="frm-btn spaceLeft5" type="submit"
+                               onclick="searchReportByDate(document.getElementById('ReportBookFirmName').value, document.getElementById('reportEntryDayDD'), document.getElementById('reportEntryMonth'), document.getElementById('reportEntryYYYY'));"/>-->
+                        <!---End to Changes button @AUTHOR: DIKSHA26SEPT2018----->
+                    </td>
+                </tr>
+            </table>
+        </td> 
+        <td align="right" valign="middle">
+            <table border="0" cellspacing="0" cellpadding="0" align="right">
+                <tr>
+                    <td align="right" class="textBoxCurve1px margin1pxAll textLabel16CalibriNormal backFFFFFF" width="100px">
+                        <div id="selectFirmDiv">
+                            <?php
+                            $firmIdSelected = $_SESSION['setFirmSession']; //to add header selected firm as a default firm @AUTHOR: SANDY8JUL13
+                            include 'orgnsfir.php';
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="10" align="left">
+            <div id="girviAnalysisDiv">
+                <?php include 'orgnsfdv.php'; ?>
+            </div>
+        </td>
+    </tr>
+</table>

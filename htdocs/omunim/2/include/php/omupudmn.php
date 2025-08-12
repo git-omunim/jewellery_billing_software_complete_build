@@ -1,3 +1,104 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Update main Udhaar Money
+ * **************************************************************************************
+ *
+ * Created on 25 Jul, 2012 2:01:56 AM
+ *
+ * @FileName: omupudmn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'system/omssopin.php';
+
+$ownerId = $_SESSION['sessionOwnerId'];
+$udhaarId = $_POST['udhaarId'];
+$udhaarUpdtAmt = $_POST['updatedAmt'];
+$custId = $_POST['custId'];
+$firmId = $_POST['firmId'];
+$udhaarJrnlId = $_POST['udhaarJrnlId']; //$udhaarJrnlId Added @Author:PRIYA18AUG13
+$todayDate = date("d M Y");
+
+if ($udhaarId == '') {
+    $udhaarId = $_GET['udhaarId'];
+    $udhaarUpdtAmt = $_GET['updatedAmt'];
+    $custId = $_GET['custId'];
+    $firmId = $_GET['firmId'];
+    $udhaarJrnlId = $_GET['udhaarJrnlId']; //$udhaarJrnlId Added @Author:PRIYA18AUG13
+}
+if ($udhaarId == '' || $udhaarId == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+
+    $qSelUdhaar = "SELECT udhaar_amt,udhaar_history FROM udhaar where udhaar_own_id='$ownerId' and udhaar_id='$udhaarId'";
+    $resUdhaar = mysqli_query($conn,$qSelUdhaar);
+    $rowUdhaar = mysqli_fetch_array($resUdhaar, MYSQLI_ASSOC);
+
+    $udhaarPrevAmt = $rowUdhaar['udhaar_amt'];
+    $udhaarHistory = $rowUdhaar['udhaar_history'];
+
+    $udhaarHistory = $udhaarHistory . "<font color='blue'>Updated $udhaarPrevAmt with $udhaarUpdtAmt on $todayDate.</font><br/>";
+
+    $udhaarHistory = stripslashes($udhaarHistory);
+    $udhaarUpdtAmt = stripslashes($udhaarUpdtAmt);
+
+    $udhaarHistory = mysqli_real_escape_string($conn,$udhaarHistory);
+    $udhaarUpdtAmt = mysqli_real_escape_string($conn,$udhaarUpdtAmt);
+
+    $query = "UPDATE udhaar SET udhaar_amt='$udhaarUpdtAmt',udhaar_history='$udhaarHistory'
+          WHERE udhaar_own_id = '$ownerId' and udhaar_id = '$udhaarId'";
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    /*     * ******************************************************************************************* */
+    /*                       START CODE To Add Journal Entry For Updated Udhaar Amount @AUTHOR:PRIYA18AUG13                            */
+    /*     * ******************************************************************************************* */
+    $jrnlTTDr = $udhaarUpdtAmt;
+    $jrnlTTCr = $udhaarUpdtAmt;
+    $jrnlOwnId = $ownerId;
+    $jrnlId = $udhaarJrnlId;
+
+    $apiType = 'updateTotalCRDR';
+    include 'ommpjrnl.php';
+
+    $jrtrOwnId = $ownerId;
+    $jrtrJrnlId = $udhaarJrnlId;
+    $jrtrDrAmt = $udhaarUpdtAmt;
+    $jrtrCrAmt = $udhaarUpdtAmt;
+
+    $apiType = 'updateCRDR';
+    include 'ommpjrtr.php';
+    /*     * ******************************************************************************************* */
+    /*                       END CODE To Add Journal Entry For Updated Udhaar Amount @AUTHOR:PRIYA18AUG13                            */
+    /*     * ******************************************************************************************* */
+    header("Location: " . $documentRoot . "/include/php/omuudetl.php?custId=" . $custId . "&firmId=" . $firmId . "&divMainMiddlePanel=Updated");
+}
 ?>

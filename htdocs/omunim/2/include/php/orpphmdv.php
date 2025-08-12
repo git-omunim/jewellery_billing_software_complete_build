@@ -1,3 +1,168 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: OMREVO Main Header File
+ * **************************************************************************************
+ *
+ * Created on Jan 26, 2013 11:54:58 AM
+ *
+ * @FileName: orpphmdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'ommptbup.php';
+?>
+<!--Start code to access product version from product version table @AUTHOR: SANDY2AUG13 -->
+<?php
+$staffId = $_SESSION['sessionStaffId'];
+$userName = om_strtoupper(substr($_SESSION['sessionUserName'], 0, 10));
+
+$selectVersion = "SELECT prod_ver,prod_ver1,prod_ver2,prod_ver3 FROM prod_version WHERE prod_id='1'";
+$resVersion = mysqli_query($conn, $selectVersion);
+$row = mysqli_fetch_array($resVersion);
+$prodVer1 = $rowProdVer['prod_ver1'];
+$prodVer2 = $rowProdVer['prod_ver2'];
+$prodVer3 = $rowProdVer['prod_ver3'];
+$version = $prodVer1 . '.' . $prodVer2 . '.' . $prodVer3;
+$prodName = 'OMREVO';
+?>
+<!--End code to access product version from product version table @AUTHOR: SANDY2AUG13 -->
+<?php
+require_once 'system/omssopin.php';
+include_once 'ommcolor.php'; //file added @Author:PRIYA01APR14
+?>
+<!-- *************************** Start Header Div Code *************************** -->
+<div class="om_header header_div" style="background:none;"><!----Change in div attributes @AUTHOR: SANDY26DEC13------>
+    <div id="main_body"> 
+        <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%" valign="top">
+            <tr>
+                <td align="left" valign="middle" width="70px">
+                    <div id="main_logo">
+                        <a href="<?php echo $documentRootBSlash; ?>/omHomePage.php?divPanel=OwnerHome"  >
+                            <img src="<?php echo $documentRoot; ?>/images/om64x60.png" alt="oMunim Logo" border="0" />
+                        </a>
+                    </div>
+                </td>
+                <td align="left" valign="top">
+                    <table border="0" cellpadding="0" cellspacing="0" align="right" width="100%" valign="top">
+                        <tr align="left">
+                            <td colspan="2" valign="top">
+                                <?php include 'ompphmtm.php'; ?>
+                            </td>
+                        </tr>
+                        <tr valign="bottom">
+                            <td colspan="2" valign="bottom">
+                                <div class="main_menu">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="left" valign="bottom" 
+                                           class="paddingLeft30"
+                                           width="100%" height="100%">
+                                        <tr valign="bottom">
+                                            <!-------------Start code to add panel indiacator @Author:PRIYA16MAY14------------------>
+                                            <td valign="bottom">
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('OwnerHome', 'homePage24.png', 'ओमुनीम होम पेज! \nHome Page / Shortcut Key F1 ');
+                                                        document.location.reload(true);
+                                                        document.location.assign('orHomePage.php?divPanel=OwnerHome');"  
+                                                   style="cursor: pointer;"><div id="OwnerHome"><img src="<?php echo $documentRoot; ?>/images/homePage24.png" alt="Home" title="ओमुनीम होम पेज! &#10;Home Page / Shortcut Key F1 " border="0"/></div></a>
+                                            </td>
+                                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y') { ?>
+                                                <td>
+                                                    <a class="menu_headings" onclick="navigationMainBigMiddleImage('GirviPanel', 'girviPanel26.png', 'संपूर्ण गिरवी पॅनल! \nGirvi Panel / Shortcut Key F2 ');"
+                                                       style="cursor: pointer;"><div id="GirviPanel"><img src="<?php echo $documentRoot; ?>/images/girviPanel26.png" alt="Girvi Panel" title="संपूर्ण गिरवी पॅनल! &#10;Girvi Panel / Shortcut Key F2 " /></div></a>                                                       <!-- Modified By KHUSH05JAN13 -->
+                                                </td>
+                                            <?php } ?>
+                                            <td>
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('UdhaarPanel', 'udhaar26.png', 'उधार पॅनल! \nUdhaar Panel / Shortcut Key F3 ')"
+                                                   style="cursor: pointer;"><div id="UdhaarPanel"><img src="<?php echo $documentRoot; ?>/images/udhaar26.png" alt="Udhaar Panel" title="उधार पॅनल! &#10;Udhaar Panel / Shortcut Key F3 " /></div></a>                                                             <!-- Modified By KHUSH05JAN13 -->
+                                            </td>
+                                            <?php if ($_SESSION['sessionOwnIndStr'][2] == 'Y') { ?>
+                                                <td>
+                                                    <a class="menu_headings" onclick="navigationMainBigMiddleImage('Analysis', 'analysis26.png', 'संपूर्ण विश्लेषण पॅनल! \nAnalysis Panel / Shortcut Key F4 ')"
+                                                       style="cursor: pointer;"><div id="Analysis"><img src="<?php echo $documentRoot; ?>/images/analysis26.png" alt="Analysis" title="संपूर्ण विश्लेषण पॅनल! &#10;Analysis Panel / Shortcut Key F4 " /></div></a>
+                                                </td>
+                                            <?php } if ($_SESSION['sessionOwnIndStr'][3] == 'Y') { ?>
+                                                <td>
+                                                    <a class="menu_headings" onclick="navigationMainBigMiddleImage('DailyTransactions', 'transactions26.png', 'दैनिक लेनदेन पॅनल! \nDaily Transactions Panel / Shortcut Key F6')"
+                                                       style="cursor: pointer;"><div id="DailyTransactions"><img src="<?php echo $documentRoot; ?>/images/transactions26.png" alt="Daily Transactions" title="दैनिक लेनदेन पॅनल! &#10;Daily Transactions Panel / Shortcut Key F6" /></div></a>                           <!-- Modified By KHUSH05JAN13 -->
+                                                </td>
+                                            <?php } if ($_SESSION['sessionOwnIndStr'][7] == 'Y'  || $_SESSION['sessionOwnIndStr'][7] == 'A') { ?>
+                                                <td>
+                                                    <a class="menu_headings" onclick="navigationMainBigMiddleImage('BarCodePrint', 'tag26.png', 'बारकोड टेग प्रिंट पॅनल! \nBarCode Tag Print Panel / Shortcut Key F7 ')"
+                                                       style="cursor: pointer;"><div id="BarCodePrint"><img src="<?php echo $documentRoot; ?>/images/tag26.png" alt="BarCode Print Panel" title="बारकोड टेग प्रिंट पॅनल! &#10;BarCode Tag Print Panel / Shortcut Key F7 " /></div></a>              <!-- Modified By KHUSH04JAN13 -->
+                                                </td>
+                                            <?php } ?>
+                                            <td>
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('CustList', 'maleUser26.png', 'कस्टमर लिस्ट पॅनल! \nCustomer List Panel / Shortcut Key F8')"
+                                                   style="cursor: pointer;"><div id="CustList"><img src="<?php echo $documentRoot; ?>/images/maleUser26.png" alt="User List" title="यूज़र लिस्ट पॅनल! &#10;User List Panel / Shortcut Key F8" /></div></a>                                                 <!-- Modified By KHUSH04JAN13 -->
+                                            </td>
+                                            <td>
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('AddNewCustomer', 'adduser26.png', 'न्यू कस्टमर जोड़ना पॅनल! \nAdd New Customer Panel / Shortcut Key ALT+F1')"
+                                                   style="cursor: pointer;"><div id="AddNewCustomer"><img src="<?php echo $documentRoot; ?>/images/adduser26.png" alt="Add New User" title="न्यू यूज़र जोड़ना पॅनल! &#10;Add New User Panel / Shortcut Key ALT+F1" /></div></a>                              <!-- Modified By KHUSH05JAN13 -->
+                                            </td>
+                                            <td>
+                                                <a class="menu_headings" onclick="showBannerSearchPanel()"
+                                                   style="cursor: pointer;"><img src="<?php echo $documentRoot; ?>/images/search26.png" alt="Search Panel" title="कस्टमर या गिरवी खोज पॅनल! &#10;Customer or Girvi Search Panel / Shortcut Key ALT+F2" /></a>
+                                            </td>
+                                            <!--Start Code To Add Staff Panel @Author:PRIYA22JUL13
+                                            <td>
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('StaffPanel', 'staff24.png', 'कर्मचारी या बिक्री कार्यपालक पॅनल! \nStaff or Sales Executive Panel / Shortcut Key Alt+F4')"
+                                                   style="cursor: pointer;"><div id="StaffPanel"><img src="<?php echo $documentRoot; ?>/images/staff24.png" alt="Staff Panel" title="कर्मचारी या बिक्री कार्यपालक पॅनल! &#10;Staff or Sales Executive Panel / Shortcut Key Alt+F4" /></div></a>                            <!-- Modified By KHUSH05JAN13 
+                                            </td>
+                                            End Code To Add Staff PAnel @Author:PRIYA22JUL13-->
+                                            <!--Start code to change file name @Author:PRIYA26FEB14-->
+                                            <td>
+                                                <a class="menu_headings" style="cursor: pointer;"
+                                                   onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/olgccald.php',
+                                                                   'popup', 'width=600,height=380,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no');
+                                                           return false;">
+                                                    <div id="Calculator"><img src="<?php echo $documentRoot; ?>/images/calculator24.png" alt="Calculator" title="गिरवी कॅल्क्युलेटर पॅनल! &#10;Girvi Calculator Panel / Shortcut Key ALT+F3" /></div>
+                                                </a>
+                                            </td>
+                                            <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+                                                <td valign="bottom">
+                                                    <a class="menu_headings" onclick="navigationMainBigMiddleImage('ReminderPanel', 'bell.png', 'स्मरण सूची! \nReminder Panel')"  
+                                                       style="cursor: pointer;"><div id="ReminderPanel"><img src="<?php echo $documentRoot; ?>/images/bell.png" alt="Reminder Panel" title="स्मरण सूची! &#10;Reminder Panel" border="0"/></div></a>
+                                                </td>
+                                            <?php } ?>
+                                            <!--End code to change file name @Author:PRIYA26FEB14-->
+                                            <!-------------End code to add panel indiacator @Author:PRIYA16MAY14------------------>
+                                            <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+                                                <td valign="bottom">
+                                                    <a class="menu_headings" href="https://www.jewellersbook.com" target="_blank" 
+                                                       style="cursor: pointer;"><div id="jewellersbook"><img src="<?php echo $documentRoot; ?>/images/jewellersbook-icon.png" alt="Jewellers Book Portal" title="Jewellers Book Portal" border="0"/></div></a>
+                                                </td>
+                                            <?php } ?>
+                                            <td valign="bottom">
+                                                <a class="menu_headings" onclick="navigationMainBigMiddleImage('SupportPanel', 'support-24.png', 'सहायता पॅनल! \nSupport Panel')"  
+                                                   style="cursor: pointer;"><div id="SupportPanel"><img src="<?php echo $documentRoot; ?>/images/support-24.png" alt="Support Panel" title="सहायता पॅनल! &#10;Support Panel" border="0"/></div></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <!-- Start add div to show backupPanel @AUTHOR: SANDY12SEP13-->
+        <div class="backupPanelDisplayDiv" id="logoutMessageDiv" style="visibility: hidden"></div>
+        <!-- End add div to show backupPanel @AUTHOR: SANDY12SEP13-->
+    </div>
+</div>

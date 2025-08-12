@@ -1,3 +1,56 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar EMI jr div
+ * **************************************************************************************
+ * 
+ * Created on Nov 17, 2014 9:09:33 AM
+ *
+ * @FileName: omuejrdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$qSelAllUdhaarDepMon = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_EMI_status = 'Paid' order by (udhadepo_EMI_no + udhadepo_id) asc";
+$resAllUdhaarDepMon = mysqli_query($conn,$qSelAllUdhaarDepMon);
+while ($rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDepMon, MYSQLI_ASSOC)) {
+$udhaarEMISatus = $rowUdhaarDepMon['udhadepo_EMI_status'];
+$uDepId = $rowUdhaarDepMon['udhadepo_id'];
+$custId = $rowUdhaarDepMon['udhadepo_cust_id'];
+$firmId = $rowUdhaarDepMon['udhadepo_firm_id'];
+$udhaarId = $rowUdhaarDepMon['udhadepo_udhaar_id'];
+$emiAmt = $rowUdhaarDepMon['udhadepo_EMI_total_amt'];
+$uEMIAmt = $rowUdhaarDepMon['udhadepo_EMI_amt'];
+$uEMIIntAmt = $rowUdhaarDepMon['udhadepo_EMI_int_amt'];
+$emiPaidDate = $rowUdhaarDepMon['udhadepo_EMI_paid_date'];
+/* * **************Start to add code to update EMI Amount @Author:SHRI01AUG15************** */
+$uTotEMIAmt = $uEMIAmt + $uEMIIntAmt;
+if ($uTotEMIAmt != $emiAmt) {
+$uEMIAmt = $emiAmt - $uEMIIntAmt;
+}
+/* * **************End to add code to update EMI Amount @Author:SHRI01AUG15************** */
+$apiType = 'insert';
+include 'omuemijr.php';
+}
 ?>

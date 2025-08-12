@@ -1,3 +1,488 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /*
+ * Created on JAN 29, 2018 03:30:06 PM
+ *
+ * @FileName: omtransactionPanel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ */ ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$panelName = $_GET['panelName'];
+$utinId = $_GET['utinId'];
+/* Start to get Firm ID to get accounts according to it */
+$selFirmId = NULL;
+if (isset($_GET['firmId'])) {
+    $selFirmId = $_GET['firmId'];
+    $todayDay = $_GET['day'];
+    $todayDay = $todayDay - 1;
+    $todayMM = date("m", strtotime($_GET['month'])) - 1;
+    $todayYear = $_GET['year'];
+} else {
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//echo $selFirmId."---";
 ?>
+<?php
+if ($panelName == 'TransactionPaymentUpdate') {
+
+    $selectEntry = "SELECT * FROM user_transaction_invoice "
+            . "WHERE utin_transaction_type IN ('Transaction') "
+            . "and utin_type IN ('TransEntry') "
+            . "and utin_id = '$utinId'";
+
+    $allResult = mysqli_query($conn, $selectEntry) or die("selectEntry :" . $selectEntry . mysqli_error($conn));
+    $entryCount = mysqli_num_rows($allResult); // All ENTRY COUNT
+    $entryRow = mysqli_fetch_array($allResult);
+
+    $utinId = $entryRow['utin_id'];
+    $selFirmId = $entryRow['utin_firm_id'];
+    $utin_transaction_type = $entryRow['utin_transaction_type'];
+    $transactionType = $entryRow['utin_history'];
+    $amount = $entryRow['utin_total_amt'];
+    $transactionCRDR = $entryRow['utin_CRDR'];
+    $partyName = $entryRow['utin_user_name'];
+    $description = $entryRow['utin_other_info'];
+    $preVchNo = $entryRow['utin_pre_invoice_no'];
+    $postVchNo = $entryRow['utin_invoice_no'];
+    $acc_dr_id = $entryRow['utin_dr_acc_id'];
+    $utin_cr_acc_id = $entryRow['utin_cr_acc_id'];
+    $payAddDate = $entryRow['utin_date'];
+    //Date
+    $selDOBDay = substr($payAddDate, 0, 2);
+    $selDOBMnth = substr($payAddDate, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($payAddDate, -4);
+} else {
+    $panelName = 'transactionPayment';
+
+    $selDOBDay = date(j);
+    $todayMM = date(n) - 1;
+    $selDOBYear = date(Y);
+    //Auto Increment Firm Id
+    $qSelVoucherNo = "SELECT max(utin_invoice_no) as transVoucherId "
+            . "FROM user_transaction_invoice "
+            . "where utin_owner_id='$sessionOwnerId' "
+            . "and utin_firm_id IN ('$selFirmId')"
+            . "AND utin_type IN ('Transaction') "
+            . "AND utin_transaction_type IN ('TransactionPayment')";
+//    echo $qSelVoucherNo;
+    $resVoucherNo = mysqli_query($conn, $qSelVoucherNo);
+    $rowVoucherNo = mysqli_fetch_array($resVoucherNo, MYSQLI_ASSOC);
+
+    $postVchNo = $rowVoucherNo['transVoucherId'] + 1;
+    //echo $postVchNo."---";     
+}
+?>
+<!----------------------------------------------------------------------------------------------------------------------->
+<div id="changeTransactionPanel">
+    <form name="sell_purchase" id="sell_purchase" enctype="multipart/form-data" method="post" action="include/php/omadtranspnl.php">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="center">
+                    <input type="hidden" id="utinId" name="utinId" value="<?php echo $utinId; ?>" />
+                    <input type="hidden" id="panelName" name="panelName" value="<?php echo $panelName; ?>" />
+                    <div id="addUpdateTransactionDiv">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td align="left">
+                                    <table align="left" border="0" cellspacing="2" cellpadding="2" class="spaceLeftRight10">
+                                        <tr>
+                                            <td colspan="6">
+                                                <table  border="0" cellspacing="2" cellpadding="2">
+                                                    <tr>
+                                                        <td></td>
+                                                        <td align="center" valign="middle" class="textLabel12CalibriBrown" width="190px">
+                                                            DATE
+                                                        </td>
+                                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                            FIRM
+                                                        </td>
+                                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                            VOUCHER NO
+                                                        </td>
+                                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                            PARTY NAME
+                                                        </td>
+                                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                            TYPE
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="32px;"></td>
+                                                        <td class="textBoxCurve1px backFFFFFF margin2pxAll" width="190px">
+                                                            <table  border="0" cellspacing="0" cellpadding="0" >
+                                                                <tr>
+                                                                    <td>
+                                                                        <?php
+                                                                        $todayDay = $selDOBDay - 1;
+
+                                                                        $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                            '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                                        $optDay[$todayDay] = "selected";
+                                                                        ?>
+                                                                        <div style="margin-left: 25px;" class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                            <select class="textLabel14CalibriGrey" autofocus id="DOBDay" name="DOBDay" 
+                                                                                    onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                                document.getElementById('DOBMonth').focus();
+                                                                                                return false;
+                                                                                            }">
+                                                                                <option value="NotSelected">DAY</option>
+                                                                                <?php
+                                                                                for ($dd = 0; $dd <= 30; $dd++) {
+                                                                                    echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                                }
+                                                                                ?>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <!-- *************** Start Code for Month *************** -->
+                                                                        <?php
+                                                                        $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                                        $optMonth[$todayMM] = "selected";
+                                                                        ?>
+                                                                        <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" />
+                                                                        <div  class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                            <select id="DOBMonth" name="DOBMonth" class="textLabel14CalibriGrey" 
+                                                                                    onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                                document.getElementById('DOBYear').focus();
+                                                                                                return false;
+                                                                                            } else if (event.keyCode === 8) {
+                                                                                                document.getElementById('DOBDay').focus();
+                                                                                                return false;
+                                                                                            }
+                                                                                            //START CODE TO GET MONTH FROM KEYS
+                                                                                            var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                                                            gbMonth = document.getElementById('gbMonthId').value;
+                                                                                            if (gbMonth === 1) {
+                                                                                                if (event.keyCode) {
+                                                                                                    var sel = String.fromCharCode(event.keyCode);
+                                                                                                    if (sel === 0) {
+                                                                                                        this.value = arrMonths[9];
+                                                                                                    } else if (sel === 1) {
+                                                                                                        this.value = arrMonths[10];
+                                                                                                    } else if (sel === 2) {
+                                                                                                        this.value = arrMonths[11];
+                                                                                                    }
+                                                                                                    document.getElementById('gbMonthId').value = 0;
+                                                                                                }
+                                                                                            } else if (event.keyCode) {
+                                                                                                var sel = String.fromCharCode(event.keyCode) - 1;
+                                                                                                this.value = arrMonths[sel];
+                                                                                                if (event.keyCode === 49) {
+                                                                                                    document.getElementById('gbMonthId').value = 1;
+                                                                                                }
+                                                                                            }">
+                                                                                <option value="NotSelected">MONTH</option>
+                                                                                <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $engMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+                                    } else {
+                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                    }                   
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                }
+                                                                                ?>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <!-- *************** Start Code for Year *************** -->
+                                                                        <?php
+                                                                        $todayYear = date(Y);
+                                                                        $optYear[$selDOBYear] = "selected";
+                                                                        ?>
+                                                                        <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                            <select class="textLabel14CalibriGrey" id="DOBYear" name="DOBYear" 
+                                                                                    onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                                document.getElementById('transFirmId').focus();
+                                                                                                return false;
+                                                                                            } else if (event.keyCode === 8) {
+                                                                                                document.getElementById('DOBMonth').focus();
+                                                                                                return false;
+                                                                                            }">
+                                                                                <option value="NotSelected">YEAR</option>
+                                                                                <?php
+                                                                                for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                                                    echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                                }
+                                                                                ?>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <!--<td width="120px"></td>-->
+                                                        <!--------------------Select Firm--------------------->
+                                                        <td align="center"  width="183px" class="textBoxCurve1px backFFFFFF margin1pxAll">
+                                                            <div style="margin-left: 45px;" id="selectFirmDiv" class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                <?php
+                                                                $prevFieldId = 'DOBYear';
+                                                                $nextFieldId = 'transPreVoucherNo';
+                                                                $nextReqFieldId = 'transAmt';
+                                                                $firmIdName = 'utin_firm_id';
+                                                                $firmDivClass = 'textLabel14CalibriReq';
+                                                                $panelName = $panelName;
+                                                                $firmIdSelected = $selFirmId;
+                                                                //to assign default firm id
+                                                                if (!$firmIdSelected) {
+                                                                    $firmIdSelected = $_SESSION['setFirmSession'];
+                                                                }
+                                                                include 'omffrafr.php';
+                                                                ?>
+                                                            </div>
+                                                        </td>
+                                                        <!--<td width="120px"></td>-->
+                                                        <!--------------------------Select Voucher---------------------------->
+                                                        <td align="left" class="textBoxCurve1px backFFFFFF margin1pxAll" width="120px">
+                                                            <div id="transVoucherNoDiv">
+                                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                                    <tr>
+                                                                        <td>
+                                                                            <input id="transPreVoucherNo" name="transPreVoucherNo" type="text" placeholder="VCH" value="<?php echo $preVchNo; ?>"
+                                                                                   onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                               document.getElementById('transPostVoucherNo').focus();
+                                                                                               return false;
+                                                                                           } else if (event.keyCode === 8 && this.value === '') {
+                                                                                               document.getElementById('transFirmId').focus();
+                                                                                               return false;
+                                                                                           }" spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" />
+
+                                                                            <input id="transFirmVoucherNo" name="transFirmVoucherNo" type="hidden" readonly="true" value="<?php echo $firmId; ?>"
+                                                                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                               document.getElementById('transPostVoucherNo').focus();
+                                                                                               return false;
+                                                                                           }
+                                                                                           else if (event.keyCode == 8 && this.value == '') {
+                                                                                               document.getElementById('transPreVoucherNo').focus();
+                                                                                               return false;
+                                                                                           }" spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" />
+                                                                        </td>
+                                                                        <td align="left"  class="textLabel14CalibriReq">
+                                                                            &minus;
+                                                                        </td>
+                                                                        <td>
+                                                                            <input id="transPostVoucherNo" name="transPostVoucherNo" type="text" placeholder="Voucher No" value="<?php echo $postVchNo; ?>"
+                                                                                   onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                               document.getElementById('transactionCategory').focus();
+                                                                                               return false;
+                                                                                           } else if (event.keyCode === 8 && this.value === '') {
+                                                                                               document.getElementById('transPreVoucherNo').focus();
+                                                                                               return false;
+                                                                                           }" spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="5" maxlength="16" />
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </td>
+                                                        <td align="left"  width="230px" class="textBoxCurve1px backFFFFFF">
+                                                            <input id="partyName" name="utin_user_name" type="text" placeholder="Party Name" value="<?php echo $partyName; ?>" required style="width: 100%; text-align: center; border: none;"
+                                                                onkeydown="javascript: if (event.keyCode === 13) {
+                                                                    document.getElementById('description').focus();
+                                                                    return false;
+                                                                } else if (event.keyCode === 8 && this.value === '') {
+                                                                    document.getElementById('transToAcc').focus();
+                                                                    return false;
+                                                                }"/>
+                                                        </td>
+                                                        <!-----------------------------Select Transaction Type----------------------------->
+                                                        <td align="left"  width="240px" class="textBoxCurve1px backFFFFFF">
+                                                            <div style="text-align: center; width: 100%;" class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                                <SELECT class="textLabel14CalibriReq" id="transactionCategory" name="utin_history" 
+                                                                        onkeydown="javascript: if (event.keyCode === 13) {
+                                                                                    document.getElementById('utin_CRDR').focus();
+                                                                                    return false;
+                                                                                } else if (event.keyCode === 8) {
+                                                                                    document.getElementById('transPostVoucherNo').focus();
+                                                                                    return false;
+                                                                                }" spellcheck="false">
+                                                                            <?php
+                                                                            if ($panelName == 'TransactionPaymentUpdate') {
+                                                                                $transType = array(Business, Personal, Other);
+                                                                                for ($i = 0; $i <= 2; $i++)
+                                                                                    if ($transType[$i] == $transactionType)
+                                                                                        $transTypeOption[$i] = 'selected';
+                                                                            } else {
+                                                                                $transTypeOption[0] = 'selected';
+                                                                            }
+                                                                            ?>
+                                                                    <OPTION value="Business" <?php echo $transTypeOption[0]; ?> > Business Transaction</OPTION>
+                                                                    <OPTION value="Personal" <?php echo $transTypeOption[1]; ?> >Personal Transaction</OPTION>
+                                                                    <OPTION value="Other" <?php echo $transTypeOption[2]; ?> >Other Transaction</OPTION>
+                                                                </SELECT>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <!--<hr color="#FD9A00" size="0.1px" />-->
+        <table style="margin-top: 15px;" border="0" align="center" cellpadding="2" cellspacing="2" width="100%">
+            <tr>
+                <td></td>
+                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                    DR/CR
+                </td>
+                <!--<td></td>-->
+                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                    ACCOUNT NAME
+                </td>
+                <!--<td></td>-->
+                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                    DESCRIPTION
+                </td>
+                <!--<td></td>-->
+                <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                    AMOUNT
+                </td>
+            </tr>
+            <tr>
+                <td width="18px"></td>
+                <td align="left"  width="80px" class="textBoxCurve1px backFFFFFF">
+                    <div style="text-align: center; width: 100%;" class="selectStyledBorderLess backFFFFFF floatLeft">
+                        <SELECT disabled="true" id="utin_CRDR" class="textLabel14CalibriReq" name="utin_CRDR" spellcheck="false"
+                                onkeydown="javascript: if (event.keyCode === 13) {
+                                            document.getElementById('transToAcc').focus();
+                                            return false;
+                                        } else if (event.keyCode === 8) {
+                                            document.getElementById('transactionCategory').focus();
+                                            return false;
+                                        }">
+                                    <?php
+                                    if ($panelName == 'TransactionPaymentUpdate') {
+                                        $transCRDR = array(DR, CR);
+                                        for ($i = 0; $i < 2; $i++)
+                                            if ($transCRDR[$i] == $transactionCRDR)
+                                                $transCRDROption[$i] = 'selected';
+                                    } else {
+                                        $transCRDROption[0] = 'selected';
+                                    }
+                                    ?>
+                            <OPTION value="DR" <?php echo $transCRDROption[0]; ?> >DR</OPTION>
+                            <OPTION value="CR" <?php echo $transCRDROption[1]; ?> >CR</OPTION>
+                        </SELECT>
+                    </div>
+                </td>
+                <!--<td width="10px"></td>-->
+                <td align="center"  width="75px" class="textBoxCurve1px backFFFFFF">
+                    <div style="margin-left: 30px;" class="selectStyledBorderLess backFFFFFF floatLeft">
+                        <?php
+                        $prevFieldId = 'utin_CRDR';
+                        $nextFieldId = 'partyName';
+                        $allAccountDivId = 'transToAcc';
+                        $accIdSelected = $acc_dr_id;
+                        $accNameSelected = '';
+                        $allAccountDivClass = 'textLabel14CalibriReq';
+                        $firmIdSelected = $selFirmId;
+                        include 'omacpalt.php';
+                        ?>
+                    </div>
+                </td>
+                <!--<td width="10px"></td>-->
+                <!---<td align="left"  width="100px" class="textBoxCurve1px backFFFFFF">
+                    <input id="partyName" name="utin_user_name" type="text" placeholder="Party Name" value="<?php echo $partyName; ?>" required style="width: 100%; text-align: center; border: none;"
+                        onkeydown="javascript: if (event.keyCode === 13) {
+                            document.getElementById('description').focus();
+                            return false;
+                        } else if (event.keyCode === 8 && this.value === '') {
+                            document.getElementById('transToAcc').focus();
+                            return false;
+                        }"/>
+                </td>
+                <!--<td width="10px"></td>-->
+                <td align="left"  width="150px" class="textBoxCurve1px backFFFFFF">
+                    <input id="description" name="utin_other_info" type="text" placeholder="Description" value="<?php echo $description; ?>" required style="width: 100%; text-align: center; border: none;"
+                           onkeydown="javascript: if (event.keyCode === 13) {
+                                       document.getElementById('amount').focus();
+                                       return false;
+                                   } else if (event.keyCode === 8 && this.value === '') {
+                                       document.getElementById('partyName').focus();
+                                       return false;
+                                   }"/>
+                </td>
+                <!--<td width="10px"></td>-->
+                <td align="left"  width="100px" class="textBoxCurve1px backFFFFFF">
+                    <input id="amount" name="utin_total_amt" type="text" placeholder="Amount" value="<?php echo $amount; ?>" required style="width: 100%; text-align: center; border: none;"
+                           onkeydown="javascript: if (event.keyCode === 13) {
+                                       document.getElementById('transSubButt').focus();
+                                       return false;
+                                   } else if (event.keyCode === 8 && this.value === '') {
+                                       document.getElementById('description').focus();
+                                       return false;
+                                   }"/>
+                </td>
+                <td width="20px"></td>
+            </tr>
+        </table>
+        <?php if ($panelName == 'TransactionPaymentUpdate') { ?>
+            <div style="margin-top: 30px;">
+                <button style="background-color: #59B525; color: #ffffff; font-weight: 500; border-radius: 2px !important; padding: 5px;" class="btn">
+                    UPDATE
+                </button>
+            </div>
+        <?php } else { ?>
+            <div style="margin-top: 30px; margin-right: 30px; text-align: right;">
+                <button style="background-color: #59B525; color: #ffffff; width: 100px; font-weight: 500; border-radius: 2px !important; padding: 5px;"id="transSubButt" type="submit" value="SUBMIT" class="btn"
+                        onkeydown="if (event.keyCode === 8) {
+                                        document.getElementById('transSub').focus();
+                                        return false;
+                                    }">Submit
+                </button>
+            </div>
+        <?php } ?>
+        <hr style="margin-top: 30px;" color="#FD9A00" size="0.1px" />
+    </form>
+    <div id="ajaxLoadNavigateTransactionList" style="visibility: hidden">
+        <?php include 'omzaajld.php'; ?>
+    </div>
+    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="center" colspan="16">
+                <div id="showInvoice_div">
+                    <?php include 'omtraninvdv.php'; ?>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

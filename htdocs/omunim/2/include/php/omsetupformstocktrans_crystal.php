@@ -1,3 +1,206 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 2 May, 2018 9:53:03 PM
+ *
+ * @FileName: omsetupformstocktrans_crystal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//* ***************************************************************************
+// *  Start Code To  Create Array For Crystal  Form Setup
+// * ***************************************************************************
+
+$Crystal = array("sttr_add_date", "sttr_firm_id", "sttr_product_type", "sttr_item_pre_id",
+    "sttr_item_id", "sttr_brand_id", "sttr_barcode", "sttr_account_id",
+    "sttr_bis_mark",
+    "sttr_image_id", "sttr_item_category", "sttr_item_name", "sttr_size",
+    "sttr_quantity", "sttr_hsn_no", "sttr_shape", "sttr_gs_weight",
+    "sttr_gs_weight_type", "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight",
+    "sttr_nt_weight_type", "", "", "",
+    "", "", "", "",
+    "sttr_item_length", "sttr_item_width", "sttr_color", "sttr_clarity",
+    "sttr_lab_charges", "sttr_lab_charges_type", "sttr_making_charges", "sttr_making_charges_type",
+    "", "", "sttr_product_purchase_rate", "sttr_product_sell_rate",
+    "sttr_item_other_info", "sttr_metal_amt", "sttr_metal_discount_per", "sttr_metal_discount_amt",
+    "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt", "sttr_valuation",
+    "sttr_tot_price_cgst_per", "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg",
+    "sttr_tot_price_igst_per", "sttr_tot_price_igst_chrg", "sttr_total_lab_charges", "sttr_mkg_cgst_per",
+    "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per", "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per",
+    "sttr_mkg_igst_chrg", "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt",
+    "sttr_tot_tax", "sttr_final_valuation");
+
+$CrystalHorizontal = array("sttr_item_category", "sttr_quantity", "sttr_gs_weight", "sttr_gs_weight_type",
+    "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight", "sttr_nt_weight_type",
+    "sttr_fine_weight", "sttr_final_fine_weight", "sttr_product_purchase_rate", "sttr_metal_amt",
+    "sttr_metal_discount_per", "sttr_metal_discount_amt", "sttr_valuation", "sttr_tot_price_cgst_per",
+    "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg", "sttr_tot_price_igst_per",
+    "sttr_tot_price_igst_chrg", "sttr_item_name", "sttr_hsn_no", "sttr_purity",
+    "sttr_wastage", "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt",
+    "sttr_value_added", "sttr_lab_charges", "sttr_lab_charges_type", "sttr_sell_final_fine_weight",
+    "sttr_product_sell_rate", "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt",
+    "sttr_total_lab_charges", "sttr_mkg_cgst_per", "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per",
+    "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per", "sttr_mkg_igst_chrg", "sttr_size",
+    "sttr_shape", "sttr_item_length", "sttr_item_width", "sttr_color",
+    "sttr_clarity", "sttr_making_charges", "sttr_making_charges_type", "sttr_item_other_info",
+    "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt", "sttr_tot_tax", "sttr_final_valuation");
+
+$CrystalSize = array("132px", "90px", "120px", "100px",
+    "100px", "120px", "171px", "",
+    "",
+    "", "90px", "184px", "60px",
+    "30px", "60px", "60px", "50px",
+    "40px", "50px", "40px", "50px",
+    "40px", "", "", "",
+    "", "", "", "",
+    "60px", "60px", "65px", "60px",
+    "140px", "30px", "60px", "30px",
+    "", "", "90px", "90px",
+    "245px", "100px", "35px", "50px",
+    "100px", "35px", "50px", "120px",
+    "30px", "55px", "30px", "55px",
+    "30px", "55px", "120px", "30px",
+    "55px", "30px", "55px", "30px",
+    "55px", "155px", "45px", "60px",
+    "100px", "180px");
+//
+//
+$CystalMandatory = array("Y", "Y", "Y", "Y",
+    "Y", "N", "N", "Y",
+    "N",
+    "N", "Y", "Y", "N",
+    "Y", "N", "N", "Y",
+    "Y", "N", "N", "Y",
+    "Y", "N", "", "",
+    "", "", "", "",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "", "Y", "N",
+    "N", "Y", "N", "N",
+    "N", "N", "N", "Y",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N");
+
+$CystalPurchaseLable = array("Bill Date |BILLDATE", "Firm - Name |FIRM", "Product Type |TYPE", "Item Pre-Id |CODE",
+    "Item Id |NUM ID", "Brand Name |BRAND NAME", "Barcode |BAR-CODE", "Account Name |ACCOUNT NAME",
+    "BIS |BIS",
+    "Images |PATH", "Category |CATEGORY", "Item Name |NAME", "Size |SIZE",
+    "Quantity |QTY", "HSN |HSN", "Shape |SHAPE", "Gross Weight |GS WT",
+    "Gross Weight Type |TYPE", "Less Weight |LESS WT ", "Less Weight Type |TYPE", "Net Weight |NT WT",
+    "Net Weight Type |TYPE", "", "", "",
+    "", "", "", "",
+    "Item Length |LENGTH", "Item Width |WIDTH", "Color |COLOR", "Clarity |CLARITY",
+    "Labour Charges | CRY LB.CHRG", "Labour Charges Type |TYPE", "Making Charges |MK.CHRGS", "Making Charges Type |TYPE",
+    "", "", "Purchase Rate |P.RATE", "Sell Rate |S.RATE",
+    "Other Info |OTHER INFO", "Crystal Amount |CRY AMT", "Metal Discount Percentage |DIS.%", "Metal Discount Amount |DIS.AMT",
+    "Total Labour Amount |TOT LAB AMT", "Labour Discount Percentage |DIS.%", "Labour Discount Amount |DIS.AMT", "Valuation |T.AMOUNT",
+    "CGST Percentage |C.%", "CGST Charge |CGST.AMT", "SGST Percentage |S.%", "SGST Charge |SGST.AMT",
+    "IGST Percentage |I.%", "IGST Charge |IGST.AMT", "Total Labour Charge |TOT LAB CHRG", "Making CGST Percentage |C.%",
+    "Making CGST Charge |CGST.AMT", "Making SGST Percentage |S.%", "Making SGST Charge |SGST.AMT", "Making IGST Percentage |I.%",
+    "Making IGST Charge |IGST.AMT", "Final Taxable Amount|FINAL.TAXABLE.AMTOUNT", "Tax |OTAX.%", "Other Tax Amount |OTAX.AMT",
+    "Total Tax |TOTAL TAX AMT", "Final Valuation |TOTAL AMOUNT");
+//
+// Google Suggestion Table Array @PRIYANKA-06MAY18
+$CystalGoogleSuggTableArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "item_name", "item_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal_rates", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Array @PRIYANKA-06MAY18
+$CystalGoogleSuggColumnArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Display Array @PRIYANKA-06MAY18
+$CystalGoogleSuggColumnDisplayArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Where Condition Array @PRIYANKA-06MAY18
+$CystalGoogleSuggWhereCondArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "", "name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal rate", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//* * **************************************************************************
+// * End Code To  Create Array For Crystal  Form Setup
+// * ***************************************************************************
 ?>

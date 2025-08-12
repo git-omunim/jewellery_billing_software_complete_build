@@ -1,3 +1,224 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAIGAAAavFncxJmFYP1gJiPI21I4Lfy+xlVuOOQWL4RuQDeq0JgltJd19KpEBP6fASK7xItvkJG7i03HQz+zKCSuiQmMgFc4pfq15YMd4VSLvQt+6LKeBcvapSK+2N3EgCvde9VcwOvaTkjpyaUdBhXdvgdcLY63jsHUj2qgdvpBSp23ZSSmRJuxABVRAF01Lo+c1hueUY4huEqMpJJPZuO5hD+QftqJ7+cvztK2+/vRHW2HunNI4O5pQeuX4iDhnaBFpuQdGgMQ8YSPYkShorh+QqF32OkvGBw+M1v2RFe8HTk8XxcCrMprIKYu81Mf8ny6LB49kQ3l25p5YtZeI1wfvojdyzqX4V4nS18XIHYOPhEe5Wuv/QnsVmRgWlzZc/mPcGI3e+kwUNsPwIMCLeyDfIasfoIqDmbLVWaPE+1uR2KSFL0RDRFB36Mfu8hzRco/DDYBZB5FQeBBktwrkon5vA5Lep1jQzw+jXvoWoxW0mY2jyI1vG9MeJQOiIsvF+wFc/MNElD6ABWmzhOvjQyV2k6Onh1ubV/8UyNZj7O/cGHUUNPFoHGeLZlCWQR2n/ebbtwlnGv8Kl9K/DxdsJNjnbvQGUbMl/h6DM6knzpAVWlHCGTmx7hf/oPMPrcOwO+zoZvQbi/svUS6gcLbZ72bh6S3Uv/XXrlSbpGs7q/WDC2OcxXkXB9ARTikXwLRVzecXMBmWhH4xWZVGzLp21npr1a8SnRFzZzg8IT+l/0V8MUZAlJx1OQEmIE0C1QyZoREm+vTHMot10gBlb9lvjhiP7kQJ7h59hGW70qwri08t9qbzLR/Y6BJZo4NWwjuiYoUlc5bhfw0Acm6zbLviqyyFM6sLOLljqgCL/twkdg2Pa1ZuvuI1fWXLrqCaBsywGzftYwwgTc6Ao2RAZnqWM1g2zXugimC6Irpu8QCv6xwewBvrd5N206lEQGSHbBScQ44mNIHrZj+qlUizZfGTGPGtxBzzPKUL7xYb15Yjz10Gxxu9/u8mfSR+1llEA/5ZAOkIJQbsGaww9d9/lG22btoOZYVQhffwoYwqSYi/MJ6aWkgN74g1bjQBiezpWmh07PqsFEG5a/92TsvQSqg8xUcd+IlsEKGKfJT9SOu1J9aVzbrRKFaBj7txmTyIcmVuHgvMTOlmKuLeQT/z7Dw8ew+UfIt5/w8X3JCIZzV8HU3jKfNw/M0pMwBz0IjBfIjuaWbrdJ6v3joRFHBiyx672F0c95HD50uQiUTPDX35J5F2uenwgKvQutq04R9zTRct5PtLhvU4+vLjN0MdeFhfvG9yzE6L2/GNgYluyltr1luRYjU5wjaO6uGUZl/ckDWUA5KoKJPzbDsYBnDn5XISy/JOrxR11bOpH96m8GbNDQ85H8HZFuyamX30E0Dr9KnsPA1RKnIssOVpGV20U22pJMhOaF5CjWOZfl7GmG1WmELG1aVpZUvxRgwA3V0PKE69IBtkwRbE+Sl2bkuaP5g2rzr1W9HXjY5se+j8APJUVSUUQ7cikL56fVhboM3zoJNtieBczNpA3Vqg+1N8pufNko8afDitsxg4WZ2Govkx6k0V1fJshnLtEITB1PXvjaM9KD1u7Z2v16R/HmTKadx8rLb0etL6ZZWtx5TBgMnFzVcu+RXsIkw7vNfVg64ZqcteWNDPjVXRVKIksbghxO9Un8b8E7QSCKdeuH7BKQFMTxEj05v/UXekTLCxiDRdckoh4gUdKkjZCBeJKKrKBkG68++kY/NHOVZloOsU04bheoxoFTRuX8GScpP3FSjfD6RDRYfTFDL2DJKGYDiUfmC5oJaJbffG8MvYKMquN0klEqpiGsnn+K8hLDEXY7S8kUcc6Xi/1yttA2kCf+ozJWrtMGHrcXP5ZNvqfFtY3GPPZQy7Yvxfr/rKL9zHKHVMCViVaCaLBXcNIx5ouloSenlYEvRvz8swg52H2v0FSru7iourqcUxTj/zwfMTja/cXJ4UMvC1CbE3fN4s8BUjXYdNT/FUB03GCcbPz28/fdFp4y8+MiYKBwG2Ee6aO7OD27so131x6PAgo6ZEtFH/A7aFDk++TxdoWDO+2t7tOL2OvfEeK92ryPhaIPpjP4DPk9ZoAfO/gl4W1ce307iuQ6srpIedDWEx8CWuYPdIxqhnE1LSS7eHNbg0FT+8P7JY3QsAGAxSqW5tmfZrbxnmys/ZADCTZN9mRbURCes/glk5KWnplQ1wnbjB1/OvJktvifJeNzg6DsZSbzcqM8z1czVgj5UnCra/M0jeOnrObobEn75OjgKSDZgvJ3xMf8MDpDSVZXc1QBytP8EoRTZPtNcKi/w32YGpCPYITmLkdP53Me+lxO51s2E5GsrMPuP0eTYP0FIXGNxITNYGJMPkxRrrnoAHTuGEkOCZ97pyNzEIIVq3yCABwYIYdGZ/on5WjfMiigbJg4wJk1P30yms4O5fgOL9PzjILFzQxNTiSESg7nb09DA5D84dAFsW1nx8RIKqjEcMclnEAz9KiU8zQ0wpmZSLEPS5nR4RKGXs0kY66Sga/dEh7Sv4kKM59dO0S1DJrfqartQCo4NfArFISAlMq0Aw9uIQBIS6sqkpZg5ple0f0aFEJJa+JsMvw9LEcwth/4Tk00p9inksqoW2pfDMiQnxZz7/mF2c0GEmOJ7+3+Cw32hRMa2CYrN7dN5Sjr3lKr/rGRAfi5ouSFSJAD1YmxrpLW2/1xU3GdpcdaYrmanUNv/Uc0QqBpuwUQwExcXc8klkljI5UgFjberYYHzmKgHvNwZY0mL27k6xlenh9PbnYI7BdIOZMUYqLTCNWnvj5wtkmauRtnAYzFDOJ1J088va60ZKM6n34Vpggxbc4y3pUJfw88lpMNwOw2BnOTPwY1756S3qXLmLLKW0foQhTOQUQHloEo7azsxOoKM3xHU0bGFsPP3s8J6g+XrIYZjnVk8WJpNhkKari2g4ywu+LNFkbj1KNI9GMF8L3GUNqsQa77Eo4n+PSfBPTFXI/jk25s/RtSTZ9DWCK46illuFkSwUoP5ENS1wgKX91c8ckd/muINWlCW5FlLPOAtaqXpAQFSL/NIvoYUJMFPPSHfZG3sC8kAn/jP+knSeun8H0m8N5XmVi8jegeyxr0M6DOtd1ydpTHZj50ESc0my1nAEMO6Dx/bvrUta3sc0fqRHJZHm/vb2Jh2vklE9HfjScTNOj6i2Ed0q6Ln27LOcXmfsXY9mSa89ZQ3jXqhlVujp+MNEMhBHxNc+C0NRYlOUDkyMzLOO2Agt3UukCjKfg2jovDUo3nwrRwqxSnFk9iAYDde+DFB1BwuXlWH3AlqwZzy4JYWe9lFR2/SCcgUeF/s3f9Gmy4zx/Wo2PoMcjdpVyuoXIs5BlbfNHr6xiy00qi2o+3zuG9RbABQ7lMm+WNp6xoDG8mN6x9oS6gVC7bRTX4z4/rfFpqLqWRvLSAPx21pe4KHzobXlE/iUFkRgPMdMhc+aw7eNTnOLuUw8hgs0eXLALj15RSC6ktK3zullM9zqpQfKsfFwxRtbWWN/GNmF1zv6xfL49UZ2Z1yBNxYCUFuvzybk3fpxMP9LXUduhedyLcox6vfnYRInUOs+2BOhut9ImxAqnMQKqgRiZhglH+4LArpJswSZ/gDc1YlJwBf6apZrUup4+FTNOKOXtU00wet0Oz9rbZVhS56PVHmkqbT2JwkQWINyt3sCAfYL8xCDbc7FYJ1UUVjyHZrcC+Q9QDMVYjcbvdIPGLyzEa8GhTOpWjn6TyFJ8LgASFfEgysZQsK7MjH0GucFYalHsqp/jjznNnEci9MnaGRJUXqYYOEGB8q6dqVaqPn3xh1FswZRHSsR4KMTyiUPC6dhVYBWiX81rL08Srb+BFzpV0A/7f5DMBVfy47fG+0eaVbqFBkGBC0NinJujtGN+FmLlZ075t3ZDFV5lBHsjhLwDgn7dxrcnFwkEqTeqfHzhHWAO2NH7ydRMl6sjqutCzl7snpm2OR/4Vbmtp+49DuQZg17WNQQhCZAGG6fiQb+NNO9T59sk5puACC0U2bI3UUs8jp2kDB6LBVkd6j6wjoElWou/+up7/ItmWTgAErlhAEIbW+AG3PfuvCEejEQEteJAwtqXAed9iw9g4q4zP8LzMZ/ouXa+NPuOTQPxk4Rrix8MCndeom73KLs2xqyQH+ebjAEPSD7tStgerC1WsjRG6RET+hyANy2qe+dVxX04vKN1HC15A5FbxQl9PIkFYAKRTh81uUctMr1/fHXynEHscMFwO8Tu2GOC1VkSGRHZ2ZBqSgSFw/3+g2Z4PfmH8tDlsxq98q1Z9yMl61V4mDJT3lgmpvyoSK37KQw1BkSLTdmAiH4N19Pzk0VTwM8jOrBT8t1vdMM8koSku6MvarL+JcUGDJyqVU2daR2ZZ/qz3GlfvcDyrYEDz95VPoM4nNObwYiORZrwd3tga9zQ9Vw6auZwOXzA6+MTDS0DukZgWOwqrOVGZx1IAe6o+KSNNYKIsnz9/XctkSun1TeJN86wC2N6iWfLhhTzEIJ6jS25DR1MX6jTvNbou1bNT6ni6kN0cdTWjSaGmrEStzv+9engQnIsVyCBc0vBzRWb7BJK4xt/ret8smRNdZsIIzk+/LmR/xyt/nKWxGJjAN5kEHzKYbStraEtSytDG+98oiZiii12DFWbZS5knAwEouvswG4gxCbOH3xjLZXxyR8MUdBNwdmgwi/6+G/hw+uX3poKh6sWvLFg8B2Zb6VjV67R34El9pJL4ylPdUt0m9KoI7G95yA6RSkZRw0kRYeoFgeDzLoIAqplzSVXxep3/fj6p4wXLxwuJC8BSP4IRJ0nTLfjvNcxln791/vxBspgvJI5EXgW2kidiZwUhC9+Y6aPOojb0ORlDhpwHsQvCXhzel88it7NvaG23uar3MtIycq1yuJVA9A5qBTvSakFmTgfGvC/rSx3PjPeFmk9J9du5WfKiVuvizqmtPYd4lmWDACMHUSv14a4cW8Agdx+oyAyAg8Btlmj8rtFSgyJOUAG8rX9Rz0SyPKCQBMr1/39IaixIYEgXmgdjWDNRjVNIt3yfiWIqNhG3a3bNpBZ9Wb5+ZXoN2cancPebyPlrN1StdJQaG5F5p7MLnT2v3316HTHM7Dd8jixvIMRfyV+i11yy7TAzJXCLolt52i0j2GY9xOvGLrTEG5B2KSqLhUjVUGfKWKn7fdxzZTpAkjBdL/VCS2YwKdeHYmgScfJ+08wfMIkUaGQZCzuqOzypf3G6IvarPxa7i0mk5StTjNXp147D4jYmKVWp10hMsdRH0NQV7sn+JU7HnUjlLfPwAOaGLjzVvvgD1G0Uk+fvl3sjoBM2X8xISTnoPICT5BO1nDMivc3CowjGcf/8HTTP3F++04QUTZX/Xuw/aZteV/5y/rHvLhjHXpWcK7QbYy3WF2FKUO41ZkUN5+LBNWtlroTNOiW+Vd04C7QKETj52nvKOaWlDYfL0UG9FYpJb15/yfU5iOsnsav/1njD/f0aKbB0PhgMHLKAb3ltcL2F4ksEkMpeOc1xG5+Vd0m1ZhDrQnzD/667aEdX+ViTBrxd5LEc5Y0iuCwokrrc4L7tqzIWtX6HmWLI+yRTERHuzyXFOhpZHZLCN07Y0KwMRgsoizWLZLYRfeNn3LMkq/uSSeIpyFEDrc3e6ZJhOqu7ABSLGPdurvyp/+njvEpnZ99v5saawRxuyK8K+IzEj5QmDiOeedcXG3qJ8nFKs8KysV9sMJObJe/gV0d+AqFAdUyWgF8zDRajGi/Ww9naBMZuUo5G/LVD4KUA5o76ymw431VT37SkAVEYP3cul8KbaOyNc5di32hxvf86aTdxpQZ2JubwhShWEGJU3FFyvLu1kZHrpZTFX4uN7Pk5Z3DO8+SjFoeKxK8LV9K/RiagNRChRsD5AQ1AAQ6WELzNyINzy8sb2m1Qb6taDqJ3ARQk0O6XifZEfXjs787np5c0aLWWe1j6j3oRSWLs8hpKDOEioCS2GX/qMPXf3R1aKX1qTxKdNSuS8AAj7Ah13yjD/VzsWBqBDoWXlynNPu29U79TydYT6UQ4S56a8/6lQ/Mf9yK7t1c4SHS+WuLbgLX1+TxWV2/CLkQbBHjdFjYxpircTYcK8aBSwgN3uk2a5R+Vra8ZQpiEsTHluAR66Tg8apptGo7g2BqzrizkY8b3K8R60zNSoTPdjeeuoQjK8FO5jZ7xL7ZRJtkP7jJImYGYy0FzpsYTNm5EnMrtmi91Pu3uZW3u0rmNl/BILSelP0EizVrOuglmn/+9w51IOUTSVK9BYDDyIcPeYzEL/++OpC+uD4UBntoxUzgDD+usJW3U3xECWUthdMrgI4ocQYPXhvadSKZtAgIh9qtYNZs6m7hSHF9vFQG80XY/+Ms5yv1XjUwda9apfJT3WiYWoHPdkLUui6aev0b7Gri69i2bo78J64eG6iiUZOuv0IZjxh7JyEiPauEj6COEEDQzTdTNfMN2OZ2smQoMYoi42Gd29BarNKpPisXT6XZZRbdvmEzRH5t5OPUlXwh3H2dtqvKH1IDKsbrqtqP9b4DEn2QJW7dxLdTfCBmJAvL6wWkH3RtQoJ27+XVyJ4i/mwAEzRjbRneeAhqwW/VSr2cvviLpMXTcLHKLTL9DfDV1YWQi21CpU+o14/FcveR0iNoQoeFpkE2+cKQd4ZgbrSc8HjDw0+2M2QzZdCN3/EnbPiVqTtl26jyZFQjfbJVDWV74wLH8m9pMmVQoipttZjtQkRulMJqBZ4WESvJ92PR7fErryvsec2OcCIzc9NKksBRLuiZoZ8aRbEXIDWfPR7UOMXw0t5JBoezNXUKKsz7K5HrVStSq9Ni+B8xMLr96njXe7Cn48K4Aai83/soGk4qPG4p9J36JRUNBxXn7JhVIVuMHGkM63mfw2Z1HbuONtoY47eBvspmSuCnOeLXNMKD5rtlNg3TNti5oYxUnhbq8jzC4yVo8yqeJ08UTs3JjLKp8g/iXl6V2w83Li7PFX2+IKWSH0cUMvUnj+A8T48vhZcxUlF5V7QuaPg9Sb8RHTg2oWst5AN26GilllNUBksAGoDxA5yFv3ORe8TibHc9Sg6lqcb3rW7OjuQYA0Jp1f5vVK8yEFIF8YTV1knXshqJHDxNx3MHGMLNlFpIjTmSibJS4Hkse452d6248JELyvlcCDyJeHVOjFU5BM4n5q0AnoRMKVvSATgrzWGIith3Lhq9t0Q/vFAItBkZ5uQHYrPX6y3V8c9Vo9K/Df5w3a2UlLDRGnmBcwpfF5TGy7Mtu/BOkoJCW5uhWxt+uvRI2C0kH39/Zwn3J09ivXX8fMUOYxAsOhv1KLSj8qNHzelMI4RcBauCmnYLLwo2DCqm0lrkNQp5kDUJ1pGQhgXw/kt4NaZg2ayfcv+tyiRhY9K8fFemlOYRGRlZYkmPvIQe7B3eNA8mWxjLDEmZ1QwxrdfrVQlQgmPPMlcUq0LHNFHvzObBFnXnV550xTCWrXlz93X7teiKdc96AElY0E8AtwDyeniUaF6DO2zgpM/hPhH4tnnRybR79vms+DJv1Ea6DUCmoD9EeloqDPohE6TBL5mzBVyqEmLa3cRkT/fMhQnVNJboG4jT9EpjkJ4ABBeBQph8CqmSPaLv+E0CNR0+aDvS9TTq9u9datfoPfXHKjeCCJ0Q1sVYfGNes6KWFZ5UfUFeIm0OQ/WzORmg16Esku13eJAaVoxUPHEHIqGICG/ORcvS8OS4BVVnEqeYv1+QJp2SDqTx0OS19ViEY6uhd7ZUi82oI7rjGilepg/rEqxJuQ45nNlHN3+3ilX3ES9kFP/hWPNpgGMz9vRdvuPCtHj421E7+rbpTrw0LFbNXg4RS11j5m7xfgcF5zQxStPkvS6oM0AeFmbNAHqzkAaPkqLa2Eb0R3qJCdhjHQO6fHWTmc3PMKXamBjTw8Jo4lxZinAoEHqaGZYne6EoXtj0R5lkxQreD2hhQ5Ybe1O6Uo59NjayQfMaG+Bs4PfAMCUUJeroPakmg9oMXGfwamdR6I4Z9WtQCw7/dOx6/Y57AYKD44Q2A7p/cgySpyeMwcMvfAqsGuiWuRDa8IW/qmkLPHlowLLIp00GVHRka2Bg7FIoVexNJ+m40c84wRMcHO1Prd2VrzlhjDkwCG/bGaM1SGWaeGAokqTZ8bbvhh7SyyD/Gp7ALRZenQWjinhj6OT/Scx8AAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Ledger Book Details
+ * **************************************************************************************
+ * 
+ * Created on Jun 21, 2013 5:36:31 PM
+ *
+ * @FileName: orbbuubd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: Expression project.name is undefined on line 12, column 20 in Templates/Scripting/EmptyPHP.php.
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+
+require_once 'system/omssopin.php';
+?>
+<div id="balanceSheetPrintDiv">
+    <table border="1" cellspacing="0" cellpadding="1" width="100%" class="border-color-grey balanceSheetPrintDiv">
+        <tr id="headerOfUdharTable">
+            <td align="center" valign="top" class="border-color-grey" width="100px">
+                <div class="main_link_brown">Date</div>
+            </td>
+            <td align="center" class="border-color-grey" width="209px">
+                <div class="main_link_brown">Opening Balance</div>
+            </td>
+            <td align="center" class="border-color-grey" width="238px">
+                <div class="main_link_brown">Udhaar</div>
+            </td>
+            <td align="center" class="border-color-grey" width="171px">
+                <div class="main_link_brown">Udhaar Deposit</div>
+            </td>
+            <td align="center" class="border-color-grey" width="239px">
+                <div class="main_link_brown">Final Total</div>
+            </td>
+        </tr>
+        <?php
+        /* $getYear = $_GET['balanceSheetYear'];
+          $getMonth = $_GET['balanceSheetMonth'];
+
+          if ($getYear == '' && $getMonth == '') {
+          $getYear = $_POST['balanceSheetYear'];
+          $getMonth = $_POST['balanceSheetMonth'];
+          } */
+        $mainGetYear = $getYear;
+
+        $todayDate = date(d) . ' ' . date(M) . ' ' . date(Y);
+        $todayDateNum = strtotime($todayDate);
+
+        if ($getYear != '' && $getMonth != '') {
+
+            $todayMM = date(n, strtotime('01 ' . $getMonth . ' ' . $getYear));
+            $todayMonth = $getMonth;
+            $todayYear = $getYear;
+        } else {
+
+            $todayMM = date(n);
+            $todayMonth = date(M);
+            $todayYear = date(Y);
+        }
+        $finYear = 0;
+
+        if ($todayMM <= 3) {
+            $finYear = $todayYear + 1;
+        } else {
+            $finYear = $todayYear;
+        }
+
+        if ($finYear > date(Y) && date(M) <= 3 && $mainGetYear == '') {
+            $finYear = $finYear - 1;
+        }
+
+        if ($finYear != 0) {
+            $startDate = '01 ' . $todayMonth . ' ' . $finYear;
+        }
+        $startDate = strtotime($startDate);
+        $monthCounter = 1;
+        $monthCounterLimit = 0;
+
+        //START Code to fix counter for Month
+        $arrLeapYear = array(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+        $arrYear = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+        if (($finYear % 4) == 0) {
+            $monthCounterLimit = $arrLeapYear[$todayMM - 1];
+        } else {
+            $monthCounterLimit = $arrYear[$todayMM - 1];
+        }
+        //END code to fix Month Counter    
+        if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+            $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+        } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+            $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        }
+        if ($selFirmId != NULL) {
+            $strFrmId = $selFirmId;
+        } else {
+            $resFirmCount = mysqli_query($conn,$qSelFirmCount);
+
+            $strFrmId = '0';
+
+            //Set String for Public Firms
+            while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                $strFrmId = $strFrmId . ",";
+                $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+            }
+        }
+        $openingUdhaarBal = 0;
+        $udhaarAmount = 0;
+        $udhaarDepAmount = 0;
+        $closingUdhaarAmount = 0;
+        $totalUdhaarAmount = 0;
+        $totalUdhaarDepAmount = 0;
+        $finTotalUdhaar = 0;
+        //Start Code To Calculate Udhaar Bal
+        //Sel Opening Udhaar Amount
+        $qSelUdhaarDetails = "SELECT SUM(udhaar_amt) as total_udhaar_amt FROM udhaar where udhaar_own_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE(udhaar_DOB,'%d %b %Y'))<$startDate and udhaar_firm_id IN ($strFrmId)";
+        $resUdhaarDetails = mysqli_query($conn,$qSelUdhaarDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelUdhaarDetails);
+        $rowUdhaarDetails = mysqli_fetch_array($resUdhaarDetails);
+        $udhaarOpAmount = $rowUdhaarDetails['total_udhaar_amt'];
+
+        //Sel Opening Udhaar Deposit Amount
+        $qSelUdhaarDepDetails = "SELECT SUM(udhadepo_amt) as total_udhaar_dep_amt FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]'and UNIX_TIMESTAMP(STR_TO_DATE(udhadepo_DOB,'%d %b %Y'))<$startDate and udhadepo_firm_id IN ($strFrmId) and (udhadepo_EMI_status  IN ('Paid') or udhadepo_EMI_status IS NULL)";//add NULL condition @Author:SHRI29MAY15
+        $resUdhaarDepDetails = mysqli_query($conn,$qSelUdhaarDepDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelUdhaarDepDetails);
+        $rowUdhaarDepDetails = mysqli_fetch_array($resUdhaarDepDetails);
+        $udhaarOpDepAmount = $rowUdhaarDepDetails['total_udhaar_dep_amt'];
+
+        //Opening Bal
+        $openingUdhaarBal = $udhaarOpAmount - $udhaarOpDepAmount;
+
+        if ($monthCounter == 1) {
+            $intitialUdhaarBal = $openingUdhaarBal;
+        }
+        while ($monthCounter <= $monthCounterLimit) {
+            if ($monthCounter == 1) {
+                $openingUdhaarBal = $openingUdhaarBal;
+            } else {
+                $openingUdhaarBal = $finTotalUdhaar;
+            }
+            //Sel Udhaar Amount
+            $qSelUdhaarDetails = "SELECT SUM(udhaar_amt) as total_udhaar_amt FROM udhaar where udhaar_own_id='$_SESSION[sessionOwnerId]' and udhaar_DOB='" . date('d M Y', $startDate) . "'  and udhaar_firm_id IN ($strFrmId)";
+            $resUdhaarDetails = mysqli_query($conn,$qSelUdhaarDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelUdhaarDetails);
+            $rowUdhaarDetails = mysqli_fetch_array($resUdhaarDetails);
+            $udhaarAmount = $rowUdhaarDetails['total_udhaar_amt'];
+            //Sel Udhaar Dep Amount
+            $qSelUdhaarDepDetails = "SELECT SUM(udhadepo_amt) as total_udhaar_dep_amt FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]'and udhadepo_DOB='" . date('d M Y', $startDate) . "' and udhadepo_firm_id IN ($strFrmId) and (udhadepo_EMI_status  IN ('Paid') or udhadepo_EMI_status IS NULL)";//add NULL condition @Author:SHRI29MAY15
+            $resUdhaarDepDetails = mysqli_query($conn,$qSelUdhaarDepDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelUdhaarDepDetails);
+            $rowUdhaarDepDetails = mysqli_fetch_array($resUdhaarDepDetails);
+            $udhaarDepAmount = $rowUdhaarDepDetails['total_udhaar_dep_amt'];
+
+            if ($startDate > $todayDateNum) {
+                $openingUdhaarBal = '-';
+                $udhaarAmount = '-';
+                $udhaarDepAmount = '-';
+                $finTotalUdhaar = '-';
+            }
+            //Final Total
+            $finTotalUdhaar = $openingUdhaarBal + $udhaarAmount - $udhaarDepAmount;
+
+            //Closing Udhaar
+            if (($startDate == $todayDateNum || $monthCounter == $monthCounterLimit) && $closingUdhaarAmount == 0) {
+                $closingUdhaarAmount = $finTotalUdhaar;
+            }
+            //total Udhaar
+            $totalUdhaarAmount += $udhaarAmount;
+            //Total Udhaar Deposit
+            $totalUdhaarDepAmount += $udhaarDepAmount;
+            ?>
+            <tr>
+                <td align="center" valign="top" class="border-color-grey" width="100px">
+                    <div class="blackMess11ArialNormal grey-back"><?php echo date('d M y', $startDate); ?></div>
+                </td>
+                <td align="right" class="border-color-grey lightBlue" width="210px">
+                    <div class="blackMess11ArialNormal spaceRight5"> <?php echo $openingUdhaarBal; ?></div>                   
+                </td>
+                <td align="right" class="border-color-grey lightOrange"  width="239px">
+                    <div class="blackMess11ArialNormal spaceRight5"> <?php echo $udhaarAmount; ?></div>                   
+                </td>
+                <td align="right" class="border-color-grey lightYellow"  width="171px">
+                    <div class="blackMess11ArialNormal spaceRight5"><?php echo $udhaarDepAmount; ?></div>                                                    
+                </td>
+                <td align="right" class="border-color-grey lightGreen"  width="238px">
+                    <div class="blackMess11ArialNormal spaceRight5"><?php echo $finTotalUdhaar; ?></div>                                                    
+                </td>
+            </tr>
+            <?php
+            $monthCounter++;
+            $startDate = $startDate + 60 * 60 * 24;
+        }
+        ?>
+        <tr>
+            <td align="right" valign="middle" class="border-color-grey">
+                <div class="blackMess14Arial-BalanceSheet spaceRight5">TOTAL -</div>
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess13Arial spaceRight5"> <?php echo $intitialUdhaarBal; ?></div>                   
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess13Arial spaceRight5"><?php echo $totalUdhaarAmount; ?></div>                                                    
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess13Arial spaceRight5"><?php echo $totalUdhaarDepAmount; ?></div>                                                    
+            </td>
+            <td align="right" class="border-color-grey">
+                <div class="brownMess13Arial spaceRight5"><?php echo $closingUdhaarAmount; ?></div>                                                    
+            </td>
+        </tr>
+    </table>
+</div>

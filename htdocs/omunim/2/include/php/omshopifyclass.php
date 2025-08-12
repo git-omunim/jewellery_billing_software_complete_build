@@ -1,3 +1,463 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAoKgAAgkcliDaFxgpuuFwMJM6w5iwxm7bvi0KzPV20jG9TNQY7jZGixysqMluLBwLhjk5A5GWP4h63lHQmw2SUaIBHKLQdBnpxDrLSeTWUdvuURKO82+m6ZWohb5fCxZcFvxZlK3b+mVYwUKf7YbnE/JU2/pcj/xwjyDt6BjUhyvBR1Xof86jGW3SieZ0eGphRtHDCDGszFrOPSvaB6FaPXTaWLS5tfEqPuUO4JZhwvWPBb9SO/LTs0Hzd91Dl/D8YC+BxRQL7glvl2ugcpDdjmuezrvx1RBbVd7hJFD8VkHh1XuAEboafnlK6fqow86o87DsOGPIfG/adf7ifGsGELH9CK+54OFn89DDM2Xh/p/p4SlZXyi24s8u0Hiept180filZ4YfkQry2APxSAz1/18HlXKq99hMiyDYn/h5rO7kV8wT8agAyaOjTvzU7+wdrH9au4B6lZeXjkloPmkY5cIq2VL9uVquoePnV8otizSO7djpVOrZTm1c8UaaZVuiKDLp3cx/mt0cpe5mNtbHZKh0NboVgWmCfT+2P64jz2W9wMTo4ug3gPXGxRo93HBWa+kVwYs6j0/ejO/N0rTbyTfK/E9ggSNr9QmYGyBg52ZYCDECb3b11vXMHRuI0VWmMNyukiOqcWDQTmNFkYKJvcI4ohV154Z8J8fhQEXsZuv7ss+d6/7khoMY1qIXpVa12Fs5l13qo4frckBooKf9lgC0G8TvRR2NJPhoOW9ZC/efm9khu65SuJkqcINK9DD2iaJZuGCNeTx7qYDcot7aHXtRLWzAMbjxmVXeOjNEk/jSiQ2bkl0eHfLpLscp4q53J4smCnuxpywa5rO7STqs7tLNXCOq96Qap0CC+Ui2bAbbq1Fc2H6wEyRFBbDTJ0mkuzqyqQtBZftcdswuo14bbmlaCs+3whHzJvzVjHfsryPEApnx74fi/hyrLZ8kMFBLAk9RNPYIYHKTJ0sDHPEPAZPydS1Ryl4mnMyRRg3Vj0enxd6EhHWr3HgCJbzAOYE3A3+l2nXE/+bGuw7cRJrtmeEow/I18AXaTGWpzNp83vwd5nrPOANu+/ELCrBWPup+WfGUjuGcuKjpPWfQ4QXnQzrAgWt1mdUdzTPQ1RWsP1igB8cirRf5zR/mB9PwmQ2MQ/6XDDMNr9+97nuLBbftNsiXgvceu4ZNoUd5h0my1W1mZxUYp+iFjAe58dzq97uax6dV2NascMssjsaAWN6kLORxt9MusfcrMzBpzfg0m1kW6LO4Auq07MEU7m5y0uj7U6St/axTEBL06jyHtzCsSDjmQIhJjycIScs4oCB2XbaBGxGW2TC8B6CZvM6mbt9SZX3Olw+epe8o9Zum6PaBUvtiMMOHJ3k1XdxKJA2uwWnEj7MTf/o9QmTwodnkuSMtkIFIFnNYTwPXIUaUH6vZRqSnIea8goqWB2ffbHJB5PGklZFL29ThYnqsYlnsGDxPpeSlCfsDBrjyDwmgVXPS0jx9nHVPILNhFsntKS0XFYD0cIkssIYVZkb2Va4vKLLM14F77E0Vebrkb7qcFx98jg9I3AjVZ/x33I5KcW7yegdoJOWmgomntQsCV5j3F40ud+y+rDvhFcv2PBtBdr8nKl/KzzW88QEFhzx8PL1KRB7wwQCnT2g9EuU4PfwL/kMmQtPllBT8x0bbg6huXe6XdAXGA9I228t4SYaspczV5E1P2ze8FDWKRawLtndBoTgpCkPtqqHU3cyidbihokqjcuYiDF8MWyKW5xR7vjvqVn7NUNutMfw6i3GdOII3OycKetIUsbnloZRcuvh2xlEj8Rta43Ti85pq6Xo0321nCM4wrqg7YbIzANK2swjPLLZPB15Iv3cC04+KuKRiYejMnP8f6WpwLJ9cRaZqsNc5OR+6VXzr5rwAprroRUfkQgtFDj+NVu10mZmEzgy5QiRfMehB/LZb0FU7U78ZhU77811ZpYQdwGZ+nLGNNBBtjiXXRVeG6xJM8tIWqq5ew6PlrehT+mR7Z+f/xm2fpCvDwkiuXZ5Wal+4+LNHGCpDIinTNAod/ikBMG2qA84PUe7BJDtwhHh44TAidNoOIU3OctrC6wosRQka0lEY/bOYPtCWRy1JPFFNpNlKB2cAhr8JPIFynkerJPRpShIGLhJcSaaQi0Vm1QaZLpOAJpzSs5IBmzRVcsxaj0wdWwPFnPP7sPPiwqbiVfWRH+w9pH6cYqI6/PR3yqwBuEYLdrIXemd2QJmFT3rf2CJNZp6X/2GpL0B8Ht1NDkPiByx7txif7YSetdejnOxi3aiOSjLW4rtZsmZBrq59aVXW11et8S7WLtgHeA/ZN6h06hZsMPtEFWZEw++9INuBLKoQHPgp+JrblluP9dYdVWsJ8vLYlRsbA+yQVOyzjY6VxT+8/lO/AsN/QQYkrv7ZRhStnpwT9zALpUju+HYyIWXP5llgrMiYdt9arlxhC30v6euqES1NpUQhb8q6AOTtk3STdpfdPNNkVIGWfwIBJyLECS7EgaXK2vbJVJfLM1GnpGIOwZiZC6sbNzjhEIoHGH7S+V9/whlSBKtXFB1ePuWUIFHIll+31VSUawH//mlfbJ14KNdKK0H7ZpCcmlzEwovy8OGKE6Vb79trVOjWNDKK7cieuG+ZxCJB6m0rN0hdLXot3gEIgNQ6ughg2noUrDqEthdODDcdYLg9CovQfJVmKqRQHML1A6DkrOaxFiVu0nGuVVdO1Tqx1PlPYi+si8ph+nhXk2oAyc5YczqC5Hs8H1xg+yhbvAL3P9s6iEGX8nzI2bGf/hSRqEGJA8+A9uRY8WNlYZLZqnV1LIEceTuwWcHDJBezKPDDTFm/ezgsPLcJ6RnRxhxkpv/kpIHl4tQ25pPSrpVr9d94vPh/wQkBK5QphfvLrCVLy08GFtVFMRyv+UWemVePBGUjAXhh8rmMief5ElwASbSInmQb3KZ3G+K8Mvf1Mw8ew8NcozowslNof0OISkn4mkHjIcOLM/lRmZLRLLhjKpnFwr06blCAcwqVuDHeCgSXPdmqVh/aLPuFsxbw+Ve+Hqk7g0cy5Sm/OVMbMsbF79gtOqqXF5fS2GQaFca9CzDdKR4pDxE6qmsb2ja6E9iCTfkuwTwQ4Jmd7+fvjm/peLdJ4Y4KoxFjJ7Rz5jvvbXVDAS0A0rKxcI3/Ux+H5fVdBUPYtx3yefOVXLebjeXXQJnRA+jccppzC6vYfkt/3cF5CO0pMrQxq1na/USbb0tOXMdnIZGslgvZYvue2B45DXGErfyFUwxEKQo/pKTMgn4cj3Dd/EC8mZ8QSqn8i0EYrvHDcDiq1ZFVE63w7RxiUMX8fO6hWx/kxYm/3F1Xm3XvhpinsJcOePFLWXBhB4PsGtbxQ8WZdVC8t5jWHpznkH5yXq/BDKmr7QIREPN3BQRjOVRHro530nHA8BRCE317HxZ3THwIn1Yyd8DUiAkL7T0cvlgHv6yqBN5/8/8PiSYKWBetkzr/yg6Xu83nNqxOvOjZlLLiKyxY1k9zHtuLvx0t7X/Gb2bxL/SWLJ7D5WE4U5x7jqVWHcxwUBU7cHYkV4OopRYKYYH1TaKDM27icJQ/d7d+poGe3fat7TkM3MjZgGLmb6mt5L/w8bIFjnZ7QdvhY+7RLFJo1/+JQsz/ONnTFOFmBKwsMCv+JQcfYWaFVaidpGGb50Z47aJPAQzY/PlXjO7YZoH/7uS1X+vUlECPg0znb9DbzG25hSXORnq2EcHhdFVJpBy37+39jiPuptNImYP54Mwb4ex6i/s6rqkHXpcf+R5WkXLdvKCf7TAfASRZ9oh6QNyxR9jTbi4o5APL8Ff2nIhZU2K9Gc5wYLg4zu9JCPvyTUWe7I/QswLVjs0b2mnP4/TB0LjMZtVwJfzIQLVswPo+cuCZEoliD08H/8IbZ/hrUvkfMfKHmjm7Bn/7KnYCoHml1ujMXvIyDCN8aKFeZGoN8KBKjWk6SXFgABZHtOj20kSDasYlDC0ha1ZmUEbRdxwyztl2pIZk2PsM84a/4iXVhfbaUpEA78heQAPYkBknMk4CSfAzhgmCX6gEPY/dt72CCi3XChhU1XVLydz8J0E8LrghpJEoG2ixoJPpjH1IAJ9qFEpvtF13luRVWnh5T1JBAPB2IGUIRc78g7h9r7tKfQWvufXErY2sVgkhvGq74kBRhQESMhPQUTgKHnv81kGkB/xDKZ0/1XOaHa/j6KN2jXs0a0oFzFuN28+X8Z97IEgctrdKHiO80gCA9Q48Q+f0kjmYVPz5OKe/uzp3Pls/x3ypSoTpXmRpf08pWCA11dGCsMbdgH0hSqcbppXau9UHnrA/LIlrBrs16o08CnOJZfmVWGnALnSWeQNl2XhRCznP91ANlVIT3DIjimvgzvEPjbtHSRXkEbDbxgj2zhJsgSxTdJHkgJbh8xHRNvsLAtpVGa+qMqcIdhlSlBqkFmL7GLfl1/1jiOTV/strPhQIvstZ5wKWh95DcSoJTl+D/QrGne7rVID/25iVX+XFj3E0d9Fg2GmGRj6tn24ThU02NPmEZz6SIZQlZ/TlL+BaABrgJ0sGisvobL9QzE4fPES7wK7O04K2xcWemqHzVb+SJ5evY9cAiu5YmNE/KqeoK0vWtl39XmSyRkA6Kg0wOu2nIUMfFC0BmCMkNZLBS7rPxqkIJT+b2Nf7oE8O4GnXJbn6iDDT40WWpeO71T85y8HKRru6xg5wrYRhOcTlB3g29Ry8J7bjAbjwmg2ySyLMphZND4IMZSNlHMhDwcBiE/Igq/3CQFBPpvjxzsHM7SxFYwVWRrD8veCoMr8qzuSVb+fxOmNP4kk5q0I3uFKE5eu5IZWklT5i1MpOXkfAWamitvA69EnjQnEEXJK+5uvdhg0vug6UXAML/MBTMzQIhnXctrn7DoB54ISml9WtIL/GaDqJOVpFi6v8EuhYZLtgHOpkZ/jwNFJ+8sIcs4oofhT/7dPE/iT/7R3deN2/qw5zLN3V6oTNrabs32NDlQgtSwRONY5DjLTpPN0hDXM/X4ma/Xl4o10TeDLInSB53JqtCv9yzLCwj1blurABwoAmNITJFVBzAt+T+4ZllmUu40GNPf/OA8LHkSN6qAuFhDhvVnUjni0I+XHUS5NJLHZfCeE7VNHrVMp5oy1hul6aEy/EnW8R2nsY7M+yvzEyVRq1pPIB6zDDb68GnOK6v3THvZP7Tuc0D4n+dzaOpZkN5AEzXc+pQ49GD9Go4KGsjFL4tAoWGM573NO4Fu+PqG/FWTNM3l90l9sgL5mV18SChSFDaFfcc7UqdyGecrpGoT+MDCbJrZ+175/TUu0WFWKqm/Z0gI4jgZl3lAzv5WeaazTqaymAYbSqDID1VXnv804JHLfXuVIZBJ1SfCkQ8VqOJ2YJk9GpXZIC0puvgkBvlqFYNUhRAhxDdLerlEJHEopgrpCRRhZK+S+NQ9fjU9GQOykeBrizrz4vn229fIWeXZFQTxISX5HTxt9L6kLG5RrJWw7oIRbeAAE4A9EnzxC3sWQ33gooWoeljH2LUlFYVfkYRt09F2Q1OoLkxY4mnmFj/6lgKXKig84+2UsCWqRKoqdiSDupeW81Q9o+NSafLBG/4oYxnhV/d+lqyjvP6hh+ZbuCwm8mFlOx6c7bdHWzeW0dDV+YrhR9A3uruGkRmYQoXz+hSWDUZxMXCWOIsosCnVkNJ9dYlms0/m2U2b+FH2nAF9r3RKv1AZiHLS59OcbDupnaEeOBRQNN3gWd61w2AQwDhmftuUhApNyN87ZnSnI09LIMsWmHAX8yc8R9s1mAi4pnbV3RSDA/uMMqUjAVU713qPg5V0Z/D1Gr7xxWgaBref6HUqbYg3o7hYSdvw41RNR9VFEFru1Gu3X79GF9h02+NQSQdzJK9Z181qvR0EpLLLcSug7JduuuNvgt/B6AiVktro7MvU8fo5Xy6NUCpuq9n4OTET8ysvNhPN7/KjXovueX/bCqFW/CyiLm4iZaMmXU9Gn23JhfGX1Osm7vdBYwa8L8+GX50JnBOgsRZN01RbFjuMfxhSOH0qVSC5e736fdbPMg+PU+vnK7FkxX3kGAI5lIiRAbuHO3e/A9sga3+psFcJU3YLo0H4JX4owmlCXzXRnRxMA7nRM3MVamyks99E07LsA2/GKc+DOwt5xFtrmDV8bUZRik/Pqd1uKnB6PhhQ1Foh60YFf8X1E2O6KYqo2hhtMTAQ0GGRyRZpDEPuuScrMxszS/TzzaoWkJQeK7QHFB9KQ0O54oFPd0Qx51KzAm3mXmJS8CrsGDqciTiAkVVzl1SYxYB4+OlBOLcrHCSuPoCYpS/D56nvtNR72dfrHOLkvAzMxt7VjEvN606l+RDD18H3QwPZYpWQ9tDHMPir5ETZXiNA7qx+puNgFufXh7jAcmjTEUo+V7uYJSq06x+dnggMa7OO5wh8sKCfvjYmDLYRhyEFTL2ji5XsYx4p0W/LT+YII/SY3xnWX+QBm6TFOcUVe5I1zgst4n4IPAqjyTMmvX2+v9cPcLcIloS97LiodVS4DnaAJZEd/bdB9td1z4J1BRV3ExR9xZ7k852py8yhUr4v6Ei3bz9E1NZ5Osm15adyqAyrXtLEjnOhrWJeoiIOHpRPjbr9sFZhkbNZessq9KydM9LO8gywpfnAwt73gjHgK8C/e8E1L0jAJ+ctcHreKHLFFfvuK4Q4+YLodxdJ5Ch4fxglHBBewCodTgvSVVq7Yu9pspRYEfxVg+wExfMZT4KFjdX+hREPEytUkv1e9LlyS9SiVrrxoWRW+l/BKqisqdR2OvDBQqeTQCpCFnqkq0MrIIWEJyFWqQoRHY6Haym4DfvrMFVgeZMwLXmwKJSUPWVswGL/ydrp/Iu2JKBi5qX6tES9qIOGG4baNxdFTBlwLU+VN5OboHfqTVSm7hQBZqhjOV/FKrM9B7eWRkzT6AgZ06W2uiaF8HXtIMvSdh3u3yo8nyfKKmRoTrvGoDM7xaoXiPuTe9jRRSkCQ1gvf9Wdr6zJN6kjnwIrdCB9rOcDA99PgZRGmVGLUdhQNV4vO7u/v7Yk2OOCLK8yG8tHoykabc43EuE7zlLVmWQn6P/9V/h+6CU2E8djEIcLx9gmRwFa/1EuHpazmVPy5quCSmDt6tVVj7huEfSfA03cYCsyoEwfLtLG0PzxvZO9MXTdaFwcUGwgeKptOG9zxIbZHibQ4Y+B/WAnwzPqhnzgpNKe9RR6hpg/tGNzD7+uljEmC4lh3/oMCBZxj3jlPaRLb0YyTFSREJpkVJfVsfZCWDcSf8IDKSKSuLk7v3ItomBOqjjpZD5mz52pUX28helro2Fjr0GjQyj9u9QPi6D543ZXEVp8/N5QdcL7YgLm/3omaOVWUxQ/w/yhLgSggRUAOQTDs/8uLs/Y/VW7jVBinbp2DHSFwL/1hXV/SE+QzNURkt7tYpsxBQt5H6t9JFR/l/WTeD5N05rmdDGM6ywq4Rwtoey/5RwAG+1r7R6mGoaCn4mC8JzcC5kKsZwTmpHHfAJnKE6RyAyBZwPfRhJjhJeVQZ67ubhdU5HGZmxkUEO02xcm3/sQ1wotjCACyTgrTe/91jy0oNODLi/tZxclQ2ySDEjlZJjnopRtjrgnvfEmUMKCGw7/dpuY+E90U2j4vR3KS5p3VKE8VwtGMozI180fJ9y5FN3V4VPTPRqpEKnCb24UBaSH234OmzsZB2T5I1bd19C6TsgCWin0vFOQV1NadrAnDfmisNtnrIOWI0jELZLCLOK/UiGeMCwRgp36hqGKViaRf1G/wNKbd61xfml+xsPO8i/XMaHodWbnG8l5dp+dUEAGIpEdfp5ixjqpxbLiHX/CRHJ1RxD5eTTUehke5J30GS3GGZiYWWTNZALzLZYE/clsxKLoLBFmMnmXI9t3iC1RYYPbTNItTb+EvcfAwZdRSfPHhSJaXeBJi1wSESto+NBxc2ubWPHBeUTNk9SKnpjuMyJot6pBK7jkcY88kuiyV4d5GZHQUXS9ZUelYdpR4Or48xem/9krNpKsDts0tF6UKdhEG8PheFOmNHyqZHbXy48kY+PJR+0qKhk3NqsNztXJLaQqNI+RWmYTlxBWVSR7DbCk+4lNcFziJ31PBss+oIY3eIJ2AmRY9buB4CPVwuOMcj5E3+843p+U0VEZQU+Qm/3Ndu9eafZPvMeBr+Fb7+vjErr3/cjMXNFWIr3s28z3bC/KtsTZBuMje40IoRm0IBLfr6Z2Xxcx2pVpnVDBgI5FAmOcHSrKEkAPnXusgjKdcDn2ykt3EbFHY8ONTZA1Few2sNPfZaZ9YsZQ5aPn++d8O0FFdPdVLFV53mF/BdkhxWaWT6eldJKPn8mTf+rNcaYMTiClgY7ZFKTpmotn2Tz6mSGeAEqP8sjk1MJihHlH3BBu1M5wqc0jH8XCCMq4nAT5tXQCDkxHlgVygnrjrd7nMAy5W8jPrFg5RTtxPzrbTpMzPMfdn3f4HuzGRgGsAtxZeGhP4MMF9MNveHoy9Ur3AI84BH5mmRzai5wS9nx8qY7yiR1gRu71Lcz21T/8HbB51hP7TveuFYg7lU8O6zo+fRUIpxJuzTAZujE7BOCUpGUslyW99XPXAhnyotmD6KAZ41pfWDO1S1DRTfk6lUOKXF09XN/E7ZS+77B4RKhqMsTruFr4rt0F9Qy7UX70KVicV/BpfWmnIwnsPs/8mGzkW0KtB6DlyuiQAowwvQxzisCxQK6o9fwmKgvuBvU3dsQS9dKchkMRuqvU3GBiM48ZJ9wg7pdbNMWPnhP7WDD0c2iNlDtZHtVioWH94B7r3XEve/Lux0FG5iM0eS6mnKRtOpdfLDg7C8CmFi/N9HIMrTQXaDgwIkL+MNDRi5ByiraJzRieaheIGHZDSbaIeaA2UqygQpoe8m6/FtGRTLBHXzEtMibb5sAtPeyusrkFtvgifPiD8oDHnwU+is9t2IAnLwCa3ix+8iiy7UN4J95FcbKAzFiirgaEtYCD85TmMObVo2wiZbgmZ0Ahi8jUSZHC8OvZvuYP5geTx4uBBPV1dkFMb9vnoAS9MkSE9Nx3bYmhajh3VKAeOAukaD0wwxKj+X/lMUb5j/OLVQ4RyG63Pdi4+Qzau7n+46+qOVQzkuI2b2Q8ZBvPtp5TptP6DbpJvmnNkSfzD94heb9hOEahyafX+J+VbFkvchEZOi06Fvjy+o4raF/5K03DW3HmQB95k2tVBE9Ef32a/KrBbuKNUyP1IH3b34KRFU0sSFF1tEAzU0skJ9G5m5UkL2J4Y/ZSvjonIkghUmsB1jeZoFj8u/NBO639JVJHxhfu129TFbdkoS7FCqAD4xfM9LtbTfXD+QHilChA9rEPSsSE311LDMj28Wb7vwQqg7v6eHGt9lqr0Bi1CFZXGtWyILnIDyA09gQhfWP8I4dBgUFsgScVbSIbVaxtqY1fMSOkK39WkJG0/A6uM+/joJ3XfYZzhyMfZryg4I4nDyisStC2RnC1SBhv7tqUc/qMjW2ey+3zs+n+/EbW/JP60x0CUqZeBkGVDBVuNs424DtRAamCa19SIG32z75aQV84CMxezI8ows2uDH5nptlblZbGuvvNxER6H978v7PU74AlwUBSpKhpRBOcUJE94FIil1yJYsl5rA1R/80nTnO1f1CeB0U/1E6XY8VKmBKKJFPl58BZENylUFRqqBNmgfQt/IaRZLiC8NxcSFi9gl7Q+5HdhghgxVFXNFgjQ1iDj5A6XDQn2OoKCiN04HFnI73B7pQAVziAOcCR7m4jc1bUp52SOgRvStEFftM5Hd9JPN5nacICjghMZMKB/FGTEMOKYhU0EGeLc/EjYqM/14gyawsWQd/7pI/25kHlowFJqcgFyW+WB1HvYBbVbJZlt+7BAysfJBsYI+TN/YzifNH0h0O1K+/Mb4LXhXrl2Bk9TjyWf1/ob4TAQEijQk8RjuYkxixHTu8R7jufXD2J4wKUmzoALQEUlc5aKf1iNr49usNYw+LBQ4PhtE9bqtoB11zTJjmvv/AhblYFOIAfqR59TPikiQwIZzJ/dVN+OKvKVqttMeyFh1U6gLSG3PO390otEbwXG/4+UfqNQNwsrpMpUfAkH9kqy5Ee/LB5+okoUOcRtfRcv1WWqMiqV0I+Lzil1VnyHoPjEh8F72EUxpVoF4G0CHQeDRiOZZRMumoLUHATTgaGljS+b1FzA6wkmkFEGl0+xu0K7rYgwzBWFS6QTU/bEt64qoKkEb0gDpj3PqtX+EUmexqpK8P5hL2vlQRR1AWC3PbN7CDgy9W+Wv0HLEyz69ks1NpiTdoyAkX4cbCdAo27wpURNeEPuPDQJIZYCbyKukBIid623tgHeo1IZ7xzuhrRmxqgRGTnL7tA9kissxaahxaSKX+X7GvcWdsJoFXBXaUyQUKn9H6XWMXz5xslBm6rfNHBG8FkDOuz8V87Mx1+Z5vr+yYfORT2Ya7yMILjTFO5DKkAKWabtHf2IHZiezZ8YadcLbOxMZyF60gkxctOuvnn73aLpn6qdgtgd9l5wZuuI72gQigQky4bWuJCPec1n/X58MWNS5x4mUYVXkBy0MF0Be9CVgu4r16i4q+w7yG3GQyjVyg+fFCNG0fI2PRj1H7xbEW4znq8lnn1z1CR07jBelTuZ9uQAk4l359ugKgnKtLHUGDc0xMYkInWTR3ZyudVvvWdlebFNCnRLbfYptDFTWpYqBkvXtkN4VnYallzEdDHpMlWPx2ru3foe+/2Q+5MLM6W5JjNAlG+UDkwT8+YQipSMD9gtrHOWlOrZjksYdsaBsLQzQLscLb4jHNdJFkg0uzJctFkr5c1uqbOQyZPwXAQwQ2uFLbLkWOGnfIa1KAyAheW57/eJvvlBALWvDcJp+t/bgSF1MgGluSo+yn18GfT3xETiirUlvqNq0g6YKEaa8IJ0/sp0vVPEXQWxITKIVkEV6SNUs5mn0rp5KpCKyehIEfwbB1EZysxMHKYLLvX7HEnQUcsXx+omcDiPxTTgZxQYvEtKN9YdixKOhAQlz7qzmkJV+aDeMVhm72BCCXf5to8s4LyGx1u9tW3nn7KbjHacBfpqGTF36LdJ4YgHiaT9geZV0GJP0hRaY9XHHpAJ4HWLI1Uud6tpc+xZynPHnMTIkzBSMTOQYBtMI1geoaTbH9gQGH+L7eP5y3sVAlqMMv4WDDyaveQ6Xg0Eude/jhT41PYgyXSNM7kPn7tq9m1VE3p+F3p+MjpXFAl6MjCyVRk9GiPxWDGaVV611roaUCSGkQ5IlWjtYtGd5Kpu4QuO0LiuOkNvIo3s4HHOKI3nz96VuFOrqbFBgZFIoTgIWIb+JeZ2z/o4vv+hrmZ4uuZEFD1+UKPsAoRFJi3oJDcnj1LBXMpjvZmtzpOzcSkZ9wZP5i0g/BzVOgd88RQj02sIcdYvaSyQ20P6hE/9ujuBSNtuBltel5+qz42UIuJhLRKTxuAL886yz9/V/hqrtU0wlqu+rSp+QvdkioT+LfV6aafz/UMoC/aedf4ly5jQJlmqZ7g5Lto92kRyzVXkEMZ6QP/xxzFoJehWBs/K/II3YJkE/5kjbNV3R4mE7FU1RWScO++JI0Hh752Jz6SGzUhlKtXQA2Fu1aLgeQsxSvTndcTb/bshhP7sh5gPjiiCeC9/iT3ndkfTCRmC6ARSLBgkcmC6R16f/py/h5HFI+89swN1gle1JFNtMBucDiVALR+EYyu0Jj6a4EUlZjQLPlJwDG8y+gtzEqTFgfYyeNsHFeM5+wTt4jjVCHPGtAd5EO+FyVJojRuCKohRBROzHpSGRzPs08+1zishofuXG+FQNR7IGGffI5tkyGzQFfMeOyqOZP/zw9aZKZj6jIBNXGzBWbXMHJ4SsNN6RSDLq1bMO6DlE9puGD2yMttYB8up2hDzopwN702XCCDTk3iWHAlVUdr77lpN2J294Yy9kK2/GYbtIb0FYrSgn9tg5/zBJacXC5v6dMpmJIdqiDftJme/L6Ni+fDaQYW5ST584XjyJoVOrRivZ+I7oCnV0sJole+5C0jRfwpeX8Jz7+x2WZGjAECgZ3n0HfOFCMxIWoEISdlPwSO0dzZ26MH6X9DiuKHTwrgxCEdFrKwsceqCgGXxmUJ51V4Ww8sn6LFKbT3QDihzlnRYepelxkuqEODXc75Tf5chq+2bLyYuMOKwq1Ee+qeeBGa8T9ZSqNtRobXYMxQMhMBv+vuzkvcXmZ4eKXjf5gRrpsVCHR0/euadYChVxvZ/fkkC9k5JeTmr0yrwqrpuls24kuZlHRUVIAJfJkGYSrFpED87CXP4/6vigQpLvr/4mqjtWkbARODGxvNYgy6uDyx5387dge5exxqW4dAwdN7+PGl7nnfqQ+mNl2OBlvbdgTfkto3wWhbY6VVQ/vk7MdQKR4zw6I+74pRDJnSw5u1wG2tdb+beGdSFBjRQanbM0nitd7hghNYu0qPrIVs6XJE1cUlJLlRF/Zx3Kdg/fczhfy4CtPFNfqYQKiz/OqFWLh6jAcQVJBFkGfH0gBbOXaTiCZGQX//dTrPC8+pGN7QOCTk6SKxx3N6xPHrSdYs1sAWgRE7uzSiim7CYCNHhc4mqUdex94frnxK5CwJul74X1lWQDqV67Wa4HcnYR8oXB3MycwIsA0QpLdyv+xtOHA1Rl0EdgeHzTc2N1MSCLUawac2P+3dqGWr8QsFbmqqrXFwLVUBk12UWS6eaDpCaY66aK3LQDPyNUhX/tVWEzNJHh9pZnEPLBEYZiHNkyCHJI9MKfNy0CPdoTkDO8yaCWou1CUHq3qgiUSaRFLmU6nnPtJ7iZgnUuqTyeFSQEkjdndMFgMlUH7bo7/9tA0AN6UIsdge9PTzwk/BpoYi1lkF1D46Ikoo4WqAZr/6sjjNXSdJt5biVI5UxMv7pBjXiRVm3wEz22GKkwqFhTz+Ax+v8ZZHS/j2Qvsh1feX+HqgpN9vqRryBUZjx8uI7YdSYMe6viQ8kscm0qXvTI62d3aIUtpmm3382Jw6C2glvC1c2dLWgPskRBMpRicsdsI2kpjct9yjdKsUMsiDkkfwxlt2J8whkqedGmPO6hEk/WvFh87oS9lPkXW30ZMEHtEr6svLj+WqcB1diXtdr60Tb3Z6Tq3RYvrmq1YccjeqHm//iGmMKhq6J6OyVXCzKdW2e0qrLv25rRcWt7hNaYaa9pJQfWaT2qW/CsiZ63eCCgeg8r1+R00VtMmf5WPhQxjdICKx/fq3BMEKTGvUgKMXjniCwD8avvEoB9qQN7nQF5jFvkTbEEHC3VvukifQAYoHzXHL7VpW7fgR8CC8gHrQZC/LRF6xETt7eF+slDu57k7poCqwlocZwIHbzweVQth6YE+qvRef9FWtpDGS5ulyJn9hu3zT+XWRuz+duBWKfY+PYG9XFvBSjZ1ERkhvThIyWouMEMlq99tpXZV/jMkgcFqDGz9rP1Lij1brAh7RU+dzT2wzrixquKpLaAiT0iyfAFY+i7dau7ZRShDfe24T7y+jEdXs9eaMK51BobAqoMZLQhwBWWdcMDWYuSvVwEC3hMXjg+detkPVim/NOhlVb1Ssr0dncJDAROy4HLFWCse1Vv3qILDfYYZopn3+kECq4OqiwDKnv2R9Z5ltKs20Nk4nJFxkinFK2hghI3LYLDXXzvfYjlSYt/R8q1pvTQJGPBgxzultjbNBu7DwF8El7pDyaHjgzmccLqyO/YgS0+YPLGVu96Fe7o3UpiOQkanna1mmR3R06fpMWgzZ3wOnap4TCUh0xE2lZH6UZ1MyhMjS9vZ9ir2rgq8RUNGXazgCLeoSQwy/wV4DLOxf90FD8y/HCm4FyvU2pMK7ICGGttJRyLBQkJWoMbEdROvocaebm1Mklb/J+CJqI616MnhFkTAbZx1l57kAR+VRqaf8BQjqufbuLsmi3YqASuUEdoJtKCf8NBFm00OpyxUJ1SMvR8Ctdn+Aym4isAXNP4BZeXXSesEfbxfxTp2KmQPFq785OsmNwRbf3amfwXpUsjP3i5wamxDeF4NrIjGy5K0Dx9f8yxOiiOzDYMcO3Z6IGqFafxvXNjKuEnJpvzDrxO98dGX+wzK+DnvNsrcN9iR4JNdqB5mTAoaq9u0CZ8u9jpEi1P6YtUrwqr7E3lUzovveRHyPu+/Ld3H7wwTSXWFgt/RlMU0ckvH5DK50CuI1oZ8xSpgTsMmw9Pi80q761484kbDB+GFKR83rQYn2OxTYD2L1JZy6ED0e370DCalxvUHy+CPw60l/oH4oZwOul4qQ/e6DjrA/jsgpiOACNXUIOM7HyC6u6eG0jfbjPHJsHn9N8POKlRlwVVtv2/JfzXE/buRenFqXVOdWXD2ZQA1wOdhCWAXP68h2fZ4/lzHfU1fSIEn16kbYePhIM0JSAAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: SHOPIFY INTEGRATION ALL FUNCTION DEFINITION - INSERT,DELETE,UPDATE,RETRIVE DATA
+ * **************************************************************************************
+ *
+ * Created on Mar 19, 2019 11:40:58 AM 
+ * **************************************************************************************
+ * @FileName: omshopifyclass.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:05JUN17
+ *  AUTHOR: SANTOSH
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php 
+class Shopify {
+      /* Member variables */
+     
+     // define/declare all variables which is used in all function definition
+      /* Member functions */
+    /// start function for insert product data in db in shopify
+function InsertData($operation,array $request,$product_code)
+{
+	//echo '*******';
+	//print_r($_REQUEST);die;
+	//echo $operation;
+	
+        //id - Auto Generate
+       $sttr_id =  $_REQUEST['sttr_id'];
+       $sttr_sttr_id = $_REQUEST['sttr_sttr_id'];
+       $sttr_transaction_type = $_REQUEST['sttr_transaction_type'];
+       $sttr_item_pre_id = $_REQUEST['sttr_item_pre_id'];
+       $sttr_item_id = $_REQUEST['sttr_item_id'];
+       $sttr_metal_type = $_REQUEST['sttr_metal_type'];
+       $sttr_stock_type = $_REQUEST['sttr_stock_type'];
+       $sttr_item_category = $_REQUEST['sttr_item_category'];
+       $sttr_item_name = $_REQUEST['sttr_item_name'];
+       $sttr_barcode_prefix = $_REQUEST['sttr_barcode_prefix'];
+       $sttr_barcode = $_REQUEST['sttr_barcode'];
+       $sttr_item_code = $_REQUEST['sttr_item_code'];
+       $sttr_indicator = $_REQUEST['sttr_indicator'];
+       $sttr_brand_id = $_REQUEST['sttr_brand_id'];
+       $sttr_add_date = $_REQUEST['sttr_add_date'];
+       $sttr_hsn_no = $_REQUEST['sttr_hsn_no'];
+       $sttr_size = $_REQUEST['sttr_size'];
+       $sttr_shape = $_REQUEST['sttr_shape'];
+       $sttr_color = $_REQUEST['sttr_color'];
+       $sttr_quantity = $_REQUEST['sttr_quantity'];
+       $sttr_metal_rate = $_REQUEST['sttr_metal_rate'];
+       $sttr_gs_weight = $_REQUEST['sttr_gs_weight'];
+       $sttr_gs_weight_type = $_REQUEST['sttr_gs_weight_type'];
+       $sttr_lab_charges = $_REQUEST['sttr_lab_charges'];
+       $sttr_lab_charges_type = $_REQUEST['sttr_lab_charges_type'];
+       $sttr_making_charges = $_REQUEST['sttr_making_charges'];
+       $sttr_total_lab_charges = $_REQUEST['sttr_total_lab_charges'];
+       $sttr_total_making_charges = $_REQUEST['sttr_total_making_charges'];
+       $sttr_making_charges_type = $_REQUEST['sttr_making_charges_type'];
+       $sttr_tax = $_REQUEST['sttr_tax'];
+       $sttr_tot_tax = $_REQUEST['sttr_tot_tax'];
+       $sttr_valuation = $_REQUEST['sttr_valuation'];
+       $sttr_final_valuation = $_REQUEST['sttr_final_valuation'];
+       $sttr_status = $_REQUEST['sttr_status'];
+       $sttr_mkg_cgst_per = $_REQUEST['sttr_mkg_cgst_per'];
+       $sttr_mkg_cgst_chrg = $_REQUEST['sttr_mkg_cgst_chrg'];
+       $sttr_mkg_sgst_per = $_REQUEST['sttr_mkg_sgst_per'];
+       $sttr_mkg_sgst_chrg = $_REQUEST['sttr_mkg_sgst_chrg'];
+       $sttr_mkg_igst_per = $_REQUEST['sttr_mkg_igst_per'];
+       $sttr_mkg_igst_chrg = $_REQUEST['sttr_mkg_igst_chrg'];
+       $sttr_tot_price_cgst_per = $_REQUEST['sttr_tot_price_cgst_per'];
+       $sttr_tot_price_cgst_chrg = $_REQUEST['sttr_tot_price_cgst_chrg'];
+       $sttr_tot_price_sgst_per = $_REQUEST['sttr_tot_price_sgst_per'];
+       $sttr_tot_price_sgst_chrg = $_REQUEST['sttr_tot_price_sgst_chrg'];
+       $sttr_tot_price_igst_per = $_REQUEST['sttr_tot_price_igst_per'];
+       $sttr_tot_price_igst_chrg = $_REQUEST['sttr_tot_price_igst_chrg'];
+       $sttr_item_other_info = $_REQUEST['sttr_item_other_info'];
+       $sttr_pre_invoice_no = $_REQUEST['sttr_pre_invoice_no'];
+       $sttr_invoice_no = $_REQUEST['sttr_invoice_no'];
+       $sttr_price = $_REQUEST['sttr_price'];
+       $sttr_cust_price = $_REQUEST['sttr_cust_price'];
+       $sttr_cust_itmcalby = $_REQUEST['sttr_cust_itmcalby'];
+       $sttr_cust_itmcode = $_REQUEST['sttr_cust_itmcode'];
+       $sttr_cust_itmnum = $_REQUEST['sttr_cust_itmnum'];
+       $sttr_item_length = $_REQUEST['sttr_item_length'];
+       $sttr_item_width = $_REQUEST['sttr_item_width'];
+       $sttr_item_model_no = $_REQUEST['sttr_item_model_no'];
+       $sttr_item_sales_pkg = $_REQUEST['sttr_item_sales_pkg'];
+       
+       if($sttr_gs_weight_type=='GM')
+       {
+           $sttr_gs_weight_type='g';
+       }
+       else if($sttr_gs_weight_type=='KG')
+       {
+           $sttr_gs_weight_type='kg';
+       }
+    
+        $products_array = array(
+        //    
+                "product"=>array(
+
+                "title"=>$sttr_item_name, //// required
+                "body_html"=> $sttr_item_name,
+                "vendor"=> $sttr_brand_id,
+                "product_type"=> $sttr_item_category . "(" .$sttr_item_name . ")",
+                "published"=> false ,
+                "created_at"=> "2019-03-06T18:35:45+05:30",
+                "handle"=> "burton-custom-freestyle-151",
+                "updated_at"=> "2019-03-07T13:54:19+05:30",
+                "published_at"=> "2019-03-06T18:35:45+05:30",
+                "template_suffix"=> null,
+                "tags"=> "\"Jewellery\"",
+                "published_scope"=> "web",
+                "admin_graphql_api_id"=> "gid://shopify/Product/2082379858023",
+
+                "variants" => array( array(
+                                "option1" => "First",
+                                "price" => $sttr_cust_price,
+                                "sku" => $sttr_item_code,
+                                "inventory_quantity" => $sttr_quantity,
+                                "old_inventory_quantity" => "",
+                                "inventory_management" => "shopify",
+                                "taxable" => false,                                 
+                                "product_id"=> "",
+                                "title"=> "First",            
+                                "position"=> 1,            
+                                "inventory_policy"=> "deny",
+                                "compare_at_price"=> "",
+                                "fulfillment_service"=> "manual",            
+                                "option1"=> "",
+                                "option2"=> null,
+                                "option3"=> null,
+                                "created_at"=> $sttr_add_date,
+                                "updated_at"=> "2019-03-07T13:54:18+05:30",
+                                "barcode"=> $sttr_barcode_prefix.$sttr_barcode,
+                                "grams"=> 0,
+                                "image_id"=> null,
+                                "weight"=> $sttr_gs_weight,
+                                "weight_unit"=> $sttr_gs_weight_type,
+                                "inventory_item_id"=> 20192728645735,         
+                                "requires_shipping"=> true,
+                                "admin_graphql_api_id"=> "gid://shopify/ProductVariant/19794678055015"
+                            )
+                        )
+                )
+            );
+    /*$products_array = array(
+//    
+"product"=>array(
+    
+        "title"=>"NECKLACE",
+        "body_html"=> "<strong>NECKLACE DESIGN!</strong>",
+        "vendor"=> "OMUNIM",
+        "product_type"=> "SGEN",
+        "published"=> false ,
+        "created_at"=> "2019-03-06T18:35:45+05:30",
+        "handle"=> "burton-custom-freestyle-151",
+        "updated_at"=> "2019-03-07T13:54:19+05:30",
+        "published_at"=> "2019-03-06T18:35:45+05:30",
+        "template_suffix"=> null,
+        "tags"=> "\"Jewellery\"",
+        "published_scope"=> "web",
+        "admin_graphql_api_id"=> "",
+        
+        "variants" => array( array(
+                        "option1" => "First",
+                        "price" => "10000.00",
+                        "sku" => "123",
+                        "inventory_quantity" => 10,
+                        "old_inventory_quantity" => 5,
+                        "inventory_management" => "shopify",
+                        "taxable" => false,                                 
+                        "product_id"=> "12",
+                        "title"=> "First",            
+                        "position"=> 1,            
+                        "inventory_policy"=> "deny",
+                        "compare_at_price"=> null,
+                        "fulfillment_service"=> "manual",            
+                        "option1"=> "First",
+                        "option2"=> null,
+                        "option3"=> null,
+                        "created_at"=> "2019-03-07T13:54:18+05:30",
+                        "updated_at"=> "2019-03-07T13:54:18+05:30",
+                        "barcode"=> null,
+                        "grams"=> 0,
+                        "image_id"=> null,
+                        "weight"=> 5,
+                        "weight_unit"=> "g",
+                        "inventory_item_id"=> 20192728645735,         
+                        "requires_shipping"=> true,
+                        "admin_graphql_api_id"=> ""
+                    )
+                )
+        )
+    );*/
+        $ch = curl_init("https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products.json");
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($products_array)); 
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($ch);        
+        curl_close($ch); 		
+        print_r($result);
+}
+/// end function for insert product data in db in shopify
+ /// start function for Update product data in db in shopify
+function UpdateData($operation,array $request,$product_code)
+{
+       $sttr_id = $_REQUEST['sttr_id'];
+       $sttr_shopify_prod_id = $_REQUEST['sttr_shopify_prod_id'];
+       $sttr_sttr_id = $_REQUEST['sttr_sttr_id'];
+       $sttr_transaction_type = $_REQUEST['sttr_transaction_type'];
+       $sttr_item_pre_id = $_REQUEST['sttr_item_pre_id'];
+       $sttr_item_id = $_REQUEST['sttr_item_id'];
+       $sttr_metal_type = $_REQUEST['sttr_metal_type'];
+       $sttr_stock_type = $_REQUEST['sttr_stock_type'];
+       $sttr_item_category = $_REQUEST['sttr_item_category'];
+       $sttr_item_name = $_REQUEST['sttr_item_name'];
+       $sttr_barcode_prefix = $_REQUEST['sttr_barcode_prefix'];
+       $sttr_barcode = $_REQUEST['sttr_barcode'];
+       $sttr_item_code = $_REQUEST['sttr_item_code'];
+       $sttr_indicator = $_REQUEST['sttr_indicator'];
+       $sttr_brand_id = $_REQUEST['sttr_brand_id'];
+       $sttr_add_date = $_REQUEST['sttr_add_date'];
+       $sttr_hsn_no = $_REQUEST['sttr_hsn_no'];
+       $sttr_size = $_REQUEST['sttr_size'];
+       $sttr_shape = $_REQUEST['sttr_shape'];
+       $sttr_color = $_REQUEST['sttr_color'];
+       $sttr_quantity = $_REQUEST['sttr_quantity'];
+       $sttr_final_quantity = $_REQUEST['sttr_final_quantity'];
+       $sttr_metal_rate = $_REQUEST['sttr_metal_rate'];
+       $sttr_gs_weight = $_REQUEST['sttr_gs_weight'];
+       $sttr_gs_weight_type = $_REQUEST['sttr_gs_weight_type'];
+       $sttr_lab_charges = $_REQUEST['sttr_lab_charges'];
+       $sttr_lab_charges_type = $_REQUEST['sttr_lab_charges_type'];
+       $sttr_making_charges = $_REQUEST['sttr_making_charges'];
+       $sttr_total_lab_charges = $_REQUEST['sttr_total_lab_charges'];
+       $sttr_total_making_charges = $_REQUEST['sttr_total_making_charges'];
+       $sttr_making_charges_type = $_REQUEST['sttr_making_charges_type'];
+       $sttr_tax = $_REQUEST['sttr_tax'];
+       $sttr_tot_tax = $_REQUEST['sttr_tot_tax'];
+       $sttr_valuation = $_REQUEST['sttr_valuation'];
+       $sttr_final_valuation = $_REQUEST['sttr_final_valuation'];
+       $sttr_status = $_REQUEST['sttr_status'];
+       $sttr_mkg_cgst_per = $_REQUEST['sttr_mkg_cgst_per'];
+       $sttr_mkg_cgst_chrg = $_REQUEST['sttr_mkg_cgst_chrg'];
+       $sttr_mkg_sgst_per = $_REQUEST['sttr_mkg_sgst_per'];
+       $sttr_mkg_sgst_chrg = $_REQUEST['sttr_mkg_sgst_chrg'];
+       $sttr_mkg_igst_per = $_REQUEST['sttr_mkg_igst_per'];
+       $sttr_mkg_igst_chrg = $_REQUEST['sttr_mkg_igst_chrg'];
+       $sttr_tot_price_cgst_per = $_REQUEST['sttr_tot_price_cgst_per'];
+       $sttr_tot_price_cgst_chrg = $_REQUEST['sttr_tot_price_cgst_chrg'];
+       $sttr_tot_price_sgst_per = $_REQUEST['sttr_tot_price_sgst_per'];
+       $sttr_tot_price_sgst_chrg = $_REQUEST['sttr_tot_price_sgst_chrg'];
+       $sttr_tot_price_igst_per = $_REQUEST['sttr_tot_price_igst_per'];
+       $sttr_tot_price_igst_chrg = $_REQUEST['sttr_tot_price_igst_chrg'];
+       $sttr_item_other_info = $_REQUEST['sttr_item_other_info'];
+       $sttr_pre_invoice_no = $_REQUEST['sttr_pre_invoice_no'];
+       $sttr_invoice_no = $_REQUEST['sttr_invoice_no'];
+       $sttr_price = $_REQUEST['sttr_price'];
+       $sttr_cust_price = $_REQUEST['sttr_cust_price'];
+       $sttr_cust_itmcalby = $_REQUEST['sttr_cust_itmcalby'];
+       $sttr_cust_itmcode = $_REQUEST['sttr_cust_itmcode'];
+       $sttr_cust_itmnum = $_REQUEST['sttr_cust_itmnum'];
+       $sttr_item_length = $_REQUEST['sttr_item_length'];
+       $sttr_item_width = $_REQUEST['sttr_item_width'];
+       $sttr_item_model_no = $_REQUEST['sttr_item_model_no'];
+       $sttr_item_sales_pkg = $_REQUEST['sttr_item_sales_pkg'];
+	   
+        if ($sttr_final_quantity == '' || $sttr_final_quantity == NULL) { 
+            $sttr_quantity = $sttr_quantity;
+	} else {
+            $sttr_quantity = $sttr_final_quantity;
+	}
+	   
+        if($sttr_gs_weight_type=='GM')
+        {
+           $sttr_gs_weight_type='g';
+        }
+        else if($sttr_gs_weight_type=='KG')
+        {
+           $sttr_gs_weight_type='kg';
+        }
+	   
+	if ($sttr_shopify_prod_id != '' && $sttr_shopify_prod_id != NULL) {
+            $product_code = $sttr_shopify_prod_id;
+	}
+           
+        if($sttr_status == 'SOLDOUT') {
+           $sttr_quantity = 0;
+        }
+    
+        $updateproducts_array = array(
+        //    
+        "product"=>array(
+
+                "title"=>$sttr_item_name, //// required
+                "body_html"=> $sttr_item_name,
+                "vendor"=> $sttr_brand_id,
+                "product_type"=> $sttr_item_category,
+                "published"=> false ,
+                "created_at"=> "2019-03-06T18:35:45+05:30",
+                "handle"=> "burton-custom-freestyle-151",
+                "updated_at"=> "2019-03-07T13:54:19+05:30",
+                "published_at"=> "2019-03-06T18:35:45+05:30",
+                "template_suffix"=> null,
+                "tags"=> "\"Jewellery\"",
+                "published_scope"=> "web",
+                "admin_graphql_api_id"=> "gid://shopify/Product/$product_code",
+
+                "variants" => array( array(
+                                "option1" => "First",
+                                "price" => $sttr_price,
+                                "sku" => $sttr_item_code,
+                                "inventory_quantity" => $sttr_quantity,
+                                "old_inventory_quantity" => $sttr_quantity,
+                                "inventory_management" => "shopify",//// customer name
+                                "taxable" => false,                                 
+                                "product_id"=> "",
+                                "title"=> "First",            
+                                "position"=> 1,            
+                                "inventory_policy"=> "deny",
+                                "compare_at_price"=> $sttr_cust_price,
+                                "fulfillment_service"=> "manual",            
+                                "option1"=> "",
+                                "option2"=> null,
+                                "option3"=> null,
+                                "created_at"=> $sttr_add_date,
+                                "updated_at"=> "2019-03-07T13:54:18+05:30",
+                                "barcode"=> $sttr_barcode_prefix.$sttr_barcode,
+                                "grams"=> 0,
+                                "image_id"=> null,
+                                "weight"=> $sttr_gs_weight,
+                                "weight_unit"=> $sttr_gs_weight_type,
+                                "inventory_item_id"=> 20192728645735,         
+                                "requires_shipping"=> true,
+                                "admin_graphql_api_id"=> "gid://shopify/ProductVariant/$product_code"
+                            )
+                        )
+                )
+            );
+
+         
+        
+        //$url = "https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products/$product_code.json";
+		
+        //echo "URL==>".$url;
+		
+        $ch = curl_init("https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products/$product_code.json");
+        //curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($updateproducts_array));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type:application/json'));
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        //curl_setopt($curl, CURLOPT_VERBOSE, 1);
+        //curl_setopt($curl, CURLOPT_HEADER, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT"); /// PUT method for update
+        //curl_setopt($curl, CURLOPT_PORT, 8080);
+        
+        //curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        //curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        $result = curl_exec($ch);
+        curl_close($ch);  
+        print_r($result);
+}      
+/// end function for Update product data in db in shopify 
+//// start function delete product from db in shopify
+ function DeleteData($operation,array $request,$product_code)
+{
+        $url = "https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products/$product_code.json";
+     
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        //curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_VERBOSE, 1);
+        curl_setopt($curl, CURLOPT_HEADER, 1);
+        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "DELETE"); /// DELETE method for update
+        curl_setopt($curl, CURLOPT_PORT, 8080);
+       // curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($updateproducts_array));
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+        $response = curl_exec($curl);
+        if($response)
+        {
+            echo "Product deleted Sucessfully";
+        }
+        else
+        {
+            echo "Error Occured";
+        }
+    
+        curl_close($curl);  
+}
+      
+////// end function delete product from db in shopify      
+///start  retrive/get all data from db 
+      function getAllData($operation,array $request,$product_code){
+		  
+		 $sttr_shopify_prod_id =  $_REQUEST['sttr_shopify_prod_id'];
+          
+        if ($sttr_shopify_prod_id != '' && $sttr_shopify_prod_id != NULL) {
+		    $product_code = $sttr_shopify_prod_id;
+	    }
+		
+        //print_r($_REQUEST);
+        //$url = "https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products/$product_code.json";
+		
+		//echo 'url == '.$url;die;
+     
+        $ch = curl_init("https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products/$product_code.json");
+//        curl_setopt($ch, CURLOPT_URL, $url);      
+         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+          curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//        curl_setopt($ch, CURLOPT_VERBOSE, 1);
+//        curl_setopt($ch, CURLOPT_HEADER, 1);
+          curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET"); /// GET method for update
+//        curl_setopt($ch, CURLOPT_PORT, 8080);
+//        //curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($updateproducts_array));
+//        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+//        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        $result = curl_exec($ch);
+        curl_close($ch);
+       
+        print_r($result);
+         
+      }
+      
+      
+      // Start retrive/get all data from db 
+      function getAllDataFromShopify($operation){
+
+        $ch = curl_init("https://41a1621a549c91ac6d65716fd18c935b:7f0602c4ba9487282bfa4f00dd9319c1@sgen-shop.myshopify.com/admin/products.json");
+     
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET"); // GET method for update
+        $result = curl_exec($ch);
+        curl_close($ch);
+        print_r($result);
+         
+      }
+      // End retrive/get all data from db 
+      
+   } 
 ?>

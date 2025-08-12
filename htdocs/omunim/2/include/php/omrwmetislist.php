@@ -1,3 +1,296 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: RAW METAL ISSUE LIST
+ * **************************************************************************************
+ *
+ * Created on 22 SEPT 2021, 5:38PM
+ *
+ * @FileName: omrwmetislist.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<div class="supp_middle_body" id="SuppMetalItemListDiv"> 
+    <?php
+    $userId = $_POST['userId'];
+
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_GET['userId'];
+    }
+
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_GET['custId'];
+    }
+
+    $transType = $_POST['transType'];
+
+    if ($transType == '') {
+        $transType = $_GET['transType'];
+    }
+
+    if ($transType == '') {
+        $transType = $_GET['transactionType'];
+    }
+
+    if ($transType == '') {
+        $transType = $_GET['type'];
+    }
+
+    if ($_GET['metType'] != '')
+        $transType = $_GET['metType'];
+
+    if ($mainPanel == '') {
+        $mainPanel = $_GET['mainPanel'];
+    }
+
+    if ($divName == '') {
+        $divName = $_GET['divName'];
+    }
+
+    if ($mainPanel == 'Supplier') {
+        $divName = 'supp_middle_body';
+    }
+
+    //echo '$mainPanel == '.$mainPanel.'<br />';
+
+    $sessionOwnerId = $_SESSION[sessionOwnerId];
+      $toDate = $_GET['ToDate'];
+    $fromDate = $_GET['FromDate'];
+// ******************************************************************************************************
+// START CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:RENUKA SHARMA_NOV2022
+// ******************************************************************************************************
+//
+    $selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+    $resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+    $rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+    $nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+//
+// ********************************************************************************************************
+// END CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:RENUKA SHARMA_NOV2022
+// ********************************************************************************************************
+    if ($nepaliDateIndicator == 'YES') {
+        $toDate = $_GET['ToDate'];
+        $fromDate = $_GET['FromDate'];
+
+        if ($fromDate != '') {
+            $jrtrDOBArr = explode('-', $fromDate);
+            if (is_numeric($jrtrDOBArr[1]) || (preg_match('~[0-9]+~', $jrtrDOBArr[1]))) {
+                $jrnlOtherLangFDOB = trim($jrtrDOBArr[0]) . '-' . trim($jrtrDOBArr[1]) . '-' . trim($jrtrDOBArr[2]);
+                $nepali_date = new nepali_date();
+                $english_date = $nepali_date->get_eng_date($jrtrDOBArr[2], $jrtrDOBArr[1], $jrtrDOBArr[0]);
+                $fromDate = trim($english_date['d']) . ' ' . trim(strtoupper($english_date['M'])) . ' ' . trim($english_date['y']);
+            }
+        }
+        if ($toDate != '') {
+            $jrtrDOBArr = explode('-', $toDate);
+            if (is_numeric($jrtrDOBArr[1]) || (preg_match('~[0-9]+~', $jrtrDOBArr[1]))) {
+                $jrnlOtherLangTDOB = trim($jrtrDOBArr[0]) . '-' . trim($jrtrDOBArr[1]) . '-' . trim($jrtrDOBArr[2]);
+                $nepali_date = new nepali_date();
+                $english_date = $nepali_date->get_eng_date($jrtrDOBArr[2], $jrtrDOBArr[1], $jrtrDOBArr[0]);
+                $toDate = trim($english_date['d']) . ' ' . trim(strtoupper($english_date['M'])) . ' ' . trim($english_date['y']);
+            }
+        }
+        if ($fromDate == '' || $fromDate == NULL) {
+            $fromDate = date("d-m-Y");
+            $fromDate = date("d M Y", strtotime($fromDate));
+        } else {
+            $fromDate = date("d M Y", strtotime($fromDate));
+        }
+        if ($toDate == '' || $toDate == NULL) {
+            $toDate = date("d-m-Y");
+            $toDate = date("d M Y", strtotime($toDate));
+        } else {
+            $toDate = date("d M Y", strtotime($toDate));
+        }
+    } else {
+    $toDate = $_GET['ToDate'];
+$fromDate = $_GET['FromDate'];
+if ($fromDate != '') {
+    $fromDate = date("d M Y", strtotime($fromDate));
+}
+if ($fromDate == '' || $fromDate == NULL) {
+    $fromDate = date("d-m-Y");
+    $fromDate = date("d M Y", strtotime($fromDate));
+}
+
+if ($toDate != '') {
+    $toDate = date("d M Y", strtotime($toDate));
+}
+
+if ($toDate == '' || $toDate == NULL) {
+    $toDate = date("d-m-Y");
+    $toDate = date("d M Y", strtotime($toDate));
+}
+    }
+?>
+    <div class="main_middle_cust_list">
+         <div class="ShadowFrm">
+        <table border="0" cellspacing="0" cellpadding="2" class="spaceLeft5" width="100%">
+            <tr>
+                <td align="left" colspan="17">
+                    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="border-bottom:1px solid #c1c1c1;">
+                        <tr>
+                            <td width="26px">
+                                <img src="<?php echo $documentRoot; ?>/images/img/stock.png" alt="Purchase List" height="20px"/>
+                            </td>
+                            <td width="250px">
+                                <b style="font-size:16px;color:#0A0C87;"> RAW METAL ISSUE LIST</b>
+                            </td>
+                            <td align="right" valign="middle">
+                                <div id="messDisplayDiv"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table border="0" cellspacing="1" cellpadding="1" width="80%" align="center" style="padding-top:10px;">
+            <tr>
+                <td align="left" colspan="2">
+                    <div id="admnDepositMoneyDiv" class="spaceLeft10">
+                    </div>
+                </td>
+            </tr>
+            
+             <?php if ($nepaliDateIndicator == 'YES') {  
+          ?>     <tr>
+                                    <td align="right" width="40%" class="padLeft25">
+                                        <table border="0" cellspacing="0" cellpadding="0" align="" width="100%">
+                                            <tr>
+                                                 <td align="right">
+                                                <div class="brown brownMess13Arial">START DATE &nbsp;</div> 
+                                            </td>
+                                                <td valign="middle" align="" class="textBoxCurve1px backFFFFFF margin2pxAll padLeft10 posRelat" style="box-shadow: 1px 1px 10px rgba(206, 206, 206, 0.5);border: 1px solid #e0e0e0;">
+                                                   <?php 
+                                                    $date_nepali = $jrnlOtherLangFDOB;
+                                                   include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliFromDate.php'; ?>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                    <td align="left" width="40%">
+                                        <table  border="0" cellspacing="0" cellpadding="0" align="" width="100%">
+                                            <tr>
+                                                 <td align="right">
+                                                <div class="brown brownMess13Arial">END DATE &nbsp;</div> 
+                                            </td>
+                                                <td valign="middle" align="" class="textBoxCurve1px backFFFFFF margin2pxAll padLeft10 posRelat" style="box-shadow: 1px 1px 10px rgba(206, 206, 206, 0.5);border: 1px solid #e0e0e0;">
+                                                   <?php 
+                                                    $date_nepali = $jrnlOtherLangTDOB;
+                                                   include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliToDate.php'; ?>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="left" width="25%">
+                                        <!-- Start Code for GO Button @AUTHOR:PRIYANKA-11OCT2021-->
+                                        <input id="goButton" name="goButton" type="button"
+                                               onclick="javascript:
+                                                               searchStockLedgerDetailsNepali('<?php echo $sellPrCustId; ?>', '<?php echo $panelName; ?>', '<?php echo 'fineJewSellList'; ?>',
+                                                                       document.getElementById('addItemDOBFromDay'), document.getElementById('addItemDOBFromMonth'), document.getElementById('addItemDOBFromYear'),
+                                                                       document.getElementById('addItemDOBToDay'), document.getElementById('addItemDOBToMonth'), document.getElementById('addItemDOBToYear'), '<?php echo $documentRoot; ?>');
+                                                       return false;"
+                                               value="GO" class="frm-btn" style="width:50px;height:33px;border-radius: 3px !important;font-size: 16px;"/>
+                                        <!-- End Code for GO Button @AUTHOR:PRIYANKA-11OCT2021-->
+                                    </td>
+                                </tr>
+                <?php }else {?>
+            <tr>
+                <!--<td width="25%"></td>-->
+                <td align="" width="40%" class="padLeft25">
+                    <table border="0" cellspacing="0" cellpadding="0" align="" width="100%">
+                        <tr>
+                            <td align="right">
+                               <div class="brown brownMess13Arial">START DATE &nbsp;</div> 
+                             </td>
+                            <td valign="middle" align="" class="textBoxCurve1px backFFFFFF margin2pxAll padLeft10 posRelat" style="box-shadow: 1px 1px 10px rgba(206, 206, 206, 0.5);border: 1px solid #e0e0e0;">
+                                <?php
+                                // Start Code for START DATE @AUTHOR:PRIYANKA-04OCT2022
+                                //
+                                $Day = 'FromDay';
+                                $Month = 'FromMonth';
+                                $Year = 'FromYear';
+                                $date = $fromDate;
+                                //
+                                include 'omstocrptfromdate.php';
+                                //
+                                // End Code for START DATE @AUTHOR:PRIYANKA-04OCT2022
+                                ?>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" width="40%">
+                    <table border="0" cellspacing="0" cellpadding="0" align="" width="100%">
+                        <tr>
+                            <td align="right">
+                                                <div class="brown brownMess13Arial">END DATE &nbsp;</div> 
+                                            </td>
+                            <td valign="middle" align="" class="textBoxCurve1px backFFFFFF margin2pxAll padLeft10 posRelat" style="box-shadow: 1px 1px 10px rgba(206, 206, 206, 0.5);border: 1px solid #e0e0e0;">
+                                <?php
+                                // Start Code for END DATE @AUTHOR:PRIYANKA-04OCT2022
+                                //
+                                include 'omstocrpttodate.php';
+                                //
+                                // End Code for END DATE @AUTHOR:PRIYANKA-04OCT2022
+                                ?>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" width="25%">
+                    <!-- Start Code for GO Button @AUTHOR:PRIYANKA-11OCT2021-->
+                    <input id="goButton" name="goButton" type="button"
+                           onclick="javascript:
+                                                       searchStockLedgerDetails('<?php echo $sellPrCustId; ?>', '<?php echo $panelName; ?>', '<?php echo 'rawMetalIssueSellList'; ?>',
+                                                               document.getElementById('FromDay'), document.getElementById('FromMonth'), document.getElementById('FromYear'),
+                                                               document.getElementById('ToDateDay'), document.getElementById('ToDateMonth'), document.getElementById('ToDateYear'), '<?php echo $documentRoot; ?>');
+                                               return false;"
+                           value="GO" class="frm-btn" style="width:50px;height:33px;border-radius: 3px !important;font-size: 16px;"/>
+                    <!-- End Code for GO Button @AUTHOR:PRIYANKA-11OCT2021-->
+                </td>
+            </tr>
+                <?php }?>
+        </table>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td align="left">
+                    <div id="supplierCrystalPurchasePanel">
+                        <?php
+                        include 'omrwmetisuellt.php';
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,3 +1,203 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+//require_once 'system/omssopin.php';
+//require_once 'ommpfndv.php';
+//include 'ommpfunc.php';
 ?>
+<?php
+print_r($_SESSION);
+define("GB_OWNER_ID", "101540");
+define("GB_DB_LOGIN_ID", "light");
+define("GB_DB_SERVER", 'localhost');
+define("GB_DB_USER_NAME", 'root');
+define("GB_DB_PASSWORD", 'omrolrsr');
+define("GB_DB_NAME", 'loveras1_101540');
+define("GB_DB_PORT", '7188');
+//
+$conn = new mysqli(GB_DB_SERVER, GB_DB_USER_NAME, GB_DB_PASSWORD, GB_DB_NAME, GB_DB_PORT);
+if ($conn->connect_error) {
+    die("Error in connecting with mysql : " . $conn->connect_error);
+}
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+
+$status = $_POST['status'];
+if ($status == createInstance) {
+    $response = createInstance($conn);
+    echo $response;
+}
+$status2 = $_POST['status2'];
+if ($status2 == terminateInstance) {
+    $response2 = terminateInstance($conn);
+    echo $response2;
+}
+
+if ($status3 == generateQrCode) {
+    echo "st" . $status3 = $_POST['status3'];
+    $response3 = generateQrCode($conn);
+    echo $response3;
+}
+
+//START CREATE INSTANCE
+function createInstance($conn) {
+    // create instance id
+    $commonFieldArray = array(
+        "instance_id" => "525354"
+    );
+   print_r($commonFieldArray);
+//$mergedArray = Model::mc_encrypt($commonFieldArray, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+    $post_fields_arr = json_encode($commonFieldArray);
+    print_r($post_fields_arr);
+//
+   $ch = curl_init();
+   curl_setopt($ch, CURLOPT_URL, 'https://xzyapi.omunim.in/whatsapp/create_wa_api_instance');
+   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_POST, 1);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields_arr);
+//
+   $result_transaction = curl_exec($ch);
+   echo 'result' . $result_transaction;
+//$result_transaction = Model::mc_decrypt($result_transaction, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+   $result_transaction_arr = json_decode($result_transaction, true);
+
+   if (curl_errno($ch)) {
+      $error_msg = curl_error($ch);
+      print_r($error_msg);
+  }
+
+    echo '<pre>';
+    print_r($result_transaction_arr);
+    echo '</pre>';
+
+    curl_close($ch);
+    //$ownerid = $_SESSION['sessionOwnProdId'];
+    $ownerid = "48484";
+    $secret_id = $result_transaction_arr['secret'];
+    
+// $instance_id = $result_transaction_arr['instance_id'];
+
+    $valueexists = "SELECT omly_value FROM omlayout WHERE omly_own_id='$ownerid' and omly_option='whatsapp_secret_id'";
+    echo $valueexists;
+    $resvalueexists = mysqli_query($conn, $valueexists);
+    $rowvalueexists = mysqli_fetch_assoc($resvalueexists);
+    $rowcount = mysqli_num_rows($resvalueexists);
+
+    //$o_option = $rowvalueexists['omly_option'];
+    $o_val = $rowvalueexists['omly_value'];
+
+    if ($rowcount == 0 || $o_val == "" ) {
+
+        $insertkey_s = "INSERT INTO omlayout(omly_own_id,omly_option,omly_value) VALUES('$ownerid','whatsapp_secret_id','$secret_id')";
+        echo $insertkey_s;
+        if (!mysqli_query($conn, $insertkey_s)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+
+//    $insertkey_id = "INSERT INTO omlayout(omly_own_id,omly_option,omly_value) VALUES('$ownerid','whatsapp_instance_id','$instance_id');";
+//    if (!mysqli_query($conn, $insertkey_id)) {
+//        die('Error: ' . mysqli_error($conn));
+//    }
+    } else {
+        $updatekey_s = "UPDATE omlayout SET omly_value ='$secret_id' WHERE omly_option = 'whatsapp_secret_id' AND omly_own_id = '$ownerid' ";
+
+        //echo $updateOtp;
+        echo $updatekey_s;
+        //echo "<br>";
+        if (!mysqli_query($conn, $updatekey_s)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+//     $updatekey_id = "UPDATE omlayout SET omly_option = 'whatsapp_instance_id' omly_value = '$instance_id' WHERE omly_own_id = '$ownerid' ";
+//    //echo $updateOtp;
+//    //echo "<br>";
+//    if (!mysqli_query($conn, $updatekey_id)) {
+//        die('Error: ' . mysqli_error($conn));
+//    } 
+    }
+    //$qr_img = generateQrCode($conn);
+    echo $qr_img;
+}
+
+//createInstance();
+//
+//START GENERATE QRCODE
+
+function generateQrCode($conn) {
+    // Get QR Code
+    $ownerid = $_SESSION['sessionOwnProdId'];
+    $secretkey = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$ownerid' and omly_option='whatsapp_secret_id'";
+    //echo $secretkey;
+    $ressecretkey = mysqli_query($conn, $secretkey);
+    $rowsecretkey = mysqli_fetch_assoc($ressecretkey);
+    $keysecret = $rowsecretkey['omly_value'];
+
+    $commonFieldArray = array(
+        "message" => "Instance ash105 Registered Successfully",
+        "secret" => $keysecret,
+        "instance_id" => "ash105"
+            // "instance_id" => "india"
+    );
+    //print_r($commonFieldArray);
+//
+//$mergedArray = Model::mc_encrypt($commonFieldArray, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+    $post_fields_arr = json_encode($commonFieldArray);
+//
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://xzyapi.omunim.in/whatsapp/get_wa_api_qr_code');
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields_arr);
+
+    $result_transaction = curl_exec($ch);
+//echo 'result'.$result_transaction.'<br>';
+//$result_transaction = Model::mc_decrypt($result_transaction, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+    $result_transaction_arr = json_decode($result_transaction, true);
+    if (curl_errno($ch)) {
+        $error_msg = curl_error($ch);
+        print_r($error_msg);
+    }
+    echo '<pre>';
+    print_r($result_transaction_arr);
+    echo '</pre>';
+
+    curl_close($ch);
+    return $result_transaction_arr;
+}
+
+//generateQrCode(); 
+//TERMINATE INSTANCE 
+function terminateInstance() {
+
+    $commonFieldArray = array(
+        "instance_id" => "ash1050"
+    );
+    //print_r($commonFieldArray);
+//$ mergedArray = Model::mc_encrypt($commonFieldArray, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+    $post_fields_arr = json_encode($commonFieldArray);
+//
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://xzyapi.omunim.in/whatsapp/terminate_wa_api_instance');
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields_arr);
+//
+    $result_transaction = curl_exec($ch);
+    echo 'result' . $result_transaction;
+//$result_transaction = Model::mc_decrypt($result_transaction, 'jf8739fh92739j802aso9055', GB_SYSTEM_ONOFF);
+    $result_transaction_arr = json_decode($result_transaction, true);
+//
+    echo '<pre>';
+    print_r($result_transaction_arr);
+    echo '</pre>';
+//
+    curl_close($ch);
+}
+
+//terminateInstance();
+?>        
+
+
+

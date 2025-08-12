@@ -1,3 +1,71 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAoBAAAW0t+Y3pIy/NZCi2nv3s4zksFBCmfGdkTj6ZcHLqNx8D1PL5h3CibkBH/XCKsJFhOmFLg2eyTlhg4bziRkulqLgB58da38fmQf/XMbGFHHSIm+XEk96qRegxgUp0Vw/t8QUoHoysDtlbXveBaoa6rKVb9t2MJT7WklaoK4Q5y9GSu85Mc3QnvgDqk7gZiKiVDUiK52LYRfMctcar43oE31Rdih80l29ifuvl8LVSf9RGBrW/ACuVX1mYjsKPqJ6Slh2puhXYQPfUfFSzy2eXdEcYaLZTW68W5p+tVpAgS7VVYfWtM7DSoM66hUw0e2wrncgUKxT3UvX+02LgvpmviExlDH8FZaAA7JQrZ1ILMM/Wy9D6Un7WwfhCzNU/kGSk5RIb4AhN7ou2ZtXPOGMR8GaaO45cvokMP9zphuy6S2cFswYWXxkw7jGGpvpPlkL2xZW6eOMFWym2LZWgqZy7CTH+HaUE8s3BUSG5KMg2T0lj0pe29ti7pnSRQULqLMAfz6jW8gWkeBOyIQp9xUr0ZbLTpoAWDogv98chCziQsbI4AOnI9x28SP672Sh9rnYujA6RYjOTyFHwKsEFhQpGgdj4G3dwhdf7xPpjSWTBVIYlVP8hs3clt3NeukucPGF/gyCUd/w7CKdEq0F8EZasvL8ZNMLD5NkelQnXRQVJEcFZNmdZ0x7OAYMDkJemGjLlPo6HnGwc+V6tPNvJt7iw93YZQKCNgTkfoM+hysvcnFkQKfZLtiCliS2FAG5z62qmapJhIsBLk8Zdm25Kazl/aKDPkdNeoD3wnik01fFyFTPuBfpZLQaPdo4KDdu3C3PvwYDV1L6yb8PG7VdI73kDRWvJfXRRzmTpN6DWjj4oFL2o/ih4ryVXzf71fiZE1aJ/LQX8xaVTTWc/qmOaN0p5iv842wW9xVbuqdEmNKosKLDoiM3BoNznRpfjGonzvOLiZ1Wtn7dlZg7IiK5pAwBB/hhIr/xttAEqQE6TDk6dvg/T2jdaIGO5ZeiM+rPcTY6cak+ZgAKbExUj5pzr9/m6zkqPzJHVo5gLXpeMFdevCiR5C/z2q/LuVfp46BJVYMq+Z8CTWdlpa0KK/WWtHkNAyFxJUjfpgpkIesJkCACdEHpDZE8GxAS4OVS0iHWb//nTMF9Q2g29AmKx+XlA7I3eS9lTBg0jXHnss2jC31F9UemopAhzN+60k7n7LYdyotO5VDSm2AZAwp2LAgCsEXhbw6nnX7NO/cZaynAxfava1+S7AtIi6ihtD8KQ0poUr9vDd+SMcMTtG5+Vv6W/gfxf2O10eCKCfNBWRUGydWkeYtjIJajguvBz/8bpE0CH7EL2Jf/MpqtQbOG4xtW7/f7cab/nsDU/QjYUdiObMqB/dkM9a12okiHx456PhztW4xdWhVOVPNXHwfyYAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SELL CUSTOMER WASTAGE BY GS/NT/FN WEIGHT @RUTUJA-02JAN2020
+ * **************************************************************************************
+ * 
+ * Created on JAN 03, 2020 12:46:30 PM
+ *
+ * @FileName: omslctwstgby.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.6.86
+ * @version 2.6.86
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:Rutuja
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';    
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$id = $_GET['id'];
+$div = $_GET['div'];
+$panel = $_GET['panel'];
+//
+//echo '$id =='.$id.'<br />';
+//echo '$div =='.$div.'<br />';
+//echo '$panel =='.$panel.'<br />';die;
+//
+?>
+<?php if ($panel == 'MetalFormB2') { ?>
+<select class="itemListDivToAddGirviSelect" id="sellCustWastgBy"  name="sellCustWastgBy" 
+        onchange="javascript: if (document.getElementById('sttr_purity').value != '') {
+                    document.getElementById('sttr_cust_wastg_by').value = this.value;
+                    calculateSellCustWastageWt();
+                    calculateSellPrice();
+                    return false;
+                }"
+        onclick="clearDivision('<?php echo $div; ?>');"
+        multiple="multiple" size="8" >
+    <option value="custWastgByFineWt" title="CUST WASTG BY FINE WT">FINE WT</option>
+    <option value="custWastgByNetWt" title="CUST WASTG BY NET WT">NET WT</option>
+    <option value="custWastgByGrossWt" title="CUST WASTG BY GROSS WT">GROSS WT</option>
+</select>
+<?php } else { ?>
+<select class="itemListDivToAddGirviSelect" id="sellCustWastgBy"  name="sellCustWastgBy" 
+        onchange="javascript: if (document.getElementById('sttr_purity').value != '') {
+                    document.getElementById('sttr_cust_wastg_by').value = this.value;
+                    calculateSellCustWastageWt();
+                    calculateSellPrice();
+                    return false;
+                }"
+        onclick="clearDivision('<?php echo $div; ?>');"
+        multiple="multiple" size="3" style="width:90px;">
+    <option value="custWastgByFineWt" title="CUST WASTG BY FINE WT">FINE WT</option>
+    <option value="custWastgByNetWt" title="CUST WASTG BY NET WT">NET WT</option>
+    <option value="custWastgByGrossWt" title="CUST WASTG BY GROSS WT">GROSS WT</option>
+</select>
+<?php } ?>
+

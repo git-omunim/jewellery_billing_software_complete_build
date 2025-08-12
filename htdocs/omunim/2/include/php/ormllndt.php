@@ -1,3 +1,371 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: ormllndt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//changes in file @AUTHOR: SANDY03JAN14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpdpmsg.php'; //add msg file @AUTHOR: SANDY31JAN14
+
+if ($mlId == '' || $loanId == '') {
+    $mlId = $_GET['mlId'];
+    $loanId = $_GET['loanId'];
+}
+if ($loanId == '') {
+    $serialNum = $_GET['loanSerNo'];
+    $preSerNo = preg_replace("/[^a-zA-Z]+/", "", $serialNum);
+    $serNo = preg_replace("/[^0-9]+/", "", $serialNum);
+    $getLoanDetFromSerNo = "SELECT ml_id FROM ml_loan WHERE ml_pre_serial_num='$preSerNo' and ml_serial_num='$serNo' and ml_own_id='$_SESSION[sessionOwnerId]'";
+    $resLoanDetFromSerNo = mysqli_query($conn,$getLoanDetFromSerNo);
+    $rowLoanDetFromSerNo = mysqli_fetch_array($resLoanDetFromSerNo, MYSQLI_ASSOC);
+    $loanId = $rowLoanDetFromSerNo['ml_id'];
+}
+$newLoanAdded = $_GET['newLoanAdded'];
+?>
+<div id="loanDetailsGlobalDiv">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left">
+                <div class="spaceLeft10 paddingTop2">
+                    <img src="<?php echo $documentRoot; ?>/images/orange16.png" width="16px" height="16px"/>
+                </div>
+            </td>
+            <td align="left" width="80%">
+                <div class="spaceLeft5">
+                    <div class="main_link_orange_normal16"><b>ACTIVE LOAN DETAILS</b></div>
+                </div>
+            </td>
+            <td align="right" width="20%" valign="middle">
+                <?php
+                $perRowsPerPage = 1;
+                $checkNextRows = $perRowsPerPage * 2;
+                $perPageNum = 1;
+                if (isset($_GET['page'])) {
+                    $perPageNum = $_GET['page'];
+                }
+
+                $perOffset = ($perPageNum - 1) * $perRowsPerPage;
+                if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                    $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                    $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+                    $strFrmId = '0';
+
+                    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+                        $strFrmId = $strFrmId . ",";
+                        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+                    }
+
+                    if ($newLoanAdded == 'YES') {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts!='Released' and ml_id='$loanId' and ml_firm_id IN ($strFrmId)";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts!='Released' and ml_id='$loanId' and ml_firm_id IN ($strFrmId)";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    } else if ($loanId != '') {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_id='$loanId' and ml_upd_sts != ' Released' and ml_firm_id IN ($strFrmId) LIMIT $perOffset, $checkNextRows";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_id='$loanId' and ml_upd_sts!=' Released' and ml_firm_id IN ($strFrmId) order by STR_TO_DATE(ml_DOB,'%d %b %Y') desc LIMIT $perOffset, $perRowsPerPage";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    } else {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts!='Released' and ml_firm_id IN ($strFrmId) LIMIT $perOffset, $checkNextRows";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts!='Released' and ml_firm_id IN ($strFrmId) order by STR_TO_DATE(ml_DOB,'%d %b %Y') desc LIMIT $perOffset, $perRowsPerPage";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    }
+                } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                    if ($newLoanAdded == 'YES') {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts!='Released' and ml_id='$loanId'";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_id='$loanId'";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    } else if ($loanId != '') {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_upd_sts!=' Released'  and ml_id='$loanId' LIMIT $perOffset, $checkNextRows";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_upd_sts!=' Released' and ml_id='$loanId' order by STR_TO_DATE(ml_DOB,'%d %b %Y') desc LIMIT $perOffset, $perRowsPerPage";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    } else {
+                        $qSelTotalGirviCount = "SELECT ml_id FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]'  and ml_upd_sts!='Released' and ml_lender_id='$mlId' LIMIT $perOffset, $checkNextRows";
+                        $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount) or die("Error: " . mysqli_error($conn) . " with query " . $qSelTotalGirviCount);
+                        $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+                        $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_upd_sts!='Released' and ml_lender_id='$mlId' order by STR_TO_DATE(ml_DOB,'%d %b %Y') desc LIMIT $perOffset, $perRowsPerPage";
+                        $resAllGirvi = mysqli_query($conn,$qSelAllGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllGirvi);
+                        $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+                    }
+                }
+                while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+                    $girviId = $rowAllGirvi['ml_id'];
+                    $mlId = $rowAllGirvi['ml_lender_id'];
+                    $loanId = $girviId;
+                    $custId = $mlId;
+                    $mainPrincAmount = $rowAllGirvi['ml_main_prin_amt'];
+                    $princAmount = $rowAllGirvi['ml_prin_amt'];
+                    $firmLoanNo = $rowAllGirvi['ml_firm_mli_no'];
+                    $firm = $rowAllGirvi['ml_firm_id'];
+                    $mlTrType = $rowAllGirvi['ml_ln_cr_dr'];
+                    $selFirmName = "SELECT firm_name FROM firm WHERE firm_id='$firm' AND firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                    $resSelFirmName = mysqli_query($conn,$selFirmName);
+                    $rowSelFirmName = mysqli_fetch_array($resSelFirmName, MYSQLI_ASSOC);
+                    $firmName = $rowSelFirmName['firm_name'];
+
+                    $ROIId = $rowAllGirvi['ml_ROI_Id'];
+
+                    //Start Code to check ROI Id is null or not
+                    if ($ROIId == NULL || $ROIId == '' || $ROIId == 0) {
+                        $ROI = $rowAllGirvi['ml_ROI'];
+
+                        $qSelROI = "SELECT roi_id FROM roi where roi_value='$ROI'";
+                        $resROI = mysqli_query($conn,$qSelROI);
+                        $rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+                        $ROIId = $rowROI['roi_id'];
+
+                        $qUpdGirvi = "UPDATE ml_loan SET ml_ROI_Id='$ROIId'
+                                         WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+                        if (!mysqli_query($conn,$qUpdGirvi)) {
+                            die('Error: ' . mysqli_error($conn));
+                        }
+                    }
+                    //End Code to check ROI Id is null or not
+
+                    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                        $ROI = $rowAllGirvi['ml_IROI'];
+                    } else {
+                        $ROI = $rowAllGirvi['ml_ROI'];
+                    }
+                    $ROIType = $rowAllGirvi['ml_ROI_typ'];
+                    $girviDOB = $rowAllGirvi['ml_DOB']; //taken variable names from AS THAT OF ADD girvi as it requires for api
+                    $girviDOB = om_strtoupper(date("d M Y", strtotime($girviDOB)));
+                    $girviNewDOB = $rowAllGirvi['ml_new_DOB'];
+                    $girviNewDOB = om_strtoupper(date("d M Y", strtotime($girviNewDOB)));
+                    $girviIntOpt = $rowAllGirvi['ml_int_opt'];
+                    $girviIntCompoundedOpt = $rowAllGirvi['ml_compounded_opt'];
+                    $girviType = $rowAllGirvi['ml_type'];
+                    $mlLnNo = $rowAllGirvi['ml_cust_mli_num'];
+                    $preSerialNum = $rowAllGirvi['ml_pre_serial_num'];
+                    $serialNum = $rowAllGirvi['ml_serial_num'];
+                    $loanOtherInfo = $rowAllGirvi['ml_comm']; //@AUTHOR: SANDY31JAN14
+                    $girviUpdSts = $rowAllGirvi['ml_upd_sts'];
+                    $selInerestType = $rowAllGirvi['ml_ROI_typ'];
+                    $girviDOR = $rowAllGirvi['ml_DOR']; //change in line @AUTHOR: SANDY25JAN14
+                    //Start code to add new Girvi DOB
+                    if ($girviNewDOB == '' || $girviNewDOB == NULL) {
+                        $qUpdateGirvi = "UPDATE ml_loan SET ml_new_DOB='$girviDOB'
+                                         WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+                        if (!mysqli_query($conn,$qUpdateGirvi)) {
+                            die('Error: ' . mysqli_error($conn));
+                        }
+                        $girviNewDOB = $girviDOB;
+                    }
+                    //End code to add new Girvi DOB
+
+                    $gMonthIntOption = $rowAllGirvi['ml_monthly_intopt'];
+                    $omPanelDiv = 'mlLoanInfo'; //set panel for roi files @AUTHOR: SANDY21NOV13
+                    ?>
+                    <table border="0" cellpadding="0" cellspacing="0" align="right">
+                        <tr>
+                            <?php
+                            if ($totalNextGirvi > 0) {
+                                ?><?php
+                                if ($perPageNum > 1) {
+                                    ?>
+                                    <td align="right" valign="bottom">
+                                        <div class="spaceLeft10">
+                                            <a style="cursor: pointer;" onclick="javascript:getPage('<?php echo $perPageNum - 1; ?>', '<?php echo $mlId; ?>', 'LOANINFO');">
+                                                <img src="<?php echo $documentRoot; ?>/images/prev16.png" alt='PREVIOUS LOAN' title='PREVIOUS LOAN / GIRVI'
+                                                     width="16px" height="16px"/> 
+                                            </a>
+                                        </div>
+                                    </td>
+                                <?php }
+                                ?><?php
+                                if ($totalGirvi > $perRowsPerPage) {
+                                    ?>
+                                    <td align="right" valign="bottom">
+                                        <div class="spaceLeft10">
+                                            <a style="cursor: pointer;" onclick="javascript:getPage('<?php echo $perPageNum + 1; ?>', '<?php echo $mlId; ?>', 'LOANINFO');">
+                                                <img src="<?php echo $documentRoot; ?>/images/next16.png" alt='NEXT LOAN' title='NEXT LOAN / GIRVI'
+                                                     width="16px" height="16px"/> 
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+                    </tr>
+                </table>
+            </td> 
+        </tr>
+<!--        <tr>
+            <td valign="top" align="left" colspan="3" class="border-top">
+        </tr>-->
+    </table>
+    <?php if ($totalGirvi > 0) { ?>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="left" width="100%" colspan="2">
+                    <?php include 'ormllndd.php'; ?>
+                </td>
+            </tr>
+        </table>
+    <?php } else { ?>
+        <table border="0" cellpadding="2" cellspacing="0" align="left" width="100%">
+            <tr>
+                <td align="left">
+                    <div class="spaceLeft40 brownMess14Arial">~ Loans are not available in database ~</div>
+                </td>
+            </tr>
+        </table>
+    <?php } ?>
+    <?php if ($totalGirvi > 0 || $totalNextGirvi > 0) { ?>
+        <table border="0" cellpadding="2" cellspacing="0" align="left" width="100%" style="background: #f5f5f5;border-top: 1px solid #d5d4d4;border-bottom: 1px solid #d5d4d4;margin-top: 5px;">
+<!--            <tr>
+                <td align="left" colspan="8"><hr color="#FD9A00" size="0.1px" /></td>
+            </tr>-->
+            <tr>
+                <td align="left" width="400px">
+                </td>
+                <td>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center" class="noPrint">
+                                <a style="cursor: pointer;" class="frm-btn iconbtn" 
+                                   onclick="printGirviListPanel('loanDetailsMainDiv')">
+                                    <img src="<?php echo $documentRoot; ?>/images/img/printer.png" alt='PRINT' title='PRINT'
+                                         width="20px" height="20px" /> print
+                                </a> 
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center" width="35px">
+                                <div id="loanDeleteButDiv">
+                                    <a style="cursor: pointer;" class="frm-btn iconbtn" onclick="javascript:deleteLoanDetails(<?php echo "$girviId"; ?>,<?php echo "$mlId"; ?>);">
+                                        <img src="<?php echo $documentRoot; ?>/images/img/cancel.png" alt='DELETE LOAN' title='DELETE LOAN'
+                                             width="20px" height="20px" /> delete loan
+                                    </a> 
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center" width="35px">
+                                <div id="loanUpdateButDiv">
+                                    <a style="cursor: pointer;" class="frm-btn iconbtn" onclick="javascript:updateLoanDetails(<?php echo "$mlId"; ?>,<?php echo "$loanId"; ?>);">
+                                        <img src="<?php echo $documentRoot; ?>/images/img/update-btn.png" alt='UPDATE LOAN' title='UPDATE LOAN'
+                                             width="20px" height="20px" /> update item
+                                    </a> 
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center">
+                        <tr>
+                            <td align="center" width="35px">
+                                <div id="loanReleaseDetailsButDiv">
+                                    <a style="cursor: pointer;" class="frm-btn iconbtn" onclick="javascript:releaseLoanDetails(<?php echo "$mlId"; ?>,<?php echo "$girviId"; ?>, '<?php echo $perPageNum; ?>');">
+                                        <img src="<?php echo $documentRoot; ?>/images/img/release.png" alt='RELEASE LOAN' title='RELEASE LOAN'
+                                             width="20px" height="20px" />Release loan 
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right" valign="middle" width="60px">
+                    <div id="ajaxLdGirviInfoBelowButtPanelDiv" style="visibility: hidden">
+                        <?php include 'omzaajld.php'; ?>
+                    </div>
+                </td> 
+                <td width="150px">
+                    <?php
+                    if ($totalNextGirvi > 0) {
+                        ?>
+                        <table border="0" cellpadding="2" cellspacing="0" align="right">
+                            <tr>
+                                <?php
+                                if ($perPageNum > 1) {
+                                    ?>
+                                    <td align="right" valign="bottom">
+                                        <div class="spaceLeft10">
+                                            <a style="cursor: pointer;" onclick="javascript:getPage('<?php echo $perPageNum - 1; ?>', '<?php echo $mlId; ?>', 'LOANINFO');">
+                                                <img src="<?php echo $documentRoot; ?>/images/prev32.png" alt='PREVIOUS LOAN' title='PREVIOUS LOAN'
+                                                     width="32px" height="32px"/> 
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <?php
+                                }
+                                ?><?php
+                                if ($totalGirvi > $perRowsPerPage) {
+                                    ?>
+                                    <td align="right" valign="bottom">
+                                        <div class="spaceLeft10">
+                                            <a style="cursor: pointer;" onclick="javascript:getPage('<?php echo $perPageNum + 1; ?>', '<?php echo $mlId; ?>', 'LOANINFO');">
+                                                <img src="<?php echo $documentRoot; ?>/images/next32.png" alt='NEXT LOAN' title='NEXT LOAN'
+                                                     width="32px" height="32px"/> 
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <?php
+                                }
+                                ?>
+                            </tr>
+                        </table>
+                        <?php
+                    }
+                    ?>
+                </td>
+            </tr>
+<!--            <tr>
+                <td align="left" colspan="8"><hr color="#FD9A00" size="0.1px" /></td>
+            </tr>-->
+        </table>
+    <?php } ?>
+</div>

@@ -1,3 +1,573 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php 
+/*
+ * **************************************************************************************
+ * @tutorial: Sell Invoice Details
+ * **************************************************************************************
+ * 
+ * Created on Dec 19, 2013 2:54:49 PM
+ *
+ * @FileName: omspinvnewtaxRetailWholesaleItemPayInfo.php
+ * @Author: SIMRAN:05JAN2023
+ * @AuthorEmailId:  info@softwaregen.com*/
 ?>
+<?php
+parse_str(getTableValues("SELECT * FROM user_transaction_invoice where utin_owner_id = '$sessionOwnerId' and "
+                . "utin_pre_invoice_no = '$slPrPreInvoiceNo' and utin_invoice_no = '$slPrInvoiceNo' $utin_date_str and "
+                . "utin_type IN ('APPROVAL', 'stock','rawMetal','ItemReturn','XRF','imitation','strsilver','RetailStock','PurchaseReturn') "
+                . "and utin_transaction_type IN ('sell','ESTIMATESELL','PURBYSUPP','ItemReturn','APPROVAL', 'PurchaseReturn') and "
+                . "utin_user_id = '$userId' and utin_firm_id IN ($strFrmId)"));
+
+// echo '$totalColumns=111===='.$totalColumns.'<br>';
+//$totalColumns = $totalColumns - 2;
+//                echo '$totalColumns==22===='.$totalColumns.'<br>';
+
+$netTotal = $utin_tot_amt_rec + $utin_cash_amt_rec;
+
+// Start Code for Other Charges @Author:PRIYANKA-12OCT2018
+if ($totalOthChgs > 0) {
+        $totOtherChags = ($utin_oth_chgs_amt - $totalOthChgs);
+} else {
+    $totOtherChags = $utin_oth_chgs_amt;
+}
+// End Code for Other Charges @Author:PRIYANKA-12OCT2018
+
+$taxAmt = $utin_pay_tax_amt;
+//echo '$taxAmt=='.$taxAmt;
+//echo '$cgstAmt == '.$cgstAmt.'<br />';
+//echo '$sgstAmt == '.$sgstAmt.'<br />';
+//echo '$igstAmt == '.$igstAmt.'<br />';
+//
+?>
+<?php
+$qSelSlPrItemDetails = "SELECT SUM(sttr_valuation) AS cryTotal FROM stock_transaction where sttr_owner_id='$sessionOwnerId' "
+        . "and sttr_pre_invoice_no='$slPrPreInvoiceNo' and sttr_invoice_no='$slPrInvoiceNo' "
+        . "and sttr_indicator IN ('stockCrystal') $sttr_date_str "
+        . "and sttr_transaction_type IN('STOCK', 'sell','PURCHASE','APPROVAL','APPROVALREC','ESTIMATE','ESTIMATESELL', 'PurchaseReturn') "
+        . "and sttr_user_id ='$userId' and sttr_status NOT IN('DELETED') order by sttr_id ASC";
+//
+//echo $qSelSlPrItemDetails;
+//
+$resSlPrItemDetails = mysqli_query($conn, $qSelSlPrItemDetails);
+$rowSlPrItemDetails = mysqli_fetch_array($resSlPrItemDetails);
+$cryTotal = $rowSlPrItemDetails['cryTotal'];
+$metalValuation = 0;
+if ($goldTotFFineWtType == '') {
+    $goldTotFFineWt = 0;
+    $goldTotFFineWtType = 'GM';
+}
+if ($silverTotFFineWtType == '') {
+    $silverTotFFineWt = 0;
+    $silverTotFFineWtType = 'GM';
+}
+if ($crystalTotFFineWtType == '') {
+    $crystalTotFFineWt = 0;
+    $crystalTotFFineWtType = 'CT';
+}
+$totalSlRtCt = 0;
+$totalGdRtCt = 0;
+$totalStRtCt = 0;
+if ($utin_othr_chgs_by == 'byWt') {
+    $utin_gd_oth_chgs_wt = convertWt($goldTotFFineWtType, $othChgsGdFnWtTyp, $othChgsGdFnWt);
+    $goldTotFFineWt1 += $utin_gd_oth_chgs_wt;
+    $utin_sl_oth_chgs_wt = convertWt($silverTotFFineWtType, $othChgsSlFnWtTyp, $othChgsSlFnWt);
+    $silverTotFFineWt1 += $utin_sl_oth_chgs_wt;
+}
+//
+$totalGdPaid = convertWt($goldTotFFineWtType, $rwslGdTotFnWtTyp, $rwslGdTotFnWt);
+$totalSlPaid = convertWt($silverTotFFineWtType, $rwslSlTotFnWtTyp, $rwslSlTotFnWt);
+$totalStPaid = convertWt($crystalTotFFineWtType, $rwslStTotFnWtTyp, $rwslStTotFnWt);
+//echo '$totalStPaid'.$totalStPaid;
+if ($utin_payment_mode == 'RateCut') {
+    $totalGdRtCt = convertWt($goldTotFFineWtType, $utin_gd_rtct_wt_typ, $utin_gd_rtct_wt);
+    $totalSlRtCt = convertWt($silverTotFFineWtType, $utin_sl_rtct_wt_typ, $utin_sl_rtct_wt);
+    $totalStRtCt = convertWt($crystalTotFFineWtType, $utin_st_rtct_wt_typ, $utin_st_rtct_wt);
+    $totalGdMtRtCt = $utin_gd_rate;
+    $totalSlMtRtCt = $utin_sl_rate;
+    $totalStMtRtCt = $utin_st_rate;
+    //echo '$totalGdMtRtCt::'.$totalGdMtRtCt;
+    $totalGdBal = $utin_gd_due_wt;
+    $totalSlBal = $utin_sl_due_wt;
+    $totalStBal = $utin_st_due_wt;
+} else if ($utin_payment_mode == 'NoRateCut') {
+    $totalGdBal = $utin_gd_ffn_wt + $totFinGdWt - $totalGdPaid;
+    $totalSlBal = $utin_sl_ffn_wt + $totFinSlWt - $totalSlPaid;
+    $totalStBal = $utin_st_nt_wt + $totFinStWt - $totalStPaid;
+}
+//
+////START TO ADD IF CONDITION @AUTHOR:HEMA26SEP19
+if ($labelType == 'ROUGH_ESTIMATE') {
+    $totalTaxAmount = $otherTaxAmt + $mkgChgsCGSTAmt + $mkgChgsSGSTAmt;
+    $utin_cash_balance = $utin_cash_balance - ($cgstAmt + $sgstAmt + $igstAmt); // THIS LINE ADDED @AUTHOR:SHRI26SEP19
+} else {
+    $totalTaxAmount = $cgstAmt + $sgstAmt + $igstAmt + $otherTaxAmt + $mkgChgsCGSTAmt + $mkgChgsSGSTAmt;
+}
+//END TO ADD IF CONDITION @AUTHOR:HEMA26SEP19
+//
+//echo '$totalTaxAmount ***== '.$utin_hallmark_chrgs_amt.'<br/>';
+//
+if ($utin_payment_mode == 'NoRateCut') {
+    $totalAmount = $utin_prev_cash_bal + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+} else {
+    //
+    // START CODE FOR PREV BAL SETTLED IN SELL/PURCHASE ENTRY @PRIYANKA-29JUNE18
+    if ($utin_transaction_type == 'PURBYSUPP') {
+        //
+        if ($utin_prev_amt_CRDR == 'DR' && $utin_prev_cash_bal != 0) {
+
+            $utin_prev_cash_bal = $utin_prev_cash_bal * -1;
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_total_amt + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                $totalAmount = $utin_total_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt + $utin_crystal_amt;
+            }
+        }
+        //
+        if ($utin_prev_amt_CRDR == 'CR' && $utin_prev_cash_bal != 0) {
+
+            $utin_prev_cash_bal = $utin_prev_cash_bal;
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt + $cryTotal;
+            }
+        } else {
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                if ($utin_pay_tax_on_total_amt_chk == 'checked') {
+                    $totalAmount = $utin_prev_cash_bal + om_round($utin_pay_cgst_tot_amt, 0) + $totalTaxAmount + $utin_courier_chgs_amt + $cryTotal - $utin_discount_amt_discup;
+                } else {
+                    $totalAmount = $utin_prev_cash_bal + $utin_pay_cgst_tot_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt + $cryTotal - $utin_discount_amt_discup;
+                }
+            }
+        }
+    } else {
+        //
+        if ($utin_prev_amt_CRDR == 'DR' && $utin_prev_cash_bal != 0) {
+
+            $utin_prev_cash_bal = $utin_prev_cash_bal;
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_total_amt + $utin_oth_chgs_amt + $utin_crystal_amt + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                $totalAmount = $utin_total_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt + $cryTotal;
+            }
+        }
+        //
+        if ($utin_prev_amt_CRDR == 'CR' && $utin_prev_cash_bal != 0) {
+
+            $utin_prev_cash_bal = $utin_prev_cash_bal * -1;
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt + $cryTotal;
+            }
+        } else {
+
+            if ($utin_discount_amt_discup == '' || $utin_discount_amt_discup == null || $utin_discount_amt_discup == 0) {
+                $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $utin_oth_chgs_amt + $cryTotal + $totalTaxAmount + $utin_courier_chgs_amt;
+            } else {
+                if ($utin_pay_tax_on_total_amt_chk == 'checked') {
+                    $totalAmount = $utin_prev_cash_bal + $utin_total_amt + $utin_oth_chgs_amt + $totalTaxAmount + $utin_courier_chgs_amt + $cryTotal - $utin_discount_amt_discup; // $utin_discount_amt_discup minus removed @AUTHOR:SHRI04OCT19
+                } else {
+                    $totalAmount = $utin_prev_cash_bal + $utin_pay_cgst_tot_amt + $totalTaxAmount + $utin_courier_chgs_amt + $utin_oth_chgs_amt;
+                }
+            }
+        }
+    }
+    // END CODE FOR PREV BAL SETTLED IN SELL/PURCHASE ENTRY @PRIYANKA-29JUNE18
+    // 
+    // 
+    //echo '$totalAmount 1== '.$totalAmount.'<br/>';
+    //echo '$utin_round_off_amt 1== '.$utin_round_off_amt.'<br/>';
+    //
+    //
+    if ($invName == 'ItemReturn') {
+        $totalAmount = $utin_tot_payable_amt;
+    }
+   
+}
+            
+?>
+
+<tr>
+                            <td colspan="12" class="customerDetails" style="border-bottom:1px solid #010000;border-right:0;">
+                                    <?php
+                           $fieldName = 'payableAmt';
+                    $label_field_check = '';
+                    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    if ($label_field_check == 'true') {
+                        $totalColumns++;
+                        $fieldName = 'payableAmtLb';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        ?>   
+                        <p style="color:#363636;font-size:<?php echo $label_field_font_size; ?>px;text-align:left;font-weight: 500;margin-bottom:5px;"><b style="color:#000;"> <?php echo $label_field_content; ?> : </b>                      
+                    <?php } ?>
+                    <?php
+                        if ($payableAmt_check == 'true') {
+                            ?>
+                         <?php
+                                    echo "$globalCurrency" . ' ' . ucwords(numToWords((abs($utin_cash_amt_rec) + 0))) . ' Only/-';
+                               // echo "$globalCurrency" . ' ' . ucwords(numToWords((abs(($utin_tot_amt_rec + $utin_cash_amt_rec + $utin_pay_cheque_amt + ($utin_pay_card_amt + $utin_pay_trans_chrg) + ($utin_online_pay_amt - $utin_pay_comm_paid))) + 0))) . ' Only/-';
+                                } else {
+                                    echo "$globalCurrency" . ' ' . ucwords(numToWords((abs($utin_cash_amt_rec - $roundMinus) + 0))) . ' Only/-';
+//                                echo "$globalCurrency" . ' ' . ucwords(numToWords((abs(($utin_tot_amt_rec + $utin_cash_amt_rec + $utin_pay_cheque_amt + ($utin_pay_card_amt + $utin_pay_trans_chrg) + ($utin_online_pay_amt - $utin_pay_comm_paid))) + 0))) . ' Only/-';
+                                
+                                ?>
+                            
+                    <?php } ?>
+                        </p>
+                                <?php
+                            $fieldName = 'tnc';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            if ($label_field_check == 'true') {
+                                $fieldName = 'tncLb';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                ?>
+                            <p style="color:#363636;font-size:<?php echo $label_field_font_size; ?> px;text-align:left;font-weight: 500;margin-bottom:5px;"><b style="color:#000;"> <?php echo $label_field_content; ?>: </b>
+                                 <?php
+                        $fieldName = 'tnc';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $noOfRows = substr_count($label_field_content, "\n") + 2;
+                        $height = $noOfRows * ($label_field_font_size * 3);
+                        ?>
+                                <span id="tncLabel" spellcheck="false" name="tncLabel" class="ff_calibri font_color_<?php echo $label_field_font_color; ?>" rows="<?php echo $noOfRows; ?>"
+                              style="text-align:left;width:50%;height:<?php echo $height; ?>;font-size:<?php echo $label_field_font_size; ?>px;word-break: break; width:100%;">
+                                <?php echo preg_replace('/\\\\/i', ' ', $label_field_content); ?> </span> </p>
+                            <?php } ?>
+                            </td>
+                        </tr>
+                        
+                         <tr>
+                         <?php
+                       
+                        $fieldName = 'amts';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $amtsFont = $label_field_font_size;
+                        if ($label_field_check == 'true' && $slPrItemValforpaymentpanel != 0) {
+                            $fieldName = 'amtsLb';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>
+                        <td colspan="11" style="text-align:right;padding:5px 5px;font-size:<?php echo $amtsFont; ?>px;color:#000"><b> <?php echo $label_field_content; ?></b></td>
+                        <?php } ?>
+                        <td style="text-align:right;padding:2px 5px;font-size:<?php echo $amtsFont; ?>px;color:#000;border-right:0;">
+                            <b>
+                            <?php
+                            //echo '$utin_payment_mode=='.$utin_payment_mode;
+                                    //
+                                    //
+                                    if ($utin_payment_mode == 'RateCut' || $utin_payment_mode == 'NoRateCut') {
+                                        echo formatInIndianStyle($utin_total_amt);
+                                    } 
+                                    else if ($sttrFixedPriceStatus == TRUE) {  
+                                        //
+                                        if ($utin_pay_cgst_tot_amt != NULL && $utin_pay_cgst_tot_amt != '') {
+                                            echo formatInIndianStyle($utin_pay_cgst_tot_amt);
+                                        } else {
+                                            echo formatInIndianStyle($utin_pay_igst_tot_amt);
+                                        }
+                                        //
+                                    }
+                                    else {
+                                        echo formatInIndianStyle($slPrItemValforpaymentpanel);
+                                    }
+                                    //
+                                    //
+                                    ?>
+                            </b>
+                        </td>
+                    </tr>
+                    <tr>
+                       <?php              
+                        $fieldName = 'othChPay';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $amtsFont = $label_field_font_size;
+                        if ($label_field_check == 'true' && $slPrItemValforpaymentpanel != 0) {
+                            $fieldName = 'othChPayLb';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>
+                         <td colspan="11" style="text-align:right;padding:5px 5px;font-size:<?php echo $label_field_font_size; ?>px;color:#000"><b> <?php echo $label_field_content; ?></b></td>
+                        
+                         <td style="text-align:right;padding:2px 5px;font-size:<?php echo $amtsFont; ?>px;color:#000;border-right:0;">
+                             <b>
+                                 <?php echo formatInIndianStyle(om_round($totalOthChgs)); ?>
+                             </b>
+                    </td>
+
+<?php } ?>                    </tr>
+                     <?php              
+                        $fieldName = 'mkgChrg';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $amtsFont = $label_field_font_size;
+                        if ($label_field_check == 'true') {
+                            $fieldName = 'mkgChrgLb';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>
+                         <td colspan="11" style="text-align:right;padding:5px 5px;font-size:<?php echo $label_field_font_size; ?>px;color:#000"><b> <?php echo $label_field_content; ?></b></td>
+                        
+                         <td style="text-align:right;padding:2px 5px;font-size:<?php echo $amtsFont; ?>px;color:#000;border-right:0;">
+                             <b>
+                                 <?php
+                        if ($sttr_total_making_charges != 0) {
+                             echo formatInIndianStyle(om_round($totOtherChags));// Code for Other Charges @Author:PRIYANKA-12OCT2018
+                        } else {
+                            echo" ";
+                        }
+                        ?>
+                             </b>
+                    </td>
+
+<?php } ?>                    </tr>
+                     <?php              
+                        $fieldName = 'hallmarkChrgs';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        $amtsFont = $label_field_font_size;
+                        if ($label_field_check == 'true' && $slPrItemValforpaymentpanel != 0) {
+                            $fieldName = 'hallmarkChrgsLb';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>
+                         <td colspan="11" style="text-align:right;padding:5px 5px;font-size:<?php echo $label_field_font_size; ?>px;color:#000"><b> <?php echo $label_field_content; ?></b></td>
+                        
+                         <td style="text-align:right;padding:2px 5px;font-size:<?php echo $amtsFont; ?>px;color:#000;border-right:0;">
+                             <b>
+                                 <?php echo formatInIndianStyle(om_round($utin_hallmark_chrgs_amt)); ?>
+                             </b>
+                    </td>
+
+<?php } ?>                    </tr>
+                    <tr>
+                        <?php
+                         $fieldName = 'jVat';
+                        parse_str(getTableValues("SELECT label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($label_field_check == 'true') {
+                           
+                                $fieldName = 'jVatLb';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                           
+                                ?>
+                        <td colspan="11"  style="text-align:right;padding:5px;font-size:<?php echo $label_field_font_size; ?>px;color:#000"><b><?php echo $label_field_content; ?></b></td>
+                            <?php } ?>
+                        <td style="text-align:right;padding:5px;font-size:<?php echo $label_field_font_size; ?>px;color:#000;border-right:0;"><b> <?php echo formatInIndianStyle($taxAmt); ?></b></td>
+                    </tr>
+                    <tr>
+                        <?php
+                      if ($utin_cash_amt_rec != 0 || $utin_pay_cheque_amt != 0 || $utin_pay_card_amt != 0) {
+                            $fieldName = 'cashPaid';
+                            parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            $cashPaidFont = $label_field_font_size;
+                            if ($label_field_check == 'true') {
+                                $fieldName = 'cashPaidLb';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                if ($label_field_font_size == 0) {
+                                    $label_field_font_size = 12;
+                                }
+                            }
+                                ?>
+                        <td colspan="11"  style="text-align:right;padding:5px;font-size:<?php echo $cashPaidFont ?>px;color:#000"><b><?php echo $label_field_content; ?></b></td>
+                        <?php } ?>
+                        <td style="text-align:right;padding:5px;font-size:<?php echo $cashPaidFont; ?>px;color:#000;border-right:0;">
+                            <b>
+                                <?php echo formatInIndianStyle($utin_cash_amt_rec + $utin_pay_cheque_amt + ($utin_pay_card_amt + $utin_pay_trans_chrg) + ($utin_online_pay_amt - $utin_pay_comm_paid)); ?>
+                            </b>
+                        </td>
+                    </tr>
+                    <tr class="gray-bottom">
+                         <?php
+                      if ($utin_cash_amt_rec != 0 || $utin_pay_cheque_amt != 0 || $utin_pay_card_amt != 0) {
+                            $fieldName = 'cashPaid';
+                            parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            $cashPaidFont = $label_field_font_size;
+                            if ($label_field_check == 'true') {
+                                $fieldName = 'cashPaidLb';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                if ($label_field_font_size == 0) {
+                                    $label_field_font_size = 12;
+                                }
+                            }
+                                ?>
+                        <td colspan="2"><b><?php echo $label_field_content; ?> : </b></td>
+                      <?php } ?>
+                        <td colspan="11"><b><?php echo formatInIndianStyle($utin_cash_amt_rec + $utin_pay_cheque_amt + ($utin_pay_card_amt + $utin_pay_trans_chrg) + ($utin_online_pay_amt - $utin_pay_comm_paid)); ?></b></td>
+                    </tr>
+                    
+                    <table class="invoicecenter" width="100%" style="border:0;">
+        <tr>
+            <td>
+                <table width="100%" style="padding:10px 20px">
+                 <tr>
+            <td>
+                <table width="100%" style="padding:10px 20px">
+                    <tr >
+                        <?php
+                        $fieldName = 'forName';
+                        $label_field_check = '';
+                        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($forName_check == 'true') {
+                            $totalColumns++;
+                            $fieldName = 'forNameLb';
+                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                            ?>
+                            <td>
+                                <div class="termsDetailsCondition">
+                                    <p style="margin-top:0px;margin-bottom:40px; font-size:<?php echo $label_field_font_size; ?>px;text-transform:uppercase;text-align:end;"><?php echo $label_field_content; ?>&nbsp;:&nbsp;&nbsp; <?php echo $firm_long_name; ?></p>
+                                </div>
+                            </td>
+                        <?php } ?>
+                    </tr>
+                <tr>
+                     <?php
+                                $fieldName = 'authCustSignLb';
+                                $qSelectCustSnap = "SELECT user_sign_snap FROM user WHERE user_id='$userId'";
+                                $resCustSnap = mysqli_query($conn, "$qSelectCustSnap");
+                                $rowCustSnap = mysqli_fetch_array($resCustSnap);
+                                $custSnapFiletype = 'png';
+                                $custSnap = $rowCustSnap['user_sign_snap'];
+                                //header("Content-type: $custSnapFiletype"); 
+                                ?>
+                </tr>
+                <tr style="display: flex;align-items:center;justify-content:space-between;margin:20px 0">
+                    <?php
+                    $fieldName = 'authCustSignLb';
+//
+                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,"
+                                    . "label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+//
+
+                    if ($label_field_check == 'true') {
+//                                    if ($custSnap != "") {
+                        ?>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td width="200px">
+                                        <?php if ($custSnap != "") { ?>
+                                            <img src="<?php echo $documentRootBSlash; ?>/include/php/omccsnim.php?cust_id=<?php echo "$userId"; ?>" 
+                                                 id="sign" border="0" style="border-color: #B8860B;width:150px; height:75px;" alt=""/>
+                                        </td>
+                                    <?php } else {
+                                        ?>
+                                        <td style="height:45px;"></td>
+                                    <?php }
+                                    ?>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: <?php echo $label_field_font_size; ?>px; font-weight: bold;"><?php echo $label_field_content; ?></td>
+                                </tr>                                        
+                            </table>
+                        </td>
+                    <?php } ?>
+<!--                    <td>
+                        <div>
+                            <p style="font-size:12px;text-align:center;font-weight:600;">
+                                <span style="font-size:12px;font-weight:normal;">Amit Vasa</span><br><span>----------------</span><br>
+                                Prepared By
+                            </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p style="font-size:12px;text-align:center;font-weight:600;">
+                                <span style="font-size:12px;font-weight:normal;"></span><br><span>----------------</span><br>
+                                Salesman
+                            </p>
+                        </div>
+                    </td>-->
+                    <td>
+                        <?php
+                        $fieldName = 'authSignLb';
+                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                        if ($label_field_check == 'true') {
+                            ?>
+                            <table>
+                                <tr>
+                                    <td style="height: 45px; text-align: right;">
+                                        <?php if ($firm_owner_sign_ftype != NULL || $firm_owner_sign_ftype != '') {
+                                            ?>
+                                            <img src="<?php echo $documentRootBSlash; ?>/include/php/omffgfowsi.php?firm_id=<?php echo $firm_id; ?>" 
+                                                 alt="" style="width:45px; "/>
+                                                 <?php
+                                             }
+                                             ?>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: <?php echo $label_field_font_size; ?>px; font-weight: bold;"><?php echo $label_field_content; ?></td>
+                                </tr>
+                            </table>
+                        </td>
+                    <?php } ?>
+                </tr>  
+                </table>
+            </td>
+        </tr>
+   <table border="0" cellpadding="0" cellspacing="0" align="center" 
+               <?php if ($panelName == 'PendingOrderInvoice') { ?>style="margin-top: 10px;"<?php } ?> >
+               <?php
+               if ($directPrintInvoice == 'YES') {
+                   ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/printer32.png" alt='Print' title='Print'
+                     width="32px" height="32px" style="display: none;" onload="window.print();"/> 
+                     <?php
+                 }
+                 ?>
+            <tr>
+                <td align="center" class="noPrint" colspan="<?php echo $colspan; ?>">
+                    <a style="cursor: pointer;" 
+                       onClick="window.print();">
+                        <img src="<?php echo $documentRootBSlash; ?>/images/printer32.png" alt='Print' title='Print'
+                             width="32px" height="32px" /> 
+                    </a>
+                </td>
+                <td align="center" class="noPrint">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td align="center" class="noPrint" colspan="<?php echo $colspan; ?>">
+                    <!-- <a style="cursor: pointer;" 
+                       href='localexplorer:D:\lrearth\live\live\htdocs\omunim\2\include\php\bat\omprint.bat' > -->
+                    <a style="cursor: pointer;" 
+                       href='localexplorer:C:\COM\bat\omprint.bat' >
+                        <img src="<?php echo $documentRootBSlash; ?>/images/printer_wifi_32.png" alt='Print' title='Print'
+                             width="32px" height="32px" /> 
+                    </a>
+                </td>
+                <td align="center" class="noPrint">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                </td>
+                <td align="center" class="noPrint" colspan="<?php echo $colspan; ?>">
+                    <!--                    <a style="cursor: pointer;" 
+                                           href='localexplorer:D:\lrearth\live\live\htdocs\omunim\2\include\php\bat\omprint.bat' >-->
+                    <a style="cursor: pointer;" onClick="var url = window.location.href;
+                            url += '&emailStatus=Yes';
+                            window.location.href = url;">
+                        <img src="<?php echo $documentRootBSlash; ?>/images/email_48x48.png" alt='Email' title='Email'
+                             width="32px" height="32px" /> 
+                    </a>
+                </td>
+                <td align="center" class="noPrint">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                </td>
+                <td align="center" class="noPrint" colspan="<?php echo $colspan; ?>">
+                    <a style="cursor: pointer;" 
+                      onClick="var url = window.location.href;
+                            url += '&whatsappStatus=Yes';
+                            window.location.href = url;"" >
+                        <img src="<?php echo $documentRootBSlash; ?>/images/whatsapp24.png" alt='Send Whatsapp' title='Send Whatsapp'
+                             width="32px" height="32px" /> 
+                    </a>
+                    <!--                    <a style="cursor: pointer;" 
+                                           onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/ominvoicepdf.php');" >
+                                            <img src="<?php echo $documentRootBSlash; ?>/images/whatsapp24.png" alt='Send Whatsapp' title='Send Whatsapp'
+                                                 width="32px" height="32px" /> 
+                                        </a>-->
+                </td>
+            </tr>
+        </table>
+ </table>
+

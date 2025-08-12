@@ -1,3 +1,95 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADoBAAAXG02noQQLk2kkR/2/ifxjctnYNph64X7n5vIGQkGdNBUu83CAd/nKnqNS1p4ei8nkyZCJ7Hg6X3vN1U18RSe5UovFkg/BwvfYJqdmsknJ6vZ8QEoV/q+rNfwdRddDiaoTSL2zWcj5QucY2kj7Vp1N9m51oIy46/Sw6GGx3Le6wcTbbdxJDh0h/4xmGT72ZDeGpiK95ysApPaF2ykXMMU0j2mVGFogc6SnetcIBkyyFecfQZByY/DfUHROufPM94FK2T/GkmIlOMKS2t4CdpBLucH7qFnoKw9v4F22y2AYFnG+D9NcSgWAOMMFFzxdKFSQSXv1GU7vNRZ5jHQVF32Rs3SymUWffZjSLMICI0/EdVg0CPJ3QwYC7V9htL5YEtZi0ZSV8oYbqJ/dYRSnK7PIVLc0ih/zHzJ1ofQqFS26hrVHrcUD1Iu4RbY+8YS7xFYBfLtLyYZelaZjXL6AGNncblglo/8dqI0clx3Yn8u9eSPhWKKvP0gJ9uv+NXy2SnW3M4oCdr2yCNzVLtLDHNgf6zgwW7FjtvUItK3+3t54cVPA3tjDMzl1UuHViSrI5ju/AlOli7eNvzRvhAKYaQuBAHeT4FBleBx1/emNLAoJXTx+5uH6ilOKRk35pcjRu6TtSCzW2X7Vy0v6gY+aZT92af98ufjUhmK5TnfKf50qpm1/pfRgoF4X3pyVP3AGpSSezlQNHLZY1ZPJ8YeZFQ620LTDn6Rck6Jwe3kT4SDSEzavqz7VtcqkRl6WzjC+beCD0h6pE25gzvlqmy5lkkSw0Y7Ze8jj1hUY9qvdCGoritQDnUjEzZrna3/bVZkMB6ZKu0NxQiIjGGDV/tianRIhYCecYclwdDM8BLnOnTA5FE4EBXy1F5h/DAy4qEtdNSv/spAEES7VzpuW9W+yi0/9oDTjc0nFwQQpoGLGlLaT2aZ8Bkn3a010dAyVfURmBpMMFvCrBkWiyV+MYfTEi3iqM7bjCUBvsMuv1V9PEWwh/14Bhd1guE9ASwVPlT6I7SYkZk7Gpg3HkscImDQcFjTyZF7dvtZY9M60JWQ7PBQXS/S22ZbX6Lgi4Kiv5YFn7Zo3zP12/nGaZhuEAxss/zZcIdAESV3jixZ8wh72/qPeLL/PEix/30KXSgZENP0CBaV45V0anGiSOfgBVhIoS2eBt/7r4BL+THwBlN+q695mjQORYg0bzq8N+VpZ7SwyBvpYSdnA396JyrUgkvez9KGGRF6PuWqTwMOcWuNgUr1LQ2WaHX1yVTS6iJjkxE6OGYU9BCA+i1rQWluk8MguTUHlpp5/dpSSUMld42uGHBODZnvWi7T1/R1Knx017tD7OCnpb2Pj9oba7/pbdtcoL8kmXynnHXC5TO3v3AhKcepUM7Fuyuv9gC3oxtdFLbpPoNv9IzaF17aPYdjIbUxHJ4rqCeGWevXWY7XPqBRDJu2mmZzI3sUxhomtlprfqpoAyQNKAf9pLWy1P6R+5YLk4rbXBh3j7s6DR5Ef/6A5dKVpTqGnPyp6BFNuzY+u10kmUQ3JK4oDwSkJxK/0lrwgeYyLObbLr6WhRSDGzP2Xpu9zbdXeH+Dwy2Tfri95wXKxPXJEl4heFX8/VZfOPh/b0gQ93eSLfajFr8dKdwHdLa4uK8oY5gxroYNOTs4Pub+S/BZtU0PKcDLgxAAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Girvi Transfer Table
+ * **************************************************************************************
+ * 
+ * Created on Jun 17, 2012 2:20:39 PM
+ *
+ * @FileName: omtbgvtn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//TO ADD NEW FIELDS AND REMOVE UNIQUE KEY @AUTHOR: SANDY17DEC13
+//START CODE TO ADD COLUMN gtrans_setl_sts @OMMODTAG SHRI_12AUG15
+$query = "CREATE TABLE IF NOT EXISTS girvi_transfer(
+gtrans_id				INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+gtrans_cust_id				VARCHAR(16),
+gtrans_girvi_id				VARCHAR(16),
+gtrans_prin_id                          VARCHAR(30),
+gtrans_own_id				VARCHAR(16), 
+gtrans_firm_id 				VARCHAR(16),
+gtrans_jrnlid     			INT,
+gtrans_firm_type                        VARCHAR(100),
+gtrans_firm_girvi_no			INT,
+gtrans_exist_firm_id 			VARCHAR(16),
+gtrans_prin_amt 			INT,
+gtrans_ROI				FLOAT,
+gtrans_IROI				FLOAT,
+gtrans_ROI_Id				INT,
+gtrans_ROI_typ				VARCHAR(30),
+gtrans_pre_serial_num                   VARCHAR(10),
+gtrans_serial_num			INT,
+gtrans_packet_num			VARCHAR(30),
+gtrans_token_num			VARCHAR(50),
+gtrans_DOB				VARCHAR(50),
+gtrans_DOR				VARCHAR(50),
+gtrans_total_time			VARCHAR(50),
+gtrans_total_int			FLOAT,
+gtrans_total_amt			FLOAT,
+gtrans_paid_amt				FLOAT,
+gtrans_paid_int				FLOAT,
+gtrans_discount_amt			FLOAT,
+gtrans_ent_dat 				DATETIME,
+gtrans_upd_sts				VARCHAR(50),
+gtrans_monthly_intopt                   VARCHAR(10),
+gtrans_compounded_opt                   VARCHAR(15),
+gtrans_int_opt                          VARCHAR(10),
+gtrans_comm 				VARCHAR(2000),
+gtrans_time_period                      VARCHAR(30),
+gtrans_acc_id                           VARCHAR(30),
+gtrans_cheque_no                        VARCHAR(30),
+gtrans_pay_oth_info                     VARCHAR(100),
+gtrans_prin_typ                         VARCHAR(20),
+gtrans_trans_loan_id                    VARCHAR(30),
+gtrans_cr_acc_id		        VARCHAR(50),
+gtrans_cash_acc_id                      VARCHAR(16),
+gtrans_loan_acc_id                      VARCHAR(16),
+gtrans_int_rec_acc_id                   VARCHAR(16),
+gtrans_disc_acc_id                      VARCHAR(16),
+global_gt_pre_serial_num                VARCHAR(10),
+global_gt_serial_num			INT,
+gtrans_staff_id                       	VARCHAR(16),
+gtrans_hindi_DOB                        VARCHAR(50),
+gtrans_hindi_DOR                        VARCHAR(50),
+gtrans_ltran_id                         INT,
+gtrans_lstran_id                        VARCHAR(50),
+gtrans_act_sts                          VARCHAR(16),
+gtrans_trans_type                       VARCHAR(30),
+gtrans_rel_sts                          VARCHAR(16),
+gtrans_fst_mn_int                       VARCHAR(16),
+gtrans_interest_amt                     FLOAT, 
+last_column                VARCHAR(1),UNIQUE KEY (gtrans_pre_serial_num,gtrans_serial_num))AUTO_INCREMENT=1001"; //unique key added @Author:PRIYA06DEC14
+//START CODE TO ADD COLUMN gtrans_setl_sts @OMMODTAG SHRI_12AUG15
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//gtrans_trans_loan_id added @Author:PRIYA09DEC14
 ?>

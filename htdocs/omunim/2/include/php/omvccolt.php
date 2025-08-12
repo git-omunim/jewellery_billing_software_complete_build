@@ -1,3 +1,186 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on May 25, 2011 11:02:13 AM
+ *
+ * @FileName: omvccolt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+
+<table border="0" cellpadding="2" cellspacing="2" width="50%" align="left" style="border:1px dashed #969696;background:#f2f2f2;border-radius:5px;">
+    <tr align="center">
+        <td align="center">
+            <div class="firmList">
+                <form id="getCountry" name="getCountry" method="post"
+                      action="javascript:getCountry(document.getElementById('getCountry'));">
+                    <table border="0" cellpadding="2" cellspacing="2">
+                        <tr align="center">
+                            <td align="left" class="frm-lbl" style="font-weight:600;font-size:20px;text-transform:uppercase;border-bottom:1px solid;">Country Name</td>
+                            <td align="left" class="frm-lbl" style="font-weight:600;font-size:20px;text-transform:uppercase;border-bottom:1px solid;">Date</td>
+                        </tr>
+                        <?php
+                        // how many rows to show per page
+                        $perRowsPerPage = 50;
+
+                        // by default we show first page
+                        $perPageNum = 1;
+
+                        // if $_GET['page'] defined, use it as page number
+                        if (isset($_GET['page'])) {
+                            $perPageNum = $_GET['page'];
+                        }
+
+                        // counting the offset
+                        $perOffset = ($perPageNum - 1) * $perRowsPerPage;
+
+                        $qSelCountryCount = "SELECT country_id FROM country where country_own_id='$_SESSION[sessionOwnerId]' LIMIT $perOffset, 10";
+                        $resCountryCount = mysqli_query($conn, $qSelCountryCount);
+                        $totalCountries = mysqli_num_rows($resCountryCount);
+
+                        $qSelCountries = "SELECT country_id,country_name,country_ent_dat FROM country order by country_ent_dat desc LIMIT $perOffset, $perRowsPerPage";
+                        $resCountries = mysqli_query($conn, $qSelCountries);
+                        $totalNextCountries = mysqli_num_rows($resCountries);
+
+                        if ($totalCountries <= 0) {
+                            echo "<tr><td colspan=" . "2" . "><h5>Countries Not Available.</h5></td></tr>";
+                        }
+
+                        while ($rowCountries = mysqli_fetch_array($resCountries, MYSQLI_ASSOC)) {
+
+                            $countryDate = date_create($rowCountries['country_ent_dat']);
+                            $dateCountry = date_format($countryDate, 'd M Y');
+
+                            echo "<tr><td><input type=" . "\"submit\"" . " name=" . "\"cityName\"" . " id=" . "\"{$rowCountries['country_id']}\"" . " value=" . "\"{$rowCountries['country_name']}\"" . " class=" . "\"frm-btn-lnk\"" . " onclick=" . "\"setCountryId(this);\"" . "></td><td>$dateCountry</td></tr>";
+                        }
+                        ?>
+                    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+    <?php
+    if ($totalNextCountries > 0) {
+        ?>
+        <tr align="center">
+            <td align="center">
+                <table border="0" cellpadding="2" cellspacing="0" align="center" width="50%">
+                    <tr>
+                        <?php
+                        if ($perPageNum > 1) {
+                            ?>
+                            <td align="center">
+                                <!---Start to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                <div style="text-align: center;">
+                                    <?php
+                                    $inputId = "prev_countries";
+                                    $inputType = 'submit';
+                                    $inputFieldValue = 'Previous';
+                                    $inputIdButton = "prev_countries";
+                                    $inputNameButton = 'prev_countries';
+                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                    // This is the main class for input flied
+                                    $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style_nav;
+                                    $inputStyle = "width: 100%;height: auto; padding: 5px;font-size: 14px;background-color: #DCEAFF;color: #0F118A;border: 1px solid #7ab0fe;border-radius: 5px !important;";
+                                    $inputLabel = 'Previous'; // Display Label below the text box
+//
+                                    // This class is for Pencil Icon                                                           
+                                    $inputIconClass = '';
+                                    $inputPlaceHolder = '';
+                                    $spanPlaceHolderClass = '';
+                                    $spanPlaceHolder = '';
+                                    $inputOnChange = "";
+                                    $perPageNumVar = $perPageNum - 1;
+                                    $inputOnClickFun = 'javascript:navigateCountries("' . $perPageNumVar . '");';
+                                    $inputKeyUpFun = '';
+                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                    $inputMainClassButton = '';           // This is the main division for Button
+                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                    ?>
+                                </div>
+                                <!--				<form name="prev_countries" id="prev_countries"
+                                                                        action="javascript:navigateCountries(<?php echo $perPageNum - 1; ?>);"
+                                                                        method="get"><input type="submit" value="Previous" class="frm-btn"
+                                                                        maxlength="30" size="15" /></form>-->
+                                <!---End to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                            </td>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if ($totalCountries > 5) {
+                            ?>
+                            <td align="center">
+                                <!---Start to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                <div style="text-align: center;">
+                                    <?php
+                                    $inputId = "next_countries";
+                                    $inputType = 'submit';
+                                    $inputFieldValue = 'Next';
+                                    $inputIdButton = "next_countries";
+                                    $inputNameButton = 'next_countries';
+                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                    // This is the main class for input flied
+                                    $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style_nav;
+                                    $inputStyle = "width: 100%;height: auto; padding: 5px;font-size: 14px;background-color: #DCEAFF;color: #0F118A;border: 1px solid #7ab0fe;border-radius: 5px !important; ";
+                                    $inputLabel = 'Next'; // Display Label below the text box
+//
+                                    // This class is for Pencil Icon                                                           
+                                    $inputIconClass = '';
+                                    $inputPlaceHolder = '';
+                                    $spanPlaceHolderClass = '';
+                                    $spanPlaceHolder = '';
+                                    $inputOnChange = "";
+                                    $perPageNumVar = $perPageNum + 1;
+                                    $inputOnClickFun = 'javascript:navigateCountries("' . $perPageNumVar . '");';
+                                    $inputKeyUpFun = '';
+                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                    $inputMainClassButton = '';           // This is the main division for Button
+                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                    ?>
+                                </div>
+                                <!--				<form name="next_countries" id="next_countries"
+                                                                        action="javascript:navigateCountries(<?php echo $perPageNum + 1; ?>);"
+                                                                        method="get"><input type="submit" value="Next" class="frm-btn"
+                                                                        maxlength="30" size="15" /></form>-->
+                                <!---End to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                            </td>
+                            <?php
+                        }
+                        ?>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <?php
+    }
+    ?>
+</table>

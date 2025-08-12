@@ -1,3 +1,114 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Note - Use this file to send only Online Munim System Messages Like Firm Delete or Password Reset
+ * **************************************************************************************
+ * 
+ * Created on 23-Sep-2023 7:14:24 am
+ *
+ * @FileName: omSmsSystemMessages.php
+ * @Author: Online Munim Developement Team
+ * @AuthorEmailId:  info@omunim.com
+ * @ProjectName: omunim_daily
+ * @version 3.0.0
+ * @Copyright (c) 2022 www.omunim.com
+ * @All rights reserved
+ *  Copyright 2022 OMUNIM SOFTWARE PVT LTD
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+include 'system/omsachsc.php';
+include_once './ommpfndv.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+if ($globalProcess == 'YES') {
+    //
+    $ownUserId = $loginId;
+    //
+} else {
+    //
+    $ownUserId = $_SESSION['sessionUserId'];
+    //
+}
+//
+$otpCode = mt_rand(100000, 999999);
+$otpCodeMD5 = md5($otpCode);
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$custId = $_REQUEST['user_id'];
+$userMob = $_REQUEST['user_mobile'];
+if ($userMob == '' || $userMob == null)
+    $userMob = $_SESSION['sessionOwnerMobNo'];
+//
+$type = $_REQUEST['type'];
+if ($type == 'OwenerOTP') {
+    //echo '<br/>$systemOnOrOff' . $systemOnOrOff;
+    if ($systemOnOrOff == 'ON') {
+        //
+        $qToCheckOwn = "SELECT own_id from owner";
+        $resToCheckOwn = mysqli_query($conn, $qToCheckOwn);
+        $noOfRowsToCheckOwn = mysqli_num_rows($resToCheckOwn);
+        //
+        //echo '<br/>$noOfRowsToCheckOwn' . $noOfRowsToCheckOwn;
+        if ($noOfRowsToCheckOwn > 0) {
+            //
+            $qUpOtp = "UPDATE owner SET own_otp='$otpCodeMD5' WHERE own_id='$custId'";
+            //echo '<br/>$qUpOtp' . $qUpOtp;
+            if (!mysqli_query($conn, $qUpOtp)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            //
+        } else {
+            //
+            $qUpOtp = "INSERT INTO owner (own_id, own_otp) VALUES ('$custId', '$otpCodeMD5');";
+            //echo '<br/>$qUpOtp' . $qUpOtp;
+            if (!mysqli_query($conn, $qUpOtp)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        }
+    } else {
+        $qUpOtp = "UPDATE owner SET own_otp='$otpCodeMD5' WHERE own_id='$custId'";
+        if (!mysqli_query($conn, $qUpOtp)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+} else {
+    $qUpOtp = "UPDATE user SET user_otp='$otpCodeMD5' WHERE user_id='$custId' and user_owner_id='$sessionOwnerId'";
+    if (!mysqli_query($conn, $qUpOtp)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+
+//
+$mobileNo = stripslashes($userMob);
+//
+$messType = 'TSMS';
+$msgText = "Dear Customer,
+Your OTP for Online Munim portal is $otpCode. Please do not share this OTP.
+
+Regards,
+Online Munim Software";
+//
+$msgText = urlencode($msgText);
+//
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://my.omunim.in/include/php/onsmsapi.php");
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "productKey=101375&ownUserId=sgen&mobileNo=$mobileNo&messType=$messType&msgText=$msgText");
+$omSMSResult = curl_exec($ch);
+curl_close($ch);
+//echo "productKey=101375&ownUserId=sgen&mobileNo=$mobileNo&messType=$messType&msgText=$msgText";
+echo $omSMSResult;
+// 
 ?>

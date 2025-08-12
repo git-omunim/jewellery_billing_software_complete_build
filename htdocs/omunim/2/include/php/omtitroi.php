@@ -1,3 +1,68 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Insert Table for TROI @Author: KHUSH23JAN13
+ * **************************************************************************************
+ * 
+ * Created on Jan 23, 2013 6:57:42 PM
+ *
+ * @FileName: omtitroi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//require_once 'system/omssopin.php';
+// Monthly ROI
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','1.0','1.0','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','1.5','1.5','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','2.0','2.0','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type,troi_default) values ('$ownerId','2.5','2.5','Monthly','checked')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','3.0','3.0','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','3.5','3.5','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','4.0','4.0','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','4.5','4.5','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','5.0','5.0','Monthly')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+
+// Annually ROI
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','7.0','7.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','8.0','8.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','9.0','9.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','10.0','10.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','11.0','11.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','12.0','12.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','13.0','13.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type,troi_default) values ('$ownerId','14.0','14.0','Annually','checked')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+$qInsertTROI  = "insert into troi(troi_own_id,troi_value,tiroi_value,troi_type) values ('$ownerId','15.0','15.0','Annually')";
+if (!mysqli_query($conn,$qInsertTROI)){die('Error: ' . mysqli_error($conn));}
+
 ?>

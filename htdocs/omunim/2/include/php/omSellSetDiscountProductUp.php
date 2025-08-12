@@ -1,3 +1,440 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: SELL PANEL - SET DISCOUNT - PRODUCT UPDATE FILE @AUTHOR-PRIYANKA-31OCT2020
+ * *************************************************************************************************
+ *
+ * Created on OCT 31, 2020 05:42:00 PM 
+ * *************************************************************************************************
+ * @FileName: omSellSetDiscountProductUp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.7.25
+ * @version: OMUNIM 2.7.25
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ * *************************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @AUTHOR-PRIYANKA-31OCT2020
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+//
+//
+$stockTransTodayDateFormat = date("d-m-Y");
+$stockTransTodayDate = strtotime($stockTransTodayDateFormat);
+//
+//
+// GET DETAILS OF REMAINING PRODUCTS IN SAME INVOICE @PRIYANKA-31OCT2020
+$selProductDetQuery = "SELECT * FROM stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                    . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$itst_firm_id' "
+                    . "AND sttr_metal_type = '$itst_metal_type' "
+                    . "AND sttr_indicator = 'stock' "
+                    . "AND sttr_purity = '$tunch' "
+                    . "AND sttr_item_category = '$itst_item_category' "
+                    . "AND sttr_item_name = '$itst_item_name' "
+                    . "AND sttr_pre_invoice_no = '$slPrPreInvoiceNo' AND sttr_invoice_no = '$slPrInvoiceNo' "
+                    . "ORDER BY sttr_id DESC";
+//
+//echo '$selProductDetQuery == ' . $selProductDetQuery . '<br />';
+//
+$resProductDetQuery = mysqli_query($conn, $selProductDetQuery);
+$noOfProductDetRows = mysqli_num_rows($resProductDetQuery);
+//
+//
+if ($noOfProductDetRows > 0) { // NO. OF PRODUCTS @PRIYANKA-31OCT2020
+    //
+    while($rowProdDet = mysqli_fetch_array($resProductDetQuery)) {
+        //
+        //
+        //echo 'disc_making_discount == ' . $disc_making_discount . '<br />';
+        //echo 'disc_stone_discount == ' . $disc_stone_discount . '<br />';
+        //echo 'disc_product_discount == ' . $disc_product_discount . '<br />';
+        //
+        //
+        // **************************************************************************************************
+        // **************************************************************************************************
+        // DATE STR @PRIYANKA-23NOV2020
+        $discStockTransDateStr = "AND (UNIX_TIMESTAMP(STR_TO_DATE(sttr_disc_start_date,'%d %b %Y')) <= '$stockTransTodayDate') "
+                               . "AND ('$stockTransTodayDate' <= UNIX_TIMESTAMP(STR_TO_DATE(sttr_disc_end_date,'%d %b %Y')))";
+        //
+        //
+        parse_str(getTableValues("SELECT sttr_disc_making_discount as stockTransDiscMakingDiscount, "
+                               . "sttr_disc_stone_discount as stockTransDiscStoneDiscount, "
+                               . "sttr_disc_product_discount as stockTransDiscProductDiscount "
+                               . "FROM stock_transaction "
+                               . "WHERE sttr_id = '$rowProdDet[sttr_sttr_id]' AND sttr_indicator IN ('stock') "
+                               . "AND sttr_transaction_type != 'sell' "
+                               . "AND sttr_disc_active = 'checked'  $discStockTransDateStr"));
+        //
+        //
+        //echo '<br />';
+        //echo "SELECT sttr_disc_making_discount as stockTransDiscMakingDiscount, "
+        //   . "sttr_disc_stone_discount as stockTransDiscStoneDiscount, "
+        //   . "sttr_disc_product_discount as stockTransDiscProductDiscount "
+        //   . "FROM stock_transaction  "
+        //   . "WHERE sttr_id = '$rowProdDet[sttr_sttr_id]' AND sttr_indicator IN ('stock') "
+        //   . "AND sttr_transaction_type != 'sell' "
+        //   . "AND sttr_disc_active = 'checked'  $discStockTransDateStr" . '<br />';
+        //
+        //
+        //echo 'stockTransDiscMakingDiscount == ' . $stockTransDiscMakingDiscount . '<br />';
+        //echo 'stockTransDiscStoneDiscount == ' . $stockTransDiscStoneDiscount . '<br />';
+        //echo 'stockTransDiscProductDiscount == ' . $stockTransDiscProductDiscount . '<br />';
+        //
+        // **************************************************************************************************
+        // **************************************************************************************************
+        // 
+        // 
+        // **************************************************************************************************
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // **************************************************************************************************
+        //
+        //
+        // GET DETAILS OF STONES IN PRODUCT @PRIYANKA-31OCT2020
+        $querySelStoneDetails = "SELECT * FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' "
+                              . "and sttr_sttr_id = '$rowProdDet[sttr_id]' "
+                              . "and sttr_indicator IN ('stockCrystal') "
+                              . "and sttr_transaction_type = 'sell' and sttr_current_status NOT IN ('Deleted')"; 
+        //
+        //
+        $resultStoneDetails = mysqli_query($conn, $querySelStoneDetails);
+        $numOfStoneRows = mysqli_num_rows($resultStoneDetails);
+        //
+        //echo '<br/>$querySelStoneDetails == ' . $querySelStoneDetails . '<br/>';
+        //
+        $totalStoneValuation = 0;
+        //
+        while($rowStoneDetails = mysqli_fetch_array($resultStoneDetails)) {
+                //
+                //
+                $prevStoneAmt = $rowStoneDetails['sttr_stone_amt']; // STONE AMT @PRIYANKA-31OCT2020
+                //
+                // **************************************************************************************************
+                // **************************************************************************************************
+                if ($stockTransDiscStoneDiscount != NULL && $stockTransDiscMakingDiscount != NULL &&
+                    $stockTransDiscProductDiscount != NULL) {
+                    $prodStoneDisc = $stockTransDiscStoneDiscount; // STOCK TRANS STONE DISCOUNT @PRIYANKA-23NOV2020
+                } else {
+                    $prodStoneDisc = $disc_stone_discount; // STONE DISCOUNT @PRIYANKA-31OCT2020
+                }
+                // **************************************************************************************************
+                // **************************************************************************************************
+                //
+                //
+                $prevStoneCGSTPer = $rowStoneDetails['sttr_tot_price_cgst_per']; // STONE CGST % @PRIYANKA-31OCT2020
+                $prevStoneSGSTPer = $rowStoneDetails['sttr_tot_price_sgst_per']; // STONE SGST % @PRIYANKA-31OCT2020
+                $prevStoneIGSTPer = $rowStoneDetails['sttr_tot_price_igst_per']; // STONE IGST % @PRIYANKA-31OCT2020
+                //
+                //
+                if ($prodStoneDisc > 0) { // STONE DISCOUNT @PRIYANKA-31OCT2020
+                    //
+                    // CALCULATE STONE DISCOUNT AMT @PRIYANKA-31OCT2020
+                    $prodStoneDiscAmt = (($prevStoneAmt * $prodStoneDisc) / 100);
+                    //
+                    if ($prodStoneDiscAmt > 0) {
+                        // STONE VAL AFTER DISCOUNT @PRIYANKA-31OCT2020
+                        $newStoneAmount = ($prevStoneAmt - $prodStoneDiscAmt);      
+                        //
+                    } else {
+                        // STONE VAL @PRIYANKA-31OCT2020
+                        $newStoneAmount = $rowStoneDetails['sttr_valuation'];
+                        //
+                    }
+                    //
+                } else {
+                    //
+                    $prodStoneDisc = $rowStoneDetails['sttr_stone_discount_per']; // STONE DISCOUNT @PRIYANKA-31OCT2020
+                    $prodStoneDiscAmt = $rowStoneDetails['sttr_stone_discount_amt']; // STONE DISC AMT @PRIYANKA-31OCT2020  
+                    $newStoneAmount = $rowStoneDetails['sttr_valuation']; // STONE VAL @PRIYANKA-31OCT2020
+                    //
+                }
+                //
+                // CALCULATE STONE CGST AMT @PRIYANKA-31OCT2020
+                if ($prevStoneCGSTPer > 0) {
+                    $newStoneCGSTAmt = (($newStoneAmount * $prevStoneCGSTPer) / 100);
+                } else {
+                    $newStoneCGSTAmt = $rowStoneDetails['sttr_tot_price_cgst_chrg'];
+                }
+                //
+                // CALCULATE STONE SGST AMT @PRIYANKA-31OCT2020
+                if ($prevStoneSGSTPer > 0) {
+                    $newStoneSGSTAmt = (($newStoneAmount * $prevStoneSGSTPer) / 100);
+                } else {
+                    $newStoneSGSTAmt = $rowStoneDetails['sttr_tot_price_sgst_chrg'];
+                }
+                //
+                // CALCULATE STONE IGST AMT @PRIYANKA-31OCT2020
+                if ($prevStoneIGSTPer > 0) {
+                    $newStoneIGSTAmt = (($newStoneAmount * $prevStoneIGSTPer) / 100);
+                } else {
+                    $newStoneIGSTAmt = $rowStoneDetails['sttr_tot_price_igst_chrg'];
+                }
+                //
+                //
+                // TOTAL STONE GST AMT @PRIYANKA-31OCT2020
+                $totalStoneGSTAmount = ($newStoneCGSTAmt + $newStoneSGSTAmt + $newStoneIGSTAmt);
+                //
+                // FINAL STONE VALUATION @PRIYANKA-31OCT2020
+                $newFinalStoneVal = ($newStoneAmount + $totalStoneGSTAmount);
+                //
+                //
+                if ($prodStoneDisc > 0) { // STONE DISCOUNT @PRIYANKA-31OCT2020
+                    //
+                    // UPDATE STONE ENTRY @PRIYANKA-31OCT2020
+                    $updateStoneQuery = "UPDATE stock_transaction SET "
+                                      . "sttr_stone_discount_per = '$prodStoneDisc', sttr_stone_discount_amt = '$prodStoneDiscAmt', "
+                                      . "sttr_valuation = '$newStoneAmount', "
+                                      . "sttr_tot_price_cgst_chrg = '$newStoneCGSTAmt', "
+                                      . "sttr_tot_price_sgst_chrg = '$newStoneSGSTAmt', "
+                                      . "sttr_tot_price_igst_chrg = '$newStoneIGSTAmt', "
+                                      . "sttr_tot_tax = '$totalStoneGSTAmount', "
+                                      . "sttr_final_valuation = '$newFinalStoneVal' "
+                                      . "WHERE sttr_id = '$rowStoneDetails[sttr_id]' AND sttr_owner_id = '$sessionOwnerId' "
+                                      . "AND sttr_indicator = 'stockCrystal' AND sttr_transaction_type = 'sell'";
+                    //
+                    if (!mysqli_query($conn, $updateStoneQuery)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                    //
+                    //
+                }
+                // 
+                // SUM OF ALL FINAL STONE VALUATION @PRIYANKA-31OCT2020
+                $totalStoneValuation += ($newFinalStoneVal);
+                //
+                //
+        }
+        //
+        //
+        // **************************************************************************************************
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // **************************************************************************************************
+        //
+        //
+        $prevTotalMakingAmt = $rowProdDet['sttr_total_making_amt']; // MAKING CHARGES @PRIYANKA-31OCT2020
+        //
+        // **************************************************************************************************
+        // **************************************************************************************************
+        if ($stockTransDiscStoneDiscount != NULL && $stockTransDiscMakingDiscount != NULL &&
+            $stockTransDiscProductDiscount != NULL) {
+            $prodMakingDisc = $stockTransDiscMakingDiscount; // STOCK TRANS MAKING DISCOUNT @PRIYANKA-23NOV2020    
+        } else {
+            $prodMakingDisc = $disc_making_discount; // MAKING DISCOUNT @PRIYANKA-31OCT2020    
+        }   
+        // **************************************************************************************************
+        // **************************************************************************************************
+        //
+        //
+        if ($prodMakingDisc > 0) { // MAKING DISCOUNT @PRIYANKA-31OCT2020 
+            //
+            // CALCULATE MKG DISCOUNT AMT @PRIYANKA-31OCT2020
+            $prodMakingDiscAmt = (($prevTotalMakingAmt * $prodMakingDisc) / 100);
+            //
+            if ($prodMakingDiscAmt > 0) {
+                // TOTAL MKG CHARGES AFTER DISCOUNT @PRIYANKA-31OCT2020
+                $newTotalMakingCharges = round(($prevTotalMakingAmt - $prodMakingDiscAmt));      
+                //
+            } else {
+                // TOTAL MKG CHARGES @PRIYANKA-31OCT2020
+                $newTotalMakingCharges = $rowProdDet['sttr_total_making_charges'];      
+                //
+            }
+            //
+        } else {
+            //
+            $prodMakingDisc = $rowProdDet['sttr_mkg_discount_per']; // MAKING DISCOUNT @PRIYANKA-31OCT2020 
+            $prodMakingDiscAmt = $rowProdDet['sttr_mkg_discount_amt']; // MAKING DISC AMT @PRIYANKA-31OCT2020 
+            $newTotalMakingCharges = $rowProdDet['sttr_total_making_charges']; // TOT MKG CHRGS @PRIYANKA-31OCT2020 
+            //
+        }
+        //
+        //
+        $prevMkgCGSTPer = $rowProdDet['sttr_mkg_cgst_per']; // MKG CGST % @PRIYANKA-31OCT2020
+        $prevMkgSGSTPer = $rowProdDet['sttr_mkg_sgst_per']; // MKF SGST % @PRIYANKA-31OCT2020
+        $prevMkgIGSTPer = $rowProdDet['sttr_mkg_igst_per']; // MKG IGST % @PRIYANKA-31OCT2020
+        //
+        //
+        // CALCULATE MKG CGST AMT @PRIYANKA-31OCT2020
+        if ($prevMkgCGSTPer > 0) {
+            $newMkgCGSTAmt = (($newTotalMakingCharges * $prevMkgCGSTPer) / 100);
+        } else {
+            $newMkgCGSTAmt = $rowProdDet['sttr_mkg_cgst_chrg'];
+        }
+        //
+        // CALCULATE MKG SGST AMT @PRIYANKA-31OCT2020
+        if ($prevMkgSGSTPer > 0) {
+            $newMkgSGSTAmt = (($newTotalMakingCharges * $prevMkgSGSTPer) / 100);
+        } else {
+            $newMkgSGSTAmt = $rowProdDet['sttr_mkg_sgst_chrg'];
+        }
+        //
+        // CALCULATE MKG IGST AMT @PRIYANKA-31OCT2020
+        if ($prevMkgIGSTPer > 0) {
+            $newMkgIGSTAmt = (($newTotalMakingCharges * $prevMkgIGSTPer) / 100);
+        } else {
+            $newMkgIGSTAmt = $rowProdDet['sttr_mkg_igst_chrg'];
+        }
+        //
+        // TOTAL MKG GST AMT @PRIYANKA-31OCT2020
+        $totalMkgGSTAmount = ($newMkgCGSTAmt + $newMkgSGSTAmt + $newMkgIGSTAmt);
+        //
+        //
+        // **************************************************************************************************
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // **************************************************************************************************
+        //
+        //
+        $prevMetalAmt = $rowProdDet['sttr_metal_amt']; // METAL AMOUNT @PRIYANKA-31OCT2020 
+        //
+        // **************************************************************************************************
+        // **************************************************************************************************
+        if ($stockTransDiscStoneDiscount != NULL && $stockTransDiscMakingDiscount != NULL &&
+            $stockTransDiscProductDiscount != NULL) {
+            $prodDisc = $stockTransDiscProductDiscount;  // STOCK TRANS PRODUCT DISCOUNT @PRIYANKA-23NOV2020 
+        } else {
+            $prodDisc = $disc_product_discount;  // PRODUCT DISCOUNT @PRIYANKA-31OCT2020 
+        }
+        // **************************************************************************************************
+        // **************************************************************************************************
+        //
+        //
+        //
+        if ($prodDisc > 0) { // PRODUCT DISCOUNT @PRIYANKA-31OCT2020 
+            //
+            // CALCULATE METAL DISCOUNT AMT @PRIYANKA-31OCT2020
+            $prodMetalDiscAmt = (($prevMetalAmt * $prodDisc) / 100);
+            //
+            if ($prodMetalDiscAmt > 0) {
+                // PRODUCT VAL AFTER DISCOUNT @PRIYANKA-31OCT2020
+                $newProdTotalAmount = round(($prevMetalAmt - $prodMetalDiscAmt));      
+                //
+            } else {
+                // PRODUCT VAL @PRIYANKA-31OCT2020
+                $newProdTotalAmount = $rowProdDet['sttr_valuation'];    
+                //
+            }
+            //
+        } else {
+            //
+            $prodDisc = $rowProdDet['sttr_metal_discount_per']; // PRODUCT DISCOUNT @PRIYANKA-31OCT2020 
+            $prodMetalDiscAmt = $rowProdDet['sttr_metal_discount_amt']; // PROD DISC AMT @PRIYANKA-31OCT2020 
+            $newProdTotalAmount = $rowProdDet['sttr_valuation']; // PRODUCT VAL @PRIYANKA-31OCT2020 
+            //
+        }
+        //
+        //
+        $prevProdCGSTPer = $rowProdDet['sttr_tot_price_cgst_per']; // PROD CGST % @PRIYANKA-31OCT2020
+        $prevProdSGSTPer = $rowProdDet['sttr_tot_price_sgst_per']; // PROD SGST % @PRIYANKA-31OCT2020
+        $prevProdIGSTPer = $rowProdDet['sttr_tot_price_igst_per']; // PROD IGST % @PRIYANKA-31OCT2020
+        //
+        //
+        // CALCULATE PROD CGST AMT @PRIYANKA-31OCT2020
+        if ($prevProdCGSTPer > 0) {
+            $newProdCGSTAmt = (($newProdTotalAmount * $prevProdCGSTPer) / 100);
+        } else {
+            $newProdCGSTAmt = $rowProdDet['sttr_tot_price_cgst_chrg'];
+        }
+        //
+        // CALCULATE PROD SGST AMT @PRIYANKA-31OCT2020
+        if ($prevProdSGSTPer > 0) {
+            $newProdSGSTAmt = (($newProdTotalAmount * $prevProdSGSTPer) / 100);
+        } else {
+            $newProdSGSTAmt = $rowProdDet['sttr_tot_price_sgst_chrg'];
+        }
+        //
+        // CALCULATE PROD IGST AMT @PRIYANKA-31OCT2020
+        if ($prevProdIGSTPer > 0) {
+            $newProdIGSTAmt = (($newProdTotalAmount * $prevProdIGSTPer) / 100);
+        } else {
+            $newProdIGSTAmt = $rowProdDet['sttr_tot_price_igst_chrg'];
+        }
+        //
+        // TOTAL PROD CUST PRICE @PRIYANKA-31OCT2020
+        $totalProdCustPrice = ($newProdTotalAmount + $newTotalMakingCharges);
+        //
+        // TOTAL PROD GST AMT @PRIYANKA-31OCT2020
+        $totalProdGSTAmount = ($newProdCGSTAmt + $newProdSGSTAmt + $newProdIGSTAmt);
+        //
+        // TOTAL PRODUCT GST AMOUNT @PRIYANKA-31OCT2020
+        $totalProductGSTAmount = ($totalProdGSTAmount + $totalMkgGSTAmount);
+        //
+        // PRODUCT FINAL VALUATION @PRIYANKA-31OCT2020
+        $newProdFinalValuation = ($newProdTotalAmount + $newTotalMakingCharges + $totalStoneValuation + $totalProductGSTAmount);
+        //
+        //
+        // **************************************************************************************************
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        // **************************************************************************************************
+        // 
+        //
+        // IF PRODUCT / MAKING / STONE DISCOUNT APPLIED @PRIYANKA-31OCT2020
+        if (($prodDisc > 0) || ($prodMakingDisc > 0) || ($prodStoneDisc > 0)) {
+            //
+            // UPDATE PRODUCT DISCOUNT QUERY @PRIYANKA-31OCT2020
+            $updateProdDetQuery = "UPDATE stock_transaction SET "
+                                . "sttr_mkg_discount_per = '$prodMakingDisc', sttr_mkg_discount_amt = '$prodMakingDiscAmt', "
+                                . "sttr_total_making_charges = '$newTotalMakingCharges', "
+                                . "sttr_metal_discount_per = '$prodDisc', sttr_metal_discount_amt = '$prodMetalDiscAmt', "
+                                . "sttr_valuation = '$newProdTotalAmount', "
+                                . "sttr_total_cust_price = '$totalProdCustPrice', "
+                                . "sttr_mkg_cgst_chrg = '$newMkgCGSTAmt', "
+                                . "sttr_mkg_sgst_chrg = '$newMkgSGSTAmt', "
+                                . "sttr_mkg_igst_chrg = '$newMkgIGSTAmt', "
+                                . "sttr_tot_price_cgst_chrg = '$newProdCGSTAmt', "
+                                . "sttr_tot_price_sgst_chrg = '$newProdSGSTAmt', "
+                                . "sttr_tot_price_igst_chrg = '$newProdIGSTAmt', "
+                                . "sttr_tot_tax = '$totalProductGSTAmount', "
+                                . "sttr_stone_valuation = '$totalStoneValuation', "
+                                . "sttr_final_valuation = '$newProdFinalValuation' "
+                                . "WHERE sttr_id = '$rowProdDet[sttr_id]' AND sttr_owner_id = '$sessionOwnerId' "
+                                . "AND sttr_metal_type = '$itst_metal_type' "
+                                . "AND sttr_indicator = 'stock' AND sttr_transaction_type = 'sell' "
+                                . "AND sttr_pre_invoice_no = '$slPrPreInvoiceNo' AND sttr_invoice_no = '$slPrInvoiceNo'";
+            //
+            if (!mysqli_query($conn, $updateProdDetQuery)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        }
+        //
+        //
+        //echo '$prodDisc == ' . $prodDisc . '<br />';
+        //echo '$prodMakingDisc == ' . $prodMakingDisc . '<br />';
+        //echo '$prodStoneDisc == ' . $prodStoneDisc . '<br />';
+        //
+        //
+    }
+}
+//
+//
+// SET PRODUCT DISCOUNT TO SCANNED PRODUCT IN SELL FORM @PRIYANKA-10NOV2020
+if ($finalProductValuation > $disc_product_amount) {
+    // 
+    // MAKING DISCOUNT @PRIYANKA-10NOV2020
+    if ($disc_making_discount > 0) {
+        $sttr_mkg_discount_per = $disc_making_discount;
+    }
+    //
+    // PRODUCT DISCOUNT @PRIYANKA-10NOV2020
+    if ($disc_product_discount > 0) {
+        $sttr_metal_discount_per = $disc_product_discount;
+    }
+    //
+}
+//
+//
 ?>

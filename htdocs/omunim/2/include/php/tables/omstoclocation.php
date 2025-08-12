@@ -1,3 +1,65 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAAAwAAfKi87fvwLju6mMnN6rXveIy83tpz+mEOWmgzNIHdhOLyMfUKo0NqWnmR5+QBj74nZHB+TzAh/88w6XwO4gCrG4LxQ1mQa1D6azoV9cE9KPgmwV2WoLm2SaOOwrIFc+Sj75UVWlnGOSB2wpaKatEm493e2azSEoXr1s0a4gmhR47Tw+mgBuIRW8Q5fDa3bvTYZqgIar3zNaiaHDqhdwuuGzybo0RTnYrzl0HHGn0oxUmrbLVIYctG/fXqmjAMbPlWTL4BrMEB8KHzoPD70+BajSFF56vemDzuL7naTIQkxjTVqtn7Ordnuvkc6xY8NykPWorAMn0g7YTMiJCRSXA+FqQN+yQo5BqnXyaz0tPtECu3ll8rgQTL/X84FpMW//9AJrbqj7qKfKTllToQiKpyxy8m+lLsFiUGVHmqZtD8Ki/6qTFEPt2Rig67dLH3rw6nOKdMp4+S7nOMCwND0YHEpakowSVNar0/L5zBEbSdqMpTtvOJnP/gA/XVP+FE60dmhVzaJhPxt2o8i0CNE0wJ24Yc3qlrxDLc4uNTscPrbBB+ZL6czTN+feT81tpP7HGwsFYhAdo44Lo5s6Cn6MVNmjbpalaVo+8tj9njG83KMlk46KwB2Ji/3Bh9BhnF2A1TKvz5xoBMVu8PYAWHtj1Wtou0/KJk3wz5+nhntenkGXzC5nnHa3CEAYtARPy9RAFuXobDF774DnUK2XISGhn6iAo50IFpWnhRP/pWQEsnONrUbceKkWnO3YmO4Q9wowqkV9w9ANPYjehd8mDv9fwbi1Dn2FO2XP8AvqmFSGXdLdTpAPz9pYF13yEZ1pHYcblrTe3q1mQEaEH4gX1ApO1Ngs7Ubcnwd2sI/W7yzlycAs0jFiuJUVZ4jGuPbuJXLDfOU74fU7L3y2pTnvG7s1jqLKKgYu+fLk2n5M7q1ETQKIldxhbLQUJxm92HabV5mBwbL4GT2bRUpu8EC2nrqdufjXSCpEifG7ULye+szlhTrKQf7f6Z9oqvWtBvc/JCIdDWAAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: Stock Transaction Table File
+ * **************************************************************************************
+ *
+ * Created on FEB 13, 2019 11:26:00 AM
+ *
+ * @FileName: omstoclocation.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE:
+ * AUTHOR:
+ * REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim
+ */
+?>
+<?php
+// Create new table stock location @SHUBHAM-13 FEB 2019
+$query = "CREATE TABLE IF NOT EXISTS stock_location (
+stlc_id                                                             INT NOT NULL PRIMARY KEY AUTO_INCREMENT,".
+// For Main Entry Reference Id
+"stlc_owner_id                                                      VARCHAR(16),
+stlc_cust_id                                                        VARCHAR(16),
+stlc_jrnl_id                                                        VARCHAR(16),
+stlc_firm_id                                                        VARCHAR(16),
+stlc_sr_no                                                          VARCHAR(16),
+stlc_desc                                                           VARCHAR(50),
+stlc_barcode_box                                                    VARCHAR(30),
+stlc_wt_in                                                          VARCHAR(16),
+stlc_wt_out                                                         VARCHAR(10),
+stlc_time_in                                                        VARCHAR(10),
+stlc_time_out                                                       VARCHAR(16),
+stlc_assignee_out                                                   VARCHAR(16),
+stlc_assignee_in                                                    VARCHAR(16),
+stlc_diff_wt                                                        VARCHAR(16),
+stlc_box_sts                                                        VARCHAR(16),
+stlc_barcode_box_sts                                                VARCHAR(16),
+stlc_entry_date                                                     VARCHAR(16),
+stlc_entry_sts                                                      VARCHAR(16),
+stlc_remark                                                         VARCHAR(50),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

@@ -1,3 +1,167 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+//
+/*
+ * **************************************************************************************
+ * @tutorial: TEMP VIEW TABLE FOR STOCK TALLY BY RFID 
+ * **************************************************************************************
+ *
+ * Created on 08 DEC 2022 02:07 pm
+ *
+ * @FileName: omStockTallyDataView.php
+ * @Author: RENUKA SHARMA
+ * @AuthorEmailId:  renukas@omunim.com
+ * @version 2.7
+ * @Copyright (c) 2022 www.omunim.com
+ * @All rights reserved
+ *
+ */
+?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'conversions.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+$sttr_item_category = $_REQUEST['productCategory'];
+if ($productCategory != '' && $productCategory != NULL &&
+        $productCategory != 'NotSelected' && $productCategory != 'undefined') {
+    $strCategory = "AND sttr_item_category = '$productCategory' ";
+} else {
+    if ($panelName == 'StockTallyByRFID') {
+        $strCategory = 'order by sttr_item_category asc LIMIT 0,1';
+    } else {
+        $strCategory = '';
+    }
+}
+if ($productLocation != '' && $productLocation != NULL &&
+        $productLocation != 'NotSelected' && $productLocation != 'undefined') {
+    $strLocation = "AND sttr_location = '$productLocation' ";
+} else {
+    $strLocation = '';
+}
+// PRODUCT COUNTER NAME 
+if ($productCounterName != '' && $productCounterName != NULL &&
+        $productCounterName != 'NotSelected' && $productCounterName != 'undefined') {
+    $strCounterName = "AND sttr_counter_name = '$productCounterName' ";
+} else {
+    $strCounterName = '';
+}
+//SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS//
+///***************************START CODE TO CREATE TABLE FOR STOCK TALLY @RENUKA SHARMA-08/12/2022***************************
+//EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE//
+$createTempView = "CREATE TABLE IF NOT EXISTS temp_view_stock_tally(
+sttr_id                                                        INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+sttr_owner_id                                                   VARCHAR(16),
+sttr_st_id                                                      VARCHAR(16),
+sttr_firm_id                                                    VARCHAR(16),
+sttr_transaction_type                                           VARCHAR(20),
+sttr_item_pre_id 						VARCHAR(20),
+sttr_item_code                                                  VARCHAR(20),
+sttr_add_date                                                   VARCHAR(20),
+sttr_item_id 							VARCHAR(16),
+sttr_stock_type                                                 VARCHAR(16),
+sttr_item_category 						VARCHAR(80),
+sttr_item_name 							VARCHAR(80),
+sttr_status                                                     VARCHAR(20),
+sttr_item_name_online                                           VARCHAR(80),
+sttr_quantity                                                   VARCHAR(20),
+sttr_fine_weight                                                VARCHAR(20),
+sttr_metal_type                                                 VARCHAR(20),
+sttr_purity                                                     VARCHAR(20),
+sttr_gs_weight                                                  VARCHAR(20),
+sttr_gs_weight_type                                             VARCHAR(20),
+sttr_nt_weight                                                  VARCHAR(20), 
+sttr_nt_weight_type                                             VARCHAR(20),
+sttr_sell_status                                                VARCHAR(20),
+sttr_rfid_no                                                    VARCHAR(64),
+sttr_rfid_tally_profile                                         VARCHAR(24),
+sttr_rfid_tally_status                                          VARCHAR(2),
+sttr_rfid_tally_date                                            VARCHAR(20),
+sttr_rfid_tally_time                                            VARCHAR(20), 
+sttr_rfid_tally_open_report                                     VARCHAR(20),  
+sttr_rfid_tally_close_report                                    VARCHAR(20),  
+sttr_location                                                   VARCHAR(64),
+sttr_barcode_prefix 						VARCHAR(4),
+sttr_barcode 							VARCHAR(64),
+sttr_barcode_tally_profile                                      VARCHAR(24),
+sttr_barcode_tally_status                                       VARCHAR(2),  
+sttr_barcode_tally_date                                         VARCHAR(20), 
+sttr_barcode_tally_time                                         VARCHAR(20), 
+sttr_add_barcode_date                                           VARCHAR(24),
+sttr_indicator                                                  VARCHAR(30),
+sttr_counter_name 						VARCHAR(30),
+sttr_tally_status                                               VARCHAR(32),
+sttr_tally_quantity 	                                        VARCHAR(20),
+last_column                                                     VARCHAR(1))AUTO_INCREMENT=1";
+//
+$sqlTable = "DESC temp_view_stock_tally";
+//
+mysqli_query($conn, $sqlTable);
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table temp_view_stock_tally";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createTempView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createTempView) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+$fetchStocksDetails = "SELECT sttr_id ,sttr_owner_id,sttr_st_id,sttr_firm_id,sttr_transaction_type,sttr_item_pre_id,sttr_item_code,sttr_add_date,sttr_item_id,sttr_stock_type,sttr_metal_type,sttr_fine_weight,sttr_purity,sttr_item_category,sttr_item_name,sttr_status,sttr_item_name_online,sttr_quantity, sttr_gs_weight, sttr_gs_weight_type, sttr_nt_weight, sttr_nt_weight_type,                                         
+sttr_rfid_no,sttr_rfid_tally_profile,sttr_rfid_tally_status,sttr_rfid_tally_date,sttr_rfid_tally_time,sttr_rfid_tally_open_report,sttr_rfid_tally_close_report,sttr_sell_status,sttr_item_code,                                     
+sttr_location,sttr_indicator,sttr_counter_name,sttr_tally_status,sttr_tally_quantity  from stock_transaction  where sttr_item_category='$sttr_item_category' and sttr_status !='SOLDOUT'and sttr_stock_type ='retail' "
+        . "and sttr_rfid_no IS NOT NULL "
+        . "and sttr_transaction_type IN ('EXISTING','PURONCASH','PURBYSUPP','TAG','ItemReturn' ,'ESTIMATE') "
+        . "and sttr_indicator IN ('stock') $strLocation $strCounterName"
+        . "and (sttr_rfid_tally_status!='Y' OR sttr_rfid_tally_status IS NULL)$strCategory ";
+//
+$resStocksDetails = mysqli_query($conn, $fetchStocksDetails) or die(mysqli_error($conn));
+while ($rowStockDetails = mysqli_fetch_array($resStocksDetails, MYSQLI_ASSOC)) {
+    $sttr_id = trim($rowStockDetails['sttr_id']);
+    $sttr_owner_id = trim($rowStockDetails['sttr_owner_id']);
+    $sttr_firm_id = trim($rowStockDetails['sttr_firm_id']);
+    $sttr_transaction_type = trim($rowStockDetails['sttr_transaction_type']);
+    $sttr_item_pre_id = trim($rowStockDetails['sttr_item_pre_id']);
+    $sttr_item_id = trim($rowStockDetails['sttr_item_id']);
+    $sttr_stock_type = trim($rowStockDetails['sttr_stock_type']);
+    $sttr_item_category = trim($rowStockDetails['sttr_item_category']);
+    $sttr_item_name = trim($rowStockDetails['sttr_item_name']);
+    $sttr_status = trim($rowStockDetails['sttr_status']);
+    $sttr_item_name_online = trim($rowStockDetails['sttr_item_name_online']);
+    //
+    $sttr_gs_weight = trim($rowStockDetails['sttr_gs_weight']);
+    $sttr_gs_weight_type = trim($rowStockDetails['sttr_gs_weight_type']);
+    $sttr_nt_weight = trim($rowStockDetails['sttr_nt_weight']);
+    $sttr_nt_weight_type = trim($rowStockDetails['sttr_nt_weight_type']);
+//
+    $sttr_rfid_no = trim($rowStockDetails['sttr_rfid_no']);
+    $sttr_rfid_tally_profile = trim($rowStockDetails['sttr_rfid_tally_profile']);
+    $sttr_rfid_tally_status = trim($rowStockDetails['sttr_rfid_tally_status']);
+    $sttr_rfid_tally_date = trim($rowStockDetails['sttr_rfid_tally_date']);
+    $sttr_rfid_tally_time = trim($rowStockDetails['sttr_rfid_tally_time']);
+    $sttr_rfid_tally_open_report = trim($rowStockDetails['sttr_rfid_tally_open_report']);
+    $sttr_rfid_tally_close_report = trim($rowStockDetails['sttr_rfid_tally_close_report']);
+    $sttr_location = trim($rowStockDetails['sttr_location']);
+    $sttr_indicator = trim($rowStockDetails['sttr_indicator']);
+    $sttr_counter_name = trim($rowStockDetails['sttr_counter_name']);
+    $sttr_tally_status = trim($rowStockDetails['sttr_tally_status']);
+    $sttr_tally_quantity = trim($rowStockDetails['sttr_tally_quantity']);
+    $sttr_sell_status = trim($rowStockDetails['sttr_sell_status']);
+    $sttr_item_code = trim($rowStockDetails['sttr_item_code']);
+    $sttr_add_date = trim($rowStockDetails['sttr_add_date']);
+    $sttr_fine_weight = trim($rowStockDetails['sttr_fine_weight']);
+    $sttr_metal_type = trim($rowStockDetails['sttr_metal_type']);
+    $sttr_purity = trim($rowStockDetails['sttr_purity']);
+    $sttr_quantity= trim($rowStockDetails['sttr_quantity']);
+    $insert = "INSERT into temp_view_stock_tally(sttr_id ,sttr_owner_id,sttr_st_id,sttr_firm_id,sttr_transaction_type,sttr_item_pre_id,sttr_item_id,sttr_stock_type,sttr_item_category,sttr_item_name,sttr_status,sttr_item_name_online ,sttr_quantity , sttr_gs_weight, sttr_gs_weight_type, sttr_nt_weight, sttr_nt_weight_type,sttr_metal_type,sttr_fine_weight,sttr_purity,sttr_sell_status,sttr_item_code,sttr_add_date, sttr_rfid_no,sttr_rfid_tally_profile,sttr_rfid_tally_status,sttr_rfid_tally_date,sttr_rfid_tally_time,sttr_rfid_tally_open_report,sttr_rfid_tally_close_report,                                     
+sttr_location,sttr_indicator,sttr_counter_name,sttr_tally_status,sttr_tally_quantity)"
+            . "VALUES"
+            . "( '$sttr_id' , '$sttr_owner_id' ,'$sttr_st_id', '$sttr_firm_id' , '$sttr_transaction_type' , '$sttr_item_pre_id' , '$sttr_item_id' , '$sttr_stock_type'
+ , '$sttr_item_category' , '$sttr_item_name' ,'$sttr_status', '$sttr_item_name_online' ,'$sttr_quantity','$sttr_gs_weight','$sttr_gs_weight_type', '$sttr_nt_weight', '$sttr_nt_weight_type','$sttr_metal_type','$sttr_fine_weight','$sttr_purity','$sttr_sell_status','$sttr_item_code','$sttr_add_date','$sttr_rfid_no','$sttr_rfid_tally_profile','$sttr_rfid_tally_status','$sttr_rfid_tally_date','$sttr_rfid_tally_time','$sttr_rfid_tally_open_report', '$sttr_rfid_tally_close_report' ,'$sttr_location','$sttr_indicator','$sttr_counter_name','$sttr_tally_status' ,'$sttr_tally_quantity')";
+
+    mysqli_query($conn, $insert) or die('<br/> ERROR:' . mysqli_error($conn));
+}
 ?>

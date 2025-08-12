@@ -1,3 +1,265 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: ADD WHOLEASLE STOCK CRYSTAL DIV
+ * **************************************************************************************
+ * 
+ * Created on Jan 20, 2016 2:53:33 PM
+ *
+ * @FileName: omrpnfdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+if ($crystalCount == '')
+    $crystalCount = $_REQUEST['crystalCount'];
+
+if ($crystalCount == '' || $crystalCount == NULL)
+    $crystalCount = 1;
+
+if ($cryQty == '')
+    $cryQty = 1;
+
+if ($commonPanel == '')
+    $commonPanel = $_GET['commonPanel'];
+?>
+<input id="del<?php echo $crystalCount; ?>" name="del<?php echo $crystalCount; ?>" 
+       value="<?php echo $crystalCount; ?>" type="hidden" />
+<div id="crystal<?php echo $crystalCount; ?>" name="crystal<?php echo $crystalCount; ?>">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" class="paddingTopBott5" colspan="18">
+                <!--<div class="hrGrey"></div>-->
+            </td>
+        </tr>
+        <tr>
+        <input type="hidden" id="noOfCry" name="noOfCry" value="<?php echo $noOfCry; ?>"/>
+        <input type="hidden" id="addItemCryCount" name="addItemCryCount" value="<?php echo $crystalCount; ?>"/>
+
+        <!-------------- Start Code to Define New Hidden inputs ------------>
+        <input id="sttr_indicator<?php echo $crystalCount; ?>" name="sttr_indicator<?php echo $crystalCount; ?>" value="stockCrystal" type="hidden" />
+        <input type="hidden" id="sttr_bc_print_status" name="sttr_bc_print_status" value="No" />
+        <input type="hidden" id="sttr_sell_status" name="sttr_sell_status" value="No" />                                       
+        <!-------------- End Code to Define New Hidden inputs ------------>                                                                        
+
+        <input id="tableMainId<?php echo $crystalCount; ?>" name="tableMainId<?php echo $crystalCount; ?>" value="<?php echo $stocCryId; ?>" type="hidden" />
+        <input id="itstCryId<?php echo $crystalCount; ?>" name="itstCryId<?php echo $crystalCount; ?>" value="<?php echo $itstCryId; ?>" type="hidden" />
+        <input id="crystalDiv<?php echo $crystalCount; ?>" name="crystalDiv<?php echo $crystalCount; ?>" type="hidden"/>
+        <input type="hidden" id="cryShorcut" name="cryShorcut" value="<?php echo $mainPanel; ?>"/>                                        
+
+        <td align="left" title="METAL" class="textLabel12CalibriBrown">
+            <div id="itemTypeDiv">
+                <input id="sttr_metal_type" name="sttr_metal_type" type="text" 
+                       placeholder="METAL TYPE" style="text-align: center;"
+                       value="<?php
+                       if ($sttr_metal_type != '')
+                           echo $sttr_metal_type;
+                       else
+                           echo 'Gold';
+                       ?>"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   clearDivision('metalSelectDiv');
+                                   document.getElementById('sttr_item_category').value = '';
+                                   document.getElementById('sttr_item_category').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   clearDivision('metalSelectDiv');
+                                   document.getElementById('firmId').focus();
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   getMetalType('metalSelectDiv', 'sttr_metal_type', event.keyCode, 'RepairPanel', '<?php echo $custId; ?>', 'RepairPanel');
+                               }"
+                       onclick="this.value = '';"
+                       onblur="if (this.value == '') {
+                                   this.value = '<?php echo $sttr_metal_type; ?>';
+                               }"
+                       autocomplete="off" spellcheck="false" class="form-control-height20 placeholderClass" 
+                       size="5" maxlength="80" />
+                <div id="metalSelectDiv" class="itemListDivToAddStock placeholderClass"></div>
+            </div>
+        </td>
+
+        <td align="left" title="CATEGORY" class="textLabel12CalibriBrown">
+            <input id="sttr_item_category" name="sttr_item_category"  
+                   value="<?php echo $sttr_item_category; ?>"
+                   type="text" placeholder="CATEGORY" 
+                   onkeyup="javascript: if (event.keyCode != 9 && event.keyCode != 13) {
+                               searchCategoryForPanel(document.getElementById('sttr_item_category').value, event.keyCode, 'addItemInvCryName ');
+                           }" 
+                   onkeydown="javascript:if (event.keyCode == 13) {
+                               searchCatForPanelBlank('cryNameInvSelectDiv');
+                               document.getElementById('sttr_item_name').focus();
+                               document.getElementById('sttr_item_name').value = '';
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               searchCatForPanelBlank('cryNameInvSelectDiv');
+                               document.getElementById('sttr_metal_type').focus();
+                               return false;
+                           }"
+                   onclick="this.value = '';
+                           searchCatForPanelBlank('cryNameInvSelectDiv');"
+                   onblur="if (this.value == '') {
+                               this.value = '<?php echo $sttr_item_category; ?>';
+                           }"                      
+                   onkeypress="return AvoidSpace(event);" 
+                   style="text-align: center;width: 100%;"
+                   autocomplete="off" spellcheck="false" 
+                   class="form-control-height20 placeholderClass" size="8" maxlength="15"  />
+            <div id="cryNameInvSelectDiv"></div>
+        </td>
+
+        <td align="left" title="NAME" class="textLabel12CalibriBrown">
+            <div>
+                <?php
+                //
+                $userId = $suppId;
+                $prodMergedCount = '';
+                $inputId = 'sttr_item_name';
+                $inputName = 'sttr_item_name';
+                $inputFieldColumnName = 'sttr_item_name';
+                $inputFieldValue = $sttr_item_name;
+                $inputFieldPrevId = 'sttr_item_category';
+                $inputFieldNextId = 'sttr_quantity';
+                $inputPlaceHolder = "NAME";
+                $inputLabelDivText = 'N';
+                $requiredField = 'N';
+                $inputFieldClass = 'form-control-height20 placeholderClass';
+                //
+                $inputStyle = 'text-align: center;height: 20px;';
+                //
+                $inputOnBlurFun = 'googleSuggestionDropdownBlank("sttr_item_name_google_div"); ';
+                //
+                $inputOnChange = "googleSuggestionDropdownBlank('sttr_item_name_google_div'); ";
+                //
+                //
+                        include $_SESSION['documentRootIncludePhp'] . '/stock/stock_transaction/om_sttr_item_item_name.php';
+                //
+                //
+                        ?>
+            </div>
+        </td>
+
+        <td align="left" title="QTY" class="textLabel12CalibriBrown">
+            <input id="sttr_quantity" name="sttr_quantity" type="text" 
+                   value="<?php echo $sttr_quantity; ?>" 
+                   placeholder="QTY"
+                   onblur="if (this.value == '') {
+                               this.value = '1';
+                           }
+                           return false;"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_gs_weight').value = '';
+                               document.getElementById('sttr_gs_weight').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('sttr_item_name').focus();
+                               return false;
+                           }"    
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   ondblclick="this.value = '';"
+                   spellcheck="false" class="form-control-height20 align_center placeholderClass" 
+                   size="3" maxlength="10" 
+                   style="text-align: center;"/>
+        </td>
+
+        <td align="left" title="WT" class="textLabel12CalibriBrown">
+            <input id="sttr_gs_weight" name="sttr_gs_weight" type="text" 
+                   value="<?php echo $sttr_gs_weight; ?>" 
+                   placeholder="WT"
+                   onblur="if (this.value == '') {
+                               this.value = '<?php echo $sttr_gs_weight; ?>';
+                           }
+                           return false;"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('sttr_gs_weight').value = '';
+                               document.getElementById('sttr_gs_weight').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('sttr_quantity').focus();
+                               return false;
+                           }"    
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   ondblclick="this.value = '';"
+                   spellcheck="false" class="form-control-height20 align_center placeholderClass" 
+                   size="3" maxlength="10" 
+                   style="text-align: center; "/>
+        </td>
+
+        <td>
+            <select id="sttr_gs_weight_type" 
+                    name="sttr_gs_weight_type" style="text-align: center; "
+                    onkeydown="javascript:if (event.keyCode == 13) {
+                                document.getElementById('sttr_gs_weight_type').focus();
+                                return false;
+                            } else if (event.keyCode == 8) {
+                                document.getElementById('sttr_gs_weight').focus();
+                                return false;
+                            }"
+                    class="form-control-height20 placeholderClass">
+                        <?php
+                        if ($payPanelName == 'AddRepairItem' || $payPanelName == 'RepairItemPayUp' ||
+                                $payPanelName == 'UpdateRepairItem') {
+                            $cryGsWtType = array('GM', 'KG', 'MG', 'CT');
+                            for ($i = 0; $i <= 3; $i++)
+                                if ($cryGsWtType[$i] == $cryGSWT)
+                                    $cryGsWtTypeSel[$i] = 'selected';
+                        } else {
+                            $cryGsWtTypeSel[0] = 'selected';
+                        }
+                        ?>
+                <option value="GM"<?php echo $cryGsWtTypeSel[0]; ?>>GM</option>
+                <option value="KG"<?php echo $cryGsWtTypeSel[1]; ?>>KG</option>
+                <option value="MG"<?php echo $cryGsWtTypeSel[2]; ?>>MG</option>
+                <option value="CT"<?php echo $cryGsWtTypeSel[3]; ?>>CT</option>
+                <?php $cryGsWtTypeSel = ""; ?>
+            </select>
+        </td>
+
+
+        <td align="right" class="padLeft3">
+            <a style="cursor: pointer;" 
+               onclick="if (document.getElementById('crystalDiv<?php echo $crystalCount; ?>').value == '' || document.getElementById('crystalDiv<?php echo $crystalCount; ?>').value == 'true')
+                           getRepairFormDivFunc('<?php echo $crystalCount + 1; ?>', 'crystalAddDiv', '<?php echo $commonPanel; ?>', '<?php echo $documentRootBSlash; ?>');
+               ">
+                <img src="<?php echo $documentRootBSlash; ?>/images/update16.png" alt="Click Here To Add Crystal" class="marginTop5"
+                     onload="<?php if ($simItem != 'SimilarItem' && $itemSubPanel != 'addByItemsUp' && $itemSubPanel != 'itemsAddUp' && $payPanelName != 'SuppOrderUp' && $panelSimilarDiv != 'SimilarItem' && $UpPanel != 'UpPanel') { ?>
+                           document.getElementById('sttr_item_category<?php echo $crystalCount; ?>').focus();
+                     <?php } ?>
+                       document.getElementById('simItemPanel').value = 'SimilarItem';"/>
+            </a>
+        </td>
+
+        <td align="left" class="padLeft3">
+            <a style="cursor: pointer;" 
+               onclick ="closeRepairFormDivFunc('<?php echo $crystalCount; ?>', '<?php echo $commonPanel; ?>', '<?php echo $sttrId; ?>', '<?php echo $sttrId; ?>', '<?php echo $sttrId; ?>', '<?php echo $documentRootBSlash; ?>');
+               ">
+                <img src="<?php echo $documentRootBSlash; ?>/images/delete16.png" alt="delete" class="marginTop5"/>
+            </a>
+        </td>
+
+        </tr>
+    </table>
+
+</div>
+<!-------------------------------------------END CODE TO ADD GST--------------------------------------------->
+<div id = "crystalAddDiv<?php echo $crystalCount + 1; ?>"></div>

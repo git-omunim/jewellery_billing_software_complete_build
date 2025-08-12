@@ -1,3 +1,117 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 26, 2011 11:57:06 AM
+ *
+ * @FileName: omtatrsd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+
+require_once 'system/omssopin.php';
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+
+$selFirmId = NULL;
+if (isset($_GET['firmId'])) {
+    $selFirmId = $_GET['firmId'];
+} else {
+    //if not selected assign session firm @AUTHOR: SANDY10JUL13
+    $selFirmId = $_SESSION['setFirmSession'];
+}
 ?>
+<table border="0" align="center" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td align="right" class="itemAddPnLabels12 paddingLeft30">
+            Amount:&nbsp;
+        </td>
+        <td align="left">
+            <input id="transAmt"
+                   name="transAmt" spellcheck="false" type="text"
+                   onkeydown="javascript: if(event.keyCode == 13){document.getElementById('transFromAcc').focus(); return false;}
+                       else if(event.keyCode == 8 && this.value ==''){document.getElementById('transFirmId').focus(); return false;}"
+                   spellcheck="false" class="lgn-txtfield12-req-arial" size="18" maxlength="20" />
+        </td>
+        <td align="right" class="itemAddPnLabels12">
+            Subject:&nbsp;
+        </td>
+        <td align="left" class="frm-r1" valign="middle">
+            <input id="transSub"
+                   name="transSub" spellcheck="false" type="text"
+                   onkeydown="javascript: if(event.keyCode == 13){document.getElementById('transactionCategory').focus(); return false;}
+                       else if(event.keyCode == 8 && this.value ==''){document.getElementById('transFirmId').focus(); return false;}"
+                   spellcheck="false" class="lgn-txtfield12-req-arial" size="35" maxlength="50" />
+        </td>
+    </tr>
+    <tr>
+        <td align="right" class="itemAddPnLabels12 paddingLeft30">
+            From (CR):&nbsp;
+        </td>
+        <td align="left">
+            <?php
+            $prevFieldId = 'transAmt';
+            $nextFieldId = 'transToAcc';
+            $allAccountDivId = 'transFromAcc';
+            $accIdSelected = '';
+            $accNameSelected = '';
+            $allAccountDivClass = 'lgn-txtfield12-req';
+            $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+            include 'omacpalt.php';
+            ?>
+        </td>
+        <td align="right" class="itemAddPnLabels12">
+            Category:&nbsp;
+        </td>
+        <td align="left" class="frm-r1" valign="middle">
+            <SELECT class="lgn-txtfield12-req-arial" id="transactionCategory" name="transactionCategory"
+                    onkeydown="javascript: if(event.keyCode == 13){document.getElementById('transactionDesc').focus(); return false;}
+                        else if(event.keyCode == 8 && this.value ==''){document.getElementById('transSub').focus(); return false;}"
+                    spellcheck="false">
+                <OPTION value="NotSelected">~ Select Transaction Category ~</OPTION>
+                <OPTION value="Business" >Business Transaction</OPTION>
+                <OPTION value="Personal" >Personal Transaction</OPTION>
+                <OPTION value="Other" >Other Transaction</OPTION>
+            </SELECT>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" valign="top" class="itemAddPnLabels12 paddingLeft30">
+            To (DR):&nbsp;
+        </td>
+        <td align="left" valign="top">
+            <?php
+            $prevFieldId = 'transFromAcc';
+            $nextFieldId = 'transSub';
+            $allAccountDivId = 'transToAcc';
+            $accIdSelected = '';
+            $accNameSelected = '';
+            $allAccountDivClass = 'lgn-txtfield12-req';
+            $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+            include 'omacpalt.php';
+            ?>
+        </td>
+        <td align="right" valign="top" class="itemAddPnLabels12">
+            Details:&nbsp;
+        </td>
+        <td align="left" class="frm-r1" valign="top">
+            <textarea id="transactionDesc"
+                      name="transactionDesc" class="textarea-fixed-border-trans" 
+                      onkeydown="javascript: if(event.keyCode == 8 && this.value ==''){document.getElementById('transactionCategory').focus(); return false;}"
+                      spellcheck="false" /></textarea>
+        </td>
+    </tr>
+</table>

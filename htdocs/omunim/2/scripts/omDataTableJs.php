@@ -1,3 +1,56 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAD4AgAAXqLnOVh4AQyVg2PN4rbQGachu/Q+7W78Ao8sEK6XtSAyMdcnFm7OFo0w0P9HwWVLo14GpTOCKW4SGvIxFnZUXXUKpIkV+1pajyI5QxxEHdCnv+iNHpuFPxxTOrlH6ctyI6GBrzG3f2+M+A2OPQwkINcWkxExAGSBe3EdcFmITJ+FOMeEHe0rFIhm3di5McYbTLfk0Nmgo7snQGzYZc3mN+sUQjKVgE42+3JxKihpyfE5zuOidUxSVbKAbUgpV3cUK9bvtlyAWS50yYVBShyUJ3+Ly4GTwiCDPu318YUOWm8DmEzuQ3GqXYaOLK29ZlDgm4bhxnqLI+BV4OH30ooCskJ6wPNrc25fFSvaA0QEQhErRNWZ9fomFKSuHxZmnJm+Rjl/5xAf0m0jya8ZQBQCwhfULvrxBuJymzsuOBliPmjHU6JYfqxFeuSb8gbD6II80PAAnCNxF3Wk1acvuIIX3BqpKrzto9qxP8ZIw/c2o80+GQORGLwrmv+5zVEvRQJhowEv1mMYKIA2xO98ayjU9Nwia2NbRB2lzWtRW/Mn38McCVjo41oUrXWj19P74DnMgg5kH9fsJPlOENakAMrjMZMjvo4UGnNoBj23dUz0Zlu4lIPlCyIExZn7p5Ze+0x4867DVE5O+pzLprPv+ZYo9OpJItLRp+WakQmdxJuQrM9g/nTCBES6neYYDTMV7E7Xk1dKGIKuUucdabqtGd7R8G5f6d15Ch/7Qsiq3qnBKKw2YfJgAr0U5DEB+fcVZM7joe2FTyv/tat+pR5sdHpUCuXUz+yIOyUDlIX3hUbd5Fv+diASYkvXoa1YBEB5ccxNuT/ZKbuyFFJT6Q2xbcERQLGZDxCT/nmFQKETjQxJZDXMEnJNqLWlTfu3vYcZMNm6fqYnDB6IBflIg/52LT8ki9jeOlbItYsApNSWTEGhMhGQtkLzydPS9SyNM9SeSP6j0oi3KQ1rNnTCiERazwSnff0DGUhisv1nJZqQMbuLYmmxlAmqwdEp1QAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 28 Aug, 2018 4:11:44 PM
+ *
+ * @FileName: omDataTableJs.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<!--<script type="text/javascript" src="scripts/OmJquery-1.12.4.js"></script>
+<script type="text/javascript" src="scripts/OmJqueryDT.min.js"></script>
+<script type="text/javascript" src="scripts/OmDTButtons.min.js"></script>
+<script type="text/javascript" src="scripts/OmButtonsFlash.min.js"></script>
+<script type="text/javascript" src="scripts/OmJszip.min.js"></script>
+<script type="text/javascript" src="scripts/OmPdfmake.min.js"></script>
+<script type="text/javascript" src="scripts/OmVfsFonts.js"></script>
+<script type="text/javascript" src="scripts/OmButtonsHtml5.min.js"></script>
+<script type="text/javascript" src="scripts/OmButtonsColVis.min.js"></script>
+<script type="text/javascript" src="scripts/OmDTSelect.min.js"></script>
+<script type="text/javascript" src="scripts/OmDTResponsive.min.js"></script>
+<script type="text/javascript" src="scripts/OmButtonsPrint.min.js"></script>-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.bootstrap4.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/select/1.2.2/js/dataTables.select.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.6/js/dataTables.fixedColumns.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.2/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.0/js/responsive.bootstrap4.min.js"></script>
+
+<script type="text/javascript" src="<?php echo $documentMainRoot; ?>/2/scripts/omDataTablesMain.js"></script>

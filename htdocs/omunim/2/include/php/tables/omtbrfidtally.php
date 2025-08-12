@@ -1,3 +1,71 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADYBAAA3e56C2NFhrrLMtYNvCyfhauadTR/P1+obphnCjk9ZifEwQ3OhMdCXwBAegYNqoxX2xe14M5mRlB3Wp0m0CMr/OvWaj1+KSnxaPwXKjZTkpmBokw6ec+CPfSouinw69v4jxU+rwQ65RLEY24X8JG5DsOJmNmxp7uOZx7HrVNCN/k61mrPPr+x80FPvct+MTZcmlXTzMxIwkaGy3OCw5ImHwXFaG+bqa2Jjx3Bm73E0p4+i0JMRVzefyVDfyC3PDh4GtwBF3gdLOha50DqTwzrGSqPtrmsI8lpHJX8t0LVVk+llM8YHjQuNXKPXgaVhSw9ELvhF/Q88hmhyrpKvsuWGzyTpHmH8y+6SEOR1WA3C6DuRFwWbcnYLJnsv14VPUjIySoBqqzodNPC0fE4C0P0zjFRF4xHys0pqKBMO1GgrCi6iwPgaES3GRr/qq6YMcxsqMsyqjLw8xVNQUZAbQDBsBb06k2ALxJu8qrwaylCu8YepYur2zIG6SpoLaHj8OsZ/ojDcQ9zXu9v1yeifcbGtV+bFES8Pdm9olJdfB6hctz194nhV30Y0J7Ijaq6JAImp71Cuu3/VMYvPc4pSCiJLua3t0wnAJyBrvhybZRbejE15Xg3m0KNO8Hh6gzUa+b5wc1avG1LIOBzOgIg0+tBFMvGiSZa3pdK3eMWHcVmBYBj56t6rqhIwTL5XOL0bzAeeZLJf/pZJNEuQSw2s2vC7Y0QIAStVVUWWTkdxhHhhxG7/XzeGUCfS8fMxUdL7xDDWn6zweWCtGYMuV6dpzqVuihG4bTz0UxpvEipB8GR/QLCJ12U/CPb2MUrvS9DslHnPOoNJYJ/gJ2uNmPgJYA/2Jvk8s0ZAU0xxjK3y49V1PtwfJJI1wnfjeC1mPTs0RrdMFqP6FIAYCaAqufOX1lMv22Unya2MKcZn9L1GMewrGp6MmRDH9wxfrddxix1GkJy22/zdJZWqiPL0JefwAxy938sOIh2hUzKKMpPyh9+/VH20hh+LmxSRtOKpmKVNnK8b0aIiJxLMnLzfmXX1JzIo8e0HQXg4w8fko/CyxXK42xnIAGIymkRG4wsjoBV/1AWmdCCWpCeu0xEjN/sn/xqQgaiP0B0FXlqEh8DQBNcUNdASGEa0NUEsIwWPQbeZe8yTst6rg2Q75FvRIFFc5OO6LeyAqqe781RnaXiINkDntzfltoaG+EXxHmuncHkk3Kc+KLr3ffj8bSgAyDL22jN23pxyjzfnu479IhVg6XXPve6QEkiL4phMJ9r824A5WXqo2iUJ/1A7CJ9bs3kFV4ukL79yDC/kHkOac7THPiqYKCJ/ZMOm5mJUpbfHIwpSQvfzKEGAHF+w0sNRNEMBUGy6VKhD7B6EPQRZukolwcA2CfKPVCLiforaBsv5MEirObsYpinWZ8OrktpwoDbPBBHbX9lWCM4rk9bL1hnoAgp8q4q8ZocOXGJXebA0FIaVRwBGG95bo+0IONFcoRY574vVGzdUyY8BHLZ5ECC60GWnThPPzA6TSb9tElzdgZG5xHPlemUfBi8ubEflMeXoOpUdQ5/On1P6d8fd2HoeivCeVAzfv9RCA7Gd32D/strVRI56ybiyWXwHzYLrZR9pM9X5Y8ujXW4Bnd1zF26TuOYuVnuSTihMthXHAAAAAA=');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 20 Jan, 2019 12:45:12 PM
+ *
+ * @FileName: ogtbrfidtally.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$query = "CREATE TABLE IF NOT EXISTS rfid_tally (
+rfidtly_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+rfidtly_owner_id                   VARCHAR(16),
+rfidtly_sttr_id                    VARCHAR(16),
+rfidtly_firm_id                    VARCHAR(16),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_rfid_id                   VARCHAR(64),
+rfidtly_scan_date                  VARCHAR(24),
+rfidtly_scan_time                  VARCHAR(24),
+rfidtly_scan_status                VARCHAR(4),
+rfidtly_since                      DATETIME,".
+"rfidtly_product_code              VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022 
+//        
+"rfidtly_st_id                     VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_add_date                  VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_quantity                  VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_gs_weight_type            VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_gs_weight                 VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_nt_weight_type            VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_nt_weight                 VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_fine_weight               VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_stock_type                VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_purity                    VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_transaction_type          VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_sell_status               VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_status                    VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+//
+"rfidtly_indicator                 VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_metal_type                 VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_product_name              VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT NAME FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_product_category          VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_counter_name              VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_location                  VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_open_report               VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_close_report              VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_reporting_preiod          VARCHAR(50),". // COLUMN ADDED TO STOCK TALLY PRODUCT CATEGORY FOR @AUTHOR:YUVRAJ-15OCTOMBER2022  
+"rfidtly_last_column	           VARCHAR(1))AUTO_INCREMENT=1";
+// 
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

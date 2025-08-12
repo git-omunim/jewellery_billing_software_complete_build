@@ -1,3 +1,258 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STICKER PRINT PANEL DIV @PRIYANKA-29AUG2019
+ * **************************************************************************************
+ * 
+ * Created on AUG 29, 2019 12:50:35 PM
+ *
+ * @FileName: omStickerPrintPaneldv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpfunc.php';
+include_once 'omStickerFunc.php';
+?>
+<?php
+if ($custId == '' || $custId == NULL) {
+    //
+    if ($_REQUEST['custId'] != '' && 
+        $_REQUEST['custId'] != NULL && 
+        $_REQUEST['custId'] != 'undefined') {
+        $custId = $_GET['custId'];
+    }
+    //
+} 
+?>
+<style>
+     .table24L{
+           width: 100%;
+        }
+    @media print{
+        .table24L{
+           width: 55mm;
+           height: 20.7mm;
+           margin: 0mm;
+        }
+    }
+</style>
+
+<table border="0" cellspacing="0" cellpadding="0" class="paddingLeft5 table24L">
+    <?php
+    //
+    $qSelAllUser = "SELECT * FROM user WHERE user_id='$custId' and user_owner_id='$_SESSION[sessionOwnerId]' ORDER BY user_id DESC";
+    $resAllUser = mysqli_query($conn, $qSelAllUser) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllUser);
+    $rowAllUser = mysqli_fetch_array($resAllUser, MYSQLI_ASSOC);
+    //
+    //firm, custFname, custLname, custFather, custAdd, custMob, custPincode, custEmail
+    //
+    $custFname = om_strtoupper($rowAllUser['user_fname']);
+    //
+    $custLname = om_strtoupper($rowAllUser['user_lname']);
+    //
+    $fatherOrSpouseName = $rowAllUser['user_father_name'];
+    //
+    $checkFatherOrSpouse = substr($fatherOrSpouseName, 0, 1);
+    //
+    if($checkFatherOrSpouse == 'W'){
+        $labelFatherOrSpouse = "W/o";
+    }
+    //
+    if($checkFatherOrSpouse == 'S'){
+        $labelFatherOrSpouse = "S/o";
+    }
+    //
+    if($checkFatherOrSpouse == 'D'){
+        $labelFatherOrSpouse = "D/o";
+    }
+    //
+    if($checkFatherOrSpouse == 'C'){
+        $labelFatherOrSpouse = "C/o";
+    }
+    //    
+    $fatherOrSpouseName = substr($fatherOrSpouseName, 1);
+    $custFather = om_strtoupper($fatherOrSpouseName);
+    //
+    $custAdd = om_strtoupper($rowAllUser['user_add']);
+    //
+    if ($custAdd == '' || $custAdd == NULL) {
+        $custAdd = om_strtoupper($rowAllUser['user_city'] . ' ' . $rowAllUser['user_state']);
+    }
+    //
+    $custMob = $rowAllUser['user_mobile'];
+    //
+    $custPincode = $rowAllUser['user_pincode']; 
+    //
+    $custEmail = $rowAllUser['user_email']; 
+    //
+    $omLayoutBCSize = '24LBCSIZE';
+    $barCodeSize = updateOptionValue($omLayoutBCSize, '', 'selValue', '');
+    //
+    if ($barCodeSize == 'large' || $barCodeSize == 'size') {
+        //
+        //$custFname = substr($custFname, 0, 26);
+        //$custLname = substr($custLname, 0, 26);
+        //$custFather = substr($custFather, 0, 26);
+        //$custAdd = substr($custAdd, 0, 26);
+        //
+    } else if ($barCodeSize == 'medium') {
+        //
+        $custFname = substr($custFname, 0, 24);
+        $custLname = substr($custLname, 0, 24);
+        $custFather = substr($custFather, 0, 24);
+        $custAdd = substr($custAdd, 0, 24);
+        //
+    } else if ($barCodeSize == 'small') {
+        //
+        $custFname = substr($custFname, 0, 22);
+        $custLname = substr($custLname, 0, 22);
+        $custFather = substr($custFather, 0, 22);
+        $custAdd = substr($custAdd, 0, 22);
+        //
+    }
+    //
+    //
+    $firmId = $rowAllUser['user_firm_id'];
+    //
+    parse_str(getTableValues("SELECT firm_name FROM firm WHERE firm_own_id='$_SESSION[sessionOwnerId]' "
+                           . "AND firm_id='$firmId'"));
+    //
+    $firm = $firm_name;
+    //
+    //
+    $valuePresentInTable = updateOptionValue('stickerOption1', 'firm', 'selValue', '');
+    //
+    if ($valuePresentInTable == '') {
+        $valuePresentInTable = updateOptionValue('stickerOption1', 'firm', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption1', 'firm', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption2', 'custFname', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption3', 'custLname', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption4', 'custFather', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption5', 'custAdd', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption6', 'custMob', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption7', 'custPincode', 'selValue', 'StickerPrintPanel');
+        updateOptionValue('stickerOption8', 'custEmail', 'selValue', 'StickerPrintPanel');
+    }
+    //
+    $valueMobPresentInTable = updateOptionValue('stickerOption6', 'custMob', 'selValue', '');
+    //
+    if ($valueMobPresentInTable == '') {
+        updateOptionValue('stickerOption6', 'custMob', 'selValue', 'StickerPrintPanel');
+    }
+    //
+    ?>
+    <tr>
+        <td align="left" style="padding-top: <?php echo $padTop; ?>mm;">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left" class="block24LText14"  title="<?php echo $firm; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption1'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr rowspan="2">
+        <td align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left" class="block24LText14"  title="<?php echo $custFname; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption2'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+                    <td align="left" class="block24LText14"  title="<?php echo $custLname; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption3'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+                    <td align="left" class="block24LText14" title="<?php echo $custFather; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption4'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr></tr>
+    
+    <tr rowspan="2">
+        <td align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left" class="block24LText12" title="<?php echo $custAdd; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption5'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr></tr>
+    
+    <tr>
+        <td align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left" class="block24LText12 paddingRight10" title="<?php echo $custMob; ?>">
+                            <?php
+                            parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption6'"));
+                            callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                            ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left" class="block24LText12"  title="<?php echo $custPincode; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption7'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+
+                    <td align="right" class="block24LText12 paddingRight10"  title="<?php echo $custEmail; ?>">
+                        <?php
+                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption8'"));
+                        callStickerSwitchCase($omin_value, $firm, $custFname, $custLname, $custFather, $custAdd, $custMob, $custPincode, $custEmail);
+                        ?>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>    
+</table>

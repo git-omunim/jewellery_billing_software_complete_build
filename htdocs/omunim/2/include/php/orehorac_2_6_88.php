@@ -1,3 +1,421 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Staff Home omrevo Access
+ * **************************************************************************************
+ * 
+ * Created on Sept 11,2018 5:50:45 PM
+ *
+ * @FileName: orehorac_2_6_88.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.86
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+$staffId = $_GET['staffId'];
+//change in file for layout @AUTHOR: SANDY08JAN14
+?>
+<style>
+    .heading
+    {
+        position: relative;
+        /*border-radius: 40%;*/
+        width: 70%;
+        margin-top: -19px;
+        text-align: center;
+        background: #0174DF none repeat scroll 0% 0%;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        font-weight: 600;
+    }
+</style>
+<!-- Start of Modified Code(Complete file modified) @AUTHOR: SANDY16AUG13 -->
+<div id="omrevoAccessDiv">
+    <table border="0" cellspacing="10" cellpadding="10" align="center" width="100%">
+        <td valign="top" width="320px" class="textBoxCurve1px">
+            <div style="">
+                <div style="margin-top:-16px;border-radius: 5px;width:100%;" class="heading"><span>Add/Update Loan</span></div>
+            <table border="0" cellspacing="2" cellpadding="2"  align="center" valign="top" width="100%">
+                <?php
+                /* Start to get values of access @AUTHOR: SANDY13AUG13 */
+                $selEmpAccessDet = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess'";
+                $resEmpAccessDet = mysqli_query($conn, $selEmpAccessDet);
+                while ($rowEmpAccessDet = mysqli_fetch_array($resEmpAccessDet)) {
+                    $panelVal = $rowEmpAccessDet['acc_access'];
+                    $checkBoxName = $rowEmpAccessDet['acc_name'];
+                    $checkBoxId = $rowEmpAccessDet['acc_check_id'];
+                    $type = $rowEmpAccessDet['acc_type'];
+                    if ($type == 'GirviAccess' && ($checkBoxId == 'addNewGirviAccess' || $checkBoxId == 'updateGirviAccess')) {
+                        ?>
+                        <td width="150px" valign="top" class="textBoxCurve1px marginLeft20">
+                            <table border="0" cellspacing="2" cellpadding="2" align="center" valign="top">
+                                <tr>
+                                    <td align="right" valign="top">
+                                        <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                        <?php
+                                        if ($panelVal == 'true')
+                                            echo 'checked';
+                                        else
+                                            echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                        ?>/>
+                                    </td>
+                                    <td align="left" valign="middle" colspan="2">
+                                        <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                    </td>
+                                </tr>
+                                <?php
+                                $selEmpAccessDetNext = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and  acc_check_id LIKE '%" . $checkBoxId . "%' and acc_check_id !='$checkBoxId'";
+                                $resEmpAccessDetNext = mysqli_query($conn, $selEmpAccessDetNext);
+                                //$num = mysqli_num_rows($resEmpAccessDet);
+                                //echo '$num' . $num;
+                                while ($rowEmpAccessDetNext = mysqli_fetch_array($resEmpAccessDetNext)) {
+                                    $panelVal = $rowEmpAccessDetNext['acc_access'];
+                                    $checkBoxName = $rowEmpAccessDetNext['acc_name'];
+                                    $checkBoxId = $rowEmpAccessDetNext['acc_check_id'];
+                                    $type = $rowEmpAccessDetNext['acc_type'];
+                                    ?>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                            <?php
+                                            if ($panelVal == 'true')
+                                                echo 'checked';
+                                            else
+                                                echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                            ?>/>
+                                        </td>
+                                        <td align="left" valign="middle">
+                                            <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                        </td>
+                                    </tr> 
+                                <?php } ?>
+                            </table>
+                        </td>
+                        <?php
+                    }
+                }
+                ?> 
+            </table>
+            </div>
+        </td>
+        <td width="165px" valign="top" class="textBoxCurve1px">
+            <div style="">
+                <div style="margin-top:-16px;border-radius: 5px;width:100%;" class="heading"><span>Delete Loan</span></div>
+                <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top">
+                    <?php
+                    /* Start to get values of access @AUTHOR: SANDY13AUG13 */
+                    $selEmpAccessDet = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess'";
+//                    echo $selEmpAccessDet;
+                    $resEmpAccessDett = mysqli_query($conn, $selEmpAccessDet);
+                    while ($rowEmpAccessDet = mysqli_fetch_array($resEmpAccessDett)) {
+                        $panelVal = $rowEmpAccessDet['acc_access'];
+                        $checkBoxName = $rowEmpAccessDet['acc_name'];
+                        $checkBoxId = $rowEmpAccessDet['acc_check_id'];
+
+                        $type = $rowEmpAccessDet['acc_type'];
+                        if ($type == 'GirviAccess' && ($checkBoxId != 'addNewGirviAccess' && $checkBoxId != 'updateGirviAccess' && $checkBoxId != 'loanPanel')) {
+//                            echo '$checkBoxId : ' . $checkBoxId . '<br>';
+                            ?>
+                            <tr>
+                                <td>
+                                    <table border="0" cellspacing="2" cellpadding="2" align="left" valign="top">
+                                        <tr>
+                                            <td align="right" valign="top">
+                                                <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                <?php
+                                                if ($panelVal == 'true')
+                                                    echo 'checked';
+                                                else
+                                                    echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                ?>/>
+                                            </td>
+                                            <td align="left" valign="middle" colspan="2">
+                                                <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                        $selEmpAccessDetNext = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and  acc_check_id LIKE '%" . $checkBoxId . "%' and acc_check_id !='$checkBoxId'";
+                                        $resEmpAccessDetNext = mysqli_query($conn, $selEmpAccessDetNext);
+                                        //$num = mysqli_num_rows($resEmpAccessDet);
+                                        //echo '$num' . $num;
+                                        while ($rowEmpAccessDetNext = mysqli_fetch_array($resEmpAccessDetNext)) {
+                                            $panelVal = $rowEmpAccessDetNext['acc_access'];
+                                            $checkBoxName = $rowEmpAccessDetNext['acc_name'];
+                                            $checkBoxId = $rowEmpAccessDetNext['acc_check_id'];
+                                            $type = $rowEmpAccessDetNext['acc_type'];
+                                            ?>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td align="right" valign="top">
+                                                    <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                    <?php
+                                                    if ($panelVal == 'true')
+                                                        echo 'checked';
+                                                    else
+                                                        echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                    ?>/>
+                                                </td>
+                                                <td align="left" valign="middle">
+                                                    <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                                </td>
+                                            </tr> 
+                                        <?php } ?>
+                                    </table>
+                                </td>
+                            </tr> 
+                            <?php
+                        }
+                    }
+                    ?>   
+                </table>
+            </div>
+        </td>
+        <td width="165px" valign="top" class="textBoxCurve1px">
+            <div style="">
+                <div style="margin-top:-16px;border-radius: 5px;width:100%;" class="heading"><span>Loan Panel</span></div>
+                <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top">
+                    <?php
+                    /* Start to get values of access @AUTHOR: SANDY13AUG13 */
+                    $selEmpAccessDet = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and "
+                            . "acc_check_id IN ('loanPanel')";
+
+                    $resEmpAccessDett = mysqli_query($conn, $selEmpAccessDet);
+                    while ($rowEmpAccessDet = mysqli_fetch_array($resEmpAccessDett)) {
+                        $panelVal = $rowEmpAccessDet['acc_access'];
+                        $checkBoxName = $rowEmpAccessDet['acc_name'];
+                        $checkBoxId = $rowEmpAccessDet['acc_check_id'];
+                        $type = $rowEmpAccessDet['acc_type'];
+                        // if ($type == 'GirviAccess' && ($checkBoxId != 'addNewGirviAccess' && $checkBoxId != 'updateGirviAccess' && $checkBoxId != 'loanPanel')) {
+                        ?>
+                        <tr>
+                            <td>
+                                <table border="0" cellspacing="2" cellpadding="2" align="left" valign="top">
+                                    <tr>
+                                        <td align="right" valign="top">
+                                            <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                            <?php
+                                            if ($panelVal == 'true')
+                                                echo 'checked';
+                                            else
+                                                echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                            ?>/>
+                                        </td>
+                                        <td align="left" valign="middle" colspan="2">
+                                            <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $selEmpAccessDetNext = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and  acc_check_id LIKE '%" . $checkBoxId . "%' and acc_check_id !='$checkBoxId'";
+                                    $resEmpAccessDetNext = mysqli_query($conn, $selEmpAccessDetNext);
+                                    //$num = mysqli_num_rows($resEmpAccessDet);
+                                    //echo '$num' . $num;
+                                    while ($rowEmpAccessDetNext = mysqli_fetch_array($resEmpAccessDetNext)) {
+                                        $panelVal = $rowEmpAccessDetNext['acc_access'];
+                                        $checkBoxName = $rowEmpAccessDetNext['acc_name'];
+                                        $checkBoxId = $rowEmpAccessDetNext['acc_check_id'];
+                                        $type = $rowEmpAccessDetNext['acc_type'];
+                                        ?>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td align="right" valign="top">
+                                                <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                <?php
+                                                if ($panelVal == 'true')
+                                                    echo 'checked';
+                                                else
+                                                    echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                ?>/>
+                                            </td>
+                                            <td align="left" valign="middle">
+                                                <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                            </td>
+                                        </tr> 
+                                    <?php } ?>
+                                </table>
+                            </td>
+                        </tr> 
+                        <?php
+                        //  }
+                    }
+                    ?>   
+                </table>
+            </div>
+        </td>
+        <!--start code--> 
+        <td width="165px" valign="top" class="textBoxCurve1px">
+            <div style="">
+                <div style="margin-top:-16px;border-radius: 5px;width:100%;" class="heading"><span>Finance</span></div>
+                <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top">
+                    <?php
+                    /* Start to get values of access @AUTHOR: SANDY13AUG13 */
+                    $selEmpAccessDet = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and "
+                            . "acc_check_id IN ('finance')";
+                    $resEmpAccessDett = mysqli_query($conn, $selEmpAccessDet);
+                    while ($rowEmpAccessDet = mysqli_fetch_array($resEmpAccessDett)) {
+                        $panelVal = $rowEmpAccessDet['acc_access'];
+                        $checkBoxName = $rowEmpAccessDet['acc_name'];
+                        $checkBoxId = $rowEmpAccessDet['acc_check_id'];
+                        $type = $rowEmpAccessDet['acc_type'];
+                        // if ($type == 'GirviAccess' && ($checkBoxId != 'addNewGirviAccess' && $checkBoxId != 'updateGirviAccess' && $checkBoxId != 'loanPanel')) {
+                        ?>
+                        <tr>
+                            <td>
+                                <table border="0" cellspacing="2" cellpadding="2"  align="left" valign="top">
+                                    <tr>
+                                        <td align="right" valign="top">
+                                            <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                            <?php
+                                            if ($panelVal == 'true')
+                                                echo 'checked';
+                                            else
+                                                echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                            ?>/>
+                                        </td>
+                                        <td align="left" valign="middle" colspan="2">
+                                            <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                    $selEmpAccessDetNext = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and  acc_check_id LIKE '%" . $checkBoxId . "%' and acc_check_id !='$checkBoxId'";
+                                    $resEmpAccessDetNext = mysqli_query($conn, $selEmpAccessDetNext);
+                                    //$num = mysqli_num_rows($resEmpAccessDet);
+                                    //echo '$num' . $num;
+                                    while ($rowEmpAccessDetNext = mysqli_fetch_array($resEmpAccessDetNext)) {
+                                        $panelVal = $rowEmpAccessDetNext['acc_access'];
+                                        $checkBoxName = $rowEmpAccessDetNext['acc_name'];
+                                        $checkBoxId = $rowEmpAccessDetNext['acc_check_id'];
+                                        $type = $rowEmpAccessDetNext['acc_type'];
+                                        ?>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td align="right" valign="top">
+                                                <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                <?php
+                                                if ($panelVal == 'true')
+                                                    echo 'checked';
+                                                else
+                                                    echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                ?>/>
+                                            </td>
+                                            <td align="left" valign="middle">
+                                                <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                            </td>
+                                        </tr> 
+                                    <?php } ?>
+                                </table>
+                            </td>
+                        </tr> 
+                        <?php
+                        //  }
+                    }
+                    ?>   
+                </table>
+            </div>
+        </td>
+        <!--end code-->
+        <td width="165px" valign="top" class="textBoxCurve1px">
+            <div style="">
+                <div style="margin-top:-16px;border-radius: 5px;width:100%;" class="heading"><span>MoneyLender</span></div>
+                <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top">
+                    <?php
+                    /* Start to get values of access @AUTHOR: SANDY13AUG13 */
+                    $selEmpAccessDet = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess'";
+                    $resEmpAccessDet = mysqli_query($conn, $selEmpAccessDet);
+                    while ($rowEmpAccessDet = mysqli_fetch_array($resEmpAccessDet)) {
+                        $panel = $rowEmpAccessDet['acc_panel'];
+                        $panelVal = $rowEmpAccessDet['acc_access'];
+                        $checkBoxName = $rowEmpAccessDet['acc_name'];
+                        $checkBoxId = $rowEmpAccessDet['acc_check_id'];
+                        $type = $rowEmpAccessDet['acc_type'];
+                        if ($type == 'UdhaarAccess' || $type == 'MoneyLenderAccess') {
+                            ?>
+                            <tr>
+                                <td>
+                                    <table border="0" cellspacing="2" cellpadding="2" align="left" valign="top">
+                                        <tr>
+                                            <td align="right" valign="top">
+                                                <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                <?php
+                                                if ($panelVal == 'true')
+                                                    echo 'checked';
+                                                else
+                                                    echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                ?>/>
+                                            </td>
+                                            <td align="left" valign="middle" colspan="2">
+                                                <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                        $selEmpAccessDetNext = "SELECT * FROM access where acc_own_id='$_SESSION[sessionOwnerId]' and acc_emp_id = '$staffId' and acc_aplcatn ='omrevoAccess' and  acc_check_id LIKE '%" . $checkBoxId . "%' and acc_check_id !='$checkBoxId'";
+                                        $resEmpAccessDetNext = mysqli_query($conn, $selEmpAccessDetNext);
+                                        //$num = mysqli_num_rows($resEmpAccessDet);
+                                        //echo '$num' . $num;
+                                        while ($rowEmpAccessDetNext = mysqli_fetch_array($resEmpAccessDetNext)) {
+                                            $panelVal = $rowEmpAccessDetNext['acc_access'];
+                                            $checkBoxName = $rowEmpAccessDetNext['acc_name'];
+                                            $checkBoxId = $rowEmpAccessDetNext['acc_check_id'];
+                                            $type = $rowEmpAccessDetNext['acc_type'];
+                                            ?>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td align="right" valign="top">
+                                                    <input type="checkbox" id="<?php echo $checkBoxId; ?>" name="<?php echo $checkBoxId; ?>" value="<?php echo $checkBoxId; ?>"         
+                                                    <?php
+                                                    if ($panelVal == 'true')
+                                                        echo 'checked';
+                                                    else
+                                                        echo ''; //to get values of access @AUTHOR: SANDY12AUG13  
+                                                    ?>/>
+                                                </td>
+                                                <td align="left" valign="middle">
+                                                    <span class="text_blue_Arial_12"><?php echo $checkBoxName; ?></span>
+                                                </td>
+                                            </tr> <?php } ?>
+                                    </table>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    }
+                    ?>
+                </table>
+            </div>
+        </td>
+    </table>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center" colspan="5">
+                <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" class="padBott3">
+                    <tr>
+                        <td valign="middle" align="right">
+                            <input type="submit" value="Submit"
+                                   id="empAccessButton" name="empAccessButton" style="height: 30px;width: 120px;font-weight: bold;font-size: 14px;border-radius: 5px !important;border:0;text-align: center;color: #000080;background-color: #BED8FD;" 
+                                   onclick="javascript:addEmpAccess('omrevoAccess', '<?php echo $staffId; ?>');" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>  
+
+<!-- End of Modified Code(Complete file modified) @AUTHOR: DIKSHA11SEPT2018 -->

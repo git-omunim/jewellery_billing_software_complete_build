@@ -1,3 +1,81 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: show reail stock list with stone report
+ * **************************************************************************************
+ * 
+ * Created on 16 DEC, 2024 3:332:19 PM
+ *
+ * @FileName: omtempstokwithstonereport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:SHREYA 
+ *  REASON: FOR ALL SCHEME SHOW 
+ *
+ */
 ?>
+<?php
+    $createView = "CREATE TABLE stock_transaction_copy AS
+SELECT * FROM stock_transaction WHERE 1 = 0"; 
+
+
+
+$sqlTable = 'DESC stock_transaction_copy';
+
+mysqli_query($conn, $sqlTable);
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table stock_transaction_copy";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm @AUTHOR: SANDY10JUL13
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+}
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+
+$queryItemDetails = "INSERT INTO stock_transaction_copy
+SELECT *
+FROM stock_transaction
+ORDER BY 
+    CASE 
+        WHEN sttr_sttr_id IS NULL THEN sttr_id 
+        ELSE sttr_sttr_id                    
+    END,
+    sttr_id";
+//echo '$queryItemDetails==>'.$queryItemDetails.'<br>';
+$resItemDetails = mysqli_query($conn, $queryItemDetails) or die(mysqli_error($conn));
+
+
+
+$queryItemDetails = "ALTER TABLE stock_transaction_copy
+ADD COLUMN sttr_count_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY";
+//echo '$queryItemDetails==>'.$queryItemDetails.'<br>';
+$resItemDetails = mysqli_query($conn, $queryItemDetails) or die(mysqli_error($conn));

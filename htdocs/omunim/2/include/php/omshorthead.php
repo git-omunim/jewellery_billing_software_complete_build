@@ -1,3 +1,102 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Sell Purchase Main Division
+ * **************************************************************************************
+ *
+ * Created on 16 Dec, 2012 5:27:17 PM
+ *
+ * @FileName: ogspspdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+if ($custId == null || $custId == '') {
+    $custId = $_REQUEST['custId'];
+}
+?>
+<div class="m-portlet__body" style="display:'<?php echo $disp; ?>';">
+    <ul class="nav nav-pills nav-pills--warning nav-fill" role="tablist" style="height:30px;background:#ebedf2;margin-bottom:5px;border-bottom: 1px solid #e9e9e9;box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.3);">                          
+        <?php
+        if ($_SESSION['sessionOwnIndStr'][20] == 'Y' ||
+                $_SESSION['sessionOwnIndStr'][20] == 'A' || $_SESSION['sessionOwnIndStr'][20] == 'B') {
+            if ($_SESSION['sessionProdVer'] == 'OMUNIM3.0.0') {
+                ?>
+                <li class="nav-item dropdown" style="z-index:0;">  
+                    <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="navigatationPanelByFileName('cust_middle_body', 'stock/omStockSearch', 'FINE_JEWELLERY_RETAIL_PUR_B4', 'stock', 'sell', '', '', 'stock', '<?php echo $custId; ?>', '', '', '', '<?php echo $firmId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                        SELL FINE JEWELLERY
+                    </button> 
+                </li>
+            <?php } else { ?>
+                <li class="nav-item dropdown" style="z-index:0;">  
+                    <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="navigatationPanelByFileName('cust_middle_body', 'stock/omStockSearch', 'FINE_JEWELLERY_RETAIL_PUR_B4', 'stock', 'sell', '', '', 'stock', '<?php echo $custId; ?>', '', '', '', '<?php echo $firmId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                        SELL FINE JEWELLERY
+                    </button> 
+                </li>
+                <li class="nav-item" style="z-index:0;"> 
+                    <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="navigatationPanelByFileName('cust_middle_body', 'ogrtjsdv', 'FINE_JEWELLERY_SELL_RETURN', '', '', '', '', 'stock', '<?php echo $custId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                        RETURN FINE JEWELLERY
+                    </button> 
+                </li>
+
+                <?php
+            }
+        }
+        ?>
+
+        <li class="nav-item" style="z-index:0;">
+            <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="navigatationPanelByFileName('cust_middle_body', 'ogrwiadv', 'CustSell', 'rawMetal', 'sell', '', '', 'rawMetal', '<?php echo $custId; ?>', 'SELL', 'Customer', '', '<?php echo $firmId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                RAW METAL
+            </button> 
+        </li> 
+        <?php
+        if ($_SESSION['sessionOwnIndStr'][14] == 'A' ||
+                $_SESSION['sessionOwnIndStr'][14] == 'S') {
+            //                           
+            if ($_SESSION['sessionProdVer'] == 'OMUNIM3.0.0') {
+                ?>
+
+            <?php } else { ?>
+                <li class="nav-item" style="z-index:0;">
+                    <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="resetEstimateInvNo();navigatationPanelByFileName('cust_middle_body', 'omestimate', 'Estimate', 'ESTIMATE', 'ESTIMATE', '', '', '', '<?php echo $custId; ?>', '', '', '', '<?php echo $firmId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                        QUOTATION
+                    </button> 
+                </li>                          
+
+                <?php
+            }
+        }
+        ?>
+
+        <?php
+        if ($_SESSION['sessionOwnIndStr'][14] == 'A' ||
+                $_SESSION['sessionOwnIndStr'][14] == 'S') {
+            ?>
+            <li class="nav-item" style="z-index:0;">
+                <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" onclick="resetEstimateInvNo();navigatationPanelByFileName('cust_middle_body', 'omestimatelist', 'estimateList', '', 'ESTIMATE', '', '', '', '<?php echo $custId; ?>', '', '', '', '<?php echo $firmId; ?>');" style="font-size:17.5px!important;font-family: 'Calibri', sans-serif;">
+                    QUOTATION LIST
+                </button>
+            <?php } ?>                  
+    </ul>
+</div>

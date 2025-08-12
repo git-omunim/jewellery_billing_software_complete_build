@@ -1,3 +1,62 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 27 Mar, 2019 9:10:30 PM
+ *
+ * @FileName: shop_temp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$jsondata = '{"products":[{"id":1792685277218,"title":"PPG","body_html":"PPG","vendor":"sgen shop","product_type":"PPGD","created_at":"2019-03-27T10:01:08-04:00","handle":"burton-custom-freestyle-151","updated_at":"2019-03-27T10:20:49-04:00","published_at":"2019-03-06T08:05:45-05:00","template_suffix":null,"tags":"\"Jewellery\"","published_scope":"web","admin_graphql_api_id":"gid:\/\/shopify\/Product\/1792685277218","variants":[{"id":16367810936866,"product_id":1792685277218,"title":"Default Title","price":"2500.00","sku":"PPGD2","position":1,"inventory_policy":"deny","compare_at_price":"3000.00","fulfillment_service":"manual","inventory_management":"shopify","option1":"Default Title","option2":null,"option3":null,"created_at":"2019-03-27T10:20:49-04:00","updated_at":"2019-03-27T10:20:49-04:00","taxable":false,"barcode":"025","grams":0,"image_id":null,"weight":0.0,"weight_unit":"g","inventory_item_id":16614569902114,"inventory_quantity":0,"old_inventory_quantity":0,"requires_shipping":true,"admin_graphql_api_id":"gid:\/\/shopify\/ProductVariant\/16367810936866"}],"options":[{"id":2386994135074,"product_id":1792685277218,"name":"Title","position":1,"values":["Default Title"]}],"images":[],"image":null},{"id":1792685375522,"title":"PPG","body_html":"PPG","vendor":"sgen shop","product_type":"PPGD","created_at":"2019-03-27T10:01:11-04:00","handle":"burton-custom-freestyle-152","updated_at":"2019-03-27T10:20:53-04:00","published_at":"2019-03-06T08:05:45-05:00","template_suffix":null,"tags":"\"Jewellery\"","published_scope":"web","admin_graphql_api_id":"gid:\/\/shopify\/Product\/1792685375522","variants":[{"id":16367811133474,"product_id":1792685375522,"title":"Default Title","price":"2500.00","sku":"PPGD3","position":1,"inventory_policy":"deny","compare_at_price":"3000.00","fulfillment_service":"manual","inventory_management":"shopify","option1":"Default Title","option2":null,"option3":null,"created_at":"2019-03-27T10:20:53-04:00","updated_at":"2019-03-27T10:20:53-04:00","taxable":false,"barcode":"026","grams":0,"image_id":null,"weight":0.0,"weight_unit":"g","inventory_item_id":16614570098722,"inventory_quantity":0,"old_inventory_quantity":0,"requires_shipping":true,"admin_graphql_api_id":"gid:\/\/shopify\/ProductVariant\/16367811133474"}],"options":[{"id":2386994233378,"product_id":1792685375522,"name":"Title","position":1,"values":["Default Title"]}],"images":[],"image":null},{"id":1792685539362,"title":"PPG","body_html":"PPG","vendor":"sgen shop","product_type":"PPGD","created_at":"2019-03-27T10:01:13-04:00","handle":"burton-custom-freestyle-153","updated_at":"2019-03-27T10:16:52-04:00","published_at":"2019-03-06T08:05:45-05:00","template_suffix":null,"tags":"\"Jewellery\"","published_scope":"web","admin_graphql_api_id":"gid:\/\/shopify\/Product\/1792685539362","variants":[{"id":16367778562082,"product_id":1792685539362,"title":"Default Title","price":"2500.00","sku":"PPGD4","position":1,"inventory_policy":"deny","compare_at_price":"3000.00","fulfillment_service":"manual","inventory_management":"shopify","option1":"Default Title","option2":null,"option3":null,"created_at":"2019-03-27T10:16:52-04:00","updated_at":"2019-03-27T10:16:52-04:00","taxable":false,"barcode":"027","grams":0,"image_id":null,"weight":0.0,"weight_unit":"g","inventory_item_id":16614537265186,"inventory_quantity":0,"old_inventory_quantity":0,"requires_shipping":true,"admin_graphql_api_id":"gid:\/\/shopify\/ProductVariant\/16367778562082"}],"options":[{"id":2386994495522,"product_id":1792685539362,"name":"Title","position":1,"values":["Default Title"]}],"images":[],"image":null}]}';
+
+$jsondata = preg_replace('/"id"\s*:\s*(\d+)/', '"id": "\1"', $jsondata);
+$jsondata = preg_replace('/"product_id"\s*:\s*(\d+)/', '"product_id": "\1"', $jsondata);
+$jsondata = preg_replace('/"inventory_item_id"\s*:\s*(\d+)/', '"inventory_item_id": "\1"', $jsondata);
+
+$jarray = json_decode($jsondata, true);
+
+//echo '<PRE>';
+//print_r($jarray);
+
+foreach ($jarray as $obj_key => $products) {
+    //echo "$obj_key:<br>";
+    foreach ($products as $products_count_key => $products_count) {
+        //echo "$products_count_key: $products_count<br>";
+        foreach ($products_count as $products_details_key => $products_details) {
+            //echo "$products_details_key: $products_details<br>";
+            //
+            if ($products_details_key == 'variants') {
+                foreach ($products_details as $products_details_variants_key => $products_details_variants) {
+                    //echo "$products_details_variants_key: $products_details_variants<br>";
+                    foreach ($products_details_variants as $products_details_variants_details_key => $products_details_variants_details) {
+                        echo "$products_details_variants_details_key: $products_details_variants_details<br>";
+                        //
+                        
+                        //
+                    }
+                    echo '<br/>';
+                }
+            }
+        }
+    }
+    echo "<br>";
+}
 ?>

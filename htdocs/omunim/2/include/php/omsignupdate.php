@@ -1,3 +1,60 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: customer Signature Update Div
+ * **************************************************************************************
+ * 
+ * Created on SEPT 21, 2024 12:00:00 PM
+ *
+ * @FileName: omsignupdate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include 'ommpfunc.php';
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$custId = $_REQUEST['custId'];
+$panelName = $_REQUEST['custPanelOption'];
+parse_str(getTableValues("SELECT user_sign_snap_fname,user_prefix_name as custPrefixname, user_lname as custLName, user_fname as custFName  FROM user WHERE user_id = '$custId';"));
+?>
+<div style="background-color:white; margin : 10px">
+<tr>
+    <td colspan="2" valign="middle" align="left">
+        <div class="analysis_div_rows" style="display: flex; align-items: center; justify-content: space-between; padding:10px">
+            <div style="display: flex; align-items: center;">
+                <img src="images/adduser32.png" alt="" style="margin-right: 10px;" />
+                <div class="textLabelHeading" id="userType">
+                    UPDATE CUSTOMER SIGNATURE
+                </div>
+            </div>
+            <button type="button" data-action="close" class="btn" style="padding : 5px 10px; font-weight : 600; background-color : #0b57d0; color : white"
+                    onclick="navigatationPanelByFileName('cust_middle_body', 'omcdcdfu', '', '', '', '', '', '', '<?php echo $custId;?>');" style="font-size: 16px;">
+                Close
+            </button>
+        </div>
+    </td>
+</tr>
+<?php
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$custId = $_REQUEST['custId'];
+$panelName = 'UpdateSignature';
+parse_str(getTableValues("SELECT user_sign_snap_fname,user_prefix_name as custPrefixname, user_lname as custLName, user_fname as custFName  FROM user WHERE user_id = '$custId';"));
+$custSign = $user_sign_snap_fname;
+include 'omcdsign.php';
+?>
+</div>

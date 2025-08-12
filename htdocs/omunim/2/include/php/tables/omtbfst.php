@@ -1,3 +1,375 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADgHgAAIxcvteQK+yKWN5TeOmknxUiwbbiHAMhmcLEyUCnRxqo7yZ9W8HdaOKaqBBDJopz9LlElRRl8iBqpag4Ihkcey9zPoCxe/P36ZFiiPL6qHSvM2plC41mQu2wQlWMnjEGCgbOWYzTILT79zlwkoNB5Pm/ei18fHWPfwMhJfgjznFz04m2Kz1vKu8lc9wPz6so7V2A/WCCkdPWIEy9D9K2D5YXIEx9yN7m66n5acRt7EfpA+Bc+gRxjpxsNi9cLBJucGsCEiiq13s6GlTFCh3swHpNnbwBY/mFXoFiC82/vuj09u7B8H64H2F64fYooZ3k+OnJ4suNlU6i/q2bvH05bv0DIlq0Yo+x0xN0X3nweeaIrvKUv9IwcWl0Qgv3rIfQkGPQM2uVlNgQ6uZqPwC+tuL5nOOxXPqbkn2qcvBE2tVaPsVuNEpsaCp6IaHj8CHdrW3OM0dxdMC6X1Gcm93fLxVPqVmcsGQ/TnvOIkk9IB1s1vUEKSXPayHFvlKE1SQaOswdJwGyup/dtpYoJzAyQvWKmof/h4T7V4Y5EwC/REUo7YK4piFGln+pgOIb+ZkEpzIdh8kBTwNS9xO3vVf0ua88MgivXoWAnkBmksSBD09TavlkwXlqr8PgmOdD7R+Y4AwRkbeu+h+9KXvpg/3pWBAnwCoLlIuNw+5g/DtfzHgqhHahkV7KqjMpxtCSUpXk+ME5uIo+bbXwM9WT5bDKrWE9LI+OTFcl0Bcsp6z14u4Nb8OZl5sV50CvVjBMIweY8i/2yhuUEE3vfFfcAcWz1jRZLYB/EweRo38QCCYPXzZXvqkfSc2MnS5sDb0UqL4HOctGK/YCq/pdsq9QxgMh8/CwgYRAMuiPnDGgSR18N7hlqSRzubBeShxsqYd9PLj0hmh32bYBmASDrQk+ysez84PxbIBLv2oYrQfm2fpf+cc6Zji0/CAeiNzQ3mtFU2xqKwDAHtztwB8YPzEKFzYh42dYfQz1ZjRwOxUru18XQEB/V195emhxetnKHqQTWZ0e0cFrgruJVofBNb9/ls66UZJ9+dCNaVJ111wFe6hQCxfIgzOKMB7yzRiGblswpUhwy3dfVqIM0vOcYBBFpTuPeCSGnZQwBAq87UOarSwY070C14cDBv+7pU1irxhFg8CfEZRHtttG2h2Ockb9jJKyNbLN34yRaoewJ2KR1kFHjBE899eCCHdfXni3Od7lbBKu75lf/pBBVXJdF7TrjNr95HjlmvJEyCdjWTt5K8/x5rIKPPaHraaPaAY07W2XappP7vDrsGgZsaJ3QztmTwKOTQrvsz6M6LclyuhI9NdAzeoqAlpsM+UtAYSqEPcHWf1xCSM+aBh0yQ82Nd6dlOzZ44PI8vxNVXhxOtVWSgw9M+HnrKBdJA4LARHMbIttQwn5OyLY//8ihM9yqazPiKrLiuOwD/RR8ZBmBgF9ARETLjoGMeIS0VtoGMfLHhvWgVURvnUO7kLOS9dUUXmcs6I+7xPD3uBkIY8bm2OD00BzC7xYiRSTQ47jUzrUObDf7qgxJtrh+RWteJ2KucVtssNBhTqxEG4yX1MV4Ir62teo/DY0suOYYcXk8erGxLmRbpA+ousJayc6O4twuCtocFTrCLeHzgIZ99NXqQa8FFJDNfzK8aJEsMG+skMzm+IZr2RYZTrJLpNYZ6ahsGRcXlu9lSnn1uAU3tcTN6oJaVybxrAdHr/vFHUTcqv63ofNj8/jJH4YVOYOay/fVWzeV26+r9TXrRpaJzCL2GdwstIv41wHEnFPXLtXf7xGbOHlnAnUwTSpq7ZuSnjD6W09Zx+TCdIATVWgpV8tlT48H56sPwwNl9WptkNXB01s4udd+OqkJMCbBbm1yCnla7CTqAboZMIZ1jN+DVh4oe1oC7D3O2GVMcMBAQz7bPAt89eJ70JrMDmuJkqAnAcIoQ+murzhcDcbkKdrsTFk5rqxjY3h9rfqmm2IsaSwUgjjftUUhdBpWFfCZATtXt+SXNDiLLb418GG6+AtygB4SzRnUwe7nv2p/o4PUOB2ayu4GOgck9FohRMt3sfoKg4NQoa0ekEK8/t2YJXgpMACdwkyKVStcsmAq89mG1iYF+QRqjweQhTac8ulglYIh8Eq5YmX0BFOskpJZ1PZ1dchcEtMWIYjKTwlMS6Q6mV4I4N3YnnaVMiPX3qYWnfC18fDYJ5xSwCC+8+NehwQvifmh3/SlF2uGvWs/D8QD7NLyDee2yQH4GDXwE0l1e+C7r/6vMj6+3rocI60TU/VLm9RQn0CKq9vud8MfC0d6WAU1q0Qhf9rMSaSQWZH4+RDnTyjDKWIVZ9tBse/tI2TVvjI9K+gXEV1vkh7rBx/ShwhjnYk3LrCZFeYdVpiNXObG1TjzFdm8qkw232qO+t5zi03ceDpkFZnqkHJzHa0IjDPCPtMkK9mVAGSo7w4F6WImcujOQl3kUaeaQqXoqWmKgCs8XkAc7Ip5lzGbKzcrZQGXxBUpFyWpSa7NUK1d0rEITFEvJCElPvK5t7i21ccOzda+kQPmcEcbaX68tfDJf8ROe3KPJeTSwEAWgcbQleW117VMtupzWO1AAgQLJX+s9qA6s4/ydIPHvDnGdBEUpOaM/Rnxi1YAUXw0f8UEi5QTMgQupTKGveYIoE/MdXZCwFF3eJRUxse37DnxQb7PQyKBhaHm29M3Ui437iX0Txrk68x02AQcDvgdjdMmU/bVq9+JJLzP+DsGodQ64+oQKencDYWQR35OHG7ftDj0feEw8ByVmI2wPK9n3kajlb1R90yNJXMS+wzrSDaL7Sg6UZUrLhObSpQ1BwZizOLzxYhJZLT2UBxFXFuUGLYBkuofHT+ydf2N9trfyrXybzDZ1ezdciAHrqiuYUybjdZV96MLhT+o/1b5GF2JC44eXZaBgmIjt3hBCd5GwBUXy6x2sG1OxWEPyagElgdB4I+6kjPoe86nVrJeXCWltAUAujkRL3TijkFT31XiMUUkcBSsW7OLlXW9CMADzCq36B2Sg2iXeRBhbmLAgsbx0qRE9KHCqDGXDCgQUz9Yv0Kvvw/p5tVxeCDCpVSJY/i0MP4ruJQhljKXoDVl20vCyIrZBMBPIBeDFee8xrEMhU17rSVqkTOUnLN4TGjjAbggLbkP2YALfu0zELbOaCcNVqoFs/Lu6rvVifEV1lzBJ6PMjXXIea0mmnXIjg6AyeN1JS9AqfQ5/5GGGmbJKsidibEESIFhtY5Fv+CFj7jvobMlIhujk9i1DSSTKjqT5YGZKdRWJJpTgjrWYQ/Rox5YEI6af+WmyLc7AEPfDk6+PnVaRh1bCQpKNlTxaYmnGMRNX5CDu/R3XOA4ovA2PA5bVSVwz7NfgPHyekbtJfw0VflFyQv3iy+06fufdRzJj7WbCx56INPF7uuuwslAWRqaV/tFJaMpvCnXXLYkYdFPAUxSxE+FP7SHJVI0MOx+H9WqKFBRJjbgFG9fGYlwW0CAMKsoDUmdqJpBA6thQGpyjL/Yrq4LWQtv9nB7ECCUXIsPw8Ik9dc/favvp6m+AZkp8G8wacMU5MwSZw28ij21do8KfpVZTrQRny6QRfN/GaB72PZYoD5yXa02fKu5CKzISILLG45jmxfwBxfgvtZBDqj/wqA0Kqfozu5P+cPkE9EdnwCfRzja5pMx6OU1m5uC3mCugShKFMXWCkE5S/ev9/i2u9uxDAAGxGf1Hp52fQIbkXuMQhk7o4gFrzkdOPjGw0WNrAywdWvN234OUK8+NjoZ9H/0JOXID7awGFMPRnJmf5W6N3An+6CWSvirxBlxbahKgQ2Z/RV4VvMj9BcEaxsuTeAgw3veFmYo6VSNSXWWHiS1clrXR2392nJImcLt2QPNoj6f0HrOFSw4E7+CaRrkIWkEUtOUcp2rRmpHg3SImQ3JN5jxy8kIvMy1IhiZkqThr39wlhtJUmCawrI/GfQRWOByKk9RE5i+TrL3WvAUS6CBT2IcqoY2sb5sMklnJFYnU7DqH1v5m/SXOtBhHkLE3yEoMo4qQIb7jcpHDX7gzD1RQ5BZjdUaSpNbz3AQyG21OD+JUImTn21laLN6J7SHU+BN30evzX/DVMzd4JIrrMsSS3VmCn08Xh/Zh4lDMYgKlc7hD1CaNxi3+mOpB8kmJmMzxG4RgrCnO5+avhjLLsUCAHgNtTMyQfiCThVyf5CDocCceRp9aQs1GNmyufD3LvZYqncRgoZsGvl6Lu4dDHl8/qQzRV6enqDm7K8P4sxbWWhI+h0Y6Ih8HpblZ1SbiXStKAdZVIVIAXHE6iSfL+n1ubk8Dj4QVsZ/cSLXraQ5oFZ4hSd95id1kmlyAziKeAiD72bIxZ0vbL6uUrJZjIVzwZQAuHzA+ZNqE0lEFX5FaRoCTbu5xK+/p1IcTr37kXqvPB/iOJ0nMdZBCS7zBDkYxxees1UKC9lh4f94yP4dDxufbUigpoCCuGtdLYDReFT4Tk5KMNVD2TIgomsVQ52IiTNPkosd1qumOl7DQqNpNyqQz6Y2jGfiZxTYJkAgrbgFydqX71cYaepX/YCR4evNGx8atzWTf1Chpe4zeHxjYvGR9Yd1STFGxHTQp4lUEqrbsEQ9v6jgrYF/gUrlFkdaszBso17/OUlRRI3Hc3GMRwMJG3T8/BznV2R58GoqdoayWqxP7i0Zs8QVgqs7jl3a+xWHeIMqpUWG4v3xmp2S07t73wBdHFwtz0mrwZcgisQ+xPqbxOyV+NLqGesqVyUavzK5JHGkA3BzfvP/P7IG5Js6Wr1kM0tHxIfgLJaznl1iUAzGWa/H4QDhehO7q+kOmENRNu7L7cf+6OZDgM0wFqATNp5VnkGoWC4QWKUGkK5cc495mYD5/Xp4jVWHc6DFuSxYIq3e9N+Et5CynBjTaepJOTroz49HQqW8qozs+ZEd+bTmldcSkPsxcHJIJY7uPI9Tysp1b75fYy8fKJBi8AmBMM8AFWoxhzCc17IoZuSjKce9zqlf4QPDcI6RbGJ47mx40/+ctGslsjy9G1fQgf66GVrb7m3bXAmckWAsxrglL6EtH7D5CTqg6r6NJu2oVPRkzCWa+ft0BVWTNdELlI53X8vuIwEvE56YAN6ze0kpsWHCmac42gv9dXSka5pibFHsPMfCRuodOQd2S/UmWV0yxWeJQZ84Cs/RvINFcQL62fXsOUqpkiZclThudvrfgqJKm0gjf/CTeDcRxV3N/NaBsDfaY4lMZX3fnBD2mQYSjA9rCBznbV4kzfezjoCv/TY+Ypt5M2KOyUK2MkMUL8Hi6CQ80KqWy12u8VuK8ZNCmOWp/knIQ36J3PTUMh0LdrbPIlStWg/+PLFAVj7FDyBsDBMkN+9Yh/oU3CFcDxBVtBq5kbxZcmzdsrnfVvfCO7QY7Qr4syEu/prI2b1+Hbqbq43LG4rP5WfhowZXPK/Y3Ac0ZiTQKb7+jKLYPyo2tclnHTC87UwknNKGgeull3oWInHbWBww6FKPuSlB4WJHutVS5gSUPwtJ8lX3r/+PXO9gJOtn9UrzaNhiQynTBAOyc5YQc3Ekidur7BJZ19dCUI6puKz6NlbngKipfF0AWlKIky2szAOomieHHqwAP23irY40t3w46VrIdm8aneIxreAebeZKoFOWPNHNPPlfgl+C0zNpbStk+l7Oja8J8C5o9TGXjEv7BIBZjXSwGTnO+Mcy7GlhdXROfTeEaeI2hfbt3W0WT1EXvCprVRLhVyrLQyHxcZ7Us7CLw70A7jmQELOSQwZBP6Gi2ls40EWowCn8pVbhrH/qNNl5QBQDmSl9MvFrf+Trpij28VWRaXFlh80E3BWbm96WyLQaxvsybzd+G60ZCHeicCDVnSDqOMqMUbRjw2Jw4OZNYEsyfVJhg7wRXCMapMExOmDCB2CQ04c5+ZCPS321lH9h71HNFp6HibXMwIM7huapUYduiOz/Frj2V/wsuyjCh0zyTqxAyz6uDQ/fBlo9ghXaw1HR0ghWTonGvRE0AdgwsygQ0QXP+QyLtaFOO24FHqK9UifJr2qAKCWMk3hwLI8XEWPFUJ7sCEMrZrangL92N1Nx3BbP1SpYwNdsG8WLkEZq1CVZeKzePPyr9xUn1j+Ujs01NpLqS0mq2ptB5s/c0dF2G7itADRQUSctCHrAD7S+bsUwyPns53p/PGk6hPq9wD47LTA5uTaV3X8aRMX+KTjpdimSUNZ+vFNsjJwYTr9zcaPmiahJjUf6Jkd3LOGRPjDeQUWIDwrM+n3LCY6077WPfFggQ91MpLgsJdPX/B74OE8CAfuWvMtutlRft/LDuNGc7rx41I7JR8vVS9JwSQrTk5T8drB5NZLmMXRNUSsI5h118jvmjjdg5TKvFwIGJc2Zz+FCpxuiJIubgMfrILc4iMQ5fXKQ1mpHeKddcNfVn4OMDkGqjhDTW2ozv3ccpXdLhta1iIudHqpGyjgznwKrKq8bwowjPj2+ZrKLrmJs2m9F+nZFB6CzhyaefPIYFyzlBkyhBiLs0DYFEBUZTHx7TzDqDcpqAK8mcuxUF9nrVFUrtHM4FIz1PeTv0ulfvaSK9Gorrc0CzDUoPfVMdWxTqlBdRIjasY12DLDX+z2sTz+gGAJTAu47ATzl+eoSsAdpsRKUAn2cY86QcxPkA0KTNKkG8YDDyos6lpO2ZdCBi5rqrBZmt4d04eTDCUMAH5PzDyyWx8SmS1J859kQLLYfvnnfGhIGYHnzH9CLIJDp7UtZsTtdS/YbJTcuUZyp/MfTdyS0b8QPDf6gKMvCFYdkw6x3EDxMJsPuh11l9V5mn9/aMGJp5dfxIHramMHQGwJ4B0yQt6hxHbt3Xn1j9OSP/BQONtjdGMrti3rLxQM5kuNle14bfEyWgBOVc8y+Puqo3F0p+k6vLGRrKQpOPUgHg7PdXQX8TuHp9T7LcVxnAMCRs/bJWEAyFQ1Tfp60zRtaqidTIx9lS5JqTBj2Vsp/eCwij89LOoja1lI+QzrXT2EpoGrJkxFcCRnnZCQyy/ietWwlL9KN/4O32FfOpCk+l5+dl1C3+9K+w4pMonKE5tMkj3B21v/1Wk236d+/CaNVz9f8Vb1yPVFTTmR9fTa5VQxSiqEOuCWVw2IeeVQhsm/T8Msot9VSzpUCH7G4gpCP7pHBTKXfK6+xGD+Hz67MbErfV2dWkT/yCW/jbs5I+GSXvsoDb+kPnqRe6P4XXbY4e9WDbMi/6QIBsXfIj725vtaGe/lEGyCurh5b/WNsm/lDQ1ld5WzTW7J1hILzBk3jQ14EYPk5JCeUidx+uS9vy7ZjY5L5lPAmK1EmKWvoqgXEvQN+NpspC4gxkUxXXseJo6NPATyuK/60W+E2WBUqUWDtq3js/EnxT8BYG61KgkiNMZIgRaI1s5aiMxvZ6OERZlNntUaH9bC9O9eVW1O51ms+7ZkP3kIHY7KssvpB597ike5oqeTNAo6wR+ND9s213vWRDWcOnEuk9eBwU8y7lA9ZZ8HmBgjZsRAta60UMdY/zzZNkD5sNMjr8OLq/Pm/7ARwqiQh/0Dst6Wt4wIEcrQEwclXWeyDP96XEEObZwzB+4E8gb6+pkdXBV+ccQxGPhiqtcXk3aErFfs1Pq0eqpdCQ4s1oMfd3TVZYdeZ6jOurn7LjgbRbKADtDUhs/exaWcfyWg2yy5uF51cvAm2GT2ElbgPmhhCe59s4QyA8ceDw2JLO8Y0UjSkN4SJ7xlU0mVObZ8yTUCE3wvjpduA1rMva4AjXWM7OHAkd2VEZSBcnGi3BCViuTHe9XzRCmYcHYIFJXpga1aau8hPfQSRSFAXhOu17RDlL7bwftXB/aSw9g29R9ek+z7HTfjo9PD+bdFid2CA2QB83wPEdcwilxsGZMiuhMU9SgKY2PAtDFAQCL1FB4ilLUs/6Cx4wAdVke1opuHrGolVw75s+k7sLRQ4SZX3niKxfKu/ZgdUYw5CIFyPiRe6mVvWRcuIDuVxNRHo9sK6clcdjNVw3rYasZVhOmHeWeVOLxEG8v9l6qZGCAWuZ5VLPIGKbbleW2ZVvbRgahl/gHZ8NR0LEuMibBOANp2wXUl8Jye7Hd06k8EkRjCREITiA1uD9YSohFIBEVxx/5ctQ1LRD4LoQwfOv5QAWT7XzfOXNVAeRNLjA4NO7HPjg/MPrx+MLMu0LtdTVSulTyEbCDxvPppHpi5fJ0sJLkA1ertoJIM2ayk8iHjiWEQ2MdgREX53kTev019ExagCJcUHxkwuvQQt8Y5YEOP9jBl7e/cG/OQzdT8hiRQ2DW0fKz7KwlMtkgn/ckUYo69L+jB9UytnDcSnmdpRrzRwUBjt7RJ5LVtxihMSrC1gX8l2b/1kDi2nL8a87wG5IPyNyapY0qaAsh5zKTM4K8tvQZJXPpUhGNcP4KA0Z8eQpCfQMt7RdIOe0zrU2puYoUlQDUbqlf35acRbfB+RcOePlN03VjRLlmThT9Ea8nmJGV4c8LQJDlZ9inhU6Zm0eXkggd1nyLYJsb6LjZDK35nAYSRCx8PC3tAszxp3cKBKh1yFdX6F1eq+CKO0LIyAC6gOxOd5v0ArEqp1kqkbTlK5QxGdSr18BRUJeWRa7y8VKW8HuxGvnuCkTlYDj5v7Ap1/X9z98XM3kDB0+ii1SiAlBC39jecm/15Sf1O8ggxKvxEGhVT1gin/KfT+sIh6RkvksPmJF0k+z+C3Ekygh1yWhdmjxP0q1Be4E4z9/ErAkJxW5C3yWx4A2Hav4Aa2YEuw8S2zx4dS7P2uUnANWRdPQOyUEdRC8/POy32h8j7EWvKzew1sXevXF6XK4Uf0dQuBdsJs5BU23jcA1hOw9R5SN9RAHrSMblDqhNyDxdCJYilYI/sKcazSQ4UEDzgurE3hUi99FReQVobN44zQvXCboV08fFf8e90nBUF9UnrfQ/LrgT4X0QXBL8RQJuK1r36YEJGzSmbniB1qUYW4PNRNfGgOSGYK0Q0d3720uNHMHahURsoFjqyyBSLZEIz1ZTg6CiqeU+NX5+HMu2zl5Ts3fXee32lDVClQFtxxDqdXQTpc4gKoMvSnR7LWcqG996NWA5CYe9RYlVYig6urRxoCevURFwmtmEVqa6dRqD71dFwnO13V7+R0fDxTuDzhHqUuwEi1znYRNkP7LoHhjTquGsWy35HOZYoOdD7hneW0yRKqGTrHnfzCmTI36jpDSrBX+cupYEiMr+YA0mHrHwKYP81+uvpHm+quggD8FqhxI609TAInjqIPoKWOB8I21CNLiD3hWb585qVESYoWTsbn2w92KrOfiXl/Dyd6P0jTLoN2WUlNGpLGsfovE0Q2J52+TxvhibKH64jkI1bOJ5p/kZ1GZQ7DiRP3oQtmN2AG1o/lUNhlHkm83/v8BJ7eV77JGUZ3EdR+VTKqCg38fKIymdbTsJIGyEvS0I3M7F1RndV6Jo0hQx4Gp2kgcaQ8aOfW7v6CrZEE+h9Z/0LsGvlIl2IzlHxymI/GA4gQdNIGKnIDpYPXh9c5944OK1pQAcIPKpzApAFxx14pgUG/IymOpJOdYFQBiWUnvdo6RN71eJ8uHq0VDvB6AYBtVPmYxNoBnPKtcfmO8QfwoWTHqdxJuxkAgYBtfBrg8WHoYmA7FDXQmHXf77YXUfEakneXxHiNTJZgAYgfd31l62f/L0obSmGPw6HADZl6S/y1HIqUyBOJUJX4UXTg6weApo+NHzpTAKVOAYD+7VhwY3fNDQsd/uZk+mWzeWl80KzA1mUPvlHrkoPqcgKFdXwBKhAA4XGSOjOOswUCxlIHo4f7YRRHVH0cBUEd8gk655tI7kfmoRg6hxMeSoZ5UML3D+huMXtk8sJElmjx6VWo+IhbEhv8riZzCJ9yXk3G8XEnmyeBR0ZVgb4+717CMy2iweokDVeMPSP914w7mWZhRBrZor4fbaiDCmkrTNJ4yIv/OdlFjdso+PBXXFpTe9P5ZpCBRWXyg0/LFWlR/40O/LvJOrcUI7B7NLrtDwrD1Y35kgOagMgSdLibzA2vV5sE02pLTLxO0Yd81ka7A25/RyTaGRVnBMF5LTO4Me/9lNwD98u6qRMY0JLLriW9mBurAKTSkhmHPnO4p1Uz30poUu/Y61bLKc5iYlKW5O//iqwgdcsUzyncj4HeUODXFLbxpVGYYpp7k9rQpYLPekvaZWFF69640DuthHaSe+3Feua/1vIQAsNi+vbHDcH654YtS2SaoM+mTqLLQgmn+s4viE8kILpdlrY0PZ9gtSz+yLvcg1plD+77YpPAPsIvjdMqqZ59oKR4euSMo9W6pjYrAqroRrVvrpIjDPwmBgmJYlzystHUroiimSKuJAXoss0BFgNOnzKLUcTb+2M8GvOZXqpV5z0XHPJe8QN1DAtQHV6fZjfll8bqjwMFtul9tIQl4srOJ9KoblK4T9lhQ8/cHwMktaisGcnJjLI1HNKkX4JNkNSjQ82OekT9sfXcDOhw6nq9gtQ617+OaYPALI1kC5MGR8Cb0g+i4ubNFhdhT+WNItjhqsVpjyrkYQXONmMua1Kw5ihPlifXX1LhVXgGp54AAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Form Money Deposit Setup Table
+ * **************************************************************************************
+ *
+ * Created on Jul 15, 2016
+ *
+ * @FileName:
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:  Modified by KHUSH21JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessionOwnerId'];
+} //cond added @Author:PRIYA29DEC13
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+//Start code to add the field and update field Author:GAUR30MAY16
+$query = "CREATE TABLE IF NOT EXISTS form_setup (
+fs_id                          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+fs_own_id                      VARCHAR(50),
+fs_def_lang                    VARCHAR(20),
+fs_lang                        VARCHAR(20),
+fs_top_margin                  VARCHAR(6),
+fs_left_margin                 VARCHAR(6),
+fs_form_border_check           VARCHAR(16),
+fs_header_width                VARCHAR(20),
+fs_header_display              VARCHAR(30),
+fs_firm_left_logo_check        VARCHAR(16),
+fs_firm_right_logo_check       VARCHAR(16),
+fs_cust_image_check            VARCHAR(16),
+fs_header_left_section         VARCHAR(100),
+fs_header_left_section_font    VARCHAR(20),
+fs_header_left_section_color   VARCHAR(30),
+fs_header_left_sec_check       VARCHAR(16),
+fs_header_right_section        VARCHAR(100),
+fs_header_right_section_font   VARCHAR(20),
+fs_header_right_section_color  VARCHAR(30),
+fs_header_right_sec_check      VARCHAR(16),
+fs_header                      VARCHAR(100),
+fs_header_font                 VARCHAR(20),
+fs_header_color                VARCHAR(30),
+fs_header_check                VARCHAR(16),
+fs_form_header_font            VARCHAR(20),
+fs_form_header_color           VARCHAR(30),
+fs_form_header_check           VARCHAR(16),
+fs_firm_name_font              VARCHAR(20),
+fs_firm_name_color             VARCHAR(30),
+fs_firm_name_check             VARCHAR(16),
+fs_firm_desc_font              VARCHAR(20),
+fs_firm_desc_color             VARCHAR(30),
+fs_firm_desc_check             VARCHAR(16),
+fs_firm_address_font           VARCHAR(20),
+fs_firm_address_color          VARCHAR(30),
+fs_firm_address_check          VARCHAR(16),
+fs_firm_phone_font             VARCHAR(20),
+fs_firm_phone_color            VARCHAR(30),
+fs_firm_phone_check            VARCHAR(16),
+fs_firm_email_font             VARCHAR(20),
+fs_firm_email_color            VARCHAR(30),
+fs_firm_email_check            VARCHAR(16),
+fs_firm_regno_label            VARCHAR(100),
+fs_firm_regno_font             VARCHAR(20),
+fs_firm_regno_color            VARCHAR(30),
+fs_firm_regno_check            VARCHAR(16),
+fs_s_no_lbl                    VARCHAR(100),
+fs_s_no_font                   VARCHAR(20),
+fs_s_no_color                  VARCHAR(30),
+fs_s_no_lbl_check              VARCHAR(16),
+fs_date_lbl                    VARCHAR(100),
+fs_date_font                   VARCHAR(20),
+fs_date_color                  VARCHAR(30),
+fs_cust_pawner_lbl             VARCHAR(100),
+fs_cust_pawner_font            VARCHAR(20),
+fs_cust_pawner_color           VARCHAR(30),
+fs_cust_pawner_check           VARCHAR(16),
+fs_father_lbl                  VARCHAR(100),
+fs_spouse_lbl                  VARCHAR(150),
+fs_guardian_lbl                VARCHAR(150),
+fs_father_font                 VARCHAR(20),
+fs_father_color                VARCHAR(30),
+fs_father_check                VARCHAR(16),
+fs_add_lbl                     VARCHAR(100),
+fs_add_font                    VARCHAR(20),
+fs_add_color                   VARCHAR(30),
+fs_add_check                   VARCHAR(16),
+fs_village_lbl                  VARCHAR(100),
+fs_village_font                 VARCHAR(20),
+fs_village_color                VARCHAR(30),
+fs_village_check                VARCHAR(16),
+fs_tehsil_lbl                   VARCHAR(100),
+fs_tehsil_font                  VARCHAR(20),
+fs_tehsil_color                 VARCHAR(30),
+fs_tehsil_check                 VARCHAR(16),
+fs_city_lbl                     VARCHAR(100),
+fs_city_font                    VARCHAR(20),
+fs_city_color                   VARCHAR(30),
+fs_city_check                   VARCHAR(16),
+fs_pincode_lbl                 VARCHAR(100),
+fs_pincode_font                VARCHAR(20),
+fs_pincode_color               VARCHAR(30),
+fs_pincode_check               VARCHAR(16),
+fs_principal_lbl               VARCHAR(100),
+fs_principal_font              VARCHAR(20),
+fs_principal_color             VARCHAR(30),
+fs_principal_check             VARCHAR(16),
+fs_roi_lbl                     VARCHAR(100),
+fs_roi_font                    VARCHAR(20),
+fs_roi_color                   VARCHAR(30),
+fs_roi_check                   VARCHAR(16),
+fs_valuation_lbl               VARCHAR(100),
+fs_valuation_font              VARCHAR(20),
+fs_valuation_color             VARCHAR(30),
+fs_valuation_check             VARCHAR(16),
+fs_redemption_lbl              VARCHAR(100),
+fs_redemption_font             VARCHAR(20),
+fs_redemption_color            VARCHAR(30),
+fs_redemption_check            VARCHAR(16),
+fs_other_info_lbl              VARCHAR(100),
+fs_other_info_font             VARCHAR(20),
+fs_other_info_color            VARCHAR(30),
+fs_other_info_content_font     VARCHAR(20),
+fs_other_info_content_color    VARCHAR(30),
+fs_other_info_check            VARCHAR(16),
+fs_tnc_lbl                     VARCHAR(100),
+fs_tnc_font                    VARCHAR(20),
+fs_tnc_color                   VARCHAR(30),
+fs_tnc_content_font             VARCHAR(20),
+fs_tnc_content_color           VARCHAR(30),
+fs_tnc                         VARCHAR(2000),
+fs_tnc_check                   VARCHAR(16),
+fs_cust_sign_lbl               VARCHAR(100),
+fs_cust_sign_font              VARCHAR(20),
+fs_cust_sign_color             VARCHAR(30),
+fs_owner_sign_lbl              VARCHAR(100),
+fs_owner_sign_font             VARCHAR(20),
+fs_owner_sign_color            VARCHAR(30),
+fs_footer                      VARCHAR(100),
+fs_footer_font                 VARCHAR(20),
+fs_footer_color                VARCHAR(30),
+fs_footer_check                VARCHAR(16),
+fs_form_size                   VARCHAR(20),
+fs_default_size                VARCHAR(20),
+fs_form_width                  VARCHAR(6),
+fs_form_staff_id           	VARCHAR(16),
+fs_form_right_logo           	VARCHAR(16),
+fs_form_date_format           	VARCHAR(16),
+fs_form_sign_check           	VARCHAR(6),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qformSetupDetails = "SELECT * FROM form_setup WHERE fs_def_lang = 'English'";
+$resformSetupDetails = mysqli_query($conn, $qformSetupDetails) or die(mysqli_error($conn));
+$totalFormSetupDetails = mysqli_num_rows($resformSetupDetails);
+if ($totalFormSetupDetails <= 0) {
+    /*     * **End Code To Add Column fs_roi_check @AUTHOR:PRIYA06APR13**** */
+//Start Code to Setup table for ENG Lang
+    /*     * **Start Code To Add in caps @Author:PRIYA22APR14**** */
+    $defLang = 'English';
+    $newLang = 'English';
+    $sNoLabel = 'S. NO:';
+    $regNoLabel = 'REGISTRATION NUMBER';
+    $headerLabel = 'FORM';
+    $valLabel = 'VALUATION';
+    $dateLabel = 'DATE:';
+    $custOrPawnerNameLabel = 'CUSTOMER NAME:'; //Pawner removed @Author:PRIYA28DEC13
+    $fatherNameLabel = 'FATHER NAME:';
+    $addressLabel = 'ADDRESS:';
+//Start code to add the variable Author:GAUR30MAY16
+    $villageLabel = 'VILLAGE:';
+    $tehsilLabel = 'TEHSIL:';
+    $cityLabel = 'CITY:';
+    $pinCodeLabel = 'PIN CODE:';
+//Start code to add the variable Author:GAUR30MAY16
+    $principalAmountLabel = 'LOAN AMOUNT:';
+    $rateOfInterestLabel = 'DEPOSIT AMOUNT:';
+    $redemptionPeriodLabel = 'REDEMPTION PERIOD: 11 (Eleven) months time only';
+    $otherInfoLabel = 'OTHER INFORMATION:';
+    $tNCLabel = 'TERMS AND CONDITIONS:';
+    $tNC = '';
+    $custSign = 'CUSTOMER SIGNATURE';
+    $ownerSign = 'OWNER SIGNATURE';
+    $footerLabel = '';
+    /*     * **End Code To Add in caps @Author:PRIYA22APR14**** */
+// Start To protect MySQL injection
+    $defLang = stripslashes($defLang);
+    $newLang = stripslashes($newLang);
+    $sNoLabel = stripslashes($sNoLabel);                                                //Modified by KHUSH12JAN13
+    $headerLabel = stripslashes($headerLabel);
+    $dateLabel = stripslashes($dateLabel);
+    $custOrPawnerNameLabel = stripslashes($custOrPawnerNameLabel);
+    $fatherNameLabel = stripslashes($fatherNameLabel);
+    $addressLabel = stripslashes($addressLabel);
+//Start code to add the variable Author:GAUR30MAY16
+    $villageLabel = stripslashes($villageLabel);
+    $tehsilLabel = stripslashes($tehsilLabel);
+    $cityLabel = stripslashes($cityLabel);
+    $pinCodeLabel = stripslashes($pinCodeLabel);
+//END code to add the variable Author:GAUR30MAY16
+    $principalAmountLabel = stripslashes($principalAmountLabel);
+    $rateOfInterestLabel = stripslashes($rateOfInterestLabel);
+    $redemptionPeriodLabel = stripslashes($redemptionPeriodLabel);
+    $otherInfoLabel = stripslashes($otherInfoLabel);
+    $tNCLabel = stripslashes($tNCLabel);
+    $tNC = stripslashes($tNC);
+    $custSign = stripslashes($custSign);
+    $ownerSign = stripslashes($ownerSign);
+    $footerLabel = stripslashes($footerLabel);
+
+
+    $defLang = mysqli_real_escape_string($conn, $defLang);
+    $newLang = mysqli_real_escape_string($conn, $newLang);
+    $sNoLabel = mysqli_real_escape_string($conn, $sNoLabel);
+    $headerLabel = mysqli_real_escape_string($conn, $headerLabel);
+    $dateLabel = mysqli_real_escape_string($conn, $dateLabel);
+    $custOrPawnerNameLabel = mysqli_real_escape_string($conn, $custOrPawnerNameLabel);
+    $fatherNameLabel = mysqli_real_escape_string($conn, $fatherNameLabel);
+    $addressLabel = mysqli_real_escape_string($conn, $addressLabel);
+//Start code to add the variable Author:GAUR30MAY16
+    $villageLabel = mysqli_real_escape_string($conn, $villageLabel);
+    $tehsilLabel = mysqli_real_escape_string($conn, $tehsilLabel);
+    $cityLabel = mysqli_real_escape_string($conn, $cityLabel);
+    $pinCodeLabel = mysqli_real_escape_string($conn, $pinCodeLabel);
+//END code to add the variable Author:GAUR30MAY16
+    $principalAmountLabel = mysqli_real_escape_string($conn, $principalAmountLabel);
+    $rateOfInterestLabel = mysqli_real_escape_string($conn, $rateOfInterestLabel);
+    $redemptionPeriodLabel = mysqli_real_escape_string($conn, $redemptionPeriodLabel);
+    $otherInfoLabel = mysqli_real_escape_string($conn, $otherInfoLabel);
+    $tNCLabel = mysqli_real_escape_string($conn, $tNCLabel);
+    $tNC = mysqli_real_escape_string($conn, $tNC);
+    $custSign = mysqli_real_escape_string($conn, $custSign);
+    $ownerSign = mysqli_real_escape_string($conn, $ownerSign);
+    $footerLabel = mysqli_real_escape_string($conn, $footerLabel);
+// End To protect MySQL injection
+    /*     * *************Start code to add fields @Author:PRIYA22MAR14************** */
+    $qInsertFormEight = "insert into form_setup
+    (fs_own_id,fs_def_lang,fs_lang,fs_form_border_check,fs_header_width,fs_header_display,fs_firm_left_logo_check,fs_firm_right_logo_check,
+    fs_header,fs_header_font,fs_header_color,fs_header_check,     
+    fs_form_header_font,fs_form_header_color,fs_form_header_check,
+    fs_firm_name_font,fs_firm_name_color,fs_firm_name_check,
+    fs_firm_desc_font,fs_firm_desc_color,fs_firm_desc_check,
+    fs_firm_address_font,fs_firm_address_color,fs_firm_address_check,
+    fs_firm_phone_font,fs_firm_phone_color,fs_firm_phone_check,
+    fs_firm_email_font,fs_firm_email_color,fs_firm_email_check,
+    fs_firm_regno_label,fs_firm_regno_font,fs_firm_regno_color,fs_firm_regno_check,
+    fs_s_no_lbl,fs_s_no_font,fs_s_no_color,fs_s_no_lbl_check,
+    fs_date_lbl,fs_date_font,fs_date_color,
+    fs_cust_pawner_lbl,fs_cust_pawner_font,fs_cust_pawner_color,fs_cust_pawner_check,
+    fs_father_lbl,fs_father_font,fs_father_color,fs_father_check,
+    fs_add_lbl,fs_add_font,fs_add_color,fs_add_check,
+    fs_village_lbl,fs_village_font,fs_village_color,fs_village_check,
+    fs_tehsil_lbl,fs_tehsil_font,fs_tehsil_color,fs_tehsil_check,
+    fs_city_lbl,fs_city_font,fs_city_color,fs_city_check,
+    fs_pincode_lbl,fs_pincode_font,fs_pincode_color,fs_pincode_check,
+    fs_principal_lbl,fs_principal_font, fs_principal_color,fs_principal_check,
+    fs_roi_lbl,fs_roi_font,fs_roi_color,fs_roi_check,
+    fs_valuation_lbl,fs_valuation_font, fs_valuation_color,fs_valuation_check,
+    fs_redemption_lbl,fs_redemption_font,fs_redemption_color,fs_redemption_check,
+    fs_other_info_lbl,fs_other_info_font,fs_other_info_color,fs_other_info_content_font,fs_other_info_content_color,fs_other_info_check,
+    fs_tnc_lbl,fs_tnc_font,fs_tnc_color,fs_tnc_content_font,fs_tnc_content_color,fs_tnc,fs_tnc_check,
+    fs_cust_sign_lbl,fs_cust_sign_font,fs_cust_sign_color,
+    fs_owner_sign_lbl,fs_owner_sign_font,fs_owner_sign_color,
+    fs_footer,fs_footer_font,fs_footer_color,fs_footer_check,fs_form_size,fs_default_size,fs_form_width) 
+    values (
+        '$ownerId','$defLang','$newLang','on','25','display','on','on',"
+            . "'$headerLabel','18','black','',"
+            . "'20','black','on',"
+            . "'16','black','on',"
+            . "'16','black','on',"
+            . "'12','black','on',"
+            . "'12','black','on',"
+            . "'12','black','on',"
+            . "'$regNoLabel','12','black','',"
+            . "'$sNoLabel','12','black','on',"
+            . "'$dateLabel','12','black',"
+            . "'$custOrPawnerNameLabel','12','black','on',"
+            . "'$fatherNameLabel','12','black','on',"
+            . "'$addressLabel','12','black','on',"
+            . "'$villageLabel','12','black','on',"
+            . "'$tehsilLabel','12','black','on',"
+            . "'$cityLabel','12','black','on',"
+            . "'$pinCodeLabel','12','black','on',"
+            . "'$principalAmountLabel','12','black','on',"
+            . "'$rateOfInterestLabel','12','black','on',"
+            . "'$valLabel','12','black','on',"
+            . "'$redemptionPeriodLabel','12','black','',"
+            . "'$otherInfoLabel','12','black','12','black','on',"
+            . "'$tNCLabel','12','black','12','black','$tNC','on',"
+            . "'$custSign','12','black',"
+            . "'$ownerSign','12','black',"
+            . "'$footerLabel','12','black','on','form8LayA5','form8LayA5','135')";
+
+    if (!mysqli_query($conn, $qInsertFormEight)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+/* * *************Start code to add fields @Author:PRIYA22MAR14************** */
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qformSetupDetails = "SELECT * FROM form_setup WHERE fs_def_lang = 'Hindi'";
+$resformSetupDetails = mysqli_query($conn, $qformSetupDetails) or die(mysqli_error($conn));
+$totalFormSetupDetails = mysqli_num_rows($resformSetupDetails);
+if ($totalFormSetupDetails <= 0) {
+    $qInsertFormEight = "insert into form_setup
+    (fs_own_id,fs_def_lang,fs_lang,fs_default_size) 
+    values ('$ownerId','Hindi','Hindi','form8LayA5')";
+
+    if (!mysqli_query($conn, $qInsertFormEight)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qformSetupDetails = "SELECT * FROM form_setup WHERE fs_def_lang = 'Marathi'";
+$resformSetupDetails = mysqli_query($conn, $qformSetupDetails) or die(mysqli_error($conn));
+$totalFormSetupDetails = mysqli_num_rows($resformSetupDetails);
+if ($totalFormSetupDetails <= 0) {
+    $qInsertFormEight = "insert into form_setup
+    (fs_own_id,fs_def_lang,fs_lang,fs_default_size) 
+    values ('$ownerId','Marathi','Marathi','form8LayA5')";
+
+    if (!mysqli_query($conn, $qInsertFormEight)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+/* * *************End code to add fields @Author:PRIYA22MAR14************** */
 ?>

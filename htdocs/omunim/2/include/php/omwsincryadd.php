@@ -1,3 +1,122 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @Description: STONE ADD IN MAIN SUPPLIER ENTRY FILE @PRIYANKA-21-12-17
+ * **************************************************************************************
+ *
+ * Created on DEC 21, 2017 12:22:00 PM
+ * 
+ * @FileName: omwsincryadd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+
+/* * **************************************************************************************************** */
+/* * ************** START code to add Crystal in Supplier Fine Case @PRIYANKA-21-12-17 ****************** */
+/* * **************************************************************************************************** */
+
+if ($crystalEntered != '') {
+
+    $cryCount = 0;
+    $cryTotWt = 0;
+
+    for ($j = 1; $j <= $crystalEntered; $j++) {
+
+        $cryAvail = trim($_POST['del' . $j]);
+
+        if ($cryAvail != 'Deleted') {
+
+            include 'ogadcyid.php';
+
+            $qSelCryDet = "SELECT cry_id from crystal where cry_own_id = '$ownerId' and cry_crystal_id = '$addItemCryId'"; // crystal table
+            $resCryDet = mysqli_query($conn, $qSelCryDet);
+            $cryAvailCount = mysqli_num_rows($resCryDet);
+            if ($panelName == 'PurCADJewellery') {
+                //             
+                $sttr_wt = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_wt'.$j])));
+                $_REQUEST['sttr_dia_wt'.$j] = $sttr_wt;
+                $_REQUEST['sttr_other_charges_desc'.$j] = '';
+                $_REQUEST['sttr_other_charges_amt'.$j] = '';
+                $_REQUEST['sttr_panel_name'.$j] = 'RETAIL_CAD_STOCK';
+                //
+            }
+            if ($cryAvailCount <= 0) {
+
+                $query = "INSERT INTO crystal (
+                    cry_own_id,cry_crystal_id,cry_name,cry_dob,cry_rate,cry_rate_type,cry_clarity,cry_color,
+                    cry_other_info,cry_upd_sts,cry_since,cry_comm) 
+                    VALUES ('$ownerId','$addItemCryId','$addItemCryName','$itemDOBDay','$addItemCryRate',"
+                        . "'$addItemCryRateTyp','$addItemCryClarity',
+                            '$addItemCryColor', '$addItemCryOtherInfo','User',$currentDateTime,'Created By User')";
+
+                if (!mysqli_query($conn, $query)) {
+                    die('Error: ' . mysqli_error($conn));
+                }
+            }
+
+            // Start Code To Add Stone Values Into stock_transaction (Supplier Fine Case) Table @PRIYANKA-21-12-17
+
+            $type = array('sttr_transaction_type' => 'PURCHASE', 'sttr_indicator' => 'PURCHASE', 'sttr_sttr_id' => $sttr_id);
+            $_REQUEST = array_merge($_REQUEST, $type);
+
+            stock_transaction('insert', $_REQUEST, $sttr_id, $j);
+            
+            $query = "SELECT sttr_id FROM stock_transaction WHERE sttr_sttr_id = '$sttr_id' AND sttr_transaction_type = 'PURBYSUPP' AND sttr_indicator = 'stockCrystal' order by sttr_id desc limit 0,1";
+            $resQuery = mysqli_query($conn, $query);
+            while($rowQuery = mysqli_fetch_array($resQuery, MYSQLI_ASSOC)){
+                $sttrId = $rowQuery['sttr_id'];
+                $_REQUEST['sttr_stock_type'.$j]='wholesale';
+                $_REQUEST['sttr_stock_add_from']='puchasefromuser';
+
+                stock('insert', $_REQUEST, $sttrId,'', $j);
+                }
+            // End Code To Add Stone Values Into stock_transaction (Supplier Fine Case) Table @PRIYANKA-21-12-17
+        }
+    }
+
+    if ($sttrId == '') {
+        $sttrId = $sttr_id;
+    }
+
+    $query = "UPDATE stock_transaction SET sttr_crystal_yn = 'yes' WHERE  sttr_owner_id = '$ownerId' AND sttr_id = '$sttrId' AND sttr_indicator = 'AddInvoice'";
+
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //
+    $cryQuery = "UPDATE item_barcode SET itbc_owner_id = '$sttr_owner_id',
+                itbc_firm_id = '$sttr_firm_id',itbc_pre_id = '$sttr_item_pre_id',itbc_post_id = '$sttr_item_id'
+                WHERE itbc_ref_id = '$purchaseId'";
+    //
+    if (!mysqli_query($conn, $cryQuery)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+
+/* * **************************************************************************************************** */
+/* * ************** END code to add Crystal in Supplier Fine Case @PRIYANKA-21-12-17 ******************** */
+/* * **************************************************************************************************** */
 ?>

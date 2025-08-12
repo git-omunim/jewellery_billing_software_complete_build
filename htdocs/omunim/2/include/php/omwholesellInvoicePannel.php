@@ -1,3 +1,296 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+parse_str(getTableValues("SELECT * FROM stock_transaction "
+                    . "WHERE sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo'"));
+parse_str(getTableValues("SELECT * FROM user_transaction_invoice "
+                    . "WHERE utin_pre_invoice_no = '$slPrPreInvoiceNo' and utin_invoice_no = '$slPrInvoiceNo'"));
+
+parse_str(getTableValues("SELECT  user_fname,user_lname,user_phone,user_mobile FROM user where user_id='$utin_user_id'"));
+
+//echo "SELECT * FROM user_transaction_invoice "
+//                    . "WHERE utin_pre_invoice_no = '$slPrPreInvoiceNo' and utin_invoice_no = '$slPrInvoiceNo' <br>";
+//echo "SELECT  user_fname,user_phone,user_mobile FROM user where user_id='$utin_user_id' <br>";
+//echo "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' "
+//                                               . "and sttr_pre_invoice_no='$slPrPreInvoiceNo' and sttr_invoice_no='$slPrInvoiceNo' "
+//                                               . "and sttr_indicator IN ('stock','stockCrystal','PURCHASE','rawMetal','APPROVAL','APPROVALREC','crystal','imitation','strsilver','RetailStock','ESTIMATE', 'PurchaseReturn') "
+//                                               . "and sttr_transaction_type IN('STOCK', 'sell','ESTIMATESELL','PURCHASE','APPROVAL','APPROVALREC','ESTIMATE', 'PurchaseReturn') $sttr_date_str "
+//                                               . "and sttr_user_id ='$userId' and sttr_status NOT IN('DELETED') AND sttr_firm_id='$utin_firm_id' order by sttr_id ASC";
 ?>
+<div style="display: flex;justify-content:center;align-items:center;margin-top:13px;">
+    <h1>Estimate Bill</h1>
+</div>
+<div style="padding:13px;margin-left: 3px;">
+    <table class="sell_Inv_table" style="width: 100%;border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <td colspan="9" class="invoiceWholesaleBoder">
+                    <table>
+                        <tbody><tr>
+                                <td style="font-size: 14px;text-transform: capitalize;"><?php
+                                echo ucfirst($user_fname.'  '.$user_lname);
+                                ?></td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 14px;">Ph # <?php
+                                if($user_mobile !=''){
+                                    echo $user_mobile;
+                                }else{
+                                     echo $user_phone;
+                                }
+                                ?></td>
+                            </tr>
+                        </tbody></table>
+                </td>
+                <td colspan="2" class="invoiceWholesaleBoder">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="invoiceWholesaleStyletitle">Bill No.</td>
+                                <td class="invoiceWholesaleStyletitle">:</td>
+                                <td style="font-size: 14px;"><?php
+                                echo $sttr_pre_invoice_no.$sttr_invoice_no;
+                                ?></td>
+                            </tr>
+                            <tr>
+                                <td class="invoiceWholesaleStyletitle">Date</td>
+                                <td class="invoiceWholesaleStyletitle">:</td>
+                                <td style="font-size: 14px;"><?php
+                                echo $utin_date;
+                                ?></td>
+                            </tr>
+                        </tbody></table>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle" >Metal Name</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Item Name</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">G.Wt</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Less Wt</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Net Wt</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Tunch</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Wstg</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Pcs</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Labour</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Fine Wt</td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyletitle"  align="right" style="padding-right: 10px; ">Labour Amount</td>
+            </tr>
+            <?php
+             $stockQueryType = "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' "
+                                               . "and sttr_pre_invoice_no='$slPrPreInvoiceNo' and sttr_invoice_no='$slPrInvoiceNo' "
+                                               . "and sttr_indicator IN ('stock','stockCrystal','PURCHASE','rawMetal','APPROVAL','APPROVALREC','crystal','imitation','strsilver','RetailStock','ESTIMATE', 'PurchaseReturn') "
+                                               . "and sttr_transaction_type IN('STOCK', 'sell','ESTIMATESELL','PURCHASE','APPROVAL','APPROVALREC','ESTIMATE', 'PurchaseReturn') $sttr_date_str "
+                                               . "and sttr_user_id ='$utin_user_id' and sttr_status NOT IN('DELETED') AND sttr_firm_id='$utin_firm_id' order by sttr_id ASC";
+            $resstockType = mysqli_query($conn, $stockQueryType);
+            while($rowstocktype = mysqli_fetch_array($resstockType)){
+            ?>
+            <tr>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php echo $rowstocktype['sttr_metal_type']; ?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle">
+                      <?php echo $rowstocktype['sttr_item_name']; ?>
+                    <table>
+                        <?php 
+                        if($rowstocktype['sttr_pkt_desc1'] !=''){
+                        ?>
+                        <tr>
+                                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" style="border: none;"><?php echo $rowstocktype['sttr_pkt_desc1']; ?>(<?php echo $rowstocktype['sttr_pkt_qty1']; ?>X<?php echo $rowstocktype['sttr_pkt_weight1']; ?>=<?php echo $multiple = $rowstocktype['sttr_pkt_qty1'] * $rowstocktype['sttr_pkt_weight1']; ?>)</td>
+                        </tr>
+                        <?php } ?>
+                        <?php 
+                        if($rowstocktype['sttr_pkt_desc2'] !=''){
+                        ?>
+                        <tr>
+                                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" style="border: none;"><?php echo $rowstocktype['sttr_pkt_desc2']; ?>(<?php echo $rowstocktype['sttr_pkt_qty2']; ?>X<?php echo $rowstocktype['sttr_pkt_weight2']; ?>=<?php echo $multiple = $rowstocktype['sttr_pkt_qty2'] * $rowstocktype['sttr_pkt_weight2']; ?>)</td>
+                        </tr>
+                        <?php } ?>
+                         <?php 
+                        if($rowstocktype['sttr_pkt_desc3'] !=''){
+                        ?>
+                        <tr>
+                                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" style="border: none;"><?php echo $rowstocktype['sttr_pkt_desc3']; ?>(<?php echo $rowstocktype['sttr_pkt_qty3']; ?>X<?php echo $rowstocktype['sttr_pkt_weight3']; ?>=<?php echo $multiple = $rowstocktype['sttr_pkt_qty3'] * $rowstocktype['sttr_pkt_weight3']; ?>)</td>
+                        </tr>
+                        <?php 
+                        }
+                        ?>
+                        <?php 
+                        if($rowstocktype['sttr_pkt_desc4'] !=''){
+                        ?>
+                        <tr>
+                                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" style="border: none;"><?php echo $rowstocktype['sttr_pkt_desc4']; ?>(<?php echo $rowstocktype['sttr_pkt_qty4']; ?>X<?php echo $rowstocktype['sttr_pkt_weight4']; ?>=<?php echo $multiple = $rowstocktype['sttr_pkt_qty4'] * $rowstocktype['sttr_pkt_weight4']; ?>)</td>
+                        </tr>
+                        <?php } ?>
+                        <?php 
+                        if($rowstocktype['sttr_pkt_desc5'] !=''){
+                        ?>
+                        <tr>
+                                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" style="border: none;"><?php echo $rowstocktype['sttr_pkt_desc5']; ?>(<?php echo $rowstocktype['sttr_pkt_qty5']; ?>X<?php echo $rowstocktype['sttr_pkt_weight5']; ?>=<?php echo $multiple = $rowstocktype['sttr_pkt_qty5'] * $rowstocktype['sttr_pkt_weight5']; ?>)</td>
+                        </tr>
+                        <?php } ?>
+                    </table>
+                </td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php echo $rowstocktype['sttr_gs_weight'].'  '.$rowstocktype['sttr_gs_weight_type']; ?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php
+                if( $rowstocktype['sttr_pkt_weight'] !='' &&  $rowstocktype['sttr_pkt_weight'] != null &&  $rowstocktype['sttr_pkt_weight'] > 0){
+                    echo $rowstocktype['sttr_pkt_weight'].'  '.$rowstocktype['sttr_pkt_weight_type']; 
+                } else{
+                    echo '-'; 
+                }
+                ?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php
+                if( $rowstocktype['sttr_nt_weight'] !='' &&  $rowstocktype['sttr_nt_weight'] != null &&  $rowstocktype['sttr_nt_weight'] >0){
+                echo $rowstocktype['sttr_nt_weight'].'  '.$rowstocktype['sttr_nt_weight_type'];
+                }else{
+                    echo '-';
+                }
+                ?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php
+                if( $rowstocktype['sttr_purity'] !='' &&  $rowstocktype['sttr_purity'] != null &&  $rowstocktype['sttr_purity'] >0){
+                echo $rowstocktype['sttr_purity']; 
+                }else{
+                    echo '-';
+                }?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php 
+                if( $rowstocktype['sttr_wastage'] !='' &&  $rowstocktype['sttr_wastage'] != null &&  $rowstocktype['sttr_wastage'] >0){
+                echo $rowstocktype['sttr_wastage'];
+                }else{
+                    echo '-';
+                }?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php 
+                  if( $rowstocktype['sttr_quantity'] !='' &&  $rowstocktype['sttr_quantity'] != null &&  $rowstocktype['sttr_quantity'] >0){
+                echo $rowstocktype['sttr_quantity'];
+                  }else{
+                      echo '-';
+                  } ?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php
+                if( $rowstocktype['sttr_making_charges'] !='' &&  $rowstocktype['sttr_making_charges'] != null &&  $rowstocktype['sttr_making_charges'] >0){
+                echo $rowstocktype['sttr_making_charges'].'  '.$rowstocktype['sttr_making_charges_type']; 
+                }else{
+                    echo '-';
+                }?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top"><?php  
+                 if( $rowstocktype['sttr_final_fine_weight'] !='' &&  $rowstocktype['sttr_final_fine_weight'] != null &&  $rowstocktype['sttr_final_fine_weight'] >0){
+                echo $rowstocktype['sttr_final_fine_weight'].'  '.$rowstocktype['sttr_gs_weight_type'];
+                 }else{
+                     echo '-';
+                 }?></td>
+                <td class="invoiceWholesaleBoder invoiceWholesaleStyle" valign="top" align="right" style="padding-right: 10px; "><?php
+                if( $rowstocktype['sttr_total_making_amt'] !='' &&  $rowstocktype['sttr_total_making_amt'] != null &&  $rowstocktype['sttr_total_making_amt'] >0){
+                echo $rowstocktype['sttr_total_making_amt']; 
+                }else{
+                     echo '-';
+                }?></td>
+            </tr>
+            <?php 
+            $fineWtTotal += $rowstocktype['sttr_final_fine_weight'];
+            $makingTotalAnt += $rowstocktype['sttr_total_making_amt'];
+            
+                } ?>
+            <tr>
+                <td colspan="9" class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Total S</td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle"><?php echo $fineWtTotal.'  KG'; ?></td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle" align="right" style="padding-right: 10px; "><?php echo $makingTotalAnt; ?></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="invoiceWholesaleBoder invoiceWholesaleStyletitle">LB Bal.</td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle"><?php 
+                if($utin_sl_prev_wt_typ == 'GM'){
+                    $convertedprevWet = $utin_sl_prev_wt/1000;
+                    echo $convertedprevWet.'  KG';
+                }else{
+                    $convertedprevWet = $utin_sl_prev_wt;
+                echo $utin_sl_prev_wt.$utin_sl_prev_wt_typ; 
+                } ?></td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle" align="right" style="padding-right: 10px; "><?php echo $utin_prev_cash_bal; ?></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Net Total</td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle"><?php
+                 $totalfinenetweight = $fineWtTotal + $convertedprevWet;
+                 echo $totalfinenetweight.'  KG';
+                ?></td>
+                <td  class="invoiceWholesaleBoder invoiceWholesaleStyle" align="right" style="padding-right: 10px; "><?php
+                $totalMakingNetWeight = $makingTotalAnt + $utin_prev_cash_bal;
+                 echo $totalMakingNetWeight;
+                ?></td>
+            </tr>
+            <tr>
+                <td colspan="9" class="invoiceWholesaleBoder invoiceWholesaleStyletitle">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="font-size: 14px;">S. SILVER BHAV @<?php echo $utin_sl_cash_metal_rate; ?></td>
+                            </tr>
+                        <td>RECEPIT CASH</td>
+            </tr>
+        </tbody>
+    </table>
+</td>
+<td class="invoiceWholesaleBoder" valign="top">
+    <table>
+        <tbody><tr>
+                <td style="font-size: 14px;" valign="top"><?php 
+                $convertSilverWeightToKg = $utin_sl_cash_metal_rec_paid_wt/1000;
+                echo $convertSilverWeightToKg.'  KG'; ?></td>
+            </tr>
+            <tr>
+                <td style="font-size: 14px;" valign="top"></td>
+            </tr>
+        </tbody></table>
+</td>
+<td class="invoiceWholesaleBoder" valign="top" align="right" style="padding-right: 10px; ">
+    <table>
+        <tbody>
+            <tr valign="top">
+                <td style="font-size: 14px;" valign="top" align="right"><?php echo $utin_sl_cash_metal_rec_paid; ?></td>
+            </tr>
+            <tr valign="top">
+                <td style="font-size: 14px;" valign="top" align="right"><?php 
+                $recepitAmt = $utin_cash_amt_rec + $utin_pay_cheque_amt + $utin_pay_card_amt + $utin_online_pay_amt;
+                echo $recepitAmt; ?></td>
+            </tr>
+        </tbody></table>
+</td>
+</tr>
+<tr>
+    <td colspan="9" class="invoiceWholesaleBoder invoiceWholesaleStyletitle">Closing balance</td>
+    <td  class="invoiceWholesaleBoder invoiceWholesaleStyle"><?php
+    if($utin_sl_due_wt >0){
+        $DRCRVaravle = 'DR';
+    } else {
+        $DRCRVaravle = 'CR';
+    }
+     if($utin_sl_due_wt_typ == 'GM'){
+         $convertedKgDataClosingBal = $utin_sl_due_wt/1000;
+         echo $convertedKgDataClosingBal. '  '.'KG'.' <br>' .$DRCRVaravle;
+     }else{
+    echo $utin_sl_due_wt.$utin_sl_due_wt_typ. ' <br>' .$DRCRVaravle ;
+     }
+    ?></td>
+    <td  class="invoiceWholesaleBoder invoiceWholesaleStyle" align="right" style="padding-right: 10px; "><?php 
+     if($utin_cash_balance >0){
+        $DRCRVaravle = 'DR';
+    } else {
+        $DRCRVaravle = 'CR';
+    }
+    echo $utin_cash_balance. '<br>' .$DRCRVaravle ;
+   
+    ?></td>
+</tr>
+</tbody>
+</table>
+    <div style="margin-top: 14px;">
+        <span style="font-size: 15px;text-decoration: underline;font-weight: 700;">Terms & Conditions : </span> <br>
+   <span  style="font-size: 15px;">Please check your last balance.<br>
+   Please check your deposite money and metal.<br>
+   Check your total weight.<br>
+   Credit balance only allowed for 15 days<br>
+   Zero balance Compalsary 2 times in a year.<br>
+   If your credit score is negative then your balance facility will be closed.<br></span>
+    </div>
+</div>
+<div class="noPrint" style="display:flex;justify-content:center;align-items: center;">
+                   <a style="cursor: pointer;" 
+                       onClick="window.print();">
+                        <img src="<?php echo $documentRootBSlash; ?>/images/printer32.png" alt='Print' title='Print'  class="noPrint"
+                             width="32px" height="32px" /> 
+                    </a>
+                </div>

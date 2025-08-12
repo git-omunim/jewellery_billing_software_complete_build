@@ -1,3 +1,70 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Dec 10, 2013 12:04:46 PM
+ *
+ * @FileName: orddmlad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+include 'omfrpsck.php';
+if ($ddpanelName == 'dayBeforePanel') {
+    //$dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y'))<$todayStrDate";
+    $oneDayMinusStrToTime = $todayFromStrDate - 60 * 60 * 24;
+    if ($acc_cash_opening_strtodate != '')
+        if ($acc_cash_opening_strtodate == $todayFromStrDate)
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y'))>$acc_cash_opening_strtodate and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y'))<$todayStrDate";
+        else
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y')) BETWEEN $acc_cash_opening_strtodate AND $oneDayMinusStrToTime";
+    else
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y'))<$todayStrDate";
+} else {
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(ml_DOB,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+}
+//
+if ($ddMainPanel == 'custAccLedger') {
+    $accLedStrMLLoan = "and ml_lender_id = '$custId'";
+} else {
+    $accLedStrMLLoan = NULL;
+}
+//
+$qSeltTotalMLLoanAdd = "SELECT SUM(ml_main_prin_amt) as total_prin_amt FROM ml_loan where 
+           ml_own_id='$_SESSION[sessionOwnerId]' $dateStr $accLedStrMLLoan and ml_firm_id IN ($strFrmId) "
+        . "and ml_ln_cr_dr = 'DR' order by ml_ent_dat desc";
+//echo "<br/>Add Str:". $qSeltTotalMLLoanAdd;
+$resTotalMLLoanAdd = mysqli_query($conn, $qSeltTotalMLLoanAdd);
+$rowTotalMLLoanAdd = mysqli_fetch_array($resTotalMLLoanAdd);
+$totalTodayMLLoanPrincipal = $rowTotalMLLoanAdd['total_prin_amt'];
+
+$qSeltTotalMLLoanAddCr = "SELECT SUM(ml_main_prin_amt) as total_prin_amt FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' $dateStr $accLedStrMLLoan and ml_firm_id IN ($strFrmId) "
+        . "and ml_ln_cr_dr = 'CR' order by ml_ent_dat desc";
+$resTotalMLLoanAddCr = mysqli_query($conn, $qSeltTotalMLLoanAddCr);
+$rowTotalMLLoanAddCr = mysqli_fetch_array($resTotalMLLoanAddCr);
+$totalTodayMLLoanPrincipalCr = $rowTotalMLLoanAddCr['total_prin_amt'];
+//
+/* START CODE TO SHOW AMOUNT IN AND AMOUNT OUT OF MONEYLENDER LOAN NEW,@AUTHOR:HEMA-29MAY2020 */
+if ($ddpanelName == 'dayBeforePanel') {
+    $open_in_utin_cash_amt_rec += $rowTotalMLLoanAddCr['total_prin_amt'];
+} else {
+    $today_in_utin_cash_amt_rec += $rowTotalMLLoanAddCr['total_prin_amt'];
+}
+/* END CODE TO SHOW AMOUNT IN AND AMOUNT OUT OF MONEYLENDER LOAN NEW,@AUTHOR:HEMA-29MAY2020 */
 ?>

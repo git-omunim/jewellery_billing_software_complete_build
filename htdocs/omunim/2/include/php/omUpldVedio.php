@@ -1,3 +1,250 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @Description: ADD VIDEO OF PERTICULER ITEM FOR ONLINE OPTION AUTHOR:HEMA28NOV2019
+ * **************************************************************************************
+ *
+ * Created on DECEMBER 02, 2019 12:02:43 AM
+ *
+ * @FileName: omUpldVedio.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE:
+ * AUTHOR:
+ * REASON:
+ *
+ */
+?>
+<?php
+
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$sttrId = $_REQUEST['sttrId'];
+//echo '$sttrId =' . $sttrId . '</br>';
+$video_name = $sttrId . '_V';
+//echo '$video_name =' . $video_name . '</br>';
+$query = "SELECT * FROM image where image_snap_fname = '$video_name'";
+$res = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($res);
+$video_id = $row['image_id'];
+//echo '$video_id = ' . $video_id . '</br>';
+$maxsize = 10485760; //10MB BYTE IN BINARY
+if ($video_id == '') {
+    //  echo 'in if =' . $video_id . '</br>';
+    $videoFilename = $_FILES["addItemSelectVideo"]["name"];
+    $videoFiletype = $_FILES["addItemSelectVideo"]["type"];
+    $videoFile_size = $_FILES["addItemSelectVideo"]["size"];
+
+    $videoFilename = stripslashes($videoFilename);
+    $videoFiletype = stripslashes($videoFiletype);
+    $videoFile_size = stripslashes($videoFile_size);
+
+    $videoFilename = mysqli_real_escape_string($conn, $videoFilename);
+    $videoFiletype = mysqli_real_escape_string($conn, $videoFiletype);
+    $videoFile_size = mysqli_real_escape_string($conn, $videoFile_size);
+
+    //   echo '$videoFilename = ' . $videoFilename . '</br>';
+    //   echo '$videoFiletype = ' . $videoFiletype . '</br>';
+    //  echo '$videoFile_size = ' . $videoFile_size . '</br>';
+
+    $query = "INSERT INTO image(image_owner_id,image_snap_fname,image_snap_ftype,image_snap_fsize,image_snap_fszMB,image_itpr_id)"
+            . "VALUES('$_SESSION[sessionOwnerId]','$video_name','$videoFiletype','','$videoFile_size','$sttrId')";
+    //   echo '$query = '.$query.'</br>';
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn) . ' Query:' . $query);
+    }
+
+    //   parse_str(getTableValues("SELECT image_id FROM image ORDER BY image_id DESC LIMIT 0,1"));
+} else {
+    //   echo 'in else';
+    if ($video_id != '') {
+
+        $videoFilename = $_FILES["addItemSelectVideo"]["name"];
+        $videoFiletype = $_FILES["addItemSelectVideo"]["type"];
+        $videoFile_size = $_FILES["addItemSelectVideo"]["size"];
+
+        $videoFilename = stripslashes($videoFilename);
+        $videoFiletype = stripslashes($videoFiletype);
+        $videoFile_size = stripslashes($videoFile_size);
+
+        $videoFilename = mysqli_real_escape_string($conn, $videoFilename);
+        $videoFiletype = mysqli_real_escape_string($conn, $videoFiletype);
+        $videoFile_size = mysqli_real_escape_string($conn, $videoFile_size);
+
+        // echo '$videoFilename = ' . $videoFilename . '</br>';
+        // echo '$videoFiletype = ' . $videoFiletype . '</br>';
+        //  echo '$videoFile_size = ' . $videoFile_size . '</br>';
+
+        $videoFileSize = $videoFile_size;
+        //CODE TO UPLOAD IMAGE INTO FOLDER 
+        if ((float) $videoFile_size > 0) {
+            if ($_SESSION['sessionSoftHost'] == 'HOSTING') {
+                $images_omunim = 'images_omunim';
+            } else {
+                $images_omunim = 'images.omunim';
+            }
+            if ($systemOnOrOff == 'ON') {
+                $dirPath = substr($_SERVER["DOCUMENT_ROOT"], 0, strrpos($_SERVER["DOCUMENT_ROOT"], '/'));
+                $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'];
+            } else {
+                $dirPath = $_ENV["S2G_DB_PATH"] . 'images.omunim';
+                //Check if the directory already exists.
+                if (!is_dir($dirPath)) {
+                    //Directory does not exist, so lets create it.
+                    mkdir($dirPath, 0777);
+                }
+                //
+                $dirName = $dirPath . '\\' . $_SESSION['sessionOwnerId'];
+
+                //
+                // Check if the directory already exists.
+                if (!is_dir($dirName)) {
+                    //Directory does not exist, so lets create it.
+                    mkdir($dirName, 0777);
+                }
+            }
+            // Get the extension name
+            $path_parts = pathinfo($videoFilename);
+            $fileExtension = $path_parts['extension'];
+            //
+            if ($fileExtension == '' || $fileExtension == NULL)
+                $fileExtension = 'mp4';
+            //
+            if ($systemOnOrOff == 'ON') {
+                $fileName = "$dirName/$video_id.$fileExtension";
+            } else {
+                $fileName = "$dirName" . "\\" . "$video_id.$fileExtension";
+            }
+            // file_put_contents($fileName, $snapFile);
+            //     echo '$fileName =' . $fileName . '</br>';
+            if (($videoFileSize <= $maxsize) || ($videoFileSize > 0 )) {
+                move_uploaded_file($_FILES['addItemSelectVideo']['tmp_name'], $fileName);
+            }
+        }
+
+        if ($videoFileSize == 0) {
+            //CODE IF IMAGE IS ALREADY PRESENT AND NOT SELECTED
+            $query = "SELECT * FROM image where image_id = '$video_id'";
+            $res = mysqli_query($conn, $query);
+            $row = mysqli_fetch_assoc($res);
+            $videoFileSizeUpd = $row['image_snap_fsize'];
+            $query = "UPDATE image SET image_snap_fsize = '$videoFileSizeUpd' WHERE image_id = '$video_id'";
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn) . ' Query:' . $query);
+            }
+        } else {
+            $query = "UPDATE image SET image_owner_id = '$_SESSION[sessionOwnerId]', image_snap_fname = '$video_name',"
+                    . "image_snap_ftype = '$videoFiletype', image_snap_fszMB = '$videoFile_size',"
+                    . "image_itpr_id = '$sttrId' WHERE image_id = '$video_id'";
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn) . ' Query:' . $query);
+            }
+
+            //echo '$query == '.$query.'<br  />';die;
+        }
+    }
+}
+
+
+
+
+$videoFileSize = $videoFile_size;
+//CODE TO UPLOAD IMAGE INTO FOLDER 
+if ((float) $videoFile_size > 0) {
+    if ($_SESSION['sessionSoftHost'] == 'HOSTING') {
+        $images_omunim = 'images_omunim';
+    } else {
+        $images_omunim = 'images.omunim';
+    }
+    if ($systemOnOrOff == 'ON') {
+        $dirPath = substr($_SERVER["DOCUMENT_ROOT"], 0, strrpos($_SERVER["DOCUMENT_ROOT"], '/'));
+        $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'];
+    } else {
+        $dirPath = $_ENV["S2G_DB_PATH"] . 'images.omunim';
+        //Check if the directory already exists.
+        if (!is_dir($dirPath)) {
+            //Directory does not exist, so lets create it.
+            mkdir($dirPath, 0777);
+        }
+        //
+        $dirName = $dirPath . '\\' . $_SESSION['sessionOwnerId'];
+
+        //
+        // Check if the directory already exists.
+        if (!is_dir($dirName)) {
+            //Directory does not exist, so lets create it.
+            mkdir($dirName, 0777);
+        }
+    }
+    // Get the extension name
+    $path_parts = pathinfo($videoFilename);
+    $fileExtension = $path_parts['extension'];
+    //
+    if ($fileExtension == '' || $fileExtension == NULL)
+        $fileExtension = 'mp4';
+    //
+    if ($systemOnOrOff == 'ON') {
+        $query = "SELECT * FROM image where image_snap_fname =  '$video_name'";
+        $res = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($res);
+        $video_id = $row['image_id'];
+        //    echo '@@';
+        //   echo '$video_id = '.$video_id.'</br>';
+
+        $fileName = "$dirName/$video_id.$fileExtension";
+    } else {
+
+        $query = "SELECT * FROM image where image_snap_fname =  '$video_name'";
+        $res = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($res);
+        $video_id = $row['image_id'];
+        //    echo '$video_name = '.$video_name.'</br>';
+        //    echo '##';
+        //    echo '$video_id = '.$video_id.'</br>';
+
+
+        $fileName = "$dirName" . "\\" . "$video_id.$fileExtension";
+    }
+    // file_put_contents($fileName, $snapFile);
+//    echo '$fileName =' . $fileName . '</br>';
+    if (($videoFileSize <= $maxsize) || ($videoFileSize > 0 )) {
+        move_uploaded_file($_FILES['addItemSelectVideo']['tmp_name'], $fileName);
+    }
+}
+?>
+<?php
+
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=jewelleryPanel&subDivName=onlineOptionPanel&sttrId=$sttrId");
+} else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/orHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'jewelleryPanel' . "&subDivName=" . 'onlineOptionPanel' . "&sttrId=" . $sttrId);
+} else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/olHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'jewelleryPanel' . "&subDivName=" . 'onlineOptionPanel' . "&sttrId=" . $sttrId);
+} else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/ogHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'jewelleryPanel' . "&subDivName=" . 'onlineOptionPanel' . "&sttrId=" . $sttrId);
+} else {
+    $showMess = 'Your session has expired. Please log in again!!!';
+    //$showMess = 'Your product expired for update, Please renew your product or dongle!<br/>आपके उत्पाद को अपडेट करने की सीमा समाप्त हो गयी है, कृपया अपना उत्पाद या डोंगल रिन्यू कीजिए!';
+    header('Location: ' . $documentRootBSlash . '/omLoginPage.php?showMess=' . $showMess);
+    //include 'omppsbdv.php';
+    exit;
+}
 ?>

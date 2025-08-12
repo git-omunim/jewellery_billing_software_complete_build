@@ -1,3 +1,453 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 06-Feb-2011 6:57:33 PM
+ *
+ * @FileName: orgnsfan.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  * @FileName: orgnsfan.php
+  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+/* * ******Start code to add panel indiacator @Author:PRIYA16MAY14************ */
+if ($_SESSION['sessionOwnIndStr'][2] == 'Y') {
+    $sessionOwnerId = $_SESSION[sessionOwnerId];
+
+    $reportEntryDate = $_POST['reportEntryDate'];
+    $todayDate = date("d M Y", strtotime($reportEntryDate));
+
+    if ($reportEntryDate == '' || $reportEntryDate == NULL) {
+        $reportEntryDate = $_GET['reportEntryDate'];
+        $todayDate = date("d M Y", strtotime($reportEntryDate));
+    }
+
+    if ($reportEntryDate == '' || $reportEntryDate == NULL) {
+        $reportEntryDate = date("Y-m-d");
+        $todayDate = date("d M Y", strtotime($reportEntryDate));
+    }
+    $selFirmId = NULL;
+    if (isset($_GET['firmId'])) {
+        $selFirmId = $_GET['firmId'];
+    }
+    ?>
+    <!-- end code to access date for report analysis @AUTHOR: SANDY26JUN13 -->
+    <div id="analysisPanelDiv">
+        <table width="100%" border="0" cellspacing="0" cellpadding="1">
+            <tr>
+                <td colspan="2" align="left">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td valign="middle" align="left" width="34px">
+                                <div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/analysis32.png" alt="" /></div>
+                            </td>
+                            <td valign="middle" align="left">
+                                <div id="Analysis"  class="textLabelHeading">ANALYSIS PANEL</div><!---to add class @AUTHOR: SANDY12DEC13---->
+                            </td>
+                            <td valign="middle" align="left">
+                                <div class="analysis_div_rows">
+                                    &nbsp;
+                                </div>
+                            </td>
+                            <td align="right" valign="bottom">
+                                <table border="0" cellspacing="4" cellpadding="0" align="right" >
+                                    <tr>
+                                        <!-- Start of code to add buttons in analysis panel @AUTHOR: SANDY2JUL13  -->
+                                        <?php
+                                        if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+                                                $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                            ?>
+
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "StockPanelan";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'STOCK';
+                                                    $inputIdButton = "StockPanelan";
+                                                    $inputNameButton = 'StockPanelan';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'STOCK'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showStockAnalysisReport()';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="STOCK"
+                                                               id="StockPanelan" name="StockPanelan" 
+                                                               onclick="showStockAnalysisReport()"
+                                                               class="frm-btn" />-->
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "purchaseAnalysisButt";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'PURCHASE';
+                                                    $inputIdButton = "purchaseAnalysisButt";
+                                                    $inputNameButton = 'purchaseAnalysisButt';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'PURCHASE'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showPurchaseAnalysis();';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="PURCHASE"
+                                                               id="purchaseAnalysisButt" name="purchaseAnalysisButt" 
+                                                               onclick="showPurchaseAnalysis();"
+                                                               class="frm-btn" />-->
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "sellAnalysisButt";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'SELL';
+                                                    $inputIdButton = "sellAnalysisButt";
+                                                    $inputNameButton = 'sellAnalysisButt';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'SELL'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showSellAnalysis();';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="SELL"
+                                                               id="sellAnalysisButt" name="sellAnalysisButt" 
+                                                               onclick="showSellAnalysis();"
+                                                               class="frm-btn spaceRight10" />-->
+                                            </td>
+                                            <!--add max sell Author:GAUR2AUG16-->
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "maxSellAnalysisButt";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'MAX SELL';
+                                                    $inputIdButton = "maxSellAnalysisButt";
+                                                    $inputNameButton = 'maxSellAnalysisButt';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'MAX SELL'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showMaxSellAnalysis();';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="MAX SELL"
+                                                               id="maxSellAnalysisButt" name="maxSellAnalysisButt" 
+                                                               onclick="showMaxSellAnalysis();"
+                                                               class="frm-btn spaceRight10" />-->
+                                            </td>
+                                            <!--add max sell Author:GAUR2AUG16-->
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "InterestPanelan";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'INTEREST';
+                                                    $inputIdButton = "InterestPanelan";
+                                                    $inputNameButton = 'InterestPanelan';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'INTEREST'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showInterestAnalysisReport()';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="INTEREST"
+                                                               id="InterestPanelan" name="InterestPanelan" 
+                                                               onclick="showInterestAnalysisReport()"
+                                                               class="frm-btn" />-->
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "GirviDetailsa";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'NEW LOANS';
+                                                    $inputIdButton = "GirviDetailsa";
+                                                    $inputNameButton = 'GirviDetailsa';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'NEW LOANS'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showNewLoansAnalysisReport()';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="NEW LOANS"
+                                                               id="GirviDetailsa" name="GerviDetailsa" 
+                                                               onclick="showNewLoansAnalysisReport()"
+                                                               class="frm-btn" />-->
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <div style="text-align:center;">
+                                                    <?php
+                                                    $inputId = "RelGirviDetailsa";
+                                                    $inputType = 'submit';
+                                                    $inputFieldValue = 'RELEASE LOANS';
+                                                    $inputIdButton = "RelGirviDetailsa";
+                                                    $inputNameButton = 'RelGirviDetailsa';
+                                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                    // This is the main class for input flied
+                                                    $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                    $inputStyle = " ";
+                                                    $inputLabel = 'RELEASE LOANS'; // Display Label below the text box
+//
+                                                    // This class is for Pencil Icon                                                           
+                                                    $inputIconClass = '';
+                                                    $inputPlaceHolder = '';
+                                                    $spanPlaceHolderClass = '';
+                                                    $spanPlaceHolder = '';
+                                                    $inputOnChange = "";
+                                                    $inputOnClickFun = 'showNewReleasedLoansAnalysisReport()';
+                                                    $inputKeyUpFun = '';
+                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                    ?>
+                                                </div>
+            <!--                                            <input type="submit" value="RELEASE LOANS"
+                                                               id="RelGirviDetailsa" name="RelGerviDetailsa" 
+                                                               onclick="showNewReleasedLoansAnalysisReport()"
+                                                               class="frm-btn spaceRight10" />-->
+                                            </td> 
+                                           <!--- <td align="right" valign="bottom">
+                                                <input type="submit" value="UNSECURED LOANS"
+                                                       id="UnsecuredLnDetails" name="UnsecuredLnDetails" 
+                                                       onclick="showUnsecuredLoansAnalysisReport()"
+                                                       class="frm-btn" />
+                                            </td> --->
+                                            <?php
+                                        } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+                                                $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                            ?>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="STOCK"
+                                                       id="StockPanelan" name="StockPanelan" 
+                                                       onclick="showStockAnalysisReport()"
+                                                       class="frm-btn" />
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="PURCHASE"
+                                                       id="purchaseAnalysisButt" name="purchaseAnalysisButt" 
+                                                       onclick="showPurchaseAnalysis();"
+                                                       class="frm-btn" />
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="SELL"
+                                                       id="sellAnalysisButt" name="sellAnalysisButt" 
+                                                       onclick="showSellAnalysis();"
+                                                       class="frm-btn spaceRight10" />
+                                            </td> 
+                                            <!--add max sell Author:GAUR2AUG16-->
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="MAX SELL"
+                                                       id="maxSellAnalysisButt" name="maxSellAnalysisButt" 
+                                                       onclick="showMaxSellAnalysis();"
+                                                       class="frm-btn spaceRight10" />
+                                            </td>
+                                            <!--add max sell Author:GAUR2AUG16-->
+                                          <!-- <td align="right" valign="bottom">
+                                               <input type="submit" value="UNSECURED LOANS"
+                                                      id="UnsecuredLnDetails" name="UnsecuredLnDetails" 
+                                                      onclick="showUnsecuredLoansAnalysisReport()"
+                                                      class="frm-btn" />
+                                           </td> --->
+                                            <?php
+                                        } else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+                                                $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                            ?>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="INTEREST"
+                                                       id="InterestPanelan" name="InterestPanelan" 
+                                                       onclick="showInterestAnalysisReport()"
+                                                       class="frm-btn" />
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="NEW LOANS"
+                                                       id="GirviDetailsa" name="GerviDetailsa" 
+                                                       onclick="showNewLoansAnalysisReport()"
+                                                       class="frm-btn" />
+                                            </td>
+                                            <td align="right" valign="bottom">
+                                                <input type="submit" value="RELEASE LOANS"
+                                                       id="RelGirviDetailsa" name="RelGerviDetailsa" 
+                                                       onclick="showNewReleasedLoansAnalysisReport()"
+                                                       class="frm-btn spaceRight10" />
+                                            </td> 
+                                           <!-- <td align="right" valign="bottom">
+                                                <input type="submit" value="UNSECURED LOANS"
+                                                       id="UnsecuredLnDetails" name="UnsecuredLnDetails" 
+                                                       onclick="showUnsecuredLoansAnalysisReport()"
+                                                       class="frm-btn" />
+                                            </td> --->
+                                        <?php } ?>
+                                        <!-- End of code to add 3 buttons in analysis panel @AUTHOR: SANDY2JUL13  -->   
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <hr color="#B8860B" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="girviPanelAnalysisDiv">
+                        <div id="girviPanelTrId" style="visibility:hidden"></div><!-----Add div required in print function @AUTHOR: SANDY7DEC13----------->                    <?php include 'omgnsfad.php'; ?>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <hr color="#B8860B" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><br />
+                </td>
+            </tr>
+            <!-- start to add print button @AUTHOR: SANDY21AUG13 -->
+            <tr>
+                <td align="center" class="noPrint" >
+                    <a style="cursor: pointer;" 
+                       onclick="printGirviListPanel('girviPanelAnalysisDiv')">
+                        <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                             width="32px" height="32px" /> 
+                    </a> 
+                </td>
+            </tr>
+            <!-- END to add print button @AUTHOR: SANDY21AUG13 -->
+        </table>
+    </div>
+    <br />
+<?php } ?>
+<!-------------End code to add panel indiacator @Author:PRIYA16MAY14--------------->

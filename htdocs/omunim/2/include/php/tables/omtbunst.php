@@ -1,3 +1,404 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Notice Setup Table by @Author: KHUSH16JAN13
+ * **************************************************************************************
+ * 
+ * Created on Jan 16, 2013 3:22:42 PM
+ *
+ * @FileName: omtbunst.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by KHUSH20JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+
+$query = "CREATE TABLE IF NOT EXISTS udhaar_notice_setup (
+uns_id                          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+uns_own_id                      VARCHAR(50),
+uns_def_lang                    VARCHAR(20),
+uns_lang                        VARCHAR(20),
+uns_top_margin                  VARCHAR(6),  
+uns_left_margin                 VARCHAR(6),  
+uns_header_width                VARCHAR(20),
+uns_header_display              VARCHAR(30),
+uns_border_check                VARCHAR(6),
+uns_firm_left_logo_check        VARCHAR(6),
+uns_firm_right_logo_check       VARCHAR(6),
+uns_header_left_section         VARCHAR(100),
+uns_header_left_section_font    VARCHAR(20),
+uns_header_left_section_color   VARCHAR(30),
+uns_header_left_sec_check       VARCHAR(6),
+uns_header_right_section        VARCHAR(100),
+uns_header_right_section_font   VARCHAR(20),
+uns_header_right_section_color  VARCHAR(30),
+uns_header_right_sec_check      VARCHAR(6),
+uns_header                      VARCHAR(100),
+uns_header_font                 VARCHAR(20),
+uns_header_color                VARCHAR(30),
+uns_header_check                VARCHAR(6),
+uns_firm_header_font            VARCHAR(20),
+uns_firm_header_color           VARCHAR(30),
+uns_firm_header_check           VARCHAR(6),
+uns_firm_name_font              VARCHAR(20),
+uns_firm_name_color             VARCHAR(30),
+uns_firm_name_check             VARCHAR(6),
+uns_firm_desc_font              VARCHAR(20),
+uns_firm_desc_color             VARCHAR(30),
+uns_firm_desc_check             VARCHAR(6),
+uns_firm_address_font           VARCHAR(20),
+uns_firm_address_color          VARCHAR(30),
+uns_firm_address_check          VARCHAR(6),
+uns_firm_phone_font             VARCHAR(20),
+uns_firm_phone_color            VARCHAR(30),
+uns_firm_phone_check            VARCHAR(6),
+uns_firm_email_font             VARCHAR(20),
+uns_firm_email_color            VARCHAR(30),
+uns_firm_email_check            VARCHAR(6),
+uns_reg_no_label                VARCHAR(100),
+uns_reg_no_font                 VARCHAR(20),
+uns_reg_no_color                VARCHAR(30),
+uns_reg_no_check                VARCHAR(6),
+uns_date_lbl                    VARCHAR(100),
+uns_date_font                   VARCHAR(20),
+uns_date_color                  VARCHAR(30),
+uns_sub_head                    VARCHAR(100),    
+uns_sub_lbl                     VARCHAR(100), 
+uns_sub_font                    VARCHAR(20),
+uns_sub_color                   VARCHAR(30),
+uns_sub_check                   VARCHAR(6),
+uns_notice_cont                 VARCHAR(2000),
+uns_notice_font                 VARCHAR(20),
+uns_notice_color                VARCHAR(30),
+uns_notice_check                VARCHAR(6),
+uns_details                     VARCHAR(100),
+uns_principal_lbl               VARCHAR(100),
+uns_udhaar_date_lbl             VARCHAR(100),
+uns_udhaar_date_font            VARCHAR(20),
+uns_udhaar_date_color           VARCHAR(30),
+uns_udhaar_date_check           VARCHAR(6),
+uns_interest_lbl                VARCHAR(100),
+uns_total_amt_lbl               VARCHAR(100),
+uns_other_info                  VARCHAR(500),
+uns_other_info_font             VARCHAR(20),
+uns_other_info_color            VARCHAR(30),
+uns_other_info_check            VARCHAR(6),
+uns_tnc_lbl                     VARCHAR(100),
+uns_tnc                         VARCHAR(2000),
+uns_tnc_font                    VARCHAR(20),
+uns_tnc_color                   VARCHAR(30),
+uns_tnc_content_font            VARCHAR(20),
+uns_tnc_content_color           VARCHAR(30),
+uns_tnc_check                   VARCHAR(6),
+uns_cust_sign_lbl               VARCHAR(200),
+uns_cust_sign_font              VARCHAR(20),
+uns_cust_sign_color             VARCHAR(30),
+uns_owner_sign_lbl              VARCHAR(100),
+uns_owner_sign_font             VARCHAR(20),
+uns_owner_sign_color            VARCHAR(30),
+uns_cust_image_check            VARCHAR(6),
+uns_footer                      VARCHAR(100),
+uns_footer_font                 VARCHAR(20),
+uns_footer_color                VARCHAR(30),
+uns_footer_check                VARCHAR(6),
+uns_form_size                   VARCHAR(20),
+uns_default_size                VARCHAR(20),
+uns_form_width                  VARCHAR(6),
+uns_staff_id                    VARCHAR(16),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qUdharNoticeSetupDetails = "SELECT * FROM udhaar_notice_setup WHERE uns_def_lang = 'English'";
+$resUdharNoticeSetupDetails = mysqli_query($conn, $qUdharNoticeSetupDetails) or die(mysqli_error($conn));
+$totalUdharNoticeSetupDetails = mysqli_num_rows($resUdharNoticeSetupDetails);
+if ($totalUdharNoticeSetupDetails <= 0) {
+//Start Code to Setup table for ENG Lang
+    $defLang = 'English';
+    $lang = 'English';
+    $headerLabel = 'UNSECURED LOAN NOTICE';
+    $dateLabel = 'DATE:';
+    $subjectHead = 'SUBJECT:';
+    $subjectLabel = 'FINAL LETTER FOR UDHAAR NOTICE';
+    $udhaarNoticeContent = '&NewLine;&Tab;This is to inform you with great regret that you did not respond to any of our earlier notices and have not deposited the amount of Rs. LOAN_AMOUNT/- till date. We had given you more than required time to deposit the amount but now in case of deposition failure of the amount by 07FINAL_LOAN_DATE, a legal action would be taken in this regard.&NewLine;&Tab;We hope that you would not force us to take such strict actions and deposit the remaining amount very soon and thus help to maintain the cordial relationship.';
+    $details = 'UDHAAR DETAILS:';
+    $principalAmountLabel = 'CUSTOMER ADDRESS:';
+    $udhaarDateLabel = 'UDHAAR DATE: ';
+    $interestLabel = 'INTEREST:';
+    $totalAmountLabel = 'TOTAL AMOUNT:';
+    $udhaarOtherInfo = '';
+    $tNCLabel = 'TERMAS AND CONDITIONS:';
+    $tNC = '';
+    $custSign = 'CUSTOMER SIGNATURE:';
+    $ownerSign = 'OENER SIGNATURE:';
+    $footerLabel = 'FOOTER:';
+
+// Start To protect MySQL injection
+    $defLang = stripslashes($defLang);
+    $lang = stripslashes($lang);
+    $headerLabel = stripslashes($headerLabel);
+    $dateLabel = stripslashes($dateLabel);
+    $subjectHead = stripslashes($subjectHead);
+    $subjectLabel = stripslashes($subjectLabel);
+    $udhaarNoticeContent = stripslashes($udhaarNoticeContent);
+    $details = stripslashes($details);
+    $principalAmountLabel = stripslashes($principalAmountLabel);
+    $udhaarDateLabel = stripslashes($udhaarDateLabel);
+    $interestLabel = stripslashes($interestLabel);
+    $totalAmountLabel = stripslashes($totalAmountLabel);
+    $udhaarOtherInfo = stripslashes($udhaarOtherInfo);
+    $tNCLabel = stripslashes($tNCLabel);
+    $tNC = stripslashes($tNC);
+    $custSign = stripslashes($custSign);
+    $ownerSign = stripslashes($ownerSign);
+    $footerLabel = stripslashes($footerLabel);
+
+    $defLang = mysqli_real_escape_string($conn, $defLang);
+    $lang = mysqli_real_escape_string($conn, $lang);
+    $headerLabel = mysqli_real_escape_string($conn, $headerLabel);
+    $dateLabel = mysqli_real_escape_string($conn, $dateLabel);
+    $subjectHead = mysqli_real_escape_string($conn, $subjectHead);
+    $subjectLabel = mysqli_real_escape_string($conn, $subjectLabel);
+    $udhaarNoticeContent = mysqli_real_escape_string($conn, $udhaarNoticeContent);
+    $details = mysqli_real_escape_string($conn, $details);
+    $principalAmountLabel = mysqli_real_escape_string($conn, $principalAmountLabel);
+    $udhaarDateLabel = mysqli_real_escape_string($conn, $udhaarDateLabel);
+    $interestLabel = mysqli_real_escape_string($conn, $interestLabel);
+    $totalAmountLabel = mysqli_real_escape_string($conn, $totalAmountLabel);
+    $udhaarOtherInfo = mysqli_real_escape_string($conn, $udhaarOtherInfo);
+    $tNCLabel = mysqli_real_escape_string($conn, $tNCLabel);
+    $tNC = mysqli_real_escape_string($conn, $tNC);
+    $custSign = mysqli_real_escape_string($conn, $custSign);
+    $ownerSign = mysqli_real_escape_string($conn, $ownerSign);
+    $footerLabel = mysqli_real_escape_string($conn, $footerLabel);
+// End To protect MySQL injection
+
+    $qInsertUdhaarNotice = "insert into udhaar_notice_setup(
+    uns_own_id,uns_def_lang,uns_lang,uns_header_width,uns_header_display,uns_border_check,uns_firm_left_logo_check,uns_firm_right_logo_check,
+uns_header,uns_header_font,uns_header_color,uns_header_check,
+uns_firm_header_font,uns_firm_header_color,uns_firm_header_check,
+uns_firm_name_font,uns_firm_name_color,uns_firm_name_check,
+uns_firm_desc_font,uns_firm_desc_color,uns_firm_desc_check,
+uns_firm_address_font,uns_firm_address_color,uns_firm_address_check,
+uns_firm_phone_font,uns_firm_phone_color,uns_firm_phone_check,
+uns_firm_email_font,uns_firm_email_color,uns_firm_email_check,
+uns_reg_no_label,uns_reg_no_font,uns_reg_no_color,uns_reg_no_check,
+uns_date_lbl,uns_date_font,uns_date_color,uns_sub_lbl,uns_sub_font,uns_sub_color,uns_sub_check,
+uns_notice_cont,uns_notice_font,uns_notice_color,uns_notice_check,
+uns_udhaar_date_lbl,uns_udhaar_date_font,uns_udhaar_date_color,uns_udhaar_date_check,
+uns_other_info,uns_other_info_font,uns_other_info_color,uns_other_info_check,
+uns_tnc_lbl,uns_tnc,uns_tnc_font,uns_tnc_color,uns_tnc_content_font,uns_tnc_content_color,uns_tnc_check,
+uns_cust_sign_lbl,uns_cust_sign_font,uns_cust_sign_color,
+uns_owner_sign_lbl,uns_owner_sign_font,uns_owner_sign_color,
+uns_footer,uns_footer_font,uns_footer_color,uns_footer_check,
+uns_form_size,uns_default_size,uns_form_width) 
+    values (
+    '$ownerId','$defLang','$lang','25','display','on','on','on',
+        '$headerLabel','18','black','',
+        '20','black','on',
+        '16','black','on',
+        '16','black','on',
+        '12','black','on',
+        '12','black','on',
+        '12','black','on',
+        '$regNoLabel','12','black','',
+        '$dateLabel','12','black','$subjectLabel','12','black','on',"
+            . "'$udhaarNoticeContent','12','black','on',"
+            . "'$udhaarDateLabel','12','black','on',
+        '$udhaarOtherInfo','12','black','on',"
+            . "'$tNCLabel','$tNC','12','black','12','black','on',"
+            . "'$custSign','12','black',"
+            . "'$ownerSign','12','black',"
+            . "'$footerLabel','12','black','',"
+            . "'udhaarNoticeLayA5','udhaarNoticeLayA5','135')";
+    if (!mysqli_query($conn, $qInsertUdhaarNotice)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    $qInsertUdhaarNotice = "insert into udhaar_notice_setup
+    (uns_own_id,uns_def_lang,uns_lang,uns_default_size) 
+    values ('$ownerId','Hindi','Hindi','udhaarNoticeLayA5'),
+        ('$ownerId','Marathi','Marathi','udhaarNoticeLayA5')";
+
+    if (!mysqli_query($conn, $qInsertUdhaarNotice)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+//End Code to Setup table for ENG Lang
+////Start Code to Setup table for HIN Lang
+//$defLang = 'Hindi';
+//$lang = 'Hindi';
+//$headerLabel = 'उधार नोटीस';
+//$dateLabel = 'दिनांक:';
+//$subjectHead = 'विषय:';
+//$subjectLabel = 'तकादे का अंतिम पत्र';
+//$udhaarNoticeContent = '&NewLine;प्रिय मोह्दय,&NewLine;नमस्कार,&NewLine;&Tab;हमे अत्‍यंत खेद के साथ कहना पड़ रहा है की आपने हमारे पिछले पत्रो की ओर बिल्कुल भी ध्यान नही दिया, तथा रु LOAN_AMOUNT/- का भुगतान अभी तक नही किया है| हम ने आपको आवश्यक्ता से अधिक समय दिया था तथा अब हम दिनांक 07FINAL_LOAN_DATE के उपरांत प्रतीक्षा नही कर सकते यदि आपने उस समय तक भुगतान नही किया तो हमे विवश होकर एक पक्षिय कार्यवाही करनी पड़ेगी |&NewLine;&Tab;हमे आशा ही नही अपितु पूर्ण विश्वास है की आप हमे ऐसा करने के लिए बाध्य नही करेंगे तथा शेष धनराशि का भुगतान तुरंत करके आपसी संबंध पुर्नव्रत बनाए रखेंगे |';
+//$details = 'उधार विवरण';
+//$principalAmountLabel = 'धनराशि:';
+//$udhaarDateLabel = 'दिनांक: ';
+//$interestLabel = 'ब्याज:';
+//$totalAmountLabel = 'कुल धनराशि:';
+//$udhaarOtherInfo = '';
+//$tNCLabel = 'नियम व शर्ते:';
+//$tNC = '';
+//$custSign = 'ग्राहक के हस्ताक्षर:';
+//$ownerSign = 'मालिक/दूकानदार के हस्ताक्षर:';
+//$footerLabel = 'Footer:';
+//
+//// Start To protect MySQL injection
+//$defLang = stripslashes($defLang);
+//$lang = stripslashes($lang);
+//$headerLabel = stripslashes($headerLabel);
+//$dateLabel = stripslashes($dateLabel);
+//$subjectHead = stripslashes($subjectHead);
+//$subjectLabel = stripslashes($subjectLabel);
+//$udhaarNoticeContent = stripslashes($udhaarNoticeContent);
+//$details = stripslashes($details);
+//$principalAmountLabel = stripslashes($principalAmountLabel);
+//$udhaarDateLabel = stripslashes($udhaarDateLabel);
+//$interestLabel = stripslashes($interestLabel);
+//$totalAmountLabel = stripslashes($totalAmountLabel);
+//$udhaarOtherInfo = stripslashes($udhaarOtherInfo);
+//$tNCLabel = stripslashes($tNCLabel);
+//$tNC = stripslashes($tNC);
+//$custSign = stripslashes($custSign);
+//$ownerSign = stripslashes($ownerSign);
+//$footerLabel = stripslashes($footerLabel);
+//
+//$defLang = mysqli_real_escape_string($conn,$defLang);
+//$lang = mysqli_real_escape_string($conn,$lang);
+//$headerLabel = mysqli_real_escape_string($conn,$headerLabel);
+//$dateLabel = mysqli_real_escape_string($conn,$dateLabel);
+//$subjectHead = mysqli_real_escape_string($conn,$subjectHead);
+//$subjectLabel = mysqli_real_escape_string($conn,$subjectLabel);
+//$udhaarNoticeContent = mysqli_real_escape_string($conn,$udhaarNoticeContent);
+//$details = mysqli_real_escape_string($conn,$details);
+//$principalAmountLabel = mysqli_real_escape_string($conn,$principalAmountLabel);
+//$udhaarDateLabel = mysqli_real_escape_string($conn,$udhaarDateLabel);
+//$interestLabel = mysqli_real_escape_string($conn,$interestLabel);
+//$totalAmountLabel = mysqli_real_escape_string($conn,$totalAmountLabel);
+//$udhaarOtherInfo = mysqli_real_escape_string($conn,$udhaarOtherInfo);
+//$tNCLabel = mysqli_real_escape_string($conn,$tNCLabel);
+//$tNC = mysqli_real_escape_string($conn,$tNC);
+//$custSign = mysqli_real_escape_string($conn,$custSign);
+//$ownerSign = mysqli_real_escape_string($conn,$ownerSign);
+//$footerLabel = mysqli_real_escape_string($conn,$footerLabel);
+//// End To protect MySQL injection
+//
+//$qInsertUdhaarNotice = "insert into udhaar_notice_setup(uns_own_id,uns_def_lang,uns_lang,uns_header,uns_date_lbl,uns_sub_head,uns_sub_lbl,
+//    uns_notice_cont,uns_details,uns_principal_lbl,uns_udhaar_date_lbl,uns_interest_lbl,uns_total_amt_lbl,uns_other_info,uns_tnc_lbl,uns_tnc,uns_cust_sign_lbl,
+//    uns_owner_sign_lbl,uns_footer) 
+//    values ('$ownerId','$defLang','$lang','$headerLabel','$dateLabel','$subjectHead','$subjectLabel','$udhaarNoticeContent','$details','$principalAmountLabel',
+//            '$udhaarDateLabel','$interestLabel','$totalAmountLabel','$udhaarOtherInfo','$tNCLabel','$tNC','$custSign','$ownerSign','$footerLabel')";
+//
+//
+//if (!mysqli_query($conn,$qInsertUdhaarNotice)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
+//
+////End Code to Setup table for HIN Lang
+////Start Code to Setup table for MARATHI Lang by @Author: KHUSH21JAN13
+//// Modified by KHUSH22JAN13
+//
+//$defLang = 'Marathi';
+//$lang = 'Marathi';
+//$headerLabel = 'कर्ज नोटीस';
+//$dateLabel = 'दिनांक:';
+//$subjectHead = 'विषय:';
+//$subjectLabel = 'सूचना पत्रक';
+//$udhaarNoticeContent = '&NewLine;प्रिय महोद्य,&NewLine;नमस्कार,&NewLine;&Tab;आम्हाला  लिहिताना फार वाईट वाटत आहे की, तुम्ही आमच्या मागच्या पत्रकडे अजिबात लक्ष्या दिले नाही व रु LOAN_AMOUNT/- च अजुन भरणा केला नही. आम्ही तुम्हाला भरणा करण्यासाठी खूप वेळ दिला पण आम्ही आता 07FINAL_LOAN_DATE दिनांक पेक्षा जास्त वाट पाहु शकत नही. जर आपण लवकर भरणा नही केला तर आम्हाला एकपक्षी कार्यवाही करावी लागेल.&NewLine;&Tab;आम्हाला अशा नाही पण पूर्णा विश्वास आहे की तुम्ही आम्हाला कारवाई करण्यास भाग नही पडणार व लवकरात लवकर भरणा करून आपले संबंध नि ठेवण्यात मदत कराल.';
+//$details = 'कर्ज विवरण';
+//$principalAmountLabel = 'धनराशि:';
+//$udhaarDateLabel = 'दिनांक: ';
+//$interestLabel = 'ब्याज:';
+//$totalAmountLabel = 'कुल धनराशि:';
+//$udhaarOtherInfo = '';
+//$tNCLabel = 'नियम आणि शर्ते:';
+//$tNC = '';
+//$custSign = 'ग्राहकाची सही /अंगठा:';
+//$ownerSign = 'दुकानदार सही:';
+//$footerLabel = 'Footer:';
+//
+//// Start To protect MySQL injection
+//$defLang = stripslashes($defLang);
+//$lang = stripslashes($lang);
+//$headerLabel = stripslashes($headerLabel);
+//$dateLabel = stripslashes($dateLabel);
+//$subjectHead = stripslashes($subjectHead);
+//$subjectLabel = stripslashes($subjectLabel);
+//$udhaarNoticeContent = stripslashes($udhaarNoticeContent);
+//$details = stripslashes($details);
+//$principalAmountLabel = stripslashes($principalAmountLabel);
+//$udhaarDateLabel = stripslashes($udhaarDateLabel);
+//$interestLabel = stripslashes($interestLabel);
+//$totalAmountLabel = stripslashes($totalAmountLabel);
+//$udhaarOtherInfo = stripslashes($udhaarOtherInfo);
+//$tNCLabel = stripslashes($tNCLabel);
+//$tNC = stripslashes($tNC);
+//$custSign = stripslashes($custSign);
+//$ownerSign = stripslashes($ownerSign);
+//$footerLabel = stripslashes($footerLabel);
+//
+//$defLang = mysqli_real_escape_string($conn,$defLang);
+//$lang = mysqli_real_escape_string($conn,$lang);
+//$headerLabel = mysqli_real_escape_string($conn,$headerLabel);
+//$dateLabel = mysqli_real_escape_string($conn,$dateLabel);
+//$subjectHead = mysqli_real_escape_string($conn,$subjectHead);
+//$subjectLabel = mysqli_real_escape_string($conn,$subjectLabel);
+//$udhaarNoticeContent = mysqli_real_escape_string($conn,$udhaarNoticeContent);
+//$details = mysqli_real_escape_string($conn,$details);
+//$principalAmountLabel = mysqli_real_escape_string($conn,$principalAmountLabel);
+//$udhaarDateLabel = mysqli_real_escape_string($conn,$udhaarDateLabel);
+//$interestLabel = mysqli_real_escape_string($conn,$interestLabel);
+//$totalAmountLabel = mysqli_real_escape_string($conn,$totalAmountLabel);
+//$udhaarOtherInfo = mysqli_real_escape_string($conn,$udhaarOtherInfo);
+//$tNCLabel = mysqli_real_escape_string($conn,$tNCLabel);
+//$tNC = mysqli_real_escape_string($conn,$tNC);
+//$custSign = mysqli_real_escape_string($conn,$custSign);
+//$ownerSign = mysqli_real_escape_string($conn,$ownerSign);
+//$footerLabel = mysqli_real_escape_string($conn,$footerLabel);
+//// End To protect MySQL injection
+//
+//$qInsertUdhaarNotice = "insert into udhaar_notice_setup(uns_own_id,uns_def_lang,uns_lang,uns_header,uns_date_lbl,uns_sub_head,uns_sub_lbl,
+//    uns_notice_cont,uns_details,uns_principal_lbl,uns_udhaar_date_lbl,uns_interest_lbl,uns_total_amt_lbl,uns_other_info,uns_tnc_lbl,uns_tnc,uns_cust_sign_lbl,
+//    uns_owner_sign_lbl,uns_footer) 
+//    values ('$ownerId','$defLang','$lang','$headerLabel','$dateLabel','$subjectHead','$subjectLabel','$udhaarNoticeContent','$details','$principalAmountLabel',
+//            '$udhaarDateLabel','$interestLabel','$totalAmountLabel','$udhaarOtherInfo','$tNCLabel','$tNC','$custSign','$ownerSign','$footerLabel')";
+//
+//
+//if (!mysqli_query($conn,$qInsertUdhaarNotice)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
+//End Code to Setup table for MARATHI Lang by @Author: KHUSH21JAN13
 ?>

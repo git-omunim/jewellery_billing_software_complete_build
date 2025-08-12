@@ -1,3 +1,85 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 20 Jan, 2019 12:08:34 PM
+ *
+ * @FileName: omStockManagementByCounterMultiBarcode.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA-12SEP2023
+ *  AUTHOR: @AUTHOR:PRIYANKA-12SEP2023
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//
+//print_r($_REQUEST);
+//
+//
+$barcodeTagsData = trim($_REQUEST['barcodeTagsData']);
+//
+$productCounter = $_REQUEST['productCounter'];
+//
+//echo '<br />$barcodeTagsData == ' . $barcodeTagsData . '<br />';
+//echo '$productCounter == ' . $productCounter . '<br />';
+//
+if ($barcodeTagsData != '' && $barcodeTagsData != NULL && $productCounter != '' && $productCounter != NULL) {
+    //
+    //$barcodePrefix = substr($barcodeTagsData, 0, 1);
+    //$barcodePostfix = substr($barcodeTagsData, 1);
+    //
+    //echo '$barcodeTagsData == ' . $barcodeTagsData . '<br />';
+    //echo '$barcodePrefix == ' . $barcodePrefix . '<br />';
+    //echo '$barcodePostfix == ' . $barcodePostfix . '<br />';
+    //
+    // ADDED CODE FOR BARCODE @AUTHOR:PRIYANKA-12SEP2023
+    $prodBarcodePrefix = substr($barcodeTagsData, 0, 1);
+    $prodBarcode = substr($barcodeTagsData, 1);
+    //
+    //
+    //echo '<br />$prodBarcodePrefix == ' . $prodBarcodePrefix . '<br />';
+    //echo '$prodBarcode == ' . $prodBarcode . '<br />';
+    //
+    //
+    // ADDED CODE BY @AUTHOR:PRIYANKA-12SEP2023
+    $updateProductCounterQuery = "UPDATE stock_transaction "
+                               . "SET sttr_counter_name = '$productCounter' "
+                               . "WHERE sttr_transaction_type IN ('EXISTING', 'PURONCASH', 'TAG', 'PURBYSUPP', 'PURCHASE') "
+                               . "AND sttr_indicator IN ('stock', 'AddInvoice') "
+                               . "AND sttr_stock_type = 'retail' "
+                               . " AND "
+                               . "((sttr_barcode_prefix = '$prodBarcodePrefix' and sttr_barcode = '$prodBarcode') "
+                               . " OR "
+                               . "((sttr_barcode_prefix IS NULL OR sttr_barcode_prefix = '') and sttr_barcode = '$barcodeTagsData')) ";
+    //
+    //
+    //echo '$updateProductCounterQuery == ' . $updateProductCounterQuery . '<br />';
+    //
+    //
+    if (!mysqli_query($conn, $updateProductCounterQuery)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //
+    //
+}
+//
 ?>

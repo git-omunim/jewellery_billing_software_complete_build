@@ -1,3 +1,142 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 01-Aug-2011 10:56:17 PM
+ *
+ * @FileName: omuntdnu.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<?php
+//
+$totalTodayNewUdhaar = 0;
+//
+include 'omfrpsck.php';
+//
+if ($ddpanelName == 'dayBeforePanel') {
+    //
+    //$dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    //
+    $oneDayMinusStrToTime = $todayFromStrDate - 60 * 60 * 24;
+    if ($acc_cash_opening_strtodate != '')
+        if ($acc_cash_opening_strtodate == $todayFromStrDate)
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))>$acc_cash_opening_strtodate and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+        else
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $acc_cash_opening_strtodate AND $oneDayMinusStrToTime";
+    else
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+} else {
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+}
+//
+if ($ddMainPanel == 'custAccLedger'){
+    $accLedStrUdhAdd = "and utin_user_id = '$custId'";
+} else {
+    $accLedStrUdhAdd = NULL;
+}
+//
+//
+/*****************START code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-01JULY17************************/
+//
+// CHANGED CODE FOR OPENING BALANCE ISSUE @Author:PRIYANKA-06JUNE2023
+$qSelectTodaysUdaar = "SELECT SUM(utin_total_amt) as total_udhaar, "
+                    . "SUM(utin_cash_amt_rec) as utin_cash_amt_rec, "
+                    . "SUM(utin_pay_cheque_amt) as utin_pay_cheque_amt, "
+                    . "SUM(utin_pay_card_amt) as utin_pay_card_amt, "
+                    . "SUM(utin_online_pay_amt) as utin_online_pay_amt, "
+                    . "SUM(utin_pay_comm_paid) as utin_pay_comm_paid, "
+                    . "SUM(utin_discount_amt) as utin_discount_amt "
+                    . "FROM user_transaction_invoice "
+                    . "where utin_owner_id='$_SESSION[sessionOwnerId]' $dateStr $accLedStrUdhAdd "
+                    . "and utin_transaction_type IN('UDHAAR','OnPurchase') and utin_type = 'udhaar' "
+                    . "and utin_other_info NOT LIKE '%OPENING BALANCE%' "
+                    . "and utin_type NOT IN('OnPurchase') and utin_status IN ('New','Updated','Paid') "
+                    . "and utin_firm_id IN ($strFrmId)";
+//
+$qResultTodaysUdaar = mysqli_query($conn,$qSelectTodaysUdaar);
+$rowTodaysUdaar = mysqli_fetch_array($qResultTodaysUdaar, MYSQLI_ASSOC);
+$totalTodayNewUdhaar = $rowTodaysUdaar['total_udhaar'];
+//
+//
+/* START CODE TO ADD UDHAAR AMOUNT GIVEN BY VYCASH OPTION,@AUTHOR:HEMA-2JUL2020 */
+$todaysCashRecevedByPaymentPanel = $rowTodaysUdaar['utin_cash_amt_rec'];
+//
+$todaysCashReceivedDireactly = $totalTodayNewUdhaar - $rowTodaysUdaar['utin_cash_amt_rec'] - $rowTodaysUdaar['utin_pay_cheque_amt']- $rowTodaysUdaar['utin_pay_card_amt']- $rowTodaysUdaar['utin_online_pay_amt'];
+/* END CODE TO ADD UDHAAR AMOUNT GIVEN BY VYCASH OPTION,@AUTHOR:HEMA-2JUL2020 */
+//
+//
+//if ($panelName != 'TodaysUdhaar') {
+    //
+    //
+    // CHANGED CODE FOR OPENING BALANCE ISSUE @Author:PRIYANKA-06JUNE2023
+    $qSelectTotalUdaar = "SELECT SUM(utin_total_amt) as total_udhaar, "
+                       . "SUM(utin_cash_amt_rec) as utin_cash_amt_rec, "
+                       . "SUM(utin_pay_cheque_amt) as utin_pay_cheque_amt, "
+                       . "SUM(utin_pay_card_amt) as utin_pay_card_amt, "
+                       . "SUM(utin_online_pay_amt) as utin_online_pay_amt, "
+                       . "SUM(utin_pay_comm_paid) as utin_pay_comm_paid, "
+                       . "SUM(utin_discount_amt) as utin_discount_amt "
+                       . "FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' "
+                       . "and utin_transaction_type IN ('UDHAAR','OnPurchase') $dateStr "
+                       . "and utin_type NOT IN('OnPurchase') and utin_status IN ('New','Updated','Paid') "
+                       . "and utin_other_info NOT LIKE '%OPENING BALANCE%' "
+                       . "and utin_firm_id IN ($strFrmId)";
+    //
+    $qResultTotalUdaar = mysqli_query($conn,$qSelectTotalUdaar);
+    $rowTotalUdaar = mysqli_fetch_array($qResultTotalUdaar, MYSQLI_ASSOC);
+    $totalNewUdhaar = $rowTotalUdaar['total_udhaar'];
+    //
+    /* START CODE TO ADD UDHAAR AMOUNT GIVEN BY VYCASH OPTION,@AUTHOR:HEMA-2JUL2020 */
+    $totalCashRecevedByPaymentPanel = $rowTotalUdaar['utin_cash_amt_rec'];
+    //
+    $totalCashReceivedDireactly = $totalNewUdhaar - $rowTotalUdaar['utin_cash_amt_rec'] - $rowTotalUdaar['utin_pay_cheque_amt']- $rowTotalUdaar['utin_pay_card_amt']- $rowTotalUdaar['utin_online_pay_amt'];
+    /* END CODE TO ADD UDHAAR AMOUNT GIVEN BY VYCASH OPTION,@AUTHOR:HEMA-2JUL2020 */
+    //
+    //
+    //echo formatInIndianStyle($totalNewUdhaar);
+    //echo '<br/>$qSelectTotalUdaar=='.$qSelectTotalUdaar;
+    //
+    //
+//}
+//
+//
+//echo '<br/>$totalCashReceivedDireactly=='.$totalCashReceivedDireactly;
+//
+//    
+/******************START CODE TO ADD TOTAL UDHARR OUT AMOUNT,@AUTHOR:HEMA-5MAY2020*******************************/
+if ($ddpanelName == 'dayBeforePanel') {
+    $open_out_utin_cash_amt_rec += $rowTodaysUdaar['utin_cash_amt_rec'] + $totalCashReceivedDireactly;
+    $open_out_utin_pay_cheque_amt += $rowTodaysUdaar['utin_pay_cheque_amt'];
+    $open_out_utin_pay_card_amt += $rowTodaysUdaar['utin_pay_card_amt'];
+    $open_out_utin_online_pay_amt += $rowTodaysUdaar['utin_online_pay_amt'];
+    $open_out_utin_pay_comm_paid += $rowTodaysUdaar['utin_pay_comm_paid'];
+    $open_out_utin_pay_disc_amt += $rowTodaysUdaar['utin_discount_amt'];
+//
+} else {
+    //
+    $today_out_utin_cash_amt_rec += $rowTodaysUdaar['utin_cash_amt_rec'] + $todaysCashReceivedDireactly;
+    $today_out_utin_pay_cheque_amt += $rowTodaysUdaar['utin_pay_cheque_amt'];
+    $today_out_utin_pay_card_amt += $rowTodaysUdaar['utin_pay_card_amt'];
+    $today_out_utin_online_pay_amt += $rowTodaysUdaar['utin_online_pay_amt'];
+    $today_out_utin_pay_comm_paid += $rowTodaysUdaar['utin_pay_comm_paid'];
+    $today_out_utin_pay_disc_amt += $rowTodaysUdaar['utin_discount_amt'];
+}
 ?>

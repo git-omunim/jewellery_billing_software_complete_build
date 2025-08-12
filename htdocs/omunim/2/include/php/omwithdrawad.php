@@ -1,3 +1,794 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: omwithdrawad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+if ($ddDetPanel == 'expandAll' || $panelDDDetClick == 'ddDetClick') {
+    if ($todayDate == '' || $todayDate == NULL) {
+        $todayDate = date("d M Y");
+    }
+    if ($panelName == '' || $panelName == NULL)
+        $panelName = $_REQUEST['panelName'];
+//
+    if ($panelName == '' || $panelName == NULL)
+        $panelName = $_REQUEST['ddMainPanel'];
+//
+    if ($custId == '' || $custId == NULL)
+        $custId = $_REQUEST['custId'];
+//$custId = $_GET['custId'];
+//echo '$custId =='.$custId;
+    include 'omfrpsck.php';
+    if ($ddpanelName == 'dayBeforePanel') {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    } else {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+    }
+    if ($ddMainPanel == 'custAccLedger') {
+        $accLedStrDepAdd = "and utin_user_id = '$custId'";
+    } else {
+        $accLedStrDepAdd = NULL;
+    }
+//
+    /*     * ***************START code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17*********************** */
+    $qSelectDepUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]'$dateStr $accLedStrDepAdd and "
+            . "utin_status IN ('New') and utin_firm_id IN ($strFrmId) "
+            . "and utin_type='udhaar' and  utin_transaction_type = 'UDHAAR' and utin_history = 'WITHDRAW'"
+            . " order by UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) $ddOrderBy"; //status deleted added @Author:PRIYA17OCT13 //EMI status added @Author:SHRI29MAY15
+    $qResultDepUdhaar = mysqli_query($conn, $qSelectDepUdhaar);
+    $udhaarDepPresent = mysqli_num_rows($qResultDepUdhaar);
+    if ($udhaarDepPresent > 0) {
+        $panelName = 'TodaysUdhaarDeposit';
+        include 'omwithdrawadd.php';
+        $totalMoneyDeposit += $todaysudhaarDeposit;
+        //echo '$totalMoneyLeft =='.$totalMoneyLeft;
+        $totalMoneyLeft = $totalMoneyLeft + $todaysudhaarDeposit;
+//    echo '$totalMoneyLeft='.$totalMoneyLeft;
+    }
+    if ($ddpanelName == 'todayDatePanel') {
+        if ($udhaarDepPresent > 0) {
+            if ($totalMoneyLeft < 0) {
+                $class = 'redFont';
+            } else {
+                $class = 'blueFont';
+            }
+            ?>
+            <table border="0" cellspacing="0" cellpadding="0" align="left" class="padBott5" width="100%">
+                <tr>
+                    <td align = "left">
+                        <table border="0" cellspacing="0" cellpadding="0" align="left"  width="100%">
+                            <tr>
+                                <td align = "left" class="width_627_dd">
+                                    <div class = "brown_bold12_arial"><span style="color:#000;margin-left:10px;">WITHDRAW ADDED</span></div>
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                    <div class="text_green_Arial_12_bold">
+                                        <?php
+                                        //echo formatInIndianStyle($totalMoneyLeft);
+                                        ?>
+                                    </div>
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                    <div class="ff_calibri fs_12 fw_b <?php echo $class; ?>">
+                                        <?php
+                                        //   echo formatInIndianStyle(abs($totalMoneyDeposit));
+                                        ?>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "left">
+                        <table border="0" cellspacing="0" cellpadding="0" align="left" style="border-top: 1px dashed #bababa;border-bottom: 1px dashed #bababa;">
+                            <tr style="background:#f4f4f4">
+                                <td align="left"  title="SERIAL NUMBER" class="brown_normal12_calibri " style="width:80px">S. NO
+                                </td>
+                                <td align="left" title="DATE" class="brown_normal12_calibri "style="width:120px" >
+                                    DATE<?php if (($staffId == '') || (($staffId != '') && ($firmAccess == 'true'))) { ?>  /FIRM <?php } else { ?>
+                                    <?php } ?>
+                                </td>
+                                <td align="left" title="USER NAME(CITY)" class="brown_normal12_calibri " style="width:180px;">
+                                    <span style="margin-left:0px;"> USER</span>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($cityAccess == 'true'))) { ?>  <span> ( CITY )</span>
+                                    <?php } else { ?>
+                                    <?php } ?>
+
+                                </td>
+                                <td align = "left" colspan="6"  class="width_300_dd brown_normal12_calibri " >
+                                    <div>
+                                        <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                            <?php if ($ddDetPanel == 'expandAll' || $panelDDDetClick == 'ddDetClick') { ?>
+                                                <tr>
+                                                    <td align="left" title="METAL TYPE" class="brown_normal11_calibri" style="width:40px; overflow:hidden;">
+
+                                                    </td>
+                                                    <td align="right" title="GROSS WEIGHT" class="brown_normal11_calibri" style="width:50px; overflow:hidden;">
+
+                                                    </td>
+                                                    <td align="right" title="NET WEIGHT" class="brown_normal11_calibri" style="width:50px; overflow:hidden;">
+
+                                                    </td>
+                                                    <td align="right" title="FINE WEIGHT" class="brown_normal11_calibri" style="width:50px; overflow:hidden;">
+
+                                                    </td>
+                                                    <td align="right" title="METAL BALANCE" class="brown_normal11_calibri" style="width:50px; overflow:hidden;">
+
+                                                    </td>
+                                                    <td align="right" class="brown_normal11_calibri" style="width:65px; overflow:hidden;" title="FINAL VALUATION">
+
+                                                    </td>
+                                                    <td align="right" class="brown_normal11_calibri" title="FINAL VALUATION" style="width:50px; overflow:hidden;">
+                                                        WITH
+                                                    </td>
+                                                    <td align="right" class="brown_normal11_calibri" title="BALANCE LEFT" style="width:65px; overflow:hidden;">
+                                                        INT
+                                                    </td>
+                                                </tr>
+                                            <?php } else { ?>
+                                                <tr>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                    <td align="center" class="brown_normal12_calibri width_100_dd"></td>
+                                                </tr>
+                                            <?php } ?>
+                                        </table>
+                                    </div>
+                                </td>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 76px;">
+                                        CASH
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:76px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 76px;">
+                                        BANK
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:76px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 76px;">
+                                        CARD
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:76px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 76px;">
+                                        ONLINE
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:76px;"></td>
+                                <?php } ?>
+                                <td align = "right" title="CASH" class=" brown_normal12_calibri " style="width: 55px;">
+                                    DISC.
+                                </td>
+                                <td align = "right" title="CASH" class=" brown_normal12_calibri  " style="width: 80px;">
+                                    <div class="margin_right_four bold">TOTAL</div>
+                                </td>
+                            </tr>
+                            <?php
+                            $serialNo = 1;
+                            $totUDepAmt = 0;
+                            while ($rowAllUdhaar = mysqli_fetch_array($qResultDepUdhaar, MYSQLI_ASSOC)) {
+                                $uId = $rowAllUdhaar['utin_id'];
+                                $uFirmId = $rowAllUdhaar['utin_firm_id'];
+                                $depAmt = $rowAllUdhaar['utin_total_amt'];
+                                $depFinalAmt = $rowAllUdhaar['utin_tot_payable_amt'];
+                                $depIntAmt = $rowAllUdhaar['utin_int_amt'];
+                                $uCustId = $rowAllUdhaar['utin_user_id'];
+                                //START CODE TO ADD NEPALI DATE @RENUKA SHARMA NOV2022
+                                if ($nepaliDateIndicator == 'YES') {
+                                    $uDepDOB = $rowAllUdhaar['utin_other_lang_date'];
+                                } else {
+                                    $uDepDOB = $rowAllUdhaar['utin_date'];
+                                }
+                                $totUDepAmt += $depFinalAmt;
+                                $totIntAmt += $depIntAmt;
+                                $totDepAmt += $depAmt;
+                                /*                                 * ***************END code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17*********************** */
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->                                    
+                                parse_str(getTableValues("SELECT user_fname,user_lname,user_city FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$uCustId'"));
+                                parse_str(getTableValues("SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$uFirmId'"));
+                                ?>
+                                <?php if ($serialNo % 2 == 0) { ?>
+                                    <tr class="">
+                                    <?php } else { ?>
+                                    <tr>
+                                    <?php } ?>
+                                    <td align="left" title="<?php echo $serialNo; ?>">
+                                        <h5 class="blackArial11Font"><?php echo substr($serialNo, 0, 15); ?></h5>
+                                    </td>
+                                    <td align="left" title="<?php echo om_strtoupper($uDepDOB); ?>" >
+                                        <h5 class="blackArial11Font"><?php echo om_strtoupper($uDepDOB); ?></h5>
+                                        <h5 class="blackArial11Font"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($firmAccess == 'true'))) {
+                                                echo substr(om_strtoupper($firm_name), 0, 15);
+                                            }
+                                            ?></h5>
+                                    </td>
+                                    <td align="left" title="<?php echo om_strtoupper($user_fname . ' ' . $user_lname) . ' CITY :  ' . om_strtoupper($user_city); ?>">
+                                        <a style="cursor: pointer;" onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $uCustId; ?>', '<?php echo $uFirmId; ?>');">
+                                            <div class="ff_tnr fw_n orange fs_11"><?php
+                                                if (($staffId == '') || (($staffId != '') && ($cityAccess == 'true'))) {
+                                                    echo substr(om_strtoupper($user_fname . ' ' . $user_lname), 0, 28) . ' ' . '(' . (substr(om_strtoupper($user_city), 0, 15)) . ')';
+                                                }
+                                                ?></div>
+                                        </a>
+                                        <!---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+                                    </td>
+                                    <?php if ($ddDetPanel == 'expandAll' || $panelDDDetClick == 'ddDetClick') { ?>
+                                        <td align = "left" colspan="6"  class="width_300_dd brown_normal12_calibri ">
+                                            <div>
+                                                <table border="0" cellspacing="0" cellpadding="0" align="center" style="width:100%;table-layout:fixed;">
+                                                    <tr>
+                                                        <td align="left" title="" class="black_normal11_calibri" style="width:40px;overflow:hidden;">
+
+                                                        </td>
+                                                        <td align="right" title="" class="black_normal11_calibri" style="width:50px;overflow: hidden;">
+
+                                                        </td>
+                                                        <td align="right" title="" class="black_normal11_calibri" style="width:50px;overflow: hidden;">
+
+                                                        </td>
+                                                        <td align="right" title="" class="black_normal11_calibri" style="width:50px;overflow: hidden;">
+
+                                                        </td>
+                                                        <td align="right" title="" class="black_normal11_calibri" style="width:50px;overflow: hidden;">
+
+                                                        </td>
+                                                        <td align="right" class=" black_normal11_calibri" style="width:65px;overflow: hidden;" title="FINAL VALUATION">
+
+                                                        </td>
+                                                        <td align="right" class="amount12 reddish" style="width:50px;overflow: hidden;"> 
+                                                            <h4 class="amount12 reddish"><?php echo formatInIndianStyle($depAmt); ?></h4>
+                                                        </td>
+                                                        <td align="right" class="amount12 reddish" style="width:65px;overflow: hidden;">
+                                                            <h4 class="amount12 reddish" ><?php echo formatInIndianStyle($depIntAmt); ?></h4>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    <?php } else { ?>
+                                        <td colspan="4">
+                                            <div id="sellDetailsDiv<?php echo $sellInvId; ?>">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                                    <tr>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                        <td align="right" class="width_100_dd blackArial11Font">
+                                                            <?php echo '&nbsp'; ?>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    <?php } ?>
+                                    <td align="right" class="amount12 reddish">
+                                        <h4 class="amount12 reddish"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right" class="amount12 reddish">
+                                        <h4 class="amount12 reddish"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right" class="amount12 reddish">
+                                        <h4 class="amount12 reddish"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right" class="amount12 reddish">
+                                        <h4 class="amount12 reddish"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right" class="amount12 reddish">
+                                        <h4 class="amount12 reddish"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                    <td align="right">
+                                        <h4 class="amount12  reddish"><?php echo formatInIndianStyle($depFinalAmt); ?></h4>
+                                    </td>
+                                </tr>
+                                <?php
+                                $serialNo++;
+                            }
+                            if (($ddDetPanel == 'expandAll') && $udhaarDepPresent > 0) {
+                                ?>
+<!--                                <tr>
+                                    <td align="center" colspan="4">
+                                        &nbsp;
+                                    </td>
+                                    <td class="paddingTop2 padBott2" colspan="10">
+                                        <div class="hrPaleGrey"></div>
+                                    </td>
+                                </tr>-->
+                                <tr style="background: #edf0f4;">
+                                    <td align="right" class="amount12 reddish" colspan="4">
+                                        <?php echo 'TOTAL:'; ?>
+                                    </td>
+                                    <td align = "left" colspan="5"  class="width_300_dd brown_normal12_calibri ">
+                                        <table border="0" cellspacing="0" cellpadding="0" align="center" style="width:100%;table-layout:fixed;">
+                                            <?php if ($ddDetPanel == 'expandAll' || $panelDDDetClick == 'ddDetClick') { ?>
+                                                <tr>
+                                                    <td align="right" class=" blackArial11Font" style="width:40px;overflow:hidden;"> 
+                                                    </td>
+                                                    <td align="right"  class="brown_bold12_arial" style="width:50px;overflow:hidden; ">
+                                                        <h4 class = "brown_bold12_arial" style=""><?php ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:50px;overflow:hidden;" >
+                                                        <h4 class = "brown_bold12_arial" style=""><?php ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:50px;overflow:hidden;" >
+                                                        <h4 class = "brown_bold12_arial" style=""><?php ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:50px;overflow:hidden;" >
+                                                        <h4 class = "brown_bold12_arial"><?php ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:65px;overflow:hidden;" >
+                                                        <h4 class = "brown_bold12_arial"><?php ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:50px;overflow:hidden;">
+                                                        <h4 class = "brown_bold12_arial"><?php echo formatInIndianStyle($totDepAmt); ?></h4>
+                                                    </td>
+                                                    <td align="right"  class="amount12 reddish" style="width:65px;overflow:hidden;">
+                                                        <h4 class = "brown_bold12_arial"><?php echo formatInIndianStyle($totIntAmt); ?></h4>
+                                                    </td>
+                                                </tr>
+                                            <?php } else { ?>
+                                                <td align="right" class="width_100_dd blackArial11Font"> 
+                                                </td>
+                                                <td align="right" class="width_100_dd blackArial11Font">
+                                                </td>
+                                                <td align="right" class="width_100_dd blackArial11Font">
+
+                                                </td>
+                                                <td align="right" class="width_100_dd blackArial11Font">
+
+                                                </td>
+                                                <td align="right" class="width_100_dd blackArial11Font">
+
+                                                </td>
+                                                <td align="right" class="width_100_dd blackArial11Font">
+
+                                                </td>
+                                            <?php } ?>
+                                        </table>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "brown_bold12_arial"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "brown_bold12_arial"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "brown_bold12_arial"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "brown_bold12_arial"><?php
+                                            if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) {
+                                                echo '0.00';
+                                            }
+                                            ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class="brown_bold12_arial"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class="brown_bold12_arial"><?php echo formatInIndianStyle($totUDepAmt); ?></h4>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <?php
+        }
+    }
+} else {
+    if ($todayDate == '' || $todayDate == NULL) {
+        $todayDate = date("d M Y");
+    }
+    if ($panelName == '' || $panelName == NULL)
+        $panelName = $_REQUEST['panelName'];
+//
+    if ($panelName == '' || $panelName == NULL)
+        $panelName = $_REQUEST['ddMainPanel'];
+//
+    if ($custId == '' || $custId == NULL)
+        $custId = $_REQUEST['custId'];
+//$custId = $_GET['custId'];
+//echo '$custId =='.$custId;
+    include 'omfrpsck.php';
+    if ($ddpanelName == 'dayBeforePanel') {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    } else {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+    }
+    if ($ddMainPanel == 'custAccLedger') {
+        $accLedStrDepAdd = "and utin_user_id = '$custId'";
+    } else {
+        $accLedStrDepAdd = NULL;
+    }
+//
+    /*     * ***************START code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17*********************** */
+    $qSelectDepUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]'$dateStr $accLedStrDepAdd and "
+            . "utin_status IN ('New') and utin_firm_id IN ($strFrmId) "
+            . "and utin_type='udhaar' and  utin_transaction_type = 'UDHAAR' and utin_history = 'WITHDRAW'"
+            . " order by UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) $ddOrderBy"; //status deleted added @Author:PRIYA17OCT13 //EMI status added @Author:SHRI29MAY15
+    $qResultDepUdhaar = mysqli_query($conn, $qSelectDepUdhaar);
+    $udhaarDepPresent = mysqli_num_rows($qResultDepUdhaar);
+    if ($udhaarDepPresent > 0) {
+        $panelName = 'TodaysUdhaarDeposit';
+        include 'omwithdrawadd.php';
+        $totalMoneyDeposit += $todaysudhaarDeposit;
+        //echo '$totalMoneyLeft =='.$totalMoneyLeft;
+        $totalMoneyLeft = $totalMoneyLeft + $todaysudhaarDeposit;
+//    echo '$totalMoneyLeft='.$totalMoneyLeft;
+    }
+    if ($ddpanelName == 'todayDatePanel') {
+        if ($udhaarDepPresent > 0) {
+            if ($totalMoneyLeft < 0) {
+                $class = 'redFont';
+            } else {
+                $class = 'blueFont';
+            }
+            ?>
+            <table border="0" cellspacing="0" cellpadding="0" align="left" class="padBott5">
+                <tr>
+                    <td align = "left">
+                        <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+                            <tr>
+                                <td align = "left" class="width_627_dd">
+                                    <div class = "brown_bold12_arial" style="margin-left:10px;">WITHDRAW ADDED</div>
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                    <div class="text_green_Arial_12_bold">
+                                        <?php
+                                        //echo formatInIndianStyle($$todaysudhaarDeposit);
+                                        ?>
+                                    </div>
+                                </td>
+                                <td align="right" class="width_120_dd">
+                                    <div class="ff_calibri fs_12 fw_b <?php echo $class; ?>">
+                                        <?php
+                                        //  echo formatInIndianStyle(abs($totalMoneyDeposit));
+                                        ?>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align = "left">
+                        <table border="0" cellspacing="0" cellpadding="0" align="left" style="border-top: 1px dashed #bababa;border-bottom: 1px dashed #bababa;">
+                            <tr style="background:#f4f4f4">
+                                <td align="left"  title="SR NUMBER" class="brown_normal12_calibri  bold" style="width: 150px">
+                                    <div class="marginLeft2">S. NO</div>
+                                </td>
+                                <td align="left" title="DATE" class="brown_normal12_calibri  bold"style="width: 200px" >
+                                    <span style="margin-left:0px;">DATE</span>
+                                </td>
+                                <?php if (($staffId == '') || (($staffId != '') && ($firmAccess == 'true'))) { ?>
+                                    <td align="left" title="FIRM" class="brown_normal12_calibri  bold"style="width: 200px" >
+                                        FIRM 
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <td align="left" title="USER NAME(CITY)" class="brown_normal12_calibri  bold" style="width: 250px;">
+                                    <span> USER NAME</span>          
+                                </td>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cityAccess == 'true'))) { ?>
+                                    <td align="left" title="USER NAME(CITY)" class="brown_normal12_calibri  bold" style="width: 200px;">
+                                        <span>  CITY </span>
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <td class="brown_normal12_calibri " style="width:50px;"></td>
+                                <td align = "left" colspan="6"  class="brown_normal12_calibri ">
+                                </td>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                        CASH
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                        BANK
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                        CARD
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) { ?>
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                        ONLINE
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                    DISC.
+                                </td>
+                                <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                    <div class="margin_right_four bold">TOTAL</div>
+                                </td>
+                                <?php if ($showbalance == 'YES') { ?>                                    
+                                    <td align = "right" title="CASH" class=" brown_normal12_calibri  bold" style="width: 100px;">
+                                        BALANCE
+                                    </td>
+                                <?php } ?>
+                            </tr>
+                            <?php
+                            $serialNo = 1;
+                            $totUDepAmt = 0;
+                            while ($rowAllUdhaar = mysqli_fetch_array($qResultDepUdhaar, MYSQLI_ASSOC)) {
+                                $uId = $rowAllUdhaar['utin_id'];
+                                $uFirmId = $rowAllUdhaar['utin_firm_id'];
+                                $depAmt = $rowAllUdhaar['utin_total_amt'];
+                                $depFinalAmt = $rowAllUdhaar['utin_tot_payable_amt'];
+                                $depIntAmt = $rowAllUdhaar['utin_int_amt'];
+                                $uCustId = $rowAllUdhaar['utin_user_id'];
+                                //START CODE TO ADD NEPALI DATE @RENUKA SHARMA NOV2022
+                               if ($nepaliDateIndicator == 'YES') {
+                                    $uDepDOB = $rowAllUdhaar['utin_other_lang_date'];
+                                } else {
+                                    $uDepDOB = $rowAllUdhaar['utin_date'];
+                                }
+                                $totUDepAmt += $depFinalAmt;
+                                $totIntAmt += $depIntAmt;
+                                $totDepAmt += $depAmt;
+                                /*                                 * ***************END code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17*********************** */
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->                                    
+                                parse_str(getTableValues("SELECT user_fname,user_lname,user_city FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$uCustId'"));
+                                parse_str(getTableValues("SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$uFirmId'"));
+                                ?>
+                                <?php if ($serialNo % 2 == 0) { ?>
+                                    <tr class="bc_grey">
+                                    <?php } else { ?>
+                                    <tr>
+                                    <?php } ?>
+                                    <td align="left" title="<?php echo $serialNo; ?>">
+                                        <h5 class="blackArial11Font"><?php echo substr($serialNo, 0, 15); ?></h5>
+                                    </td>
+                                    <td align="left" title="<?php echo om_strtoupper($uDepDOB); ?>" >
+                                        <h5 class="blackArial11Font" style="margin-left:0px;"><?php echo om_strtoupper($uDepDOB); ?></h5>
+
+                                    </td>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($firmAccess == 'true'))) { ?>
+                                        <td align="left" title="<?php echo om_strtoupper($uDepDOB); ?>" >
+
+                                            <h5 class="blackArial11Font" style="margin-left:0px;"><?php echo substr(om_strtoupper($firm_name), 0, 15); ?></h5>
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <td align="left" title="<?php echo om_strtoupper($user_fname . ' ' . $user_lname) . ' CITY :  ' . om_strtoupper($user_city); ?>">
+                                        <a style="cursor: pointer;" onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $uCustId; ?>', '<?php echo $uFirmId; ?>');">
+                                            <div class="ff_tnr fw_n orange fs_11" style="margin-left:0px;"><?php echo substr(om_strtoupper($user_fname . ' ' . $user_lname), 0, 28); ?></div>
+                                        </a>
+                                        <!---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+                                    </td>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($cityAccess == 'true'))) { ?>
+                                        <td align="left" title="<?php echo om_strtoupper($user_fname . ' ' . $user_lname) . ' CITY :  ' . om_strtoupper($user_city); ?>">
+                                            <a style="cursor: pointer;" onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $uCustId; ?>', '<?php echo $uFirmId; ?>');">
+                                                <div class="ff_tnr fw_n orange fs_11" style="margin-left:0px;"><?php echo (substr(om_strtoupper($user_city), 0, 15)); ?></div>
+                                            </a>
+                                            <!---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <td class="brown_normal12_calibri " style="width:50px;"></td>
+                                    <td align = "right" colspan="6"  class="brown_normal12_calibri ">
+                                    </td>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) { ?>
+                                        <td align="right"  class="amount12 reddish">
+                                            <h4 class="amount12 redFont"style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) { ?>
+                                        <td align="right"  class="amount12 reddish">
+                                            <h4 class="amount12 redFont"style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) { ?>
+                                        <td align="right"  class="amount12 reddish">
+                                            <h4 class="amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <?php if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) { ?>
+                                        <td align="right"  class="amount12 reddish">
+                                            <h4 class="amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                        </td>
+                                    <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                    <?php } ?>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class="amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class="amount12 redFont" style="margin-right:0px;"><?php echo formatInIndianStyle(abs($depFinalAmt)); ?></h4>
+                                    </td>
+                                    <!--------START CODE TO DISPLAY BALANCE @RENUKA_AUG_2022------------------------------> 
+                                    <?php if ($showbalance == 'YES') { ?>
+                                        <td align="right"  class="amount12 reddish">
+                                            <?php
+                                            if ($balance != '') {
+                                                $open_balance = $balance;
+                                            } else {
+                                                $open_balance = $openingBalance;
+                                            }
+                                            $total = $depFinalAmt;
+                                            $balance = $open_balance - $total;
+                                            ?>
+                                            <h4 class="amount12 " style="color:blue;"><?php echo formatInIndianStyle($balance); ?></h4></div>
+                                        </td>
+                                    <?php } ?>
+                                    <!--------END CODE TO DISPLAY BALANCE @RENUKA_AUG_2022------------------------------>
+                                </tr>
+                                <?php
+                                $serialNo++;
+                            }
+                            ?>
+<!--                            <tr>
+                                <td align="center" colspan="4">
+                                    &nbsp;
+                                </td>
+                                <td class="paddingTop2 padBott2" colspan="20">
+                                    <div class="hrPaleGrey"></div>
+                                </td>
+                            </tr>-->
+                            <tr style="background: #edf0f4;">
+                                <td align="right" class="amount12 reddish bold" colspan="5">
+                                    <span style="margin-left:-30px;"><?php echo 'TOTAL AMOUNT:'; ?></span>
+                                </td>
+                                <td colspan="7">
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+
+                                        <td align="right" class="width_100_dd blackArial11Font"> 
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                        <td align="right" class="width_100_dd blackArial11Font">
+
+                                        </td>
+                                    </table>
+
+                                    <?php if (($staffId == '') || (($staffId != '') && ($cashAccess == 'true'))) { ?>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($bankAccess == 'true'))) { ?>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($cardAccess == 'true'))) { ?>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "amount12 redFont" style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <?php if (($staffId == '') || (($staffId != '') && ($onlineAccess == 'true'))) { ?>
+                                    <td align="right"  class="amount12 reddish">
+                                        <h4 class = "amount12 redFont"  style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                    </td>
+                                <?php } else { ?><td class="brown_normal12_calibri " style="width:200px;"></td>
+                                <?php } ?>
+                                <td align="right"  class="amount12 reddish">
+                                    <h4 class = "amount12 redFont"  style="margin-right:0px;"><?php echo '0.00'; ?></h4>
+                                </td>
+                                <td align="right"  class="amount12 reddish" >
+                                    <h4 class = "amount12 redFont" style="margin-right:0px;"><?php echo formatInIndianStyle(abs($totUDepAmt)); ?></h4>
+                                </td>
+                                <?php if ($showbalance == 'YES') { ?>
+                                    <td align="right"  class="amount12 reddish bold">
+                                        <h4 class="amount12 "style="color:blue;"> <?php echo formatInIndianStyle($balance); ?></h4>
+                                    </td>
+                                <?php } ?>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <?php
+        }
+    }
+}
+?>
+

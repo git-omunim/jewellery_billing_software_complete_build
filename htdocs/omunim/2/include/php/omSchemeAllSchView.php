@@ -1,3 +1,187 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 20 March, 2020 6:20:14 PM
+ *
+ * @FileName: omSchemeAllSchView.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:GANGADHAR 20MARCH2020
+ *  REASON: FOR ALL SCHEME SHOW 
+ *
+ */
+?>
+<?php
+//
+//START CODE FOR CREATE VIEW ALL SCHEME LIST  @AUTHOR:GANGADHAR16MARCH2020
+//
+$createView = "CREATE TABLE IF NOT EXISTS temp_all_kitty_list_view (
+kitty_id                            INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+kitty_firm_id                       INTEGER,
+kitty_pre_serial_num                VARCHAR(5),
+kitty_serial_num                    INTEGER,
+kitty_token_num                     INTEGER,
+kitty_barcode                       VARCHAR(50),
+kitty_scheme                        VARCHAR(100),
+firm_name                           VARCHAR(10),
+kitty_cust_id                       VARCHAR(50),
+user_fname                          VARCHAR(50),
+user_lname                          VARCHAR(50),
+user_mobile                         VARCHAR(16),
+kitty_DOB                           VARCHAR(50),
+kitty_end_DOB                       VARCHAR(50),
+kitty_EMI_tot_amt                   VARCHAR(30),
+kitty_close_date                    VARCHAR(50),
+kitty_EMI_amt                       VARCHAR(50),
+kitty_bonus_amt                     FLOAT,
+kitty_paid_bonus_amt		    FLOAT,
+kitty_tot_paid_amt                  VARCHAR(30),
+kitty_paid_emi_count                VARCHAR(30),
+kitty_due_emi_count                 VARCHAR(30),
+kitty_EMI_status                    VARCHAR(30),
+kitty_upd_sts                       VARCHAR(30),
+kitty_settled_inv_no                VARCHAR(40),
+kitty_staff_name                    VARCHAR(40))";
+
+$sqlTable = 'DESC temp_all_kitty_list_view';
+mysqli_query($conn, $sqlTable);
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table temp_all_kitty_list_view";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+
+
+$sqForallKittyDet = "SELECT * FROM kitty as k "
+        . "JOIN firm AS f ON k.kitty_firm_id=f.firm_id "
+        . "JOIN user AS u ON k.kitty_cust_id = u.user_id "
+        . "WHERE k.kitty_firm_id IN ($strFrmId)";
+
+$resForallKittyDet = mysqli_query($conn, $sqForallKittyDet) or die(mysqli_error($conn));
+while ($rowForallKittyDet = mysqli_fetch_array($resForallKittyDet, MYSQLI_ASSOC)) {
+
+    $kitty_id = $rowForallKittyDet['kitty_id'];
+    $kitty_firm_id = $rowForallKittyDet['kitty_firm_id'];
+    $kitty_cust_id = $rowForallKittyDet['kitty_cust_id'];
+    $firm_name = $rowForallKittyDet['firm_name'];
+    $user_fname = $rowForallKittyDet['user_fname'];
+    $user_lname = $rowForallKittyDet['user_lname'];
+    $user_mobile = $rowForallKittyDet['user_mobile'];
+    $kitty_pre_serial_num = $rowForallKittyDet['kitty_pre_serial_num'];
+    $kitty_serial_num = $rowForallKittyDet['kitty_serial_num'];
+    $kitty_barcode = $rowForallKittyDet['kitty_barcode'];
+    $kitty_scheme = $rowForallKittyDet['kitty_scheme'];
+    $kitty_DOB = $rowForallKittyDet['kitty_DOB'];
+    $kitty_EMI_tot_amt = $rowForallKittyDet['kitty_EMI_tot_amt'];
+    $kitty_EMI_amt = $rowForallKittyDet['kitty_EMI_amt'];
+    $kitty_end_DOB =$rowForallKittyDet['kitty_end_DOB'];
+    $kitty_token_num = $rowForallKittyDet['kitty_token_num'];
+    $kitty_close_date = $rowForallKittyDet['kitty_Close_Date'];
+    $kitty_paid_bonus_amt = $rowForallKittyDet['kitty_paid_bonus_amt'];
+    $kitty_EMI_status = $rowForallKittyDet['kitty_EMI_status'];
+    $kitty_upd_sts =$rowForallKittyDet['kitty_upd_sts'];
+
+    $kitty_bonus_amt = 0;
+    $kitty_tot_paid_amt = 0; // TOTAL PAID EMI AMOUNT.
+    //
+    //
+    // GET DUE EMI COUNT 
+    $sqSelDueEMICount = "SELECT kitty_mondep_id FROM kitty_money_deposit where kitty_mondep_EMI_status IN ('Due') AND kitty_mondep_kitty_id= '$kitty_id'";
+    $resSelDueEMICount = mysqli_query($conn, $sqSelDueEMICount) or die(mysqli_error($conn));
+    $noOfDueEMI = mysqli_num_rows($resSelDueEMICount);
+    $kitty_due_emi_count =$noOfDueEMI;
+
+
+    if ($noOfDueEMI > 2)
+        $kitty_status = "DUE";
+    else
+        $kitty_status = "PAID";
+    
+        //  GET SCHEME TOTAL INSTALLMENTS @AUTHOR:GANGADHAR 18-MARCH-2020
+    $sqSelPaidEMICount = "SELECT kitty_mondep_id FROM kitty_money_deposit where kitty_mondep_EMI_status IN ('Paid') AND kitty_mondep_kitty_id= '$kitty_id'";
+    $resSelPaidEMICount = mysqli_query($conn, $sqSelPaidEMICount) or die(mysqli_error($conn));
+    $noOfPaidEMI = mysqli_num_rows($resSelPaidEMICount);
+    $kitty_paid_emi_count = $noOfPaidEMI;
+    //    END CODE SCHEME TOTAL INSTALLMENTS @AUTHOR:GAGNADAHR 18-MARCH-2020
+
+    
+    
+    
+
+    // GET TOTAL PAID EMI AMOUNT
+    $sqSelPaidEMIAmount = "SELECT SUM(kitty_paid_amt) AS totalPaidAmount FROM kitty_money_deposit where kitty_mondep_EMI_status IN ('Paid') AND kitty_mondep_kitty_id='$kitty_id'";
+//    echo $sqSelPaidEMIAmount.'<br/>';
+    $resSelPaidEMIAmount = mysqli_query($conn, $sqSelPaidEMIAmount) or die(mysqli_error($conn));
+    $rowPaidEMIAmount = mysqli_fetch_array($resSelPaidEMIAmount, MYSQLI_ASSOC);
+    $kitty_tot_paid_amt = $rowPaidEMIAmount['totalPaidAmount'];
+
+    if ($kitty_bonus_amt > 0) {
+        $kitty_tot_paid_amt = $rowPaidEMIAmount['totalPaidAmount'] + $kitty_bonus_amt;
+    }
+
+    // GET SELL BILL NUMBER
+    $sqSelUTransId = "SELECT utin_amt_settled_inv_id FROM user_transaction_invoice where utin_utin_id='$kitty_id' and utin_owner_id='$_SESSION[sessionOwnerId]'";
+    $resSelUTransId = mysqli_query($conn, $sqSelUTransId) or die(mysqli_error($conn));
+    $rowSellUTransId = mysqli_fetch_array($resSelUTransId, MYSQLI_ASSOC);
+    $utin_amt_settled_inv_id = $rowSellUTransId['utin_amt_settled_inv_id'];
+
+
+    $sqSelSellInvNo = "SELECT utin_pre_invoice_no,utin_invoice_no FROM user_transaction_invoice where utin_id='$utin_amt_settled_inv_id' and utin_owner_id='$_SESSION[sessionOwnerId]'";
+    $resSelSellInvNo = mysqli_query($conn, $sqSelSellInvNo) or die(mysqli_error($conn));
+    $rowSellInvNo = mysqli_fetch_array($resSelSellInvNo, MYSQLI_ASSOC);
+    $kitty_settled_inv_no = $rowSellInvNo['utin_pre_invoice_no'] . $rowSellInvNo['utin_invoice_no'];
+
+    // START CODE FOR GET KITTY START STAFF NAME  @AUTHOR:GANGADHAR 18-MARCH-2020
+    $sqstaff = "SELECT * FROM kitty  join user AS u ON u.user_id = kitty_staff_id where kitty_id ='$kitty_id'";
+    $resstaff = mysqli_query($conn, $sqstaff) or die(mysqli_error($conn));
+    $staffname = mysqli_fetch_array($resstaff, MYSQLI_ASSOC);
+    $kitty_staff_name = $staffname['user_fname'];
+    //    END CODE FOR GET KITTY START STAFF NAME @AUTHOR:GAGNADAHR18-MARCH-2020
+    //    
+
+    //    
+    //START CODE FOR CASH RETURN  PAID AMOUNT  OR NOT PAID SHOW STATUS RETUNR, PENDING,BILL NO  @AUTHOR :GANGADHAR 21FEB2020
+    $sqSelSellInvNo = "SELECT * FROM user_transaction_invoice where utin_utin_id='$kitty_id'";
+    $resSelSellInvNo = mysqli_query($conn, $sqSelSellInvNo) or die(mysqli_error($conn));
+    $rowSellInvNo = mysqli_fetch_array($resSelSellInvNo, MYSQLI_ASSOC);
+    $utin_cash_amt_rec = $rowSellInvNo['utin_cash_amt_rec'] . $rowSellInvNo['utin_pay_cheque_amt'] . $rowSellInvNo['utin_pay_card_amt'];
+    if ($utin_cash_amt_rec)
+        $kitty_settled_inv_no = "RETURN";
+
+    elseif ($kitty_settled_inv_no)
+        $kitty_settled_inv_no = $kitty_settled_inv_no;
+    else
+        $kitty_settled_inv_no = " ";
+    //    END  STATUS  CODE FOR CASH RETURN  PAID AMOUNT  OR NOT PAID SHOW STATUS RETUNR, PENDING,BILL NO  @AUTHOR :GANGADHAR 21FEB2020
+
+
+    $inserIntoallKittyListView = "insert into temp_all_kitty_list_view("
+            . "kitty_id,kitty_firm_id,kitty_cust_id,firm_name,user_fname,user_lname,user_mobile,"
+            . "kitty_pre_serial_num,kitty_serial_num,kitty_barcode,kitty_scheme,kitty_token_num,"
+            . "kitty_DOB,kitty_end_DOB,kitty_EMI_amt,kitty_EMI_tot_amt,kitty_tot_paid_amt,kitty_paid_emi_count,kitty_due_emi_count,kitty_bonus_amt,kitty_paid_bonus_amt,kitty_close_date,kitty_EMI_status,kitty_upd_sts,kitty_settled_inv_no,kitty_staff_name)values("
+            . "'$kitty_id','$kitty_firm_id','$kitty_cust_id','$firm_name','$user_fname','$user_lname','$user_mobile',"
+            . "'$kitty_pre_serial_num','$kitty_serial_num','$kitty_barcode','$kitty_scheme','$kitty_token_num',"
+            . "'$kitty_DOB','$kitty_end_DOB','$kitty_EMI_amt','$kitty_EMI_tot_amt','$kitty_tot_paid_amt','$kitty_paid_emi_count','$kitty_due_emi_count','$kitty_bonus_amt','$kitty_paid_bonus_amt','$kitty_close_date','$kitty_EMI_status','$kitty_upd_sts','$kitty_settled_inv_no','$kitty_staff_name')";
+//   echo $inserIntoCurrentKittyListView.'<br/>';
+    mysqli_query($conn, $inserIntoallKittyListView) or die('<br/> ERROR:' . mysqli_error($conn));
+
+
+}
+//
+//   END CODE  FOR CREATE ALL SCHEME LIST VIEW 
+//
 ?>

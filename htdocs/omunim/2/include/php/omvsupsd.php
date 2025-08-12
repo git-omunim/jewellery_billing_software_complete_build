@@ -1,3 +1,118 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on May 26, 2011 9:30:40 PM
+ *
+ * @FileName: omvsupsd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+//Changes in file to hide labels and add new class for input fields @AUTHOR: SANDY16DEC13
+require_once 'system/omssopin.php';
+
+$qSelectState = "SELECT * FROM state where state_id='$_GET[stateId]'"; //To display data in this form
+$resultState = mysqli_query($conn,$qSelectState);
+$rowState = mysqli_fetch_array($resultState);
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td width="40%">
+            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                <tr>
+                    <td>
+                        <div class="spaceLeft10 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New State" />
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown">UPDATE STATE</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="60%" align="right" valign="bottom">
+            <div class="analysis_div_rows"><?php
+$showStateAddedDiv = $_GET['divMainMiddlePanel'];
+if ($showStateAddedDiv == "StateAdded") {
+    include 'omzaaamg.php';
+} else if ($showStateAddedDiv == "StateUpdated") {
+    include 'omzaaumg.php';
+} else if ($showStateAddedDiv == "StateAlreadyExist") {
+    ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;" class="updateMess"><div class="spaceRight20">~ State Already Present, Please enter different State Name ~</div></div>
+                    <?php
+                }
+                ?></div>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="left">
+            <div id="addUpdateStateDiv" class="spaceLeftRight20Border">
+                <form name="update_state" id="update_state"
+                      action="javascript:updateDeleteState(document.getElementById('update_state'));"
+                      method="post">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0">
+                                        <!---<tr align="left" valign="middle">
+                                                <td align="left" class="frm-lbl">State Name:</td>
+                                        </tr>-->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1"><input id="stateName" name="stateName" value="<?php echo $rowState['state_name']; ?>"
+                                                                               spellcheck="false" type="text" class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"
+                                                                               size="35" maxlength="50" /><input id="stateId" name="stateId"
+                                                                               value="<?php echo $_GET[stateId]; ?>" type="hidden" /><div class="testfieldMess">(State Name should be unique)</div>
+                                        </td>
+                                    </tr>
+                                    <!---<tr align="left" valign="middle">
+                                            <td align="left" class="frm-lbl">Comments:</td>
+                                    </tr>---->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1"><textarea id="stateComments"
+                                                                                  name="stateComments" class="textBoxCurve1px margin2pxAll textLabel12Calibri_non backF9F9F9" rows="2" cols="40"/><?php echo $rowState['state_comm']; ?></textarea></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center"
+                           width="100%">
+                        <tr>
+                            <td width="100%" align="center">
+                                <table border="0" cellpadding="1" cellspacing="1" align="center">
+                                    <tr>
+                                        <td><input type="submit" value="Update" class="frm-btn" id="Update" name="Update"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                        <td><input type="submit" value="Delete" class="frm-btn" id="Delete" name="Delete"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>

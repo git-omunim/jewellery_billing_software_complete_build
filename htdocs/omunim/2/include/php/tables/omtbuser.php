@@ -1,3 +1,302 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on 22-Dec-2015 15:45:17 PM
+ *
+ * @FileName: omtbuser.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+// -------Start change code to add unique key @AUTHOR: SANT11APR16----
+// -------Start code to add new column @AUTHOR: ANUJA03MAY16---
+// -------Start code to add new column @AUTHOR: Bajrang14FEB18---
+// Start code to add new column VILLAGE AND TEHSIL @AUTHOR: GAUR28MAY16
+// -------Start code to add new column for userS @AUTHOR: ASHWINI PATIL 14FEB20---
+// -------Start code to add new column for CUSTOMERS @AUTHOR: RUTUJA24APR20---
+// Start code to add prefix to the name@AUTHOR: ASHWINI PATIL----
+// include 'omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS user (
+user_id 		INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+user_owner_id		VARCHAR(16),
+user_firm_id		VARCHAR(16), 
+user_type               VARCHAR(16),
+user_type_status        VARCHAR(16),
+user_pid	        VARCHAR(10),
+user_uid	        INT,
+user_unique_code        VARCHAR(10),
+user_counter_id         VARCHAR(12),
+user_otp                VARCHAR(40),
+user_prefix_name         VARCHAR(5),
+user_fname 		VARCHAR(50),
+user_ship_fname 	VARCHAR(50)," . //added for omecom shipping fname:@AUTHOR-MADHUREE:04-DEC-19
+        "user_bill_fname 	VARCHAR(50)," . //added for omecom billing fname:@AUTHOR-MADHUREE:04-DEC-19
+        "user_lname 		VARCHAR(50),
+user_ship_lname 	VARCHAR(50)," . //added for omecom shipping lname:@AUTHOR-MADHUREE:04-DEC-19
+        "user_bill_lname 	VARCHAR(50)," . //added for omecom billing lname:@AUTHOR-MADHUREE:04-DEC-19
+        "user_father_name 	VARCHAR(50),
+user_mother_name 	VARCHAR(50),
+user_DOB		VARCHAR(50),
+user_sex		VARCHAR(2),
+user_marriage_any	VARCHAR(50),
+user_marital_status	VARCHAR(50),
+user_spouse_name	VARCHAR(50),".
+//add spouse relation by CHETAN@22FEB2023        
+"user_spouse_relation    VARCHAR(10),        
+user_nominee_name       VARCHAR(50),
+user_rel_with_nominee	VARCHAR(50),
+user_spouse_dob         VARCHAR(50),
+user_occupation         VARCHAR(100),
+user_qualification	VARCHAR(50),
+user_add 		VARCHAR(100),
+user_ship_add 		VARCHAR(100)," . //added for omecom shipping address:@AUTHOR-MADHUREE:04-DEC-19
+"user_bill_add          VARCHAR(100)," . //added for omecom billing address:@AUTHOR-MADHUREE:04-DEC-19
+"user_city 		VARCHAR(50),
+user_ship_city 		VARCHAR(50)," . //added for omecom shipping city:@AUTHOR-MADHUREE:04-DEC-19
+"user_bill_city 	VARCHAR(50)," . //added for omecom billing city:@AUTHOR-MADHUREE:04-DEC-19 
+"user_village 		VARCHAR(50),
+user_tehsil		VARCHAR(50),
+user_pincode 		VARCHAR(6),
+user_ship_pincode 	VARCHAR(6)," . //added for omecom shipping pincode:@AUTHOR-MADHUREE:04-DEC-19
+"user_bill_pincode 	VARCHAR(6)," . //added for omecom billing pincode:@AUTHOR-MADHUREE:04-DEC-19
+"user_state_code 	VARCHAR(6),
+user_state 		VARCHAR(50),
+user_ship_state 	VARCHAR(50)," . //added for omecom shipping state:@AUTHOR-MADHUREE:04-DEC-19
+"user_bill_state 	VARCHAR(50)," . //added for omecom billing state:@AUTHOR-MADHUREE:04-DEC-19
+"user_country 		VARCHAR(50),
+user_country_code 	VARCHAR(5),
+user_ship_country 	VARCHAR(50)," . //added for omecom shipping country:@AUTHOR-MADHUREE:04-DEC-19
+"user_bill_country 	VARCHAR(50)," . //added for omecom billing country:@AUTHOR-MADHUREE:04-DEC-19
+"user_phone 		VARCHAR(16),
+user_mobile		VARCHAR(20),
+user_ship_mobile	VARCHAR(16)," . //added for omecom shipping mobile number:@AUTHOR-MADHUREE:04-DEC-19 
+"user_bill_mobile 	VARCHAR(16)," . //added for omecom billing mobile number:@AUTHOR-MADHUREE:04-DEC-19
+"user_email 		VARCHAR(100)," .
+"user_bill_email 	VARCHAR(100)," . //added for omecom billing email:@AUTHOR-MADHUREE:04-DEC-19
+"user_membership 	VARCHAR(60),
+user_ward_no            VARCHAR(30),
+user_lty_no             VARCHAR(30),
+user_caste              VARCHAR(30),
+user_acc_id             VARCHAR(10),
+user_pacc_id 		VARCHAR(16),
+user_sacc_id 		VARCHAR(16),
+user_gd_gs_wt           VARCHAR(16),
+user_gd_gs_wt_type      VARCHAR(10),
+user_gd_bal_crdr        VARCHAR(10),
+user_gd_nt_wt           VARCHAR(16),
+user_gd_nt_wt_type      VARCHAR(10),
+user_gd_fn_wt           VARCHAR(16),
+user_gd_fn_wt_type      VARCHAR(10),
+user_gd_ffn_wt          VARCHAR(16),
+user_gd_ffn_wt_type     VARCHAR(10),
+user_sl_gs_wt           VARCHAR(16),
+user_sl_gs_wt_type      VARCHAR(10),
+user_sl_bal_crdr        VARCHAR(10),
+user_sl_nt_wt           VARCHAR(16),
+user_sl_nt_wt_type      VARCHAR(10),
+user_sl_fn_wt           VARCHAR(16),
+user_sl_fn_wt_type      VARCHAR(10),
+user_sl_ffn_wt          VARCHAR(16),
+user_sl_ffn_wt_type     VARCHAR(10),
+user_cash_balance       VARCHAR(16), 
+user_cash_bal_crdr       VARCHAR(16), 
+user_shop_name         	VARCHAR(200),
+user_website 		VARCHAR(100)," .
+//COLUMN ADDED TO ADD USER WISHLIST PRODUCT CODE ,@AUTHOR:HEMA-8DEC2020
+"user_wishlist_product   VARCHAR(1000),
+user_pan_it_no		VARCHAR(50),
+user_sale_tax_no	VARCHAR(50),
+user_interest		VARCHAR(20),
+user_cst_no		VARCHAR(50),
+user_staff_id           VARCHAR(16),
+user_sec_staff_id       VARCHAR(16),"
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+// user_staff_name & user_sec_staff_name COLUMN ADDED FOR STORING STAFF NAME FOR user @AUTHOR:MADHUREE-30MAY2020 //
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+        . "user_staff_name         VARCHAR(20),
+user_sec_staff_name       VARCHAR(20),"
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+// user_staff_name & user_sec_staff_name COLUMN ADDED FOR STORING STAFF NAME FOR user @AUTHOR:MADHUREE-30MAY2020 //
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+. "user_comm_upd_date      VARCHAR(100),
+user_relation_circle	VARCHAR(500),
+user_login_id		VARCHAR(100), 
+user_password		VARCHAR(40),
+user_ipassword		VARCHAR(40),
+user_category           VARCHAR(50),
+user_reference		VARCHAR(50),
+user_priority 		VARCHAR(16),
+user_loyal_points	VARCHAR(50),
+user_monthly_income	VARCHAR(16),
+user_no_of_loans        INT,
+user_status 		VARCHAR(16),
+user_block_status       VARCHAR(16),
+user_last_lead          VARCHAR(16),"
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+// user_lead_team - THIS COLUMN IS REMOVED FROM USER TABLE. DONT USE THIS IN FUTURE WORK @AUTHOR:MADHUREE-09MAY2020 //
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX//
+        . "user_since 		DATETIME,
+user_image_status       VARCHAR(16),
+user_image_id           VARCHAR(16),
+user_pan_adhr_img_id    VARCHAR(40),
+user_edu_cert_img_id    VARCHAR(50),
+user_exp_cert_img_id    VARCHAR(35),
+user_sal_cert_img_id    VARCHAR(35),
+user_offers_email 	VARCHAR(10),
+user_offers_sms_status 	VARCHAR(10),
+user_nominee_cust_id 	VARCHAR(100),
+user_prod_login_id 	VARCHAR(30),
+user_prod_key        	VARCHAR(30),
+user_adhaar_card        VARCHAR(30),
+user_sign_snap          LONGBLOB,
+user_sign_snap_thumb    LONGBLOB,
+user_sign_snap_fname    VARCHAR(150),
+user_sign_snap_fsize    VARCHAR(150),
+user_sign_snap_fszMB    VARCHAR(150),
+user_sign_update_date   DATETIME,
+user_mobile1		VARCHAR(16), 
+user_mobile2		VARCHAR(16), 
+user_mobile3		VARCHAR(16), 
+user_official_address   VARCHAR(100),
+user_current_address    VARCHAR(100),
+user_shipping_address    VARCHAR(100),
+user_salary_date	VARCHAR(50),
+user_bank_details       VARCHAR(100),
+user_other_info		VARCHAR(500),
+user_extended_access    VARCHAR(500),
+user_service            VARCHAR(20),
+user_contact_website    VARCHAR(50),
+user_contact_date       VARCHAR(16),
+user_indicator          VARCHAR(20),
+user_req_type           VARCHAR(20),
+user_prod_reg_date      VARCHAR(20),
+user_prod_exp_date      VARCHAR(20),
+user_entry_date         VARCHAR(20),
+user_next_date          VARCHAR(20),
+user_last_comment       VARCHAR(20),
+user_last_comment_date  VARCHAR(20),
+user_last_comment_time  VARCHAR(16), " . // COLUMN ADDED FOR LAST COMMENT TIME @AUTHOR:MADHUREE-01JULY2020
+"user_commission        INT, " . // COLUMN ADDED FOR STAFF SALE COMMISSION @AUTHOR:MADHUREE-02MARCH2020
+"user_atm_pin           VARCHAR(16),
+user_SMS_approval       VARCHAR(16), 
+user_bank_acc_name      VARCHAR(50),
+user_bank_acc_number    VARCHAR(20),
+user_bank_ifsc_code     VARCHAR(20),".
+//add bank type saving / current and adding interview details by CHETAN@23FEB2023
+"user_bank_type         VARCHAR(10),
+user_interview_date     VARCHAR(20),
+user_inter_sr_no        VARCHAR(10),
+user_inter_name         VARCHAR(50),
+user_inter_contact      VARCHAR(30),
+user_inter_profile      VARCHAR(100),
+user_inter_qualification  VARCHAR(20),
+user_inter_tot_exp      VARCHAR(10),
+user_inter_cur_sal      VARCHAR(10),
+user_inter_expected_sal  VARCHAR(10),
+user_inter_note_period   VARCHAR(10),
+user_inter_ref_portal   VARCHAR(50),
+user_inter_test_marks   VARCHAR(10),
+user_inter_status       VARCHAR(10)," .
+// Ends adding interview details columns by CHETAN@23FEB2023       
+"user_total_experiance   VARCHAR(20)," .
+//    THESE COLUMNS ARE ADDED FOR EMP AND MEDICAL DETAILS BY CHETAN@21FEB2023    
+"user_school_name        VARCHAR(50),
+user_college_name       VARCHAR(50),
+user_degree             VARCHAR(20),
+user_ssc_marks          VARCHAR(8),
+user_hsc_marks          VARCHAR(8),
+user_degree_marks       VARCHAR(8),
+user_place_of_birth     VARCHAR(20), 
+user_age                VARCHAR(3),
+uset_weight             VARCHAR(3),
+user_height             VARCHAR(3),
+user_blood_group        VARCHAR(15),
+user_blood_pressure     VARCHAR(10),
+user_diabetes_is        VARCHAR(6),
+user_diagnosis          VARCHAR(500),
+user_allergies           VARCHAR(500)," .
+//END COLUMNS ADDED BY CHETAN@21FEB2023         
+"user_current_salary     VARCHAR(50),
+user_expected_salary    VARCHAR(50),
+user_date_of_joining    VARCHAR(20),
+user_date_of_leaving    VARCHAR(20),
+user_team               VARCHAR(20),
+user_staff_designation  VARCHAR(50),
+user_manager            VARCHAR(20),
+user_mpassword          VARCHAR(40)," . //ADDED COLUMN TO STORE EMP ID,DEAPRTMENT,SUB DEPARTMENT,EMP TYPE,PROBATION PERIOD,NOTICE PERIOD @AUTHOR:SIMRAN-07DEC2021
+"user_emp_id            VARCHAR(20), 
+user_department         VARCHAR(40), 
+user_sub_department     VARCHAR(40),
+user_emp_type           VARCHAR(10),
+user_bio_gate_id        VARCHAR(10),
+user_probabtion_period  VARCHAR(10),
+user_notice_period      VARCHAR(10),
+user_band               VARCHAR(15), 
+user_level              VARCHAR(15),
+user_ip_address          VARCHAR(20),
+user_time_zone           VARCHAR(20),
+user_currency_code       VARCHAR(5),
+user_currency_symbol     VARCHAR(10),
+user_latitude            VARCHAR(20),
+user_longitude           VARCHAR(20),". // Added columns for band and level by CHETAN@22FEB2023 
+//COLUMN ADDED TO STORE RECENTLY VIEW PRODUCT OF USER,@AUTHOR:HEMA-11JUN2020
+"user_recent_view_prod  VARCHAR(100), 
+user_omprocess_date     VARCHAR(12)," .
+"user_referral_code      VARCHAR(32)," . //ADDED TO STORE USER REFERRER CODE @AUTHOR:MADHUREE-30MARCH2022
+"user_referral_user_id   VARCHAR(15)," . //ADDED TO STORE USER REFERRER USER ID @AUTHOR:MADHUREE-30MARCH2022
+"user_whatsapp_send_status   VARCHAR(15)," . //ADDED TO STORE USER   WHATSAPP MSG SEND STATUS@AUTHOR:SARVESH-28JUN2022
+"user_whatsapp_send_date   VARCHAR(15)," . //ADDED TO STORE USER  NEXT DAY  WHATSAPP MSG SEND @AUTHOR:SARVESH-28JUN2022
+"user_zodiac_sign          VARCHAR(20)," . //ADDED TO STORE USER ZODIC SIGN @AUTHOR:SARVESH-22NOV2022
+"user_random_no            VARCHAR(10),"
+. "user_telegram_attend_bot_id    VARCHAR(50),"
+. "user_telegram_attend_bot_key   VARCHAR(50),"
+. "user_telegram_attend_group_id  VARCHAR(50),"
+. "user_telegram_todo_bot_id    VARCHAR(50),"   //ADDED TELEGRAM TODO BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_telegram_todo_bot_key   VARCHAR(50),"   //ADDED TELEGRAM TODO BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_telegram_todo_group_id  VARCHAR(50),"   //ADDED TELEGRAM TODO BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_telegram_ticket_bot_id    VARCHAR(50)," //ADDED TELEGRAM TICKET BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_telegram_ticket_bot_key   VARCHAR(50)," //ADDED TELEGRAM TICKET BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_telegram_ticket_group_id  VARCHAR(50)," //ADDED TELEGRAM TICKET BOT @AUTHOR:PRATHAMESH-09OCT2023
+. "user_minimum_sales   VARCHAR(50)," //
+. "user_target_sales  VARCHAR(50),"
+. "user_wstg_charge        VARCHAR(32)," //COLUMN ADDED TO STORE WASTAGE CHARGES ON LATE PAYMENT #AUTHOR:RENUKA SHARMA-31JAN2023
+. "user_wstg_no_days       VARCHAR(32)," //COLUMN ADDED TO STORE NO OF DAYS ON LATE PAYMENT #AUTHOR:RENUKA SHARMA-31JAN2023
+. "user_wstg_occ           VARCHAR(32)," //COLUMN ADDED TO STORE OCCURENCE OF WASTAGE INCREMENT ON LATE PAYMENT #AUTHOR:RENUKA SHARMA-31JAN2023
+// ADDED SHIPPING DETAILS @SIMRAN:28OCT2023
+. "user_shipping_prefix		VARCHAR(50),"    
+. "user_shipping_fname		VARCHAR(50),"
+. "user_shipping_lname 		VARCHAR(50),"
+. "user_shipping_gst_no		VARCHAR(50),"
+. "user_shipping_pan_no         VARCHAR(50),"
+. "user_shipping_city 		VARCHAR(50),"
+. "user_shipping_state 		VARCHAR(50),"
+. "user_shipping_mob_no 	VARCHAR(50),"
+. "user_delete_request          VARCHAR(6),"
+. "user_delete_request_at_date    DATETIME,"        
+. "last_column             VARCHAR(1),"//ADDED TO STORE OMPROCESS DATE @AUTHOR:MADHUREE-10NOV2021
+. "UNIQUE KEY (user_type, user_pid, user_uid), UNIQUE KEY (user_mobile, user_firm_id), UNIQUE KEY (user_email), UNIQUE KEY (user_login_id), UNIQUE KEY (user_referral_code))AUTO_INCREMENT = 10001";
+// -------End code to add prefix to the name@AUTHOR: ASHWINI PATIL----
+// -------End change code to add unique key @AUTHOR: SANT11APR16----
+// -------Start code to add new column @AUTHOR: ANUJA03MAY16---
+// -------End code to add new column @AUTHOR: Bajrang14FEB18---
+// -------End code to add new column for userS @AUTHOR: ASHWINI PATIL 14FEB20---
+// -------End code to add new column for CUSTOMERS @AUTHOR: RUTUJA24APR20---
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+// To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

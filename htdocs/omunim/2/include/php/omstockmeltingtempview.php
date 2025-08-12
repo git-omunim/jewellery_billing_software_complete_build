@@ -1,3 +1,147 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: STOCK TABLE DETAILS WITH STOCK_TRANSACTION @PRATHAMESH-12MAR2024
+ * **************************************************************************************
+ *
+ * Created on JULY 05, 2017 06:29:36 PM
+ *
+ * @FileName: omstockmeltingtempview.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMERP
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommprspc.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+include_once 'conversions.php';
+?>
+<?php
+//
+$createView = "CREATE TABLE IF NOT EXISTS temp_stock_sttr_view (
+temp_st_id                                      INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+st_id                                           INTEGER,
+st_owner_id                                     VARCHAR(16),
+st_firm_id                                      VARCHAR(16),
+st_metal_type 					VARCHAR(16),
+st_product_type 			        VARCHAR(32),    
+st_stock_type                                   VARCHAR(16),
+st_item_name 					VARCHAR(80),
+st_item_category 				VARCHAR(80),
+st_barcode 					VARCHAR(10),
+st_barcode_prefix                               VARCHAR(10), 
+st_quantity 					VARCHAR(10),
+st_purity 					VARCHAR(15),
+st_wastage 					VARCHAR(15),
+st_final_purity 				VARCHAR(16),
+st_avg_wastage 					VARCHAR(15),
+st_metal_rate 					VARCHAR(20),
+st_pur_avg_rate                                 VARCHAR(20),
+st_gs_weight 					VARCHAR(16),
+st_gs_weight_type 				VARCHAR(10),
+st_pkt_weight 					VARCHAR(16),
+st_pkt_weight_type 				VARCHAR(10),
+st_less_weight 					VARCHAR(16),
+st_less_weight_type 				VARCHAR(10),
+st_nt_weight 					VARCHAR(16),
+st_nt_weight_type 				VARCHAR(10),
+st_tag_weight 					VARCHAR(16),
+st_fine_weight 					VARCHAR(16),
+st_fine_weight_type 				VARCHAR(10),
+st_final_fine_weight 				VARCHAR(16),
+st_purchase_rate                                VARCHAR(16),
+st_purchase_rate_type                           VARCHAR(10),
+st_sell_rate                                    VARCHAR(16),
+st_sell_rate_type                               VARCHAR(10),
+st_lab_charges                                  VARCHAR(15),
+st_lab_charges_type                             VARCHAR(10),
+st_making_charges 				VARCHAR(15),
+st_making_charges_type                          VARCHAR(10),
+st_pur_avg_lab_chrgs                            VARCHAR(20),
+st_pur_avg_other_chrgs                          VARCHAR(20),
+st_tot_tax 					VARCHAR(16),
+st_tax                                          VARCHAR(16),
+st_valuation 					VARCHAR(50),
+st_stone_valuation 				VARCHAR(50),
+st_final_valuation 				VARCHAR(50),
+st_since 					VARCHAR(50),
+st_status 					VARCHAR(16),
+st_item_code                                    VARCHAR(16),
+st_type 					VARCHAR(16),          
+st_disc_product_amount                          VARCHAR(16),
+st_online_product_disc                          VARCHAR(16),
+st_online_product_price_bounce                  VARCHAR(16),
+st_disc_making_discount 			VARCHAR(16),
+st_disc_stone_discount                          VARCHAR(16),
+st_disc_product_discount 			VARCHAR(16),        
+st_product_commission_amount 			VARCHAR(16),
+st_disc_start_date                              VARCHAR(32),
+st_disc_end_date                                VARCHAR(32),
+st_price                                        VARCHAR(16),
+st_price_without_tax                            VARCHAR(16),    
+st_cust_itmpricecode                            VARCHAR(16),
+st_cust_itmcode                                 VARCHAR(16),
+st_cust_itmcalby                                VARCHAR(16),
+st_cust_itmnum                                  VARCHAR(16),
+st_item_model_no                                VARCHAR(16),         
+st_period                                       VARCHAR(16),
+st_period_type                                  VARCHAR(16),
+st_cust_price                                   VARCHAR(16),     
+st_shape                                        VARCHAR(16),
+st_size                                         VARCHAR(16),
+st_item_length                                  VARCHAR(16),
+st_item_width                                   VARCHAR(16),
+st_item_sales_pkg                               VARCHAR(16),
+st_clarity                                      VARCHAR(16),
+st_color                                        VARCHAR(16),
+st_image_id                                     VARCHAR(10),
+st_item_other_info                              VARCHAR(16))";
+$sqlTable = 'DESC temp_stock_sttr_view';
+mysqli_query($conn, $sqlTable);
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table temp_stock_sttr_view";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createView) or die(__LINE__.'<br/> ERROR:' . mysqli_error($conn));
+}
+//
+$st_query = "SELECT * FROM stock where st_owner_id = '$_SESSION[sessionOwnerId]';";
+$st_result = mysqli_query($conn,$st_query);
+//
+while($st = mysqli_fetch_assoc($st_result)){
+    //
+    $gdItemCat = $st['st_item_category'];
+    $gdItemName = $st['st_item_name'];
+    $gdGsWt = $st['st_gs_weight'];
+    $gdNtWt = $st['st_nt_weight'];
+    $gdQty = $st['st_quantity'];
+    $st_id_temp = $st['st_id'];
+    parse_str(getTableValues("select SUM(sttr_gs_weight) as gdGsWtSttr,SUM(sttr_quantity) as gdQtySttr,SUM(sttr_nt_weight) as gdNtWtSttr from stock_transaction where sttr_item_category = '$gdItemCat' AND sttr_item_name = '$gdItemName' AND sttr_transaction_type IN ('EXISTING') AND sttr_status IN ('EXISTING') AND sttr_melting_status = 'AFM'; "));
+    $gdGsWt -= $gdGsWtSttr;
+    $gdNtWt -= $gdNtWtSttr;
+    $gdQty -= $gdQtySttr;
+    //
+    $inset_stock = "INSERT INTO temp_stock_sttr_view (st_id, st_owner_id, st_firm_id, st_metal_type, st_product_type, st_stock_type, st_item_name, st_item_category, st_barcode, st_barcode_prefix, st_quantity, st_purity, st_wastage, st_final_purity, st_avg_wastage, st_metal_rate, st_pur_avg_rate, st_gs_weight, st_gs_weight_type, st_pkt_weight, st_pkt_weight_type,st_less_weight, st_less_weight_type, st_nt_weight, st_nt_weight_type, st_tag_weight, st_fine_weight, st_fine_weight_type, st_final_fine_weight, st_purchase_rate, st_purchase_rate_type, st_sell_rate, st_sell_rate_type, st_lab_charges, st_lab_charges_type, st_making_charges, st_making_charges_type, st_pur_avg_lab_chrgs, st_pur_avg_other_chrgs, st_tot_tax, st_tax, st_valuation, st_stone_valuation, st_final_valuation, st_since, st_status, st_item_code, st_type, st_disc_product_amount, st_online_product_disc, st_online_product_price_bounce, st_disc_making_discount, st_disc_stone_discount, st_disc_product_discount, st_product_commission_amount, st_disc_start_date, st_disc_end_date, st_price, st_price_without_tax, st_cust_itmpricecode)"
+                 . " SELECT st_id, st_owner_id, st_firm_id, st_metal_type, st_product_type, st_stock_type, st_item_name, st_item_category, st_barcode, st_barcode_prefix, '$gdQty', st_purity, st_wastage, st_final_purity, st_avg_wastage, st_metal_rate, st_pur_avg_rate, '$gdGsWt', st_gs_weight_type, st_pkt_weight, st_pkt_weight_type,st_less_weight, st_less_weight_type, $gdNtWt, st_nt_weight_type, st_tag_weight, st_fine_weight, st_fine_weight_type, st_final_fine_weight, st_purchase_rate, st_purchase_rate_type, st_sell_rate, st_sell_rate_type, st_lab_charges, st_lab_charges_type, st_making_charges, st_making_charges_type, st_pur_avg_lab_chrgs, st_pur_avg_other_chrgs, st_tot_tax, st_tax, st_valuation, st_stone_valuation, st_final_valuation, st_since, st_status, st_item_code, st_type, st_disc_product_amount, st_online_product_disc, st_online_product_price_bounce, st_disc_making_discount, st_disc_stone_discount, st_disc_product_discount, st_product_commission_amount, st_disc_start_date, st_disc_end_date, st_price, st_price_without_tax, st_cust_itmpricecode from stock where st_id = '$st_id_temp' ;";
+    $result_inser_query = mysqli_query($conn, $inset_stock);
+    $gdGsWt = 0;
+    $gdNtWt = 0;
+}
 ?>

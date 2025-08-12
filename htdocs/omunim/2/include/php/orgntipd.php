@@ -1,3 +1,101 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABYCgAAJmHB3ib6kI+tuyqr8jh+5lgXS7gaSxe/y6dqbD6fs3TxXuVAZenA+4HAKQurnREsqRh1wGqk61NrKRlEoWQerCvMjoZXS6jDEPWM2mzQlrfWH1BwLZEDcYyh15PYNPiCS8QpYR5rp0fR9hDlC8NAzhT38TuwkjxT3dXv3b97ntKOjGk3YvvwumY6eTw+05f+4eLJl8wpEvg+d8uvxLayydHKII2cvO5JNabpavO/8C6qs2JPe2TMN9p2kVt5dRIS+C87Oif35K81JXgjNX3nHU0A1fyefJDWq4QkT0r1iGW5igeVzsZ5+YZ4fcqF5P66v6XXcaOUssUs8ZYsEQM67aHlhtZBtwtXvIeWwWiXNhDjmUBCRsd0D1eyZyQYbtA4FZIkElhN3fM7xNTU2StMHRZmbRko4DCZ4soDfMK13HHfCCO8oDrnFnyDnYCJijR3+SQ2dbW1UhC0SyTeDf697tjiRl3cIFSoSsH6QK4N32nBWYZ7X2v1sGAQUjojPotvcqjYnhoO4QqFjI5W346U3CWOP1EcJsbIDEUyYEWSz1iLE8PJGxwft/cjLXrCLyQFWz3LA1jJBQpHdoHK7TMAm1/aSXuWmYuqNecaJb1/dEOFJCtOTeMRm+SGOCFrv3vYMELIBuKNfbKXatafMKEnDho0cAP16x1SIIjDA3nbX0WGJwt7kOgyEmU8jZx6kS8gqeheR5gLkRSt6T5Y5jI+ijTp7aOzgfVA/qLqgnePZgMRAMYzp+o8GSwhGtPjnrcxkaAdWNHxks3F92GYfO6sLKJC8C8r5LCxCxStxVyONdhWz1E/gtJJlQe6wuU2uqvvmVYH+MvHp5WgDf9DQozgRVVr3wd6f3/m02wDh163D29iG1KoRSe6CxXOGAOntliym6QFVYnW4XaVSxpoCi1s8Rj7Cmq23Ang2N9+71TsNhTLn/8b67d2XbAehdHw+bjNVeRhnE1rwbFq4ZtMfFZaGHc0iOIAChltmQ1N73z8/g8cjtggDmc2/ki3QTzg3cuk63AhxkRDmgklIv+W6xCpght9DxnmATJqR3TAxRZ696OL/PFhqocQe6CzNrwJ0wiWJD4UvwWvlbL5HEOk3bZmXgiNQDbOx8zNLILp01iqNppqvUm/kmzReCAzzrjfF88wsjH3FE3JVbVZbzsH2tDyePD34A0/PcIRTMRKvwx4SNjNuMvrf3Ogkiy0MrtjPz+fL+w+ow+6YlkB3dwHWSfhnYKfvt65N6GouilbE+yTS5L0Fg1S90Sg7Tb+4Rj213bKT9aX22kpXxqYMsQb2LZb6jtWn4LmUW85GR/VAGZ9RWpn0nu1CDqNb78NDMvuub0OF4TapnRH7zsNEw6iwavm4ukwHfcMbG7ZN+ravVqr6fY+q0B46spQB39X1WLpcqyX3LbWu+kt/5e33RvTKNvhK4rQ3TBO6TuMH+9c7OYo+DCbs41Dlh9c8Ub8/PIMnnRNWj1Uq9oOc3gilQGJOaNfSeEzYYqrQKD2X0LPP2o3jWBOSbS2CF/heZUsDnayp0poukAkZZM4EiSZea5SR6nmkLr9tL6J5lAKSBLPegmo/0SZjIpYvrdZiOJ0sNkkJdn0ehAaJPt9hkEZIPn1iZ1dUbvNP/9ltXGmxmednnklhepbSb2tKg+gqhX+wzRT6nh+MBxM5Hm/+vMPcG5hhuqTiCzPn7XP8cEivpmjrSu1YUVpoXBkh6EZe5xKhlduQAkMsZnVMAWx9YADJkdxyGJr5QCnRBYu7anUNxuXDXNLit5aklUR7sBVErM6DzHFrBKkJ9+AomdouSFClrE9Y70bAt0CpZRJx2WTv8oC8RHvqXjgF4IW+TclK36Khbm3CB+j49hjJMY/h6yuayfJ/yUNDleamLZvNVvoG1gx3fbV3oNniFnd1bk2rUSdDNNDrNCHCtXUHwVTdJY4Opx5JUC2WZk9+DrgyuQovHeu6WoInTceuZwEx1uT3dJKGJNvtTC6j9fWtRec0dTFCe4/bkPS+SHcbIkravFg3h9wOVofdn9/76rTZClUc/WgA2lungihX94Aem1Guyw+mlS1dGd6mB4bdom2aPh48cjLFdRA7ldKmwk6GPn/dmh2rA8p+HipIZ1wicTiD5UtnqGtlNhAaZWnkQV94qu2XF2t2O6qJiLipXys3mmhxC7OZy71LtYIoGv/uB9ghb+DkadqxjbRxAPG60u8vjUZw480lgNgluLvZJQJVKeqGlX4t/ze5sBSwkW6dqxc67JSBPic1/0r6J1uYMKxg+XkdgRoPJrLo3ng2OxdngPJtpn3jBAU+AP7QnTom9/pDqbM+4bXTAiyubNswBj6eDaEU/5vkHHd2FCtK/XNSHRODA56F0wFn2HJD4UwhzmjItrgngWBGJ67HIEq4d3rE8UlKVEDWZDasRYPgR2XgvDPw4Tk5fnMI0C2u9m4VPVoYQjXvCliIJIZfUsFc49djQbD5E3B+mBOpTKPUb9FdrPXv+Kp3iLTYIOg8hS1M/1EgUn3Ep18E+PhiNV7hu0JIreqlA7Hi8fj6V2KkcZV9ayD3tpMhdps9dD2RSbKHLNFoABF1ZhcWFNDgN3I0D2sXW+pXk8EjUC0Y0Z490xc+X8R6Zy0sfJolKRrA4On/2796yFMjFFYFb1mzhnyP7mBUfueQW9p0k2yTuvmez1Lt0/W6hBKKR+HFBgC0ZfSyhCh+75VTfb+FkeL4F06t2+ZvESZTQ2D6XSWGAm9fXgwLkzbzKr1nRFt0i6yCgDoSFepzx8an+4U2MSZ7+xDPHziJURrSIcbqck6icxBFkg337U818UECR6rE0+5+mkFmLYltcAf52i4/k6TRP84SUbM2HKuxcD1oKaUJNzg/LJokcmcu2/9JfN/Sm8zUiQr4x8IFlS2aSCJmHKfEzr/uwsqXjojqM6BVRkWiXS8mwyw0HeGTRdIxWzX16DlufqLZYQmVZB12FVXF3RLOMMEtKlZWNkBTbVtkP8snNZvN3R0j4q6YUcFRvO7KfkB3SzA38wlUgY9Rsts75qQyCQdX9OyWctdSErVBIX2MzB0bsyhvKmG23ZuXjK6RR6zGvHF2aM3su5iGxMGmSG4xJi2nE+4k7DUgLMng48gum1zorM6tjfnYgMcZZiwsAT6jM1McZtzD1Ic2k0LeTeerHMIriYEnDHHHXAN3aN17Uw2gAgKt5oXM+vHJzNOc4RDwqpAUoYTMei55FrnSxUNTlKFffKHvhBFTTQrjljhuAZ2/k7VMCJ32DkMOfOE2jK9Z08cJalu2hc0RJGWc5eSX21z8d4q0hl1QadfWnR+JTzKewjURaZ1+SsiARhzIc0ugxq4UCxa4ZJmvaCEYIn0lSuo70+H4bURBrUUIyoQuAxecjAzA0RecMWLQeIrZAsjpcFPHHGEa2W7gmccXtylEzyRpAhW5bJEjlYWw9KOzSUcVIwwYCQJ14f9hpMmG8yS0f4QVZQqeVoRUbhN9CpUUTBMTbxzSs9RXza2UBBlEGpCq4m2G69A9ZLKy9/R85HYoMup4YkkR5sAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Calculate Total per day Interest Earn
+ * **************************************************************************************
+ * 
+ * Created on May 1, 2012 5:28:28 PM
+ *
+ * @FileName: orgntipd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'ommpincr.php';
+?>
+<?php
+
+require_once 'system/omssopin.php';
+?>
+<?php
+$startDate = $girviDOR;
+$startDate = strtotime($startDate);
+
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+}
+//$qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+$resPubFirmCount = mysqli_query($conn,$qSelFirmCount);
+if ($selFirmId != NULL) {
+    $strFrmId = $selFirmId;
+} else {
+    $strFrmId = '0';
+
+//Set String for Public Firms
+
+    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+    }
+}
+
+
+$qSelAllGirvi = "SELECT * FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_upd_sts IN ('New','Updated','ReleaseCart') and girv_firm_id IN ($strFrmId)";
+$resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+
+$totalPerDayIntAmount = 0;
+
+while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+    $girviId = $rowAllGirvi['girv_id'];
+    $custId = $rowAllGirvi['girv_cust_id'];
+    $princAmount = $rowAllGirvi['girv_main_prin_amt'];
+    $newPrincAmount = $rowAllGirvi['girv_prin_amt'];
+    $girviMainDOB = $rowAllGirvi['girv_DOB'];
+    $gMonthIntOption = 'DD';
+
+    if ($girviDOR == '' or $girviDOR == NULL) {
+        $girviDOR = date('d-M-Y');
+    }
+    $girviDOB = $girviDOR;
+    $girviNewDOB = $girviDOB;
+
+    $girviMainDOBStrToTime = strtotime($girviMainDOB);
+    $ROIType = $rowAllGirvi['girv_ROI_typ'];
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $ROI = $rowAllGirvi['girv_IROI'];
+    } else {
+        $ROI = $rowAllGirvi['girv_ROI'];
+    }
+    $girviType = $rowAllGirvi['girv_type'];
+    $gMonthIntOption = 'DD';
+
+    $girviDORStrToTime = strtotime($girviDOR);
+
+    if ($girviMainDOBStrToTime <= $girviDORStrToTime) {
+        include 'ommpgvip.php';
+    }
+    $totalPerDayIntAmount += $totalFinalPerDayIntCalculate;
+}
+
+echo formatInIndianStyle($totalPerDayIntAmount);
+?>    

@@ -1,3 +1,278 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * ********************************************************************************************************
+ * @tutorial: START CODE TO ADD FILE TO SET ALL DETAILS ACCORDING TO BARCODE @AUTHOR-SHRIKANT-08MARCH2023
+ * ********************************************************************************************************
+ * 
+ * Created on MARCH 08, 2023 02:19:13 PM
+ *
+ * @FileName: omSetAllDetailsAccordingToBarcodeRetail.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMRETAIL
+ * @version 2.7.7
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @SHRIKANT-08032023
+ *  REASON:IN RETAIL TO SEARCH THE PRODUCT ON BARCOEDE 
+ *
+ */
 ?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+$currentFileName = basename(__FILE__);
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+include $_SESSION['documentRootIncludePhp'] . '/ommprspc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/ommpincr.php';
+//
+//
+if ($documentRoot == '' || $documentRoot == NULL) {
+    $documentRoot = $_REQUEST['documentRoot'];
+}
+//
+//
+if ($panelName == '' || $panelName == NULL) {
+    $panelName = $_REQUEST['panelName'];
+}
+//
+//
+if ($prodBarcode == '' || $prodBarcode == NULL) {
+    $prodBarcode = $_REQUEST['prodBarcode'];
+}
+//
+//
+$prodBarcodePrefix = substr($prodBarcode, 0, 1);
+//
+$prodBarcodeNumber = substr($prodBarcode, 1);
+//
+//
+if ($prodCategory == '' || $prodCategory == NULL) {
+    $prodCategory = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['prodCategory'])));
+}
+//
+//
+if ($prodName == '' || $prodName == NULL) {
+    $prodName = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['prodName'])));
+}
+//
+//
+if ($prodPreId == '' || $prodPreId == NULL) {
+    $prodPreId = $_REQUEST['prodPreId'];
+}
+//
+//
+if ($prodId == '' || $prodId == NULL) {
+    $prodId = $_REQUEST['prodId'];
+}
+//
+//
+$prodCode = $prodPreId . $prodId;
+//
+//
+if ($SetAllFormDetailsAccordingTo == '' || $SetAllFormDetailsAccordingTo == NULL) {
+    $SetAllFormDetailsAccordingTo = $_REQUEST['SetAllFormDetailsAccordingTo'];
+}
+//
+//
+if ($SetAllFormDetailsAccordingTo == 'ByProdName') {
+//
+//
+$resProductDet = mysqli_query($conn, "SELECT * FROM stock_transaction WHERE sttr_metal_type IN ('stock', 'imitation') "
+                                   . "AND sttr_item_category = '$prodCategory' AND sttr_item_name = '$prodName' "
+                                   . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                                   . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                                   . "AND sttr_transaction_type IN ('PURONCASH', 'PURCHASE', 'EXISTING', 'TAG') "
+                                   . "ORDER BY sttr_id DESC LIMIT 0,1");
+//
+$noOfProductAvailable = mysqli_num_rows($resProductDet);
+//   
+//   
+//echo "<br/>";
+//echo "noOfProductAvailable == " . $noOfProductAvailable;
+//echo "<br/>";
+//   
+//
+parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_metal_type IN ('stock', 'imitation') "
+                       . "AND sttr_item_category = '$prodCategory' AND sttr_item_name = '$prodName' "
+                       . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                       . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                       . "AND sttr_transaction_type IN ('PURONCASH', 'PURCHASE', 'EXISTING', 'TAG') "
+                       . "ORDER BY sttr_id DESC LIMIT 0,1"));
+//
+//
+//echo "<br/>";
+//echo "SELECT * FROM stock_transaction WHERE sttr_metal_type IN ('stock', 'imitation') "
+//. "AND sttr_item_code = '$prodCode' "
+//. "AND sttr_item_category = '$prodCategory' AND sttr_item_name = '$prodName' "
+//. "AND sttr_indicator IN ('RetailStock', 'PURCHASE', 'imitation') "
+//. "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+//. "AND sttr_transaction_type IN ('PURONCASH', 'PURCHASE', 'EXISTING', 'TAG') "
+//. "ORDER BY sttr_id DESC LIMIT 0,1";
+//echo "<br/>";
+//
+//
+if ($prodId == '' || $prodId == NULL) {
+    //
+    $sttr_item_code = $sttr_item_pre_id;
+    $sttr_item_id = '';
+    //
+} else {
+    //
+    parse_str(getTableValues("SELECT MAX(CAST(sttr_item_id AS SIGNED)) as item_id FROM stock_transaction "
+                           . "WHERE sttr_item_pre_id = '$sttr_item_pre_id' "
+                           . "AND sttr_transaction_type NOT IN ('sell') "
+                           . "AND sttr_indicator IN ('RetailStock' , 'imitation')"));
+    //
+    $sttr_item_id = $item_id + 1;
+    //
+}
+//
+//
+} else {
+//  
+//
+parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_barcode_prefix = '$prodBarcodePrefix' "
+                       . "AND sttr_barcode = '$prodBarcodeNumber' "
+                       . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                       . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                       . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG') "
+                       . "ORDER BY sttr_id DESC LIMIT 0,1"));
+//
+//
+//echo "<br/>";
+//echo "SELECT * FROM stock_transaction WHERE sttr_barcode_prefix = '$prodBarcodePrefix' "
+//   . "AND sttr_barcode = '$prodBarcodeNumber' "
+//   . "AND sttr_indicator IN ('RetailStock', 'imitation') "
+//   . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+//   . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG')";
+//echo "<br/>";
+//
+//
+$newProdBarcode = $sttr_barcode_prefix . $sttr_barcode;
+//
+//
+//echo "<br/>";
+//echo "prodBarcode == " . $prodBarcode;
+//echo "<br/>";
+//echo "newProdBarcode == " . $newProdBarcode;
+//echo "<br/>";
+//
+//
+    if ($prodBarcode != $newProdBarcode) {
+    //
+    //
+    parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_barcode = '$prodBarcode' "
+                           . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                           . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                           . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG') "
+                           . "ORDER BY sttr_id DESC LIMIT 0,1"));
+    //
+    //
+    //echo "<br/>";
+    //echo "SELECT * FROM stock_transaction WHERE sttr_barcode = '$prodBarcode' "
+    //   . "AND sttr_indicator IN ('RetailStock', 'imitation') "
+    //   . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+    //   . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG')";
+    //echo "<br/>";
+    //
+    //
+    //
+    $resRecordDet = mysqli_query($conn, "SELECT * FROM stock_transaction WHERE sttr_barcode = '$prodBarcode' "
+                                      . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                                      . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                                      . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG') "
+                                      . "ORDER BY sttr_id DESC LIMIT 0,1");
+    //
+    $noOfRecordAvailable = mysqli_num_rows($resRecordDet);
+    // 
+    //
+    } else {
+    //
+    //
+    $resRecordDet = mysqli_query($conn, "SELECT * FROM stock_transaction WHERE "
+                                      . "sttr_barcode_prefix = '$prodBarcodePrefix' "
+                                      . "AND sttr_barcode = '$prodBarcodeNumber' "
+                                      . "AND sttr_indicator IN ('RetailStock', 'imitation', 'PURCHASE') "
+                                      . "AND sttr_status NOT IN ('DELETED', 'NotDelFromStock') "
+                                      . "AND sttr_transaction_type IN ('PURONCASH','PURCHASE','EXISTING','TAG') "
+                                      . "ORDER BY sttr_id DESC LIMIT 0,1");
+    //
+    $noOfRecordAvailable = mysqli_num_rows($resRecordDet);
+    //
+    //
+    }
+//
+//
+parse_str(getTableValues("SELECT MAX(CAST(sttr_item_id AS SIGNED)) as item_id FROM stock_transaction "
+                       . "WHERE sttr_item_pre_id = '$sttr_item_pre_id' "
+                       . "AND sttr_transaction_type NOT IN ('sell') "
+                       . "AND sttr_indicator IN ('RetailStock' , 'imitation')"));
+//
+$sttr_item_id = $item_id + 1;
+$sttr_barcode_serial_num ='';
+//
+//
+//die;
+//
+}
+//
+
+if ($name == '' || $name == NULL) {
+    $name = $_REQUEST['name'];
+}
+if (($prodBarcode != '' && $prodBarcode != NULL && 
+     $prodBarcode != 'undefined' && $prodBarcode != 'NaN' && 
+     $noOfRecordAvailable > 0) || 
+    ($SetAllFormDetailsAccordingTo == 'ByProdName' && $noOfProductAvailable > 0)) { ?>
+<img src="<?php echo $documentRoot; ?>/images/spacer.gif" alt=""
+     onload="allDetailsDisplayAccordingToBarcodeRetail('<?php echo $sttr_item_pre_id; ?>', '<?php echo $sttr_item_id; ?>',
+                                                 '<?php echo $sttr_item_category; ?>', '<?php echo $sttr_item_name; ?>', 
+                                                 '<?php echo $sttr_shape; ?>', '<?php echo $sttr_size; ?>', 
+                                                 '<?php echo $sttr_hsn_no; ?>', 
+                                                 '<?php echo $sttr_gender; ?>', '<?php echo $sttr_color; ?>', 
+                                                 '<?php echo $sttr_item_length; ?>', '<?php echo $sttr_item_width; ?>', 
+                                                 '<?php echo $sttr_item_other_info; ?>', 
+                                                 '<?php echo $sttr_quantity; ?>', 
+                                                 '<?php echo $sttr_gs_weight; ?>', '<?php echo $sttr_gs_weight_type; ?>',
+                                                 '<?php echo $sttr_item_model_no; ?>', 
+                                                 '<?php echo $sttr_item_sales_pkg; ?>',
+                                                 '<?php echo $sttr_cust_itmpricecode; ?>', '<?php echo $sttr_cust_itmcode; ?>', 
+                                                 '<?php echo $sttr_cust_itmcalby; ?>', '<?php echo $sttr_cust_itmnum; ?>',
+                                                 '<?php echo $sttr_metal_rate; ?>', '<?php echo $sttr_price; ?>', 
+                                                 '<?php echo $sttr_cust_price; ?>',
+                                                 '<?php echo $sttr_period; ?>', '<?php echo $sttr_period_type; ?>',
+                                                 '<?php echo $sttr_lab_charges; ?>', '<?php echo $sttr_lab_charges_type; ?>',
+                                                 '<?php echo $sttr_making_charges; ?>', '<?php echo $sttr_making_charges_type; ?>', 
+                                                 '<?php echo $sttr_valuation; ?>', 
+                                                 '<?php echo $sttr_tot_price_cgst_per; ?>', '<?php echo $sttr_tot_price_cgst_chrg; ?>',
+                                                 '<?php echo $sttr_tot_price_sgst_per; ?>', '<?php echo $sttr_tot_price_sgst_chrg; ?>',
+                                                 '<?php echo $sttr_tot_price_igst_per; ?>', '<?php echo $sttr_tot_price_igst_chrg; ?>',
+                                                 '<?php echo $sttr_tax; ?>', '<?php echo $sttr_tot_tax; ?>',
+                                                 '<?php echo $sttr_barcode_serial_num; ?>', 
+                                                 '<?php echo $sttr_brand_id; ?>', 
+                                                 '<?php echo $sttr_purches_discount_per; ?>', 
+                                                 '<?php echo $sttr_purches_discount_amt; ?>',
+                                                 '<?php echo $sttr_metal_discount_per; ?>', 
+                                                 '<?php echo $sttr_metal_discount_amt; ?>',
+                                                 '<?php echo $sttr_counter_name; ?>', 
+                                                 '<?php echo $sttr_rfid_no; ?>',
+                                                 '<?php echo $sttr_sell_rate; ?>', 
+                                                 '<?php echo $sttr_taxincl_checked; ?>',
+                                                 '<?php echo $formName; ?>',
+                                                 '<?php echo $sttr_purchase_price; ?>','<?php echo $sttr_gst; ?>',
+                                                 '<?php echo $sttr_final_valuation; ?>', '<?php echo $panelName; ?>', '<?php echo $name; ?>',
+                                                 '<?php echo $sttr_mfg_date; ?>', '<?php echo $sttr_exp_date; ?>', '<?php echo $sttr_item_height; ?>',
+                                                 '<?php echo $sttr_online_option; ?>');" />
+<?php } ?>

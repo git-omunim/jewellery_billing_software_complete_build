@@ -1,3 +1,77 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orgnsfrga.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+//unlink("temp/Months.png");
+//unlink("temp/GirviReceived.png");
+?>
+<?php
+$todayDate = date("d M Y");
+?>
+
+<div id="girviPanelTrId" style="visibility:hidden"></div><!-----Add div required in print function @AUTHOR: SANDY15JAN14-----------> 
+<div id="GirviReleasedAnaReport">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td>
+                <div class="spaceLeft20 main_link_orange">
+                    LOAN RELEASE ANALYSIS
+                </div>
+            </td>
+            <!-- Strat code to display date selection and firm selection in form @author: SANDY27JUN13  -->   
+            <td align="right">
+                <table border="0" cellspacing="0" cellpadding="0" align="right">
+                    <tr>
+                        <td align="right" class="textBoxCurve1px margin1pxAll textLabel16CalibriNormal backFFFFFF">
+                            <div>
+                                <?php
+                                $panelName = 'GirviReleasedAnalysisPanel';
+                                include 'omgndtes.php';
+                                ?>
+                            </div>
+                        </td>
+                        <td>
+                            <input id="getReport" name="getReport" value="GO" class="frm-btn spaceLeft5" type="submit" style="height:30px;background:#DCEAFF;color: #0F118A;border: 1px solid #7ab0fe;border-radius: 5px !important;width:40px;font-size:16px;"
+                                   onclick="showAnalysisReportByDate('<?php echo $panelName; ?>', document.getElementById('ReportBookFirmNametwo').value, document.getElementById('reportEntryMonthM').value, document.getElementById('reportEntryYYYYy').value);"/>
+                        </td>
+                        <td align="right" class="padLeft5 paddingRight7">
+                            <div id="selectFirmDiv" class="spaceRight10" >
+                                <?php
+                                $firmIdSelected = $_SESSION['setFirmSession']; //to add header selected firm as a default firm @AUTHOR: SANDY8JUL13
+                                $panelName = 'GirviReleasedAnalysisPanel';
+                                include 'omgnsfira.php';
+                                ?>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td> 
+        </tr>
+    </table>
+</div>
+<div id="girvAnaMonthReleasedGraphDiv">
+    <?php include 'orgnsfrla.php'; ?>
+</div>

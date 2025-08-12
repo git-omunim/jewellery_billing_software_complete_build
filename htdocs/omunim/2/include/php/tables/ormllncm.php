@@ -1,3 +1,39 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAoAgAAEWcwlwnrkALe81WvnY35EEYA7Q8n9Kz4fWVcT0yTvPwudxL6OhWmSSQLvwL5P6dCdUsWfFEgAaqQpuqu3pai2uhOL3NGXfHEqOZD1tmX5jsWvmABZNfmZrIwxvhTW18Upo3XlkKZk+MzDNFbmP1QfHFTgE8l85uijZQSrEbN6gObtG2gtawfvMNGKq8vMN4WB0XxQJ/NvtKAY2p7P7x9vIVXZV1Zk4Q5wF5uCLOk1bgF5znH7iP2B2r0IA2kGUp4Do09loEolNnC7x1r8nCj3uZy4KWpcHLHHMDtxktZbGu1SPn9jiaF18qhlJg68DbpR9S+4sm5Cua3HPZdVX/6xyTiXoP/61r5ggbeNBKchyNA5hTAsp2/is8qcOcof28SRCizQnrnZ8ODctnbPgmPz+2Uo4+XQCwW4rTXhmprTPesxmTFHkiQY5xVbI+OJoG89TzIM86AywBb4ypk01OvBQ0Lyk1wJspnB3FKdIpmFUm/F6YpjT+WWprmQoN3mF1o17b3qqWNCxBphgoKjAXWKb+RlqWYeY8H/RqSSQ8yPcrGDhAXEIslNfuFx/fvcEdjt9JQ/9Vy5KgfAtJNnj1PvE89onCORJu/SoxF7Q8VWwPrg9DE0Ihqgc5ckqjaB8Hh+332nTB8KAosflBRu6ZGDp35nZ6iud81zjbowgoJuhILFzJB/5KaPGMEFmHS8jjMWbL31othMYlc0C7Fo0X0AoCYN0QIyMJZAAAAAA==');
+<?php 
+/*
+ * 
+ * Created on Sep 4, 2011 12:22:17 AM
+ *
+ * @FileName: ormllncm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+$query = "CREATE TABLE IF NOT EXISTS ml_comments (
+ml_comm_id                              INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ml_comm_ml_id				VARCHAR(16), 
+ml_comm_ml_dep_id                       VARCHAR(16), 
+ml_comm_cust_id				VARCHAR(16),
+ml_comm_own_id				VARCHAR(16), 
+ml_comm_comm   				VARCHAR(5000),
+ml_comm_ent_dat 			DATETIME,
+ml_comm_upd_sts				VARCHAR(50),
+ml_comm_staff_id                        VARCHAR(16),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+//
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
 ?>

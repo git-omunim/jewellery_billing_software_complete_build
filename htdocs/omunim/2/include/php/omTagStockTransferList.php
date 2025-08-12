@@ -1,3 +1,660 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: STOCK TRANSFER LIST @Author:PRIYANKA-23JUNE2022
+ * *************************************************************************************************
+ *
+ * Created on JUNE 23, 2022 01:33:00 PM 
+ * **************************************************************************************
+ * @FileName: omTagStockTransferList.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.7.164
+ * @version: OMUNIM 2.7.164
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @Author:PRIYANKA-23JUNE2022
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software OMUNIM 2.7.164
+ * Version: OMUNIM 2.7.164
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<div id="tagStockTransferStockListDiv">
+<?php
+//
+//
+// **********************************************************************************************
+// START TO ADD CODE FOR STOCK TRANSFER LIST @Author:PRIYANKA-23JUNE2022
+// **********************************************************************************************
+//
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+//
+//
+if ($_GET['divSubPanel'] != '' && $_GET['divSubPanel'] != NULL) {
+    $showDiv = $_GET['divSubPanel'];
+}
+//
+//
+//class="border-color-grey-b"
+//
+//
+if ($_REQUEST['sttrId'] != '' && $_REQUEST['sttrId'] != NULL) {
+    $sttrId = $_REQUEST['sttrId'];
+}
+//
+if ($_REQUEST['transPanelName'] != '' && $_REQUEST['transPanelName'] != NULL) {
+    $transPanelName = $_REQUEST['transPanelName'];
+}
+//
+if ($_REQUEST['mainPanelName'] != '' && $_REQUEST['mainPanelName'] != NULL) {
+    $mainPanelName = $_REQUEST['mainPanelName'];
+}
+//
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+
+if($nepaliDateIndicator == 'YES'){
+   $stock_date_col =  "sttr_other_lang_add_date";
+}else{
+     $stock_date_col =  "sttr_add_date";
+}
+//print_r($_REQUEST);
+//echo '</br>';
+//echo 'panel == ' . $panel . '</br>';
+//echo 'formName == ' . $formName . '</br>';
+//echo "REQUEST panelName == " . $_REQUEST['panelName'] . '</br>';
+//echo 'panelName == ' . $panelName . '</br>'; 
+//echo 'sttr_panel_name == ' . $sttr_panel_name . '</br>'; 
+//echo 'navPanelName == ' . $navPanelName . '</br>';
+//
+//
+//echo 'panel == ' . $panel . '</br>';
+//echo 'panelName == ' . $panelName . '</br>';
+//echo 'mainPanelName == ' . $mainPanelName . '</br>';
+//echo 'transPanelName == ' . $transPanelName . '</br>';
+//echo 'sttrId == ' . $sttrId . '</br>';
+//
+//
+?>
+<!--<table border="0" cellspacing="0" cellpadding="0" width="100%" align="left">
+    <tr>
+        <td valign="top" align="left" width="32px" colspan="1">
+            <div class="analysis_div_rows">
+                <img src="<?php //echo $documentRoot; ?>/images/ring32.png" alt=""/>
+            </div>
+        </td>
+        <td valign="top" align="left" colspan="15">
+            <a class="links" onclick=""
+               style="cursor: pointer;" title="STOCK TRANSFER LIST!">
+                <div class="textLabelHeading" style="margin-left: 10px;">
+                    STOCK TRANSFER LIST
+                </div>
+            </a>
+        </td>
+        <?php
+        //
+        // Start Code for Message Display @Author:PRIYANKA-23JUNE2022
+        //
+        ?>
+        <td align="center" valign="middle" class="border-color-grey-b">
+            <div id="messDisplayDiv"></div>
+            <div <?php //if ($showDiv == 'StockTransferSuccessfully') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php //} else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php //} ?> >
+                    <?php //if ($showDiv == 'StockTransferSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Transfer Successfully ~ </div>
+                <?php //} ?>  
+            </div>
+        </td>
+        <?php
+        //
+        // End Code for Message Display @Author:PRIYANKA-23JUNE2022
+        //
+        ?>
+        <td valign="middle" align="left" width="15%">
+                <div id="stockTransferListButtDiv"> 
+                    <?php
+                    //
+                    //* ************************************************************************************************
+                    //* START CODE FOR STOCK TRANSFER LIST @PRIYANKA-22JULY2022
+                    //* ************************************************************************************************
+                    // 
+                    // // This is the main division class for input filed
+                    // 
+                    //
+                    // Input Box Type and Ids
+//                    $inputType = 'submit';
+//                    $inputIdButton = 'stockTransferListButt';
+//                    $inputNameButton = 'stockTransferListButt';
+//                    //
+//                    //
+//                    // This is the main class for input flied
+//                    $inputFieldClass = 'btn btn-primary';
+//                    //
+//                    $inputStyle = 'height:22px;width:136px;font-weight:bold;font-size:12px;'
+//                                . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                                . 'text-align:center;color:#AA6600;margin-left:27px;background-color: #FFC469;';
+//                    //
+//                    $inputLabel = 'STOCK TRANSFER LIST'; // Display Label 
+//                    //
+//                    //
+//                    // This class is for Pencil Icon                                                           
+//                    $inputIconClass = 'fa fa-inr';
+//                    // 
+//                    // Place Holder inside input box
+//                    $inputPlaceHolder = 'STOCK TRANSFER LIST';
+//                    //
+//                    // Place Holder in span outside input box
+//                    $spanPlaceHolderClass = '';
+//                    $spanPlaceHolder = '';
+//                    // 
+//                    // Event Options
+//                    //
+//                    // On Change Function
+//                    $inputOnChange = "";
+//                    $inputKeyUpFun = '';
+//                    //
+//                    //
+//                    $inputOnClickFun = 'showAddWhStockPanel("tagStockTransferList");';
+//                    //
+//                    $inputDropDownCls = '';               // This is the main division class for drop down 
+//                    $inputselDropDownCls = '';            // This is class for selection in drop down
+//                    $inputMainClassButton = '';           // This is the main division for Button
+//                    // 
+//                    //* **************************************************************************************
+//                    //* END CODE FOR STOCK TRANSFER LIST @PRIYANKA-22JULY2022
+//                    //* **************************************************************************************
+//                    include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                    //
+                    //}
+                    ?>
+                </div>
+            </td>
+            
+             <td valign="middle" align="left" width="22%">
+                <div id="stockTransferPendingApprovalListButtDiv"> 
+                    <?php
+                    //
+                    //* ************************************************************************************************
+                    //*START CODE FOR STOCK TRANSFER - PENDING APPROVAL LIST @PRIYANKA-22JULY2022
+                    //* ************************************************************************************************
+                    // 
+                    // // This is the main division class for input filed
+                    // 
+                    //
+                    // Input Box Type and Ids
+//                    $inputType = 'submit';
+//                    $inputIdButton = 'stockTransferPendingApprovalListButt';
+//                    $inputNameButton = 'stockTransferPendingApprovalListButt';
+//                    //
+//                    //
+//                    // This is the main class for input flied
+//                    $inputFieldClass = 'btn btn-primary';
+//                    //
+//                    $inputStyle = 'height:22px;width:230px;font-weight:bold;font-size:12px;'
+//                                . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                                . 'text-align:center;color:#dc143c;margin-left:6px;background-color: #ffc0cb';
+//                    //
+//                    $inputLabel = 'STOCK TRANSFER - PENDING APPROVAL LIST'; // Display Label 
+//                    //
+//                    //
+//                    // This class is for Pencil Icon                                                           
+//                    $inputIconClass = 'fa fa-inr';
+//                    // 
+//                    // Place Holder inside input box
+//                    $inputPlaceHolder = 'STOCK TRANSFER - PENDING APPROVAL LIST';
+//                    //
+//                    // Place Holder in span outside input box
+//                    $spanPlaceHolderClass = '';
+//                    $spanPlaceHolder = '';
+//                    // 
+//                    // Event Options
+//                    //
+//                    // On Change Function
+//                    $inputOnChange = "";
+//                    $inputKeyUpFun = '';
+//                    //
+//                    //
+//                    $inputOnClickFun = 'showAddWhStockPanel("tagStockApprovalPendingStockList");';
+//                    //
+//                    $inputDropDownCls = '';               // This is the main division class for drop down 
+//                    $inputselDropDownCls = '';            // This is class for selection in drop down
+//                    $inputMainClassButton = '';           // This is the main division for Button
+//                    // 
+//                    //* **************************************************************************************
+//                    //* END CODE FOR STOCK TRANSFER - PENDING APPROVAL LIST @PRIYANKA-22JULY2022
+//                    //* **************************************************************************************
+//                    include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                    //
+                    //}
+                    ?>
+                </div>
+            </td>
+            
+            <td valign="middle" align="left" width="18%">
+                <div id="stockTransferApprovedListButtDiv"> 
+                    <?php
+                    //
+                    //* ************************************************************************************************
+                    //* START CODE FOR STOCK TRANSFER - APPROVED LIST @PRIYANKA-22JULY2022
+                    //* ************************************************************************************************
+                    // 
+                    // // This is the main division class for input filed
+                    // 
+                    //
+                    // Input Box Type and Ids
+//                    $inputType = 'submit';
+//                    $inputIdButton = 'stockTransferApprovedListButt';
+//                    $inputNameButton = 'stockTransferApprovedListButt';
+//                    //
+//                    //
+//                    // This is the main class for input flied
+//                    $inputFieldClass = 'btn btn-primary';
+//                    //
+//                    $inputStyle = 'height:22px;width:180px;font-weight:bold;font-size:12px;'
+//                                . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                                . 'text-align:center;color:#000080;margin-left:8px;background-color: #89B2ED;';
+//                    //
+//                    $inputLabel = 'STOCK TRANSFER - APPROVED LIST'; // Display Label 
+//                    //
+//                    //
+//                    // This class is for Pencil Icon                                                           
+//                    $inputIconClass = 'fa fa-inr';
+//                    // 
+//                    // Place Holder inside input box
+//                    $inputPlaceHolder = 'STOCK TRANSFER - APPROVED LIST';
+//                    //
+//                    // Place Holder in span outside input box
+//                    $spanPlaceHolderClass = '';
+//                    $spanPlaceHolder = '';
+//                    // 
+//                    // Event Options
+//                    //
+//                    // On Change Function
+//                    $inputOnChange = "";
+//                    $inputKeyUpFun = '';
+//                    //
+//                    //
+//                    $inputOnClickFun = 'showAddWhStockPanel("tagStockApprovedStockList");';
+//                    //
+//                    $inputDropDownCls = '';               // This is the main division class for drop down 
+//                    $inputselDropDownCls = '';            // This is class for selection in drop down
+//                    $inputMainClassButton = '';           // This is the main division for Button
+//                    // 
+//                    //* **************************************************************************************
+//                    //* END CODE FOR STOCK TRANSFER - APPROVED LIST @PRIYANKA-22JULY2022
+//                    //* **************************************************************************************
+//                    include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                    //
+                    //}
+                    ?>
+                </div>
+            </td>
+            
+            <td valign="middle" align="left" width="15%">
+                <div id="stockTransferReturnListButtDiv"> 
+                    <?php
+                    //
+                    //* ************************************************************************************************
+                    //* START CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-22JULY2022
+                    //* ************************************************************************************************
+                    // 
+                    // // This is the main division class for input filed
+                    // 
+                    //
+                    // Input Box Type and Ids
+//                    $inputType = 'submit';
+//                    $inputIdButton = 'stockTransferReturnListButt';
+//                    $inputNameButton = 'stockTransferReturnListButt';
+//                    //
+//                    //
+//                    // This is the main class for input flied
+//                    $inputFieldClass = 'btn btn-primary';
+//                    //
+//                    $inputStyle = 'height:22px;width:170px;font-weight:bold;font-size:12px;'
+//                                . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                                . 'text-align:center;margin-right:6px;background-color:#6EE36E;color:#0C3C03;';
+//                    //
+//                    $inputLabel = 'STOCK TRANSFER - RETURN LIST'; // Display Label 
+//                    //
+//                    //
+//                    // This class is for Pencil Icon                                                           
+//                    $inputIconClass = 'fa fa-inr';
+//                    // 
+//                    // Place Holder inside input box
+//                    $inputPlaceHolder = 'STOCK TRANSFER - RETURN LIST';
+//                    //
+//                    // Place Holder in span outside input box
+//                    $spanPlaceHolderClass = '';
+//                    $spanPlaceHolder = '';
+//                    // 
+//                    // Event Options
+//                    //
+//                    // On Change Function
+//                    $inputOnChange = "";
+//                    $inputKeyUpFun = '';
+//                    //
+//                    //
+//                    $inputOnClickFun = 'showAddWhStockPanel("tagStockReturnStockList");';
+//                    //
+//                    $inputDropDownCls = '';               // This is the main division class for drop down 
+//                    $inputselDropDownCls = '';            // This is class for selection in drop down
+//                    $inputMainClassButton = '';           // This is the main division for Button
+//                    // 
+//                    //* **************************************************************************************
+//                    //* END CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-22JULY2022
+//                    //* **************************************************************************************
+//                    include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                    //
+                    //}
+                    ?>
+                </div>
+            </td>
+        </tr>
+    </table>-->
+    <?php
+    //
+    // ADDED CODE FOR PANEL HEADING @Author:PRIYANKA-29JULY2022
+    $headingNameForPanel = 'STOCK TRANSFER LIST';
+    //
+    // ADDED CODE FOR STOCK TRANSFER REPORT ALL BUTTONS @Author:PRIYANKA-29JULY2022
+    include $_SESSION['documentRootIncludePhp'] . 'omStockTransferReportAllButtons.php';
+    //
+    //
+    ?>
+    <?php
+    // 
+    // Start Code To GET Firm Details @Author:PRIYANKA-23JUNE2022
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        // If not selected assign session firm @Author:PRIYANKA-23JUNE2022
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+        $strFrmId = '0';
+        // Set String for Public Firms @Author:PRIYANKA-23JUNE2022
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    } else {
+        $strFrmId = $selFirmId;
+    }
+    // End Code To GET Firm Details @Author:PRIYANKA-23JUNE2022
+    //
+    //
+    include 'omdatatablesUnset.php';
+    //
+    //
+    if ($staffId != '' && $staffId != NULL) {
+    //
+    //
+    // Data Table Main Columns @Author:PRIYANKA-23JUNE2022
+    $dataTableColumnsFields = array(
+        array('dt' => 'PROD ID'),
+        array('dt' => 'DATE'),
+        array('dt' => 'STAFF NAME'),
+        array('dt' => 'PREV FIRM'),
+        array('dt' => 'FIRM'),
+        array('dt' => 'TYPE'),
+        array('dt' => 'CATEGORY'),
+        array('dt' => 'NAME'),
+        array('dt' => 'HSN'),
+        array('dt' => 'QTY'),
+        array('dt' => 'GS WT'),
+        array('dt' => 'NT WT'),
+        array('dt' => 'PURITY'),
+        array('dt' => 'FN WT'),
+        array('dt' => 'FFN WT'),
+        array('dt' => 'STATUS'));
+        //array('dt' => 'DEL'));
+    //
+    //
+    } else {
+    //
+    //
+    // Data Table Main Columns @Author:PRIYANKA-23JUNE2022
+    $dataTableColumnsFields = array(
+        array('dt' => 'PROD ID'),
+        array('dt' => 'DATE'),
+        array('dt' => 'PREV FIRM'),
+        array('dt' => 'FIRM'),
+        array('dt' => 'TYPE'),
+        array('dt' => 'CATEGORY'),
+        array('dt' => 'NAME'),
+        array('dt' => 'HSN'),
+        array('dt' => 'QTY'),
+        array('dt' => 'GS WT'),
+        array('dt' => 'NT WT'),
+        array('dt' => 'PURITY'),
+        array('dt' => 'FN WT'),
+        array('dt' => 'FFN WT'),
+        array('dt' => 'STATUS'));
+        //array('dt' => 'DEL'));
+    //
+    //    
+    }
+    //
+    //
+    $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+    // 
+    // 
+    // Table Parameters @Author:PRIYANKA-23JUNE2022
+    $_SESSION['tableName'] = 'stock_transaction'; // Table Name
+    $_SESSION['tableNamePK'] = 'sttr_id'; // Primary Key
+    //
+    //
+    if ($staffId != '' && $staffId != NULL) {
+    // 
+    // DB Table Columns Parameters  @Author:PRIYANKA-23JUNE2022
+    $dbColumnsArray = array(
+    "CONCAT(sttr_item_pre_id,COALESCE(sttr_item_id, ''))",
+    "$stock_date_col",
+    "CONCAT(s.user_fname,' ',s.user_lname)",    
+    "p.firm_name",
+    "f.firm_name",
+    "sttr_metal_type",
+    "sttr_item_category",
+    "sttr_item_name",
+    "sttr_hsn_no",        
+    "if((sttr_final_quantity IS NULL),sttr_quantity,sttr_final_quantity)",
+    "ROUND(if((sttr_final_gs_weight IS NULL),sttr_gs_weight,sttr_final_gs_weight),3)",
+    "ROUND(if((sttr_final_nt_weight IS NULL),sttr_nt_weight,sttr_final_nt_weight),3)",
+    "CONCAT(sttr_purity,' ','%')", 
+    "ROUND(if((sttr_final_fn_weight IS NULL),sttr_fine_weight,sttr_final_fn_weight),3)",
+    "ROUND(sttr_final_fine_weight,3)",
+    "if((sttr_stock_transfer_approval_status='StockTransferApprovedStock'),'APPROVED',
+     if((sttr_stock_transfer_approval_status='StockTransferReturnedStock'),'RETURNED',
+     if((sttr_status='TAG'),'TRANSFERRED',sttr_status)))"   
+    //"sttr_id"
+    );
+    //
+    //
+    $_SESSION['dtSumColumn'] = '9,10,11,13,14';
+    //
+    //
+    } else {
+    // 
+    // DB Table Columns Parameters  @Author:PRIYANKA-23JUNE2022
+    $dbColumnsArray = array(
+    "CONCAT(sttr_item_pre_id,COALESCE(sttr_item_id, ''))",
+    "$stock_date_col",   
+    "p.firm_name",
+    "f.firm_name",
+    "sttr_metal_type",
+    "sttr_item_category",
+    "sttr_item_name",
+    "sttr_hsn_no",        
+    "if((sttr_final_quantity IS NULL),sttr_quantity,sttr_final_quantity)",
+    "ROUND(if((sttr_final_gs_weight IS NULL),sttr_gs_weight,sttr_final_gs_weight),3)",
+    "ROUND(if((sttr_final_nt_weight IS NULL),sttr_nt_weight,sttr_final_nt_weight),3)",
+    "CONCAT(sttr_purity,' ','%')", 
+    "ROUND(if((sttr_final_fn_weight IS NULL),sttr_fine_weight,sttr_final_fn_weight),3)",
+    "ROUND(sttr_final_fine_weight,3)",
+    "if((sttr_stock_transfer_approval_status='StockTransferApprovedStock'),'APPROVED',
+     if((sttr_stock_transfer_approval_status='StockTransferReturnedStock'),'RETURNED',
+     if((sttr_status='TAG'),'PENDING',sttr_status)))"    
+    //"sttr_id"
+    );
+    //
+    //
+    $_SESSION['dtSumColumn'] = '8,9,10,12,13';    
+    //
+    //    
+    }
+    //
+    //
+    $_SESSION['dbColumnsArray'] = $dbColumnsArray;
+    //
+    //
+    $_SESSION['sqlQueryColumns'] = "sttr_id, sttr_metal_type, sttr_transaction_type, sttr_indicator, sttr_status, "
+                                 . "sttr_stock_transfer_previous_firm_id, sttr_stock_transfer_approval_status, sttr_staff_id,";
+    //
+    //   
+    //$_SESSION['dtDeleteColumn'] = '';
+    $_SESSION['dtSortColumn'] = '';
+    $_SESSION['dtASCDESC'] = '';
+    //
+    //
+    // Start code to include all session @Author:PRIYANKA-23JUNE2022
+    $_SESSION['colorfulColumn'] = "";
+    $_SESSION['colorfulColumnCheck'] = '';
+    $_SESSION['colorfulColumnTitle'] = '';
+    //
+    //
+    // On Click Function Parameters @Author:PRIYANKA-23JUNE2022
+    $_SESSION['onclickColumnImage'] = "";
+    $_SESSION['onclickColumn'] = ""; // On which column
+    $_SESSION['onclickColumnId'] = "";
+    $_SESSION['onclickColumnValue'] = "";
+    $_SESSION['onclickColumnFunction'] = "";
+    $_SESSION['onclickColumnFunctionPara1'] = "";
+    $_SESSION['onclickColumnFunctionPara2'] = "";
+    $_SESSION['onclickColumnFunctionPara3'] = "";
+    $_SESSION['onclickColumnFunctionPara4'] = "";
+    $_SESSION['onclickColumnFunctionPara5'] = "";
+    $_SESSION['onclickColumnFunctionPara6'] = "";
+    //
+    //
+    //
+    // FOR ROLLBACK TO PREVIOUS STOCK FIRM @Author:PRIYANKA-23JUNE2022
+    $_SESSION['onprintColumnImage'] = "";
+    $_SESSION['onprintColumn'] = ""; // On which column
+    $_SESSION['onprintColumnId'] = "";
+    $_SESSION['onprintColumnValue'] = "";
+    $_SESSION['onprintColumnFunction'] = "";
+    $_SESSION['onprintColumnFunctionPara1'] = "";
+    $_SESSION['onprintColumnFunctionPara2'] = "";
+    $_SESSION['onprintColumnFunctionPara3'] = "";
+    $_SESSION['onprintColumnFunctionPara4'] = "";
+    $_SESSION['onprintColumnFunctionPara5'] = "";
+    $_SESSION['onprintColumnFunctionPara6'] = "";
+    //
+    //
+    //
+    //
+    // FOR DELETE DELETED STOCK @Author:PRIYANKA-23JUNE2022
+//    $_SESSION['deleteColumn'] = "sttr_id"; // On which column
+//    $_SESSION['deleteColumnId'] = "sttr_id";
+//    $_SESSION['deleteColumnValue'] = "sttr_id";
+//    //
+//    if (($staffId != '' && $array['deleteTransactionForAllPanel'] == 'false')){
+//        $_SESSION['deleteColumnFunction'] = "";
+//    } else{
+//        $_SESSION['deleteColumnFunction'] = "tagStockApprovalPendingRollback";
+//    }
+//    //
+//    $_SESSION['deleteColumnFunctionPara1'] = "tagStockApprovalPendingRollback "; // Panel Name
+//    $_SESSION['deleteColumnFunctionPara2'] = "sttr_id";
+//    $_SESSION['deleteColumnFunctionPara3'] = "sttr_metal_type";
+//    $_SESSION['deleteColumnFunctionPara4'] = "";
+//    $_SESSION['deleteColumnFunctionPara5'] = "tagStockApprovalPendingRollback";
+//    $_SESSION['deleteColumnFunctionPara6'] = "";
+    //
+    //
+    //
+    //
+    if ($staffId != '' && $staffId != NULL) {
+    //
+    // Extra direct columns we need pass in SQL Query @Author:PRIYANKA-23JUNE2022
+    $_SESSION['tableWhere'] = "sttr_firm_id IN ($strFrmId) "
+                            . "and sttr_staff_id = '$staffId' "
+                            //. "and sttr_transaction_type IN ('TAG') "
+                            . "and sttr_stock_transfer_approval_status IN ('StockTransferApprovalPendingStock', 'StockTransferApprovedStock', 'StockTransferReturnedStock') "
+                            . "and sttr_status NOT IN ('DELETED','NotDelFromStock')";
+    // 
+    // Table Joins @Author:PRIYANKA-23JUNE2022
+    $_SESSION['tableJoin'] = " INNER JOIN firm AS f ON sttr_firm_id = f.firm_id " 
+                           . " INNER JOIN firm AS p ON sttr_stock_transfer_previous_firm_id = p.firm_id "
+                           . " INNER JOIN user AS s ON sttr_staff_id = s.user_id ";
+    //
+    } else {
+    //
+    // Extra direct columns we need pass in SQL Query @Author:PRIYANKA-23JUNE2022
+    // Commented Code of transaction type @Author:PRIYANKA-05AUG2022
+    $_SESSION['tableWhere'] = "sttr_firm_id IN ($strFrmId) "
+                            //. "and sttr_transaction_type IN ('TAG') "
+                            . "and sttr_stock_transfer_approval_status IN ('StockTransferApprovalPendingStock', 'StockTransferApprovedStock', 'StockTransferReturnedStock') "
+                            . "and sttr_status NOT IN ('DELETED','NotDelFromStock')";
+    //  
+    // Table Joins @Author:PRIYANKA-23JUNE2022
+    $_SESSION['tableJoin'] = " INNER JOIN firm AS f ON sttr_firm_id = f.firm_id " 
+                           . " INNER JOIN firm AS p ON sttr_stock_transfer_previous_firm_id = p.firm_id ";
+    //
+    }
+    // 
+    // 
+    //echo '$_SESSION[tableWhere] == ' . $_SESSION['tableWhere'] . '<br />';
+    // 
+    // 
+    // Data Table Main File @Author:PRIYANKA-23JUNE2022
+    include 'omdatatables.php';
+    //
+    //
+    // **********************************************************************************************
+    // END TO ADD CODE FOR STOCK TRANSFER LIST @Author:PRIYANKA-23JUNE2022
+    // **********************************************************************************************
+    //
+    //
+    ?>
+</div>

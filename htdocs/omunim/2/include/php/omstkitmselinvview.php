@@ -1,3 +1,143 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/* 
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
+ */
 ?>
+<?php 
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'conversions.php';
+include_once 'ommpfndv.php';
+?>
+<?php 
+$createTempView = "CREATE TABLE IF NOT EXISTS user_transaction_invoice_temp("
+        . "utin_id                  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,"
+        . "utin_pre_invoice_no      VARCHAR(50),"
+        . "utin_invoice_no          INT,"
+        . "utin_date                VARCHAR(12),"
+        . "firm_name                VARCHAR(50),"
+        . "user_fname               VARCHAR(100),"
+        . "user_lname               VARCHAR(100),"
+        . "utin_total_amt           VARCHAR(50),"
+        . "utin_discount_amt_discup   VARCHAR(50),"
+        . "utin_pay_tax_amt         VARCHAR(50),"
+        . "utin_tot_payable_amt     VARCHAR(50),"
+        . "utin_discount_amt        VARCHAR(50),"
+        . "utin_cash_amt_rec        VARCHAR(50),"
+        . "utin_pay_cheque_amt      VARCHAR(50),"
+        . "utin_cash_balance        VARCHAR(50),"
+        . "user_shop_name           VARCHAR(200),"
+        . "user_cst_no              VARCHAR(50),"
+        . "user_add                 VARCHAR(300),"
+        . "user_mobile              VARCHAR(50),"
+        . "user_city                VARCHAR(100),"
+        . "user_state               VARCHAR(100),"
+        . "user_pincode             VARCHAR(100),"
+        . "sttr_id                  VARCHAR(50),"
+        . "utin_pay_cgst_amt        VARCHAR(20),"
+        . "utin_pay_sgst_amt        VARCHAR(20),"
+        . "utin_pay_igst_amt        VARCHAR(20),"
+        . "utin_pay_card_amt        VARCHAR(20),"
+        . "user_id                  VARCHAR(20),"
+        . "utin_type                VARCHAR(100))";
+
+$sqlTable = "DESC user_transaction_invoice_temp";
+mysqli_query($conn, $sqlTable);
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table user_transaction_invoice_temp";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createTempView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createTempView) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+if ($staffId != '' && $array['CurrenetmonthAccess'] == 'true') {
+    $StartDate = date("Y-m-01");
+    $EndDate = date("Y-m-t");
+    $sttrDateCondition = "and (STR_TO_DATE(sttr_add_date ,'%d %b %Y') BETWEEN '$StartDate' and '$EndDate')";
+    $utinDateCondition = "and (STR_TO_DATE(utin_date ,'%d %b %Y') BETWEEN '$StartDate' and '$EndDate')";
+} else {
+    $sttrDateCondition = "";
+    $utinDateCondition = "";
+}
+//
+//
+$selectUser_transaction = "SELECT * FROM user_transaction_invoice WHERE utin_firm_id IN($strFrmId) AND utin_type IN ('imitation','RetailStock') AND "
+        . " utin_transaction_type IN('sell','ESTIMATESELL') $staffStr $utinDateCondition";
+//echo '$selectUser_transaction=='.$selectUser_transaction.'<br>';
+$queryUser_transaction = mysqli_query($conn, $selectUser_transaction);
+
+while($resUserTransaction = mysqli_fetch_array($queryUser_transaction, MYSQLI_ASSOC)){
+    $utin_id = $resUserTransaction['utin_id'];
+    $utin_pre_invoice_no = $resUserTransaction['utin_pre_invoice_no'];
+    $utin_invoice_no = $resUserTransaction['utin_invoice_no'];
+    $utin_date = $resUserTransaction['utin_date'];
+    $utin_total_amt = $resUserTransaction['utin_total_amt'];
+    $utin_discount_amt_discup = $resUserTransaction['utin_discount_amt_discup'];
+    $utin_pay_tax_amt = $resUserTransaction['utin_pay_tax_amt'];
+    $utin_tot_payable_amt = $resUserTransaction['utin_tot_payable_amt'];
+    $utin_discount_amt = $resUserTransaction['utin_discount_amt'];
+    $utin_cash_amt_rec = $resUserTransaction['utin_cash_amt_rec'];
+    $utin_pay_cheque_amt = $resUserTransaction['utin_pay_cheque_amt'];
+    $utin_cash_balance = $resUserTransaction['utin_cash_balance'];
+    $utin_firm_id = $resUserTransaction['utin_firm_id'];
+    $utin_user_id = $resUserTransaction['utin_user_id'];
+    $utin_pay_cgst_amt = $resUserTransaction['utin_pay_cgst_amt'];
+    $utin_pay_sgst_amt = $resUserTransaction['utin_pay_sgst_amt'];
+    $utin_pay_igst_amt = $resUserTransaction['utin_pay_igst_amt'];
+    $utin_pay_card_amt = $resUserTransaction['utin_pay_card_amt'];
+    $utin_type = $resUserTransaction['utin_type'];
+    
+    $selectUser = "SELECT * FROM user WHERE user_id='$utin_user_id'";
+    $queryUser = mysqli_query($conn, $selectUser);
+    
+    while($resUser = mysqli_fetch_array($queryUser, MYSQLI_ASSOC)){
+        $user_fname = $resUser['user_fname'];
+        $user_lname = $resUser['user_lname'];
+        $user_add = $resUser['user_add'];
+        $user_mobile = $resUser['user_mobile'];
+        $user_city = $resUser['user_city'];
+        $user_state = $resUser['user_state'];
+        $user_pincode = $resUser['user_pincode'];
+        $user_cst_no = $resUser['user_cst_no'];
+    }
+    //
+    $selectFirmDetails = "SELECT * FROM firm WHERE firm_id='$utin_firm_id'";
+    $queryFirm = mysqli_query($conn, $selectFirmDetails);
+    
+    while($resFirmDetails = mysqli_fetch_array($queryFirm, MYSQLI_ASSOC)){
+        $firm_name = $resFirmDetails['firm_name'];
+        $firm_long_name = $resFirmDetails['firm_long_name'];
+    }
+    //
+    //
+    $selectSttrDetails = "SELECT sttr_id from stock_transaction WHERE sttr_utin_id='$utin_id' AND sttr_user_id='$utin_user_id'";
+    $querySelectSttr = mysqli_query($conn, $selectSttrDetails);
+    
+    while($resSelectSttr = mysqli_fetch_array($querySelectSttr, MYSQLI_ASSOC)){
+        $sttr_id = $resSelectSttr['sttr_id'];
+        
+    }
+    //
+    //
+    $insertUserTransaction = "INSERT INTO user_transaction_invoice_temp(utin_id, utin_pre_invoice_no, utin_invoice_no, utin_date, firm_name, user_fname, user_lname,"
+            . "utin_total_amt, utin_discount_amt_discup, utin_pay_tax_amt, utin_tot_payable_amt, utin_discount_amt, utin_cash_amt_rec, utin_pay_cheque_amt,utin_cash_balance,"
+            . " user_shop_name, user_cst_no, user_add, user_mobile, user_city, user_state, user_pincode, sttr_id, utin_pay_cgst_amt,utin_pay_sgst_amt,utin_pay_igst_amt,"
+            . "utin_pay_card_amt,user_id,utin_type)"
+            . "VALUES"
+            . "('$utin_id','$utin_pre_invoice_no','$utin_invoice_no','$utin_date','$firm_name','$user_fname','$user_lname','$utin_total_amt','$utin_discount_amt_discup',"
+            . "'$utin_pay_tax_amt','$utin_tot_payable_amt','$utin_discount_amt','$utin_cash_amt_rec','$utin_pay_cheque_amt','$utin_cash_balance','$firm_long_name',"
+            . "'$user_cst_no','$user_add','$user_mobile','$user_city','$user_state','$user_pincode','$sttr_id','$utin_pay_cgst_amt','$utin_pay_sgst_amt','$utin_pay_igst_amt',"
+            . "'$utin_pay_card_amt','$utin_user_id','$utin_type')";
+    
+    mysqli_query($conn, $insertUserTransaction) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+?>
+

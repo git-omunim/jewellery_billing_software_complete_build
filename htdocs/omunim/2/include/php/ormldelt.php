@@ -1,3 +1,81 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Money lender Details to Delete
+ * **************************************************************************************
+ * 
+ * Created on May 10, 2013 4:48:10 PM
+ *
+ * @FileName: ormldelt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+include_once 'ommpfndv.php';
+require_once 'system/omssopin.php';
+
+//Count Total ml transactions
+$qSelTotalTransactionCount = "SELECT ml_id FROM ml_loan where ml_own_id='$suppOwnerId' and ml_lender_id='$mlId'";
+$resTotalTransactionCount = mysqli_query($conn,$qSelTotalTransactionCount);
+$totalTransactionCount = mysqli_num_rows($resTotalTransactionCount);
+
+
+if ($totalTransactionCount > 0) {
+    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=MoneyLenderHome&mlId=' . $mlId . '&suppStatus=suppNotDeleted' . '&panelOption=Update'); //CHANGE IN NAVIGATION @AUTHOR: SANDY27DEC13
+    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=MoneyLenderHome&mlId=' . $mlId . '&suppStatus=suppNotDeleted' . '&panelOption=Update');
+    } else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/orHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=MoneyLenderHome&mlId=' . $mlId . '&suppStatus=suppNotDeleted' . '&panelOption=Update');
+    }
+} else {
+//-------------------------------- Start code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+    parse_str(getTableValues("SELECT user_fname,user_father_name,user_lname,user_firm_id FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$mlId'"));
+    $sslg_trans_sub = 'MONEYLENDER DELETED';
+    $sslg_trans_comment = $user_fname . ' ' . substr($user_father_name, 1) . ' ' . $user_lname . ' MONEYLENDER DELETED';
+    $sslg_firm_id = $user_firm_id;
+//-------------------------------- End code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+    include 'omslgapi.php';
+    /*     * *******End code to add sys_log api @Author:PRIYA10APR14******************** */
+    //Change in query to delete ml @AUTHOR: SANDY06JAN14
+    $query = "DELETE FROM user where user_owner_id ='$suppOwnerId' and user_id ='$mlId'";
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+       $query = "DELETE FROM image where image_owner_id ='$suppOwnerId' and image_user_id ='$mlId'";
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustList&user=moneyLender&action=moneyLenderDeleted');
+    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustList&user=moneyLender&action=moneyLenderDeleted');
+    } else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/orHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustList&user=moneyLender&action=moneyLenderDeleted');
+    }
+}

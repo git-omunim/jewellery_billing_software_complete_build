@@ -1,3 +1,65 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: girvi transfer journal
+ * **************************************************************************************
+ * 
+ * Created on May 23, 2014 5:32:51 PM
+ *
+ * @FileName: orgvtnjr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$qSelAllTransGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' "
+        . "and gtrans_upd_sts IN ('New','Updated','Released','Transferred') and "
+        . "gtrans_trans_type NOT IN ('Linked') OR gtrans_trans_type IS NULL";
+
+$resAllTransGirvi = mysqli_query($conn,$qSelAllTransGirvi) or die("Error: " . mysqli_error($conn) . " with query " . $qSelAllTransGirvi);
+while ($rowAllTransGirvi = mysqli_fetch_array($resAllTransGirvi, MYSQLI_ASSOC)) {
+    $girviOwnerId = $_SESSION[sessionOwnerId];
+    $girviTransferPayAcnt = $rowAllTransGirvi['gtrans_acc_id'];
+    $girviTransCrAccId = $rowAllTransGirvi['gtrans_cr_acc_id'];
+    $custId = $rowAllTransGirvi['gtrans_cust_id'];
+    $girviTransGriviId = $rowAllTransGirvi['gtrans_id'];
+    $girviTransferFirmId = $rowAllTransGirvi['gtrans_firm_id'];
+    $principalAmount = $rowAllTransGirvi['gtrans_prin_amt'];
+    $girviTransDOB = $rowAllTransGirvi['gtrans_DOB'];
+    $girviTransDOB = om_strtoupper(date("d M Y", strtotime($girviTransDOB)));
+    $girviUpdSts = $rowAllTransGirvi['gtrans_upd_sts'];
+
+    $gtransId = $girviTransGriviId;
+    $firmId = $girviTransferFirmId;
+    $girviDOR = $rowAllTransGirvi['gtrans_DOR'];
+    $girviDOR = om_strtoupper(date("d M Y", strtotime($girviDOR)));
+    $girviLoanAccId = $rowAllTransGirvi['gtrans_loan_acc_id'];
+    $girviCashAccId = $rowAllTransGirvi['gtrans_cash_acc_id'];
+    $amountPaid = $rowAllTransGirvi['gtrans_paid_amt'];
+    $totAmount = $rowAllTransGirvi['gtrans_total_amt'];
+    $girviIntAccId = $rowAllTransGirvi['gtrans_int_rec_acc_id'];
+    $interestPaid = $rowAllTransGirvi['gtrans_paid_int'];
+    $girviDiscAccId = $rowAllTransGirvi['gtrans_disc_acc_id'];
+    $discountPaid = $rowAllTransGirvi['gtrans_discount_amt'];
+    $loanType = $rowAllTransGirvi['gtrans_prin_typ'];
+
+    if ($loanType == 'LoanAddPrinTrans') {
+        $jrnlPanel = 'LoanAddPrinTrans';
+    }
+
+    include 'orgtjrnl.php';
+}
 ?>

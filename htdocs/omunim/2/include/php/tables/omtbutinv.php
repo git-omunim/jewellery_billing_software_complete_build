@@ -1,3 +1,629 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACQHwAAO82JMKEOBuJYyGOzk/E1gN4p05v2ER5o4zownxjGeC9cMHQdyIQWR8jAD2NOYWhjZfWXdcxMLWptugtKU4BjjGzF3mSUwqKGCaEbSTK3qweosr3IB5d3MNpCdXvNaUjKaEuMO1PgdwLEPrrn8TA/gt6lVcLtElxjTigNmgpOIuHMPJf7XxOl051vvRTdvPYi9XFmXsXHXEAq5kUrjmERGWumTdunBT7pjmg0uUE5i1Bi+D8gI/KTGjg5iaiov999QTHSRYeuuAh+X77HV4Heam6Na4eCYoDv/GJXINZW9YSZETr7uT6VcKpme2C31jgv+7kZGipXMLMHoQGDFZl6Tv+T3ZR4su4qIpAMRsyftrH8GBRzSEf7zsU1vCn/bJD4S5CucNpPPQJr9T0Onfqx7RYrxerDMPomBD+lkD0nTPhOg5R2u9iLUf+V2GGk/axwIQw5aDpyz7D2mbD5WaDEKG72U9xGf//H7uS3e5CaL/D4mFt4C+fRPku5N4kYAUIVzK5wWXplUTFODL7IMBbEcv9yz2TBulkMluDU0IdbrfdVyHDDT9auIXtu7ca+/gxa2wxLPlXZCpeLx7JDhO4+0YviJlmj1RDv69wBsaoGaso1/p3bpDVodBZz7l3CyTCSk3or/w8WJC1ayT4tcopB0XV9nhNijE664EI0EQhxB6z1E8puEsKDJDIK1pKF0NQ0gDFP3mvOAKR9ZoWiwZeIdnHBjauT7O463oQFquOB20Q4qef+hI2KVEyB91u4l06uwJSKiRgVaWCPSGYgdBzuyxTy8XkcZaQNrlZ12Iln1rypNo0y4oyuZw/xCQd7/Z76xrW1x11cD08qJqRr+apjHEt2ffVHLyVlm3tNy7D39K9wDzvmDwTJlmUZpKfXpwwtZdCMtJVazSNfo1lM/eCb1LopEUWGf/F5QGv6ZSGFpUPBy/MpSgmgz//ExWC8peNuvBXWZTsftpbum3i97F1row2J7NeLENXUPpdofLwnd4w+lra7jbn6G6QWo4Z5fiXmKOEcaCLk32+Q6z6u3Khd3jvcyxXc4LEH3PQgpste+TpkFI3tsaiWKLKD4LB5IuiS8MSoABrYRcOzfL8aJfy3obVqTdJhWSPWO0YKl4zw9Gk3XRQOMmy4cqqjfCJxUe5nuQvdZG+86TQKiQidhQ7/DXKadULMjAZY9EoCY0n3UMjgmJnGiYB9zmswSDaclascwzU5i9unxqeXgmreVKDm0iq4AmAXg2Ys1rR9tdiWX1yRpio4uYwouWCbqaHfSZmFJUqaTS3wfEsH5Lk0V4w4Iyv3bL4co7tgsz7JbwHeUhO7jddpx8etduywsofs64pHWihTpOS8WAyZ49B1LZi9j0zJYrQXfZQrhD09CHhEfUAiETM9M8TOt7acHMjSCRYZKjKAtgFp/YFzeBq8Hp4LBnAysc+7xIffCe7F2cfFja2eHKK81IKOeDjtDPaG8xA+CVw5+VEf+HfGzJxQ0uNvuD2k9Ay+LRthPrTO4X6ExThyeYastR95CWWFYQgMsjMkCuZVlaqE5nq+UwKSjVFN00Ccahyi/30geRaCDABe9WmGLsgx6TAt7iqwNhqNpwFkys+kLQ72NlbLelwl7noTTWlO1feuVIvTEOroQiTGInR+OFVcJTxOdwXD2jmDqQJZuelHNQsub07ezcx2QeRGRGdm1zFethUzcf0EwnImR/zjRMFydrpUGIZZSzjlUxwPjT03nAoVEJbsTnlx8Inna8sFqzI514Va3NwK6bAFsSPSk2EuLW48LAL327kT+gL26UDQ6QetuTr86f/wZoPX6vKm9n63rldym/Rqh6UYQKfIyBAIcP4tBVKNZrnYzUi/T4286x2NinFCpYIESmar0LzOiwZDJp7gKNcMh8uklAy1FaBr+TodYQKsS7V9S7OE7PLr6+y+EX0ROG4D4wysCgQDH8/6ijITe7nr1h2tIHS0g+UWkhqOCsQkye9j8MJAGVNvHHGWh/D694C7rl+yiK/eNT8FWbNXwAsrySiupW/jb76ISBrIUORTj/mHF0FAXkPDdrZCG36a+sUIf+/8+lUOorlM6qOH9i5IAx8+qYIIuZfQloa1OaDHNHAvo15bmYprLJOykls6ci/Xmd381y5BsVxlI6sJVlz1/L0godt+0oOlqD6RNvj4Yxa1PRRdR4xAoDrIYkwhdPM6egFwiFBwDfyaOxAw/1Yw3aYQMIfWX3rxNr/Woc2sicYfLJX62WECESS5mMcCr5GAxtumdYHBRdGILWUL4lLlb3kGIzztD0Ns3hsLZPhBCOCS/K2vplT304VW7vGEtG7xLXMQwPZyIh78bnvuLZNUH/66PvS/0rPcHtVjKRTDJCnlh+TO+jeWjRdNo5+GLUHSVs9PVW6iwK8buCDHp3G6hZSoBcynhXZs2D6Sv5p9aCx9eTFMSm3zvR/8AZmqlEbYP7P1N9mIH4gv/EiKdcZ47tS/xzEjsD5+K/sm4uIxA5gZMgwVoy0mnTdFDjPhYuAXW+rXCWs/KrZfPg2hzGQn9hhBOA0M2O+6HCPj4zFXvu6PhdWefBQTfE2V/FbNUvUDh0pyY/56Rc79fpyca7RThjS9Xyn9qe5evO7XzcQzW6jF68Z7ijg/jo67uE967cy4x8FhvBNW7GbKb17pfDfv+JbcCSFQctdTIrxKFQwJUlYbdun8e8keacJXJh6u1tOn1NKdD3eS9lD/qOGce6IPttx0enQHTyFcDLzGUBQEm30/n6hqsFcIEjWsZNpkdJAujVtXgef5mIM3GNhmT0+vfTYsXAmsiH1GnAeh+gFCpe82oI/vxc5CMJQ/kKa3QKIAYQ0fJYKBJfoIyBuF9FQZwh1zWr0rown3K14fX2Czh9vsgBtRR85A35sb44vXDfNFtIs05yCaLRmb7XrCy/3H9ILUA3Y9I2+bcW19po9QeazTeeTIMVgjuu2/UwWBooORJM79eOuHg0kgMIUluIgmAtLquwxcEATpIgpdglv6ULrwrwVsxVtKpAexGfiv9KjU9Q9JUJAn5i6rermRS16mm619b1+PMNtQm4j0hnot2c5Fys+5x5XMJcicpaK/3f7wPdhZuAJQ2+K/IYgqFFVjYiMzz2CN0vMw/53rhL7422Xz2P7AlhMsHuA6w6Ef/KURhvk2jKNW2iE9ZygMs7/lW648Pvq3RO3LKPd8seQdV9kyHuYtXgP5anMBnRxp+Rhdmx8icECe1tHZQGiBUD42lOf6GNwWbZdBhD2GSFs61FqWLzpP2sY0p1Y7jiXW0VQ/zqs6eblSuMPvdoN27EqGZR22WkQ1S5MIBr7MCEfvUFXekxSfnXOplntSd2SGOjuWz8oKfT06kt60pqokFmX9rhWAQ/jQMxS3zaGyBjpxnpKDJ3sVMTQ40Da+Zlm7YQewUgJ2+Y0d4YfY7fYoIS9rXSlrlOfYFqSXiwN6qeoh6CncE8e4f2GkxIquoahzu67g4/5gy1rPpjwpFi+6DqdZhQC341rRCYaxWPBeHkF3ZXqQZMemfYfQqR6rilI5LOxaB/TFYNoPt47A5CanlFn+fyz59KcpVTIUwsrJnDbKIB/BFezyms06CMSjRO1DIWCq2YBDXhFbPAT09DMyuadBL8Rfq+3fbESdk0v8IvGdWW0e9Fjf3qpLkPlF49kKV9c6b+b6DRfOWd9C9mLHPn6kLiWHYBVZnqID120p42tS362JIKnw607YcuNKSKcuh+mYtVaVyMP0327Y5fdqNwAia5OIxCvT+OCXPoy6Kmbl61zyt+xsrflh1hNqNm+dhUPpuEuK5216WrVs2h6/Z+SmfqVK7APm/zFDYTYSPSWvLBAf9HSfkNn6zn+0SGqEPCVyrU6pa2Bkl23rE+N+k5i4TBtyWQYiwW7Os/xi6BI7QH/nfnYu6SKD3QYeGnRpuk8BPZNtpKo14QPT4pGkc7yRMJHT3BQX1UIcGid+yMDR6R0oCxFi9Gta61DVMS12B7fdA3aHW9z7fmROoZUE94JTk7TkfOSz7DdRr1IiutaxBZ0ite0p9q6dZHF0PWUsywCixMr1qYUYvsDgNaCqWj6+9pjl4aKcaEaDVh4h+96HtweKy9dVp+yymWqqnsUUQc2L0dtAghGdXen0zFO0LGuf0E/ldKbu4ywvwWbb+fFbEuerKtXtHnFfpmaoVIzLqZ0F2wPvry/B7ddYavoG1YbUpFW5Id35o5bM9MiAw4TJptSMyg7T0MzjLXXgIkv9IUDzNRocfnRp3n+9xdwV6zm7NgIfw4N0oAZFVZRaQ1x933V/6miHAseivSLH81g+BtIxSW6omEZFPex2JwjlsqQmZjddsfsIYhkOv8WRx4BKOPY/t7NG86+W9GFTFrIn88l9PABOcd+WbYZtCqPGY/kr3y0aTvdKkdsphTjSDFwEzP/+LfcEhH6MpBKNBFhExQL2tc0bpkZCVqmEFLbls4HMr9EZ0j2Mm2YbsACq1DQwcyvmfHkyJduw4XpF4GV1WPKA3Rcap7VWVe3i5iblefjZmapplee2Ffls6vf8+Zs9Fa1cE8jNFh1V5vXqMql/RYvVY4WtLENFNeZMHp5FKxsJqcCjdOl9rFgKtVr6f57ZvOBTTZUHXt9Lzi+3iwuipOX6OhhQSzViYhs4cDx+N3poLSPU/jcg+D91xBcVH8mX5nyoS/DoBXrv+N6CppT1TyW8BTU8ZkOcm771o0brLTB685+Wv/jldfg/2+tMNWhDhpwJlQXa5AmyEZNCkpn130evTg2YuWgzV5cmNHrYwzkVaVqpSgljxA5Y759yX0WHwBFzRy5NypF++E2zHahkSwFDC75zHSlWODwe3p4728uv/ZgpHVwhkiZjU0u/g+23stF6SO3tIpvzLdOiZ91KMNvAUqmHNQuUF+a2NUdXOppeZ5CZxQoClF3FemNPPc92eLFdzZ97BwwWBKGm+vThfxTdb1XqMaeuHNpz6WV9fIcSZlaoeIdJDPba9C+G0Cz7VzoBItBhEwe8ZRS3Zqc/WQp7pWrNqvuFvuJrq9g4AA5gQ8OEKz9QvvKFpgXzLgfm+546kfGNl2YtZi+Rzj9qxx+j+OcZllS/8yxmtqsWgMBcdfSSh7yHK/1fkug/aE2pqDnBYk/uKrRAgG2isRCXJUeZnV+l6pwVQU6utfqP/As1gqgz954ryLLK+/6Vbht4Xa6wN9UgCxWNRcUxCXzRCXlLRnY5OZi65Fga+0RwhcrSDRkP1043UQg+eKDxilrlizBgyrxmS99uiBs4kQHdJc7gyuWG/riRyxKODj62F0PY4zrgQbn66wGJ4J9SWyCDi0LM/AFa1ffpnO/gIwStxKOh3BLhXNEIxHRTwVmjlfS0rlCn3hQdRfX3DliYclBsp3NY+R5I7Al6qHkmnV4MbUxszdvwbI9nZCAG2vgtSmcCBak8uHE458mtZWBX1R5vmB86LolgMeQBY4fVwaFWQEYV94xImw07jEPKhX3qChPrsUMBe2+yJC7DExolNF7DgAa9E/8IagUMU7gHLgNF8jiIvOZCkrFxG3u7oZEksQ9iXbHqgn+rCVV+j5mAJuf3tliydu84ihmqMZ40/dC174VtN0W0+euc1Sk5fiFKeZyxpdsvo5acFMs7EtCpnFOEr4E9bURTeMT0f6+wX1IdXV+dWhNKplCac/soR1T05XCkxzF28hm5owAzhj4IWmpGEOLw5Kty4ophkh91gRpUDi8hCTYEfJcqzCNjgWiXb7jAHBrIe+eXgtetzmQIJOyWGaKr+21cmn4+eYcX7BFypBYGVDAZEgZduzfRxtJgy8xTInYatam5J1GAWw6consQpgIdoOoCYWf9TSpPRZc6Tru4wO7RKn9Tn2T9mCS2vINIgDTl0DodlZsvsQ9zj8iSVXHrCbhOp65Cwh1gOPhnrqnAGvURvsoyJUvtYOFeMDso/BRcPv4tk0e7fwCGM7G46/GN8gtbd0LmKt+Vz5+qrfeDsdHsfiUw+g1dSW4YUYmrpSWdAR9pjhy3kR2iVM+v5oJs3/C448XqExc6imVLqi5yYtWELDZ3MyDTnV360XRqX7IDge6U9fqB2i6wffPIen1kBM3J6e9j530yzRW9qYJxyldG4SBSPEvj/er/DgXUNEZ6F4x+l8otq9vGilYm4j3kfNSVmXHa2+iuHYfF963l2f3Y6LfPd77Y+UAar0L0PubR0ZtvGPa4dEVXi92BlBHlUXG+9noCc0fWkD5eWa3MtNAGBw0rxSbon4QA85s/UX3efyt05b64vTQ8pomZCucXS7BD5T1LAzngMRRjmFYcqGz3YZAhXPMeW3D9zvMIBgfNJbIn3dXYjVgn96IG9noXrW8ZgYjSHtyR0uUoR2ltXhYJVovRyYiIRNs/MK+fdOq2Vlc5QJxC+zha7mrOh/bS8kfT1t9c0aloWXmhdTThyt4SeOlr3EpLHbXLsEBsL4jmQr6DlvESYXetdssn00YABh/NLVM7TgXhTlSOtTDF8uOISvgCTjIyd2rI1R7rKRjkRBnWP49U7zM+EuBmZ3aMwQqM+RVPfiYc5J02kgNaNnazR7rbw93OT3nGww07BMmEIJONBLy3dz8m0fiZiYozpTc0obwOtFWhMpSVzU5ZWuu7m1vnEZtp2/wSD8HbBDHKhKuSdF+fzORYC/8HKlbwCOkbZw9WhNPhMB7Zz83+c84rnfwo2ZgwtWTsnl9CpAiYfPsZmL2Hu0+luf9hx/VVFRztiz4+feE5LQIKj+icsOXZIMNqq+3Ow9Wn/MOXQquocC2gIyHb7QyKOn/9fPULWoYEXKfbondyqnuao3CaVJLx0kGx0LAfqQ5qZMHoG21nS7Qox3cDvhd+gNOx/VgO4Ovh8cI6DbdRoL7w0sQPmqCJIvcEkxefXelg2BRGgs2L/LZ+lXRWAXGBj2an1/2HVNZ7JfwB277bLC3xWcU0ZpM5IcEN7yt5ywpPtB8LG8Li7Edl/vKRhSHt/WO5C2AUppjtg536XHKNLA/WXk8XlJT6BRNDYpMW0opwH2vDSn+QYro60hiQ6gm1WS08YTgZJ3k3r+NNt6kH0xRUdMm6+qXhjebb66unZikWn3uUdePOM+UuG9i1NnFc+A2WyoRseGSEIFKSH4wuqhPueNsKjAfp416RtSPpD0v/o5cQktCplm56nuhhyaPeFKMJjhfqAGE19Jy11AxCdsafAWjzrvbLsbtbJuh6YhtjPDN8eTbYz16uRKW1uRHoDDyI9G+9sP14qsk9Gx9sqAFGy543PPGsOWHcRscGslEfpLr+XhAIRdppYU+mAKRTBKrW6u5uJueu+utqZkWiY4lgbreRR9Dtvnd1jeqtMSkzTLt0tuWjm0No6wOf02BGYGyNgHqLscaQInG2XJi8ev+7HVnVV+84zOUXk7E9a3dIJOq9zlc4Oe4Vz8+Oef6Y8+wF40PeY7bkNQPPHJ/bZb7Kmqwb3o0CbNJa8YTVlUEt1/se83ki5uFkHeJBvOVEVUwZB3fKD3gAYcVckSfXOGjmQm+Jp5jkkViWMCNi26iRmvOSkCg29oqjsFpXO0pR7pumSahq1WVv9sWiCCkbJxivYn/XzdQ/GxodVxkYlDgvK5s3lgWSW3/AiHkeviu9C5csO2uZsxcnm7NUU9sp09rdPI8XPAaUmjcNF+fAJ7wcB2rk2/Ai7hOzteA3FpAWvB+HH8skroDmfdPz0yoM+f1MIsCZblJ1F6yjsSqaVW0NEcn4N5QuaWG90jnXoBHjgP64LV6p2kMcJ3/Zddsi5K7hukW38ubv1ktMZ/1259nDv9cxlhVIZRCHFeetEIiD7yxD00y/22M3h5V44DKiCY3GeJo/09rdu25SJu2wIuz5ivmHO1M2vzw4yr2uySCYpBXfyXwX9AJkVTx7Jy4+edmrW67ja8oF/Wizp0tg/YoXuu9AijcwhNnkTny8iPnNBown9I6bgqtV/3v8Fd2lgp1JZ6563cWxCxawh5pa1HAngAJZ4SK5dDPIgbLfKoYpfCwmeOlN0bNHlDbVaD4tmp52FFhk6CESPGOF2xCUHfkaulOQ5mudxDM1duf53cAq/7UZLSP6XW28wun42tCdWU1GGfqH19/hKGMmcyKw7QKca8SMIVe3DizE/ZY+DTw9/RMMoZM72yHmafu1ca6GG0aexHwVuYOBSt16CE4iHIHNKM4xLLdcSfXL9mfpdFkdOwSPBejZD/zErI1qcy2rZXO4woNISTWmejsRxIuTTa7xXZmBzbdUi7L9sIHy74mjZxVs7qDT9XskW6gsGNMbOwR3JkvC/T3+bQKVss1yoTwHnnNIZextjlkAfas+Qd+gFDZRqyNgh1+tj0JFw53x/Bo0pWjiRYzl7ZTgJCV4Fjh/T2ZRuUOlQ8ch4yPVqjzDTVLSR4I8HsfeBJs/x67xDt6rfCgy4yi2XW6nMBko7nmFFgVWBYeK6R7SN1inBWKYko4RnzT3WkYGRuBgNOVz1jnSUtJqeCNuFN6VnZQikvc9leMngtMfUPz4Kg6kCj6S23LO++CcE6oz/8WFeGbF4FA2qpBxtc9n62jwSNRRTOQozPgGrGRsfpBmKjkCExMCbbiMz/DiCmogcA/dHVPxCLjobxdnt8R6vBymHcFT5b/AExtJXPbN1xWXuHn0JnrQkyAw/+4CEzSQT4QrETaSUXWJ9+W0dhqOys9d/tU8R3/G30/ATs841MHXmlAmaPwPIMqKRIFbYW/b+2uRDAB4mMZH+cGzTI2bHBtI3+LrHw+eVlhI6yzoUuQwnC4m5dwyrOWRt3247MXy/8qyScuv6l1ndu76CcJ9a9OBbMx7sFd+H4R+qN++pmCmNaU/nL+97tMI20QGpF5iB1JYTqlax6PRq11bN9EMOTITwaJADX3zDUf9tsarIhDXt1HUL+hGmeNcddi5jnBXoPwJLn6GgF++JGKit/i2D4HNUMcv+q/5KZhahfy5dOR/9xWhy4qa4X/1ybVpqQ9T0qCekFTf2RA1XUy6pdZaAqoL2NNoH47AQqaIXIgluwVV6Z/RlQRxXFZnHi6z1fN1OhHg0jPUXTNiz1yr2+K6U1PCUPMIKzNMtUA6lMc4lPL7IQQEMMSCJZQkQDXMdoLWTodnU3NcwncoQtGtfhEsMz/XuFUyS9nsIMOuqIPhwRQzbwnEQmjpAofQWm4kgjqHJuPnzXkFfABRBVi0g9DRY5rGc74E1PViGWJ4OBu415ZwSBMxv/ROJzOeNodpeDptDO3fi8BSzS3N6zu+Xt/IL1OKMDw/Th5PQKhUD7FXtDD+xPhi9fST24Y0LZLZhizejaa95d2kB8DeL74HiSVgJKmM2uvo5mnhVK5Erz5W+ShT5ceX3HEeWsTH96pC3gyM3lVb1ZNs8+BkeFMc5PZ2z+8/dnRmrE/h6ArUeijcdz2k1KLLMZ3bfeKCCS9w5IeJS1XTVtxdXL7taFdimM/o0yuukHEeGVh7ZJXxl8E2Mk4SOE/09lQmfhSQGOMDI5IFSBM8cZi5GSnS35yeOoDQ+XGjXw+YfyRZ7GK9F1FF6vtXFZrj0uWzERCQugzCOFirHhS1Yl4tXeoN4FexOYpcWWBsfqd6nUE3A5rIgx8Jjn78qtWUSl7U/cZLuMhMgwjAAjZiz9so1M2WMxmPH0x77K1TQkaga90WvyMEDLQooYMjTr7fS5C9PYHiNu6d1DAw5lZDFga3MffJ4H3yWSW61Gbfgte2GDu7RvPSMr1naIKpmgN2K+NOq2NhI/bEc6EQJ78t595YN7kqukOSajvHRkvHNDFD/un/wARSMp1m8MD9d9pWGZ9g6Cy6h7JLOy/Cwp70pkJ2Uj8e2pXD7Bd7kDCkU0FLRjJkU/saqv7k8OQNbKFTme6MAPf7HZu0Hub3EvzOajAeZhAFtAb8pCj233IbuQhxf8/SpWMkBKvOhXsRBryVq8ImAnceoMNNA4LmRKlY+MkK5uyi8NLoz8rIT0j49KoXPnid1T8jXOASBdyRkVtLPBHGT7TFnt3OewQLELHzvbKgMVyh6CEzrxB5VgdUHr8TcMFs+pAeL/ayYQ0WD7ucIqpWsrpJNBVTxrFzP4X4BNNa3YQUXxqcUCrBrUExH6vT2pO7vQyCg/Gw8f9xTkth6puhEiSntTlFCUpFfdvssGW97g0hsI+l/ds+SFynTYDgd4yAloOHJJL+qJAJvC2gF0c//ap4v5IICEYsNm9rJWDac/fAcbYw4GYH1sH5YEra/tu2plmDnEWClevCWfbgp5sOs3BlSYyoGdkhO4pVU5fXWVgXz3bykwYHwzl12ky6fKrvWyrFj3ilBkAjfrWT+aZ+cIhtJgaoAIHMVFp8J/Nr2Xk9fWifNkstvAKK2LccdBxZjvU5+K8ey5t++eDSpWe43pZKFFt+7otVFbP22zNFzUmpRT7LWNtFyjU3iFznOVQpNJF7vBtaQpjZhLUT/91oiV+zw7rjhO8C6lGOVGI8Th3kGt4zGNkLUF/xz2I5FOHaCLmUub4lfaAVp8DYY/zq+wfCzG1ORFFxFu1L6ZIuxgT7YcXKFrouHFW16Jzz9UErmJv51o28jyiGZN2JSk22nDYIZmtBwrd1XjfRf9qBU/aJ+8iaNezVgcV03hTQ+SrBZb65/0B+69P+COwAxJ7JlqjOATGE+2qwsOb07yBF4GZAAylQEcPnazLqh0An0bYchVeKbcljksJEZuNVQBFjkbu6JRYR/1ry66mAUSM3aOTja+5UgmyPdHvzBgPn2oY7RBXJ0C6FO53aHPUbI64p8VXToW8kZAS0WVaQCjVyBv5pv5MtaI1nDwAAAAA=');
+<?php
+
+/*
+ * *****************************************************************************************************
+ * @tutorial: user_transaction_invoice table
+ * *****************************************************************************************************
+ *
+ * Created on 28 Sep, 2016
+ *
+ * @FileName: omtbutinv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//include '../system/omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS user_transaction_invoice (
+utin_id                                                 INT NOT NULL PRIMARY KEY AUTO_INCREMENT," .
+// Need for udhaar deposit @Author:PRIYANKA-28JUN17
+        "utin_utin_id                                           VARCHAR(16)," .
+        "utin_transaction_id                                    VARCHAR(26)," . //COLUMN ADDED TO STORE UNIQUE TRANSCATION ID@AUTHOR:MADHUREE-10AUGUST2022
+// Owner,firm and user id's
+        "utin_owner_id                                          VARCHAR(16),
+utin_firm_id                                            VARCHAR(16), 
+utin_user_id                                            VARCHAR(32),
+utin_billing_name                                       VARCHAR(50),"
+        . "utin_gift_user_id                                     VARCHAR(32)," . // YUVRAJ ADD THIS utin_gift_user_id COLOUM 14012021 
+// Invoice Number.       
+        "utin_pre_invoice_no                                    VARCHAR(20),
+utin_invoice_no                                         VARCHAR(10)," .
+// Which Transaction.
+        "utin_type                                              VARCHAR(16),
+utin_transaction_type                                   VARCHAR(30),
+utin_prod_details                                       VARCHAR(100),
+utin_prod_qty                                           VARCHAR(10),
+utin_prod_unit_price                                    VARCHAR(32)," .
+// =====================================================================================================
+// = Gold Weights
+// =====================================================================================================
+//Column(utin_gd_qty) for Gold qt. @AMRUTA10JUNE2022
+        "utin_gd_qty                                            VARCHAR(16),
+utin_gd_gs_wt                                           VARCHAR(16),
+utin_gd_gs_wt_type                                      VARCHAR(4),
+utin_gd_nt_wt                                           VARCHAR(16),
+utin_gd_nt_wt_type                                      VARCHAR(4),
+utin_gd_fn_wt                                           VARCHAR(16),
+utin_gd_fn_wt_type                                      VARCHAR(4),
+utin_gd_ffn_wt                                          VARCHAR(16),
+utin_gd_ffn_wt_type                                     VARCHAR(4),
+utin_gd_oth_chgs_wt                                     VARCHAR(15),
+utin_gd_oth_chgs_wt_typ                                 VARCHAR(4),
+utin_gd_paid_wt                                         VARCHAR(15),
+utin_gd_paid_wt_rate                                    VARCHAR(15),
+utin_gd_paid_wt_typ                                     VARCHAR(4),
+utin_gd_rtct_wt                                         VARCHAR(15),
+utin_gd_rtct_wt_typ                                     VARCHAR(4),
+utin_gd_rtct_amt                                        VARCHAR(15),"//COLUMN ADDED FOR GOLD RATE CUT AMOUNT @AUTHOR:MADHUREE-16DEC2020
+        . "utin_gd_due_wt                                        VARCHAR(15),
+utin_gd_due_wt_typ                                      VARCHAR(4)," .
+// Gold Settled Invoice Id
+        "utin_gd_settled_inv_id                                 INT," .
+// Gold Payment Check
+        "utin_gd_pay_chk                                        VARCHAR(10)," .
+// =====================================================================================================
+// = Silver Weights
+// =====================================================================================================   
+//Column(utin_sl_qty) for Silver qt. @AMRUTA10JUNE2022
+        "utin_sl_qty                                            VARCHAR(16),
+utin_sl_gs_wt                                           VARCHAR(16),
+utin_sl_gs_wt_type                                      VARCHAR(4),
+utin_sl_nt_wt                                           VARCHAR(16),
+utin_sl_nt_wt_type                                      VARCHAR(4),
+utin_sl_fn_wt                                           VARCHAR(16),
+utin_sl_fn_wt_type                                      VARCHAR(4),
+utin_sl_ffn_wt                                          VARCHAR(16),
+utin_sl_ffn_wt_type                                     VARCHAR(4),
+utin_sl_oth_chgs_wt                                     VARCHAR(15),
+utin_sl_oth_chgs_wt_typ                                 VARCHAR(4),
+utin_sl_paid_wt                                         VARCHAR(15),
+utin_sl_paid_wt_rate                                    VARCHAR(15),
+utin_sl_paid_wt_typ                                     VARCHAR(4),
+utin_sl_rtct_wt                                         VARCHAR(10),
+utin_sl_rtct_wt_typ                                     VARCHAR(4),
+utin_sl_rtct_amt                                        VARCHAR(15),"//COLUMN ADDED FOR SILVER RATE CUT AMOUNT @AUTHOR:MADHUREE-16DEC2020
+        . "utin_sl_due_wt                                        VARCHAR(15),
+utin_sl_due_wt_typ                                      VARCHAR(4)," .
+// Silver Settled Invoice Id
+        "utin_sl_settled_inv_id                                 INT," .
+// Silver Payment Check
+        "utin_sl_pay_chk                                        VARCHAR(10)," .
+// =====================================================================================================
+// = Crystal Weights
+// =====================================================================================================  
+//Column(utin_st_qty) for Stone/Crystal/Diamond qt. @AMRUTA10JUNE2022
+        "utin_st_qty                                            VARCHAR(16),
+utin_st_gs_wt                                           VARCHAR(16),
+utin_st_gs_wt_type                                      VARCHAR(4),
+utin_st_nt_wt                                           VARCHAR(16),
+utin_st_nt_wt_type                                      VARCHAR(4),
+utin_st_oth_chgs_wt                                     VARCHAR(15),
+utin_st_oth_chgs_wt_typ                                 VARCHAR(4),
+utin_st_paid_wt                                         VARCHAR(15),
+utin_st_paid_wt_typ                                     VARCHAR(4),
+utin_st_rtct_wt                                         VARCHAR(10),
+utin_st_rtct_wt_typ                                     VARCHAR(4),
+utin_st_rtct_amt                                        VARCHAR(15),"//COLUMN ADDED FOR SILVER RATE CUT AMOUNT @AUTHOR:MADHUREE-16DEC2020
+        . "utin_st_due_wt                                        VARCHAR(15),
+utin_st_due_wt_typ                                      VARCHAR(4)," .
+// Crystal Settled Invoice Id
+        "utin_st_settled_inv_id                                 INT," .
+// Crystal Payment Check
+        "utin_st_pay_chk                                        VARCHAR(10)," .
+// ====================================================================================================
+// FOR PLATINIUM METAL TYPE @SIMRAN:19JUNE2023
+// ====================================================================================================
+        "utin_pt_qty                                            VARCHAR(16),
+utin_pt_gs_wt                                           VARCHAR(16),
+utin_pt_gs_wt_type                                      VARCHAR(4),
+utin_pt_nt_wt                                           VARCHAR(16),
+utin_pt_nt_wt_type                                      VARCHAR(4),
+utin_pt_fn_wt                                           VARCHAR(16),
+utin_pt_fn_wt_type                                      VARCHAR(4),
+utin_pt_ffn_wt                                          VARCHAR(16),
+utin_pt_ffn_wt_type                                     VARCHAR(4),
+utin_pt_oth_chgs_wt                                     VARCHAR(15),
+utin_pt_oth_chgs_wt_typ                                 VARCHAR(4),
+utin_pt_paid_wt                                         VARCHAR(15),
+utin_pt_paid_wt_typ                                     VARCHAR(4),
+utin_pt_rtct_wt                                         VARCHAR(15),
+utin_pt_rtct_wt_typ                                     VARCHAR(4),
+utin_pt_rtct_amt                                        VARCHAR(15),"//COLUMN ADDED FOR GOLD RATE CUT AMOUNT @AUTHOR:MADHUREE-16DEC2020
+        . "utin_pt_due_wt                                        VARCHAR(15),
+utin_pt_due_wt_typ                                      VARCHAR(4)," .
+// Gold Settled Invoice Id
+        "utin_pt_settled_inv_id                                 INT," .
+// Gold Payment Check
+        "utin_pt_pay_chk                                        VARCHAR(10)," .
+//
+// ====================================================================================================
+// = Metal Rates
+// ====================================================================================================
+// Rate Cut Rates        
+        "utin_gd_rate                                           VARCHAR(20),
+utin_sl_rate                                            VARCHAR(16),
+utin_st_rate                                            VARCHAR(16),
+utin_pt_rate                                            VARCHAR(16)," .
+// Previous remaining metal's rates.             
+        "utin_prev_metal_gd_rate                                VARCHAR(30),
+utin_prev_metal_sl_rate                                 VARCHAR(30),
+utin_prev_metal_st_rate                                 VARCHAR(30),
+utin_prev_metal_pt_rate                                 VARCHAR(30)," .
+// Current Average metal rates               
+        "utin_avg_gd_rate                                       VARCHAR(30),
+utin_avg_sl_rate                                        VARCHAR(30),
+utin_avg_st_rate                                        VARCHAR(30),
+utin_avg_pt_rate                                        VARCHAR(30)," .
+// 
+// HALLMARK CHARGES @PRIYANKA-26MAY2022         
+        "utin_hallmark_chrgs_amt                                VARCHAR(15)," .
+// 
+// Total other charges (labour charges & tax amount)       
+        "utin_oth_chgs_amt                                      VARCHAR(15)," .
+// 
+// Total crystal charges        
+        "utin_crystal_amt                                       VARCHAR(30)," .
+// 
+// Total payable amount        
+        "utin_total_amt                                         VARCHAR(30)," .
+// 
+// Total Taxable Amount - Reverse Calculation On Payment Panel @Author:PRIYANKA-01OCT18
+        "utin_total_taxable_amt                                 VARCHAR(30)," .
+// 
+// 
+// All payment account id's  
+// New 4 Columns Added by Author:PRIYANKA-19JUN17
+        "utin_gold_acc_id                                       VARCHAR(10),
+utin_silver_acc_id                                      VARCHAR(10),
+utin_crystal_acc_id                                      VARCHAR(10),
+utin_cr_acc_id                                          VARCHAR(10),
+utin_dr_acc_id                                          VARCHAR(10),
+utin_pay_cash_acc_id                                    VARCHAR(10),
+utin_pay_cheque_acc_id                                  VARCHAR(10),
+utin_pay_card_acc_id                                    VARCHAR(10),
+utin_online_pay_acc_id                                  VARCHAR(10),
+utin_platinum_acc_id                                       VARCHAR(10)," .
+// 
+// utin_pay_int_acc_id column added to added udhaar interest account id,@AUTHOR:HEMA-23OCT2020
+        "utin_pay_int_acc_id                                    VARCHAR(10),
+utin_pay_disc_acc_id                                    VARCHAR(10),
+utin_pay_tax_acc_id                                     VARCHAR(10),
+utin_courier_acc_id                                     VARCHAR(10),
+utin_other_acc_id                                       VARCHAR(10)," .
+// 
+// All Payment account info                
+        "utin_cash_narratn                                      VARCHAR(16),
+utin_cheque_no                                          VARCHAR(20),
+utin_cheque_num                                         VARCHAR(50),
+utin_cheque_submit_date                                 VARCHAR(32),
+utin_cheque_clearance_date                              VARCHAR(32),
+utin_cheque_submitted_on_date                           VARCHAR(32),
+utin_cheque_cleared_on_date                             VARCHAR(32),
+utin_card_no                                            VARCHAR(32),
+utin_online_pay_narratn                                 VARCHAR(32),
+utin_disc_narratn                                       VARCHAR(32),
+utin_courier_info                                       VARCHAR(30),
+utin_other_charge_info                                  VARCHAR(30)," .
+// 
+// Cash, cheque, cc card, online payment & discount amounts        
+        "utin_cash_amt_rec                                      VARCHAR(30),
+utin_pay_cheque_amt                                     VARCHAR(30),
+utin_pay_card_amt                                       VARCHAR(30),
+utin_pay_trans_chrg_per                                 VARCHAR(30)," . //COLUMN ADDED TO STORE TRANS CHARGES PERCENTAGE@AUTHOR:MADHUREE-04SEP2021
+        "utin_pay_trans_chrg                                    VARCHAR(30)," .
+        "utin_online_pay_amt                                    VARCHAR(30),
+utin_pay_comm_paid_per                                  VARCHAR(30)," . //COLUMN ADDED TO STORE TRANS CHARGES PERCENTAGE@AUTHOR:MADHUREE-04SEP2021
+        "utin_pay_comm_paid                                     VARCHAR(30),
+utin_discount_amt                                       VARCHAR(30),
+utin_discount_per                                       VARCHAR(30),
+utin_discount_amt_discup                                VARCHAR(30),
+utin_discount_per_discup                                VARCHAR(30),
+utin_disc_narratn_discup                                VARCHAR(30)," .
+// 
+// Additional Charges, Narration And Account Id Columns @PRIYANKA-23AUG2019
+        "utin_additional_charges                                VARCHAR(30),
+utin_additional_charges_narratn                         VARCHAR(30),
+utin_additional_charges_acc_id                          VARCHAR(30),
+utin_courier_chgs_amt                                   VARCHAR(30),
+utin_other_chgs_amt                                     VARCHAR(30)," .
+// 
+// All tax amounts               
+        "utin_pre_tax_amt                                       VARCHAR(30),
+utin_final_tax_amt                                      VARCHAR(30),
+utin_pay_tax_chrg                                       VARCHAR(10),
+utin_pay_cgst_chrg                                      VARCHAR(10),
+utin_pay_sgst_chrg                                      VARCHAR(10),
+utin_pay_igst_chrg                                      VARCHAR(10),
+utin_pay_mkg_cgst_chrg                                  VARCHAR(10),
+utin_pay_mkg_sgst_chrg                                  VARCHAR(10),
+utin_pay_mkg_igst_chrg                                  VARCHAR(10),
+utin_pay_tax_amt                                        VARCHAR(30),
+utin_pay_cgst_amt                                       VARCHAR(30),
+utin_pay_sgst_amt                                       VARCHAR(30),
+utin_pay_igst_amt                                       VARCHAR(30),
+utin_pay_mkg_cgst_amt                                   VARCHAR(30),
+utin_pay_mkg_sgst_amt                                   VARCHAR(30),
+utin_pay_mkg_igst_amt                                   VARCHAR(30)," .
+//        
+// ALL TAX AMT - HALLMARK CHARGES COLUMNS @PRIYANKA-26MAY2022        
+        "utin_pay_hallmark_cgst_chrg                            VARCHAR(10),
+utin_pay_hallmark_sgst_chrg                             VARCHAR(10),
+utin_pay_hallmark_igst_chrg                             VARCHAR(10),
+utin_pay_hallmark_cgst_amt                              VARCHAR(30),
+utin_pay_hallmark_sgst_amt                              VARCHAR(30),
+utin_pay_hallmark_igst_amt                              VARCHAR(30)," .
+// 
+// TAXABLE AMT - HALLMARK CHARGES COLUMNS @PRIYANKA-26MAY2022        
+        "utin_pay_hallmark_cgst_tot_amt                         VARCHAR(30),
+utin_pay_hallmark_sgst_tot_amt                          VARCHAR(30),
+utin_pay_hallmark_igst_tot_amt                          VARCHAR(30),
+utin_cess_amt                                           VARCHAR(30)," .
+// 
+// Taxable amounts columns
+        "utin_pay_tax_tot_amt                                   VARCHAR(30),
+utin_pay_cgst_tot_amt                                   VARCHAR(30),
+utin_pay_sgst_tot_amt                                   VARCHAR(30),
+utin_pay_igst_tot_amt                                   VARCHAR(30),
+utin_pay_mkg_cgst_tot_amt                               VARCHAR(30),
+utin_pay_mkg_sgst_tot_amt                               VARCHAR(30),
+utin_pay_mkg_igst_tot_amt                               VARCHAR(30),
+utin_tot_payable_amt                                    VARCHAR(30)," .
+// 
+// Tax Amounts Checks
+        "utin_pay_cgst_chk                                      VARCHAR(15),
+utin_pay_sgst_chk                                       VARCHAR(15),
+utin_pay_igst_chk                                       VARCHAR(15),
+utin_pay_tax_chk                                        VARCHAR(15),
+utin_pay_mkg_tax_chk                                    VARCHAR(15),
+utin_paytm_pay_chk                                      VARCHAR(15)," . // ADDED PAY WITH PAYMENT COL @SIMRAN:29NOV2023
+// 
+// TAX APPLY ON HALLMARK CHARGES CHECK @PRIYANKA-26MAY2022        
+        "utin_pay_hallmark_tax_chk                              VARCHAR(15),
+utin_pay_tax_by_val_chk                                 VARCHAR(15),
+utin_metal_exchange_chk                                 VARCHAR(15)," .
+// 
+// Currency Change Check @PRIYANKA-01AUG19       
+        "utin_currency_change_chk                               VARCHAR(15)," .
+// 
+// Tax Apply on Total Amount Check @PRIYANKA-03-JAN-18
+        "utin_pay_tax_on_total_amt_chk                          VARCHAR(15)," .
+// 
+// 
+// Unregistered Purchase Check @PRIYANKA-07JULY2022      
+        "utin_unregistered_purchase_tax_chk                     VARCHAR(15)," .
+// 
+// Tax Amounts Account Id
+        "utin_pay_cgst_acc_id                                   VARCHAR(10),
+utin_pay_sgst_acc_id                                    VARCHAR(10),
+utin_pay_igst_acc_id                                    VARCHAR(10),
+utin_pay_mkg_cgst_acc_id                                VARCHAR(10),
+utin_pay_mkg_sgst_acc_id                                VARCHAR(10),
+utin_pay_mkg_igst_acc_id                                VARCHAR(10)," .
+// 
+// FOR HALLMARK TAX AMT ACCOUNT ID @PRIYANKA-26MAY2022     
+        "utin_pay_hallmark_cgst_acc_id                          VARCHAR(10),
+utin_pay_hallmark_sgst_acc_id                           VARCHAR(10),
+utin_pay_hallmark_igst_acc_id                           VARCHAR(10)," .
+// 
+// Payment other info        
+        "utin_paym_oth_info                                     VARCHAR(200)," .
+// 
+// Invoice other info        
+        "utin_other_info                                        VARCHAR(200)," .
+// 
+// MAIN INVOICE NUMBER @SIMRAN:05JUN2023
+        "utin_main_inv_no                                       VARCHAR(50),".
+        // SALES PERSON NAME
+"utin_sales_person_name      VARCHAR(50),".
+// 
+// Invoice Date       
+        "utin_date                                              VARCHAR(40)," .
+        "utin_financial_year                                    VARCHAR(8)," .
+        "utin_other_lang_date                                   VARCHAR(40)," . // ADDED TO STORE OTHER LANGUAGE DATE @AUTHOR:MADHUREE-07DEC2021
+        "utin_end_date                                          VARCHAR(40)," .
+        "utin_other_lang_end_date                               VARCHAR(80)," . // ADDED TO STORE OTHER LANGUAGE END DATE @AUTHOR:MADHUREE-27DEC2021
+        "utin_since                                             DATETIME," .
+// Total paid raw metal amount.
+        "utin_tot_amt_rec                                       VARCHAR(30)," .
+// Invoice journal id's
+        "utin_jrnl_id                                           INT,
+utin_tax_jrnl_id                                        INT," .
+// Cr & Dr Type
+        "utin_CRDR                                              VARCHAR(10),
+utin_gd_CRDR                                            VARCHAR(5),
+utin_sl_CRDR                                            VARCHAR(5),
+utin_st_CRDR                                            VARCHAR(5),
+utin_pt_CRDR                                            VARCHAR(5),
+utin_cash_CRDR                                          VARCHAR(5)," .
+// Rate Cut Metal Profit & Loss 
+        "utin_gd_PNL_amt                                        VARCHAR(30),
+utin_sl_PNL_amt                                         VARCHAR(30),
+utin_st_PNL_amt                                         VARCHAR(30),
+utin_pt_PNL_amt                                         VARCHAR(30)," .
+// Separate gold & silver amounts.       
+        "utin_gold_amt                                          VARCHAR(30),
+utin_silver_amt                                         VARCHAR(30),
+utin_platinum_amt                                         VARCHAR(30)," .
+// Separate Purchase gold, silver and stock & inventory amounts      
+        "utin_gd_pur_amt                                        VARCHAR(30),
+utin_sl_pur_amt                                         VARCHAR(30),
+utin_st_pur_amt                                         VARCHAR(30),
+utin_pt_pur_amt                                         VARCHAR(30),
+utin_stock_pur_amt                                      VARCHAR(30)," .
+// Purchase Lab / Other Charges @Author:PRIYANKA-11AUG2020   
+        "utin_pur_lab_chrgs                                     VARCHAR(20),    
+utin_pur_other_chrgs                                    VARCHAR(20)," .
+// Separate gold & silver previous invoice amounts       
+        "utin_prev_gd_amt                                       VARCHAR(30),
+utin_prev_sl_amt                                        VARCHAR(30),
+utin_prev_st_amt                                        VARCHAR(30),
+utin_prev_pt_amt                                        VARCHAR(30)," .
+// Previous invoices amount 
+        "utin_prev_cash_bal                                     VARCHAR(30)," .
+// Total amt deposited @Author:PRIYANKA-03-07-17
+        "utin_total_amt_deposit                                 VARCHAR(30)," .
+// Final due amount & round off amount.     
+        "utin_round_off_amt                                     VARCHAR(5),
+utin_cash_balance                                       VARCHAR(30)," .
+// AMOUNT LEFT @Author:PRIYANKA-03JAN18     
+        "utin_left_amount                                       VARCHAR(30)," .
+// Amount Settled Invoice Id
+        "utin_amt_settled_inv_id                                INT," .
+// Amount Payment Check
+        "utin_amt_pay_chk                                       VARCHAR(10)," .
+// Optional - status of invoice
+        "utin_status                                            VARCHAR(16)," .
+// Other charges by weight or by cash
+        "utin_othr_chgs_by                                      VARCHAR(10)," .
+// Invoice pending payment settlement check
+        "utin_pay_opt                                           VARCHAR(30)," .
+// Invoice payment mode
+        "utin_payment_mode                                      VARCHAR(10)," .
+// Staff Id
+        "utin_staff_id                                          VARCHAR(16)," .
+// New 3 Columns Added by Author:PRIYANKA-19JUN17        
+        "utin_comm                                              VARCHAR(300),
+utin_due_date                                           VARCHAR(80)," .
+        "utin_other_lang_due_date                               VARCHAR(80)," . // ADDED TO STORE OTHER LANGUAGE DUE DATE @AUTHOR:MADHUREE-27DEC2021
+        "utin_history                                           VARCHAR(300)," .
+// New 2 Columns
+// utin_scheme_name for scheme name
+// utin_group_name for scheme GROUP name 
+// utin_metal_type for scheme METAL TYPE 
+// utin_gift_item for scheme GIFT ITEM         
+        "utin_scheme_name                                       VARCHAR(30),
+utin_group_name                                         VARCHAR(30),
+utin_metal_type                                         VARCHAR(30),
+utin_gift_item                                          VARCHAR(30)," .
+// New 5 Columns Added by Author:PRIYANKA-21JUN17      
+        "utin_ROI                                               VARCHAR(30),
+utin_int_per                                            VARCHAR(30),
+utin_int_amt                                            VARCHAR(30),
+utin_EMI_days                                           VARCHAR(30)," .
+// utin_EMI_period_type column added for store EMI duration (Monthly,days) @RATNAKAR 16FEB2018
+        "utin_EMI_period_type                                   VARCHAR(30),
+utin_EMI_occurrences                                    VARCHAR(30),
+utin_EMI_status                                         VARCHAR(50),
+utin_EMI_opt                                            VARCHAR(30)," .
+// New 3 Columns Added by Author:PRIYANKA-29JUN17     
+        "utin_EMI_amt                                           VARCHAR(30),
+utin_EMI_int_amt                                        VARCHAR(30),
+utin_EMI_total_amt                                      VARCHAR(30)," .
+// New 3 Columns Added by Author:PRIYANKA-01JULY17     
+        "utin_EMI_no                                            VARCHAR(30),             
+utin_EMI_start_DOB                                      VARCHAR(36),
+utin_EMI_end_DOB                                        VARCHAR(36)," .
+// New 2 Columns Added by Author:PRIYANKA-07JULY17   
+        "utin_EMI_paid_date                                     VARCHAR(50),
+utin_paid_amt                                           VARCHAR(50)," .
+// CRDR COLUMNS FOR PREVIOUS PAID METAL & CASH
+        "utin_prev_gd_CRDR                                      VARCHAR(5),
+utin_prev_sl_CRDR                                       VARCHAR(5),
+utin_prev_st_CRDR                                       VARCHAR(5),
+utin_prev_pt_CRDR                                       VARCHAR(5),
+utin_prev_amt_CRDR                                      VARCHAR(5)," .
+// PREVIOUS PAID WEIGHT COLUMNS
+        "utin_gs_prev_wt                                        VARCHAR(15),
+utin_gd_prev_wt_typ                                     VARCHAR(10),
+utin_sl_prev_wt                                         VARCHAR(15),
+utin_sl_prev_wt_typ                                     VARCHAR(10),
+utin_pt_prev_wt                                         VARCHAR(15),
+utin_pt_prev_wt_typ                                     VARCHAR(10),
+utin_st_prev_wt                                         VARCHAR(15),
+utin_st_prev_wt_typ                                     VARCHAR(10)," .
+// LOALITY POINTS
+        "utin_lp_open                                           VARCHAR(15),
+utin_lp_gain                                            VARCHAR(15),
+utin_lp_metal_wt                                        VARCHAR(15),
+utin_lp_metal_wt_type                                   VARCHAR(15),
+utin_lp_gift_type                                       VARCHAR(15),
+utin_lp_gift_wt                                         VARCHAR(15),
+utin_lp_gift_wt_type                                    VARCHAR(15),
+utin_lp_redeem                                          VARCHAR(15),
+utin_lp_close                                           VARCHAR(15),
+utin_lp_cash                                            VARCHAR(15),
+utin_lp_value                                           VARCHAR(15),
+utin_lp_amount                                          VARCHAR(15)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-07APR18         
+        "utin_gd_prev_cash_opening                              VARCHAR(10),
+utin_gd_prev_cash_opening_CRDR                          VARCHAR(10),
+utin_gd_cash_to_metal                                   VARCHAR(10),
+utin_gd_prev_cash_balance                               VARCHAR(10),
+utin_gd_prev_cash_bal_CRDR                              VARCHAR(10),
+utin_gd_cash_metal_rate                                 VARCHAR(10),
+utin_gd_cash_metal_purity                               VARCHAR(10),
+utin_gd_cash_to_metalwt                                 VARCHAR(10),
+utin_gd_cash_to_metalwt_CRDR                            VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-08APR18  
+        "utin_gd_cash_metal_rec_paid                            VARCHAR(10),
+utin_gd_prev_cash_metal_rec_paid                        VARCHAR(10),
+utin_gd_prev_cash_metal_rec_paid_CRDR                   VARCHAR(10),
+utin_gd_cash_metal_rec_paid_rate                        VARCHAR(10),
+utin_gd_cash_metal_rec_paid_purity                      VARCHAR(10),
+utin_gd_cash_metal_rec_paid_wt                          VARCHAR(10),
+utin_gd_cash_metal_rec_paid_wt_CRDR                     VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-07APR18         
+        "utin_sl_prev_cash_opening                              VARCHAR(10),
+utin_sl_prev_cash_opening_CRDR                          VARCHAR(10),
+utin_sl_cash_to_metal                                   VARCHAR(10),
+utin_sl_prev_cash_balance                               VARCHAR(10),
+utin_sl_prev_cash_bal_CRDR                              VARCHAR(10),
+utin_sl_cash_metal_rate                                 VARCHAR(10),
+utin_sl_cash_metal_purity                               VARCHAR(10),
+utin_sl_cash_to_metalwt                                 VARCHAR(10),
+utin_sl_cash_to_metalwt_CRDR                            VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-08APR18  
+        "utin_sl_cash_metal_rec_paid                            VARCHAR(10),
+utin_sl_prev_cash_metal_rec_paid                        VARCHAR(10),
+utin_sl_prev_cash_metal_rec_paid_CRDR                   VARCHAR(10),
+utin_sl_cash_metal_rec_paid_rate                        VARCHAR(10),
+utin_sl_cash_metal_rec_paid_purity                      VARCHAR(10),
+utin_sl_cash_metal_rec_paid_wt                          VARCHAR(10),
+utin_sl_cash_metal_rec_paid_wt_CRDR                     VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:darshana        
+        "utin_st_prev_cash_opening                              VARCHAR(10),
+utin_st_prev_cash_opening_CRDR                          VARCHAR(10),
+utin_st_cash_to_metal                                   VARCHAR(10),
+utin_st_prev_cash_balance                               VARCHAR(10),
+utin_st_prev_cash_bal_CRDR                              VARCHAR(10),
+utin_st_cash_metal_rate                                 VARCHAR(10),
+utin_st_cash_metal_purity                               VARCHAR(10),
+utin_st_cash_to_metalwt                                 VARCHAR(10),
+utin_st_cash_to_metalwt_CRDR                            VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:darshana  
+        "utin_st_cash_metal_rec_paid                            VARCHAR(10),
+utin_st_prev_cash_metal_rec_paid                        VARCHAR(10),
+utin_st_prev_cash_metal_rec_paid_CRDR                   VARCHAR(10),
+utin_st_cash_metal_rec_paid_rate                        VARCHAR(10),
+utin_st_cash_metal_rec_paid_purity                      VARCHAR(10),
+utin_st_cash_metal_rec_paid_wt                          VARCHAR(10),
+utin_st_cash_metal_rec_paid_wt_CRDR                     VARCHAR(10)," .
+//
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-07APR18         
+"utin_pt_prev_cash_opening                              VARCHAR(10),
+utin_pt_prev_cash_opening_CRDR                          VARCHAR(10),
+utin_pt_cash_to_metal                                   VARCHAR(10),
+utin_pt_prev_cash_balance                               VARCHAR(10),
+utin_pt_prev_cash_bal_CRDR                              VARCHAR(10),
+utin_pt_cash_metal_rate                                 VARCHAR(10),
+utin_pt_cash_metal_purity                               VARCHAR(10),
+utin_pt_cash_to_metalwt                                 VARCHAR(10),
+utin_pt_cash_to_metalwt_CRDR                            VARCHAR(10)," .
+// CASH TO METAL FUNCTIONALITY COLUMNS @Author:PRIYANKA-08APR18  
+        "utin_pt_cash_metal_rec_paid                            VARCHAR(10),
+utin_pt_prev_cash_metal_rec_paid                        VARCHAR(10),
+utin_pt_prev_cash_metal_rec_paid_CRDR                   VARCHAR(10),
+utin_pt_cash_metal_rec_paid_rate                        VARCHAR(10),
+utin_pt_cash_metal_rec_paid_purity                      VARCHAR(10),
+utin_discount_coupon                                    VARCHAR(16),
+utin_pt_cash_metal_rec_paid_wt                          VARCHAR(10),
+utin_pt_cash_metal_rec_paid_wt_CRDR                     VARCHAR(10)," .
+//        
+// ADDED utin_upd_process column to check procssed udhaar and advance money entry
+// For new entries from 25 FEB 2018 - 'utin_inv_disc_option' store 'discUp' for old payment panel
+// now this utin_inv_disc_option value is null but in future utin_inv_disc_option value will be
+// 'discDown' and we will provide customer to choose payment panel option        
+        "utin_upd_process                                       VARCHAR(10), 
+utin_inv_disc_option                                    VARCHAR(10)," .
+//        
+// BELOW COLUMNS ADDED FOR UDHAAR INTEREST AMOUNT @AUHTOR:DEEPAK21DEC19
+"utin_udhaar_int_amt                                    VARCHAR(50),
+ utin_udhaar_main_int_amt                               VARCHAR(50),
+utin_udhaar_roi                                         FLOAT,
+utin_udhaar_int_type                                    VARCHAR(15),
+utin_udhaar_int_chk                                     VARCHAR(10),
+utin_gold_item_pur_value                                VARCHAR(10),
+utin_silver_item_pur_value                              VARCHAR(16),
+utin_stone_item_pur_value                               VARCHAR(16)," .
+// COLUMN ADDED TO STORE INSURANCE OPTION CHECKED OR NOT @AUTHOR:SHRI08SEP20
+        "utin_pay_jew_insurance_chk                             VARCHAR(20)," .
+        "utin_reverse_cal_by                                    VARCHAR(10)," . //COLUMN ADDED TO STORE REVERSE CALCULATION BY VALUE @AUTHOR:MADHUREE-16JULY2021
+        "utin_amt_return_status                                 VARCHAR(10)," . //COLUMN ADDED TO STORE AMOUNT RETURN STATUS @AUTHOR:MADHUREE-10FEB2022
+        "utin_notification_count                                VARCHAR(10)," . //COLUMN ADDED TO STORE NOTIFICATION COUNT @AUTHOR:CHETAN-24MAR2022
+        "utin_notification_sent_date                            VARCHAR(0)," . //COLUMN ADDED TO STORE NOTIFICATION SENT DATE @AUTHOR:CHETAN-24MAR2022
+        "utin_display_counter                                   INT        ," .
+//
+        "utin_eway_bill_transid                                 VARCHAR(15)," . //COLUMN ADDED TO STORE  E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_transname                               VARCHAR(100)," . //COLUMN ADDED TO STORE  E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022 
+        "utin_eway_bill_distance                                VARCHAR(4)," . //COLUMN ADDED TO STORE E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_transdocno                              VARCHAR(15)," . //COLUMN ADDED TO STORE E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_transdocDt                              VARCHAR(50)," . //COLUMN ADDED TO STORE E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_vehno                                   VARCHAR(20)," . //COLUMN ADDED TO STORE  E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_vehtype                                 VARCHAR(1)," . //COLUMN ADDED TO STORE  E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+        "utin_eway_bill_transMode                               VARCHAR(1)," . //COLUMN ADDED TO STORE  E-WAY BILL FORM DETAILS @AUTHOR: RENUKA-AUG2022
+//        
+        "utin_einvoice_ack_no                                   VARCHAR(25)," . //COLUMN ADDED TO STORE EINVOICE  DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_einvoice_ack_date                                 VARCHAR(20)," . //COLUMN ADDED TO STORE EINVOICE  DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_einvoice_irn_no                                   VARCHAR(100)," . //COLUMN ADDED TO STORE EINVOICE DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_einvoice_signed_inv                               VARCHAR(500)," . //COLUMN ADDED TO STORE EINVOICE DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_einvoice_signed_qrcode                            VARCHAR(500)," . //COLUMN ADDED TO STORE EINVOICE DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_eway_bill_no                                      VARCHAR(25)," . //COLUMN ADDED TO STORE E-WAY BILL DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_eway_bill_date                                    VARCHAR(20)," . //COLUMN ADDED TO STORE E-WAY BILL DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_eway_bill_validity                                VARCHAR(25)," . //COLUMN ADDED TO STORE E-WAY BILL DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_request_id                                        VARCHAR(50)," . //COLUMN ADDED TO STORE E-WAY BILL DETAILS @AUTHOR: RENUKA-JULY2022
+        "utin_razorpay_payment_id                               VARCHAR(20)," . //COLUMN ADDED TO STORE ECOM RAZORPAY PAYMENT ID @AUTHOR:MADHUREE-06AUGUST2022
+        "utin_razorpay_order_id                                 VARCHAR(25)," . //COLUMN ADDED TO STORE ECOM RAZORPAY ORDER ID @AUTHOR:MADHUREE-06AUGUST2022
+        "utin_razorpay_signature                                VARCHAR(50)," . //COLUMN ADDED TO STORE ECOM RAZORPAY SIGNATURE @AUTHOR:MADHUREE-06AUGUST2022
+        "utin_tally_voucher_no                                  VARCHAR(10)," .
+        "utin_late_pay_wstg_date                                VARCHAR(12)," .//COLUMN ADDED TO STORE LATE PAYMENT DUE DATE @AUTHOR:RENUKA_SHARMA-06FEB2023
+        "utin_scheme_deposit                                    VARCHAR(20),". //COLUMN ADDED TO STORE SCHEME DEPOSIT BY CHETAN@14JUN2023
+        "utin_scheme_bonus_amt                                  VARCHAR(20),". //COLUMN ADDED TO STORE SCHEME DEPOSIT BY CHETAN@19JUN2023
+        "utin_scheme_bonus_gold                                 VARCHAR(20),". //COLUMN ADDED TO STORE SCHEME DEPOSIT BY CHETAN@20JUN2023
+        "utin_scheme_bonus_silver                               VARCHAR(20),". //COLUMN ADDED TO STORE SCHEME DEPOSIT BY CHETAN@20JUN2023
+        "utin_email_sent_status                                 VARCHAR(2)," .
+        "utin_scheme_gold_valuation                             VARCHAR(20),".
+        "utin_scheme_mkg_disc_per                               VARCHAR(10),".
+        "utin_kitty_id                                          VARCHAR(16),".
+        // 
+        "utin_paytm_order_id                                    VARCHAR(50)," .
+        "utin_paytm_pay_amt                                     VARCHAR(30)," .
+        "utin_paytm_card_no                                     VARCHAR(20),".
+        "utin_paytm_bank_name                                   VARCHAR(50),".
+        "utin_paytm_bank_mid                                    VARCHAR(20)," .
+        "utin_paytm_bank_tid                                    VARCHAR(20),".
+        "utin_paytm_aid                                         VARCHAR(40),".
+        "utin_paytm_pay_method                                  VARCHAR(20)," .
+        "utin_paytm_pay_card_type                               VARCHAR(30),".
+        "utin_paytm_pay_card_scheme                             VARCHAR(30),".
+        "utin_paytm_prod_code                                   VARCHAR(40),".
+        "utin_paytm_values                                      VARCHAR(2056),".
+        //
+        "utin_advance_rate                                      VARCHAR(8),".//added get rate when deposite advance money PRATHAMESH
+        "utin_advance_wt                                        VARCHAR(8),".//added get rate when deposite advance money PRATHAMESH 
+        "utin_panel_name                                        VARCHAR(16),".//added for differenciate payments PRATHAMESH 
+        "utin_gd_total_mkg                                      VARCHAR(16),".
+        "utin_sl_total_mkg                                      VARCHAR(16),".
+        "utin_pl_total_mkg                                      VARCHAR(16),".
+        "utin_gd_value_added                                    VARCHAR(16),".
+        "utin_sl_value_added                                    VARCHAR(16),".
+        "utin_counter_name                                      VARCHAR(32),".
+        "utin_amt_settled_date                                  VARCHAR(16)," .
+        "utin_system_type                                       VARCHAR(16),".//added for diff. entries from device Prathamesh
+        "utin_metal_purity                                      VARCHAR(100),".
+        "utin_order_status                                      VARCHAR(25),".//added for diff. entries from device Prathamesh
+        "utin_order_status_history                            VARCHAR(255),".//added for diff. entries from device Prathamesh
+        "utin_order_date_history                              VARCHAR(255),".//added for diff. entries from device Prathamesh
+        "utin_omecom_prod_type                                VARCHAR(25),".
+        "utin_ship_order_id                                   VARCHAR(25),".
+         // Raw Metal val by Column @Author:JAY-27FEB25
+        "utin_raw_met_val_by				        VARCHAR(16),".
+        "utin_last_column                                       VARCHAR(16))";
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+} 
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

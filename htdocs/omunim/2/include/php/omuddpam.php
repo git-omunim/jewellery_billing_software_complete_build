@@ -1,3 +1,192 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Delete Udhaar Deposit Amount
+ * **************************************************************************************
+ *
+ * Created on 25 Jul, 2012 12:37:14 PM
+ *
+ * @FileName: omuddpam.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+$currentFileName = basename(__FILE__);
+//include 'system/omsachsc.php';
+//require_once 'system/omsgeagb.php';
+include 'system/omsachsc.php';
+include 'ommpemac.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+include 'ommpsbac.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+require_once 'system/omssopin.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+include_once 'conversions.php';
+?>
+<?php
+
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+$ownerId = $_SESSION['sessionOwnerId'];
+$udhaarDepId = $_POST['udhaarDepId'];
+$custId = $_POST['custId'];
+$firmId = $_POST['firmId'];
+$uDepJrnlId = $_POST['uDepJrnlId']; // $uDepJrnlId Added @Author:PRIYA18AUG13
+$uDepAmt = $_POST['uDepAmt'];
+$uDepDate = $_POST['uDepDate'];
+$uSerialNum = $_POST['uSerialNum'];
+if ($udhaarDepId == '') {
+    $udhaarDepId = $_GET['udhaarDepId'];
+    $custId = $_GET['custId'];
+    $firmId = $_GET['firmId'];
+    $uDepJrnlId = $_GET['uDepJrnlId']; // $uDepJrnlId Added @Author:PRIYA18AUG13
+}
+//
+if ($udhaarPanelStatus == '' || $udhaarPanelStatus == NULL) {
+    $udhaarPanelStatus = $_GET['udhaarStatus'];
+}
+if ($udhaarPanelStatus == '' || $udhaarPanelStatus == NULL) {
+    $udhaarPanelStatus = $_POST['udhaarStatus'];
+}
+//
+if ($udhaarDepId == '' || $udhaarDepId == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+    /*     * ***************Start code to add sys log var @Author:PRIYA14APR14*********************** */
+    parse_str(getTableValues("SELECT utin_id,utin_utin_id FROM user_transaction_invoice "
+                    . "where utin_owner_id='$ownerId' and utin_user_id = '$custId' "
+                    . "and utin_utin_id=(SELECT utin_utin_id FROM user_transaction_invoice "
+                    . "where utin_id='$udhaarDepId') ORDER BY utin_id desc limit 0,1"));
+//
+//    if ($udhaarDepId == $utin_id) {
+    $sslg_trans_sub = 'UDHAAR DEPOSIT DELETED';
+    $sysLogTransType = 'Udhaar';
+    $sysLogTransId = $uSerialNum;
+    $sslg_firm_id = $firmId;
+    $sslg_trans_comment = 'Udhaar Serial No: ' . $uSerialNum . ', Udhaar Deposit Date: ' . $uDepDate . ',Udhaar Deposit Amount: ' . formatInIndianStyle($uDepAmt);
+    /*     * ***************End code to add sys log var @Author:PRIYA14APR14*********************** */
+    //
+    //Start Code To Check Udhaar Status
+//    $qSelAllUdhaar = "SELECT utin_status FROM user_transaction_invoice where utin_owner_id='$ownerId' and utin_id='$udhaarId'";
+//    $resAllUdhaar = mysqli_query($conn, $qSelAllUdhaar);
+//    $rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC);
+//    $udhaarStatus = $rowAllUdhaar['utin_status'];
+//    //End Code To Check Udhaar Status
+//    //
+//    $qSelAllUdhaar1 = "SELECT * FROM user_transaction_invoice where utin_owner_id='$ownerId' and utin_id='$udhaarDepId'";
+//
+//    $resAllUdhaar1 = mysqli_query($conn, $qSelAllUdhaar1);
+//
+//    while ($row = mysqli_fetch_array($resAllUdhaar1)) {
+//        $udhaarAmt = $row['utin_cash_amt_rec'];
+//        $udhaarMainEntryId = $row['utin_utin_id'];
+//        $udhaarDepositAmt = $row['utin_total_amt_deposit'];
+//    }
+//    $udhaarTotalDepAmount = ($rowUdhaarDepMon['utin_cash_amt_rec'] + $rowUdhaarDepMon['utin_pay_cheque_amt'] + ($rowUdhaarDepMon['utin_pay_card_amt'] + $rowUdhaarDepMon['utin_pay_trans_chrg']) + ($rowUdhaarDepMon['utin_online_pay_amt'] - $rowUdhaarDepMon['utin_pay_comm_paid']) + $rowUdhaarDepMon['utin_discount_amt']);
+    //echo '$udhaarTotalDepAmount:'.$udhaarTotalDepAmount;exit();
+    //
+//        $qSelAllUdhaar2 = "SELECT * FROM user_transaction_invoice where utin_owner_id='$ownerId' and utin_id='$udhaarMainEntryId'";
+//
+//    $resAllUdhaar2 = mysqli_query($conn, $qSelAllUdhaar2);
+////        $rowUdhaar = mysqli_fetch_row($resAllUdhaar);
+//    while ($row = mysqli_fetch_array($resAllUdhaar2)) {
+//        $udhaarCashRecAmount = $row['utin_cash_amt_rec'];
+//        $udhaarCashBal = $row['utin_cash_balance'];
+//        $udhaarMainDepositAmt = $row['utin_total_amt_deposit'];
+//        $status = $row['utin_amt_pay_chk'];
+//        $OnPurchaseID = $row['utin_utin_id'];
+//    }
+//
+//    //
+//
+//    $udhaarCashBalance = $udhaarCashBal + $udhaarAmt;
+//    $udhaarCashRecAmount = $udhaarCashRecAmount - $udhaarAmt;
+//    $udhaarDAmt = $udhaarMainDepositAmt - $udhaarDepositAmt;
+//
+//    $OnPurchaseCon = '';
+//    if ($OnPurchaseID != '')
+//        $OnPurchaseCon = " OR utin_id='$OnPurchaseID'";
+//
+//    if ($status == 'checked') {
+//        $query1 = "UPDATE user_transaction_invoice SET utin_cash_balance = '$udhaarCashBalance', "
+//                . "utin_cash_amt_rec = '$udhaarCashRecAmount',utin_total_amt_deposit='$udhaarDAmt',"
+//                . "utin_comm='',utin_amt_pay_chk=null ,utin_status='New' "
+//                . "WHERE utin_owner_id = '$_SESSION[sessionOwnerId] ' "
+//                . "and utin_id = '$udhaarMainEntryId' $OnPurchaseCon";
+//    } else {
+//        $query1 = "UPDATE user_transaction_invoice SET "
+//                . "utin_cash_balance = '$udhaarCashBalance',utin_comm='', "
+//                . "utin_cash_amt_rec = '$udhaarCashRecAmount',"
+//                . "utin_total_amt_deposit='$udhaarDAmt'"
+//                . "WHERE utin_owner_id = '$_SESSION[sessionOwnerId] ' "
+//                . "and utin_id = '$udhaarMainEntryId' $OnPurchaseCon";
+//    }
+    //
+    //
+       
+//        if (!mysqli_query($conn, $query1)) {
+//        die("FileName: <br/>Query: $query1 <br/>Error:" . mysqli_error($conn));
+//    }
+    //
+
+    $query = "DELETE FROM user_transaction_invoice WHERE utin_owner_id = '$ownerId' and utin_id = '$udhaarDepId'";
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+
+    update_deposit_money($utin_id, $utin_utin_id,'UDHAAR');
+
+    /*     * ****************************************************************************************** */
+    /*                         Start CODE To Delete Udhaar Journal Entry @AUTHOR:PRIYA18AUG13     */
+    /*     * ****************************************************************************************** */
+    //Start Code to Get All Journal Id for TransId
+    $jrnlId = $uDepJrnlId;
+    $apiType = 'delete';
+    include 'ommpjrnl.php';
+    //
+    $jrtrJrnlId = $uDepJrnlId;
+    $apiType = 'delete';
+    include 'ommpjrtr.php';
+    /*     * ****************************************************************************************** */
+    /*                         End CODE To Delete Udhaar Journal Entry @AUTHOR:PRIYA18AUG13                 */
+    /*     * ****************************************************************************************** */
+    //
+    //
+//    } else {
+//        $msg = "You can not delete this record before you delete ";
+//    }
+//    //******Start code for delete user_transaction enrtry:Author:SANT24MAR17
+//    $query = "DELETE FROM user_transaction WHERE utrans_owner_id = '$ownerId' and utrans_utin_id = '$udhaarDepId'";
+//    if (!mysqli_query($conn, $query)) {
+//        die('Error: ' . mysqli_error($conn));
+//    }
+//    //******End code for delete user_transaction enrtry:Author:SANT24MAR17
+
+    if ($udhaarPanelStatus == 'DeleteFromUdhaarPanel') {
+        header("Location: " . $documentRoot . "/include/php/omuulstp.php");
+    } else if ($udhaarPanelStatus == 'DeleteFromUdhaarAllDetails') {
+        header("Location: " . $documentRoot . "/include/php/omuualdt.php");
+    } else if ($udhaarStatus == 'Deleted') {
+        header("Location: " . $documentRoot . "/include/php/omuudetl.php?custId=" . $custId . "&firmId=" . $firmId . "&divMainMiddlePanel=Deleted");
+    } else {
+        header("Location: " . $documentRoot . "/include/php/omuudetl.php?custId=" . $custId . "&firmId=" . $firmId);
+    }
+}

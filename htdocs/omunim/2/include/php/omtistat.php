@@ -1,3 +1,123 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 6, 2011 12:03:19 AM
+ *
+ * @FileName: omtistat.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if($ownerId == ''){
+    $ownerId = '1';
+}
+
+// All Indian State
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Andhra Pradesh','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Arunachal Pradesh','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Assam','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Bihar','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Chhattisgarh','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Goa','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Gujarat','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Haryana','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Himachal Pradesh','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Jammu and Kashmir','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Jharkhand','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Karnataka','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Kerala','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Madhya Pradesh','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Maharashtra','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Manipur','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Meghalaya','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Mizoram','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Nagaland','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'New Delhi','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Orissa','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Punjab','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Rajasthan','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Sikkim','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Tamil Nadu','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+/***********Start code to add value Telangana in State table @Author:ANUJA10JUL15**************/
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Telangana','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+/***********End code to add value Telangana in State table @Author:ANUJA10JUL15**************/
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Tripura','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Uttar Pradesh','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Uttarakhand','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'West Bengal','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+$qInsertState  = "insert into state(state_own_id,state_name,state_upd_sts,state_comm) values ('$ownerId', 'Other','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertState)){die('Error: ' . mysqli_error($conn));}
+//echo "\nState Inserted Successfully.";
+
 ?>

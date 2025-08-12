@@ -1,3 +1,339 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:
+ * **************************************************************************************
+ * 
+ * Created on Jun 18, 2013 11:00:58 AM
+ *
+ * @FileName: ogbbprbs.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include 'conversions.php';
+?><?php
+//change in file @AUTHOR: SANDY27DEC13
+$transId = $_GET['transId'];
+$status = $_GET['status'];
+$loanId = $_GET['loanId'];
+$mlId = $_GET['mlId'];
+$girviTransId = $transId;
+$selPrinDet = "SELECT * FROM girvi_transfer WHERE gtrans_id='$transId' and gtrans_own_id='$_SESSION[sessionOwnerId]'";
+$resPrinDet = mysqli_query($conn,$selPrinDet);
+$rowPrinDet = mysqli_fetch_array($resPrinDet, MYSQLI_ASSOC);
+$girviId = $rowPrinDet['gtrans_girvi_id'];
+$custId = $rowPrinDet['gtrans_cust_id'];
+$girviUpdSts = $rowPrinDet['gtrans_upd_sts'];
+$girviIntCompoundedOpt = $rowPrinDet['gtrans_compounded_opt'];
+$monthlyIntOpt = $rowPrinDet['gtrans_monthly_intopt'];
+$ROIType = $rowPrinDet['gtrans_ROI_typ'];
+$girviType = $girviUpdSts;
+$girviIntOpt = $rowPrinDet['gtrans_int_opt'];
+$princAmount = $rowPrinDet['gtrans_prin_amt'];
+$prinType = $rowPrinDet['gtrans_prin_typ'];
+$ROI = $rowPrinDet['gtrans_ROI'];
+$girviDOB = $rowPrinDet['gtrans_DOB'];
+$girviNewDOB = $girviDOB;
+$girviFirmId = $rowPrinDet['gtrans_exist_firm_id'];
+$qSelFirm = "SELECT firm_name FROM firm where firm_id='$girviFirmId' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+$resFirm = mysqli_query($conn,$qSelFirm);
+$rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+$girviExFirmName = $rowFirm['firm_name'];
+$loanId = $rowPrinDet['gtrans_trans_loan_id'];
+$girviSerialNo = $rowPrinDet['gtrans_pre_serial_num'] . $rowPrinDet['gtrans_serial_num'];
+$grvRelPayDetails = 'False';
+$omPanelDiv = 'MlLoan';
+//-------------------------------- Start code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+$getMlCode = "SELECT user_unique_code FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id IN (SELECT ml_lender_id FROM ml_loan WHERE ml_id='$loanId')";
+$resMlCode = mysqli_query($conn,$getMlCode);
+$rowMlCode = mysqli_fetch_array($resMlCode, MYSQLI_ASSOC);
+$mlCode = $rowMlCode['user_unique_code'];
+//-------------------------------- End code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+?>
+<div id="relGvPanel" class="textBoxCurve1px trGirvi_Release_panel" style="z-index:1000;"> <!--Style added @Author:SHRI27JUN15-->
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" class="main_link_orange_normal16 paddingTop5">
+                RELEASE PRINCIPAL
+            </td>
+            <td>
+                <div id="statusMsgDiv"></div>
+            </td>
+            <td align="right" valign="top" class="paddingTop5">
+                <a class="links" style="cursor: pointer;"
+                   onclick="relGvPanelHide('<?php echo $transId; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a>
+            </td>
+        <input type="hidden" id="transId" name="transId" value="<?php echo $transId; ?>" />
+        <input type="hidden" id="prinType" name="prinType" value="<?php echo $prinType; ?>" />
+        <input type="hidden" id="loanId" name="loanId" value="<?php echo $loanId; ?>" />
+        <input type="hidden" id="mlId" name="mlId" value="<?php echo $mlId; ?>" />
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div class="hrGold"></div>
+                <div id="ajaxLoadCustGirviTransferDiv" style="visibility: hidden">
+                    <?php include 'omzaajld.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div class="grey-back">
+                    <table border="0" cellspacing="2" cellpadding="2" width="100%" align="center">
+                        <tr>
+                            <td width="200px" align="center" valign="top">
+                                <table>
+                                    <tr>  
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            PRINCIPAL AMOUNT
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle" width="170px" class="textBoxCurve2px margin2pxAll textLabel24Calibri backFFFFFF">
+                                            <?php echo $globalCurrency . ' '.$princAmount; ?>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            RATE OF INTEREST
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="top"> 
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr> 
+                                                    <td align="center" valign="middle" width="130px" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                                        <div id="ROIOption">
+                                                            <?php
+                                                            $selInerestType = $rowPrinDet['gtrans_ROI_typ']; //get interest type @AUTHOR: SANDY13DEC13
+                                                            $panelName = 'MlLoan';
+                                                            include 'olggroaa.php'; //change in filename @AUTHOR: SANDY20NOV13
+                                                            ?>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="200px" align="center" valign="top"> 
+                                <table width="100%">
+                                    <tr>  
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            START DATE
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle" width="130px" class="textBoxCurve2px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <?php echo $girviDOB; ?>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            RELEASE DATE
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" valign="middle" width="130px" class="textBoxCurve1px margin1pxAll textLabel16Calibri backFFFFFF">
+                                            <form name="girviReleaseDateForm" id="girviReleaseDateForm" method="post">
+                                                <?php
+                                                $class = 'textLabel14CalibriGrey';
+                                                $panelName = 'MlLoan';
+                                                include 'olgrtgrd.php'; //change in filename @AUTHOR: SANDY20NOV13 
+                                                ?>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="220px" align="center" valign="top">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr align="left">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            EXISTING FIRM
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <?php echo $girviExFirmName; ?>
+                                        </td>
+                                    </tr>
+                                    <tr align="left">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            TRANS ML LOAN NO
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <input type="text" name="mlLoanId" id="mlLoanId" readonly="true" class="border-no textLabel16CalibriNormalred text_center" title="Click here to view loan details!"   style="cursor: pointer;" 
+                                                   value="<?php echo $loanId; ?>" onclick="getMlLoanDet('<?php echo $loanId; ?>', '<?php echo $mlCode ?>', 'LoanDetailPanel');" />
+                                        </td>
+                                    </tr>
+                                    <tr align="left">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            ML CODE
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <?php echo "$mlCode"; ?>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="220px" align="center" valign="top">
+                                <table border="0" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown"> 
+                                            INTEREST TYPE
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <?php if ($panelName == 'updateTransGirvi') { ?>
+                                            <td align="left" valign="middle" width="120px" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF"><!-- START Select right value PHP code -->
+                                                <?php
+                                                $selInerestType = $rowTransGirvi['gtrans_ROI_typ']; //get interest type @AUTHOR: SANDY15DEC13
+
+                                                switch ($selInerestType) {
+                                                    case "Monthly":
+                                                        $optIntType1 = "selected";
+                                                        break;
+                                                    case "Annually":
+                                                        $optIntType2 = "selected";
+                                                        break;
+                                                }
+                                                ?> 
+                                                <div id="interestTypeDiv" class="selectStyledBorderLess background_transparent">
+                                                    <select id="gtransInterestType" name="gtransInterestType"
+                                                            class="textLabel14CalibriGrey"
+                                                            onchange="changeTROIOpt('<?php echo $documentRoot; ?>', '<?php echo $grvRelPayDetails; ?>', this, '<?php echo $princAmount; ?>', document.getElementById('selTROI').value, '<?php echo $girviDOB; ?>', document.getElementById('ROIOption'), '<?php echo $girviType; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $girviUpdSts; ?>', 'MlLoan', 'updateTROI', '<?php echo $girviTransId; ?>');
+                                                                        return false;">
+                                                        <option value="Monthly" <?php echo $optIntType1; ?>>Monthly</option>
+                                                        <option value="Annually" <?php echo $optIntType2; ?>>Annually</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        <?php } else { ?>
+                                            <td align="left" valign="middle" width="120px" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF"><!-- START Select right value PHP code -->
+                                                <?php
+                                                $selInerestType = $rowPrinDet['gtrans_ROI_typ']; //get interest type @AUTHOR: SANDY15DEC13
+                                                switch ($selInerestType) {
+                                                    case "Monthly":
+                                                        $optIntType1 = "selected";
+                                                        break;
+                                                    case "Annually":
+                                                        $optIntType2 = "selected";
+                                                        break;
+                                                }
+                                                ?> 
+                                                <div id="interestTypeDiv" class="selectStyledBorderLess background_transparent">
+                                                    <select id="gtransInterestType" name="gtransInterestType"
+                                                            class="textLabel14CalibriGrey"
+                                                            onchange="changeTROIOpt('<?php echo $documentRoot; ?>', '<?php echo $grvRelPayDetails; ?>', this, '<?php echo $princAmount; ?>', document.getElementById('selTROI').value, '<?php echo $girviDOB; ?>', document.getElementById('ROIOption'), '<?php echo $girviType; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $girviUpdSts; ?>', 'MlLoan', '', '<?php echo $girviTransId; ?>');
+                                                                        return false;">
+                                                        <option value="Monthly" <?php echo $optIntType1; ?>>Monthly</option>
+                                                        <option value="Annually" <?php echo $optIntType2; ?>>Annually</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        <?php } ?>
+                                        <!--Start code to add div for display arrow if Int change @Author:PRIYA13SEP13-->
+                                        <td>
+                                            <div id="troiIntTypeChangeDiv" style="visibility: hidden" class="girvi_head_blue_right"><img src="<?php echo $documentRoot; ?>/images/right16.png" width="16px" height="16px"></div>
+                                        </td>
+                                        <!--End code to add div for display arrow if Int change @Author:PRIYA13SEP13-->
+                                    </tr>
+                                    <tr align="left">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            SERIAL NO
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <?php echo $girviSerialNo; ?>
+                                        </td>
+                                    </tr>
+                                    <tr align="left">
+                                        <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                            PACKET NO
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                            <?php
+                                            if ($girviPacketNo != '' || $girviPacketNo != null) {
+                                                echo $girviPacketNo;
+                                            } else {
+                                                echo '-';
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <?php if ($girviTokenNo != '' || $girviTokenNo != NULL) { ?>
+                                        <tr>
+                                            <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                                                TOKEN NO
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="120px" align="center" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF">
+                                                <?php echo $girviTokenNo; ?>
+                                            </td>
+                                        </tr>
+                                    <?php } ?>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <div class="hrGold"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" align="right"> 
+                                <div id="transGirviTotalResultDiv">
+                                    <?php
+                                    $girviDOR = date('d M Y');
+                                    include 'olgggtfr.php'; //change in filename @AUTHOR: SANDY20NOV13
+                                    ?>
+                                    <input type="hidden" id="totAmount" name="totAmount" value="<?php echo $totalAmount; ?>" /><!--Variable Added @Author:PRIYA27JUL13-->
+                                    <input type="hidden" id="timePeriodVar" name="timePeriodVar" value="<?php echo $completeTime; ?>" /><!--Variable added by @AUTHOR: SANDY15DEC13---->
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <?php if ($status != 'Released') { ?>
+                                <td colspan="4" align="center">
+                                    <div id="releaseTrGirviButton">
+                                        <a style="cursor: pointer;" onclick="javascript:releaseTransferredGirviOrPrin('<?php echo $documentRoot; ?>');">
+                                            <img src="<?php echo $documentRootBSlash; ?>/images/transferGirvi24.png" alt="Release Transferred Girvi" title="Release Transferred Girvi" />
+                                        </a>
+                                    </div>
+                                </td>
+                            <?php } ?>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,3 +1,494 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: udhaar emi details
+ * **************************************************************************************
+ * 
+ * Created on Nov 13, 2014 5:38:25 PM
+ *
+ * @FileName: omuemdtl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php'; //added @Author:SHRI13JUN15
+require_once 'ommpincr.php'; //added @Author:ANUJA15MAR16
+?>
+<div id="girviDetailsDiv">
+    <div class="textBoxCurve1px backFFFFFF paddingTop2 paddingBott2 paddingLeft2 paddingRight2">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <td valign="top" class="ff_arial fs_14 fw_b paddingTop2">
+                <?php echo $udCounter . '.'; ?>
+            </td>
+            <td>
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td align="left" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="left" valign="top" colspan="10">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>    
+                                                <td align="left" valign="bottom" class="ff_calibri fs_13 brown">UDHAAR AMOUNT:</td>
+                                                <td align="right" valign="middle" class="paddingLeft5 ff_calibri fs_14" title="Click to update udhaar details ! ">
+                                                    <a style="cursor:pointer;" onclick="getUdhaarUpdateDiv('<?php echo $udhaarId; ?>', 'UdhaarWithEMI');"><?php echo $udhaarAmount; ?>
+                                                    </a>
+                                                </td>
+                                                <td align="right" valign="bottom"><div class="spaceLeft30 ff_calibri fs_13 brown">UDHAAR DATE:</div></td>
+                                                <td align="left" valign="bottom"><div class="spaceLeft5"><?php echo $udhaarDOB; ?></div></td>
+                                                <td align="right" valign="bottom" class="ff_calibri fs_13 brown"><div class="spaceLeft30">UDHAAR TYPE:</div></td>
+                                                <td align="left" valign="bottom"><div class="spaceLeft5"><?php echo $udhaarType; ?></div></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top" class="paddingTop4">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>  
+                                                <td align="left" valign="top" class="ff_calibri fs_13 brown fw_b" width="50px">EMI NO</td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13 brown fw_b" width="130px">START DATE</td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13 brown fw_b" width="150px">DUE DATE</td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13 brown fw_b paddingRight5" width="150px">AMOUNT</td>
+                                                <td align="center" valign="top" class="ff_calibri fs_13 brown fw_b" width="50px"></td>
+                                                <td align="center" valign="top" class="ff_calibri fs_13 brown fw_b" width="170px">PAID DATE</td>
+                                                <td align="center" valign="top" class="ff_calibri fs_13 brown fw_b" width="80px">STATUS</td>
+                                            </tr>
+                                            <tr>  
+                                                <?php
+                                                $emiTotalAmt = 0;
+                                                $emiTotAmt = 0;
+                                                $qSelAllUdhaarDepMon = "SELECT * FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_udhaar_id='$udhaarId' order by (udhadepo_EMI_no + udhadepo_id) asc";
+                                                $resAllUdhaarDepMon = mysqli_query($conn,$qSelAllUdhaarDepMon);
+                                                $emiEntryPresent = mysqli_num_rows($resAllUdhaarDepMon);
+                                                $emiPaidTotal = 0;
+                                                $udhaarDepHistory = '';
+                                                $todayDate = date('d M Y');
+
+
+                                                while ($rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDepMon, MYSQLI_ASSOC)) {
+                                                    $udhaarDepId = $rowUdhaarDepMon['udhadepo_id'];
+                                                    $udhaarEMISatus = $rowUdhaarDepMon['udhadepo_EMI_status'];
+                                                    $totalEMIAmt = $rowUdhaarDepMon['udhadepo_EMI_total_amt'];
+                                                    $udEMIAmt = $rowUdhaarDepMon['udhadepo_EMI_amt'];
+                                                    $intAmt = $rowUdhaarDepMon['udhadepo_EMI_int_amt'];
+                                                    $udhaarDepHistory = $udhaarDepHistory . $rowUdhaarDepMon['udhadepo_history'];
+                                                    $emiStartDate = $rowUdhaarDepMon['udhadepo_EMI_start_DOB'];
+                                                    $dueDate = $rowUdhaarDepMon['udhadepo_EMI_end_DOB'];
+                                                    $emiNo = $rowUdhaarDepMon['udhadepo_EMI_no'];
+                                                    $uDepJrnlId = $rowUdhaarDepMon['udhadepo_jrnl_id'];
+                                                    $emiTotalAmt += $totalEMIAmt;
+                                                    $emiPaidDate = $rowUdhaarDepMon['udhadepo_EMI_paid_date'];
+                                                    if ($emiPaidDate != '') {
+                                                        $selDOBDay = substr($emiPaidDate, 0, 2);
+                                                        $selDOBMnth = substr($emiPaidDate, 3, -5);
+                                                        $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+                                                        $selDOBYear = substr($emiPaidDate, -4);
+                                                    } else {
+                                                        $selDOBDay = date(j);
+                                                        $todayMM = date(n) - 1;
+                                                        $selDOBYear = date(Y);
+                                                    }
+                                                    if ($udhaarEMISatus == 'Paid') {
+                                                        $dropDownClass = "bg_green";
+                                                        $emiPaidTotal += $totalEMIAmt;
+                                                    } else if (strtotime($todayDate) > strtotime($dueDate)) {
+                                                        $dropDownClass = "bg_red";
+                                                    } else
+                                                        $dropDownClass = "bg_yellow";
+//                                                    echo $udhaarEMISatus;
+
+                                                    if ($udhaarEMISatus != 'Paid') {
+                                                        $emiTotAmt += $totalEMIAmt;
+//                                                        echo '$emiTotAmt=='.$emiTotAmt;
+                                                    }
+                                                    /**                                                     * ***************** Start code to add condition and query to get previous udhaar deposit EMI status @Author:SHRI13JUN15 ********************** */
+                                                    if ($emiNo == 1) {
+                                                        $prevUdhaDepEMIStatus = '';
+                                                    } else {
+                                                        $uDepId = $udhaarDepId - 1;
+                                                        parse_str(getTableValues("SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$uDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                                                        $prevUdhaDepEMIStatus = $udhadepo_EMI_status;
+                                                    }
+                                                    /**                                                     * ***************** End code to add condition and query to get previous udhaar deposit EMI status @Author:SHRI13JUN15 ********************** */
+//                                                     echo '$emiTotAmt=='.$emiTotAmt;
+                                                    ?>
+
+                                                    <td align="left" valign="top" class="ff_calibri fs_13 paddingLeft20"><?php echo $emiNo; ?></td>
+                                                    <td align="right" valign="top" class="ff_calibri fs_13"><?php echo om_strtoupper($emiStartDate); ?></td>
+                                                    <td align="right" valign="top" class="ff_calibri fs_13"><?php echo om_strtoupper($dueDate); ?></td>
+                                                    <!---------------Start to change code to add code for update udhaar EMI amount @Author:SHRI11JUN15--------------->
+                                                    <td align="right" valign="top" class="ff_calibri fs_13" title='<?php echo ' Amount: ' . $udEMIAmt . ' Interest: ' . $intAmt; ?>'>
+                                                        <div  title="~ Click Here to Update Udhaar Amt ~"
+                                                              <?php if ($udhaarEMISatus != 'Paid') { ?>  style="cursor: pointer;" onclick="document.getElementById('udhaDepAmtUpadateDiv<?php echo $udhaarDepId; ?>').style.visibility = 'visible';
+                                                                              document.getElementById('updateUdhaDepAmt<?php echo $udhaarDepId; ?>').focus();
+                                                                              document.getElementById('updateUdhaDepAmtROIButton<?php echo $udhaarDepId; ?>').style.visibility = 'visible';
+                                                                              document.getElementById('updateUdhaDepAmtCloseButton<?php echo $udhaarDepId; ?>').style.visibility = 'visible';" <?php } ?> >
+                                                            <!--*************************Start code to change use om_round function for amt Author:SANT14Jun16*******************************-->
+                                                            <?php
+                                                            echo formatInIndianStyle(om_round($totalEMIAmt));
+                                                            //*************************End code to change use om_round function for amt Author:SANT14Jun16*******************************-->
+                                                            ?>
+
+                                                        </div>
+                                                        <div id="udhaDepAmtUpadateDiv<?php echo $udhaarDepId; ?>" class="udhdepamt-divide-Upadate-Div" style="visibility: hidden">
+                                                            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                                                <tr>  
+                                                                    <td align="left" valign="top" >
+                                                                        <input id="updateUdhaDepAmt<?php echo $udhaarDepId; ?>" name="updateUdhaDepAmt<?php echo $udhaarDepId; ?>" type="text"
+                                                                               spellcheck="false" class="lgn-txtfield" size="8" maxlength="8" />
+                                                                    </td>
+                                                                    <!---------Start code to add var for sys log @Author:PRIYA02JUL14-------------->
+                                                                    <td align="left" valign="middle" >
+                                                                        <div id="updateUdhaDepAmtROIButton<?php echo $udhaarDepId; ?>">
+                                                                            <a style="cursor: pointer;" onclick="javascript:updateUdhaDepAmtByDivide('<?php echo $documentRoot; ?>', '<?php echo $custId; ?>',
+                                                                                                '<?php echo $udhaarId; ?>', '<?php echo $udhaarDepId; ?>', document.getElementById('updateUdhaDepAmt<?php echo $udhaarDepId; ?>').value,
+                                                                                                '<?php echo $firmId; ?>', '<?php echo $udhaarDOB; ?>', '<?php echo $udhaarPreSerialNum . $udhaarSerialNum; ?>');">
+                                                                                <img src="<?php echo $documentRootBSlash; ?>/images/transferGirvi24.png" alt="Update Udhaar EMI Amount" title="Click Here to Update Udhaar EMI Amount" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                    <!---------End code to add var for sys log @Author:PRIYA02JUL14-------------->
+                                                                    <td align="left" valign="top" >
+                                                                        <div id="updateUdhaDepAmtCloseButton<?php echo $udhaarDepId; ?>" >
+                                                                            <a style="cursor: pointer;" onclick="document.getElementById('udhaDepAmtUpadateDiv<?php echo $udhaarDepId; ?>').style.visibility = 'hidden';
+                                                                                        document.getElementById('updateUdhaDepAmtROIButton<?php echo $udhaarDepId; ?>').style.visibility = 'hidden';
+                                                                                        document.getElementById('updateUdhaDepAmtCloseButton<?php echo $udhaarDepId; ?>').style.visibility = 'hidden';">
+                                                                                <img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" class="margin-5" alt="Update Udhaar EMI Amount" title="Click Here to Close Udhaar EMI Amount Box" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </td>
+                                                    <!---------------End to change code to add code for update udhaar EMI amount @Author:SHRI11JUN15--------------->
+                                                    <td align="center" valign="top" class="ff_calibri fs_13 brown fw_b" width="50px"></td>
+                                                    <td align="center" valign="top">
+                                                        <div class="textBoxCurve1px margin2pxAll backFFFFFF" style="height:23px;width: 170px;">
+                                                            <?php
+                                                            $class = 'textLabel14CalibriGrey';
+                                                            $todayDay = $selDOBDay - 1;
+                                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                            $optDay[$todayDay] = "selected";
+                                                            ?>
+                                                            <div class="selectStyledBorderLess background_transparent floatLeft">
+                                                                <select id="DOBDay<?php echo $udhaarDepId . $emiNo; ?>" name="DOBDay<?php echo $udhaarDepId . $emiNo; ?>" onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                document.getElementById('DOBMonth<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                return false;
+                                                                            }
+                                                                            else if (event.keyCode == 8) {
+                                                                                document.getElementById('udhaarMainAmount').focus();
+                                                                                return false;
+                                                                            }" class="<?php echo $class; ?>">
+                                                                    <option value="NotSelected">DD</option>
+                                                                    <?php
+                                                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                    }
+                                                                    ?>
+                                                                </select> 
+                                                                <?php $optDay = ""; ?>
+                                                            </div>
+                                                            <?php
+                                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                            $optMonth[$todayMM] = "selected";
+                                                            ?> 
+                                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                                            <div class="selectStyledBorderLess background_transparent floatLeft">
+                                                                <select  id="DOBMonth<?php echo $udhaarDepId . $emiNo; ?>" name="DOBMonth<?php echo $udhaarDepId . $emiNo; ?>" 
+                                                                         onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                         document.getElementById('DOBYear<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                         return false;
+                                                                                     }
+                                                                                     else if (event.keyCode == 8) {
+                                                                                         document.getElementById('DOBDay<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                         return false;
+                                                                                     }
+                                                                                     //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                                                     var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                                                     gbMonth = document.getElementById('gbMonthId').value;
+                                                                                     if (gbMonth == 1) {
+                                                                                         if (event.keyCode) {
+                                                                                             var sel = String.fromCharCode(event.keyCode);
+                                                                                             if (sel == 0)
+                                                                                             {
+                                                                                                 this.value = arrMonths[9];
+                                                                                             }
+                                                                                             else if (sel == 1)
+                                                                                             {
+                                                                                                 this.value = arrMonths[10];
+                                                                                             }
+                                                                                             else if (sel == 2)
+                                                                                             {
+                                                                                                 this.value = arrMonths[11];
+                                                                                             }
+                                                                                             // this.value = arrMonths[10];
+                                                                                             document.getElementById('gbMonthId').value = 0;
+                                                                                         }
+                                                                                     }
+                                                                                     else if (event.keyCode) {
+                                                                                         var sel = String.fromCharCode(event.keyCode) - 1;
+                                                                                         this.value = arrMonths[sel];
+                                                                                         if (event.keyCode == 49) {
+                                                                                             document.getElementById('gbMonthId').value = 1;
+                                                                                         }
+                                                                                     } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13" 
+                                                                         class="<?php echo $class; ?>">
+                                                                    <option value="NotSelected">MMM</option>
+                                                                    <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $engMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+                                    } else {
+                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                    }                   
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                }
+                                                                    ?>
+                                                                </select>
+                                                                <?php $optMonth = ""; ?>
+                                                            </div>
+                                                            <?php
+                                                            $todayYear = date(Y);
+                                                            $optYear[$selDOBYear] = "selected";
+                                                            ?> 
+                                                            <div class="selectStyledBorderLess background_transparent floatLeft">
+                                                                <select id="DOBYear<?php echo $udhaarDepId . $emiNo; ?>" name="DOBYear<?php echo $udhaarDepId . $emiNo; ?>" onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                document.getElementById('interestType').focus();
+                                                                                return false;
+                                                                            }
+                                                                            else if (event.keyCode == 8) {
+                                                                                document.getElementById('DOBMonth<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                return false;
+                                                                            }" class="<?php echo $class; ?>">
+                                                                    <option value="NotSelected">YYYY</option>
+                                                                    <?php
+                                                                    for ($yy = $todayYear + 1; $yy >= 1900; $yy--) {
+                                                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                    }
+                                                                    ?>
+                                                                </select>
+                                                            </div>
+                                                            <?php $optYear = ""; ?>
+                                                        </div>
+                                                    </td>
+                                                    <td align="center" valign="top">
+                                                        <div class="ff_calibri fs_13 textBoxCurve1px selectStyledNoBack <?php echo $dropDownClass; ?>" style="height:20px;width: 60px;">
+                                                            <?php if ($paidDiv == 'PaidDiv') { ?>
+                                                                <select disabled="disabled" id="udDepEMIStatus" name="udDepEMIStatus" class=""
+                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                            document.getElementById('selROIValue').focus();
+                                                                                            return false;
+                                                                                        }
+                                                                                        else if (event.keyCode == 8) {
+                                                                                            document.getElementById('DOBYear<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                            return false;
+                                                                                        }"
+                                                                        onchange="return passEMIValues('<?php echo $emiNo; ?>', document.getElementById('DOBDay<?php echo $udhaarDepId . $emiNo; ?>').value, document.getElementById('DOBMonth<?php echo $udhaarDepId . $emiNo; ?>').value, document.getElementById('DOBYear<?php echo $udhaarDepId . $emiNo; ?>').value,
+                                                                                                '<?php echo $totalEMIAmt; ?>', this.value, '<?php echo $udhaarPreSerialNum . $udhaarSerialNum; ?>', '<?php echo $udhaarCustId; ?>', '<?php echo $firmId; ?>',
+                                                                                                '<?php echo $udhaarId; ?>', '<?php echo $udhaarDOB; ?>', '<?php echo $udhaarDepId; ?>', '<?php echo $uDepJrnlId; ?>', '<?php echo $udhaarEMIOccur; ?>', '<?php echo $intAmt; ?>', '<?php echo $udEMIAmt; ?>');">
+                                                                            <?php
+                                                                            $statusTyp = array(Due, Paid);
+                                                                            for ($j = 0; $j <= 1; $j++)
+                                                                                if ($statusTyp[$j] == $udhaarEMISatus)
+                                                                                    $optionStatusTypSel[$j] = 'selected';
+                                                                            ?>
+                                                                    <option value="Due" <?php echo $optionStatusTypSel[0]; ?>>DUE</option>
+                                                                    <option value="Paid" <?php echo $optionStatusTypSel[1]; ?>>PAID</option>
+                                                                    <?php $optionStatusTypSel = ""; ?>
+                                                                </select>
+                                                                <input  id="udDepEMIStatus" name="udDepEMIStatus" type="hidden" value="<?php echo $$udhaarEMISatus; ?>"   />
+                                                            <?php } ?>
+                                                            <select id="udDepEMIStatus" name="udDepEMIStatus" class=""
+                                                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                    document.getElementById('selROIValue').focus();
+                                                                                    return false;
+                                                                                }
+                                                                                else if (event.keyCode == 8) {
+                                                                                    document.getElementById('DOBYear<?php echo $udhaarDepId . $emiNo; ?>').focus();
+                                                                                    return false;
+                                                                                }"
+                                                                    onchange="return passEMIValues('<?php echo $emiNo; ?>', document.getElementById('DOBDay<?php echo $udhaarDepId . $emiNo; ?>').value, document.getElementById('DOBMonth<?php echo $udhaarDepId . $emiNo; ?>').value, document.getElementById('DOBYear<?php echo $udhaarDepId . $emiNo; ?>').value,
+                                                                                        '<?php echo $totalEMIAmt; ?>', this.value, '<?php echo $udhaarPreSerialNum . $udhaarSerialNum; ?>', '<?php echo $udhaarCustId; ?>', '<?php echo $firmId; ?>',
+                                                                                        '<?php echo $udhaarId; ?>', '<?php echo $udhaarDOB; ?>', '<?php echo $udhaarDepId; ?>', '<?php echo $uDepJrnlId; ?>', '<?php echo $udhaarEMIOccur; ?>', '<?php echo $intAmt; ?>', '<?php echo $udEMIAmt; ?>', '<?php echo $prevUdhaDepEMIStatus; ?>', '<?php echo $udhaarEMISatus; ?>');" >
+                                                                        <?php
+                                                                        $statusTyp = array(Due, Paid);
+                                                                        for ($j = 0; $j <= 1; $j++)
+                                                                            if ($statusTyp[$j] == $udhaarEMISatus)
+                                                                                $optionStatusTypSel[$j] = 'selected';
+                                                                        ?>
+                                                                <option value="Due" <?php echo $optionStatusTypSel[0]; ?>>DUE</option>
+                                                                <option value="Paid" <?php echo $optionStatusTypSel[1]; ?>>PAID</option>
+                                                                <?php $optionStatusTypSel = ""; ?>
+                                                            </select>
+                                                        </div>
+                                                    </td>   
+                                                </tr>
+                                                <?php
+                                            }
+                                            $totalUdhaarTotalDepAmount += $emiPaidTotal;
+                                            ?>
+                                            <input type="hidden" value="<?php echo $emiTotAmt; ?>" id="totEMIAmt<?php echo $udhaarId; ?>" name="totEMIAmt<?php echo $udhaarId; ?>"/>
+                                            <tr>  
+                                                <!--//*************************Start code to change use om_round finction for amt Author:SANT14Jun16*******************************-->
+                                                <td align="left" valign="top" class="ff_calibri fs_13 paddingLeft20"></td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13"></td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13"></td>
+                                                <td align="right" valign="top" class="ff_calibri fs_13 border_top_palegrey_1px"><?php echo formatInIndianStyle(om_round($emiTotalAmt)); ?></td>
+                                                <td align="center" valign="top" class="ff_calibri fs_13 brown fw_b" width="50px"></td>
+                                                <td align="center" valign="top"></td>
+                                                <td align="center" valign="top" class="ff_calibri fs_13"></td>
+                                                <!--//*************************End code to change use om_round finction for amt Author:SANT14Jun16*******************************-->   
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <?php
+                                if ($udhaarEMIStatus == 'Paid')
+                                    $udhaarAmtLeft = 0;
+                                else
+                                    $udhaarAmtLeft = $emiTotalAmt - $emiPaidTotal;
+                                ?>
+                                <tr>
+                                    <td align="left" colspan="2" class="paddingTop4 padBott4">
+                                        <div class="hrGrey"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top" class="paddingTop4">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>  
+                                                <td align="right" valign="bottom" class="ff_calibri fs_13 greenFont">UDHAAR AMOUNT LEFT:</td>
+                                                <td align="right" valign="top" class="ff_calibri fs_14 greenFont">
+                                                    <div class="spaceLeft5"><?php echo $udhaarAmtLeft; ?></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top" colspan="4" class="paddingTop4"> 
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>  
+                                    <td align="left" width="60px"  valign="top">
+                                        <h4 class="fw_b">HISTORY -</h4>
+                                    </td>
+                                    <td align="left">
+                                        <div id="ajaxLoadUdhaarDepositMon<?php echo "$udhaarId"; ?>" style="visibility: hidden" align="left">
+                                            <?php include 'omzaajld.php'; ?>
+                                        </div>
+                                    </td>
+                                    <td align="right" width="70px">
+                                        <input type="submit" value="DELETE" 
+                                               onclick="javascript:deleteCustUdhaarDetails(<?php echo $custId; ?>,<?php echo "$firmId"; ?>, '<?php echo $udhaarId; ?>', '<?php echo $udhaarJrnlId; ?>', '<?php echo $udhaarPreSerialNum . $udhaarSerialNum; ?>', '<?php echo $udhaarDOB; ?>', '<?php echo $udhaarAmount; ?>');"
+                                               class="frm-btn-without-border spaceleft20" />
+                                    </td>
+                                    <?php
+                                    $selFormsLayoutDet = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$_SESSION[sessionOwnerId]' and omly_option = 'udhaarNoticeLay'";
+                                    $resFormsLayoutDet = mysqli_query($conn,$selFormsLayoutDet);
+                                    $rowFormsLayoutDet = mysqli_fetch_array($resFormsLayoutDet);
+                                    $udhaarNoticeLay = $rowFormsLayoutDet['omly_value'];
+                                    if ($udhaarNoticeLay == 'udhaarNoticeLay4Inch' || $udhaarNoticeLay == 'udhaarNoticeLayA6') {
+                                        $width = 420;
+                                        $height = 660;
+                                    } else {
+                                        $width = 550;
+                                        $height = 630;
+                                    }
+                                    ?>
+                                    <td align="center" width="30px" valign="bottom">
+                                        <a style="cursor: pointer;" 
+                                           onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/omuunote.php?custId=<?php echo "$custId"; ?>&udhaarId=<?php echo "$udhaarId"; ?>&udhaarAmtLeft=<?php echo "$udhaarAmtLeft"; ?>',
+                                                           'popup', 'width=<?php echo $width; ?>, height =<?php echo $height; ?>, scrollbars = yes, resizable = yes, toolbar = no, directories = no, location = no, menubar = no, status = no, left = 0, top = 0');
+                                                   return false" >
+                                            <img src="<?php echo $documentRoot; ?>/images/udhaarNotice32.png" alt='Udhaar Notice' title='Udhaar Notice' valign="bottom"
+                                                 width="20px" height="20px"   class="paddingTop3"/> 
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="2">
+                            <div class="spaceLeft10 ff_calibri fs_13"><?php echo $udhaarHistory; ?></div>
+                        </td>
+                    </tr>
+                    <?php
+                    $qSelAllUdhaarDepMon = "SELECT udhadepo_history FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_udhaar_id='$udhaarId' order by udhadepo_ent_dat asc";
+                    $resAllUdhaarDepMon = mysqli_query($conn,$qSelAllUdhaarDepMon);
+                    $udhaarDepHistory = '';
+                    while ($rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDepMon, MYSQLI_ASSOC)) {
+                        $udhaarDepHistory = $udhaarDepHistory . $rowUdhaarDepMon['udhadepo_history'];
+                    }
+                    ?>
+                    <tr>
+                        <td align="left" colspan="2">
+                            <div class="spaceLeft10"><h5><?php echo $udhaarDepHistory; ?></h5></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="2">
+                            <div class="spaceLeft10 ff_calibri fs_14 blueFont"><?php echo $udhaarComm; ?></div>
+                        </td>
+                    </tr>
+                    <?php if ($udhaarOtherInfo != '') { ?>
+                        <tr>
+                            <td align="left" colspan="2">
+                                <h4>Other Info -</h4><div class="main_link_blue_Arial"><?php echo $udhaarOtherInfo; ?></div>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                    <tr>
+                        <td align="left" colspan="2">
+                            <div id="udhaarDepositMoneyDiv<?php echo "$udhaarId"; ?>" class="spaceLeft10">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+    </div>
+</div>
+<br/>

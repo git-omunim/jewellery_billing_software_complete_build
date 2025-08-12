@@ -1,3 +1,363 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 26, 2011 1:01:51 PM
+ *
+ * @FileName: omtatrns.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+require_once 'nepal/nepali-date.php';
+
+//Start Code To Check Transaction Table Status
+//$sql = 'DESC transaction;';
+//
+//mysqli_query($conn,$sql);
+//
+//if (mysqli_errno($conn) == 1146) {
+//    include 'omtbtran.php';
+//}
+//End Code To Check Transaction Table Status
+
+$noOfTransactions = $_POST['noOfTransactions'];
+$transactionOwnerId = $_SESSION['sessionOwnerId'];
+$transPreVoucherNo = trim($_POST['transPreVoucherNo']);
+$transPostVoucherNo = trim($_POST['transPostVoucherNo']);
+$transSub = trim($_POST['transSub']);
+//$transAmt = trim($_POST['transAmt']);
+//$transFromAcc = trim($_POST['transFromAcc']);
+//$transToAcc = trim($_POST['transToAcc']);
+$DOBDay = trim($_POST['DOBDay']);
+$DOBMonth = trim($_POST['DOBMonth']);
+$DOBYear = trim($_POST['DOBYear']);
+//$transactionType = trim($_POST['transactionType']);
+$transactionCategory = trim($_POST['transactionCategory']);
+$transFirmId = trim($_POST['transFirmId']);
+$transCustId = trim($_POST['transCustId']);
+$supplierVoucherNo = trim($_POST['supplierVoucherNo']);
+//$transactionDesc = trim($_POST['transactionDesc']);
+$transAmtCrTotal = $transAmtDrTotal = trim($_POST['transAmtCrTotal']);
+//$transAmtDrTotal = trim($_POST['transAmtDrTotal']);
+$transactionDesc = trim($_POST['txtEditorContent']);
+
+$transDRMainAcc = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transToMainAcc'])));
+$transCRMainAcc = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transFromMainAcc'])));
+
+//echo '$transDRMainAcc:'.$transDRMainAcc.'<br/>'.'$transCRMainAcc:'.$transCRMainAcc;
+if ($noOfTransactions != '') {
+    for ($i = 1; $i <= $noOfTransactions; $i++) {
+        $transAmtCr[$i] = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transAmtCr' . $i])));
+        $transAmtDr[$i] = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transAmtDr' . $i])));
+        $transFromAcc[$i] = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transFromAcc' . $i])));
+        $transToAcc[$i] = mysqli_real_escape_string($conn, stripslashes(trim($_POST['transToAcc' . $i])));
+    }
+}
+//print_r($transAmtCrReq);
+//print_r($transAmtDrReq);
+//print_r($transFromAcc);
+//print_r($transToAcc);
+//exit();
+// Start To protect MySQL injection
+$transSub = stripslashes($transSub);
+//$transAmt = stripslashes($transAmt);
+//$transactionType = stripslashes($transactionType);
+$transactionCategory = stripslashes($transactionCategory);
+$transFirmId = stripslashes($transFirmId);
+$transCustId = stripslashes($transCustId);
+$supplierVoucherNo = stripslashes($supplierVoucherNo);
+$transactionDesc = stripslashes($transactionDesc);
+
+$transSub = mysqli_real_escape_string($conn, $transSub);
+//$transAmt = mysqli_real_escape_string($conn,$transAmt);
+//$transactionType = mysqli_real_escape_string($conn,$transactionType);
+$transactionCategory = mysqli_real_escape_string($conn, $transactionCategory);
+$transFirmId = mysqli_real_escape_string($conn, $transFirmId);
+$transCustId = mysqli_real_escape_string($conn, $transCustId);
+$supplierVoucherNo = mysqli_real_escape_string($conn, $supplierVoucherNo);
+$transactionDesc = mysqli_real_escape_string($conn, $transactionDesc);
+// End To protect MySQL injection
+//
+// **********************************************************************************
+// START CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+// **********************************************************************************
+//
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+//
+// ********************************************************************************
+// END CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+// ********************************************************************************
+//
+if ($nepaliDateIndicator == 'YES') {
+    if ($DOBDay != '' && $DOBMonth != '' && $DOBYear != '') {
+        $transactionOtherLangDOB = trim($DOBDay) . '-' . trim($DOBMonth) . '-' . trim($DOBYear);
+        $nepali_date = new nepali_date();
+        $english_date = $nepali_date->get_eng_date($DOBYear, $DOBMonth, $DOBDay);
+        $transactionDOB = trim($english_date['d']) . ' ' . trim(strtoupper($english_date['M'])) . ' ' . trim($english_date['y']);
+    } else {
+        $transactionDOB = '';
+    }
+} else {
+    $transactionDOB = $DOBDay . ' ' . $DOBMonth . ' ' . $DOBYear;
+    $transactionOtherLangDOB = '';
+}
+//
+if ($transactionOwnerId != '' && $transactionOwnerId != NULL && $transSub != '' && $transSub != NULL && $transactionCategory != '' && $transactionCategory != NULL && $transFirmId != '' && $transFirmId != NULL && $noOfTransactions != '' && $noOfTransactions != NULL && $transAmtCrTotal != '' && $transAmtCrTotal != NULL) {
+//check for vch id already exist or not @AUTHOR: SANDY27JAN14
+    $checkVchId = "SELECT transaction_pre_vch_id,transaction_post_vch_id FROM transaction WHERE transaction_own_id='$_SESSION[sessionOwnerId]'";
+    $resCheckVchId = mysqli_query($conn, $checkVchId);
+    while ($rowVchId = mysqli_fetch_array($resCheckVchId, MYSQLI_ASSOC)) {
+        if (($rowVchId['transaction_pre_vch_id'] == om_strtoupper($transPreVoucherNo) || $rowVchId['transaction_pre_vch_id'] == strtolower($transPreVoucherNo)) && $rowVchId['transaction_post_vch_id'] == $transPostVoucherNo) {
+            $error = "This Voucher Number is already exist!!!";
+            header("Location: " . $documentRoot . "/include/php/omtatrnd.php?divMainMiddlePanel=" . $error . "&firmId=" . $transFirmId);
+            exit(0);
+        }
+    }
+
+    // CODE TO GET ACCOUNT NAMES TO STORE IN COLUMN transaction_type
+    $qSelAccount = "SELECT acc_user_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transCRMainAcc'";
+    $resAccounts = mysqli_query($conn, $qSelAccount) or die(mysqli_error($conn));
+    $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+    $strAccTransMain = $rowAccounts['acc_user_acc'];
+
+    $qSelAccount = "SELECT acc_user_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transDRMainAcc'";
+    $resAccounts = mysqli_query($conn, $qSelAccount) or die(mysqli_error($conn));
+    $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+    $strAccTransMain = $strAccTransMain . ' CR - ' . $rowAccounts['acc_user_acc'] . ' DR';
+
+
+    $query = "INSERT INTO transaction (
+		transaction_own_id,transaction_user_id,transaction_pre_vch_id,transaction_pre_vch_firm_id,transaction_post_vch_id,transaction_firm_id,
+                transaction_supp_vch_id,transaction_amt,transaction_sub, transaction_cat,transaction_DOB,transaction_other_lang_DOB,transaction_desc,transaction_type,transaction_upd_sts,
+		transaction_from_cr_acc_id,transaction_to_dr_acc_id,transaction_ent_dat,transaction_panel) 
+		VALUES (
+		'$transactionOwnerId','$transCustId','$transPreVoucherNo','$transFirmId','$transPostVoucherNo','$transFirmId',
+                '$supplierVoucherNo','$transAmtCrTotal','$transSub','$transactionCategory','$transactionDOB','$transactionOtherLangDOB','$transactionDesc','$strAccTransMain','New',
+		'$transCRMainAcc','$transDRMainAcc',$currentDateTime,'NEW_TRANS_PANEL')";
+
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    $staffId = $_SESSION['sessionStaffId'];
+    $queryStaffDetails = "select user_fname,user_lname from user where user_id = '$staffId' and user_type = 'STAFF' and user_firm_id = '$transFirmId' and user_owner_id = '$_SESSION[sessionOwnerId]'";
+    $resQueryStaffDetails = mysqli_query($conn,$queryStaffDetails);
+    $rowQueryStaffDetails = mysqli_fetch_assoc($resQueryStaffDetails);
+    $staffirstName = $rowQueryStaffDetails['user_fname'];
+    $staffLname = $rowQueryStaffDetails['user_lname'];
+    $staffName = $staffirstName.' '.$staffLname;
+    /*     * ****************Start code to add sys log var @Author:PRIYA14APR14*********************** */
+    $sslg_trans_sub = 'NEW DAILY TRANSACTION ADDED';
+    $sysLogTransType = 'Trans';
+    $sysLogTransId = $transPreVoucherNo . $transPostVoucherNo;
+    if($staffId != ''){
+    $sslg_trans_comment = 'Transaction Id: ' . $sysLogTransId . ',  Transaction Date: ' . $transactionDOB . ',Transaction Amount: ' . formatInIndianStyle($transAmtCrTotal) . ',Sub: ' . substr($transSub, 0, 16). ',Staff Name :' . $staffName;
+    }else{
+    $sslg_trans_comment = 'Transaction Id: ' . $sysLogTransId . ',  Transaction Date: ' . $transactionDOB . ',Transaction Amount: ' . formatInIndianStyle($transAmtCrTotal) . ',Sub: ' . substr($transSub, 0, 16);
+    }
+    /*     * ****************End code to add sys log var @Author:PRIYA14APR14*********************** */
+
+
+    $qSelTransId = "SELECT transaction_id FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' order by transaction_id desc LIMIT 0,1";
+    $resTransId = mysqli_query($conn, $qSelTransId);
+    $rowTransId = mysqli_fetch_array($resTransId, MYSQLI_ASSOC);
+    $TransId = $rowTransId['transaction_id'];
+
+    /*     * **********************************************************************************************
+     *  START CODE FOR JOURNAL ENTRY
+     * ********************************************************************************************** */
+    $selAccName = "SELECT acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transDRMainAcc'";
+    $resAccName = mysqli_query($conn, $selAccName);
+    $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+    $drAccName = $rowAccName['acc_user_acc'];
+
+
+    $selAccName = "SELECT acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transCRMainAcc'";
+    $resAccName = mysqli_query($conn, $selAccName);
+    $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+    $crAccName = $rowAccName['acc_user_acc'];
+
+
+    $jrnlOwnId = $transactionOwnerId;
+    $jrnlJId = '';
+    $jrnlUserType = 'Trans';
+    $jrnlTransId = $TransId; // Used to navigate
+    $jrnlTransType = 'Trans'; //Where we hv to navigate
+    $jrnlFirmId = $transFirmId;
+    $jrnlTTDr = $transAmtDrTotal;
+    $jrnlDrAccId = $transDRMainAcc;
+    $jrnlDrDesc = $drAccName;
+    $jrnlTTCr = $transAmtCrTotal;
+    $jrnlCrAccId = $transCRMainAcc;
+    $jrnlCrDesc = $crAccName;
+    $jrnlDesc = $transSub;
+    $jrnlOthInfo = '';
+    $jrnlDOB = $transactionDOB;
+
+    $apiType = 'insert';
+    include 'ommpjrnl.php';
+
+    //START CODE TO GET LAST JOURNAL ID
+    $qSelJournalEntry = "SELECT * FROM journal where jrnl_own_id='$jrnlOwnId' order by jrnl_id desc LIMIT 0,1";
+    // REPLACED JRNL_SINCE TO JRNL_ID @RATNAKAR 13FEB2018 
+    $resJournalEntry = mysqli_query($conn, $qSelJournalEntry);
+    $rowJournalEntry = mysqli_fetch_array($resJournalEntry);
+    $jrnlId = $rowJournalEntry['jrnl_id'];
+
+
+    // CODE TO SET JOURNAL ID IN TRANSACTION TABLE
+    $query = "UPDATE transaction SET 
+            transaction_jrnl_id='$jrnlId'
+            WHERE transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_id ='$TransId'";
+
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+
+
+    /*     * **********************************************************************************************
+     *  START CODE TO INSERT ENTRIES FOR ALL TRANSACTIONS
+     * ********************************************************************************************** */
+    for ($i = 1; $i <= $noOfTransactions; $i++) {
+        if (($transAmtCr[$i] != '' && $transAmtCr[$i] != NULL && $transAmtCr[$i] != 0 && $transFromAcc[$i] != '' && $transFromAcc[$i] != NULL) || ($transAmtDr[$i] != '' && $transAmtDr[$i] != NULL && $transAmtDr[$i] != 0 && $transToAcc[$i] != '' && $transToAcc[$i] != NULL)) {
+
+            // CODE TO GET ACCOUNT NAMES TO STORE IN COLUMN transaction_type
+            $qSelAccount = "SELECT acc_user_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transFromAcc[$i]'";
+            $resAccounts = mysqli_query($conn, $qSelAccount) or die(mysqli_error($conn));
+            $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+            $strAccTrans = $rowAccounts['acc_user_acc'];
+
+            $qSelAccount = "SELECT acc_user_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transToAcc[$i]'";
+            $resAccounts = mysqli_query($conn, $qSelAccount) or die(mysqli_error($conn));
+            $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+            $strAccTrans = $strAccTrans . ' CR - ' . $rowAccounts['acc_user_acc'] . ' DR';
+
+
+            // CODE TO GET INSERT TRANSACTION ENTRY
+            $query = "INSERT INTO transaction (
+		transaction_own_id,transaction_user_id,transaction_trans_id,transaction_firm_id,transaction_from_cr_acc_id,transaction_to_dr_acc_id,transaction_cr_amt,transaction_dr_amt,transaction_type,transaction_DOB,transaction_other_lang_DOB,transaction_upd_sts,transaction_ent_dat) 
+		VALUES ('$transactionOwnerId','$transCustId','$TransId','$transFirmId','$transFromAcc[$i]','$transToAcc[$i]','$transAmtCr[$i]','$transAmtDr[$i]','$strAccTrans','$transactionDOB','$transactionOtherLangDOB','New',$currentDateTime)";
+
+//        echo $query.'<br/>';
+
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+
+            // CODE TO GET CURRENT TRANSACTION ENTRY ID
+            $qSelTransId = "SELECT transaction_id FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_trans_id='$TransId' order by transaction_id desc LIMIT 0,1";
+            $resTransId = mysqli_query($conn, $qSelTransId);
+            $rowTransId = mysqli_fetch_array($resTransId, MYSQLI_ASSOC);
+            $transTransId = $rowTransId['transaction_id'];
+
+
+            /*             * ******************************************************************************************* */
+            /*                       START CODE TO ADD JOURNAL TRANS ENTRY                           */
+            /*             * ******************************************************************************************* */
+
+            $selAccName = "SELECT acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transToAcc[$i]'";
+            $resAccName = mysqli_query($conn, $selAccName);
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $drAccName = $rowAccName['acc_user_acc'];
+
+
+            $selAccName = "SELECT acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$transFromAcc[$i]'";
+            $resAccName = mysqli_query($conn, $selAccName);
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $crAccName = $rowAccName['acc_user_acc'];
+
+            // SET JRTR DESCRIPTION - USED ON JOURNAL TRANS ENTRY UPDATE
+            $transDescCR = 'Sub Trans CR ' . $transTransId;
+            $transDescDR = 'Sub Trans DR ' . $transTransId;
+
+            if ($transAmtCr[$i] != '' && $transAmtCr[$i] != NULL && $transAmtCr[$i] != 0 && $transFromAcc[$i] != '' && $transFromAcc[$i] != NULL) {
+                $jrtrJId = '';
+                $jrtrJrnlId = $jrnlId;
+                $jrtrOwnId = $transactionOwnerId;
+                $jrtrUserType = 'Trans';
+                $jrtrTransId = $transTransId;
+                $jrtrTransType = 'Trans';
+                $jrtrFirmId = $transFirmId;
+                $jrtrTransCRDR = 'CR';
+                $jrtrCrAmt = $transAmtCr[$i];
+                $jrtrCrAccId = $transFromAcc[$i];
+                $jrtrCrDesc = $crAccName;
+                $jrtrDrAmt = NULL;
+                $jrtrDrAccId = NULL;
+                $jrtrDrDesc = NULL;
+                $jrtrDesc = $transDescCR;
+                $jrtrOthInfo = '';
+                $jrtrDOB = $transactionDOB;
+
+                $apiType = 'insert';
+                include 'ommpjrtr.php';
+            }
+            if ($transAmtDr[$i] != '' && $transAmtDr[$i] != NULL && $transAmtDr[$i] != 0 && $transToAcc[$i] != '' && $transToAcc[$i] != NULL) {
+                $jrtrJId = '';
+                $jrtrJrnlId = $jrnlId;
+                $jrtrOwnId = $transactionOwnerId;
+                $jrtrUserType = 'Trans';
+                $jrtrTransId = $transTransId;
+                $jrtrTransType = 'Trans';
+                $jrtrFirmId = $transFirmId;
+                $jrtrTransCRDR = 'DR';
+                $jrtrCrAmt = NULL;
+                $jrtrCrAccId = NULL;
+                $jrtrCrDesc = NULL;
+                $jrtrDrAmt = $transAmtDr[$i];
+                $jrtrDrAccId = $transToAcc[$i];
+                $jrtrDrDesc = $drAccName;
+                $jrtrDesc = $transDescDR;
+                $jrtrOthInfo = '';
+                $jrtrDOB = $transactionDOB;
+                $addExpense = 'AddExpense';
+                $apiType = 'insert';
+                include 'ommpjrtr.php';
+            }
+
+
+
+            // CODE TO SET JOURNAL ID TO CURRENT TRANSACTION ENTRY
+            $query = "UPDATE transaction SET 
+            transaction_jrnl_id='$jrnlId'
+            WHERE transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_id ='$transTransId'";
+
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+
+            /*             * ******************************************************************************************* */
+            /*                         END CODE TO ADD JOURNAL TRANS ENTRY                         */
+            /*             * ******************************************************************************************* */
+        }
+    }
+    if ($transCustId != '') {
+        header("Location: " . $documentRoot . "/include/php/omtatrnd.php?divMainMiddlePanel=TransactionAdded&transactionCat=" . $transactionCategory . "&custId=" . $transCustId . "&firmId=" . $transFirmId . "&addedTransactionPanel=NEW_TRANS_PANEL");
+    } else {
+        header("Location: " . $documentRoot . "/include/php/omtatrnd.php?divMainMiddlePanel=TransactionAdded&transactionCat=" . $transactionCategory . "&firmId=" . $transFirmId . "&addedTransactionPanel=NEW_TRANS_PANEL");
+    }
+} else {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+}
 ?>

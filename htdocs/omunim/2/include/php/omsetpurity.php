@@ -1,3 +1,93 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAwCAAAHLiwxYeMYdWsQWRwMqbBaVTROLZ2YLF6ngGcu+3NKMYuzA7cTYoXlYz7GhMdPXai3DT/JS0g3eraXuTI6Gnty7kOnf+L2ukv9X3ih5Oyxa/Iv/NuNDpK5dQXylzFd00te+g62ZpXwXNyi0hGaDAH70lwFNGgs0k0P1OFgQAk9mM5Z17lLInE2zL0M8vhPhkzerJAPy+VcxOw+QOFf0OG9pWYj0HeTVvGFkLs5mlj/0XUDmo1X5rnArOg1H6mVt8H/69Ji42R9GMhjtlmFRNQXWYciakay7RcKoStESuEH0aB45rywHve4Np3AcJMbiaE6HgpizE945r2oE/I3lh1p39PDZPJSLNus9HGgvFsefH5NCBVE538tVOI/Cmt4REKLTQH0FE+T6emFHJfdTPTKzUED/gP8His1Smd9qHVcgRKKELDM1TAhYMdgwHm3yAjkl9xOo8WfAIqJjKJihqMBfBV6CAdXVYYKQGFkssJb4xuWuhiLIjvoyVGcfBSvX5g8LXeKQa3s8R7NfZu/pzS1coc0THNRlAF/okAB2UHYxaKDKMsdmCfn0JhAC+43wTPxhZ98VZTL4dVfSgvbYayJnwQHCV5G5i84cVC4+qR2+QsuEyEyIR6O85q7gAeIm30bL1tGi2tZ4H8kC/+wy1u8/6zJ3/jdQaNQECv53V1X8OWZChUgQm7MtqtskGMKcV8YyO58xIKYZ3HDzM8s89odtwvrvTH1mw10k5gLV0wS9oNSW74ACjI4agAhVcRD71R1ULx9OVtT92UfzWz5flmButBI12lqO4L3J5rdRyxJmvejKaSmsOX9AY9EQDkGfSkpv7YiNF4jHk3PYP5oOWvtX/XJ24BorwTxZ7sbLhxvGZSVndiZwEoefQJwmLWM9N8K950QgM4sAbwRHjasjxnEL7qT8cV9vuCahx9yf4pxfvdJ+RmBmgrdv1+MauJxlogRcHXWoLSRiOeF2LBym1Bwb+6okAb9dtWntxSsARqDH1VPx1jDZYlWYuVo1gSzBK4rCSqkvteqESflg1DMNxirDsoBmnkkKUA64dW4AJf67H/kJId6PF67megF48lnoObGcyrfoYvAZgpd1JMk+aEs21jsMJYndlMXQdh0wyZgcdTqrFClK1yde+q2tl9gu6eBUrFS9NhSrV1q2Yb2F6jDhB8leWnKHUz4Uj8qOMp5yezgkFk2yXNhI0tac6oc7csI1Ma7THRhSvtXZyW4DylE8KvPSoeQ5Iw8+1eDUGIVuiDz1a0NmXSkCORTb0fadayiKOlqfhSMPnWGPsDgm1S+JweNwm0KB2OQWNEXOCCQPumSWuBFg5hRJ2nIGLe8PIvbuQ0VtaIikDuP5POJgF07jpF/jFf8ufkGJnXhIcvKR+BpLMKEXyi897MU9rLhlvrvZ/V+PQl26/JzjlQNHCgFxTltoqkA2D3GLM7lOcq8BTvCfLG+aiVirS+hThcPRw7BWaRcnEpvVTPicH4FtarUGTYWvYwYa4E1NoU33EVCK9mTDuXpP3NR7EnUFHWhTyqisqIkU2HQAj8zhYOPXW+B5iQirXnH+qxTMdgP/7riziQ1kx5Vlj4z/6gLUf8Xh2pzZVg0YBurPwlhmap43UMx3PHCYp05JrcOEiHRUwcijx/MedF6VSmqGo5oIe8mx6NutpsnfZGKzi/wuoxrs4JuUR+yM3X6tDCtxFKm4tLHBZBUwCSGAoBv9f3ddA1egCDxL1d+HcxEXIt4Buo8LinSEPSjtOF1VxyGjsbJqI4e/l1FCgK998+K2zLNj51QVMRueFOQS3ENN8VF5tuRQ+TJGDtflTzxL8iETQcgJdnI5RYh/Wrl/kNzDyypzfqzlF4PQl+kZeS91nUW+E8lHIcQmOthiQmgRTEau5b7acEDgD8Va7p4BB8eceehlj7IPftitUZJWD1BvDs1YILUKJl07pCshCtNZQZ+0rzP3+4NcRTG0zUKsfQTWPh7Pj441fWPZg+fUzPV8yjZAf9UCeFxkn/2cJvJMuQZsj2Ja7bTD1tAu6YadsQ3Bpo1u1gmoO8jraHzGbzs0/ymm+lDJcvj0rQfeNPPPAqcIgjkXqM89kn4yk/HqZ+Ifs8Z1ggUxlbVDOa7LStVltXa6QkvLFOcDZgvUEJgqJj8gEThOMfllluhIBKMjU9BFWCL4dzNNG5xS7IFarjTQE3u1VWcPd+nQbJTe1dKFKB945f1yd7wsf9SewRcViBYYsVZ2hr+LDEO8f3Q6AsGFR5g0MSquykB+0oUOYlgPctU9QJssMG+u4L+ACi3Xj2xloDF4EdkdNuUNqwsvptV19skUDdtnz1jxr7gTVERM0s63raDqljJoiuCmWN4kFhWeMPGfBiX6IlSWVo/Ob3+sFPSg4IFcYzHdJNIMYb7KPnK67+Txc3p9T4WsFfl6ITBA4mnDiA2TZ5s02Svsc1S+SSzEb8JzmE+ubJOK7U1B50yKadxdM6xUpt+j+eUG0eRNEYLbNT6vZU8N611vo3V9bXlOE2koX/Ybk49/xN5VavbgODnqGkXs4mUbBZ4OknbKsJ6v/+KNmWZc6XGdr73Qmr6nnRu4yhDRTGJwVUBaZdRlfl8uA0KvES9ettSjdNrvZqBSt0ft43yG0XhApSWdYszmUaN7m5+B6Fvu5Q4twLxeHIyuAr1FZ6X/bEtyajAfX3rPI5sZo7O3HjwkxCcmJ8Ag3Rfn58hEtZq2Wji4LhGE8cw390RYNbjK23C7VuGH1RrS8+OKsndrK6Kt909JyfrkwJTFV19+hOGxQ1KDnvcXu4WEwwLI4AAAAA');
+<?php
+/*
+ * ***********************************************************************************************
+ * @tutorial: SET PURITY, LAB CHARGES, WASTAGE ACCORDING TO USER AND ITEM CODE @PRIYANKA-22AUG18
+ * ***********************************************************************************************
+ * 
+ * Created on AUG 22, 2018 18:52:00 PM
+ *
+ * @FileName: omsetpurity.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 2.6.86
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-22AUG18
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+//
+?>
+<?php
+//
+$itemCode = $_REQUEST['itemCode'];
+$userId = $_REQUEST['userId'];
+//
+// START CODE SET PURITY, LAB CHARGES, WASTAGE ACCORDING TO USER AND ITEM CODE @PRIYANKA-22AUG18
+//
+$qSelect = "SELECT sttr_purity,sttr_wastage,sttr_lab_charges,sttr_lab_charges_type,sttr_item_category,sttr_item_name "
+         . "FROM stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+         . "and sttr_item_code = '$itemCode' and sttr_transaction_type = 'PURCHASE' "
+         . "and sttr_user_id = '$userId' and sttr_indicator NOT IN ('stockCrystal') "
+         . "order by sttr_id desc LIMIT 0,1";
+//
+$resultQuery = mysqli_query($conn, $qSelect);
+//
+//echo '$qSelect == '.$qSelect.'<br />';
+//
+$row = mysqli_fetch_array($resultQuery, MYSQLI_ASSOC);
+//
+$sttr_purity = $row['sttr_purity'];
+$sttr_wastage = $row['sttr_wastage'];
+$sttr_lab_charges = $row['sttr_lab_charges'];
+$sttr_lab_charges_type = $row['sttr_lab_charges_type'];
+$sttr_item_category = $row['sttr_item_category'];
+$sttr_item_name = $row['sttr_item_name'];
+//
+//echo '$sttr_purity == '.$sttr_purity.'<br />';
+//echo '$sttr_wastage == '.$sttr_wastage.'<br />';
+//echo '$sttr_lab_charges == '.$sttr_lab_charges.'<br />';
+//echo '$sttr_lab_charges_type == '.$sttr_lab_charges_type.'<br />';
+//echo '$sttr_item_category == '.$sttr_item_category.'<br />';
+//echo '$sttr_item_name == '.$sttr_item_name.'<br />';
+//
+$count = mysqli_num_rows($resultQuery);
+//
+//echo '$count == '.$count.'<br />';
+//
+if ($count == 0) {
+    //
+    parse_str(getTableValues("SELECT sttr_purity, sttr_wastage, sttr_lab_charges, sttr_lab_charges_type,"
+                           . "sttr_item_category, sttr_item_name "
+                           . "FROM stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                           . "and sttr_item_code = '$itemCode' and sttr_stock_type = 'wholesale' "
+                           . "and sttr_indicator IN ('stock','AddInvoice') "
+                           . "order by sttr_id desc LIMIT 0,1"));
+    //
+    if ($sttr_item_category != '' && $sttr_item_category != NULL) {
+        $count = 1;
+    }
+}
+//
+//
+if ($count > 0) { ?>
+        <img src="<?php echo $documentRootBSlash; ?>/images/abx-t.png"
+         onload="purItmSetPurityDetails('<?php echo $sttr_purity; ?>', '<?php echo $sttr_wastage; ?>', '<?php echo $sttr_lab_charges; ?>', '<?php echo $sttr_lab_charges_type; ?>', '<?php echo $sttr_item_category; ?>', '<?php echo $sttr_item_name; ?>');"/>
+<?php
+}
+//
+// END CODE SET PURITY, LAB CHARGES, WASTAGE ACCORDING TO USER AND ITEM CODE @PRIYANKA-22AUG18
+?>
+

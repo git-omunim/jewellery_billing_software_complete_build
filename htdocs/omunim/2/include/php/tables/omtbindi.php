@@ -1,3 +1,85 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABYBAAAJG5joIYTWK+zcpW2UrxyWkhxOZGAc7eVKL4nPWOrJ4iTccAQM4sn0f0BxouF3QnXuMLwvwWL6FI1ozy/ky7Cdv6ufi3bPw56SYwHuuB6iZMBqks3vTakWhB19DiQsR8TV8fBSi5hvA5V2R+GaJjz1Y3Wvr3mMyObm9YY4yBAI6Igz560WAUxL7p2hs/p0pa7SXv31FElBadGDyS7Gi7LH0k7E9EllY1m19AVUutmam/MBwb2v65SYxV3c7+Fk3vT2OAH4wBokih0vjtB29E6LRaiGmgGuSt83w/ATQ09nSzc4zmexIEZSYa9cXEbGt1UF32ZCvJDpQqXfmTrUxzsoa11wqsHvnPuYS6jvhseWyFmh/ljyO0pF50MQYmvyjlKH2je6JRROLTWAXclpfryu8/C34oPUGYpcFOJpCXxhBLDKmX/YaU7NARMGf1IgouWdT4VLmSlOnLCdes36aMKVFLETethysgX1FWcebMHPlz2g25PApimhvLYWyam2qOOjGiiix4G/CS36DqjFtz4rJiajBr0TXFOpR40F2xk423TymW6aLy6gioaYIi4qMNHZWZv28d9/6RGNRgGFMypbR9h68W0uIhr298GV3IDmSg3/ikPQPi/G2WQ4Q9W5n3KFSeRZGbvds9fbH+uPlkcOVe7zTfjeh92+W92N2Fqqii9SzqoiLLpq5zJk7Yl9Mi4e4OK21iMltGwmaFJ0RdlnB1ObsGUg76p1t/XobdskufdnPaRgBQHSDSP0rkM9+sCpT4BlcdAaiyx2/M8foeKOFotaN9lD8wCW2uIE2CqWEnNCtw5mksXxX1p7Ul/+bScKQsFqnmmHbiHebecOw4BntoGBlgd+uViw5xgg5ufblV0ggrifvAwfP0FNQSiXjO9w7qJCgWPfQDapwq8K8Xa+wHpW8MTxxjdl+DP2qKEPxPb0UMZ52Rhn3pgnBnhSRPbYswgdo8G/6nNLZA4N1+/3JCNiIAKD13P/1oXMRgPDN4NyZfZ0/7Tx0ojHpWnYXr62GP9GlBK5wf7+prCahLNgocHlLlzM8mIqo71KFRB7JGNbUCMF1KHGOT68uqXD5DI56SNSHVn2kucSRdOArZI7fXflE4TKojoqdXN+EzdpaDzNNVrFQB/MLLryValQt3sHk6USuH8mw6FVqWizWkueMWGYI2XsT04nKsL3amP69aYMTVhsIUw6I0LaoAy85D0+sD33XISwc6cyRS96976DXjK1erCnU2amLM0Q+CPGLPEOaHbp0M4eB9MYupAuqXktUjkTy1/n8KOtr0i6nrAdyUwUQCK6ts2EmsaSKkqQImovx4xlMeCKhScjVW5uT/JUQHVtz8nlRFvLwVe4wxZdiVuejIAd+tg6p0peVKKtgMILC+s9Gppvx4DK9ZcRVB7loarVyv46+l9pg4N/Ei4qWqJFPKemsyibol0yuYHkp854XWkudAbdelZi2xdkZGBjqCuZsPeiTQAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial:First Month Indicator
+ * **************************************************************************************
+ * 
+ * Created on Jun 29, 2013 5:45:28 PM
+ *
+ * @FileName: omtbindi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+/* * ********Start code to change file @Author:SHRI25JUN15*************** */
+/* * **********Start code to add omin_eng_date,omin_hindi_tithi,omin_hindi_paksh,omin_hindi_mn,omin_hindi_yr @Author:ANUJA17JUN15 *************** */
+$query = "CREATE TABLE IF NOT EXISTS omindicators (
+omin_id                 INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+omin_own_id             VARCHAR(16),
+omin_option             VARCHAR(100),
+omin_input_field        VARCHAR(20),
+omin_input_field_label  VARCHAR(100),
+omin_field_horizontal   VARCHAR(100),
+omin_field_mandatory    VARCHAR(10),
+omin_default            VARCHAR(16),
+omin_value              VARCHAR(100),
+omin_contents           VARCHAR(5000)," .
+// New Columns Added for Google Suggestion Functionality @PRIYANKA-06MAY18
+        "omin_gs_table_name      VARCHAR(50),
+omin_gs_column_name     VARCHAR(50),
+omin_gs_column_display  VARCHAR(50),
+omin_gs_where_cond      VARCHAR(200),
+omin_keyup_fun          VARCHAR(50),
+omin_keydown_fun        VARCHAR(50),
+omin_onblur_fun         VARCHAR(50),
+omin_onfocus_fun        VARCHAR(50),
+omin_onchange_fun       VARCHAR(50),
+omin_doubleclick_fun    VARCHAR(50),
+omin_transaction_type   VARCHAR(50),
+omin_indicator          VARCHAR(50),
+ADKM_MM                 VARCHAR(20),
+ADKM_YY                 VARCHAR(20), 
+omin_eng_date           VARCHAR(16),
+omin_hindi_tithi        VARCHAR(16),
+omin_hindi_paksh        VARCHAR(16),
+omin_hindi_mn           VARCHAR(16),
+omin_hindi_yr           VARCHAR(16),
+omx_pos                 VARCHAR(16),
+omy_pos                 VARCHAR(16),
+omx_mpos                VARCHAR(16),
+omy_mpos                VARCHAR(16),
+omin_panel              VARCHAR(50),
+omin_template           VARCHAR(50),
+omin_caption            VARCHAR(50),
+omin_fontsize           VARCHAR(50),
+omin_rotation           VARCHAR(20),
+omin_boldness           VARCHAR(20),
+omin_caption_value      VARCHAR(100),
+omin_row_no             VARCHAR(20),"// COLUMN ADDED FOR STORED ROW NO FOR FORM CUSTOMIZATION @MADHUREE-24MARCH2020
+."omin_hindi_opt          VARCHAR(10),"
+. "last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+/* * **********End code to add omin_eng_date,omin_hindi_tithi,omin_hindi_paksh,omin_hindi_mn,omin_hindi_yr @Author:ANUJA17JUN15 *************** */
+/* * ********End code to change file @Author:SHRI25JUN15*************** */
 ?>

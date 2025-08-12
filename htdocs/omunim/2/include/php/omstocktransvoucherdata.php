@@ -1,3 +1,149 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAgCwAA19yyIQG03+xoSsL5J6cvN1S4LROzKjIK0W1Gg4EVHioYgJiIGcldAXjR5ocKbzzQaUqup0WuIQeu/8idA1ISujCLQZi8edA9LF5UJ4uEwvNLbK7Onn4i3bnMb+s7oaqSImpFdhyYHAQq1NEGWYto5zCRjj3Unt29RqyEbZLCj/d6Ap3jAWDW1VQR+G8wrjE/zJpiI4w2xbUmAHKabFsjlM1bzeQaVm1Ovz62Ma4BbaEfL78t53aFmNkjiMzRC6/y3MrrE6IiKFv6lwHoaRsnfMvcpnchz4vpH/M4YWjvX6iaRXOA/KXhGcmypSZjfuD/ADLp+jhdUlBqPZR8uV4CW2cbjSd/yPJJfyuJ5SMuQQxC1ElfxaQcdVSY1g45PpKv5BJ+zQdVoJWFK+vgTh0G/PO5+3ea9FuLXAaa+A1MonvtCVY2RITX0Tj/quw4IU0LDaSBcd4KrrCsKYNVgT4JTPoW85LvO0spuciLnhQ4wvxPKoRScv2El1fp0RyBFf0vw1f6G1AqNZLWp4Hcc2O4UbkRrLOaRTmK5JtUWvU7BKZzA0fJ4MYeLadY4sD3VFXD7bjSfsBPIbKiTRbLDdrcCT4nAhv1H4ZVpIuqSIx69xqd/eh+4xgpBWmCny+csMvXy5xj+o9dxUy83F9QhgjzLlPZwgeAhofxPSCyiwmzW5Kpc2Dr4HCo333xrxCzA/l0BkdUWxrI7znFiDxLtCe3mNXNJDx0sNuYSryVaK91CCYb3zVeAeFpQTDtqifOdvIFwicKt9J4n/XhQmzYqzViJMfS1zXp0x1o40xVRJfkhzugyzZbI1Nc4eWuSXznCn33f3CRBynYhoNEJ2kN8o0dhfVm4s6kYsWacVVaYCrDToFnO3r4whS/aMIDyDflKXIqUP22rvJMpbSbhff+lxb5cQpdP/VrKJtNtp+BDZlyWyXgS6xbBy2Wr6cUBzOgNzYeqb83YDjITNBCuS75kvBOaIzKP1bYU1XiCDmXph/OfHxdPJUg9YmznVgm7nIyrltnyaFsvXg9X2nwx9iSfOL1ZTvfwdYgzOZTSVk4nzUvlpfTgGyMG6ljHF4Dx8FfItKC9U6eYppZZlN2qv93924RvoRu45z4p2gRQwE4h3sEYGsS48lEslj4lrL2QWl+J0GeKHDlwdyKhdaky7b6KMoSvoNLIHUcvYA0faOQ5u+60jl0xoCMIvqKUrHjLvjxHQ+P2MdxhmdUw3aoqNtItMgWWf3f4pqLFPkImpS/X+Af6pB2u6/q9bDUsw6MABGRkQVMnzzMvifk4Z6dQ1ZartBgIwz22hW2PC4KbpfLpJC8r22Lx/J44PkcaSmDBbgEGtAn64+EyGuh9c17WLNQqv8VZ5I3BH5VJacRC9c0ldyqDjxC9Bn4RXwd/9a3rbYfVnRDZc8Wcth2A4Cl/ck9Z0jYHhd4D6Xy0qKXSdCbTMz4OpLyh9z0/3W+QtDbwiWPCwjJtnXB5UwWIfYX95cvhVP1b6IRdD+WpzKhzEF1LFFZr3dYgc1ji2k2/C3s6F/mye2UubPZVQR2GNpQ9iMoFWAn5JQhtn5pXqx7Bbo69JQene9tdUosDSACNWnTyDeSzWA24p2ZOHdGodPMD5/YIn4NSFLivSy6j8t3VUEso5GDQt5+0Y1SfImTsJbxr2PsPKhco9Q1Rtll+F/iLWJnKiHQzpjS9Lm5BF4dExg/FL5yEz+WeZoJoeTtKGHNd3CpwN/uWf2fJqs49/DlLxXr34vl63Wj3TBMYY6Of6DcF3WDaD/CFERdJ9uJCVwEtqBHJQHUT/zFCuu3A4TET2aPPq1cxKYTxQp0w05mE6Oh9w4aiziugV1EB2pic2MjccKCTjXmQ08x7GwswnZQSoZabqYMbGQTndTxsqBu1GDKyK8oGmMDVQzlpNRu8JIADJQDhV/ktP+zagGT1tyuwMQ+JzTYKT7yllqAMAW6NUqLgnMXtbKFGCMkDP1sLpNNqFtiErI9H7hFf90Azd5CfVpSF4/MqhRrYwHko0Lcrg+kvzYXNWzA8pNwBFd1Y8FKudYlDXW6dNDsUMavEkUOP8CoAwR3FNvZSEEKxUQFQ3IoYRk4W4V6fT1nsOVMxNnKhnhzZvGmmh4Kw4XaHWzfXW0rkNDBLqGiZegcC7tdh0Lk1qj6Z6HgiIRVHh1Rv8bTJ9ZFobQjoH8nHpJrCrGquGPJPf9tqzFOO1m1DtPz/PK6bE7mprpauZnYAtWVQVuoKmDLirOq1/EMo5VBq2Dee0ke+9BBM+2veSuftyzqS1Z8+temLNrtGQwjiNFFKPVaNiNTfNxPSgxEtFMW9u8FrxfvWFTs7/NRD9S+7LMrEzol66svlmf982FoKyOj+cTA2svdRxZre7Azhgv3YScsIxr4ZtCROPXh2EJ8KCge+sPR4aWd2mw1hn7H7n1PqEXm3iREL133YwXg6n7Uw/U7WjhRzb9ghRIQjC9H1lh9VGLSsiR/kUNYEiV854WkVN9sMFs2Eri3Bj+Ntu2dviXLEfoZqpmavkg8nOd91DPEbOkbH7imXiWZcXIVGV9na0K09/4nHGHMAdLizrB4ZILpxbLhhbiRJsWeN0jTnVb7Qyr7cxF6Q6zk6XfYoysDP35gD0Juo2Z2h5UcbHCeTu6UXqiBKxpsaaJqsxAiA2rQwXoH4spZetTY6bzRzHygATKnvmlMnnvD8qcfdi/WrrWpBFoqRzLeYk9bHyqHo/lmhsuGQi6+gXR7N0/4aI28J8vNBtgn0Vv4TtuFaMbVlYXltGwV29aW5NCk2p/8eHq4z2pZNItvlv46YWAUYdP5e3V5zE+StPyegPN5fK8oB8Zt/xg4nrvu7isUsCw2cryHN1lUUV+KEnNS6nivpNn8hrB9oyJrmj4tz2ous+YUVLgZiLpyOYdLkECJEoMrNPWZGa1H5gT1gCFgkzEqp9stAXMKCEG1H17dB9amZZWeHLBCindULEDcmjRlWXJ/TqW1thfgaFGT8Cl61u4Mc4sQCIwdoRRHHA8U/lQGerYFAdXrBbuZ8wXOjgMckJ/D+tb46NQfbSfIcDlhPs555DJFwlZgUOcu37kOhqg9art38efkVyjh26JJWXoif4eMHznFuG53Bh0EIWSlA479jY7eguIDQOsnkCY1r/r0M81DYk8CPiWthy2uBfLiuvdpEX4vHw/oVLawsQNBU0m7dFOVUbiQtQ3lslP9Tsf+NwFdwWYd2dsMkdqHJuWachKUi7rMrYPnCgOnp5r7hum+DdOpc/I2rc2bamIwPwvZ9ymoJdHaPowPFUd3RbruNYqS0LlhFoXxr30E7Y2XqQmuirURPAdnx6hsFNpOvN2IJW6q2+pjjXEbOrk+iRu3d7USJIaIbI94FX6ZAl18o4KK1AdgtaaSJN0BHEf5wwDQiGSbtBI4m4iVcJdlVopxo3sDU69vL88PtWggnQhV8FDn1ovd9ZCYszYuw2EY8kVvNXN6nYQJAVLBn7+nxd68Ebzltq73JkyABfk45c0GOPJ/w6RFZLeBd7ZeH7LWgZlp6rySYWrQffGU9M0mCdrul4IXtK6tuNKjlzozyu9b1EFBOHiMvaVXaQqHDwj8ZPQ0OO7bMbZ0OrJaLxuaT55B1xwiaZxxElODER9FRJVAV9uz2bLqonCsbgYTWsajCplIhnIw2iafpmkCHovm/f6rZ1nFh5M5Z2I+oP/BFgRMp1IDpysRV6Kneq5IEzXGWto+zmoPickN+LY2VC2I0EcfumUCPObbdijJyjTwmE6ZN1P48s26oH25Uyl0zbh3MSekEc2Sif+r/S8lWy9p+AAAAAA=');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: STOCK TRANSFER VOUCHER DETAILS LIST  @Author:DNYANESHWARI 10SEPT2024
+ * *************************************************************************************************
+ *
+ * Created on SEPT 10, 2024 01:33:00 PM 
+ * **************************************************************************************
+ * @FileName: omstocktransvoucherdata.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.7.164
+ * @version: OMUNIM 2.7.164
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:  @Author:DNYANESHWARI 10SEPT2024
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software OMUNIM 2.7.164
+ * Version: OMUNIM 2.7.164
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<div id="stockTransVoucherDataDiv">
+    <?php
+    //
+    $voucherCode = $_REQUEST['voucherCode'];
+    $transferedFirm = $_REQUEST['transferedFirm'];
+    //
+    // ADDED CODE FOR PANEL HEADING 
+    $headingNameForPanel = 'STOCK TRANSFER VOUCHER LIST';
+    include $_SESSION['documentRootIncludePhp'] . 'omStockTransferReportAllButtons.php';
+    //
+    $qVoucherDetails = "SELECT sttr_item_code,sttr_item_category,sttr_item_name,sttr_quantity,sttr_gs_weight,
+    SUBSTRING_INDEX(SUBSTRING_INDEX(sttr_trans_date, '#', position), '#', -1) AS sttr_trans_date,
+    SUBSTRING_INDEX(SUBSTRING_INDEX(sttr_stock_trans_history, '#', position), '#', -1) AS sttr_stock_trans_history
+  FROM (
+    SELECT
+        sttr_id,
+        FIND_IN_SET('$voucherCode', REPLACE(sttr_voucher_history, '#', ',')) AS position,
+        sttr_item_code,
+        sttr_trans_date,
+        sttr_stock_trans_history,sttr_item_category,sttr_item_name,sttr_quantity,sttr_gs_weight
+    FROM stock_transaction where sttr_indicator NOT IN('stockCrystal')
+) AS temp
+WHERE position > 0";
+    //
+    $resVoucherDetails = mysqli_query($conn, $qVoucherDetails);
+    //
+    ?>
+    <div style="text-align:end;">
+         <a style="cursor: pointer;cursor: pointer;height:30px;line-height:24px;background: #D8F6D8;color: #006400;border-radius: 5px !important;width: 70px;font-size: 14px;font-weight: 600;border: 0;" class="btn btn-xs default" onclick="stockTransferAllReportFunc('stocktransmainvoucherlist');">
+                                <i class="fa fa-angle-double-left"></i> BACK
+                            </a>
+    </div>
+    <div style="font-size: 16px;color:green;text-align:center;margin:0 0 10px;font-weight:600;">VOUCHER CODE - <?php echo$voucherCode ?></div>
+    
+    <table class="brdrgry-dashed" style="border:1px dashed #267810;" width="70%" cellspacing="0" cellpadding="5" align="center">
+        <tbody>
+
+            <tr class="height28" style="background:#edffe8">
+                <td class="brwnCalibri12Font border-color-grey-rb" title="VOUCHER CODE" width="50px" align="center">
+                    <div class="spaceLeft5">PROD CODE</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="50px" align="center">
+                    <div class="spaceLeft5">DATE</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="50px" align="center">
+                    <div class="spaceLeft5">ITEM NAME</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="50px" align="center">
+                    <div class="spaceLeft5">ITEM CATEGOTY</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="50px" align="center">
+                    <div class="spaceLeft5">QTY</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="50px" align="center">
+                    <div class="spaceLeft5">GS WT</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" title="TRANSFERRED FIRM" width="50px" align="center">
+                    <div class="spaceLeft5">PREVIOUS FIRM</div>
+                </td>
+                <td class="brwnCalibri12Font border-color-grey-rb" style="border-right:0;" title="TRANSFERRED FIRM" width="50px" align="center">
+                    <div class="spaceLeft5">TRANSFERED FIRM</div>
+                </td>
+            </tr>
+            <?php while ($rowVoucherDetails = mysqli_fetch_array($resVoucherDetails)) { ?>
+                <tr style="background:#fff;">
+                    <td class="border-color-grey-rb" style="font-weight: 550;" align="center">
+                            <div><?php echo $rowVoucherDetails['sttr_item_code']; ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                        <div><?php
+                            $transDate = $rowVoucherDetails['sttr_trans_date'];
+                            $transferdDate = explode('-', $transDate);
+                            $date = $transferdDate[0];
+                            echo $date;
+                            ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                        <div><?php echo $rowVoucherDetails['sttr_item_name']; ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                        <div><?php echo $rowVoucherDetails['sttr_item_category']; ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                        <div><?php echo $rowVoucherDetails['sttr_quantity']; ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                        <div><?php echo $rowVoucherDetails['sttr_gs_weight']; ?></div>
+                    </td>
+                    <td class="blackCalibri12Font border-color-grey-rb" title="" align="center">
+                        <div class="spaceLeft5"><?php echo $rowVoucherDetails['sttr_stock_trans_history']; ?></div>
+                    </td>
+                    <td style="border-right:0;" class="blackCalibri12Font border-color-grey-rb" title="" align="center">
+                        <div class="spaceLeft5"><?php echo $transferedFirm; ?></div>
+                    </td>
+
+                </tr>
+                <?php
+            }
+            ?>
+            <tr></tr>
+        </tbody>
+    </table>
+</div>
+

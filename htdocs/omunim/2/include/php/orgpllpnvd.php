@@ -1,3 +1,503 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Sep 24, 2014 8:27:01 PM
+ *
+ * @FileName: orgpllpnvd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+include 'olgglpad.php'; // include file Author:GAUR31MAY16
+$givDateColumn = addslashes($givDateColumn);
+$givDayColumn = addslashes($givDayColumn);
+$searchColumnStr = addslashes($searchColumnStr);
+
+//CHANGE THE PRIN AMT AND CITY WIDTH TO 90 TO 70 AND ADD 60 OTHER INFO AUTHOR:GAUR02JUNE16
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpSno' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="left"  class="h7 border-right-bottom" width="75px"><!--Change in width @AUTHOR: SANDY29DEC13---->
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="left">
+                        <input id="sNo" type="text" name="sNo" placeholder="S.N."
+                               value="<?php
+                               if ($searchColumnName == 'girv_pre_serial_num@girv_serial_num')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'S.N.';
+                               ?>" 
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('sNo').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_pre_serial_num@girv_serial_num', document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('sNo').value = '<?php
+                               if ($searchColumnName == 'girv_pre_serial_num@girv_serial_num')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'S.N.';
+                               ?>';
+                                       }"
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('sNo').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_pre_serial_num@girv_serial_num', document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="1" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial"/>
+                    </td>
+                    <td align="right">
+                        <a style="cursor: pointer;" title="Click To View Girvi By Serial No"
+                           onclick="sortLoansListPanel('<?php echo $documentRoot; ?>', 'girv_pre_serial_num asc,girv_serial_num', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>')">
+                            <?php if ($sortKeyword == 'girv_pre_serial_num asc,girv_serial_num') { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpPrinAmt' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="left" class="h7 border-right-bottom" width="70px"><!-- change in width @AUTHOR: SANDY6AUG13 --> 
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                <tr>
+                    <td align="right">
+                       <input id="prinAmt" type="text" name="prinAmt" placeholder="PRIN.AMT."
+                               value="<?php
+                               if ($searchColumnName == 'girv_main_prin_amt')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'PRIN. AMT.';
+                               ?>" 
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('prinAmt').value != '<?php
+                               if ($searchColumnName == 'girv_main_prin_amt')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'PRIN. AMT.';
+                               ?>') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_main_prin_amt', document.getElementById('prinAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('prinAmt').value = '';
+                                       }"
+                               onkeypress="javascript:return valKeyPressedForNumNDotNDash(event);"         
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('prinAmt').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_main_prin_amt', document.getElementById('prinAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="10" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                    </td>
+                    <td align="right">
+                        <a style="cursor: pointer;" title="Click To View Girvi By Principal Amount"
+                           onclick="sortLoansListPanel('<?php echo $documentRoot; ?>', 'girv_main_prin_amt', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>')">
+        <?php if ($sortKeyword == 'girv_main_prin_amt') { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpTotprin' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="right" class="h7 border-right-bottom" width="80px">
+            <div class="h7 spaceRight5">TOTAL PRIN.</div> 
+        </td>
+    <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpInt' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="right"  class="h7 border-right-bottom" width="80px">
+            <div class="h7 spaceRight5">INTEREST</div>
+        </td> <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpOmInt' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="right"  class="h7 border-right-bottom" width="80px">
+            <div class="h7 spaceRight5">1M INT</div>
+        </td> <?php }
+} ?>        
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpTotAmt' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="right"  class="h7 border-right-bottom" width="100px">
+            <div class="h7 spaceRight5">TOTAL AMT.</div>
+        </td> <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpCustName' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="left"  class="h7 border-right-bottom" width="105px">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                <tr>
+                    <td align="left">
+                        <input id="name" type="text" name="name" placeholder="CUST NAME"
+                               value="<?php
+                               if ($searchColumnName == 'girv_cust_fname@girv_cust_lname')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'CUST NAME';
+                               ?>"
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('name').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_fname@girv_cust_lname', document.getElementById('name').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('name').value = '<?php
+                       if ($searchColumnName == 'girv_cust_fname@girv_cust_lname')
+                           echo $searchColumnValue;
+                       else
+                           echo 'CUST NAME';
+                       ?>';
+                                       }"
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('name').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_fname@girv_cust_lname', document.getElementById('name').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="10" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                    </td>
+                    <td align="right">
+                        <a style="cursor: pointer;" title="Click To View Girvi By Customer Name"
+                           onclick="sortLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_fname', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>')">
+        <?php if ($sortKeyword == 'girv_cust_fname') { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>
+                    </td>
+                </tr> 
+            </table>
+        </td>
+    <?php }
+} ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpFatherName' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+                <td class="h7 border-right-bottom" width="80px">
+                     <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">F NAME</div>
+                </td> <?php }
+}
+        ?>
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpMobno' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="center"  class="border-right-bottom" width="75px">
+            <div class="lgn-txtfield-without-borderAndBackground13-Arial">MOB NO</div>
+        </td><?php }
+} ?>
+                       <?php
+                       $selLpLayoutDet = "SELECT * FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpCity' and omin_contents = 'active'";
+                       $resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+                       while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+                           $panelVal = $rowLpLayoutDet['omin_value'];
+                           if ($panelVal == 'true') {
+                               ?>
+        <td align="left"  class="h7 border-right-bottom" width="70px">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                <tr>
+                    <td align="left">
+                        <input id="city" type="text" name="city" placeholder="CITY"
+                               value="<?php
+                               if ($searchColumnName == 'girv_cust_city')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'CITY';
+                               ?>" 
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('city').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_city', document.getElementById('city').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('city').value = '<?php
+                               if ($searchColumnName == 'girv_cust_city')
+                                   echo $searchColumnValue;
+                               else
+                                   echo 'CITY';
+                               ?>';
+                                       }"
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('city').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_city', document.getElementById('city').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="6" maxlength="30"class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                    </td>
+                    <td align="right">
+                        <a style="cursor: pointer;" title="Click To View Girvi By Customer City"
+                           onclick="sortLoansListPanel('<?php echo $documentRoot; ?>', 'girv_cust_city', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>')">
+        <?php if ($sortKeyword == 'girv_cust_city') { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+            <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+        <?php }
+    } ?>
+    <?php
+    $selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpFirm' and omin_contents = 'active'";
+    $resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+    while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+        $panelVal = $rowLpLayoutDet['omin_value'];
+        if ($panelVal == 'true') {
+            ?>
+        <td align="left"  class="h7 border-right-bottom" width="75px">
+        <?php
+        $firmIdSelected = $selFirmId;
+//to assign default firm id @AUTHOR: SANDY10JUL13
+        if (!$firmIdSelected) {
+            $firmIdSelected = $_SESSION['setFirmSession'];
+        }
+        $panelName = 'loansList';
+        $sortKeyword = addslashes($sortKeyword);
+        include 'omffragp.php';
+        ?>   
+        </td>
+                    <?php }
+                } ?>
+<!----------Start  code to add column Loan Type @Author:ANUJA25SEPT15-------------->
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpAloan' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <td align="left" class="h7 border-right-bottom" width="100px">    
+
+            <SELECT class="lgn-txtfield-without-borderAndBackground13-Arial" id="gLoanType" name="gLoanType"
+                    onchange="getGirviListInGirviPanelByFrmId('<?php echo $selFirmId; ?>', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '<?php echo $panelName; ?>', this.value, '<?php echo $searchPreColumn; ?>', '<?php echo $searchPreValue; ?>');">
+        <?php
+        $loanType = array(AllGirvi, Sec.Loan, UnSec.Loan);
+        for ($i = 0; $i <= 2; $i++) {
+            if ($loanType[$i] == $gLoanType)
+                $optionloanType[$i] = "selected";
+        }
+        ?>
+                <OPTION  VALUE="AllGirvi" class="lgn-txtfield-without-borderAndBackground13-Arial" <?php echo $optionloanType[0]; ?>>ALL LOAN</OPTION>
+                <OPTION  VALUE="Sec.Loan" class="lgn-txtfield-without-borderAndBackground13-Arial" <?php echo $optionloanType[1]; ?>>SECURED LOAN</OPTION>
+                <OPTION  VALUE="UnSec.Loan" class="lgn-txtfield-without-borderAndBackground13-Arial" <?php echo $optionloanType[2]; ?>>UNSECURED LOAN</OPTION>
+
+            </SELECT>
+
+        </td>
+                           <?php }
+                       } ?>
+           
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpOtherIn' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+                <td class="h7 border-right-bottom" width="80px">
+                     <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">OT INFO</div>
+                </td> <?php }
+}
+        ?>
+                <?php
+                $selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpDay' and omin_contents = 'active'";
+                $resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+                while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+                    $panelVal = $rowLpLayoutDet['omin_value'];
+                    if ($panelVal == 'true') {
+                        ?>
+                         <td align="right"  class="h7 border-right-bottom" width="75px">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                <tr>
+                    <td align="right" title="DD-DD">
+                        <input id="day" type="text" name="day" placeholder="DD-DD"
+                               value="<?php
+                       if ($searchColumnName == "DAY(STR_TO_DATE(girv_new_DOB,\'%d \'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d \'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d \'),\'%y\')")
+                           echo $searchColumnValue;
+                       else
+                           echo 'DAY';
+                               ?>" 
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('day').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(girv_new_DOB,\'%d \'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d \'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d \'),\'%y\')', document.getElementById('day').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('day').value = '<?php
+                       if ($searchColumnName == "DAY(STR_TO_DATE(girv_new_DOB,\'%d \'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d \'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d \'),\'%y\')")
+                           echo $searchColumnValue;
+                       else
+                           echo 'DAY';
+                               ?>';
+                                       }"
+                               onkeypress="javascript:return valKeyPressedForNumNDash(event);"                        
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('day').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(girv_new_DOB,\'%d \'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d \'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d \'),\'%y\')', document.getElementById('day').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="4" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                    </td>
+                 </tr>
+            </table>
+        </td>
+                        <?php
+                    }
+                }
+                ?>  
+        <?php
+        $selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpGirviVal' and omin_contents = 'active'";
+        $resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+        while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+            $panelVal = $rowLpLayoutDet['omin_value'];
+            if ($panelVal == 'true') {
+                ?>
+                <td class="h7 border-right-bottom" width="80px">
+                    <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">GIRVI VAL</div>
+                </td> <?php
+            }
+        }
+        ?>
+<!----------End  code to add column Loan Type @Author:ANUJA25SEPT15-------------->
+                       <?php
+                       $selLpLayoutDet = "SELECT * FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpSdate' and omin_contents = 'active'";
+                       $resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+                       while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+                           $panelVal = $rowLpLayoutDet['omin_value'];
+                           if ($panelVal == 'true') {
+                               ?>
+        <td align="right"  class="h7 border-right-bottom" width="75px">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+                <tr>
+                    <td align="right" title="DD.MM.YY">
+                        <input id="sDate" type="text" name="sDate" placeholder="DD.MM.YY"
+                               value="<?php
+                       if ($searchColumnName == "DAY(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d %M %Y\'),\'%y\')")
+                           echo $searchColumnValue;
+                       else
+                           echo 'S. DATE';
+                               ?>" 
+                               onclick="this.value = '';"
+                               onblur="javascript:if (document.getElementById('sDate').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('sDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       } else {
+                                           document.getElementById('sDate').value = '<?php
+                       if ($searchColumnName == "DAY(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d %M %Y\'),\'%y\')")
+                           echo $searchColumnValue;
+                       else
+                           echo 'S. DATE';
+                               ?>';
+                                       }"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"                        
+                               onkeyup="if (event.keyCode == 13 && document.getElementById('sDate').value != '') {
+                                           searchActiveLoansListPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(girv_new_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(girv_new_DOB,\'%d %M %Y\'),\'%y\')', document.getElementById('sDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $searchColumnStr; ?>', '<?php echo $expMonths; ?>');
+                                       }"
+                               size="4" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                    </td>
+                    <td align="right">
+                        <a style="cursor: pointer;" title="Click To View Girvi By Girvi Date"
+                           onclick="sortLoansListPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(girv_new_DOB,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>')">
+        <?php if ($sortKeywordValue == "STR_TO_DATE(girv_new_DOB,'%d %M %Y')") { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    <?php }
+} ?>
+ <?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpSign' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+                <td class="h7 border-right-bottom" width="100px">
+                     <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">SIGNATURE</div>
+                </td> <?php }
+}
+        ?>       
+<?php
+$selLpLayoutDet = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'actLpSms' and omin_contents = 'active'";
+$resLpLayoutDet = mysqli_query($conn,$selLpLayoutDet);
+while ($rowLpLayoutDet = mysqli_fetch_array($resLpLayoutDet)) {
+    $panelVal = $rowLpLayoutDet['omin_value'];
+    if ($panelVal == 'true') {
+        ?>
+        <!--Start code to add checkbox in the table @Author:@AUTHOR:SHE16MAR15-->
+        <td align="center"  class="h7 border-bottom" title="SMS" width="15px">
+            <div class="h7">SMS</div>
+        </td>
+
+
+        <td align="center"  class="h7 border-bottom" valign="middle" width="14px">
+            <div id="SelectAllSmsDiv">
+                <input id="smsallcheck" name="smsallcheck" title="Click Here to Select SMS Template Id!"
+                       type="checkbox" spellcheck="false" 
+                       onclick="javascript:selectAllSms('loansList');"
+                       autocomplete="off" size="8" maxlength="16" />
+            </div>
+        </td>
+    <?php }
+} ?>
+<!-- End code to add checkbox in the table @Author:@AUTHOR:SHE16MAR15-->

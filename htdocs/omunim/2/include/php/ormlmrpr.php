@@ -1,3 +1,106 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 4, 2011 12:34:51 PM
+ *
+ * @FileName: ormlmrpr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+//change in file @AUTHOR: SANDY04JAN14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+$mlId = $_GET['mlId'];
+$loanNo = $_GET['loanId'];
+$loanSerNo = $_GET['loanSerNo'];
+$count = 1;
 ?>
+<form name="add_more_prin_in_update" id="add_more_prin_in_update"
+      action="javascript:addMorePrinInUpdate(document.getElementById('add_more_prin_in_update'));"
+      onsubmit="return true;"
+      method="post">
+    <input type="hidden" id="mlIdField1" name="mlIdField1" value="<?php echo $mlId; ?>" />
+    <input type="hidden" id="loanNoField1" name="loanNoField1" value="<?php echo $loanNo; ?>" />
+    <input type="hidden" id="loanSerNoField1" name="loanSerNoField1" value="<?php echo $loanSerNo; ?>" />
+    <div id="addMorePrinInUpdate">
+        <table border="0" cellpadding="2" cellspacing="2" width="100%">
+            <tr>
+                <td align="left">
+                    <input id="addPrinNo<?php echo $count ?>" name="addPrinNo<?php echo $count ?>" type="text"                     
+                           onkeydown = "javascript: if (event.keyCode == 13) {
+                               clearListDiv('addPrinNoList'+<?php echo $count; ?>,this.id);
+                               searchMorePrinToTransfer(this.value,event.keyCode,'Update');
+                               return false;
+                           }
+                           else if (event.keyCode == 8 && this.value == '') {
+                               clearListDiv('addPrinNoList'+<?php echo $count; ?>,this.id);
+                               return false;
+                           }"
+                           onclick="clearListDiv('addPrinNoList'+<?php echo $count; ?>,this.id);"
+                           onkeyup = "if (event.keyCode != 9 && event.keyCode != 13) {
+                           searchMorePrinToTransfer(this.value, event.keyCode,'Update');
+                       }else if(event.keyCode == 13){
+                           getDetailsOfSelectedPrincipal(this.value,'<?php echo $count; ?>','Update');
+                           return false;
+                       }" 
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF" size="25" maxlength="10"  placeholder="ADDITIONAL LOAN NO" autocomplete="off"
+                           />
+                    <div id ="addPrinNoList<?php echo $count; ?>" class="loanNoListDiv"></div>
+                </td>
+                <td align="center">
+                    <input id="prinCustName<?php echo $count; ?>" name="prinCustName<?php echo $count; ?>" type="text"
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF" size="20" maxlength="10"  placeholder="CUSTOMER"/>
+                </td>
+                <td align="center">
+                    <input id="prinAmt<?php echo $count; ?>" name="prinAmt<?php echo $count; ?>" type="text"  
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF text_right" size="20" maxlength="10"  placeholder="PRINCIPLE"/>
+                </td>
+                <td  align="center">
+                    <input id="prinRoi<?php echo $count; ?>" name="prinRoi<?php echo $count; ?>" type="text" 
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF text_right" size="10" maxlength="10" readonly="true" placeholder="ROI"/>
+                </td>
+                 <!-------Start code to add Packet NO  @Author:ANUJA30JUL15---------------------->
+                 <td  align="center">
+                    <input id="prinPacket<?php echo $count; ?>" name="prinPacket<?php echo $count; ?>" type="text" 
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF text_right" size="10" maxlength="10"  placeholder="PACKET NO"/>
+                </td>
+                 <!-------End code to add Packet NO  @Author:ANUJA30JUL15---------------------->
+                <td  align="center">
+                    <input id="prinFirm<?php echo $count; ?>" name="prinFirm<?php echo $count; ?>" type="text" 
+                           spellcheck="false"  class="textBoxCurve1px margin2pxAll textLabel12Calibri backFFFFFF" size="10" maxlength="10" readonly="true" placeholder="FIRM"/>
+                </td>
+                <td  align="center">
+                    <?php
+                    include 'ormlprdt.php';
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <table width="100%">
+        <tr>
+            <td colspan="6" align="center">
+                <div id="morePrinSubButtDiv">
+                    <input id="subButt" name="subButt" type="submit" value="Submit"
+                           spellcheck="false"  class="frm-btn" size="10" maxlength="10" /> 
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+
+

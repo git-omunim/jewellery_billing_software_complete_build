@@ -1,3 +1,93 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial:Update Loan Serial Number
+ * **************************************************************************************
+ *
+ * Created on 10 Aug, 2012 12:15:53 AM
+ *
+ * @FileName: orgusrnm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$mlId = $_POST['mlId'];
+$loanId = $_POST['loanId'];
+$loanSerialNum = $_POST['loanSerialNum'];
+$loanPreSerialNum = $_POST['loanPreSerialNum'];
+$girviDOB = $_POST['loanDOB'];
+$principalAmount = $_POST['prinAmt'];
+$girviFirmId = $_POST['loanFirmId'];
+$loanType = $_POST['loanType'];
+if ($mlId == '') {
+    $mlId = $_GET['mlId'];
+    $loanId = $_GET['loanId'];
+    $loanSerialNum = $_GET['loanSerialNum'];
+    $loanPreSerialNum = $_GET['loanPreSerialNum'];
+}
+?>
+<?php
+
+if ($loanId == '' or $loanId == NULL or $loanSerialNum == '' or $loanSerialNum == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+    exit(0);
+} else {
+    /*     * ****************Start code to add sys log var @Author:PRIYA05JUL14*************** */
+    $sslg_trans_sub = 'MONEYL SERIAL NO UPDATED';
+    $sysLogTransType = 'transLoan';
+    $sslg_firm_id = $girviFirmId;
+    $sysLogTransId = $loanPreSerialNum . $loanSerialNum;
+    $sslg_trans_comment = 'Loan Serial No: ' . $sysLogTransId . ', Loan Date: ' . $girviDOB . ', Amt: ' . formatInIndianStyle($principalAmount);
+    include 'omslgapi.php';
+    /*     * ****************End code to add sys log var @Author:PRIYA05JUL14*********************** */
+    $qSelGirviSerialNo = "SELECT ml_pre_serial_num,ml_serial_num FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_pre_serial_num = '$loanPreSerialNum' and ml_serial_num ='$loanSerialNum'";
+    $resGirviSerialNo = mysqli_query($conn,$qSelGirviSerialNo);
+    $girviSerialNoCount = mysqli_num_rows($resGirviSerialNo);
+
+    if ($girviSerialNoCount > 0) {
+        echo 'SerialNumAlreadyExist';
+        exit(0);
+    } else {
+        $qUpdateGirvi = "UPDATE ml_loan SET
+		ml_pre_serial_num = '$loanPreSerialNum' , ml_serial_num='$loanSerialNum'
+                WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+        if (!mysqli_query($conn,$qUpdateGirvi)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        if ($loanType == 'Linked') {
+            $qUpdateTransGirvi = "UPDATE girvi_transfer SET
+		global_gt_pre_serial_num='$loanPreSerialNum', global_gt_serial_num='$loanSerialNum'
+                WHERE gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_trans_loan_id='$loanId'";
+            if (!mysqli_query($conn,$qUpdateTransGirvi)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        }
+        header("Location: $documentRoot/include/php/ormlupln.php?mlId=$mlId&loanId=$loanId");
+    }
+}
 ?>

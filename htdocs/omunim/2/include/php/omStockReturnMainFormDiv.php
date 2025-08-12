@@ -1,3 +1,458 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STOCK RETURN MAIN FORM FILE @PRIYANKA-20FEB2021
+ * **************************************************************************************
+ * 
+ * Created on FEB 20, 2021 05:50:00 PM
+ *
+ * @FileName: omStockReturnMainFormDiv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.37
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-20FEB2021
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . 'system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . 'system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . 'system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . 'ommpfndv.php';
+//
+// STAFF ACCESS FILE
+$staffId = $_SESSION['sessionStaffId'];
+//
+?>
+<?php  
+//
+//
+if ($panelName == '' || $panelName == NULL)
+    $panelName = $_REQUEST['panelName'];
+//
+if ($payPanelName == '' || $payPanelName == NULL)
+    $payPanelName = $_REQUEST['panelName'];
+//
+if ($transPanelName == '' || $transPanelName == NULL)
+    $transPanelName = $_REQUEST['panelName'];
+//
+if ($mainPanel == '' || $mainPanel == NULL)
+    $mainPanel = $_REQUEST['mainPanel']; // GET MAIN PANEL @PRIYANKA-22FEB2021
+//
+if ($mainPanel == '' || $mainPanel == NULL)
+    $mainPanel = $_REQUEST['panelName'];
+//
+if ($userId == '' || $userId == NULL)
+    $userId = $_REQUEST['custId'];
+//
+if ($userId == '' || $userId == NULL)
+    $userId = $_REQUEST['userId'];
+//
+if ($userId == '' || $userId == NULL)
+    $userId = $_REQUEST['suppId'];
+//
+if ($suppId == '' || $suppId == NULL)
+    $suppId = $_REQUEST['userId'];
+//
+if ($suppId == '' || $suppId == NULL)
+    $suppId = $_REQUEST['suppId'];
+//
+if ($suppId == '' || $suppId == NULL)
+    $suppId = $_REQUEST['custId'];
+//
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+//
+//
+$showDiv = $_GET['divSubPanel'];
+//
+$utinId = $_GET['suppPayId'];
+//
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+//
+$panel = $_GET['panel'];
+//
+$subPanel = $_GET['subPanel'];
+//
+$txtType = $_GET['txtType'];
+//
+//
+if ($payId == '' || $payId == NULL)
+    $payId = $_GET['payId'];
+//
+//
+if ($utin_pre_invoice_no == '' || $utin_pre_invoice_no == NULL)
+    $utin_pre_invoice_no = $_REQUEST['PreInvoiceNo'];
+//
+if ($utin_invoice_no == '' || $utin_invoice_no == NULL)
+    $utin_invoice_no = $_REQUEST['invoiceNo'];
+//
+//
+if ($itemMainPanel == '' || $itemMainPanel == NULL)
+    $itemMainPanel = 'addByInv';
+//
+if ($itemSubPanel == '' || $itemSubPanel == NULL)
+    $itemSubPanel = $_GET['itemSubPanel'];
+//
+//
+if ($sttr_account_id != '' && $sttr_account_id != NULL)
+    $selAccId = $sttr_account_id; // ACCOUNT ID @PRIYANKA-22FEB2021
+//
+//
+parse_str(getTableValues("SELECT * FROM user where user_id = '$suppId'"));
+//
+//
+$selDOBDay = date(j);
+$todayMM = date(n) - 1;
+$selDOBYear = date(Y);
+//
+//
+if ($sttr_metal_type == '' || $sttr_metal_type == NULL)
+    $sttr_metal_type = 'Gold';
+//
+//
+if ($sttr_id == '' || $sttr_id == NULL)  
+    $sttr_id = $_REQUEST['sttr_id'];
+//
+//
+if ($utinId == '' || $utinId == NULL) {
+    $utinId = $_REQUEST['utinId'];
+}
+//    
+//    
+if ($userPanelName == '' || $userPanelName == NULL)
+    $userPanelName = $_REQUEST['userPanelName']; // GET USER PANEL NAME FOR NAVIGATION @PRIYANKA-22FEB2021
+//    
+if ($userPanelName == '' && $mainPanel == 'CustHome') {
+    $userPanelName = 'Customer';
+}
+//
+    //
+if ($payPanelName == 'PurchaseReturnPayUp' || $transPanelName == 'PurchaseReturnPayUp' || $payPanelName == 'PurchaseReturnPanel') {
+    //
+    if ($sttr_id != '' && $sttr_id != NULL) {
+        parse_str(getTableValues("SELECT sttr_sttr_id FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' "
+                               . "AND sttr_id = '$sttr_id' order by sttr_since asc"));
+        
+        parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' "
+                               . "AND sttr_user_id = '$suppId' "
+                               . "AND sttr_status NOT IN ('DELETED') "
+                               . "AND sttr_id = '$sttr_sttr_id' order by sttr_since asc"));
+        // 
+    } else {
+        //
+        parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' "
+                               . "AND sttr_user_id = '$suppId' AND sttr_status NOT IN ('DELETED') "
+                               . "AND sttr_utin_id = '$utinId' order by sttr_since asc"));
+        //
+    }
+    //
+    //
+    $selAccId = $sttr_account_id; // ACCOUNT ID @PRIYANKA-22FEB2021
+    //
+    //echo '$selAccId == '.$selAccId;
+    //
+    if ($payPanelName != 'PurchaseReturnPanel'){
+    $selDOBDay = substr($sttr_add_date, 0, 2);
+    $selDOBMnth = substr($sttr_add_date, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($sttr_add_date, -4);
+    }
+    //
+    $sttrTransType = 'stockCrystal';
+    //
+    $qSelCryDet = "SELECT * FROM stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                . "AND sttr_sttr_id = '$sttr_id' and sttr_indicator = 'stockCrystal' "
+                . "AND sttr_status NOT IN ('DELETED','PaymentDone') order by sttr_id asc"; //stock_crystal
+    //
+    $resCryDet = mysqli_query($conn, $qSelCryDet);
+    $noOfCry = mysqli_num_rows($resCryDet);
+    //
+    //
+} else {
+    //
+    //
+    $selStockStatusStr = " AND sttr_status IN ('PaymentDone', 'TAG', 'EXISTING', 'PURCHASE') "
+                       . " AND sttr_transaction_type IN ('PURBYSUPP', 'TAG', 'PURONCASH') "
+                       . " AND sttr_indicator IN ('stock', 'AddInvoice') ";
+    //
+//    
+    parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' "
+                           . " AND sttr_id = '$sttr_id' "
+                           . " $selStockStatusStr "));
+    //
+    //$qSelInvNo = "SELECT * FROM stock_transaction where sttr_owner_id = '$sessionOwnerId' "
+    //           . "AND sttr_user_id = '$suppId' "
+    //           . "AND sttr_status = 'PaymentPending' "
+    //           . "AND sttr_indicator = 'PurchaseReturn'";
+    //
+    //$resInvNo = mysqli_query($conn, $qSelInvNo);
+    //$rowInvNo = mysqli_fetch_array($resInvNo, MYSQLI_ASSOC);
+    //
+    //$sttr_pre_invoice_no = $rowInvNo['sttr_pre_invoice_no'];
+    //$sttr_invoice_no = $rowInvNo['sttr_invoice_no'];
+    //$sttr_status = $rowInvNo['sttr_status'];
+    //
+    //
+    //$selAccId = $rowInvNo['sttr_account_id']; // ACCOUNT ID @PRIYANKA-22FEB2021
+    //
+    //echo '$sttr_id : ' . $sttr_id . '<br>';
+    //echo '$sttr_item_category : ' . $sttr_item_category . '<br>';
+    //echo '$sttr_item_name : ' . $sttr_item_name . '<br>';
+    //
+}
+//
+//
+if ($payPanelName == 'PurchaseReturnPanel' || $transPanelName == 'PurchaseReturnPanel') {
+    /************* START CODE TO SET CRYSTALCOUNT TO DEFAULT @PRIYANKA-22FEB2021 ********** */
+    if ($crystalCount == '' || $crystalCount == NULL)
+        $crystalCount = 1;
+    /************* END CODE TO SET CRYSTALCOUNT TO DEFAULT @PRIYANKA-22FEB2021 ************ */
+}
+//
+//
+if ($sttr_metal_type != '' && $sttr_metal_type != NULL)
+    $metalTyp = $sttr_metal_type;
+//
+if ($sttr_pre_invoice_no != '' && $sttr_pre_invoice_no != NULL)
+    $payPreInvoiceNo = $sttr_pre_invoice_no;
+//
+if ($sttr_invoice_no != '' && $sttr_invoice_no != NULL)
+    $payInvoiceNo = $sttr_invoice_no;
+//
+//
+$suppItemCount = $_POST['itemCount'];
+$suppSimilarItem[$suppItemCount] = $_GET['suppSimItemPanel'];
+//
+//
+if ($suppItemCount == '' || $suppItemCount == NULL)
+    $suppItemCount = 1;
+//
+//
+if ($sttr_metal_rate == '' || $sttr_metal_rate == NULL) {
+    //
+    parse_str(getTableValues("SELECT met_rate_value FROM metal_rates where met_rate_own_id='$sessionOwnerId' "
+                          . "and met_rate_metal_name='$metalTyp' order by met_rate_ent_dat desc LIMIT 0, 1"));
+    //
+    $sttr_metal_rate = trim($met_rate_value);
+    //
+}
+//
+//
+if ($payPanelName != 'PurchaseReturnPayUp' && $transPanelName != 'PurchaseReturnPayUp') {
+    //
+    //echo '$sttr_item_category : ' . $sttr_item_category . '<br>';
+    //echo '$sttr_item_name : ' . $sttr_item_name . '<br>';
+    //echo '$mainSearchString == ' . $mainSearchString . '<br />';
+    //
+    if (($sttr_item_category == '' || $sttr_item_category == NULL || 
+         $sttr_item_name == '' || $sttr_item_name == NULL) && 
+        ($sttr_quantity == '' || $sttr_quantity == NULL || 
+         $sttr_gs_weight == '' || $sttr_gs_weight == NULL)) {
+        //
+        $sttr_item_category = $mainSearchString;
+        $sttr_item_name = $mainSearchString;       
+        $sttr_item_pre_id = $mainSearchString;     
+        //
+    }
+    //
+}
+//
+//
+// include file for conversion according to type @PRIYANKA-22FEB2021
+include 'ogiartdv.php';
+//
+//
+?>
+<!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>                                      
+        <td valign="top">
+            <div class="main_link_brown16" style="margin-top: 10px; margin-left: 10px; font-weight:bold;">
+                                 
+            </div>
+        </td>
+    </tr>
+</table>-->
+<form name="add_item" id="add_item"
+      enctype="multipart/form-data" method="post"
+      action="include/php/omPurStockReturnAd.php"
+      onsubmit="return addSuppInvoiceItem();">  
+    <div id="addInvoicestockPanelFormDiv" style="margin-top:-20px;">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="left" class="portlet grey-crusta box" style="background:#fff;">
+                    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td width="26px" style="text-align:center;vertical-align: middle;padding-top: 2px;">
+                                <img src="<?php echo $documentRoot; ?>/images/addGold20.png" alt="Add Stock" 
+                                     onload="initFormName('add_item', 'addAItem');
+                                             document.getElementById('sttr_gs_weight').focus(); 
+                                             purReturnCalFunc();" />
+                            </td>
+                            <td class="portlet-title caption">
+                                <div class="main_link_brown16">
+                                    <b> <?php if ($payPanelName == 'PurchaseReturnPanel' || $transPanelName == 'PurchaseReturnPanel') { ?>
+                                        FINE PURCHASE RETURN PANEL
+                                    <?php } else { ?>
+                                        UPDATE FINE PURCHASE RETURN PANEL
+                                    <?php } ?></b>
+                                </div>
+                            </td>
+                            <td align="right" valign="middle">
+                                <div id="messDisplayDiv"></div>
+                                <div class="analysis_div_rows main_link_red_12">
+                                    <?php if ($showDiv == 'StockAlreadyExists') { ?>
+                                        <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Product Code Already Present, Please Enter Different ~ </div>
+                                    <?php } else if ($showDiv == 'InvAlreadyExists') { ?>
+                                        <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Invoice Already Present, Please Enter Different Invoice Number ~ </div>
+                                    <?php } ?>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- HIDDEN VARIABLES @PRIYANKA-20FEB2021 -->
+                    <input type="hidden" id="mainPanel" name="mainPanel" value="<?php echo $mainPanel; ?>"/>                            
+                    <input type="hidden" id="payPanelName" name="payPanelName" value="<?php echo $payPanelName; ?>"/>
+                    <input type="hidden" id="transPanelName" name="transPanelName" value="<?php echo $transPanelName; ?>"/>
+                    <input type="hidden" id="panelName" name="panelName" value="<?php echo $panelName; ?>"/>
+                    <input type="hidden" id="UpdateItemPanel" name="UpdateItemPanel" />
+                    <input type="hidden" id="addPanel" name="addPanel" value="<?php echo $payPanelName; ?>"/>
+
+                    <input type="hidden" id="globalPlusKeyId" name="globalPlusKeyId"/>
+                    <input type="hidden" id="globalAltCId" name="globalAltCId"/>
+                    
+                    <input type="hidden" id="itstId" name="itstId" />
+                    <input type="hidden" id="totCrystal" name="totCrystal"/>
+                    
+                    <input type="hidden" id="suppId" name="suppId" value="<?php echo $suppId; ?>"/>
+                    <input type="hidden" id="sttr_user_id" name="sttr_user_id" value="<?php echo $suppId; ?>"/>
+                    
+                    <input type="hidden" id="sttr_indicator" name="sttr_indicator" value="PurchaseReturn" />
+                    <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value="PurchaseReturn" />
+                   
+                    <?php if ($payPanelName == 'PurchaseReturnPayUp' || $transPanelName == 'PurchaseReturnPayUp') { ?>
+                    <input type="hidden" id="sttr_id" name="sttr_id" value="<?php echo $sttr_id; ?>" />
+                    <?php } else { ?>
+                    
+                    <!-- FOR PURCHASE RETURN BY INVOICE REDIRECTION @AUTHOR:PRIYANKA:04FEB2022 -->
+                    <input type="hidden" id="srchPreInvNo" name="srchPreInvNo" value="<?php echo $_REQUEST['srchPreInvNo']; ?>"/> 
+                    <input type="hidden" id="srchInvNo" name="srchInvNo" value="<?php echo $_REQUEST['srchInvNo']; ?>"/>
+
+                    <input type="hidden" id="sttr_sttr_id" name="sttr_sttr_id" value="<?php echo $sttr_id; ?>"/>    
+                    <?php } ?>             
+                    
+                    <input type="hidden" id="sttr_type" name="sttr_type" value="stock" />
+                    <input type="hidden" id="sttr_stock_type" name="sttr_stock_type" 
+                           value="<?php echo $sttr_stock_type; ?>"/>
+                    
+                    <?php
+                    //
+                    //
+                    //echo '$sttr_id : ' . $sttr_id . '<br>';
+                    //echo '$sttr_item_category : ' . $sttr_item_category . '<br>';
+                    //echo '$sttr_item_name : ' . $sttr_item_name . '<br>';
+                    //
+                    //
+                    if ($payPanelName != 'PurchaseReturnPayUp' && $transPanelName != 'PurchaseReturnPayUp') {
+                        //
+                        $invoiceNumber = getInvoiceNum($userId, 'PurchaseReturn', 'PurchaseReturn');
+                        $invArr = explode('*', $invoiceNumber);
+                        $sttr_pre_invoice_no = $invArr[0];
+                        $sttr_invoice_no = $invArr[1];
+                        $payPreInvoiceNo = $sttr_pre_invoice_no;
+                        $payInvoiceNo = $sttr_invoice_no;
+                        //
+                        //echo '$sttr_stock_type == ' . $sttr_stock_type . '<br>';
+                        //
+                        if ($sttr_stock_type == 'wholesale') {
+                            //$sttr_quantity = 1;
+                            //$sttr_gs_weight = 1;
+                        }
+                        // 
+                        //
+                    }
+                    //
+                    //
+                    //echo '$sttr_pre_invoice_no : ' . $sttr_pre_invoice_no . '<br>';
+                    //echo '$sttr_invoice_no : ' . $sttr_invoice_no . '<br>';
+                    //echo '$payPreInvoiceNo == ' . $payPreInvoiceNo . '<br />';
+                    //echo '$payInvoiceNo == ' . $payInvoiceNo . '<br />';
+                    //
+                    // START CODE FOR ADD DATE FOR MULTIPLE ITEMS IN ONE INVOICE @PRIYANKA-20FEB2021
+                    if ($sttr_pre_invoice_no != '' && $sttr_pre_invoice_no != NULL) {
+                        //
+                        $dateQuery = "SELECT * FROM stock_transaction where sttr_owner_id = '$sessionOwnerId' "
+                                   . "AND sttr_pre_invoice_no = '$sttr_pre_invoice_no' "
+                                   . "AND sttr_invoice_no = '$sttr_invoice_no' "
+                                   . "AND sttr_status IN ('PaymentPending') "
+                                   . "AND sttr_transaction_type IN ('PurchaseReturn') "
+                                   . "AND sttr_indicator IN ('PurchaseReturn')";
+                        //
+                        $dateResult = mysqli_query($conn, $dateQuery) or die(mysqli_error($conn));
+                        $numRowsInv = mysqli_num_rows($dateResult);
+                        //
+                        if ($numRowsInv > 0) {
+                            //
+                            $row = mysqli_fetch_array($dateResult, MYSQLI_ASSOC);
+                            $sttr_add_date = $row['sttr_add_date'];
+                            //
+                            if ($sttr_add_date == '') {
+                                $selDOBDay = substr($sttr_add_date, 0, 2);
+                                $selDOBMnth = substr($sttr_add_date, 3, -5);
+                                $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+                                $selDOBYear = substr($sttr_add_date, -4);
+                            }
+                        }
+                    }
+                    // END CODE FOR ADD DATE FOR MULTIPLE ITEMS IN ONE INVOICE @PRIYANKA-20FEB2021
+                    //
+                    //
+                    ?>
+                    <?php
+                    //
+                    include 'omPurReturnHeaderDiv.php';
+                    //
+                    include 'omPurReturnSubDiv.php';
+                    //
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
+<div id="suppDeposite">
+    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td colspan="2" align="left">
+                <div id="addStockCurrentInvoice">
+                    <?php
+                    //
+                    include 'omPurReturnFormPaymentDetails.php';
+                    //
+                    ?>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

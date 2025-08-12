@@ -1,3 +1,105 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Show Video
+ * **************************************************************************************
+ * 
+ * Created on Mar 18, 2013 10:52:11 AM
+ *
+ * @FileName: omShowVideo.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+//echo 'aa = '.$videoId.'<br/>';
+// Start Input Fields
+// $imageId // Image Id
+// End Input Fields
+if ($videoId != NULL && $videoId != '') {
+    $selectVideoQuery = "SELECT * FROM image WHERE image_id='$videoId'";
+    //echo $selectVideoQuery.'<br/>';
+    $resultVideoQuery = mysqli_query($conn, $selectVideoQuery);
+    $rowVideoQuery = mysqli_fetch_array($resultVideoQuery, MYSQLI_ASSOC);
+
+    $videoFileName = $rowVideoQuery['image_snap_fname'];
+    $videoFileSize = $rowVideoQuery['image_snap_fszMB'];
+    $videoFileType = $rowVideoQuery['image_snap_ftype'];
+
+    // echo '$videoFileSize = '.$videoFileSize.'<br/>';
+    if ((float) $videoFileSize > 0) {
+        if ($_SESSION['sessionSoftHost'] == 'HOSTING') {
+            $images_omunim = 'images_omunim';
+        } else {
+            $images_omunim = 'images.omunim';
+        }
+        if ($systemOnOrOff == 'ON') {
+            $dirPath = substr($_SERVER["DOCUMENT_ROOT"], 0, strrpos($_SERVER["DOCUMENT_ROOT"], '/'));
+            $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'];
+            /// echo 'inif $dirName = '.$dirName.'</br>';
+        } else {
+            $dirPath = $_ENV["S2G_DB_PATH"] . 'images.omunim';
+            //Check if the directory already exists.
+            if (!is_dir($dirPath)) {
+                //Directory does not exist, so lets create it.
+                mkdir($dirPath, 0755);
+            }
+            //
+            $dirName = $dirPath . '\\' . $_SESSION['sessionOwnerId'];
+            //  echo 'inelse $dirName = '.$dirName.'</br>';
+        }
+//
+//Check if the directory already exists.
+        if (!is_dir($dirName)) {
+            //Directory does not exist, so lets create it.
+            mkdir($dirName, 0755);
+        }
+//
+//echo '$videoFileName = '.$videoFileName.'</br>';
+        // Get the extension name
+        $path_parts = pathinfo($videoFileName);
+        $fileExtension = $path_parts['extension'];
+        //
+        if ($fileExtension == '' || $fileExtension == NULL)
+            $fileExtension = 'mp4';
+        //
+        if ($systemOnOrOff == 'ON') {
+            $fileName = "$dirName/$videoId.$fileExtension";
+            //    echo 'inif2 $dirName = '.$dirName.'</br>';
+        } else {
+            $fileName = "$dirName" . "\\" . "$videoId.$fileExtension";
+            //    echo 'inelse2 $dirName = '.$dirName.'</br>';
+        }
+        //
+        //   echo '<br/>videoFileType: '.$videoFileType;
+        //  echo '<br/>FileName: '.$fileName;exit();
+//
+        header("content-type: $videoFileType");
+        echo file_get_contents($fileName);
+    } else {
+        echo 'video Size is Zero!';
+    }
+} else {
+    echo 'No video Present!';
+}
 ?>

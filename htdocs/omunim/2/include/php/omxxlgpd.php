@@ -1,3 +1,77 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACoAwAAHbMqrT13j9mCxqrsEJgwES60OhORJU2TW5wU7u+bz4GcAgA+jE8weYZgbEkby7EJwJL21fBC0fG9AQ0fbdR1iQk3pVqTZZOhtYp5+yAIK41EJZZEX2NdpTSrjuaB9MurTZr3tJoF9VgDwFX7K5s5Hn0YBGbz15vNE6K5P0Cbss+hQ6mnv/jSgDPuFpIntKXYBDDqjTSDlqxphp4Kj+rrIKnNvTRDOicBSm0irvZZG2qi9LnfLJ5HG67d+YDLeoM/DcGcRuDOEQl4CMN3SQ7rJxhVUG0PhNQ6QepvcfICU7kcHS72reibpUqBMy6eITBXm62faFWq+CCEokGGbg1XSOZMQ2hHOoEulVgPZmqZqKyT0GIajmFo77UsVaN9yEHgyj3wvWreKZN5MyX/4OqvBSM/GUuuF1Ma729xd3YNO9Sj+8sXv9/sAcAoIrf/vEOKIQUIHO1N1LwesfXCKsRuAZzIdxRpImEuhGpeF7+vx86XYMrylQehaeO4+dE8Dj1pk//JOWZvexOmz9CxcTnGLLR3lCjb3DpBGZwjPcdQ7L3lhw8+56R7cg4+8tlwOyTfGTxb7NqTNWtMG1+nhcQmNp1pgZJ+2IG30RpUW65AIrYtYSz3pOZnUQgUGWgtWjnh8IJulHqhPwSpKGVNo8lgPdCBDrvyaeP0TvZdPneN8W9UdfMWd6mv8pxKw5aBkHJRVMgobupVf5VMno3jZRWFowBjNVJfFz2ckTqgGHmKMHg71IuAzCR69+JHEjKHqMCscJ8RKzXRJWAOqG3vnucUHjXrS73axTSQerT5jyhFRWBIvP54AvwQQ/DbQCdy16DlCWZQVtcc/cdr6irVsXjO3SWFoJbG4dIqeg3I6/Dec3/b3Yu0A/CTcyJStYa8724Jrii2cqo8fLQotLVQEmpJgCUQafIVkP6OW973jEl7ozE+MRHns+r6aoJLZYfxkZS4Yozj56wQJfGSfjTC9u0/v1VCpRgu/9cD2lOWXOloJaar8mZRvnKTGVBreoy9ITyBNnLho1VlCl6+rS5ueQz4qyntrS9zZSHzMQWUHkahnrIRG04S4icKLnPZtZn/CMCF9zmVkGZqBwvwYmpHXBhilEycEBqPx8DUUEgeAFxknYVcln4Qjnz6S2H0l8+uQDiTS8lL1VLe9g7/sZBMjEhG59rkqAm4jyZ7+BZQfg04cDzPbLSVl4LJp5X70vaP3JJRkfPDOFCQ5o9KowM5YCBBCMtdNpOY5J73AAAAAA==');
+<?php
+/*
+ * Created on 23-Jan-2011 6:11:18 PM
+ *
+ * @FileName: omxxlgpd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<!-- *************************** Start Login Div Code *************************** -->
+<table border="0" cellpadding="1" cellspacing="1" align="center">
+    <tr>
+        <td align="center" valign="top" colspan="4"><img src="<?php echo $documentRoot; ?>/images/key128.png"
+                                                         alt="" border="0" /></td>
+    </tr>
+    <tr>
+        <td colspan="4"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <form name="admin_login" id="admin_login" action="javascript:administratorLogin(document.getElementById('admin_login'));" method="post">
+                <table border="0" cellpadding="1" cellspacing="1" align="left">
+                    <tr>
+                        <td align="center"><img src="<?php echo $documentRoot; ?>/images/key.png" /></td>
+                        <td>
+                            <div class="frm-lbl">User Id:</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="lgnUserId" type="text" class="lgn-txtfield" name="lgnUserId"
+                                               maxlength="50" size="50" spellcheck="false" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><br /></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><img src="<?php echo $documentRoot; ?>/images/key.png" /></td>
+                        <td>
+                            <div class="frm-lbl">Super Key:</div>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="lgnPassword" type="password" class="lgn-txtfield" name="lgnPassword"
+                                               maxlength="50" size="50" spellcheck="false" />
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><br /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="Login"
+                                                              class="frm-btn" maxlength="30" size="15" /></td>
+                        
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4"><br /></td>
+    </tr>
+    <tr>
+        <td colspan="4"><br /></td>
+    </tr>
+</table>

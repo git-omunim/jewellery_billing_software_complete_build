@@ -1,3 +1,134 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: OMGOLD New Order Table
+ * **************************************************************************************
+ *
+ * Created on 08 Jul, 2016 11:31:41 AM
+ *
+ * @FileName: omtbusor.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2016 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//*******************************Start code to create user_order_table for order both supplier and customer panel Author:SANT21SEP16*******************************
+$query = "CREATE TABLE IF NOT EXISTS user_order (
+usor_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+usor_owner_id                   VARCHAR(16),
+usor_jrnl_id                    INT,
+usor_firm_id                    VARCHAR(16), 
+usor_acc_id                     VARCHAR(16), 
+usor_cust_id                    INT,
+usor_supp_id                    VARCHAR(16),
+usor_DOB                        VARCHAR(50),
+usor_cust_bill_date             VARCHAR(50),
+usor_add_date                   VARCHAR(50),
+usor_DOB_Del                    VARCHAR(50),
+usor_pre_invoice_no             VARCHAR(50),
+usor_invoice_no                 VARCHAR(50),
+usor_metal_type                 VARCHAR(16),
+usor_metal_No                   VARCHAR(16),
+usor_pre_item_id                VARCHAR(16),
+usor_item_id                    VARCHAR(16),
+usor_item_name                  VARCHAR(80),
+usor_item_category              VARCHAR(80),
+usor_quantity                   VARCHAR(80),
+usor_item_desc                  VARCHAR(80),
+usor_item_safe_tray             VARCHAR(80),
+usor_item_oth_info              VARCHAR(100),
+usor_item_quantity              VARCHAR(10),
+usor_item_bis_mark              VARCHAR(10),
+usor_item_hall_mark             VARCHAR(10),
+usor_item_gs_weight             VARCHAR(15),
+usor_item_gs_wt_type            VARCHAR(10),
+usor_item_nt_weight             VARCHAR(15),
+usor_item_nt_wt_type            VARCHAR(10),
+usor_item_wt_by                 VARCHAR(15),
+usor_item_fine_Weight           VARCHAR(15),
+usor_fine_wt                    VARCHAR(15),
+usor_final_fine_wt              VARCHAR(10),
+usor_item_purity                VARCHAR(15),
+usor_final_purity               VARCHAR(15),
+usor_tunch                      VARCHAR(15),
+usor_final_tunch                VARCHAR(15),
+usor_wastage                    VARCHAR(15),
+usor_cust_wstg                  VARCHAR(15),
+usor_cust_wstg_val              VARCHAR(15),
+usor_lab_charges                VARCHAR(15),
+usor_lab_charges_type           VARCHAR(10),
+usor_lab_charges_val            VARCHAR(10),
+usor_item_lab_charges           VARCHAR(15),
+usor_item_lab_charges_type      VARCHAR(10),
+usor_lab_oth_charges            VARCHAR(15),
+usor_lab_oth_charges_type	VARCHAR(10),
+usor_item_oth_charges           VARCHAR(15),
+usor_item_oth_charges_type      VARCHAR(10),
+usor_metal_rate_id              VARCHAR(10),
+usor_metal_rate                 VARCHAR(20),
+usor_valuation                  VARCHAR(30),
+usor_item_valuation             VARCHAR(30),
+usor_cry_valuation              VARCHAR(30),
+usor_vat_charges                VARCHAR(15),
+usor_tax_oth_charges            VARCHAR(15),
+usor_cry_tax_charges            VARCHAR(15),
+usor_final_valuation            VARCHAR(30),
+usor_nwor_id                    INT,
+usor_since                      DATETIME,
+usor_status                     VARCHAR(32),
+usor_order_status               VARCHAR(32),
+usor_supp_status                VARCHAR(32),
+usor_priority                   VARCHAR(16),
+usor_loyal_points               VARCHAR(16),
+usor_item_other_info            VARCHAR(16),
+usor_ratecutopt                 VARCHAR(16),
+usor_order_type                 VARCHAR(16),
+usor_order_upd_status           VARCHAR(16),
+usor_upd_pre_item_id            VARCHAR(16),
+usor_upd_item_id                VARCHAR(16),
+usor_snap                       LONGBLOB,
+usor_gs_weight                  VARCHAR(15),
+usor_gs_weight_type             VARCHAR(10),
+usor_nt_weight                  VARCHAR(15),
+usor_nt_weight_type             VARCHAR(10),
+usor_final_weight               VARCHAR(15),
+usor_final_weight_type          VARCHAR(10),
+usor_del_final_wt               VARCHAR(15),
+usor_del_final_wt_type          VARCHAR(10),
+usor_del_item_final_val         VARCHAR(30),
+usor_del_cry_wt                 VARCHAR(15),
+usor_del_cry_wt_typ             VARCHAR(10),
+usor_del_cry_final_val          VARCHAR(30),
+usor_del_final_val              VARCHAR(30),
+usor_deliv_pre_id               VARCHAR(15),
+usor_deliv_post_id              VARCHAR(10),
+usor_deliv_cry_id               VARCHAR(10),
+usor_deliv_gs_wt                VARCHAR(10),
+usor_deliv_gs_wt_type           VARCHAR(10),
+usor_snap_thumb                 LONGBLOB,
+usor_snap_fname                 VARCHAR(150),
+usor_snap_ftype                 VARCHAR(20),
+usor_snap_fsize                 VARCHAR(40),
+usor_snap_fszMB                 VARCHAR(40),
+usor_staff_id	                VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (usor_metal_No,usor_item_id)) AUTO_INCREMENT=10001";
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//*******************************End code to create user_order_table for order both supplier and customer panel Author:SANT21SEP16*******************************
 ?>

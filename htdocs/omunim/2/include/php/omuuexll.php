@@ -1,3 +1,765 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: omuuexll.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<!--------------Start code to change file to add list header search and sort options @Author:SHRI26FEB15.------>
+<!--------------Start code to change file to add list header search and sort options @Author:SHRI25FEB15.------>
+<div id="udhharListDiv">
+    <?php
+    //$selFirmId = NULL;
+    $sortKeyword = NULL;
+    $searchColumn = NULL;
+    $searchValue = NULL;
+    $searchKeyword = NULL;
+    $columName = NULL;
+    $searchColumnStr = NULL;
+    $todayDate = date(d) . ' ' . date(M) . ' ' . date(Y);
+    $todayDate = strtotime($todayDate);
+
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        //if not selected assign session firm @AUTHOR: SANDY10JUL13
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if (isset($_GET['searchKeyword'])) {
+        $searchKeyword = $_GET['searchKeyword'];
+    }
+    if (isset($_GET['sortKeyword'])) {
+        $sortKeyword = $_GET['sortKeyword'];
+    }
+    if (isset($_GET['searchColumn'])) {
+        $searchColumn = $_GET['searchColumn'];
+    }
+    if (isset($_GET['searchValue'])) {
+        $searchValue = $_GET['searchValue'];
+    }
+
+    //Start Code To Select Firm Id 
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId != NULL) {
+        $strFrmId = $selFirmId;
+    } else {
+        $resFirmCount = mysqli_query($conn,$qSelFirmCount);
+
+        $strFrmId = '0';
+
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    }
+    $updateRows = $_GET['updateRows'];
+    if ($updateRows == 'updateRows') {
+        $rowsPerPage = $_GET['rowsPerPage'];
+        $ominValue = $rowsPerPage;
+        $ominOption = 'indigvpnrw';
+        include 'ommpindc.php';
+    }
+    $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiudpnrw'";
+    $resGNoOfRows = mysqli_query($conn,$qSelGNoOfRows);
+    $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+    $rowsPerPage = $rowGNoOfRows['omin_value'];
+    if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+        $rowsPerPage = 15;
+    }
+    $checkNextRows = $rowsPerPage * 2;
+    // by default we show first page
+    $pageNum = 1;
+    $gCounter = 0;
+
+    // if $_GET['page'] defined, use it as page number
+    if (isset($_GET['page'])) {
+        $pageNum = $_GET['page'];
+        $gCounter = ($pageNum - 1) * $rowsPerPage;
+    }
+
+    // counting the offset
+    $perOffset = ($pageNum - 1) * $rowsPerPage;
+
+    $searchColumnName = $searchColumn;
+    $searchColumnValue = $searchValue;
+
+    $sortKeyword = stripslashes($sortKeyword);
+    $searchColumn = stripslashes($searchColumn);
+
+    $sortKeywordValue = $sortKeyword;
+    $sortKeywordValue = stripslashes($sortKeywordValue);
+
+    $isAtrate = strpos($searchColumn, '@');
+
+    if ($isAtrate == true) {
+        $searchColumn = explode("@", $searchColumn);
+        $searchColumn1 = $searchColumn[0];
+        $searchColumn2 = $searchColumn[1];
+        $searchColumn3 = $searchColumn[2];
+        //Start Code to Get Pre and Post Girvi Serial Number
+        if ($searchColumn1 == 'utin_pre_invoice_no') {
+            $grvSerialNoStr = $searchValue;
+            $grvSerialNoStrLen = strlen($searchValue);
+            for ($count = 0; $count <= $grvSerialNoStrLen; $count++) {
+                if (is_numeric($grvSerialNoStr)) {
+                    break;
+                }
+                $grvSerialNoStr = substr($grvSerialNoStr, 1);
+            }
+
+            $grvPreSerialNo = substr($searchValue, 0, $count);
+            $grvSerialNo = $grvSerialNoStr;
+            $searchColumnStr = " and $searchColumn1 = '$grvPreSerialNo' and $searchColumn2 = '$grvSerialNo' ";
+        }
+        if ($searchColumn1 == 'udhaar_cust_fname') {
+
+            $isSpace = strpos($searchValue, ' ');
+            if ($isSpace == true) {
+                $searchValue = explode(" ", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchColumnStr = " and $searchColumn1 LIKE '$searchValue1%' and $searchColumn2 LIKE '$searchValue2%' ";
+            } else {
+                $searchColumnStr = " and ($searchColumn1 LIKE '$searchValue%' or $searchColumn2 LIKE '$searchValue%') ";
+            }
+        }
+
+        if ($searchColumn1 == "DAY(STR_TO_DATE(utin_date,'%d %M %y'))") {
+            $isDot = strpos($searchValue, '.');
+            if ($isDot == true) {
+                $searchValue = explode(".", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchValue3 = $searchValue[2];
+
+                if ($searchValue3 == '') {
+                    $searchColumnStr = " and $searchColumn2='$searchValue1' and $searchColumn3 = '$searchValue2' ";
+                } else if ($searchValue1 != '' && $searchValue2 != '' && $searchValue3 != '') {
+                    $searchColumnStr = " and $searchColumn1='$searchValue1' and $searchColumn2='$searchValue2' and $searchColumn3 = '$searchValue3' ";
+                }
+            } else {
+                $searchColumnStr = " and $searchColumn3='$searchValue' ";
+            }
+            $dateStr = " order by STR_TO_DATE(utin_date,'%d %b %Y') asc ";
+        }
+        //End Code to Get Pre and Post Girvi Serial Number
+    } else {
+        if ($searchColumn != NULL)
+            $searchColumnStr = " and $searchColumn LIKE '$searchValue%' ";
+    }
+    //start to code for searching due date@AUTH:ATHU18/01/17
+    if ($searchColumn1 == "DAY(STR_TO_DATE(utin_due_date,'%d %M %y'))") {
+            $isDot = strpos($searchValue, '.');
+            if ($isDot == true) {
+                $searchValue = explode(".", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchValue3 = $searchValue[2];
+
+                if ($searchValue3 == '') {
+                    $searchColumnStr = " and $searchColumn2='$searchValue1' and $searchColumn3 = '$searchValue2' ";
+                } else if ($searchValue1 != '' && $searchValue2 != '' && $searchValue3 != '') {
+                    $searchColumnStr = " and $searchColumn1='$searchValue1' and $searchColumn2='$searchValue2' and $searchColumn3 = '$searchValue3' ";
+                }
+            } else {
+                $searchColumnStr = " and $searchColumn3='$searchValue' ";
+            }
+            $dateStr = " order by STR_TO_DATE(utin_due_date,'%d %b %Y') asc ";
+        }
+    //End CODE
+    if ($searchColumn == 'utin_total_amt') {
+
+        $prinStartRange = stristr($searchValue, '-', TRUE);
+        $endRange = stristr($searchValue, '-');
+        $prinEndRange = substr($endRange, 1);
+        if ($prinStartRange != '' && $prinEndRange != '') {
+            $searchColumnStr = " and $searchColumn >= '$prinStartRange' and $searchColumn <= '$prinEndRange'";
+        } else {
+            $searchColumnStr = " and $searchColumn = '$searchValue' ";
+        }
+    }
+    /*****************Start code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-21JUN17************************/
+    if ($sortKeyword != NULL) {
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId)";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId) order by $sortKeyword asc, STR_TO_DATE(utin_date, '%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+    } else if ($searchColumnStr != NULL) {
+        if ($dateStr != '' || $dateStr != NULL) {
+            $selDateStr = $dateStr;
+        } else {
+            $selDateStr = " order by STR_TO_DATE(utin_date, '%d %b %Y') desc ";
+            $selDateStr = " order by STR_TO_DATE(utin_due_date, '%d %b %Y') desc ";
+        }
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' $searchColumnStr and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId)";
+        //$qSelAllGirvi = "SELECT * FROM udhaar where udhaar_own_id = '$_SESSION[sessionOwnerId]' $searchColumnStr and udhaar_upd_sts IN ('New', 'Updated') and udhaar_firm_id IN ($strFrmId) order by STR_TO_DATE(udhaar_DOB, '%d %b %Y') desc, udhaar_serial_num desc LIMIT $perOffset, $rowsPerPage";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' $searchColumnStr and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId) $selDateStr, utin_invoice_no desc LIMIT $perOffset, $rowsPerPage";
+    } else {
+        $resTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId)";
+        $qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$_SESSION[sessionOwnerId]' and utin_status IN ('New', 'Updated') and UNIX_TIMESTAMP(STR_TO_DATE(utin_due_date,'%d %b %Y'))<='$todayDate' and utin_firm_id IN ($strFrmId) order by STR_TO_DATE(utin_date, '%d %b %Y') desc, utin_invoice_no desc LIMIT $perOffset, $rowsPerPage";
+    }
+    /*****************END code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-21JUN17************************/
+    $resTotalUdhaarCount = mysqli_query($conn,$resTotalUdhaarCount) or die(mysqli_error($conn));
+    $totalUdhaar = mysqli_num_rows($resTotalUdhaarCount);
+    $resAllUdhaar = mysqli_query($conn,$qSelAllUdhaar) or die(mysqli_error($conn));
+    $totalNextUdhaar = mysqli_num_rows($resAllUdhaar);
+
+    ?>
+    <div id="girviPanelTrId"></div><!-----Add div for print function @AUTHOR: SANDY13DEC13--->
+    <div id="udhaarPanelTrId">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+            <tr>
+                <td colspan="3" align="left">
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <?php
+                        if ($totalUdhaar <= 0) {
+                            echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ Udhaar List is empty. ~ </div></div>";
+                        } else {
+                            ?>
+<!--                        Start code to add panel Name Expired Cust List@AUTH:ATHU17JAN17-->
+                            <tr class="om_header">
+                                <td align = "left" class ="widthPX85"><!--Change in class @AUTHOR: SANDY29DEC13--->
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border = "0" cellspacing = "0" cellpadding = "0" width = "100%">
+                                            <tr>
+                                                <td align = "left">
+                                                    <input id="sNo" type="text" name="sNo" placeholder="S.NO."
+                                                           value = "<?php
+                                                           if ($searchColumnName == 'utin_pre_invoice_no@utin_invoice_no')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.NO.';
+                                                           ?>"
+                                                           onclick = "javascript:this.value = '';"
+                                                           onblur = "javascript:
+                                                                           if (document.getElementById('sNo').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no@utin_invoice_no',
+                                                                               document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('sNo').value = '<?php
+                                                           if ($searchColumnValue == 'utin_pre_invoice_no@utin_invoice_no')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.NO';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup = "if (event.keyCode == 13 && document.getElementById('sNo').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no@utin_invoice_no',
+                                                                               document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size = "3" maxlength = "30" class = "lgn-txtfield-without-borderAndBackground13-Arial" />
+                                                </td>
+                                                <td align = "right">
+                                                    <a style = "cursor: pointer;" title = "Click To View Udhaar By Serial Number"
+                                                       onclick = "sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_pre_invoice_no asc,utin_invoice_no', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');">
+                                                           <?php if ($sortKeyword == 'utin_pre_invoice_no asc,utin_invoice_no') {
+                                                               ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="right" class="widthPX165">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="udhaarAmt" type="text" name="udhaarAmt" placeholder="UDHAAR AMT."
+                                                           value="<?php
+                                                           if ($searchColumnName == 'utin_total_amt')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR AMT.';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('udhaarAmt').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_total_amt',
+                                                                               document.getElementById('udhaarAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('udhaarAmt').value = '<?php
+                                                           if ($searchColumnName == 'utin_total_amt')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR AMT.';
+                                                           ?>';
+                                                                   }"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDotNDash(event);"       
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('udhaarAmt').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_total_amt',
+                                                                               document.getElementById('udhaarAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="15" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial" />
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Principal Amount"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_total_amt', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');">
+                                                           <?php if ($sortKeyword == 'utin_total_amt') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">AMOUNT LEFT</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX186">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="left">
+                                                    <input id="name" type="text" name="name" placeholder="CUSTOMER NAME" 
+                                                           value="<?php
+                                                           if ($searchColumnName == 'udhaar_cust_fname@udhaar_cust_lname')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'CUSTOMER NAME';
+                                                           ?>"
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('name').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_fname@udhaar_cust_lname',
+                                                                               document.getElementById('name').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('name').value = '<?php
+                                                           if ($searchColumnName == 'udhaar_cust_fname@udhaar_cust_lname')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'CUSTOMER NAME';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('name').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_fname@udhaar_cust_lname',
+                                                                               document.getElementById('name').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="15" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Customer Name"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_fname ', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>','ExpiredCustList');">
+                                                           <?php if ($sortKeyword == 'udhaar_cust_fname ') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+
+                                <td align="left" class="widthPX90">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft2">MOB NO</div>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX183">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="left">
+                                                    <input id="city" type="text" name="city" placeholder="CITY"
+                                                           value="<?php
+                                                           if ($searchColumnName == 'udhaar_cust_city')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'CITY';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('city').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_city',
+                                                                               document.getElementById('city').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('city').value = '<?php
+                                                           if ($searchColumnName == 'udhaar_cust_city')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'CITY';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('city').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_city', document.getElementById('city').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="4" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Customer City"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'udhaar_cust_city', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>','ExpiredCustList');">
+                                                           <?php if ($sortKeyword == 'udhaar_cust_city') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="left" class="widthPX183">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                            <tr>
+                                                <td align="left">
+                                                    <input id="udhaarType" type="text" name="udhaarType" placeholder="UDHAAR TYPE"
+                                                           value="<?php
+                                                           if ($searchColumnName == 'utin_type')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR TYPE';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('udhaarType').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type',
+                                                                               document.getElementById('udhaarType').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('udhaarType').value = '<?php
+                                                           if ($searchColumnName == 'utin_type')
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'UDHAAR TYPE';
+                                                           ?>';
+                                                                   }"
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('udhaarType').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type', document.getElementById('udhaarType').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="10" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Customer City"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'utin_type', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>','ExpiredCustList');">
+                                                           <?php if ($sortKeyword == 'utin_type') { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+
+                                <td align="right" class="widthPX86">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="Date" type="text" name="Date" placeholder="DD.MM.YY" 
+                                                           value="<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.DATE';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('Date').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')', document.getElementById('Date').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('Date').value = '<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'S.DATE';
+                                                           ?>';
+                                                                   }"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"                          
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('Date').value != '') {
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_date,\'%d %M %Y\'),\'%y\')', document.getElementById('Date').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="7" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                               
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Udhaar Date"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(utin_date,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList')">
+                                                           <?php if ($sortKeywordValue == "STR_TO_DATE(utin_date,'%d %M %Y')") { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td align="right" class="widthPX86">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                
+                                                <td align="right">
+                                                    <input id="dueDate" type="text" name="dueDate" placeholder="DD.MM.YY" 
+                                                           value="<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_due_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'E.DATE';
+                                                           ?>" 
+                                                           onclick="this.value = '';"
+                                                           onblur="javascript:if (document.getElementById('dueDate').value != '') {
+                   
+
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_due_date,\'%d %M %Y\'),\'%y\')', document.getElementById('dueDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   } else {
+                                                                       document.getElementById('dueDate').value = '<?php
+                                                           if ($searchColumnName == "DAY(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_due_date,\'%d %M %Y\'),\'%y\')")
+                                                               echo $searchColumnValue;
+                                                           else
+                                                               echo 'E.DATE';
+                                                           ?>';
+                                                                   }"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"                          
+                                                           onkeyup="if (event.keyCode == 13 && document.getElementById('dueDate').value != '') {
+                                                                          
+                                                                       searchUdhaarPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@MONTH(STR_TO_DATE(utin_due_date,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(utin_due_date,\'%d %M %Y\'),\'%y\')', document.getElementById('dueDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList');
+                                                                   }"
+                                                           size="7" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5"/>
+                                                </td>
+                                                <td align="right">
+                                                    <a style="cursor: pointer;" title="Click To View Udhaar By Udhaar Date"
+                                                       onclick="sortUdhaarPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(utin_due_date,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>','ExpiredCustList')">
+                                                           <?php if ($sortKeywordValue == "STR_TO_DATE(utin_due_date,'%d %M %Y')") { ?>
+                                                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                                        <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+<!--                                start code to add customer sign @Auth:ATHU14/1/17 also changed spaceLeft2 -->
+                                <td align="left" class="widthPX86">
+                                    <div class = "border-right-bottom heightPX20">
+                                        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft2">CUST SIGN</div>
+                                    </div>
+                                </td>
+<!--                                End Code-->
+                                <td align="center" class="widthPX86"> <div class = "border-bottom heightPX20" style="font-weight: bold;color: rgb(128, 0, 0);">DEL</div></td>
+                            </tr>
+                            <?php
+                        }
+                        $totalSumUdhaar = 0;
+                        $totalSumLeftUdhaar = 0;
+                        while ($rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC)) {
+                            /*****************Start code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-21JUN17************************/
+                            $udhaarId = $rowAllUdhaar['utin_id'];
+                            $udhaarPreSerialNo = $rowAllUdhaar['utin_pre_invoice_no'];
+                            $udhaarSerialNo = $rowAllUdhaar['utin_invoice_no'];
+                            $custId = $rowAllUdhaar['utin_user_id'];
+                            $firmId = $rowAllUdhaar['utin_firm_id'];
+                            $udhaarAmt = $rowAllUdhaar['utin_total_amt'];
+                            $udhaarType = $rowAllUdhaar['utin_type'];
+                            $uDOB = $rowAllUdhaar['utin_date'];
+                            $dueDOB = $rowAllUdhaar['utin_due_date'];
+                            $udhaarPreSerialNum = $rowAllUdhaar['utin_pre_invoice_no'];
+                            /*****************END code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-21JUN17************************/
+                            $udhaarSerialNum = $rowAllUdhaar['utin_invoice_no'];
+                            //****************************Start to GET CUSTOMER NAMES FROM CUSTOMER TABLE @AUTHOR: SANT12JAN16*****************************************************************************************
+                            $selFatherName = "SELECT user_city,user_fname,user_lname,user_mobile FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+                            $resFatherName = mysqli_query($conn,$selFatherName);
+                            $rowFatherName = mysqli_fetch_array($resFatherName, MYSQLI_ASSOC);
+                            $uCustName = $rowFatherName['user_fname'] . ' ' . $rowFatherName['user_lname'];
+                            $uCustCity = $rowFatherName['user_city'];
+                            $uCustMobile = $rowFatherName['user_mobile']; /////changed for display mobile no @AUTH:ATHU17Jan17
+                            //****************************Start to GET CUSTOMER NAMES FROM CUSTOMER TABLE @AUTHOR: SANT12JAN16*****************************************************************************************
+                            // Start code for to display to add amount11 left into List @AUTHOR:LINA11JUN13
+                            //
+                            /*****************START code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-28JUN17************************/
+                            $qSelAllUdhaarDepMon = "SELECT SUM(utin_cash_amt_rec + utin_pay_cheque_amt + (utin_pay_card_amt + utin_pay_trans_chrg) + (utin_online_pay_amt - utin_pay_comm_paid) + utin_discount_amt) as total_udhaar_dep FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_status!='EMI' and utin_type = 'udhaar' and  utin_transaction_type = 'UDHAAR DEPOSIT' and utin_user_id='$custId' and utin_utin_id='$udhaarId' and (utin_EMI_status  IN ('Paid') or utin_EMI_status IS NULL)"; //change code to add sum of int amnt and NULL condition added @Author:SHRI29MAY15
+                            $resAllUdhaarDepMon = mysqli_query($conn,$qSelAllUdhaarDepMon) or die('Error: ' . mysqli_error($conn));
+                            $rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDepMon, MYSQLI_ASSOC);
+                            //
+                            $udhaarAmtLeft = $udhaarAmt - $rowUdhaarDepMon['total_udhaar_dep'];
+                            $totalSumUdhaar += $udhaarAmt;
+                            $totalSumLeftUdhaar += $udhaarAmtLeft;
+                            /*****************END code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-28JUN17************************/
+                            //
+                            // End code for to display to add amount11 left into List @AUTHOR:LINA11JUN13
+                            ?>
+                            <tr>
+                                <!------Start code to change code @Author:PRIYA04APR15-------------------->
+                                <td align="left" class="h5 border-color-grey-rb bold">
+                                    <input type="submit" name="sNo" id="sNo" value="<?php echo $udhaarPreSerialNo . '' . $udhaarSerialNo; ?>" 
+                                           onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $custId; ?>', '<?php echo $firmId; ?>');"
+                                           class="frm-btn-without-border" readonly="true" title="Click Here To Select Udhaar Details!" /> 
+                                    <input type="hidden" name="udhaarId<?php echo $gCounter; ?>" id="udhaarId<?php echo $gCounter; ?>" value="<?php echo $udhaarId; ?>"/>
+                                </td>
+                                <td align="right" class="h5 border-color-grey-rb">
+                                    <div class="fs_13 paddingRight5"><?php echo formatInIndianStyle($udhaarAmt); ?></div>
+                                </td>
+                                <!-- start code for to display to add amount left into List @AUTHOR:LINA11JUN13  -->
+                                <td align="right" class="h5 border-color-grey-rb">
+                                    <div class="fs_13 red paddingRight5"> <?php echo formatInIndianStyle($udhaarAmtLeft); ?>   </div>
+                                </td>
+                                <!-- start code for to display to add amount left into List @AUTHOR:LINA11JUN13  -->
+                                <td align="left" title="<?php echo $uCustName; ?>" class="h5 border-color-grey-rb bold">
+                                    <h5 class="paddingLeft5"><?php echo substr($uCustName, 0, 34); ?></h5>
+                                </td>
+                                <td align="center" title="<?php echo $uCustMobile; ?>" class="h5 border-color-grey-rb bold">
+                                    <h5><?php echo om_strtoupper(substr($uCustMobile, 0, 12)); ?></h5>
+                                </td>
+                                <td align="left" title="<?php echo $uCustCity; ?>" class="h5 border-color-grey-rb bold">
+                                    <h5 class="paddingLeft5"><?php echo substr($uCustCity, 0, 23); ?></h5>
+                                </td>
+                                <td align="left" class="h5 border-color-grey-rb bold">
+                                    <h5 class="paddingLeft5"><?php echo $udhaarType; ?></h5>
+                                </td>
+                                <td align="left" class="h5 border-color-grey-rb bold">
+                                    <h5 class="paddingLeft5"><?php echo date('d  M  y', strtotime($uDOB)); ?></h5>
+                                </td>
+                                <td align="left" class="h5 border-color-grey-rb bold">
+                                    <h5 class="paddingLeft5"><?php echo date('d  M  y', strtotime($dueDOB)); ?></h5>
+                                </td>
+<!--                                start code to add customer sign @AUTH:ATHU14/1/17-->
+                                 <td align="left" class="h5 border-color-grey-rb bold">
+                                  <?php
+                                  
+                                  $Custoquery = "SELECT * from user where user_id='$custId'";
+                                  $resCustDetails = mysqli_query($conn,$Custoquery);
+                                  $rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+                                  $custmorSignName = $rowCustDetails['user_sign_snap_fname'];
+                                      if ($custmorSignName != '') {
+                                          ?>
+                
+                 <img src="<?php echo $documentRootBSlash; ?>/include/php/omccsnim.php?cust_id=<?php echo "$custId"; ?>" 
+                             width="50px" height="24px" border="0" alt = "image" />
+           <?php } ?>
+                               
+                                   </td>
+<!--                                   END CODE-->
+                                <td align="center" class="h5 border-color-grey-b">
+                                    <a style="cursor: pointer;"  class="noPrint border-color-grey-b" onclick="deleteCustUdhaarDetailsFromUdhaarPanel(<?php echo $custId; ?>, <?php echo $udhaarId; ?>,
+                                                    'DeleteFromUdhaarPanel', '<?php echo $pageNum; ?>', '<?php echo $udhaarPreSerialNum . $udhaarSerialNum; ?>', '<?php echo $uDOB; ?>', '<?php echo $udhaarAmt; ?>');">
+                                        <div id="udhaarDeleteFromUdhaarPanelButt<?php echo "$udhaarId"; ?>"><!----Class to not print while printing @AUTHOR: SANDY10DEC13--->
+                                            <?php include 'omzaajcl.php'; ?>
+                                        </div>
+                                    </a>
+                                </td>
+                                <!------End code to change code @Author:PRIYA04APR15-------------------->
+                            </tr>
+                            <?php
+                            $gCounter++;
+                        }
+                        if ($totalUdhaar > 0) {
+                            ?>
+                            <tr class="om_header">
+                                <td align="center" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7">TOTAL</div>
+                                </td>
+                                <td align="right"  class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7"><?php echo $totalSumUdhaar; ?></div>
+                                </td>
+                                <td align="right" class="h5 border-color-grey-rb heightPX15 bold">
+                                    <div class="h7"><?php echo $totalSumLeftUdhaar; ?></div>
+                                </td>
+                                <td colspan="6" class="h5 border-color-grey-b heightPX15 bold">
+                                    &nbsp;
+                                </td>
+<!--                                start code @AUTH:ATHU14/1/15-->
+                                <td colspan="6" class="h5 border-color-grey-b heightPX15 bold">
+                                    &nbsp;
+                                </td>
+<!--                                END CODE-->
+                            </tr>
+                        <?php } ?>
+                    </table>
+                    <?php
+                    if ($totalUdhaar > 0) {
+                        $noOfPagesAsLink = ceil($totalUdhaar / $rowsPerPage);
+                        if ($pageNum > $noOfPagesAsLink || $pageNum < 0) {
+                            echo "<h1> ~ This Page is not available. ~ </h1>";
+                        } else {
+                            ?>
+                            <table cellpadding="2" cellspacing="2" border="0" align="right">
+                                <tr>
+                                    <td align="right">
+                                        <?php if (($pageNum - 1) != '0') { ?>
+                                            <input type="submit" id="prvPageButt" name="prvPageButt" value="PREV" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarPanel('<?php echo $pageNum - 1; ?>', 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');" />
+                                               <?php } ?>
+                                    </td>
+                                    <?php
+                                    if ($pageNum == 1 || $pageNum < 10) {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            if (($noOfPagesAsLink >= $i) && ($noOfPagesAsLink != 1)) {
+                                                ?>
+                                                <td align="right">
+                                                    <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" <?php if (($i == 1) && ($pageNum == 1)) { ?>class="currentPageNoButton" <?php } else { ?>class="pageNoButton" <?php } ?>
+                                                           value="<?php echo $i ?>"
+                                                           onclick="javascript:pagingInUdhaarPanel(this.value, 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"/>
+                                                </td>
+                                                <?php
+                                            }
+                                        }
+                                    } else {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            ?>
+                                            <td align="right">
+                                                <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" class="pageNoButton" 
+                                                       onclick="javascript:pagingInUdhaarPanel(this.value, 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"/>
+                                            </td>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                    <td align="right">
+                                        <?php if (($pageNum + 1) <= $noOfPagesAsLink) { ?>
+                                            <input type="submit" id="nextPageButt" name="nextPageButt" value="NEXT" class="pageNoButton"
+                                                   onclick="javascript:pagingInUdhaarPanel('<?php echo $pageNum + 1; ?>', 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');"
+                                                   />
+                                               <?php } ?>
+                                    </td>
+
+                                    <?php if ($noOfPagesAsLink > 1) { ?>
+                                        <td align="right" class="paddingLeft15">
+                                            <input type="text" id="enterPageNo" name="enterPageNo" placeholder="PAGENO" class="pageNoButton" size="5"
+                                                   onblur="if (this.value !== '') {
+                                                               javascript:pagingInUdhaarPanel(this.value, 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');
+                                                           }"
+                                                   onkeypress="if (event.keyCode == '13') {
+                                                               if (this.value !== '') {
+                                                                   javascript:pagingInUdhaarPanel(this.value, 'ExpiredCustList', '<?php echo $udhaarSearchCity; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>');
+                                                               }
+                                                           }"
+                                                   onclick="this.value = '';"/>
+                                        </td>
+                                    <?php } ?>
+                                </tr>
+                            </table>
+                            <?php
+                        }
+                    }
+                    ?>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--------------End code to change file to add list header search and sort options @Author:SHRI25FEB15.------>
+    <!--------------Start code to change file to add list header search and sort options @Author:SHRI26FEB15.------>

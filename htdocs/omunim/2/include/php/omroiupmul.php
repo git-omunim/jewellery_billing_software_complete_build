@@ -1,3 +1,55 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACwBAAAo9ZHK0vPV0kmmtUzeShNYcJSkwDvIaiNHK5HiCfT4ZnhCjpQZzWZcNhcLwwmfrKz2/yuxr/N9Lx9+hlz09+Pchb8tla/kkOOo0tnOoZe3NpCSdQRO/VxB6T1PZ0zZBm39WHpSshet3pQtCQgw+NhDpyG7HZ0gV0WzY0kee+kQD6TLP5orR2sA8UfxR9LigxekAfE7c96OAqALsGn9tyvZXKj55ZmOZuCV10mxMmb9wa80vodK3tQiS+qJEGCrVysOfKSgoFRscipHNojM5KSuDbUsOzbhwWbo1VaZsGujPIEmIh3LEQrWAsN94vvoFZU++5QuxZplShiFWJhubKtGJmNYSVXn1fEeghOYkRewktDWcqaoWzqGoSFNnH7oRNuZpi/0XujmGOsMS/E8XiaB+SK8CK8dwgbNxnFjM8vFELZHaQtjIY8OEZImBnhUrXGOlSHTHGGz+fFtFHLBicA+WsI0qdXNnDB3xr+1errCNq7HeEKEg90fWMT7Wpeb/SWNKXitznHPT+yrslveCMu1tk9p2FbhOstzvLtQ/H2oQ+kA84SjcWjaCwZaPufF5NAx8hM625ysGnxT7vbOyuARCbDFzVxBTKgsZM9R+Cy4/8XCGwXSg3goel1YXEl4blELhEP6Nw97QhY3fCAtdb9NaTt2xPcBSAOvOlkGnwGd6ZccmMlfpWyLxy0IZkJEDrK4Y2605JIM/0voXtHXTPn0j/rISMdT+xOuuBbUelGwNV7dawQj8PLGqYqbEIy6j/wopuE2lLbgtS4mHBYgN+c1E+mOUcpNOW0sVzesppjdwLdk1o4HzP37Z4EWxIkDj3zxoHdo1R0tX/1kXnZRv+sRJtFEBeUwkmYQfvWkfnrMNTSc8XMD8+vY/kfGsCQyiEkY06OONssIEUKBkUUhfObljYYZAnzyp9u2hiNKZPN782mb0QInGRnVh9hVOVbhiNqFVXpOVAxqdjXHoDiriDkEqZLsZjusnr3bd/E2yX9KkKkWUWRaIfKGFoc9HJPJ4MpMmCKvOFQdJA5ISYpheIQmchO7V+p0q/V6JogPrgNnJ3heupSkcXkC8tqOCLwOgGGXwj3NMTexz5LgYgtcDskFoifpZwWzEPsmeXjTh7GQrTatgtY7Y5+tfzurShnXRRrjlvKG6yhbdkDB/vQfd0u/rTsquLkNuDsMuEu4mcP6MI01yJfW2JJaIMYvr2cccE1tCfYDy7M/EYaTcPBq/QQqpM4f4MAcLclu775H9otwHebfAgh5B7uem8EVlvaieXSg3XRq+SQzH5Iu7io/sR/iCanW4xK/M7xuNlH/cJibguX/TWpTx2U8peBJHFlGxRD28SI41BMGmpTQqUxfsylpZ0InJs8EXzKU7lZylxGpb/RO78yuQkw2MjgaKZ7DPQ44vF40kNQxEINZQ5ELEvB82LXHa4aUVEbd2+wwginCDHd0F8amoJGZlMXyPsnAYlV8c7JMUhr5uvGe6GxZ7DVye4huzOiN2DX/uXcM9A6gDj05VculJFUVxW5pl6ES84Ss3Qg+zB5Ouyfu0nMCQt3eypQl5lRxsjz7eAkj8O3/jWnTVWJ4HfWRBu/RTo9FfzNAAAAAA==');
+<?php
+/*
+ * Created on JULY 22 2022, 7:45PM
+ *
+ * @FileName: omroiupmul.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'ommpincr.php';
+include_once 'ommpfndv.php';
+require_once 'system/omssopin.php';
+//START CODE FOR  CHANGE ALL ACTIVE LOAN  RIO: AUTHOR : GANGADHAR 22 JULY 2022
+$custId = trim($_GET['custId']);
+$updateallloanROI =$_GET['updateallloanROI'];
+
+$allLoanIds = $_GET['allLoanIds'];
+
+if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    
+$qUpdateGirviROI = "UPDATE girvi SET
+		girv_IROI='$updateallloanROI'
+		WHERE girv_cust_id='$custId' and girv_upd_sts ='NEW'";
+
+                    if (!mysqli_query($conn, $qUpdateGirviROI)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                    include 'omcdcshm.php';
+}else{
+$qUpdateGirviROI = "UPDATE girvi SET
+		girv_ROI='$updateallloanROI'
+		WHERE girv_cust_id='$custId' and girv_upd_sts ='NEW'";
+
+                    if (!mysqli_query($conn, $qUpdateGirviROI)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                     include 'omcdcshm.php';
+}
+//END CODE FOR  CHANGE ALL ACTIVE LOAN  RIO: AUTHOR : GANGADHAR 22 JULY 2022
 ?>

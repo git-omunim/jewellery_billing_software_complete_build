@@ -1,3 +1,149 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: OMGOLD Stock Table(For Wholesale and Retail)
+ * **************************************************************************************
+ *
+ * Created on Dec 12, 2015 2:48:00 PM
+ *
+ * @FileName: ogtbitst.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE:
+ * AUTHOR:
+ * REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim
+ */
+?>
+<?php
+// Change in file for adding new columns in stock table @SANT29MAY17
+// Creating stock table @PRIYANKA29MAY17
+$query = "CREATE TABLE IF NOT EXISTS stock (
+st_id                                           INT NOT NULL PRIMARY KEY AUTO_INCREMENT,".
+// common fields in stock table like owner,firm        
+"st_owner_id                                    VARCHAR(16),
+st_firm_id                                      VARCHAR(16),".
+// Product details column in stock table     
+"st_metal_type 					VARCHAR(16),
+st_product_type 			        VARCHAR(32),    
+st_stock_type                                   VARCHAR(16),
+st_item_name 					VARCHAR(80),
+st_item_category 				VARCHAR(80),".
+// Barcode Columns Added @Author:PRIYANKA-30JUNE17
+//st_pkt_weight - Used this for stock less weight
+//st_less_weight - Used this for stock pkt weight
+"st_barcode_prefix                               VARCHAR(10),
+st_barcode 					VARCHAR(10), 
+st_quantity 					VARCHAR(10),
+st_purity 					VARCHAR(15),
+st_avg_purity 					VARCHAR(15),
+st_wastage 					VARCHAR(15),
+st_final_purity 				VARCHAR(16),
+st_avg_wastage 					VARCHAR(15),
+st_metal_rate 					VARCHAR(20),
+st_pur_avg_rate                                 VARCHAR(20),
+st_gs_weight 					VARCHAR(16),
+st_gs_weight_type 				VARCHAR(10),
+st_pkt_weight 					VARCHAR(16),
+st_pkt_weight_type 				VARCHAR(10),
+st_less_weight 					VARCHAR(16),
+st_less_weight_type 				VARCHAR(10),
+st_counter_name 				VARCHAR(16),
+st_counter_id				        VARCHAR(10),
+st_nt_weight 					VARCHAR(16),
+st_nt_weight_type 				VARCHAR(10),
+st_tag_weight 					VARCHAR(16),
+st_fine_weight 					VARCHAR(16),
+st_fine_weight_type 				VARCHAR(10),
+st_final_fine_weight 				VARCHAR(16),
+st_purchase_rate                                VARCHAR(16),
+st_purchase_rate_type                           VARCHAR(10),
+st_sell_rate                                    VARCHAR(16),
+st_sell_rate_type                               VARCHAR(10),".
+// other charges column in stock table        
+"st_lab_charges                                 VARCHAR(15),
+st_lab_charges_type                             VARCHAR(10),
+st_making_charges 				VARCHAR(15),
+st_making_charges_type                          VARCHAR(10),".
+// AVG LAB CHARGES AND AVG OTHER CHARGES IN STOCK TABLE @AUTHOR-PRIYANKA-11AUG20
+"st_pur_avg_lab_chrgs                           VARCHAR(20),
+st_pur_avg_other_chrgs                          VARCHAR(20),
+st_tot_tax 					VARCHAR(16),
+st_tax                                          VARCHAR(16),".
+// valuation & crystal final valuation column       
+"st_valuation 					VARCHAR(50),
+st_stone_valuation 				VARCHAR(50),
+st_final_valuation 				VARCHAR(50),
+st_since 					VARCHAR(50),".
+// status details in stock table      
+"st_status 					VARCHAR(16),
+st_item_code                                    VARCHAR(16),
+st_type 					VARCHAR(16),".
+// Added New Columns For Discount Management Functionality @Author:PRIYANKA-20-OCT-2020          
+"st_disc_product_amount 			VARCHAR(16),
+ st_online_product_disc 			VARCHAR(16),
+ st_online_product_price_bounce 			VARCHAR(16),
+st_disc_making_discount 			VARCHAR(16),
+st_disc_stone_discount                          VARCHAR(16),
+st_disc_product_discount 			VARCHAR(16),".
+// Added New Columns For Retail Discount Management Functionality @Author:SHRIKANT-17-JAN-2023          
+"st_product_commission_amount 			VARCHAR(16),
+st_disc_start_date                              VARCHAR(32),
+st_disc_end_date                                VARCHAR(32),
+".        
+// Columns used in Imitation Panel        
+"st_price                                       VARCHAR(16),
+st_price_without_tax                            VARCHAR(16),    
+st_cust_itmpricecode                            VARCHAR(16),
+st_cust_itmcode                                 VARCHAR(16),
+st_cust_itmcalby                                VARCHAR(16),
+st_cust_itmnum                                  VARCHAR(16),
+st_item_model_no                                VARCHAR(16)," .
+//  Columns used in Imitation Panel        
+"st_purches_discount_per                        VARCHAR(16),
+ st_metal_discount_per                          VARCHAR(16),
+ st_purches_discount_amt                        VARCHAR(16),
+ st_metal_discount_amt                          VARCHAR(16),
+ st_pur_other_chrgs                             VARCHAR(16),
+ st_other_charges                               VARCHAR(16)," .
+// Added New Columns Added for OMRETAIL SOFTWARE @Author:PRIYANKA-28JUNE20         
+"st_period                                      VARCHAR(16),
+st_period_type                                  VARCHAR(16),
+st_cust_price                                   VARCHAR(16),".
+// New Columns Added for Wholesale Sell @Author:PRIYANKA-17JUN17      
+"st_shape                                       VARCHAR(16),
+st_size                                         VARCHAR(16),
+st_item_length                                  VARCHAR(16),
+st_item_width                                   VARCHAR(16),
+st_item_sales_pkg                               VARCHAR(16),
+st_clarity                                      VARCHAR(16),
+st_color                                        VARCHAR(16),
+st_image_id                                     VARCHAR(10),
+st_item_other_info                              VARCHAR(16),".
+// New column added for discount percent @author:Hema-2JAN20       
+"st_discount_per                                VARCHAR(16),".
+"st_st_id                                       VARCHAR(16),".
+"st_indicator                                   VARCHAR(16),
+last_column                                     VARCHAR(1))AUTO_INCREMENT=1";// Column Added by @Author:Love-11SEP17 This column will not use
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

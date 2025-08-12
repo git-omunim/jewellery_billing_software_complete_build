@@ -1,3 +1,104 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABYBAAAUQBDqM/KFC7sPhUbirBJ5CWUCAw537gGL0/nhHNUw+oF+Au5DT9kyB7ldkl9g5gKgeIVJ+0EVndJarEAhVEWX7mUzeT4EfmgCNxcyUu72D2z9Et5S3j+BYyB/UoMQBgCZYFrEexL2EgOQHI0cwvWAaN5KhKqVgITs5e//yl8O31BvfBoRE4MiVrVUhkkJXDEazx2x9T7NKYtZVa2MOT6HH5/aPIpfyWwwvKPSyhmu/oouJE/Pw1x4ZKo9ekgrbsmZZZKgb7Rxn7xYlwgQA3/LI70m4HOUWT6B3tXqLLJtVmg5mb90kFgeAa2/shMTlenC5Uca7epsXFurhPKDjEPc8eTeVsTJIVQRkZSqRgiyELdmoGFdTpolH2Iy0CcfCp3fhV96TqWjjXgdpBWagSlyoR2vLQRzZV2k+NQXfT3Hr+1fN0dMOuasL2mWrU+YO9250mnY/JGcC7l2OARTHxR+TK7Yu6+5FJQiJ1IWZHVjAx46Uez5lNKJh6pvWFr0YLNKkrtMgEUcYP5fSlr+hkPzw/AAjkS1I3O9T25je5N9pkFF7tCPkvQtrDBgbjwuj2pskZ+WKjCDJtTqkCm1GqVzNA2VN2Jlfnj1Az8YypLtGerFZbsPR0O4Ddqv2DX3QlBQ/sHnA2lzM/e6qdFmxyc1rds4tj2q/cWE8jDLwyN/XWd6aPO/r7ukDujM+unDaLPdFyf1dTy2W5CLFwrbSl3pvJ0U4rnQVIv8mSrfWwsejHdWDKwY8oCSqQW50pdJjEie3IUGTp0AkdsVpMSnahcHSrXpYJ0/2Grm3MT3WqO1JshtW1u5Yu8OFvLRPRmAm8J7H2dm3a6+VOXdhBAisKMxVUmBz1qJIIMWVuTxJ1EmsaV+evAcIcxkvshvFGQsVUMwmP7mEcTH31k2cRAfaRXI+lRU0orpguB9toX1IyYN7xAfxR/BKk6CBJMOC00KMQ7DY8gweszkuMGk+27kFnteM8J8NmXTQuqHHE3RITtSGja2V854hv42M9E2dYChVI3MzQyyS4VuSPc+QhRkctKgOJKDpsH7pr1MfA6pVfbXwfvhfupOAAQbEL43qtGbektJikmzOzXn9Ytr6QxDQzEzw6yKMHIStkWJzMO+FiAeGs1XYbSMxnNihtjAw4771hoEbgbf6/jKjONjz0nf49HYTqaXdVHyX+D1TY5AV+8vNNrLQcZ3HPlkLIK+h2b9ZloG7p9LiVS8R9P694HaIXZ/gyrYQMVewqo9CL8oti6BQLX6KQhc4mJZ2Xu+SidiLphOf6jM7SS1NIbAlAwoG1LsLijZ3vWtkeeWZGO8QQ5PuixGkJQ/qaNqVkwxsDA9lKmwxNYNOUyX3CZoyLMVEORkl/EJ30lnPGs71Xx2+tFAaJmyuvTsG7eFvvHh0ZHhdNweXP3xjBVHX5x3NT4VBWOURv2BJFwVYKYtFLl+5EIVQ+9Shq4BNRXsHaczbNk8DN/QXrXHKVksCcAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: sell purchase customised form
+ * **************************************************************************************
+ * 
+ * Created on Jun 5, 2014 2:01:44 PM
+ *
+ * @FileName: omcuform.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<style>
+    body{
+        margin:0;
+        padding: 0;
+    }
+    .headtitle{
+        background:#b82476;
+        color:#fff;
+    }
+    .headtitle h1{
+        margin: 0;
+font-size: 80px;
+text-align: center;
+text-transform: uppercase;
+font-family: 'Calibri',sans-serif;
+    }
+    .rateSec{
+        background: #4b1619;
+        width: 100%;
+        /*height:87vh;*/
+    }
+   .rateSec .leftSide{
+        color:#fff;
+        text-align: center;
+    }
+    .rateSec .leftSide h2{ 
+     font-size:60px;
+     margin:0;
+     padding:20px 0;
+     text-transform: uppercase;
+     font-family: 'Calibri',sans-serif;
+     border-bottom: 1px solid #95876b;
+    }
+</style>
+    
+
+<body>
+    <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center" width="100%" colspan="2">
+                <div class="headtitle">
+                    <h1>Today's Gold and silver rate</h1>
+                </div>
+            </td>
+        </tr>   
+    </table>
+    <table class="rateSec" width="100%" align="center" valign="top" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td align="center" width="50%" valign="top">
+                <div class="leftSide">
+                 <h2>24 CT-6 (16k)</h2>
+                 <h2>24 CT-7 (18k)</h2>
+                 <h2>24 CT-9 (22k)</h2>                
+                 <h2>24 CT   (24k)</h2>
+                 <h2>Sl Pure-60(60%)</h2>
+               </div>
+            </td>
+            <td align="center" width="50%" valign="top">
+                <div class="leftSide">
+                 <h2 style="color:#fef675;">&#8377; 3686 (gm)</h2>
+                 <h2 style="color:#fef675;">&#8377; 4147 (gm)</h2>
+                 <h2 style="color:#fef675;">&#8377; 5058 (gm)</h2>
+                 <h2 style="color:#fef675;">&#8377; 5029 (gm)</h2>
+                 <h2 style="color:#fef675;">&#8377; 45 (gm)</h2>
+               </div>
+            </td>
+        </tr>   
+    </table>
+    <table width="100%" align="center" valign="top" cellpadding="0" cellspacing="0" border="0" style="background: #b82476;color: #fff;">
+        <tr>
+            <td align="center" width="50%" valign="top">
+                <div class="scrollSec">
+                    <h2>OMG JEWELLERS <span>&nbsp; &nbsp; Contact No: +91 1234567890</span><span> &nbsp; &nbsp; Website: www.omgjewellers.com</span></h2>                
+               </div>
+            </td>
+           
+        </tr>   
+    </table>
+  
+    </body>

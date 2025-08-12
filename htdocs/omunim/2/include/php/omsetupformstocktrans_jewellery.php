@@ -1,3 +1,583 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 2 May, 2018 9:47:35 PM
+ *
+ * @FileName: omsetupformstocktrans_jewellery.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+// ***************************************************************************
+// Start Code To Create Array For Fine Jwellery Form Setup
+// ***************************************************************************
+//
+//
+$fineJewelleryPurchase = array("sttr_add_date", "sttr_firm_id", "sttr_product_type", "sttr_item_pre_id",
+    "sttr_item_id", "sttr_brand_id", "sttr_barcode", "sttr_account_id",
+    "sttr_bis_mark",
+    "sttr_image_id", "sttr_item_category", "sttr_item_name", "sttr_size",
+    "sttr_quantity", "sttr_hsn_no", "sttr_shape", "sttr_gs_weight",
+    "sttr_gs_weight_type", "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight",
+    "sttr_nt_weight_type", "sttr_fine_weight", "sttr_purity", "sttr_wastage",
+    "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt", "sttr_value_added",
+    "sttr_item_length", "sttr_item_width", "sttr_color", "sttr_clarity",
+    "sttr_lab_charges", "sttr_lab_charges_type", "sttr_making_charges", "sttr_making_charges_type",
+    "sttr_final_fine_weight", "sttr_sell_final_fine_weight", "sttr_product_purchase_rate", "sttr_product_sell_rate",
+    "sttr_item_other_info", "sttr_metal_amt", "sttr_metal_discount_per", "sttr_metal_discount_amt",
+    "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt", "sttr_valuation",
+    "sttr_tot_price_cgst_per", "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg",
+    "sttr_tot_price_igst_per", "sttr_tot_price_igst_chrg", "sttr_total_lab_charges", "sttr_mkg_cgst_per",
+    "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per", "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per",
+    "sttr_mkg_igst_chrg", "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt",
+    "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewelleryPurchaseHorizontal = array("sttr_item_category", "sttr_quantity", "sttr_gs_weight", "sttr_gs_weight_type",
+    "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight", "sttr_nt_weight_type",
+    "sttr_fine_weight", "sttr_final_fine_weight", "sttr_product_purchase_rate", "sttr_metal_amt",
+    "sttr_metal_discount_per", "sttr_metal_discount_amt", "sttr_valuation", "sttr_tot_price_cgst_per",
+    "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg", "sttr_tot_price_igst_per",
+    "sttr_tot_price_igst_chrg", "sttr_item_name", "sttr_hsn_no", "sttr_purity",
+    "sttr_wastage", "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt",
+    "sttr_value_added", "sttr_lab_charges", "sttr_lab_charges_type", "sttr_sell_final_fine_weight",
+    "sttr_product_sell_rate", "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt",
+    "sttr_total_lab_charges", "sttr_mkg_cgst_per", "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per",
+    "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per", "sttr_mkg_igst_chrg", "sttr_size",
+    "sttr_shape", "sttr_item_length", "sttr_item_width", "sttr_color",
+    "sttr_clarity", "sttr_making_charges", "sttr_making_charges_type", "sttr_item_other_info",
+    "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt", "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewelleryPurchaseSize = array("132px", "90px", "120px", "100px",
+    "100px", "120px", "171px", "",
+    "",
+    "", "90px", "80px", "60px",
+    "30px", "40px", "60px", "50px",
+    "40px", "50px", "40px", "50px",
+    "40px", "50px", "40px", "34px",
+    "46px", "35px", "40px", "50px",
+    "60px", "60px", "65px", "60px",
+    "50px", "30px", "50px", "30px",
+    "50px", "50px", "50px", "50px",
+    "255px", "80px", "35px", "50px",
+    "80px", "35px", "50px", "80px",
+    "30px", "55px", "30px", "55px",
+    "30px", "55px", "80px", "30px",
+    "55px", "30px", "55px", "30px",
+    "55px", "155px", "45px", "60px",
+    "100px", "180px");
+//
+//
+$fineJewelleryPurchaseMandatory = array("Y", "Y", "Y", "Y",
+    "Y", "N", "N", "Y",
+    "N",
+    "N", "Y", "Y", "N",
+    "Y", "N", "N", "Y",
+    "Y", "N", "N", "Y",
+    "Y", "Y", "Y", "N",
+    "Y", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "Y", "N", "Y", "N",
+    "N", "Y", "N", "N",
+    "N", "N", "N", "Y",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N");
+//
+//
+$fineJewelleryPurchaseLable = array("Bill Date |BILLDATE", "Firm - Name |FIRM", "Product Type |TYPE", "Item Pre-Id |CODE",
+    "Item Id |NUM ID", "Brand Name |BRAND NAME", "Barcode |BAR-CODE", "Account Name |ACCOUNT NAME",
+    "BIS |BIS",
+    "Images |PATH", "Category |CATEGORY", "Item Name |NAME", "Size |SIZE",
+    "Quantity |QTY", "HSN |HSN", "Shape |SHAPE", "Gross Weight |GS WT",
+    "Gross Weight Type |TYPE", "Less Weight |LESS WT ", "Less Weight Type |TYPE", "Net Weight |NT WT",
+    "Net Weight Type |TYPE", "Fine Weight |FINE WT", "Item Tunch |PURITY", "Wastage |WSTG",
+    "Final Purity |F.PURITY", "Customer Wastage |V/A %", "Customer Wastage Weight |V/A WT", "Value Added |V/A AMT",
+    "Item Length |LENGTH", "Item Width |WIDTH", "Color |COLOR", "Clarity |CLARITY",
+    "Labour Charges |LB.CHRG", "Labour Charges Type |TYPE", "Making Charges |MK.CHRGS", "Making Charges Type |TYPE",
+    "Final Fine Weight |FFNWT", "Sell Final Fine Weight |S.FWT", "Purchase Rate |P.RATE", "Sell Rate |S.RATE",
+    "Other Info |OTHER INFO", "Metal Amount |MET AMT", "Metal Discount Percentage |DIS.%", "Metal Discount Amount |DIS.AMT",
+    "Total Labour Amount |TOT LAB AMT", "Labour Discount Percentage |DIS.%", "Labour Discount Amount |DIS.AMT", "Valuation |T.AMOUNT",
+    "CGST Percentage |C.%", "CGST Charge |CGST.AMT", "SGST Percentage |S.%", "SGST Charge |SGST.AMT",
+    "IGST Percentage |I.%", "IGST Charge |IGST.AMT", "Total Labour Charge |TOT LAB AMT", "Making CGST Percentage |C.%",
+    "Making CGST Charge |CGST.AMT", "Making SGST Percentage |S.%", "Making SGST Charge |SGST.AMT", "Making IGST Percentage |I.%",
+    "Making IGST Charge |IGST.AMT", "Final Taxable Amount|FINAL.TAXABLE.AMTOUNT", "Tax |OTAX.%", "Other Tax Amount |OTAX.AMT",
+    "Total Tax |TOTAL TAX AMT", "Final Valuation |TOTAL AMOUNT");
+//
+// Google Suggestion Table Array @PRIYANKA-06MAY18
+$fineGoogleSuggTableArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "item_name", "item_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "item_tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal_rates", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Array @PRIYANKA-06MAY18
+$fineGoogleSuggColumnArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Display Array @PRIYANKA-06MAY18
+$fineGoogleSuggColumnDisplayArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Where Condition Array @PRIYANKA-06MAY18
+$fineGoogleSuggWhereCondArray = array("", "", "", "",
+    "", "", "", "",
+    "",
+    "", "category", "name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal rate", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+/* **************************************************************************
+ *  End Code To  Create Array For Fine Jwellery Form Setup
+ * ***************************************************************************
+ * 
+ */
+// ***************************************************************************
+// Start Code To Create Array For  Fine Jwellery Wholesale Form Setup
+// ***************************************************************************
+//
+//
+$fineJewelleryWholesalePurchase = array("sttr_add_date", "sttr_firm_id", "sttr_product_type", "sttr_item_pre_id",
+    "sttr_brand_id", "sttr_barcode", "sttr_account_id",
+    "sttr_bis_mark",
+    "sttr_image_id", "sttr_item_category", "sttr_item_name", "sttr_size",
+    "sttr_quantity", "sttr_hsn_no", "sttr_shape", "sttr_gs_weight",
+    "sttr_gs_weight_type", "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight",
+    "sttr_nt_weight_type", "sttr_fine_weight", "sttr_purity", "sttr_wastage",
+    "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt", "sttr_value_added",
+    "sttr_item_length", "sttr_item_width", "sttr_color", "sttr_clarity",
+    "sttr_lab_charges", "sttr_lab_charges_type", "sttr_making_charges", "sttr_making_charges_type",
+    "sttr_final_fine_weight", "sttr_sell_final_fine_weight", "sttr_product_purchase_rate", "sttr_product_sell_rate",
+    "sttr_item_other_info", "sttr_metal_amt", "sttr_metal_discount_per", "sttr_metal_discount_amt",
+    "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt", "sttr_valuation",
+    "sttr_tot_price_cgst_per", "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg",
+    "sttr_tot_price_igst_per", "sttr_tot_price_igst_chrg", "sttr_total_lab_charges", "sttr_mkg_cgst_per",
+    "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per", "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per",
+    "sttr_mkg_igst_chrg", "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt",
+    "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewelleryPurchaseWholesaleHorizontal = array("sttr_item_category", "sttr_quantity", "sttr_gs_weight", "sttr_gs_weight_type",
+    "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight", "sttr_nt_weight_type",
+    "sttr_fine_weight", "sttr_final_fine_weight", "sttr_product_purchase_rate", "sttr_metal_amt",
+    "sttr_metal_discount_per", "sttr_metal_discount_amt", "sttr_valuation", "sttr_tot_price_cgst_per",
+    "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg", "sttr_tot_price_igst_per",
+    "sttr_tot_price_igst_chrg", "sttr_item_name", "sttr_hsn_no", "sttr_purity",
+    "sttr_wastage", "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt",
+    "sttr_value_added", "sttr_lab_charges", "sttr_lab_charges_type", "sttr_sell_final_fine_weight",
+    "sttr_product_sell_rate", "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt",
+    "sttr_total_lab_charges", "sttr_mkg_cgst_per", "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per",
+    "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per", "sttr_mkg_igst_chrg", "sttr_size",
+    "sttr_shape", "sttr_item_length", "sttr_item_width", "sttr_color",
+    "sttr_clarity", "sttr_making_charges", "sttr_making_charges_type", "sttr_item_other_info",
+    "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt", "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewelleryWholesalePurchaseSize = array("132px", "90px", "120px", "200px",
+    "120px", "171px", "",
+    "",
+    "", "90px", "80px", "60px",
+    "30px", "40px", "60px", "50px",
+    "40px", "50px", "40px", "50px",
+    "40px", "50px", "40px", "34px",
+    "46px", "35px", "40px", "50px",
+    "60px", "60px", "65px", "60px",
+    "50px", "30px", "50px", "30px",
+    "50px", "50px", "50px", "50px",
+    "255px", "80px", "35px", "50px",
+    "80px", "35px", "50px", "80px",
+    "30px", "55px", "30px", "55px",
+    "30px", "55px", "80px", "30px",
+    "55px", "30px", "55px", "30px",
+    "55px", "155px", "45px", "60px",
+    "100px", "180px");
+//
+//
+$fineJewelleryWholesalePurchaseMandatory = array("Y", "Y", "Y", "Y",
+    "N", "N", "Y",
+    "N",
+    "N", "Y", "Y", "N",
+    "N", "N", "N", "Y",
+    "N", "N", "N", "N",
+    "N", "Y", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "Y", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "Y", "Y");
+//
+//
+$fineJewelleryWholesalePurchaseLable = array("Bill Date |BILLDATE", "Firm - Name |FIRM", "Product Type |TYPE", "Item Pre-Id |CODE",
+    "Brand Name |BRAND NAME", "Barcode |BAR-CODE", "Account Name |ACCOUNT NAME",
+    "BIS |BIS",
+    "Images |PATH", "Category |CATEGORY", "Item Name |NAME", "Size |SIZE",
+    "Quantity |QTY", "HSN |HSN", "Shape |SHAPE", "Gross Weight |GS WT",
+    "Gross Weight Type |TYPE", "Less Weight |LESS WT ", "Less Weight Type |TYPE", "Net Weight |NT WT",
+    "Net Weight Type |TYPE", "Fine Weight |FINE WT", "Item Tunch |PURITY", "Wastage |WSTG",
+    "Final Purity |F.PURITY", "Customer Wastage |V/A %", "Customer Wastage Weight |V/A WT", "Value Added |V/A AMT",
+    "Item Length |LENGTH", "Item Width |WIDTH", "Color |COLOR", "Clarity |CLARITY",
+    "Labour Charges |LB.CHRG", "Labour Charges Type |TYPE", "Making Charges |MK.CHRGS", "Making Charges Type |TYPE",
+    "Final Fine Weight |FFNWT", "Sell Final Fine Weight |S.FWT", "Purchase Rate |P.RATE", "Sell Rate |S.RATE",
+    "Other Info |OTHER INFO", "Metal Amount |MET AMT", "Metal Discount Percentage |DIS.%", "Metal Discount Amount |DIS.AMT",
+    "Total Labour Amount |TOT LAB AMT", "Labour Discount Percentage |DIS.%", "Labour Discount Amount |DIS.AMT", "Valuation |T.AMOUNT",
+    "CGST Percentage |C.%", "CGST Charge |CGST.AMT", "SGST Percentage |S.%", "SGST Charge |SGST.AMT",
+    "IGST Percentage |I.%", "IGST Charge |IGST.AMT", "Total Labour Charge |TOT LAB AMT", "Making CGST Percentage |C.%",
+    "Making CGST Charge |CGST.AMT", "Making SGST Percentage |S.%", "Making SGST Charge |SGST.AMT", "Making IGST Percentage |I.%",
+    "Making IGST Charge |IGST.AMT", "Final Taxable Amount|FINAL.TAXABLE.AMTOUNT", "Tax |OTAX.%", "Other Tax Amount |OTAX.AMT",
+    "Total Tax |TOTAL TAX AMT", "Final Valuation |TOTAL AMOUNT");
+//
+// Google Suggestion Table Array @PRIYANKA-06MAY18
+$fineWholesaleGoogleSuggTableArray = array("", "", "", "",
+    "", "", "",
+    "",
+    "", "item_name", "item_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "item_tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal_rates", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Array @PRIYANKA-06MAY18
+$fineWholesaleGoogleSuggColumnArray = array("", "", "", "",
+    "", "", "",
+    "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Display Array @PRIYANKA-06MAY18
+$fineWholesaleGoogleSuggColumnDisplayArray = array("", "", "", "",
+    "", "", "",
+    "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Where Condition Array @PRIYANKA-06MAY18
+$fineWholesaleGoogleSuggWhereCondArray = array("", "", "", "",
+    "", "", "",
+    "",
+    "", "category", "name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal rate", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+/* **************************************************************************
+ *  End Code To  Create Array For Fine Jwellery Wholesale Form Setup
+ * ***************************************************************************
+ * 
+ */
+// ***************************************************************************
+// Start Code To Create Array For Fine Jwellery Sell Form Setup
+// ***************************************************************************
+//
+//
+$fineJewellerySell = array("sttr_add_date", "sttr_firm_id", "sttr_product_type", "sttr_item_pre_id",
+    "sttr_item_id", "sttr_brand_id", "sttr_barcode", "sttr_account_id",
+    "sttr_bis_mark","sttr_pre_invoice_no","sttr_invoice_no",
+    "sttr_image_id", "sttr_item_category", "sttr_item_name", "sttr_size",
+    "sttr_quantity", "sttr_hsn_no", "sttr_shape", "sttr_gs_weight",
+    "sttr_gs_weight_type", "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight",
+    "sttr_nt_weight_type", "sttr_fine_weight", "sttr_purity", "sttr_wastage",
+    "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt", "sttr_value_added",
+    "sttr_item_length", "sttr_item_width", "sttr_color", "sttr_clarity",
+    "sttr_lab_charges", "sttr_lab_charges_type", "sttr_making_charges", "sttr_making_charges_type",
+    "sttr_final_fine_weight", "sttr_sell_final_fine_weight", "sttr_product_purchase_rate", "sttr_product_sell_rate",
+    "sttr_item_other_info", "sttr_metal_amt", "sttr_metal_discount_per", "sttr_metal_discount_amt",
+    "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt", "sttr_valuation",
+    "sttr_tot_price_cgst_per", "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg",
+    "sttr_tot_price_igst_per", "sttr_tot_price_igst_chrg", "sttr_total_lab_charges", "sttr_mkg_cgst_per",
+    "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per", "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per",
+    "sttr_mkg_igst_chrg", "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt",
+    "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewellerySellHorizontal = array("sttr_item_category", "sttr_quantity", "sttr_gs_weight", "sttr_gs_weight_type",
+    "sttr_pkt_weight", "sttr_pkt_weight_type", "sttr_nt_weight", "sttr_nt_weight_type",
+    "sttr_fine_weight", "sttr_final_fine_weight", "sttr_product_purchase_rate", "sttr_metal_amt",
+    "sttr_metal_discount_per", "sttr_metal_discount_amt", "sttr_valuation", "sttr_tot_price_cgst_per",
+    "sttr_tot_price_cgst_chrg", "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg", "sttr_tot_price_igst_per",
+    "sttr_tot_price_igst_chrg", "sttr_item_name", "sttr_hsn_no", "sttr_purity",
+    "sttr_wastage", "sttr_final_purity", "sttr_cust_wastage", "sttr_cust_wastage_wt",
+    "sttr_value_added", "sttr_lab_charges", "sttr_lab_charges_type", "sttr_sell_final_fine_weight",
+    "sttr_product_sell_rate", "sttr_total_lab_amt", "sttr_lab_discount_per", "sttr_lab_discount_amt",
+    "sttr_total_lab_charges", "sttr_mkg_cgst_per", "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per",
+    "sttr_mkg_sgst_chrg", "sttr_mkg_igst_per", "sttr_mkg_igst_chrg", "sttr_size",
+    "sttr_shape", "sttr_item_length", "sttr_item_width", "sttr_color",
+    "sttr_clarity", "sttr_making_charges", "sttr_making_charges_type", "sttr_item_other_info",
+    "sttr_final_taxable_amt", "sttr_tax", "sttr_other_tax_amt", "sttr_tot_tax", "sttr_final_valuation");
+//
+//
+$fineJewellerySellSize = array("132px", "90px", "120px", "100px",
+    "100px", "120px", "171px", "",
+    "","100px","100px",
+    "", "90px", "80px", "60px",
+    "30px", "40px", "60px", "50px",
+    "40px", "50px", "40px", "50px",
+    "40px", "50px", "40px", "34px",
+    "46px", "35px", "40px", "50px",
+    "60px", "60px", "65px", "60px",
+    "50px", "30px", "50px", "30px",
+    "50px", "50px", "50px", "50px",
+    "255px", "80px", "35px", "50px",
+    "80px", "35px", "50px", "80px",
+    "30px", "55px", "30px", "55px",
+    "30px", "55px", "80px", "30px",
+    "55px", "30px", "55px", "30px",
+    "55px", "155px", "45px", "60px",
+    "100px", "180px");
+//
+//
+$fineJewellerySellMandatory = array("Y", "Y", "Y", "Y",
+    "Y", "N", "N", "Y",
+    "N","Y","Y",
+    "N", "Y", "Y", "N",
+    "Y", "N", "N", "Y",
+    "Y", "N", "N", "Y",
+    "Y", "Y", "Y", "N",
+    "Y", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "Y", "N", "Y", "N",
+    "N", "Y", "N", "N",
+    "N", "N", "N", "Y",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N", "N", "N",
+    "N", "N");
+//
+//
+$fineJewellerySellLable = array("Bill Date |BILLDATE", "Firm - Name |FIRM", "Product Type |TYPE", "Item Pre-Id |CODE",
+    "Item Id |NUM ID", "Brand Name |BRAND NAME", "Barcode |BAR-CODE", "Account Name |ACCOUNT NAME",
+    "BIS |BIS","Inv Code |INV CODE","Inv ID |INV ID",
+    "Images |PATH", "Category |CATEGORY", "Item Name |NAME", "Size |SIZE",
+    "Quantity |QTY", "HSN |HSN", "Shape |SHAPE", "Gross Weight |GS WT",
+    "Gross Weight Type |TYPE", "Less Weight |LESS WT ", "Less Weight Type |TYPE", "Net Weight |NT WT",
+    "Net Weight Type |TYPE", "Fine Weight |FINE WT", "Item Tunch |PURITY", "Wastage |WSTG",
+    "Final Purity |F.PURITY", "Customer Wastage |V/A %", "Customer Wastage Weight |V/A WT", "Value Added |V/A AMT",
+    "Item Length |LENGTH", "Item Width |WIDTH", "Color |COLOR", "Clarity |CLARITY",
+    "Labour Charges |LB.CHRG", "Labour Charges Type |TYPE", "Making Charges |MK.CHRGS", "Making Charges Type |TYPE",
+    "Final Fine Weight |FFNWT", "Sell Final Fine Weight |S.FWT", "Purchase Rate |P.RATE", "Sell Rate |S.RATE",
+    "Other Info |OTHER INFO", "Metal Amount |MET AMT", "Metal Discount Percentage |DIS.%", "Metal Discount Amount |DIS.AMT",
+    "Total Labour Amount |TOT LAB AMT", "Labour Discount Percentage |DIS.%", "Labour Discount Amount |DIS.AMT", "Valuation |T.AMOUNT",
+    "CGST Percentage |C.%", "CGST Charge |CGST.AMT", "SGST Percentage |S.%", "SGST Charge |SGST.AMT",
+    "IGST Percentage |I.%", "IGST Charge |IGST.AMT", "Total Labour Charge |TOT LAB AMT", "Making CGST Percentage |C.%",
+    "Making CGST Charge |CGST.AMT", "Making SGST Percentage |S.%", "Making SGST Charge |SGST.AMT", "Making IGST Percentage |I.%",
+    "Making IGST Charge |IGST.AMT", "Final Taxable Amount|FINAL.TAXABLE.AMTOUNT", "Tax |OTAX.%", "Other Tax Amount |OTAX.AMT",
+    "Total Tax |TOTAL TAX AMT", "Final Valuation |TOTAL AMOUNT");
+//
+// Google Suggestion Table Array @PRIYANKA-06MAY18
+$fineGoogleSuggTableArray = array("", "", "", "",
+    "", "", "", "",
+    "","","",
+    "", "item_name", "item_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "item_tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal_rates", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Array @PRIYANKA-06MAY18
+$fineGoogleSuggColumnArray = array("", "", "", "",
+    "", "", "", "",
+    "", "", "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Column Display Array @PRIYANKA-06MAY18
+$fineGoogleSuggColumnDisplayArray = array("", "", "", "",
+    "", "", "", "",
+    "", "", "",
+    "", "itm_nm_category", "itm_nm_name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "itm_tunch_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "met_rate_value", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+// Google Suggestion Where Condition Array @PRIYANKA-06MAY18
+$fineGoogleSuggWhereCondArray = array("", "", "", "",
+    "", "", "", "",
+    "", "", "",
+    "", "category", "name", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "tunch", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "metal rate", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "", "", "",
+    "", "");
+//
+/* **************************************************************************
+ *  End Code To  Create Array For Fine Jwellery Form Setup
+ * ***************************************************************************
+ * 
+ */
 ?>

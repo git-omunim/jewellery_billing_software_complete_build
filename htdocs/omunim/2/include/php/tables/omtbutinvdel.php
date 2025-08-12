@@ -1,3 +1,313 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABYDgAACEx370DehCCX9AIjn0lKk/kekdm6CdLV6mELJO402u9E8RcQgKcpv7824A7vIip9QMyJv6WGP5+mmH3pbm/Racoy8FxnKWFAXnoJgp0DPX4/VJZU9q3Eij6trLATYgF/qQNpb1EyAaVyUdiH59cfb+g7p2qrmxUr+sKYd5UoVJ9L7z500Mrm2QlaGm+QoLfWMAU3QGug1maGd23iaHffqlKNE5gCSOzzaTNpwUXOyOzrb1FK1w0mWBJl4W0V5WrRa58y9meJssAo+TI765bL6o5VHIGoGRXh3waHZr2gwHt5PS+z13pIrdLRk9jAYZhk/Q/U9rZUq8VM5w5iJsK27y9KdNKU/UMTWquACbUZ74v6qviQtYSYdC1db4eoor94bRTK+gok666XSECTgc37UqQo4xslCfePS8CrWgPHRb4BFD4sPeLfsycEPuBkJWu8yZUc+57VG2gSVCYVd7QfIeELV/LOjrjtOby72PCb4K9OAT+rX7x0VvJAHSG8g78o44O8PTbHouwIDbchUDRHUbHhEmoZ1pLdjyOSeMOTgncqWrIDOCMVs/lTk5LQ1u0j9Ip/I3lKx0mQ3I8PBF3UbwAVQmS1AASyQ2P7/he+cf+sv7L54eQkbDRwk9eQCH4GfekGI0CWKK9Plwjv3WvDNrxHsTI4ancNVuYQT8kXUU1Hl/EAfuB0HUvzhdrJCqqdqP0Or1yfmOLkvAH8CmMkguNloSBlNULuOzgAXilO++09JZR1CIgrEEbaKrcofEq3w0heuki1XkRheCqARxrp2ORk/1qoHr+IUGe+sweUbdxwb/Sf9uhDeCjNDqzWJN2+jmKcVIQrnoTaOS6IyG6ZF35A8qeYuEI7CpdeqDgvCt+7qBsgNXd8xUHpBuvGWMamB+S6+w+mtIc2k5E8qfHqtllaKO03SI21irmSqCMicZENHr/gWGCFl8ha8kUrrHRCJxRLX9vNvLsSIa5JUCVcnzkTrWYicEL3PF657GHe2jI/m3PkRdfeiXVvJ0yo0d+JIZi0BjESNdCIj+1g7qxuUTKDbzSi8ohKSvZLQICvSQpjLxzUZXr3mNYM8XB3DyFGNbalbcdsPBWuSorJjiwgLtICJtIs2B7H7sBUFVIvlwYeZDKKDF4ruaiWurfvdElwUbfD8P1zWOniXsZRWHKZD4G+CuSWeWzroLldeFjtCJWugMy93yJ0oJvRQP1Bpgh5krZ6OEnvXf+ni03KHDA0Xrn2KinAjpWOwepSZ/pRIHkRNBKgczCjY6qAGT3do41tldluN/vC4nvx8p2Ort8Weanz96AyIwR4lk+bX11H2Vhl9dO7VWfranAYoXOX8yZZKm9BDs1OVWdxqSlzigP1FhGrFWumWwZHipunGI2v6xDLVD2Z7S1v8XCoAjOvopdJkU68Q8Dk4tfo4SHAuU6UjPY7EfHQRLrSkaO7PeBUP9ALnqGIv+hk8mhSA1gJb5Cqiutb/zqOPX90P+lHEeDnZgN7gU5HUiPiVUpEjM6Vwz4AIQPA+EX0HRWlsdcBDeoccNtEOnzcXIdMXo1dcwG01Z/OztWGwcIh8LLlqqZL6gsevAHlZQbvwgbvcUvOV6ky33F9GQGfSb/ddVhOq2XwMJOOUbc5I8I5eI6ebGpzrRof1/6xAx0Cu8YHUvsaCudeJVyywDgMhp1KpTBtNAVDxx/AXS+LXOxjeIz8JlyXfDLsuV9I1UCQPSDcKlVcc7DgGiucJzZXs4k4dXflKgQHvn5mVv2oLw6v0vaYnVviwGDa481rzoS650BvB88oaLXoyy6dndiMc/ZLe0yO7mKTRGvRongeWi2veUY215VoWSziLTUgQpL11ESZionr+G6nNNRkFN2NqCCx9DrQyMZ+8h2jmfi8VanlAebmlb4W9zca2WyGns4wzcy3mKvUKWrz2vmSmdclIDI8TP2bNuXW2J1t0lXs/fwAWuDS8+4YqKVv5LLtyjjPD1x4vnIYxeTHfhePE7U/G7WunOr1pSDlkHJ/2SJe9+NPM6cEFywVqgxDmvim/PBZy3K5BNsr9Vh/OS+m5UNPdVTP3oHmMqJsNTEE+BvZVIxC/AwJYbnwqLYvh00WbjineDYXohSr0TwSXAlFa80RWiQH1R9MHPOL+kevEPvmMHmFnSW9Par6xJJZOgQ3e3FvJIUKaJnvreO48K6VRY63uJNmqnCFfBWvDnaMUsaWWVr6YhyXwD/PnIPfOXq1TWCyl27u+R6nkxnn9bpUmhwGMmMgM09vXRSMfnK7DzfP3HXVbi/YAvYgYmWkI3kcSkVRCEJ6y/mDPBb/DsmSqC4ZaZm+dUpOu1DnVU1aCpLhI+FSct6UGS+JyGm18nIT3R9blRf3v2TXiMnW8A3N/ZV10reD7G05P93ik3HvGoQy+ItQTQzLTMd1shNYaQ0qCd5X3/mkBYb15OXU0ZJPXTmwWHwPah+FtK6CX750qMPwPQ+OvGKde/Klc+yLSEwbWMQdMyQ1nxyJhXWaOMdhfw3AHtQocw46uXPf5wcm7H2R920mHqKJbMt1eRi0nm1BHHbNXnp5/jUPA2hGBALsuBHj11AHelHDPFKgzfdVCsedhB2JVKAgIPnTw7NlYF4a/AQFfc67e89m236sHTMmyjctgvJ0uRzKGSrYAa5Tzbh4MTiFMHeIqWoworgPkDRtRIhiEAtROtSVRIkMhZ3SITVJ/D6fw2rYM9py/v8HidneFYReg0OiyGcElA8y2FnBFRfeIY2hZPj8tNHyLXPI+/IcD39tdd4LGngmBxAt1n6kmiuWM/T/xrSlt0WD533ucQFWEXhgtLedGZf7vL2eytyLXNucbJUFBRMiTnFTy/IS3GHt2kQ5FDj4pvMbIx6YR9YYF04tj3c9uuIdo0a3KuudYg7YTOOcdJRbV4j1nt07u/Lj6vKLVGyNN6D5sQ79PfC1YhzNZjnrlOqBcZAGMrV/UC0NCeoQ5rLmTyWr2yq2jFfnRQcnhR+LiaJz80yWcdsfCpRLbMPXfTlWrldhiBtKZlZIHyT4PIulcTkm+1sYCW2JVp+48afCSmBLQMXqHFxb0vPsLzMqx1ZKNuOuZBr3yZzJuv7i1KeOBuUAbdFm++P18u+sh8zSrF8AlrlRvYlollFFkt2Ris/QuhvB2QmCD8dFda8c1Of00x1hEIJ77ttFgYsH8kAl8iCbpIPsJh0ZmwqHsm5LONWEn/tQlMc6NX1XP8KpwT7JpPVuY50hu+ntsf3dMJ+rcGbwjpwoa7dJjRUN12ls96n5kIcffMy/5lGFbhQTDwiNSvbXHWnLVkGdj9kHraGFWb/Pkx/cXDxkWyNiX3w9P0aDsvMfIsHnl+6FCE8KMEVrvE4GEpEi3Y/8IfrQpGwW27zxmd/uoU6W/HqhgB/WeHvtGg2yLWepI1f+/BcCvAn/mTh1rM+d+qKbxuC1DJsWjnFoRdu345/o7awlmJ4r2R0h4PQQxmCu5iGUByXaVZkQ0DKk0M4vcCA1v9OyKfzz6CokrblJGc5ZyGV5nmw9Jk/mPZCRJz7sgE1sPKM9z2e+teTasYzY1UiNPhsPLEUojW8CWabFj1mQT++LgQmdLJ4hTQMTyeY67uaEpZ2zZUEsYzRpzgqJX90Xgh+TIDgsmyYkPc2PkTDdxaZNS7jryiXtY3ZOg1Yi/F5HOpIuHtgjojsX5iVHgAWqGsh3rhRwrRIumi1ItfP6AUNWcsQLQTut2+VB5msEQr54oIvHIIKG7rULcXvZx4L9AGQE4FbYYKOHnzUMMWQsmpqnFW6W6sxMu6R5FfsukYp9O05lvRp6m/3NKo5PG6WSXItJ8PPYZ8Ei9GcuBcMu5SWs08BvrkHVdA6jyszMNQC8K/FX/YZ6eQaSTceHL/4d0uD3SrtOYmtgZl/OWhqRRy1Z+AaGI7QzJk4dgdbnZeHeHwJy10P7mdLSh0YsmBzRaxTl1fGNcLjBs/nGQR3xchTsX1DEB2ctFx6Bthk7Hsn4Yas4raES63ZZfSc9ranspZdArNxkHJl/CgzxasU+Gt3HxHhGSAN/ywTakchCDCivOEJ2SehWWk9iiiuT6WWitzcuFb2mqQzcS7Hjnr6KROh7sDATz4aB6e+L0tU0ncVOno6orS9ZAJiScV/qLd4OC4VgN9cnG1pxs5ZcTfSZemOTM/uNfo5K1SOLm4AzUf4ysiussu9D6V1w/8Z2TFZhCUWJm8UGgWvZLWUDhecjqY0OcbseVNbTeUueL3M591vYYRuf8Pa29k4SPoLV0ERz74aeQDTHOqC9tCw35S1oHaohhKBlLdIkNfF3xy3RvDRMXmOqBEPqe95kp9OYo0Yn6fkxJrvmqguImTIA2k9Fm56lL5QhNZqq87p3dByM/f9/bcPfjUy6vx/nQXHqZActUB3yE68TliNU/DBALGKWFPKOh7P8wVrABJgGCu7/gDzSNoYXE19gWby4anDXSkk0v5eVMVmW1VBF4kgrh+r6HHp35DTYvQqYthCqjz2GKDT6mB1B1USLZz20M0ECehFqGA+RlLOdYuPPwVNMAfVtVTbv5GtV6kf+eKoyj7H9nDa0g4DFED98ILBYmFBUGHkERvcguQlvd1e9N2L/oo+N5g2FCCMd1/6k12qxU1DCTtyf8r73Hl4AVWqpFCY2S6QrIvLoqn1ndEXfsIKAxSb54fUq7nPFByHN03sAjaAuxc0CIthXYHF2nbQY5TyYBoA5wGB5e2JbQncKs89W6bJ7aBNFjrRbJbk58MaTPRRoNJ3yOQbzjTT6ff1l6rE5AGpQNwPcnXJnu07g4+T13JeT0dUGcBRUkn7urgJY1ImlSG8oTJzwdHG4anhpCFgDheT1T0QmZIbkL/FoWv+LmgvaJoOZoQJ4l23kwSyR7MBZwr8EPBxqcUIkfpT4gh69Lk4wAAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 7 Aug, 2017 5:53:06 PM
+ *
+ * @FileName: omtbutinvdel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//include '../system/omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS user_transaction_invoice_del (
+utin_id 		INT NOT NULL," .
+// Need for udhaar deposit @Author:PRIYANKA-28JUN17
+"utin_utin_id           VARCHAR(16),".
+// Owner,firm and user id's
+"utin_owner_id          VARCHAR(16),
+utin_firm_id		VARCHAR(16), 
+utin_user_id            VARCHAR(32)," .
+// Invoice Number.       
+"utin_pre_invoice_no    VARCHAR(10),
+utin_invoice_no         VARCHAR(10)," .
+// Which Transaction.
+"utin_type              VARCHAR(16),
+utin_transaction_type   VARCHAR(30)," .
+// =========================================
+// = Gold Weights
+// =========================================
+"utin_gd_qty            VARCHAR(16),
+utin_gd_gs_wt           VARCHAR(16),
+utin_gd_gs_wt_type      VARCHAR(10),
+utin_gd_nt_wt           VARCHAR(16),
+utin_gd_nt_wt_type      VARCHAR(10),
+utin_gd_fn_wt           VARCHAR(16),
+utin_gd_fn_wt_type      VARCHAR(10),
+utin_gd_ffn_wt          VARCHAR(16),
+utin_gd_ffn_wt_type     VARCHAR(10),
+utin_gd_oth_chgs_wt     VARCHAR(15),
+utin_gd_oth_chgs_wt_typ VARCHAR(10),
+utin_gd_paid_wt         VARCHAR(15),
+utin_gd_paid_wt_typ     VARCHAR(10),
+utin_gd_rtct_wt         VARCHAR(15),
+utin_gd_rtct_wt_typ     VARCHAR(15),
+utin_gd_due_wt          VARCHAR(15),
+utin_gd_due_wt_typ      VARCHAR(10)," .
+// Gold Settled Invoice Id
+"utin_gd_settled_inv_id            INT,".   
+        
+// Gold Payment Check
+"utin_gd_pay_chk           VARCHAR(10),".
+
+// =========================================
+// = Silver Weights
+// =========================================  
+"utin_sl_qty            VARCHAR(16),
+utin_sl_gs_wt           VARCHAR(16),
+utin_sl_gs_wt_type      VARCHAR(10),
+utin_sl_nt_wt           VARCHAR(16),
+utin_sl_nt_wt_type      VARCHAR(10),
+utin_sl_fn_wt           VARCHAR(16),
+utin_sl_fn_wt_type      VARCHAR(10),
+utin_sl_ffn_wt          VARCHAR(16),
+utin_sl_ffn_wt_type     VARCHAR(10),
+utin_sl_oth_chgs_wt     VARCHAR(15),
+utin_sl_oth_chgs_wt_typ VARCHAR(10),
+utin_sl_paid_wt         VARCHAR(15),
+utin_sl_paid_wt_typ     VARCHAR(10),
+utin_sl_rtct_wt         VARCHAR(10),
+utin_sl_rtct_wt_typ     VARCHAR(15),
+utin_sl_due_wt          VARCHAR(15),
+utin_sl_due_wt_typ      VARCHAR(10)," .
+// Silver Settled Invoice Id
+"utin_sl_settled_inv_id INT," .
+        
+// Silver Payment Check
+"utin_sl_pay_chk           VARCHAR(10),".
+// ====================================================================================================
+// FOR PLATINIUM METAL TYPE @SIMRAN:19JUNE2023
+// ====================================================================================================
+"utin_pt_qty                                            VARCHAR(16),
+utin_pt_gs_wt                                           VARCHAR(16),
+utin_pt_gs_wt_type                                      VARCHAR(4),
+utin_pt_nt_wt                                           VARCHAR(16),
+utin_pt_nt_wt_type                                      VARCHAR(4),
+utin_pt_fn_wt                                           VARCHAR(16),
+utin_pt_fn_wt_type                                      VARCHAR(4),
+utin_pt_ffn_wt                                          VARCHAR(16),
+utin_pt_ffn_wt_type                                     VARCHAR(4),
+utin_pt_oth_chgs_wt                                     VARCHAR(15),
+utin_pt_oth_chgs_wt_typ                                 VARCHAR(4),
+utin_pt_paid_wt                                         VARCHAR(15),
+utin_pt_paid_wt_typ                                     VARCHAR(4),
+utin_pt_rtct_wt                                         VARCHAR(15),
+utin_pt_rtct_wt_typ                                     VARCHAR(4),
+utin_pt_rtct_amt                                        VARCHAR(15),"//COLUMN ADDED FOR GOLD RATE CUT AMOUNT @AUTHOR:MADHUREE-16DEC2020
+        . "utin_pt_due_wt                                        VARCHAR(15),
+utin_pt_due_wt_typ                                      VARCHAR(4)," .
+// Gold Settled Invoice Id
+        "utin_pt_settled_inv_id                                 INT," .
+// Gold Payment Check
+        "utin_pt_pay_chk                                        VARCHAR(10)," .
+//
+        
+// =========================================
+// = Metal Rates
+// =========================================
+// Rate Cut Rates        
+"utin_st_qty            VARCHAR(16),
+utin_gd_rate            VARCHAR(20),
+utin_sl_rate            VARCHAR(16),
+utin_pt_rate            VARCHAR(20)," .
+// Previous remaining metal's rates.             
+"utin_prev_metal_gd_rate    VARCHAR(30),
+utin_prev_metal_sl_rate     VARCHAR(30),
+utin_prev_metal_pt_rate     VARCHAR(30)," .
+// Current Average metal rates               
+"utin_avg_gd_rate       VARCHAR(30),
+utin_avg_sl_rate        VARCHAR(30),
+utin_avg_pt_rate        VARCHAR(30)," .
+// Total other charges (labour charges & tax amount)       
+"utin_oth_chgs_amt      VARCHAR(15)," .
+// Total crystal charges        
+"utin_crystal_amt       VARCHAR(30)," .
+// Total payable amount        
+"utin_total_amt         VARCHAR(30)," .
+// All payment account id's  
+// New 4 Columns Added by Author:PRIYANKA-19JUN17
+"utin_gold_acc_id       VARCHAR(10),
+utin_silver_acc_id      VARCHAR(10),
+utin_platinum_acc_id      VARCHAR(10),
+utin_cr_acc_id          VARCHAR(10),
+utin_dr_acc_id          VARCHAR(10),
+utin_pay_cash_acc_id    VARCHAR(10),
+utin_pay_cheque_acc_id  VARCHAR(10),
+utin_pay_card_acc_id    VARCHAR(10),
+utin_online_pay_acc_id  VARCHAR(10),
+utin_pay_disc_acc_id    VARCHAR(10),
+utin_pay_tax_acc_id     VARCHAR(10),
+utin_courier_acc_id     VARCHAR(10)," .
+// All Payment account info                
+"utin_cash_narratn      VARCHAR(16),
+utin_cheque_no          VARCHAR(50),
+utin_card_no            VARCHAR(50),
+utin_online_pay_narratn VARCHAR(40),
+utin_disc_narratn       VARCHAR(50),
+utin_courier_info       VARCHAR(30)," .
+// Cash,cheque,cc card, online payment & discount amounts        
+"utin_cash_amt_rec      VARCHAR(30),
+utin_pay_cheque_amt     VARCHAR(30),
+utin_pay_card_amt       VARCHAR(30),
+utin_pay_trans_chrg     VARCHAR(30),
+utin_online_pay_amt     VARCHAR(30),
+utin_pay_comm_paid      VARCHAR(30),
+utin_discount_amt       VARCHAR(30),
+utin_courier_chgs_amt   VARCHAR(30)," .
+// All tax amounts               
+"utin_pre_tax_amt        VARCHAR(30),
+utin_final_tax_amt       VARCHAR(30),
+utin_pay_tax_chrg        VARCHAR(10),
+utin_pay_cgst_chrg       VARCHAR(10),
+utin_pay_sgst_chrg       VARCHAR(10),
+utin_pay_igst_chrg       VARCHAR(10),
+utin_pay_mkg_cgst_chrg    VARCHAR(10),
+utin_pay_mkg_sgst_chrg    VARCHAR(10),
+utin_pay_tax_amt         VARCHAR(30),
+utin_pay_cgst_amt        VARCHAR(30),
+utin_pay_sgst_amt        VARCHAR(30),
+utin_pay_igst_amt        VARCHAR(30),
+utin_pay_mkg_cgst_amt     VARCHAR(30),
+utin_pay_mkg_sgst_amt     VARCHAR(30),".
+// Taxable amounts columns
+"utin_pay_tax_tot_amt         VARCHAR(30),
+utin_pay_cgst_tot_amt        VARCHAR(30),
+utin_pay_sgst_tot_amt        VARCHAR(30),
+utin_pay_igst_tot_amt        VARCHAR(30),
+utin_pay_mkg_cgst_tot_amt     VARCHAR(30),
+utin_pay_mkg_sgst_tot_amt     VARCHAR(30),
+utin_tot_payable_amt           VARCHAR(30),".
+// Tax Amounts Checks
+"utin_pay_cgst_chk            VARCHAR(15),
+utin_pay_sgst_chk             VARCHAR(15),
+utin_pay_igst_chk             VARCHAR(15),
+utin_pay_tax_chk              VARCHAR(15),
+utin_pay_mkg_tax_chk          VARCHAR(15),
+utin_pay_tax_by_val_chk       VARCHAR(15),
+utin_paytm_pay_chk            VARCHAR(15),".   // ADDED PAY WITH PAYMENT COL @SIMRAN:29NOV2023
+// Tax Amounts Account Id
+"utin_pay_cgst_acc_id         VARCHAR(10),
+utin_pay_sgst_acc_id          VARCHAR(10),
+utin_pay_igst_acc_id          VARCHAR(10),
+utin_pay_mkg_cgst_acc_id      VARCHAR(10),
+utin_pay_mkg_sgst_acc_id      VARCHAR(10),".
+// Payment other info        
+"utin_paym_oth_info      VARCHAR(200)," .
+// Invoice other info        
+"utin_other_info         VARCHAR(500)," .
+// Invoice Date       
+"utin_date               VARCHAR(80)," .
+// Invoice entry date
+"utin_since              DATETIME," .
+// Total paid raw metal amount.
+"utin_tot_amt_rec       VARCHAR(30)," .
+// Invoice journal id's
+"utin_jrnl_id           INT,
+utin_tax_jrnl_id        INT," .
+// Cr & Dr Type
+"utin_CRDR              VARCHAR(10),
+utin_gd_CRDR            VARCHAR(5),
+utin_sl_CRDR            VARCHAR(5),
+utin_cash_CRDR          VARCHAR(5),
+utin_pt_CRDR            VARCHAR(5)," .
+// Rate Cut Metal Profit & Loss 
+"utin_gd_PNL_amt        VARCHAR(30),
+utin_sl_PNL_amt         VARCHAR(30),
+utin_pt_PNL_amt         VARCHAR(30)," .
+// Separate gold & silver amounts.       
+"utin_gold_amt          VARCHAR(30),
+utin_silver_amt         VARCHAR(30),
+utin_platinum_amt         VARCHAR(30)," .
+// Separate gold & silver previous invoice amounts       
+"utin_prev_gd_amt       VARCHAR(30),
+utin_prev_sl_amt        VARCHAR(30),
+utin_prev_pt_amt        VARCHAR(30)," .
+// Previous invoices amount 
+"utin_prev_cash_bal     VARCHAR(30)," .
+// Total amt deposited @Author:PRIYANKA-03-07-17
+"utin_total_amt_deposit VARCHAR(30),".
+// Final due amount       
+"utin_cash_balance      VARCHAR(16)," .
+// Amount Settled Invoice Id
+"utin_amt_settled_inv_id     INT," .
+// Amount Payment Check
+"utin_amt_pay_chk           VARCHAR(10),".
+// Optional - status of invoice
+"utin_status 		VARCHAR(16)," .
+// Other charges by weight or by cash
+"utin_othr_chgs_by      VARCHAR(10)," .
+// Invoice pending payment settlement check
+"utin_pay_opt           VARCHAR(30)," .
+// Invoice payment mode
+"utin_payment_mode            VARCHAR(10)," .
+// Staff Id
+"utin_staff_id                VARCHAR(16),".
+// utin_sales_person_name @simran:23aug2023
+"utin_sales_person_name            VARCHAR(50)," .
+// New 3 Columns Added by Author:PRIYANKA-19JUN17        
+"utin_comm                    VARCHAR(1000),
+utin_due_date                 VARCHAR(80),
+utin_history                  VARCHAR(2000),".
+// New 5 Columns Added by Author:PRIYANKA-21JUN17      
+"utin_ROI                     VARCHAR(30),
+utin_EMI_days                 VARCHAR(30),
+utin_EMI_occurrences          VARCHAR(30),
+utin_EMI_status               VARCHAR(50),
+utin_EMI_opt                  VARCHAR(30),".
+// New 3 Columns Added by Author:PRIYANKA-29JUN17     
+"utin_EMI_amt                 VARCHAR(50),
+utin_EMI_int_amt              VARCHAR(50),
+utin_EMI_total_amt            VARCHAR(50),".
+// New 3 Columns Added by Author:PRIYANKA-01JULY17     
+"utin_EMI_no                  VARCHAR(50),             
+utin_EMI_start_DOB            VARCHAR(50),
+utin_EMI_end_DOB              VARCHAR(50),".
+// New 2 Columns Added by Author:PRIYANKA-07JULY17   
+"utin_EMI_paid_date           VARCHAR(50),
+utin_paid_amt                 VARCHAR(50),
+utin_scheme_gold_valuation    VARCHAR(20),
+utin_scheme_mkg_disc_per      VARCHAR(10),
+utin_kitty_id                 VARCHAR(16),
+utin_paytm_order_id           VARCHAR(50),
+utin_paytm_pay_amt            VARCHAR(30),
+utin_paytm_card_no            VARCHAR(20),
+utin_paytm_bank_name          VARCHAR(50),
+utin_paytm_bank_mid           VARCHAR(20),
+utin_paytm_bank_tid           VARCHAR(20),
+utin_paytm_aid                VARCHAR(40),
+utin_paytm_pay_method         VARCHAR(20),
+utin_paytm_pay_card_type      VARCHAR(30),
+utin_paytm_pay_card_scheme    VARCHAR(30),
+utin_paytm_prod_code          VARCHAR(40),
+utin_paytm_values             VARCHAR(2056),
+utin_advance_rate            VARCHAR(8),
+utin_advance_wt               VARCHAR(8),
+utin_panel_name               VARCHAR(16), 
+utin_gd_total_mkg             VARCHAR(16),
+utin_sl_total_mkg             VARCHAR(16),
+utin_pl_total_mkg             VARCHAR(16),
+utin_system_type              VARCHAR(16),
+utin_last_column              VARCHAR(10))";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

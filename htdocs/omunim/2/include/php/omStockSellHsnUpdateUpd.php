@@ -1,3 +1,23 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAIAwAAfgt/nSCQTOwBv0gZadxBW9lNx5AFZoeAdsuwpPFOGwtIc6naY1l8olCDA5+8MNwX8lSsIsw89H9Ixd1T3lr2N44LEWKNG3DXZ5zQl54QfqYVBimSo780BnOQalMMKRRrt8NH/ihdL0M8gphl/BD8fR0SETfueY80S0Ju7DnNtuSvhgLauYZoPAZvuY1VdVGQOY9p7MPPZZb2WDEXRK9C8PT7t6xt/jGAUtH+XE94JgtjI63W2x+nFed8Uxi3b+9EYKjZ0JsGkgqzS57YCqEEVXsVuiehke0J2f2ix+fnUTyikUu7fpdyuyLOKZDdguex/wtrLDTvvEXkQxXwyQWW7n5Mul7OLiZPnPf9p4oYGJ827IateK7udXvKzqmaDfvYhxO3qkVHHHX5KxrmUSdd2l2mxpeoahQbnQB8vmp0xzoLJQX26PXbXUvKyMjjsYg91Il4AEvLlcZKJAc5a9Ti5iVR9C63+MbwAOxZQIzfKmBdiOjEt1Dy7PBjUvI6x7J2pjYVuzEHdEBkNV3MLllf2vW0QeS5+UBCrnKLwvEvAMVP8MtxfYFu/BYLC2aFP8v/5WKDvnbqa+ZAuA/rHuKDd1oE64LRGqEDlhSwBkPB9+OUyENi+kp+ZwVXL8NBthTlIEe2tY8jCfPVK75vPozWwEoTVicDVwmU2O9+VVZ5xliAqlpZMplLVUILuvmcyf2HIQMJv8Upo0D09CX4fid/Hfe+TqtIxOY/PuUeOGQbhGrDUJNpZ+9uD5Z5jtf9YZgKTB/OsbJTihYYcnOXY+C3LmT69JCczS7TBJbMuQjNoUl8h0LQiqEUajdXg6jtTA1O10FONl6gRtxV0B5KmboeIBv1R/AhHZtELVGTeYNg9utjwX/a7dEL3K5XUplc1JHfzgoQdiDaTWVqKTfCLBIeUT9Rf6DzrAezqXNNQTTc6UJoMGW73DlPzvd4g4D3VV7I11bzPHjCi/GB3hkEmKZFl4d7NKSX98mGcH2JlrIp+9uzyFCQn7L18/P1b+nUzXzMKSjaRqrhXysAAAAA');
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+
+/*
+
+Reasons : HSN No Not Updated
+
+*/
+$query1="UPDATE stock_transaction SET sttr_hsn_no = 7113 WHERE sttr_transaction_type IN ('sell') and sttr_indicator IN('stock','imitation') ;";
+$query2="UPDATE stock_transaction SET sttr_hsn_no = 7108 WHERE sttr_transaction_type IN ('sell') where sttr_indicator IN('rawMetal') and sttr_metal_type='Gold';";
+$query3="UPDATE stock_transaction SET sttr_hsn_no = 7104 WHERE sttr_transaction_type IN ('sell') where sttr_indicator IN('crystal');";
+$query4="UPDATE stock_transaction SET sttr_hsn_no = 7106 WHERE sttr_transaction_type IN ('sell') where sttr_indicator IN('rawMetal') and sttr_metal_type='Silver';";
+mysqli_query($conn, $query1);
+mysqli_query($conn, $query2);
+mysqli_query($conn, $query3);
+mysqli_query($conn, $query4);
 ?>

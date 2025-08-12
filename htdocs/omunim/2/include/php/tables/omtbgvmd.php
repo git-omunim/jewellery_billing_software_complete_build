@@ -1,3 +1,120 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Mar 13, 2011 6:54:14 PM
+ *
+ * @FileName: omtbgvmd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//Start Code To Alter Girvi Table for girvi girv_mondep_EMI_no, girv_mondep_EMI_end_DOB,girv_mondep_EMI_status,girv_mondep_EMI_int_amt  @AUTHOR:ANUJA06OCT15
+$query = "CREATE TABLE IF NOT EXISTS girvi_money_deposit (
+girv_mondep_id	 				INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+girv_mondep_girv_id				VARCHAR(16), 
+girv_mondep_cust_id				VARCHAR(16),
+girv_mondep_own_id				VARCHAR(16),
+girv_mondep_firm_id				VARCHAR(16),
+girv_mondep_prin_amt 				VARCHAR(16),
+girv_mondep_int_amt 				VARCHAR(16),
+girv_mondep_oint_amt                            VARCHAR(16),
+girv_mondep_custody_int_amt 			INT," //ADDED COLUMN TO STORE ORDINARY INTEREST AMT @AUTHOR:MADHUREE-08MAY2021
+."girv_mondep_disc_amt                          INT," //ADDED COLUMN TO STORE ORDINARY INTEREST AMT @AUTHOR:MADHUREE-08MAY2021
+."girv_mondep_extra_amt                         INT," //ADDED COLUMN TO STORE EXTRA AMOUNT @AUTHOR:MADHUREE-19NOV2021
+."girv_mondep_oextra_amt                         INT,"
+."girv_mondep_odisc_amt                         INT,"
+."girv_mondep_grace_fine_amt                         INT,"
+."girv_mondep_amt 				VARCHAR(16),
+girv_mondep_oamt                                VARCHAR(16)," //ADDED COLUMN TO STORE ORDINARY DEPOSITED TOTAL AMT @AUTHOR:MADHUREE-08MAY2021
+."girv_mondep_cash_paid_amt                     VARCHAR(16)," . //ADDED TO STORE CASH PAID AMOUNT FOR LOAN MONEY DEPOSIT @AUTHOR:MADHUREE-20NOV2021
+"girv_mondep_ocash_paid_amt                     VARCHAR(16)," .
+"girv_mondep_cheque_paid_amt                    VARCHAR(16)," . //ADDED TO STORE CHEQUE PAID AMOUNT FOR LOAN MONEY DEPOSIT @AUTHOR:MADHUREE-20NOV2021
+"girv_mondep_ocheque_paid_amt                     VARCHAR(16)," .
+"girv_mondep_card_paid_amt                      VARCHAR(16)," . //ADDED TO STORE CARD PAID AMOUNT FOR LOAN MONEY DEPOSIT @AUTHOR:MADHUREE-20NOV2021
+"girv_mondep_ocard_paid_amt                     VARCHAR(16)," .
+"girv_mondep_online_paid_amt                    VARCHAR(16)," . //ADDED TO STORE ONLINE PAID AMOUNT FOR LOAN MONEY DEPOSIT @AUTHOR:MADHUREE-20NOV2021
+"girv_mondep_oonline_paid_amt                     VARCHAR(16)," .
+"girv_mondep_prin_amt_int 			INT,
+girv_mondep_int_amt_int 			INT,
+girv_mondep_amt_int 				VARCHAR(16),
+girv_mondep_date				VARCHAR(50),
+girv_mondep_other_lang_date			VARCHAR(50)," //COLUMN ADDED TO STORE OTHER LANGAUAGE MONEY DEPOSITE DATE @AUTHOR:MADHUREE-03JAN2022
+."girv_mondep_months				VARCHAR(20),
+girv_mondep_DOR                                 VARCHAR(50),
+girv_mondep_ent_dat 				DATETIME,
+girv_mondep_upd_sts				VARCHAR(50),
+girv_mondep_comm				VARCHAR(2000),
+girv_mondep_jrnlid				INT,
+girv_mondepd_sts				VARCHAR(50),
+girv_mondepd_entry_code				VARCHAR(24),
+girv_mondepd_comm_id				INT,
+girv_mondepd_dr_acc_id                          VARCHAR(16),".
+"girv_mondepd_dr_cheque_acc_id                  VARCHAR(16)," . //ADDED TO STORE CHEQUE AMOUNT DEPOSIT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_mondepd_dr_card_acc_id                    VARCHAR(16)," . //ADDED TO STORE CARD AMOUNT DEPOSIT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_mondepd_dr_online_acc_id                  VARCHAR(16)," . //ADDED TO STORE ONLINE AMOUNT DEPOSIT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_mondepd_cr_acc_id                         VARCHAR(16),
+girv_mondepd_dr_cash_acc_id                     VARCHAR(16),
+girv_mondepd_loan_acc_id                        VARCHAR(16),
+girv_mondepd_int_rec_acc_id                     VARCHAR(16),
+girv_mondepd_disc_acc_id                        VARCHAR(16),
+girv_mondepd_extra_amt_acc_id                   VARCHAR(16),
+girv_mondepd_cust_amt_acc_id                   VARCHAR(16),
+girv_mondepd_dr_acc_id_int                      VARCHAR(16),
+girv_mondepd_cr_acc_id_int                      VARCHAR(16),
+girv_mondepd_dr_cash_acc_id_int                 VARCHAR(16),
+girv_mondepd_loan_acc_id_int                    VARCHAR(16),
+girv_mondepd_int_rec_acc_id_int                 VARCHAR(16),
+girv_mondepd_disc_acc_id_int                    VARCHAR(16),
+girv_mondepd_staff_id                   	VARCHAR(16),
+girv_mondep_hindi_date                   	VARCHAR(50),
+girv_mondep_hindi_DOR                           VARCHAR(50),
+girv_mondep_tithi                        	VARCHAR(16),
+girv_mondep_tithi_DOR                           VARCHAR(16),
+girv_mondep_paksh                       	VARCHAR(16),
+girv_mondep_paksh_DOR                           VARCHAR(16),
+girv_mondep_EMI_no                       	VARCHAR(40),
+girv_mondep_EMI_start_DOB                       VARCHAR(40),
+girv_mondep_EMI_end_DOB                       	VARCHAR(40),
+girv_mondep_EMI_status                       	VARCHAR(40),
+girv_mondep_EMI_paid_date                       VARCHAR(40),
+girv_mondep_EMI_total_amt                     	VARCHAR(40),
+girv_mondep_EMI_amt                      	VARCHAR(40),
+girv_mondep_fine_amt                            VARCHAR(255),
+girv_mondep_paid_fine_amt                       VARCHAR(255),
+girv_mondep_fine_jrnlid                              VARCHAR(255),
+girv_mondep_fine_jrtr                           VARCHAR(255),
+girv_mondep_EMI_staff_id                      	VARCHAR(40),
+girv_mondep_voucher_no                      	VARCHAR(10),".
+//  
+// ADDED CODE FOR TRANSACTION TYPE @AUTHOR:PRIYANKA-17MAR2023        
+"girv_mondep_trans_type			        VARCHAR(16),
+girv_mondep_date_history                      	VARCHAR(50),". //ADDED TO STORE DATE HISTORY FINACE @AUTHOR:YUVRAJ -03012023
+"girv_mondep_amt_history                      	VARCHAR(50),". //ADDED TO STORE AMT HISTORY FINACE @AUTHOR:YUVRAJ -03012023
+"girv_mondep_rollbacked_amt_history             VARCHAR(255),". //ADDED TO STORE RollBack HISTORY FINACE @AUTHOR:VINOD-04-APR2023
+"girv_mondep_rollbacked_date_history             VARCHAR(255),". //ADDED TO STORE RollBack HISTORY FINACE @AUTHOR:VINOD-04-APR2023
+"girv_mondep_fine_amt_history                   VARCHAR(255),".
+"girv_mondep_paid_emi_history                   VARCHAR(255),".
+"girv_mondep_payment_mode_history               VARCHAR(100),". //ADDED TO STORE trans Mode HISTORY FINACE @AUTHOR:VINOD-27-FEB2023
+"last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//Start Code To Alter Girvi Table for girvi girv_mondep_EMI_no, girv_mondep_EMI_end_DOB,girv_mondep_EMI_status,girv_mondep_EMI_int_amt  @AUTHOR:ANUJA06OCT15
+//echo "Girvi Money Deposit Table Created Successfully.\n";
 ?>

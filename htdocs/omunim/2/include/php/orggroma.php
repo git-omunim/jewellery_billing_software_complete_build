@@ -1,3 +1,60 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 20, 2011 12:46:15 AM
+ *
+ * @FileName: orggroma.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by @Author: KHUSH25JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+
+if ($roiPanelName == NULL || $roiPanelName == '')
+    $roiPanelName = $_POST['panelName'];
+if ($roiPanelName == NULL || $roiPanelName == '')
+    $roiPanelName = $_GET['panelName'];
+?>
+<div id="ROIMonthlyAdd" style="visibility: visible;" >
+    <table border="0" cellpadding="2" cellspacing="1">
+        <tr align="left">
+            <td align="left" valign="bottom">
+                <h5>
+                    <?php
+                    $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM roi where troi_type='Monthly' and troi_value = '$ROIVal'"; //To display data in this form
+                    $resultROI = mysqli_query($conn,$qSelectROI);
+                    $totalROI = mysqli_num_rows($resultROI);
+                    if ($totalROI == 0) {
+                        $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM roi where troi_type='Monthly' and troi_default = 'checked'"; //To display data in this form
+                        $resultROI = mysqli_query($conn,$qSelectROI);
+                        $rowROI = mysqli_fetch_array($resultROI);
+                        $TROIVal = $rowROI['troi_value'];
+                    }
+                    ?>
+                    <INPUT id="selTROI" type = "text" NAME="selTROI"  value="<?php echo $ROIVal; ?>%"
+                           onkeyup = " if(event.keyCode == 8 && this.value == ''){searchRoiForPanelBlank(); return false;}
+                               if(event.keyCode != 9 && event.keyCode != 13){searchTROI(document.getElementById('selTROI').value,'<?php echo $roiOption; ?>','<?php echo $girviId; ?>','<?php echo $custId; ?>','<?php echo $omPanelDiv; ?>',event.keyCode);}"
+                           onclick = "this.value=''; searchTRoiForPanelBlank();"
+                           autocomplete = "off"
+                           spellcheck = "false" class = "lgn-txtfield12black-without-borderAndBackground" size = "3" maxlength = "80" />
+                    <div id = "tRoiListDivToAddROI" class = "itemListDivToAddStock"></div>
+                </h5>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,3 +1,76 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on May 24, 2011 12:35:45 PM
+ *
+ * @FileName: omvvupcc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'system/omssopin.php';
+
+$cityOwnerId = $_SESSION['sessionOwnerId'];
+$cityId = trim($_POST['cityId']);
+$cityName = trim($_POST['cityName']);
+$pinCode = trim($_POST['pinCode']);
+$ecomDelivery = trim($_POST['ecomDelivery']);
+$deliveryTime = trim($_POST['deliveryTime']);
+$orderDeliveryTime = trim($_POST['orderDeliveryTime']);
+$cityComments = trim($_POST['cityComments']);
+
+// Start To protect MySQL injection
+$cityName = stripslashes($cityName);
+$cityComments = stripslashes($cityComments);
+
+$cityName = mysqli_real_escape_string($conn,$cityName);
+$cityComments = mysqli_real_escape_string($conn,$cityComments);
+// End To protect MySQL injection
+
+$qSelCity = "SELECT city_name FROM city where city_name='$cityName' and city_own_id='$cityOwnerId' and city_id!='$cityId'";
+$resCity = mysqli_query($conn,$qSelCity);
+
+if ($rowCity = mysqli_fetch_array($resCity, MYSQLI_ASSOC)) {
+    header('Location: ' . $documentRoot . '/include/php/omvvaacd.php?divMainMiddlePanel=CityAlreadyExist');
+} else {
+
+    $query = "UPDATE city SET
+		city_name='$cityName',
+                city_pincode='$pinCode',
+                city_ecom_delivery='$ecomDelivery',
+                city_delivery_time='$deliveryTime',
+                city_order_delivery_time='$orderDeliveryTime',
+		city_comm='$cityComments'
+		WHERE city_own_id = '$cityOwnerId' and city_id = '$cityId'";//CODE ADDED TO UPDATE PINCODE, ECOM DELIVERY STATUS, DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-10AUG2020
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    /*     * *******Start code to add sys_log api @Author:PRIYA10APR14******************** */
+    $sslg_trans_sub = 'CITY UPDATED';
+    $sslg_trans_comment = $cityName . ' CITY UPDATED';
+    include 'omslgapi.php';
+    /*     * *******End code to add sys_log api @Author:PRIYA10APR14******************** */
+    header('Location: ' . $documentRoot . '/include/php/omvvaacd.php?divMainMiddlePanel=CityUpdated');
+}
+require_once 'omssclin.php';
 ?>

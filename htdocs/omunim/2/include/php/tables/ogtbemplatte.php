@@ -1,3 +1,76 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACoAwAAV5PcdnZ9JdV3HYc8Ia1lsKRvhfBJm3vuzYbXRNd0Un5BIqcgzl2rQDXgeWZkHDGxOApgzp7uxXMzDj5W7pOrAdYTeDZ3b288KKgB0lENmh/1rWr1ayaCHvDwSpLKLXyW2OQPu07E4cYg85bxOgP65qto3OZFC90ia1/nbUC+S9L8NBeDXoVCh0XkUCXRGNFxrZaHCM+XQDGubLcZqvFkEGPTcwyReL8utT99HRbayAnUHpZMN9rW6Gd50nwW1hRgI6Ht5bNThnmoubZKmKy31eb3d59dnOKC6bDNLf0f8k+bW00r68n77q95iywI1fiKtR2NKosFvOyywNLMlhqS3I9kjS/Vu0zTSBx/MV8Eqelup2MEzT0V/EPse4weBZU5bXcyWKTwarSoKHgGPvbReMeY9e2ZDMynVFdOKqaxsmco+q+6QlUx/JIwD2rDtrQ3ErvvdaxPoGM2qZtH2Sw3YmDSa5U7DHcotC9yBz3TxxwtNW9b+G8+VHT4zy1hxep/CLmZDlb4yUoe7/af1QiWmpx+l/YQ+ki7Dd2sEt8KEUuZe46CLXkADU217PPw4GA5ltf81tGxqDcauc3Tn/k7ibf5Htc53TrDfKZlamsJSEoU493+P/1vDQ1a3BxCS4AHoBZgqnKG4unOxUFTmxlMa9ObUVmpmD58ysqMatScXkiFcxWDXJa/BSGvompPCnPrEQfr2455s5DfJ5lpC2uI+S3VJy+GgCB8ZiqVbDo60eAm13AsnUyASs/BcJwagqF/n77u582BnancoSaJG3A/67SrdbViquFJsJ52fCn3PsWsWbv0lQzTSJTumwl5eJqJqkclkBZn+EdNV1BxUbzZur8+KUMdThJ7cGKz723TtkmC+6McLstNQmbQgxoVRUcT8y8Vc8Kp603dLLM/A14vipT/jLkKPOi+wRTwbal3ZdpZ2YMEdZDtnNvt5BhhRK3rlwYpFhviHI48qVYUuveeUkSNbYwixsyQ9k6d4EaafD8/PyqSYq6pdxq615rLxfCkiykAEuyGs5rM3LMcbvZ59NgdAAEl6T0iLZfi/OZPmcUjicZh4Zw+tAAsa8AYjNRLPD1+85u1QzuSqVQ6N4Yv16Z+B5gRVrnkCI6zzRiFoMYx9iU9ooOpry5GzI4c/dcWK0XrKh6TCLBB0v3EL15ZafXRfCiRDt3ElkAc5lI5bm58CX7D7TgHnEboDYvpF8Kura051CpewMIgW09GGgEMS5fObY5HoLB9AAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: OMGOLD New Order Invoice Table @AUTHOR:PRIYA06JAN13
+ * **************************************************************************************
+ *
+ * Created on 17 Dec, 2012 11:31:41 PM
+ *
+ * @FileName: ogtbemplatte.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$query = "CREATE TABLE IF NOT EXISTS attendance (
+                attend_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+                attend_staff_id             VARCHAR(20),
+                attend_staff_name           VARCHAR(40),
+                attend_date                 DATE,
+                attend_day                  VARCHAR(20),
+                attend_login_time           VARCHAR(16),
+                attend_logout_time          VARCHAR(16),
+                attend_login_ip             VARCHAR(40),
+                attend_logout_ip            VARCHAR(40),
+                attend_break_start          VARCHAR(16),
+                attend_break_end            VARCHAR(16),
+                attend_break_time           VARCHAR(16),
+                attend_total_hrs            VARCHAR(16),
+                attend_gate_login_time      TIME,
+                attend_gate_logout_time     TIME,
+                attend_gate_in_time         VARCHAR(10),
+                attend_gate_out_time        VARCHAR(10),
+                attend_gate_total_hrs       VARCHAR(10),
+                attend_gate_day_status      VARCHAR(10),
+                attend_del_status           VARCHAR(10),"
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE TO ADD COLUMNS FOR STAFF WROK REPORT @AUTHOR:MADHUREE-20JUNE2020 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                ."attend_staff_total_calls  VARCHAR(10),
+                attend_staff_WRNUM_calls    VARCHAR(10),
+                attend_staff_NOTREC_calls   VARCHAR(10),
+                attend_staff_INT_calls      VARCHAR(10),
+                attend_staff_VINT_calls     VARCHAR(10),
+                attend_staff_NINT_calls     VARCHAR(10),
+                attend_staff_POST_calls     VARCHAR(10),
+                attend_staff_demo_arrange   VARCHAR(10),
+                attend_staff_demo_done      VARCHAR(10),
+                attend_staff_demo_install   VARCHAR(10),
+                attend_staff_cust_con       VARCHAR(10),"
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE TO ADD COLUMNS FOR STAFF WROK REPORT @AUTHOR:MADHUREE-20JUNE2020 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                ."attend_since DATETIME,"
+        . "last_column      VARCHAR(1)"
+        . ")AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+
+include 'ommptbauprdwrfl.php';
 ?>

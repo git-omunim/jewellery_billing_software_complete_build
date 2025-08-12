@@ -1,3 +1,67 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: omStockMasterDisplayPopUp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+$itmNmCode = $_POST['itmNmCode'];
+$itmNmMetal = $_POST['itmNmMetal'];
+$itmNmMetalType = $_POST['itmNmMetalType'];
+$itmNmProdType = $_POST['itmNmProdType'];
+$itmNmCategory = $_POST['itmNmCategory'];
+$itmNmName = $_POST['itmNmName'];
+//
+$itmNmCode = $_GET['itmNmCode'];
+$itmNmMetal = $_GET['itmNmMetal'];
+$itmNmMetalType = $_GET['itmNmMetalType'];
+$itmNmProdType = $_GET['itmNmProdType'];
+$itmNmCategory = $_GET['itmNmCategory'];
+$itmNmName = $_GET['itmNmName'];
+$panelName = $_GET['panelName'];
+//echo '$panelName =='.$panelName;
+?>
+<div id="girviIframePopUp" class="grey-back" style="border: 1px #FF7703 solid; margin-left: -125px;">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="center" valign="top">
+                <!--- //change in filename @AUTHOR: SANDY22NOV13 -->
+                <iframe src="<?php echo $documentRoot; ?>/include/php/omStockMasterDisplayPopUpFrame.php?panelName=<?php echo $panelName; ?>" 
+                        width="920" height="350" frameborder="0" class="grey-back"></iframe>
+            </td>
+            <!--START Code To Add Girvi Id In getGirviInfoPopUpHideInCustHome() @AUTHOR:PRIYA27FEB13 -->
+            <td align="right" valign="top">
+                <?php if ($custHome == 'Yes') { ?>
+                    <a class="links" style="cursor: pointer;"
+                       onclick="getGirviInfoPopUpHideInCustHome('<?php echo $girviId; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a> 
+                   <?php } else { ?>
+                    <a class="links" style="cursor: pointer;"
+                       onclick="getGirviInfoPopUpHide('<?php echo $girviId; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a>
+                   <?php } ?>
+            </td>
+            <!--END Code To Add Girvi Id In getGirviInfoPopUpHideInCustHome() @AUTHOR:PRIYA27FEB13 -->
+        </tr>
+    </table>
+</div>

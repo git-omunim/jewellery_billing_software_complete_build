@@ -1,3 +1,56 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: UPDATE STICKER OPTION VALUES @PRIYANKA-30AUG2019
+ * **************************************************************************************
+ * 
+ * Created on AUG 30, 2019 5:41:02 PM
+ *
+ * @FileName: omUpdateStickerOptionValue.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$option = $_GET['option'];
+$value = $_GET['value'];
+//
+$selFormsLayoutDet = "SELECT omin_value FROM omindicators WHERE omin_own_id = '$sessionOwnerId' and omin_option = '$option'";
+$resFormsLayoutDet = mysqli_query($conn,$selFormsLayoutDet);
+$rowFormsLayoutDet = mysqli_num_rows($resFormsLayoutDet);
+//
+if ($rowFormsLayoutDet == 0) {
+    $query = "INSERT INTO omindicators(omin_own_id,omin_option,omin_value)
+              VALUES('$sessionOwnerId','$option','$value')";
+    
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+} else {
+    $query = "UPDATE omindicators SET omin_value = '$value'
+              WHERE omin_own_id = '$sessionOwnerId' and omin_option = '$option'";
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+header('Location: ' . $documentRoot . '/include/php/omStickerPrintPanel.php');
 ?>

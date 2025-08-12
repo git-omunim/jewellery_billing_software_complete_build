@@ -1,3 +1,123 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:   Sell Invoice SAMPLE 5 FOMART
+ * @Author:     SIMRAN20DEC2022
+ * **************************************************************************************
+ * 
+ * Created on 15 april 2022
+ *
+ * @FileName: omspnewtaxRetailWholesaleRight.php
+ * @Author: SIMRAN SHAH
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: 01 DEC 2022
+ *  AUTHOR:SIMRAN SHAH
+ *  REASON: FOR NEW INVOICE RETAIL WHOLESALE INVOICE FORMAT
+ *
+ */
 ?>
+<?php
+
+//echo '$invoicePanel=='.$invoicePanel.'<br>';
+//
+if ($invoicePanel == 'sellInvLayA5') {
+
+    $divIdClass = 'bodyClass';
+    $rateTableWidth = '100%';
+    $tableClass = 'sellInvA5-main-table';
+    $imageClass = 'a5-logo-image';
+    $colspan = '8';
+    $itemIdWidth = '40px';
+    $itemDescWidth = '55px';
+    $gsWtWidth = '55px';
+    $ntWtWidth = '55px';
+    $rateWidth = '40px';
+    $valWidth = '65px';
+    $labourWidth = '50px';
+    $amtWidth = '86px';
+    $balanceTopBorder = '';
+    $itemNameSubstr = '6';
+    $balanceInWordsFs = 'fs_14';
+    $firmHeader = 'fs_22';
+    $firmLongName = 'fs_20';
+    $firmDesc = 'fs_16';
+    $firmAddress = 'fs_14';
+    $addressSubStr = '45';
+    $fontSize = 'fs_13';
+    $textAreaWidth = '400px';
+    $wd = 600;
+    $totalWidth = '60px';
+    $rawPurityTitle = 'PR';
+    $rawRateTitle = 'RT';
+    $goldShort = 'GD';
+    $silverShort = 'SR';
+    $rawTitle = 'RAW';
+    $custAddress = '300px';
+    $finalamtwidth = '50%';
+} else {
+    $divIdClass = 'A4-size';
+    $tableClass = 'A4-Inv-Table';
+    $colspan = '14';
+    $imageClass = 'form8-logo-image';
+    $balanceTopBorder = '';
+    $itemNameSubstr = '6';
+    $balanceInWordsFs = 'fs_14';
+    $firmHeader = 'fs_22';
+    $firmLongName = 'fs_20';
+    $firmDesc = 'fs_16';
+    $firmAddress = 'fs_14';
+    $addressSubStr = '45';
+    $fontSize = 'fs_13';
+    $textAreaWidth = '790px';
+    $wd = 860;
+    $totalWidth = '90px';
+    $rawPurityTitle = 'PURITY';
+    $rawRateTitle = 'RATE';
+    $goldShort = 'GOLD';
+    $silverShort = 'SILVER';
+    $rawTitle = 'RAW';
+    $custAddress = '300px';
+    $finalamtwidth = '50%';
+}
+//
+$fieldName = 'topMargin';
+parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+$topMargin = $label_field_content;
+
+$label_field_content = '';
+$fieldName = 'leftMargin';
+parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+$leftMargin = $label_field_content;
+
+$fieldName = 'formBorderSize';
+$label_field_content = '';
+parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+$formBorder = explode("#", $label_field_content);
+$formBorderSize = $formBorder[0];
+$formBorderColor = $formBorder[1];
+
+$fieldName = 'formWidth';
+$label_field_content = '';
+parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+$formWidth = $label_field_content;
+
+?>
+<table id="<?php echo $tableClass; ?>" class="invoicecenter"
+       style="width:<?php echo $formWidth . 'mm';?>;margin-top: <?php echo $topMargin ?>mm; margin-left: <?php echo $leftMargin; ?>mm; border: <?php echo $formBorderSize; ?>px solid #<?php echo $formBorderColor; ?>;
+       
+       ">
+    <tr>
+        <td>
+<?php
+include 'omspinvnewtaxRetailWholesaleheader.php';
+?>
+        </td>
+    </tr>
+</table>

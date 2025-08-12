@@ -1,3 +1,65 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transfer loan list in Money lenders Add Loan Panel @AUTHOR: SANDY12DEC13
+ * **************************************************************************************
+ *
+ * Created on 13 NOV, 2013 11:04:23 AM
+ *
+ * @FileName: ormlsbln.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//change in file @AUTHOR: SANDY03JAN14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+$count = $_GET['count'];
+if ($count == '') {
+    $count = 1;
+}
+?>
+<!--Start code to change code @Author:SHRI16MAY15-->
+<input type ="hidden" id ="status<?php echo $count; ?>" name ="status<?php echo $count; ?>" value ="Active"/>
+<input type ="hidden" id ="totalLoanTransferred" name = "totalLoanTransferred" value="<?php echo $count; ?> "/>
+<div id ="transferLoanDetailsDiv<?php echo $count; ?>">
+    <input id="mlLoanNo<?php echo $count; ?>" name="mlLoanNo<?php echo $count; ?>" type="text"                     
+           onkeydown = "javascript: if (event.keyCode == 13) {
+               clearListDiv('mlLoanNoList'+<?php echo $count; ?>,this.id);
+               searchLoanNoAndDet(this.value,'<?php echo $count; ?>', event.keyCode);
+               return false;
+           }
+           else if (event.keyCode == 8 && this.value == '') {
+               clearListDiv('mlLoanNoList'+<?php echo $count; ?>,'loanType');//Change in line @AUTHOR: SANDY08FEB14
+               return false;
+           }"
+           onclick="clearListDiv('mlLoanNoList'+<?php echo $count; ?>,this.id);"
+           onkeyup = "if (event.keyCode != 9 && event.keyCode != 13) {
+           searchLoanNoAndDet(this.value,'<?php echo $count; ?>', event.keyCode);
+       }else if(event.keyCode == 13){
+           if(this.value!=''){
+               getDetailsOfSelectedLoan(this.value,'<?php echo $count; ?>','');return false;
+           }}"
+           spellcheck="false"  class="inputBox14CalibriGrey textBoxCurve1px6rad" size="5" maxlength="5"  placeholder="LOAN NO" autocomplete="off"
+           style="width:10%;height:30px;"/>
+    <div id ="mlLoanNoList<?php echo $count; ?>" class="loanNoListDiv"></div>
+</div>
+<div id="addMoreLnToTrList<?php echo $count + 1; ?>"></div>
+
+<!--End code to change code @Author:SHRI16MAY15-->

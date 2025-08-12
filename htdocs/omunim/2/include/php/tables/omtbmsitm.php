@@ -1,3 +1,131 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************
+ * @tutorial: START CODE FOR MASTER ITEM TABLE @PRIYANKA-19FEB18
+ * *********************************************************************************************************************
+ * 
+ * Created on FEB 19, 2018 17:29:00 PM
+ *
+ * @FileName: omtbmsitm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-19FEB18
+ *  REASON:
+ *
+ */
+?>
+<?php
+// START CODE TO CREATE MASTER ITEM TABLE @PRIYANKA-19FEB18
+// LAST 5 NEW COLUMNS ARE ADDED @HEMA-8APR19
+$query = "CREATE TABLE IF NOT EXISTS master_item (
+ms_itm_id                   INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ms_itm_itm_id               VARCHAR(25),
+ms_itm_own_id               VARCHAR(16),
+ms_itm_type                 VARCHAR(25),
+ms_itm_metal                VARCHAR(25),
+ms_itm_group                VARCHAR(50),
+ms_itm_category             VARCHAR(100),
+ms_itm_sub_category         VARCHAR(50),
+ms_itm_name                 VARCHAR(100),
+ms_itm_brand_name           VARCHAR(50),
+ms_itm_brand_origin         VARCHAR(50),
+ms_itm_form_name            VARCHAR(50),
+ms_itm_industry             VARCHAR(100),
+ms_itm_user_group           VARCHAR(50),
+ms_itm_avg_weight           VARCHAR(15),
+ms_itm_avg_weight_type      VARCHAR(10),
+ms_itm_add_date             DATETIME,
+ms_itm_unit                 VARCHAR(16),
+ms_itm_sub_unit             VARCHAR(16),
+ms_itm_conversion_rate      VARCHAR(16),
+ms_itm_hsn_no               VARCHAR(16),
+ms_itm_barcode              VARCHAR(64),
+ms_itm_color                VARCHAR(16),
+ms_itm_shape                VARCHAR(16),
+ms_itm_size                 VARCHAR(16),
+ms_itm_length               VARCHAR(16),
+ms_itm_width                VARCHAR(16),
+ms_itm_purity               VARCHAR(16),
+ms_itm_clarity              VARCHAR(16),
+ms_itm_pre_id               VARCHAR(64),
+ms_itm_post_id              VARCHAR(16),
+ms_itm_from_wt              VARCHAR(16),
+ms_itm_to_wt                VARCHAR(16),
+ms_itm_max_qty              VARCHAR(16),
+ms_itm_min_qty              VARCHAR(16),
+ms_itm_min_qty_type         VARCHAR(16),
+ms_itm_wholesale_stock_min  VARCHAR(16),
+ms_itm_wholesale_stock_max  VARCHAR(16),
+ms_itm_wholesale_stock_type VARCHAR(16),
+ms_itm_model_no             VARCHAR(64),
+ms_itm_prod_desc            VARCHAR(80),
+ms_itm_tag_template         VARCHAR(32),
+ms_itm_sub_item             VARCHAR(16),
+ms_itm_purchase_price       VARCHAR(25),
+ms_itm_sell_price           VARCHAR(25),
+ms_itm_mrp                  VARCHAR(25),
+ms_itm_taxincl_checked      VARCHAR(10),
+ms_itm_pur_price_with_gst   VARCHAR(25),
+ms_itm_sell_price_with_gst  VARCHAR(25),
+ms_itm_mrp_with_gst         VARCHAR(25),
+ms_itm_wholesale_pur_price  VARCHAR(25),
+ms_itm_wholesale_sell_price VARCHAR(25),
+ms_itm_wholesale_taxincl_checked        VARCHAR(10),
+ms_itm_wholesale_pur_price_with_gst     VARCHAR(25),
+ms_itm_wholesale_sell_price_with_gst    VARCHAR(25),
+ms_itm_gst                  VARCHAR(16),
+ms_itm_cgst_sgst            VARCHAR(16),
+ms_itm_igst                 VARCHAR(16),
+ms_itm_pur_account_id       VARCHAR(10),
+ms_itm_sell_account_id      VARCHAR(10),
+ms_itm_price_code           VARCHAR(25), 
+ms_itm_price_code_val       VARCHAR(25), 
+ms_itm_price_code_type      VARCHAR(25), 
+ms_itm_price_code_num       VARCHAR(25), 
+ms_itm_unit_price           VARCHAR(25),
+ms_itm_wstg_min             VARCHAR(25),
+ms_itm_wstg_max             VARCHAR(25),
+ms_itm_size_min             VARCHAR(25),
+ms_itm_size_max             VARCHAR(25),
+ms_itm_wstg_type            VARCHAR(25),
+ms_itm_mkg_min              VARCHAR(25),
+ms_itm_mkg_max              VARCHAR(25),
+ms_itm_mkg_type             VARCHAR(25),
+ms_itm_disc_code            VARCHAR(25),
+ms_itm_disc                 VARCHAR(25),
+ms_itm_disc_min             VARCHAR(25),
+ms_itm_disc_max             VARCHAR(25),
+ms_itm_disc_type            VARCHAR(25),
+ms_itm_disc_on_amt          VARCHAR(25),
+ms_itm_cat_image_id         VARCHAR(8),
+ms_itm_image_id_0           VARCHAR(8),
+ms_itm_image_id_1           VARCHAR(8),
+ms_itm_image_id_2           VARCHAR(8),
+ms_itm_image_id_3           VARCHAR(8),
+ms_itm_image_id_4           VARCHAR(8),
+ms_itm_image_id_5           VARCHAR(8),
+ms_itm_other_lang           VARCHAR(25),
+ms_itm_other_lang_name      VARCHAR(100),".
+"ms_itm_min_weight          VARCHAR(25),". // COLUMN ADDED TO STORE PRODUCT MINIMUM WEIGHT @AUTHOR:MADHUREE-23JULY2022
+"ms_itm_max_weight          VARCHAR(25),". // COLUMN ADDED TO STORE PRODUCT MAXIMUM WEIGHT @AUTHOR:MADHUREE-23JULY2022
+"ms_itm_min_size            VARCHAR(25),". // COLUMN ADDED TO STORE PRODUCT MINIMUM SIZE @AUTHOR:MADHUREE-06JULY2022
+"ms_itm_max_size            VARCHAR(25),". // COLUMN ADDED TO STORE PRODUCT MAXIMUM SIZE @AUTHOR:MADHUREE-06JULY2022
+"ms_itm_size_type           VARCHAR(15),". // COLUMN ADDED TO STORE PRODUCT SIZE TYPE @AUTHOR:MADHUREE-06JULY2022
+"ms_itm_other_info          VARCHAR(100),"
+. "last_column                VARCHAR(1))AUTO_INCREMENT = 1";
+//
+if (!mysqli_query($conn,$query)) {
+    die('Error master_item: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+// END CODE TO CREATE MASTER ITEM TABLE @PRIYANKA-19FEB18
 ?>

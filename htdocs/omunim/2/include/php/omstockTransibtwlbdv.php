@@ -1,3 +1,155 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description:
+ * **************************************************************************************
+ *
+ * Created on 20 Jun, 2013 11:26:25 AM
+ *
+ * @FileName: omstockTransibtwlbdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include 'ommpemac.php';
+/* * ******Start code to add panel indiacator @Author:PRIYA16MAY14************ */
+if ($_SESSION['sessionOwnIndStr'][7] == 'Y'  || $_SESSION['sessionOwnIndStr'][7] == 'A') {
+    $itemId = $_GET['itemId'];
+    $preId = preg_replace("/[^a-zA-Z]+/", "", $itemId);
+    $postId = preg_replace("/[^0-9]+/", "", $itemId);
+    $itemId1 = $_GET['itemId1'];
+    $preId1 = preg_replace("/[^a-zA-Z]+/", "", $itemId1);
+    $postId1 = preg_replace("/[^0-9]+/", "", $itemId1);
+
+    $omLayoutOptionTop = '55X13TWOLBCTOPMARGIN';
+    $omLayoutOptionLeft = '55X13TWOLBCLEFTMARGIN';
+    $omLayoutOptionBorder = '55X13TWOLBCBORDER';
+    $omLayOptSlipWidth = '55X13TWOBCBLOCKSLIPWIDTH';
+    $omLayOptSlipHeight = '55X13TWOBCBLOCKSLIPHEIGHT';
+    $omLayOptTailLength = '55X13TWOBCBLOCKTAILLENGTH';
+
+    $topMargin = updateOptionValue($omLayoutOptionTop, '', 'selValue', '','');
+    $leftMargin = updateOptionValue($omLayoutOptionLeft, '', 'selValue', '','');
+    $slipWidth = updateOptionValue($omLayOptSlipWidth, '', 'selValue', '','');
+    $slipHeight = updateOptionValue($omLayOptSlipHeight, '', 'selValue', '','');
+    $tailLength = updateOptionValue($omLayOptTailLength, '', 'selValue', '','');
+
+    include 'ombcclass.php';
+    $counter = 1;
+    ?>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" valign="top" width="100%" class="marginTop10">
+        <tr>
+            <td valign="top" align="center">
+                <div id="allLabelsThermalDiv">
+                    <?php include 'ombcclass.php'; ?>
+                    <div id="block81x13Div<?php echo $counter; ?>" class="block81x13Div table55L">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td>
+                                    <div id="block40x5Div" class="block40x5Div bgcolor-label">
+                                        <div class="noPrint">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <table border="0" cellspacing="0" cellpadding="0" class="block55x13Div bgcolor-label">
+                                        <tr>
+                                            <td align="left" width="50%" class="borderRightDotted paddingLeft2">
+                                                <?php
+                                                if ($itemId != '') {
+                                                    $select = "SELECT * FROM stock_transaction "
+                                                            . "WHERE sttr_item_pre_id = '$preId' and sttr_item_id = '$postId'";
+                                                    $result = mysqli_query($conn,$select);
+                                                    $row = mysqli_fetch_array($result);
+                                                    $bcItemPreId = $row['sttr_item_pre_id'];
+                                                    $bcItemPostId = $row['sttr_item_id'];
+                                                    $bcItemName = $row['sttr_item_name'];
+                                                    $bcItemWt = $row['sttr_gs_weight'];
+                                                    $bcItemWtType = $row['sttr_gs_weight_type'];
+                                                    $bcItemNtWt = $row['sttr_nt_weight'];
+                                                    $bcItemNtWtType = $row['sttr_nt_weight_type'];
+                                                    ?>
+                                                    <div class="block84LText10 paddingTop1  padBottom0 marginBottom0 marginTop0">
+                                                        <?php echo $bcItemPreId; ?><?php echo $bcItemPostId; ?> 
+                                                    </div>
+                                                    <div class="block84LText9 marTopMin2">
+                                                        <?php echo $bcItemWt; ?><?php echo '' . $bcItemWtType; ?> 
+                                                        <div class="block84LText9 paddingRight2 floatRight">
+                                                            <?php
+                                                            echo $bcItemNtWt . '' . $bcItemNtWtType;
+                                                            ?> 
+                                                        </div> 
+                                                    </div>
+                                                    <?php if ($bcItemName != '') { ?>
+                                                        <div class="block84LText6 padTop0 marginTop0">
+                                                            <img src="<?php echo $documentRootBSlash; ?>/include/php/ommpitbc.php?panel=84L&bar_id=1<?php echo $bcItemId; ?>" alt="Barcode" height="7px" />
+                                                        </div>
+                                                    <?php } ?>
+                                                    <div class="block84LText9 paddingTop1">
+                                                        <?php echo $bcItemName; ?>
+                                                    </div>
+                                                <?php } ?>
+                                            </td>
+                                            <td width="50%" align="left" valign="top" class="paddingLeft2">
+                                                <?php
+                                                if ($itemId1 != '') {
+                                                    $select1 = "SELECT * FROM stock_transaction "
+                                                            . "WHERE sttr_item_pre_id = '$preId1' and sttr_item_id = '$postId1'";
+                                                    $result1 = mysqli_query($conn,$select1);
+                                                    $row1 = mysqli_fetch_array($result1);
+                                                    $bcItemPreId1 = $row1['sttr_item_pre_id'];
+                                                    $bcItemPostId1 = $row1['sttr_item_id'];
+                                                    $bcItemName1 = $row1['sttr_item_name'];
+                                                    $bcItemWt1 = $row1['sttr_gs_weight'];
+                                                    $bcItemWtType1 = $row1['sttr_gs_weight_type'];
+                                                    $bcItemNtWt1 = $row1['sttr_nt_weight'];
+                                                    $bcItemNtWtType1 = $row1['sttr_nt_weight_type'];
+                                                    ?>
+                                                    <div class="block84LText10  paddingTop1  padBottom0 marginBottom0 marginTop0">
+                                                        <?php echo $bcItemPreId1; ?><?php echo $bcItemPostId1; ?> 
+                                                    </div>
+                                                    <div class="block84LText9 marTopMin2">
+                                                        <?php echo $bcItemWt1; ?><?php echo '' . $bcItemWtType1; ?> 
+                                                        <div class="block84LText9 paddingRight2 floatRight">
+                                                            <?php
+                                                            echo $bcItemNtWt1 . '' . $bcItemNtWtType1;
+                                                            ?> 
+                                                        </div> 
+                                                    </div>
+                                                    <?php if ($bcItemName1 != '') { ?>
+                                                        <div class="block84LText6 padTop0 marginTop0">
+                                                            <img src="<?php echo $documentRootBSlash; ?>/include/php/ommpitbc.php?panel=84L&bar_id=1<?php echo $bcItemId; ?>" alt="Barcode" height="7px" />
+                                                        </div>
+                                                    <?php } ?>
+                                                    <div class="block84LText9 paddingTop1">
+                                                        <?php echo $bcItemName1; ?>
+                                                    </div>
+                                                <?php } ?>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr> 
+    </table>
+<?php } ?> 

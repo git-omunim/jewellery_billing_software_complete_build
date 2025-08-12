@@ -1,3 +1,697 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 15 Jul, 2020 5:34:42 PM
+ *
+ * @FileName: omschemebook.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+include 'ommprspc.php';
+include_once 'ommpfndv.php';
+include_once 'ommpnmwd.php';
+require_once 'ommpincr.php';
+include_once 'ommpfunc.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+//Start Code To Select FirmId
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+//End Code To Select FirmId
+$labelType = 'SchemeBook';
+//
+?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div align="left" class="main_link_orange">
+                    CUSTOMIZED SCHEME PASSBOOK PANEL
+            </div>
+            <div align="right" valign="bottom" class="printVisibilityHidden">
+                 <div id="cuMessDisplayDiv"></div>
+            </div>
+        </div>   
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+              <table border="0" cellspacing="0" cellpadding="0" valign="top" align="center" width="100%">
+                <tr>
+                      <td align="left" class="ff_calibri fs_12 fw_b grey_dark" width="25%">
+                        <div style="font-size:14px;font-weight:600;color:#9b370b;">SCHEME PASSBOOK FIRST PAGE TOP MARGIN (MM):</div>
+                     <?php
+                    $label_field_content = '';
+                    $fieldName = 'FirstPageTopMargin';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    ?>
+                    
+                        <input id="fieldValue" name="fieldValue" placeholder="Margin" value="<?php echo $label_field_content; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                  
+                    <td align="left" class="ff_calibri fs_12 fw_b grey_dark padLeft20" width="25%">
+                        <div style="font-size:14px;font-weight:600;color:#9b370b;">SCHEME PASSBOOK FIRST PAGE LEFT MARGIN (MM):</div>
+                   
+                         <?php
+                    $label_field_content = '';
+                    $fieldName = 'FirstPageLeftMargin';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    ?>
+                   
+                        <input id="fieldValue" name="fieldValue" placeholder="Margin" value="<?php echo $label_field_content; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                    
+                    
+                    <td align="left" width="15%">
+                        <table border="0" cellspacing="0" cellpadding="0" valign="top" align="left" width="100%">
+                            <tr>
+                                <td align="left" class="ff_calibri fs_12 fw_b grey_dark padLeft20" width="100%">
+                                    <div style="font-size:14px;font-weight:600;color:#9b370b;margin-right:5px;"> TOP MARGIN (MM):</div>
+                              
+                                  <?php
+                    $label_field_content = '';
+                    $fieldName = 'topMargin';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    $TopMargin = $label_field_content;
+                    if ($TopMargin == '') {
+                        $TopMargin = 0;
+                    }
+                    ?>
+                    
+                        <input id="fieldValue" name="fieldValue" placeholder="Top Margin" value="<?php echo $TopMargin; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                            </tr>
+                        </table>
+                    </td>
+                  
+                    <td align="left" class="ff_calibri fs_12 fw_b grey_dark padLeft10" width="15%">
+                        <div style="font-size:14px;font-weight:600;color:#9b370b;margin-right:5px;"> ROW TOP MARGIN (MM):</div>                 
+                       <?php
+                    $label_field_content = '';
+                    $fieldName = 'rowTopMargin';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    ?>
+                   
+                        <input id="fieldValue" name="fieldValue" placeholder="Top Margin" value="<?php echo $label_field_content; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                    <?php
+                    $fieldName = 'rowBottomMargin';
+                    $label_field_content = '';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    ?>
+                    <td align="left" class="ff_calibri fs_12 fw_b grey_dark padLeft10">
+                        <div style="font-size:14px;font-weight:600;color:#9b370b;margin-right:5px;"> ROW BOTTOM MARGIN (MM):</div>   
+                    
+                        <input id="fieldValue" name="fieldValue" placeholder="Bot Margin" value="<?php echo $label_field_content; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-12" style="margin-top:5px;">
+            <table border="0" cellspacing="0" width="100%" cellpadding="0" valign="top" align="center">
+                <tr>
+                       <td align="right" class="ff_calibri fs_12 fw_b grey_dark padLeft10" width="10%">
+                           <div style="font-size:14px;font-weight:600;color:#9b370b;margin-right:5px;">ROW BORDER:</div>
+                    </td>
+                    <?php
+                    $fieldName = 'formBorderCheck';
+                    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    $borderCheck = $label_field_check;
+                    ?>
+                    <td align="left" class="frm-lbl-lnk-grey padLeft10" width="5%">
+                        <input type="checkbox" id="fontCheckId" name="fontCheckId" class="checkbox" <?php
+                        if ($label_field_check == 'true')
+                            echo 'checked';
+                        else
+                            echo '';
+                        ?>
+                               onclick="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');"/>                   
+                    </td>
+                    <td align="left" class="ff_calibri fs_12 fw_b grey_dark padLeft10" width="20%">
+                        <div style="font-size:14px;font-weight:600;color:#9b370b;margin-right:5px;">PASSBOOK WIDTH (MM): </div>
+                    
+                    <?php
+                    $label_field_content = '';
+                    $fieldName = 'passBookWidth';
+                    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    $passBookWidth = $label_field_content;
+                    if ($passBookWidth == '') {
+                        $passBookWidth = 0;
+                    }
+                    ?>
+                    
+                        <input id="fieldValue" name="fieldValue" placeholder="Width" value="<?php echo $passBookWidth; ?>"
+                               onblur="labelsForm('', '<?php echo $labelType; ?>', '<?php echo $fieldName; ?>', this.value, '', '', '', '');" 
+                               spellcheck="false" type="text"
+                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey_center" size="7" maxlength="30" style="width:100%;height:30px;border-radius:3px!important;"/>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-12">
+            <div class="schemePassbook" style="border:1px solid #c1c1c1;margin-top:5px;">
+                <h4 style="margin-bottom: 15px;font-weight: bold;">SCHEME INVOICE</h4>
+<table border = "<?php
+if ($borderCheck == 'true') {
+    echo '1';
+} else {
+    echo '0';
+}
+?>" cellpadding = "0" align = "left" cellspacing = "0" <?php if ($passBookWidth != 0) {
+    ?>style="width:<?php echo $passBookWidth . 'mm'; ?>;table-layout:fixed;margin-top: <?php echo $TopMargin . 'mm'; ?>" <?php } else { ?> width = "100%" style="margin-top: <?php echo $TopMargin . 'mm'; ?>"<?php } ?>>
+    <tr style="background: #92c7ff;">
+        <?php
+        $label_field_content = '';
+        $count = 1;
+        $fieldName = 'insNoWidth';
+        parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14 fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('insNoLbDiv', '<?php echo $count; ?>', 'YES', 'INS NO', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '', '10', '<?php echo $labelType; ?>', '6', '36');">
+                     <?php echo 'INS NO'; ?>
+            </div>
+            <div id="insNoLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 2;
+        $fieldName = 'DateWidth';
+        parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('DateLbDiv', '<?php echo $count; ?>', 'YES', 'PAYMENT DATE', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'PAYMENT DATE'; ?></div>
+            <div id="DateLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 3;
+        $fieldName = 'receiptnoWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('receiptnoLbDiv', '<?php echo $count; ?>', 'YES', 'RECEIPT NO', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'RECEIPT NO.'; ?></div>
+            <div id="receiptnoLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 4;
+        $fieldName = 'installAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('installAmtLbDiv', '<?php echo $count; ?>', 'YES', 'INSTALLMENT AMT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'INSTALLMENT AMOUNT'; ?></div>
+            <div id="installAmtLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 5;
+        $fieldName = 'collectiveAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('collectiveAmtLbDiv', '<?php echo $count; ?>', 'YES', 'COLLECTIVE AMT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'COLLECTIVE AMOUNT'; ?></div>
+            <div id="collectiveAmtLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 6;
+        $fieldName = 'paidAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('paidAmtLbDiv', '<?php echo $count; ?>', 'YES', 'PAID AMOUNT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'PAID AMOUNT'; ?></div>
+            <div id="paidAmtLbDiv"></div> 
+        </td>
+        <!-- GST Amt -->
+        <?php
+        $label_field_content = '';
+        $count = 7;
+        $fieldName = 'gstAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('gstAmtLbDiv', '<?php echo $count; ?>', 'YES', 'GST AMT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'GST AMOUNT'; ?></div>
+            <div id="gstAmtLbDiv"></div> 
+        </td>
+        <!-- Ends here -->
+        <!-- Taxable Amt -->
+        <?php
+        $label_field_content = '';
+        $count = 8;
+        $fieldName = 'taxableAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('taxableAmtLbDiv', '<?php echo $count; ?>', 'YES', 'TAXABLE AMT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'TAXABLE AMOUNT'; ?></div>
+            <div id="taxableAmtLbDiv"></div> 
+        </td>            
+        <!-- Ends Here -->    
+        <!-- Metal Rate AMt-->
+         <?php
+        $label_field_content = '';
+        $count = 9;
+        $fieldName = 'metalRateAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('metalRateAmtLbDiv', '<?php echo $count; ?>', 'YES', 'METAL RATE', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'METAL RATE'; ?></div>
+            <div id="metalRateAmtLbDiv"></div> 
+        </td>     
+        <!-- Ends Here Metal Rate AMt-->
+        <!-- Metal Wt AMt-->
+         <?php
+        $label_field_content = '';
+        $count = 10;
+        $fieldName = 'metalWtAmtWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('metalWtAmtLbDiv', '<?php echo $count; ?>', 'YES', 'METAL WT', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'METAL WT'; ?></div>
+            <div id="metalWtAmtLbDiv"></div> 
+        </td>             
+        <!--Ends here Metal Wt AMt -->
+        <?php
+        $label_field_content = '';
+        $count = 11;
+        $fieldName = 'paymentModeWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td  align="center" class="ff_calibri cursor font_color_black fs_14 " valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('paymentModeLbDiv', '<?php echo $count; ?>', 'YES', 'PAYMENT MODE', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'PAYMENT MODE'; ?></div>
+            <div id="paymentModeLbDiv"></div> 
+        </td>
+        <?php
+        $label_field_content = '';
+        $count = 12;
+        $fieldName = 'statusWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('statusLbDiv', '<?php echo $count; ?>', 'YES', 'STATUS', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'STATUS'; ?></div>
+            <div id="statusLbDiv"></div> 
+        </td>
+           <?php
+        $label_field_content = '';
+        $count = 12;
+        $fieldName = 'staffNameWidth';
+        parse_str(getTableValues("SELECT label_field_content,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" valign="top" style="font-weight:600;font-size:14px; width:<?php echo $label_field_content; ?>mm;">
+            <div onClick="openFormDiv('staffNameLbDiv', '<?php echo $count; ?>', 'YES', 'STAFF NAME', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');">
+                <?php echo 'STAFF NAME'; ?></div>
+            <div id="staffNameLbDiv"></div> 
+        </td>
+    </tr>
+    
+    <?php
+    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = 'rowTopMargin' and label_type = '$labelType'"));
+    $rowTopMargin = $label_field_content;
+    parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = 'rowBottomMargin' and label_type = '$labelType'"));
+    $bottomMargin = $label_field_content;
+    ?>
+    <tr>
+        <?php
+        $fieldName = 'insNoCheck';
+        $count = 1;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14">
+            <div onClick="openFormDiv('insNoDiv', '<?php echo $count; ?>', 'NO', 'INS NO', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                1
+            </div>
+            <div id="insNoDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'DateCheck';
+        $count = 2;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('DateDiv', '<?php echo $count; ?>', 'NO', 'PAYMENT DATE', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                07 FEB 2019
+            </div>
+            <div id="DateDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'receiptnoCheck';
+        $count = 3;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('receiptNoDiv', '<?php echo $count; ?>', 'NO', 'RECEIPT NO', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                1673
+            </div>
+            <div id="receiptNoDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'installAmtCheck';
+        $count = 4;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('installAmountDiv', '<?php echo $count; ?>', 'NO', 'INSTALLMENT AMT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                2000
+            </div>
+            <div id="installAmountDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'collectiveAmtCheck';
+        $count = 5;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('collectiveAmountDiv', '<?php echo $count; ?>', 'NO', 'COLLECTIVE AMT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                2000
+            </div>
+            <div id="collectiveAmountDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'paidAmtCheck';
+        $count = 6;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('paidAmountDiv', '<?php echo $count; ?>', 'NO', 'PAID AMT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                2000
+            </div>
+            <div id="paidAmountDiv"></div>   
+        </td>
+        <!-- GST AMT -->
+        <?php
+        $fieldName = 'gstAmtCheck';
+        $count = 7;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('gstAmountDiv', '<?php echo $count; ?>', 'NO', 'GST AMT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                58.26
+            </div>
+            <div id="gstAmountDiv"></div>   
+        </td>
+        <!-- Ends Here -->
+        <!-- Taxable Amt -->
+        <?php
+        $fieldName = 'taxableAmtCheck';
+        $count = 8;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('taxableAmountDiv', '<?php echo $count; ?>', 'NO', 'TAXABLE AMT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                1941.74
+            </div>
+            <div id="taxableAmountDiv"></div>   
+        </td>
+        <!-- Ends Here -->
+        <!-- Metal Rate Amt -->
+        <?php
+        $fieldName = 'metalRateAmtCheck';
+        $count = 8;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('metalRateAmtDiv', '<?php echo $count; ?>', 'NO', 'METAL RATE', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                55000
+            </div>
+            <div id="metalRateAmtDiv"></div>   
+        </td>
+        <!-- Ends Here Metal Rate -->
+        <!-- Metal Rate Wt -->
+        <?php
+        $fieldName = 'metalWtCheck';
+        $count = 8;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('metalWtDiv', '<?php echo $count; ?>', 'NO', 'METAL WT', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                0.312
+            </div>
+            <div id="metalWtDiv"></div>   
+        </td>
+        <!-- Ends Here Metal Wt -->
+        
+        <?php
+        $fieldName = 'paymentModeCheck';
+        $count = 9;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('paymentModeDiv', '<?php echo $count; ?>', 'NO', 'PAYMENT MODE', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                CHEQUE
+            </div>
+            <div id="paymentModeDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'statusCheck';
+        $count = 10;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('statusDiv', '<?php echo $count; ?>', 'NO', 'STATUS', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+                PAID
+            </div>
+            <div id="statusDiv"></div>   
+        </td>
+        <?php
+        $fieldName = 'staffNameCheck';
+        $count = 10;
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+        ?>
+        <td align="center" class="ff_calibri cursor font_color_black fs_14" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="center">
+            <div onClick="openFormDiv('staffNameDiv', '<?php echo $count; ?>', 'NO', 'STAFF NAME', '<?php echo $fieldName; ?>', '', '',
+                            '', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '6', '36');" style="margin-top:<?php echo $rowTopMargin; ?>mm;margin-bottom: <?php echo $bottomMargin; ?>mm;" valign="left">
+               STAFF NAME
+            </div>
+            <div id="staffNameDiv"></div>   
+        </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    
+</table>
+<table width="100%" align="center" style="margin-top:10%;">
+    <tbody>
+        <tr>
+            <td colspan="" class="padLeft5">
+                <?php
+                $fieldName = 'termsTop';
+                $label_field_content = '';
+                parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                $termsDetTopVal = $label_field_content;
+                if($termsDetTopVal=='' || $termsDetTopVal==null){
+                    $label_field_content = 'Terms and Conditions';
+                }
+                ?>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top:<?php echo $termsDetTopVal; ?>mm">
+                    <?php
+                    $count = 9;
+                    $fieldName = 'tncLb';
+                    $label_field_font_size = '';
+                    $label_field_font_color = '';
+                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                    $label_field_tncLabelTemp = $label_field_content;
+                    $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                    $label_field_content = trim(preg_replace('/\s\s+/', '\n', $label_field_content));                        
+                    ?>
+                    <tr>
+                        <td colspan="" align="left" width="150px" class="ff_calibri fw_b cursor font_color_<?php echo $label_field_font_color; ?>" style="font-size:<?php echo $label_field_font_size; ?>px" > 
+                            <div onClick="openFormDiv('tncLbDiv', '<?php echo $count; ?>', 'YES', 'Terms and Conditions', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '<?php echo $label_field_font_size; ?>',
+                                    '<?php echo $label_field_font_color; ?>', '<?php echo $label_field_check; ?>', '20', '<?php echo $labelType; ?>', '6', '36');"><?php echo $label_field_tncLabelTemp; ?></div>
+                            <div id="tncLbDiv"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <?php
+                                $count = 10;
+                                $fieldName = 'tnc';
+                                $label_field_font_size = '';
+                                $label_field_font_color = '';
+                                $label_field_content = '';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $label_field_contentTemp = $label_field_content;
+
+                                $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                                $label_field_content = stripslashes(str_replace('\'', '', $label_field_content));
+                                $label_field_content = trim(preg_replace('/\s\s+/', '\n', $label_field_content));
+
+                                $noOfRows = substr_count($label_field_content, "\n") + 2;
+                                $height = $noOfRows * ($label_field_font_size * 3);
+                                ?>
+                                <tr>
+                                    <td align="left" class="ff_calibri cursor font_color_<?php echo $label_field_font_color; ?>" style="font-size:<?php echo $label_field_font_size; ?>px">
+                                        <textarea id="tncLabel" spellcheck="false" name="tncLabel" class="cursor textarea_1 ff_calibri font_color_<?php echo $label_field_font_color; ?>" rows="<?php echo $noOfRows; ?>"
+                                                  onClick="openFormDiv('tncDiv', '<?php echo $count; ?>', 'YES', 'Terms & Conditions', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '<?php echo $label_field_font_size; ?>',
+                                                          '<?php echo $label_field_font_color; ?>', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '-270', '10');"
+                                                  style="text-align:left;width:500px;height:<?php $height ?>px"><?php
+                                                      if (($label_field_contentTemp) != '')
+                                                          echo $label_field_contentTemp;
+                                                      else
+                                                          echo 'content';
+                                                      ?></textarea>                                     
+                                        <div id="tncDiv"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+             <td colspan="" class="padLeft5" style="width:100%">
+                <?php
+                $fieldName = 'termsTopPass';
+                $label_field_content = '';
+                parse_str(getTableValues("SELECT label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                $termsDetTopPassVal = $label_field_content;
+                if($termsDetTopPassVal=='' || $termsDetTopPassVal==null){
+                    $label_field_content = 'Passbook Terms and Conditions';
+                }
+                ?>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-top:<?php echo $termsDetTopPassVal; ?>mm">
+                    <?php
+                    $count = 11;
+                    $fieldName = 'tncPassbookLb';
+                    $label_field_font_size = '';
+                    $label_field_font_color = '';
+                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                    $label_field_tncLabelTemp = $label_field_content;
+                    $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                    $label_field_content = trim(preg_replace('/\s\s+/', '\n', $label_field_content));
+                    ?>
+                    <tr>
+                        <td colspan="" align="left" width="150px" class="ff_calibri fw_b cursor font_color_<?php echo $label_field_font_color; ?>" style="font-size:<?php echo $label_field_font_size; ?>px" > 
+                            <div onClick="openFormDiv('tncPassLbDiv', '<?php echo $count; ?>', 'YES', 'Passbook Terms and Conditions', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '<?php echo $label_field_font_size; ?>',
+                                    '<?php echo $label_field_font_color; ?>', '<?php echo $label_field_check; ?>', '20', '<?php echo $labelType; ?>', '6', '-36');"><?php echo $label_field_tncLabelTemp; ?></div>
+                            <div id="tncPassLbDiv"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <?php
+                                $count = 12;
+                                $fieldName = 'tncPassbook';
+                                $label_field_font_size = '';
+                                $label_field_font_color = '';
+                                $label_field_content = '';
+                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $label_field_contentTemp = $label_field_content;
+
+                                $label_field_content = stripslashes(str_replace('\"', '', $label_field_content));
+                                $label_field_content = stripslashes(str_replace('\'', '', $label_field_content));
+                                $label_field_content = trim(preg_replace('/\s\s+/', '\n', $label_field_content));
+
+                                $noOfRows = substr_count($label_field_content, "\n") + 2;
+                                $height = $noOfRows * ($label_field_font_size * 3);
+                                ?>
+                                <tr>
+                                    <td align="left" class="ff_calibri cursor font_color_<?php echo $label_field_font_color; ?>" style="font-size:<?php echo $label_field_font_size; ?>px">
+                                        <textarea id="tncPassLabel" spellcheck="false" name="tncPassLabel" class="cursor textarea_1 ff_calibri font_color_<?php echo $label_field_font_color; ?>" rows="<?php echo $noOfRows; ?>"
+                                                  onClick="openFormDiv('tncPassDiv', '<?php echo $count; ?>', 'YES', 'Passbook Terms & Conditions', '<?php echo $fieldName; ?>', '<?php echo $label_field_content; ?>', '<?php echo $label_field_font_size; ?>',
+                                                          '<?php echo $label_field_font_color; ?>', '<?php echo $label_field_check; ?>', '10', '<?php echo $labelType; ?>', '-270', '-410');"
+                                                  style="text-align:left;width:500px;height:<?php $height ?>px"><?php
+                                                      if (($label_field_contentTemp) != '')
+                                                          echo $label_field_contentTemp;
+                                                      else
+                                                          echo 'content';
+                                                      ?></textarea>                                     
+                                        <div id="tncPassDiv"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>

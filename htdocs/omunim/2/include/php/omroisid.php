@@ -1,3 +1,128 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: roi select
+ * **************************************************************************************
+ * 
+ * Created on Nov 12, 2014 6:04:54 PM
+ *
+ * @FileName: omroisid.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$custId = $_GET['custId'];
+$girviId = $_GET['girviId'];
+$ROIId = $_GET['roiId'];
+$roiOption = $_GET['intType'];
+$panelName = $_GET['panelName'];
+$girviDOB = $_GET['girviDOB'];
+$girviFirmId = $_GET['girviFirmId'];
+$girviSerialNum = $_GET['girviSerialNum'];
+$omPanelDiv = $panelName;
+parse_str(getTableValues("SELECT roi_id,roi_value,iroi_value FROM roi where roi_id='$ROIId'"));
+if ($_SESSION['sessionIgenType'] == $globalOwnIPass)
+    $ROIVal = $iroi_value;
+else
+    $ROIVal = $roi_value;
+?>
+<input type="hidden" id="roihiddn" name="roihiddn" value="">
+<input type="hidden" id="selROI" name="selROI" value="<?php echo $ROIId; ?>">
+<!-----Start code to add var in function @Author:PRIYA02JUL14------------>
+<?php if ($omPanelDiv == 'AddUdhaarEMI') { ?>
+    <INPUT id="selROIValue" type ="text" NAME="selROIValue"  value="<?php echo $ROIVal; ?>" placeholder="<?php echo $ROIVal; ?>"
+           <?php if ($access == 'No') { ?> onclick="event.cancelBubble = true;" <?php } ?>
+           onkeyup = " if (event.keyCode == 8 && this.value == '') {
+                           searchRoiForPanelBlank();
+                           return false;
+                       }
+                       if (event.keyCode != 9 && event.keyCode != 13) {
+                           document.getElementById('roiListDivToAddROI').style.visibility = 'visible';
+                           document.getElementById('roihiddn').value = 'visible';
+                           searchROI(this.value, '<?php echo $roiOption; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $omPanelDiv; ?>', event.keyCode,
+                                   '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');
+                       }"
+           onclick = "this.value = '';
+                       searchRoiForPanelBlank();
+                       document.getElementById('roiListDivToAddROI').style.visibility = 'visible';
+                       document.getElementById('roihiddn').value = 'visible';
+                       searchROI(this.value, '<?php echo $roiOption; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $omPanelDiv; ?>', event.keyCode,
+                               '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');"
+           onblur="if (document.getElementById('roihiddn').value != 'visible')
+                           document.getElementById('roiListDivToAddROI').style.visibility = 'hidden';
+                       if (document.getElementById('selROIValue').value != '') {
+                           document.getElementById('selROIValue').value = this.value;
+                       } else
+                           document.getElementById('selROIValue').value = '<?php echo $ROIVal; ?>';"
+           onkeydown="javascript: if (event.keyCode == 13) {
+                           searchRoiForFocusPanelBlank('<?php echo $omPanelDiv; ?>', event.keyCode);
+                           document.getElementById('<?php echo $nextFieldId; ?>').focus();
+                           return false;
+                       } else if (event.keyCode == 8 && this.value == '') {
+                           searchRoiForFocusPanelBlank('<?php echo $omPanelDiv; ?>', event.keyCode);
+                           document.getElementById('<?php echo $nextFieldId; ?>').focus();
+                           return false;
+                       }"
+           onkeypress="javascript:return valKeyPressedForNumNDot(event);" 
+           autocomplete = "off" spellcheck = "false" class = "textLabel14CalibriBlackMiddle border-no" size = "3" maxlength = "15" style="width:100%;height:30px;"/>
+       <?php } else { ?>
+    <INPUT id="selROIValue" type ="text" NAME="selROIValue"  value="<?php echo $ROIVal; ?>" placeholder="<?php echo $ROIVal; ?>"
+           <?php if ($access == 'No') { ?> onclick="event.cancelBubble = true;" <?php } ?>
+           onkeyup = "if (event.keyCode == 8 && this.value == '') {
+                           searchRoiForPanelBlank();
+                           return false;
+                       }
+                       if (event.keyCode != 9 && event.keyCode != 13) {
+                           searchROI(this.value, '<?php echo $roiOption; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $omPanelDiv; ?>', event.keyCode,
+                                   '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');
+                       }
+                       if (event.keyCode == 13) {
+                           if (document.getElementById('roihiddn').value == '') {
+                               document.getElementById('roihiddn').value = 'YES';
+                           }
+                           if (document.getElementById('roihiddn').value == 'YES') {
+                               addNewRoi('<?php echo $documentRoot; ?>', document.getElementById('selROIValue').value, '<?php echo $roiOption; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $omPanelDiv; ?>');// return false;
+                               document.getElementById('roihiddn').value = 'NO';
+                           }
+                       }"
+           onclick = "this.value = '';
+                       searchRoiForPanelBlank();
+                       document.getElementById('roiListDivToAddROI').style.visibility = 'visible';
+                       document.getElementById('roihiddn').value = 'visible';
+                       searchROI(this.value, '<?php echo $roiOption; ?>', '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $omPanelDiv; ?>', event.keyCode,
+                               '<?php echo $girviDOB; ?>', '<?php echo $girviFirmId; ?>', '<?php echo $girviSerialNum; ?>');"
+           onblur="if (document.getElementById('selROIValue').value != '') {
+                           document.getElementById('selROIValue').value = this.value;
+                       } else
+                           document.getElementById('selROIValue').value = '<?php echo $ROIVal; ?>';
+                       document.getElementById('roihiddn').value = 'NO';"
+           onkeydown="javascript: if (event.keyCode == 13) {
+                           searchRoiForPanelBlank();
+                       } else if (event.keyCode == 8 && this.value == '') {
+                           searchRoiForPanelBlank();
+                       }"
+           onkeypress="javascript:return valKeyPressedForNumNDot(event);" 
+           autocomplete = "off" spellcheck = "false" class = "lgn-txtfield16black-without-borderAndBackground" size = "3" maxlength = "15" style="width:100%;height:30px;"/>
+       <?php } ?>
+<!-----End code to add var in function @Author:PRIYA02JUL14------------>
+<div id = "roiListDivToAddROI" class ="itemListDivToAddStock"></div>

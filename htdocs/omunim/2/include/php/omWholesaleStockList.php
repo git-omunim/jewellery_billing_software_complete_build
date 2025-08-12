@@ -1,3 +1,1024 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: ADD RETAIL STOCK FROM FINE PURCHASE WHOLESALE ENTRY OF SUPPLIER @PRIYANKA-07FEB19
+ * *************************************************************************************************
+ *
+ * Created on FEB 07, 2019 10:53:00 AM 
+ * **************************************************************************************
+ * @FileName: omWholesaleStockList.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.6.94
+ * @version: OMUNIM 2.6.94
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-07FEB19
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software OMUNIM 2.6.94
+ * Version: OMUNIM 2.6.94
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+//
+$showDiv = $_GET['divSubPanel'];
+//
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%" align="left">
+    <tr>
+        <td valign="top" align="left" width="32px" colspan="1" class="">
+            <div class="analysis_div_rows">
+                <img src="<?php echo $documentRoot; ?>/images/ring32.png" alt=""/>
+            </div>
+        </td>
+        <td valign="middle" align="left" colspan="15" class="">
+            <a class="links" onclick=""
+               style="cursor: pointer;" title="WHOLESALE STOCK LIST!">
+                <div class="textLabelHeading">
+                    WHOLESALE STOCK LIST
+                </div>
+            </a>
+        </td>
+        <?php
+        //
+        // Start Code for Message Display @PRIYANKA-15DEC2021
+        //
+        ?>
+        <td align="center" valign="middle" class="">
+            <div id="messDisplayDiv"></div>
+            <div <?php if ($panelName == 'wholesaleStockList') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php } else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php } ?> >
+                    <?php if ($showDiv == 'DataImportedSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Data Imported Successfully ~ </div>
+                <?php } ?>  
+            </div>
+        </td>
+        <?php
+        //
+        // End Code for Message Display @PRIYANKA-15DEC2021
+        //
+        ?>
+        <td>
+            <?php
+            //
+            // Start Code for Import Data From CSV File to Mysql Database for All TAG Entries @PRIYANKA-15DEC2021
+            //
+            ?>
+        <!--<table width="100%" border="0" cellspacing="0" cellpadding="0" align="right" style="margin-right: 12px;">
+                <tr>                                      
+                    <td valign="top">
+                        <div class="main_link_brown16" align="center" style="margin-left: 32%;font-weight:bold;">
+                            IMPORT All TAG STOCK                    
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="border-color-grey-b">
+                        <table align="right" border="0" cellspacing="0" cellpadding="2" width="100%">
+                            <tr>
+                                <td align="right" class="printVisibilityHidden paddingTop4 textLabel14CalibriBrownBold">
+                                    <form name="fileUpload" id="fileUpload" enctype="multipart/form-data" method="post"
+                                          action="include/php/omAllTagsImportFile.php">
+                                        <table border="0" cellspacing="0" cellpadding="0" valign="top" >
+                                            <tr>                                      
+                                                <td align="right" valign="top">
+                                                    <input type="file" name="CVSFile" id="CVSFile" required="required" />
+                                                </td>
+                                                <td align="right" valign="top">
+                                                    <div>-->
+            <?php
+//                                                        $inputId = "submit";
+//                                                        $inputType = 'submit';
+//                                                        $inputFieldValue = 'Submit';
+//                                                        $inputIdButton = "submit";
+//                                                        $inputNameButton = '';
+//                                                        $inputTitle = '';
+//                                                        //
+//                                                        // This is the main class for input flied
+//                                                        $inputFieldClass = 'btn ' . $om_btn_style;
+//                                                        $inputStyle = " ";
+//                                                        $inputLabel = 'Import'; // Display Label below the text box
+//                                                        //
+//                                                        // This class is for Pencil Icon                                                           
+//                                                        $inputIconClass = '';
+//                                                        $inputPlaceHolder = '';
+//                                                        $spanPlaceHolderClass = '';
+//                                                        $spanPlaceHolder = '';
+//                                                        $inputOnChange = "";
+//                                                        $inputOnClickFun = '';
+//                                                        $inputKeyUpFun = '';
+//                                                        $inputDropDownCls = '';               // This is the main division class for drop down 
+//                                                        $inputselDropDownCls = '';            // This is class for selection in drop down
+//                                                        $inputMainClassButton = '';           // This is the main division for Button
+//                                                        include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+            ?>
+            <!--</div>
+        </td>
+    </tr>
+</table>
+</form>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>-->
+            <?php
+            //
+            // End Code for Import Data From CSV File to Mysql Database for All TAG Entries @PRIYANKA-15DEC2021
+            //
+            ?>
+        </td>
+    </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" width="99.6%" align="center" class="brdrgry-dashed">
+<!--    <tr>
+        <td align="center" class="itemAddPnLabels14 paddingTop7" colspan="18"></td>
+    </tr>-->
+<!--    <tr>
+        <td align="center" class="itemAddPnLabels14" colspan="18">
+            &nbsp;
+        </td>
+    </tr>-->
+    <div id = "myModal" class = "modal"></div>
+    <?php
+    //
+    if ($_SESSION['sessionProdName'] == 'OMRETL') {
+        //
+        $selItemDetails = "SELECT * FROM stock where st_owner_id = '$sessionOwnerId' "
+                . "and st_firm_id IN ($strFrmId) "
+                //. "and (st_quantity > 0 OR st_gs_weight > 0)"
+                . "and st_stock_type = 'wholesale' "
+                . "and st_metal_type IN ('imitation', 'IMITATION', 'Imitation', 'stock') "
+                . "order by st_id asc";
+        //
+    } else {
+        //
+        $selItemDetails = "SELECT * FROM stock where st_owner_id = '$sessionOwnerId' "
+                . "and (st_gs_weight > 0) and st_type NOT IN('rawMetal')"
+                . "and st_firm_id IN ($strFrmId) and st_firm_id != '' and st_stock_type = 'wholesale' "
+                . "and st_metal_type IN ('Gold', 'GOLD', 'gold', 'Silver', 'SILVER', 'silver', 'Platinum', 'platinum', 'PLATINUM') order by st_id asc";
+        //
+    }
+    //
+//    echo '$selItemDetails == ' . $selItemDetails;
+    //
+    $resItemDetails = mysqli_query($conn, $selItemDetails);
+    //
+    $totalCounter = mysqli_num_rows($resItemDetails);
+    //
+    if ($totalCounter == 0) {
+        exit();
+    }
+    ?>
+    <tr class="height28 goldBack">
+        <td align="left" class="brwnCalibri13Font border-color-grey-rb " title="PROD CODE">
+            <div class="spaceLeft5">
+                PROD CODE
+            </div>
+        </td>
+
+        <td align="left" class="brwnCalibri13Font border-color-grey-rb" title="TYPE">
+            <div class="spaceLeft5">
+                <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                    STOCK TYPE
+                <?php } else { ?>
+                    METAL
+                <?php } ?>
+            </div>
+        </td>
+
+        <td align="left" class="brwnCalibri13Font border-color-grey-rb" title="ITEM DETAILS">
+            <div class="spaceLeft5">CATEGORY/NAME</div>
+        </td>
+
+        <td align="center" style="width: 3%;" class="brwnCalibri13Font border-color-grey-rb" title="QUANTITY">
+            QTY
+        </td>
+
+        <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="WEIGHT">
+            <div class="spaceRight5">                
+                <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                    WT
+                <?php } else { ?>
+                    GS WT
+                <?php } ?>
+            </div>
+        </td>
+
+        <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+            <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="NET WEIGHT">
+                <div class="spaceRight5">NT WT</div>
+            </td>
+            <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="TUNCH/PURITY">
+                <div class="spaceRight5">PURITY</div>
+            </td>        
+            <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="FINAL FINE WEIGHT">
+                <div class="spaceRight5">FFN WT</div>
+            </td>
+        <?php } ?>
+
+        <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="AMOUNT">
+            <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                AMOUNT
+            <?php } else { ?>
+                VAL
+            <?php } ?>            
+        </td>
+
+        <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+            <td align="center" class="brwnCalibri13Font border-color-grey-rb" title="OTHER CHARGES">
+                <div class="spaceRight5">
+                    <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                        OTHER CHARGES
+                    <?php } else { ?>
+                        LB CHRG
+                    <?php } ?>
+
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+            <td align="center" class="brwnCalibri13Font border-color-grey-rb" title="ITEM VALUATION">
+                <div class="spaceRight5">
+                    CRY CHRG
+                </div>
+            </td>
+        <?php } ?>
+
+        <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="TAX">
+            <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                OTHER CHARGES
+            <?php } else { ?>
+                TAX + OTH CHRGS
+            <?php } ?>              
+        </td>
+
+        <td align="right" class="brwnCalibri13Font border-color-grey-rb" title="FINAL AMOUNT">
+            <div class="spaceRight5">
+                <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                    FINAL AMOUNT
+                <?php } else { ?>
+                    FINAL VAL
+                <?php } ?>                
+            </div>
+        </td>
+
+        <td align="center" class="brwnCalibri13Font border-color-grey-b" title="ITEM DELETE">
+            <!--DEL-->
+        </td>
+    </tr>
+    <?php
+    $totalGoldQty = 0;
+    $totalSilverQty = 0;
+    $totalValuation = 0;
+    $totalFinalBalance = 0;
+    $totalCryVal = 0;
+    $totalFinalBalance = 0;
+    $goldTotGrossWt = 0;
+    $goldTotGrossWtType = 'GM';
+    $goldTotNetWt = 0;
+    $goldTotNetWtType = 'GM';
+    $goldOthChagsWeightType = 'GM';
+    $goldFinalWeightType = 'GM';
+    $goldTotFFineWt = 0;
+    $silverTotGrossWt = 0;
+    $silverTotGrossWtType = 'GM';
+    $silverOthChagsWeightType = 'GM';
+    $silverFinalWeightType = 'GM';
+    $silverTotNetWt = 0;
+    $silverTotNetWtType = 'GM';
+    $silverTotFFineWt = 0;
+    $othChgsGdFnWtTyp = 'GM';
+    $othChgsSlFnWtTyp = 'GM';
+    $gdVal = 0;
+    $srVal = 0;
+    $totalSilverVal = 0;
+    $totalGoldVal = 0;
+    $totalGoldItems = 0;
+    $totalSilverItems = 0;
+    $totalOthGdChgs = 0;
+    $totalOthSlChgs = 0;
+    $othChgsGdFnWt = 0;
+    $othChgsSlFnWt = 0;
+    $rateWithTaxVal = 0;
+    $totalMetalVal = 0;
+    $silverFinalWeight = 0;
+    $goldFinalWeight = 0;
+    $totalGoldRate = 0;
+    $totalSilverRate = 0;
+    $goldItemCount = 0;
+    $silverItemCount = 0;
+    //=============================================================================================================
+    //********* START CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+    //=============================================================================================================
+    $totalPlatinumQty = 0;
+    $platinumTotGrossWt = 0;
+    $platinumTotGrossWtType = 'GM';
+    $platinumTotNetWt = 0;
+    $platinumTotNetWtType = 'GM';
+    $platinumOthChagsWeightType = 'GM';
+    $platinumFinalWeightType = 'GM';
+    $platinumTotFFineWt = 0;
+    $ptVal = 0;
+    $totalPlatinumVal = 0;
+    $totalPlatinumItems = 0;
+    $totalOthPtChgs = 0;
+    $othChgsPtFnWt = 0;
+    $platinumFinalWeight = 0;
+    $totalPlatinumRate = 0;
+    $platinumItemCount = 0;
+    //=============================================================================================================
+    //********************* END CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************//
+    //=============================================================================================================
+    while ($rowItemDetails = mysqli_fetch_array($resItemDetails)) {
+        $utrId = $rowItemDetails['st_id'];
+        $st_id = $rowItemDetails['st_id'];
+        $firmId = $rowItemDetails['st_firm_id'];
+        $itemValuation = $rowItemDetails['st_valuation'];
+
+        if ($_SESSION['sessionProdName'] == 'OMRETL') {
+            $itemMetalRate = $rowItemDetails['st_purchase_rate'];
+        } else {
+            $itemMetalRate = $rowItemDetails['st_metal_rate'];
+        }
+
+        $stockType = $rowItemDetails['st_item_category'];
+        $totalValuation += $itemValuation;
+        $totalFinalBalance += $rowItemDetails['st_final_valuation'];
+        $totalAmnt = $totalFinalBalance;
+        $metalType = $rowItemDetails['st_metal_type'];
+        $grossWt = $rowItemDetails['st_gs_weight'];
+        $grossWtTyp = $rowItemDetails['st_gs_weight_type'];
+        $netWt = $rowItemDetails['st_nt_weight'];
+        $netWtTyp = $rowItemDetails['st_nt_weight_type'];
+        $resFFNW = $rowItemDetails['st_final_fine_weight'];
+        $newItemTaxChrg = $rowItemDetails['st_tot_tax'];
+        $valueAdded = 0; // SET VALUE ADDED FOR SUPPLIER PAYMENT PANEL @PRIYANKA-21MAR18
+        // Added by PRIYANKA-24JAN18 => DATE ON PAYMENT PANEL
+        $itemTotLabChgs = 0;
+        if ($rowItemDetails['st_lab_charges'] != '') {
+            if ($rowItemDetails['st_lab_charges_type'] == 'KG') {
+                if ($rowItemDetails['st_nt_weight_type'] == 'KG')
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * $resFFNW, 2);
+                else if ($rowItemDetails['st_nt_weight_type'] == 'GM')
+                    $itemTotLabChgs = decimalVal(($rowItemDetails['st_lab_charges'] / 1000) * $resFFNW
+                            , 2);
+                else
+                    $itemTotLabChgs = decimalVal(($rowItemDetails['st_lab_charges'] / (1000 * 1000)) * $resFFNW, 2);
+            } else if ($rowItemDetails['st_lab_charges_type'] == 'GM') {
+                if ($rowItemDetails['st_nt_weight_type'] == 'KG')
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * 1000 * $resFFNW, 2);
+                else if ($rowItemDetails['st_nt_weight_type'] == 'GM')
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * $resFFNW
+                            , 2);
+                else
+                    $itemTotLabChgs = decimalVal(($rowItemDetails['st_lab_charges'] / 1000) * $resFFNW, 2);
+            } else if ($rowItemDetails['st_lab_charges_type'] == 'MG') {
+                if ($rowItemDetails['st_nt_weight_type'] == 'KG')
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * 1000 * 1000 * $resFFNW, 2);
+                else if ($rowItemDetails['st_nt_weight_type'] == 'GM')
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * 1000 * $resFFNW, 2);
+                else
+                    $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * $resFFNW, 2);
+            } else if ($rowItemDetails['st_lab_charges_type'] == 'PP') {
+                $itemTotLabChgs = decimalVal($rowItemDetails['st_lab_charges'] * $rowItemDetails['st_quantity'], 2);
+            }
+        }
+        $itemValuation = $itemValuation - $itemTotLabChgs;
+        if ($firmIdSelected == '') {
+            $firmIdSelected = $firmId;
+        }
+        if ($newItemTaxChrg == '' || $newItemTaxChrg == NULL) {
+            $newItemTaxChrg = 0;
+        }
+        parse_str(getTableValues("SELECT met_rate_tax_check, met_rate_tax_percentage, met_rate_with_tax FROM metal_rates WHERE met_rate_own_id = '$_SESSION[sessionOwnerId]' AND met_rate_value = '$itemMetalRate' AND met_rate_metal_name = '$rowItemDetails[stpr_metal_type]'"));
+        if ($met_rate_tax_check == 'true') {
+            $rateWithTaxVal = $itemValuation * ($met_rate_tax_percentage / 100);
+            $itemMetalRate = $met_rate_with_tax;
+            $newItemTaxChrg -= $rateWithTaxVal;
+        }
+
+        if (($payPanelName != "ItemApprovalRec" && $payPanelName != "ItemApprovalRecUp") || (($payPanelName == "ItemApprovalRec" || $payPanelName == "ItemApprovalRecUp") && ($itemStatus == 'ApprovalDone' || $itemStatus == 'PaymentPending'))) {
+            $totalTax += $newItemTaxChrg;
+            $totalMetalVal = $rowItemDetails['stpr_valuation'] + $newItemTaxChrg;
+            $finalMetalVal += $totalMetalVal;
+            $totalCharges = $newItemTaxChrg + $itemTotLabChgs;
+
+
+
+            if ($rowItemDetails['st_metal_type'] == 'Gold' || $rowItemDetails['st_metal_type'] == 'gold' || $rowItemDetails['st_metal_type'] == 'GOLD') {
+                $goldTotGrossWt += getTotalWeight($rowItemDetails['st_gs_weight'], $rowItemDetails['st_gs_weight_type'], 'weight');
+                $goldTotGrossWtType = 'GM';
+                $goldTotNetWt += getTotalWeight($rowItemDetails['st_nt_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $goldTotNetWtType = 'GM';
+                $goldTotFFineWt += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $goldTotFFineWtType = 'GM';
+                $gdRate = $rowItemDetails['st_metal_rate'];
+                $gdVal = $rowItemDetails['st_valuation'];
+
+                $totalGoldBalance += $rowItemDetails['st_valuation'];
+                $totalGoldVal += $rowItemDetails['st_final_valuation'];
+                $otherGoldCharges = $rowItemDetails['st_total_lab_charges'];
+                $totalOthGdChgs += $otherGoldCharges;
+                $goldQty += $rowItemDetails['st_quantity'];
+                $goldRate = $gdRate;
+                $goldCrystalAmount += $rowItemDetails['st_stone_valuation'];
+                $goldPurchaseAvgRate1 += ($goldRate * getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight')) / 100; //) / ()), 2);
+                $goldPurchaseAvgRate2 += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight') / 10;
+            }
+            if ($rowItemDetails['st_metal_type'] == 'Silver' || $rowItemDetails['st_metal_type'] == 'silver' || $rowItemDetails['st_metal_type'] == 'SILVER') {
+
+
+                $silverTotGrossWt += getTotalWeight($rowItemDetails['st_gs_weight'], $rowItemDetails['st_gs_weight_type'], 'weight');
+                $silverTotGrossWtType = 'GM';
+                $silverTotNetWt += getTotalWeight($rowItemDetails['st_nt_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $silverTotNetWtType = 'GM';
+                $silverTotFFineWt += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $silverTotFFineWtType = 'GM';
+                $srRate = $rowItemDetails['st_metal_rate'];
+                $srVal = $rowItemDetails['st_valuation'];
+
+
+                $totalSilverBalance += $rowItemDetails['st_valuation'];
+                $totalSilverVal += $rowItemDetails['st_final_valuation'];
+                $otherSilverCharges = $rowItemDetails['st_total_lab_charges'];
+                $totalOthSlChgs += $otherSilverCharges;
+                $silverQty += $rowItemDetails['st_quantity'];
+                $slprMetalRate = $rowSlPrItemDetails['st_metal_rate'];
+                $silverRate = $srRate;
+                $silverPurchaseAvgRate1 += ($silverRate * getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight')) / 100; // / (getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight') / 10)), 2);
+                $silverPurchaseAvgRate2 += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight') / 10;
+            }
+            //=============================================================================================================
+            //********* START CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+            //=============================================================================================================
+            if ($rowItemDetails['st_metal_type'] == 'Platinum' || $rowItemDetails['st_metal_type'] == 'platinum' || $rowItemDetails['st_metal_type'] == 'PLATINUM') {
+                $platinumTotGrossWt += getTotalWeight($rowItemDetails['st_gs_weight'], $rowItemDetails['st_gs_weight_type'], 'weight');
+                $platinumTotGrossWtType = 'GM';
+                $platinumTotNetWt += getTotalWeight($rowItemDetails['st_nt_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $platinumTotNetWtType = 'GM';
+                $platinumTotFFineWt += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight');
+                $platinumTotFFineWtType = 'GM';
+                $ptRate = $rowItemDetails['st_metal_rate'];
+                $ptVal = $rowItemDetails['st_valuation'];
+
+                $totalPlatinumBalance += $rowItemDetails['st_valuation'];
+                $totalPlatinumVal += $rowItemDetails['st_final_valuation'];
+                $otherPlatinumCharges = $rowItemDetails['st_total_lab_charges'];
+                $totalOthPtChgs += $otherPlatinumCharges;
+                $platinumQty += $rowItemDetails['st_quantity'];
+                $platinumRate = $ptRate;
+                $platinumCrystalAmount += $rowItemDetails['st_stone_valuation'];
+                $platinumPurchaseAvgRate1 += ($platinumRate * getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight')) / 100; //) / ()), 2);
+                $platinumPurchaseAvgRate2 += getTotalWeight($rowItemDetails['st_final_fine_weight'], $rowItemDetails['st_nt_weight_type'], 'weight') / 10;
+            }
+            //=============================================================================================================
+            //********* END CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+            //=============================================================================================================
+        }
+        if ($slprMetalRate == 0 || $slprMetalRate == '' || $slprMetalRate == NULL)
+            $slprMetalRate = callMetalRateTable('select', 'LatestMetalRate', '', '', $rowItemDetails['st_metal_type']);
+
+        if ($otherChgsBy == 'byWt' && $slprMetalRate != 0) {
+            if ($rowItemDetails['st_metal_type'] == 'Gold' || $rowItemDetails['st_metal_type'] == 'gold' || $rowItemDetails['st_metal_type'] == 'GOLD') {
+                $goldOthChagsWeight = decimalVal((($totalOthGdChgs) * 10) / $slprMetalRate, 3);
+                $othChgsGdFnWt = $goldOthChagsWeight;
+            }
+            if ($rowItemDetails['st_metal_type'] == 'Silver' || $rowItemDetails['st_metal_type'] == 'silver' || $rowItemDetails['st_metal_type'] == 'SILVER') {
+                $silverOthChagsWeight = decimalVal((($totalOthSlChgs) * 1000) / $slprMetalRate, 3);
+                $othChgsSlFnWt = $silverOthChagsWeight;
+            }
+            //=============================================================================================================
+            //********* START CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+            //=============================================================================================================
+            if ($rowItemDetails['st_metal_type'] == 'Platinum' || $rowItemDetails['st_metal_type'] == 'platinum' || $rowItemDetails['st_metal_type'] == 'PLATINUM') {
+                $platinumOthChagsWeight = decimalVal((($totalOthPtChgs) * 10) / $slprMetalRate, 3);
+                $othChgsPtFnWt = $platinumOthChagsWeight;
+            }
+            //=============================================================================================================
+            //********* END CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+            //=============================================================================================================
+
+        }
+
+        $totalLabOrMkgCharges += decimalVal($itemTotLabChgs, 2);
+        $totalTaxAmount += $newItemTaxChrg;
+        $goldFinalWeight = decimalVal(($goldOthChagsWeight + $goldTotFFineWt), 3);
+        $silverFinalWeight = decimalVal(($silverOthChagsWeight + $silverTotFFineWt), 3);
+        $platinumFinalWeight = decimalVal(($platinumOthChagsWeight + $platinumTotFFineWt), 3);
+        $utin_crystal_amt = $totalCryCharg;
+        $class = 'border-color-grey-rb';
+        //
+        if ($grossWt > 0 || $rowItemDetails['st_quantity'] > 0) {
+            ?>
+            <tr>
+                <td align="left" class="blackCalibri13Font border-color-grey-rb  border-color-grey-left">
+                    <div class="spaceLeft5">
+                        <?php
+                        echo $rowItemDetails['st_item_code'];
+                        ?>
+                    </div>
+                </td>
+
+                <td valign="middle" align="left" class="blackCalibri13Font <?php echo $class; ?>" title="METAL/RATE">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="top">
+                                <div class="spaceLeft5">
+                                    <?php echo om_strtoupper($rowItemDetails['st_metal_type']) . '/' . $itemMetalRate; ?>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            <input type="hidden" id="openLotItemDetDiv" name="openLotItemDetDiv"/>
+            <input type="hidden" id="globSuppItemCount" name="globSuppItemCount"/>
+            <input type="hidden" id="subPanel" name="subPanel" value="SuppPurByInv"/>
+            <input type="hidden" id="addPanelInfo" name="addPanelInfo" value = ''/>
+
+            <td align="left" class="blackCalibri13Font border-color-grey-rb" title="PROD CODE/CAT/NAME">
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <button type="button" class="btn" title="Click Here To Add Retail Items!"
+                                    style="cursor: pointer;padding: 0.5px 0px;" 
+                                    id="myBtn" 
+                                    onclick="openAddStockPopUp('<?php echo $st_id; ?>', '<?php echo $documentRoot; ?>');">
+                                        <?php if ($addStockPanel != 'addStock') { ?>
+                                    <img src="<?php echo $documentRoot; ?>/images/plus_items_24.png" 
+                                         height="16px" width="16px" alt="Click Here To Add Retail Items!"/>
+                                     <?php } else { ?>
+                                    <img src="<?php echo $documentRoot; ?>/images/plus_items_24.png" alt="Add Stock"  /> 
+                                <?php } ?>
+                            </button>
+                        </td>
+                        <td>
+                            <div class="spaceLeft5"><?php if (preg_match("/^[a-zA-Z]$/", substr($rowItemDetails['st_item_category'], 0, 1))) { echo om_strtoupper($rowItemDetails['st_item_category'] . '/' . $rowItemDetails['st_item_name']);}else{ echo $rowItemDetails['st_item_category'] . '/' . $rowItemDetails['st_item_name']; } ?></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td align="center" class="blackCalibri13Font border-color-grey-rb">
+                <?php
+                if ($rowItemDetails['st_quantity'] != '' && $rowItemDetails['st_quantity'] > 0)
+                    echo $rowItemDetails['st_quantity'];
+                else
+                    echo '-';
+                ?>
+            </td>
+            <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                <div class="spaceRight5">
+                    <?php
+                    if ($grossWt > 0)
+                        echo decimalVal($grossWt, 3) . ' ' . $grossWtTyp;
+                    else
+                        echo '-';
+                    ?>
+                </div>
+            </td>
+
+            <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+                <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                    <div class="spaceRight5"><?php echo decimalVal($netWt, 3) . ' ' . $netWtTyp; ?></div>
+                </td>
+                <td align="right" class="blackCalibri13Font border-color-grey-rb" title="TUNCH + WASTAGE">
+                    <div class="spaceRight5"><?php
+                        if ($rowItemDetails['st_purity'] != '')
+                            if ($rowItemDetails['st_wastage'] != '') {
+                                echo $rowItemDetails['st_purity'] . ' + ' . $rowItemDetails['st_wastage'] . ' %';
+                            } else {
+                                echo $rowItemDetails['st_purity'] . ' %';
+                            }
+                        ?>
+                    </div>
+                </td>
+                <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                    <div class="spaceRight5"><?php echo $resFFNW . ' ' . $netWtTyp; ?></div>
+                </td>
+            <?php } ?>
+
+            <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                <div class="spaceRight5">
+                    <?php
+                    if ($rowItemDetails['st_valuation'] > 0) {
+                        echo formatInIndianStyle($rowItemDetails['st_valuation']);
+                    } else {
+                        if ($_SESSION['sessionProdName'] == 'OMRETL' && $rowItemDetails['st_valuation'] == 0) {
+                            if ($rowItemDetails['st_quantity'] > 0) {
+                                echo $rowItemDetails['st_purchase_rate'] * $rowItemDetails['st_quantity'];
+                            } else {
+                                echo $rowItemDetails['st_purchase_rate'] * ($rowItemDetails['st_gs_weight'] / 1000);
+                            }
+                        } else {
+                            echo '-';
+                        }
+                    }
+                    ?>
+                </div>
+            </td>
+
+            <?php if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+                <td align="center" class="blackCalibri13Font border-color-grey-rb">
+                    <?php
+                    if ($rowItemDetails['st_lab_charges'] != '')
+                        echo $rowItemDetails['st_lab_charges'] . ' /' . $rowItemDetails['st_lab_charges_type'];
+                    else
+                        echo '-';
+                    ?>
+                </td>
+
+
+                <td align="center" class="blackCalibri13Font border-color-grey-rb">
+                    <?php
+                    if ($rowItemDetails['st_stone_valuation'] > 0)
+                        echo $rowItemDetails['st_stone_valuation'];
+                    else
+                        echo '-';
+                    ?>
+                </td>
+            <?php } ?>
+
+                <!--<td align="center" class="blackCalibri13Font border-color-grey-rb">
+            <?php
+            if ($rowItemDetails['st_tot_tax'] > 0)
+                echo $rowItemDetails['st_tot_tax'];
+            else
+                echo '-';
+            ?>
+                </td>-->
+
+            <?php //if ($_SESSION['sessionProdName'] != 'OMRETL') { ?>
+            <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                <?php
+                if ($rowItemDetails['st_total_lab_charges'] > 0)
+                    echo $rowItemDetails['st_total_lab_charges'];
+                else
+                    echo '-';
+                ?>
+            </td>
+            <?php //} ?>
+
+            <td align="right" class="blackCalibri13Font border-color-grey-rb">
+                <div class="spaceRight5">
+                    <?php
+                    if ($rowItemDetails['st_final_valuation'] > 0)
+                        echo formatInIndianStyle($rowItemDetails['st_final_valuation']);
+                    else
+                        echo '-';
+                    ?>
+                </div>
+            </td>
+
+            <td align="center" class="blackCalibri13Font border-color-grey-b">
+                <!--<a style="cursor: pointer;" onclick="
+                                    deleteFineInvoiceAllEntry('<?php echo $st_id; ?>', 'deleteFinePurchaseAllEntry', '', '', '', '<?php echo $payPanelName; ?>');
+                               ">
+                                <img src="<?php echo $documentRoot; ?>/images/delete16.png" alt="" class="marginTop5" />
+                    </a>-->
+            </td>
+        </tr>
+        <?php
+    }
+    $cout++;
+}
+if ($otherChgsBy == 'byWt') {
+    $totOtherChags = 0;
+    $totalLabOrMkgCharges = 0;
+} else {
+    $totOtherChags = decimalVal($totalOthGdChgs + $totalOthSlChgs, 2);
+    $totAmount = $totOtherChags;
+}
+
+
+$utin_oth_chgs_amt = $totOtherChags;
+
+if ($goldPurchaseAvgRate1 != 0 && $goldPurchaseAvgRate2 != 0) {
+    $goldPurchaseAvgRate = om_round(($goldPurchaseAvgRate1 / $goldPurchaseAvgRate2) * 10, 2);
+}
+if ($silverPurchaseAvgRate1 != 0 && $silverPurchaseAvgRate2 != 0) {
+    $silverPurchaseAvgRate = om_round(($silverPurchaseAvgRate1 / $silverPurchaseAvgRate2) * 10, 2);
+}
+//=============================================================================================================
+//********************** START CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************//
+//=============================================================================================================
+if ($platinumPurchaseAvgRate1 != 0 && $platinumPurchaseAvgRate2 != 0) {
+    $platinumPurchaseAvgRate = om_round(($platinumPurchaseAvgRate1 / $platinumPurchaseAvgRate2) * 10, 2);
+}
+//=============================================================================================================
+//********************* END CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************//
+//=============================================================================================================
+$goldOthChagsWeight = $othChgsGdFnWt;
+$goldOthChagsWeightType = $goldFinalWeightType;
+$silverOthChagsWeight = $othChgsSlFnWt;
+$silverOthChagsWeightType = $silverFinalWeightType;
+//
+$platinumOthChagsWeight = $othChgsPtFnWt;
+$platinumOthChagsWeightType = $platinumFinalWeightType;
+//
+$invTotCrystalAmt = $totalCryCharg;
+//include 'ogcmttwt.php';
+$goldTotGrossWt = decimalVal($goldTotGrossWt, 3);
+?>
+<tr>
+    <td colspan="3" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" align="right" width="100%" class="spaceRight5">
+            <?php if ($goldTotFFineWt != '' && $goldTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font"  valign="top">
+                        TOTAL GOLD STOCK:
+                    </td>
+                </tr>
+            <?php } ?>
+            <?php if ($silverTotFFineWt != '' && $silverTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font"  valign="top">
+                        TOTAL SILVER STOCK:
+                    </td>
+                </tr>
+            <?php } ?>
+            <!-- START CODE FOR ADDED FOR PLATINUM TOTAL STOCK @SIMRAN:20JUNE2023-->
+                <?php if ($platinumTotFFineWt != '' && $platinumTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font"  valign="top">
+                        TOTAL PLATINUM STOCK:
+                    </td>
+                </tr>
+            <?php } ?>
+              <!-- END CODE FOR ADDED FOR PLATINUM TOTAL STOCK @SIMRAN:20JUNE2023-->
+        </table>
+    </td>
+    <td align="left" colspan="3" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+            <?php if ($goldTotFFineWt != '' && $goldTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="center" class="blackCalibri13Font"  valign="top" width="30px">
+                        <?php
+                        if ($goldQty > 0)
+                            echo $goldQty;
+                        else
+                            echo '0';
+                        ?>
+                    </td>
+                    <td align="left" class="blackCalibri13Font" width="100px" valign="top">
+                        <div class="spaceRight5" style="margin-left: 8px;">  
+                            <?php
+                            echo decimalVal($goldTotGrossWt, 3) . ' ' . $goldTotGrossWtType;
+                            ?>
+                        </div>
+                    </td>
+                    <td align="right" class="blackCalibri13Font" valign="top">
+                        <div class="spaceRight5">  
+                            <?php
+                            //echo decimalVal($goldTotGrossWt, 3) . ' ' . $goldTotGrossWtType;
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+            <?php if ($silverTotFFineWt != '' && $silverTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="center" class="blackCalibri13Font"  valign="top">
+                        <?php
+                        if ($silverQty > 0)
+                            echo $silverQty;
+                        else
+                            echo '0';
+                        ?>
+                    </td>
+                    <td align="left" class="blackCalibri13Font" width="100px">
+                        <div class="spaceRight5" style="margin-left: 8px;">  
+                            <?php
+                            echo decimalVal($silverTotGrossWt, 3) . ' ' . $silverTotGrossWtType;
+                            ?>
+                        </div>
+                    </td>
+                    <td align="right" class="blackCalibri13Font">
+                        <div class="spaceRight5"> 
+                           
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+                <?php if ($platinumTotFFineWt != '' && $platinumTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="center" class="blackCalibri13Font"  valign="top">
+                        <?php
+                        if ($platinumQty > 0)
+                            echo $platinumQty;
+                        else
+                            echo '0';
+                        ?>
+                    </td>
+                    <td align="left" class="blackCalibri13Font" width="100px">
+                        <div class="spaceRight5" style="margin-left: 8px;">  
+                            <?php
+                            echo decimalVal($platinumTotGrossWt, 3) . ' ' . $platinumTotGrossWtType;
+                            ?>
+                        </div>
+                    </td>
+                    <td align="right" class="blackCalibri13Font">
+                        <div class="spaceRight5"> 
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+        </table>
+    </td>
+    <td align="left" colspan="2" valign="top">
+        <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+            <?php if ($goldTotFFineWt != '' && $goldTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font" width="60px">
+
+                    </td>
+                    <td align="right" class="blackCalibri13Font" width="100px">
+                        <div class="spaceRight5"> 
+                            <?php
+                            echo decimalVal($goldTotFFineWt, 3) . ' ' . $goldTotFFineWtType;
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+            <?php if ($silverTotFFineWt != '' && $silverTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font" width="50px">
+
+                    </td>
+                    <td align="right" class="blackCalibri13Font" width="100px">
+                        <div class="spaceRight5"> <?php
+                            echo decimalVal($silverTotFFineWt, 3) . ' ' . $silverTotFFineWtType;
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+                 <?php if ($platinumTotFFineWt != '' && $platinumTotFFineWt != 0) { ?>
+                <tr>
+                    <td align="right" class="blackCalibri13Font" width="50px">
+
+                    </td>
+                    <td align="right" class="blackCalibri13Font" width="100px">
+                        <div class="spaceRight5"> <?php
+                            echo decimalVal($platinumTotFFineWt, 3) . ' ' . $platinumTotFFineWtType;
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            <?php } ?>
+
+        </table>
+    </td>
+    <?php
+    $goldFinalWeight = decimalVal($goldFinalWeight, 3);
+    $silverFinalWeight = decimalVal($silverFinalWeight, 3);
+    $goldOthChagsWeight = convert($goldFinalWeightType, $goldOthChagsWeightType, $goldOthChagsWeight);
+    $silverOthChagsWeight = convert($silverFinalWeightType, $silverOthChagsWeightType, $silverOthChagsWeight);
+    $goldFinalVal = $totalGoldVal;
+    $silverFinalVal = $totalSilverVal;
+    $goldOthChagsWeightType = $goldFinalWeightType;
+    $silverOthChagsWeightType = $silverFinalWeightType;
+    $goldOthChagsWeight = decimalVal($goldOthChagsWeight, 3);
+    $silverOthChagsWeight = decimalVal($silverOthChagsWeight, 3);
+    $goldTotFFineWt = decimalVal($goldTotFFineWt, 3);
+    $silverTotFFineWt = decimalVal($silverTotFFineWt, 3);
+    //
+    //=============================================================================================================
+    //********* START CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+    //=============================================================================================================
+    $platinumFinalWeight = decimalVal($platinumFinalWeight, 3);
+    $platinumOthChagsWeight = convert($platinumFinalWeightType, $platinumOthChagsWeightType, $platinumOthChagsWeight);
+    $platinumFinalVal = $totalPlatinumVal;
+    $platinumOthChagsWeightType = $platinumFinalWeightType;
+    $platinumOthChagsWeight = decimalVal($platinumOthChagsWeight, 3);
+    $platinumTotFFineWt = decimalVal($platinumTotFFineWt, 3);
+    //
+    //=============================================================================================================
+    //********* END CODE FOR ADDED PLATINUM STOCK @SIMRAN:20JUNE2023*******************************************//
+    //=============================================================================================================
+    if ($totalCounter != 0) {
+        ?>
+        <td align="left" valign="top" colspan="2">
+            <table border="0" cellspacing="0" cellpadding="0" align="left">
+                <?php if ($goldTotFFineWt != '' && $goldTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="left" class="blackCalibri13Font">
+                            <div class="spaceRight5 orange">  <?php
+                                //echo decimalVal($goldFinalWeight, 3) . ' ' . $goldFinalWeightType;
+                                ?>
+                            </div>
+                        </td>
+                    </tr>
+                <?php } ?>
+                <?php if ($silverTotFFineWt != '' && $silverTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="left" class="blackCalibri13Font">
+                            <div class="spaceRight5 orange"> <?php
+                                // echo decimalVal($silverFinalWeight, 3) . ' ' . $silverFinalWeightType;
+                                ?>
+                            </div>
+                        </td>
+                    </tr>
+                <?php } ?>
+                <?php if ($platinumTotFFineWt != '' && $platinumTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="left" class="blackCalibri13Font">
+                            <div class="spaceRight5 orange"> <?php
+                                // echo decimalVal($silverFinalWeight, 3) . ' ' . $silverFinalWeightType;
+                                ?>
+                            </div>
+                        </td>
+                    </tr>
+                <?php } ?>
+            </table>
+        </td>
+        <td align="left" colspan="4" valign="top">
+            <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+                <?php if ($goldTotFFineWt != '' && $goldTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="right" class="blackCalibri13Font">
+                            <div class="spaceRight5" style="margin-right: 12%;"> <?php echo formatInIndianStyle($totalGoldVal); ?></div>
+                        </td>
+                    </tr>
+                <?php } ?>
+                <?php if ($silverTotFFineWt != '' && $silverTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="right" class="blackCalibri13Font">
+                            <div class="spaceRight5" style="margin-right: 12%;">  <?php echo formatInIndianStyle($totalSilverVal); ?></div>
+                        </td>
+                    </tr>
+                <?php } ?>
+                <?php if ($platinumTotFFineWt != '' && $platinumTotFFineWt != 0) { ?>
+                    <tr>
+                        <td align="right" class="blackCalibri13Font">
+                            <div class="spaceRight5" style="margin-right: 12%;">  <?php echo formatInIndianStyle($totalSilverVal); ?></div>
+                        </td>
+                    </tr>
+                <?php } ?>
+
+            </table>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="12"></td>
+        <td colspan="3">
+            <table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
+                <tr>
+                    <td class="blackCalibri13FontBold">
+                        <div class="spaceRight5" 
+                        <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { ?>
+                                 style="margin-left: -148px;"
+                             <?php } else { ?>
+                                 style="margin-left: -111px;"
+                             <?php } ?>
+                             > TOTAL VALUATION  : <?php echo formatInIndianStyle($totalFinalBalance); ?> </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+        <?php
+    }
+    $totFinGdWt = $goldTotFFineWt;
+    $totFinSlWt = $silverTotFFineWt;
+    $totFinPtWt = $platinumTotFFineWt;   // ADDED FOR PLATINUM STOCK @SIMRAN:19JUNE2023
+    ?>
+</tr>
+</table>

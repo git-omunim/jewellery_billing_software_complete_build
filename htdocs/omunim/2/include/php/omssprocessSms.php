@@ -1,3 +1,503 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+// 
+// Start Mysql Connection
+//$readWritefile = fopen("omtemp.php", "a");
+//fwrite($readWritefile, "\n  DataBase:" . $dbhost . "  dbuser:" . $dbuser . "  dbname:" . $dbname . "  dbPort:" . $dbPort . "  prodType:" . $prodType);
+//fclose($readWritefile);
+//$conn = mysqli_connect($dbhost, $dbuser, $dbPass) or die('Error connecting to mysql');
+//
+$conn = mysqli_connect($dbhost, $dbuser, $dbPass, $dbname, $dbPort) or die('Error connecting to mysql!');
+mysqli_select_db($conn, $dbname);
+// End Mysql Connection
+//
+// Start Code To Alter Prod Version Table 
+$queryResult = mysqli_query($conn, "SHOW COLUMNS FROM prod_version LIKE 'prod_process_date'");
+$columnExists = (mysqli_num_rows($queryResult)) ? TRUE : FALSE;
+//
+if (!$columnExists) {
+    mysqli_query($conn, "ALTER TABLE prod_version ADD (prod_process_date DATE)");
+}
+//
+$queryResult = mysqli_query($conn, "SHOW COLUMNS FROM prod_version LIKE 'prod_process_lock'");
+$columnExists = (mysqli_num_rows($queryResult)) ? TRUE : FALSE;
+//
+if (!$columnExists) {
+    mysqli_query($conn, "ALTER TABLE prod_version ADD (prod_process_lock VARCHAR(2))");
+}
+//
+$qSel = "SELECT prod_process_date,prod_process_lock FROM prod_version where prod_id='1'";
+$res = mysqli_query($conn, $qSel);
+$row = mysqli_fetch_array($res);
+$prodProcessDate = $row['prod_process_date'];
+$prodProcessLock = $row['prod_process_lock'];
+// End Code to check Date from Prod Version Table
+//
+$todayDate = date("Y-m-d");
+//
+//echo '<br/>$todayDate:' . $todayDate;
+//echo '<br/>$prodProcessDate:' . $prodProcessDate;
+//
+if ($todayDate != $prodProcessDate) {
+    $query = "UPDATE prod_version SET prod_process_lock='N',prod_process_date='$todayDate' where prod_id='1'";
+    mysqli_query($conn, "$query") or die(mysqli_error($conn));
+    $prodProcessLock = 'N';
+}
+//
+//
+$selRoundOffFunction = "SELECT omly_value FROM omlayout WHERE omly_option = 'roundOffFunction'";
+$resRoundOffFunction = mysqli_query($conn, $selRoundOffFunction) or die("Error: " . mysqli_error($conn) . " with query " . $selRoundOffFunction);
+$rowRoundOffFunction = mysqli_fetch_array($resRoundOffFunction);
+$globalRoundOff = $rowRoundOffFunction['omly_value'];
+//
+require_once '../../omsscommonfunc.php';
+//
+$todayOmprocessDate = date("Y-m-d");
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND DUE INSTALLMENTS SMS TO CUSTOMER BEFORE AFTER & ON DUE DATE @AUTHOR:MADHUREE-31MAY2020 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendSMSToSchemeDueInstallmentsQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'sendSMSToSchemeDueInstallments'";
+$resSendSMSToSchemeDueInstallmentsQuery = mysqli_query($conn, $sendSMSToSchemeDueInstallmentsQuery)
+                                          or die("Error: " . mysqli_error($conn) . " with query " . $sendSMSToSchemeDueInstallmentsQuery);
+$rowSendSMSToSchemeDueInstallments = mysqli_fetch_array($resSendSMSToSchemeDueInstallmentsQuery);
+$sendSMSToSchemeDueInstallments = $rowSendSMSToSchemeDueInstallments['omly_value'];
+if ($sendSMSToSchemeDueInstallments == 'YES') {
+    //
+    //$DueAfterFiveDay = strtoupper(Date('d M yy', strtotime('+5 days')));
+    //$DueAfterThreeDay = strtoupper(Date('d M yy', strtotime('+3 days')));
+    //$DueToDay = strtoupper(Date('d M yy'));
+    //$TodayDate = strtoupper(Date('d M yy'));
+    //$DueBeforeFiveDay = strtoupper(Date('d M yy', strtotime('-5 days')));
+    //$DueBeforeThreeDay = strtoupper(Date('d M yy', strtotime('-3 days')));
+    //
+    $DueAfterFiveDay = strtoupper(Date('d M Y', strtotime('+5 days')));
+    $DueAfterThreeDay = strtoupper(Date('d M Y', strtotime('+3 days')));
+    $DueToDay = strtoupper(Date('d M Y'));
+    $TodayDate = strtoupper(Date('d M Y'));
+    $DueBeforeFiveDay = strtoupper(Date('d M Y', strtotime('-5 days')));
+    $DueBeforeThreeDay = strtoupper(Date('d M Y', strtotime('-3 days')));
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM kitty_money_deposit INNER JOIN kitty AS k ON kitty_mondep_kitty_id=k.kitty_id WHERE"
+            . " (kitty_mondep_omprocess_date='' OR kitty_mondep_omprocess_date IS NULL OR kitty_mondep_omprocess_date!='$todayOmprocessDate') AND k.kitty_final_sts NOT IN ('PaymentDone') AND kitty_upd_sts NOT IN ('Released')"
+            . " AND kitty_mondep_EMI_start_DOB IN ('$DueAfterFiveDay','$DueAfterThreeDay','$DueToDay','$DueBeforeFiveDay','$DueBeforeThreeDay')"
+            . " AND (kitty_mondep_msg_sent_status='' OR kitty_mondep_msg_sent_status IS NULL OR kitty_mondep_msg_sent_date!='$TodayDate')"
+            . " AND (kitty_mondep_msg_sent_date='' OR kitty_mondep_msg_sent_date IS NULL OR kitty_mondep_msg_sent_date!='$TodayDate')"
+            . " AND kitty_mondep_EMI_status IN ('Due')";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omproschemimsgapi.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM kitty_money_deposit INNER JOIN kitty AS k ON kitty_mondep_kitty_id=k.kitty_id WHERE"
+                . " (kitty_mondep_omprocess_date='' OR kitty_mondep_omprocess_date IS NULL OR kitty_mondep_omprocess_date!='$todayOmprocessDate') AND k.kitty_final_sts NOT IN ('PaymentDone') AND kitty_upd_sts NOT IN ('Released')"
+                . " AND kitty_mondep_EMI_start_DOB IN ('$DueAfterFiveDay','$DueAfterThreeDay','$DueToDay','$DueBeforeFiveDay','$DueBeforeThreeDay')"
+                . " AND (kitty_mondep_msg_sent_status='' OR kitty_mondep_msg_sent_status IS NULL OR kitty_mondep_msg_sent_date!='$TodayDate')"
+                . " AND (kitty_mondep_msg_sent_date='' OR kitty_mondep_msg_sent_date IS NULL OR kitty_mondep_msg_sent_date!='$TodayDate')"
+                . " AND kitty_mondep_EMI_status IN ('Due')";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND DUE INSTALLMENTS SMS TO CUSTOMER BEFORE AFTER & ON DUE DATE @AUTHOR:MADHUREE-31MAY2020 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// 
+// **************************************************************************************************************************
+// START CODE FOR INCREASE ROI BY MONTH : AUTHOR @DARSHANA 14 OCT 2021
+// **************************************************************************************************************************
+
+$selectRoiIncrese = "SELECT omly_value FROM omlayout WHERE omly_option = 'roiIncreseBy'";
+$queryRoiIncrease = mysqli_query($conn, $selectRoiIncrese);
+$resRoiIncrease = mysqli_fetch_array($queryRoiIncrease, MYSQLI_ASSOC);
+$roiIncrease = $resRoiIncrease['omly_value'];
+
+if ($roiIncrease == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_own_id='$ownerId'";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omroiincrbymon.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_own_id='$ownerId'";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+// **************************************************************************************************************************
+// END CODE FOR INCREASE ROI BY MONTH : AUTHOR @DARSHANA 14 OCT 2021
+// **************************************************************************************************************************
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND BIRTHDAY AND ANNIVERSARY SMS TO CUSTOMER @AUTHOR:VISHAL-20FEB2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendBirthdayAndAnniverserySMSQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'sendBirthdayAndAnniverserySMS'";
+$resSendBirthdayAndAnniverserySMSQuery = mysqli_query($conn, $sendBirthdayAndAnniverserySMSQuery)
+        or die("Error: " . mysqli_error($conn) . " with query " . $sendBirthdayAndAnniverserySMSQuery);
+$rowSendBirthdayAndAnniverserySMS = mysqli_fetch_array($resSendBirthdayAndAnniverserySMSQuery);
+$sendBirthdayAndAnniverserySMS = $rowSendBirthdayAndAnniverserySMS['omly_value'];
+if ($sendBirthdayAndAnniverserySMS == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM user WHERE (user_omprocess_date='' OR user_omprocess_date IS NULL OR user_omprocess_date!='$todayOmprocessDate') AND MONTH(STR_TO_DATE(user_marriage_any,'%d %b %Y')) = MONTH(NOW()) AND DAY(STR_TO_DATE(user_marriage_any,'%d %b %Y')) = DAY(NOW())";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'ombirthaniautosms.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM user WHERE (user_omprocess_date='' OR user_omprocess_date IS NULL OR user_omprocess_date!='$todayOmprocessDate') AND MONTH(STR_TO_DATE(user_marriage_any,'%d %b %Y')) = MONTH(NOW()) AND DAY(STR_TO_DATE(user_marriage_any,'%d %b %Y')) = DAY(NOW())";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND BIRTHDAY AND ANNIVERSARY SMS TO CUSTOMER @AUTHOR:VISHAL-20FEB2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND LOAN GRACE PERIOD EXPIRE SMS TO CUSTOMER @AUTHOR:AKSHAY-02JUNE2025 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendGracePeriodExpireSMSQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'LOAN_GRACE_S'";
+$resGracePeriodExpireSMSQuery = mysqli_query($conn, $sendGracePeriodExpireSMSQuery)
+        or die("Error: " . mysqli_error($conn) . " with query " . $sendGracePeriodExpireSMSQuery);
+
+$rowGracePeriodExpireSMSQuery = mysqli_fetch_array($resGracePeriodExpireSMSQuery);
+$GracePeriodExpireSMSQuery = $rowGracePeriodExpireSMSQuery['omly_value'];
+if ($GracePeriodExpireSMSQuery == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date = '$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omloanGraceExpireautosms.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND LOAN GRACE PERIOD EXPIRE SMS TO CUSTOMER @AUTHOR:AKSHAY-02JUNE2025 //
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND OFFER AND FESTIVAL SMS TO CUSTOMER @AUTHOR:VISHAL-10MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendOfferFestivalSMSQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'sendOfferFestivalAutoSMS'";
+$resSendOfferFestivalSMSQuery = mysqli_query($conn, $sendOfferFestivalSMSQuery)
+        or die("Error: " . mysqli_error($conn) . " with query " . $sendOfferFestivalSMSQuery);
+$rowSendOfferFestivalSMS = mysqli_fetch_array($resSendOfferFestivalSMSQuery);
+$sendOfferFestivalSMS = $rowSendOfferFestivalSMS['omly_value'];
+if ($sendOfferFestivalSMS == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM user WHERE (user_omprocess_date='' OR user_omprocess_date IS NULL OR user_omprocess_date!='$todayOmprocessDate')";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omofferfestautosms.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM user WHERE (user_omprocess_date='' OR user_omprocess_date IS NULL OR user_omprocess_date!='$todayOmprocessDate')";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND OFFER AND FESTIVAL SMS TO CUSTOMER @AUTHOR:VISHAL-10MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND LOAN AND INTEREST SMS TO CUSTOMER @AUTHOR:VISHAL-01MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendLoanAndInterestSMSQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'sendPendingLaonAndInterestSMS'";
+$resSendLoanAndInterestSMSQuery = mysqli_query($conn, $sendLoanAndInterestSMSQuery)
+        or die("Error: " . mysqli_error($conn) . " with query " . $sendLoanAndInterestSMSQuery);
+$rowSendLoanAndInterestSMS = mysqli_fetch_array($resSendLoanAndInterestSMSQuery);
+$sendLoanAndInterestSMS = $rowSendLoanAndInterestSMS['omly_value'];
+if ($sendLoanAndInterestSMS == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omloaninterestautosms.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND LOAN AND INTEREST SMS TO CUSTOMER @AUTHOR:VISHAL-01MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE GET VALUE FOR SEND EXPIRED LOAN SMS TO CUSTOMER @AUTHOR:VISHAL-03MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+$sendExpiredLoanSMSQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'sendExpiredLaonSMS'";
+$resSendExpiredLoanSMSQuery = mysqli_query($conn, $sendExpiredLoanSMSQuery)
+        or die("Error: " . mysqli_error($conn) . " with query " . $sendExpiredLoanSMSQuery);
+$rowSendExpiredLoanSMS = mysqli_fetch_array($resSendExpiredLoanSMSQuery);
+$sendExpiredLoanSMS = $rowSendExpiredLoanSMS['omly_value'];
+if ($sendExpiredLoanSMS == 'YES') {
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omexpiredloanautosms.php';
+        //
+        $selNoOfEntriesAfterProcess = "SELECT * FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_upd_sts != 'Released' AND girv_own_id='$ownerId'";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE GET VALUE FOR SEND EXPIRED LOAN SMS TO CUSTOMER @AUTHOR:VISHAL-03MAR2021 //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// 
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE TO ADD FILE TO UPDATE PRODUCT VALUATION BY TODAYS METAL RATE FOR OMECOM @AUTHOR:HEMA-23JUN2020//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+if ($prodType == 'OMUNIM' || $prodType == 'OMGOLD') {
+    $selNoOfEntriesForProcess = "SELECT * FROM stock_transaction WHERE (sttr_omprocess_date='' OR sttr_omprocess_date IS NULL OR sttr_omprocess_date!='$todayOmprocessDate') AND sttr_status!='SOLDOUT' and sttr_omecom_status='YES'";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+//$rowNoOfEntriesForProcess = mysqli_fetch_array($resNoOfEntriesForProcess, MYSQLI_ASSOC);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+//
+//    $readWritefile = fopen("omtemp.php", "a");
+//    fwrite($readWritefile, "\n  Time:" . date("m/d/y G.i:s", time()) . "  No Of Entries:" . $noOfEntriesForProcess . "  End:" . $selNoOfEntriesForProcess);
+//    fclose($readWritefile);
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //
+        //Start Code to lock process
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //End Code to lock process
+        //
+        include 'omprocessproduct.php';
+        //
+        $selNoOfEntriesForProcess = "SELECT * FROM stock_transaction WHERE "
+                . "(sttr_omprocess_date='' OR sttr_omprocess_date IS NULL OR sttr_omprocess_date!='$todayOmprocessDate') "
+                . "AND sttr_status!='SOLDOUT' and sttr_omecom_status='YES' ORDER BY sttr_id DESC LIMIT 0,500";
+        $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+        //
+//        $readWritefile = fopen("omtemp.php", "a");
+//        fwrite($readWritefile, "\n  Time:" . date("m/d/y G.i:s", time()) . "  No Of Entries:" . $noOfEntriesAfterProcess . "  End:" . $selNoOfEntriesForProcess);
+//        fclose($readWritefile);
+        //
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+            mysqli_query($conn, "$query") or die(mysqli_error($conn));
+            echo 'Y';
+        }
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+    }
+}
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE TO ADD FILE TO UPDATE PRODUCT VALUATION BY TODAYS METAL RATE FOR OMECOM @AUTHOR:HEMA-23JUN2020//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+//echo $prodProcessLock . '  -  ';
+if ($prodType == 'OMUNIM' || $prodType == 'OMREVO') {
+    //
+    if ($todayDate == $prodProcessDate && $prodNewLoansAdded == 'Y') {
+        //$queryStr = " and girv_pl_total_amt IS NULL ";
+        $queryStr = " ";
+    }
+    //
+    $selNoOfEntriesForProcess = "SELECT * FROM girvi WHERE "
+            . "(girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') "
+            . "AND girv_own_id='$ownerId' $queryStr AND girv_upd_sts IN ('New','Updated','ReleaseCart') ORDER BY girv_id DESC LIMIT 1";
+    $resNoOfEntriesForProcess = mysqli_query($conn, $selNoOfEntriesForProcess);
+    $noOfEntriesForProcess = mysqli_num_rows($resNoOfEntriesForProcess);
+    //
+    //echo $selNoOfEntriesForProcess . '  -  ';
+    //
+    if ($noOfEntriesForProcess > 0 && $prodProcessLock != 'Y') {
+        //echo 'Z';
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='Y' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //
+        include 'omprolossloans.php';
+        //echo 's';
+        $selNoOfEntriesAfterProcess = "SELECT * FROM girvi WHERE "
+                . "(girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') "
+                . "AND girv_own_id='$ownerId' $queryStr "
+                . "AND girv_upd_sts IN ('New','Updated','ReleaseCart') ORDER BY girv_id DESC LIMIT 1";
+        $resNoOfEntriesAfterProcess = mysqli_query($conn, $selNoOfEntriesAfterProcess);
+        $noOfEntriesAfterProcess = mysqli_num_rows($resNoOfEntriesAfterProcess);
+        //
+        //echo 'n' . $selNoOfEntriesAfterProcess;
+
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        //     
+        if ($noOfEntriesAfterProcess <= 0) {
+            //
+            echo 'Y';
+        } else {
+            echo 'N';
+        }
+        //
+    } else if ($noOfEntriesForProcess <= 0) {
+        //
+        $query = "UPDATE prod_version SET prod_process_lock='N' where prod_id='1'";
+        mysqli_query($conn, "$query") or die(mysqli_error($conn));
+        echo 'Y';
+        //
+    } else {
+        echo 'N';
+    }
+}
 ?>

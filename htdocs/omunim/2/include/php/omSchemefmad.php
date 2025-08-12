@@ -1,3 +1,226 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: customize Scheme EMI form ad @SIMRAN@25APR2023
+ * **************************************************************************************
+ * 
+ *
+ * @FileName: omSchemefmad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+$divId = $_GET['divId'];
+$cnt = $_GET['count'];
+$display = $_GET['display'];
+$labelId = $_GET['labelId'];
+$labelType = $_GET['labelType'];
+$inputWidth = $_GET['inputWidth'];
+$fieldName = $_GET['fieldName'];
+$fieldContent = $_GET['fieldValue'];
+$fieldCheck = $_GET['fieldCheck'];
+$fontSize = $_GET['fontSize'];
+$fontColorVal = $_GET['fontColor'];
+$fontWeightVal = $_GET['fontWeight'];  // $label_field_font_weight ADD THIS VARIABLE FOR RETAIL INVOICCE @YUVRAJ 06102022 
+$divTopMargin = $_GET['topMargin'];
+$divLeftMargin = $_GET['leftMargin'];
+?>
+<!--   <td align="left" colspan="5" class="posAbsolute" style="margin-top:<?php echo $divTopMargin; ?>px;margin-left: <?php echo $divLeftMargin; ?>px;">-->
+<div class="posAbsolute" style="border: #c1c1c1 1px solid;padding:8px;background:#fff;width:190px;margin-top:<?php echo $divTopMargin; ?>px;margin-left: <?php echo $divLeftMargin; ?>px;">
+    <form name="add_stock" id="add_stock"
+          enctype="multipart/form-data" method="post"
+          action="include/php/omschemefoad.php"   
+          onsubmit="return labelsFormSubmit(document.getElementById('fieldName').value, document.getElementById('fontSize<?php echo $cnt; ?>').value, '<?php echo $cnt; ?>');">
+        <table border="0" cellpadding="0" cellspacing="0" align="left" valign="middle" style="width:100%;border:0;" class="backF9F9F9 textBoxCurve1px">
+            <tr>
+            <input type="hidden" id="count" name="count" value="<?php echo $cnt; ?>"/>
+            <input type="hidden" id="labelType" name="labelType" value="<?php echo $labelType; ?>"/>
+            <?php
+            if ($display == 'YES' && $divId != 'tncSchemeDiv') {
+                if ($divId != 'authSchemeSignLbDiv' && $divId != 'authSchemeCustSignLbDiv' && $divId != 'invschemeTitleDiv' && $divId != 'invschemeInstallmentsTitleDiv' && $divId != 'schemeInvTitleDiv' && $divId != 'footerSchemeLbDiv') {
+                    ?>
+                    <input type="hidden" id="fontCheckId<?php echo $cnt; ?>" name="fontCheckId<?php echo $cnt; ?>"/>
+                <?php } ?>
+                <!--<td align="left" class="frm-lbl-lnk-grey" style="padding-left: 10px;">-->
+                    <input id="fieldValue<?php echo $cnt; ?>" name="fieldValue<?php echo $cnt; ?>" placeholder="<?php echo $labelId; ?>" 
+                           value="<?php echo $fieldContent; ?>"
+                           onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('fontSize<?php echo $cnt; ?>').focus();
+                                       return false;
+                                   }"
+                           spellcheck="false" type="text"
+                           class="input_border_grey"  style="width:100%;height:28px;"size="<?php echo $inputWidth; ?>" maxlength="100" />
+                <!--</td>-->
+            <?php } else if ($divId == 'tncSchemeDiv') { ?>
+                <!--<td align="left" class="frm-lbl-lnk-grey" style="padding-left: 10px;" colspan="5">-->
+                    <textarea id="fieldValue<?php echo $cnt; ?>"  name="fieldValue<?php echo $cnt; ?>" spellcheck="false" placeholder=" Terms and Conditions:"
+                              onkeydown="javascript: if (event.keyCode == 8 && this.value == '') {
+                                          document.getElementById('fieldValue<?php echo $cnt; ?>').focus();
+                                          return false;
+                                      }"
+                              class="textarea" style="width:100%;height: 150px;"><?php echo $fieldContent; ?></textarea> 
+                </td>
+                </tr>
+            <?php } else { ?>
+                <!--<td align="left" class="ff_calibri fs_14" style="padding-left: 10px;">-->
+                <span style="text-align: left"> <b>  <?php echo $labelId; ?>:</b></span>
+                    <input id="fieldValue<?php echo $cnt; ?>" name="fieldValue<?php echo $cnt; ?>" type="hidden" value="<?php echo $fieldContent; ?>" width:100%;height:28px;/>
+                </td>
+                <?php
+            }if ($fieldName != 'firmSchemeLeftLogoCheck' && $fieldName != 'firmSchemeRightLogoCheck') {
+                if ($_SESSION['sessionProdName'] == 'OMRETL') { 
+                   // code for font size @Amol 21022023
+                   if($fontSize > 0){
+                       $fontSize = $fontSize;
+                   }else{
+                       $fontSize = '12';
+                   }
+                  
+                    //$fontSize = '1'; // add this variable for om retail @YUVRAJ KAMBLE 16012023
+                }
+                if ($fieldName == 'tncSchemeDiv') {
+                    ?>
+                    <tr>
+                    <?php } ?>
+                       <?php if ($_SESSION['sessionProdName'] == 'OMRETL') { // add this variable for om retail @YUVRAJ KAMBLE 16012023 ?>
+                   <input id="fontSize<?php echo $cnt; ?>" name="fontSize<?php echo $cnt; ?>" type="hidden" value="<?php echo $fontSize; ?>"/>
+                       <?php } ?>
+                   <!--<td align="left" class="frm-lbl-lnk-grey" title="FONT SIZE" style="width:60px;padding-left: 10px;">-->
+                        <input id="fieldName" name="fieldName" type="hidden" value="<?php echo $fieldName; ?>"/>
+                        <input id="fontSize<?php echo $cnt; ?>" name="fontSize<?php echo $cnt; ?>" placeholder="Font size (PX):" value="<?php echo $fontSize; ?>"
+                               onkeydown="javascript: if (event.keyCode == 13) {
+                                           document.getElementById('fontColor<?php echo $cnt; ?>').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8 && this.value == '') {
+                                           document.getElementById('fieldValue<?php echo $cnt; ?>').focus();
+                                           return false;
+                                       }"
+                               spellcheck="false" type="text"  onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                               class="input_border_grey" size="5" maxlength="10" style="width:100%;height:28px;"/>
+                    <!--<td>-->
+                        <!--// START  $label_field_font_weight ADD THIS VARIABLE FOR RETAIL INVOICCE @YUVRAJ 06102022  -->
+                    <!--<td align="left" class="frm-lbl-lnk-grey" title="FONT WEIGHT" style="width:30px;padding-left: 10px;">-->
+                        <input type="checkbox" id="fontWeight<?php echo $cnt; ?>" name="fontWeight<?php echo $cnt; ?>" class="checkbox" value="bold" <?php
+                        if ($fontWeightVal == 'bold')
+                            echo 'checked';
+                        else
+                            echo '';
+                        ?>
+                               onkeydown="javascript: if (event.keyCode == 13) {
+                                           document.getElementById('customFormSub').focus();
+                                           return false;
+                                       } else if (event.keyCode == 8) {
+                                           document.getElementById('fontColor<?php echo $cnt; ?>').focus();
+                                           return false;
+                                       }"
+                               />
+                        <!--<b>BOLD</b>-->
+
+                        <!-- END  // $label_field_font_weight ADD THIS VARIABLE FOR RETAIL INVOICCE @YUVRAJ 06102022 -->
+                    <!--</td>-->
+                    <td align="left" valign="middle" title="CLICK TO SET FONT WEIGHT "><span style="margin-top: 3px;">BOLD</span></td>
+                <?php }if ($fieldName != 'firmSchemeLeftLogoCheck' && $fieldName != 'firmSchemeRightLogoCheck') { ?>
+                    <!--<td align="left" class="frm-lbl-lnk-grey"  style="width:60px;padding-left: 10px;" title="FONT COLOR">-->
+                        <div class="selectStyled" style="width:100%;">
+                            <select id="fontColor<?php echo $cnt; ?>" name="fontColor<?php echo $cnt; ?>" style="width:100%;height:28px;" 
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('fontCheckId<?php echo $cnt; ?>').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('fontSize<?php echo $cnt; ?>').focus();
+                                                return false;
+                                            }"
+                                    class="textLabel14CalibriReq">
+                                        <?php
+                                        $firmNameColor = array(black, blue, lightBlue, brightBlue, darkBlue, maroon, red, brown, green, orange, grey, white);
+                                        for ($i = 0; $i <= 11; $i++)
+                                            if ($firmNameColor[$i] == $fontColorVal)
+                                                $optionHeaderLabelSel[$i] = 'selected';
+                                        ?>
+                                <option value="black" style="color: #000000;"<?php echo $optionHeaderLabelSel[0]; ?>>Black</option>
+                                <option value="blue" style="color: #0000C8;"<?php echo $optionHeaderLabelSel[1]; ?>>Blue</option>
+                                <option value="lightBlue" style="color: #059BD8;"<?php echo $optionHeaderLabelSel[2]; ?>>Light blue</option>
+                                <option value="brightBlue" style="color: #2E64FE;"<?php echo $optionHeaderLabelSel[3]; ?>>Bright blue</option>
+                                <option value="darkBlue" style="color: #003366;"<?php echo $optionHeaderLabelSel[4]; ?>>Dark blue</option>
+                                <option value="maroon" style="color: #800000;"<?php echo $optionHeaderLabelSel[5]; ?>>Maroon</option>
+                                <option value="red" style="color: #B80000;"<?php echo $optionHeaderLabelSel[6]; ?>>Red</option>
+                                <option value="brown" style="color: #804000;"<?php echo $optionHeaderLabelSel[7]; ?>>Brown</option>
+                                <option value="green" style="color: #00A000;"<?php echo $optionHeaderLabelSel[8]; ?>>Green</option>
+                                <option value="orange" style="color: #D76B00;"<?php echo $optionHeaderLabelSel[9]; ?>>Orange</option>
+                                <option value="grey" style="color: #444444;"<?php echo $optionHeaderLabelSel[10]; ?>>Grey</option>
+                                <option value="white" style="color:#FFFFFF;"<?php echo $optionHeaderLabelSel[11]; ?>>White</option>
+                            </select>
+                        </div>
+                    </td>
+                <?php } if (($fieldName == 'firmSchemeLeftLogoCheck' || $fieldName == 'firmSchemeRightLogoCheck')) { 
+                     if ($_SESSION['sessionProdName'] == 'OMRETL') {  
+                $fontSize = '1'; // add this variable for om retail @YUVRAJ KAMBLE 16012023
+                }
+                    ?>
+                <input id="fieldName" name="fieldName" type="hidden" value="<?php echo $fieldName; ?>"/>
+                <input id="fontSize<?php echo $cnt; ?>" name="fontSize<?php echo $cnt; ?>" type="hidden" value="<?php echo $fontSize; ?>"/>
+                <input id="fontColor<?php echo $cnt; ?>" name="fontColor<?php echo $cnt; ?>" type="hidden" value="<?php echo $fontColorVal; ?>"/>
+            <?php } if ($display == 'NO' || $divId == 'tncSchemeDiv' || $divId == 'authSchemeSignLbDiv' || $divId == 'authSchemeCustSignLbDiv' || $divId == 'couponDisplayLbDiv' || $divId == 'invschemeTitleDiv' || $divId == 'invschemeInstallmentsTitleDiv' ||  $divId == 'schemeInvTitleDiv' ||
+                    $divId == 'footerSchemeLbDiv' || $divId == 'footerAdImgDiv') { ?>
+                <!--<td align="left" valign="middle" title="CLICK TO SELECT FORM HEADER LABEL !" style="padding-left: 10px;">-->
+                    <input type="checkbox" id="fontCheckId<?php echo $cnt; ?>" name="fontCheckId<?php echo $cnt; ?>" class="checkbox" value="true" <?php
+                    if ($fieldCheck == 'true')
+                        echo 'checked';
+                    else
+                        echo '';
+                    ?>
+                           onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('customFormSub').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8) {
+                                       document.getElementById('fontColor<?php echo $cnt; ?>').focus();
+                                       return false;
+                                   }"
+                           />
+                <!--</td>-->
+<?php } ?>
+            
+            <!--<td align="right" class="ff_calibri fs_14 brown"  style="padding-left: 10px;">-->
+                <div style="margin-top: -8px;margin-left: -5px;position: absolute;top: -10px;right: -12px;">
+                    <a style="cursor: pointer;" onclick="closeLabel('<?php echo $divId; ?>');">
+                        <img src="<?php echo $documentRoot; ?>/images/img/cancel.png" alt="" style="height:14px;"/>
+                    </a>
+                </div>
+            <!--</td>-->
+            </tr>
+                <tr>
+             <td align="center" colspan="8" valign="middle" title="CLICK TO SET DETAILS!" style="">
+    <!--            <input type="submit" value="SUBMIT" 
+                       class="frm-btn" id="customFormSub" 
+                       onclick="javascript:labelsForm('<?php echo $cnt; ?>', 'SellPurchase', '<?php echo $fieldName; ?>', document.getElementById('fieldValue<?php echo $cnt; ?>').value, document.getElementById('fontSize<?php echo $cnt; ?>').value, document.getElementById('fontColor<?php echo $cnt; ?>').value, '<?php echo $divId; ?>', '<?php echo $display; ?>');" 
+                       maxlength
+                       ="30" size="5" />             -->
+                <input type="submit" value="SUBMIT" 
+                       class="frm-btn" id="customFormSub"
+                       maxlength ="30" size="5" style="color: #000080;background: #BED8FD;width: 90px;border-radius: 3px !important;font-size: 14px;border: 1px solid #68a3f8;margin-top: 10px;"/>   
+            </td>
+            </tr>
+        </table>
+    </form>
+</div>
+

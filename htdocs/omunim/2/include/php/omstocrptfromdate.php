@@ -1,3 +1,320 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK REPORT LEDGER PANEL - FROM DATE FILE @Author-PRIYANKA-18JULY2020
+ * **************************************************************************************************
+ *
+ * Created on JULY 18, 2020 02:00:58 PM 
+ * **************************************************************************************
+ * @FileName: ommnstocrptfromdate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMRETAIL 
+ * @version 2.7.9
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:18JULY2020
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.9
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . 'nepal/nepali-date.php';
+$nepali_date = new nepali_date();
+?>
+<?php
+if($nepaliDate == 'YES'){
+    if ($date_nepali == '') {
+    $year_en = date("Y", time());
+    $month_en = date("m", time());
+    $day_en = date("d", time());
+    $date_ne = $nepali_date->get_nepali_date($year_en, $month_en, $day_en);
+    $selDOBDay = $date_ne['d'];
+    $todayMM = $date_ne['m'] - 1;
+    $selDOBYear = $date_ne['y'];
+} else {
+    $date_ne = explode('-', $FromDate);
+    $selDOBDay = $date_ne[0];
+     $todayMM = $date_ne[1];
+     if(!is_numeric($todayMM)){
+          $todayMM = $nepali_date->get_nepali_month_number($todayMM);
+     }
+    $todayMM = $todayMM - 1;
+    $selDOBYear = $date_ne[2];
+}
+    ?>
+<table align="<?php
+if ($tableAlignStyle != '') {
+    echo $tableAlignStyle;
+} else {
+    echo 'center';
+}
+?>" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td class="padLeft3">
+            <?php
+            $todayDay = $selDOBDay - 1;
+            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32');
+            $optDay[$todayDay] = "selected";
+            ?> 
+           <select id="<?php echo $Day; ?>" name="<?php echo $Day; ?>"
+                    onkeydown="javascript: if (event.keyCode == 13) {
+                                document.getElementById('addItemDOBFromMonth').focus();
+                                return false;
+                            } else if (event.keyCode == 8) {
+                                return false;
+                            }"
+                    class="form-control text-center form-control-font13" 
+                    <?php if ($selDayStyle != '') { ?>
+                        style="<?php echo $selDayStyle; ?>"
+                    <?php } ?>>
+                <option value="NotSelected">DAY</option>
+                <?php
+                for ($dd = 0; $dd <= 31; $dd++) {
+                    echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                }
+                ?>
+                <?php unset($optDay); ?>
+            </select> 
+        </td>
+        <td class="padLeft3">
+            <?php
+            if ($nepaliDateMonthFormat == 'displayInNumber') {
+                $arrMonths = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+            } else {
+                $arrMonths = array('ब‌ैशाख', 'जेठ', 'असार', 'साउन', 'भदौ', 'असोज', 'कार्तिक', 'मङ्सिर', 'पुस', 'माघ', 'फाल्गुण', 'चैत');
+            }
+            $optMonth[$todayMM] = "selected";
+            ?> 
+            <input  id="gbMonth" name="gbMonth" type="hidden" value="0" /> 
+            <select id="<?php echo $Month; ?>" name="<?php echo $Month; ?>" 
+                    onkeydown="javascript: if (event.keyCode == 13) {
+                                document.getElementById('addItemDOBFromYear').focus();
+                                return false;
+                            } else if (event.keyCode == 8) {
+                                document.getElementById('addItemDOBFromDay').focus();
+                                return false;
+                            }
+                    <?php if ($nepaliDateMonthFormat == 'displayInNumber') { ?>
+                                var arrMonths = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+                    <?php } else { ?>
+                                var arrMonths = new Array('ब‌ैशाख', 'जेठ', 'असार', 'साउन', 'भदौ', 'असोज', 'कार्तिक', 'मङ्सिर', 'पुस', 'माघ', 'फाल्गुण', 'चैत');
+                    <?php } ?>
+                            gbMonth = document.getElementById('addItemDOBFromMonth').value;
+                            if (gbMonth == 1) {
+                                if (event.keyCode) {
+                                    var sel = String.fromCharCode(event.keyCode);
+                                    if (sel == 0)
+                                    {
+                                        this.value = arrMonths[9];
+                                    } else if (sel == 1)
+                                    {
+                                        this.value = arrMonths[10];
+                                    } else if (sel == 2)
+                                    {
+                                        this.value = arrMonths[11];
+                                    }
+                                    document.getElementById('addItemDOBFromMonth').value = 0;
+                                }
+                            } else if (event.keyCode) {
+                                if (event.keyCode != 9) {
+                                    var sel = String.fromCharCode(event.keyCode) - 1;
+                                    this.value = arrMonths[sel];
+                                    if (event.keyCode == 49) {
+                                        document.getElementById('addItemDOBFromMonth').value = 1;
+                                    }
+                                }
+                            }"
+                    class="form-control text-center form-control-font13" 
+                    <?php if ($selMonthStyle != '') { ?>
+                        style="<?php echo $selMonthStyle; ?>"
+                    <?php } ?>>
+                <option value="NotSelected">MON</option>
+                <?php
+                for ($mm = 0; $mm <= 11; $mm++) {
+                    $monthValue = $mm + 1;
+                    echo "<option value=\"$monthValue\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                }
+                ?>
+                <?php unset($optMonth); ?>
+            </select> 
+        </td>
+        <td class="padLeft3">
+            <?php
+            $year_en = date("Y", time());
+            $month_en = date("m", time());
+            $day_en = date("d", time());
+            $date_ne = $nepali_date->get_nepali_date($year_en, $month_en, $day_en);
+            $selDOBYe = $date_ne['y'];
+            $todayYear = $selDOBYe;
+            $optYear[$selDOBYear] = "selected";
+            ?> 
+           <select id="<?php echo $Year; ?>" name="<?php echo $Year; ?>" 
+                    onkeydown="javascript: if (event.keyCode == 13) {
+                                document.getElementById('firmId').focus();
+
+                                return false;
+                            } else if (event.keyCode == 8) {
+                                document.getElementById('addItemDOBFromMonth').focus();
+                                return false;
+                            }"
+                    class="form-control text-center form-control-font13" 
+                    <?php if ($selYearStyle != '') { ?>
+                        style="<?php echo $selYearStyle; ?>"
+                    <?php } ?>>
+                <option value="NotSelected">YEAR</option>
+                <?php
+                for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                    echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                }
+                ?>
+                <?php unset($optYear); ?>
+            </select>
+            <div id="GetInvoiceDate"></div>
+        </td>
+    </tr>
+</table>
+<?php }else{
+// Start Code for Day @Author-PRIYANKA-18JULY2020
+$todayDay = date("j", strtotime($date)) - 1;
+//
+$arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                 '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                 '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+//
+$optDay[$todayDay] = "selected";
+//
+?> 
+<div class="floatLeft" style="width:30%;">
+    <select id="<?php echo $Day; ?>" name="<?php echo $Day; ?>" 
+            class="form-control-select-borderless" title="Select Day!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('<?php echo $Month; ?>').focus();  
+                return false; 
+            } else if (event.keyCode == 8) { 
+                document.getElementById('FirmName').focus();  
+                return false; 
+            }" style="width:100%;height:30px;">
+        <option value="NotSelected" class="textLabel14CalibriGrey">DAY</option>
+        <?php
+        for ($dd = 0; $dd <= 30; $dd++) {
+            echo "<option value=\"$arrDays[$dd]\" " . " class=" . "\"ff_calibri fs_14\"" . " $optDay[$dd]>$arrDays[$dd]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<?php // End Code for Day @Author-PRIYANKA-18JULY2020 ?>
+<?php
+//
+// Start Code for Month @Author-PRIYANKA-18JULY2020
+if ($panelName == 'FromPanel') {
+    $todayMM = date("n", strtotime($fromDate)) - 1;
+} else {
+    $todayMM = date("n", strtotime($toDate)) - 1;
+}
+//
+$todayMM = date("n", strtotime($date)) - 1;
+//
+$arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); 
+//
+$arrMM = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12');
+//
+$optMonth[$todayMM] = "selected";
+//
+?> 
+<input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> 
+<div class="floatLeft" style="width:30%;">
+    <select id="<?php echo $Month; ?>" name="<?php echo $Month; ?>" 
+            class="form-control-select-borderless" title="Select Month!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('<?php echo $Year; ?>').focus();  
+                return false; 
+            } else if (event.keyCode == 8) {  
+                document.getElementById('<?php echo $Day; ?>').focus(); 
+                return false; 
+            }
+                var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                gbMonth = document.getElementById('gbMonthId').value;
+                if(gbMonth==1){
+                    if(event.keyCode){
+                        var sel=String.fromCharCode(event.keyCode);
+                        if(sel==0)
+                        {
+                            this.value = arrMonths[9];
+                        }
+                        else if(sel==1)
+                        {
+                            this.value = arrMonths[10];
+                        }
+                        else if(sel==2)
+                        {
+                            this.value = arrMonths[11]; 
+                        }
+                        document.getElementById('gbMonthId').value = 0;
+                    } 
+                }
+                else if(event.keyCode){
+                    var sel=String.fromCharCode(event.keyCode)-1;
+                    this.value = arrMonths[sel];
+                    if(event.keyCode==49){
+                       document.getElementById('gbMonthId').value = 1;
+                   }
+                }"  style="width:100%;height:30px;">
+        <option value="NotSelected" class="textLabel14CalibriGrey">MON</option>
+        <?php
+        for ($mm = 0; $mm <= 11; $mm++) {
+            echo "<option value=\"$arrMM[$mm]\" " . " class=" . "\"ff_calibri fs_14\"" . " $optMonth[$mm]>$arrMonths[$mm]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<?php // End Code for Month @Author-PRIYANKA-18JULY2020 ?>
+<?php
+//
+// Start Code for Year @Author-PRIYANKA-18JULY2020
+$todayMaxYY = date("Y", strtotime(date("Y-m-d")));
+//
+$todayYear = date("Y", strtotime($date));
+//
+$optYear[$todayYear] = "selected";
+//
+?> 
+<div class="floatLeft" style="width:40%;">
+    <select id="<?php echo $Year; ?>" name="<?php echo $Year; ?>" 
+            class="form-control-select-borderless" title="Select Year!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('ToDateDay').focus();  
+                return false; 
+            } else if (event.keyCode == 8) {  
+                document.getElementById('FromMonth').focus(); 
+                return false; 
+            }"  style="width:100%;height:30px;">
+        <option value="NotSelected" class="textLabel14CalibriGrey">YEAR</option>
+        <?php
+        for ($yy = $todayMaxYY; $yy >= 1900; $yy--) {
+            echo "<option value=\"$yy\" " . " class=" . "\"ff_calibri fs_14\"" . " $optYear[$yy]>$yy</option>";
+        }
+        ?>
+    </select>
+</div>
+<?php }// End Code for Year @Author-PRIYANKA-18JULY2020 ?>

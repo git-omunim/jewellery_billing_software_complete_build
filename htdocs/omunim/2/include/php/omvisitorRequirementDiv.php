@@ -1,3 +1,549 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:TO DISPLAY VISITOR REQUIREMENT DETAILS
+ * **************************************************************************************
+ * Created on  26 NOV 2022
+ *
+ * @FileName: omvisitorReuirement.php
+ * @Author: RENUKA SHARMA
+ * @AuthorEmailId:  renukas@omunim.com
+ * @Copyright (c) www.omunim.com
+ * @All rights reserved
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+include_once 'ommpcmfcc.php';
+?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+    <head>
+        <title>Online Munim &mdash; Girvi Software, Jewellery Software, Jewellery &amp; Money Lending Accounting Software...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/plugins/slider-revolution-slider/rs-plugin/css/settings.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Global styles END -->
+        <!-- Theme styles BEGIN -->
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/css/poppins.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/omglobal/css/components.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/frontend/onepage/css/style.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/frontend/onepage/css/style-responsive.css" rel="stylesheet" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/frontend/onepage/css/themes/red.css" rel="stylesheet" id="style-color" />
+        <link href="<?php echo $documentMainRoot; ?>/2/assets/frontend/onepage/css/custom.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/body.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/orcss.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/mainLayout.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/barCodeLabel.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/custom.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo $documentRootBSlash; ?>/images/favicon.ico" />
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omHeadNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogNavFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emNavigation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emUpdateOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omCalculation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions_1_6_1.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/orAddFunction_1_6_1.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omLangDisplayMess.js"></script><!--file added @Author:PRIYA30JAN14-->
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions_2_4_7.js"></script><!-- new file added @Author:PRIYA06OCT14 -->
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/advanceMetal.js"></script><!--file added @Author:SHRI14JAN15-->
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogCrFunctions.js"></script><!-- new file added @Author:SHE18FEB15-->
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogijAddFunction_1_6_1.js"></script><!-----new file added @Author:ANUJA12Jan15------>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-1.11.2.min.js"></script><!-----new file added for jquery @@Author:SHRI07APR15------>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/accBalance.js"></script><!-----new file added for Account Balance Panel functions @Author: GAUR14JAN16------>
+        <style>
+            input[type=text], select  {
+                width: 110px;
+                padding: 5px 5px;
+                text-align: center;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .formdiv {
+                border-radius: 5px;
+                /*                background-color: #f2f2f2;*/
+                margin-top:4%;
+                /*margin-left:28%;*/
+                /*position: absolute;*/
+            }
+            h1 {
+                border-radius: 5px;
+                background-color: #4b8df8;
+                padding: 5px;
+                color:white;
+            }
+            /*---- Rani Css new layout 24 nov 2022--->*/
+            .paymentDbnk{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top:10%;
+            }
+            .paymentDbnk .leftSide{
+                width:60%;
+                position:relative;
+            }
+            .paymentDbnk .rightSide{
+                width:40%;
+            }
+            .paymentDbnk .leftSide .formdiv{
+                width:100%;
+            }
+            .paymentDbnk .leftSide .formdiv h1{
+                background:#285CC0;
+                color:#fff;
+                border-radius:5px 5px 0 0;
+                font-size:18px;
+            }
+            .paymentDbnk .leftSide .formdiv .labelHead{
+                font-size:16px;
+                font-weight:600;
+                color: #545353;
+            }
+            .nav-link-inline-block-blue{
+                width:100%;
+                padding: 25px 15px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            }
+            .paymentDbnk .leftSide .formdiv .nav-link-inline-block-blue input,
+            .paymentDbnk .leftSide .formdiv .nav-link-inline-block-blue select{
+                width: 100%;
+                text-align: left;
+                background: #fff;
+                border: 1px solid #d7d7d7;
+                height: 36px;
+                text-transform: uppercase;
+                margin: 2px;
+            }
+            .paymentDbnk .leftSide .formdiv .nav-link-inline-block-blue input[type="text"]{
+                padding:1px -5px;
+            }
+            .paymentDbnk .leftSide .formdiv .nav-link-inline-block-blue input::placeholder{
+                color:#545353;
+                padding-left:3px;
+                text-transform: uppercase;
+            }
+            .btnsub{
+                margin-top:20px;
+                padding: 5px 70px;
+                font-size: 18px;
+                color: #fff;
+                border-radius: 5px !important;
+            }
+            .rightSide .bankImg{
+                width: 230px;
+                height: 230px;
+                border:5px solid #b9c6de;
+                border-radius: 50%;
+                line-height: 20px;
+                margin: auto;
+                text-align: center;
+                padding: 20px;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+            }
+            .rightSide .bankImg img{
+                width:100%;
+                height:100%;
+                object-fit: contain;
+            }
+        </style>
+
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/webcam.min.js"></script>
+    </head>
+
+    <body>
+        <?php
+        //vr_property_details
+        $visitorID = $_REQUEST['visitorID'];
+        $quevisitor = "SELECT * FROM visitor_requirement WHERE vr_visitor_id = '$visitorID' order by vr_id DESC ";
+        $resvisitordetail = mysqli_query($conn, $quevisitor);
+        $rowvisitorDetail = mysqli_fetch_array($resvisitordetail);
+        ?>
+        <h1 align="center"> VISITOR REQUIREMENT</h1>
+        <table style="font-size:15px;">
+            <th style="color:#800000;">CITY DETAILS:-</th>
+            <tr>
+                <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:380px;" >
+                    <b> City:</b>     <?php echo $rowvisitorDetail['vr_city']; ?>
+                </td>
+                <td class="textBoxCurve1px" style="color:#00000; font-weight: 200;width:380px;">
+                    <b> Moving From:</b>     <?php echo $rowvisitorDetail['vr_moving_from']; ?>   
+                </td>
+                <td class="textBoxCurve1px" style="color:#00000; font-weight: 200;width:380px;">
+                    <b> Moving To:</b>   <?php echo $rowvisitorDetail['vr_moving_to']; ?>
+                </td>                
+            </tr>
+                    </table><!-- <table> -->
+        <table style="font-size:15px;">
+            <th style="color:#800000;">Inspection:-</th>
+            <tr>  <td class="textBoxCurve1px" style="color:#00000; font-weight: 200;width:380px;">
+                    <?php
+                    if ($rowvisitorDetail['vr_inspection'] == '') {
+                        echo 'NO';
+                    } else {
+                        echo 'YES';
+                    }
+                    ?>
+                </td>
+            </tr></table>
+        <table>
+            <th style="color:#800000;">BUILDING DETAILS:-</th>
+            <tr>
+                <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                    <b> Source Floor No:</b>     <?php echo $rowvisitorDetail['vr_moving_from_floor_no']; ?>
+                </td>
+                <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                    <b> LIFT Service:</b>     <?php
+                    if ($rowvisitorDetail['vr_moving_from_lift'] != 'checked') {
+                        echo 'NO';
+                    } else {
+                        echo 'YES';
+                    }
+                    ?>
+                </td>
+                <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                    <b> Destination Floor No:</b>     <?php echo $rowvisitorDetail['vr_moving_to_floor_no']; ?>
+                </td>
+                <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                    <b> LIFT Service:</b>     <?php
+                    if ($rowvisitorDetail['vr_moving_to_lift'] != 'checked') {
+                        echo 'NO';
+                    } else {
+                        echo 'YES';
+                    }
+                    ?>   
+                </td>
+            </tr>
+            <th style="color:#800000;">PROPERTY DETAILS:-</th>
+            <?php if ($rowvisitorDetail['vr_property_details'] == '1 RK') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 TV & TV Stand:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>2 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>
+
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 10 Carton Box:</b>     <?php echo $rowvisitorDetail['vr_carton_box']; ?>
+                    </td>
+                </tr>
+            <?php } else if ($rowvisitorDetail['vr_property_details'] == '1 BHK LITE') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 TV & TV Stand:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>2 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>                    
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:300px;">
+                        <b> 10 + Carton Box:</b>     <?php echo $rowvisitorDetail['vr_carton_box']; ?>
+                    </td>
+                </tr>
+            <?php } else if ($rowvisitorDetail['vr_property_details'] == '1 BHK HEAVY') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 TV & TV Stand:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>2 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>                    
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 10 + Carton Box:</b>     <?php echo $rowvisitorDetail['vr_carton_box']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Cooler:</b>     <?php echo $rowvisitorDetail['vr_cooler']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Bed:</b>     <?php echo $rowvisitorDetail['vr_single_cot']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>Kitchen item:</b>     <?php echo $rowvisitorDetail['vr_kitchen']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Wardrobe:</b>     <?php echo $rowvisitorDetail['vr_wardrobe']; ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Tea Table:</b>     <?php echo $rowvisitorDetail['vr_table']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 dinning Table:</b>     <?php echo $rowvisitorDetail['vr_dinning_table']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 AC:</b>     <?php echo $rowvisitorDetail['vr_ac']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Extra Almirah:</b>     <?php echo $rowvisitorDetail['vr_almirah']; ?>
+                    </td>
+                </tr>
+            <?php } else if ($rowvisitorDetail['vr_property_details'] == '2 BHK LITE') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 sofa(3+2):</b>     <?php echo $rowvisitorDetail['vr_sofa']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>1 center table:</b>     <?php echo $rowvisitorDetail['vr_dinning_table']; ?>                    
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_single_cot']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                </tr>
+                <tr>                 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Cooler:</b>     <?php echo $rowvisitorDetail['vr_cooler']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Bed:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>Kitchen item:</b>     <?php echo $rowvisitorDetail['vr_kitchen']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>2 door wardrobe:</b>     <?php echo $rowvisitorDetail['vr_wardrobe']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Table:</b>     <?php echo $rowvisitorDetail['vr_table']; ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>2 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 AC:</b>     <?php echo $rowvisitorDetail['vr_ac']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 iron Almirah:</b>     <?php echo $rowvisitorDetail['vr_almirah']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV stand:</b>     <?php echo $rowvisitorDetail['vr_tv_stand']; ?>
+                    </td>
+                </tr>
+            <?php } else if ($rowvisitorDetail['vr_property_details'] == '2 BHK HEAVY') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 sofa(3+2):</b>     <?php echo $rowvisitorDetail['vr_sofa']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>1 center table:</b>     <?php echo $rowvisitorDetail['vr_dinning_table']; ?>                    
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_single_cot']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                </tr>
+                <tr>                 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Cooler:</b>     <?php echo $rowvisitorDetail['vr_cooler']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Bed:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>Kitchen item:</b>     <?php echo $rowvisitorDetail['vr_kitchen']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>2 door wardrobe:</b>     <?php echo $rowvisitorDetail['vr_wardrobe']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Table:</b>     <?php echo $rowvisitorDetail['vr_table']; ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>8 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 AC:</b>     <?php echo $rowvisitorDetail['vr_ac']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 iron Almirah:</b>     <?php echo $rowvisitorDetail['vr_almirah']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV stand:</b>     <?php echo $rowvisitorDetail['vr_tv_stand']; ?>
+                    </td>
+                </tr>
+            <?php } else if ($rowvisitorDetail['vr_property_details'] == '3 BHK') { ?>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> SIZE:</b>     <?php echo $rowvisitorDetail['vr_property_details']; ?>
+                    </td>              
+                </tr><!-- comment -->
+                <th style="color:#800000;">STUFF DETAILS:-</th>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 sofa(3+2):</b>     <?php echo $rowvisitorDetail['vr_sofa']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b>1 center table:</b>     <?php echo $rowvisitorDetail['vr_dinning_table']; ?>                    
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Washing Machine:</b>     <?php echo $rowvisitorDetail['vr_washing_machine']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" width="200px" style="color:#00000; font-weight: 200;">
+                        <b> 1 Single Cot:</b>     <?php echo $rowvisitorDetail['vr_single_cot']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Fridge:</b>     <?php echo $rowvisitorDetail['vr_fridge']; ?>
+                    </td>
+                </tr>
+                <tr>                 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Cooler:</b>     <?php echo $rowvisitorDetail['vr_cooler']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 Double Bed:</b>     <?php echo $rowvisitorDetail['vr_bed']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>Kitchen item:</b>     <?php echo $rowvisitorDetail['vr_kitchen']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>2 door wardrobe:</b>     <?php echo $rowvisitorDetail['vr_wardrobe']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b> 1 Table:</b>     <?php echo $rowvisitorDetail['vr_table']; ?>
+                    </td>
+                </tr>
+                <tr> 
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>8 Chairs:</b>     <?php echo $rowvisitorDetail['vr_chair']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>2 AC:</b>     <?php echo $rowvisitorDetail['vr_ac']; ?>
+                    </td><!-- comment -->
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 iron Almirah:</b>     <?php echo $rowvisitorDetail['vr_almirah']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV:</b>     <?php echo $rowvisitorDetail['vr_tv']; ?>
+                    </td>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 TV stand:</b>     <?php echo $rowvisitorDetail['vr_tv_stand']; ?>
+                    </td>                    
+                </tr>
+                <tr>
+                    <td class="textBoxCurve1px" style="color:#00000; font-weight: 200; height: 30px;width:200px;">
+                        <b>1 FAN:</b>     <?php echo $rowvisitorDetail['vr_fan']; ?>
+                    </td>
+                </tr>
+            <?php } ?>
+        </table> <br>
+            <div style="width:900px;text-align: center; margin-top:20px;">
+                <button name="back" id="back" style="color:white;background-color:green;font-size:20px;width:100px;">BACK </button>
+            </div>
+    </body>
+</html>

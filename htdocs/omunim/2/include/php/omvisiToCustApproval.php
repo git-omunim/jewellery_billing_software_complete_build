@@ -1,3 +1,180 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *****************************************************************************************
+ * @tutorial: VISITOR TO CUSTOMER CONVERSION APPROVAL PANEL FILE @AUTHOR:MADHUREE-14MAY2020
+ * *****************************************************************************************
+ * 
+ * Created on 14 MAY, 2020 10:40:31 AM
+ *
+ * @FileName: omvisiToCustApproval.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+
+$staffId = $_SESSION['sessionStaffId'];
+?>
+<?php
+$contactId = $_GET['contactId'];
+//echo 'contactId'.$contactId;
+parse_str(getTableValues("SELECT * FROM visitor WHERE visitor_interest='CUSTOMER'"));
+?>
+<input type="hidden" id="girviIframePopUp" name="girviIframePopUp">
+<!--<div id="iframeContainer" style="position:fixed; width :1000px; height:800px ; visibility : hidden; z-index: 1;overflow-x: hidden; "></div>-->
+<div id="visitorToCustomer">
+    <table border="0" width="100%" align="center">
+        <tr>
+            <td valign="middle" align="center" width="90%">
+                <div class="textLabelHeading" style="margin-top:2%;margin-bottom: 2%;margin-left: 7%">
+                    VISITOR TO CUSTOMER APPROVAL PANEL
+                </div>
+            </td>
+            <td valign="middle" align="center" width="10%">
+                <div id="main_ajax_loading_div" style="visibility: hidden; background:none;">
+                    <img src="<?php echo $documentRootBSlash; ?>/images/ajaxMainLoading.gif" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2" colspan="2">
+                <hr color="#B8860B" />
+            </td>
+        </tr>  
+    </table>
+</div>
+<div id="customerStatusChangeDiv">
+    <table style="width:100%" align="center" border="0">
+        <tr>
+            <td align="center" class="fs_13 bold brown" title="CUSTOMER NAME">
+                <div class="fs_14 bold brown">CUSTOMER NAME</div>
+            </td>
+            <td align="center" class="fs_13 bold brown" title="CUSTOMER MOBILE">
+                <div class="fs_14 bold brown">CUSTOMER MOBILE</div>
+            </td>
+            <td align="center" class="ff_calibri fs_14 brown" title="CUSTOMER CITY">
+                <div class="fs_14 bold brown">CUSTOMER CITY</div>
+            </td>
+            <td align="center" class="ff_calibri fs_14 brown" title="CUSTOMER STATE">
+                <div class="fs_14 bold brown">CUSTOMER STATE</div>
+            </td>
+            <td align="center" class="ff_calibri fs_14 brown" title="CUSTOMER EMAIL">
+                <div class="fs_14 bold brown">SELECT FIRM</div>
+            </td>
+            <td align="center" class="ff_calibri fs_14 brown" title="CUSTOMER STATUS">
+                <div class="fs_14 bold brown">SELECT CUST. STATUS</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6"><div class="hrGrey" style="margin-top:1%;margin-bottom: 1%;"></div></td>
+        </tr>
+        <tr>
+            <td align="center" title="CUSTOMER NAME" style="cursor: pointer;">
+                <div class="textLabel14CalibriBlue" onclick="updateCustomerTicketPopupDetails(<?php echo $contactId ?>)"><?php echo strtoupper($contactName); ?></div>
+            </td>
+            <td align="center" title="CUSTOMER MOBILE">
+                <div class="textLabel14CalibriBlue" ><?php echo strtoupper($contactPhnNo); ?></div>
+            </td>
+            <td align="center" title="CUSTOMER CITY">
+                <div class="textLabel14CalibriBlue" ><?php echo strtoupper($contatCity); ?></div>
+            </td>
+            <td align="center" title="CUSTOMER STATE">
+                <div class="textLabel14CalibriBlue" ><?php echo strtoupper($contatState); ?></div>
+            </td>
+            <td align="center" title="CUSTOMER STATUS">
+                <div class="selectStyledBorderLess background_transparent">
+                    <input type="hidden" id="documentRootPath" name="documentRootPath" value="<?php echo $documentRootBSlash; ?>">
+                    <select id="user_firm" name="user_firm" class="textLabel14CalibriBlackMiddle" value="" >
+                        <option class="textLabel14CalibriBlue" value="NotSelected">SELECT FIRM NAME</option>
+                        <?php
+                        if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                            $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_type IN ('Public','Personal') and firm_own_id='$_SESSION[sessionOwnerId]' order by firm_since desc";
+                            $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+                            while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+                                if ($gbLanguage == 'English') {
+                                    $firmName = om_strtoupper($rowPerFirm['firm_name']);
+                                } else {
+                                    $firmName = $rowPerFirm['firm_name'];
+                                }
+                                if ($rowPerFirm['firm_type'] == "Public") {
+                                    echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-blue\"" . ">$firmName</OPTION>";
+                                } else {
+                                    echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-maron\"" . ">$firmName</OPTION>";
+                                }
+                            }
+                        } else if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                            $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' order by firm_since desc";
+                            $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+                            while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+                                if ($gbLanguage == 'English') {
+                                    $firmName = om_strtoupper($rowPerFirm['firm_name']);
+                                } else {
+                                    $firmName = $rowPerFirm['firm_name'];
+                                }
+                                if ($rowPerFirm['firm_type'] == "Public") {
+                                    echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-blue\"" . ">$firmName</OPTION>";
+                                } else {
+                                    echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-maron\"" . ">$firmName</OPTION>";
+                                }
+                            }
+                        }
+                        ?>
+                    </select>
+                </div>
+            </td>
+            <td align="center" title="CUSTOMER STATUS">
+                <div class="selectStyledBorderLess background_transparent">
+                    <input type="hidden" id="documentRootPath" name="documentRootPath" value="<?php echo $documentRootBSlash; ?>">
+                    <?php if ($staffId != '' && $staffId != NULL) { ?>
+                        <select id="customer_status" name="customer_status" class="textLabel14CalibriBlackMiddle" disabled>
+                            <option class="textLabel14CalibriBlue" value="PENDING">CUSTOMER PENDING</option>
+                            <option class="textLabel14CalibriBlue" value="APPROVE">CUSTOMER APPROVED</option>
+                        </select>
+                    <?php } else { ?>
+                        <select id="customer_status" name="customer_status" class="textLabel14CalibriBlackMiddle" value="">
+                            <option class="textLabel14CalibriBlue" value="PENDING">CUSTOMER PENDING</option>
+                            <option class="textLabel14CalibriBlue" value="APPROVE">CUSTOMER APPROVED</option>
+                        </select>
+                    <?php } ?>
+                </div>
+            </td>
+        </tr>
+        <tr><td colspan="3"><div style="margin-top: 6%;"></div></td></tr>
+        <tr>
+            <td colspan="6" align="center">
+                <input id="custUpdate" type="submit" value="APPROVE" style="width: 100px;background-color: #059BD8;height: 26px;border:solid 0px #000000;
+                       font-family:Calibri;font-size:15px;font-weight:bold;cursor:pointer;color: white" 
+                       onclick="javasricpt:if (document.getElementById('user_firm').value === 'NotSelected' || document.getElementById('user_firm').value === '') {
+                                   alert('Please Select Firm !');document.getElementById('user_firm').focus();
+                                   return false;
+                               }if (document.getElementById('customer_status').value !== 'APPROVE') {
+                                   alert('Please Change Customer Status To Approve !');document.getElementById('customer_status').focus();
+                                   return false;
+                               }
+                               changeCustomerApprovalStatusStatus(document.getElementById('user_firm').value, document.getElementById('customer_status').value, '<?php echo $contactId; ?>', 'CustomerApprovalPanel');"/>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,3 +1,540 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 04-SEP-2019 10:33 AM
+ *
+ * @FileName: omsuppscag.php 
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+//require_once '../../omGlobal.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+//  if ($panelName == '' || $panelName == NULL){
+$panelDivName = $_REQUEST['panelDivName'];
+$chitSuppId = $_REQUEST['chitSuppId'];
+$chitId = $_REQUEST['chitId'];
+//  }
+//echo '$chitCustId=='.$chitCustId;
+?>
+<?php if ($themeName == 'Universe') {
+    ?>
+    <div id="supplierListPrintDiv" style="margin-top: 10px; background: #fff; padding: 30px 30px 40px 30px;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="portlet-title caption font-green">
+                    <h4 class="caption-subject bold uppercase">Supplier List</h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="actions" style="text-align:right;">
+                    <a class="btn btn-circle btn-icon-only btn-default" href="#" style="border:none;">
+                        <i class="icon-close"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive" style="margin-top: 15px;">
+            <table class="table table-striped table-bordered table-hover table-checkable order-column">
+                <div class="btn-group pull-right" style="padding-bottom: 10px;">
+                    <button class="btn" data-toggle="dropdown" style="color: #fff;background: #f14c26;">Tools
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-print"></i> Print </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-file-pdf-o"></i> Save as PDF </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <i class="fa fa-file-excel-o"></i> Export to Excel </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="girviPanelTrId"></div>
+                <thead>
+                    <tr>
+                        <th style="text-align: center;">Redirect to</th>
+                        <th style="text-align: center;">Supplier name</th>
+                        <th style="text-align: center;">Father/Spouse Name</th>
+                        <th style="text-align: center;">Village / City / State</th>
+                        <th style="text-align: center;">Address</th>
+                        <th style="text-align: center;">Mobile No.</th>
+                        <th style="text-align: center;">Firm Name</th>
+                        <th style="text-align: center;">User</th>
+                    </tr>
+                </thead>
+                <?php
+                $totalSupplier = 0;
+                $suppHomeImage = 1;
+                $suppUdhaarImage = 1;
+                $suppSellPurchaseImage = 1; //SellPurchase Image Var Added @AUTHOR:PRIYA13FEB13
+                //Customer Name
+                $suppFNameSrchStr = $_POST['suppFName'];
+                $suppLNameSrchStr = $_POST['suppLName'];
+                $suppFatherOrSpouseNameSrchStr = $_POST['suppFatherOrSpouseName'];
+                $suppCitySrchStr = $_POST['suppCity'];
+                $suppMobNoSrchStr = $_POST['suppMobNo'];
+                $suppFirmIdSrchStr = $_POST['supptFirmId'];
+
+                if ($suppFNameSrchStr == '' &&
+                        $suppLNameSrchStr == '' &&
+                        $suppFatherOrSpouseNameSrchStr == '' &&
+                        $suppCitySrchStr == '' &&
+                        $suppMobNoSrchStr == '' &&
+                        $suppFirmIdSrchStr == '') {
+                    $suppFNameSrchStr = $_GET['suppFName'];
+                    $suppLNameSrchStr = $_GET['suppLName'];
+                    $suppFatherOrSpouseNameSrchStr = $_GET['suppFatherOrSpouseName'];
+                    $suppCitySrchStr = $_GET['suppCity'];
+                    $suppMobNoSrchStr = $_GET['suppMobNo'];
+                    $suppFirmIdSrchStr = $_GET['suppFirmId'];
+                }
+                if ($suppFNameSrchStr != NULL || $suppFNameSrchStr != '' ||
+                        $suppLNameSrchStr != NULL || $suppLNameSrchStr != '' ||
+                        $suppFatherOrSpouseNameSrchStr != NULL || $suppFatherOrSpouseNameSrchStr != '' ||
+                        $suppCitySrchStr != NULL || $suppCitySrchStr != '' ||
+                        $suppMobNoSrchStr != NULL || $suppMobNoSrchStr != '' ||
+                        $suppFirmIdSrchStr != NULL || $suppFirmIdSrchStr != '') {
+
+                    $suppFNameSrchStr = trim($suppFNameSrchStr);
+                    $suppLNameSrchStr = trim($suppLNameSrchStr);
+                    $suppFatherOrSpouseNameSrchStr = trim($suppFatherOrSpouseNameSrchStr);
+                    if ($suppFatherOrSpouseNameSrchStr != NULL || $suppFatherOrSpouseNameSrchStr != '')
+                        $suppFatherOrSpouseNameWithUnderscore = '_' . $suppFatherOrSpouseNameSrchStr;
+                    $suppCitySrchStr = trim($suppCitySrchStr);
+                    $suppMobNoSrchStr = trim($suppMobNoSrchStr);
+                    $suppFirmIdSrchStr = trim($suppFirmIdSrchStr);
+
+                    if (($suppFNameSrchStr != NULL || $suppFNameSrchStr != '')) {
+
+                        $suppNameStr = explode(" ", $suppFNameSrchStr);
+
+                        $suppFNameSrchStr = $suppNameStr[0];
+
+                        if ($suppLNameSrchStr == '' || $suppLNameSrchStr == NULL) {
+                            if ($suppNameStr[1] != '' or $suppNameStr[1] != null) {
+                                $suppLNameSrchStr = $suppNameStr[1];
+                            }
+                        } else {
+                            if ($suppNameStr[1] != '' or $suppNameStr[1] != null) {
+                                $suppFNameSrchStr = $suppNameStr[0] . ' ' . $suppNameStr[1];
+                            }
+                        }
+
+                        if ($suppNameStr[2] != '' or $suppNameStr[2] != null) {
+                            $suppFNameSrchStr = $suppNameStr[0] . ' ' . $suppNameStr[1];
+                            $suppLNameSrchStr = $suppNameStr[2];
+                        }
+                    }
+
+                    // how many rows to show per page
+                    $perRowsPerPage = 10;
+                    $doubleLimit = $perRowsPerPage * 2;
+                    // by default we show first page
+                    $perPageNum = 1;
+
+                    // if $_GET['page'] defined, use it as page number
+                    if (isset($_GET['page'])) {
+                        $perPageNum = $_GET['page'];
+                    }
+
+                    // counting the offset
+                    $perOffset = ($perPageNum - 1) * $perRowsPerPage;
+
+                    if (isset($_GET['selFirmId'])) {
+                        $selFirmId = $_GET['selFirmId'];
+                    } else {
+                        //if not selected assign session firm @AUTHOR: SANDY10JUL13
+                        $selFirmId = $_SESSION['setFirmSession'];
+                    }
+                    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                    }
+                    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+                        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+                        $strFrmId = '0';
+                        //Set String for Public Firms
+                        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                            $strFrmId = $strFrmId . ",";
+                            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+                        }
+                    } else {
+                        $strFrmId = $selFirmId;
+                    }
+
+                    if ($suppFirmIdSrchStr == 'NotSelected' || $suppFirmIdSrchStr == 'NULL' || $suppFirmIdSrchStr == '') {
+                        $suppFirmIdSrchStr = '';
+                    } else {
+                        $strFrmId = $suppFirmIdSrchStr;
+                    }
+                    $ownOIPassStr = "and user_firm_id IN ($strFrmId)";
+                    $arrSrchLbl = array('user_fname', 'user_lname', 'user_father_name', 'user_village', 'user_mobile', 'user_firm_id');
+                    $arrSrchVal = array($suppFNameSrchStr, $suppLNameSrchStr, $suppFatherOrSpouseNameWithUnderscore, $suppCitySrchStr, $suppMobNoSrchStr, $suppFirmIdSrchStr);
+
+                    $maxSrchCount = 420;
+
+                    $i = 0;
+                    while ($totalSupplier <= 10 && $i < 6) {
+                        $j = 6;
+                        while ($totalSupplier <= 10 && $j >= 0) {
+                            $searchStr = '';
+                            for ($k = $i; $k < $j; $k++) {
+                                if ($arrSrchVal[$k] != NULL && $arrSrchVal[$k] != '' && $arrSrchVal[$k] != 'undefined') {
+                                    if ($arrSrchLbl[$k] == 'user_village' && $totalSupplier <= 10 && $j < 6) {
+                                        $arrSrchLbl[$k] = 'user_city';
+                                    }
+                                    if ($arrSrchLbl[$k] == 'user_city' && $totalSupplier <= 10 && $j < 5) {
+                                        $arrSrchLbl[$k] = 'user_state';
+                                    }
+                                    if ($arrSrchLbl[$k] == 'user_firm_id') {
+                                        $searchStr = $searchStr . " and $arrSrchLbl[$k] LIKE '$arrSrchVal[$k]'";
+                                    } else {
+                                        $searchStr = $searchStr . " and $arrSrchLbl[$k] LIKE '$arrSrchVal[$k]%'";
+                                    }
+                                }
+                            }
+                            //echo 'Cust1:' . $totalCustomer .' String:' .$searchStr . '<br/>';
+                            if ($searchStr != '')
+                                include 'omsuppscags.php';
+                            $j--;
+                        }
+                        $i++;
+                    }
+                    //echo 'Cust11:' . $totalCustomer .' String:' .$searchStr . '<br/>';
+                }
+                ?>
+            </table>
+        </div>
+    </div>
+    <!--END UNIVERSE THEME-->
+<?php } else { ?>
+    <div id="supplierListPrintDiv"> <!--div to pass for printing @AUTHOR: SANDY28OCT13---->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <div id="girviPanelTrId"></div>
+            <tr align="center">
+                <td align="center">
+                    <div class="spaceLeft20">
+                        <h2><span class="textLabel16CalibriBoldGreen">Supplier List -</span></h2>
+                    </div>
+                </td>
+                <td valign="middle" align="right">
+                    <div id="ajaxLoadShowSearchGirviDiv" style="visibility: hidden" class="blackMess11">
+                        <?php include 'omzaajld.php'; ?>
+                    </div>
+                </td>
+            </tr>
+            <tr align="center">
+                <td align="center" colspan="2">
+                    <form id="getSuppAddGirviPanel" name="getSuppAddGirviPanel" method="post"
+                          action="javascript:getSuppAddGirviPanel();">
+                        <div class="spaceLeft20">
+                            <table width="100%" border="0" cellspacing="2" cellpadding="1">
+                                <tr>
+                                    <td align="left"></td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Supplier Name</span>
+                                    </td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Father / Spouse Name</span>
+                                    </td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Village / City / State</span>
+                                    </td>
+                                    <!--Start code to add address @Author:PRIYA19FEB14--->
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Address</span>
+                                    </td>
+                                    <!--End code to add address @Author:PRIYA19FEB14--->
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Mobile No</span>
+                                    </td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Firm Name</span>
+                                    </td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">User</span><!---column added @Author:PRIYA17DEC14--->
+                                    </td>
+                                    <td>
+                                        <span class="textLabel16CalibriBoldBlue">Status</span><!---column added @Author:BAJRANG6FEB18--->
+                                    </td>
+                                </tr>
+                                <?php
+                                $totalSupplier = 0;
+                                $suppHomeImage = 1;
+                                $suppUdhaarImage = 1;
+                                $suppSellPurchaseImage = 1; //SellPurchase Image Var Added @AUTHOR:PRIYA13FEB13
+                                //Customer Name
+                                $suppFNameSrchStr = $_POST['suppFName'];
+                                $suppLNameSrchStr = $_POST['suppLName'];
+                                $suppFatherOrSpouseNameSrchStr = $_POST['suppFatherOrSpouseName'];
+                                $suppCitySrchStr = $_POST['suppCity'];
+                                $suppMobNoSrchStr = $_POST['suppMobNo'];
+                                $suppFirmIdSrchStr = $_POST['suppFirmId'];
+
+                                if ($suppFNameSrchStr == '' &&
+                                        $suppLNameSrchStr == '' &&
+                                        $suppFatherOrSpouseNameSrchStr == '' &&
+                                        $suppCitySrchStr == '' &&
+                                        $suppMobNoSrchStr == '' &&
+                                        $suppFirmIdSrchStr == '') {
+                                    $suppFNameSrchStr = $_GET['suppFName'];
+                                    $suppLNameSrchStr = $_GET['suppLName'];
+                                    $suppFatherOrSpouseNameSrchStr = $_GET['suppFatherOrSpouseName'];
+                                    $suppCitySrchStr = $_GET['suppCity'];
+                                    $suppMobNoSrchStr = $_GET['suppMobNo'];
+                                    $suppFirmIdSrchStr = $_GET['suppFirmId'];
+                                }
+                                //echo $custFNameSrchStr . ' L: ' . $custLNameSrchStr . ' F: ' . $custFatherOrSpouseNameSrchStr . ' C: ' . $custCitySrchStr;
+                                if ($suppFNameSrchStr != NULL || $suppFNameSrchStr != '' ||
+                                        $suppLNameSrchStr != NULL || $suppLNameSrchStr != '' ||
+                                        $suppFatherOrSpouseNameSrchStr != NULL || $suppFatherOrSpouseNameSrchStr != '' ||
+                                        $suppCitySrchStr != NULL || $suppCitySrchStr != '' ||
+                                        $suppMobNoSrchStr != NULL || $suppMobNoSrchStr != '' ||
+                                        $suppFirmIdSrchStr != NULL || $suppFirmIdSrchStr != '') {
+
+                                    $suppFNameSrchStr = trim($suppFNameSrchStr);
+                                    $suppLNameSrchStr = trim($suppLNameSrchStr);
+                                    $suppFatherOrSpouseNameSrchStr = trim($suppFatherOrSpouseNameSrchStr);
+                                    if ($suppFatherOrSpouseNameSrchStr != NULL || $suppFatherOrSpouseNameSrchStr != '')
+                                        $suppFatherOrSpouseNameWithUnderscore = '_' . $suppFatherOrSpouseNameSrchStr;
+                                    $suppCitySrchStr = trim($suppCitySrchStr);
+                                    $suppMobNoSrchStr = trim($suppMobNoSrchStr);
+                                    $suppFirmIdSrchStr = trim($suppFirmIdSrchStr);
+
+                                    if (($suppFNameSrchStr != NULL || $suppFNameSrchStr != '')) {
+
+                                        $suppNameStr = explode(" ", $suppFNameSrchStr);
+
+                                        $suppFNameSrchStr = $suppNameStr[0];
+
+                                        if ($suppLNameSrchStr == '' || $suppLNameSrchStr == NULL) {
+                                            if ($suppNameStr[1] != '' or $suppNameStr[1] != null) {
+                                                $suppLNameSrchStr = $suppNameStr[1];
+                                            }
+                                        } else {
+                                            if ($suppNameStr[1] != '' or $suppNameStr[1] != null) {
+                                                $suppFNameSrchStr = $suppNameStr[0] . ' ' . $suppNameStr[1];
+                                            }
+                                        }
+
+                                        if ($suppNameStr[2] != '' or $suppNameStr[2] != null) {
+                                            $suppFNameSrchStr = $suppNameStr[0] . ' ' . $suppNameStr[1];
+                                            $suppLNameSrchStr = $suppNameStr[2];
+                                        }
+                                    }
+                                    // how many rows to show per page
+                                    $perRowsPerPage = 10;
+                                    $doubleLimit = $perRowsPerPage * 2;
+                                    // by default we show first page
+                                    $perPageNum = 1;
+
+                                    // if $_GET['page'] defined, use it as page number
+                                    if (isset($_GET['page'])) {
+                                        $perPageNum = $_GET['page'];
+                                    }
+
+                                    // counting the offset
+                                    $perOffset = ($perPageNum - 1) * $perRowsPerPage;
+
+
+                                    //                                if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                                    //                                    $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                                    //                                    $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+                                    //
+    //                                    $strFrmId = '0';
+                                    //
+    //                                    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+                                    //                                        $strFrmId = $strFrmId . ",";
+                                    //                                        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+                                    //                                    }
+                                    //                                }
+                                    if (isset($_GET['selFirmId'])) {
+                                        $selFirmId = $_GET['selFirmId'];
+                                    } else {
+                                        //if not selected assign session firm @AUTHOR: SANDY10JUL13
+                                        $selFirmId = $_SESSION['setFirmSession'];
+                                    }
+                                    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                                        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                                    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                                        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                                    }
+                                    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+                                        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+                                        $strFrmId = '0';
+                                        //Set String for Public Firms
+                                        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                                            $strFrmId = $strFrmId . ",";
+                                            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+                                        }
+                                    } else {
+                                        $strFrmId = $selFirmId;
+                                    }
+                                    if ($suppFirmIdSrchStr == 'NotSelected' || $suppFirmIdSrchStr == 'NULL' || $suppFirmIdSrchStr == '') {
+                                        $suppFirmIdSrchStr = '';
+                                    } else {
+                                        $strFrmId = $suppFirmIdSrchStr;
+                                    }
+                                    //if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                                    $ownOIPassStr = "and user_firm_id IN ($strFrmId)";
+                                    //} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                                    //    $ownOIPassStr = '';
+                                    //}
+                                    //<!--Start Code To Add Var custMobile and custFirmId @Author:SANT09JAN16 -->
+                                    $arrSrchLbl = array('user_fname', 'user_lname', 'user_father_name', 'user_village', 'user_mobile', 'user_firm_id');
+                                    $arrSrchVal = array($suppFNameSrchStr, $suppLNameSrchStr, $suppFatherOrSpouseNameWithUnderscore, $suppCitySrchStr, $suppMobNoSrchStr, $suppFirmIdSrchStr);
+
+                                    $maxSrchCount = 420;
+
+                                    //echo 'Cust0:' . $totalCustomer . ' String:' . $searchStr . '<br/>';
+                                    $i = 0;
+                                    while ($totalSupplier <= 0 && $i < 6) {
+                                        $j = 6;
+                                        while ($totalSupplier <= 0 && $j >= 0) {
+                                            $searchStr = '';
+                                            for ($k = $i; $k < $j; $k++) {
+                                                if ($arrSrchVal[$k] != NULL && $arrSrchVal[$k] != '' && $arrSrchVal[$k] != 'undefined') {
+                                                    if ($arrSrchLbl[$k] == 'user_village' && $totalSupplier <= 0 && $j < 6) {
+                                                        $arrSrchLbl[$k] = 'user_city';
+                                                    }
+                                                    if ($arrSrchLbl[$k] == 'user_city' && $totalSupplier <= 0 && $j < 5) {
+                                                        $arrSrchLbl[$k] = 'user_state';
+                                                    }
+                                                    if ($arrSrchLbl[$k] == 'user_firm_id') {
+                                                        $searchStr = $searchStr . " and $arrSrchLbl[$k] LIKE '$arrSrchVal[$k]'";                                                     
+                                                    } else {
+                                                        if ($arrSrchLbl[$k] == 'user_village') {
+                                                            $searchStr = $searchStr . " and ($arrSrchLbl[$k] LIKE '$arrSrchVal[$k]%' OR user_city LIKE '$arrSrchVal[$k]%')";
+                                                        } else {
+                                                            $searchStr = $searchStr . " and $arrSrchLbl[$k] LIKE '$arrSrchVal[$k]%'";
+                                                        }
+                                                    }
+                                                    //echo 'Cust1:' . $totalCustomer . ' String:' . $searchStr . ' $arrSrchLbl[$k]:' . $arrSrchLbl[$k] . '<br/>';
+                                                }
+                                            }
+                                            //echo 'Cust1:' . $totalCustomer .' String:' .$searchStr .' $arrSrchLbl[$k]:' .$arrSrchLbl[$k] . '<br/>';
+                                            if ($searchStr != '')
+                                                include 'omsuppscags.php';
+                                            $j--;
+                                        }
+                                        $i++;
+                                    }
+                                    //echo 'Cust11:' . $totalCustomer . ' String:' . $searchStr . '<br/>';
+                                    //<!--End Code To Add Var custMobile and custFirmId @Author:SANT09JAN16 -->
+                                    // 
+                                    //                            if ($totalCustomer <= 0) {
+                                    //                                if (($custFNameSrchStr != NULL || $custFNameSrchStr != '') &&
+                                    //                                        ($custLNameSrchStr != NULL || $custLNameSrchStr != '') &&
+                                    //                                        ($custFatherOrSpouseNameSrchStr != NULL || $custFatherOrSpouseNameSrchStr != '') &&
+                                    //                                        ($custCitySrchStr != NULL || $custCitySrchStr != '') &&
+                                    //                                        ($custMobNoSrchStr != NULL || $custMobNoSrchStr != '') &&
+                                    //                                        ($custFirmIdSrchStr != NULL || $custFirmIdSrchStr != '')) {
+                                    //
+    //                                    $searchStr = "and cust_fname LIKE '$custFNameSrchStr%' and cust_lname LIKE '$custLNameSrchStr%' 
+                                    //                                        and cust_father_name LIKE '_$custFatherOrSpouseName%' and cust_city LIKE '$custCitySrchStr%'";
+                                    //
+    //                                    include 'omccscags.php';
+                                    //                                }
+                                    //                            }
+                                }
+                                ?>
+                            </table>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <?php
+            if ($totalNextSupplier > 0) {
+                ?>
+                <tr align="right" class="noPrint"><!---TO ADD NO PRINT CLASS @AUTHOR: SANDY11DEC13---->
+                    <!--Start Code To Add Var custMobile and custFirmId @Author:PRIYA27AUG13 -->
+                    <td align="right" colspan="2">
+                        <div id="ajaxLoadNavSrchSuppToAddGirviButtDiv">
+                            <table border="0" cellpadding="2" cellspacing="0" align="right">
+                                <tr>
+                                    <?php
+                                    if ($perPageNum > 1) {
+                                        ?>
+                                        <td align="right">
+                                            <form name="prev_supp" id="prev_supp"
+                                                  action="javascript:navigationSrchSuppToAddGirvi(<?php echo $perPageNum - 1; ?>,'<?php echo $suppFNameSrchStr; ?>','<?php echo $suppLNameSrchStr; ?>','<?php echo $suppFatherOrSpouseNameSrchStr; ?>','<?php echo $suppCitySrchStr; ?>','<?php echo $suppMobNoSrchStr; ?>','<?php echo $suppFirmIdSrchStr; ?>');"
+                                                  method="get"><input type="submit" value="Previous" class="frm-btn"
+                                                                maxlength="30" size="15" /></form>
+                                        </td>
+                                        <?php
+                                    }
+                                    ?>
+                                    <?php
+                                    if ($totalSupplier > $perRowsPerPage) {
+                                        ?>
+                                        <td align="right">
+                                            <form name="next_supp" id="next_supp"
+                                                  action="javascript:navigationSrchSuppToAddGirvi(<?php echo $perPageNum + 1; ?>,'<?php echo $suppFNameSrchStr; ?>','<?php echo $suppLNameSrchStr; ?>','<?php echo $suppFatherOrSpouseNameSrchStr; ?>','<?php echo $suppCitySrchStr; ?>','<?php echo $suppMobNoSrchStr; ?>','<?php echo $suppFirmIdSrchStr; ?>');"
+                                                  method="get"><input type="submit" value="Next" class="frm-btn"
+                                                                maxlength="30" size="15" /></form>
+                                        </td>
+                                        <?php
+                                    }
+                                    ?>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <!--End Code To Add Var custMobile and custFirmId @Author:PRIYA27AUG13 -->
+                </tr>
+                <?php
+            }
+            ?>
+            <tr>
+                <td align="center" colspan="2">
+                    <div class="hrGold"></div>
+                </td>
+            </tr>
+            </tr>
+        </table>
+    </div>
+    <!-----------Start to add Print button to print cust list @AUTHOR: SANDY28OCT13 ----------------->
+    <tr>
+        <td align="center" colspan="2" class="noPrint">
+            <?php if ($panelDivName != 'chitfundInfo') { ?>
+                <div id="printButt">
+                    <a style="cursor: pointer;" 
+                       onclick="printGirviListPanel('supplierListPrintDiv')">
+                        <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                             width="32px" height="32px" /> 
+                    </a> 
+                </div>
+            <?php } ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2">
+            <div class="hrGold"></div>
+        </td>
+    </tr>
+    <!-----------End to add Print button to print cust list @AUTHOR: SANDY28OCT13 ----------------->
+<?php } ?>
+<!--END ELSE-->

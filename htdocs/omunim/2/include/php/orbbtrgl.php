@@ -1,3 +1,511 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transferred Girvi Ledger 
+ * **************************************************************************************
+ * 
+ * Created on Jun 8, 2013 11:59:25 AM
+ *
+ * @FileName: orbbtrgl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//CHANGES IN FILE TO ADJUST COLUMN WIDTH @AUTHOR: SANDY12DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'nepal/nepali-date.php';
+$nepali_date = new nepali_date();
+////***********************************************************************************************************************
+//*************************************START CODE TO ADD NEPALI DATE @RENUKA SHARMA NOV2022*****************************//
+//***********************************************************************************************************************
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+//
+/* * ******Start code to add panel indiacator @Author:PRIYA16MAY14************ */
+if ($_SESSION['sessionOwnIndStr'][9] == 'Y') {
+    ?>
+    <div id="girviTransLedgerDetails">
+        <?php
+        $getYearN = $_GET['balanceSheetYear'];
+        $getMonthN = $_GET['balanceSheetMonth'];
+        $getYear = $_GET['balanceSheetYear'];
+        $getMonth = $_GET['balanceSheetMonth'];
+        //
+//        if ($nepaliDateIndicator == 'YES') {
+//            $getMonth = strtoupper($getMonth);
+//            if ($getYear != '') {
+//                // echo '$syear:=' . $syear . '$smonth:' . $smonth . '$sday:=' . $sday;
+//                $nepali_fromdate = new nepali_date();
+//                $getDay = 1;
+//                $english_fromdate = $nepali_fromdate->get_eng_date($getYear, $getMonth, $getDay);
+//                $todayDate = trim($english_fromdate['d']) . ' ' . trim(strtoupper($english_fromdate['M'])) . ' ' . trim($english_fromdate['y']);
+//                $getMonth = strtoupper($english_fromdate['M']);
+//                $getYear = $english_fromdate['y'];
+//            }
+//        }
+        $selFirmId = $_GET['firmId'];
+        if (!isset($selFirmId)) {
+            $firmIdSelected = $_SESSION['setFirmSession'];
+            $selFirmId = $firmIdSelected;
+        } else {
+            $firmIdSelected = $selFirmId;
+        }
+        if ($selFirmId == '' || $selFirmId == NULL) {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='1'";
+        } else {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='$selFirmId'";
+        }
+        $resultFirm = mysqli_query($conn, $qSelectFirm);
+        $rowFirm = mysqli_fetch_array($resultFirm);
+        ?>
+        <div id="balanceSheetHeaderDiv">
+            <table  border="0" cellspacing="0" cellpadding="0"  width="100%" align="center"><!----Class changed @Author:PRIYA25JUN14------------>
+                <tr>
+                    <td colspan="2" align="left">
+                        <table border="0" cellspacing="0" cellpadding="1"  width="100%" align="center">      
+                            <tr>
+                                <td valign="middle" align="left" width="10px">
+                                    <img src="<?php echo $documentRoot; ?>/images/img/money.png" height="20px" alt="" onLoad="setScrollIdFun('headerTable')"/><!----cHANGE IN ID @AUTHOR: SANDY10DEC13--->
+                                </td>
+                                <td>
+                                    <div class="itemAddPnLabels12" style="font-size:16px;">TRANSFERRED LOAN LEDGER</div><!---CHANGES IN CLASS @AUTHOR: SANDY11DEC13--->
+                                </td>
+                                <td valign="middle" align="center"> 
+                                    <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden" class="blackMess11">
+                                        <?php include 'omzaajld.php'; ?>
+                                    </div>
+                                </td>
+                                <td align="left" valign="middle" >
+                                    <form name="get_balance_sheet_form" id="get_balance_sheet_form" 
+                                          action="javascript:getGirviLedger('TransGirvi');" method="post">        
+                                        <!-- *************** Start Code for Year *************** -->
+                                        <?php
+                                        /* if ($getMonth != '' || $getMonth != NULL) {
+                                          $todayMMSel = date("n", strtotime($getMonth)) - 1;
+                                          } else {
+                                          $todayMMSel = date(n) - 1;
+                                          }
+                                          if ($getYear != '' || $getYear != NULL) {
+                                          $todayYear = $getYear;
+                                          } else {
+                                          $todayYear = date(Y);
+                                          }
+                                          $todayMainYear = date(Y);
+                                          $todayMainMM = date(n);
+                                          $todayMM = $todayMMSel + 1;
+                                          if ($todayMainMM <= 3) {
+                                          if ($todayMM <= 3) {
+                                          $finStartYear = $todayYear - 1;
+                                          $finEndYear = $todayYear;
+                                          } else {
+                                          $finStartYear = $todayYear;
+                                          $finEndYear = $todayYear + 1;
+                                          }
+                                          } else {
+                                          //                                    if ($todayMM <= 3) {
+                                          //                                        $finStartYear = $todayYear - 1;
+                                          //                                        $finEndYear = $todayYear;
+                                          //                                    } else {
+                                          //                                        $finStartYear = $todayYear;
+                                          //                                        $finEndYear = $todayYear + 1;
+                                          //                                    }
+                                          if ($todayMM <= 3) {
+                                          $finStartYear = $todayYear - 1;
+                                          $finEndYear = $todayYear;
+                                          } else {
+                                          $finStartYear = $todayYear;
+                                          $finEndYear = $todayYear + 1;
+                                          }
+                                          }
+                                          $optYear[$todayYear] = "selected";comment by @AUTHOR: SANDY07JAN14 */
+                                        /*                                         * *Start to add code @AUTHOR: SANDY07JAN14********** */
+                                       
+                                         if($nepaliDateIndicator == 'YES') {
+                                                if ($getMonth != '' || $getMonth != NULL || $getYear != '' || $getYear != NULL) {
+                                                    $todayDate = Date('d-M-Y');
+                                                    $todaysDay = substr($todayDate, 0, 2);
+                                                    $todayMonth = substr($todayDate, 3, -5);
+                                                    if (preg_match("/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/", $todayMonth)) {
+                                                        // Convert the month abbreviation to its numeric representation (zero-padded)
+                                                        $todayMonth = date('m', strtotime($todayMonth));
+                                                    }
+                                                    $todayYear = substr($todayDate, -4);
+                                                    $date1 = $todaysDay . '-' . $todayMonth . '-' . $todayYear;
+                                                    $startDD = strtotime($date1);
+
+                                                    $date2 = '16' . '-' . 'JULY' . '-' . $todayYear;
+                                                    $nepalifinyrstartDD = strtotime($date2);
+                                                    $date_ne = $nepali_date->get_nepali_date($todayYear, $todayMonth, $todaysDay);
+                                                    $todaysM = $date_ne[m];
+                                                    if ($startDD < $nepalifinyrstartDD) {
+                                                        $finStartYear = $getYear - 1;
+                                                        $finEndYear = $getYear;
+                                                    } else {
+                                                        $finEndYear = $getYear + 1;
+                                                        $finStartYear = $getYear;
+                                                    }
+                                                } else {
+                                                    $todayDate = Date('d-M-Y');
+                                                    $todaysDay = substr($todayDate, 0, 2);
+                                                    $todayMonth = substr($todayDate, 3, -5);
+                                                    if (preg_match("/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/", $todayMonth)) {
+                                                        // Convert the month abbreviation to its numeric representation (zero-padded)
+                                                        $todayMonth = date('m', strtotime($todayMonth));
+                                                    }
+                                                    $todayYear = substr($todayDate, -4);
+                                                    $date1 = $todaysDay . '-' . $todayMonth . '-' . $todayYear;
+                                                    $startDD = strtotime($date1);
+
+                                                    $date2 = '16' . '-' . 'JULY' . '-' . $todayYear;
+                                                    $nepalifinyrstartDD = strtotime($date2);
+                                                    $date_ne = $nepali_date->get_nepali_date($todayYear, $todayMonth, $todaysDay);
+                                                    $todaysM = $date_ne[m];
+                                                    if ($startDD < $nepalifinyrstartDD) {
+                                                        $finStartYear = $date_ne[y] - 1;
+                                                        $finEndYear = $date_ne[y];
+                                                    } else {
+                                                        $finEndYear = $date_ne[y] + 1;
+                                                        $finStartYear = $date_ne[y];
+                                                    }
+                                                    $startyear = $todayYear;
+                                                }
+                                            } else {
+                                        if ($getMonth != '' || $getMonth != NULL) {
+                                            $todayMMSel = date("n", strtotime($getMonth)) - 1;
+                                        } else {
+                                            $todayMMSel = date(n) - 1;
+                                        }
+
+                                        if ($getYear != '' || $getYear != NULL) {
+                                            $todayYear = $getYear;
+                                        } else {
+                                              if ($nepaliDateIndicator == 'YES') { 
+                                                $today = date(d);
+                                                $month = date(m);
+                                                $todayYear = date(Y);
+                                                $date_ne = $nepali_date->get_nepali_date($todayYear,$month,$today);
+                                                $todayYear = $date_ne[y];
+                                             }else{
+                                            $todayYear = date(Y);
+                                             }
+                                        }
+
+                                        $todayMainYear = date(Y);
+                                        $todayMainMM = date(n);
+
+                                        //$finStartYear = $todayYear; comment by @AUTHOR: SANDY05FEB14
+                                        //$finEndYear = $todayYear + 1;comment by @AUTHOR: SANDY05FEB14
+                                        /*                                         * Start to change code @AUTHOR: SANDY05FEB14** */
+                                        if ($todayMainMM > 3 || $todayMMSel > 3 || ($getYear != '' || $getYear != NULL)) {
+                                            $optYear[$todayYear] = "selected";
+                                            $finStartYear = $todayYear;
+                                        } else {
+                                            $optYear[$todayYear - 1] = "selected";
+                                            $finStartYear = $todayYear - 1;
+                                        }
+                                        $finEndYear = $finStartYear + 1;
+                                         }
+                                        /*                                         * End to change code @AUTHOR: SANDY05FEB14** */
+                                        /*                                         * *End to add code @AUTHOR: SANDY07JAN14********** */
+                                        ?> 
+                                        <table valign="top">
+                                            <tr>
+                                                <td valign="middle">
+                                                    <div class="main_link_brown9 paddingTop5" style="font-size:16px;">SELECT FINANCIAL YEAR:</div>
+                                                </td>
+                                                <?php if ($nepaliDateIndicator == 'YES') { ?>
+                                                    <td valign="middle" class="textBoxCurve1px margin1pxAll textLabel16CalibriNormal backFFFFFF" width="165px"><!--To change class @AUTHOR: SANDY29DEC13--->
+                                                        <!--<div class="selectStyledBorderLess backFFFFFF floatLeft" style="width: 100px;">-->
+                                                            <?php
+                                                            $getdayN = 1;
+                                                            $date_nepali = $getdayN . '-' . $getMonthN . '-' . $getYearN;
+                                                            include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliFinancialYr.php';
+                                                            ?>  
+                                                        <!--</div>-->
+                                                    </td>  <?php } else { ?>
+                                                    <td valign="middle" class="textBoxCurve1px margin1pxAll textLabel16CalibriNormal backFFFFFF" width="170px"><!--To change class @AUTHOR: SANDY29DEC13--->
+                                                        <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100px">
+                                                            <select id="balanceSheetYear" name="balanceSheetYear" class="textLabel14CalibriGrey" style="width:100%">
+                                                                <option value="NotSelected">YEAR</option>
+                                                                <?php
+                                                                /*  for ($yy = $finEndYear; $yy >= 1980; $yy--) {
+                                                                  $ly = $yy - 1; //TO get previous year
+                                                                  echo "<option value=\"$ly\" $optYear[$yy]>$ly - $yy</option>";
+                                                                  }
+                                                                  if ($todayMainMM <= 3) {
+                                                                  for ($yy = $todayMainYear; $yy >= 1980; $yy--) {
+                                                                  $ly = $yy - 1; //TO get previous year
+
+                                                                  echo "<option value=\"$yy\" $optYear[$yy]>$ly - $yy</option>";
+                                                                  }
+                                                                  } else {
+                                                                  for ($yy = $todayMainYear; $yy >= 1980; $yy--) {
+                                                                  $ny = $yy + 1; //TO get previous year
+                                                                  echo "<option value=\"$yy\" $optYear[$yy]>$yy - $ny</option>";
+                                                                  }
+                                                                  } comment by @AUTHOR: SANDY07JAN14 */
+                                                                /*                                                                 * *Start to add code @AUTHOR: SANDY07JAN14********** */
+                                                                for ($yy = $todayMainYear; $yy >= 1980; $yy--) {
+                                                                    $ny = $yy + 1; //TO get previous year
+                                                                    echo "<option value=\"$yy\" $optYear[$yy]>$yy - $ny</option>";
+                                                                }//fin year changed @Author:PRIYA03MAR14
+                                                                /*                                                                 * *End to add code @AUTHOR: SANDY07JAN14********** */
+                                                                ?>
+                                                            </select>
+                                                        </div>
+                                                        <!-- *************** Start Code for Month *************** -->
+                                                        <?php
+                                                        $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                        $optMonth[$todayMMSel] = "selected";
+                                                        ?>
+                                                        <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                                        <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                                                            <select id="balanceSheetMonth" name="balanceSheetMonth" class="textLabel14CalibriGrey" style="width:100%"
+                                                                    onkeydown="javascript:  //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                                                            var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                                                    gbMonth = document.getElementById('gbMonthId').value;
+                                                                                    if (gbMonth == 1) {
+                                                                                        if (event.keyCode) {
+                                                                                            var sel = String.fromCharCode(event.keyCode);
+                                                                                            if (sel == 0)
+                                                                                            {
+                                                                                                this.value = arrMonths[9];
+                                                                                            } else if (sel == 1)
+                                                                                            {
+                                                                                                this.value = arrMonths[10];
+                                                                                            } else if (sel == 2)
+                                                                                            {
+                                                                                                this.value = arrMonths[11];
+                                                                                            }
+                                                                                            // this.value = arrMonths[10];
+                                                                                            document.getElementById('gbMonthId').value = 0;
+                                                                                        }
+                                                                                    } else if (event.keyCode) {
+                                                                                        var sel = String.fromCharCode(event.keyCode) - 1;
+                                                                                        this.value = arrMonths[sel];
+                                                                                        if (event.keyCode == 49) {
+                                                                                            document.getElementById('gbMonthId').value = 1;
+                                                                                        }
+                                                                                    } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13">
+                                                                <option value="NotSelected">MON</option>
+                                                                <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                                                $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+                                                                $engmonformat = mysqli_query($conn, $queryengmonformat);
+                                                                $rowengmonformat = mysqli_fetch_array($engmonformat);
+                                                                $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                                                for ($mm = 3; $mm <= 11; $mm++) {
+                                                                    if ($englishMonthFormat == 'displayinnumber') {
+                                                                        $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                                                    } else {
+                                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                                                    }
+                                                                }
+                                                                for ($mm = 0; $mm <= 2; $mm++) {
+                                                                    if ($englishMonthFormat == 'displayinnumber') {
+                                                                        $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                                                    } else {
+                                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                                                    }
+                                                                }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                                                                ?>
+                                                            </select> 
+                                                        </div>
+                                                    </td> <?php } ?>
+                                                <td valign="middle">
+                                                    <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                    <div style="background: #bed8fd;border-radius: 0 5px 5px 0;margin-left:-7px;border: 1px solid #4788e4;border-left: 0;">
+                                                        <?php
+                                                        $inputId = " ";
+                                                        $inputType = 'submit';
+                                                        $inputFieldValue = 'GO';
+                                                        $inputIdButton = " ";
+                                                        $inputNameButton = '';
+                                                        $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                                        // This is the main class for input flied
+                                                        $inputFieldClass = 'btn ' . $om_btn_style_nav;
+                                                        $inputStyle = "border:0;background:transparent; ";
+                                                        $inputLabel = 'GO'; // Display Label below the text box
+//
+                                                        // This class is for Pencil Icon                                                           
+                                                        $inputIconClass = '';
+                                                        $inputPlaceHolder = '';
+                                                        $spanPlaceHolderClass = '';
+                                                        $spanPlaceHolder = '';
+                                                        $inputOnChange = "";
+                                                        $inputOnClickFun = '';
+                                                        $inputKeyUpFun = '';
+                                                        $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                        $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                        $inputMainClassButton = '';           // This is the main division for Button
+                                                        include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                        ?>
+                                                    </div>
+        <!--                                                <input type="submit" value="GO"
+                                                           class="frm-btn" 
+                                                           maxlength="30" size="15" />-->
+                                                    <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </form>
+                                </td>
+                                <td align="center" width="265px">
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                            <td align="right">
+                                                <div id="selectFirmDiv" class="spaceRight20" >
+                                                    <?php
+                                                    $firmPanelName = 'TransGirvi';
+                                                    include 'ombbglfr.php';
+                                                    ?>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+<!--                            <tr>
+                                <td align="center" colspan="6" class="paddingTop4 padBott4">
+                                    <div class="hrGrey"></div>--Change in line @AUTHOR: SANDY12DEC13---
+                                </td>
+                            </tr>-->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div id="balanceSheetDiv">
+                <table width="99%" border="0" cellspacing="0" cellpadding="0" align="center"  onclick="contentEditable = true"  style="border: 1px dashed #c1c1c1;margin-top: 5px;padding: 5px;background: #fcfdda;">
+                    <tr>
+                        <td colspan="2">
+                            <table border="0" cellspacing="2" cellpadding="0" width="100%" >
+                                <tr>
+                                    <td valign="middle" align="center">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td valign="middle" align="center">
+                                                    <div class="main_link_brown12">TRANSFERRED LOAN LEDGER - <span class="itemAddPnLabels12Arial">01/04/</span></div>  
+                                                </td>
+                                                <td valign="middle" align="center">
+                                                    <span class="itemAddPnLabels12Arial"><div id="finStartYearDiv"><?php echo $finStartYear; ?></div></span> 
+                                                </td>
+                                                <td valign="middle" align="center">
+                                                    <div class="main_link_brown12">&nbsp;TO&nbsp;<span class="itemAddPnLabels12Arial">31/03/</span></div>
+                                                </td>
+                                                <!--Start code to change align @Author:PRIYA10FEB14-->
+                                                <td valign="middle" align="center">
+                                                    <span class="itemAddPnLabels12Arial"><div id="finEndYearDiv"><?php echo $finEndYear; ?></div></span> 
+                                                </td>
+                                                <!--End code to change align @Author:PRIYA10FEB14-->
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="middle" align="center">
+                                        <table border="0" cellspacing="2" cellpadding="0">
+                                            <tr>
+                                                <td valign="middle" align="center" width="490px"><!----change in alignment @AUTHOR: SANDY12DEC13------>
+                                                    <div class="itemAddPnLabels12Arial brown" style="font-size:16px;"><?php
+                                                if ($rowFirm['firm_long_name'] != '' || $rowFirm['firm_long_name'] != NULL) {
+                                                    echo $rowFirm['firm_long_name'];
+                                                    if ($rowFirm['firm_address'] != '') {
+                                                        echo ',';
+                                                    }
+                                                }
+                                                    ?>
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td valign="middle" align="center">
+                                                    <div class="itemAddPnLabels12Arial brown"><?php echo $rowFirm['firm_address']; ?></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="marginTop5">
+                                <tr>
+                                    <td  align="center">
+                                        <div id="balanceSheetSubDiv">
+                                            <?php
+                                            include 'orbbtrgd.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                <br/>
+                <tr>
+                    <td align="right" class="noPrint">
+                        <div id="ajaxLoadPrintBalanceSheetDiv" style="visibility: hidden">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                        <a style="cursor: pointer;"  class="noPrint"
+                           onclick="printBalanceSheetDiv('balanceSheetDiv', document.getElementById('get_balance_sheet_form'), 'TransGirvi')">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                                 width="32px" height="32px" />
+                        </a>   <!---Add noprint class @AUTHOR: SANDY10DEC13--->
+                    </td>
+                        <td align="left" class="noPrint">
+                        <div id="ajaxLoadPrintBalanceSheetDiv" style="visibility: hidden">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                        <a style="cursor: pointer;" class="noPrint"
+                           onclick="exportTableToExcel('exportexldiv', 'tableData')">
+                            <svg height="35" width="35" version="1.1" style="margin-left : 7px" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                     viewBox="0 0 504 504" xml:space="preserve">
+                                <circle style="fill:#84DBFF;" cx="252" cy="252" r="252"/>
+                                <polygon style="fill:#324A5E;" points="94.5,389.8 409.5,389.8 409.5,284 371.4,284 371.4,351.7 132.6,351.7 132.6,284 94.5,284 "/>
+                                <polygon style="fill:#F1543F;" points="203.8,208.4 203.8,74.8 300.2,74.8 300.2,208.4 343.8,208.4 252,315.9 160.2,208.4 "/>
+                                </svg>
+                            </a>   <!---Add noprint class @AUTHOR: SANDY10DEC13--->
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <?php } ?>
+    <!-------------End code to add panel indiacator @Author:PRIYA17MAY14--------------->
+

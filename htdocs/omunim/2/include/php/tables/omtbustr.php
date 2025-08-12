@@ -1,3 +1,136 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on 22-Dec-2015 15:45:17 PM
+ *
+ * @FileName: omtbustr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//include '../system/omssopin.php';
+
+$query = "CREATE TABLE IF NOT EXISTS user_transaction (
+utrans_id 		  INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+utrans_owner_id           VARCHAR(16),
+utrans_firm_id		  VARCHAR(16), 
+utrans_user_id            VARCHAR(32),
+utrans_pre_invoice_no     VARCHAR(10),
+utrans_invoice_no         VARCHAR(10),
+utrans_unique_id          VARCHAR(50),
+utrans_type               VARCHAR(16),
+utrans_gd_gs_wt           VARCHAR(16),
+utrans_gd_gs_wt_type      VARCHAR(10),
+utrans_gd_nt_wt           VARCHAR(16),
+utrans_gd_nt_wt_type      VARCHAR(10),
+utrans_gd_fn_wt           VARCHAR(16),
+utrans_gd_fn_wt_type      VARCHAR(10),
+utrans_gd_ffn_wt          VARCHAR(16),
+utrans_gd_ffn_wt_type     VARCHAR(10),
+utrans_sl_gs_wt           VARCHAR(16),
+utrans_sl_gs_wt_type      VARCHAR(10),
+utrans_sl_nt_wt           VARCHAR(16),
+utrans_sl_nt_wt_type      VARCHAR(10),
+utrans_sl_fn_wt           VARCHAR(16),
+utrans_sl_fn_wt_type      VARCHAR(10),
+utrans_sl_ffn_wt          VARCHAR(16),
+utrans_sl_ffn_wt_type     VARCHAR(10),
+utrans_gd_paid_wt         VARCHAR(15),
+utrans_gd_paid_wt_typ     VARCHAR(10),
+utrans_sl_paid_wt         VARCHAR(15),
+utrans_sl_paid_wt_typ     VARCHAR(10),
+utrans_paym_acc_id        VARCHAR(10),
+utrans_pay_cheque_acc_id  VARCHAR(10),
+utrans_pay_card_acc_id    VARCHAR(10),
+utrans_pay_disc_acc_id    VARCHAR(10),
+utrans_pay_vat_acc_id     VARCHAR(10),
+utrans_courier_acc_id     VARCHAR(10),
+utrans_cash_narratn       VARCHAR(16),
+utrans_cheque_no          VARCHAR(50),
+utrans_card_no            VARCHAR(50),
+utrans_disc_narratn       VARCHAR(50),
+utrans_courier_info       VARCHAR(30),
+utrans_cash_amt_rec       VARCHAR(50),
+utrans_pay_cheque_amt     VARCHAR(50),
+utrans_pay_card_amt       VARCHAR(50),
+utrans_discount_amt       VARCHAR(50),
+utrans_pre_tax_amt        VARCHAR(15),
+utrans_final_tax_amt      VARCHAR(15),
+utrans_pay_vat_amt        VARCHAR(50),
+utrans_pay_tax_amt        VARCHAR(10),
+utrans_courier_chgs_amt   VARCHAR(50),
+utrans_paym_oth_info      VARCHAR(200),
+utrans_date               VARCHAR(80),
+utrans_bal                VARCHAR(80),
+utrans_gd_rtct_wt         VARCHAR(15),
+utrans_gd_rtct_wt_typ     VARCHAR(15),
+utrans_sl_rtct_wt         VARCHAR(10),
+utrans_sl_rtct_wt_typ     VARCHAR(15),
+utrans_gd_bal_wt          VARCHAR(15),
+utrans_gd_bal_wt_typ      VARCHAR(10),
+utrans_panelName          VARCHAR(30),
+utrans_metal_val          VARCHAR(50),
+utrans_cash_rec           VARCHAR(50),
+utrans_item_desc          VARCHAR(30),
+utrans_utin_id            integer,
+utrans_jrnl_id            integer,
+utrans_vat_jrnl_id        VARCHAR(16),
+utrans_gd_rate            VARCHAR(20),
+utrans_sl_rate            VARCHAR(16),
+utrans_quantity           VARCHAR(10),
+utrans_tunch              VARCHAR(15),
+utrans_metal_type         VARCHAR(16),
+utrans_item_name          VARCHAR(20),
+utrans_final_fine_wt      VARCHAR(10),
+utrans_wastage            VARCHAR(15),
+utrans_lab_charges        VARCHAR(15),
+utrans_lab_charges_type   VARCHAR(10),
+utrans_valuation          VARCHAR(30),
+utrans_crdr_type          VARCHAR(10),
+utrans_transaction_type   VARCHAR(30),
+utrans_tot_amt_rec        VARCHAR(50),
+utrans_gd_bal_crdr        VARCHAR(5),
+utrans_sl_bal_crdr        VARCHAR(5),
+utrans_cash_bal_crdr      VARCHAR(5),
+utrans_sl_bal_wt          VARCHAR(15),
+utrans_sl_bal_wt_typ      VARCHAR(10),
+utrans_prev_metal_gd_rate     VARCHAR(30),
+utrans_prev_metal_sl_rate     VARCHAR(30),
+utrans_avg_gd_rate        VARCHAR(30),
+utrans_avg_sl_rate        VARCHAR(30),
+utrans_gd_PNL_amt         VARCHAR(50),
+utrans_sl_PNL_amt         VARCHAR(50),
+utrans_gold_amt           VARCHAR(50),
+utrans_silver_amt         VARCHAR(50),
+utrans_prev_gd_amt        VARCHAR(50),
+utrans_prev_sl_amt        VARCHAR(50),
+utrans_cash_balance       VARCHAR(16), 
+utrans_status 		  VARCHAR(16),
+utrans_since              DATETIME,
+utrans_other_info         VARCHAR(500),
+utrans_othr_chgs_by               VARCHAR(15),
+utrans_gd_othr_chgs_wt            VARCHAR(15),
+utrans_gd_othr_chgs_wt_typ        VARCHAR(10),
+utrans_sl_othr_chgs_wt            VARCHAR(15),
+utrans_sl_othr_chgs_wt_typ        VARCHAR(10),
+utrans_pay_opt                    VARCHAR(30),
+utrans_oth_chgs_amt               VARCHAR(15),
+utrans_cry_chrg                   VARCHAR(30),
+utrans_prev_cash_bal              VARCHAR(50),
+last_column                VARCHAR(1))AUTO_INCREMENT=10001";
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
 ?>

@@ -1,3 +1,105 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK REPORT LEDGER PANEL - FIRM FILE @Author-PRIYANKA-18OCT2021
+ * **************************************************************************************************
+ *
+ * Created on OCT 18, 2021 08:12:58 PM 
+ * **************************************************************************************
+ * @FileName: omStockLedgerSummaryFirm.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMRETAIL 
+ * @version 2.7.92
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:18OCT2021
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.92
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php 
+// Start Code for Firm  @Author-PRIYANKA-18OCT2021 
+?>
+<SELECT class="form-control-select-borderless" 
+        id="FirmName" name="FirmName" 
+        onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('FromDay').focus();
+                                   return false;
+                               } else if (event.keyCode == 8) {
+                                   document.getElementById('FirmName').focus();
+                                   return false;
+                               }"
+        onchange="searchStockLedgerSummaryReportDetails(document.getElementById('FirmName').value, '<?php echo $panelName; ?>',
+                                           document.getElementById('FromDay'), document.getElementById('FromMonth'), document.getElementById('FromYear'),
+                                           document.getElementById('ToDateDay'), document.getElementById('ToDateMonth'), document.getElementById('ToDateYear'));">
+    <OPTION  VALUE="" class="textLabel14CalibriGrey">ALL FIRMS</OPTION>
+<?php
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        //
+        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where "
+                     . "firm_own_id = '$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        //
+        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+        //
+        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+            //
+            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                $firmSelected = "selected";
+            }
+            //
+            if ($rowPerFirm['firm_type'] == "Public") {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            } else {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            }
+            //
+            $firmSelected = "";
+            //
+        }
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        //
+        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_type = 'Public' and "
+                     . "firm_own_id = '$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        //
+        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+        //
+        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+            //
+            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                $firmSelected = "selected";
+            }
+            //
+            if ($rowPerFirm['firm_type'] == "Public") {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            } else {
+                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"selectWithoutArrow_calibri_14\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+            }
+            //
+            $firmSelected = "";
+            //
+        }
+    }
+?>
+</SELECT>
+<?php 
+// End Code for Firm  @Author-PRIYANKA-18OCT2021 
 ?>

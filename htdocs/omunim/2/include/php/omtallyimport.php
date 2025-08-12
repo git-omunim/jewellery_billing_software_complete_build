@@ -1,3 +1,322 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: IMPORT OPTIONS : AUTHOR @ RENUKA 19 OCT 2022
+ * **************************************************************************************
+ * 
+ * Created on 19 OCT 2022
+ *
+ * @FileName:  omtallyimport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:.com
+ * @All rights reserved  info@softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//CODE FOR ONE TIME BLOCK WEBSITE SETTINGS @AUTHOR:SHARADA-01MAR2024
+require $_SERVER["DOCUMENT_ROOT"] . '/2/include/php/system/omstoresetup.php';
+//$personalStore = 'Y';
+//END CODE
+// *************************************************************************************************************
+// START CODE FOR IMPORT DATA @RENUKA OCT_2022
+// *************************************************************************************************************
+$firmid = $_SESSION['setFirmSession'];
+?>
+<tr><table style="margin-left:50px;" align="left">
+<tr>
+    <td colspan="4">
+        <div class="hrGrey" style="position: absolute; width: 100%; margin: 10px 0px 0px -40px;"></div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div style="margin: 20px 0px 0px 0px">
+            <h3 style="font-size: 19px; font-weight: bolder; color: #D76B00; margin-bottom: 5px;">IMPORT OPTIONS</h3>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        <div style="">
+            <h4 style="font-size: 16px; font-weight: bolder; color: #D76B00; margin-bottom: 5px; margin-left: 20px; width: 100%;">TALLY SOFTWARE IMPORT OPTIONS</h4>
+        </div>
+    </td>
+</tr>
+<!--<form enctype="multipart/form-data" method="POST" action="include/php/omtallyexport.php" role="form"> 
+    <label for="upload">Any Product Excel File Upload Here</label> 
+    <input type="file" name="userUploadedFile" value=""> 
+    <p class="help-block"> Only .xls/.xlxs extension File format. </p>
+    <input type="submit" name="submit" value="Upload"> 
+</form>-->
+<tr>
+    <!------------- START CODE TO ADD OPTION FOR IMPORT GROUP @RENUKA OCT_2022 ---------------->
+    <td colspan="2" align="center" width="25%px" valign="top">
+        <div class="product-item" style="width:100%; height:150px;padding: 0px;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        <?php if ($personalStore == 'Y') { ?>
+                            IMPORT ACCOUNT (SOFTWARE) : (STEP 1)
+                        <?php } else { ?>
+                            IMPORT ACCOUNT (OMUNIM SOFTWARE) : (STEP 1)
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+                        <form name="fileUpload" id="fileUpload"
+                              enctype="multipart/form-data" method="post"
+                              action="include/php/omTallyImportAccount.php" >
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                              
+                                <tr>                                      
+                                    <td align="center" valign="top">
+                                        <input type="file" name="userUploadedFile"  value="" required="required" />
+                                    </td>
+                                    <td align="left" valign="top">
+                                        <!---Start to Changes button----->
+                                        <div>
+                                            <?php
+                                            $inputId = "submit";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'Upload';
+                                            $inputIdButton = "submit";
+                                            $inputNameButton = 'submit';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style;
+                                            $inputStyle = "width:120px;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600; ";
+                                            $inputLabel = 'Import'; // Display Label below the text box
+                                            //
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';  // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';  // This is class for selection in drop down
+                                            $inputMainClassButton = ''; // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!----END CODE TO ADD OPTION FOR IMPORT GROUP @RENUKA OCT_2022 ---------------->
+
+
+    <!----START CODE TO CODE TO ADD OPTION FOR IMPORT LEDGER @RENUKA OCT_2022 ---------------->
+      <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:100%; height:150px;padding: 0px;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        <?php if ($personalStore == 'Y') { ?>
+                            IMPORT USER (SOFTWARE) : (STEP 2)
+                        <?php } else { ?>
+                            IMPORT USER (OMUNIM SOFTWARE) : (STEP 2)
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+                        <form name="fileUpload" id="fileUpload"
+                              enctype="multipart/form-data" method="post"
+                              action="include/php/omTallyImportUser.php"
+                              onsubmit="return selectfirm('<?php echo $firmid; ?>');">
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                              
+                                <tr>                                      
+                                    <td align="center" valign="top">
+                                        <input type="file" name="userUploadedFile"  value="" required="required" />
+                                    </td>
+                                    <td align="left" valign="top">
+                                        <!---Start to Changes button----->
+                                        <div>
+                                           <?php
+                                            $inputId = "submit";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'Upload';
+                                            $inputIdButton = "submit";
+                                            $inputNameButton = 'submit';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style;
+                                            $inputStyle = "width:120px;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600; ";
+                                            $inputLabel = 'Import'; // Display Label below the text box
+                                            //
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';  // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';  // This is class for selection in drop down
+                                            $inputMainClassButton = ''; // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!----END CODE TO ADD OPTION FOR IMPORT LEDGER @RENUKA OCT_2022 ---------------->           
+</tr>
+<tr>
+    <!------------- START CODE TO ADD OPTION FOR IMPORT STOCK @RENUKA OCT_2022 ---------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:100%; height:150px;padding: 0px;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        <?php if ($personalStore == 'Y') { ?>
+                            IMPORT STOCK (SOFTWARE) : (STEP 3)
+                        <?php } else { ?>
+                            IMPORT STOCK (OMUNIM SOFTWARE) : (STEP 3)
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+                        <form name="fileUpload" id="fileUpload"
+                              enctype="multipart/form-data" method="post"
+                              action="include/php/omTallyImportStock.php" >
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                              
+                                <tr>                                      
+                                    <td align="center" valign="top">
+                                        <input type="file" name="userUploadedFile"  value="" required="required" />
+                                    </td>
+                                    <td align="left" valign="top">
+                                        <!---Start to Changes button----->
+                                        <div>
+                                            <?php
+                                            $inputId = "submit";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'Upload';
+                                            $inputIdButton = "submit";
+                                            $inputNameButton = 'submit';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style;
+                                            $inputStyle = "width:120px;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600; ";
+                                            $inputLabel = 'Import'; // Display Label below the text box
+                                            //
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';  // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';  // This is class for selection in drop down
+                                            $inputMainClassButton = ''; // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:100%; height:150px;padding: 0px;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        <?php if ($personalStore == 'Y') { ?>
+                            IMPORT ALL INVOICES (SOFTWARE) : (STEP 4)
+                        <?php } else { ?>
+                            IMPORT ALL INVOICES (OMUNIM SOFTWARE) : (STEP 4)
+                        <?php } ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+                        <form name="fileUpload" id="fileUpload"
+                              enctype="multipart/form-data" method="post"
+                              action="include/php/omTallyImportInvoices.php" >
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                              
+                                <tr>                                      
+                                    <td align="center" valign="top">
+                                        <input type="file" name="userUploadedFile"  value="" required="required" />
+                                    </td>
+                                    <td align="left" valign="top">
+                                        <!---Start to Changes button----->
+                                        <div>
+                                            <?php
+                                            $inputId = "submit";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'Upload';
+                                            $inputIdButton = "submit";
+                                            $inputNameButton = 'submit';
+                                            $inputTitle = '';
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn ' . $om_btn_style;
+                                            $inputStyle = "width:120px;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600; ";
+                                            $inputLabel = 'Import'; // Display Label below the text box
+                                            //
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = '';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';  // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';  // This is class for selection in drop down
+                                            $inputMainClassButton = ''; // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+
+</tr>
+</table><!-- comment -->
+</tr>

@@ -1,3 +1,147 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: STOCK LEDGER DATATABLE FILE @AUTHOR:PRIYANKA-25OCT2021
+ * **************************************************************************************
+ *
+ * Created on OCT 25, 2021 04:26:01 PM 
+ * **************************************************************************************
+ * @FileName: omStockLedgerDatatableReport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.92
+ * @version 2.7.92
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * **************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:25OCT2021
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.92
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Stock Ledger</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/x-icon"  href="<?php echo $documentRoot;?>/images/favicon.ico" />
+
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/plugins/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/plugins/slider-revolution-slider/rs-plugin/css/settings.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/css/poppins.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/omglobal/css/components.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/frontend/onepage/css/style.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/frontend/onepage/css/style-responsive.css" rel="stylesheet"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/frontend/onepage/css/themes/red.css" rel="stylesheet" id="style-color"/>
+        <link href="<?php echo $documentRootBSlash; ?>/assets/frontend/onepage/css/custom.css" rel="stylesheet"/>
+
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/body.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/orcss.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/mainLayout.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/barCodeLabel.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/custom.css"/>
+
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/OmJqueryDT.min.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/omButtonsDT.min.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/OmRowReorderDT.min.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/OmResponsiveDT.min.css"/>
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/omNavigatationStockForm.css"/>
+
+        <link href="<?php echo $documentRootBSlash; ?>/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $documentRootBSlash; ?>/assets/assets/demo/default/base/style.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $documentRootBSlash; ?>/assets/assets/demo/default/base/m-portlet.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $documentRootBSlash; ?>/assets/assets/demo/default/base/nav.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emAddOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emNavigation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emUpdateOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogHeadNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/olHeadNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/orHeadNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogNavFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/advanceMetal.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/accBalance.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/orNavFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omHeadNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogNavFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emNavigation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emUpdateOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omCalculation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions_1_6_1.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/orAddFunction_1_6_1.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omLangDisplayMess.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions_2_4_7.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/advanceMetal.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogCrFunctions.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogijAddFunction_1_6_1.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/accBalance.js"></script>
+
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmJquery-1.12.4.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmJqueryDT.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmDTButtons.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmButtonsFlash.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmJszip.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmPdfmake.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmVfsFonts.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmButtonsHtml5.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmButtonsColVis.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmDTSelect.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmDTResponsive.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omDataTablesMain.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/highcharts.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/OmButtonsPrint.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-ui.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css"> 
+    </head>
+    <body class="light-yellow-back">
+        <div id="StockLedgerReportMainDiv">
+            <?php
+//
+//
+// ****************************************************************************************
+// START CODE FOR STOCK LEDGER PANEL @AUTHOR:PRIYANKA-25OCT2021
+// ****************************************************************************************
+//
+            include 'omStockLedgerMainTransReport.php';
+//
+// ****************************************************************************************
+// END CODE FOR STOCK LEDGER PANEL @AUTHOR:PRIYANKA-25OCT2021
+// ****************************************************************************************
+//
+//
+            ?>
+        </div>
+    </body>
+</html>

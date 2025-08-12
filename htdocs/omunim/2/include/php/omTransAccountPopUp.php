@@ -1,3 +1,61 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABoBAAAckHra4SS20c3aorUoMK6znk5QpNzcMSSKRsbyHOs8KfBrqNLk2IjjF51wh9sDpk1d50N5ZO1c5I6l5GC1DwUUJnJUfLL0mdUsJ7Cfa7dLW6+UTnN1SNoq5IMGI7zVlkiTPtibDrij9Y/Wc8UkrLcK7CxGK9XYz9K8qRP5clHImcziHmYuOdulRaUITna2hMY/GxulNWkIMBHYll18fsDss2bfCIR/h9uZ/yvdEh8H+iimVIw/KGt1pE/kuqKgkXQMHMdryRoWAVEDklpBBLWH80/vCge+rvqIWV6yJCJ0CQxlytBCHKdmeOCTqMylVNDlaLvA3DHoAWArUn3crKqsEYx9huq1v6Gl6QPJpbRb3Iss/Q3OY0AphvLgOEse0n3mQgaiRNUI3p9ZrVd+Vrn1i0V61EzBNZKfuXmfP7BaBTBvF0z0oF502IvLBkCxpWLNzNzvchlguiEB4p1Eg9nV+rtPmA5TuTTSSNyl1N4gy1hB8Ay9dvQZNNK0dQ8kqsM4zgLRafjSwUSgaAmhNA/rMiRL2sCmgdlRupnkZHJUnjZ5GKtf9sVtriHZYzsf8OpYLUMsaQOl59hRSPCxukdKIZa8curSm9WRv7RmqKFkttAQghtfmN6excD/HGwQfuGfjMNeZIPW4n6MvebQ2/jtw6Y9u55L2rC7gH1e8aNTKlCYLkkaatpDhtat7zms4DXGBInwK4wGLJBe1m/hcCU1tsbJga50TeAxfOw21E3nBJPK1wZ971gUPGyaLxqHuu+o3B6kWdKK46kX0pE+keleYOtcuK9nxZhKY50eQZ7B9Cc3yRP3NoLWCIU/3egXbJORrgNpBY+aJQXH5048APTyQ4WRlfwnSshgAuGAnG99nnMTRSuB72hmDFCwBWgWgCcZpIFIsDQm/IOtS0ptxP1/6WXfEjWXbhDiFOaHlKSFscVbX/P8+JmEYtblfGIiLJU8TFS34l6lL7r9ZkNNCYZ7hDEmsMAQiGf/UUR7qqYaWan8l34AzmnEK4Hzyq6gUIixBOI8yq1NHoIRY/k7YeyZWLcUKDAW3jKPwktnqBezFPzju8ASP6meJJ+8ySXCfHaiWW/sadLbsd5H30YzZdwZTT+VHx4EzD2xqjg2vAmgFMol75fn/8xLr7FHaGGjSFTk2I+hWOcU+wUJQ4E5MMZow+3/0Gh74l63TlIZuqvAFb4zT25Ggm3FJ0GBS+pz3rSbdOTJ71Idp019fXLtwAsGffv6RClJMRV/jC03vYRQ7AUn6KVeXmwCQM/QCfkaszN/pR2TDCaXsp+b9ZSlMW2dsXaFmbMDvbP14r9CCJG6WbwTCHYS8WpgtVfKF4tgIiJK55wOmizBHsLI18PtHeiucrzy+7b476BKoocoqNyjn4AcdSyCfhg6tKqQtSuCGKlWBJzqwYnzBSpz6RwQaN+SzzIezBjESiLe7jxyi1fCXfzPUQ5Bem6d46h4oTbeob6fyKNwaBxMYp9VW8Sc3RV4xfcQHgSkClrAAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 31 Jul, 2018 11:13:52 AM
+ *
+ * @FileName: omTransAccountPopUp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php'; 
+?>
+<?php                     
+$contactId = $_POST['contactId'];
+//echo '$contactId:' . $contactId;
+//print-r($_REQUEST);die; 
+$custHome = $_POST['custHome'];
+if ($contactId == '') {
+    $contactId = $_GET['contactId'];
+     $custHome = $_GET['custHome'];
+} 
+?>
+<div id="contactIframePopUp" class="grey-back">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" valign="top">
+          
+                <iframe src="<?php echo $documentRoot; ?>/include/php/omleadscontctifrmpop.php?contactId=<?php echo $contactId; ?>" 
+                        width="920" height="420" frameborder="0" class="grey-back"></iframe>
+            </td> 
+            <td align="right" valign="top">
+                <?php if ($custHome == 'Yes') { ?>
+                    <a class="links" style="cursor: pointer;"
+                       onclick="getContactInfoPopUpHideInCustHome('<?php echo $contactId; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a> 
+                   <?php } else { ?>
+                    <a class="links" style="cursor: pointer;"
+                       onclick="getContactInfoPopUpHide('<?php echo $contactId; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a>
+                   <?php } ?>
+            </td>
+        </tr>
+    </table>
+</div>

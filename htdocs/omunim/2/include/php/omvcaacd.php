@@ -1,3 +1,315 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on May 25, 2011 10:55:48 AM
+ *
+ * @FileName: omvcaacd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//Changes in file to hide labels and add new class for input fields @AUTHOR: SANDY16DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+require_once 'system/omsgeagb.php';
+?>
+<table border="0" cellspacing="0" cellpadding="1" width="100%">
+    
+    <tr>
+        <td colspan="2">
+            <div id="addUpdateCountryDiv">
+                <!--Start Code To Add onload Func @Author:PRIYA24AUG13-->
+                <!--Start Code To Add focus @Author:PRIYA29AUG13-->
+                <img src="<?php echo $documentRoot; ?>/images/abx-t.png" alt="" height="2px" style="visibility:hidden;" onload="document.getElementById('countryName').focus(); initFormName('add_country','addCountry');"/>
+                <!--End Code To Add focus @Author:PRIYA29AUG13-->
+                <!--End Code To Add onload Func @Author:PRIYA24AUG13-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td width="40%">
+                            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                                <tr>
+                                    <td>
+                                        <div class="spaceLeft10 paddingTop2">
+                                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New Country" />
+                                        </div>
+                                    </td>
+                                    <td align="left">
+                                        <div class="spaceLeft4">
+                                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;">ADD NEW COUNTRY</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="60%" align="right" valign="bottom">
+                            <div class="analysis_div_rows">
+                                <?php
+                                $showCountryAddedDiv = $_GET['divMainMiddlePanel'];
+                                if ($showCountryAddedDiv == "CountryAdded") {
+                                    include 'omzaaamg.php';
+                                } else if ($showCountryAddedDiv == "CountryUpdated") {
+                                    include 'omzaaumg.php';
+                                } else if ($showCountryAddedDiv == "CountrySet") {
+                                    include 'omzaaumg.php';
+                                } else if ($showCountryAddedDiv == "CountryDeleted") {
+                                    include 'omzaadmg.php';
+                                } else if ($showCountryAddedDiv == "CountryAlreadyExist") {
+                                    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ Country Already Present, Please enter
+                                            different Country Name ~</div>
+                                    </div>
+                                    <?php
+                                } else if ($showCountryAddedDiv == "CountryNotDeleted") {
+                                    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ Country Added by oMunim, User can not delete this Country. ~</div>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" width="50%">
+                            <div class="spaceLeftRight20Border">
+                                <!---Start of changes in form to remove input field heading and change in classes @AUTHOR: SANDY18NOV13---->
+                                <form name="add_country" id="add_country"
+                                      action="javascript:addCountry(document.getElementById('add_country'));"
+                                      method="post">
+                                    <table border="0" cellspacing="0" cellpadding="1" width="50%" style="margin-top:10px">
+                                        <tr>
+                                            <td align="center" style="border: 1px dashed #c1c1c1;background: #f4f4f4;padding: 5px 10px;">
+                                                <table border="0" cellpadding="2" cellspacing="0" class="paddingTop10" width="100%">
+
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1" width="100%"><input id="countryName" placeholder="Country Name"
+                                                                                               name="countryName" spellcheck="false" type="text"
+                                                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" style="width:100%;height:30px;" size="35" maxlength="50" />
+                                                            <div class="testfieldMess" style="color:#000;">(Country Name should be unique)</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr align="left" size="35" maxlength="50" width="100%">
+                                                        <td align="left" class="frm-r1" width="50%">
+                                                            <input id="countryCurrency" placeholder="Country Currency"
+                                                                                               name="countryCurrency" spellcheck="false" type="text"
+                                                                                               class="textBoxCurve1px  textLabel12Calibri backF9F9F9" style="height:30px;width:100%;" size="17" maxlength="10" />
+                                                            <div class="testfieldMess" style="margin-right:0px; margin-top: 2px;color:#000;">(Country Currency Like INR, Rs, &#x20B9 ")</div>
+                                                        </td>
+                                                      
+                                                    </tr>
+                                                    <tr align="left" size="35" maxlength="50" width="100%">
+                                                        
+                                                        <td align="left" class="frm-r1" width="50%">
+                                                            <input id="countryCode" placeholder="Country Code"
+                                                                                               name="countryCode" spellcheck="false" type="text"
+                                                                                               class="textBoxCurve1px textLabel12Calibri backF9F9F9" style="height:30px;width:100%;" size="17" maxlength="10" style="margin-left: -168px; margin-bottom: 15px;" />
+                                                            <div class="testfieldMess" style="margin-left: -120px;margin-top: 0px;color:#000;">(Country Code Like INDIA, +91)</div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr align="left" valign="middle">
+                                                        <td align="left" class="frm-r1" width="100%"><textarea id="countryComments" placeholder="Comments"
+                                                                                                  name="countryComments" class="textBoxCurve1px margin2pxAll textLabel12Calibri_non backF9F9F9" rows="2" cols="40"  style="width:100%;height:60px;"/></textarea></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" cellpadding="2" cellspacing="0" align="center"
+                                           width="100%">
+                                        <tr>
+                                            <td width="100%" align="center">
+                                                <table border="0" cellpadding="1" cellspacing="1" align="center" width="50%">
+                                                    <tr>
+                                                        <td width="50%">
+                                                            <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                            <div style="text-align: center;">
+                                                                <?php
+                                                                $inputId = " ";
+                                                                $inputType = 'submit';
+                                                                $inputFieldValue = 'Submit';
+                                                                $inputIdButton = " ";
+                                                                $inputNameButton = '';
+                                                                $inputTitle = '';
+                                                                // This is the main class for input flied
+                                                                $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                                                $inputStyle = "background: #BED8FD;color: #000080;width:90px;height:30px;border-radius:3px!important;font-size:14px;";
+                                                                $inputLabel = 'Submit'; // Display Label below the text box
+                                                                // This class is for Pencil Icon                                                           
+                                                                $inputIconClass = '';
+                                                                $inputPlaceHolder = '';
+                                                                $spanPlaceHolderClass = '';
+                                                                $spanPlaceHolder = '';
+                                                                $inputOnChange = "";
+                                                                $inputOnClickFun = '';
+                                                                $inputKeyUpFun = '';
+                                                                $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                                $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                                $inputMainClassButton = '';           // This is the main division for Button
+                                                                include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                                ?>
+                                                            </div>
+<!--                                                            <input type="submit" value="Submit" class="frm-btn"
+                                                                   maxlength="30" size="15" />-->
+                                                            <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                        </td>
+                                                           <!--  <td><input type="submit" value="Reset" class="frm-btn"
+                                                   onclick="navigation('')" maxlength="30"
+                                                   size="15" /></td>-->
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                <!---End of changes in form to remove input field heading and change in classes @AUTHOR: SANDY18NOV13---->
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div id="setDefaultCountryDiv">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td width="40%">
+                            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                                <tr>
+                                    <td>
+                                        <div class="spaceLeft10 paddingTop2">
+                                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New Country" />
+                                        </div>
+                                    </td>
+                                    <td align="left">
+                                        <div class="spaceLeft4">
+                                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;">SET DEFAULT COUNTRY</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="60%" align="right" valign="bottom">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left">
+                            <div class="spaceLeftRight20Border">
+                                <form name="set_default_country" id="set_default_country" 
+                                      action="javascript:setDefaultCountry(document.getElementById('set_default_country'));"
+                                      method="post">
+                                    <table border="0" cellspacing="3" cellpadding="3" align="center">
+                                        <tr>
+                                            <td align="left" class="frm-lbl" style="font-weight:600;">Country Name:</td>
+                                            <td align="left" class="frm-r1" width="150px">
+                                                <SELECT class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" id="country" name="country" style="width:100%;height:36px;border:1px solid #c1c1c1;">  
+                                                    <OPTION  VALUE="NotSelected">Select Country</OPTION>
+                                                    <?php include 'omvcgtco.php'; ?>
+                                                </SELECT>
+                                            </td>
+                                            <td>
+                                                 <!---Start to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                                            <div style="text-align: center;">
+                                                                <?php
+                                                                $inputId = " ";
+                                                                $inputType = 'submit';
+                                                                $inputFieldValue = 'Submit';
+                                                                $inputIdButton = " ";
+                                                                $inputNameButton = '';
+                                                                $inputTitle = '';
+                                                                // This is the main class for input flied
+                                                                $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                                                $inputStyle = "background: #BED8FD;color: #000080;width:90px;height:30px;border-radius:3px!important;font-size:14px;";
+                                                                $inputLabel = 'Submit'; // Display Label below the text box
+                                                                // This class is for Pencil Icon                                                           
+                                                                $inputIconClass = '';
+                                                                $inputPlaceHolder = '';
+                                                                $spanPlaceHolderClass = '';
+                                                                $spanPlaceHolder = '';
+                                                                $inputOnChange = "";
+                                                                $inputOnClickFun = '';
+                                                                $inputKeyUpFun = '';
+                                                                $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                                $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                                $inputMainClassButton = '';           // This is the main division for Button
+                                                                include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                                ?>
+                                                            </div>
+<!--                                                <input type="submit" value="Submit" class="frm-btn"
+                                                       maxlength="30" size="15" />-->
+                                                            <!---End to Changes button @AUTHOR: DIKSHA25SEPT2018----->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td align="left" class="spaceLeft20">
+            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                <tr>
+                    <td>
+                        <div class="spaceLeft10 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New Country" />
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown" style="font-weight:600;">EXISTING COUNTRY LIST</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" width="100%" valign="top">
+            <div class="spaceLeftRight20Border">
+                <table border="0" cellspacing="0" cellpadding="2" width="100%">
+                    <tr valign="top">
+                        <td align="center" valign="top" width="50%">
+                            <div id="countriesListDiv"><?php include 'omvccolt.php'; ?></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+

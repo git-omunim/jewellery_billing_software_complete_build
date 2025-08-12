@@ -1,3 +1,135 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACYAwAAoNN6t9NwRyUgM96EngopV+T2Fd87mT9ruws9Lq75VnQKFVSn7BJojVE+MfsaCTRAvXNRCdt4Eqb6yqg+ZkkLfzzICqddQPJQXhaxlU1M3OYkEIxS/pjNsL2zcpxHHycTH57sI/W9430QoXbb6sODr+ycnN086nYgxVT0M2kODWv9SkXdWLypg+1dVrlKedXkef39ueAwBNRe/C17b1B9AARyWCtdRUWI6jH3bTW1OHL9os1SJ33YsEMCx/D82m7yIl48bt23FrjzSf+Rh7jSrkOTm6Ji/E+A7NJsuJN93nNpM8fzqnTvuW10FPFMfxx0z94RY7XaD5aVPUuWhmwmEskSVxqQHC+aVY/hOaNGH7GWvh6sh/Ut7d3U2kN7WRLaZbV3nG0XIZtC+AsqoM1OqHRYSOTORiqnYKzgcdHwRC++QiBcL8HRuJDdHOG2eVHWUhZidzN555AS3QG0zlyyjUM3Agnm2f+tvQ/gB4qa723mvEa9QaTUw6uND9xDo1Ef0RA9imqxyHmYasvZJY7OdKPtm1qVxvmNHJba1xyCE4wtOr2CtGrKW0WO6lXkbWEjQvFsHyNfhEjTDSwaXunNtBQwFLMR4tCD9ydDX8QaYhyhc9jwQ7w0FQm9mLCw3+87459B6dBGRNhVBwf3nyvuBz/NR9VZE7P/LkEfmmfZ2vPVitmqXr9PJiy06GzUw6pEC7SWQWZYxNUeQscN9N0Q77GmENx35i3/pNKlc4Q8NeLw+sE/XTUHk3/xgtJkZrUA90RqF2Y/Q1WQhqrgNZUmXqXwERqBxt9/EwZ6HpsWHKDBv9xa+LGDTERLaD6Ls7Bf/rySqepeyYUl6qZLniyZFrAU8TcuMr2NNWXu8wtfLs3IP8w6kyGqzjyDC+j4Il+Xiv2YQvi9iRT79anpl6Ga9cxYSwlgwUccyp0mEWJx2RrNp1UUViZIisYdV2hSRY/qBe5FN8SAKhfv4PNP7rUw0oU6S08y12k59+HWxEOquVqP4bYsirdl7M1bMi0Fvai1Wvxo4ZJQ2T7aLcFHXeHWghZKhnL4cEidkVg8aINtwuQbO5YhSYp6KNhDU6nknFs0FJvI7AxZW0SIPKQaMGXkKRVMojCWaI7y+ZwRKfwqlsmWS2bc2uXsT837MGQ8icdhv3JPnmrnCBttuG5ll5PSlak6RwJnTyPGEMpd1baKu9swFyRr5J/2Klo5ORs9NZ8dGXs+DsU6easAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: staff Access Table
+ * **************************************************************************************
+ * 
+ * Created on Jun 4, 2013 1:36:21 PM
+ *
+ * @FileName: omtbeacc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS omaccess (
+omac_id          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+omac_own_id	 VARCHAR(16),
+omac_emp_id      VARCHAR(10),
+omac_ogiamsdv    VARCHAR(10),
+omac_ogidmndv    VARCHAR(10),
+omac_ogialdel	 VARCHAR(10),
+omac_ogspmndv	 VARCHAR(10),
+omac_ogspidel	 VARCHAR(10),
+omac_ognomndv	 VARCHAR(10),
+omac_ognoidel	 VARCHAR(10),
+omac_ogwaspdv	 VARCHAR(10),
+omac_ogwuspdv	 VARCHAR(10),
+omac_ogwdtdel	 VARCHAR(10),
+omac_orgacang    VARCHAR(10),
+omac_orgugvdt 	 VARCHAR(10),
+omac_orgdgvdl 	 VARCHAR(10),
+omac_omgnsfan 	 VARCHAR(10),
+omac_omuudetl 	 VARCHAR(10),
+omac_omupudmn 	 VARCHAR(10),
+omac_omccdelc 	 VARCHAR(10),
+omac_omaimndv 	 VARCHAR(10),
+omac_omaiumndv 	 VARCHAR(10),
+omac_omaiatdl 	 VARCHAR(10),
+omac_omcaadcd 	 VARCHAR(10),
+omac_omcdcdfu 	 VARCHAR(10),
+omac_omcdcsdl 	 VARCHAR(10),
+omac_omffadfr 	 VARCHAR(10),
+omac_omfffudv 	 VARCHAR(10),
+omac_omffdlfr 	 VARCHAR(10),
+omac_omacacdv 	 VARCHAR(10),
+omac_omacacud 	 VARCHAR(10),
+omac_omeheacc 	 VARCHAR(10),
+omac_omeastdv 	 VARCHAR(10),
+omac_omeustdv 	 VARCHAR(10),
+omac_ogedtdel 	 VARCHAR(10),
+omac_omcssmsp 	 VARCHAR(10),
+omac_omibcdel 	 VARCHAR(10),
+omac_omtatrnd 	 VARCHAR(10),
+omac_omddddan 	 VARCHAR(10),
+omac_omacjnen 	 VARCHAR(10),
+omac_ombbblsh 	 VARCHAR(10),
+omac_omactrbl 	 VARCHAR(10),
+omac_omacblst 	 VARCHAR(10),
+omac_ommramrd    VARCHAR(10),
+omac_omiaaind    VARCHAR(10),
+omac_omiaaitd    VARCHAR(10),
+omac_omvvaacd    VARCHAR(10),
+omac_omvsaasd    VARCHAR(10),
+omac_omvcaacd    VARCHAR(10),
+omac_orguroid    VARCHAR(10),
+omac_omppfmsp    VARCHAR(10),
+omac_ompprppn    VARCHAR(10),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//ogiamsdv - Add Stock
+//ogidmndv - Update Stock
+//ogialdel - Delete Stock
+//ogspmndv - Add Sell Transaction
+//ogspidel - Delete Sell Transaction
+//ognomndv - Add New Order
+//ognoidel - Delete New Order
+//ogwaspdv - Add New Supplier
+//ogwuspdv - Update Supplier
+//ogwdtdel - Delete Supplier
+//orgacang - Add New Girvi
+//orgugvdt - Update Girvi
+//orgacang - Delete Girvi
+//omgnsfan - Analysis Panel
+//omuudetl - Add New Udhaar
+//omupudmn - Update Udhaar
+//omccdelc - Delete Udhaar
+//omaimndv - Add New Action Item
+//omaiumndv- Update Action Item
+//omaiatdl - Delete Action Item
+//omcaadcd - Add New Customer
+//omcdcdfu - Update Customer
+//omcdcsdl - Delete Customer  
+//omffadfr - Add Firm
+//omfffudv - Update Firm
+//omffdlfr - Delete Firm
+//omacacdv - Add Account
+//omacacud - Update Account
+//omeastdv - Add Staff
+//omeustdv - Update Staff
+//ogedtdel - Delete Staff
+//omcssmsp - SMS
+//omibcdel - Delete BarCode
+//omtatrnd - Transaction Panel
+//omddddan - Daily Diary
+//omacjnen - Journal Book
+//ombbblsh - Stock Register
+//omactrbl - Trial Balance
+//omacblst - Balance Sheet
+//ommramrd - Add Metal Rate
+//omiaaind - Add Item Name
+//omiaaitd - Add Tunch
+//omvvaacd - Add City
+//omvsaasd - Add State
+//omvcaacd - Add Country
+//orguroid - Add ROI
+//omppfmsp - All Forms
+//ompprppn - Datebase Repair
 ?>

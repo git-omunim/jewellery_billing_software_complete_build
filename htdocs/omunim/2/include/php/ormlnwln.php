@@ -1,3 +1,765 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Money lenders Add Loan Panel
+ * **************************************************************************************
+ *
+ * Created on 13 NOV, 2013 11:04:23 AM
+ *
+ * @FileName: omladnwln.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+//change in file @AUTHOR: SANDY20JAN14
+$mlId = $_GET['mlId'];
+//echo "$mlId @==".$mlId;
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+
+//get default firm
+//-------------------------------- Start code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+$qsel = "SELECT user_firm_id FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' AND user_id='$mlId'";
+$res = mysqli_query($conn, $qsel);
+$row = mysqli_fetch_array($res, MYSQLI_ASSOC);
+$firmId = $row['user_firm_id'];
+//-------------------------------- End code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+//query to get firm loan no
+$qSelMlLoanNo = "SELECT count(ml_id) as mlFirmLoanNo FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_firm_id='$firmId'";
+$resMlLoanNo = mysqli_query($conn, $qSelMlLoanNo);
+$rowMlLoanNo = mysqli_fetch_array($resMlLoanNo, MYSQLI_ASSOC);
+$currentFirmLoanNo = $rowMlLoanNo['mlFirmLoanNo'] + 1;
+
+//query to get serial number
+$qSelLoanPreSerialNo = "SELECT ml_pre_serial_num FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_lender_id='$mlId' order by UNIX_TIMESTAMP(ml_ent_dat) desc LIMIT 0,1";
+$resLoanPreSerialNo = mysqli_query($conn, $qSelLoanPreSerialNo) or die(mysqli_error($conn));
+$rowLoanPreSerialNo = mysqli_fetch_array($resLoanPreSerialNo);
+
+$newLoanPreSerialNo = $rowLoanPreSerialNo['ml_pre_serial_num'];
+
+if ($newLoanPreSerialNo == NULL || $newLoanPreSerialNo == '') {
+    $newLoanPreSerialNo = NULL;
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as mliSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num IS NULL and  ml_lender_id='$mlId'";
+    $resLoanSerialNo = mysqli_query($conn, $qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+} else {
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as mliSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num='$newLoanPreSerialNo' and  ml_lender_id='$mlId' ";
+    $resLoanSerialNo = mysqli_query($conn, $qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+}
+$newLoanSerialNo = $rowLoanSerialNo['mliSerialNo'] + 1;
+
+//Start Code to Check Serial Number
+$qSelSerialNo = "SELECT ml_serial_num FROM ml_loan where ml_serial_num='$newLoanSerialNo' and ml_pre_serial_num='$newLoanPreSerialNo' and ml_own_id='$sessionOwnerId' ";
+$resSerialNo = mysqli_query($conn, $qSelSerialNo);
+$rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+
+$lSerialNo = $rowSerialNo['ml_serial_num'];
+
+if ($lSerialNo != '' || $lSerialNo != NULL) {
+    $qSelLoanSerialNo = "SELECT max(ml_serial_num) as loanSerialNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_pre_serial_num='$newLoanPreSerialNo'";
+    $resLoanSerialNo = mysqli_query($conn, $qSelLoanSerialNo);
+    $rowLoanSerialNo = mysqli_fetch_array($resLoanSerialNo, MYSQLI_ASSOC);
+    $newLoanSerialNo = $rowLoanSerialNo['loanSerialNo'] + 1;
+}
+
+//query to get money lender loan no
+$qSelMlLoanNo = "SELECT count(ml_id) as mlLoanNo FROM ml_loan where ml_own_id='$sessionOwnerId' and ml_lender_id='$mlId'";
+$resMlLoanNo = mysqli_query($conn, $qSelMlLoanNo);
+$rowMlLoanNo = mysqli_fetch_array($resMlLoanNo, MYSQLI_ASSOC);
+$currentLoanNo = $rowMlLoanNo['mlLoanNo'];
+$currentLoanNo = $currentLoanNo + 1;
+$omPanelDiv = 'MoneyLenderLoan';
+?>
+<div id="mlAddNewLoanDiv" class="ShadowFrm"><!---Change in line @AUTHOR: SANDY07FEB14--->
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" width="30px">
+                <div class="spaceLeft10">
+                    <img src="<?php echo $documentRoot; ?>/images/orange16.png" width="16px" height="16px">
+                </div>
+            </td>
+            <td align="left" valign="top"> 
+                <div>
+                    <div class="main_link_orange_normal16" style="color: #DF264A;">
+                        <b>ADD NEW MONEY LENDER LOAN</b>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="mlAddNewLoanDetailDiv" class="100%">
+        <form id="addNewLoanForm" name="addNewLoanForm" enctype="multipart/form-data" method="post"onsubmit="return validateAddNewLoan();" 
+              action="include/php/ormladln.php" >
+            <table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
+           
+                <tr>
+                    <td align="left" width="100%" colspan="2">
+                        <div>
+                            <table border="0" cellpadding="2" cellspacing="2" width="100%">
+                                <tr align="left">
+                                    <td width="100%">
+                                        <table border="0" cellpadding="1" cellspacing="1" width="100%" style="background:#fff6ea;border: 1px dashed #f7750a;padding:5px;">
+                                            <tr>
+                                                <td align="center" valign="top" width="20%"> 
+                                                    <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                                        <tr>  
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown pdnbtm3">
+                                                                <b> PRINCIPAL AMOUNT</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="height:35px;width:100%;border-radius:4px;" class="textBoxCurve2px margin2pxAll textLabel24Calibri backFFFFFF">
+                                                                <input id="mlPrincipalAmount" name="mlPrincipalAmount" type="text"  class="textFieldWOB20"  placeholder="PRINCIPAL AMOUNT"
+                                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                   document.getElementById('mlAddLnDOBDay').focus();
+                                                                                   return false;
+                                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                                   return false;
+                                                                               }"
+                                                                       spellcheck="false" size="20" maxlength="30" style="width:100%;height:35px;font-weight:600;"/>
+                                                                <input type="hidden" name="mlId" id="mlId" value="<?php echo $mlId; ?>" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>  
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b> LOAN DATE</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table width="100%" border="0"  align="center" class="textBoxCurve1px textLabel16CalibriNormal backFFFFFF">
+                                                                    <tr>
+                                                                        <td width="33.33%" align="center">
+                                                                            <!-- *************** Start Code for dayDD *************** -->
+                                                                            <?php
+                                                                            $todayDay = date(j) - 1;
+                                                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                                                            $optDay[$todayDay] = "selected";
+                                                                            ?> 
+                                                                            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;">
+                                                                                <select id="mlAddLnDOBDay" name="mlAddLnDOBDay" 
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('mlAddLnDOBMonth').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('mlPrincipalAmount').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class ="textLabel14CalibriGrey" style="width:100%;height:35px;">
+                                                                                    <option value="NotSelected">DAY</option>
+                                                                                    <?php
+                                                                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                                                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select> 
+                                                                            </div>
+                                                                        </td>
+                                                                        <td width="33.33%" align="center">
+                                                                            <!-- *************** Start Code for Month *************** -->
+                                                                            <?php
+                                                                            $todayMM = date("n") - 1;
+                                                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                                                            $optMonth[$todayMM] = "selected";
+                                                                            ?> 
+                                                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                                                            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;">
+                                                                                <select id="mlAddLnDOBMonth" name="mlAddLnDOBMonth" 
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('mlAddLnDOBYear').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('mlAddLnDOBDay').focus();
+                                                                                                    return false;
+                                                                                                }
+                                                                                                //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                                                                var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                                                                gbMonth = document.getElementById('gbMonthId').value;
+                                                                                                if (gbMonth == 1) {
+                                                                                                    if (event.keyCode) {
+                                                                                                        var sel = String.fromCharCode(event.keyCode);
+                                                                                                        if (sel == 0)
+                                                                                                        {
+                                                                                                            this.value = arrMonths[9];
+                                                                                                        } else if (sel == 1)
+                                                                                                        {
+                                                                                                            this.value = arrMonths[10];
+                                                                                                        } else if (sel == 2)
+                                                                                                        {
+                                                                                                            this.value = arrMonths[11];
+                                                                                                        }
+                                                                                                        // this.value = arrMonths[10];
+                                                                                                        document.getElementById('gbMonthId').value = 0;
+                                                                                                    }
+                                                                                                } else if (event.keyCode) {
+                                                                                                    var sel = String.fromCharCode(event.keyCode) - 1;
+                                                                                                    this.value = arrMonths[sel];
+                                                                                                    if (event.keyCode == 49) {
+                                                                                                        document.getElementById('gbMonthId').value = 1;
+                                                                                                    }
+                                                                                                } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13"
+                                                                                        class = "textLabel14CalibriGrey" style="width:100%;height:35px">
+                                                                                    <option value="NotSelected">MONTH</option>
+                                                                                    <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                                                                    $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+                                                                                    $engmonformat = mysqli_query($conn, $queryengmonformat);
+                                                                                    $rowengmonformat = mysqli_fetch_array($engmonformat);
+                                                                                    $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                                                                    for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                                                                        if ($englishMonthFormat == 'displayinnumber') {
+                                                                                            $engMonth = date('m', strtotime($arrMonths[$mm]));
+                                                                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+                                                                                        } else {
+                                                                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                                                                        }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td width="33.33%" align="center">
+                                                                            <!-- *************** Start Code for Year *************** -->
+                                                                            <?php
+                                                                            $todayYear = date("Y");
+                                                                            $optYear[$todayYear] = "selected";
+                                                                            ?> 
+                                                                            <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;">
+                                                                                <select id="mlAddLnDOBYear" name="mlAddLnDOBYear" 
+                                                                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                    document.getElementById('interestType').focus();
+                                                                                                    return false;
+                                                                                                } else if (event.keyCode == 8) {
+                                                                                                    document.getElementById('mlAddLnDOBMonth').focus();
+                                                                                                    return false;
+                                                                                                }"
+                                                                                        class = "textLabel14CalibriGrey" style="width:100%;height:35px">
+                                                                                    <option value="NotSelected">YEAR</option>
+                                                                                    <?php
+                                                                                    for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                                                    }
+                                                                                    ?>
+                                                                                </select>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="center" valign="top" width="20%"> 
+                                                    <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                                        <tr align="center">
+                                                            <td align="left" valign="middle" colspan="2" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b> INTEREST OPTION</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle" width="100%" class="textBoxCurve1px margin2pxAll backFFFFFF">
+                                                                <div id="interestTypeDiv" class="selectStyledBorderLess background_transparent">
+                                                                    <select id="interestType" name="interestType" class="textLabel14CalibriGrey" style="width:100%;height:35px;"
+                                                                            onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                        document.getElementById('selTROI').focus();
+                                                                                        return false;
+                                                                                    } else if (event.keyCode == 8) {
+                                                                                        document.getElementById('mlAddLnDOBYear').focus();
+                                                                                        return false;
+                                                                                    }"
+                                                                            onchange="return changeMlROIOptAdd(this, document.getElementById('ROIOption'), 'MoneyLenderLoan');">
+                                                                        <option value="Monthly" >MONTHLY</option>
+                                                                        <option value="Annually">ANNUALLY</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr align="center" >
+                                                            <td align="left" valign="top" class="textLabel12CalibriBrown pdntp3">
+                                                               <b>RATE OF INTEREST</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="top" > 
+                                                                <table width="100%">
+                                                                    <tr>
+                                                                        <td width="100%" class="textBoxCurve1px margin2pxAll textLabel16CalibriNormalBlue backFFFFFF" align="center" style="position:relative;">
+                                                                            <div id="ROIOption" >
+                                                                                <?php
+                                                                                $omPanelDiv = 'MoneyLenderLoan';
+                                                                                $prevFieldId = 'interestType';
+                                                                                $nextFieldId = 'mlAddLnFirm';
+                                                                                include 'olggroaa.php';
+                                                                                ?>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>   
+
+                                                    </table>
+                                                </td>
+                                                <td align="center" valign="top" width="5%"> 
+                                                    <table border="0" cellpadding="2" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" valign="middle">
+                                                                <div class="girvi_head_green">
+                                                                    <img src="<?php echo $documentRootBSlash; ?>/images/orange48.png" 
+                                                                         alt="Present Girvi" title="Present Girvi" />
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle">
+                                                                <div id="ajaxLoadCustGirviDetailsDiv" style="visibility: hidden">
+                                                                    <?php include 'omzaajld.php'; ?>
+                                                                </div>
+                                                            </td> 
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="left" valign="top" width="20%" height="100%"> 
+                                                    <table border="0" cellpadding="1" cellspacing="1" width="100%">
+                                                        <tr align="center">
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b> FIRM NAME</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle"  width="100%"  class="textBoxCurve1px margin2pxAll textLabel16CalibriNormal backFFFFFF">
+                                                                <div id="selectFirmDiv"  class="selectStyledBorderLess background_transparent">
+                                                                    <?php
+                                                                    $prevFieldId = 'selTROI';
+                                                                    $class = 'textLabel14CalibriGrey';
+                                                                    $panel = 'MoneyLenderAddLoan';
+                                                                    $nextFieldId = 'mlAddLnFirmLnNumber';
+                                                                    $firmIdName = 'mlAddLnFirm';
+                                                                    if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                        $firmIdSelected = $_SESSION['setFirmSession'];
+                                                                    } else {
+                                                                        $firmIdSelected = $firmId;
+                                                                    }
+                                                                    include 'omffrafs.php';
+                                                                    ?>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr align="center" >
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b>FIRM LOAN NO.</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle"  width="140px"  class = "textBoxCurve1px margin2pxAll  grey16_font backFFFFFF">
+                                                                <input id="mlAddLnFirmLnNumber" name="mlAddLnFirmLnNumber" type="text" class="border-no textLabel14CalibriGreyMiddle  backFFFFFF"
+                                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                   document.getElementById('mlAddLnLenderLnNumber').focus();
+                                                                                   return false;
+                                                                               } else if (event.keyCode == 8) {
+                                                                                   document.getElementById('mlAddLnFirm').focus();
+                                                                                   return false;
+                                                                               }"
+                                                                       spellcheck="false" size="10" maxlength="30" style="height:35px;width:100%"                                                       
+                                                                       value="<?php echo $currentFirmLoanNo; ?>" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b>LOAN NO.</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle"  width="100%"  class="textBoxCurve1px margin2pxAll textLabel16CalibriNormal backFFFFFF">
+                                                                <input id="mlAddLnLenderLnNumber" name="mlAddLnLenderLnNumber" type="text" readonly="true" 
+                                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                   document.getElementById('mlPreSerialNumber').focus();
+                                                                                   return false;
+                                                                               } else if (event.keyCode == 8) {
+                                                                                   document.getElementById('mlAddLnFirmLnNumber').focus();
+                                                                                   return false;
+                                                                               }"
+                                                                       spellcheck="false" class="border-no textLabel14CalibriGreyMiddle background_transparent" style="height:35px;width:100%"  size="10" maxlength="30"                                                         
+                                                                       value="<?php
+                                                                    if ($currentLoanNo == '') {
+                                                                        echo '&nbsp';
+                                                                    } else {
+                                                                        echo $currentLoanNo;
+                                                                    }
+                                                                    ?>" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="center" valign="top" width="20%" height="100%" > 
+                                                    <table border="0" cellpadding="1" cellspacing="1" valign="top" width="100%">
+                                                        <tr align="center" valign="top">
+                                                            <td align="left" valign="middle" colspan="2" class="textLabel12CalibriBrown pdnbtm3 pdntp3">
+                                                                <b> LOAN SERIAL NO.</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF" width="100%" align="center"  valign="bottom">
+                                                                <div id='loanSerialNoDiv'>
+                                                                    <table border="0"  cellpadding="0"  width="100%" cellspacing="0" align="center">
+                                                                        <tr>
+                                                                            <td align="center" width="50%">
+                                                                                <input id="mlPreSerialNumber" name="mlPreSerialNumber" type="text" <?php if ($staffId && $array['addNewGirviAccessSerialNo'] != 'true') { ?>readonly="true"<?php }//give access depending on staff @AUTHOR: SANDY15AUG13                                                                                                                                 ?>
+                                                                                       value="<?php echo $newLoanPreSerialNo; ?>" placeholder="PRE ID"
+                                                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                   document.getElementById('mlSerialNumber').focus();
+                                                                                                   return false;
+                                                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                                                   document.getElementById('mlAddLnLenderLnNumber').focus();
+                                                                                                   return false;
+                                                                                               }"
+                                                                                       spellcheck="false"  size="3" maxlength="3" style="width:100%;height:35px;" class="border-no textLabel14CalibriGreyMiddle backFFFFFF"/>
+
+                                                                            </td>
+                                                                            <td align="center" width="50%">
+                                                                                <input id="mlSerialNumber" name="mlSerialNumber" type="text" value="<?php echo $newLoanSerialNo; ?>" <?php if ($staffId && $array['addNewGirviAccessSerialNo'] != 'true') { ?>readonly="true" <?php }//give access depending on staff @AUTHOR: SANDY15AUG13                                                                                                                                 ?>
+                                                                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                   document.getElementById('crDrType').focus();
+                                                                                                   return false;
+                                                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                                                   document.getElementById('mlPreSerialNumber').focus();
+                                                                                                   return false;
+                                                                                               }"
+                                                                                       spellcheck="false" size="10" maxlength="10" style="width:100%;height:35px;" class="border-no textLabel14CalibriGreyMiddle backFFFFFF" />
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown  pdnbtm3 pdntp3">
+                                                                <b>CR/DR</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="center" valign="middle" width="100%"  class="textBoxCurve1px margin2pxAll textLabel16CalibriNormal backFFFFFF">
+                                                                <div id="crDrTypeDiv" class="selectStyledBorderLess backFFFFFF">
+                                                                    <select id="crDrType" name="crDrType"  class="textLabel14CalibriGrey" style="width:100%;height:35px;" title="You have taken loan!/आपने ऋण लिया है!"
+                                                                            onchange="if (this.value == 'CR') {
+                                                                                        this.title = 'You have taken loan!/आपने ऋण लिया है!'
+                                                                                    } else {
+                                                                                        this.title = 'You have given loan!/आपने ऋण दिया है!'
+                                                                                    }
+                                                                                    getMLFirmLoanNo(document.getElementById('mlAddLnFirm').value, 'AddNewMlLoan', this.value);" 
+                                                                            onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                        document.getElementById('loanType').focus();
+                                                                                        return false;
+                                                                                    } else if (event.keyCode == 8) {
+                                                                                        document.getElementById('mlSerialNumber').focus();
+                                                                                        return false;
+                                                                                    }" 
+                                                                            >
+                                                                        <option value="CR" title="You have taken loan!/आपने ऋण लिया है!">CREDIT</option>
+                                                                        <option value="DR" title="You have given loan!/आपने ऋण दिया है!">DEBIT</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle" colspan="2" class="textLabel12CalibriBrown  pdnbtm3 pdntp3">
+                                                                <b> LOAN TYPE</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right" valign="middle" colspan="2" width="100%" class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF">
+                                                                <div id="mlLoanTypeDiv" class="selectStyledBorderLess backFFFFFF">
+                                                                    <select id="loanType" name="loanType" class="textLabel14CalibriGrey" style="width:100%;height:35px;"
+                                                                            onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                        document.getElementById('mlLoanNo1').focus();
+                                                                                        return false;
+                                                                                    } else if (event.keyCode == 8) {
+                                                                                        document.getElementById('crDrType').focus();
+                                                                                        return false;
+                                                                                    }"
+                                                                            onchange="if (this.value == 'secured') {
+                                                                                        javascript:showTransferedLoanDetails();
+                                                                                    } else {
+                                                                                        document.getElementById('transferLoanDetail').innerHTML = '<span class=textLabel18CalibriNormal>Unsecured Loan</span>';
+                                                                                        document.getElementById('loanPaySelAccountId').focus();
+                                                                                    }"
+                                                                            >
+                                                                        <option value="unsecured">UNSECURED LOAN</option>
+                                                                        <option value="secured" selected>SECURED LOAN</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+<!--                                <tr>
+                                    <td valign="top" align="left" class="border-top">
+                                </tr>-->
+                                <tr>
+                                    <td align="left" width="100%" >
+                                        <table width="100%">
+                                            <tr>
+                                                <td>
+                                                    <div id="transferLoanDetail">
+                                                        <?php include 'ormltrln.php'; ?>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+<!--                                <tr>
+                                    <td valign="top" align="left" class="border-top">
+                                </tr>-->
+                                <tr>
+                                    <td align="left" width="100%">
+                                        <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top" width="100%" style="background:#fff4f5;border: 1px dashed #ff6d6d;">
+                                            <tr>
+                                                <td align="left" valign="top" width="33.33%">
+                                                    <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                                <b> PAYMENT TYPE</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <div id="selAccountDiv">
+                                                                    <table border="0" cellpadding="1" cellspacing="0" align="left" valign="top" width="100%">
+                                                                        <tr>
+                                                                            <td align="left" valign="top">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="right" class="ff_calibri fs_14 brown"><b>DR</b></td>
+                                                                                        <td align="left" class="padLeft5">
+                                                                                            <div id="selAccountDiv" class="selectStyled textLabel14CalibriGrey" style="border:0"><!---Change in class @AUTHOR: SANDY09JAN14--->
+                                                                                                <?php
+                                                                                                if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                                                    $selFirmId = $_SESSION['setFirmSession'];
+                                                                                                } else {
+                                                                                                    $selFirmId = $firmId;
+                                                                                                }
+                                                                                                $nextFieldId = 'girviPaymentOtherInfo';
+                                                                                                $prevFieldId = 'girviDrAccId';
+                                                                                                $selAccountId = 'loanPaySelAccountId';
+                                                                                                $selAccountName = "'Current Assets'";
+                                                                                                $accNameSelected = 'Cash in Hand';
+                                                                                                $selAccountClass = 'textLabel14CalibriGrey';
+                                                                                                include 'omacsalt.php';
+                                                                                                ?>
+                                                                                            </div>  
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td align="left" valign="top">
+                                                                                <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top" width="100%">
+                                                                                    <tr>
+                                                                                        <td align="right" class="ff_calibri fs_14 brown"><b>CR</b></td>
+                                                                                        <td align="left" class="padLeft5">
+                                                                                            <div id="selAccountDiv" class="selectStyled textLabel14CalibriGrey" style="border:0"><!---Change in class @AUTHOR: SANDY09JAN14--->
+                                                                                                <?php
+                                                                                                if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                                                                    $selFirmId = $_SESSION['setFirmSession'];
+                                                                                                } else {
+                                                                                                    $selFirmId = $firmId;
+                                                                                                }
+                                                                                                $nextFieldId = 'principalId1';
+                                                                                                $prevFieldId = 'girviType';
+                                                                                                $selAccountId = 'mlLoanCrAccId';
+                                                                                                $selAccountName = "'Loans'";
+                                                                                                $accNameSelected = 'Secured Loans';
+                                                                                                $selAccountClass = 'textLabel14CalibriGrey';
+                                                                                                include 'omacsalt.php';
+                                                                                                ?>
+                                                                                            </div>  
+                                                                                        </td> 
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+    <!--                                                <td align="left" valign="top">
+                                                        <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top">
+                                                            <tr>
+                                                                <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                                    <div class="spaceLeft5">PAYMENT INFO</div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <div id="selAccountDiv" class="selectStyled">
+                                                <?php
+                                                if ($_SESSION['setFirmSession'] != '' || $_SESSION['setFirmSession'] != NULL) {
+                                                    $selFirmId = $_SESSION['setFirmSession'];
+                                                } else {
+                                                    $selFirmId = $firmId;
+                                                }
+                                                $prevFieldId = 'principalId1'; //@AUTHOR: SANDY09JAN14
+                                                $nextFieldId = 'loanChequeNo';
+                                                $selAccountId = 'loanPaySelAccountId';
+                                                $selAccountName = "'Current Assets'";
+                                                $accNameSelected = 'Cash in Hand';
+                                                $selAccountClass = 'textLabel14CalibriGrey';
+                                                include 'omacsalt.php';
+                                                ?>
+                                                                    </div>  
+                                                                </td> 
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="left">
+                                                                    <input id="loanChequeNo" name="loanChequeNo" type="text" placeholder="Cheque No"
+                                                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                                                       document.getElementById('loanPaymentOtherInfo').focus();
+                                                                                       return false;
+                                                                                   }
+                                                                                   else if (event.keyCode == 8 && this.value == '') {
+                                                                                       document.getElementById('loanPaySelAccountId').focus();
+                                                                                       return false;
+                                                                                   }"
+                                                                           spellcheck="false" class="inputBox14CalibriGrey textBoxCurve1px6rad" size="30" maxlength="16" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>-->
+                                                <td align="left" valign="top" width="33.33%">
+                                                    <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                                <b> PAYMENT AND OTHER INFO &nbsp;</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left"><textarea id="loanPaymentOtherInfo"  cols="30"
+                                                                                       onkeydown="javascript:if (event.keyCode == 13) {
+                                                                                                   document.getElementById('loanOtherInfo').focus();
+                                                                                                   return false;
+                                                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                                                   document.getElementById('loanChequeNo').focus();
+                                                                                                   return false;
+                                                                                               }"
+                                                                                       spellcheck="false" name="loanPaymentOtherInfo" 
+                                                                                       class="textarea-girvi-otherInfo" style="width:100%;height:80px;"></textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="left" valign="top" width="33.33%">
+                                                    <table border="0" cellpadding="2" cellspacing="0" align="left" valign="top" width="100%">
+                                                        <tr>
+                                                            <td align="left" valign="middle" class="textLabel12CalibriBrown">
+                                                                <b>OTHER INFO</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left"><textarea id="loanOtherInfo" 
+                                                                                       spellcheck="false" name="loanOtherInfo" cols="30"
+                                                                                       onkeydown="javascript:if (event.keyCode == 13) {
+                                                                                                   document.getElementById('submit').focus();
+                                                                                                   return false;
+                                                                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                                                                   document.getElementById('loanPaymentOtherInfo').focus();
+                                                                                                   return false;
+                                                                                               }"
+                                                                                       class="textarea-girvi-otherInfo" style="width:100%;height:80px;"></textarea>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td align="center">
+                                        <div style="text-align:center;">
+                                            <?php
+                                            $inputId = "submit";
+                                            $inputType = 'submit';
+                                            $inputFieldValue = 'Submit';
+                                            $inputIdButton = "submit";
+                                            $inputNameButton = 'submit';
+                                            $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                            // This is the main class for input flied
+                                            $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                            $inputStyle = "border-radius: 5px !important;border:1px solid #a2d8a2;margin: 10px auto;width: 122px;height: 30px;font-weight: bold;font-size: 15px;text-align: center;color:#1a971a;background:#dfd";
+                                            $inputLabel = 'Submit'; // Display Label below the text box
+//
+                                            // This class is for Pencil Icon                                                           
+                                            $inputIconClass = '';
+                                            $inputPlaceHolder = '';
+                                            $spanPlaceHolderClass = '';
+                                            $spanPlaceHolder = '';
+                                            $inputOnChange = "";
+                                            $inputOnClickFun = 'setMlId(this);';
+                                            $inputKeyUpFun = '';
+                                            $inputDropDownCls = '';               // This is the main division class for drop down 
+                                            $inputselDropDownCls = '';            // This is class for selection in drop down
+                                            $inputMainClassButton = '';           // This is the main division for Button
+                                            include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                            ?>
+                                        </div>
+<!--                                        <input type="submit" value="Submit" class="frm-btn" id="submit" name="submit"
+                                               maxlength="30" size="15" />-->
+                                    </td>
+                                </tr>
+<!--                                <tr>
+                                    <td valign="top" align="left" class="border-top">
+                                </tr>-->
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>   
+

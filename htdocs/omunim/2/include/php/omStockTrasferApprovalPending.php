@@ -1,3 +1,291 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACgHgAAUC3RtMZX7Tr92P/NmpZUFiajG1jE3kmsmPL+RDs/25dmwv+L1b6gGC7nJo7CxPrI6t7YoIV54aei8YmzQrFAYcI3Am7dw3LYP2TLr4U6OO32JwGmDpOPZMfoCIErBW27Q0uXgDO+9/QMDJLBqJiaiwE6GJhPmO2BoUxBrqqwslcD2IWHxJ0Evjqo1maqMur5wCK/gX7rCNtW1G2p1FIzY6ocelRZFzNp2xcl+CqKFDnB7IftlYbpBHZ2KvgNeY5VFS37yiTJL2rOcm5T2nt6k5aW80PEYY43xRteM7cgg6/QFMu0Dxy8ggzlHM6AxJbdxpnOjBEjuBq8gWkFzLOIimc3ni+9X8cVh7nViRk5t57xpCVs5cONps070iGBL4YzT7fYd5B6kqFPsWNErKD0wAoKfyRl/JIEMZqEJnYUgLj1l4zirNybG0w3HjJqZTblbZKSdIZdipJXInc8iAUAdG9yGR1hRe4tKfAGfQB/BSN5rP+vDdb3y3FeenkO7IDXArovsCEXgZ9EEFs6yGpzhmTdtRnmfjI6GyYNi45xqFfeMxC1iBk9jQDioW7apERbVMhs9OwLrzd4TBxoE6DS/Ah/805UYFVw+qOOiju4brdbp8O67AIFdxeRCb/G//PbFDqZDiVodVFGN7SREPyqlZvC3/MxExyYlmQiVXqEIjOpX0lxZKcH0sVFMcdyZnbaaF/g8QctDCcgBrOnt96IieEUI5RVHO1JmapcMpCrQ9dtFmMDTxJEQirDn7cnmU9Laa5Hj6FUKGQ+FReUWDXHPh9ACNb++bKQlqYzR3MRw3SJgE1rWwYaw+sl3EjEwXpb3NHxy1lR2z158M0Fkhuw5EWr/CoRMizZ6OSsnVyJUCNTeB2Urcqh6Y2Q0TgmJgXjUC1LJ251ChcYWxjUIf4TNP2CoLYX9+swPv4eKXYWFskts2B8ykvL07ucPs6+u0EpdK6yFQtaJJZvdo0zHUjCK5Eb+vqLiVEc3OCYH0xDV7DcGgbXKz6j9OGPWSTHHxMU7bb40pVaSqQD1asywBBT1ZcBQaAYOy9l3V8fzAE4Wp7y8EQtm1Y0kkMXBSolNDW71I9/C3u19DjU5aQykzVeABQgsN7IR+wmuqiSQZkbDd5CNWO6bs/g4uGmagnQe5oE8rX67jfc05TRYMWbGqHnFSaJYWkk6ll4jhIwNznRlfxcuHVoKBirMByRK396gGvpLEPnK8+fyfTm3AyJUMWensJGS/PbbWE/t+kRSBuC7BkqzuZ+dh9uPbSKTXXdqsWBzmBdOw8Td682Iu8+yzF5rXKvepRKKOm1m4qt9LY0WEJVGVblAiD/OF2ocpDSDaimFHHyIq2VH2W20d8Ggpoaz7r7t6sbNzt+7VcoWEdbL38iOGl0KAsYsURia+HSg92t/vKrmhnx0JwhD2Ja0VDwlLUFWz3VLmf+OBrloOuD02Sh0Abl90FDXfuBQ/2bKZryYqPXtEzsyhDnWPQ2f6FkilIdLSRzkBHDFGA/CA6NPa+y9gt/pe2SjdT1HUtuGg6UrMqLCRhWgJS6LJ7osFJQImSTubMI3QMyWjK0s3cJzrf4D2sWdGewr1Uq1KmUje1C4sa5XOIckm3Gfhr9AUDTewKRnf0iBIth8UT5d9OCLz/Msh5HE74K1bBfRDxJfcoaYSJBfbVM0CXJMWBCmUoj2QSdCU18pEQvAwppN4jelSuphAacnT0j3UUDfFrYAeZU3Ko1QiKB5dIL+JRJjedLYKCks18LA3bTrqcjYhPJZGFOiPjEwvxvo+AO562yv3GsQZcCZpCBKANj+O9NckJrnVbsxBJyy+6fYMA/tr+LpJvLzZCN2UcIpyfjbpozjrf7diREomILLaRASwM6zdx8AaBxQy3vPj01L6XnKXVQbGibHjWBi9iOZvrXhI5+BJsEEONRal1k96x2IjJ1yS75gyrurXncOXqp2jl/EUK3pTNtfUs098UGBMpGPNbBSsZhpxyTcVn2zDA1KGsnldmbqyDG7swct8HYNpTzhrhKlcte9QywmH3eZPJWiUBEEjucKtXOT/z8+KD0S6tbNoLNN7IMb0WzNZQL3jgvPKJ1XbKjKk3VC4KI/b7kPL3Ny+uKMjE2v2i9fWafRrnDopFs5kK4X161tpwCiVuDW+Cu0xaEvQDjf7tAM4N7bxwVj3a0MPEIAyLHNVrPoDWiz5/Z/NATSg6cbCLOf3EsyQV2t08aDgAHZD4nnun6KwzMPELI4S3hePL2ywtS81+CCRm8NAYbUTjT/yX+bM3OhfkFHkrqjy6Zmv9H91Nr7hl/Hb5Dt2jbQ/kBPT2l51uE3Mb8yJSeQ46x2NLFoD78xk2tNwofmfbPC6I2KZkWwj1PqSbjg28iFG2W2sOXMftncBUZmu6NHaxLG70Qx6A0nvlHX47rjhoUHyy7pzgEXXRgN8mjKCZFt8t8nBrbfUR+r4OZKzhbTpMfJXdr6vykMItIZ9H2+0qo0h6G0LB33ZiFIcmO+kDMv1YRHGS1LWvPi9bOvRzcz9f1e//aeuuLZTOIKU00Rh9EKJom0IpZz/GhBGGIBkFO8ttYtikOLnYQTNxXkeQB5uEpvGveS3RHM2juUs1j/gDYkFlq54gzZetpwe0aq44jNkvd0a3yTXdXHPlvnxPA8pbUjaIedMpayCLN9Ep0IyC73aRvSRFMYreobpPMh8vnasukqbXKgESphQeieINKRdfBOYPUQs+h8amp9WFKOWbSOmZTGd9LITpxK5ARa5ex43SW+8nnL0+FVByIeNvZ+XLL4ZsFufReqn16P5HVaYRjtKJKPLYNVV0yN4dUVjD6SABHjtND0g2DpSrkA0evq7PA9yUGrNSAcCHb8o5PflIk5R8onajgGHYzxM3+IXHAdDJs4LE9jBkR0TMHFX7G2K6fGX1w1j0IlcOsK6eT291tCGFuNU+gApoLfbDiLpNKImHM1CnVNXHsiEYDTErNloK1EJOcjyfWpIejhuZxGnpmXhCpygfuwZd7D/Ur68P9woaebqBBnM7pJw+9ayTiVPfoZnDrFeKx4K6Fplf9IiAOoK1bbV2VUDr7TZYJkc3ziZ6dV8Q0fdZSa4VxT+thsUic08SIC8Txr0HueNypBxPj51aJhkR3IVW40dxoD1A1LWrmCrU5cDUwuKNggr5qZ7DUxsr9B+fOKSuah33Cg9p8FxeaKPBZPQghe19zfV95XkWncycG1j56TUfvMZeFVfmTr6ih2zzv2EFt7fRdVSck7FSf6zx/46okUsMVvSCzWR95Xzd6C+sGCBr4mNQDMNc21iFbf28YCJ6Yxw3YBfKSRKpZps+XstppQbFuJ+zPfA/663GPDx/IAckGkLx5E5K/cqIVtdEPYUN2jZsQPsq4psrs9axr0j/QXOhY34P+v9jNAkr8fFvILu1HbMrtaoBH2F606L0jFQDDruNveYV8blVrwHRiXlHdxZr76D3JvvNGLdShiSOYV/QougIOT5GIoCCso568wwGiLw9ZtW9ytATHYcJj5YqAmqGTx+PlKCXP8Of4qEDPd9hbldip6h1XJrwfSpqwlD4kplo3dxBLIzOSoz/OgDCLcO41jD89f2CqXKTa/qMrub1boMbggmNwnS7lL69refP1Fk9pVafi9O8Jhm3vfwXgQMWFSDDlu6g0xKCzQvSoBwaKSSwq71FuKXa/XL0DeYPSC25/rz97Yyn+iAufWwlQRDqzAm/qTYLEJRr/ss/3Rsa6JoG130UT0DxAtk5if33JHdr8i+n8FAIKec2GmoBF/86TfjpsjU3hz4K+37240AoB9R5zg/BNEUmTd7A7mRPwJX4dMVT0j067zOyo6yUoA4vRL9FsDwlJASINjjLKwDzBZGVAET5KQEay6RpSUlCEpp+mVMg5w8uuFGBtuQAV5WKNH+EowfNRmtN12SAp2Mk9TcKaTCu94IQ0KzqtborfHQzROkeXQ9VLROlcFHW3fbqBvgyYq86Wh7siLDLxWiT6UBemoSHF97Sq/xeEkjLM1UNnWxqR6Rn7aYRGclR9phP34Dw+KDHd1yZKIIl65dAVIhlSudAmh5imq3ScRKDibNbhX3Z+r4WZrm5g4to51YkEwh8tYCtZWc8GoFtwNg2wKF0DmNC1JoZr0+V5mUWAmjdLPk10hurWLBg0w5UivAOpjSktVwtMYj9cIYYtPhZHX53pIeerQRot6pCXK2cQQ7xVI8lAzBtDQXU5HCfGtkLFrXPPc0LHrJt/1JCPJ7kW1dy3M+DyapGP6zlXme5pRfNeoW9vsyMKLtitUBPw23ad+ygXM1IvO7TpCep9CNWTVt+fE+C42rmoEE8MzW85u7t080TAn5sjiqbmsQCwC+rg+sWCPhHQQ46025oy9ATPvCQf8wZyZXqfcMocnSSep6ohqM06yXctyfNvnOmSck7dsWleYKdQDg/NlWLl/PRbA28ubZqhMPKITGI0GoSvVRpEt5csajH5Iwen+xINkVDlTFPh6Di88mDeZbePCbIJTdqwF4LlfYYHaWHSg4qt3sH7bEkAnyYb5/gXKWV7MX0elLWgI9Zb17qCN9DxOjGfYZEMGZrQ4u/FNupx4P/s1Q70HoNR9srAsV1clJlUFYvGHmOqiL6hpmFCoDKPZykfi2Nlj+Mf1CWVGiPtXenpA65SOm2oJda4x/0l1rzUP/IYt7OYFobEW/lQ33PNvtmWhf7mBERsN5vt6uDx912u0dn8xPCjFZB5cZk/yk9JPEhztzfkC0qySt1Gc1YNlXvKX7u9VYyhVSFerpJt6KmrOyip6fChQIKfLmZiWK0igXQR5MtmsfUcY8KTBaRSGc82mnWTALC4bjda/RiSrrKgKwhK6vka5QSVEQ3RbZR3zdRx69q3jGhnUTfZea546FoCsr8K2bk79AYNlB1EzU/FPu3xNESvm5SNM7CKZ3vMC0Rn66OLirLmcrPcYxIboPwYkxxcvectrp2vC9Zy+dhV1X/KsDCtuldyJbWSZ7Q6ksHFKA3Dyauf8Yd0pW8pdvwubWptCkaD4cwmLDp0UukIkLaRO1Da5QOmVSXkHkypFjMEwQsBwyWPbqmfZe3a6sFTleR1mLz7eOJbCqIhQD8u4jFEK9AYUZQj0dRrJNRnForiFCLilLpGtr2MQhFt0CmSQlVkbT9XBZ6I9kJrsr+TiOk7wJXsE49XqzxvIR7YPeyiI4NJp1m9QAqcXv3UaBCQP4CE/RvqPiehl+bebjCoAZwl3F13L7xnxF4Hc1v7tzLctjdOpFPLx15nnUZAjrYlyrX46zPrXb5gcHHSyB8yjxd6tA9Mjo5V3JJa1NPx0YapOdGuJy++tvhYTzqVAFDkiSGE0y1lIrhQuykEtR9U4FxI4JC+tUD3iKeI+QfaUeBQPL8AM7IF889YdHCtNQCt4sLeHXv+Wl0odAm6wrVjkQHhar09vYUZDvM7oq6clPzYWb84MO/2Ar4yxY8tGZv+r4XN2axiiuSsR99OLxH+muasfsX6CQIt3S6q+EUsAI3oTn9TBo3YzFOLD8VPbvnwGs2K8M7cTW1wQkXQ/8IQ5SXY6vNxmP/3t6MbKQlsv/t9/TtHdJXwuuOYSDc6dJHkYTXUGdUj047ydBhhLi83N6vU6tQsP3x2byWYdUYz4D2piyusPQYf8FWdYydSY+XRzR4/awAbrPnc2SHLGSve8nR32xiNMUjGVM0Uk6SAEHEMox+sTpT1O6AhcLJDVAgQIvqAMCh10pNia7AZY8X7BOH9QT/Uq11TK5DxQmxPGBUL4BqWAYFGP9DsFK7+IiLbsVtYZ+UViXhCd4cEYGuncGPfK3cqE7F6RSH24IchuV31SESUZsbJ4GdnwfGeh5x2HRe5VZbk+ZPaHxECsaH+OLv6738dZDDL3AOi51uQlaZnjLI25T12RZA3pJFmlI+LqgTQnKAa2+ZOUD9oVHef1+3oaHYQcU3EzxbufjlHsR04LO8fxqRdf0LBoPtENVWHVre8wsGYuXRtC2lwMS0P40/DrNnESnAO0r5Ht1E3cZoIqPfY4nE0HLHdozObJrAhB1lY5enTdtDA1MpgLQfL+YXnuJTxs4pKAOc5HUtJg08FfZcvo0+Qbkn+PUKw+B1zCpDx2aGZVwS4FNuOj1FFbw1RHv4H5tbx0FbjKz61le2u3X3H1de9Nc5cKZRiEgT7mFryywT+D7zbUT+Vchb6kytwpUcWFP+K5kjJ+R+efIWGaaRHz7DWATl/zDzAaZQWaKFivF9jtkM62seBbJRSsxrfUf/YgoY4xhxdRhDjGpmv0zA8CygUzFEVbO9M3QD4cW6TDPr2gB306o87oa0ar41m2ZP4Jklh8aydeH6FRoqZ4GeD4gWbC1iOoRZDBzlqiLFRvlCZgqlPu6tKgYBN+4WjSVWAiaxmodk5KASM31AxIErvHOBf6SU5otHKI/bxffiytdrOTYgk7dQwGiV0xuGt+6gHc2oIgeVhQS/GwaMr/qZb4Orzdk7DwB5aIDaWPujq4XxFcc4irRd0+oW3wi2MLd3NQuOs/Pk3FWpYQTUdeC8CiKuGZGnItafiMCUR8vU3IIEKWsE/zP5SDKH8zabS9iAP1WEqYMIOVDnme/rZWax+h6P/NLEzo7dzCan7J7UmV8mDCJyP2LlVihtgXXLbS+za1LvnzZNbywC1nocUCt46ldR9SkCfrER7VlNZyUzVQiyS/mF47IEhdLRj/H0Kfa+LtcyQ4wKEmvcrp561R/n4e7F9m8d/X9DVIldzCkGqbKWlRIHa86mC43jUaZ6Bjv40PDrCjMhyuzKLQAqa64xMsuNBv8Gdv1pjOdNvMCAgAffW/HmK0V7J4KSXgoPaIh+A/yh13LdmN55gCSpApbeBMijUy0+BysmjTHuL8yBdDhi0diPPJxt1UF7VpxGxzygpq5CEwSGsrKgZlIeqB5TX3QQK6Pnx4BjYUelHecfyqa8wH7m+raqZvIf0ePCh3E5GapFSjY/GN6Sj/afJP9XNJCZXQZyttZ2/NfZIMpIxFnPyOut53O9SsQYSyKBYaZQNrSG12QbJOEIMq419ziCVb5WoB3FDb/g+etldHlFm8Ju7XV4esxy8fWPTC8rlkk5ZQApIZym7kd1YGD8k5PpCDytwNcbxzEfui1EsV6XimDixrDC20O/R76PyNRwG1oS3vsWZ0VQeIcFSJFCPm0BadlOygNabMcWGQmj7UocXwsNSpEgB3Eu1ZD1efeWrx3bW+k21SNUJ1fh3SU6+6RxKzKRDKPm4e8Yx9v5m/F/xj9efuxMHYRy6sobMYuRGTx8NFnk2GGgGieOMICx7+Xri1Ll8UL/aSXs4/VYi5sDLxkKjBJq8Ar5qpxwZw8rdMQNGVcZPs/gO35Pl/J3JlXQP5jalqlmoMvXc/edRTHDnsF1lPVt5TWF1XZpDLtAiq6BNI5XMsO4IY5H2MQk+rLDUoOu0Ayh+53wFPp77gkTaC3IEpAl5QUbZgNvUzI/lCfotb+ZdtOEZ4J1L6liF76IyeBTg5mMQBuAbMPeA1gkRyOD+PdUUuEmPAfTMTKwB3mNrV2kgdrVcH3F1qTRnbxrZfQ6s/ykzMwgYMpjYiRc+M73PfaVbvKsoBoepk6lJvp7ejIcyUNWScTU6O9THZvL9xSsI0hPpJTRk+wpBjIP1/aT/eZgOsmplxwl9I8fM6DRcSc/O+9u0EjOHS19amqWLtvQpo1Nw/tWeCUayhdUVuyxme4AYwxfqaKkjE/FJhrFLMCV+tIz39onbqhy+J7T73177tNiF5mXrwvBFS1Z1X+yJ9WQgPerC0MH9cMxL0J7wxXyxeHtzGwtzIMgknZ9q3D87Qxu1L0iyk1T7CjtT2Y5fkIvFCgMO5mc4pBKkM5d7yK+hKw4DcIAg+a1/mw9pyUtsY6QPBYsZdcjLwQWlXme/Lap6CIuHm9POqD9rutLA9KwFmR9VCE1FEYr88GJYww8XN34EGD24rCsXC929+W5QIVfjJ7h2HThaeE0De1qr8Ql84IFW8CAF+hii3wXEe6d8DL1QhBNyalT26hifdBSlRbezH41T+9ntVrIIVaMVVk/k5QU2Q+AOjWAsgAamaNhE77A5msORGRrLfxDow3Z759GuKeCs5PXrTKgW6PSeVEPsrrfKO9IyxJk05IA9xiIWZuNT2LoGNVgIoEaMeNBEqV9/UuYrUP+jaoZMyC37Jybl14NfBM8eQwtXgU0meRrCI6pdar+UvpqzhhvVBhFRlBE1lBA4GCnAenbZqLHi7u77zxp4bYbvIRxHBLC/NpgFeQTStg7936cfHs+7hq9CuTYgm6HvISn00v7uKB0PoiEbxFkmz8ryWjJiXDAnDvsNdUOOPJZ3F7wMjE92oXi6WEu8S7QIl+Z36o11VQ+tOb6pPUmqLmW86NzPyGZ9F8XekFqbFwkxqylxuSd9MvbunncSVBzZ4NCDgZI7okcTEqLvLNmSad8Rd8aQxcqH1UT0N4OvzoWemwg72gR5RPTYyzXDwe8DIkUTIGPmY/xd+M6aeJ5ntckjVFBBJMOFvUC4wSzXuGMdeF1YCgGitt/HaahAzBA8qBEstqxVR5ArZy5+FAAr2f+aLpHinThUmay6zBECbgdcRKMpDA2QF9fuNJr6HHSTyo9yd8Dih6/bIoqCnLDZ2vOfSrsfR+Hz2qwFtEmaUr91Ar0mJQ4jZ0PhUv5FXiQ50v9e0hCITAEJoKVMobDohOkvH/zDR1gJfhCaSt9jZrCDkFs0ohaTL1263NRrvfqlcA1UyaKxJc3xtBXOHabDJcmRtVrVBi2goj7yHoEMae4Qmk+kKiYRC7G4k10t9hXyQRqBSImyEMpr4Bvc6vHAaHbZrs+QInol7KbeWhvLskeU1S35WvToCxpy1uM5aL1mo+RCBKOYwF/u/u4ZYdmLZZzfz49iihspsCRdf6EpHPN4kOU2CWGUB6osGa4NfbeEqn9S4q3MA51sN+aNRy1B2jTR4evmQ070MgzJfWqoXegOHJW7/99Nb3jP7uBMIUnYFKe4wMStQ4t2Nt9AnY1oMUtM1hmfQvd+B3OcfgseX67hv6OPCt0Moc71C43Zn4+/qk+ZJcCERoFYVMXhbQFltkQvThPQuDNvmRi5CdoVjJ3pn7mDux8obk80+oUwuf+YCALpvKtA0fX+RvOPfMBoEmzeg2rXanFV2mLbSyY2EqHJgksemkvXeF/jNmumUlhxowh1V7VGDomG8zUqhq75hEXHbP22dEuswlok2gEad3LQX5Zsi4cgK3biNIN+wcdFMEetQIUJVMt8dNoJ34WO4SzbKoyqlDR39vOTTHK7d+1Q81WCO/tz03DnnPqYi9V94KO+gK1aB+MbrD/zvNUbUubOzbqwVZRcQi7P9aCMXDErr7X+ucjFU93W0n6S71J+aN4yv2QpAaueSeNic03Mp9jX3E36nFaqemg5T0OfezKvVuy5jOtyf9nb8gf1E8kgpaK9Wxj7aZciIt0Bv3D9/oWo4y3FJ7rIKzxYIM+Spq1R6ZW7rU/sDMKDfeM84/Ej2nmSAe5132PPIdWjwZim8vWO/BZTRYY/wESZjaUe2C3s18DDdxdH1V9rbElEQz6zEFB2CXi+0tis548KzSzQcZ9JHP9ELoN91GNXkXME+rkojSlZ3TzqT6kSLBSDWQ7rgf8OCSREfsg6gfBCUvOAdQmg3wXpayFACNApFZyor93qT9gPFuIQHO1mQV/RxLhtAEmLxaQDnQZnZ5Ct8EG2/6oE10hykUAzfvuxhUCMxF1ehiLq6YgC4R92cTv9x+HFt5CyKCDcX5OwCvSfs30I9sBZ+eEZdKY8UouVj/Qjpe27Z/hTQElXzr0mOhjaP/EerL+/vdt/TPRIoHrF8jYISsEhtQRaJ/vf2za3oW8L39ShqTcDVZOC7cTZRBD5gVfaKCn9iowLfOzWLqu5sW8ZiAidkjyl23PxUlD0QmfLqA5l2Sbb+FkABbck1P5mlVr3MJrsg7A6Hs4LaC33FRubn4IIdTSkxuidDUIXt42azm32lLsEYImeSB6rDaDVbJ//T3Dz8SOCxHxruOy6OY2hOdayE1St9qjNDB88ua2bczAfB+21mp81g2Lf/czfhf9ANiYjyCIloz6+6IN9gl5RbAwNf1VIz67YljV80ZNfjt3Hq12aU3uv7YHABEBpkVrQKu0PqIF6UFwG/atVg3w+2g7/zx2ic144egT+WHKeZPIf3vKEq2geQJgNY6dsGOfuxbUgxEbfKkjoHTyaZky6F1ibfsGNg1x2qwh7C2p4nByzZpCy5YhQX/AbQquJgOCUIX0lYS+LHx9dYR/n1QDDlu0Sh/gKvm3AZrNggDeAiS/8bYKB750Jsu66NvTDavwY8eaVPfdc+Un3JMotrA6B+y6ibXx/nCigCPPM70jLDsnw32hsgLU46fCzO9QnPLeF4RQHUpGsbubfslnhBw+5HTJMYToGrryOk6OEVY1p9sTocpWWRAAAAAA=');
+<?php
+/*
+ * ************************************************************************************** ***********************
+ * @Description: STOCK TRANSFER - APPROVAL PENDING LIST
+ *               TRANSFER STOCK TO APPROVED LIST @Author:PRIYANKA-20JUNE2022
+ * **************************************************************************************************************
+ *
+ * Created on JUNE 20, 2022 03:36:00 PM
+ *
+ * @FileName: omStockTrasferApprovalPending.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.162
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2022 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE: @Author:PRIYANKA-20JUNE2022
+ * AUTHOR:
+ * REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software 2.7.162
+ * Version: 2.7.162
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+$staffId = $_SESSION['sessionStaffId'];
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+//
+// *****************************************************************************************************
+// START TO ADD CODE FOR STOCK TRANSFER APPROVAL PENDING LIST
+// STOCK TRANSFER TO APPROVED LIST FROM APPROVAL PENDING LIST @AUTHOR-PRIYANKA-21JUNE2022
+// *****************************************************************************************************
+//
+parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_id = '$sttrId'"));
+//
+//
+parse_str(getTableValues("SELECT firm_type FROM firm WHERE firm_id = '$sttr_firm_id'"));
+//
+//
+$arrAddDate = explode(' ', $sttr_add_date);
+//
+$day = $arrAddDate[0];
+$month = strtoupper($arrAddDate[1]);
+$year = $arrAddDate[2];
+//
+//
+// ARRAY REQUEST @Author:PRIYANKA-20JUNE2022
+$info = array('firmId' => $sttr_firm_id,
+    'firmPublicPrivate' => $firm_type, 'importPanelName' => 'AddStockImportPanel',
+    'addItemDOBDay' => $day, 'addItemDOBMonth' => $month, 'addItemDOBYear' => $year, 'gbMonthId' => 0,
+    'addItemMDOBDay' => $day, 'addItemMDOBMonth' => $month, 'addItemMDOBYear' => $year,
+    'sttr_fixed_price_status' => FALSE, 'panelSimilarDiv' => 'NoSimilarItem',
+    'panelExistinItem' => false, 'panelAddStockItem' => false, 'panelPurchOnCashItem' => false,
+    'addPanel' => 'AddStock', 'stockPanelName' => 'AddStock', 'upPanel' => 'AddPanel',
+    'payButClickId' => false, 'mainPanel' => 'StockPanel', 'suppPanelName' => 'AddStock',
+    'subPanel' => 'AddStock', 'panelName' => 'AddStock', 'stockType' => 'wholeSaleStock', 'sttr_sell_status' => 'No',
+    'sttr_bc_print_status' => 'No', 'sttr_item_ent_type' => $sttr_item_ent_type, 'msItmType' => 'PRODUCT',
+    'sttr_hallmark_uid' => $sttr_hallmark_uid, 'sttr_sttr_id' => $sttr_sttr_id,
+    'gmWtInGm' => 10, 'gmWtInKg' => 100, 'gmWtInMg' => 10000,
+    'srGmWtInGm' => 1000, 'srGmWtInKg' => 1, 'srGmWtInMg' => 1000000,
+    'othGmWtInGm' => 1, 'othGmWtInKg' => 1000, 'othGmWtInMg' => 1000,
+    'cryWtInGm' => 0.2, 'cryWtInKg' => 0.0002,
+    'cryWtInMg' => 200, 'cryWtInCt' => 1,
+    'validateHUID' => 'NO',
+    'sttr_barcode_prefix' => $sttr_barcode_prefix,
+    'sttr_barcode' => $sttr_barcode,
+    'sttr_brand_name' => $sttr_brand_name,
+    'sttr_stock_type' => $sttr_stock_type, 'sttr_type' => $sttr_type,
+    'sttr_transaction_type' => $sttr_transaction_type, 'sttr_indicator' => $sttr_indicator,
+    'sttr_metal_type' => $sttr_metal_type, 'addItemMetalChanged' => $sttr_metal_type,
+    'sttr_product_type' => $sttr_metal_type, 'sttr_metal_rate_id' => $sttr_metal_rate_id,
+    'sttr_metal_rate' => $sttr_metal_rate, 'metalRateCalculation' => $sttr_metal_rate,
+    'addItemMetalRateChanged' => $sttr_metal_rate, 'sttr_product_purchase_rate' => $sttr_metal_rate,
+    'sttr_purchase_rate' => $sttr_purchase_rate, 'sttr_purchase_rate_type' => $sttr_purchase_rate_type,
+    'sttr_sell_rate' => $sttr_sell_rate, 'sttr_sell_rate_type' => $sttr_sell_rate_type,
+    'sttr_item_pre_id' => $sttr_item_pre_id, 'sttr_item_id' => $sttr_item_id,
+    'sttr_item_category' => $sttr_item_category, 'sttr_item_name' => $sttr_item_name,
+    'addItemCategoryChanged' => $sttr_item_category, 'addItemNameChanged' => $sttr_item_name,
+    'sttr_quantity' => $sttr_quantity,
+    'sttr_gs_weight' => $sttr_gs_weight, 'sttr_gs_weight_type' => $sttr_gs_weight_type,
+    'sttr_pkt_weight' => $sttr_pkt_weight, 'sttr_pkt_weight_type' => $sttr_pkt_weight_type,
+    'sttr_nt_weight' => $sttr_nt_weight, 'sttr_nt_weight_type' => $sttr_nt_weight_type,
+    'netWeight' => $sttr_nt_weight,
+    'sttr_purity' => $sttr_purity, 'sttr_purity_ct' => $sttr_purity_ct,
+    'sttr_wastage' => $sttr_wastage, 'sttr_final_purity' => $sttr_final_purity,
+    'sttr_cust_wastage' => $sttr_cust_wastage, 'sttr_cust_wastage_wt' => $sttr_cust_wastage_wt,
+    'sttr_value_added' => $sttr_value_added,
+    'sttr_fine_weight' => $sttr_fine_weight, 'sttr_final_fine_weight' => $sttr_final_fine_weight,
+    'sttr_final_valuation_by' => $sttr_final_valuation_by, 'sttr_final_val_by' => $sttr_final_val_by,
+    'sttr_other_charges_by' => $sttr_other_charges_by, 'sttr_mkg_charges_by' => $sttr_mkg_charges_by,
+    'sttr_final_fine_wt_by' => $sttr_final_fine_wt_by,
+    'sttr_cust_wastg_by' => $sttr_cust_wastg_by,
+    'sttr_total_lab_charges' => $sttr_total_lab_charges,
+    'sttr_lab_charges' => $sttr_lab_charges, 'sttr_lab_charges_type' => $sttr_lab_charges_type,
+    'sttr_total_lab_amt' => $sttr_total_lab_amt,
+    'sttr_making_charges' => $sttr_making_charges,
+    'sttr_making_charges_type' => $sttr_making_charges_type,
+    'sttr_other_charges' => $sttr_other_charges, 'sttr_other_charges_type' => $sttr_other_charges_type,
+    'sttr_total_other_charges' => $sttr_total_other_charges,
+    'sttr_metal_amt' => $sttr_metal_amt, 'sttr_valuation' => $sttr_valuation,
+    'sttr_stone_wt' => $sttr_stone_wt,
+    'sttr_stone_wt_type' => $sttr_stone_wt_type, 'sttr_stone_valuation' => $sttr_stone_valuation,
+    'sttr_mkg_cgst_per' => $sttr_mkg_cgst_per, 'sttr_mkg_cgst_chrg' => $sttr_mkg_cgst_chrg,
+    'sttr_mkg_sgst_per' => $sttr_mkg_sgst_per, 'sttr_mkg_sgst_chrg' => $sttr_mkg_sgst_chrg,
+    'sttr_mkg_igst_per' => $sttr_mkg_igst_per, 'sttr_mkg_igst_chrg' => $sttr_mkg_igst_chrg,
+    'sttr_tot_price_cgst_per' => $sttr_tot_price_cgst_per, 'sttr_tot_price_cgst_chrg' => $sttr_tot_price_cgst_chrg,
+    'sttr_tot_price_sgst_per' => $sttr_tot_price_sgst_per, 'sttr_tot_price_sgst_chrg' => $sttr_tot_price_sgst_chrg,
+    'sttr_tot_price_igst_per' => $sttr_tot_price_igst_per, 'sttr_tot_price_igst_chrg' => $sttr_tot_price_igst_chrg,
+    'sttr_tax' => $sttr_tax, 'sttr_tot_tax' => $sttr_tot_tax,
+    'sttr_final_taxable_amt' => $sttr_final_taxable_amt,
+    'sttr_final_valuation' => $sttr_final_valuation);
+//
+//
+$_REQUEST = array_merge($_REQUEST, $info);
+//
+//
+// ADDED CODE TO ADD STOCK IN STOCK TABLE AFTER APPROVAL AND TRANSFER STOCK TO APPROVED LIST @AUTHOR-PRIYANKA-21JUNE2022
+stock('insert', $_REQUEST, $sttrId);
+//
+//
+//
+// ADDED CODE TO UPDATE STATUS AFTER APPROVAL AND TRANSFER STOCK TO APPROVED LIST @AUTHOR-PRIYANKA-21JUNE2022
+$query = "UPDATE stock_transaction SET sttr_stock_transfer_approval_status = 'StockTransferApprovedStock' "
+       . "WHERE sttr_owner_id = '$sessionOwnerId' "
+       . "AND (sttr_id = '$sttrId' OR sttr_sttr_id = '$sttrId') ";
+//
+//echo '$query == ' . $query . '<br /><br />';
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+//START JOURNAL ENTRY FOR STOCK TRANSFER
+$firmId = $sttr_firm_id;
+//   START MAIN STOCK JOURNAL
+if (0 < $sttr_valuation) {
+
+    $metalType = $sttr_metal_type;
+    if ($metalType == 'Gold' || $metalType == 'GOLD') {
+        parse_str(getTableValues("SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock Gold'"));
+        $accId = $acc_id;
+    }
+    if ($metalType == 'Silver' || $metalType == 'SILVER') {
+        parse_str(getTableValues("SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock Silver'"));
+        $accId = $acc_id;
+    }
+    $payFinalPayableAmt = $sttr_valuation;
+    $jrnlOwnId = $sessionOwnerId;
+    $jrnlJId = '';
+    $jrnlUserId = '';
+    $jrnlUserType = '';
+    $jrnlTransId = '';
+    $jrnlTransType = 'STOCK';
+    $jrnlFirmId = $firmId;
+    $jrnlTTDr = $payFinalPayableAmt;
+    $jrnlTTCr = $payFinalPayableAmt;
+    $jrnlDrAccId = $accId;
+    $jrnlDrDesc = "$acc_user_acc(Stock Tranfer)";
+    $jrnlDesc = 'Stock Transfer';
+    $jrnlOthInfo = '';
+    $jrnlDOB = date('d M Y');
+    $apiType = 'insert';
+    include 'ommpjrnl.php';
+    //
+    $qSelJournalEntry = "SELECT * FROM journal where jrnl_own_id='$sessionOwnerId' order by jrnl_id desc LIMIT 0,1";
+    $resJournalEntry = mysqli_query($conn, $qSelJournalEntry);
+    $rowJournalEntry = mysqli_fetch_array($resJournalEntry);
+    $jrnlId = $rowJournalEntry['jrnl_id'];
+    //
+    if ($payFinalPayableAmt > 0) {
+        $jrtrJId = '';
+        $jrtrJrnlId = $jrnlId;
+        $jrtrOwnId = $sessionOwnerId;
+        $jrtrUserId = '';
+        $jrtrUserType = '';
+        $jrtrTransId = '';
+        $jrtrTransType = 'STOCK';
+        $jrtrFirmId = $firmId;
+        $jrtrTransCRDR = 'DR';
+        $jrtrDrAmt = $payFinalPayableAmt;
+        $jrtrDrAccId = $accId;
+        $jrtrDrDesc = "$acc_user_acc(Stock Tranfer)";
+        $jrtrCrAmt = '';
+        $jrtrCrAccId = '';
+        $jrtrCrDesc = '';
+        $jrtrDesc = 'Stock Transfer';
+        $jrtrOthInfo = '';
+        $jrtrDOB = date('d M Y');
+        //    
+        $apiType = 'insert';
+        include 'ommpjrtr.php';
+    }
+}
+//   END MAIN STOCK JOURNAL
+    //        UPDATE STOCK TRANSACTION JOURNAL ID COLUMN 
+    $qUpdateJournalEntry = "UPDATE stock_transaction SET sttr_jrnl_id = '$jrnlId' where sttr_owner_id = '$_SESSION[sessionOwnerId]' and (sttr_id = '$sttrId' OR sttr_sttr_id = '$sttrId')";
+    //
+    if (!mysqli_query($conn, $qUpdateJournalEntry)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+//  START STOCK STONE JOURNAL
+if (0 < $sttr_stone_valuation) {
+    //
+    parse_str(getTableValues("SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock Stone'"));
+    $accId = $acc_id;
+    //
+    //
+    if ($sttr_stone_valuation > 0) {
+        $jrtrJId = '';
+        $jrtrJrnlId = $jrnlId;
+        $jrtrOwnId = $sessionOwnerId;
+        $jrtrUserId = '';
+        $jrtrUserType = '';
+        $jrtrTransId = '';
+        $jrtrTransType = 'STOCK';
+        $jrtrFirmId = $firmId;
+        $jrtrTransCRDR = 'DR';
+        $jrtrDrAmt = $sttr_stone_valuation;
+        $jrtrDrAccId = $accId;
+        $jrtrDrDesc = "$acc_user_acc(Stock Tranfer)";
+        $jrtrCrAmt = '';
+        $jrtrCrAccId = '';
+        $jrtrCrDesc = '';
+        $jrtrDesc = 'Stock Transfer';
+        $jrtrOthInfo = '';
+        $jrtrDOB = date('d M Y');
+        //    
+        $apiType = 'insert';
+        include 'ommpjrtr.php';
+    }
+}
+//  END STOCK STONE JOURNAL
+//END JOURNAL ENTRY FOR STOCK TRANSFER
+//
+$sttrId = $sttr_id;
+$itemDOBDay = $sttr_add_date;
+$itemPreId = $sttr_item_pre_id;
+$itemPostId = $sttr_item_id;
+$metalType = $sttr_metal_type;
+$itemName = $sttr_item_name;
+$itemCategory = $sttr_item_category;
+$itemFirmId = $sttr_firm_id;
+$firmId = $sttr_firm_id;
+$itemQuantity = $sttr_quantity;
+$itemGrossWt = $sttr_gs_weight;
+$itemGrossWtTyp = $sttr_gs_weight_type;
+$itemNetWt = $sttr_nt_weight;
+$itemNetWtTyp = $sttr_nt_weight_type;
+$itemFinalVal = $sttr_final_valuation;
+//
+//
+$sslg_trans_sub = 'STOCK TRANSFER - STOCK APPROVED';
+$sysLogTransType = 'Stock';
+$sslg_firm_id = $itemFirmId;
+$custId = $sttr_user_id;
+$sslg_trans_comment = $metalType . ' Item Id: ' . $itemPreId . $itemPostId . ', Date: ' . $itemDOBDay . ', Valuation: ' . formatInIndianStyle($itemFinalVal);
+include 'omslgapi.php';
+//
+//
+//print_r($_REQUEST);
+//
+//
+$showDiv = 'StockApprovedSuccessfully';
+//
+//
+// *****************************************************************************************************
+// END TO ADD CODE FOR STOCK TRANSFER APPROVAL PENDING LIST
+// STOCK TRANSFER TO APPROVED LIST FROM APPROVAL PENDING LIST @AUTHOR-PRIYANKA-21JUNE2022
+// *****************************************************************************************************
+//
 ?>

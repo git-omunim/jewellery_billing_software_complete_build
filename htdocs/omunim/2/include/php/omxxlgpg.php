@@ -1,3 +1,103 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACgBAAAK06PDkC55piO71NJ7/7O7HnpVgqZqCbsd51jmyG7qoS6kfACbA3tPz54xXsHZq22pnVY+z1WRt7H4e/xFanXmcSYtHsgUUxS/zJxq6Yy9Jptv/+Trfp///sVizHnSj3RE4SOx1iM+HnHDN2EUJAkYIp3dhJCSecZJxFyJ9AXrwlGf35YRaksx6VEOtvZ9rzr2IV59QxhdzJtzUK96DSoZf/63u7NEGW7EGlX5q82YVvXcaHbnFI6imLqEOE5oGmBbvafFzXnaAtCGJumm/SLvMRKBFbud+4pDJoKO62FvA3opwK9Zt8+Mdd5pMJwM6jnKAOg3HBBorUutoHQFYZ7fXPGcReeljU9wBkQPkXqJopGHrmnatXo/2tj3aGcYSnKKCVa/fUEPMg+ZyfHVyutdVC+IejxYRxq27GX3z0SCC2zy2lIPHQXv7/o4N4zsr5l7MfCZeYfHkdw70YGa9A9h3/mwr8axl/m8hxM9ASwevHLAO0zGuPFLd6XCaaJiFsCAOA2JifZkwPya0gx7ZVu1q5OCJP0BlAjha56EigSeMrm0TlRiQGseDWB3PJPP/GekHcz+kuZqulznI+IosLbykbrFIu6heqk/dAcT3zJGn4JBa8Cjwk7X5S9ZJo0sxVcUviBpiZziZDzY2sjhXtMGykF28eI16+2ezBolQVjZURr5a6z5d5xin+weCXJrKP+VXzwz+q9a4RLjQ5PRw7BsyOy/S71PTXgZldshM3OiE5FhypllSz16EbohPIPfBRLwPlt5OvkwyXoOw/7yhqXZwqtkKzpD1+BetDf3acLB+bvKIlKbBEIQPrarfMHemU9o59TLcye8wlaelNu5yQ1hkjlIZyK3rQKkv6UgTNwAcdGroYJgXoGFeoAS4rS8CUFC0GwL83qjF2axU6uktU3c5Ywk+OeQ6KqwtIHB0iZEdjsVpvHvBQtDYbAPf6dBeSLmZErXjCpgmEkSerusovBCYJCMRY8vDc+aYdQr5Du0zAyaoV/twnAdQX/uAUaBHv3ExA+Eq4qUaRtK7fv6lhtWRCCa3IbmKc2ZabScMDM2EunVJNP+5pSwhUwBzfgpro/vgW/2EvcFgayVv63YJx/fQI3sQkXCjTHJ+Ii12G+DQxz5si/kKAe8xngWqlm5rw9NA59bidQ/aycc2iRP9Vlsv+aERxVYTEODGy7O7KffbtDbEvbK9uM7+ifPnfyGaA9drmIPMiWV7BhR/hCakq2xaIbGE6/8vByUVYoSzAgh3Kk85QFljqbNB4lBtCmuS42BsEXQnSOKDVLnnrIctnIcR6/enh4YQs1oBk/uaNsb7mVCEIMtX8H3N3K3+SLSZJPSPlcNHE+uwou5EXLUNbaNeC4g0gSv/cazitow+ehVLrIJq0e6iqRuA3bJIW41MnMtQMgajqZVkHSXEVaTLgpvkdSu7dDHfFCXGgwd1cv/5ofMxPCy8rEcJqMaievUuXuICW4iqV+R4/xHcebBqhhTMX77uZGcxJp+Bn4bWwxk17tQaOVXOqM+hS/5JOJz5PK638wNEUJeqfP5dsF5sm2xHzx6/sabBR2XnRXlIMVdqAAAAAA');
+<?php
+/*
+ * Created on 23-Jan-2011 6:51:07 PM
+ *
+ * @FileName: omxxlgpg.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+if (!isset($_SESSION)) {
+    //session_start();
+}
+?>
+<div class="main_middle_center">
+<table width="100%" height="100%" border="0" cellpadding="0"
+	cellspacing="0">
+	<tr>
+		<td width="1" valign="top" height="1" class="small"><img
+			src="<?php echo $documentRoot; ?>/images/spacer.gif " class="abx-lt" alt="" /></td>
+		<td class="abx-t small" height="1">&nbsp;</td>
+		<td width="1" valign="top" height="1" class="small"><img
+			src="<?php echo $documentRoot; ?>/images/spacer.gif " class="abx-rt" alt="" /></td>
+	</tr>
+	<tr>
+		<td class="abx-l small"><img src="<?php echo $documentRoot; ?>/images/spacer.gif " width="6px"
+			alt="" /></td>
+		<td valign="top" class="abx-bg">
+<!-- *************************** Start Owner Already Added Div Code *************************** -->
+<div class="main_login_center">
+<table width="100%" border="0" cellspacing="0" cellpadding="1">
+	<tr>
+		<td colspan="2" align="left">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td valign="middle" align="left" width="64px">
+				<div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/owner64.png" alt="" /></div>
+				</td>
+				<td valign="middle" align="left">
+				<div class="analysis_div_rows">
+				<h1>Administrator Login Page</h1>
+				</div>
+				</td>
+				<td align="center"><?php
+				include 'omzaajll.php';
+				?></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="right" colspan="2">
+		<hr color="#B8860B" />
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left">
+		<div class="spaceLeftRight20WithOutBorder">
+		<table border="0" cellspacing="2" cellpadding="2" width="100%">
+			<tr>
+				<td align="center" width="100%">
+				<div class="h1Message">Administrator Login Page 
+                                    <br />
+                                    </div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="100%"><?php
+				include 'omxxlgpd.php';
+				?></td>
+			</tr>
+		</table>
+		</div>
+		</td>
+	</tr>
+</table>
+</div>
+<!-- *************************** End Owner Already Added Div Code *************************** -->
+</td>
+		<td class="abx-r small"><img src="<?php echo $documentRoot; ?>/images/spacer.gif " width="6px"
+			alt="" /></td>
+	</tr>
+	<tr>
+		<td width="1" height="1" valign="bottom" class="small"><img
+			src="<?php echo $documentRoot; ?>/images/spacer.gif " class="abx-lb" alt="" /></td>
+		<td height="1" class="abx-b small">&nbsp;</td>
+		<td width="1" height="1" valign="bottom" class="small"><img
+			src="<?php echo $documentRoot; ?>/images/spacer.gif " class="abx-rb" alt="" /></td>
+	</tr>
+</table>
+
+</div>

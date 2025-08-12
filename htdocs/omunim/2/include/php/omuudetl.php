@@ -1,3 +1,169 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: omuudetl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+//include_once 'ommpincr.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+if ($custId == '') {
+    $custId = $_POST['custId'];
+    $firmId = $_POST['firmId'];
+}
+if ($custId == '') {
+    $custId = $_GET['custId'];
+    $firmId = $_GET['firmId'];
+}
+$panelDetails = $_GET['panelName'];
+$showDiv = $_GET['divMainMiddlePanel'];
+$showDivPanel = $_GET['showDivPanel'];
+$showDivNew = $_GET['udhaarDivMainMiddlePanel'];
+//
+//echo '$showDivPanel == '.$showDivPanel;;
+//
+?>
+<div>
+    <table border="0" cellspacing="2" cellpadding="2" width="100%" class="ShadowFrm">
+        <tr>
+            <td align="left" width="100%">
+                <table border="0" cellspacing="2" cellpadding="2" width="70%" align="left">
+                    <!---------Start code to add new code for udhaar btns @AUTHOR:ANUJA08JAN16  ------->
+                    <!------start code to Add div and also some change in td @Author:ANUJA01MAR16--------------->
+                    <!---------Start code to add new code for close button @AUTHOR:SANT22APR16  ------->   
+                    <!--*************************Start code to change moneypanel home page Author:SANT9MAY16********************************-->
+                    <tr>
+<!--                        <td align="left" width="10%">
+                            <div id="ajaxLoadAddNewUdhaar" style="visibility: hidden" class="blackMess11"> 
+                        <?php include 'omzaajld.php'; ?>
+                            </div>
+                        </td>-->
+
+                        <td align="left" width="14%">
+                            <div class="ff_calibri fs_14">
+                                <a style="cursor: pointer;"  onclick="showAddNewUdhaarDetDiv('<?php echo $custId; ?>', 'UdhaarList');">
+                                    <div class="frm-btn" style="font-size:14px;height:35px;line-height:28px;"> <b>UDHAAR DETAILS</b></div>
+                                </a>
+                            </div>
+                        </td>
+                        <td align="left" width="18%">
+                            <div  class="ff_calibri fs_14">
+                                <a style="cursor: pointer;"  onclick="showAddNewUdhaarDetDiv('<?php echo $custId; ?>', 'udhaarWithEMIList');">
+                                    <div class="frm-btn" style="font-size:14px;height:35px;line-height:28px;"><b> UDHAAR EMI DETAILS</b></div>
+                                </a>
+                            </div>
+                        </td>
+                        <!-- start Change deposit money to Advance money @Author:RATNAKAR06JAN2018 -->
+                        <td align="left" width="22%">
+                            <div  class="ff_calibri fs_14">
+                                <a style="cursor: pointer;"  onclick="getAdvanceMoneyDetDiv('<?php echo $custId; ?>', 'AdvMoney');">
+                                    <div class="frm-btn" style="font-size:14px;height:35px;line-height:28px;"> <b>ADVANCE MONEY DETAILS</b></div>
+                                </a>
+                            </div>
+                        </td>
+                        <!-- END Change deposit money to Advance money @Author:RATNAKAR06JAN2018 -->
+<!--                        <td align="left" width="25%">
+                            <div  class="ff_calibri fs_14">
+                                <a style="cursor: pointer;"  onclick="getAdvanceMetalDiv('<?php echo $custId; ?>', 'AdvMetalList');">
+                                    <div > DEPOSIT METAL DETAILS
+                                    </div>
+                                </a>
+                            </div>
+                        </td>-->
+                        <td align="left" width="12%">
+                            <input type="submit" value="ADD UDHAAR"
+                                   id="buttAddUdhaarDetails" name="buttPaidUdhaarDetails" 
+                                   onclick="showAddNewUdhaarDiv('<?php echo $custId; ?>', 'AddUdhaar');"
+                                   class="frm-btn" style="font-size:14px;width:100%;height:35px;line-height:28px;"/>
+                        </td>
+                        <td align="left" width="14%">
+                            <input type="submit" value="ADVANCE MONEY"
+                                   id="buttAddMoneyDetails" name="buttPaidUdhaarDetails" 
+                                   onclick="getAdvanceMoneyDiv('<?php echo $custId; ?>', 'AddMoney');"
+                                   class="frm-btn" style="font-size:14px;height:35px;line-height:28px;"/>
+
+                        </td>
+                       
+                       
+<!--                        <td align="right">
+                            <input type="submit" value="ADD EMI"
+                                   id="buttAddEmiDetails" name="buttPaidUdhaarDetails" 
+                                   onclick="showAddNewUdhaarDiv('<?php echo $custId; ?>', 'udhaarWithEMI');"
+                                   class="frm-btn" />
+
+                        </td>-->
+
+                        <!-- start Change deposit money to Advance money @Author:RATNAKAR06JAN2018 -->
+                       
+                         <td align="left" width="10%">
+                            <div id="ajaxLoadAddNewUdhaar" style="visibility: hidden" class="blackMess11"> 
+                                <?php include 'omzaajld.php'; ?>
+                            </div>
+                        </td>
+                        <!-- End Change deposit money to Advance money @Author:RATNAKAR06JAN2018 -->
+<!--                        <td align="right">
+                            <input type="submit" value="ADD METAL"
+                                   id="buttAddMetalDetails" name="buttPaidUdhaarDetails" 
+                                   onclick="getAdvanceMetalDiv('<?php echo $custId; ?>', 'AdvMetal');"
+                                   class="frm-btn" />
+                        </td>-->
+                    </tr>
+                    <tr>
+                        <td colspan="2" width="30%">
+                            <div id="udhaarMaindiv">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+<!--        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>-->
+    </table>
+</div>
+    <!------End code to Add div and also some change in td @Author:ANUJA01MAR16--------------->
+    <!------Start code to Add div and also add some code @Author:ANUJA15MAR16--------------->    
+    <div id="addNewUdhaarDiv">
+        <?php
+        if ($showDivPanel == 'AdvMoney' || $showDivPanel == 'AdvanceMoney')
+            include 'omamndtdv.php';
+        else if ($showDivPanel == 'AdvMetal')
+            include 'omamtdtdv.php';
+        else if ($showDivPanel == 'UdhaarEMI')
+            include 'omuemidet.php';
+        else if ($panelDetails == 'UdhaarList')
+            include 'omuandwt.php';
+        else
+            include 'omuudet.php';
+        ?>
+
+    </div>

@@ -1,3 +1,133 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: REPAIR ORDER FILE @PRIYANKA-03APR2021
+ * **************************************************************************************
+ *
+ * Created on APR 03, 2021 12:05 PM
+ *
+ * @FileName: omrwmomf.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 2.7.45
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-03APR2021
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.45
+ * Version: 2.7.45
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<div class="supp_middle_body" id="supp_middle_body"> 
+<?php
+    //
+    $userId = $_POST['userId'];
+    //
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_GET['userId'];
+    }
+    //
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_REQUEST['custId'];
+    }
+    //
+    //echo '$userId == ' . $userId;
+    //
+    if($suppId == '') 
+       $suppId = $userId;
+    //
+    if ($mainPanel == '')
+        $mainPanel = $_GET['mainPanel'];
+    //
+    if ($metType == '') {
+        $metType = $_GET['metType'];
+    }
+    //
+    //echo $metType;die;
+    //
+    $upPanelName = $_POST['upPanelName'];
+    //
+    if ($upPanelName == '') {
+        $upPanelName = $_GET['upPanelName'];
+    }
+    //
+    $suppPanelName = $_POST['panel'];
+    //
+    if ($suppPanelName == '') {
+        $suppPanelName = $_GET['panel'];
+    }
+    //
+    $panelName = $_POST['suppPanelName'];
+    //
+    if ($panelName == '') {
+        $panelName = $_GET['suppPanelName'];
+    }
+    //
+    if ($panelName == '') {
+        //
+        $panelName = $_POST['invPanel'];
+        //
+        if ($invPanel == '') {
+            $invPanel = $_GET['invPanel'];
+        }
+    }
+    //
+    ?>
+    <div class="main_middle_cust_list">
+        <table border="0" cellspacing="0" cellpadding="2" class="spaceLeft5" width="100%">
+            <tr>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td align="left" colspan="2">
+                    <div id="admnDepositMoneyDiv" class="spaceLeft10">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="border-top">
+            <tr>
+                <td align="left">
+                    <div id="supplierCrystalPurchasePanel">
+                        <?php
+                            //
+                            $transactionPanel = $_GET['transactionPanel'];
+                            //
+                            //echo '$transactionPanel == '.$transactionPanel;
+                            //
+                            if ($transactionPanel == '' || $transactionPanel == NULL) {
+                                if ($metType == 'SELL')
+                                    $transactionPanel = 'RawSell';
+                                else
+                                    $transactionPanel = 'RawPurchase';
+                            }
+                            //
+                            include 'omrwiadv.php';
+                            //
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

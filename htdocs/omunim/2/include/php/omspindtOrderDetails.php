@@ -1,3 +1,684 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: ORDER DETAILS @PRIYANKA-17JUNE2021
+ * **************************************************************************************
+ * 
+ * Created on 17 JUNE, 2021 06:30:22 PM
+ *
+ * @FileName: omspindtOrderDetails.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @PRIYANKA-17JUNE2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<style>
+    .border-color-grey-rb{
+        border-bottom: 1px solid #000000;
+        border-right: 1px solid #000000;
+    }
+    .border-color-grey-rbu{
+        border-right: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        border-top: 1px solid #000000;
+    }
+    .border-color-grey-left{
+        border-left:1px solid #000000;
+    }
+    .border-color-grey-top{
+        border-up:1px solid #000000;
+    }
+    .border-color-grey-ru{
+        border-top: 1px solid #000000;
+        border-right: 1px solid #000000;
+    }
+    .border-color-grey-u{
+        border-top: 1px solid #000000;
+    }
+</style>
+<?php if ($counterNew == 1) { ?>
+    <tr class="bc_color_darkblue" height="20px">
+        <!--*******************************************************************************-->
+        <!--START CODE TO CUSTOMIZE ORDER DETAILS : AUTHOR @DARSHANA 26 AUG 2021-->
+        <!--*************************************************************************************-->
+        <?php
+        $fieldName = 'orderItemSNo';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderItemSNoLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+
+        <?php
+        $fieldName = 'orderNo';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderNoLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderProdCode';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderProdCodeLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderProdDesign';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true' && $imageDisplay == 'Y') {
+            $fieldName = 'orderProdDesignLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderProdDetails';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderProdDetailsLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderQty';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderQtyLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderGsWt';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderGsWtLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderNetWt';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderNetWtLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderPurity';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderPuritytLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderFinWt';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderFinWttLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderfpurity';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderfpurityLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+
+        <?php
+        $fieldName = 'orderffinwt';
+        parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                        . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+        if ($label_field_check == 'true') {
+            $fieldName = 'orderffnwtLb';
+            $label_field_font_size = '';
+            $label_field_font_color = '';
+            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check "
+                            . "FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                            . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+            ?>
+            <td align="left" class="tableHeadColorChng ff_calibri fs_11 border-color-grey-rbu" style="font-size:<?php
+            if ($label_field_font_size != '' && $label_field_font_size != NULL) {
+                echo $label_field_font_size;
+            } else {
+                ?>14 <?php } ?>px; color:<?php echo $label_field_font_color; ?>"
+                width="<?php echo $gsWtWidth; ?>">
+                <div class="paddingRight5 paddingLeft5">
+                    <?php echo $label_field_content; ?>
+                </div>
+            </td>
+        <?php } ?>
+    </tr>
+<?php } $counterNew = 2; ?>
+<tr class="marginTop10" >
+    <?php
+    $fieldName = 'orderItemSNo';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "SR NO.">
+                            <?php
+                            if ($SrNo != '') {
+                                if ($rowSlPrItemDetails['sttr_indicator'] == 'stock') {
+                                    echo $SrNo;
+                                } else {
+                                    echo '';
+                                }
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+
+    <?php
+    $fieldName = 'orderNo';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "ORDER NO">
+                            <?php
+                            if ($orderNo != '') {
+                                echo $orderNo;
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderProdCode';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "PROD ID">
+                            <?php
+                            if ($sttr_item_code != '') {
+                                echo $sttr_item_code . " (" . strtoupper($sttr_metal_type) . ") ";
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderProdDesign';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true' && $imageDisplay == 'Y') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "IMAGE">
+                            <?php
+                            if ($rowSlPrItemDetails['sttr_image_id'] != '') {
+                                //
+                                $sttr_image_id = $rowSlPrItemDetails['sttr_image_id'];
+                                //
+                                $imageFName = '';
+                                //
+                                //echo '$sttr_image_id == ' . $sttr_image_id . '<br />';
+                                //
+                                if ($sttr_image_id != NULL && $sttr_image_id != '') {
+                                    parse_str(getTableValues("SELECT image_snap_fname FROM image "
+                                                    . "WHERE image_id='$sttr_image_id'"));
+                                    $imageFName = $image_snap_fname;
+                                }
+                                //
+                                //echo '$imageFName == ' . $imageFName . '<br />';
+                                //
+                                if ($imageFName != '') {
+                                    ?>
+                                    <a style="cursor: pointer;" 
+                                       onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/ogsprsim.php?itst_id=<?php echo "$sttr_image_id"; ?>',
+                                                                                           'popup', 'width=600,height=600,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+                                                                                   return false" >
+                                        <img src="<?php echo $documentRootBSlash; ?>/include/php/ogspicim.php?itst_id=<?php echo "$sttr_image_id"; ?>" 
+                                             width="64px" height="64px" alt ="Item Design" border="0" 
+                                             style="border-color: #B8860B"/>
+                                    </a>
+                                    <?php
+                                }
+                            } else {
+                                echo '';
+                            }
+                            ?> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+
+    <?php
+    $fieldName = 'orderProdDetails';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "DETAILS">
+                            <?php
+                            if ($sttr_item_name != '') {
+                                echo $sttr_item_name;
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderQty';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "GS WT">
+                            <?php
+                            if ($sttr_quantity != '') {
+                                echo $sttr_quantity;
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderGsWt';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "GS WT">
+                            <?php
+                            if ($sttr_gs_weight != '') {
+                                echo $sttr_gs_weight;
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderNetWt';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "NT WT">
+                            <?php
+                            if ($sttr_nt_weight != '') {
+                                echo $sttr_nt_weight;
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderPurity';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "PURITY">
+                            <?php
+                            if ($sttr_purity != '') {
+                                echo $sttr_purity . "%";
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderFinWt';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "FN WT">
+                            <?php
+                            if ($sttr_fine_weight != '') {
+                                if ($rowSlPrItemDetails['sttr_indicator'] != 'stockCrystal') {
+                                    echo $sttr_fine_weight;
+                                } else {
+                                    echo $rowSlPrItemDetails['sttr_fine_weight'];
+                                }
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderfpurity';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "F.PURITY">
+                            <?php
+                            if ($sttr_final_purity != '') {
+                                echo $sttr_final_purity . "%";
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <?php
+    $fieldName = 'orderffinwt';
+    parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+    if ($label_field_check == 'true') {
+        ?>
+        <td align="center" class="border-color-grey-rb border-color-grey-left" valign="top">
+            <div class="paddingLeft5">
+                <table border="0" valign="top" cellspacing="0" cellpadding="0" align="left">
+                    <tr>
+                        <td align = "left" class = "ff_calibri font_color_black" style = "font-size:14px" title = "FFN WT">
+                            <?php
+                            if ($sttr_final_fine_weight != '') {
+                                if ($rowSlPrItemDetails['sttr_indicator'] != 'stockCrystal') {
+                                    echo $sttr_final_fine_weight;
+                                } else {
+                                    echo $rowSlPrItemDetails['sttr_final_fine_weight'];
+                                }
+                            } else {
+                                echo '';
+                            }
+                            ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    <?php } ?>
+    <!--*******************************************************************************-->
+    <!--END CODE TO CUSTOMIZE ORDER DETAILS : AUTHOR @DARSHANA 26 AUG 2021-->
+    <!--*************************************************************************************-->
+</tr>  

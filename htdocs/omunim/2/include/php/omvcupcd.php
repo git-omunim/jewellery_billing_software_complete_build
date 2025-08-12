@@ -1,3 +1,124 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on May 25, 2011 11:46:59 PM
+ *
+ * @FileName: omvcupcd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//Changes in file to hide labels and add new class for input fields @AUTHOR: SANDY16DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+
+$qSelectCountry = "SELECT * FROM country where country_id='$_GET[countryId]'"; //To display data in this form
+$resultCountry = mysqli_query($conn, $qSelectCountry);
+$rowCountry = mysqli_fetch_array($resultCountry);
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td width="40%">
+            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                <tr>
+                    <td>
+                        <div class="spaceLeft10 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New State" />
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown">UPDATE COUNTRY</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="60%" align="right" valign="bottom">
+            <div class="analysis_div_rows"><?php
+                $showCountryAddedDiv = $_GET['divMainMiddlePanel'];
+                if ($showCountryAddedDiv == "CountryAdded") {
+                    include 'omzaaamg.php';
+                } else if ($showCountryAddedDiv == "CountryUpdated") {
+                    include 'omzaaumg.php';
+                } else if ($showCountryAddedDiv == "CountryAlreadyExist") {
+                    ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;" class="updateMess"><div class="spaceRight20">~ Country Already Present, Please enter different Country Name ~</div></div>
+                    <?php
+                }
+                ?></div>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="left">
+            <div id="addUpdateCountryDiv" class="spaceLeftRight20Border">
+                <form name="update_country" id="update_country"
+                      action="javascript:updateDeleteCountry(document.getElementById('update_country'));"
+                      method="post">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0">
+                                        <!---<tr align="left" valign="middle">
+                                                <td align="left" class="frm-lbl">Country Name:</td>
+                                        </tr>--->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1">
+                                            <input id="countryName" name="countryName" value="<?php echo $rowCountry['country_name']; ?>"
+                                                                               spellcheck="false" type="text" class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"
+                                                                               size="35" maxlength="50" /><input id="countryId" name="countryId"
+                                                                               value="<?php echo $_GET[countryId]; ?>" type="hidden" />
+                                            <div class="testfieldMess">(Country Name should be unique)</div>
+                                            <input id="countryCurrency" name="countryCurrency" value="<?php echo $rowCountry['country_currency']; ?>"
+                                                                               spellcheck="false" type="text" class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"
+                                                                               size="35" maxlength="50" />
+                                            <div class="testfieldMess">(Country Currency Like INR, Rs, &#x20B9;)</div>
+                                        </td>
+                                    </tr>
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-lbl">Comments:</td>
+                                    </tr>
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1"><textarea id="countryComments" placeholder="Comments"
+                                                                                  name="countryComments" class="textBoxCurve1px margin2pxAll textLabel12Calibri_non backF9F9F9" rows="2" cols="40"/><?php echo $rowCountry['country_comm']; ?></textarea></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center"
+                           width="100%">
+                        <tr>
+                            <td width="100%" align="center">
+                                <table border="0" cellpadding="1" cellspacing="1" align="center">
+                                    <tr>
+                                        <td><input type="submit" value="Update" class="frm-btn" id="Update" name="Update"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                        <td><input type="submit" value="Delete" class="frm-btn" id="Delete" name="Delete"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>

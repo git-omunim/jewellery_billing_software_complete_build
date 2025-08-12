@@ -1,3 +1,127 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Update LOAN Date
+ * **************************************************************************************
+ *
+ * Created on 9 Aug, 2012 1:16:56 AM
+ *
+ * @FileName: olgugvdd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$mlId = $_POST['mlId'];
+$loanId = $_POST['loanId'];
+$loanDOBDay = $_POST['loanDOBDay'];
+$loanDOBMonth = $_POST['loanDOBMonth'];
+$loanDOBYear = $_POST['loanDOBYear'];
+$loanJrnlId = $_POST['jrnlId'];
+$girviDOB = $_POST['girviDOB'];
+$girviSerialNum = $_POST['girviSerialNum'];
+$girviFirmId = $_POST['girviFirmId'];
+
+if ($mlId == '') {
+    $mlId = $_GET['mlId'];
+    $loanId = $_GET['loanId'];
+    $loanDOBDay = $_GET['loanDOBDay'];
+    $loanDOBMonth = $_GET['loanDOBMonth'];
+    $loanDOBYear = $_GET['loanDOBYear'];
+    $loanJrnlId = $_GET['jrnlId'];
+}
+?>
+<?php
+
+$loanDOB = $loanDOBDay . ' ' . $loanDOBMonth . ' ' . $loanDOBYear;
+
+if ($loanId == '' or $loanId == NULL or $loanDOBDay == '' or $loanDOBDay == NULL or $loanDOBMonth == '' or $loanDOBMonth == NULL or $loanDOBYear == '' or $loanDOBYear == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+    /*     * ****************Start code to add sys log var @Author:PRIYA05JUL14*************** */
+    $sslg_trans_sub = 'MONEYL LOAN DATE UPDATED';
+    $sysLogTransType = 'transLoan';
+    $sslg_firm_id = $girviFirmId;
+    $sysLogTransId = $girviSerialNum;
+    $sslg_trans_comment = 'Loan Serial No: ' . $sysLogTransId . ', Updated Date: ' . $girviDOB . ', Loan Amount: ' . formatInIndianStyle($principalAmount);
+    include 'omslgapi.php';
+    $addSysLogInd = 'NO';
+    /*     * ****************End code to add sys log var @Author:PRIYA05JUL14*********************** */
+    $qSelGirviDate = "SELECT ml_DOB,ml_new_DOB,ml_loan_type FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_id='$loanId'";
+    $resGirviDate = mysqli_query($conn,$qSelGirviDate);
+    $rowGirviDate = mysqli_fetch_array($resGirviDate, MYSQLI_ASSOC);
+
+
+    if ($rowGirviDate['ml_DOB'] == $rowGirviDate['ml_new_DOB']) {
+        $qUpdateGirvi = "UPDATE ml_loan SET
+		ml_DOB='$loanDOB',ml_new_DOB='$loanDOB'
+                WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+    } else {
+        $qUpdateGirvi = "UPDATE ml_loan SET
+		ml_new_DOB='$loanDOB'
+                WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+    }
+    if (!mysqli_query($conn,$qUpdateGirvi)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    /*     * **Start to add new code @AUTHOR: SANDY20JAN14*********************** */
+    if ($rowGirviDate['ml_loan_type'] == 'Linked') {
+        $updateGTransEntry = "UPDATE girvi_transfer SET gtrans_DOB='$loanDOB' WHERE gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_trans_loan_id='$loanId' and gtrans_trans_type='Linked'";
+        if (!mysqli_query($conn,$updateGTransEntry)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    /*     * ***End to add new code @AUTHOR: SANDY20JAN14*********************** */
+    //to update transferred girvi transfer date as per new changed date @AUTHOR: SANDY27NOV13
+    //to update transfer loan if it is linked to this loan
+
+
+    /*     * ******************************************************************************************* */
+    /*                START CODE To Update DR and CR Jounal Entry @AUTHOR: SANDY5AUG13                   */
+    /*     * ******************************************************************************************* */
+
+    $jrnlId = $loanJrnlId;
+    $jrnlOwnId = $_SESSION[sessionOwnerId];
+    $jrnlDob = $loanDOB;                       //Updated Date
+
+
+    $apiType = 'updateDOB';
+    include 'ommpjrnl.php';
+
+    $jrtrJrnlId = $loanJrnlId;
+    $jrtrOwnId = $_SESSION[sessionOwnerId];
+    $jrnlDob = $loanDOB;                       //Updated Date
+
+    $apiType = 'updateDOB';
+    include 'ommpjrtr.php';
+
+    /*     * ******************************************************************************************* */
+    /*                   END CODE To Update DR and CR Jounal Entry @AUTHOR: SANDY5AUG13                */
+    /*     * ******************************************************************************************* */
+    header("Location: $documentRoot/include/php/ormlupln.php?mlId=$mlId&loanId=$loanId"); //change in filename @AUTHOR: SANDY20NOV13
+}
+/* * *********End code to Add Trans Girvi Panel @Author:PRIYA06SEP13****************** */
 ?>

@@ -1,3 +1,228 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACwGAAAIIOplbfakx5CrKNAllZW1t0eU1Ux44Z/hlTQ+AoS7aXsMzq+5uxK6F7EAbB9fedVC4GqxwGVJudNQRaDGigmeMKB0kjYSiHmyEGfAHy0Scz7eQZnhemtH2EEzzXE2mV5jdhyIbSbUwO+yKFMU70FjPfyizeQsPh9KqD4O6gIiGCtyq1pSB8tVhI7xukyjapjk9y2wStrfqQ5vGDdmmx3CHuwwtZqaCcB3Ru2js8tpDqkxTNzKz7kmFYRSmfe5jziY47jrXFljtGzqfzMm5IGDAMTi/CORbi8NkIFqX5S5QrkxvS2m8E2wFdodElpPRnoFOlHOw0njC8mqSyRnevTcXntzgBBX45JjG0hwAu0RzaJrW+9Xd+tOGp/N1EiXR4DhMXijTyk11rWNhdbrvLqW+xAL3l7QbV3DzovDSGP2bvJETouDk/IIzjmCnOLsUGTNq49TLFriWCj58LbGNx9uesMQXRAncXq10pD63dABtGwBHYkw8DSL9E9Gm1xWn59ovUeCNPqpcuuQF+W47AILbpxCtai6QYZkeqWQLi8fTr+YXF8ILR08ARPnmdkBhAcW26ohHCsUUaq2wuDwUket5KbjVDIAiiFqHq7Pu1o0jY0hoS7er9ehPS7XpkPPL2VmfI0sl8cL5ue9WZvh04CEMV5g91dLmopDspZ8bBANro9AubDETz8Fu5kPP4aH5pG85bPSZYtBiH0N6q2zq8NKFUZ4b0BOq5H6ZfGqRf8h0/UBR+DRzeWIspAh1+H5xePrCDY7+37OzpwfHPFZR8q4++uDFFTqD0GMcoCYm8H9vBtgexvc7hozWBpjKGFmQQrcNiay38G1QKX43A4InHOrCpcRTLbTRyqoFQkdnvVNJSdHrIxLTZ3ZWJd4gf8vQAPInE04hJ/lxVtZz2fDpgxRaloBSz3csD9026mIkRrdJ6UJd2eqqTTc+gSBQ7/Q3uJZYsoVBMPvgNgJ29y7DyKtmVX7sK0Gqpl0ZCTwPuOrPDYOoae9S3K7WsGkt8rKpVIHFytdVdResZoP1vLkaC5Eqcic3vVza9an/E6v9cMbDTuTVr+sCA7hLlYK/6YjxF4MaIFqAFr1XH8xgnOOwPZ0Sxs4Nr7kfKaxpbbKXGHS+cRthNeIhPDY+hkpB/7bwP6So2Z7su5XD22fC5VIDpJ8PgxioH7AWjUq1fYSd1kLAF+j7EOAxSDnJI4l/u3m6HKNHuGAfdqna1JQ0Z9DMFTqw1M7QeOTP6YIlfsxXbM4wIm0Ei1D9t/W4I+ZWXRqIe25t/d22720vF/kLxIqyHJzJ69dLzIFN4B7VfTw7H23Rj6OCYPBd4/LwDzfWRDQnyCvepTXl5HRWAgcRcuSOe8+YV3k3JMVPDtLy2jYH8AYoCZaWMl1YQHLTRFIilbHmgnj1glnbt7oQpY+FXw3Nz6pJ4nPEsyfYAo1a2FkdVoXVN0H2HutytkTferPSOzyATAGI79cPPzy3UQHD8u/z8ZJFDtqu9SP1ScLVsr2ber9qYcpjjmnQqikle0vx7us85I0/k8JoI7J5DlrfvBiMJLfRbrKfLX6MmuDX68yQBFFPU0gw8ZiLx+RzSkMSynYhj0HwtI7rCSPBlN00GAXun3tUaBEQa5AMxcn84gMxe+Smeutx6NbZ/jZ4S8NUvkOeAJWSTE/4VKUJ1f+Dr8hF3IMBcxysLOO9OnSCa8j1eii/G4a/gH2J9k5//3oiXqRsvWJ71pegRT06VYI04DWhHPH3ZrvEcjLEHDYsnmSmbAT2chJsqdEqS4BuadYp+x3BYliLvmUxEioDQ50zPiABimPtrevQGX0k5mRMP2S2gFprN7LiPESGIAfU+Ln6Okqq1xAKCNW1ZVWpkGgB5NxmRmbcA50GQ71Iq9chAukMcgxdlYiMgemZHfglI65C5t2s43cy+6QqPmdfvqiFGV7tuxrduu8YfwF4xAruxeVWH3TEhJWteoF26O8XBu5YhZy6E4bROaCJcGMgQYjHdJdmyuSHnhSsFoeHhmeuaWm+gANqP6lSzPBIkcHL3tg+ZE1U7fe+zyZQUiIwKBh4MzIBjcI6vaiKTZ0eEq3TRzXnIlTIpeUDufkmICS41zYxFhIEXCcVQ5H103S4fVMsqAj/0QlI3tn3KycoTFNpKNuD5t6yyx5mJA8AMqrYdM0RSd+r0eH3Q2of9g/et5nmJfj8xFbeXV/Sa5q38qgNHQUl6J59ZS+SZY4pogq+rxXp/SMZUxAahdtHrYwQsn6XDr5BuLf3sVFufS9m9tY+MghIEwiIHMSH0UQuY5QCkWQYS/jM9BSjDpKdg42i9vbrNFQ9RqS2nrJNioiCpuKGy3gSvZcYd0kl9oDX2yrGIaNiVAnK4Tv7n+kKY6yJfnN0Xi8+r/GGgZoLlSCynrNAuKTWRtAlOrGBtDe6NTQdL3R0Xrx6puPMmwS56bdZV4Q4GAa7PeFhz5x/GVbEPTTy9LHUJaz5wMDCIJHF1hD6VLIObv77lyrqT8C3vSLgPUweuHt2u211llaK0wHm+rxs/FS8cty4RdNSyzjqenohyMtKDXYhkDgyNsZdVoF/H7wMdpZScupvIjN7DG1bhkBg+zoP0iipxXv1OHr/DTYHJsyt+FVii/9G6zRBcHiEsG0xQDOZeZ3s3OfGBo9qkbQkMfsuxkjbm7iAAPOMFok9OCoFqnuKnPLd0UcqG7QqQzB9W96OFEwz2IKEA7akiyboqgZdqwwcmcNqedhkRR7lksQKhUKnhcQLwczgbsfl71lU1enlfvM/mbUn29CvSgnx5XrS3ntRXaXK4Gh/RPsAmOlbOMfQFxaHV9SII/ESmz/KYL818MFwQqd1k3Kun60BvwKSgL2eqzRpWzzyzqOsIrGzoe1Pe9ZLZG+VpX9Pyd34lpdqQ/HzuGQZW7spDcQ3FnkRVAqiusOaE7ZR+/O2a/lr8deZbeZOLrERXnxkX31pel7auJiDPoCTPtHdxh3lwUIsd7K5FQpM5F2kHtPMUchnzhb+qWVPrmcGQfzuirvWCnCSYfkAmXPfLYWBZfuTGRi0I+lsuSHAVosOByM2EZSkNZ8+8mzynLloOyfn1mvrE4OuAxKqfrArYeudGdXDtR1aOSTsQU97QXUs8+EO1KvvFSubI08GUmz9CMqzjmnNK8gqorxfMf5TbBNqMYo01h5/JgFkQ+VvBul5YkAnw/Vszx8LeGO1j0p4YYBZUp1aU/zjL3R3O3ySpeMqIRd1HFiqhMZ1Fx0OH6fXAIDGQjUgPdq51IsP1x9ShLXC/Vrqc1k+gldHYb/8zYo7yf4VQYteZYX/g7U/vVJjY+yJNMEyEDGVUmYPBhk9QJgb6PRzm/aHw8VV9Da20N7p/S8SohH5imX36wVSP/vpeHuY0WE8QpcilOdYEAywkx5LHb/EyP/uvEt8zEMxBadkIPoRg7o6P8xNWGT5YbNPWDbSVK7lrE3enCvOBdB2bSw2b49wyrYKrbv3J0DrfrtUGNuZGNTpgsHi/dEZbqiufbc3Sxatw9x3lY2stDwxoxkNITMLoXCJloAHhqXttB6AqqP3SXw5djRCtvUojJnQqTTFEbzYaZtayw2SoF8ffpAuJn1IunigWRRGQyHId6ZNItt1jVoe29m6vtuobZQ8N0y8e8oEdjGoX6TZaFcCL61wy5KHKgVz/dm7DypWQkoeBjqUJR3jeZ1GCq0SiL04Zk0DpO/RMoDwwMKRr3lkBknrAgtl3WdT3zdeKHps1jVGBZLFpDCOmjCZQ4/7OGj1mfS/KrbCEuQxPD7QRdz+sTrUjmwsrJMQG0VT5CKoK9GQ44u80xpguhouP05SPxqd2DvmciW4gdtXIdQkuRHYD3M0YsjCsFQ3pAWy9IWgWZ27Mvike+Skd8imflSqzeS7Ek1DNNffBKg6PVQC8KIox1wltaejUJtc7zXEwqgMemv7g87PF5OAVM1hwJuT0bW9lM6DlEx8O2tcyx7JKeP50bVFgM2hKhEYpHmrExse8GlxPzSEnnHb12zL0uVAMtljWBHLEFYuP5OCqFEeKlLbVF4+GvQAKfd/Yx1bXAcAHr1nA32PweyTi74mvhbh/qX4TVB6xTNSXcIpBYTcGRppmRjKe4JWM1qaNTh2lShdqwpvdLbuZJ7aJM86Yvc0MvWxoRbmoLkyb8U0NKmCPMuIBeBGCfc/zuF89sZNwo+W+IzuGYurEs84Wqg7YC/vSnVQ0OHvn//N4PXzxFTf5jSF5ZmK1OtgI7JXEBhcSFvMdXSNbgdjLnQ/Q9KUpaWa3ZU1NYsxBSJYjHcjWD7Qs4PW+VPomNs0kmh9yvmg1fMpnQ7gQPrCdJP8PwZQJyCpIKVluFngVGPJx5KGXrBYvl42McbTVuxsPC0y4NnVC08mQdGoXStTlvM+v0vZrABxQh4VfAkjYdUWfvo65zTDraTAbSps42FiQmiwTOMnodAJdjd5eOg29wSsM+UVtqwznYnoTK+qyB3HTf9MBiVxoAsuRgc3AWgPBvtNBL67JvhiQvS6rsK+8AbxShmjRCZ+wOSUMPAC2uif7SINIgsBhQjzXX3AsfnVeytmawJwE3FG9DMe89g7qknqMcZBl9gM2jRESHgB4GClza1HuY7M+ppmEUubfIenHNKsIB6b7U/85hLbGlIyxTFW6rGLDh+0lF1HLr28961Czc9EETHIP4CiOE5MObs+hD9Xjy1FmskKTWZH6bC1a29rurEI0THuncdCbL/MxydLRVtR7l/rO5K6huapHvHbBRakCxGWKXJBeb8WKTiujKy2jLVLQhHMAaAD6/Ih185D1JGPWVx7EYen3WJvPWDVWkezX5ND6yc0foZetYjF6pxT2ixvI2p5IbKNlp6KtvkxBb2jQ/hUxO1Qw0FuHK3baPc/xE9WQ9r5dMM1zHd8IIi3T1vW+BriVk2bI26FfVw9zty/9HF9TsN+SDTXAfTpmxl2SS9HmYgpLrvmrXv0yhx/zQ+G9lN30N+ue9LPlZCTK9pjplbJpy86YzyB1ZNM3ou7v93dvrY3Y5QG+ntaJOgwTRJbPi00N1TZDgYWcopzJN0xcBv8IJ/x2xf0RKJYNep9FC/YlIzyhIGilbxtuJxWvTJD7vOgF9dQMqpyp+WdJhqcSvCnq9zloeP6PocqPxNpgDwmEITWxwecx+pZ4xeDzmaLpWcq7szxdsMsu3qpyLDoiVG22tzsn/iMsq7a2fChKPpiqdOswZBwT7u3o6SZBy7vYqsZiif+ctQkRghwjWAiDOQhono7sFm+OzglNiXzUSoUFdqPwyEvmKQpnrtVaSvKFnRoVRjIiEz0lS1kWeJU/J2ur+hJqiiD8eIdZ8d2xTRp8R3ZV2EyhjMm2STIrz2aoAkT5Jqsw2F0tb+uwXgv4IJ5mnliMMf2AFI57yoYV2x1Al93H/pitzzVQtffCH1FU8BL0mUTR5JhwDPsY09ConbU62edvr7DqzJnLe6w2+6+dhvjW659Niy9Az/QFnq5kGnGWKW9rlppOGBvwzQA1tjk4U/Fn1bT5QNnCG8Z3i5E95pVcAhpvsYvEKRa/sPdB0LmzSww5/q7XgMaD8Z91gvSSGas0DoxJnOk/hd0lwwrbyPvOI6gZwZ7ulk0d90a/8zigO4eZ3Fxry+3s0vJ5FOKh7+2bUIbE1x0FDcL3e0sSACmeuaRf6qcIRWpAMKXErewWoQnIhtgACag1GrxiYxhQ02O1P27we44VeIRg+uaYWIJiqFiOZqsUd6Xroh+uBWdWRYOLJAOQLBQvgfegnV+eecMbZqpdR+HIB0rgavQmaiI0cv9OlKePi+kT52SRhvhVclxmMNGFk4J8Kjwe6zZI0OzqZaWp7Ea9B7KAHIZDiDNbgO3XAmdOf1Y5RoUOnjlyvTpyQ8gLvC+ABFJjlQ9mNMuC2+R/vj1wjTfPfgzHEovcO4CLbBQ2lf9AsJbFq98E6ler8zxGPF+kp7NYiVGtfxCGRdoWlIgBn7PGtjcKYYlojjTo649wBeufTUblz4iko7SKaDwIgSdVaxrJ1yMp9aHrlCBYGZQK8RVPp8Iin39awj8aVP1JxCY6yP0/zE1OpP/WCFrlq2W+IU/1AIchkDEyu0KelR2f1vteuzccrzGsJKg1Zm0M6Ui+jp7ABIsDZdPqgrI79+rE+sg2KYRBFINWStDRqfP3Vzuyk8BHsCwoPmAzNklb5gJT2GB4MA+pQooVt71VhU3JaN6OyEmBNCWmn/kb/h0nmdqLRLlpRmZ9DMY0XdgNpWxX4ypN5ZPWfw8qIc0MebWJEVrTcTuy7cIAa0cnukXPoij65ZlMd5rUOk0+ofNqTGm+HtqRZKk7GGrDPdgML4B1Ywlp9WNSWIdFb/1VbRNElwXlkHtdGuvuQhIVwVOZNYCc8sV0qJaBCFSxjDrd5/vexSnXhCIu3IwGigJ3Fq0mKkqVKUB9z5TGXNPbB0GUw+/Rx3GDDl4rY8BL0j0Fx1bjW5ElOnU7NX7OnzIX927+W+pbW1wdw7if6v9RL0yQkeBJN809qiTc7zpVyzBhGCKWISQ7dG9fMAvxiROARhu6ua2TfZRCnF/EUDFYWlpnNFqtVhGHE0fCc3V19q4GUVUd4jDeqiTEhk7t3BWbOWfdHwgSTa9ZyAnm105jzaoRSSpJ8cF3NT0Qh7G9fhgo31T0ivqtxZCfR1bTTiC6SkBryRAnjwT/2Rz2Cdan6Fw4lDUF9cwk2PC7K0+nxSJNnTVqUO/wVc7UStrXpobV4PE7l6YR2rtNNg2MVxnxXI3H84aJ+snBoVFjTt36/ENxFFDHXXTqDH6jhuhBXLNU4ffjRzymOnHYtd4sMXOjNUZSYwCVjz2cAE1KNsNtU4bA+lXvTN6BzCT+tI7i3awyAfxcUkF72kw+YHMJXELujE88h3A0aleIuqT9izRZ3wrGrWDGtgfQC3glw5P1fh2cKekT/idot6+nLQygWCuI+L3YXCXsjINCpGw2klEwSULuplW2wrmtDELMCVVfR8vvM2znpOpdZzAQ0fcJgLxyuyMXsyFUbyj0bIXegnZZ2LxiTvx0sqAcwePq+/QRdEz8LGpqam/LNfSRK9hZnIl8UK6bgmjHmhv5nqpk3TL74WDCofhJJAIh5njOD/+OGFTASjDLSFPRXf1f+7dmQYgsCsvaWBFJ77Lc28TiYrAdAc6oLtCYvXYWhFmlDKe3f4SsQqFeJnY3x5vPx2tUqasieeO5jPhvnmlcCXXs6Ns/MSzRErK4bG+8EBUimQovwFe1kHlGU/laPksJ90dtX3rwTyN/V9oyh66K/+A9V4yxgA3JpoHHWrD5emcZUrJ5GL+VSVbJny6pph4dO4LaYWP3mk9EJ9taTn2LTw9aOdEj4c8xU33ruqM237z6pbVMNj35MRHp8l2Kq5zfThYTe3OWMO3oMZgVeWhLrEktKGzpMpIHoaApdev0wU4tNJfcxv9/utWoaJgwnOGz1qWqoLbbLrtSoE2/a3YIlK3QCRHdvVlWwH9yRsui9aKepgNak6nxqkvKumF9r81Os8C4PmRHg3uA+G1H1xou1LPYTnHkwFy2WKZkGvmvpSLL0RnudsCvG9IWrMLj8mF0jY7nmz8IinGHAOiXqOXm5Zb6fMvqoGVsxJXsqu9jtLuVlL89C3813JKVlRIrG2cKn5fR3INu85AP2xWFwmtAaBJkaSgJfpDr6ecQJQ6aR6PIguo2wtB+jwQwSXMZxc5f4thR7dgiCYprmMbBwIOK6TGxt15wojMdlTYmWgkOUct/USPqVop1VZYuE/R8rW9uyQGmRd9JY7O4WU4OjFsoMyfZrdro6/woAnUwpPc1Qvh+2rmxvx9HB27tzbSPTP+lCNbnDg05t76OB5LlXqI2XgfqkRowepp1elTm85dFgBfFiqkGe/DF5gLHv4M22SaqsRVH6MC58406jAPFyTR9vgLcsz47wPmQNUNgYc3iXf9xtE2Eyu/Q/cA+CwWGuoErD2ugit2GkihuYhyRLeSg3MoOhBJ+DgDt+Y2t/uj8AAMGfEJE3RMVdjJpEebkw5kCEb6t/9jbV0NaK80lGzSg5vLXz+1Qt0Qg1B39Re5uqEdYfVRqLmNHKpEDmpAVZLAjB+syPSJVn97pztASkkhNnAwGEmMntJYSnZ1a8o+z4sw/6pzERXJBO/5nSymzc2y5SjfmItt0oWEFAkeV4pxWZwQh7150J5cnbB93Zfv35esfmut567YIaByGyCChLIdarMa9u0W2wE0/KwMzxbeiaBEJJRtufHyPY22G4Ot/DsiuwbY1bMf4nShQ4xkLg+p+RbCm42NPtcpN5y8lsrLVwyhXCn8Ej906dNQ0SmPlQGugDs26e8X/jrjx1jXCOlqi41EeMWsFAvF+vdT5Bk8w+AP/e7TNJCAg3k8ASGEWZgIZ2pcR7qRT3E9kKPoCtJ2amqFvlfNOw6SWAV/1q1SsAAAAA');
+<?php
+/*
+ * Created on 03-Feb-2011 11:04:05 PM
+ *
+ * @FileName: omrlcslt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+$message = $_GET['message'];
+?>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr align="center">
+ <!--//**************Start code to delete customer redirection Author:@SANT16MAY16*******************-->        
+          <td align="center" valign="bottom">
+                                <div class="ff_calibri fs_14 greenFont" id="messDisplay">
+                                    <?php
+                                 include 'omzaajll.php';
+                                    ?>
+                                </div>
+     </td>
+ <!--//**************End code to delete customer redirection Author:@SANT16MAY16*******************-->      
+     </tr>
+    <tr>
+        <td align="right" class="spaceRight15">
+            <div id="messDispDiv" style="visibility: visible; background:none;" class="addedUpdatedMess">
+                <?php echo $message; ?>
+            </div>
+        </td>
+    </tr>
+ <td align="center" class="border-right-cust-list" valign="top">
+        <?php
+        // how many rows to show per page
+        $perRowsPerPage = 5;
+        $doubleLimit = $perRowsPerPage * 2;
+
+//************************Start code to change deleted customer details show Properly Author:SANT20APR16********************
+        $perPageNum = 0;
+
+        // if $_GET['page'] defined, use it as page number
+        if (isset($_GET['page'])) {
+            $perPageNum = $_GET['page'];
+        }
+
+        // counting the offset
+        $perOffset = ($perPageNum*2)  * $perRowsPerPage;
+        ?>
+        <table border="0" cellspacing="1" cellpadding="0" width="100%" valign="top">
+            <?php
+            if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+                $strFrmId = '0';
+
+                while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+                    $strFrmId = $strFrmId . ",";
+                    $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+                }
+//-----Start to add delete  button for customer @AUTHOR: SANT11JAN16 -----********************************************************************************
+                $qSelPubCustomerCount = "SELECT user_id FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' and user_firm_id IN ($strFrmId) LIMIT $perOffset, $doubleLimit";
+                $resPubCustomerCount = mysqli_query($conn,$qSelPubCustomerCount);
+                $totalCustomer = mysqli_num_rows($resPubCustomerCount);
+
+                $qSelPubCustomer = "SELECT user_id,user_fname,user_lname,user_father_name,user_sex,user_city,user_mobile,user_since,user_priority FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' and user_firm_id IN ($strFrmId) order by user_id desc LIMIT $perOffset, $perRowsPerPage";
+                $resPubCustomer = mysqli_query($conn,$qSelPubCustomer);
+                $totalNextCustomer1 = mysqli_num_rows($resPubCustomer);
+
+                if ($totalCustomer <= 0) {
+                    echo "<tr><td colspan=" . "2" . "><h5> ~ Customers not available in database ~ </h5></td></tr>";
+                }
+                
+                while ($rowCustomer = mysqli_fetch_array($resPubCustomer, MYSQLI_ASSOC)) {
+                   
+                    include 'omrlcsdt.php';
+                }
+            } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+                $qSelPerCustomerCount = "SELECT user_id FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' LIMIT $perOffset, $doubleLimit";
+                $resPerCustomerCount = mysqli_query($conn,$qSelPerCustomerCount);
+                $totalCustomer = mysqli_num_rows($resPerCustomerCount);
+
+                $qSelPerCustomer = "SELECT user_id,user_fname,user_lname,user_father_name,user_sex,user_city,user_mobile,user_since,user_priority FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' order by user_id desc LIMIT $perOffset, $perRowsPerPage";
+                $resPerCustomer = mysqli_query($conn,$qSelPerCustomer);
+                $totalNextCustomer1 = mysqli_num_rows($resPerCustomer);
+
+                if ($totalCustomer <= 0) {
+                    echo "<tr><td colspan=" . "2" . "><h5> ~ Customers not available in database ~ </h5></td></tr>";
+                }
+               
+                while ($rowCustomer = mysqli_fetch_array($resPerCustomer, MYSQLI_ASSOC)) {
+                
+                    include 'omrlcsdt.php';
+                }
+            }
+            ?>
+        </table>
+    </td>
+    <td align="center" valign="top">
+        <table border="0" cellspacing="1" cellpadding="0" width="100%" valign="top">
+            <?php
+// Code for another division in page
+            $perRowsPerPage = 5;
+            $doubleLimit = $perRowsPerPage * 3;
+            $perOffset = (($perPageNum*2)+1) * $perRowsPerPage;
+
+
+            if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+                $strFrmId = '0';
+
+                while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+                    $strFrmId = $strFrmId . ",";
+                    $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+                }
+
+                $qSelPubCustomerCount = "SELECT user_id FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' and user_firm_id IN ($strFrmId) LIMIT $perOffset, $doubleLimit";
+                $resPubCustomerCount = mysqli_query($conn,$qSelPubCustomerCount);
+                $totalCustomer = mysqli_num_rows($resPubCustomerCount);
+
+                $qSelPubCustomer = "SELECT user_id,user_fname,user_lname,user_father_name,user_sex,user_city,user_mobile,user_since,user_priority FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' and user_firm_id IN ($strFrmId) order by user_since desc LIMIT $perOffset, $perRowsPerPage";
+                $resPubCustomer = mysqli_query($conn,$qSelPubCustomer);
+                $totalNextCustomer2 = mysqli_num_rows($resPubCustomer);
+
+                if ($totalCustomer <= 0) {
+                    echo "<tr><td colspan=" . "2" . "><h5></h5></td></tr>";
+                }
+                
+                while ($rowCustomer = mysqli_fetch_array($resPubCustomer, MYSQLI_ASSOC)) {
+                    include 'omrlcsdt.php';
+                }
+            } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+                $qSelPerCustomerCount = "SELECT user_id FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' LIMIT $perOffset, $doubleLimit";
+                $resPerCustomerCount = mysqli_query($conn,$qSelPerCustomerCount);
+                $totalCustomer = mysqli_num_rows($resPerCustomerCount);
+
+                $qSelPerCustomer = "SELECT user_id,user_fname,user_lname,user_father_name,user_sex,user_city,user_mobile,user_since,user_priority FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_status='Released' order by user_since desc LIMIT $perOffset, $perRowsPerPage";
+                $resPerCustomer = mysqli_query($conn,$qSelPerCustomer);
+                $totalNextCustomer2 = mysqli_num_rows($resPerCustomer);
+
+                if ($totalCustomer <= 0) {
+                    echo "<tr><td colspan=" . "2" . "><h5></h5></td></tr>";
+                }//Message ~ Customers not available in database ~ removed @Author:PRIYA12AUG13
+               
+                while ($rowCustomer = mysqli_fetch_array($resPerCustomer, MYSQLI_ASSOC)) {
+                    include 'omrlcsdt.php';
+                }
+            }
+            //-----End to add delete  button for customer @AUTHOR: SANT11JAN16 -----********************************************************************************
+            ?>
+        </table>
+<!--************************Start code to change deleted customer details show Properly Author:SANT20APR16******************** -->
+    </td>
+</tr>
+<?php
+// Start Code to Check Demo Mode
+if (($_SESSION['sessionDongleStatus'] == $gbDongleDemoStatus)) {
+    $totalNextCustomer = 0;
+    echo '<tr><td><br/></td></tr>';
+} else
+//CHANGE IN CONDITION FOR OMLOAN @AUTHOR: SANDY22NOV13
+if ((($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) || ($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO)) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+// End Code to Check Demo Mode
+   
+    if ($totalNextCustomer1 > 0 || $totalNextCustomer2 > 0) {
+        ?>
+        <tr align="right">
+            <td align="right" colspan="2">
+                <table border="0" cellpadding="2" cellspacing="0" align="right">
+                    <tr>
+                        <?php
+                        if ($perPageNum > 0) {
+                            ?>
+                            <td align="right">
+                                <form name="prev_cust" id="prev_cust"
+                                      action="javascript:navigationInRelesedCustList('<?php echo $perPageNum - 1; ?>');"
+                                      method="get"><input type="submit" value="Previous" class="frm-btn"
+                                                    maxlength="30" size="15" /></form>
+                            </td>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if ($totalCustomer > $perRowsPerPage) {
+                            ?>
+                            <td align="right">
+                                <form name="next_cust" id="next_cust"
+                                      action="javascript:navigationInRelesedCustList('<?php echo $perPageNum + 1; ?>');"
+                                      method="get"><input type="submit" value="Next" class="frm-btn"
+                                                    maxlength="30" size="15" /></form>
+                            </td>
+                            <?php
+                        }
+                        ?>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <?php
+    }
+}
+?>
+</table>
+

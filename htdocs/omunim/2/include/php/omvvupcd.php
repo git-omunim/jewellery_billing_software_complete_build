@@ -1,3 +1,187 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on May 24, 2011 11:12:34 AM
+ *
+ * @FileName: omvvupcd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//Changes in file to hide labels and add new class for input fields @AUTHOR: SANDY16DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<div id ="cityDeliverydiv">
+<?php
+$fieldName = $_REQUEST['fieldName'];
+$optionVal = $_REQUEST['optionVal'];
+$deliveyInd = $_REQUEST['deliveyInd'];
+$qSelectCity = "SELECT * FROM city where city_id='$_GET[cityId]'"; //To display data in this form
+$resultCity = mysqli_query($conn, $qSelectCity);
+$rowCity = mysqli_fetch_array($resultCity);
+if($deliveyInd == 'update'){
+    $optionVal = $_REQUEST['optionVal'];
+}else{
+    $optionVal = $rowCity['city_ecom_delivery'];
+}
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td width="40%">
+            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                <tr>
+                    <td>
+                        <div class="spaceLeft10 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/orange16.png" alt="New State" />
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown">UPDATE CITY</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="60%" align="right" valign="bottom">
+            <div class="analysis_div_rows"><?php
+                $showCityAddedDiv = $_GET['divMainMiddlePanel'];
+                if ($showCityAddedDiv == "CityAdded") {
+                    include 'omzaaamg.php';
+                } else if ($showCityAddedDiv == "CityUpdated") {
+                    include 'omzaaumg.php';
+                } else if ($showCityAddedDiv == "CityAlreadyExist") {
+                    ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;" class="updateMess"><div class="spaceRight20">~ City Already Present, Please enter different City Name ~</div></div>
+                    <?php
+                }
+                ?></div>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="left">
+            <div id="addUpdateCityDiv" class="spaceLeftRight20Border">
+                <form name="update_city" id="update_city"
+                      action="javascript:updateDeleteCity(document.getElementById('update_city'));"
+                      method="post">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td align="center">
+                                <table border="0" cellpadding="2" cellspacing="0">
+                                        <!---<tr align="left" valign="middle">
+                                                <td align="left" class="frm-lbl">City Name:</td>
+                                        </tr>--->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1"><input id="cityName" name="cityName" value="<?php echo $rowCity['city_name']; ?>"
+                                                                               spellcheck="false" type="text" class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"
+                                                                               size="42" maxlength="50" /><input id="cityId" name="cityId"
+                                                                               value="<?php echo $_GET[cityId]; ?>" type="hidden" /><div class="testfieldMess">(City Name should be unique)</div>
+                                        </td>
+                                    </tr>
+                                    <!---<tr align="left" valign="middle">
+                                            <td align="left" class="frm-lbl">Comments:</td>
+                                    </tr>--->
+                                    <!----------START CODE TO ADD OPTION TO ADD PIN CODE OPTION,@AUTHOR:HEMA-8AUG2020-------------->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1">
+                                            <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                <tr>
+                                                    <td width="50%">
+                                                        <input id="pinCode" placeholder="Pincode" value="<?php echo $rowCity['city_pincode']; ?>"
+                                                               name="pinCode" spellcheck="false" type="text"
+                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                               size="20" maxlength="6" />
+                                                    </td>
+                                                    <td width="50%">
+                                                        <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                            <tr>
+                                                                <td align="center">
+                                                                    <input id="ecomDelivery" placeholder="Pin Code" value="<?php echo $optionVal; ?>" onchange="chngecomdeliverystatus()"
+                                                                           name="ecomDelivery" spellcheck="false" type="checkbox"
+                                                                           <?php
+                                                                           if ($optionVal == 'on'){
+                                                                               echo 'checked';
+                                                                           }
+                                                                           
+                                                                           ?>
+                                                                           class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9"                                                                                                
+                                                                           maxlength="6" />
+                                                                </td>
+                                                                <td>
+                                                                    <span class="testfieldMess">Ecommerce Delivery</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!----------END CODE TO ADD OPTION TO ADD PIN CODE OPTION,@AUTHOR:HEMA-8AUG2020-------------->
+                                    <!---------START CODE TO ADD OPTION TO ADD PRODUCT DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-8AUG2020--------->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1">
+                                            <table border="0" cellpadding="2" cellspacing="0" width="100%" style="padding:0px;">
+                                                <tr>
+                                                    <td width="50%">
+                                                        <input id="deliveryTime" placeholder="Delivery Time" value="<?php echo $rowCity['city_delivery_time']; ?>"
+                                                               name="deliveryTime" spellcheck="false" type="text"
+                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                               size="18"/>
+                                                    </td>
+                                                    <td width="50%">
+                                                        <input id="orderDeliveryTime" placeholder="Delivery Time for Order"
+                                                               name="orderDeliveryTime" spellcheck="false" type="text" value="<?php echo $rowCity['city_order_delivery_time']; ?>"
+                                                               class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" 
+                                                               size="18"/>
+                                                    </td>
+                                                </tr>
+                                                <tr><td colspan="2"><div class="testfieldMess">Enter number of Days</div></td></tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!---------END CODE TO ADD OPTION TO ADD PRODUCT DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-8AUG2020--------->
+                                    <tr align="left" valign="middle">
+                                        <td align="left" class="frm-r1"><textarea id="cityComments"   placeholder="Comments"
+                                                                                  name="cityComments" class="textBoxCurve1px margin2pxAll textLabel12Calibri_non backF9F9F9" rows="2" cols="40"/><?php echo $rowCity['city_comm']; ?></textarea></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <table border="0" cellpadding="2" cellspacing="0" align="center"
+                           width="100%">
+                        <tr>
+                            <td width="100%" align="center">
+                                <table border="0" cellpadding="1" cellspacing="1" align="center">
+                                    <tr>
+                                        <td><input type="submit" value="Update" class="frm-btn" id="Update" name="Update"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                        <td><input type="submit" value="Delete" class="frm-btn" id="Delete" name="Delete"
+                                                   onclick="setButtId(this);" maxlength="30" size="15" /></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>

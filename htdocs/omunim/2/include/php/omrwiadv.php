@@ -1,3 +1,429 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: REPAIR ORDER ASSIGNMENT MAIN FILE @PRIYANKA-02APR2021
+ * **************************************************************************************
+ *
+ * Created on APR 02, 2021 11:55 AM
+ *
+ * @FileName: omrwiadv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 2.7.45
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-02APR2021
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.45
+ * Version: 2.7.45
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+?>
+<div id="rawMetalAddDiv">
+    <?php
+    //
+    //print_r($_REQUEST);
+    //
+    if ($firmId == '' || $firmId == NULL) {
+        $firmId = $_REQUEST['firmId'];
+    }
+    //
+    if ($_SESSION['setFirmSession'] != '') {
+        $strFrmId = $_SESSION['setFirmSession'];
+    } else {
+        $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+    }
+    //
+    $selStockPurOption = callOmLayoutTable('StockPurOption', '', 'select');
+    //
+    if ($selStockPurOption == '')
+        callOmLayoutTable('StockPurOption', 'RawStock', 'insert');
+    else
+        callOmLayoutTable('StockPurOption', 'RawStock', 'update');
+    //
+    if ($metType == '' || $metType == NULL) {
+        $metType = $_POST['metType'];
+    }
+    //
+    if ($metType == '' || $metType == NULL) {
+        $metType = $_GET['metType'];
+    }
+    //
+    $msg = $_GET['msg'];
+    $rwprId = $_GET['rwprId'];
+    $sessionOwnerId = $_SESSION[sessionOwnerId];
+    //
+    if ($simButton == '' || $simButton == NULL) {
+        $simButton = $_GET['simButton'];
+    }
+    //
+    if ($simButton == '' || $simButton == NULL) {
+        $simButton = $_POST['simButton'];
+    }
+    //
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_REQUEST['custId'];
+    }
+    //
+    if ($suppId == '' || $suppId == NULL) {
+        $suppId = $_REQUEST['custId'];
+    }
+    //
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_REQUEST['userId'];
+    }
+    //
+    if ($suppId == '' || $suppId == NULL) {
+        $suppId = $_REQUEST['userId'];
+    }
+    //
+    if ($mainPanelDiv == '' || $mainPanelDiv == NULL) {
+        $mainPanelDiv = $_GET['mainPanel'];
+    }
+    //
+    if ($transactionPanel == '' || $transactionPanel == NULL) {
+        $transactionPanel = $_GET['transactionPanel'];
+    }
+    //
+    if ($rawPanelName == '' || $rawPanelName == NULL)
+        $rawPanelName = $_GET['rawPanelName'];
+    //
+    if ($NewPanelName == '' || $NewPanelName == NULL)
+        $NewPanelName = $_GET['NewPanelName'];
+    //
+    if ($NavPanelName == '' || $NavPanelName == NULL)
+        $NavPanelName = $_REQUEST['NavPanelName'];
+    //
+    if ($assignReceivedOrderPanelName == '' || $assignReceivedOrderPanelName == NULL)
+        $assignReceivedOrderPanelName = $_REQUEST['assignReceivedOrderPanelName'];
+    //
+    if ($assignMainOrderPanelName == '' || $assignMainOrderPanelName == NULL)
+        $assignMainOrderPanelName = $_REQUEST['assignMainOrderPanelName'];
+    //
+    if ($unassignMainOrderPanelName == '' || $unassignMainOrderPanelName == NULL)
+        $unassignMainOrderPanelName = $_REQUEST['unassignMainOrderPanelName'];
+    //
+    //
+    //echo '$NewPanelName == '.$NewPanelName.'<br />';
+    //echo '$mainPanelDiv == '.$mainPanelDiv.'<br />';
+    //echo '$rwprId == '.$rwprId.'<br />';
+    //echo '$userId == '.$userId.'<br />';
+    //echo '$suppId == '.$suppId.'<br />';
+    //echo '$rawPanelName == '.$rawPanelName.'<br />';
+    //echo '$metType == '.$metType.'<br />';
+    //echo '$transactionPanel == '.$transactionPanel.'<br />';
+    //
+    //
+    if ($transactionPanel == '' && $metType == 'BUY') {
+        $transactionPanel = 'RawPurchase';
+    }
+    //
+    if ($transactionPanel == '' && $metType == 'SELL') {
+        $transactionPanel = 'RawSell';
+    }
+    //
+    //echo '$userId1 == '.$userId.'<br />';
+    //echo '$mainPanelDiv == '.$mainPanelDiv.'<br />';
+    //
+    if ($mainPanelDiv == 'Customer' || $mainPanelDiv == 'Supplier') {
+        //
+        include 'omadcsrmdt.php';
+        //
+        parse_str(getTableValues("SELECT user_fname FROM user WHERE user_owner_id='$sessionOwnerId' "
+                               . "AND user_id ='$userId'"));
+        //
+    } else {
+        //
+        include 'ogadrwmtdt.php';
+        //
+    }
+    //
+    //echo '$userId2 == '.$userId.'<br />';
+    //
+    if ($user_fname == '')
+        $user_fname = $sttr_brand_id;
+    //
+    if ($sttr_brand_id == '')
+        $sttr_brand_id = $user_fname;
+    //
+    include 'ogiartdv.php';
+    //
+    if ($metType == 'BUY') {
+        $hindiLabel = ' / RECIEVED / जमा';
+        $transactionType = 'PURBYSUPP';
+    } else if ($metType == 'SELL') {
+        $hindiLabel = ' / ISSUE / UDHAAR / लेना';
+        $transactionType = 'sell';
+        //
+        if ($NavPanelName == '' || $NavPanelName == NULL)
+            $NavPanelName = "AssignRepairOrderPanel";
+    }
+    //
+    // Add Code for Update Crystal Functionality @Author:PRIYANKA-14MAR19
+    if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') {
+        //
+        $sttrId = $_GET['rwprId'];
+        //
+        $qSelCryDet = "SELECT * FROM stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                    . "and sttr_sttr_id = '$sttrId' and sttr_status NOT IN ('DELETED') "
+                    . "and sttr_indicator = 'stockCrystal' order by sttr_id asc";
+        //
+        $resCryDet = mysqli_query($conn, $qSelCryDet);
+        $noOfCry = mysqli_num_rows($resCryDet);
+        //
+        //echo '$qSelCryDet == '.$qSelCryDet.'<br />';
+        //echo '$noOfCry == '.$noOfCry.'<br />';
+        //
+    }
+    //                
+    //    
+    if ($NewPanelName == 'DeleteAssignRepairOrder') {
+        //
+        if ($sttrId == '' || $sttrId == NULL)
+            $sttrId = $_REQUEST['sttrId'];
+        //
+        if ($transMainId == '' || $transMainId == NULL)
+            $transMainId = $_REQUEST['transMainId'];
+        //
+        if ($sttrId != '' && $sttrId != NULL) {
+            //
+            $updateQuery = "UPDATE stock_transaction SET sttr_assign_status = NULL, sttr_assign_user_id = NULL  "
+                         . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                         . "AND sttr_firm_id IN ($strFrmId) AND sttr_assign_user_id = '$userId' "
+                         . "AND sttr_indicator IN ('stock','stockCrystal', 'rawMetal', 'crystal') "
+                         . "AND sttr_transaction_type IN ('RepairItem', 'newOrder', 'RECEIVED') "
+                         . "AND sttr_status IN ('PaymentDone') "
+                         . "AND (sttr_id = '$sttrId' OR sttr_trans_id = '$transMainId') ORDER BY sttr_id ASC";
+            //
+            //echo '</br>$updateQuery == ' . $updateQuery . '</br>';
+            //
+            mysqli_query($conn, $updateQuery);
+            //
+        }
+    }
+    //
+    //
+    //
+    //
+    // *************************************************************************************************************
+    // START CODE FOR TAX AND GST SETTING ON FORMS @PRIYANKA-02APR2021
+    // *************************************************************************************************************
+    //
+    $selTaxAndGstSettingQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'TaxAndGstSetting'";
+    $resTaxAndGstSetting = mysqli_query($conn, $selTaxAndGstSettingQuery);
+    $rowTaxAndGstSetting = mysqli_fetch_array($resTaxAndGstSetting);
+    $TaxAndGstSettingValue = $rowTaxAndGstSetting['omly_value'];
+    //
+    // *************************************************************************************************************
+    // END CODE FOR TAX AND GST SETTING ON FORMS @PRIYANKA-02APR2021
+    // *************************************************************************************************************
+    //
+    //
+    // ***********************************************************************************************************************
+    // START CODE FOR HSN OPTION IN FORMS SETTING YES / NO @PRIYANKA-02APR2021
+    // ***********************************************************************************************************************
+    $selHSNOptionInFormsQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'HSNOptionInForms'";
+    $resHSNOptionInForms = mysqli_query($conn, $selHSNOptionInFormsQuery);
+    $rowHSNOptionInForms = mysqli_fetch_array($resHSNOptionInForms);
+    $HSNOptionInForms = $rowHSNOptionInForms['omly_value'];
+    
+    $queryratenortecutoption = "SELECT omly_value FROM omlayout WHERE omly_option = 'ratenortecutoption'";
+   $resratenortecutoption = mysqli_query($conn, $queryratenortecutoption);
+   $rowUratenortecutoption = mysqli_fetch_array($resratenortecutoption);
+   $sttr_ratecut_norate_option = $rowUratenortecutoption['omly_value'];
+    // ***********************************************************************************************************************
+    // END CODE FOR HSN OPTION IN FORMS SETTING YES / NO @PRIYANKA-02APR2021
+    // ***********************************************************************************************************************
+    //
+    //
+    ?>
+    <?php
+    //
+    //
+    // *********************************************************************************************************
+    // Start Code to Unassign Main Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    if ($unassignMainOrderPanelName == 'unassignMainOrderFromAssignMetal') {
+        //
+        //
+        if ($sttrMainOrderId == '' || $sttrMainOrderId == NULL)
+            $sttrMainOrderId = $_REQUEST['sttrMainOrderId'];
+        //
+        //
+        if ($transMainId == '' || $transMainId == NULL)
+            $transMainId = $_REQUEST['transMainId'];
+        //
+        //
+        if ($sttrMainOrderId != '') {
+            //
+            //   
+            $updateQuery = "UPDATE stock_transaction SET sttr_assign_status = 'READY TO ASSIGN' "
+                         . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                         . "AND sttr_firm_id IN ($strFrmId) AND sttr_assign_user_id = '$userId' "
+                         . "AND (sttr_id = '$sttrMainOrderId' OR sttr_trans_id = '$transMainId') "
+                         . "AND sttr_assign_status = 'ASSIGNED' AND sttr_indicator IN ('stock', 'stockCrystal') "
+                         . "AND sttr_transaction_type IN ('newOrder') "
+                         . "AND sttr_status IN ('PaymentDone') ORDER BY sttr_id ASC";
+            //
+            //echo '</br>$updateQuery == ' . $updateQuery . '</br>';
+            //
+            mysqli_query($conn, $updateQuery);
+            //
+            //
+        }
+    }
+    // *********************************************************************************************************
+    // End Code to Unassign Main Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    //
+    //
+    // *********************************************************************************************************
+    // Start Code to Assign Main Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    if ($assignMainOrderPanelName == 'assignMainOrderFromAssignMetal') {
+        //
+        //
+        if ($sttrMainOrderId == '' || $sttrMainOrderId == NULL)
+            $sttrMainOrderId = $_REQUEST['sttrMainOrderId'];
+        //
+        //
+        if ($transMainId == '' || $transMainId == NULL)
+            $transMainId = $_REQUEST['transMainId'];
+        //
+        //
+        if ($sttrMainOrderId != '') {
+            //
+            //   
+            $updateQuery = "UPDATE stock_transaction SET sttr_assign_status = 'ASSIGNED' "
+                         . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                         . "AND sttr_firm_id IN ($strFrmId) AND sttr_assign_user_id = '$userId' "
+                         . "AND (sttr_id = '$sttrMainOrderId' OR sttr_trans_id = '$transMainId') "
+                         . "AND sttr_assign_status = 'READY TO ASSIGN' AND sttr_indicator IN ('stock', 'stockCrystal') "
+                         . "AND sttr_transaction_type IN ('newOrder') "
+                         . "AND sttr_status IN ('PaymentDone') ORDER BY sttr_id ASC";
+            //
+            //echo '</br>$updateQuery == ' . $updateQuery . '</br>';
+            //
+            mysqli_query($conn, $updateQuery);
+            //
+            //
+        }
+    }
+    // *********************************************************************************************************
+    // End Code to Assign Main Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    //
+    //
+    ?>
+    <div id="repairMetalMainDiv">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="center" width="100%">
+                    <div id="repairMetalSubDiv">
+                        <?php
+                        //
+                        //
+                        include 'omItemsAssignDv.php';
+                        //
+                        //
+                        include 'omReceivedItemsAssignDv.php';
+                        //
+                        //
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <?php
+    //
+    //
+    // *********************************************************************************************************
+    // Start Code to Assign Received Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    if ($assignReceivedOrderPanelName == 'assignReceivedOrderFromAssignMetal') {
+        //
+        if ($sttrReceivedOrderId == '' || $sttrReceivedOrderId == NULL)
+            $sttrReceivedOrderId = $_REQUEST['sttrReceivedOrderId'];
+        //
+        //echo '$sttrReceivedOrderId == ' . $sttrReceivedOrderId . '<br />';
+        //
+        if ($sttrReceivedOrderId != '') {
+            //
+            parse_str(getTableValues("SELECT sttr_id as sttr_assign_entry_id, 
+                                      sttr_metal_type, sttr_metal_rate,
+                                      sttr_item_category, sttr_item_name,  
+                                      sttr_quantity, sttr_gs_weight, sttr_gs_weight_type, 
+                                      sttr_nt_weight, sttr_nt_weight_type,
+                                      sttr_purity FROM stock_transaction 
+                                      WHERE sttr_owner_id = '$sessionOwnerId' AND sttr_id = '$sttrReceivedOrderId'"));
+            //
+            //echo 'sttr_gs_weight_type == ' . $sttr_gs_weight_type . '</br>';
+            //
+            if ($sttr_metal_type != 'crystal') {
+                //
+                $sttr_assign_entry_indicator = 'rawMetal';    
+                //     
+                $sttr_final_purity = $sttr_purity;
+                //
+                if ($sttr_metal_rate == '' || $sttr_metal_rate == NULL || $sttr_metal_rate == 0) {
+                    //
+                    // Select Metal Rate
+                    parse_str(getTableValues("SELECT met_rate_metal_id, met_rate_value, met_rate_tax_check, met_rate_tax_percentage, "
+                                           . "met_rate_with_tax, met_rate_tax_amt "
+                                           . "FROM metal_rates WHERE met_rate_own_id = '$sessionOwnerId' "
+                                           . "AND met_rate_metal_name = '$sttr_metal_type' order by met_rate_ent_dat desc LIMIT 0, 1"));
+                    //
+                    $sttr_metal_rate_id = $met_rate_metal_id;
+                    $sttr_metal_rate = trim($met_rate_value);
+                    //
+                }
+            } else {
+               $sttr_assign_entry_indicator = 'crystal'; 
+            }
+        }
+    }
+    // *********************************************************************************************************
+    // End Code to Assign Received Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+    // *********************************************************************************************************
+    //
+    //
+    ?>
+    <div id="assignOrderMainFormDiv" style="float: left;">
+    <?php
+    //
+    // ORDER ASSIGN MAIN FORM FILE 
+    include 'omrwformdv.php';
+    //
+    //
+    ?>                
+    </div>    
+</div>
+
+
+
+

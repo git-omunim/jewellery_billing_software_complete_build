@@ -1,3 +1,103 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: Loan No List @AUTHOR: SANDY14NOV13 
+ * **************************************************************************************
+ *
+ * Created on 29 Dec, 2012 11:41:07 AM
+ *
+ * @FileName: orlnlist.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+//change in file @AUTHOR: SANDY06JAN14
+require_once 'system/omssopin.php';
+$keyCode = $_GET['keyCode'];
+$id = $_GET['id'];
+$panel = $_GET['panel'];
+$loanId = $_GET['loanNo'];
+$trLoansStr = $_GET['trLoansStr']; //string of already transferred loans
+$loanPreId = preg_replace("/[^a-zA-Z]+/", "", $loanId);
+$loanPostId = preg_replace("/[^0-9]+/", "", $loanId);
+?>
+<SELECT class="loanNoListDiv" id="mlLoanNoListDiv" name="mlLoanNoListDiv" 
+        <?php if ($panel == 'Update') { ?>
+            onkeypress="if (event.keyCode == 13) {
+                    var str = this.value;
+                    if(str!=''){
+                        var girvId= str.substr(0, str.indexOf('#'));
+                        document.getElementById('addLoanNo1').value = str.substr(0, str.indexOf('#'));
+                        clearListDiv('addLoanNoList1','addLoanNo1');
+                        getDetailsOfSelectedLoan(str.substr(0, str.indexOf('#')),'1','Update');
+                    }
+                }"
+            onclick="   var str = this.value;
+                if(str!=''){
+                    var girvId= str.substr(0, str.indexOf('#'));
+                    document.getElementById('addLoanNo1').value = str.substr(0, str.indexOf('#'));
+                    clearListDiv('addLoanNoList1','addLoanNo1');
+                    getDetailsOfSelectedLoan(str.substr(0, str.indexOf('#')),'1','Update');
+                }"
+        <?php } else { ?> 
+            onkeypress="if (event.keyCode == 13) {
+                var str = this.value;
+                if(str!=''){
+                    var girvId= str.substr(0, str.indexOf('#'));
+                    document.getElementById('mlLoanNo<?php echo $id; ?>').value = str.substr(0, str.indexOf('#'));
+                    clearListDiv('mlLoanNoList<?php echo $id; ?>','mlLoanNo<?php echo $id; ?>');
+                    getDetailsOfSelectedLoan(str.substr(0, str.indexOf('#')),'<?php echo $id; ?>','');
+                } }"
+            onclick="var str = this.value;
+            if(str!=''){
+                var girvId= str.substr(0, str.indexOf('#'));
+                document.getElementById('mlLoanNo<?php echo $id; ?>').value = str.substr(0, str.indexOf('#'));
+                clearListDiv('mlLoanNoList<?php echo $id; ?>','mlLoanNo<?php echo $id; ?>');
+                getDetailsOfSelectedLoan(str.substr(0, str.indexOf('#')),'<?php echo $id; ?>','');
+            }
+            "
+        <?php } ?>
+        multiple="multiple"  size="7" maxlength="15">
+    <!----Start of changes in queries @AUTHOR: SANDY22JAN14------->
+    <?php
+    if ($loanPreId != '') {
+        $qSelLoan = "SELECT * FROM girvi WHERE girv_own_id='$_SESSION[sessionOwnerId]' and (girv_transfer_id IS null or girv_transfer_id =0) and girv_pre_serial_num LIKE '$loanPreId%' and girv_upd_sts NOT IN ('Released','Auctioned') order by girv_ent_dat desc";
+    } else if ($loanPostId != '') {
+        $qSelLoan = "SELECT * FROM girvi WHERE girv_own_id='$_SESSION[sessionOwnerId]' and (girv_transfer_id IS null or girv_transfer_id =0) and girv_serial_num LIKE '$loanPostId%' and girv_upd_sts NOT IN ('Released','Auctioned') order by girv_ent_dat desc";
+    } else {
+        $qSelLoan = "SELECT * FROM girvi WHERE girv_own_id='$_SESSION[sessionOwnerId]' and (girv_transfer_id IS null or girv_transfer_id =0) and girv_upd_sts NOT IN ('Released','Auctioned') order by girv_ent_dat desc";//Auctioned status added @Author:PRIYA10APR15
+    }
+
+    $resLoan = mysqli_query($conn,$qSelLoan);
+    while ($rowLoan = mysqli_fetch_array($resLoan, MYSQLI_ASSOC)) {
+        if (($rowLoan['girv_pre_serial_num'] == $loanPreId) && ($rowLoan['girv_serial_num'] == $loanPostId)) {
+            $loanIdSelected = "selected";
+        }
+        $girviNo = $rowLoan['girv_pre_serial_num'] . $rowLoan['girv_serial_num'];
+        
+        if (!strstr($trLoansStr, $girviNo)) { //change in condition @AUTHOR: SANDY13DEC13
+            echo "<OPTION  VALUE=" . "\"{$girviNo}#$customer*$principle%$roi@$firmName\"" . " class=" . "\"content-mess-blue\"" . "  $loanIdSelected >{$girviNo}</OPTION>";
+        }
+        $loanIdSelected = "";
+    }
+    ?>
+    <!----End of changes in queries @AUTHOR: SANDY27NOV13------->
+</SELECT>
+

@@ -1,3 +1,291 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 19, 2011 5:53:04 PM
+ *
+ * @FileName: orgagmid.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+//to show or not customer girvi number @AUTHOR: SANDY12JUL13.
+$qselectomlayout = "SELECT omly_value FROM omlayout WHERE omly_option = 'girviNoLay' ";
+$qresultomlayout = mysqli_query($conn,$qselectomlayout);
+$row = mysqli_fetch_array($qresultomlayout, MYSQLI_ASSOC);
+$option = $row['omly_value'];
+
+/* start code to provide monthly interest checkbox value @AUTHOR: SANDY17JUL13 */
+$qry = "SELECT omin_value FROM omindicators where omin_option='frstmnthindic'";
+$qryr = mysqli_query($conn,$qry);
+$rowq = mysqli_fetch_array($qryr, MYSQLI_ASSOC);
+$selected = $rowq['omin_value'];
+/* end code to provide monthly interest checkbox value @AUTHOR:SANDY17JUL13 */
+
+/* start code to check monthly interest checkbox value from girvi table @AUTHOR: SANDY17JUL13 */
+//Start code to change columname to girv_fst_mn_int @Author:PRIYA15DEC13
+$qry = "SELECT girv_fst_mn_int FROM girvi where girv_id= '$girviId'";
+$qryr = mysqli_query($conn,$qry);
+$rowq = mysqli_fetch_array($qryr, MYSQLI_ASSOC);
+$selectfromgirvi = $rowq['girv_fst_mn_int'];
+//End code to change columname to girv_fst_mn_int @Author:PRIYA15DEC13
+/* end code to check monthly interest checkbox value from girvi table @AUTHOR:SANDY17JUL13 */
+?>
+<div id="addMoreItemDiv" class="gbx-bg">
+    <form name="add_girvi_item" id="add_girvi_item"
+          action="javascript:addGirviItem(document.getElementById('add_girvi_item'));"
+          method="post">
+        <table border="0" cellspacing="2" cellpadding="2" width="100%">
+            <tr>
+                <td align="left" width="100%" colspan="2">
+                    <div class="spaceLeft20">
+                        <table border="0" cellpadding="2" cellspacing="3" width="100%">
+                            <tr align="left">
+                                <td width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td width="50%" align="left"> 
+                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>  
+                                                        <td align="right" valign="middle" class="girvi_head_maron_left16">Principal
+                                                            Amount:</td>
+                                                        <td align="left" valign="middle" class="girvi_head_black_left16">
+                                                            <div class="spaceLeft5"><?php echo $globalCurrency.' '; ?> <?php echo $mainPrincAmount ?></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="50%" align="right"> 
+                                                <table border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>  
+                                                        <td align="right" valign="middle" class="girvi_head_maron">Interest
+                                                            Option:</td>
+                                                        <td align="left" valign="middle" class="girvi_head_black_left"><!-- START Select right value PHP code -->
+                                                            <?php
+                                                            $selInerestType = $ROIType;
+
+                                                            switch ($selInerestType) {
+                                                                case "Monthly":
+                                                                    $optIntType1 = "selected";
+                                                                    break;
+                                                                case "Annually":
+                                                                    $optIntType2 = "selected";
+                                                                    break;
+                                                            }
+                                                            ?> <select id="interestType" name="interestType"
+                                                                    class="lgn-txtfield"
+                                                                    onchange="changeROIOpt('<?php echo $documentRoot; ?>','<?php echo $grvRelPayDetails; ?>',this,'<?php echo $princAmount; ?>','<?php echo $ROIId; ?>','<?php echo $girviDOB; ?>',document.getElementById('ROIOption'),'<?php echo $girviType; ?>','<?php echo $girviId; ?>','<?php echo $custId; ?>','<?php echo $girviUpdSts; ?>','<?php echo $omPanelDiv; ?>'); return false;">
+                                                                <option value="Monthly" <?php echo $optIntType1; ?>>Monthly</option>
+                                                                <option value="Annually" <?php echo $optIntType2; ?>>Annually</option>
+                                                            </select></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                            </tr>
+                            <tr>
+                                <td align="left" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                                        <tr align="left">
+                                            <td align="left" width="50%">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                    <tr align="left">
+                                                        <td align="right" valign="middle">
+                                                            <h4>Girvi Start Date:&nbsp;</h4>
+                                                        </td>
+                                                        <td align="left" class="frm-r1" valign="middle">
+                                                            <h5>&nbsp;<?php echo $girviDOB ?></h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left" width="50%">
+                                                <?php if ($girviUpdSts == 'Released') { ?>
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="left"
+                                                           width="100%">
+                                                        <tr align="left">
+                                                            <td align="right" valign="middle">
+                                                                <h4>Girvi End Date:</h4>
+                                                            </td>
+                                                            <td align="left" class="frm-r1" valign="middle">
+                                                                <h5>&nbsp;<?php echo $rowAllGirvi['girv_DOR']; ?></h5>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                <?php } ?>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <hr color="#FD9A00" size="0.1px" />
+                                </td>
+                            </tr>
+                            <tr align="left">
+                                <td align="left" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr align="left">
+                                            <td align="left">
+                                                <h4>Rate of Interest:</h4>
+                                            </td>
+                                            <td>
+                                                <div id="ROIOption">
+                                                    <?php
+                                                    if ($selInerestType == 'Annually') {
+                                                        include 'olggroia.php';//change in filename @AUTHOR: SANDY20NOV13
+                                                    } else if ($selInerestType == 'Monthly') {
+                                                        include 'olggroim.php';//change in filename @AUTHOR: SANDY20NOV13
+                                                    }
+                                                    ?>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <?php
+                            $girviFirmId = $rowAllGirvi['girv_firm_id'];
+                            $qSelFirm = "SELECT firm_name FROM firm where firm_id='$girviFirmId' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                            $resFirm = mysqli_query($conn,$qSelFirm);
+                            $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+                            ?>
+                            <tr>
+                                <td align="left" width="100%">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                                        <tr align="left">
+                                            <td align="left">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                    <tr align="left">
+                                                        <td align="right" valign="middle">
+                                                            <h4>Firm Name:&nbsp;</h4>
+                                                        </td>
+                                                        <td align="left" class="frm-r1" valign="middle">
+                                                            <h5>&nbsp;<?php echo $rowFirm['firm_name']; ?></h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align="left">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                    <tr align="left">
+                                                        <td align="left" valign="middle">
+                                                            <h4>Firm Girvi No.:</h4>
+                                                        </td>
+                                                        <td align="left" class="frm-r1" valign="middle">
+                                                            <h5>&nbsp;<?php echo $rowAllGirvi['girv_firm_girvi_no']; ?></h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            
+                                            <?php if ($option == 'girviNoYes') { ?> <!--Start code to add condition to show or not cust girvi no. @AUTHOR: SANDY17JUL13 -->
+                                                <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr align="left">
+                                                            <td align="left" valign="middle">
+                                                                <h4>Cust Girvi No.:</h4>
+                                                            </td>
+                                                            <td align="left" class="frm-r1" valign="middle">
+                                                                <h5>&nbsp;<?php if ($option == 'girviNoYes') echo $rowAllGirvi['girv_cust_girvi_num']; ?></h5>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            <?php } ?><!-- End code to add condition to show or not cust girvi no. @AUTHOR: SANDY17JUL13 -->
+                                            <td align="left">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                    <tr align="left">
+                                                        <td align="left" valign="middle">
+                                                            <h4>Packet No.:</h4>
+                                                        </td>
+                                                        <td align="left" class="frm-r1" valign="middle">
+                                                            <h5>&nbsp;<?php echo $rowAllGirvi['girv_packet_num']; ?></h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <!--start code to provide monthly interest checkbox @AUTHOR: SANDY18JUL13 -->
+                                            <?php if ($selectfromgirvi=='true') { ?>
+                                                <td align="left">
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                        <tr><td>
+                                                                <h4>First Mon Int: </h4>
+                                                            </td>
+                                                            <td align='left' class='frm-r1'>
+                                                                <div id ="indicSelFirstMonthGd">
+                                                                    <INPUT id="selFirstMonthIntGd" TYPE="checkbox" NAME="selFirstMonthIntGd" disabled="true"
+                                                                           <?php if ($selectfromgirvi == 'true') echo 'checked'; else echo ''; ?> >
+                                                                </div>
+                                                            </td></tr>
+                                                    </table>
+                                                </td>
+                                            <?php } ?>
+                                            <!-- end code to provide monthly interest checkbox  @AUTHOR: SANDY18JUL13 -->
+
+                                            <td align="left">
+                                                <table border="0" cellpadding="0" cellspacing="0" align="left">
+                                                    <tr align="left">
+                                                        <td align="left" valign="middle">
+                                                            <h4>Serial No.:</h4>
+                                                        </td>
+                                                        <td align="left" class="frm-r1" valign="middle">
+                                                            <h5>&nbsp;<?php echo $rowAllGirvi['girv_pre_serial_num'] . $rowAllGirvi['girv_serial_num']; ?></h5>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <?php
+                            $girviId = $rowAllGirvi['girv_id'];
+
+                            $qSelAllGirviItem = "SELECT * FROM girvi_items where girv_itm_girv_id='$girviId'";
+                            $resAllGirviItem = mysqli_query($conn,$qSelAllGirviItem);
+                            $totalNextGirviItem = mysqli_num_rows($resAllGirviItem);
+
+                            while ($rowAllGirviItem = mysqli_fetch_array($resAllGirviItem, MYSQLI_ASSOC)) {
+                                include 'orgigidv.php';
+                            }
+                            ?>
+                            <?php
+                            $submitButtDisplay = 'YES';
+                            // To take the inputs from user to add new Item
+                            include 'orgamisd.php';
+                            ?>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" colspan="2">
+                    <hr color="#B8860B" />
+                </td>
+            </tr>
+            <tr>
+
+        </table>
+    </form>
+</div>

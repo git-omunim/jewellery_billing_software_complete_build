@@ -1,3 +1,92 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: LED RATES  SONALI 05 AUG 2023
+ * **************************************************************************************
+ *
+ *
+ * @FileName: omledratesdisp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:  
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+include_once 'ommpcmfcc.php';
+//
+ $owner_id = $_SESSION['sessionOwnerId'];
+?>
+<?php
+$user = $_GET['user'];
+if ($user == '')
+    $class = 'main_middle';
+else
+    $class = '';
+//
+$goldMCXrate = $_REQUEST['goldMCXrate'];
+$silverMCXrate = $_REQUEST['silverMCXrate'];
+// *****************************************Start code to change user pid Author@:SANT30JAN16***********************************
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$img_sign_src = $documentRootBSlash . "/images/plus_sign.png";
+//
+//
+$queryLedRates = "SELECT omin_value FROM omindicators WHERE omin_option = 'LEDRATESINDICATOR'";
+$resLedRates = mysqli_query($conn, $queryLedRates);
+$rowLedRates = mysqli_fetch_array($resLedRates);
+$allLedRates = $rowLedRates['omin_value'];
+//
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LED RATES SETTING</title>        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />       
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/invoice.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="<?php echo $documentRootBSlash; ?>/images/favicon.ico" />
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/advanceMetal.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/orAddFunction_1_6_1.js"></script>
+    
+    </head>
+    <body>
+         <table border="0" cellpadding="2" cellspacing="2" width="100%">
+    <tr>
+         <td align="left" width="80%">
+            <div class="Helpvideo" style="margin-bottom:0;height:490px">
+                <div style="display:flex;align-items:center;justify-content:center">
+                <div class="embed-responsive embed-responsive-16by9" style="width:100%">
+                    <iframe class="embed-responsive-item" style="width:100%;height:490px" src="https://www.youtube.com/embed/eJzEmz_Vf0M" allowfullscreen></iframe>
+                <!--</div>
+                      <div class="embed-responsive embed-responsive-16by9" style="width:50%">
+                    <iframe class="embed-responsive-item" style="width:100%;height:490px" src="https://www.youtube.com/embed/LhIKbziqyIg" allowfullscreen></iframe>
+                </div>-->
+                </div>
+            </div>
+        </td>
+       
+    </tr>
+</table>
+    </body>
+</html>			
+
+

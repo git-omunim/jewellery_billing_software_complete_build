@@ -1,3 +1,64 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 15 AUG, 2020 7:03:25 PM
+ *
+ * @FileName: omtustrnsdl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$transId = $_GET['transId'];
+$mainTransId = $_GET['mainTransId'];
+$panelName = $_GET['panelName'];
+//echo '$transId:'.$transId.'<br/>';
+//echo '$panelName:'.$panelName.'<br/>';
+//echo '$mainTransId:'.$mainTransId.'<br/>';
+
+
+if ($panelName == 'updateTransactions') {
+
+    // DELETE TRANSACTION
+    $query = "DELETE FROM transaction WHERE transaction_id = '$transId' and transaction_own_id='$sessionOwnerId'";
+
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    
+    // GET JOURNAL ID FROM MAIN TRANSACTION ENTRY
+    $qSelJrnlId = "SELECT transaction_jrnl_id FROM transaction where transaction_id='$mainTransId' and transaction_own_id='$sessionOwnerId'";
+    $resJrnlId = mysqli_query($conn, $qSelJrnlId) or die(mysqli_error($conn));
+    $rowJrnlId = mysqli_fetch_array($resJrnlId, MYSQLI_ASSOC);
+    $jrnlId = $rowJrnlId['transaction_jrnl_id'];
+    
+    // DELETE JOURNAL TRANS ENTRY - CODE ADDED HERE BECAUSE WHERE CONDITION NOT FULFIL IN ommpjrtr.php FILE
+    $queryJTrans = "DELETE FROM journal_trans where jrtr_own_id='$sessionOwnerId' and jrtr_trans_id='$transId' and jrtr_jrnl_id='$jrnlId'";
+    if (!mysqli_query($conn, $queryJTrans)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+
+    header("Location: $documentRoot/include/php/omtutrnd_new.php?transId=$mainTransId&panelName=$panelName");
+}
 ?>

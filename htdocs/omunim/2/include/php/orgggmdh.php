@@ -1,3 +1,119 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: girviMoneyDepHelpDiv
+ * **************************************************************************************
+ *
+ * Created on Jun 15, 2013 5:58:41 PM
+ *
+ * @FileName: orgggmdh.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<table border="0" cellpadding="2" cellspacing="2" width="100%">
+    <tr>
+        <td align="center" width="100%" colspan="2">
+            <hr color="#FD9A00" size="0.1px" />
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <h4>SIMPLY DEPOSIT:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option simply deposit money without any calculation. (यह विकल्प किसी भी गणना के बिना पैसे जमा करता है!)
+        </td>
+    </tr>
+    <tr>
+        <td align="right" valign="top">
+            <h4>NEW GIRVI DATE CHANGE:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option adjust deposit money in interest and principal amount and create a new loan or girvi date. <br/> 
+            (यह विकल्प ब्याज और मूलधन राशि में पैसे जमा करता है, और ऋण या गिरवी की नयी तारीख बनता है!)
+            <br/><b>For Example - <span class="brown">Main Principal Amt:</span> <span class="blue">1,00,000</span> and <span class="brown">Girvi Date:</span> <span class="blue">01 JAN 2013</span>
+                <br/>Total calculated amount (<span class="brown">Principal:</span><span class="blue">100000.00</span> & <span class="brown">Int: </span><span class="blue">2000.00</span>) till date (<span class="brown">31 JAN 2013</span>): <span class="blue">102000.00</span>
+                <br/>Total deposit amount (<span class="brown">Principal:</span><span class="blue">10000</span> & <span class="brown">Int:</span> <span class="blue">2000</span>) deposit on date (31 JAN 2013): <span class="blue">12000.00</span>
+                <br/>Total interest from date <span class="blue">01 JAN 2013</span> to <span class="blue">31 JAN 2013</span> (1 MM): <span class="blue">2000.00</span>
+                <br/>Amount left after pay interest (<span class="blue">12000.00</span> - <span class="blue">2000.00</span>): <span class="blue">10000.00</span>
+                <br/>New Principal Amount (<span class="blue">100000.00</span> - <span class="blue">10000.00</span>): <span class="blue">90000.00</span>
+                <br/>New Girvi Date: <span class="blue">01 February 2013</span></b>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" valign="top">
+            <h4>DEPOSIT FULL INT:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option adjust deposit money in interest and principal amount and loan or girvi date will remain same. <br/> 
+            (यह विकल्प ब्याज और मूलधन राशि में पैसे जमा करता है, और ऋण या गिरवी की तारीख नही बदलता है!)
+            <br/><b>For Example - <span class="brown">Main Principal Amt:</span> <span class="blue">1,00,000</span> and <span class="brown">Girvi Date:</span> <span class="blue">01 JAN 2013</span>
+                <br/>Total calculated amount (<span class="brown">Principal:</span><span class="blue">100000.00</span> & <span class="brown">Int: </span><span class="blue">2000.00</span>) till date (<span class="brown">31 JAN 2013</span>): <span class="blue">102000.00</span>
+                <br/>Total deposit amount (<span class="brown">Principal:</span><span class="blue">10000</span> & <span class="brown">Int:</span> <span class="blue">200</span>) deposit on date (31 JAN 2013): <span class="blue">10200.00</span>
+                <br/>Total interest from date <span class="blue">01 JAN 2013</span> to <span class="blue">31 JAN 2013</span> (1 MM): <span class="blue">200.00</span>
+                <br/>Principal Paid: <span class="blue">10000.00</span> &nbsp;&nbsp;&nbsp;Interest Paid: <span class="blue">200.00</span>
+                <br/>Now Principal Amount (<span class="blue">100000.00</span> - <span class="blue">10000.00</span>): <span class="blue">90000.00</span>
+                <br/>Girvi Date: <span class="blue">01 JAN 2013</span></b>
+        </td>
+    </tr>
+    <tr>
+        <td align="right" valign="top">
+            <h4>DEPOSIT INT WITH DIS:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option adjust deposit money in interest and principal amount and loan or girvi date will remain same. <br/> 
+            (यह विकल्प ब्याज और मूलधन राशि में पैसे जमा करता है, और ऋण या गिरवी की तारीख नही बदलता है!)
+            <br/><b>For Example - <span class="brown">Main Principal Amt:</span> <span class="blue">1,00,000</span> and <span class="brown">Girvi Date:</span> <span class="blue">01 JAN 2013</span>
+                <br/>Total calculated amount (<span class="brown">Principal:</span><span class="blue">100000.00</span> & <span class="brown">Int: </span><span class="blue">2000.00</span>) till date (<span class="brown">31 JAN 2013</span>): <span class="blue">102000.00</span>
+                <br/>Total deposit amount (<span class="brown">Principal:</span><span class="blue">10000</span> & <span class="brown">Int:</span> <span class="blue">150</span>) deposit on date (31 JAN 2013): <span class="blue">10150.00</span>
+                <br/>Total interest from date <span class="blue">01 JAN 2013</span> to <span class="blue">31 JAN 2013</span> (1 MM): <span class="blue">200.00</span>
+                <br/>Principal Paid: <span class="blue">10000.00</span> &nbsp;&nbsp;&nbsp;Interest Paid: <span class="blue">150.00</span> &nbsp;&nbsp;&nbsp;Discount: <span class="blue">50.00</span>
+                <br/>Now Principal Amount (<span class="blue">100000.00</span> - <span class="blue">10000.00</span>): <span class="blue">90000.00</span>
+                <br/>Girvi Date: <span class="blue">01 JAN 2013</span></b>
+        </td>
+    </tr>
+<!--    <tr>
+        <td align="right" valign="top">
+            <h4>DEPOSIT INT AMT LEFT:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option adjust deposit money in interest and principal amount and loan or girvi date will remain same. <br/> 
+            (यह विकल्प ब्याज और मूलधन राशि में पैसे जमा करता है, और ऋण या गिरवी की तारीख नही बदलता है!)
+            <br/><b>For Example - <span class="brown">Main Principal Amt:</span> <span class="blue">1,00,000</span> and <span class="brown">Girvi Date:</span> <span class="blue">01 JAN 2013</span>
+                <br/>Total calculated amount (<span class="brown">Principal:</span><span class="blue">100000.00</span> & <span class="brown">Int: </span><span class="blue">2000.00</span>) till date (<span class="brown">31 JAN 2013</span>): <span class="blue">102000.00</span>
+                <br/>Total deposit amount (<span class="brown">Principal:</span><span class="blue">10000</span> & <span class="brown">Int:</span> <span class="blue">200</span>) deposit on date (31 JAN 2013): <span class="blue">10200.00</span>
+                <br/>Total interest from date <span class="blue">01 JAN 2013</span> to <span class="blue">31 JAN 2013</span> (1 MM): <span class="blue">200.00</span>
+                <br/>Principal Paid: <span class="blue">10000.00</span> &nbsp;&nbsp;&nbsp;Interest Paid: <span class="blue">150.00</span> &nbsp;&nbsp;&nbsp;Amt. Bal.: <span class="blue">50.00</span>
+                <br/>Now Principal Amount (<span class="blue">100000.00</span> - <span class="blue">10000.00</span>): <span class="blue">90000.00</span>
+                <br/>Girvi Date: <span class="blue">01 JAN 2013</span></b>
+        </td>
+    </tr>-->
+    <tr>
+        <td align="right" valign="top">
+            <h4>DEPOSIT INT ADJ IN PRIN:&nbsp;</h4>
+        </td>
+        <td align="left" valign="top">
+            This option adjust deposit money in interest and principal amount and loan or girvi date will remain same. <br/> 
+            (यह विकल्प ब्याज और मूलधन राशि में पैसे जमा करता है, और ऋण या गिरवी की तारीख नही बदलता है!)
+            <br/><b>For Example - <span class="brown">Main Principal Amt:</span> <span class="blue">1,00,000</span> and <span class="brown">Girvi Date:</span> <span class="blue">01 JAN 2013</span>
+                <br/>Total calculated amount (<span class="brown">Principal:</span><span class="blue">100000.00</span> & <span class="brown">Int: </span><span class="blue">2000.00</span>) till date (<span class="brown">31 JAN 2013</span>): <span class="blue">102000.00</span>
+                <br/>Total deposit amount (<span class="brown">Principal:</span><span class="blue">10000</span> & <span class="brown">Int:</span> <span class="blue">200</span>) deposit on date (31 JAN 2013): <span class="blue">10200.00</span>
+                <br/>Total interest from date <span class="blue">01 JAN 2013</span> to <span class="blue">31 JAN 2013</span> (1 MM): <span class="blue">200.00</span>
+                <br/>Principal Paid: <span class="blue">10000.00</span> &nbsp;&nbsp;&nbsp;Interest Paid: <span class="blue">150.00</span> &nbsp;&nbsp;&nbsp;Amt. Adj.: <span class="blue">50.00</span>
+                <br/>Now Principal Amount (<span class="blue">100000.00</span> - <span class="blue">10000.00</span> + <span class="blue">50.00</span>): <span class="blue">90050.00</span>
+                <br/>Girvi Date: <span class="blue">01 JAN 2013</span></b>
+        </td>
+    </tr>
+</table>

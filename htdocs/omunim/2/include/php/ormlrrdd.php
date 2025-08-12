@@ -1,3 +1,89 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 4, 2011 12:34:51 PM
+ *
+ * @FileName: orgrrddd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+
+//change in query @AUTHOR: SANDY26DEC13
+$qSelGirviRelDetails = "SELECT ml_paid_amt,ml_paid_int,ml_discount_amt FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_id='$girviId'";
+$resGirviRelDetails = mysqli_query($conn,$qSelGirviRelDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelGirviRelDetails);
+
+$rowGirviRelDetails = mysqli_fetch_array($resGirviRelDetails, MYSQLI_ASSOC);
+
+
+$girvPaidAmt = $rowGirviRelDetails['ml_paid_amt'];
+$girvPaidInt = $rowGirviRelDetails['ml_paid_int'];
+$girvDiscountAmt = $rowGirviRelDetails['ml_discount_amt'];
 ?>
+
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+    <tr>
+        <td align="center">
+            <div class="hrGold"></div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td align="center" width="100%">
+            <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                <tr align="center">
+                    <td align="center" width="33%">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr align="left">
+                                <td align="right" valign="middle">
+                                    <h4>Amount Paid:&nbsp;</h4>
+                                </td>
+                                <td align="left" class="girvi_head_black_left" valign="middle">
+                                    <?php echo $girvPaidAmt; ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="center" width="33%">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr align="left">
+                                <td align="left" valign="middle">
+                                    <h4>Interest Paid:&nbsp;</h4>
+                                </td>
+                                <td align="left" class="girvi_head_black_left" valign="middle">
+                                    <?php echo $girvPaidInt; ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="center" width="33%">
+                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                            <tr align="left">
+                                <td align="left" valign="middle">
+                                    <h4>Discount:&nbsp;</h4>
+                                </td>
+                                <td align="left" class="girvi_head_black_left" valign="middle">
+                                    <?php echo $girvDiscountAmt; ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

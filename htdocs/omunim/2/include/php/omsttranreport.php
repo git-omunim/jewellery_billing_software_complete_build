@@ -1,3 +1,352 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ *
+ * Created on on 2 AUG 2021 : 5:30 PM
+ * 
+ * @FileName: omsttranreport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.92
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: 
+ *  REASON: 
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+//
+if ($suppPanelName == '')
+    $suppPanelName = $_GET['panel'];
+//
+if ($suppPanelName == '')
+    $suppPanelName = $_GET['panelName'];
+//
+$PanelLabelType = $_GET['indicator'];
+//
+$custId = $_GET['custId'];
+//
+$firmId = $_GET['firmId'];
+//
+?>
+<style>
+    .thBorder .trBorder{
+        border: 1px solid black; 
+    }
+</style>
+<div class="card " id="stoneReport" style="border-radius: 5px !important; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background: #fff;">
+    <div class="card-body">
+        <div class="card" style="padding: 10px;" style="border-radius: 5px !important;">
+            <div class="card-header" style="border-radius: 5px;color:#E56717; font-size: 18px; font-weight:bold; background: #f1f1f1;">
+                <table width="100%">
+                    <tr>
+                        <td align="left" width="50%"> STONE CONSOLIDATE REPORT </td>
+                        <td align="right" style="float:right;" width="50%"> 
+                            <button align="right" class="btn" style="padding:7px; border-radius: 4px !important; background-color: #add779; color:#fff;font-weight: bold;"
+                                    onclick="openStoneReport('<?php echo $custId; ?>', '<?php echo $firmId ?>');">
+                                STONE TRANSACTION
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class='card-body'>
+                <div class="table">
+                    <table class="textBoxCurve1px" width='100%' style="padding: 5px; border: 1px solid #dfdfdf; border-collapse: collapse;">
+                        <tr style="font-size: 16px; font-weight: bold;color:#E56717; border: 1px solid #dfdfdf;">
+
+                            <td class="padLeft5" align='left' style="border:solid 1px #dfdfdf;">STONE CATEGORY</td>
+                            <td class="padLeft5" align='left' style="border:solid 1px #dfdfdf;">DETAILS</td>
+                            <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;">OPENING / PREV</td>
+                            <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;">IN</td>
+                            <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;">OUT</td>
+                            <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;">CLOSING</td>
+                        </tr>
+                        <!--START CODE FOR STONE REPORT CALCULATIONS : AUTHOR @DARSHANA 2 AUG 2021-->
+                        <?php
+                        //
+                        //
+                        $qselect = "SELECT * FROM stock_transaction "
+                                . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_user_id = '$custId' "
+                                . "AND sttr_firm_id = '$firmId' AND"
+                                . " ((sttr_transaction_type IN ('PURCHASE', 'sell') "
+                                . "AND sttr_metal_type IN ('STONE','crystal') "
+                                . "AND sttr_indicator IN ('crystal','PURCHASE')) "
+                                . "OR"
+                                . "(sttr_transaction_type IN ('PURCHASE', 'sell') "
+                                . "AND sttr_indicator IN ('stockCrystal')) "
+                                . "OR "
+                                . "(sttr_transaction_type IN ('PAID','RECEIVED') "
+                                . "AND sttr_metal_type IN ('STONE','crystal','rawMetal') "
+                                . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                . "GROUP BY sttr_item_category, sttr_item_name";
+                        //
+//                        echo '$qselect='.$qselect;
+                        $queryStone = mysqli_query($conn, $qselect);
+                        //
+                        //echo '$qselect=' . $qselect;
+                        //$num = mysqli_num_rows($queryStone);
+                        //echo '$num'.$num.'<br>';
+                        //
+                        if (mysqli_num_rows($queryStone) > 0) {
+                            //                          
+                            $totalGsWtCtPur = 0;
+                            $totalGsWtCtSell = 0;
+                            $closingTotGs = 0;
+                            while ($resStone = mysqli_fetch_array($queryStone)) {
+                                //
+                                $sttr_id = $resStone['sttr_id'];
+                                $sttr_item_category = $resStone['sttr_item_category'];
+                                $sttr_item_name = $resStone['sttr_item_name'];
+                                //
+                                //if ($resStone['sttr_transaction_type'] == 'PURCHASE') {
+                                //
+                                //echo '$sttr_item_category='.$sttr_item_category.'<br>';
+                                //
+                                //
+                                $qselectPurGsCt = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('PURCHASE') "
+                                        . "AND sttr_indicator IN ('crystal','PURCHASE') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PURCHASE') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('RECEIVED') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='CT' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                //echo '$qselectPurGsCt=='.$qselectPurGsCt;
+                                //
+                                $queryStGsCt = mysqli_query($conn, $qselectPurGsCt);
+                                $resStonPurCt = mysqli_fetch_array($queryStGsCt, MYSQLI_ASSOC);
+                                //
+                                $totPurGsWtInCt = $resStonPurCt['total_gs_weight'];
+                                $sttr_gs_weight_type = $resStonPurCt['sttr_gs_weight_type'];
+                                //
+                                //
+                                //weight type in GM
+                                $gsSelectGm = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('PURCHASE') "
+                                        . "AND sttr_indicator IN ('crystal','PURCHASE') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PURCHASE') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('RECEIVED') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='GM' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $qGsGm = mysqli_query($conn, $gsSelectGm);
+                                $resGsInGm = mysqli_fetch_array($qGsGm, MYSQLI_ASSOC);
+                                //
+                                $GsWtInGm = $resGsInGm['total_gs_weight'];
+                                $GsWtInGmType = $resGsInGm['sttr_gs_weight_type'];
+                                $totPurGsWtInGm = ($GsWtInGmType * 5);
+                                //
+                                //
+                                //weight type in Kg
+                                $gsSelectKg = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('PURCHASE') "
+                                        . "AND sttr_indicator IN ('crystal','PURCHASE') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PURCHASE') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('RECEIVED') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='KG' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $queryGsWtKg = mysqli_query($conn, $gsSelectKg);
+                                $resGsWtKg = mysqli_fetch_array($queryGsWtKg, MYSQLI_ASSOC);
+                                //
+                                $GsWtInKg = $resGsWtKg['total_gs_weight'];
+                                $GsWtInGmType = $resGsWtKg['sttr_gs_weight_type'];
+                                $totPurGsWtInKg = ($GsWtInKg * 5000);
+                                //
+                                //
+                                //weight type in Mg
+                                $gsSelectMg = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('PURCHASE') "
+                                        . "AND sttr_indicator IN ('crystal','PURCHASE') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PURCHASE') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('RECEIVED') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='MG' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $queryGsWtMg = mysqli_query($conn, $gsSelectMg);
+                                $resGsWtMg = mysqli_fetch_array($queryGsWtMg, MYSQLI_ASSOC);
+                                //
+                                $GsWtInMg = $resGsWtMg['total_gs_weight'];
+                                $GsWtInGmType = $resGsWtKg['sttr_gs_weight_type'];
+                                $totPurGsWtInMg = ($GsWtInMg * 0.005);
+                                //
+                                $totalGsWtCtPur = ($totPurGsWtInCt + $totPurGsWtInGm + $totPurGsWtInKg + $totPurGsWtInMg);
+                                //
+                                //
+                                //if ($resStone['sttr_transaction_type'] == 'sell') {
+                                //
+                                //sell weight type in CT 
+                                $qselectSellGsCt = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('sell') "
+                                        . "AND sttr_indicator IN ('crystal') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('sell') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PAID') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='CT' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $querySellStone = mysqli_query($conn, $qselectSellGsCt);
+                                $resSellStone = mysqli_fetch_array($querySellStone, MYSQLI_ASSOC);
+                                //
+                                $totalSellGsWtCt = $resSellStone['total_gs_weight'];
+                                $sttr_gs_weight_type_sell = $resSellStone['sttr_gs_weight_type'];
+                                //
+                                //
+                                //weight type in GM
+                                $qselectSellGsGm = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('sell') "
+                                        . "AND sttr_indicator IN ('crystal') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('sell') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PAID') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='GM' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $querySellStoneGm = mysqli_query($conn, $qselectSellGsGm);
+                                $resSellStoneGm = mysqli_fetch_array($querySellStoneGm, MYSQLI_ASSOC);
+                                //
+                                $SellGsWtGm = $resSellStoneGm['total_gs_weight'];
+                                $sttr_gs_weight_type_sell = $resSellStoneGm['sttr_gs_weight_type'];
+                                $totalSellGsWtGm = ($SellGsWtGm * 5);
+                                //
+                                //
+                                //weight type in KG
+                                $qselectSellGsKg = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('sell') "
+                                        . "AND sttr_indicator IN ('crystal') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('sell') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PAID') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='KG' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+
+                                $querySellStoneKg = mysqli_query($conn, $qselectSellGsKg);
+                                $resSellStoneKg = mysqli_fetch_array($querySellStoneKg, MYSQLI_ASSOC);
+                                //
+                                $SellGsWtKg = $resSellStoneKg['total_gs_weight'];
+                                $sttr_gs_weight_type_sell = $resSellStoneGm['sttr_gs_weight_type'];
+                                $totalSellGsWtKg = ($SellGsWtKg * 5000);
+                                //
+                                //
+                                //weight type in Mg
+                                $qselectSellGsMg = "SELECT SUM(sttr_gs_weight) as total_gs_weight,sttr_gs_weight_type "
+                                        . "FROM stock_transaction "
+                                        . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                        . "AND sttr_user_id = '$custId' AND sttr_firm_id = '$firmId' "
+                                        . "AND ((sttr_transaction_type IN ('sell') "
+                                        . "AND sttr_indicator IN ('crystal') "
+                                        . "AND sttr_metal_type IN ('STONE','crystal')) "
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('sell') AND sttr_indicator IN ('stockCrystal'))"
+                                        . "OR "
+                                        . "(sttr_transaction_type IN ('PAID') "
+                                        . "AND sttr_indicator IN ('crystal','rawMetal'))) "
+                                        . "AND sttr_gs_weight_type='MG' "
+                                        . "AND sttr_item_category = '$sttr_item_category' "
+                                        . "AND sttr_item_name = '$sttr_item_name'";
+                                //
+                                $querySellStoneMg = mysqli_query($conn, $qselectSellGsMg);
+                                $resSellStoneMg = mysqli_fetch_array($querySellStoneMg, MYSQLI_ASSOC);
+                                //
+                                $SellGsWtMg = $resSellStoneMg['total_gs_weight'];
+                                $sttr_gs_weight_type_sell = $resSellStoneMg['sttr_gs_weight_type'];
+                                $totalSellGsWtMg = ($SellGsWtMg * 0.005);
+                                //
+                                //echo '$total_gs_weightSell='.$total_gs_weightSell;
+                                // 
+                                //
+                                $totalGsWtCtSell = ($totalSellGsWtCt + $totalSellGsWtGm + $totalSellGsWtKg + $totalSellGsWtMg);
+                                $closingTotGs = ($totalGsWtCtPur - $totalGsWtCtSell);
+                                //
+                                //
+                                ?>
+                                <tr style="font-size: 14px;border:solid 1px black; color: black;">
+
+                                    <td class="padLeft5" align='left' style="border:solid 1px #dfdfdf;"> <?php echo strtoupper($sttr_item_category); ?></td>
+                                    <td class="padLeft5" align='left' style="border:solid 1px #dfdfdf;"> <?php echo strtoupper($sttr_item_name); ?></td>
+                                    <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;"> <?php echo '-'; ?></td>
+                                    <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;"> <?php echo abs(number_format($totalGsWtCtPur, 3)) . ' CT'; ?></td>
+                                    <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;"> <?php echo abs(number_format($totalGsWtCtSell, 3)) . ' CT'; ?></td>
+                                    <td align='right' style="border:solid 1px #dfdfdf; padding-right: 5px;"> <?php echo abs(number_format($closingTotGs, 3)) . ' CT'; ?></td>
+                                </tr>
+                                <?php
+                                //
+                                $totalGsWtCtPur = 0;
+                                $totalGsWtCtSell = 0;
+                                $closingTotGs = 0;
+                                //
+                            }
+                        }
+                        ?>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

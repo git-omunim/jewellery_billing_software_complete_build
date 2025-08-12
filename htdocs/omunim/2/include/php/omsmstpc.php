@@ -1,3 +1,46 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAQAwAAyDTIH4tPPOrdIC1xdJnYUY+DMVGeZDIAoI1x4lvCKEk8GtYbVxIFm6W9EyTJINCs+/Pj1syiUXnEpKrZDFNH3PBoH16v2/IA24BW6sh4OSfB1DFWbFBh3G1POdqK4rqvVH5iU0gtxA7+91fjmNEGr+6Uvwsa0B40yXOkfGP69VaMv5A9oNvCTF9BcQk3uFy5Hz72y0FB8x5yI78cwDFSFsinjkMzw/f9lewuaq/0cVnI8qy64tmmUNz41AIKAVX6JdQkSdgUqkTUsbASE2DoqHRBTbX/xw7kjCG9iJ3+nq7wFP6EADJlIo0BkhMf+irJN3G5A9LgsBmdKtYrzTjfgEWdBuy3yjit9y6CkV1N2/2jZo0GYlQlDElWkFnhHx7q1Y/BKnAiozkVi/Jakb56PrH3xJ8+ZgtZP8t7iplAYSHlFLQPqXabqGhQuEvSUraUlqMdeGWhPjfGGsdx5xyOFGmh5E4OoUI0RHwCONuoyfudVxOKBI005202uXrMgGrbjrXIMKxXiidAVywyZ0AG594/1heRKBocheM7umyV73qfurAmGetpkIvDN/iukzyoxKA9g/9FUcxngaqoLUwP0V/MwBidn50wbWEhkuwC61jguEAlhKL/wLmHpoTwlNoWvzloqHoqs1yUxfDVgP5yu+LEigQCkOXEMRf8qkYrTSV3ND/kr0lT4d07vvuEU61ahRcPoBaj723+Wn4qfeTJMi7ZabTrPqu3Yb/O5Gx0N2d1HwnxsnQ0oF1hGH1tJomqpfOH9Ok22FHvDvkYpzY7AO9b6CZ9zTS34tYjGONvb8yDPE24VXKqYp8NPN44ykOFTWbvB+oeft2Pebwy0eRncW0QNXvMBeaBv94JyMHoyI9pDTm9eiluI7Md7gJgfnhlh9IoTdot1jZjQFj6PPlC/ylI6CJvAiRybmzU3I5oR7b8Wog7Bsb/FLZ+838yagSiabTF90eLuAuIZKJVfqnx3ppJZwnlQhguV7lOpL/o/V4GxwgpOPSVN6avOeuENC2RlwmafOjm5KJBMpQhLq67jAAAAAA=');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: sms template check
+ * **************************************************************************************
+ * 
+ * Created on Feb 21, 2014 10:51:57 AM
+ *
+ * @FileName: omsmstpc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$smsTempId = $_GET['smsTempId'];
+$selSmsTempText = "SELECT smtp_id FROM sms_templates where smtp_sub ='$smsTempId'";
+$resSmsTempText = mysqli_query($conn,$selSmsTempText);
+$subPresent = mysqli_num_rows($resSmsTempText);
+if($subPresent == 0){
+    echo 'SUCCESS';
+}else{
+    echo 'SUBPRESENT'; 
+}
 ?>

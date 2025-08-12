@@ -1,3 +1,79 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABwAQAABDSn8ozGMZiN1msqhgQzWwlSDvj5T0DqeFIYLj7VRtt2pR6Qs/Iu8RGL0HJZtOx3y0xIraY/bGfrPzsMP8/Ejy4c0gI2sS7lzotv+egJrBa1InpB9Bxw/9QLmnabgPDobk2LStYGQabIjZ8AxTMgwc04MLrIQ9mj2b2ZLQ0JE1Klg6pRUP5X5locm0jVRzRjnYSq7nlg/s1VyBZdCc8/LIgW9Os8vNjvUu+V0LwruVZPkjGaFb4W6BjunmnGOJ0uQvTdb5JhXdyz6dIGlXUVPf3qp/hoQokIMho2RE4Aeq1PoAAdTCvEfO1hvLg9Tmd6RWm6TrwsRX/sT7fqEYKzDDLA9KaEbEWu5I965tquaqPoDxl+XAgHUxqbGLJsU15BmOCP1dC1VKTh5xTCruD922yuP0qNHfB7eCVmsXn1GbRbSwtk25zntzN9pleJY2Tb8U2Lgpy5bEMro7PNESd3ujaqKM7WnjDWxMB9FXB23VAAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Sell URD Invoice A5 Sheet Format
+ * **************************************************************************************
+ * 
+ * Created on June 11, 2019 9:16:40 PM
+ *
+ * @FileName: URDlayout.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+/* included  Start Header page */
+   include("URDheader.php");
+/* end Header Page */
+
+/* included Start Customer Information Page */
+   include("ogspinvCustInfo.php");
+/* End Customer Page */
+
+/* Included Item Info Page */
+   include("omspinvItemInfo.php");
+   include("omInvTransInfo.php");
+   include("omNewOrInvTransInfo.php");
+   include("ogspinvItemInfo.php");
+   //
+    /*
+if ($invName == 'XRF_PAYMENT') {
+   include("omspinvItemInfo.php");
+} else if ($invName == 'TRANS_PAYMENT') {
+   include("omInvTransInfo.php");
+} else if ($panelName == 'DeliveredOrderInvoice' || $panelName == 'PendingOrderInvoice') {
+   include("omNewOrInvTransInfo.php");
+} else {
+   include("ogspinvItemInfo.php");
+}
+/* End Item Page */
+
+/* Included Payment Info Page */
+    include("omspinvPayInfo.php");
+    include("omInvPayTransInfo.php");
+    include("omNewOrInvPayTransInfo.php");
+    include("ogspinvPayInfo.php");
+     //
+     /*
+if ($invName == 'XRF_PAYMENT') {
+    include("omspinvPayInfo.php");
+} else if ($invName == 'TRANS_PAYMENT') {
+   include("omInvPayTransInfo.php");
+} else if ($panelName == 'DeliveredOrderInvoice' || $panelName == 'PendingOrderInvoice') {
+   include("omNewOrInvPayTransInfo.php");
+} else {
+    if ($labelType != 'APPROVAL' && $panelName != 'Estimate')
+        include("ogspinvPayInfo.php");
+}
+/* End payment Info */
+
+/* Included Footer Page */
+   include("URDFooter.php");
+/* End Footer Page */
+?>
+
+     
+                        
+
+

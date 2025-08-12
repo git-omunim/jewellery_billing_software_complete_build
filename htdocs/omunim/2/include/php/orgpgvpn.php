@@ -1,3 +1,255 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACYFwAAT/KBeuFz4S1xHF3IwxJjFDaN7MPxiWXUto7EeXrxzehYBVrexh1Gt6J9uGW0+JvJXhKuOIW27dtTt59geP5QnjCcq+mZWLK64uhkNwr8XwUfu27CqVHZuLL7mDZbz+9EvnU+Lu5yrjtbX3xrfj5pSeaEnKPKX9WK1Qdmu1gCd+6ssVMtbvDouerswGoQ0mVfCqN5xwxXEiYpBSIw2HJCL2LobPBuhaDXpEh3mu58Gm8ypqyQN93OFdtOt1M2LvIoV21l/flGitOt2fwLZ469mdfy9AuuktG1NpCcJCXhBN78LxOjWPttMAXKfNy/tnyxaY86u5B+R2uT6AAbhT8hnFuTHcZAc45PeSPn+qoE1wsEUAuCdmppuXtCri0A2KY8BxjuTJVjCCWOIRcYs7j9pMiW1v4u9LJFEHfyxhPMUl4aQHxTpIsZoEKssOuzazJonMOhHnyZdkP5hXvIqnWNYqRlyMnV5mXZQzm3qFR2OZFlpOtNzNdbmi6eKuko6XOXjOFXWmzFyrHZlZ5yEJ9ngFiQ7atSn5U/dCtLI32pORMbY9N9nmFd9MHx6yoWfo7nU4p+PhmDsX4n9vtdWUjRRaeenisn4TcrXE4j/dzTDhH+YE10hmsDkvlS6dUvxv8Pk44GJcCmT/ht2s2ZZqjAtvVvtG7aRnCHfdLnej5CBQiH+APSw3fWRMHueqZRKqrAvn0U3uMQzze0DJU9oJwxn4rswm1CGCSAzWXdmWv7OTTGmpyeN4bGkvsXfxlPo1Xm6AO/Imr6pwMG7AcWYDOjKs4zSr53oYqTLNJ3HFLqKmNrCHZ3PeeDNv9H3wdADFTNoGPvk4kcJhyhUsKvvymac9fG5jMow2nYLLSSb7sskLiWWaVHMNk9awM0BPFN6MXeDgvWAammnIwGnFYwgdG21X3q8Lp2IrjUUiTG9jl2dBTsYEyWU7pIV1gvkHBZWJBySqKj50KYW2iblFXNlFQeoN95x6Q6sHlaQUtQer9dqaB2UVWOo7O/XvKxttLioxtinsq+5p8y/e0tP6YnazzNHs9WGTwocPP3XmMJNFXYocZLPbfdwlt+H4IkvMGWkjGGoJnOWIlgbuPu+rODj5dhPLoUinkBN6n1IYRfjA3QYCSws/Us0C9dYKUKlTdCLUI2xK5Qoz8pes8g04CyrGQ89eShMvvAdH1yn6Qdol3qGAjuOcJVUhc6HNqpQN8K0ABhQHGYiD5RrH/h3VQbvYhcoxrC6QeRCiW2Y/vK6cSu8TAIMRe1Jatdft6iK2qXIfJW46UBy4g/fEqZy1MZ6DuYnDw4f2CZewwuuvu3k25pV7VVuDJ8yQF3rPJJhsDT4rZRtsLyhbG1nu8w2gCyuQpElwnfzc2GDwryJqYAj2CqciQK49pc4X/U158NNr5cxwD9kz0JF4SbNwGZyq6ubHp2CPUJ4JDSKe96do0VI/grICigkUpMYKQRyw4LDMh/IxyE6UYeXoAGzOrqZuFQXElKgTBAW2FaZnYuNkGK8KdA771vu+cSotR4TYmrf29NwXgfQnqkNMjNL84wh0gPS5hl5bVoIGye4tWujXPE0BZdp7fEXhijEzywCIi2/MYv4C5ble/6U1LBydIFmuC34GE8xfnZeGV1hOTwk6Hmt7QytbLDY1WkszokBafHabQyYGh5d8AEtpaJ1X8vOZDOiIxom1sa/I0xejJr3excfBMxGa14ZucSyMLI1Qofqixm8eMsp4e0z67u3nA1qyfgrbdKIROaaCgLr7m7jUXiJwlrRsLOEtNmczZDpAxBmINWbaheZ1aqOmWJAZvyiuynKEjo9TA1RY8QSPEbX5RorzdJaeaFWsZMyqH0VJyaqxzku6N3C9U97RE+aP/43ppSHH1waUBdH6GF8AFEL/90znK6icoboacxzFN2S0rwxC9MjBZJs+LNq4qKJM6vivhb8S/MKtRKOWko+ONv0A71q/loc0o23dw4mq7WEpgiSR3OS3RN13u4AqiUOeRkuT1dSnSHhbw7G6hOCm0mEgyp6GI3tnNVX4OxPYMFecOzmk0i8Ty+qNTtGGGwzNA1gyBIFbO/glPTf4jyo5ZEaX0AFpM96IFm7LBsejMLkAGcO4AsztLMiDpPXJeELUlKtzU7uaJn8cDPgS9TUZ/2vjFDsEUg1W+8WpsxQesrlNiaINZBaMNU/L2n3t+nwfvqu5OfARBo/mjVe3FCzOjEO5GI4yqBbVYUOUhjlo75oRDKSOz4J7Zwd2alyEV9JZJkXcrqddgDvd79Q/DxFO3AkSt/JIiK/v1ia+CzaZFHMnUwx2LA91NsGkOrQmmYjf/QUGoM5UridttlUN4vH3vczTfQVO+chPaHdEEjso5mcXxldnnWyRk0jxgGJPbIPZFPCsh1b+Hcv4zVm+cAOZZF9JpeAxehFMtiF6n4DmlBKQ+C6vSOEvT/ck6xOXY/KuQLGY7GOOgnB8F7ObAbhwzgKBB0B8sgU1bS9uAO5B6Qywj4eoFhZfU+RWNNhxf9xBZGNZq1n8hCNy2gMMJPrua5qZWWrWHqgqZ0vt2XkFRezBd1GMfqWafPH2iw+i6eygMqrcyMs+4SD+hJ/kUCoeFek67kDRhPmyjn0p+dzNJSfG0qG7lljS0jaFPjgtKZbqDkTaQjwB40gU9JJYB5Io10uTsCBNLhgC4iy8faqP8npdafhFy0djIOvU6aq0vokBKiFxBqIhEiq7iq0IWlkYkIEWKVmIuPAPDedmion5m1aSjT5nHjXo4TWKtIqKKTOgeGYJrkufPenyKqUgj0uTe6dbtzUiLIHvxM6575FD4MlzNM1Nj99JESk2EzZuCk4DTz/g9H187i5bervDErbu1zDQ+tZBYhzEF0nOYHcKor/dbigs/DTV1ZCz9QQNkk2mhO3d1dDmOphHANP3Gv3Sy0FWlfq75peL5K9XOnWXVrPdWQtwLvhxm+WS5K0Zce+MGWQzstnFItQP6tUxnQG/WIwYFKm6X2xvU6SxwsrCr12pSUjb4ByOOvV3xro6CCKEmR1YjRK9Fksg2eN7KMfvwjRHJFgtOKHdX+CgsTaHW9rSKxUkGbut1Mtzk/P80qFkIKmEO1jx9D8mH4pPewNGtmNx7R/IYkze2VNPQ13hGqSSGjlWDDNSlcemWj7+k4x3nI3zw6Poa06O882Z5L2wUcBcOw3poMVxl/AIbdx38yiwj6+HbpEbwOmF9G3Uk7CLG01uHYrwGo0HuGPsZLM9MLCiXJOAtyycFzBkyneY/HFJQLBwXZQxovhxy70Sd2A3sW2RXGk3nD4mEAC1WLzuGwhVc0P/tRjA4jBUzj5/38U7hxWhfpSvVBoJtFm69o8tQ4O58ZHTQDjSc33ndLJ3whuO7Z9warXLHfqRxtcltO1RdggycGAH+T+qLtFXAUjBw/RVz4SIqhBci3ljDwRAhMtgo2bTcsPL0nvfBu/Lk4LW53CZIFuEls8kOjvq49s0+KcxL5NY1UBLazugfhLuR1w4eLi+QYmNWvJpCNc7VjSHonlR1ZpNDdsUHMuHwrXqntE0AG0Z0Ab5nuCJI+nVpG7eEzDxh3HPdcrjzucGMc6yCw0BM7x2Fo6zZSaNyhoTTPB6ZSvBvY8jsQe8FmBt+yRpdH9z36EJSl/Wp617ORJZj2yoCFp6+0fWHbLsaeMMgk8vkdZ7lExwdn1UwJoyi9p0jy+F8GPGbSscJYp/H3wj2iiiAaQK5mCF6TagnTBvIrbtvo3d7e2xyVNUEeK0i4qb/2HJmLSXeO2ENW80ByNxV6aBsHMirQ9xfeWPEofMCGU3WpSKEy6c1ft5ONOL8uaFWBczIsXadIsR9/Sx2G/4g4bfV2laKfFVHz5rkT9LePbvRX3V4zF+xBvmn0lbn3VPOPuEqgUtwbu8WbCv/9OKamyr+BCu09Lvy3C+GPHDx4RTZulr12WHcnU8FaxpGcHHMiwV1oQewWs6rvg6Sig2fjVAv/byc4Ue19f2puTDPvJFYjkBxRbHi6hyVuwPMOLlekKYYWAhoNf5x3MyAd9h96IhGwIcY824dYHH/oqfGP+mx44b9OHgjgaADRpb62wzz891V8WlinzNb+GldIKqVZ04rc7WbePD4b0O1s+6xbPen/1qnoDcWwclriBVe6JEchfHutGakVJWaiuBEKfi517/da4J0iyGCZtKxDP9E3W3ztK8XY1/omzIRjvin2qPNtakr05OMM/uH7fEVUfGxqyB5PZ7Pm8EWUTqbojY7L3RXUohlE2fnWTxzZnByiWl4zGmeSQMU8hzshv6J9/U1h0IcHxd2MF60h1CkZ3eZVxE48VDB1jC71+INVqHDrXcipgnqRcOzGvF93AW7AJNYFqdOLpA1s1yVbOL2SgXGRspABssacMMI1hoJWkDuMl5pt32j5SPKpvaYENw0WcW3i/v0XBfIaPwywV5QmtKW19IkOolLyBALcuk4dXv2h3G2tRAqEg6b/rv85BVzTD1q7wk33zgeM47mIk+15wa3YSkmhRepUxLvd2IxoS02CHRbIxC0YL6oGUbzzp+5YKU9PcQZhvaGpLe6Urj+Wio1vor/uFJLjdslCazE0Zglae5PxQSj8x/Y9A2Lk2ZvC3JjPAQ6Kw3nMdtpIT3fjfXLXDuqzNbZSt60lfTwMr4SSVKynx+iISqj7EvV76+RI7kSwnVe8fdXIQGWBHhpkiPGqizrAuoe1TDsFirlElQ2QJ7eR6A9Khn0pVBDR0ZaNgw1eksIVCsnOr4/WZTEPA53mvcNHlDkiRPLQM2vrqfjO82MsiW133zIpNz4r3eN6EyhDq2AnuoZ0FjAFDIvNGoLwcftW2HIscJWhHNJxieNlbWNHU98/DK+sGdPpq5FLsjHQIBE7q6TdznHtJAj3tfIyQymtTHmnlPqPLd9VFT2LQj4dMNwOlwJ9wZSSPh2VzsspaMu20lal/njtHUOuZXWyMKigBq2uSWWgpqeGr44xOUKB72zUcv5rTOgTdggyVoe0BGX5hXgZmrTiaGMASGmuiSyddOZ8m7fTSehiudutDf9o23vAP9WDKq2ydMAr2fuSzinPpbF1L39S4Yw2QzzX4/kQwPe/rU88oXCoopm76cx4Q+Cy4VdkPqqnAijTcXDCSA1ZJwNhhfjcKXS5KNzYmjAq52N/Pvtra4TcgOSo3qPAJBcJSGY2GfmxrClSNq0Li7DLonCBQdQ8Yw0iSLMPMb2BqWVqcrfvBp7JnPE89FZg3xUMiqhdFA+0nccnNQAv7FLTxE6DmDBnopuN03dqCfRKxJdQBTCsIwRBUDTOoAwhTP+/aLnN7J/uOgJ/sDX3nKVzD86DNnmlU4ULrLuIi66MM+zcQX5F3CAaBAT5ZGhFnZWpKiQmOFjio8IzJhaAJEuCn424fMl5MhkzEGWYhSz4hCMaM/dG/Cj3ysIwLHf7L3U48j9nf8rufNSKAP5jT+/15v2brJaig1+EuGbCbvOnVEcnmdNDs1umsihiaMGLq7/VByLdyRX/7JAQvHv1DM4XNUqfV37TkCThVITaCwiPqk3XnqezFMfXtiDRQCPbcu6KjRDqsWJsF2kXnGs46uhzPSmeoo1IW26k87P+jMVat+HYk0zaHmvTW1KAjwe5Df1Kk3a/VUWHjza/+SsqbHuHc03VNMJXUQW8cLiX4O76RsQUe7DCs7XdNfkXAcSMrC5sXfnOYZ6stcDjreSQR0dsfSG9BAP3lNewE1gjGvbmQBitWvaDTiOADXzNXGDwvcMTUl3mswhKAf+pLgE1NkFydKOIAly69X7TcUueb6rV0wDf8g76pSsVrTMfjFOlOHODUdas0JL5e8JV5VcclIUExKZ8bdn5BVAi5J6GW0aEgP+FPi1m1PvRp/OZi1fsiTJ02kW9qxA4N5oBHnf89MLH8cYT5+gvBQTtsX//CjSSTXNgdxUMf3D8154c6evSCQV1b7vuy1a4MD+lYSeoQmWTpmpXlF3kJmPpQhnTTWaNNiWSzvYKRla0kLanifCukbqaUAvm8mi7FKj7DtaW1ABQ99xdeWRNYZoq00zXshwohfkc2X3Iahjp+ioFk2BjpA/fp7BIWlB4M9kuiLCYBIPTB1n19Ukm+xGvhM6o6awLMWsraneTOfh74lwmU2ac+EN1joNnjJt8cA8+uPM/1DH+7HNMjwbUfNx0sBhFPyuDXO0fiNPym5/XzuALpqu2BcdbMb9Ef0vNuqUjOR/Df9ZHVI0OQUuNx7dhCp07AC52N79JVPol/D9X9J+ZrAf7Q98DgCxhQiKOm5xNMQy+cfguV31jxqZruc8bo/BTV9ggpgrjJYrq1IQbKDVAr55P0VG+afRkNCBHw0wvonDPc4+bI2g0Fi3k5Tx0ugWmCjgJm9+nxtWVkzgPEnuk5/eouC/NkhBcDhwSrrP+XtTSr77M05o6tjCmEkUX9lbwu8vxvYWUjXwwzPUMWNbvAx7R/VOVpzULqPey957mnLl541rWz78RzNZ9NTWwQzIgYr0O3J5Nax2dnzDN+JZgm8OCEWY4G9IzwTYT9ChH9S4XUGNovJbh1T8YhjpHFm1M+LKKjU1QCWZ+624GP5e4btG/Ep/QTkYgh84sUla8z/95WR/mOWX5eqG2vQ5wuipIP2qi1n6yRCIovW41g2zBOUlbW/dC9CXbLsEMxCYF/wdSbBfkhlUIaSWyq/bn2BnaXBeuttwq/+3oeNC+CL4FyBbk0bWMSok4S7e5vqgPw3XXyKpZOJ8YBfMHbi8Mo2csXru0XEB95CrL/7jY9QfX+UTpKEsf4arXsEE64/8sI/E7UaX3BcBMV8gfqDXVmtsBuWpdxsVtmaidenPXCd3mhfDYHQRkf/V6S9JUkBjq3kV7rW7LXuf+lXo3IQOB/16C0YklCB91e/Yhta8RrRCW34FMeFLbRAvIMmgVShbU91vF8Qd2VZGil8SG1jRzJ1irEQxlEwLWrPZpBtcqSbUWVOUAWn3zJh87exRoMoj1qPdUBsYdlVAI+FzUj5bT1s9grSwoe5JpzDWmZIKvry6bFSbjZJvkXeXB8dvyOBpysqWtZnBWAkyqsi1hg08a1luAjd9qK2A3HUIqwmWkYf0EZE0VUU5A5ExEx5HSWlmGAEX6dEdi9zuRYs+ynBUL4oRONpEFIxAynDEDzVtp7SKyYjUDd8HSRVZ6Va8J/hRX3ByLvpCLX0RwcHFRrO4X4XPguP3IAPdVxnUKdVFRPpZiWOpmlUDB5B2PN/6SCv560ocBHF67lxeN1wYaMrNKE2au+srfQVfEwCZmeC4+e1uWXsrADjxkmWa7aYjt/3FFRnAzbfLX8IXDks2o5Ki46p401bItVx9enUGCVc/bnCZRReeqfG6HcrNGYoOdtwefW8r4XlKVICRU563CHp4EkTHgq0NpFEakMZFcs2Ch2nX+UsGlXQLdDc+tBBq0RG8XbD4ki+lGytaZUtmMlvJTEJfjNykvTZRRtV2/ADs5OolOHCJbof07+W/ffw3bWiSfr0MBz+ai332VbFThwOO+ttVClrR1C2F985hPb2W1IgjQ2HWjNTg18aT6XeJNVdLppMHjp/gVvtq+lTCTOm4TtBNsswKA94vXSRnumrixd0kFzZk9VFbAsdGUnjcsgdTVaiz/6qC55dbuN0WsUNX/UH/bWWXi7/jJps2mzu9jaBZ7cDogqPpQBWqYKi6fi4Fb+oNdnyBN9OS5MInUuLCnXn0kjwqJMDUKQnyg+FLnmSPKM+FEWVmyKFEBPmGu5hJBMhL5r9H3zGj0vHdVqsDWMatDaMnYhgf5DtijEY2/1jnWJQhXH+5JA5uU8etLRbvVdl85im5O5mdFg9qHBXmeFrjBGSkbk/s0lh0C3kU/LY59oQZGLbwpcDd8Ln0GDg5hNutdQHNgJ4LUjpKRH+xJR7MIJzrZ4NSylsrHuTmFm96OjPBfnkuZVriobSDSqpqqHe/X/drIaso0P8ltoJ6m3tCsdtRgQr+6I7LcAj+SA0sjXDaz7nPjMcqOxvce1fDmePrvKtT/HATN3EnSuKzgmKWCo5dj8sILWGgkIZptzZHuZ9N6zABsrLUN5ZA1FuXRMQAAAAA=');
+<?php
+/**
+ * **************************************************************************************
+ * @tutorial: Girvi Panel Main File.
+ * **************************************************************************************
+ */
 ?>
+<?php
+/*
+ * Created on 06-Feb-2011 6:57:33 PM
+ *
+ * @FileName: orgpgvpn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//change in file @AUTHOR: SANDY29DEC13
+$currentFileName = basename(__FILE__);
+//Start Staff Access API @AUTHOR: SANDY09JAN14
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @AUTHOR: SANDY09JAN14
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A' || $_SESSION['sessionOwnIndStr'][1] == 'B') {
+    ?>
+    <div id="mainMiddle" class="main_middle">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+    <!--                <td valign="top" align="left" width="32px">
+                    <div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/girviPanel32.png" alt="" /></div>
+                </td>
+                <td valign="middle" align="left">
+                    <div id="GirviPanel" class="textLabelHeading">LOAN PANEL</div>
+                </td>-->
+                <td align="right" valign="bottom" style="position:relative">
+                    <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden;position: absolute;left: 50%;top: 34px;" class="blackMess11">
+                        <?php include 'omzaajld.php'; ?>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="left">
+                    <?php
+                    //
+                    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                    // START TO CODE FOR NEW MENU DESIGN WITH TAB FORMAT AT LOAN PANEL @AUTHOR:MADHUREE-15APRIL2020
+                    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                    //
+                    ?>
+                    <div class="m-portlet__body">
+                        <ul class="nav nav-pills nav-pills--warning nav-fill" role="tablist" style="height:28px;margin-bottom: 5px;background:#f9f7a2;border: 0px solid #f9f0b5;
+                            box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.3);">
+                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A' || $_SESSION['sessionOwnIndStr'][1] == 'B') { ?>
+                                <li class="nav-item loan dropdown active"  onclick="showact('loan', this.getAttribute('id'))" id="loan01" style="width:0px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showLoansListPanel();">
+                                        ACTIVE LOANS
+                                    </button>
+                                    <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A') { ?>
+                                        <button type="button" class="nav-link-inline-block  schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> 
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showCustGirviITMListPanel()">LOANS ITEMS DETAIL</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showCustGirviITMPrinciListPanel();">LOANS ITEMS PRINCIPAL WISE</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showTPExpiredGirviListPanel();">TIME PERIOD EXPIRED LOANS</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showExpiredGirviListPanel();">ONE YEAR OLD LOANS</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showCustGirvirelSts('')">LOANS STATUS REPORT</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showActiveloanlistdetailspanel()">ACTIVE LOAN LIST REPORT</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showDepAndWith('')">DEPOSIT & WITHDRAW REPORT</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showAllActiveReleseLoansListPanel();">ALL LOAN REPORT</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showAllLoanWitemPanel();">ALL LOAN REPORT WITH ITEMS </a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showActiveloanlistWithMoreDetailsPanel();">ACTIVE LOAN LIST WITH MORE DETAILS </a>
+                                            <!-- add new report for day and loan wise deposit report @omkae2-2-24 -->
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showActiveloandepositreportPanel();">ACTIVE LOAN DEPOSIT REPORT </a>
+                                            <!-- ADDED CODE FOR LOCATION @AUTHOR:@Pratiksha-20-01-2025 -->
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showAllActiveReleseLoansDepositPanel();">ALL LOAN DEPOSIT REPORT</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showloandepositreportPanel();">LOAN DEPOSIT REPORT </a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showloandetailform8('<?php echo $documentRoot; ?>', 'printForm8');">PRINT MULTIPLE FORM 8</a>
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showLoanBoxReportPanel();">LOAN PACKET BOX REPORT </a>
+                                        </div>
+                                    <?php } ?>  
+                                </li>
+                            <?php } ?>
+                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A' || $_SESSION['sessionOwnIndStr'][1] == 'B') { ?>
+                                <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan02" style="width:0px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showReleasedGirviListPanel();">
+                                        RELEASED LOANS
+                                    </button>
+                                    <button type="button" class="nav-link-inline-block schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showReleasedGirviListPanelWithFincYear('currentYear');">RELEASE LOAN WITH FINANCIAL YEAR</a>
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showReleasedGirviListPanelWithMoreDetails();">RELEASE LOAN WITH MORE DETAILS</a>
+
+                                    </div>
+                                </li>
+                            <?php } ?>
+                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A') { ?>
+                                <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan03" style="width:0px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showAuctionedListPanel();">
+                                        AUCTIONED LOANS
+                                    </button>
+                                </li>
+                            <?php } ?>
+                            <?php
+                            if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A' || $_SESSION['sessionOwnIndStr'][1] == 'B') {
+                                if ($_SESSION['sessionOwnIndStr'][28] == 'Y' || $_SESSION['sessionOwnIndStr'][28] == 'A' || $_SESSION['sessionOwnIndStr'][28] == 'B' || $_SESSION['sessionOwnIndStr'][28] == 'S') {
+                                    ?>
+                                    <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan04" style="width:0px;">
+                                        <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                                style="font-size: 16px;" onclick="showLossGirviListPanel();">
+                                            LOANS IN LOSS
+                                        </button>
+                                    </li>
+                                    <?php
+                                }
+                            }
+                            ?>
+                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A') { ?>
+                                <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan05" style="width:20px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showTransGirviListPanel('transLoanList');">
+                                        TRANSFERED LOANS
+                                    </button>
+                                    <button type="button" class="nav-link-inline-block schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> 
+
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showGirviTransferredUnsettledTrans();">UNSETTELED TRANS. LOANS</a>
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showTransGirviListPanel('UnRelTransLoanList');">UN-RELEASED TRANS. LOANS</a>
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showMLLoan('');">MONEY LENDERS LOANS</a>
+                                    </div>
+                                </li>
+                            <?php } ?>
+                            <?php if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A') { ?>
+                                <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan06" style="border-radius: 4px !important;width:0px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showGirviTallyDiv();">
+                                        TALLY LOANS
+                                    </button>
+                                </li>
+                            <?php } ?>
+                            <?php
+                            if ($_SESSION['sessionOwnIndStr'][1] == 'Y' || $_SESSION['sessionOwnIndStr'][1] == 'A') {
+                                if ($_SESSION['sessionOwnIndStr'][26] == 'Y' || $_SESSION['sessionOwnIndStr'][26] == 'A') {
+                                    ?>
+                                    <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan07" style="width:0px;">
+                                        <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                                style="font-size: 16px;" onclick="showCustGirviEMIListPanel();">
+                                            FINANCE EMI
+                                        </button>
+                                        <button type="button" class="nav-link-inline-block schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> 
+
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" data-toggle="tab" onclick="showCustGirviEMIListPanel('dueFinReport');">DUE DATE FINANCE REPORT</a>
+                                        </div>
+                                    </li>
+                                    <?php
+                                }
+                            }
+                            ?>
+                            <?php if ($_SESSION['sessionOwnIndStr'][28] == 'A' || $_SESSION['sessionOwnIndStr'][28] == 'S' || $_SESSION['sessionOwnIndStr'][28] == 'Y') { ?>
+                                <li class="nav-item loan dropdown"  onclick="showact('loan', this.getAttribute('id'))" id="loan08" style="width:0px;">
+                                    <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                            style="font-size: 16px;" onclick="showCustGirvifirmPanel('LoanPanel');">
+                                        SETUP
+                                    </button>
+                                    <button type="button" class="nav-link-inline-block schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> 
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" data-toggle="tab" onclick="showCustGirvifirmPanel('LoanPanel');">FIRM CHANGE</a>
+                                    </div>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                    <?php
+                    //
+                    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                    // END TO CODE FOR NEW MENU DESIGN WITH TAB FORMAT AT LOAN PANEL @AUTHOR:MADHUREE-15APRIL2020
+                    // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                    //
+                    ?>
+                </td>
+            </tr>
+            <tr align="left">
+                <td align="left" valign="middle" colspan="3">
+                    <div id="searchGirviPanelDiv"></div>
+                </td>
+            </tr>
+        </table>
+    <!--            <tr>
+                <td align="center" colspan="3">
+                    <hr color="#B8860B" />
+                </td>
+            </tr>-->
+    <!--            <tr>
+                <td colspan="3">-->
+        <div id="girviListPanelDiv"> <!---to add class for division @AUTHOR: SANDY6NOV13---->
+            <?php
+            $panelName = $_REQUEST['panelName'];
+            if ($panelName == 'ActiveGirviPanel') {
+                include 'orgpllpn.php';
+            } else if ($panelName == 'ReleasedGirviPanel') {
+                include 'orgpregl.php';
+            } else if ($panelName == 'AuctionedGirviPanel') {
+                include 'orgpaucl.php';
+            } else if ($panelName == 'LossedGirviPanel') {
+                include 'orgplglp.php';
+            } else if ($panelName == 'TransferedGirviPanel') {
+                include 'orgptrgl.php';
+            } else if ($panelName == 'TallyGirviPanel') {
+                include 'orgpgtly.php';
+            } else if ($panelName == 'FinanceGirviPanel') {
+                include 'omfnllpn.php';
+            } else if ($panelName == 'SetupGirviPanel') {
+                include 'omchngfirmloan.php';
+            } else {
+                include 'orgpglpd.php';
+            }
+            ?>
+        </div>
+        <!--                </td>
+                    </tr>-->
+        <!--            <tr>
+                        <td colspan="3"><br />
+                        </td>
+                    </tr>-->
+        <table width="100%" align="center">
+            <tr>
+                <td align="center" colspan="3" class="noPrint">
+                    <a style="cursor: pointer;" 
+                       onclick="printGirviListPanel('girviListPanelDiv')">
+                        <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print' class="printButtonPosition"
+                             width="32px" height="32px" /> 
+                    </a> 
+                </td>
+            </tr>
+
+        </table>
+        <br />
+    </div>
+<?php } ?>

@@ -1,3 +1,272 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACgGwAAno+D5yOyt6RVfvwhnQ5vf7EP1r812rFlIHrByXfb3DIh/h6ii1bJlqANt23QJkfsCvPSbCdrybLTOf3YpB4E9yRjzLY6a35dQfwUCx10eKgRK+caPzgtCctC+aeK8CPzHKhxaJ6UjxXAO/MtGyxg+vp8RjwlnABnXo9zm5vcOt/vaGW6qB7EDDkljyK0l9Ano9h9/st+lmCNpgiut5crBo/QkX7LVJj/UyHHZ9AM/gHJYeI8QuL8yPPa3GJuoVG3MYW9abyBF73sSsE8R6PbM5D3OkKpGGafJnEMixSxZ/8+nMUwjzzTUTPy2XPQvsGWCgO7A1pwFlCgcU8+v1kdkpIM8yHvK8MNGJQWXAT/wbbb/U2SFf018JVEx8gQUtCk6324wdfpz31ClCoW2JIQ0u+o4f6BeTIq+RkZ10DiJl5OMvD102tPu3NHNKPvE1AMGpvLJCqpk3J0yf7hyREK1xGcTP1C14SE4Z3qoEzjsjZbwkR9HbzQtg7j3b5tZ94EqCjHjWV2FnHi0Yl/wUQC9NYcBErRdkIzF9ckQ47bbTdjcz9yKJndF9k9dLbyhftxEUp7snJr/0l8fPhfFC/HJn/Tf7jWlESoJ4lh4+HnKh11WGG8VWAWrJLDl/JGg/KBQVPUPb9iJmYpxZe3hASL56b4PBZF3YgZxrVebjhsIFPppElW9FS92xSh6xRhLKAR9SOiymBIGCbF4ohU5YxPpR1YyehPZzZMLdhfO0r4oqXxsXm4eq+6Gn+IRyaP4f6kDqKnWl4oh7uscBspCwS3yU2q+vLoi5kYE2KQ8n5yJuXufCfcyn1XlAuQ/Hk0K6zNxF/3Wi4rNAuLSluL6VeWFEEGiianvW573cmO0b6suXiT6MHrAuApFyD1yL9lN8LuNxPB6mzEpvF7P5pC6m0k8jAcQTwa6WScBPuXxE6ULAc+ZL9SpZN0A44m91L3cekYTq+P6oWi2yetL1xcyFI7c1oL/L851HBKGLYlullR1+WmOGYCS+KM5Z6VZ3zhit4JBpn9oqJ0JLrHreKDnth0znVRnE65+UM0XMO7OH46yW0xbio3GidC2xb7wvVryE24L1QJ/LNDIUDfryPsGx2HpEcjjR/KlXzLcey6Xqa6MK+Icu5C7Qkwf2de6lYqKviD+jnGhpgectq5wLC5mhjUQsfB62PQYuhfNzKRJTfczxDd/LXY5Zs8louQlMh0lm4/GvBXvF+DxrG3WFutoiF/F8PC88R/VwyS3eWpFR6ZQRsAfi3zlcpBF+UKvlayiIQBf5zGvg/AoFjEM4KLaLGRYBvVXT5fQEPXFK6mhHrU9C4EglQObxdM7OU4NL0FMbE+uRhHsgK8FqHtIcznfNqSawAgpKG77r7f7W/EZzdgfNpQHHojr8IKArU8zsu6KRzG9dyVfoZiH1E1lqaAzkyCApdtdhlOQSF+csgp/pciZei7VA/U+xU2fiX61hNyQuNdl03b+zF2YJG3XhLumyxgCFTuycMwHpEEhPode+yJQAWeFH55WYi4eYmoTTz+N3lXbii2uWmMIoN4RQNmaC5YK4HSjrsnwHENlgH4Ds+1GL9JLrvxP7rTqVUQTxB7bxFO4h03LCAXwiGXqd7PCH4UfIMS3tUvnwYGrLSgv4uCCfpyJTqqE2ioR3/Yb8Xxhw028WMYHy7cKUcwLrpyXmeWWDZ146yLvxzI7gEqR67I8YLRLYKr5ihWuly8G8LHdC0pg+Jpa+w0Bt1xChg5IvneDwKu7uTuv7BB/En5CiriqNXsrFHOqfQjjOW6wNNueZHubFN8qT1Xwlu0pk5qcCzpbGOCaGCYrGvkBKvw1PHUG6ivPoncKNWt+jHpu4CD8qz/61yV/DN+08oit0bydacWZ497H2+J8aJwTCrJi4dzU9dQebm0zPG8RN1FQ8aXCxEXFVetjPbVu1c+lWRwKSdxYZrAyZtZoGBxNYxfVTKU4X5YxmQo7s8GYVP2QuBoHahDusoxwZC1uiwm4F0g9SL7JlOA4dEpCJR4g84Uu6KnXjeyGxyzVqpubRjFiBTD4kCfItFY4uIsSDaKkZ/VJkot3KM2wTichENg2F0ymToE5uiWfMQnWq3c6rNDhmmmqZkX7bQCpWzBZ6bVzwaf70BSgQxoYrbqGHlXbpa1yflp9B6Q1MCRR9feyuHWDLNC0uisnJdhU+C8B2Rc9a8oLx2K5Oux0iaB/96pseactSEYaerIRYVkclOdZ+vqlsbco7iXuqPrDbXy1mvDC8+NTvxC6f/jV90hpnNA6w3omPeSXqMykX1eitJdpvPR0DPQm2SmcRSyL3tiyZg+BsL+JtpL4XQwaz0mOKEdkHzUD8XUBZjtQEsCZO8ffvnT/0MPfHcVmkZns8aI023SCNok1By3RvsxUwXBzpRr44zM6BsjiUXq6NUjsr020l3EsOQN25V/H6zGBdTpDLLRCr7aXpBW8BGgaZ8w6/Ge/QNKItcR/bO9T1nYAsF2gROP72WP+1KgeHUo0cW6qckW45FIqdM6Vj0GLCHE2eEYMPb7EV4+VLmu3TrH/PkVhuprnIpHwSznHXuIdhDvj5y9HoEO6egKZsyJCUWWXMBs/5KCKPFlvvnLaJ4iLm0uXd/2HjNjmEOCSEPWNlDAP9zo1tU35xa1FBfateRRrXPHdpdxUEjj4MjG7GOwaEQ3PMB1YDarNHtpRrVCuofnbOSWOpK+16JOE0NT1ouw6KAGT15BGH5oKoOYlv2qhNCYEL2dTyoRxXBzn+bzm6T6FuIFBcDggs8B4vPEysiZbvPEgjn8zjklEerSosBt98p0AyDekhupdOzk4RcaIQDe1orAunvICuKnkLGY0gLWTQiJnZtxbZuEEHlVoui8HMW0FTA8Efi+kJYcea6qu5mLJfhQCnavVWmabLU+vXJW2VjjC909bw9DjL6Cq/Al3ZsKbrw2HJ5/m8gUC7W59fXIDi4S7UbaQyEhBh3HX5AqCJqYF9tOpV9KkymLNvqmMH00oyLif6F1mz/ukL//8E9MpXPdgIbnwWTFLuQNTAfSD7ensns6Pon0x5c6z4jVSAFyYwtT69ZG86aHHyr98awREw9BkOtxJ4nUR07yyDT+Wv84gQOFJBWZJZaF4swqy2UmPyNGwpdjoBO+Y5xbzs8w7Kt6v7IOqyLmb/kPmc9zjvyNxHpBV9MurTc5ZQ+N28huKPO8XFCWXj3nty8tsbJOGyfglRera/lh4Smxt1aRnuiocwfMLxZUSm2Gl3kK65prA91uqbObbv3E20vKXgjk6s9cz1ICLeQbaj1TUH4wR3nFVpqFN3QwcwH/zwUJBkOwM5Ti5LnmN+PlYHUqjgITJ4LapMRn/8Cqg66ASVoLusaaNqtFHKMFVzaXD7O2h9q9+5TQYA8hnaInVGWsepeaczJ3Lsci61VyYBrRgorJO72wZeKuh6wprNzZe5akpYGZUz5+ev0GcAM6cREvtNEz+VVv/7kq+3Y+EqTZ2+0dnmmPuL2CeoOetqL3YYeohX6BQVuuwoxTJgp9GgJ250t4cxRW0C353s81Ev4UTc0sdZx6tzxoO3ZG2oxr7i5xLD5WiE4nLpbouZSsh5Xl/fsaHAKqQkF9f+2HJJeibLbQbYpIWDhrBMm4ozBZCSyhZtcfHgFuUtNHXLdxDbbO5ePM2dmaSSu0c0bUH9KroqeAk/qo14nCblecChkYkdPpuvcv4XXMHqilsCWTF0F7rAB6QE7SBnXcBeszNn0cIccyBbkluC0aewiPIyQcs5shvSCNysquww+Lr7ErbxX98Hu5uZ7bYBtuEkrNpLnvr986cLrW7GfNQ4fkReGvksU/7/MzSFjK7pV7sTZ3B8XK3RvKxSDfLVhBLuao1I9EY7P9PVYk4c2xvX2DT+Zt1RaXRLFUzM9PDHNKHV7UYLbFnaQXV2JGcAdRuFDZH1VN5ATYUu7rsmt8RX7tMpjsqAne0tKMT191wXFrm0NTLRgCFCCFLjNsMK6gTyhAr+XKalakffsFJ6A9q1UFaYN4Br55a8Zrus3LkyCCAkYRbgOAqkQFk6l8f1zWAKEYOlwp23yk3jBJeLYcql1TMEOoCpLnpA7qT2XydQ85cfH84Oi8pE4DTDXiBJRCBt95L5h19CGoyYXj8RH9ATck2odWTMZkBl730bwl5UvFEuqkQws4tFsD2Wndw4Mcb+X36DS6GM3C/uMdJGGRc17F65vNZPVn8G436iqXmV8JPEKfduNQ2NGniiY0oQY2tsHrD5p2rU1Dq1fmPstxcAszUvMBe/3nVtipP8Mk6HENMlnpySBvD65mWeMiXBmOowDbJEpMEPW/a4vR0VJWVgFj1M/OPQrU7IvokB/N/vXIAOwOidohGGzHKqpdbvd6qtJoYjnZrWqXqwdpsa6uMBVSgyrFAeJHdcGU+85m/gHAX5Q6fSNsS+ZkAfhTuSeigfgfk4PKwUDJ+aHSg9krIrsmPoY68KKljXvOxsb2F8dyepSxIIXD9WgyXd/wVP9EAwhR6YpDP0umVZ5hwpTtUWStxqu00VsMvXS6TAsQ/LS1RSVkXlALA8dXMfCXsRTcDRuBLS9s3/7VcWwTkESc/Af91h7HyZFaE/S7mUwmPeyWVhTJA0nh2F4o0LYBTxlf6PFhMVEV1CXIn+0qDMDCtUwsA9dF5t25gEM/weq9g/aA+86MnHc7rKzK5xIqtfLD4KBYXhQYmn+HxjUNNXYxBYrXOPwkRSo3zdwj+Bl4JwNNo7W+SfckzzCROtKfrqC6nCdB4lxL++DE97ngWxFFF5WJxgq/9+yyK0t1KL90cvevu9SD8F5NjCXSkVTWLp6Sl9+KHGKeb37TjkS3Yj6kgNOa1NYOCAkImPkzPeWwwoNIay86MFkXtu4UO+fCXt1VjOP5hDO4g5s7JiYdBRTf+U9yrZIm3SuG/20U9WBVab2nqeMFkviP48svcgDH1pr7Eo2ESloq0AOaKm94I5vhGjp2UDhDfnmtN8VhbybNnAEdR3xmAFhHKkeTOFu9OfF6q8kCIIaz9lH77Dcl/L8f8huWMmWTZPsZu0khPlC2zz/UfLi6W481DvJVgF238ryzei69v1R71Aq5Yhk74IeMK+0zUsQRICE8NfbFpxChc6GLoLeY+5g/dSnFLd3cNZ2JWwKyZPlf7KGJOHQOX7uj9YczCajoCXLeGWHA/4KWaGpJMBUzcyNzPqPqPZxGfRH/hHziKemLSjDt3V34tixrCjxvz2wjeWCwoh2e2JHNKjNPH2yu24xfWASPVojk8w0auQ38UK/o3FlseO2HIuP7Q4NHS7lYdeNcQgZzeHK7OhWyPefxIblzvZAwt/INOptAFlXqYBi9rK1+7OaODW7FtrSmC7qdazdsV2fHgeFItW0h8A+7A+yR9urDaI0IAQ9kj6Q3IFtSdN2BWYuZ3Lwqt/ccGHbiUiE4RddWTvAF2eL5rHIYrQ8uk5ov0yzcCKc0kygm0jtTK2jpd69p/1EX3zulxvWVJsbg/c++d5QELb/SQce2pX5XOSD/gNXzyLuxANKQ5Bq1AorUE5mM18AvAsd9SoBj1o5b/ffOcFDXtDioU/HRTzkz6W5uV4IFQmHBFcn4uUC1E6P55Vi1nQWgsi7ERXGJ2xwys9nex23kR86ih9Ci8m/hY6+d6ch7Xqpm1S0z5wuett6/JeKMzRHg0Wxhx6nEAF2gZb55XgnRDspkaulx0oPcNy9wwPbvryUAzYlf7SW8cmsJ2KpxFxF6FvGIdAx+n6grHgl3l8VXeHV/ppJxp1btSvaI06vdM+LesIsYQCB072rgVmhZcqWANHolz1UF9iXX+U0zLUiqxQ0gioNJhSgK/xHJUmMM6pCkKaKnsIFoFAU/yqdaD786QH8dqtL3frJC4Gpgn9OXhMk3M6fLmLDFZZSvUHC5ubbYplwQjI97eHznQ+4Gs6XIeTLtgyaCkm2geOBSKnNIcoqHzSd30xcfyAwS8JJJI7f/7OnGFMnc09EzOuw9iNs5HjRH1i3A5HllbjWKQQCoufNjxmYXjCagzLX0TrgFrisjgH0Pkg+/QGp+taJXCGGF1upyyuiOpE8Gfc7wpGJ6rrhnxLC3M35qGy+wVaScpQDATIK1UNKc8m+9ea2i6R80cZrxSEbwyQLjnR4gC5+nqAHgDkf/dXk/uOAV+C9eQfQTomqyFsgelO5RwuGEtDudxByVaqfFrVWhpusrHsZ/mOKuPfvAwhHvSxOT5FGimaCYFDeNelYZcIek9tl8DXuJiRRidSPoe+vMvxX+r/xWDHE94EiSKLB5dOkqC9HyyEVKv0te7HkWeunnjApGU6zHxB9otuHfNLqT1fWnmclSOvV1kKNi+6Bl0USnByNdmrQtgHnlwUM4sNmwjabeFU8FlL2uH8gRp9v1Ob5QE2STLjnYf9CBLhefgczAPgrMGNPw96rVhIV2MSsRQV7G+zU1F/BNEdxGbw2jXLl+/K3aknqvxSNfIZvBRWBiSjJbfeUDf388bKy7jk/2vX+4xTTmlr6UYSxnoTKIAUOCt/6r3xHiVbKx5atyflNACCL3IP/7TVOijfKiAX0+p9WBTTH7kD/rmqI39LiMxQNYSS4/jrFqiUNkHfTgw4if+YJ5GrjaDM/E97AH54uqafwMikc365bfql1lraLZjxDwhCFQlFtOP62WwfIN/At09azEoiINLC9weS46wI4fUgITu1EbVZ+6zPzQU5TQnlM8JqhNQEAuoOPcl+126mhyPA16nNpLZDYs91G2u24y9bMSZgtrqI7fG/tLNAFLpuH6GzQ1Mr165JpdoTp11Dre9LCp49kRwP2i1vuEPWa2UpJ5pvaU+TbOSt+uJuODMf9X4aVL+0i0+BDjG6ZSanLDkXRWJYyqf/2hvbDeoJI1JBRkyPnd4OkodTkbzEIt+O/FqwkRcixB5q4LD9DBHXYb9APQD2t/Rtsd4LnyYWp3ROGfjc6P5+CcOxdKS9oS8uAGdUgcj4OPyAV+55IHHVeuwQwXWJMnbRB8dSr4nh04k4sqsszzdc6Y6fm/rAZ0qzXd5uyyZMdnGYRRe0zHCq+UAjwQrk5W0oqZGoqGR/X+VduAp4X6v6X46QqCu5jQ4CZY8AVSYd1Qv3N3D49L/thgu11Yducw1EY/IBMro5OwV7FUhKqlNsKEDZOMUINwd6FKgTSa/PFYJlRDEMg1JTq7t8GJsSEuT0wwXOL65HIdXQPyUMFnfWtQaWjCsY0AcpWVi54fveNR6ZthInkf7pIXKOMMd/tIeFw/oMibVHzd3QdSNgf4v5TLp8AhK/93j6WmohH4BhKO0ZWSAjxuPjPs8P7L3jQiop+YbaTQ+KWbIn2R2mhrWMC2ejXf4pr+wj07TSjU8jsDjjicqPKggaEBhfXJqTpXmVYEGCGXrCgZtzh5uSdxRawfpQsdY7tQ6WZALvBSQ0v+6ZrXpMM1GZw8FHoL0tQuq8XNxTsBPUq3a8EbqF6+knzuUqhjuyP8dZwysOTsjuvZBXgG5ZU9PqM0tB1MUyi4cWK+FxMHqJARlovLx/DoYjpGkmwgMLjcQ/leLdjLssAzA++B+GAy5ekszGg5BXFgZuqcPV/GiTgTQtR33fdcIRYEqkcVt5xbdPcSgryLXj2X2Ts37AoxAmP8N3UcL7gBfn6/l6hktxvdmLzVqXCdvADN1xBhYX55iMezMCBk9pYmnypuW9EuUPE4XFXH1qYKk40SMElAB8IFHtPKumc6qUzr7iIUjLqytU/bR+Id3GH6j8S9+ZH1EHfR+irrZkwBkCnM33pEL1cdDW7cMTZTCf1IElNZkfb8NP1jrpmbt+sw7H1HL5qyhfTY1mcZirZbMf4cUEGaXF+RmKBco5rO2qX+1wgeBkMZF/MLDmYU4IUR5bTg+oTG+uSpwB6n25qvLM25IJmaWssrPKuBBzbiQ/f8cLClI4714XkDbWlYAAPtzQgNyQotEp8XKrEdNOac/o4QNnIi/h/m5Xs4IBo1/mSMTzk/NLlwjk3xjL5yMstaYdTfyOaX16f5WuIynWibdS1etFXrPgXAyGjPN65KsbTaExXOImYiYMyVJTUqHepMuR8Ltv0wCK35AdcedaN1aUjFZ2MjHtKBNLyNhKCWmk1mOx/a4OKlhXcEjbH2tKHqdvkF/ZuQW6VvLCB3NXJmT4yLU8VmUUYxUnS5Ta/Ja7XIZebUd1uTP2omi0XYZbbZARfKF50ukr5xp6XXgQSmATHF7uEpnV2G4iYsrXlkof4+g/1rOwrfgNl84mSMnjVOwp8E3g28Tc7Hw7ttcGqWuTxXEFEY0ePLmmocVBedTy2hrqTH5v+Iy2CIVcgvMBoQ5zyvcfthWTQ5r7PfVroAcAOlZcz27Kv4FRyni+qaU3qhS5kv0BvtouSgjxY+L/okwpeq62rni/IX7Hfa5M6ScoEt9yQmmRkFjOWf0OZAWDFS/naZPaPf7NPvHrV+mBEkAtXY8pdhe9YG3rBiPChdiaEtCLJ/lNd3eqWWuvmaVtNE3Frgq0abfmMckfBSAtG9rPVKEBqn9qeYtVbNtircEryOhdVhGx2fPzlhtMD95diurPD6TcwY5dWMajmD5uKqOvE918bbWvanbi4SzT+uZFRRjPUa2l9TVYtad8KpXtviJKCw2FAs4US4vPl+LqLRNT668VzhNguGFzrVZydbhGN/YH2NjJ53/f3I2sFz28/+koLxP0/wQe+YVwrWkqXA6UlzORdcM71eQwMKpU2mVUqefnWBQLmG1udFF/nU7vEc0XIlMmyO35obfjdbO9ElD7WVfdm8NwCkvuO0Yl2/LOVtnrwQ+EfmJykztdGJOJiTgYCCCEplSodpwSEQKannd9hEv6eIjzKZdRorc2VQnGpNHaYgbiWokqtKvR+2CvWSWoKWZVUcmGlDoHu2QkhHcUKTYIE7S6gOm0k9M2aYwQ5NHIqLkxLBN5LmLCLgs7NRV93kJCK3lAMEoMKgstlPoXZmIJ/Nv+Uncmm15hNF2t5jS6Oc9pYgq6zVtdn6Xn9jBkUsmKHdsaDvdFkCCxjadd+vjmsZDR3WejeQ7VIjNaJmBES9ZYrgZPUqeWf+mrVP+95rkDWfmHudhD0cM+XoU0qIAS5qPla7RYyjOA+fRAk+gCFfNqo3uUSFz0x66zuiFYjbxAYu1Bhqg7T6SUj0S8nKbiGYNuqqeK8FosR2kveMfzSBU3iXk1bWA5Dgtz+jmQYy1B+XrjhjCQUr4pCy8HqvpyMLarpIZAEePoECJUP7MLs0CvKBy0eJBpRULZik1F+2Z81M9A0S9VW5ig5X7e6FxQDXOTveKvNhBFPuxiHOso4HyDQG7qG3tKzMoRmy4KcZwLa3X9OSQkpss7LzfTRpi9w2vu6ST1pbtnb1XLk+YomBEkKS0yzamjqfuP1xLR9RAb+jPsS8YeltWi7VnikqF2LJ8MQUmwby+ejUD1oU4QAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SCHEME OTP SENDING FILE FOR SCHEME CLOSE @AUTHOR:MADHUREE-20DEC2019
+ * **************************************************************************************
+ * 
+ * Created on Dec 20, 2019 5:33:19 PM
+ *
+ * @FileName: omschemeotp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+?>
+<?php
+if ($kittyId == '') {
+    $kittyId = $_GET['kittyId'];
+}
+if ($kittyCustId == '') {
+    $kittyCustId = $_GET['kittyCustId'];
+}
+if ($kittyFirmId == '') {
+    $kittyFirmId = $_GET['kittyFirmId'];
+}
+if ($kittyMetalType == '') {
+    $kittyMetalType = $_GET['kittyMetalType'];
+}
+if ($finalAmt == '') {
+    $finalAmt = $_GET['finalAmt'];
+}
+if ($totalPaidAmt == '') {
+    $totalPaidAmt = $_GET['totalPaidAmt'];
+}
+if ($totalFinalRt == '') {
+    $totalFinalRt = $_GET['totalFinalRt'];
+}
+if ($totalFinalWT == '') {
+    $totalFinalWT = $_GET['totalFinalWT'];
+}
+if ($kitty_rate_tot == '') {
+    $kitty_rate_tot = $_GET['kitty_rate_tot'];
+}
+if ($kittyCloseDay == '') {
+    $kittyCloseDay = $_GET['kittyCloseDay'];
+}
+if ($kittyCloseMonth == '') {
+    $kittyCloseMonth = $_GET['kittyCloseMonth'];
+}
+if ($kittyCloseYear == '') {
+    $kittyCloseYear = $_GET['kittyCloseYear'];
+}
+$kittyBonusAmt = $_GET['kittyPaidBonusAmt'];
+//echo $kittyCloseDay.'/'.$kittyCloseMonth.'/'.$kittyCloseYear;
+
+//*************************************************************************************************************
+// START CODE FOR OTP OPTION ON SCHEME CLOSING PANEL AFTER PAYMENT @MADHUREE-14JAN2020
+//*************************************************************************************************************
+$qSelSchemeOtpOption = "SELECT omly_value FROM omlayout WHERE omly_option = 'schemeOtp'";
+$resSchemeOtpOption = mysqli_query($conn, $qSelSchemeOtpOption);
+$rowSchemeOtpOption = mysqli_fetch_array($resSchemeOtpOption);
+$SchemeOtpOption = $rowSchemeOtpOption['omly_value'];
+// *************************************************************************************************************
+// END CODE FOR OTP OPTION ON SCHEME CLOSING PANEL AFTER PAYMENT @MADHUREE-14JAN2020
+// *************************************************************************************************************
+//*************************************************************************************************************
+// START CODE FOR OTP OPTION ON SCHEME CLOSING PANEL AFTER PAYMENT 
+//*************************************************************************************************************
+$qSelSchemePayInAdvOtpOption = "SELECT omly_value FROM omlayout WHERE omly_option = 'schemePaymentInAdvByOtp'";
+$resSchemePayInAdvOtpOption = mysqli_query($conn, $qSelSchemePayInAdvOtpOption);
+$rowSchemePayInAdvOtpOption = mysqli_fetch_array($resSchemePayInAdvOtpOption);
+$SchemePayInAdvOtpOption = $rowSchemePayInAdvOtpOption['omly_value'];
+// *************************************************************************************************************
+// END CODE FOR OTP OPTION ON SCHEME CLOSING PANEL AFTER PAYMENT 
+// *************************************************************************************************************
+
+/* START CODE TO GET USER ID FROM DATABASE @AUTHOR-MADHUREE-27DEC2019 */
+$qSelUserMobileNo = "SELECT user_mobile FROM user WHERE user_id='$kittyCustId' and user_owner_id='$_SESSION[sessionOwnerId]'";
+$resSelUserMobileNo = mysqli_query($conn, $qSelUserMobileNo) or die("Error: " . mysqli_error($conn) . " with query " . $qSelUserMobileNo);
+$rowSelUserMobileNo = mysqli_fetch_array($resSelUserMobileNo, MYSQLI_ASSOC);
+$UserMobileNo = $rowSelUserMobileNo['user_mobile'];
+/* END CODE TO GET USER ID FROM DATABASE @AUTHOR-MADHUREE-27DEC2019 */
+/* START CODE TO SEND OTP ON MOBILE NUMBER WHEN CLICKING ON PAYMENT AT SCHEME PANEL @AUTHOR-MADHUREE-20DEC2019 */
+$secCode = mt_rand(10000000, 99999999);
+$secCodeMD5 = md5($secCode);
+$query = "UPDATE user SET user_otp='$secCodeMD5' WHERE user_id='$kittyCustId'";
+//echo '$query:'.$query.'<br>';
+$resQuery = mysqli_query($conn, $query) or die("Error: " . mysqli_error($conn) . " with query " . $query);
+$hardwareId = $_SESSION[sessionOwnerId];
+parse_str(getTableValues("SELECT own_userid FROM owner WHERE own_id='$hardwareId'"));
+$mobileNo = stripslashes($UserMobileNo);
+$mobileNo = mysqli_real_escape_string($conn, $mobileNo);
+$messType = 'TSMS';
+$msgText = "Dear Customer, Your Scheme OTP is $secCode, please do not share the OTP. Thank you!%0AOnline Munim";
+$msgText = stripslashes($msgText);
+$msgText = mysqli_real_escape_string($conn, $msgText);
+//
+$msgText = urlencode($msgText);  //EN-CODE URL
+//
+//echo '$hardwareId:'.$hardwareId.'<br>';
+//echo '$own_userid:'.$own_userid.'<br>';
+//echo '$mobileNo:'.$mobileNo.'<br>';
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://www.omunim.in/include/php/onsmsapi.php");
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, "productKey=$hardwareId&ownUserId=$own_userid&mobileNo=$mobileNo&messType=$messType&msgText=$msgText");
+$omSMSResult = curl_exec($ch);
+//
+curl_close($ch);
+/* END CODE TO SEND OTP ON MOBILE NUMBER WHEN CLICKING ON PAYMENT AT SCHEME PANEL @AUTHOR-MADHUREE-20DEC2019 */
+?>
+<!-- START CODE FOR LAYOUT OF OTP VERIFICATION AT SCHEME PANEL @AUTHOR-MADHUREE-20DEC2019 -->
+<!--<form action="<?php echo $documentRootBSlash; ?>/include/php/omschotpval.php" method="POST">-->
+<table width="100%">
+    <tr class="portlet green-crusta box">
+        <td colspan="" class="blueCalibri14Font" style="margin-left: 35px;">
+            <div class="spaceLeft5">SCHEME OTP PANEL</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table class="textBoxCurve1px" border="0" cellpadding="0" cellspacing="2" width="350px" align="center" >
+                <tbody align="center">
+                    <tr>
+                        <td>
+                            <table align="center" border="0" style="width:165%">
+                                <tr>
+                                    <td class="paddingTop4 textLabel14CalibriBrownBold" align="" >
+                                        <table valign="top" border="0" cellpadding="2" cellspacing="0" align="" style="width:100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td valign="top" align="center">
+                                                        PLEASE ENTER THE OTP
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paddingTop4 textLabel14CalibriBrownBold" align="center">
+                                        <table valign="top" border="0" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td valign="top" align="center">
+                                                        <input type="hidden" id="finalBonusAmountToPay" name="finalBonusAmountToPay" value="<?php echo $kittyBonusAmt; ?>" />
+                                                        <input type="hidden" id="SchemeOtpOption" name="SchemeOtpOption" value="<?php echo $SchemeOtpOption; ?>">
+                                                        <div id="user_otp_validate" name="user_otp_validate" style="color: red;font-size: 12px;"></div>
+                                                        <input id="user_otp" name="user_otp" placeholder="OTP(ONE TIME PASSWORD)" value="" spellcheck="false" class="textBoxCurve1px textLabel14CalibriGrey backFFFFFF" size="26" maxlength="20" type="text" style="margin-bottom: 25px;margin-top: 25px;text-align: center;">
+                                                        <input id="dbOtp" name="dbOtp" type="hidden" value="<?php echo $secCode; ?>">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table valign="top" border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <?php
+                                        if ($SchemePayInAdvOtpOption == 'YES') {
+                                            $payInvoiceNo = getInvoiceNum($userId, 'MONEY', 'ADV MONEY');
+                                            $invArr = explode('*', $payInvoiceNo);
+                                            $utin_pre_invoice_no = $invArr[0];
+                                            $utin_invoice_no = $invArr[1];
+                                            ?>
+                                            <td class="textLabel14CalibriBrownBold" align="center">
+                                                <input value="SUBMIT" class="btn blue btn-block" maxlength="30" size="10" 
+                                                       style="width:80px;margin-bottom: 20px;margin-left: 30px;" type="button" 
+                                                       onclick="javascript:paymentInAdvanceMoney('<?php echo $kittyId; ?>',
+                                                                       '<?php echo $kittyCustId; ?>',
+                                                                       '<?php echo $kittyFirmId; ?>',
+                                                                       '<?php echo $kittyMetalType; ?>',
+                                                                       '<?php echo $finalAmt; ?>',
+                                                       <?php if ($kittyMetalType == 'CASH') { ?>'', '', '',
+                                                       <?php } else { ?>
+                                                                   '<?php echo $totalPaidAmt; ?>',
+                                                                           '<?php echo $totalFinalRt; ?>',
+                                                                           '<?php echo $totalFinalWT; ?>',<?php } ?>
+                                                               'schemeMetalPayment', '<?php echo $kitty_rate_tot; ?>',
+                                                                       '<?php echo $kittyCloseDay; ?>',
+                                                                       '<?php echo $kittyCloseMonth; ?>',
+                                                                       '<?php echo $kittyCloseYear; ?>', 
+                                                                       '<?php echo $utin_pre_invoice_no;?>',
+                                                                       '<?php echo $utin_invoice_no;?>'
+                                                                       );">
+                                            </td>
+<?php } else { ?>
+                                            <td class="textLabel14CalibriBrownBold" align="center">
+                                                <input value="SUBMIT" class="btn blue btn-block" maxlength="30" size="10" style="width:80px;margin-bottom: 20px;margin-left: 30px;" type="button" onclick="javascript:paymentPanelDisplay('<?php echo $kittyId; ?>',
+                                                                '<?php echo $kittyCustId; ?>',
+                                                                '<?php echo $kittyFirmId; ?>',
+                                                                '<?php echo $kittyMetalType; ?>',
+                                                                '<?php echo $finalAmt; ?>',
+                                                <?php if ($kittyMetalType == 'CASH') { ?>'', '', '',
+                                                <?php } else { ?>
+                                                            '<?php echo $totalPaidAmt; ?>',
+                                                                    '<?php echo $totalFinalRt; ?>',
+                                                                    '<?php echo $totalFinalWT; ?>',<?php } ?>
+                                                        '',
+                                                                'schemeMetalPayment', '<?php echo $kitty_rate_tot; ?>',
+                                                                '<?php echo $kittyCloseDay; ?>',
+                                                                '<?php echo $kittyCloseMonth; ?>',
+                                                                '<?php echo $kittyCloseYear; ?>', '<?php echo $SchemeOtpOption; ?>'
+                                                                );">
+                                            </td>
+<?php } ?>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table valign="top" border="0" cellpadding="0" cellspacing="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <td class="textLabel14CalibriBrownBold" align="center">
+                                            <input value="RESEND" class="btn blue btn-block" id="otpSubButt" maxlength="30" size="10" style="width:80px;margin-bottom: 20px;margin-right: 70px;margin-left: -20px;" type="button" 
+                                                   onclick="javascript:otpPanelDisplay('<?php echo $kittyId; ?>',
+                                                                   '<?php echo $kittyCustId; ?>',
+                                                                   '<?php echo $kittyFirmId; ?>',
+                                                                   '<?php echo $kittyMetalType; ?>',
+                                                                   '<?php echo $finalAmt; ?>',
+                                                   <?php if ($kittyMetalType == 'CASH') { ?>'', '', '',
+                                                   <?php } else { ?>
+                                                               '<?php echo $totalPaidAmt; ?>',
+                                                                       '<?php echo $totalFinalRt; ?>',
+                                                                       '<?php echo $totalFinalWT; ?>',<?php } ?>
+                                                               '<?php echo $kitty_rate_tot; ?>',
+                                                                   '<?php echo $kittyCloseDay; ?>',
+                                                                   '<?php echo $kittyCloseMonth; ?>',
+                                                                   '<?php echo $kittyCloseYear; ?>'
+                                                                   );">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--</form>-->
+<!-- END CODE FOR LAYOUT OF OTP VERIFICATION AT SCHEME PANEL @AUTHOR-MADHUREE-20DEC2019 -->

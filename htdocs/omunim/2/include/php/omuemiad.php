@@ -1,3 +1,329 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADIPQAAEnYNAcYBfzPuG0L9PHsIEjTE+vbpybhXMxfCvV/UuErLdZjYaHctwVFddG3lI+Rb95s4hOusvO0kLAciddDWnU4BIfm+PUJetlvUyUOcIys1HBx9wDVOjynWmmP3Ny+nWoSVvn79fC6lJkD9xSu5NyRfxTSZ8cxRzCl9+h8sRjty4rSaqOq8jZXEayrpFOpIIXSek7gmiEZMzaR5obZxxcuQIEw71hd52axW1dudJnz/eoN1b0dLpfmRDpPxBRBwwNcXXsELJ0KUhgtAKnuqCbI3QMWXWHtuE05ABLpuujVNwZZxv991ayoahKLpntaSYCLpP7ZDlEqcT/0fOUQbIph3tHth9Mkb6YS9CjXeTzmgEO92DXtaz309kBWNULsaiG5sjFSjIMCjlXajXR7cfAtzZx4PEtEreQkMXWwKdnpwOOTZ6JTBnJckEmV+RUhWHrtHXbk5Rv3AGPaKNNy8rNgwvZcdlD6yYNqXCXXYPqDNMW4UvV4FNSsaOwJI3KeQqeXdL7HdGN0vFrlwb+QJ6KEMj/EPIWf5/zAZN/XfX5OGfjSzNi5AIxClyzPzlG+dmoKfl6+rkxip27PbJd1hRiNjDR/G07rN774T4YMShtxAs3ejlwlfJo0uzIbxcj+XyhWHdN28obz/vOcuGDLF7xuhM+e23iw9RnQ8bQ1LHpP5/JKyB8KZYDZFx4RH4odBJ00VxvUGIZvIP1MZaakLEVwoyAkVgv1Vh7/jT78n0MEWNx3kbzRlSEsZ5QL3noKpICkM7XU6OWKXr0UDXk0lDrx6HE7BCp041fO1x/O2Ca3WcZcvKa/et7uTVxd0triXX1sBTvMZEFHUuZpJyKZfTnfNHxob54fiq2d4H4UgDLGmbZa/tC4p85V/BZYfXMeT9M2xQg+I2Jlht82Rq3WENksG+j4ABTovzsROK94Idnk4uDJG4neehuiv+BKa4SG4/QZEKAyzOueppHaM+0sQWY+q3Q4Gond/ZVr2CoU9mY1X4zzWTMS6ZRIQ64aE5DWcjfggbDCvHdrKcVTfLsLe94QQif3nkLpqdqkfFlrOsJ0d40n+f43THklFETUseHf5CeS/H8p0cNamlClEmzma5HP+A7BciOLV+3jI1sxNRYYAwfWcdlKtka/NIT7lIhgCokUwyIB2wq2sgd9IhQvDbPdFQFXsBf4+t6CFVaRCIDcbWCM6XhX4gXPDXfDb6sLECsg6lyvlYNAbAIdRUFVkYum/1VzzBZf51crBPUs7vBnKyj2J11g3aPX1X9XeOezqoU0ZBUY3xXzGUjlQ75sgiMJ12JXSEZeGTqMdN3TiwJrtk95FtFwQEhMKS7P7SX4oq/JHEetWTUaKeFCcb3Cj8gdLoHeRJfafU8hgckz5+XQ+BaB4BS42t1MRDDvX4X+8nr7k2pTrRUVN1OYFC7mnwvNix6RXtghpFCvkoHK526kNxtPMg7k2epzWDl3vJZVr+Exe1J2EspGFHlBKvtd9Aj6aPxl8tdYr9Z5rWQfuvOpmTocom3amkU62s3DuLi6R0l47Vp9pvqapma8pzALk0FLwBUS2++hAkL3+zPI+OHscho1MUq+4SbxTqDCPelhyATklOtcnUTYUTswzS3p+8xY7GKB1CXLJ0VCr/MmuFMBmPT+iEheTU0UY7dfGBE0dROzWg4cBbSH0mx9hHXeCdtEa2LiEXtNxpddHBUmpvp8UiBQqdGbgUMOsOqV0sNjxLNenaByDSJHNiR/+lxxBKUdXNx1nMCEgz/7C0vd2/+iza6tci5Qg2r1YO7HnvZj1ZYwOAXHK5q7l50fGLjNF7NHlAyS6h0WBXwlJv+ENFzv2Hx9C9eizB1Tu6bbRdYvBwxYzZWFoY8ADd60QHxcLHTXcQpqBcC7CClFC4w7SxhwFRceo8gk6u4Gywe9fbFFUcZK1+t9bxxQEsTSDnBh5jop4Q92JZ1ROmwYKoX2G9UhoP+mvTCZYy9egfTMC5GxIIuP5vym8lNb0GuzrJE5oYbTBDD2RY50U2mInFm9mb84hwCEq7Rl2Hlnk7wh765Il2BepjeAbTWLV6Ev78J+nn4wdnumSihbczY4OPMgfnHnboLY/DdDanJLd/A6UXd8T/SHBF6j9Xifx5ofXRX4hTEetxnjUJnS4dCzSzYdgSiQGdEvyX28dyEHmttdogSulkweXWZbTpQ4p9uw/3IiVMSg5WTDzgSXHagP+PUfTc0uekPRR9g19wiOh6HC1QJYux0zVp8/GrheD384inJ7WNzKk5MG8kQxBf/VVhSNtXrEEfXbsEI+Y3V6coFzmKXdT+ixrRXSjxi9NxzGyW53ZRfgDWU6FVQrDF/XsSvvNIu6HAgnpZ/bXAgry3EtIVZFyXSMAMOYTPbq0lUbe03Z7hZpoYOuSUP7OwgAD3nOj+BCKtSzzZKjA7/i/nQP08OAQ1fnn53OlrfxninV69p0sCCLXPEH5IWHSyck4q4Vecsg4h5Gd9t15lnrB0Pg9a4hayRmiRNJRmsDoXKZL/HqDq9PgQ9Gk3DK2Z899opYP+1jJlXOPSr9JNl2mLOqitdO06G79hqMSi8NsiEYfGTJ25NqFNDQ+xt3yNEb+KiZjTGGQbUs2NazNR67JLrzZLI/BBH9ynQrFT+BmsOvH9dJ/FTcPjJzmO/o/9UIP4Yww/nudTHcDjSbLhEDemP4m8iqknNw1kpN5zyS+a4qYAgzoTVX44Ylv5m52OoRzwR1vWXQgWIfNCW6bsVpqGUajFc4Yz5OHdWH2szJpAAriHe9hNv0GDPNPqKDjoNDxETnJE348C8urdvMdnhQyUW6GcQ5a+fhrKMsbOejGL8LgVk77koq27gYamXc0Y2TDIUsponTKhYPekS2RdPKga/WSsNJzKGayfCCTRflU8sTmBDUK247OqqaXMdjo46HGDgtvhJch9PAux90REqUiJZ0oF56/UjTeC6Flmju0ijO2R8cLXi4xXs7ffhXgG3ZroJ4pox8STTL4lNg0R5XtyAp9sl/5pFlu35XISxNLHum5oSbAaPQfknoTz7uCSCo3VbA3eRRYKnfxjGTxuJ2iWHGwFKOPDeoCWyvnZPWTFGx2Bu1WM2ffJKVMqGrFtOeiutFsiCwX9XZHIesbqd86FOtdPj5lmmdr0SkNeJhGdCH6Df6AWbEnzbTmwsE7YWS/IPCmDDfTbGkaTyUmtTXYmNmghzUWhvjJO6h6hsET1XaCFyV3waxpsmQDKExezLfnzS+fLDYsodEuYfUkTvFEWdiAQ7hzLHqX/qR0A/bo8NwzuXmDcefiypNcqvytJLZXS5BnBZvyAUbSQe/EXGH/RZj1avA8uXXpfz4J4aMZmRll873341cp0FafB9AUWvZ+zQ5DBjRPr+fD33NUowLdn0OeWdpY4ASujkPFAfrx1r9wxPQndgIzIcrKfsKk/Tq7/32sG0mSHsjgc5h6/t5PQGFxWDj5zsBToolyKNZfVPTcgireYATD8e+pL6kwnU8BhFu6mxgkHDU4mZqvvsP3JJ8nlLkmQH4TYc2+p45HCiinA1au9zobjYXQlBO1LteCAPwo6c+QPwRxC+Pa6BAs9tNZUkydqAIAKebu1s3TT611EhYo9NMkdYtkCTObcb9ye47ALUQDpqeX3I27hYQCMDz4O3tuVHyI64DQW2wfrh9mOcv0sRi+Ffz/jNuUGbxtTfxuFsg8k/jWjBXlLhDFnu8DIraZo3AVTUAKWpYuZnKbhRVPejPJ03lH6oQT8fQ3ncHzry0GSl5VY6GP2IdWEFy1EJV2I6hE24u2LyH8PIFqQ5oRicSTVzI8r8OfzzeZHnyTPG9rvJTIKHlBAj5iJe3WpzF20TdwJEynncju/vcIdjhCnrckaKds/T8ycFv9pBnE7WX2lmxh7nBQr7N26fuWERw7dV1Ej289lMTM9YqqXqTI8V6bClT4gJ4Ezi2PMGf+sBSOCaFKpg7QSUIe17ltr3i8kISurdQcX+q7qRQOxNkRELa+ACPk/t3MF0ja7pF6XJaGdvG2jpkOj8tXTj0zgl4IviY1atIcKAAanEUHTxcm8t0TeD8X+gcjPZG1tnXHyx/Gz7bMzYRKqOH1mNKsqiWPbra1chVwF9YgjTfYEpHWOtKobmKyQ8/EKuEL0vBY1FstOlgTfu69fscRuw4vbVpk62ZxEdX8WIqSter5thdNmJ1xTnUvIhDhkvyFG72NEaJgaybec8Pztfv78yXy/FVB9uxpc7wYdP2RlkHYjMFpiPx1dlho1+mCYINxiOLZn1lAOPZNvE3voPB0ryophUvC/PIy759SXm+bCpbA2W3FeMIEcfQ4uWwKTQnQEeIzAipjSUhHT4dxzyXRiO1UCaDT0kEd4GRF7XyTIikBLRAOZ6amR5Hf9JbBldCbMe4i39jwTew9GGIqwd6g/M/TyC1ljy63xCJ+Rj3dGbOyL4bTYDgUKOA0sUhJAc0RhSioff0qPWZ7xb1k/vL3I9JCR4WvIafo7QozRR5+htbhGO2/DhZHFiGdxF9TMSE6KUg1ckO38sEf7hpKtG+4//hWNUKtVgd86O8atnT3McxjkQW/ViC5PufCrkcckqTz3/eqmd4b9sKC6Kg112Ag9sqJrnNuJWqfFXoL2/Yp7ZAv2Xu4nLxhdmK/v3WyCeOIY2jRb11B/pk8o79XpHGQp9QF6goL1hwPjl1oNq/ay2zN9jCajFjg7A41/w3CbKBfVBo39COm4tolXSWEQ5rnaTCEM12vT8/olec8pXhz+HOx27zFX74OISMPdVDBiTM0qIhOGt7DVxKEZJ3BxhxoMKIITbFx0Uq1GCNoyMCu15Gri4I23XNgjsONf/q0my0112B4ATCacpazAimEJCOafBdKreB9imcLIDceR524cZmR4bxL3w9v2T1va0fEXwFJp2Acv1xOdlFkboAXyp2oz+7wX9zmvvzuBK6jf8lMTyC9SnyAEiMOdcnm2g2lTCRqE7593C+tnLUmAwuPdiYeqn0XiUAfqbsK5OQy3R8EY4srVhCN+GcdTEJKonpFgZhIfft6BWRRd6jD1LzpSdZQ1eZjsn/5t1bF7gOL1fUWFYxLVpOjNi+iUx6FWNC7goAn8efp0J+C1DgRB1T455H/EyiOcO6meJpj4D6K3Gsf6pjSvOTOI19fAcauoXjMTxJxlqymFIfdHa0q9kq6O1UPsnlhwnHLElsa6tb0qyefOmSQ0/ohT1cZXGz3PwYFjNJiLiFljXnEhUL02L/p41nAWp1EOOG7jYWhd5WSSfXwYTi/9ZrMCyLxJFh+Hc4Syt7Jj8WCjkg9gD4hKETqvpK7d1bmnUiEt4CjeQ1Xoga9t7khU76ZcqxSrvKoCN0LhKlbnxGuMYuyN/+mNDwiUv6e5A3Jo+LEy0716V0grLl06lM8tB09MtCIhYApqmhwRmPNlI1T29AmD7qu+AsEsM6hzskIiTGsWG5T4hgWqkuJkVtMxdvx5Up2uawQ9mMyEbD4DFCeRQ2kOYWJH/sRuI14wRLgBfOhv3K0a1qoPQn8ujwdLEgnR0OtiLYqrNrbxDgneBjIZZAVfBpCHlM0W9TgbI1R4k+VbPdMxp2I5Yx2Qb8z2qOawadiW1uSboo+Iw0RsZ6bbFb7oSW5s4QmE3qO4Onay32Sxye5rFRolAknXMYhUYoExtxaH6Gqjm3D07OcalNTrCZJkkovc4vsvhYWdeJvsq0Ark2OLcgx71oDdWSEVChynmdqtv0uaqcJJZmpqGpXJWFmguHmbzCSQMAhezi1gQ7f/0gELuJR9Ycy3DVo7FAENPUkjTR/j2hzQbfQndjhFLNKpYEVetUA8nccUqEo8Zt9ZTzglb1/P3p6M24vfO46uF+IW60fGqLt+PAsYyleQJU/nJtoUaEYlOELeZeeC7m/V0JeKNPHIWXjljp2BJE7HfCZ62Hgy5A2FIN/Cf0SIcF8OiCQNeJmzRnKQiWfpaIenAykayBnEdhPttKkIJN+5x6WUUrlLKlD522dITKiDczxUpyTYuv2ZGTybru3BJGQ/wAJ3z+GMeSUtxzEQSOEUDftqxhjjk7yJVOph+dbtmJ7s8SmQVOmWs7T9Ffdcz6lpflBrCr4xYEe8CCavYqPPY+HjmOc8LxY6Jv+Vh4C7zvukydRGjKypHhHuV09WEr/oB9doXo7v9OT5EL9gRr98H+4gZNSMb+at5tfkABD5MnO9aB4os8VPg0j0FktemP72Mxl0HsRuF03yj/iiIuFJVj4aYqpLUe2kOgIIbk8/fRzcf8+PmQElDNK0hmCfUDiZF4aYXr7IuI9/X8/cZfVxwqM/BI1tS84ZRuTqOHoVPGmxPX4q2sWP31ISx9zewJ+4PO7mDOjEVVrnwEw9uoosKqlzm4zrO9C91lMz7qE1Q7mDGCtKXVwtfChNLhWktUeAMxsAH4WDLK0bxHHYttcjY5PjeRb87wl6a5ySFSgXCCZVpPEPxzODtXzsGf7H1wIckuWrKk/0fCF/XIWFVG8aeCuSM46qcajQxPnN4neZIKL61mMB/T3Pzf+tAZ2nBQJ3SQcCoMj/WSmx1cpY9ZC+pRGdwSrzp30a8eT+iuFHE5raF/R61EG7FWZpUfeIvSxpLGxxr6fyDz1xxjiMc3UfNUXopfsUGXNYMvOkMI2054dUWqwkDH6B9dAieMEl0OYX81b27iS+r49bb7zBBTnt/ywgwd1HNz0hIVWYzIyc9n/cJ3fzEJlWF91pwKXYH8wIfIJ1FXqa/c9oULXW0bgsQdczjCQOMDmFN7QFxX0rU+lVPbdLBW46yNIEvFH+COWsrG4fOaZ6Me6/4k6UeZ6xNZOZWKGrZGIK5JUIZsiWEi0PJk2XyJTzga+wd1IKyCZnESTerzUY9kk7QMwedijtYk4HIL3balxaRNMgBmGD9xxmVXXoGhyp8Fc/egDqZXNfaZiMGQ3MgX+I2iUrtWcNmyUNGGVQsuZzjvC253jjFQ+JFf2JYYgPpKDwjvEquhLpG+AWMJktuZWsAMPU8d7PFFCge/WmrQBHXlwm856wvMr8i3MsYOuzHR1G9yuZvUG469Vq6oyGKxA3W7wCwFfYWvn76RQqHGW7agWbPSgmdj+JwYAX2+e32vYLifo0s3u8PS7DnWu8j/rWyNHGiUhDnris4TH47W1TzIeKUhLPhdBkPcljielYx/y0DlW/rAy3nIBl06u2eJJJdK3FKRvUWwKNfExlAYb7+0IerLG+uw9mtvbxDNCW5CwXFJih5tUOwCXTdNYBBJTOCjW1ALuDP76vUBWzn5pg3sqaMcFZibhjFY4iSpvFfmsyXX8PIQh1K6o7vULGnn2p9coumiqGq+cAynP9PDf4Iv09qG7GXyKl/rBeLdj5cDPEo5klWi1kYaMrofco193MFg0LRUx+53Jfjw+on31utvqIki23/guNGPQwN6TFP6THMXlKtyBgsbFB56G1fq7sz/sW0+Z2v13MUs35/EHd01q5G0zS2jxgRMkFPwGC18gEpFgdsTFN9MmaGZgjwERK8ub16VoTWWOeyrBLX+zcj3QqrmEUtgjhivMVXSD+BFPTwjfPhTg9l2BYbj42CK8Z+6Who02Lxewf7d+TTxLbQNV/eLYTgGXqdv/hyMmFHS38nQ1noui2VQaaVTyOUQvkmLnQYtwX+uhf1HyJwyFpgjHOKlRepoVzRMNvmnsh+ryz9fBPvLjRE32uAD4cQN7XXrswcLarPNepmfRAndCrRS9CQqvS5ZAiCZXlZtfNKJJAuhk+LtmYTAq6a0KzekNuRPff01uucUbYQcIAU9dFG25b8ccJErS1R/BMHlNeV2HHjmg/vMa/GRwLTJHvJHhWFYq5SgAEzywlc3WuiN303MpO5td9eo5EmovTrHimuKzXuQZNv6ig4FvWxtvWYFhembuHb0X3MDvN36+WYRjN+uI9d9GBwIO6mpHEG5c5r3zUk2N8AosM1qFq/GQQZQeSKq4pj0A5f19QzZs6O5AzhKRuPUCgcawA/VijtZbivu9tAqTuhdHSzMypL3EEmSDFsbigSnkH6logIs5ko6DLO3TNVNsD02h+nlnFoRH5Lfpin4matAEpX7HBDjrGX5SdHe8lCOMH/OULegy9Nk+wzN9EjlHA9QAVhOwGmRVgCPl5Q57hxUqIfc2LfkBucSKcSIkcQvZdnnRi4bnaK1HpscthGl0xXT7Y16g02neuU+d3gZwMo4FFtrCifn0yCE0j75CwMEQyqrtGl6INAnBuYcLTy5QDjz8EM0zX/gXzUGr4JQbdLv8zNhYRGPrxn4Qlw9SCv3/R+TKQdWx19/qSJyJllUauKzDNO7Jjaz6glQBVSAGierQdp5TPTausxiMoOf2Gy4haIc8AsmxwcVet7nLpTUoBzdFuNcECTAUo98g+STsm+noZlAnZNR9gC2/uNldtaBfezPJmlHaUz5Pkvlr56ZB9L4fuABSOvj2nIgaaFiPqJYc+O8nNWK3KRiYiJTrIXy2Gl5CDqCbCdJPlkLbP5nHhgAQMhcEFPw5hhBkv2nsMrnjCktlOP0YdRTkPSOaNsOSZmnLuzF678dnhLfFgzXeqk1B0epMvSKGoPsRfW1lZvHa6eXjvmawAGlCEYzWx/s7Qa0tRNmYdn5xG+c3qapBFlYoWaioYKmx/9u2NainQ2vJhy2dVvZHnlJDwogPWf5zo9obaPiZ3WXBt4OLGn0+ApZRguQ7o4vF7eiRaiTr4eBg1rptt2b5zikH16Z0Kq3G13BvAYvYIxkEGZeettqssLWY1F/UOMy8VZKdyQkXDI5h80IsWLEB+8t1nt9sAmBQ53MQK/IE1rD89WcgWfkiqTy6UD1m6Ji9rzNtFCvPvUh68uUg4upE5GnIwyKxvzqfMWf6eJupq7+MR2JVpd4g7Vx9js0v9eP+nZBWNr/xmzuSp1buEwmLBB5A4OPFyz8ER5xy6EobXdf2gn7gs7RqdTJZu9cZjuYg01gvyPkct4mNlUZZlCMS3zY4ruWtrsF4iyKGDlveL2p8q+730Jw7I01B67VVamBmXIoP+q77BDL+7Dohr7aWOuHvFRU7gQbUhtBFDprOJyQnPS6AsJEX1v3BhFyevc/hrmcYKYaKpUwxC1lx7ycwI+WvYRGaVn2bRi3MNUdLIAWD2UkwGQehZZVuSmVMmWfVSA207UUWitivRUqZsvCiQqp3mdBSMTvxEsKkzm02XQ+rzhHIa7u94NrudVsA7HQTxIckLhsiRUN6tNSyq+YgW9rUUltUIhfKnO+D4l4IHLajjvpN6pPtNYOz/NHFgCwHFGukKnIUIiGEWntRedOcQDKBEy8VA9WeWNxlVilqedX7VlkNCfZMESVnw/jjs9P21rQPLTm1qwAyskRgbLNk0NJCd21BB/QTSIMcS0/LRLmAJzIKuFQPublXIvQZxoVL1ppFlPCRLO/t16FJF6XSUT08purciiXohZh4+nHahaeimqeKLnJESenz9PAX1oJYK6Mw8AdPahBVEg7YUarsIa/wFM88l1mZ7PgDJTgOyProMH3v/5iH/qg9V6rWKHYK9jiz9SZ3FzWNVBzehh22ndJKnUf/iki2SNkypSao0nmqVeTcGvjkZ5lepmTH+j7k7/raCbBMQ5+A55vmBAROcb5MsCXNhAPHlvrLTOUAB4QQs6lU3VNyUrrrDE58z3KeM8Ncl+afdd6UQk5T426nxi+6jFv5Ym3LLUQkYh2SpRSqCKgJa7dnVowr6cw9TIi4Afj5FOJLIO4vlmx18sxLF2BhSxaEkjlQMbdRS3qqhhKplWyJNylpvxutAcAQD96Xk7sQ3HaKbZZP4MguxcBsKd4fE5dibiSO6YttYxKlg4fRLYzyUr60s3cIcOmwlHtI4A41Mmxiv5LlQi7K1q15xQYZqfqrUrO2kdTr4bJ/RDEFRXkbw6bSQXifh1I8xWUtU18aUOpQ5GeplTsSoDqMku6GKn/0ofj0u6ibR8XNQ6ptCUHK32M0v4T3cWo7wPViPjpU8AFKFlPFgtw7SE6RejHNdR/u9FlkR3Q5yweYkhHFcVWiWfE/WdL7RbczNeS67sGIhn/vU28p5AoxDS8nuP+8iKIOMnb+1HJ8dYZg1ugV9e95iUUF2rrbX8zg7eH3gAcpEN1XlXwfPWFD3bNs1CFfmncayVOPt6HZkJWkKAp06pQb1ErEwL0rcI+ZyqLCqRR4U8NWWA23ylxRiSMYHXAeAYcArLIFT6SeDGgaKRPVHEqFzHA1vhOxG4DRwdcNUilMIwY8IcKzTyjSC5XWwO3fAYAhFV/Q7eqC1W/ohsgKKH6TGqg4BAqB/QSXcKZHqMiZdH4R6zP0/8c8Lg6odgErJLRaUkD3CfYT71cSeInEdYTpn1z4qyY5E1VnZk3s1e+tPbj39cvQnkVUAqS6CB9divebRC7ZLjUp7rTIvidb0m6bv5LkH1gLhPiYVcEHKwrdG2S2mjdwwRLoajUKk72GbCNtmMHZBVKG8OmzIiwifgWpPNhRt9R85Bec2BNfGnZLfgVj7zZfy59kzIHgzu1GyZx7KChyj9vUVw6jsSgWpB5mwPx62CeYHLDLTvXBYnEwdA9Anjsxd0udnvC34y7B1kbZD8elzWkRX4YghMuEKxkIamxDkzct0FtysH/e31k4dSWgnI3Su9eboOOQrqrWnECTVnBZAcTG0D9H3OiYtihzlgYDsAcydoCMdDl/AphRCx7bsw3Yl6ry2ED2YqgJl/N8GiDh/kYLhL/CaRLqLU9Ze9LminNe65QmWQ/E+1Lis6lI82ElO5cTGmAYxR65HXE80Y8CMDfx4Er6b/9HjcwSnivNHf2Xy/JAgdsdEw4IRF5MkJuAzCOhDHq0khqNwfttUR8/eao26xwrtCZ96DaXS9zaU0/AGFopnDUlIKBGFixnRCF51HjY+1CN02dVscM0I7Xiui+gwDGgDgLLEtJy1xM5PZ0t+vyJiJ9amackm0Z1cYn/Ebqz2EHGaqdzC5IlQ9YFbFmv9TEH7Qk77B0Xj/w2x8xc/oINdcRZkxIHWAX2VW+qRTqugweBfJtAN+dNVUq8nYLfHr+AbqBHXo/qLxMO4hrof09JE7u/GdUo0cbTb7nA1d3XZN140sG218jWnBvPaErqE8FSgrMO08M9TrT64FFIdL8S9WRaJ+bcsNakPdMDo7naSLsyC3ZxD77BYVCcoX/LIRIAcpxWBkBkL/StiYsw6953Iorh+J8bNprKK7LHdEpDyNI90WUJr+L80DelGdye+Aikmxh3dA4ojc6/bb3QnQGTvmmjUwjGcZv/FOGQYVbDq4oYwulXWXNqN7YQi4Im3xgKlKyMGG26dtT/J9U9mEzl3qUViYjG9CmpThwHfyM83WtXAEPXlu71JcdgEylVjO0qNRdETdyDxFEk0Y4qBM8vVBdr8c1+aSk+5UMsbrOfqSi7RLq/i6brJhBs3QCrSw1EqbQOTJukgIkImlBiPRyrPhD6K2+vkNHLOjq5NvGUxix/CsrlACTCY7yc9UrCpePm3ZYwWndjoCMcUg/SyHqotpV4xC+gTSs+iv631n/hV2uaCOKfEJVNs2YFczOZjfD7IedWHOwKcjRRXcDLgVX32Cq9OksJZDLOiOpo3MR+idHMEmZxlNRzKmJNmDQqjIxyH+9TU/TUGR56l6hDqLs5OHl/5qDKLQIswDG2dZoHNUp2T20CU21DRoZTXgfkn+0PYwVAutMSy+/LN/g7fwcOJ32R8fard3FkYuhw8mvgYfn3io7ptXP4KVWyy4BiudWLehwOzrTVMBwpilV/XwmrtXDZZMKTf2OpzQSoxp4WH/K0Yad/QyCWHtx7a7ZvMVyqVizXKhxHxfX3mueC+i6YaWcdUjtU9GEetoD8BMVV+hVzAIdQO9u6XVbg5388pw/LmQR0DUmNu2ARlC8A38Mf8WHr45G75BRKFrmwBhWfjZupmN5yi5UWcj21RMl8J2SVVs+ieisqTnZRPN7mn+Y4Uzwvl5BdPBhetlxP7KEX44dLF5cAuD/aedozmoOsBlcfNk4SeNyZqCKZjrYtgb+2A1IDKnKGP3OoEWWPU6zdDWP3kacsY0sM0wlLAZ4WKQsneZMUywcDOPDKTZii9Ih664snKQsbfnjc44n4dHuvU2OvBw6/v9h1x1lksoDSqWAYr4vtjsVIzfty8SIikAxKYLZ1Vl7848iRqlZupjcfu+R68MmLMBD20h9U0xc5ge+BnSn3vpx0ARrIIxNLlqF4/vfQMA2Tysw89eaUasGpnsMS2n+peYz9nMXjXRX25UReh48ITa5O/C98meGOaL6CElfVQXi7WL+8eVUiljZigaeXFRL+4TfA0feSOsAMkTRGpMPtRmqHe8VfZn2dxGimgwtEdX6zGABFdJWDZYaiu2f4ycFTV8H9ojhhxV0iOYDCbmdKtcSI/Cwkz4vCyP/C+inyoUVLjTrp6XmDduN4sBAPgl8gBHY6disaCjm1pm+/BOVJoCGa68jfA2/kT68CVGfpPa6uEOggUWB0GbLAin/ulg5xHdNxqztqBMV1nQjPOCbLM1rbvwRDLArp6AzAt7uNaM81bTzCY61bic56A7iy7KdjE5l9rvSxbywxK2Jp4atcOYfB5KaAX8zXkZAZ+wbRxWWJ6HTkPXGGNVcOew7l8MXnpbCzd6kMI4NlVEkv337I+k14rcBNgHUvEz6UkU7G3eXD+XRm++/uhxG758YqtF7ENEi8wLmqBJ2eS1GDd4jFHXiwvDgAj77N8/Nv2GwkolmNIWQtvuj60LKeOc+dDg86cfVp0XM4DeFJYMOTosQg9Oqj6eGJac8Hty71APCCRo+ZLQmqABbKPyb5DiHeX1xdUV2+aSH7b/HOghjp7WMPMIp+YAbaSp5FzyparK8dC7Gw9SBDyBI7ffxfryfth25HvjSa0n6mc6vroXYYQUqK+ldNXqzLW16k0E5rHwo1flxwzWCxZun7RbDbUXXtjbxgaKU5kcI5V+8t6RcCxfPFKT/eMkjBqKGTaor0tox9XXcuhBYneH/w3G8+lzNwLzDIjEH2eCcpcBZSL/6V0LhZUgdrVFmuY19LwADK8tjwPu+z1QGpXFbrRWGlttpCNFiUOIbVCPqFQkc9JoonsMIPM7cUzZFDIDomV3K76FceSULbYiAIJpVYFC3WG/cVhwhwmMxbH4WixftdftuHIrvenGIhuUr4Aor2DX6K12LWmN5vSet98MO1RORIRhSyhzmXL5voh9YUYpsIz19t4cSKsz8Rvp99Dsn2JYtogZAE9Af/xt3dQsj2MNgRKM5g61ttiCZcbbXZVNEqR2F8V3BXOwvfKcEM2IDfIg2xL6cZ3QBlUzbb5gJZmNjSvMJLWDrxewkwVGsK+9YfEmmndexeAUxplrS8OB6x8juiuYuOWfIqy3Cv4bkCphlQrx5/QBORDdlx+iWeL9hvi/rtxPO+fXqge9DHM3dkzCfHCnavF51MV52ysLDhWwVPgPJrJd9aKHoI3Axq29jgPoSg0sp66rSMG+oDmRcl/dgfccnV/ZdxUpy/Em0UAPl86ZGNUieT6AIAhVbB/iG+flYVSL2gsbh2x8xKmjXNnNhy9GWLO6Oq92g1SxHZWA9bmXKrtpxVDMq5URssaiVGnUcyySemVTtWT8SR+oVs0LBbqsa9yGSWfPMMagCTXVOuckPcAWw158gPLwGFPpmNSIlemHZLXmB2tGjSIgufLqU5VUeBmoN/MOCN20bpQU8REvvrbZ3G4yLR8Cp8RspyLEYm6QPhNX4Pi6wTiH61hVdb1BWPTD3i2Bc483/796qsobqFSbd+ugel85BQttbyDPJmw7SXzYiJdhmWewrX9EkrxToc03EuPeai3Xr+2u1DG7YsJpWxPagaoUzxWF6a++wRbcUmIe2LsQEf0/m4p++3dOxoVfOz2ktpfUrN6k7X3JlorD85Ba4E4LddYsmlIHOsuHCqtZCTTpmd8zS8fyjNbKjFisHi+xtl4Uz885HYLTO0DLFGARyLM9eCJLHJl37Kwna++Pr1iQEYaRCorhPvKVA9Du5+eKEUF2oTmett6w+yhLBcGeUKonF2vH1AG9hiKK6aA/zvACOLgNUS09yypaQV6UkhEapEr0BPz3NY7zDO6s10PItERTrPdVUB6pTiqSg+SzIEHkEVoVg7VJiQFwGFSM7MfbmO4aHQ82JsZldJD360jSWY+b+hJajw7PsMX89n+MvONhGkOkksTJLx/7wpn2rubznIAjEkupQQO9cTl0vE8OxCk3KkmQSvLiZOR/cRedorkMOYeGi23sQhzfA3WFH7VNh2bo9Lr9wu0mo1ZxIC42qvmYo0yGyAqV5OhtLvaatWNtP3NYnGFT52iCcW3kStxpCsXZsQ7pUgJTpMn32lLGHVLRMIcnMtt+l9bkLuI4TGuYbVdL8yPumavT261nPeYW4hdUPfyH2W6Vp0enDs766WtrbYyYDoqR7GV1NLMxithGNuM/q8uV9Cew1Pk5jjZx6UdIdWXWjTyshmoiLD1yZA/S1txDneoZ3PiVA8Ho9Ni7sz5qPpmTwrew1gZRGX4W20/qYFXJh5AWTaLxzWKqzUotyQi7MTRLxp/pasAWY/ttPZyMjVu4C3oyl5rblyt0e6inKmw6BK0OLhRALrj3fYk4ecso5mSbEfeA95SfDEfiOAJ8cm9/KeRJrhNuwtvx3KGgLTweXZLtdmE5RwNasUbOr9IXR1wCXJDcnQenKFlQVt3Q42B15BNh2C0Zafww5XrPkKmQ6ylolA6wKgUbg/vOd+Y2M2go6LHbpQNhlIrdaefB81QcKg+FzW5Ss1i6p7Y02ve4kKa7OLLUByu3QeBdDXSebcVoFjqz4XxY9ypNzJq1G+8bmd98r+T0mxyWAXxZqGpqzPReh0tZlAMFNUC1iLOkePvV7lg1+Ufhuj8QEx05/z+9BnnB6G626XgZ5oFkUp7+bO2h9P+rKz/4erxJtDFVAcob0U7oVBCztIUYVhbaqPj5lHmfR/8hviRElYOTVk3ZQh1AT/0IatEAfGmPQhTZdBdhzpATlOZzowO8mJdX+7xiA+WFgGQD98rnOP1PpX26sk/J+5jrraPgXTlvXGZBuUeNH968VeFpOQicXFDtaOIROLC31EpKNs9/17D0OwhKCAM28qMGY49zDRZoJbGQhTC1nN1u3euORxHGBaOalmH3c2QzSErBBbJ/yq0NmYrEmBoUYFjXDwWX8F3qSwP9wb58pP7Ez+O1aMU1gKQlIfB+mN8BY9LWTS55Cqu0ZaqcUNX7LkjrI17QYkaoTmGzUT8YgCm0UphycrTel5B8Wm3nycA9EHI+A70Zmkukx78Qab53R24IfumD3zhYoASz6GJPogoUKt9wHqaqcbfplZvLaXhNc5NHI+XZx5yGahQk0bb/Uvk/O2q/1UE74Pqkn3ltunpC1VdMNVffM4ecaXYla9r/Aj3cnv4NMMPYUWNMEI1CxDfTzFrevzpAcq7Wcvg2decQPnCbUKRq7t+3GhYuNFqSp4L70u38u2o3yX+kSvlJG6YLoLGHYDwC81aNEOC1RVWhD3df8A1kSlP2paU4O8rBdHdGXYQ2mbB9yEKhCcwNu6KK9KM1d/Ok3hElW45z8yo4Mrcj3s139TaY74rvXsNHyo5gCzk0jVf5js85QNGN+jehKc3xaVwDrcHxydC++xVPg9167pdj5lINWwU8Z/RfGK7dV0Gy90h+sdYbZ7K6d+FpOz5wIEu+/udTGAQfTIacrFsK5A1XGNJ6JWFdFXfN+1BlzI0n+wuAfn/vtqrW0YNkMhGjE7uMMKS9aDPrmhHxYgfGOlmT/8t7DTbCE5AtptVCLZ0MuNhgWr1/kEj056+1RVnfLqk0avgOUs6ABwbc9C70ooOmi/8AI8F1EhmtC0FL8aBKL5Ew0gBcAKfWVG0BAY4R/2a9oQF0bxTNJ0FiFfkUzUKZ2bdwqWtHfAla3cLJHUla0Uepuiq6F+OZWwKTDlBEB5UkH2Pal2MDLa3aTKrwIXgP+H46+Tk9am5+KfVren1BjgnzxUqGkW8QVGfwPqVLU0eb3HLGBa8YM2FnfLySopLYhzeFewHcDgWH6vEjCq7qRfPB13kVwUtaRp2kDjGCaO/MuMeXSgzaeAxJcnz5n3Pb+ubEc2/wdPUlb1x22XXrMsQD3ABooUWoBtjEW63QaPDAI7X3Mjn1LE+gXmoREObW3P3FgfspsC63VlpBh6fkeGpRP8kqOqP6UqwpvWZMmBzD4KQ0BxASHNMQ0AelEjzBlRCvFpk7Iqzpl7dfFxAXmjpW4OERDGYGOd2M9yQTObL1F2BrpEq5tNEDl/TLLCBLoSTpj+7TI4DJWcm2FqIicn/iQnKNEFsfRROGlZ6L3+AQgZjTK+t/yqQpp8u0Tu3Jpu3a1hWR4/FiBnADLvZqWXVxnX6boO+9AJ++ZFtZxvPvNJVDIqqBT1t5FVPFY+UrAkTklLkISiIT9Uvz1kHchwQtRSeH+SGIUEPq7wJtwj4KTAlOOhczZXC+ywJx8ZoeX11Xg3xzZmNuCGxuTcGY88AkJ3CZjf5vXzoLVKW+XuQw0lDFlRzjxYQqg+NhCOeWdMiYzPSQCRhPV87QO6Q6j/+J2Kk6Q1yvwMdxr7PdKIT3hBnuSiYgf7FQUVXmpYsq5BsJ7i2cU0g7rlG425FhtCQFGHEnHPv3uEaAT3WThW6XnqR22ONilYD/bT3PH8jF/DRC1PpIVeezglCubYNtWT/+xFzax+T3rgjF60CBFrh0uzWWSlOJyB27aOU0ceb/I6UlnYMhk1F0xW+pqEv2XNRrnSrLYZ3gd0TycjyrCU7Qhm5RCIymXVvY/H0AvQ+5KX+vV7fbvByjHe9xyt1TrDzz1yENTBwTQz0Rsjj/0ISb3Wi25jjIS4HCYa5kt5exhEb0mgQUGt/hCl/ZKtUw3vVChbhBqVLiBZWomUeAGT3O67LdY3FNtjPWifnO7Bur8DROHLDHTUhX8fmhuCfOoCgoyIs9KHRycu7b6Kofsb7tXfjNnf2INyGlCCJ7mRxSulPwLabiaLk5zobvqkp2yV5cn3TBicWAHyUxBLgmoRhC97qRbxi6porw+Jyef+/9sazuAnTw9ligttp9xYSYpkrtLu1+8c+9ZYopmXGTxnm6SsV1OAt+i6Sr0qxBAsh8c9Ydgg4/Js2EfqaAlOQLWDDoeWbNwugh/Tms4kD5JhW1vLFBBo3C+3WLQLxq7uh5CgrpcNRY0sfZe6FznNFu/uushOW+wG2JIfXV3I5ZNHs/YVMXq4pQP+eBIMVRPHiPgS5HvPCvFwO+lUpQRghxlA2QhwNMGfeDHav4S0FKzzQyMx3aTvjQFTtEb+9BH8Yyd90sOdYe8DFU5TjGizQD3fLyYN0EyqQ+572jYUHoCp7jzqjt/bg3XJIcoWFwNFmt/9XNXJ49mPE+vF+NbOTNpDO8j4+MQhLqO96zk6Wb/xVT2TEjrvhfgEMApW7S5BYPcIp2cMgv1jvKi5SgvrCnTs8Rv349L6EEkPWX6gpUQzTHVc2HrRHIICgVfDED69BBPMaNiAbBDIQD9t6iamHa5zNHTGzOnLBdOXbTrfR4FBC6ELSbfJ3UcTg1anyIX9qsmf94+RZjfaUVAnKK7evBO7rbFiq3+qrA53Ua2pebu6yNbjDxIBY+l2HOD4gBPgv4S4XfSd3gPZ9PE/AhnPwIPwTnpINsfsA2uv91CmpVg3bEw8yDFvk/jryGh7S0RigYbbei3EvU1BsfqbQ8XM9A0uXP4nVgWz9FVZVSq/XANlnOoCxtrXkZOHnva7lYqBw/Lc6o2l9ayB9El9w4px61+95g+nCSiugHnykLWBebuE0bNwW1/nIYtte5a0GOZ9WmRT8ig5B0ISZGcSSMNjY0ojz4KO5rWCMG97cqJT2IC8uL+q4ZEvNG8NbQtyUQILOCN+rIWMyDZbH3FKuruLTAGLFX03oHLwRQsbBaX/k/FBGeF2cSNrO9lT74MfiE184qntVlUR3Vcbee6hIaXN2e7q2UH7aMeDsSstMxcPmET7aMuowpAq8vzn7XBcIyvBj/FjBCm92Aet1QA+pczLCjPgskRGOZh/iggaLTuLe13FLcWg638IY3wp0JTNUAxlvggHuqK2oWUxp+spczAmqizYRbnanJzdNV7977z1JjB/Y6q6/T4v5on/ipmpbm73pTX4ca6Ofi11syOp+VznLvIfSULhoep+oxotze0TPQlnYqfnl5plzC2tMR4x7pqh1MwU/42iqQa8u0O6cl51PjlQKKRICPFn28KhevPyN7WXmxYXwy0fBk6psYoMyOjPZLK7Fa8O7ZC+/Hn7uQcbuKdZMj93rAGltSAq5apUePxzE+fmzLDqAM+wJ6tAOYS7P+AgdEQTNN6IEttaE+5FScAQWs3zqGKTJTTLLj+ReEaG7XWNxO/KEDdV0JYVmXi7iIFuUj7by8SxaYVKlaebcs9ZIYUlVVPUanJzChg8PfVkh9+IN+Ag+Qkl4kq/vkN18y+5KrSfpbUh9GP1utcxqU1+1UUcZdBY84ZAG5ZUf7RP2lZepBy3lBOMi5KGGVH4Gob3stnvhjDzDXwALJxuih7RrxkCqtkEjiZ1JwiLJm5SGVbiylinGcKJTdqJBAebOPviia5qLQduCuBqf8QeCnzqOvnFB2d3mQ7rFghsHokwBd5rRbFUTddvJMU7MaNCCtZj3uF1hJNitYMwU4s+KttBsS+orSKVI3FcHJLGyMh2/Hf5tx97Jomki2uh+m01mYYI0/0wyJkTGg3VLKqkxV0Po98MwYSnF6A9V4pP5pvSW/htARbVA89bQ3x34sLn9qZvnq0ODxFCFiDhlG+sApKd/dVEpAetq4uMWTtnNhxtcWXe5VQNwG9wFmuNOYNcIIeeZ+OG24B2MCqeLsY2a515jOdN9tVSi+AFnYjvJaU1vcQECWFpCbQ3jS+APtMeBlupQ5L7/JtLbTrUB7xjrratmDhEmU0a2GDlKf2OhV5+XEtCEKiPDK4ZzKjIvzc2TM2tApG7/4/HXMr7/KILQ5DxiNsYA1wTeZFXcYwqLMY32oCZunKamueItbMquFHwL5YJIf9o21ckggcl8rO8hcv8mq3KpptjWviGXypjbr0ep+3Ek67NcOJbBSiJ1I/GrPFFtxTBHCjXMc4QAQAnRNfzpHGTIGBWfehYiSHhMCTBMPecoZHcp/uNiKJKkc5hj52oovAuH08zmeP7FGIdGzv06C7AMteN/4EGNHeJs4LXqzIHm3HiDxVp9e3bF+Ono+lHcKuOlU5cRGTaoroDHesN0mKcpcaSj5FOgt7nd8XsX/Yy1nPmU9OVI/tjq7KxNN/GBa7837ZD737BuWLdXGTBDXaogwhFLu++QFLcCNeyovvtGOSx52Ku+k7MWV9OI+5+DNZvin/eouCkBrOAVUBPTmTkMB6dV2L1/vl1QdoViWdHUf+mJlnmaobc2AjCUtC5OzQyORN84xTWvqbzCYub1kS9US/Qb23yYJIBrIMyCgSVfmXhQOlsJoTYDz2cSFBkl+HLyf0b9pMWV3Y61yo54K6g8DjOn3lHyeowW6pN9RTEMz22qCJDnjvnMwIeuO9TzZQGL8pfTrshmeoIjAOATvX7C8b4qkrt8LQks/WG+ZOHOIeY/f9sZUL1qzhfuaaLW5aTe6o9sz8q9zKshv0ydiAPoL39fj0SWOLy4SelSxUWEb8IQSUM4rrybThbepNd7I2RNXUyaVj13QCYNS0admLv2cznYdrLVlUznCstUFT+1VigO6u3RLJCnyiWu/xBuOgjcFKT2im015U4/hcrBLaChk1rENhWS+/aP/aPQIZx13HKneDPMgOvHdc1wWDOFaBc6tH6vgPYGHdVxtp7o+eOucqsq+pWi9Qr2QJscjZ384EnDVxjNU/M9sCr5JI6R+65jPAwfIi/mE+H/A7Pxdy8cV5V3UDt1gScDOjYMmKzV6Fy3+nLCDRyXXKiY1CvKesYkcBs9LkZxzmLl8efjVJaFjYbXHj4uSSroL5hT8qFGEY78bE7iDZy7vK1MU8av4XgKD5u10tmgb1cDDs/23ip/ljTWL8YxrTxBbnZuajEJmCGtTeb26LKWnDchZsX6DRd83vHIK8WoHC+1pUgPPtyoYql+/j7Uy2Ew1nKB/8abMpnr66m+PFfLJki88lF1ee0gyJd2biwNs2HBMav/ScBrv3X7tpevhhE2LaNWaC+EMTMRyHNsLgT7uSRHAUSYxAeHBmntgfIezcc+WBIG+7ylKmOBjHm4hY3oa/qMBc6FT2qtXF1F971P8KVdhnLbCi8oP692/mAVuLhEQhnhr4BDz9A3OjCseCzYxx8xWiHDx8REtAfkWw0WJlalobw8EYASsBaNr0PqZFcuMvJrpmtkVm1R5RUNFzn5xEP+x1QwJx+bWaMucXI7y55yMFLmKWDPPGfwJCVxsFm8aeJnQ27IBw242HC7494Q5+shB5oz5th3y0kXeQX+33ODC+T/HHy54fVUjy0xsAnIXQxkltRf0jC+VomCJSMuP/V4JnHaCWxPLdJRReI6TUN8EKytNA3UyMsM2hJCv/6xTvf51MlNzceRkf7i7s0gCKl7czP0VXhfETqamrq7uvPFl4aHov2+7xsLLoMvxCva8sJC8RXwyyrL+1/3Icr5pPxJ1LdY7K3t5YccXfp6Qq48jfG6qRwBCNSyOjQybCUUUaD8cvXI5XK70j8bpP2Gli2wEvI0R9igrB+wjckTR8/CZkJ2i8aW5+0PzXlDMqOp1PdE1j/DleV+PQLAh0anWTJ1EwmfFYmZKpGdi5lFkHl7Pm/CQ6BMKfB6IcEdbkvNZVFzz1k1BeGwEvFH3DUzyD2i5MszdCL42oZzshBGhNMX4vRmAQd8w0uUuqBUHO/No46YbK1oMiLWN2tyMdaoaM56UArg1W+Z2teErncLzF1oxzWLw9i6kGfcBYVttXwvpzy1L1fiJBhg3oGmUF0tCqrDTHqqRxeaMndYbHHw0tzhS/XACUWukuN1v7F+0gbFscg0VFStBnwKg8a0HbsZT49ydHP2iWD7KS46oE+hRTSMwRwBsw6qhg1m949juuc9iaqPIwbbI7b/1adu2XUFahYXn3m6IxGP/rBL8TKAAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: EMI ad file
+ * **************************************************************************************
+ * 
+ * Created on Nov 12, 2014 11:15:29 AM
+ *
+ * @FileName: omuemiad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+
+$ownerId = $_SESSION['sessionOwnerId'];
+$custId = trim($_POST['custId']);
+$mainPanel = trim($_POST['mainPanel']);
+$panelName = trim($_POST['panelName']);
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+$qSelCustDetails = "SELECT user_fname,user_lname,user_add,user_city,user_pincode,user_state,user_country,user_mobile,user_firm_id FROM user where user_owner_id='$ownerId' and user_id='$custId'";
+$resCustDetails = mysqli_query($conn,$qSelCustDetails);
+$rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+
+$custFirstName = $rowCustDetails['user_fname'];
+$custLastName = $rowCustDetails['user_lname'];
+$custCity = $rowCustDetails['user_city'];
+$custAddress = $rowCustDetails['user_add'] . ' ' . $rowCustDetails['user_city'] . ' ' . $rowCustDetails['user_pincode'] . ' ' . $rowCustDetails['user_state'] . ' ' . $rowCustDetails['user_country'] . ' ' . 'Mob. No: ' . $rowCustDetails['user_mobile'];
+//---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+$udhaarMainAmount = trim($_POST['udhaarMainAmount']);
+$DOBDay = trim($_POST['DOBDay']);
+$DOBMonth = trim($_POST['DOBMonth']);
+$DOBYear = trim($_POST['DOBYear']);
+$firmId = trim($_POST['udhharFirmId']);
+$udhaarPreSerialNo = trim($_POST['udhaarPreSerialNo']);
+$udhaarSerialNo = trim($_POST['udhaarSerialNo']);
+$udhaarType = trim($_POST['udhaarType']);
+$udhaarPayAccId = trim($_POST['udhaarPayAccId']);
+$udhaarDrAccId = trim($_POST['udhaarDrAccId']);
+$udhaarChequeNo = trim($_POST['udhaarChequeNo']);
+$udhaarPayOtherInfo = trim($_POST['udhaarPayOtherInfo']);
+$udhaarOtherInfo = trim($_POST['udhaarOtherInfo']);
+$interestType = trim($_POST['interestType']);
+$roiValue = trim($_POST['selROIValue']);
+$roiId = trim($_POST['selROI']);
+$udhaarEMINoOfDays = trim($_POST['udhaarEMINoOfDays']);
+$udhaarEMIOccurrences = trim($_POST['udhaarEMIOccurrences']);
+$smsTemplateId = trim($_POST['smsTemplateId']);
+$noOfUdhaarItems = trim($_POST['noOfUdhaarItems']);
+
+// Start To protect MySQL injection
+$udhaarMainAmount = stripslashes($udhaarMainAmount);
+$DOBDay = stripslashes($DOBDay);
+$DOBMonth = stripslashes($DOBMonth);
+$DOBYear = stripslashes($DOBYear);
+$firmId = stripslashes($firmId);
+$udhaarPreSerialNo = stripslashes($udhaarPreSerialNo);
+$udhaarSerialNo = stripslashes($udhaarSerialNo);
+$udhaarType = stripslashes($udhaarType);
+$udhaarPayAccId = stripslashes($udhaarPayAccId);
+$udhaarChequeNo = stripslashes($udhaarChequeNo);
+$udhaarPayOtherInfo = stripslashes($udhaarPayOtherInfo);
+$udhaarOtherInfo = stripslashes($udhaarOtherInfo);
+
+$udhaarMainAmount = mysqli_real_escape_string($conn,$udhaarMainAmount);
+$DOBDay = mysqli_real_escape_string($conn,$DOBDay);
+$DOBMonth = mysqli_real_escape_string($conn,$DOBMonth);
+$DOBYear = mysqli_real_escape_string($conn,$DOBYear);
+$firmId = mysqli_real_escape_string($conn,$firmId);
+$udhaarPreSerialNo = mysqli_real_escape_string($conn,$udhaarPreSerialNo);
+$udhaarSerialNo = mysqli_real_escape_string($conn,$udhaarSerialNo);
+$udhaarType = mysqli_real_escape_string($conn,$udhaarType);
+$udhaarPayAccId = mysqli_real_escape_string($conn,$udhaarPayAccId);
+$udhaarChequeNo = mysqli_real_escape_string($conn,$udhaarChequeNo);
+$udhaarPayOtherInfo = mysqli_real_escape_string($conn,$udhaarPayOtherInfo);
+$udhaarOtherInfo = mysqli_real_escape_string($conn,$udhaarOtherInfo);
+$udhaarDOB = $DOBDay . ' ' . $DOBMonth . ' ' . $DOBYear;
+/* * *******Start code to get om layout value of Udhaar option @OMMODTAG_SHRI02SEP15**************** */
+$selUdhaEMIOpt = "SELECT omly_value FROM omlayout WHERE omly_option = 'udhaEMIOpt'";
+$resUdhaEMIOpt = mysqli_query($conn,$selUdhaEMIOpt);
+$rowUdhaEMIOpt = mysqli_fetch_array($resUdhaEMIOpt);
+$udhaEMIOpt = $rowUdhaEMIOpt['omly_value'];
+/* * *******End code to get om layout value of Udhaar option @OMMODTAG_SHRI02SEP15**************** */
+if ($udhaarMainAmount == '' or $udhaarMainAmount == NULL or $udhaarType == '' or $udhaarType == NULL or
+        $udhaarDOB == '' or $udhaarDOB == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+    if ($panelName == 'UpdateUdhaar') {
+        $udhaarId = trim($_POST['udhaarId']);
+        $query = "UPDATE udhaar SET
+		udhaar_cust_id ='$custId',udhaar_own_id = '$ownerId',udhaar_firm_id = '$firmId',udhaar_pre_serial_num = '$udhaarPreSerialNo',udhaar_serial_num = '$udhaarSerialNo',
+		udhaar_cust_fname = '$custFirstName',udhaar_cust_lname  = '$custLastName', udhaar_cust_Address = '$custAddress', udhaar_cust_city = '$custCity',
+		udhaar_comm = '$udhaarComm',udhaar_DOB = '$udhaarDOB', udhaar_type = '$udhaarType',
+		udhaar_pay_acc_id = '$udhaarPayAccId',udhaar_dr_acc_id = '$udhaarDrAccId',udhaar_pay_other_info = '$udhaarPayOtherInfo',udhaar_other_info = '$udhaarOtherInfo',
+                udhaar_ent_dat =$currentDateTime,udhaar_ROI_Id ='$roiId',udhaar_ROI ='$roiValue',udhaar_ROI_typ ='$interestType',udhaar_EMI_days ='$udhaarEMINoOfDays',"
+                . "udhaar_EMI_occurrences ='$udhaarEMIOccurrences',udhaar_sms_id ='$smsTemplateId',udhaar_prin_amt='$udhaarMainAmount'"
+                . "WHERE udhaar_own_id = '$ownerId' and udhaar_id = '$udhaarId'";
+
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        $qSelAllUdhaarDep = "SELECT udhadepo_EMI_no,udhadepo_id FROM udhaar_deposit where udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_udhaar_id='$udhaarId' order by (udhadepo_EMI_no + udhadepo_id) asc";
+        $resAllUdhaarDep = mysqli_query($conn,$qSelAllUdhaarDep);
+        $udhaarTotalEMIAmt = 0;
+        while ($rowUdhaarDepMon = mysqli_fetch_array($resAllUdhaarDep, MYSQLI_ASSOC)) {
+            $i = $rowUdhaarDepMon['udhadepo_EMI_no'];
+            $uDepId = $rowUdhaarDepMon['udhadepo_id'];
+            if ($i == 1) {
+                $emiStartDate = $udhaarDOB;
+                $endDate = strtotime("+" . $udhaarEMINoOfDays . " days", strtotime($emiStartDate));
+                $dueDate = om_strtoupper(date("d M Y", $endDate));
+            }
+            $intAmt = ($udhaarMainAmount * $roiValue * $udhaarEMIOccurrences) / 100;
+            $totalAmt = $udhaarMainAmount + $intAmt;
+            $totalEMIAmt = om_round(($totalAmt / $udhaarEMIOccurrences), 2);
+            $emiInt = om_round(($intAmt / $udhaarEMIOccurrences), 2);
+            $emiAmt = om_round(($totalEMIAmt - $emiInt), 2);
+            $udhaarTotalEMIAmt = $udhaarTotalEMIAmt + $totalEMIAmt;
+
+            $queryItem = "UPDATE udhaar_deposit SET
+		udhadepo_firm_id = '$firmId',udhadepo_DOB = '$udhaarDOB',
+                udhadepo_amt = '$emiAmt' ,udhadepo_EMI_start_DOB = '$emiStartDate',udhadepo_EMI_end_DOB = '$dueDate',"
+                    . "udhadepo_EMI_amt = '$emiAmt',udhadepo_EMI_int_amt = '$emiInt',udhadepo_EMI_total_amt = '$totalEMIAmt',udhadepo_ent_dat = $currentDateTime
+                WHERE udhadepo_id = '$uDepId' and udhadepo_EMI_no = '$i'";
+            if (!mysqli_query($conn,$queryItem)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            $emiStartDate = $dueDate;
+            $endDate = strtotime("+" . $udhaarEMINoOfDays . " days", strtotime($emiStartDate));
+            $dueDate = om_strtoupper(date("d M Y", $endDate));
+        }
+        $counter = 1;
+        for ($i = 1; $i <= $noOfUdhaarItems; $i++) {
+            $itemAvail = trim($_POST['udhaarItemDel' . $i]);
+            if ($itemAvail != 'Deleted') {
+
+                $udhaarItemId = trim($_POST['udhaarItemId' . $i]);
+                $udhaarItemType = trim($_POST['udhaarItemType' . $i]);
+                $itemName = (trim($_POST['itemName' . $i]));
+                $udhaarItemPieces = (trim($_POST['udhaarItemPieces' . $i]));
+                $udhaarItemWeight = (trim($_POST['udhaarItemWeight' . $i]));
+                $udhaarItemWeightType = (trim($_POST['udhaarItemWeightType' . $i]));
+                $udhaarItemVal = (trim($_POST['udhaarItemVal' . $i]));
+
+                if ($udhaarItemId == '') {
+                    $queryItem = "INSERT INTO udhaar_items (
+		udhaar_itm_own_id, udhaar_itm_udhaar_id,udhaar_itm_cust_id, udhaar_itm_metal_type, 
+		udhaar_itm_name, udhaar_itm_pieces, udhaar_itm_gross_weight, 
+                udhaar_itm_gross_weight_type, udhaar_itm_valuation,udhaar_itm_since) 
+		VALUES (
+		'$ownerId','$udhaarId','$custId','$udhaarItemType',
+		'$itemName','$udhaarItemPieces','$udhaarItemWeight',
+                '$udhaarItemWeightType','$udhaarItemVal',$currentDateTime)";
+
+                    if (!mysqli_query($conn,$queryItem)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                } else {
+                    $query = "UPDATE udhaar_items SET
+                udhaar_itm_own_id = '$ownerId',udhaar_itm_udhaar_id = '$udhaarId',udhaar_itm_cust_id = '$custId',udhaar_itm_metal_type = '$udhaarItemType',
+		udhaar_itm_name = '$itemName',udhaar_itm_pieces = '$udhaarItemPieces',udhaar_itm_gross_weight = '$udhaarItemWeight',
+                udhaar_itm_gross_weight_type = '$udhaarItemWeightType',udhaar_itm_valuation = '$udhaarItemVal',udhaar_itm_since = $currentDateTime
+                WHERE udhaar_itm_id  = '$udhaarItemId'";
+
+                    if (!mysqli_query($conn,$query)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                }
+            }
+            $counter++;
+        }
+        if ($udhaarType == 'Cash') {
+            $udhaarHistory = "$globalCurrency " . $udhaarMainAmount . " taken cash on " . $udhaarDOB . ".<br/>";
+        } else {
+            $historyItem = substr($historyItem, 2);
+            $udhaarHistory = "$globalCurrency " . $udhaarMainAmount . " amount left on puchase of  item - " . $historyItem . ".<br/>";
+        }
+        $query = "UPDATE udhaar SET
+		                udhaar_history = '$udhaarHistory',udhaar_amt='$udhaarTotalEMIAmt'
+                                WHERE udhaar_own_id = '$ownerId' and udhaar_id = '$udhaarId'";
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        /*         * ****************Start code to add sys log var @Author:PRIYA14APR14*********************** */
+        $sysLogTransId = $udhaarPreSerialNo . $udhaarSerialNo;
+        $sslg_trans_sub = 'UDHAAR UPDATED';
+        $sysLogTransType = 'Udhaar';
+        $sslg_trans_comment = 'Udhaar Serial No: ' . $sysLogTransId . ', Udhaar Date: ' . $udhaarDOB . ',Udhaar Amount: ' . formatInIndianStyle($udhaarMainAmount);
+        /*         * ****************End code to add sys log var @Author:PRIYA14APR14*********************** */
+        // Start code to add column in udhaar table @Author:ANUJA11MAR16*************************
+        $apiType = 'update';
+        $payTotalAmtBal = $udhaarMainAmount;
+        $itemAddDate = $udhaarDOB;
+        include 'omudjrnl.php';
+    } else {
+        $query = "INSERT INTO udhaar (
+		udhaar_cust_id, udhaar_own_id, udhaar_firm_id,udhaar_pre_serial_num,udhaar_serial_num,
+		udhaar_cust_fname, udhaar_cust_lname, udhaar_cust_Address, udhaar_cust_city,
+		udhaar_comm, udhaar_DOB, udhaar_type,
+		udhaar_upd_sts,udhaar_pay_acc_id, udhaar_dr_acc_id, udhaar_pay_other_info, udhaar_other_info, 
+		udhaar_ent_dat,udhaar_ROI_Id,udhaar_ROI,udhaar_ROI_typ,udhaar_EMI_days,udhaar_EMI_occurrences,udhaar_sms_id,udhaar_prin_amt,udhaar_EMI_opt,udhaar_tras_type) 
+		VALUES (
+		'$custId','$ownerId','$firmId','$udhaarPreSerialNo','$udhaarSerialNo',
+		'$custFirstName','$custLastName', '$custAddress', '$custCity',
+                '$udhaarComm','$udhaarDOB', '$udhaarType',
+		'New','$udhaarPayAccId','$udhaarDrAccId','$udhaarPayOtherInfo','$udhaarOtherInfo',
+		$currentDateTime,'$roiId','$roiValue','$interestType','$udhaarEMINoOfDays','$udhaarEMIOccurrences','$smsTemplateId','$udhaarMainAmount','$udhaEMIOpt','EMI Money')";
+
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        // End code to add column in udhaar table @Author:ANUJA11MAR16*************************
+        parse_str(getTableValues("SELECT udhaar_id FROM udhaar where udhaar_own_id='$sessionOwnerId' order by udhaar_id desc"));
+        $udhaarTotalEMIAmt = 0;
+        $intAmt = ($udhaarMainAmount * $roiValue * $udhaarEMIOccurrences) / 100;
+        $totalAmt = $udhaarMainAmount + $intAmt;
+        $totalEMIAmt = om_round(($totalAmt / $udhaarEMIOccurrences), 2);
+        $emiInt = om_round(($intAmt / $udhaarEMIOccurrences), 2);
+        $emiAmt = om_round(($totalEMIAmt - $emiInt), 2);
+
+        for ($i = 1; $i <= $udhaarEMIOccurrences; $i++) {
+            if ($i == 1) {
+                $emiStartDate = $udhaarDOB;
+                $endDate = strtotime("+" . $udhaarEMINoOfDays . " days", strtotime($emiStartDate));
+                $dueDate = om_strtoupper(date("d M Y", $endDate));
+            }
+            $queryItem = "INSERT INTO udhaar_deposit (
+		udhadepo_udhaar_id, udhadepo_cust_id, udhadepo_own_id, udhadepo_firm_id,
+		udhadepo_amt,udhadepo_DOB,udhadepo_upd_sts, udhadepo_ent_dat,
+		udhadepo_EMI_no,udhadepo_EMI_start_DOB,udhadepo_EMI_end_DOB,udhadepo_EMI_amt,udhadepo_EMI_int_amt,udhadepo_EMI_total_amt,udhadepo_EMI_status,udhadepo_amt_left) 
+		VALUES (
+		'$udhaar_id','$custId', '$ownerId', '$firmId',
+		'$emiAmt','$udhaarDOB','EMI', $currentDateTime,
+		'$i','$emiStartDate','$dueDate','$emiAmt','$emiInt','$totalEMIAmt','Due','$totalEMIAmt')";
+            if (!mysqli_query($conn,$queryItem)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            $emiStartDate = $dueDate;
+            $endDate = strtotime("+" . $udhaarEMINoOfDays . " days", strtotime($emiStartDate));
+            $dueDate = om_strtoupper(date("d M Y", $endDate));
+            $udhaarTotalEMIAmt = $udhaarTotalEMIAmt + $totalEMIAmt;
+        }
+        $counter = 1;
+        $historyItem = '';
+        for ($i = 1; $i <= $noOfUdhaarItems; $i++) {
+            $itemAvail = trim($_POST['udhaarItemDel' . $i]);
+            if ($itemAvail != 'Deleted') {
+                $udhaarItemType = trim($_POST['udhaarItemType' . $i]);
+                $itemName = (trim($_POST['itemName' . $i]));
+                $udhaarItemPieces = (trim($_POST['udhaarItemPieces' . $i]));
+                $udhaarItemWeight = (trim($_POST['udhaarItemWeight' . $i]));
+                $udhaarItemWeightType = (trim($_POST['udhaarItemWeightType' . $i]));
+                $udhaarItemVal = (trim($_POST['udhaarItemVal' . $i]));
+
+                $historyItem = $historyItem . ', ' . $udhaarItemType . ' ' . $itemName;
+                $queryItem = "INSERT INTO udhaar_items (
+		udhaar_itm_own_id, udhaar_itm_udhaar_id,udhaar_itm_cust_id, udhaar_itm_metal_type, 
+		udhaar_itm_name, udhaar_itm_pieces, udhaar_itm_gross_weight, 
+                udhaar_itm_gross_weight_type, udhaar_itm_valuation,udhaar_itm_since) 
+		VALUES (
+		'$ownerId','$udhaar_id','$custId','$udhaarItemType',
+		'$itemName','$udhaarItemPieces','$udhaarItemWeight',
+                '$udhaarItemWeightType','$udhaarItemVal',$currentDateTime)";
+
+                if (!mysqli_query($conn,$queryItem)) {
+                    die('Error: ' . mysqli_error($conn));
+                }
+            }
+            $counter++;
+        }
+        if ($udhaarType == 'Cash') {
+            $udhaarHistory = "$globalCurrency " . $udhaarMainAmount . " taken cash on " . $udhaarDOB . ".<br/>";
+        } else {
+            $historyItem = substr($historyItem, 2);
+            $udhaarHistory = "$globalCurrency " . $udhaarMainAmount . " amount left on puchase of  item - " . $historyItem . ".<br/>";
+        }
+        $query = "UPDATE udhaar SET
+		                udhaar_history = '$udhaarHistory',udhaar_amt='$udhaarTotalEMIAmt'
+                                WHERE udhaar_own_id = '$ownerId' and udhaar_id = '$udhaar_id'";
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        $sslg_trans_sub = 'NEW UDHAAR ADDED';
+        $sysLogTransType = 'Udhaar';
+        $sysLogTransId = $udhaarPreSerialNo . $udhaarSerialNo;
+        $sslg_trans_comment = 'Udhaar Serial No: ' . $sysLogTransId . ', Udhaar Date: ' . $udhaarDOB . ',Udhaar Amount: ' . formatInIndianStyle($udhaarMainAmount);
+
+        $apiType = 'insert';
+        $payTotalAmtBal = $udhaarMainAmount;
+        $itemAddDate = $udhaarDOB;
+        include 'omudjrnl.php';
+    }
+    /*     * *****************Start code to add proper redirect to money panel @Author:SANT2May16***************************** */
+    header("Location: " . $documentRoot . "/include/php/omuudetl.php?custId=$custId&firmId=$firmId&divMainMiddlePanel=Added&showDivPanel=UdhaarEMI");
+    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&custId=$custId&custPanelOption=CustUdhaar&panelName=SHOW&mainPanel=" . $mainPanel . "&showDivPanel=UdhaarEMI");
+    } else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header("Location: " . $documentRoot . "/orHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&custId=$custId&custPanelOption=CustUdhaar&mainPanel=" . $mainPanel . "&showDivPanel=UdhaarEMI");
+    } else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) && $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header("Location: " . $documentRoot . "/olHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&custId=$custId&custPanelOption=CustUdhaar&mainPanel=" . $mainPanel . "&showDivPanel=UdhaarEMI");
+    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) && $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header("Location: " . $documentRoot . "/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&custId=$custId&custPanelOption=CustUdhaar&mainPanel=" . $mainPanel . "&showDivPanel=UdhaarEMI");
+    }
+}
+/* * *****************End code to add proper redirect to money panel @Author:SANT2May16***************************** */
 ?>

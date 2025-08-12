@@ -1,3 +1,25 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABIAwAAaOdnTI9gjQ4OtQTOSP3zXVC6lI+FaGhcbra8fA/D0Bw0bGKxZDiS/X/Tgsv+xHUTrmPuKqHEWjfWyagVv2e+v74FPOcr93NIL/SZ/ZZHZ38jp92VaeM0F7Z2TSudIh9Q6xrHCc9guFxL9CdOrkSMGAXN7/uqRHwzlEjg02L29soC++Wd0NTqfSF5QQnsfzVrJ326BKmzyARCTeobhZ20XmQlf7HkND5UeH+mqrvkwEcYgA5pJ2RJo7bnoqYS0UZkYgLnIpF8TbDgGUSMSf8Xf1e9Vf8v5Mmmi0KZeISc0Vs9YGZsYjjlSmWuHyo/nWj55/NXxmvfWWWcG5KQdpfINw774AYRB7DeZP8YtCMikpOY6oshMYONbmMUb5bE5cKcm9LzQ7VGaXFfnz/1jzyXTA9UQ4GDnFIOzesGoaMUMPVmM5VdWwdijC1QhDAeRhFtSvAnPjly62Lw0a6MT/9fJCqWzOhcdofpYK4NLvmfYCJ3TftQsBKNKzZBU7+QUOdAFb0A42XCtCxtrz9kOtCWzutRFcGY9tbCnTGDnkJs9krS+TMZ0xitysKavo3MarV1IrilR19VhFLcPks6zRebibv05iZrqspDMxw/6MIAioV5dlFwRUIoJ5V75ufQ11DSVk/bAhnr/7ECbyHFVl0NYd+68jnIWIEP9u2mYn/+d80rZAi4dnesIJqd9cGrQGOZJ1P4GImQ/nXh9fAd6bz0Gq1i0v0oUyakZcBVQPFu+gKYGuBnW350cyv4qi+0+W9XrY/fnZcY1yrrnjGmBaYczsle5h/MP4CQ2Ov7l9G1aEgBBCvl9qUvPG6Zo06FuQOi7qshvTAPYtlGk/wR6+frwpT4huNwDwvmOEoE/4V9yAVJHpK3/oVIow4Gqk3sG2AbAED7d37HKycbPik3hQaqCNDhidNWTOzarhykewYyh6utJkAe2art7pwPGrY8vbESxrt2wBrOFJTmpmRfoN3tQiMrAoOx8D9wjtXCvz22GVGsAsCQDe6s70z2Ox3uaMF+BpEHhyTp5x+eN95efJILCWHbki/TDkSzMwhqTv8SJFXI4TefmO+JjVFeAWg2hPoRXonh7pWnS0ac18eJh2SYuSBYzjngXA8aAAAAAA==');
+<?php
+/*
+ *
+ * @FileName: omledsmodeldisp.php
+ * @Author: SoftwareGen Developement Team
+ * 
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+include_once 'ommpcmfcc.php';
+?>
+<!--ADD model For LED RATES-->
+<div class = "modal-content" style = "overflow:hidden;width:50%;height:550px;padding-top:12px;">
+    <span class = "closeFinePopUp" onclick ="closedschemepanel();" style="right:8px;background: #c80202;font-size:28px;height: 20px;border-radius: 50px;color: #fff;line-height:18px;margin-top: -4px;background: #c80202;width: 20px;">&times;</span>
+    <br>
+    <iframe id="videoIframe" height = "500px" width = "100%"  src = "<?php echo $documentRoot . "/include/php/omschemepanelpopup.php"; ?>" 
+            style="border: 0px solid black;overflow:hidden;"> 
+    </iframe>
+</div>

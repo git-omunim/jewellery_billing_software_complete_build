@@ -1,3 +1,79 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Send individual sms to unvisited customer
+ * **************************************************************************************
+ *
+ * Created on Feb 07, 2021 10:32:36 AM
+ *
+ * @FileName: omunvisitcustindi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+
+$userID = $_REQUEST['userId'];
+
+$UnvisitCustSmsTemplateQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'unvisitCustSmsTemplate'";
+$resUnvisitCustSmsTemplateQuery = mysqli_query($conn, $UnvisitCustSmsTemplateQuery)or die("Error: " . mysqli_error($conn) . " with query " . $UnvisitCustSmsTemplateQuery);
+$rowUnvisitCustSmsTemplate = mysqli_fetch_array($resUnvisitCustSmsTemplateQuery);
+$setUnvisitCustSmsTemplate = $rowUnvisitCustSmsTemplate['omly_value'];
+
+$unvisitCustSmsQuery = "SELECT smtp_text FROM sms_templates WHERE smtp_sub = '$setUnvisitCustSmsTemplate'";
+$resUnvisitCustSmsQuery = mysqli_query($conn, $unvisitCustSmsQuery)or die("Error: " . mysqli_error($conn) . " with query " . $unvisitCustSmsQuery);
+$rowUnvisitCustSms = mysqli_fetch_array($resUnvisitCustSmsQuery);
+$setUnvisitCustSms = $rowUnvisitCustSms['smtp_text'];
+
+$selectCustomer = "SELECT user_id, user_fname, user_lname, user_mobile, user_city, user_firm_id FROM user JOIN .user_transaction_invoice ON utin_user_id = user_id where utin_id = '$userID'";
+$res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+
+$row = mysqli_fetch_array($res);
+$userId = $row['user_id'];
+$user_fname = $row['user_fname'];
+$user_lname = $row['user_lname'];
+$mobileNo = $row['user_mobile'];
+$userCity = $row['user_city'];
+$user_firm_id = $row['user_firm_id'];
+$custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+$smsTextTemp = $setUnvisitCustSms;
+$smsSub = $setUnvisitCustSmsTemplate;	// Added variable for sms template sub @Author: Vishal 12APR21
+$sms_type = 'TSMS';
+
+if ($custFName == '' || $custFName == NULL)
+    $custFName = 'Customer';
+
+$userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+$row_firm = mysqli_fetch_array($res_firm);
+$firm_long_name = $row_firm['firm_long_name'];
+	
+$smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+//
+include 'omcsmsads.php';
+flush();
+if ($omSMSResult == 'SUCCESS') {
+//    echo 'S'; // Msg Count
+} else {
+//    echo 'F';
+}
 ?>

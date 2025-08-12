@@ -1,3 +1,67 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: CRYSTAL DELETE FILE @Author:PRIYANKA-14MAR19
+ * **************************************************************************************
+ * 
+ * Created on MAR 14, 2019 17:04:33 PM
+ *
+ * @FileName: omrwcydldv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$stprCryId = $_GET['stprCryId'];
+$itstCryId = $_GET['itstCryId'];
+$sttrId = $_GET['sttrId'];
+$mainPanel = $_GET['mainPanel'];
+$rawPanelName = $_GET['rawPanelName'];
+$rwprId = $itstCryId;
+//
+//echo '$sttrId:'.$sttrId;
+//exit();
+//
+$panelName = $_GET['panelName'];
+//
+//echo '$panelName:'.$panelName;
+//exit();
+//
+// Start Code To Delete Crystal Entry from stock_transaction Table @Author:PRIYANKA-14MAR19
+//
+    parse_str(getTableValues("SELECT sttr_transaction_type,sttr_user_id FROM stock_transaction WHERE sttr_id = '$sttrId'"));
+    if ($sttr_transaction_type == 'PURBYSUPP') {
+        $metType = 'BUY';
+        $transactionPanel = 'RawPurchase';
+    } else {
+        $metType = 'SELL';
+        $transactionPanel = 'RawSell';
+    }
+    $custId = $sttr_user_id;
+    
+    stock_transaction('delete', array(), $sttrId);
+//
+// End Code To Delete Crystal Entry from stock_transaction Table @Author:PRIYANKA-14MAR19
+// 
+//
+header("Location: $documentRoot/include/php/ogrwiadv.php?metType=$metType&subPanel=addByItemsUp&rwprId=$rwprId&mainPanel=$mainPanel&transactionPanel=$transactionPanel&rawPanelName=$rawPanelName");
+//
 ?>

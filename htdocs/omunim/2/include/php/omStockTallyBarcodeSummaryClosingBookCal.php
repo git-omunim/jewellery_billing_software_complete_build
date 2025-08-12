@@ -1,3 +1,134 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACIBAAAuPw2EJoP59l0J/w50YANkTsZMepyrd3AozcG+QOe967scr0v1ghfcuxrBRFVW5Jir02lVCktJaygRGZwoLOyetZ/MUw4yAYz19N5vfdgRFGyXS0ggsGrhdMt+w2dbRv6UMSqqIdWY2Y5CKamZBUz246kxyj1c4s6z0dpnSMHwKdSpLisGQYjS42t1duJTpUp1BjY+TdGgRb4XgrMCHfxDzNDvJ6Gkekxl/YujkFHAFfkRRdILsTiCNHKZjuM7H44AvPDJN6uw4A4HiUtJgZLSqb6w3/Ltq0EVVseQcOoB8aSZJgtI/RTV0nntkh9VgNOPGIYpwQxU8VDdFCgk/OD52W6O6okCi4l9kiNFEXMGCLVvdWbp3eaxLFxup5qh3rQzC4apWr+FUWoCLJ0E5MKMWWcX8L20b0UCEUXRXOY9WJvPtQV5D4vXL2VyrSjbyF8l6LrvwLjmGAzB2xC7OqFELqgqqcdi6HhGi6gG9yOs8UjCNh1GsQEgnGUb/ETrl4d/hzTjUYRpXgtsZ9i5oh76pMWZwD5XAtnTBo7YHOQEjl77035/YSKoPrkheYD13XQk5P3MOPKyLVnBpSRlZxy197aUQ75q+7QobgdgrfRrh0fLHUfTJvx8/T6J7RX3c1o/uMO43ozNXDoURkD5MZGLPXWJtMmNdvuzbt1Zamscuz0Puvbse9VydjIlJ/A0zXy64JGqz6mWoomSnqPBkvaNbt5d3XGXcEgR3rWMgP6Ez0nF4S670MfAw2qDCdnJEff2kC4c40rokk2XBo2Jq1cnh4txFb659Axv9s+9W4xLDdB6j+tMNWjrXzL2EKHLxQ29KRryM4rlRTLbLlU+4uZWzHD2YyTvXU+TAdZlJV9f2Z5O81msUllJRaJds9BUyxtpalayy31BAWM7u1VZfDOjR/2/0V4JLBskyV9iqEPmRqNQ/QzJG2Byrcm7nj1/DH3X10v9HJBiWBj44mWfjlslZv+jFriKLzMZYNiV+Rx1ODmcZGdkwd7ASmujNsoXJfdwCaxaWnEBGeyfTt2GEi6WfY1fKh3uzi2gK0xIFJUm4z5moRXDmlwVr+7JNRyOHO/KqD6MbFGqeIv7fhZfc1lVgm1y/81Vvd9uyFlS70rxHMPLnxKvFtA3Sf1DKE/+l82cgOwnkYKRe3cj7z+B0z+ze8je3Q75OMDqe8LRZh39CcHYI41r2HzSTFh9n2pO0Y4QC85dVhrYru0YnWTpjoMoKdzmylOjTM9XJIhohKys4v+MjGAidlleTb2qiZr1TV3p77hRA0VNEb6vLXR01ly2PWA/7ISePIgs2r51v1GgX7FPykN6XN9SPTOUouXTX5lJw0XzQr6qYoA3+OuYJ7QAfeIsRBdnOmJTGXOMqlw+IXiHjcdn1qI8cOwWT669OXMbny1+6UQRNXASZUwDmWcsNHYuS4r4WfE4fIeGIJkn1BWHudsLX6W+vBnfMZssCJ2Ly+pjWNixnLoEwzBbmR9VkzhpfRWFHXz4WHF3Fje9b199yfKi0tcefsaURtACcQ9PmxnZHpbJggAAAAA');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: RFID TALLY SUMMARY CALCULATE CLOSING FILE @AUTHOR:YUVRAJ-17112022
+ * **************************************************************************************************
+ *
+ * Created on OCT 25, 2021 01:53:01 PM 
+ * **************************************************************************************
+ * @FileName: C:\Project\OMUNIM_2.7.68_SVN_COMP_SW\htdocs\omunim\2\include\php\omStockTallySummaryClosingBookCal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.92
+ * @version 2.7.92
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:17112022
+ *  AUTHOR: YUVRAJ
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.92
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//
+$ClosingBookQTY = 0;
+$ClosingBookGsWeight = 0;
+$ClosingBookNtWeight = 0;
+$ClosingBookFnWeight = 0;
+//
+// 
+// CLOSING QTY @AUTHOR:YUVRAJ-17112022
+$ClosingBookQTY = (($OpeningBookQTY + $InwardQTY) - abs($OutwardQTY));
+//
+//
+// CLOSING GS WEIGHT @AUTHOR:YUVRAJ-17112022
+$ClosingBookGsWeight = (($OpeningBookGsWeight + $InwardGsWeight) - abs($OutwardGsWeight));
+//
+//
+// CLOSING NET WEIGHT @AUTHOR:YUVRAJ-17112022
+$ClosingBookNtWeight = (($OpeningBookNtWeight + $InwardNtWeight) - abs($OutwardNtWeight));
+//
+//
+// CLOSING FINE WEIGHT @AUTHOR:YUVRAJ-17112022
+$ClosingBookFnWeight = (($OpeningBookFnWeight + $InwardFnWeight) - abs($OutwardFnWeight));
+//
+//                    
+//
+//echo '$totalOpeningQty == ' . $totalOpeningQty . '<br />';
+//echo '$totalInwardQty == ' . $totalInwardQty . '<br />';
+//echo '$totalOutwardQty == ' . $totalOutwardQty . '<br />'; 
+
+//echo '$ClosingBookQTY == ' . $ClosingBookQTY. '<br />';
+//echo '$ClosingBookGsWeight == ' . $ClosingBookGsWeight . '<br />';
+//echo '$ClosingBookNtWeight == ' . $ClosingBookNtWeight . '<br />'; 
+
+//
+//
+//$totalClosingBookQty += (($totalOpeningQty + $totalInwardQty) - abs($totalOutwardQty)); 
+//$totalClosingBookGsWt += (($totalOpeningGsWt + $totalInwardGsWt) - abs($totalOutwardGsWt)); 
+//$totalClosingBookNtWt += (($totalOpeningNtWt + $totalInwardNtWt) - abs($totalOutwardNtWt));
+//$totalClosingBookFnWt += (($totalOpeningFnWt + $totalInwardFnWt) - abs($totalOutwardFnWt));
+//
+//
+//
+//
+// ADDED CODE FOR ALL RFID TALLY REPORT @YUVRAJ-11JAN2022
+if ($_REQUEST['subPanelName'] == 'AllStockList') {
+    //
+    //
+    $totalClosingBookQty += $ClosingBookQTY;
+    //
+    //
+    $totalClosingBookGsWt += $ClosingBookGsWeight;
+    //
+    //
+    $totalClosingBookNtWt += $ClosingBookNtWeight;
+    //
+    //
+    $totalClosingBookFnWt += $ClosingBookFnWeight;
+    //
+    //
+} else {
+    //
+    //
+    if ($ClosingBookQTY > 0) {
+        $totalClosingBookQty += $ClosingBookQTY;
+    }
+    //
+    //
+    if ($ClosingBookGsWeight > 0) {
+        $totalClosingBookGsWt += $ClosingBookGsWeight;
+    }
+    //
+    //
+    if ($ClosingBookNtWeight > 0) {
+        $totalClosingBookNtWt += $ClosingBookNtWeight;
+    }
+    //
+    //
+    if ($ClosingBookFnWeight > 0) {
+        $totalClosingBookFnWt += $ClosingBookFnWeight;
+    }
+    //
+    //
+}
+//
+//
+//echo '$totalClosingBookQty == ' . $totalClosingBookQty . '<br />';
+//echo '$totalClosingBookGsWt == ' . $totalClosingBookGsWt . '<br />';
+//echo '$totalClosingBookNtWt == ' . $totalClosingBookNtWt . '<br />'; 
+//echo '$totalClosingBookFnWt == ' . $totalClosingBookFnWt . '<br />'; 
+//
+//
 ?>

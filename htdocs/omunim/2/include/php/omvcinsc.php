@@ -1,3 +1,64 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Apr 6, 2011 12:03:19 AM
+ *
+ * @FileName: omvcinsc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Other','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','India','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','United State','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','China','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Sri Lanka','Default','Created By oMunim')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Pakistan','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Nepal','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Bangladesh','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Bhutan','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
+$qInsertCountry = "insert into country(country_own_id,country_name,country_upd_sts,country_comm) values ('$ownerId','Australia','owner','Created By owner')";
+if (!mysqli_query($conn,$qInsertCountry)) {
+    die('Error: ' . mysqli_error($conn));
+}
 ?>

@@ -1,3 +1,67 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACAAwAADjWNSHxhwlguWBv+qeRRW1wSDZ10yHwj5UCzn1+J/O4GTWkfB+rqipB8r3IC0DqcycCJEoXrA0St02pRzigmzTFIvcHebrQKWbt6XQ7pOGJ74zd7P6CSMXj3GKRDtStI8MaeUNxz+Fg3jTFj1Kjw1qtLNm/77HQ1VVYEtzf6iwbIlrpbY1eawiGdCzI47N3IjBiRBZitstNoaRGoufAP4gXCuUHVFN9pRyt9Aeg2u1K3GC/lmOotyjmg66DbW01fL0xr02pkzfym4xGJ7qyVl1ZIC8kd4tthRVNvJHwSDjmxlWHxUIM/eOGbC9wDZpC2UnGunysUJcIq8qDE8QfS8PlvqOLzdvM/LWLsFxnfwCgX+dlLd9OFADjhqWo5qev+rxuBt130LfP2t+2xQ1bMT89g9vUbSPb/DKG0nh1hUZvDAm4QzCbSSgLOwnP/Pxff2PJPjOzOzdY9kHyU4DEkn0q+t9KA+tGprH4L9KvQ/1P+3SEUEi2gRPECYbm+pYh4AkeoS1pWWZrUbFgQ+b97KOhq3OgHzQ8BlAUS/F7blKzLh2TyEOqQWPjyowpxmhGHtxBZkyxWjBBJ4Mfa3ZqIqnvduPuy3+nYAoXkOReWvLjAD9zX+lT8e7cj/RRmXTKbBipKi8UtigGz0jICLUJFO64D+d5tekMCLsY2IgGA+4zmwDLixu5qHLD0MBby+24bvN2x2+UIMFREYw0I3WqRxt+T9GxdeXKYB3HWpcFiKlhLPcRPQhPeu/yWrRVVWLHGPR3+9Y2pseMcbtvhsM2cBEdl+6v34XIiq2v8duckXECAkiZiLRxI3z//UZMBI/DU5CVEq+G5ICsv2cl8KhEAMpoX/2eLT3GHt4p87egVzRhaEpCcypbiU1XX99x8pH5W5y9rXMthhavh7RF/hmhM3+YnHBptWqWVSjuwrWOb1Y5R9TMqB0mRMRqUOODCxQwjvdIPFp9O6Bl1H8GWxSmR8ziEc5JvkVFG7CRj5cYyqo3nK1CPCRCJB2tPbqwDOd6jYLehUTKDePYHxCmTlWfR16tdDVLFWOCST+eL2GWvdgnpME18mpACk2vlQQ4ky4TGrtmeXSUtK39rtrmYfrtD4EoPAoQoNLimCpyJkiC+a1E1qCz6rl0Z8yqnfLza+bRbcPsHR/qtIW+D0j5kJUT5ZWWdTCIeawxJzJnQjfPZtwQAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Online Munim Primary Accounts Table
+ * **************************************************************************************
+ *
+ * Created on 17 Dec, 2012 11:29:35 PM
+ *
+ * @FileName: omtbpacc.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+/* * ****************** New column acc_metal added @Author:SHRI17MAR16 *************** */
+$query = "CREATE TABLE IF NOT EXISTS accounts (
+acc_id                   INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+acc_own_id               VARCHAR(50),
+acc_pri_acc              VARCHAR(30),
+acc_pri_grp              VARCHAR(30),
+acc_main_acc             VARCHAR(100),
+acc_user_acc             VARCHAR(100),
+acc_created_by           VARCHAR(50),
+acc_firm_id              VARCHAR(10),
+acc_name                 VARCHAR(50),
+acc_metal                VARCHAR(30),
+acc_address              VARCHAR(50),
+acc_city                 VARCHAR(30),
+acc_pincode              VARCHAR(20),
+acc_state                VARCHAR(30),
+acc_country              VARCHAR(30),
+acc_pan_it_no            VARCHAR(30),
+acc_sales_tax_no         VARCHAR(30),
+acc_cst_no               VARCHAR(30),
+acc_banc_acc_no          VARCHAR(30),
+acc_branch_name          VARCHAR(30),
+acc_bsr_code             VARCHAR(30),
+acc_ifs_code             VARCHAR(30),
+acc_cash_balance         VARCHAR(30),
+acc_cash_balance_desc    VARCHAR(64),
+acc_cash_balance_crdr    VARCHAR(30),
+acc_cash_balance_date    VARCHAR(30),
+acc_since                DATETIME,
+acc_other_info           VARCHAR(500),
+acc_staff_id	         VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (acc_firm_id,acc_user_acc))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+/* * ****************** New column acc_metal added @Author:SHRI17MAR16 *************** */
 ?>

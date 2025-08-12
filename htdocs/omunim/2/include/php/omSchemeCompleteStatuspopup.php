@@ -1,3 +1,52 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABABAAAbVxLh/Y+sQpMHZu2UTufweNNsCc52DNS8/QUqZG9XHDou1Y58QZO8KWGlJRIWI1JweDA8X/TKqXQ7dBmVnL93ILnuBEa4Roi0UKFLpLwJ4M8BlXRdFmkuzXHyojIaFi5GYCqGlHTrzBw6gKlL2i00gr3HcjcRc7n6LRMxycCKHyWA1uPPXPFwyUFlHWXfaOETUJ4V4NzOT7xPkG4TNLekC+B49/G4+d6J/U2W0Eq/EUpt2D3EgLwAZhPBhwzlZ9UbqHflq4Q+bTk2rk8PIdceneMrdNiR6gB43nmT9jtkIyK+5af3wgUfhSA2mGtH/N/SdU+Mp4qkkkkR3/HtypUNbXYixfeoTVKCEmVIEbdUY9HlHIWw3gnAwr47KpD1u58ldPwcxB8/bHWVZj+Z1hAwi3TbsNUHqyltAOBBVSBANIiVIsPD1Uo6PIAwoKf0ZP0VT4ptAdnfj7iWddA5vi3mlz0d02GwZt227XOjADESxgAjco2zMWnuzTpMGDkLC4YUYiktFLe/iX2WrXm5CQurhPnZz4rvGsrFKqtS4STPBgdKnlete9u7iA0wv3N0PheQC8zgSh8neAhima3csT+wZzfEnK611LYywG4j3dIyG3M2CgWcLXMTYZryAGqQ4G41dfKDEzlQ1WLYZOuXU+FB6wW8K5chOGpHtpVIfIC5ddNsLEBwVPi7S1q1sQSZ4K1+OTm6vS7CzZ75533KXhp/UMzm4N1B9mhrxxV1Yo6TlzRyeN1gdWOgo5mZHOm3/ptOkbcTo3gNJLeCLbmLKjyTJmuul9Bh9hU9vc4jOz7jTW6gV8V58l9sohJDvQ3WI1o+V0vJUHWpbdiGiNq1xEzd4EVFFlxUnQIDN0n0ajvSfMXk5fkIdycd5+AXyWcync3TZTDl5jhEb9tlR/NY8GrzkVAblo+BUV6r9+h7ct3BzU8JIasQ2zMVqFGO3ReQ7b/VnlzSdRTjlApxxBDJzcTrnHhOjMSRiKDX4Pl6rwc77mh0gy7ombhcR6e2Ab7va9hRRwNCWvGlD91HHLR//tK8Y647/ww6o8Sc2E37M4fhx3LSWHrDwqiX5IgF5eGouEJkDjWCRS2kfZtxLW34j05CuTII+q8qa1gdK5GLixrdXP+N0BOes74G9OWxH/BKHptBN0LyQjISDOIfaDpid1VrnLM5vEGCqpVjoqqaCSz8UqVgYnrFB8fVT79Z3ctCaEGou1+awLY8kt20ozGQamXtuauWWYa44C0/g6vlfh+ESe7SKWJW76cBZIC0T2880zp4HA7oEVEV4jfjsQS8w+8EY32zK933GqfI4f6EXbWGgUCpuuSDoOUbwCEwb9fZ992CK0n26HIRUU1JRv5ih6LzuzNibQE0xCgwOfqt5G+NiiCuwNVXl7pd+nQHD1IZfV+rkCFrX4GbAnhF0CsMqvX83Q4zOTSKpU3KOI2kan9XvcAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SCHEME COMPLETE STATUS CHANGING FILE @AUTHOR: HEMA-25FEB2020
+ * **************************************************************************************
+ * 
+ * Created on feb 25, 2020 12:54:56 PM
+ *
+ * @FileName: omSchemeApproveStatusPopup.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+$kittyMondepId = $_GET['kittyMondepId'];
+$kittyCustId = $_GET['kittyMondepCustId'];
+$delStatus = $_GET['delStatus'];
+?>
+<div class="grey-back" style="">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" valign="top">
+                <!--- //change in filename @AUTHOR: SANDY22NOV13 -->
+                <iframe src="<?php echo $documentRoot; ?>/include/php/omSchemeCompleteStatusPopupFrame.php?kittyMondepId=<?php echo $kittyMondepId; ?>&kittyCustId=<?php echo $kittyCustId; ?>&delStatus=<?php echo $delStatus; ?>" 
+                        width="900" height="200" frameborder="0" class="grey-back"></iframe>
+            </td>
+            <td align="right" valign="top">
+                <a class="links" style="cursor: pointer;"
+                   onclick="navigatSchemeCollectionListCompletePanel('<?php echo $delStatus; ?>')"><img src="<?php echo $documentRootBSlash; ?>/images/ajaxClose.png" /></a> 
+            </td>
+        </tr>
+    </table>
+</div>

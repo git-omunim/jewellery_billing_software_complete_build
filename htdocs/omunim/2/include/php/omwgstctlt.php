@@ -1,3 +1,205 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/* 
+ * ***************************************************************************************
+ * @tutorial: CODE FOR DISPLAY CRYSTAL STOCK REPORT BY CARAT @ DARSHANA 13 AUG 2021
+ * **************************************************************************************
+ * Created on 13 AUG 2021 04:30:00 PM
+ *
+ * @FileName: omwgstctlt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMunim
+ * @version 1.0
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+$metalType = $_GET['metalType'];
+$panelName = $_GET['divPanel'];
+//
+if ($panelName == '') {
+    $panelName = $_GET['panelName'];
+}
+//
+//echo '$panelName:'.$panelName;
+//echo '$metalType:'.$metalType;
+//
+?>
+<div id="jewelleryPanel">
+    <input type="hidden" id="documentRootPath" name="documentRootPath" value="<?php echo $documentRootBSlash; ?>" />
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" colspan="16">
+                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td width="26px">
+                            <img src="<?php echo $documentRoot; ?>/images/diamond-icon24.png" 
+                                 alt="Crysatl Stock List" onload="setScrollIdFun('stockListHeader');"/>
+                        </td>
+                        <td width="650px">
+                            <?php
+                            if ($panelName == 'crystal') {
+                                $_SESSION['dtPrintTitle'] = "CRYSTAL STOCK LIST";
+                                ?>
+                                <div class="textLabelHeading">CRYSTAL STOCK LIST BY CARAT </div>
+                            <?php } ?>
+                        </td>
+                        <td align="right" valign="middle">
+                            <div id="messDisplayDiv"></div>
+                        </td>
+                        <td width="1px;"></td>
+                        <td align="right" valign="middle">
+                            <div style="cursor: pointer; height: 21px; width: 136px; font-weight: bold; font-size: 12px; 
+                                        padding-top: 0px; margin-top: 5px; margin-bottom: 5px; border-radius: 5px !important; 
+                                        text-align: center; color: #000080 !important; margin-left: 50px; 
+                                        background-color: #89b2ed; margin-right: 0px !important;"> 
+                            <a onclick="navigateToCrystalByGmWtPanel('crystal');">
+                                 <span style="color: #000080;"> STONE STOCK BY GM </span>
+                            </a>
+                            </div> 
+                        </td>
+                         <td align="right" valign="middle">
+                             <div style="cursor: pointer; height: 21px; width: 136px; font-weight: bold; font-size: 12px; 
+                                         padding-top: 0px; margin-top: 5px; margin-bottom: 5px; border-radius: 5px !important; 
+                                         text-align: center; color: #AA6600; margin-left: 0px; background-color: #FFC469; "> 
+                             <a onclick="navigateToCrystalByCtWtPanel('crystal');">
+                                <span style="color: #AA6600;"> STONE STOCK BY CT </span>
+                            </a>
+                            </div> 
+                        </td>
+                        
+                         
+                        <td align="right" valign="middle" style="width: 60px;">
+                            <a style="cursor: pointer;" class="btn btn-xs default" 
+                               onclick="navigateBackToStockPanel('<?php echo $documentRoot; ?>', 'stock', '');">
+                                <i class="fa fa-angle-double-left"></i> BACK
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <?php
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        //if not selected assign session firm
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+        $strFrmId = '0';
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    } else {
+        $strFrmId = $selFirmId;
+    }
+    /*     * ******** End Code To GET Firm Details ********* */
+    //Data Table Main Columns
+    //Data Table Main Columns
+    include 'omdatatablesUnset.php';
+    //
+    $dataTableColumnsFields = array(
+        array('dt' => 'FIRM NAME'),
+        array('dt' => 'STONE TYPE'),
+        array('dt' => 'P.CODE'),
+        array('dt' => 'CATEGORY'),
+        array('dt' => 'PROD. NAME'),
+        array('dt' => 'QTY'),
+        array('dt' => 'GROSS WT(CT)'),
+        array('dt' => 'NET WT'),
+        array('dt' => 'COLOR'),
+        array('dt' => 'CLARITY'),
+        array('dt' => 'SHAPE'),
+        array('dt' => 'SIZE'),
+        array('dt' => 'PUR.RATE'),
+        array('dt' => 'SELL.RATE')
+    );
+    //
+    $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+    // Table Parameters
+    $_SESSION['tableName'] = 'stock'; // Table Name
+    $_SESSION['tableNamePK'] = 'st_id'; // Primary Key
+    //
+    // DB Table Columns Parameters 
+    //
+    $dbColumnsArray = array(
+        "f.firm_name",
+        "st_metal_type",
+        "st_item_code",
+        "st_item_category",
+        "st_item_name",
+        "SUM(st_quantity)",
+        "IF(st_gs_weight_type='CT',CAST(SUM(st_gs_weight) as decimal(10,3)),CAST(SUM(case when st_gs_weight_type='KG' then st_gs_weight*5000  when st_gs_weight_type='MG' then st_gs_weight/5000 else st_gs_weight*5 end) as decimal(10,3)))",
+        "CAST(SUM(st_nt_weight) as decimal(10,3))",
+        "st_color",
+        "st_clarity",
+        "st_shape",
+        "st_size",
+        "st_purchase_rate",
+        "st_sell_rate"
+    );
+    //
+    $_SESSION['dbColumnsArray'] = $dbColumnsArray;  // No Change
+    $_SESSION['dtSumColumn'] = '5,6,7,12,13';
+    $_SESSION['dtDeleteColumn'] = '';
+    // Extra direct columns we need pass in SQL Query
+    $_SESSION['sqlQueryColumns'] = "st_id,";
+    //
+    // On Click Function Parameters
+    $_SESSION['onclickColumnImage'] = "";
+    $_SESSION['onclickColumn'] = "st_item_category"; // On which column
+    $_SESSION['onclickColumnId'] = "st_id";
+    $_SESSION['onclickColumnValue'] = "st_id";
+    $_SESSION['onclickColumnFunction'] = "showCrystalStockItemDetailsDiv";
+    $_SESSION['onclickColumnFunctionPara1'] = "st_item_category";
+    $_SESSION['onclickColumnFunctionPara2'] = "st_item_name";
+    $_SESSION['onclickColumnFunctionPara3'] = "CrystalStock";
+    $_SESSION['onclickColumnFunctionPara4'] = "CrystalStock";
+    $_SESSION['onclickColumnFunctionPara5'] = "st_metal_type";
+    $_SESSION['onclickColumnFunctionPara6'] = "st_stock_type";
+    //
+    $_SESSION['deleteColumn'] = ""; // On which column
+    $_SESSION['deleteColumnId'] = "";
+    $_SESSION['deleteColumnValue'] = "";
+    $_SESSION['deleteColumnFunction'] = "";
+    $_SESSION['deleteColumnFunctionPara1'] = ""; // Panel Name
+    $_SESSION['deleteColumnFunctionPara2'] = "";
+    $_SESSION['deleteColumnFunctionPara3'] = "";  //stsl_itst_id
+    $_SESSION['deleteColumnFunctionPara4'] = "";
+    $_SESSION['deleteColumnFunctionPara5'] = "";
+    $_SESSION['deleteColumnFunctionPara6'] = "";
+    //
+    $_SESSION['tableWhere'] = "st_firm_id IN ($strFrmId) and st_type IN ('crystal') and st_gs_weight_type IN ('CT') "
+                            . "GROUP BY st_item_name,st_item_category,st_firm_id";
+    //
+    // Table Joins
+    $_SESSION['tableJoin'] = " INNER JOIN firm AS f ON st_firm_id=f.firm_id ";
+    //
+    // Data Table Main File
+    include 'omdatatables.php';
+    ?>
+</div>
+

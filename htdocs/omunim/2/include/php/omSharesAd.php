@@ -1,3 +1,94 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 31 Jul, 2018 11:13:52 AM
+ *
+ * @FileName: omSharesAd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+
+//
+//
+parse_str(getTableValues("SELECT * FROM firm where firm_own_id='$sessionOwnerId'"));
+if ($firmId == '')
+    $firmId = $firm_id;
+//
+$userOwnerId = $_SESSION['sessionOwnerId'];
+$DOBDay = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['DOBDay'])));
+$DOBMonth = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['DOBMonth'])));
+$DOBYear = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['DOBYear'])));
+$sharesDesc = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sharesDesc'])));
+$sharesQTY = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sharesQTY'])));
+$sharesPrice = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sharesPrice'])));
+$sharesTotalPrice = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sharesTotalPrice'])));
+$utin_transaction_type = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['utin_transaction_type'])));
+$custId = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['custId'])));
+$date = $DOBDay . ' ' . $DOBMonth . ' ' . $DOBYear;
+//
+parse_str(getTableValues("SELECT SUM(utin_prod_qty) AS soldQty FROM user_transaction_invoice where utin_owner_id='$sessionOwnerId' and "
+                . "utin_user_id = '$custId' and utin_firm_id = '$firmId' "
+                . "and utin_transaction_type = 'Sold' and utin_type = 'Shares'"));
+//
+parse_str(getTableValues("SELECT SUM(utin_prod_qty) AS purchaseQty FROM user_transaction_invoice where utin_owner_id='$sessionOwnerId' and "
+                . "utin_user_id = '$custId' and utin_firm_id = '$firmId' "
+                . "and utin_transaction_type = 'Purchased' and utin_type = 'Shares'"));
+//
+$totalSoldQty = $soldQty + $sharesQTY;
+//
+if (($purchaseQty < $totalSoldQty ) && $utin_transaction_type == 'Sold') {
+//    echo 'Hi';
+    $message = "You Cannot Purchase/Sell This Share!";
+    //echo'$message =='.$message;
+    //
+    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome"
+            . "&divMainMiddlePanel=CustHome&panel=AddShares&custId=$custId&message=" . $message);
+} else {
+//
+    if ($sharesQTY != '') {
+        $query = "INSERT INTO user_transaction_invoice (
+    utin_firm_id,utin_owner_id,utin_prod_details,utin_prod_qty,utin_prod_unit_price,utin_total_amt,
+    utin_type,utin_transaction_type,utin_date,utin_user_id) 
+    VALUES ('$firmId','$userOwnerId','$sharesDesc','$sharesQTY','$sharesPrice','$sharesTotalPrice',"
+                . "'Shares','$utin_transaction_type','$date','$custId')";
+//    echo '$query =='.$query;
+        if (!mysqli_query($conn, $query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+}
+//
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO ) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome"
+            . "&divMainMiddlePanel=CustHome&panel=AddShares&custId='$custId'");
+} else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome"
+            . "&divMainMiddlePanel=CustHome&panel=AddShares&custId='$custId'");
+}
 ?>

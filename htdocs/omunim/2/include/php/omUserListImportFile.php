@@ -1,3 +1,1367 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************************
+ * @tutorial:  Import Data From CSV File to Mysql Database for User List @PRIYANKA-08SEP21
+ * **********************************************************************************************************************************
+ *
+ * Created on 08 SEP, 2021 03.40.00 PM
+ * 
+ * @FileName: omUserListImportFile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.80
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-08SEP21
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+$currentFileName = basename(__FILE__);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+?>
+<?php
+//
+//print_r($_REQUEST);
+//die;
+//
+//print_r($_FILES['CVSFile']);
+//die;
+//
+//echo 'Current PHP version: ' . phpversion();
+//
+//        
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}  
+//
+//
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm 
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//
+//echo '$selFirmId == ' . $selFirmId . '</br>';
+//
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr order by firm_since desc";
+}
+//
+//
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+//
+//
+//echo '$selFirmId : ' . $selFirmId . '<br />';
+//die;
+//
+//
+if ($_REQUEST['MISoftwareFinancialYearSelected'] != '' && $_REQUEST['MISoftwareFinancialYearSelected'] != NULL) {
+    //
+    $financialYear = $_REQUEST['MISoftwareFinancialYearSelected'];
+    //
+    $setMISoftwareFinancialYearSelected = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' "
+                                        . "AND omly_option = 'MISoftwareFinancialYearSelected'";
+    //
+    $resMISoftwareFinancialYearSelected = mysqli_query($conn, $setMISoftwareFinancialYearSelected);
+    $numOfRowMISoftwareFinancialYearSelected = mysqli_num_rows($resMISoftwareFinancialYearSelected);
+    //
+    if ($numOfRowMISoftwareFinancialYearSelected == 0) {
+        //
+        $query = "INSERT INTO omlayout(omly_own_id, omly_option, omly_value) "
+               . "VALUES ('$sessionOwnerId', 'MISoftwareFinancialYearSelected', '$financialYear');";
+        //
+        if (!mysqli_query($conn, $query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        //
+    } else {
+        //
+        $query = "UPDATE omlayout SET omly_value = '$financialYear' "
+               . "WHERE omly_own_id = '$sessionOwnerId' AND omly_option = 'MISoftwareFinancialYearSelected'";
+        //
+        if (!mysqli_query($conn, $query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        //
+    }
+    //
+} else { ?>
+    <div class="fs_13 ff_calibri bold" style="color:red;">Issue has been detected with Financial Year. Please select Financial Year! </div>
+<?php 
+die; 
+}
+//
+//
+//
+// Start Code to Import Data From CSV File to Mysql Database for User List @PRIYANKA-08SEP21
+//
+$fileName = $_FILES['CVSFile']['name'];
+//
+// Input Field Name
+$importFile = $_FILES['CVSFile']['tmp_name'];
+// 
+$readImportFile = fopen($importFile, "r");
+//
+//
+$rowsCounter = 0;
+//
+//
+while (($user = fgetcsv($readImportFile, 10000, ",")) !== false) {
+        //
+        //
+        if ($rowsCounter == 0) {        
+            //
+            $columnCounter = count($user);
+            //
+            //
+            //echo '$columnCounter == ' . $columnCounter . '<br />';
+            //die;
+            //
+            //
+            //Party Name	Address Ist	Address 2nd	Address 3rd	Location	
+            //City	Mobile	Group	Total	Gold Fine	Sil.Fine	
+            //Show In	Active	Bal. Date	Tran	Flag	Prefix	Cus.Type	
+            //Print Name	Tin No	Pan No	Phone	
+            //Date Of Birth	Anniversary.	
+            //Deal	Login	Date Time	Vouher	Short Name	
+            //Commision	Refer.By	Agent	Lab.On	Int %/Depriciation	
+            //Cr.Days	Tag Min Lbr	Kitty No	Kitty Srno	
+            //Department	Salary	Sal.code	Join Date	Leave Date	
+            //Points	Sal Ins.	TCS	Category	
+            //Other Chg.	Address4	
+            //State	GSTIN	Uidno	UAN No	Deduction
+            //
+            //
+            //$user[] = json_decode($json1,true);
+            //$user[] = json_decode($json2,true);
+            //$json_merge = json_encode($user);
+            //
+            //
+            for ($i=0; $i<$columnCounter; $i++) {
+                //
+                //echo '$i == ' . $i. '<br />';
+                //echo '$user == ' . $user[$i] . '<br />';
+                //
+                if ($user[$i] == 'Party Name' || $user[$i] == 'A/c Name') {              //ADDED A/C NAME @SIMRAN:13APR2023
+                    $json1 = '{"columnName":"Party Name", "position":' . $i . ',' . '"tableColumnName":"user_fname"}';
+                    $allData[] = json_decode($json1,true);
+                }
+                //
+                //
+                if ($user[$i] == 'Group') {
+                    $json2 = '{"columnName":"Group", "position":' . $i . ',' . '"tableColumnName":"user_type"}';
+                    $allData[] = json_decode($json2,true);
+                }
+                //
+                //
+                if ($user[$i] == 'Mobile') {
+                    $json3 = '{"columnName":"Mobile", "position":' . $i . ',' . '"tableColumnName":"user_mobile"}';
+                    $allData[] = json_decode($json3,true);
+                }
+                //
+                //
+                if ($user[$i] == 'Phone') {
+                    $json4 = '{"columnName":"Phone", "position":' . $i . ',' . '"tableColumnName":"user_phone"}';
+                    $allData[] = json_decode($json4,true);
+                }
+                //
+                //
+//                if ($user[$i] == 'Date Of Birth') {
+//                    $json5 = '{"columnName":"Date Of Birth", "position":' . $i . ',' . '"tableColumnName":"user_fname"}';
+//                    $allData[] = json_decode($json5,true);
+//                }
+//                //
+//                //
+//                if ($user[$i] == 'Anniversary.') {
+//                    $json6 = '{"columnName":"Anniversary.", "position":' . $i . ',' . '"tableColumnName":"user_marriage_any"}';
+//                    $allData[] = json_decode($json6,true);
+//                }
+//                //
+//                //
+                if ($user[$i] == 'Address Ist') {
+                    $json7 = '{"columnName":"Address Ist", "position":' . $i . ',' . '"tableColumnName":"user_add"}';
+                    $allData[] = json_decode($json7,true);
+                }
+                //
+                //
+                if ($user[$i] == 'Location') {
+                    $json8 = '{"columnName":"Location", "position":' . $i . ',' . '"tableColumnName":"user_current_address"}';
+                    $allData[] = json_decode($json8,true);
+                }
+                //
+                //
+                if ($user[$i] == 'City') {
+                    $json5 = '{"columnName":"City", "position":' . $i . ',' . '"tableColumnName":"user_city"}';
+                    $allData[] = json_decode($json5,true);
+                }
+                //
+                //
+                if ($user[$i] == 'State') {
+                    $json6 = '{"columnName":"State", "position":' . $i . ',' . '"tableColumnName":"user_state"}';
+                    $allData[] = json_decode($json6,true);
+                }
+                //
+                //
+                if ($user[$i] == 'Pan No') {
+                    $json7 = '{"columnName":"Pan No", "position":' . $i . ',' . '"tableColumnName":"user_pan_it_no"}';
+                    $allData[] = json_decode($json7,true);
+                }
+                //
+                //
+//                if ($user[$i] == 'Tin No') {
+//                    $json12 = '{"columnName":"Tin No", "position":' . $i . ',' . '"tableColumnName":"user_sale_tax_no"}';
+//                    $allData[] = json_decode($json12,true);
+//                }
+                //
+                //
+                if ($user[$i] == 'GSTIN') {
+                    $json8 = '{"columnName":"GSTIN", "position":' . $i . ',' . '"tableColumnName":"user_cst_no"}';
+                    $allData[] = json_decode($json8,true);
+                }
+                //
+                //
+//                if ($user[$i] == 'Refer.By') {
+//                    $json14 = '{"columnName":"Refer.By", "position":' . $i . ',' . '"tableColumnName":"user_reference"}';
+//                    $allData[] = json_decode($json14,true);
+//                }
+//                //
+//                //
+//                if ($user[$i] == 'Salary') {
+//                    $json15 = '{"columnName":"Salary", "position":' . $i . ',' . '"tableColumnName":"user_monthly_income"}';
+//                    $allData[] = json_decode($json15,true);
+//                }
+//                //
+//                //
+//                if ($user[$i] == 'Total') {
+//                    $json16 = '{"columnName":"Total", "position":' . $i . ',' . '"tableColumnName":"user_cash_balance"}';
+//                    $allData[] = json_decode($json16,true);
+//                }
+//                //
+//                //
+//                if ($user[$i] == 'Gold Fine') {
+//                    $json17 = '{"columnName":"Gold Fine", "position":' . $i . ',' . '"tableColumnName":"user_gd_ffn_wt"}';
+//                    $allData[] = json_decode($json17,true);
+//                }
+                //
+                //
+//                if ($user[$i] == 'Sil.Fine') {
+//                    $json18 = '{"columnName":"Sil.Fine", "position":' . $i . ',' . '"tableColumnName":"user_sl_ffn_wt"}';
+//                    $allData[] = json_decode($json18,true);
+//                }
+//                //
+//                //
+//                if ($user[$i] == 'Bal. Date') {
+//                    $json19 = '{"columnName":"Bal. Date", "position":' . $i . ',' . '"tableColumnName":"Bal. Date"}';
+//                    $allData[] = json_decode($json19,true);
+//                }
+                //
+                // ADDED UIDNO @SIMRAN:13APR2023
+                 if ($user[$i] == 'Uidno') {
+                    $json9 = '{"columnName":"Uidno", "position":' . $i . ',' . '"tableColumnName":"Uidno"}';
+                    $allData[] = json_decode($json9,true);
+                }
+                //
+                // ADDED Cus.Type @SIMRAN:13APR2023
+                 if ($user[$i] == 'Cus.Type') {
+                    $json10 = '{"columnName":"Cus.Type", "position":' . $i . ',' . '"tableColumnName":"Cus.Type"}';
+                    $allData[] = json_decode($json10,true);
+                }        
+              
+                
+            }
+            //
+            //
+            $json_merge = json_encode($allData);
+            //
+            //
+            $json_merge = ($allData);
+            //
+            //
+            //print_r($json_merge);
+            //echo '<pre>';
+            //echo("<br/>");
+            //die;
+            //
+            //
+            //foreach ($json_merge as $headings)  {
+                    //echo($headings['columnName'] . ", " . $headings['position']. ", " . $headings['tableColumnName']);
+                    //echo("<br/>");
+            //}
+            //
+            //
+        }
+        //
+        //
+        //die;
+        //
+        //
+        if ($rowsCounter > 0) {
+            //
+            //
+            foreach ($json_merge as $headings)  {
+                //
+                //echo($headings['columnName'] . ", " . $headings['position']. ", " . $headings['tableColumnName']);
+                //echo("<br/>");
+                //
+                if ($headings['columnName'] == 'Party Name' || $headings['columnName'] == 'A/c Name') {               //ADDED A/C NAME @SIMRAN:13APR2023
+                    $user_fname = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'Group') {
+                    $user_type = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'Mobile') {
+                    $user_mobile = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'Phone') {
+                    $user_phone = $user[$headings['position']];
+                }
+                //
+                //
+//                if ($headings['columnName'] == 'Date Of Birth') {
+//                    $DOB = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Anniversary.') {
+//                    $marriageDate = $user[$headings['position']];
+//                }
+//                //
+//                //
+                if ($headings['columnName'] == 'Address Ist') {
+                    $user_add = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'Location') {
+                    $user_current_address = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'City') {
+                    $user_city = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'State') {
+                    $user_state = $user[$headings['position']];
+                }
+                //
+                //
+                if ($headings['columnName'] == 'Pan No') {
+                   $user_pan_it_no = $user[$headings['position']];
+                }
+                //
+                //
+//                if ($headings['columnName'] == 'Tin No') {
+//                    $user_sale_tax_no = $user[$headings['position']];
+//                }
+                //
+                //
+                if ($headings['columnName'] == 'GSTIN') {
+                    $user_cst_no = $user[$headings['position']];
+                }
+                //
+                //
+//                if ($headings['columnName'] == 'Refer.By') {
+//                    $user_reference = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Salary') {
+//                    $user_monthly_income = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Total') {
+//                    $user_cash_balance = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Gold Fine') {
+//                    $user_gd_ffn_wt = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Sil.Fine') {
+//                   $user_sl_ffn_wt = $user[$headings['position']];
+//                }
+//                //
+//                //
+//                if ($headings['columnName'] == 'Bal. Date') {
+//                   $balanceDate = $user[$headings['position']];
+//                }
+                //
+                // ADDED UIDNO @SIMRAN:13APR2023
+                if ($headings['columnName'] == 'Uidno') {
+                   $user_adhaar_card = $user[$headings['position']];
+                }
+                //
+                //ADDED Cus.Type @SIMRAN:13APR2023
+                if ($headings['columnName'] == 'Cus.Type') {
+                   $user_ = $user[$headings['position']];
+                }            
+                
+            }
+            //
+            //
+//            echo 'user_fname == ' . $user_fname . ' || ' . 'user_type == ' . $user_type . ' || ' . 'user_mobile == ' . $user_mobile . ' || ' . 'user_city == ' . $user_city;
+            //echo("<br/>");
+            //die;
+            //
+            //
+            $user_firm_id = $selFirmId;
+            //
+//            echo 'user_firm_id == ' . $user_firm_id;
+            //echo("<br/>");
+            //
+            //
+            if ($user_firm_id != '' && $user_firm_id != NULL) {
+            // 
+            //    
+            if ($user_fname != '' && $user_fname != NULL && 
+                $user_type != '' && $user_type != NULL) {
+            // 
+            //
+            if ($user_type == 'SALESMAN') {
+                //
+                $user_type = 'STAFF';
+                $acc_user_acc = 'Employee & Staff';
+                $acc_pri_acc = 'Employee';
+                $user_category = 'Executive'; 
+                $user_priority = 'New Staff';
+                $user_father_name = NULL;
+                $user_shop_name = NULL;
+                //
+            }
+            //
+            //
+            if ($user_type == 'UN REGISTERD DEALER' || $user_type == 'KARIGAR' || $user_type == 'SUPPLIER') {
+                //
+                if ($user_type == 'KARIGAR') {
+                    $user_category = 'Karigar';   
+                } else {
+                    $user_category = 'Retailer';   
+                }
+                //
+                if ($user_type == 'UN REGISTERD DEALER' || $user_type == 'KARIGAR') {
+                    $user_type = 'SUPPLIER';
+                }
+                //
+                $acc_user_acc = 'Sundry Creditors';
+                $acc_pri_acc = 'Liabilities';
+                //                
+                $user_priority = "New Supplier";
+                $user_father_name = NULL;
+                $user_shop_name = $user_fname;
+                //
+            }
+            // 
+            // 
+            $user_type = rtrim($user_type);
+            if ($user_type == 'CUSTOMER') {
+                //
+                $acc_user_acc = 'Sundry Debtors';
+                $acc_pri_acc = 'Assets';
+                $user_category = 'Customer';  
+                $user_priority = "New Customer";
+                $user_father_name = "S";
+                $user_shop_name = NULL;
+                //
+            }
+            
+             $user_type = rtrim($user_type);
+            //             
+            //
+            if ($user_type == 'CUSTOMER' || $user_type == 'SUPPLIER' || $user_type == 'STAFF') { 
+            //
+            //           
+            if ($user_type == 'STAFF') {
+                $qLastCustDetails = "SELECT user_pid, user_uid FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+                                  . "AND user_type = 'STAFF' order by user_pid desc LIMIT 0,1";
+            } 
+            else if ($user_type == 'SUPPLIER') {
+                $qLastCustDetails = "SELECT user_pid, user_uid FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+                                  . "AND user_type = 'SUPPLIER' order by user_pid desc LIMIT 0,1";
+            } 
+            else {
+                $qLastCustDetails = "SELECT user_pid, user_uid FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+                                  . "AND user_type = 'CUSTOMER' order by user_pid desc LIMIT 0,1";
+            }
+            //
+            $resLastCustDetails = mysqli_query($conn, $qLastCustDetails);
+            $rowLastCustDetails = mysqli_fetch_array($resLastCustDetails, MYSQLI_ASSOC);
+            //
+            $uPreCustId = NULL;
+            $uPreCustId = $rowLastCustDetails['user_pid'];
+            $ucustId = NULL;
+            $ucustId = $rowLastCustDetails['user_uid'];
+            //
+            if ($ucustId == NULL || $ucustId == '') {
+                $ucustId = '1';
+            } else {
+                $ucustId++;
+            }
+            //
+            if ($uPreCustId == NULL || $uPreCustId == '') {
+                if ($user_type == 'STAFF') {
+                    $uPreCustId = 'ES';
+                } else if ($user_type == 'SUPPLIER') {
+                    $uPreCustId = 'W';
+                } else {
+                    $uPreCustId = 'C';
+                }
+            }
+            //
+            //
+            $user_pid = $uPreCustId;
+            $user_uid = $ucustId;
+            //
+            //
+            //echo '$user_fname == '.$user_fname.'<br />';   
+            //echo '$user_firm_id == '.$user_firm_id.'<br />';  
+            //echo '$acc_pri_acc == '.$acc_pri_acc.'<br />';
+            //echo '$acc_user_acc == '.$acc_user_acc.'<br />';
+            //
+            //
+            // FOR USER ACCOUNT ID @PRIYANKA-08SEP21
+            $qSelAcc = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' "
+                     . "and acc_firm_id = '$user_firm_id' "
+                     . "and acc_pri_acc = '$acc_pri_acc' and acc_user_acc = '$acc_user_acc'";
+            //
+            $resAcc = mysqli_query($conn, $qSelAcc);
+            $accAvail = mysqli_num_rows($resAcc);
+            //
+            //echo '$accAvail == '.$accAvail.'<br /><br />';
+            //
+            if ($accAvail > 0) {
+                //
+                $rowAccId = mysqli_fetch_array($resAcc);
+                $user_acc_id = $rowAccId['acc_id'];
+                //
+            }
+            //     
+            //echo '$user_fname == '.$user_fname.'<br />';   
+            //echo '$user_type == '.$user_type.'<br />';    
+            //echo '$user_acc_id == '.$user_acc_id.'<br /><br />';
+            //    
+            $user_owner_id = $sessionOwnerId;
+            //        
+            //  
+            if ($balanceDate != '' && $balanceDate != NULL) {
+                $user_balance_date = date("d M Y", strtotime($balanceDate));
+            } else {
+                $user_balance_date = date("d M Y");
+            }
+            //
+            //echo '$user_balance_date == ' . $user_balance_date . '<br />';
+            //
+            $user_balance_date = strtoupper($user_balance_date);
+            //
+            $arrAddDate = explode(' ', $user_balance_date);
+            //
+            $balDay = $arrAddDate[0];
+            $balMonth = strtoupper($arrAddDate[1]);
+            $balYear = $arrAddDate[2];
+            //
+            //
+            $user_comm_upd_date = '01 APR ' . $financialYear;    
+            //
+            //$user_comm_upd_date = '01 APR 2021';                                        
+            //                                  
+            // 
+            //echo '$user_comm_upd_date == '.$user_comm_upd_date.'<br />';
+            //                                                            
+            //                                                                                                                                                                                
+            //echo '$DOB == '.$DOB.'<br />';
+            //
+            if ($DOB != '' && $DOB != NULL) {
+                $user_DOB = date("d M Y", strtotime($DOB));
+            } else {
+                $user_DOB = NULL;
+            }
+            //
+            //echo '$user_DOB == '.$user_DOB.'<br />';
+            //
+            $user_DOB = strtoupper($user_DOB);
+            //
+            //
+            //echo '$marriageDate == '.$marriageDate.'<br />';
+            //
+            if ($marriageDate != '' && $marriageDate != NULL) {
+                $user_marriage_any = date("d M Y", strtotime($marriageDate));
+            } else {
+                $user_marriage_any = NULL;
+            }
+            //
+            //echo '$user_marriage_any == '.$user_marriage_any.'<br /><hr>';
+            //
+            $user_marriage_any = strtoupper($user_marriage_any);
+            //
+            //
+            $user_address = $user_add;
+            //            
+            $user_country = 'India';
+            //
+            $user_status = 'Active';
+            //
+            //
+            $allUserMobile = NULL;
+            $allUserMobile_1 = NULL;
+            $allUserMobile_2 = NULL;
+            $allUserMobile_3 = NULL;
+            $allUserMobile_4 = NULL;
+            //
+            //
+            //$allUserMobile = $user_mobile . '_';
+            //
+            //
+            //echo '$allUserMobile == '.$allUserMobile.'<br /><hr>';
+            //
+            //
+            $noOfRowsMobileNumber = NULL;
+            $noOfRowsMobileNumber1 = NULL;
+            $noOfRowsMobileNumber2 = NULL;
+            $noOfRowsMobileNumber3 = NULL;
+            $noOfRowsMobileNumber4 = NULL;            
+            //
+            //
+            //
+            //
+            if($user_mobile != ''){
+            $qSelMobileNumber = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+                              . "AND user_mobile = '$user_mobile'"
+                              . "ORDER BY user_id ASC ";
+                            //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+            //
+            //echo '$qSelMobileNumber == '.$qSelMobileNumber.'<br /><hr>';
+            //
+            $resMobileNumber = mysqli_query($conn, $qSelMobileNumber);
+            $noOfRowsMobileNumber = mysqli_num_rows($resMobileNumber);
+            }else{
+                $noOfRowsMobileNumber = 0;
+            }
+            //
+            //
+            //echo '$noOfRowsMobileNumber == ' . $noOfRowsMobileNumber.'<br /><hr>';
+            //
+            //
+            if ($noOfRowsMobileNumber == 0) {
+//                //
+//                //
+//                //
+//                //
+//                //$noOfRowsMobileNumber = ($noOfRowsMobileNumber);
+//                //
+//                //echo '$noOfRowsMobileNumber == ' . $noOfRowsMobileNumber.'<br /><hr>';
+//                //
+//                $allUserMobile_1 = $user_mobile . '_1';
+//                //
+//                $qSelMobileNumber1 = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+//                                   . "AND user_mobile = '$allUserMobile_1' "
+//                                   . "ORDER BY user_id ASC ";
+//                                 //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+//                //
+//                //echo '$qSelMobileNumber1 == '.$qSelMobileNumber1.'<br /><hr>';
+//                //
+//                $resMobileNumber1 = mysqli_query($conn, $qSelMobileNumber1);
+//                $noOfRowsMobileNumber1 = mysqli_num_rows($resMobileNumber1);
+//                //
+//                if ($noOfRowsMobileNumber1 > 0) {
+//                    //
+//                    //
+//                    $allUserMobile_2 = $user_mobile . '_2';
+//                    //
+//                    $qSelMobileNumber2 = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+//                                       . "AND user_mobile = '$allUserMobile_2' "
+//                                       . "ORDER BY user_id ASC ";
+//                                     //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+//                    //
+//                    //echo '$qSelMobileNumber2 == '.$qSelMobileNumber2.'<br /><hr>';
+//                    //
+//                    $resMobileNumber2 = mysqli_query($conn, $qSelMobileNumber2);
+//                    $noOfRowsMobileNumber2 = mysqli_num_rows($resMobileNumber2);
+//                    //
+//                    //
+//                    if ($noOfRowsMobileNumber2 > 0) {
+//                        //
+//                        //
+//                        $allUserMobile_3 = $user_mobile . '_3';
+//                        //
+//                        $qSelMobileNumber3 = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+//                                           . "AND user_mobile = '$allUserMobile_3' "
+//                                           . "ORDER BY user_id ASC ";
+//                                         //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+//                        //
+//                        //echo '$qSelMobileNumber3 == '.$qSelMobileNumber3.'<br /><hr>';
+//                        //
+//                        $resMobileNumber3 = mysqli_query($conn, $qSelMobileNumber3);
+//                        $noOfRowsMobileNumber3 = mysqli_num_rows($resMobileNumber3);
+//                        //
+//                        //
+//                        if ($noOfRowsMobileNumber3 > 0) {
+//                            //
+//                            //
+//                            $allUserMobile_4 = $user_mobile . '_4';
+//                            //
+//                            $qSelMobileNumber4 = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+//                                               . "AND user_mobile = '$allUserMobile_4' "
+//                                               . "ORDER BY user_id ASC ";
+//                                             //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+//                            //
+//                            //echo '$qSelMobileNumber4 == '.$qSelMobileNumber4.'<br /><hr>';
+//                            //
+//                            $resMobileNumber4 = mysqli_query($conn, $qSelMobileNumber4);
+//                            $noOfRowsMobileNumber4 = mysqli_num_rows($resMobileNumber4);
+//                            //
+//                            //
+//                            if ($noOfRowsMobileNumber4 > 0) {
+//                                //
+//                                //
+//                                $allUserMobile_5 = $user_mobile . '_5';
+//                                //
+//                                $qSelMobileNumber5 = "SELECT * FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+//                                                   . "AND user_mobile = '$allUserMobile_5' "
+//                                                   . "ORDER BY user_id ASC ";
+//                                                 //. "AND user_firm_id = '$user_firm_id' ORDER BY user_id ASC";
+//                                //
+//                                //echo '$qSelMobileNumber5 == '.$qSelMobileNumber5.'<br /><hr>';
+//                                //
+//                                $resMobileNumber5 = mysqli_query($conn, $qSelMobileNumber5);
+//                                $noOfRowsMobileNumber5 = mysqli_num_rows($resMobileNumber5);
+//                                //
+//                                //
+//                                if ($noOfRowsMobileNumber5 > 0) {
+//                                    //
+//                                    $user_mobile = $user_mobile . '_6';
+//                                    //
+//                                } else {
+//                                    //
+//                                    $user_mobile = $user_mobile . '_5';
+//                                    //
+//                                }
+//                                //
+//                            } else {
+//                                //
+//                                $user_mobile = $user_mobile . '_4';
+//                                //
+//                            }
+//                            //
+//                        } else {
+//                            //
+//                            $user_mobile = $user_mobile . '_3';
+//                            //
+//                        }
+//                        //
+//                    } else {
+//                        //
+//                        $user_mobile = $user_mobile . '_2';
+//                        //
+//                    }
+//                    //
+//                } else {
+//                    //
+//                    $user_mobile = $user_mobile . '_1';
+//                    //
+//                }
+//            }
+            //
+            //
+            //echo '$user_mobile == '.$user_mobile.'<br /><hr>';
+            //echo '$rowsCounter == '.$rowsCounter.'<br /><hr>';
+            //
+            //
+            if ($user_mobile == '' || $user_mobile == NULL) {
+                $user_mobile = NULL;
+            }
+            //
+            if ($user_phone == '' || $user_phone == NULL) {
+                $user_phone = NULL;
+            }
+            //
+            if ($user_DOB == '' || $user_DOB == NULL) {
+                $user_DOB = NULL;
+            }
+            //
+            if ($user_marriage_any == '' || $user_marriage_any == NULL) {
+                $user_marriage_any = NULL;
+            }
+            //
+            //
+            if ($user_father_name == '' || $user_father_name == NULL) {
+                $user_father_name = NULL;
+            }
+            //
+            //
+            if ($user_shop_name == '' || $user_shop_name == NULL) {
+                $user_shop_name = NULL;
+            }            
+            //
+            //
+            $user_fname = stripslashes("$user_fname");
+            //
+            //
+            if ($user_city == '.HARDOI') {
+                $user_city = "HARDOI";
+            }
+            //
+            //
+            if ($user_state == 'Andaman & Nicobar Islands') {
+                $user_state = "Andaman and Nicobar Islands";
+            }
+            //
+            //
+            parse_str(getTableValues("SELECT state_code FROM state WHERE state_name = '$user_state' "
+                                   . "AND state_own_id = '$user_owner_id'"));
+            //
+            //echo '$state_code == ' . $state_code . '<br />';
+            //
+            $user_state_code = $state_code;
+            //
+            //
+            if ($user_state_code == '' || $user_state_code == NULL) {
+                $user_state_code = NULL;
+            }
+            //
+            //
+            if ($user_state == '' || $user_state == NULL) {
+                $user_state_code = NULL;
+            }
+            //
+            //
+            if ($user_adhaar_card == '' || $user_adhaar_card == NULL) {
+                $user_adhaar_card = NULL;
+            }
+            
+            //
+            //
+            if ($user_cash_balance > 0) {
+                $user_cash_bal_crdr = 'DR';
+            } else {
+                $user_cash_bal_crdr = 'CR';
+            }
+            //
+            //
+            $user_cash_balance = abs($user_cash_balance);
+            //
+            //
+            if ($user_cash_balance == 0) {
+                $user_cash_balance = '';
+            }
+            //
+            //
+            $user_lname = '';
+            $user_mother_name = '';
+            //
+            //
+            if ($user_mobile != '' && $user_mobile != NULL) {             
+            //
+            //
+            $query = "INSERT INTO user (user_owner_id, user_firm_id, user_type, user_category, 
+                                        user_pid, user_uid,	
+                                        user_fname, user_lname, user_father_name, user_mother_name, user_shop_name, 
+                                        user_current_address, user_add, 
+                                        user_city, user_state, user_state_code, user_country, 
+                                        user_pan_it_no, user_sale_tax_no, user_cst_no, 
+                                        user_reference, user_monthly_income, 
+                                        user_cash_balance, user_cash_bal_crdr, user_gd_ffn_wt, user_sl_ffn_wt,
+                                        user_mobile, user_phone, user_status, user_since,
+                                        user_DOB, user_marriage_any, user_acc_id, 
+                                        user_priority, user_comm_upd_date,user_adhaar_card) 
+                                VALUES ('$user_owner_id', '$user_firm_id', '$user_type', '$user_category', 
+                                        '$user_pid', '$user_uid',
+                                        '$user_fname', '$user_lname', '$user_father_name', '$user_mother_name', '$user_shop_name', 
+                                        '$user_current_address', '$user_address', 
+                                        '$user_city', '$user_state', '$user_state_code', '$user_country',
+                                        '$user_pan_it_no', '$user_sale_tax_no', '$user_cst_no',
+                                        '$user_reference', '$user_monthly_income', 
+                                        '$user_cash_balance', '$user_cash_bal_crdr', '$user_gd_ffn_wt', '$user_sl_ffn_wt',   
+                                        '$user_mobile', '$user_phone', '$user_status', $currentDateTime,
+                                        '$user_DOB', '$user_marriage_any', '$user_acc_id', 
+                                        '$user_priority', '$user_comm_upd_date','$user_adhaar_card')";
+            //
+            //
+            } else {
+            //
+            //    
+            $query = "INSERT INTO user (user_owner_id, user_firm_id, user_type, user_category, 
+                                        user_pid, user_uid,	
+                                        user_fname, user_lname, user_father_name, user_mother_name, user_shop_name, 
+                                        user_current_address, user_add, 
+                                        user_city, user_state, user_state_code, user_country, 
+                                        user_pan_it_no, user_sale_tax_no, user_cst_no, 
+                                        user_reference, user_monthly_income, 
+                                        user_cash_balance, user_cash_bal_crdr, user_gd_ffn_wt, user_sl_ffn_wt,
+                                        user_mobile, user_phone, user_status, user_since,
+                                        user_DOB, user_marriage_any, user_acc_id, 
+                                        user_priority, user_comm_upd_date,user_adhaar_card) 
+                                VALUES ('$user_owner_id', '$user_firm_id', '$user_type', '$user_category', 
+                                        '$user_pid', '$user_uid',
+                                        '$user_fname', '$user_lname', '$user_father_name', '$user_mother_name', '$user_shop_name', 
+                                        '$user_current_address', '$user_address', 
+                                        '$user_city', '$user_state', '$user_state_code', '$user_country',
+                                        '$user_pan_it_no', '$user_sale_tax_no', '$user_cst_no',
+                                        '$user_reference', '$user_monthly_income', 
+                                        '$user_cash_balance', '$user_cash_bal_crdr', '$user_gd_ffn_wt', '$user_sl_ffn_wt',   
+                                         NULL, '$user_phone', '$user_status', $currentDateTime,
+                                        '$user_DOB', '$user_marriage_any', '$user_acc_id', 
+                                        '$user_priority', '$user_comm_upd_date','$user_adhaar_card')";  
+            //
+            //
+            }
+            //
+            //
+           // echo '$query == '.$query.'<br />';
+            //die;
+            //
+            //
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            //
+            //
+            parse_str(getTableValues("SELECT user_id FROM user WHERE user_owner_id = '$user_owner_id' "
+                                   . "AND user_pid = '$user_pid' AND user_uid = '$user_uid' ORDER BY user_id DESC LIMIT 0,1"));
+            //
+            //
+            if ($user_cash_balance <> 0) {
+                user_opening_balance($user_id, $user_firm_id, $user_acc_id, $user_cash_balance, $user_cash_bal_crdr, '', '', '', '', '', '', $user_comm_upd_date, '');
+            }
+            //
+            //
+            $showMess = 'User Data Imported Successfully!!!';
+            //
+            //
+            }
+            //
+            //
+            } else {
+                //
+                //
+                //
+                //
+                $acc_firm_id = $selFirmId;
+                //
+                //
+                if ($acc_firm_id != '' && $acc_firm_id != NULL) {
+                //
+                //
+                //  
+                if ($balanceDate != '' && $balanceDate != NULL) {
+                    $acc_balance_date = date("d M Y", strtotime($balanceDate));
+                } else {
+                    $acc_balance_date = date("d M Y");
+                }
+                //
+                //echo '$acc_balance_date == ' . $acc_balance_date . '<br />';
+                //
+                $acc_balance_date = strtoupper($acc_balance_date);
+                //
+                $arrAddDate = explode(' ', $acc_balance_date);
+                //
+                $balDay = $arrAddDate[0];
+                $balMonth = strtoupper($arrAddDate[1]);
+                $balYear = $arrAddDate[2];
+                //
+                //
+                $acc_cash_balance_date = '01 APR ' . $financialYear;    
+                //
+                //$acc_cash_balance_date = '01 APR 2021';    
+                //                                  
+                // 
+                //echo '$acc_cash_balance_date == ' . $acc_cash_balance_date . '<br />';
+                //                                                            
+                //
+                // PURCHASE, SALE @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'PURCHASE') {                    
+                    $acc_pri_acc = 'Expenses';
+                    $acc_pri_grp = 'Purchase Accounts';
+                    $acc_main_acc = 'Purchase Accounts';
+                    //
+                    if ($user_fname == 'PURCHASE') {
+                        $acc_user_acc = 'Purchase Accounts';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    }                    
+                }
+                //
+                if ($user_type == 'SALE') {                    
+                    $acc_pri_acc = 'Income';
+                    $acc_pri_grp = 'Sales Accounts';
+                    $acc_main_acc = 'Sales Accounts';
+                    //
+                    if ($user_fname == 'SALE') {
+                        $acc_user_acc = 'Sales Accounts';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                // EXPENSES (INDIRECT), INCOMES (INDIRECT), EXPENSES (DIRECT), INCOMES (DIRECT) @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'EXPENSES (INDIRECT)') {                    
+                    $acc_pri_acc = 'Expenses';
+                    $acc_pri_grp = 'Indirect Expenses';
+                    $acc_main_acc = 'Indirect Expenses';
+                    //
+                    if ($user_fname == 'EXPENSES (INDIRECT)') {
+                        $acc_user_acc = 'Indirect Expenses';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'INCOMES (INDIRECT)') {                    
+                    $acc_pri_acc = 'Income';
+                    $acc_pri_grp = 'Indirect Incomes';
+                    $acc_main_acc = 'Indirect Incomes';
+                    //
+                    if ($user_fname == 'INCOMES (INDIRECT)') {
+                        $acc_user_acc = 'Indirect Incomes';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'EXPENSES (DIRECT)') {                    
+                    $acc_pri_acc = 'Expenses';
+                    $acc_pri_grp = 'Direct Expenses';
+                    $acc_main_acc = 'Direct Expenses';
+                    //
+                    if ($user_fname == 'EXPENSES (DIRECT)') {
+                        $acc_user_acc = 'Direct Expenses';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'INCOMES (DIRECT)') {                    
+                    $acc_pri_acc = 'Income';
+                    $acc_pri_grp = 'Direct Incomes';
+                    $acc_main_acc = 'Direct Incomes';
+                    //
+                    if ($user_fname == 'INCOMES (DIRECT)') {
+                        $acc_user_acc = 'Direct Incomes';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                // SUNDRY DEBTORS, SUNDRY CREDITORS @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'SUNDRY DEBTORS') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Sundry Debtors';
+                    //
+                    if ($user_fname == 'SUNDRY DEBTORS') {
+                        $acc_user_acc = 'Sundry Debtors';
+                    } else {
+                        //
+                        if (($user_mobile == '' || $user_mobile == NULL) &&
+                            ($user_address == '' || $user_address == NULL) && 
+                            ($user_city == '' || $user_city == NULL) && 
+                            ($user_country == '' || $user_country == NULL)) {
+                             $acc_user_acc = $user_fname;
+                        } else {
+                             $acc_user_acc = '';
+                        }
+                    } 
+                }
+                //
+                if ($user_type == 'SUNDRY CREDITORS') {                    
+                    $acc_pri_acc = 'Liabilities';
+                    $acc_pri_grp = 'Current Liabilities';
+                    $acc_main_acc = 'Sundry Creditors';
+                    //
+                    if ($user_fname == 'SUNDRY CREDITORS') {
+                        $acc_user_acc = 'Sundry Creditors';
+                    } else {
+                        //
+                        if (($user_mobile == '' || $user_mobile == NULL) &&
+                            ($user_address == '' || $user_address == NULL) && 
+                            ($user_city == '' || $user_city == NULL) && 
+                            ($user_country == '' || $user_country == NULL)) {
+                             $acc_user_acc = $user_fname;
+                        } else {
+                             $acc_user_acc = '';
+                        }
+                    } 
+                }
+                //
+                // DUTIES & TAXES, FIXED ASSETS, DEPOSITS (LIABILITIES) @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'DUTIES & TAXES') {                    
+                    $acc_pri_acc = 'Liabilities';
+                    $acc_pri_grp = 'Current Liabilities';
+                    $acc_main_acc = 'Duties & Taxes';
+                    //
+                    if ($user_fname == 'DUTIES & TAXES') {
+                        $acc_user_acc = 'Duties & Taxes';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'FIXED ASSETS') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Fixed Assets';
+                    $acc_main_acc = 'Fixed Assets';
+                    //
+                    if ($user_fname == 'FIXED ASSETS') {
+                        $acc_user_acc = 'Fixed Assets';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'BANK' || $user_type == 'BANK OCC A/C') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Bank Account';
+                    //
+                    if ($user_fname == 'BANK') {
+                        $acc_user_acc = 'Bank Account';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'PROFIT & LOSS') {                    
+                    $acc_pri_acc = 'ProfitLoss';
+                    $acc_pri_grp = 'Profit & Loss Acc';
+                    $acc_main_acc = 'Profit & Loss Acc';
+                    //
+                    if ($user_fname == 'PROFIT & LOSS') {
+                        $acc_user_acc = 'Profit & Loss Acc';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                // CURRENT ASSETS, LOANS & ADVANCES @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'CURRENT ASSETS') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Current Assets';
+                    //
+                    if ($user_fname == 'CURRENT ASSETS') {
+                        $acc_user_acc = 'Current Assets';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    }
+                }
+                //
+                if ($user_type == 'LOANS & ADVANCES') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Loans & Advances (Asset)';
+                    //
+                    if ($user_fname == 'LOANS & ADVANCES') {
+                        $acc_user_acc = 'Loans & Advances (Asset)';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                // SECURED LOANS, UNSECURED LOANS @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'SECURED LOANS') {                    
+                    $acc_pri_acc = 'Liabilities';
+                    $acc_pri_grp = 'Loans';
+                    $acc_main_acc = 'Secured Loans';
+                  
+                    if ($user_fname == 'SECURED LOANS') {
+                        $acc_user_acc = 'Secured Loans';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'UNSECURED LOANS') {                    
+                    $acc_pri_acc = 'Liabilities';
+                    $acc_pri_grp = 'Loans';
+                    $acc_main_acc = 'Unsecured Loans';
+                    //
+                    if ($user_fname == 'UNSECURED LOANS') {
+                        $acc_user_acc = 'Unsecured Loans';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                // STOCK IN HAND, CAPITAL, CASH, INVESTMENT @PRIYANKA-08SEP21
+                //
+                if ($user_type == 'STOCK IN HAND') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Stock in Hand';
+                    //
+                    if ($user_fname == 'STOCK IN HAND') {
+                        $acc_user_acc = 'Stock in Hand';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'CAPITAL') {                    
+                    $acc_pri_acc = 'Liabilities';
+                    $acc_pri_grp = 'Capital Account';
+                    $acc_main_acc = 'Capital Account';
+                    //
+                    if ($user_fname == 'CAPITAL') {
+                        $acc_user_acc = 'Capital Account';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                if ($user_type == 'CASH') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Current Assets';
+                    $acc_main_acc = 'Cash in Hand';
+                    //
+                    if ($user_fname == 'CASH') {
+                        $acc_user_acc = 'Cash in Hand';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                // 
+                if ($user_type == 'INVESTMENT') {                    
+                    $acc_pri_acc = 'Assets';
+                    $acc_pri_grp = 'Investments';
+                    $acc_main_acc = 'Investments';
+                    //
+                    if ($user_fname == 'INVESTMENT') {
+                        $acc_user_acc = 'Investments';
+                    } else {
+                        $acc_user_acc = $user_fname;
+                    } 
+                }
+                //
+                //
+                $acc_cash_balance = $user_cash_balance;
+                //
+                if ($acc_cash_balance < 0) {
+                    $acc_cash_balance_crdr = 'CR';
+                } else {
+                    $acc_cash_balance_crdr = 'DR';
+                }
+                //
+                $acc_cash_balance = abs($user_cash_balance);
+                //
+                $qSelAcc = "SELECT * FROM accounts where acc_own_id = '$_SESSION[sessionOwnerId]' "
+                         . "and acc_firm_id = '$acc_firm_id' "
+                         . "and acc_user_acc = '$acc_user_acc'";
+                //
+                $resAcc = mysqli_query($conn, $qSelAcc);
+                $accAvail = mysqli_num_rows($resAcc);
+                //
+                //
+                if ($acc_firm_id != '' && $acc_firm_id != NULL && 
+                    $acc_pri_acc != '' && $acc_pri_acc != NULL && 
+                    $acc_main_acc != '' && $acc_main_acc != NULL && 
+                    $acc_user_acc != '' && $acc_user_acc != NULL) {
+                        //
+                        if ($accAvail == 0) {
+                            //
+                            if ($user_type != 'RECEIVE' && $user_type != 'ISSUE' && 
+                                $user_type != 'DEPOSITS (LIABILITIES)' && $user_type != 'ADVANCES & RECEIVABLES') {
+                                //
+                                $qInsertAccount = "INSERT INTO accounts (acc_own_id, acc_pri_acc, acc_pri_grp, acc_main_acc, acc_user_acc, acc_created_by, acc_firm_id, acc_cash_balance, acc_cash_balance_crdr, acc_cash_balance_date) "
+                                                . "VALUES ('$_SESSION[sessionOwnerId]', '$acc_pri_acc', '$acc_pri_grp', '$acc_main_acc', '$acc_user_acc', 'User', '$acc_firm_id', '$acc_cash_balance', '$acc_cash_balance_crdr', '$acc_cash_balance_date')";
+                                //
+                                //echo '$qInsertAccount == ' . $qInsertAccount . '<br />';
+                                //die;
+                                //
+                                if (!mysqli_query($conn, $qInsertAccount)) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+        //
+        } else { ?>
+            <div class="fs_13 ff_calibri bold" style="color:red;">Issue has been detected with Firm. Please select Firm! </div>
+        <?php 
+        die; }
+    }
+    //    
+    $rowsCounter++;
+    //   
+    $user_mobile = NULL;
+    $allUserMobile = NULL;
+    $noOfRowsMobileNumber = NULL;
+    //
+}
+//
+//
+//echo '$rowsCounter == ' . $rowsCounter . '<br />';
+//
+//
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+     $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/omHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/orHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/olHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/ogHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else {
+    $showMess = 'Your session has expired. Please log in again!!!';
+    header('Location: ' . $documentRootBSlash . '/omLoginPage.php?showMess=' . $showMess);
+    exit;
+}
 ?>

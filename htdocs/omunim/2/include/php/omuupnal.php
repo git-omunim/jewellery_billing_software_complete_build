@@ -1,3 +1,315 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 06-Feb-2011 6:57:33 PM
+ *
+ * @FileName: omuupnal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+?>
+<div id="mainMiddle">
+    <div id="udhaarDetPanel">
+        <?php
+        $panel = $_GET['panelName'];
+        $upPanelName = $_GET['udhaarUpdateRows'];
+        if ($upPanelName == 'UdhaarUpdateRows') {
+            $rowsPerPage = $_GET['rowsPerPage'];
+            $ominValue = $rowsPerPage;
+            $ominOption = 'indiudpnrw';
+            include 'ommpindc.php';
+        }
+        $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiudpnrw'";
+        $resGNoOfRows = mysqli_query($conn, $qSelGNoOfRows);
+        $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+        $rowsPerPage = $rowGNoOfRows['omin_value'];
+        if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+            $rowsPerPage = 15;
+        }
+        $checkNextRows = $rowsPerPage * 2;
+        // by default we show first page
+        $pageNum = 1;
+        $gCounter = 0;
+        // if $_GET['page'] defined, use it as page number
+        if (isset($_GET['page'])) {
+            $pageNum = $_GET['page'];
+            $gCounter = ($pageNum - 1) * $rowsPerPage;
+        }
+        // counting the offset
+        $perOffset = ($pageNum - 1) * $rowsPerPage;
+        ?>
+        <?php
+        if ($_SESSION['sessionOwnIndStr'][25] != 'N') {
+            //
+            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+            // START TO CODE FOR NEW MENU DESIGN WITH TAB FORMAT AT UDHAAR PANEL @AUTHOR:MADHUREE-15APRIL2020
+            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+            //
+            ?>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1">
+                <tr>
+                    <td colspan="2" align="left">
+                        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                            <tr>
+                                <td valign="top" align="left" colspan="9">
+                                    <table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td valign="middle" align="left" width="20px">
+                                                <div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/udhaar32.png" alt="" /></div>
+                                            </td>
+                                            <td valign="middle" align="left">
+                                                <div class="textLabelHeading paddingRight5">UDHAAR PANEL</div>
+                                            </td>
+                                            <td align="center" valign="middle" class="orange">(
+                                                <input id="udharListtrowsPerPage" name="udharListtrowsPerPage" type="text" value="<?php echo $rowsPerPage; ?>" title="Enter number of Items To See In List"
+                                                       size="4" maxlength="4" class="inputFieldWithotBorder orange"
+                                                       onkeyup="if (event.keyCode == 13 && document.getElementById('udharListtrowsPerPage').value != '') {
+                                                                   showNoOfRows('<?php echo $documentRoot; ?>', document.getElementById('udharListtrowsPerPage').value, '1', 'UdhaarUpdateRows', '<?php echo $panel; ?>', '');
+                                                               }"
+                                                       onblur="if (document.getElementById('udharListtrowsPerPage').value != '') {
+                                                                   showNoOfRows('<?php echo $documentRoot; ?>', document.getElementById('udharListtrowsPerPage').value, '1', 'UdhaarUpdateRows', '<?php echo $panel; ?>', '');
+                                                               }
+                                                       "
+                                                       onclick="this.placeholder = 'ROWS';
+                                                               this.value = '';"
+                                                       onkeypress="javascript:return valKeyPressedForNumber(event);"/>
+                                                )
+                                            </td>
+                                            <td valign="middle" align="center">
+                                                <div id="ajaxLoadShowSearchUdhaarDiv" style="visibility: hidden" class="blackMess11">
+                                                    <?php include 'omzaajld.php'; ?>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                </tr>
+    <!--                <tr>
+                    <td align="center" colspan="2">
+                        <hr color="#B8860B" />
+                    </td>
+                </tr>-->
+    <!--                <tr align="left">
+                    <td align="left" valign="middle" colspan="2">
+                        <div id="searchUdhaarPanelDiv"></div>
+                    </td>
+                </tr>-->
+            </table>
+            <div class="m-portlet__body" style="margin-top: 2px;margin-bottom: 2px;">
+                <?php $panelName1 = $_REQUEST['panelName']; ?>
+                <ul class="nav nav-pills nav-pills--warning nav-fill" role="tablist" style="    height: 30px;background:#f9f7a2;border:0px solid #f9f0b5;box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.3);">
+                    <?php if ($_SESSION['sessionOwnIndStr'][25] == 'Y' || $_SESSION['sessionOwnIndStr'][25] == 'A' || $_SESSION['sessionOwnIndStr'][25] == 'B') { ?>
+                        <li class="nav-item crdr dropdown  <?php if ($panelName1 == 'activeUdhaarList' || $panelName1 == 'UdhaarPanel') {
+                    echo 'active';
+                } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr01" style="width:1%;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('activeUdhaarList');">
+                                ACTIVE UDHAAR
+                            </button>
+                            <button type="button" class="nav-link-inline-block  schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" data-toggle="tab" onclick="showAllUdhaarDetailsDiv('activeUdhaarListInt');">ACTIVE UDHAAR WITH INTEREST AMT</a>
+                            </div>
+                        </li>
+    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'A') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'allUdhaarList') {
+            echo 'active';
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr02" style="width:0px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('allUdhaarList');">
+                                ALL UDHAAR
+                            </button>
+                        </li>
+                         <li class="nav-item crdr dropdown <?php if($panelName1 == 'custCrDrList'){echo 'active';} ?>"  onclick="showact('crdr',this.getAttribute('id'))" id="crdr03" style="width:0px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('custCrDrList');">
+                                CUST CR/DR
+                            </button>
+                        </li>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'udhaarCustList') {
+            echo 'active';
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr03" style="width:0px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('udhaarCustList');">
+                                UDHAAR CUST
+                            </button>
+                        </li>
+                    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'Y' || $_SESSION['sessionOwnIndStr'][25] == 'A' || $_SESSION['sessionOwnIndStr'][25] == 'S') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'UdhaarDepositList') {
+                            echo 'active';
+                        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr04" style="width:20px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"  
+                                    onclick="showAllUdhaarDetailsDiv('UdhaarDepositList');" style="font-size: 16px;" >
+                                UDHAAR DEPOSIT
+                            </button>
+                        </li>
+    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'A') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'UdhaarList') {
+            echo 'active';
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr05" style="width:20px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('UdhaarList');">
+                                UDHAAR & DEPOSIT
+                            </button>
+                        </li>
+    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'Y' || $_SESSION['sessionOwnIndStr'][25] == 'A' || $_SESSION['sessionOwnIndStr'][25] == 'B') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'ActiveAdvanceMoney') {
+            echo 'active';           
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr06" style="width:20px;">
+                            <!-- Add new list to show all active advance @omkar24JAN 2024-->
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('ActiveAdvanceMoney');" >                          
+                                ACT. ADV. MONEY
+                            </button>
+                        </li>
+    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'A') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'AllAdvanceMoney') {
+            echo 'active';
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr07" style="width:0px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('AllAdvanceMoney');">
+                                ALL ADV. MONEY
+                            </button>
+                        </li>
+                    <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'A') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'AdvanceReturn') {
+                    echo 'active';
+                } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr08" style="width:0px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('AdvanceReturn');">
+                                ADV. RETURN
+                            </button>
+                        </li>
+            <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'A') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'Advance') {
+                    echo 'active';
+                } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr09" style="width:25px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"  
+                                    onclick="showAllUdhaarDetailsDiv('Advance');" style="font-size: 16px;" >
+                                ADV. MONEY-RETURN
+                            </button>
+                        </li>
+    <?php } ?>
+                          <?php } if ($_SESSION['sessionOwnIndStr'][25] == 'Y' || $_SESSION['sessionOwnIndStr'][25] == 'A' || $_SESSION['sessionOwnIndStr'][25] == 'B') { ?>
+                        <li class="nav-item crdr dropdown <?php if ($panelName1 == 'advanceMoney') {
+            echo 'active';
+        } ?>"  onclick="showact('crdr', this.getAttribute('id'))" id="crdr06" style="width:20px;">
+                            <button type="button" class="nav-link-inline-block schemClr" aria-haspopup="true" aria-expanded="false"
+                                    style="font-size: 16px;" onclick="showAllUdhaarDetailsDiv('advanceMoney');" >                          
+                                ADVANCE MONEY
+                            </button>
+                            <button type="button" class="nav-link-inline-block  schemClr dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" data-toggle="tab" onclick="showAllUdhaarDetailsDiv('settledList');">ADVANCE MONEY SETTLED REPORT</a>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+            <table width="100%">
+    <!--                <tr>
+                    <td align="center" colspan="2">
+                        <hr color="#B8860B" />
+                    </td>
+                </tr>-->
+            </table>
+                    <?php
+                }
+                //
+                // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                // END TO CODE FOR NEW MENU DESIGN WITH TAB FORMAT AT UDHAAR PANEL @AUTHOR:MADHUREE-15APRIL2020
+                // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+                //
+                ?>
+        <div id="udhaarSubDetailsDiv">
+            <div id="udhaarListPanelDiv">
+                <?php
+                if ($panel == 'udhaarCustList') {
+                    include 'omuualdt.php';
+                } else if ($panel == 'udhaarExpiredCustList') {
+                    include 'omuuexll.php';
+                } else if ($panel == 'udhaarCompleteList') {
+                    include 'omuualdt.php';
+                } else if ($panel == 'advanceMoney') {
+                    //
+                    $admnPanel = 'AdvanceMoney';
+                    //
+                    if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                        include 'omrtadmnlt.php';
+                    } else {
+                        include 'omadmnlt.php';
+                    }
+                    //
+                } else if ($panel == 'udhaarEmiList') {
+                    include 'omuemilt.php';
+                } else if ($panel == 'emiList') { //Start code to add condition for udhaar EMI List @Author:SHRI15MAY15
+                    include 'omsemilt.php';
+                } else if ($panel == 'UdhaarDepositList') { //Start code to add condition for udhaar EMI List @Author:SHRI15MAY15
+                    include 'omuddelt.php';
+                } else if ($panel == 'UdhaarList') { //Start code to add condition for udhaar EMI List @Author:SHRI15MAY15
+                    include 'omuualud.php';
+                } else if ($panel == 'Advance') { //Start code to add condition for udhaar EMI List @Author:SHRI15MAY15
+                    include 'omalamdt.php';
+                } else if ($panel == 'AdvanceReturn') { //Start code to add condition for advance return List @Author:RATNAKAR12MAY18
+                    include 'omadrtlt.php';
+                } else if ($panel == 'advanceCustList') { //Start code to add condition for advance return List @Author:RATNAKAR12MAY18
+                    include 'omadaldt.php';
+                } else if ($panel == 'activeUdhaarList') {
+                    //
+                    if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                        include 'omrtuuault.php';
+                    } else {
+                        include 'omuuault.php';
+                    }
+                    //
+                } else if ($panel == 'allUdhaarList') {
+                    include 'omuuallult.php';
+                } else if ($panel == 'AllAdvanceMoney') {
+                    include 'omalladvlt.php';
+                } else if ($panel == 'ActiveAdvanceMoney') { // add to show the active advance list @omkar24JAN2024
+                    include 'omuault.php';
+                }else if ($panel == 'custCrDrList') {
+                    include 'omcustcrdrlist.php';      // ADDED CUSTOMER CR/DR REPORRT@SIMRAN:03FEB2024
+                } else if ($panel == 'settledList') {
+                    include 'omsettledreport.php';   
+                } else {
+                    include 'omuuault.php';   
+                    //include 'omuddelt.php';
+                }
+                ?>
+            </div>
+            <!-----------Start to add print button @AUTHOR: SANDY11DEC13---------------->
+            <table width="100%" align="center">
+                <tr>
+                    <td align="center" class="noPrint">
+                        <a style="cursor: pointer;" 
+                           onclick="printGirviListPanel('udhaarSubDetailsDiv');">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='PRINT' title='PRINT'
+                                 width="32px" height="32px" /> 
+                        </a> 
+                    </td>
+                </tr>
+            </table>
+            <!-----------End to add print button @AUTHOR: SANDY11DEC13---------------->
+        </div>
+        <br />
+    </div>

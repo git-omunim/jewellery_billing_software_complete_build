@@ -1,3 +1,378 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: RAW METAL ISSUE FORM : AUTHOR @ DARSHANA 16 SEPT 2021
+ * **************************************************************************************
+ * 
+ * Created on 16 SEPT 2021 , 10:30 am
+ *
+ * @FileName: omrwmetisue.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.37
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-05MAR2021
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<div id="rawMetalIssueAddDiv">
+    <input type="hidden" id="preOrdInvNo" name="preOrdInvNo" value="<?php echo $_REQUEST['preOrdInvNo']; ?>" />
+    <input type="hidden" id="preOrdInvNo" name="postOrdInvNo" value="<?php echo $_REQUEST['postOrdInvNo']; ?>" />
+    <?php
+    //include 'ommptbupd255omg.php';
+
+    /*     * **Start code to call OmLayoutTable to set Crystal panel ***** */
+
+    $selStockPurOption = callOmLayoutTable('StockPurOption', '', 'select');
+    if ($selStockPurOption == '')
+        callOmLayoutTable('StockPurOption', 'RawStock', 'insert');
+    else
+        callOmLayoutTable('StockPurOption', 'RawStock', 'update');
+    /*     * **End code to call OmLayoutTable to set Crystal panel *********** */
+
+    if ($metType == '') {
+        $metType = $_POST['metType'];
+    }
+
+    if ($metType == '') {
+        $metType = $_GET['metType'];
+    }
+
+    $msg = $_GET['msg'];
+    $rwprId = $_GET['rwprId'];
+    $sessionOwnerId = $_SESSION[sessionOwnerId];
+
+    if ($simButton == '') {
+        $simButton = $_GET['simButton'];
+    }
+
+    if ($simButton == '') {
+        $simButton = $_POST['simButton'];
+    }
+
+    if ($userId == '' || $userId == NULL) {
+        $userId = $_REQUEST['custId'];
+    }
+
+    if ($suppId == '' || $suppId == NULL) {
+        $suppId = $_REQUEST['custId'];
+    }
+
+    if ($mainPanelDiv == '') {
+        $mainPanelDiv = $_GET['mainPanel'];
+    }
+
+    if ($transactionPanel == '') {
+        $transactionPanel = $_GET['transactionPanel'];
+    }
+
+    if ($panelDivName == '')
+        $panelDivName = $_GET['panelDivName'];
+
+    if ($CustomerAddedHome == '')
+        $CustomerAddedHome = $_GET['divMainMiddlePanel'];
+
+    if ($mainPanel == '')
+        $mainPanel = $_GET['mainPanel'];
+
+    if ($panelName == '')
+        $panelName = $_GET['rawPanelName'];
+
+    if ($panelName == '')
+        $panelName = $mainPanel;
+
+    if ($mainPanel == '')
+        $mainPanel = $panelName;
+
+    if ($rawPanelName == '')
+        $rawPanelName = $_GET['rawPanelName'];
+
+//        echo '$mainPanel='.$mainPanel.'<br>';
+//        echo '$mainPanelDiv == '.$mainPanelDiv.'<br />';
+//        echo '$rwprId == ' . $rwprId . '<br />';
+//        echo '$userId == '.$userId.'<br />';
+//        echo '$suppId == '.$suppId.'<br />';
+//        echo '$rawPanelName == '.$rawPanelName.'<br />';
+//        echo '$metType == '.$metType.'<br />';
+//        echo '$transactionPanel == '.$transactionPanel.'<br />';
+
+    if ($transactionPanel == '' && $metType == 'BUY') {
+        $transactionPanel = 'RawPurchase';
+    }
+
+    if ($transactionPanel == '' && $metType == 'SELL') {
+        $transactionPanel = 'RawSell';
+    }
+
+//        include 'ogadcsrmdt.php';
+    include 'omadcsrmisdt.php';
+    parse_str(getTableValues("SELECT user_fname FROM user WHERE user_owner_id='$sessionOwnerId' AND user_id ='$userId'"));
+
+
+    if ($user_fname == '')
+        $user_fname = $sttr_brand_id;
+
+    if ($sttr_brand_id == '')
+        $sttr_brand_id = $user_fname;
+
+    if ($custId == '')
+        $custId = $_GET['custId'];
+
+//        $rawPanelName = $panelName;
+//        echo '$rawPanelName='.$rawPanelName.'<br>';
+
+    include 'ogiartdv.php';
+
+    if ($metType == 'BUY') {
+        $hindiLabel = ' / RECIEVED / जमा';
+        $transactionType = 'PURBYSUPP';
+    } else if ($metType == 'SELL') {
+        $hindiLabel = ' / ISSUE / UDHAAR / लेना';
+        $transactionType = 'sell';
+    }
+
+    if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') {
+        //
+        $sttrId = $_GET['rwprId'];
+        //
+        $qSelCryDet = "SELECT * FROM stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                . "and sttr_sttr_id = '$sttrId' and sttr_status NOT IN ('DELETED') "
+                . "and sttr_indicator = 'stockCrystal' order by sttr_id asc";
+        //
+        $resCryDet = mysqli_query($conn, $qSelCryDet);
+        $noOfCry = mysqli_num_rows($resCryDet);
+        //
+        //echo '$qSelCryDet == '.$qSelCryDet.'<br />';
+        //echo '$noOfCry == '.$noOfCry.'<br />';
+    }
+    //
+    //
+        // *************************************************************************************************************
+    // START CODE FOR TAX AND GST SETTING ON FORMS @AUTHOR-PRIYANKA-09MAR2021
+    // *************************************************************************************************************
+    //
+        $selTaxAndGstSettingQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'TaxAndGstSetting'";
+    $resTaxAndGstSetting = mysqli_query($conn, $selTaxAndGstSettingQuery);
+    $rowTaxAndGstSetting = mysqli_fetch_array($resTaxAndGstSetting);
+    $TaxAndGstSettingValue = $rowTaxAndGstSetting['omly_value'];
+    //
+    // *************************************************************************************************************
+    // END CODE FOR TAX AND GST SETTING ON FORMS @AUTHOR-PRIYANKA-09MAR2021
+    // *************************************************************************************************************
+    //
+        //
+        // ***********************************************************************************************************************
+    // START CODE FOR HSN OPTION IN FORMS SETTING YES / NO @AUTHOR-PRIYANKA-22MAR2021
+    // ***********************************************************************************************************************
+    $selHSNOptionInFormsQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'HSNOptionInForms'";
+    $resHSNOptionInForms = mysqli_query($conn, $selHSNOptionInFormsQuery);
+    $rowHSNOptionInForms = mysqli_fetch_array($resHSNOptionInForms);
+    $HSNOptionInForms = $rowHSNOptionInForms['omly_value'];
+    
+    $queryratenortecutoption = "SELECT omly_value FROM omlayout WHERE omly_option = 'ratenortecutoption'";
+    $resratenortecutoption = mysqli_query($conn, $queryratenortecutoption);
+    $rowUratenortecutoption = mysqli_fetch_array($resratenortecutoption);
+    $sttr_ratecut_norate_option = $rowUratenortecutoption['omly_value'];
+// ***********************************************************************************************************************
+    // END CODE FOR HSN OPTION IN FORMS SETTING YES / NO @AUTHOR-PRIYANKA-22MAR2021
+    // ***********************************************************************************************************************
+    //omrwmetisuead
+    //ogrwmtad
+    ?>
+
+    <form name="add_raw_issue" id="add_raw_issue"
+          enctype="multipart/form-data" method="post"
+          action="include/php/omrwmetisuead.php"   
+          onsubmit="return addRawStock();">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td>
+                    <table align="left" border="0" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                           <td class="">
+                                <table>
+                                    <tr>
+                                        <td width="26px">
+                                            <img src="<?php echo $documentRoot; ?>/images/img/stock.png" alt="Add Stock" height="22px"/>
+                                        </td>
+                                        <td class="portlet-title caption">
+                                            <div class="main_link_brown16">
+                                                <b>ADD RAW METAL ISSUE</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="slPrDiv" 
+                         onload="calculateRawMetalIssue();">
+                        <!-- Start Code to Define Hidden inputs -->  
+                        <input type="hidden" id="sttr_ratecut_norate_option" name="sttr_ratecut_norate_option" value="<?php echo $sttr_ratecut_norate_option; ?>" />
+                        <input type="hidden" id="addItemValuation" name="addItemValuation"  />
+                        <input type="hidden" id="addItemCryFinVal" name="addItemCryFinVal"  />
+                        <input type="hidden" id="addItemCryCount" name="addItemCryCount"  />
+                        <input type="hidden" id="commonPanel" name="commonPanel" value="<?php echo $commonPanel; ?>" />
+                        <input type="hidden" id="noOfCry" name="noOfCry" value="<?php echo $noOfCry; ?>"/>
+                        <input type="hidden" id="globalPlusKeyId" name="globalPlusKeyId"/>
+                        <input id="sttr_final_valuation_by" name="sttr_final_valuation_by" value="<?php echo $sttr_final_valuation_by; ?>" type="hidden"/>
+                        <input type="hidden" id="addItemCryFinVal" name="addItemCryFinVal"/>
+                        <input type="hidden" id="addItemCryCount" name="addItemCryCount"/>
+                        <input type="hidden" id="noOfCry" name="noOfCry" value="<?php echo $noOfCry; ?>"/>
+                        <input type="hidden" id="itemDivCnt" name="itemDivCnt"/>
+                        <input type="hidden" id="itemTotalCrystalVal" name="itemTotalCrystalVal"/>	                                
+                        <input type="hidden" id="itstId" name="itstId" value="<?php echo $itstId; ?>"/>
+                        <input type="hidden" id="itstId" name="itstId" value="<?php echo $itstId; ?>" />
+                        <input type="hidden" id="sttr_barcode_prefix" name="sttr_barcode_prefix" value="<?php echo $sttr_barcode_prefix; ?>" />
+                        <input type="hidden" id="sttr_barcode" name="sttr_barcode" value="<?php echo $sttr_barcode; ?>" />                                
+                        <?php
+                        if ($rawPanelName != 'SellDetUpPanel' && $rawPanelName != 'SellPayUp' &&
+                                $rawPanelName != 'EstimateUpdate' && $rawPanelName != 'EstimatePayUp') {
+                            ?>
+                            <input type="hidden" id="sttr_sttr_id" name="sttr_sttr_id" value="<?php echo $itstId; ?>" />
+                            <input type="hidden" id="sttr_st_id" name="sttr_st_id" value="<?php echo $itstId; ?>" />
+                        <?php } ?>
+                        <?php // echo '$panelName='.$panelName;?>
+
+                        <input type="hidden" id="sellTotCrystal" name="sellTotCrystal" value="<?php echo $noOfCry; ?>" />
+                        <input type="hidden" id="slPrId" name="slPrId" value="<?php echo $slPrId; ?>"/>
+                        <!--<input type="hidden" id="slPrItemPurity" name="slPrItemPurity" value="<?php echo $newItemTunch; ?>"/>-->
+                        <input type="hidden" id="valueAdd" name="valueAdd"/>
+                        <input type="hidden" id="stockQty" name="stockQty" value="<?php echo $itst_quantity; ?>"/>
+                        <input type="hidden" id="purchaseGsWt" name="purchaseGsWt" value="<?php echo $itpr_gs_weight; ?>"/>
+                        <input type="hidden" id="autoEntry" name="autoEntry" value="<?php echo $omly_value; ?>"/>
+                        <input type="hidden" id="totalSellQty" name="totalSellQty" value="<?php echo $sellQty; ?>"/>
+                        <input type="hidden" id="totalPurQty" name="totalPurQty" value="<?php echo $totalPurQty; ?>"/>
+                        <input type="hidden" id="sttr_final_val_by" name="sttr_final_val_by" value="<?php echo $metalWtBy; ?>"/>
+                        <input type="hidden" id="slPrItemWtBy" name="slPrItemWtBy" value="<?php echo $metalWtBy; ?>"/>
+                        <input type="hidden" id="sttr_other_charges_by" name="sttr_other_charges_by" value="<?php echo $stsl_othr_chrg_by_type; ?>" />
+                        <input type="hidden" id="addItemLabourChgsBy" name="addItemLabourChgsBy" value="<?php echo $sttr_mkg_charges_by; ?>" />
+                        <input id="slPrItemValuation" name="slPrItemValuation" type="hidden" placeholder="Item Val" value="<?php echo $custFinalValWithOutTax; ?>"/>
+                        <input type="hidden" id="slPrMetalTotValuation" name="slPrMetalTotValuation" value="" />
+                        <input type="hidden" id="sttr_stone_valuation" name="sttr_stone_valuation"/>
+                        <input id="slPrCrystalTotTax" name="slPrCrystalTotTax" type="hidden"/>
+                        <input id="slPrItemCryTax" name="slPrItemCryTax" type="hidden"  value="<?php echo $itst_cry_tax_charges; ?>" /> 
+                        <input id="slPrCrystalValuation" name="slPrCrystalValuation" type="hidden" placeholder="CRYSTAL VALUATION" /><!--Code add hidden field -->
+                        <input type="hidden" id="invoiceRow" name="invoiceRow" value="<?php echo $rowInvPostId; ?>" />
+                        <input type="hidden" id="upPanel" name="upPanel" value="RawMetalIssue"/>
+                        <input type="hidden" id="custId" name="custId" value="<?php echo $custId; ?>" />
+                        <input type="hidden" id="sttr_stock_type" name="sttr_stock_type" value="<?php echo $newStockType; ?>" />
+                        <input type="hidden" id="sttr_cust_wastg_by" name="sttr_cust_wastg_by" value="<?php echo $sttr_cust_wastg_by; ?>"/>
+                        <input type="hidden" id="sttr_hallmark_uid" name="sttr_hallmark_uid" value="<?php echo $sttr_hallmark_uid; ?>"/>
+                        <input type="hidden" id="rawPanelName" name="rawPanelName" value="<?php echo $rawPanelName; ?>"/>
+                        <input type="hidden" id="payButClickId" name="payButClickId" value="false"/>
+                        <input type="hidden" id="rawMetalpanel" name="rawMetalpanel" value="RawMetalPanel" />
+
+                        <?php // echo '$rwprId='.$rwprId;?>
+                        <input type="hidden" id="rwprId" name="rwprId" value="<?php echo $rwprId; ?>"/>
+                        <input type="hidden" id="sttrId" name="sttrId" value="<?php echo $rwprId; ?>"/>
+                        <?php // echo '$metType=' . $metType;  ?>
+                        <input type="hidden" id="metType" name="metType" value="<?php echo $metType; ?>"/>
+                        <?php
+                        if ($rawPanelName != 'Estimate' && $rawPanelName != 'EstimateUpdate' &&
+                                $rawPanelName != 'EstimatePayUp') {
+                            ?>
+                            <input type="hidden" id="sttr_indicator" name="sttr_indicator" value="rawMetal" />
+                            <?php if ($sttr_transaction_type == 'ESTIMATESELL') { ?>
+                                <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value="ESTIMATESELL" />
+                            <?php } else { ?>
+                                <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value="sell" />
+                            <?php } ?>
+                        <?php } else { ?>
+
+                            <input type="hidden" id="sttr_indicator" name="sttr_indicator" value="rawMetal" />
+                            <input type="hidden" id="sttr_transaction_type" name="sttr_transaction_type" value="ESTIMATE" />
+
+                        <?php } ?>
+
+                        <input type="hidden" id="redirectionPanelName" name="redirectionPanelName" value="RawMetalIssue" />
+                        <input type="hidden" id="rawIsePanelName" name="rawIsePanelName" value="<?php echo $panelName; ?>" />
+                        <input type="hidden" id="addPanel" name="addPanel" value="RawMetalIssue" />
+                        <input type="hidden" id="sttr_panel_name" name="sttr_panel_name" value="rawMetalIssue" />
+
+                        <input type="hidden" id="addItemMkgChgBy" name="addItemMkgChgBy" value="<?php echo $sttr_mkg_charges_by; ?>" />
+                        <input type="hidden" id="sttr_mkg_charges_by" name="sttr_mkg_charges_by" value="<?php echo $sttr_mkg_charges_by; ?>" />
+
+                        <input type="hidden" id="setAdditionalSellCustWastg" name="setAdditionalSellCustWastg" 
+                               value="<?php echo $setAdditionalSellCustWastg; ?>"/>
+
+                        <input type="hidden" id="sellMetalNCustWstgValuationBySpecifiedWt" name="sellMetalNCustWstgValuationBySpecifiedWt" 
+                               value="<?php echo $itemNValAdByFNWTOption; ?>"/>
+
+                        <input type="hidden" id="additionalSellCustWastageWt" name="additionalSellCustWastageWt" />
+                        <?php if ($rawPanelName != 'RawPayUp' || $rawPanelName != 'RawDetUpPanel') { ?>
+                            <input type="hidden" id="addRawMetalIssue" name="addRawMetalIssue" value="RawMetalIssue" />
+                        <?php } ?>
+                        <?php
+//                                echo '$rawPanelName=' . $rawPanelName;
+                        if ($rawPanelName == 'RawPayUp' || $rawPanelName == 'RawDetUpPanel') {
+                            ?>
+                            <input type="hidden" id="updateRawMetalIssue" name="updateRawMetalIssue" value="RawMetalIssueUp" />
+                        <?php } ?>
+
+                        <!--------------------------------------------------------------->
+                        <!-- START CODE FOR HIDDEN DISCOUNT INPUTS @PRIYANKA-31OCT2020 -->
+                        <!--------------------------------------------------------------->
+                        <input type="hidden" id="finalProductValuation" name="finalProductValuation" 
+                               value="<?php echo $finalProductValuation; ?>" />
+                        <input type="hidden" id="disc_product_amount" name="disc_product_amount" 
+                               value="<?php echo $disc_product_amount; ?>" />
+                        <input type="hidden" id="disc_making_discount" name="disc_making_discount" 
+                               value="<?php echo $disc_making_discount; ?>" />
+                        <input type="hidden" id="disc_product_discount" name="disc_product_discount" 
+                               value="<?php echo $disc_product_discount; ?>" />
+                        <input type="hidden" id="disc_stone_discount" name="disc_stone_discount" 
+                               value="<?php echo $disc_stone_discount; ?>"/>
+                        <!--------------------------------------------------------------->
+                        <!-- END CODE FOR HIDDEN DISCOUNT INPUTS @PRIYANKA-31OCT2020 ---->
+                        <!--------------------------------------------------------------->
+
+                        <?php
+                        include 'omrwmetisuehdv.php';
+                        include 'omrwmetisueaddv.php';
+                        ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <!-------------------------------------------------->
+        <!---Start code to show Invoice after item add------>
+        <!-------------------------------------------------->
+        <tr>
+            <td align="center" width="100%">
+                <div id="addRawMetalIssueStockInvoice">
+                    <?php
+                    $invPanel = 'RawInvoice';
+//                    echo 'hiiii';
+                    include 'omrwmetisindv.php';
+                    ?>
+                </div>
+            </td>
+        </tr>
+        <!-------------------------------------------------->
+        <!---End code to show Invoice after item add------>
+        <!-------------------------------------------------->
+    </table>
+    <!-------------------------------------------------->
+    <!---End code to add item add and payment div------->
+    <!-------------------------------------------------->
+</div>

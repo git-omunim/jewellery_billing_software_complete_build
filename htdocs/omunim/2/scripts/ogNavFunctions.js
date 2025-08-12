@@ -3666,7 +3666,7 @@ function validationUserMobileNo(documentRootPath, own_mobile, ownId) {
             //Do Nothing
         }
     };
-    xmlhttp.open("POST", "include/php/omSmsSystemMessages.php?user_mobile=" + own_mobile + "&user_id=" + ownId + "&type=UserOTP1", true);
+    xmlhttp.open("POST", "include/php/omReleaseWithOTP.php?user_mobile=" + own_mobile + "&user_id=" + ownId + "&type=UserOTP1", true);
     xmlhttp.send();
     //
 

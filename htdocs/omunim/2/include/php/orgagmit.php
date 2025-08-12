@@ -1,3 +1,115 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Mar 19, 2011 5:40:38 PM
+ *
+ * @FileName: orgagmit.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$custId = $_POST['custId'];
+$firmId = $_POST['firmId'];
+
+if ($custId == '') {
+    $custId = $_GET['custId'];
+}
+?>
+<?php
+
+// how many rows to show per page
+$perRowsPerPage = 1;
+
+// by default we show first page
+$perPageNum = 1;
+
+// if $_GET['page'] defined, use it as page number
+if (isset($_GET['page'])) {
+    $perPageNum = $_GET['page'];
+}
+
+// counting the offset
+$perOffset = ($perPageNum - 1) * $perRowsPerPage;
+
+$qSelTotalGirviCount = "SELECT girv_id FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_cust_id='$custId'";
+$resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount);
+$totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+$qSelAllGirvi = "SELECT * FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_cust_id='$custId' order by girv_ent_dat desc LIMIT $perOffset, $perRowsPerPage";
+$resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+$totalNextGirvi = mysqli_num_rows($resAllGirvi);
+
+if ($totalGirvi <= 0) {
+    echo "<div class=" . "spaceLeft40" . "><h4> ~ Girvi not available in database ~ </h4></div>";
+}
+if ($totalNextGirvi <= 0) {
+    echo "<div class=" . "spaceLeft40" . "><h4> ~ No More Girvi's are available. Go to previous Girvi. ~ </h4></div>";
+}
+while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+    $mainPrincAmount = $rowAllGirvi['girv_main_prin_amt'];
+    $princAmount = $rowAllGirvi['girv_prin_amt'];
+    $ROIId = $rowAllGirvi['girv_ROI_Id'];
+    //Start Code to check ROI Id is null or not
+    if ($ROIId == NULL || $ROIId == '') {
+        $ROI = $rowAllGirvi['girv_ROI'];
+
+        $qSelROI = "SELECT roi_id FROM roi where roi_value='$ROI'";
+        $resROI = mysqli_query($conn,$qSelROI);
+        $rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+        $ROIId = $rowROI['roi_id'];
+
+        $qUpdGirvi = "UPDATE girvi SET girv_ROI_Id='$ROIId'
+                                         WHERE girv_id='$girviId' and girv_cust_id='$custId' and girv_own_id='$_SESSION[sessionOwnerId]'";
+
+        if (!mysqli_query($conn,$qUpdGirvi)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //End Code to check ROI Id is null or not
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $ROI = $rowAllGirvi['girv_IROI'];
+
+        //$qSelROI = "SELECT roi_id FROM roi where iroi_value='$ROI'";
+        //$resROI = mysqli_query($conn,$qSelROI);
+        //$rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+        //$ROIId = $rowROI['roi_id'];
+    } else {
+        $ROI = $rowAllGirvi['girv_ROI'];
+
+        //$qSelROI = "SELECT roi_id FROM roi where roi_value='$ROI'";
+        //$resROI = mysqli_query($conn,$qSelROI);
+        //$rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+        //$ROIId = $rowROI['roi_id'];
+    }
+    $ROIType = $rowAllGirvi['girv_ROI_typ'];
+    $girviDOB = $rowAllGirvi['girv_DOB'];
+    $girviId = $rowAllGirvi['girv_id'];
+    $girviType = $rowAllGirvi['girv_type'];
+
+    include 'orgagmid.php';
+}
 ?>

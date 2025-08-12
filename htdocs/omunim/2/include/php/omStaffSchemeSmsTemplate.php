@@ -1,3 +1,57 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SET SCHEME DUE INSTALLMENT TEMPLATE FILE @PRIYANKA-10SEP2019
+ * **************************************************************************************
+ *
+ * Created on 10 SEP, 2019 15:47:36 PM
+ *
+ * @FileName: omSchemeDueInstallmentTemplateFile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.104
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+include 'ommpdpmsg.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+?>
+<SELECT id="schemeStaffSmsTemplate" name="schemeStaffSmsTemplate" 
+        onchange="setLayoutFieldInDb('schemeStaffSmsTemplate', document.getElementById('schemeStaffSmsTemplate').value);"> 
+    <OPTION  VALUE="NotSelected">SELECT SMS TEMPLATE FOR STAFF</OPTION>
+    <?php
+    //
+    $qSelStaffSchemeTemplate = "SELECT smtp_sub FROM sms_templates "
+                        . "WHERE smtp_own_id = '$_SESSION[sessionOwnerId]'";
+    //
+    $resStaffSchemeTemplate = mysqli_query($conn, $qSelStaffSchemeTemplate);
+    //
+    while ($rowStaffScemeTemplate = mysqli_fetch_array($resStaffSchemeTemplate, MYSQLI_ASSOC)) {
+            if ($rowStaffScemeTemplate['smtp_sub'] == $schemeStaffSmsTemplate) {
+                $schemeStaffSmsTemplateSel = "selected";
+            }
+            echo "<OPTION  VALUE=" . "\"{$rowStaffScemeTemplate['smtp_sub']}\"" . " class=" . "\"content-mess-blue\"" . " $schemeStaffSmsTemplateSel>{$rowStaffScemeTemplate['smtp_sub']}</OPTION>";
+            $schemeStaffSmsTemplateSel = "";       
+        }
+    ?>
+</SELECT>

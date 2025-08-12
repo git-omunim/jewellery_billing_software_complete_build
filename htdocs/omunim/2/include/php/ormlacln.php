@@ -1,3 +1,324 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: ormlacln.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$addTotalPrincipal = 0;
+$addTotalInterest = 0;
+$addTotalAmount = 0;
+$headerCounter = 0;
+/* * **************Start code to add $sortKeyword @Author:PRIYA30MAY14********************* */
+$mlId = $_GET['mlId'];
+if (isset($_GET['sortKeyword'])) {
+    $sortKeyword = $_GET['sortKeyword'];
+}
+$sortKeyword = stripslashes($sortKeyword);
+
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelPubFirmCount = "SELECT firm_id FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    $resPubFirmCount = mysqli_query($conn, $qSelPubFirmCount);
+    $strFrmId = '0';
+    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+    }
+}
+//Start Code for Active Loan List show on MoneyLender Home Panel by Ashwini Patil 21Dec2020
+if ($sortKeyword != NULL) {
+    $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts IN ('New','Updated','ReleaseCart','Active') and ml_firm_id IN ($strFrmId) order by $sortKeyword asc";
+} else {
+    $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_lender_id='$mlId' and ml_upd_sts IN ('New','Updated','ReleaseCart','Active') and ml_firm_id IN ($strFrmId) order by ml_ent_dat desc";
+}
+//End Code for Active Loan List show on MoneyLender Home Panel by Ashwini Patil 21Dec2020
+$resAllGirvi = mysqli_query($conn, $qSelAllGirvi);
+$totalActiveGirvi = mysqli_num_rows($resAllGirvi);
+?>
+<?php
+if ($totalActiveGirvi == 0 || $totalActiveGirvi == NULL) {
+    echo "<div class=main_link_red16>" . "ACTIVE LOANS ARE NOT AVAILABLE" . "</div>"; //to show loans are not available message @AUTHOR: SANDY20JAN14
+} else {
+    ?>
+<table>
+     <tr>
+            <td colspan='3'>
+                <table border="0" cellspacing="0" cellpadding="1" align="left">
+                    <tr>
+                        <td valign="middle" align="left" width="10px">
+                            <div class="spaceLeftRight2"><img src="<?php echo $documentRootBSlash; ?>/images/green16.png" alt="" /></div>
+                        </td>
+                        <td valign="middle" align="left">
+                            <div class="main_link_green"><b>ACTIVE LOAN LIST</b></div>
+                        </td>
+                        <td align="left" valign="bottom" class="frm-lbl">
+                            <div id="ajaxLoadGirviDetailsCustHomeDiv" style="visibility: hidden">
+                                <img src="<?php echo $documentRootBSlash; ?>/images/ajaxLoad.gif" alt="" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+</table>
+    <table border="0" cellspacing="0" cellpadding="1" width="99.6%" align="center" style="border-radius:5px;border:1px dashed #c9c9c9;">
+        <?php
+        while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+            $girviId = $rowAllGirvi['ml_id'];
+            $loanId = $girviId;
+            $gFirmId = $rowAllGirvi['ml_firm_id'];
+            $mainPrincAmount = $rowAllGirvi['ml_main_prin_amt'];
+            $princAmount = $rowAllGirvi['ml_prin_amt'];
+
+            if ($princAmount == '' || $princAmount == NULL) {
+                $qUpdateGirvi = "UPDATE ml_loan SET ml_prin_amt='$mainPrincAmount'
+                                         WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+                if (!mysqli_query($conn, $qUpdateGirvi)) {
+                    die('Error: ' . mysqli_error($conn));
+                }
+                $princAmount = $mainPrincAmount;
+            }
+
+            $girviDOB = $rowAllGirvi['ml_DOB'];
+            $girviNewDOB = $rowAllGirvi['ml_new_DOB'];
+            $girviNewDOB = date("d M Y", strtotime($girviNewDOB));
+            $custId = $rowAllGirvi['ml_lender_id'];
+            $mlId = $custId;
+            $ROIType = $rowAllGirvi['ml_ROI_typ'];
+            if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                $ROI = $rowAllGirvi['ml_IROI'];
+            } else {
+                $ROI = $rowAllGirvi['ml_ROI'];
+            }
+            $girviType = $rowAllGirvi['ml_type'];
+            $gPreSerialNo = $rowAllGirvi['ml_pre_serial_num'];
+            $gSerialNo = $rowAllGirvi['ml_serial_num'];
+            $girviIntOpt = $rowAllGirvi['ml_int_opt'];
+            $gMonthIntOption = $rowAllGirvi['ml_monthly_intopt'];
+            $girviIntCompoundedOpt = $rowAllGirvi['ml_compounded_opt'];
+
+            if ($girviNewDOB == '' || $girviNewDOB == NULL) {
+                $qUpdateGirvi = "UPDATE ml_loan SET ml_new_DOB='$girviDOB'
+                                         WHERE ml_id='$girviId' and ml_lender_id='$custId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+                if (!mysqli_query($conn, $qUpdateGirvi)) {
+                    die('Error: ' . mysqli_error($conn));
+                }
+                $girviNewDOB = $girviDOB;
+            }
+            $qSelFirm = "SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$gFirmId'";
+            $resFirm = mysqli_query($conn, $qSelFirm);
+            $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+
+            $gFirmName = $rowFirm['firm_name'];
+
+            $totalPrincipalAmount = 0;
+            $totalFinalInterest = 0;
+            $totalAmount = 0;
+            $profitLoss = 0;
+            $moneyLenderEntry = 'Y';    //Money-lender panel Author:DIKSHA 21FEB2019
+
+            include 'ommpgvip.php';
+
+            $addTotalPrincipal += $totalPrincipalAmount;
+            $addTotalInterest += $totalFinalInterest;
+            $totalAmount = $mainPrincAmount + $totalFinalInterest;
+            $addTotalAmount += $totalAmount;
+
+            //code to get total girvi transferred for this loan
+            $selTrGirvi = "SELECT sum(gtrans_prin_amt) as total_tr_amt FROM girvi_transfer WHERE gtrans_own_id='$_SESSION[sessionOwnerId]'"
+                    . " and gtrans_trans_loan_id='$girviId' and gtrans_upd_sts != 'Released'"; //change in query @AUTHOR: SANDY08JAN14//Rel condition added @Author:PRIYA19MAY14
+            $resTrGirvi = mysqli_query($conn, $selTrGirvi);
+            $rowTrGirvi = mysqli_fetch_array($resTrGirvi, MYSQLI_ASSOC);
+            $girviValuation = $rowTrGirvi['total_tr_amt'];
+            /*             * *****Start code to change $finalPrincAmount @Author:PRIYA19MAY14************* */
+            //            $finalPrincAmount = $mainPrincAmount - $girviValuation + $totalFinalInterest;
+            $finalPrincAmount = $mainPrincAmount - $girviValuation;
+            /*             * *****End code to change $finalPrincAmount @Author:PRIYA19MAY14************* */
+            ?>
+            <?php if ($headerCounter == 0) { ?>
+                <tr style="background: #f2f2f2;height:28px;">
+                    <td align = "center"  width="30px"><!--Change in class @AUTHOR: SANDY29DEC13--->
+                        <div class = "heightPX20">
+                            <table border = "0" cellspacing = "0" cellpadding = "0"  align = "center">
+                                <tr>
+                                    <td align="center">
+                                        <div class="textLabel14CalibriBrownBold">S.No. &nbsp;</div>
+                                    </td> 
+                                    <td align="right">
+                                        <a style="cursor: pointer;" title="Click To View Girvi By Girvi Date"
+                                           onclick="sortGirviInMlHome('<?php echo $documentRoot; ?>', 'ml_pre_serial_num asc,ml_serial_num', '<?php echo $selFirmId; ?>', '<?php echo $custId; ?>', 'active');">
+                                               <?php if ($sortKeyword == 'ml_pre_serial_num asc,ml_serial_num') { ?>
+                                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                            <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                        </a>
+                                    </td> 
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td align="right" width="80px">
+                        <div class="textLabel14CalibriBrownBold">PRINCIPAL</div>
+                    </td>
+                    <td align="right" width="80px">
+                        <div class="textLabel14CalibriBrownBold">INTEREST</div>
+                    </td>
+                    <td align="right" width="90px">
+                        <div class="textLabel14CalibriBrownBold">TOTAL</div>
+                    </td>
+                    <td align="right" width="90px">
+                        <div class="textLabel14CalibriBrownBold">TR LOAN AMT</div>
+                    </td>
+                    <td width="90px" align="right">
+                        <div class="textLabel14CalibriBrownBold">LEFT PRINCIPAL</div>
+                    </td>
+                    <td align="right"  width="50px">
+                        <div class="textLabel14CalibriBrownBold">FIRM</div>
+                    </td>
+                    <td align = "right"  width="70px"><!--Change in class @AUTHOR: SANDY29DEC13--->
+                        <div class = "heightPX20" style="padding-right: 10px;">
+                            <table border = "0" cellspacing = "0" cellpadding = "0"  align = "right">
+                                <tr>
+                                    <td align="right">
+                                        <div class="textLabel14CalibriBrownBold">S.DATE &nbsp;</div>
+                                    </td> 
+                                    <td align="right">
+                                        <a style="cursor: pointer;" title="Click To View Girvi By Girvi Date"
+                                           onclick="sortGirviInMlHome('<?php echo $documentRoot; ?>', 'STR_TO_DATE(ml_DOB,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $custId; ?>', 'active');">
+                                               <?php if ($sortKeyword == "STR_TO_DATE(ml_DOB,'%d %M %Y')") { ?>
+                                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                            <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                        </a>
+                                    </td> 
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <?php
+                $headerCounter++;
+            }
+            ?>
+            <tr class="height28">
+                <td align="center" width="30px" style="position:unset">
+                    <!----ADD FUNCTION DOR DOUBLE CLICK @AUTHOR: SANDY30NOV13---->
+                    <a title="Single Click To View Loan / Double Click To Select Loan"  style="cursor: pointer;" 
+                       ondblclick="getLoanInfo('<?php echo $mlId; ?>', '<?php echo $loanId; ?>', 'MainReceipt')"
+                       onclick="getLoanInfoPopUp('<?php echo $mlId; ?>', '<?php echo $loanId; ?>', 'LoanDetailPanel')"><?php echo $gPreSerialNo . $gSerialNo; ?></a>
+                    <div id="display_loan_info_popup<?php echo $loanId; ?>" class="display-girvi-info-popup"></div>
+                </td>
+                <td align="right">
+                    <div class="amount"><?php echo formatInIndianStyle($mainPrincAmount); ?></div>
+                </td>
+                <td align="right">
+                    <div class="amount"><?php echo formatInIndianStyle($totalFinalInterest); ?></div>
+                </td>
+                <td align="right">
+                    <div class="amount"><?php echo formatInIndianStyle($totalAmount); ?></div>
+                </td>
+                <?php if ($girviType == 'secured') { ?>
+                    <td align="right">
+                        <div class="amount"><?php echo formatInIndianStyle($girviValuation); ?></div>
+                    </td>
+                <?php } else { ?>
+                    <td align="right">
+                        <div class="amount"><?php echo 'Unsecured'; ?></div>
+                    </td>
+                <?php } ?>
+                <td align="right">
+                    <div class="amount"><?php echo formatInIndianStyle($finalPrincAmount); ?></div>
+                </td>
+                <td align="right">
+                    <h5><?php echo om_strtoupper($gFirmName); ?></h5>
+                </td>
+                <td align="right">
+                    <h5 style="padding-right: 10px;"><?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-04-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//
+                       if ($englishMonthFormat == 'displayinword') {
+                      echo om_strtoupper(date('d  M  y', strtotime($girviNewDOB)));
+                } else {
+                    echo date('d  m  Y', strtotime($girviNewDOB));
+                }  
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-04-12-2022**************************
+//************************************************************************************************************************************
+                        ?></h5>
+                </td>
+            </tr>
+            <?php
+            $gCounter++;
+        }
+        ?>
+<!--        <tr>
+            <td align="center" colspan="9">
+                <hr color="#F1F1F1" size="0.1px" />
+            </td>
+        </tr>-->
+        <tr class="totlBg">
+            <td align="center">
+                <div class="textLabel14CalibriBrownBold pdngall3">TOTAL - </div>
+            </td>
+            <td align="right">
+                <div class="amount pdngall3"><b><?php echo formatInIndianStyle($addTotalPrincipal); ?></b></div>
+            </td>
+            <td align="right">
+                <div class="amount pdngall3"><b><?php echo formatInIndianStyle($addTotalInterest); ?></b></div>
+            </td>
+
+            <td align="right">
+                <div class="amount_green pdngall3"><b><?php echo formatInIndianStyle($addTotalAmount); ?></b></div>
+            </td>
+            <td align="right">
+                <div class="h7"></div>
+            </td>
+            <td align="right">
+                <div class="h7"></div>
+            </td>
+            <td align="right">
+                <div class="h7"></div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <?php
+}
+/* * **************End code to add $sortKeyword @Author:PRIYA30MAY14********************* */
+//***************** End Code Active Girvi List ***************************
+?>
+<br/>

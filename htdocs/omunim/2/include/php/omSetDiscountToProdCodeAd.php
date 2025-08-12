@@ -1,3 +1,172 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: DATABASE FILE - SET DISCOUNT TO PRODUCT CODE @AUTHOR-PRIYANKA-09NOV2020
+ * *************************************************************************************************
+ *
+ * Created on NOV 09, 2020 12:20:00 PM 
+ * *************************************************************************************************
+ * @FileName: omSetDiscountToProdCodeAd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.7.29
+ * @version: OMUNIM 2.7.29
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ * *************************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @AUTHOR-PRIYANKA-09NOV2020
+ *  REASON:
+ *
+ */
+?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+//
+//print_r($_REQUEST);
+//
+// PANEL NAME @AUTHOR-PRIYANKA-09NOV2020
+if($panelName == '' || $panelName ==  NULL) {
+   $panelName = $_REQUEST['panelName'];
+}
+//
+// UPDATE PANEL NAME @AUTHOR-PRIYANKA-09NOV2020
+if($UpdatePanelName == '' || $UpdatePanelName ==  NULL) {
+   $UpdatePanelName = $_REQUEST['UpdatePanelName'];
+}
+//
+// DISCOUNT COUNT @AUTHOR-PRIYANKA-09NOV2020
+if($discountCount == '' || $discountCount ==  NULL) {
+   $discountCount = $_REQUEST['discountCount'];
+}
+//
+// NO. OF DISCOUNTS @AUTHOR-PRIYANKA-09NOV2020
+if($noOfDiscount == '' || $noOfDiscount ==  NULL) {
+   $noOfDiscount = $_REQUEST['noOfDiscount'];
+}
+//
+//
+// COUNT @AUTHOR-PRIYANKA-09NOV2020
+if($count == '' || $count ==  NULL) {
+   $count = $_REQUEST['count'];
+}
+//
+// MAIN STOCK ID @AUTHOR-PRIYANKA-09NOV2020
+if($main_st_id == '' || $main_st_id ==  NULL) {
+   $main_st_id = $_REQUEST['main_st_id'];
+}
+//
+// MAIN STOCK METAL TYPE @AUTHOR-PRIYANKA-23NOV2020
+if($main_st_metal_type == '' || $main_st_metal_type ==  NULL) {
+   $main_st_metal_type = $_REQUEST['main_st_metal_type'];
+}
+//
+// MAIN STOCK CATEGORY @AUTHOR-PRIYANKA-09NOV2020
+if($main_st_item_category == '' || $main_st_item_category ==  NULL) {
+   $main_st_item_category = $_REQUEST['main_st_item_category'];
+}
+//
+// MAIN STOCK PURITY @AUTHOR-PRIYANKA-09NOV2020
+if($main_st_purity == '' || $main_st_purity ==  NULL) {
+   $main_st_purity = $_REQUEST['main_st_purity'];
+}
+//
+// FIRM @AUTHOR-PRIYANKA-10NOV2020
+if($firmName == '' || $firmName ==  NULL) {
+   $firmName = $_REQUEST['firmName'];
+}
+//
+// 
+if ($count > 0) {
+    $noOfDiscount = $count;
+}
+//
+for ($i = 1; $i <= $noOfDiscount; $i++) {
+        //
+        // Start Code To Add Discount Table @AUTHOR-PRIYANKA-09NOV2020
+        //
+        // START DATE DAY @AUTHOR-PRIYANKA-09NOV2020
+        if ($StartDateDay == '' || $StartDateDay == NULL) {
+            $StartDateDay = $_REQUEST['discountDOBDay'. $i];
+        }
+        // START DATE MONTH @AUTHOR-PRIYANKA-09NOV2020
+        if ($StartDateMonth == '' || $StartDateMonth == NULL) {
+            $StartDateMonth = $_REQUEST['discountDOBMonth' . $i];
+        }
+        // START DATE YEAR @AUTHOR-PRIYANKA-09NOV2020
+        if ($StartDateYear == '' || $StartDateYear == NULL) {
+            $StartDateYear = $_REQUEST['discountDOBYear' . $i];
+        }
+        //
+        // START DATE @AUTHOR-PRIYANKA-09NOV2020
+        $StartDate = $StartDateDay . " " . $StartDateMonth . " " . $StartDateYear;
+        //
+        //
+        // END DATE DAY @AUTHOR-PRIYANKA-09NOV2020
+        if ($EndDateDay == '' || $EndDateDay == NULL) {
+            $EndDateDay = $_REQUEST['discountEDOBDay' . $i];
+        }
+        // END DATE MONTH @AUTHOR-PRIYANKA-09NOV2020
+        if ($EndDateMonth == '' || $EndDateMonth == NULL) {
+            $EndDateMonth = $_REQUEST['discountEDOBMonth' . $i];
+        }
+        // END DATE YEAR @AUTHOR-PRIYANKA-09NOV2020
+        if ($EndDateYear == '' || $EndDateYear == NULL) {
+            $EndDateYear = $_REQUEST['discountEDOBYear' . $i];
+        }
+        //
+        // END DATE @AUTHOR-PRIYANKA-09NOV2020
+        $EndDate = $EndDateDay . " " . $EndDateMonth . " " . $EndDateYear;
+        //
+        //
+        $sttrId = trim($_REQUEST['sttr_id' . $i]);
+        $disc_product_amount = trim($_REQUEST['disc_product_amount' . $i]);
+        $disc_making_discount = trim($_REQUEST['disc_making_discount' . $i]);
+        $disc_stone_discount = trim($_REQUEST['disc_stone_discount' . $i]);
+        $disc_product_discount = trim($_REQUEST['disc_product_discount' . $i]);
+        //
+        if ($_REQUEST['disc_discount_checked' . $i] == 'checked' || 
+            $_REQUEST['disc_discount_checked' . $i] == 'on') {
+            $disc_active = 'checked';
+        } else {
+            $disc_active = 'unchecked';
+        }
+        // 
+        //
+        $updateQuery = "UPDATE stock_transaction SET "
+                     . "sttr_disc_start_date = '$StartDate', "
+                     . "sttr_disc_end_date = '$EndDate', " 
+                     . "sttr_disc_product_amount = '$disc_product_amount', "
+                     . "sttr_disc_making_discount = '$disc_making_discount', "
+                     . "sttr_disc_stone_discount = '$disc_stone_discount', "
+                     . "sttr_disc_product_discount = '$disc_product_discount', "
+                     . "sttr_disc_active = '$disc_active' "
+                     . "WHERE sttr_id = '$sttrId'";
+        //
+        //echo '$updateQuery == ' . $updateQuery . '<br >';
+        //
+        if (!mysqli_query($conn, $updateQuery)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        //
+        // End Code To Add Discount Table @AUTHOR-PRIYANKA-09NOV2020
+        //
+        //
+        // MESSAGE DISPLAY VARIABLE @AUTHOR-PRIYANKA-10NOV2020
+        $updateMsg = "ProdUpdateMsg";
+        //
+        //
+}
+header('Location: ' . $documentRoot . '/include/php/omDiscountPopUp.php?discountSubPanel=setProductDiscount&st_id=' . $main_st_id . '&st_item_category=' . $main_st_item_category . '&st_purity=' . $main_st_purity . '&st_metal_type=' . $main_st_metal_type . '&panelName=' . $panelName . '&noOfDiscount=' . $noOfDiscount . '&firmName=' . $firmName . '&updateMsg=' . $updateMsg);
 ?>

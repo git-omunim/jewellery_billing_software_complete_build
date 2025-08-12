@@ -1,3 +1,123 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial:Cust Sell Invoice Table
+ * **************************************************************************************
+ * 
+ * Created on Dec 24, 2013 6:45:48 PM
+ *
+ * @FileName: omtbslin.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+/***********Start code to add column itslin_tot_fin_amt in cust_itsl_inv @OMMODTAG SHE20APR16******************** */
+$query = "CREATE TABLE IF NOT EXISTS cust_itsl_inv (
+itslin_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+itslin_owner_id                   VARCHAR(16),
+itslin_jrnl_id                    INT,
+itslin_pre_invoice_no             VARCHAR(16), 
+itslin_invoice_no                 VARCHAR(16), 
+itslin_cust_id                    VARCHAR(16), 
+itslin_firm_id                    VARCHAR(16), 
+itslin_acc_id                     VARCHAR(16), 
+itslin_date                       VARCHAR(50),
+itslin_raw_gd_pre_Id              VARCHAR(6), 
+itslin_raw_gd_post_Id             VARCHAR(16),
+itslin_gd_type                    VARCHAR(16), 
+itslin_gd_firm_id                 VARCHAR(16), 
+itslin_gd_acc_id                  VARCHAR(16),
+itslin_gd_gs_wgt                  VARCHAR(15),
+itslin_gd_gs_wgt_typ              VARCHAR(10),
+itslin_gd_nt_wgt                  VARCHAR(15),
+itslin_gd_nt_wgt_typ              VARCHAR(10),
+itslin_gd_fn_wgt                  VARCHAR(15),
+itslin_gd_fn_wgt_typ              VARCHAR(10),
+itslin_gd_rc_wgt                  VARCHAR(16),
+itslin_gd_rc_wgt_type             VARCHAR(16),
+itslin_gd_tunch                   VARCHAR(10),
+itslin_gd_rc_fn_wgt               VARCHAR(10),
+itslin_gd_rate                    VARCHAR(50),
+itslin_gd_rc_val                  VARCHAR(50),
+itslin_gd_bal_wgt                 VARCHAR(50),
+itslin_gd_bal_wgt_type            VARCHAR(50),
+itslin_raw_sr_pre_Id              VARCHAR(6), 
+itslin_raw_sr_post_Id             VARCHAR(16),
+itslin_sr_type                    VARCHAR(16), 
+itslin_sr_firm_id                 VARCHAR(16), 
+itslin_sr_acc_id                  VARCHAR(16),
+itslin_sr_gs_wgt                  VARCHAR(15),
+itslin_sr_gs_wgt_typ              VARCHAR(10),
+itslin_sr_nt_wgt                  VARCHAR(15),
+itslin_sr_nt_wgt_typ              VARCHAR(10),
+itslin_sr_fn_wgt                  VARCHAR(15),
+itslin_sr_fn_wgt_typ              VARCHAR(10),
+itslin_sr_rc_wgt                  VARCHAR(16),
+itslin_sr_rc_wgt_type             VARCHAR(16),
+itslin_sr_tunch                   VARCHAR(10),
+itslin_sr_rc_fn_wgt               VARCHAR(10),
+itslin_sr_rate                    VARCHAR(50),
+itslin_sr_rc_val                  VARCHAR(50),
+itslin_sr_bal_wgt                 VARCHAR(50),
+itslin_sr_bal_wgt_type            VARCHAR(50),
+itslin_tot_amount                 VARCHAR(50),
+itslin_tot_amount_rc              VARCHAR(50),
+itslin_fnl_due_bal                VARCHAR(50),
+itslin_pay_by                     VARCHAR(50),
+itslin_tot_cash_rc                VARCHAR(50),
+itslin_discount                   VARCHAR(50),
+itslin_card_type                  VARCHAR(50),
+itsl_card_amt                     VARCHAR(30),
+itsl_cheque_amt                   VARCHAR(30),
+itsl_cheque_no                    VARCHAR(30),
+itsl_disc_narratn                 VARCHAR(30),
+itsl_cash_narratn                 VARCHAR(30),
+itsl_vat_amt                      VARCHAR(30),
+itsl_tax_amt                      VARCHAR(30),
+itsl_cheque_acc_id                VARCHAR(30),
+itsl_card_acc_id                  VARCHAR(30),
+itsl_disc_acc_id                  VARCHAR(30),
+itsl_vat_acc_id                   VARCHAR(30),
+itslin_card_no                    VARCHAR(30),
+itslin_other_info                 VARCHAR(50),
+itslin_status                     VARCHAR(32),
+itslin_gd_rtct                    VARCHAR(30),
+itslin_gd_rtct_type               VARCHAR(30),
+itslin_sr_rtct                    VARCHAR(30),
+itslin_sr_rtct_type               VARCHAR(30),
+itslin_gd_valuation               VARCHAR(30),
+itslin_sr_valuation               VARCHAR(30),
+itslin_adv_amt                    VARCHAR(30),
+itslin_othr_chgs_by               VARCHAR(10),
+itslin_gd_othr_chgs_wt            VARCHAR(20),
+itslin_gd_othr_chgs_wt_typ        VARCHAR(20),
+itslin_sl_othr_chgs_wt            VARCHAR(20),
+itslin_sl_othr_chgs_wt_typ         VARCHAR(20),
+itslin_gd_rtct_wt_rem_bal         VARCHAR(20),
+itslin_sl_rtct_wt_rem_bal         VARCHAR(20),
+itslin_tot_fin_amt                VARCHAR(15),
+itslin_since                      DATETIME,
+itslin_staff_id	                  VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (itslin_pre_invoice_no,itslin_invoice_no))AUTO_INCREMENT=10001";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+
+/***********End code to add column itslin_tot_fin_amt in cust_itsl_inv @OMMODTAG SHE20APR16******************** */

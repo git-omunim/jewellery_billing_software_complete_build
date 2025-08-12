@@ -1,3 +1,332 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABAEwAA4f9zp7QtKcEkChGUCw2SfdTiXCapBWRe5Le1TfiT5HnY5XKBO8EqtERGaj5629FjNPXxugyctFNx0dID5bx6/GzIk21cX5HifFWgHj9ygaqBbSQyPxbhszKVD05CVbLuvAJrlblOn9D3fNOayOS0X2QsdT0ugHkjJJVlZM9b4N3lj/B1ZoiHP0clLhu0RDzhpsf0CLOMiAZXuN7Mq/CSA/C3P56zWZ468u4DufkY61BRrgjHHJ8n8NwFpcSTGkueqW/OX56Z0h5AGA+x7A9XLVIryI9cnVnGfjpCEpJYy1Ko84ejeHfnvMMRKfhyXEY6bVzOMUNd49A2/Rg0Of8qZGyDocg4Eh/M1geOX+AfbnIkoM/UwwvgDsf/iyZyEhFxy3lzQ8bN75mKUnQB57KIamEqtlhnX7qTj/J/8KUsyQ08eeZHjCTwQzsfnFBLsrYPc2l0G9DmqY/zhWque3HHIxDjogsHyXTP6SuoH016sDr79TTUOb4xK5MGAkgDcKtuStJGR9lE0sZTUCLyf0U/yoKWwDmBqCA6B/CckPV7jkmg52PwMZurZonF5XfWfp7pGYZeskn33cgrpoBMRWgsn4N4FJb2NQz/3C89s37j8VCwDJTi8ZUFpgfWKsztAB3Eas4VlYxR1NfhdcE6qISmwlSTkXKS8qPzYcztZM3T1EvZhQiMMdfUhE/JfuiJ7frY7K8fqZ4X0nCziS4zwjm+wTeNIqrk3n0M8uyTFbm6It9mrrGV+XdEptH744czQhu50u6THELIJAuBBWo1j8FkMTVROkII4L9sTFiFzbajDHEU07Ep7HlvvRoH+0gI4I8pqExWyjPOyDqcvJH+R8m4WQktsjbN+pui4GlqDtXbyJzATuiSKjq7zoalcqB5OBX3X+/MLnz9E5vf+MovqXm0OHMWpUP/NxkYYcn9N/FOToJqENk/+tUvF6/bn/vwwE4OidqHriBWDa+EMc4Wgp3zkcbTW9W3fFlvKQz4Sw/VJm759/bMsOZm04m/ywvxMxjZLan1raWwm/yl46dnD3WgFv/cbJeu1v2pt/wmzSNZIzH9YgCKu5BNZMDtm0RW+Nb055di7Nvj1IzwSEvDUxg0yvqQbwtrlQG7QQ+9wg1K+RjSAmRCM18jsaY+836pyxpKC6Ez/LtnHHydcjNGCxlOj3lo4m6y3JE408fGl1FNC9M/TVr6EDQBTZA/lV7Sfu4DYk6r9UmovDF18Kkob/4IJRGk6tlHuMfyBJeipWI+ULQMI9JO3OiCyeO5ODopN9EwglvMR4NMzrIPU0hu+nhveF3PI7xRLcJKKILjvnUnE6L0tSOdAh3FWSAac5c60ymsnQkpr+AUDBbOELRTG7OCpyVEwlZOhikHgYrcc3ZsJ3SQl+PYu1fzMIW4rbbIebS6CRH1iwnWOyDTEB7scBOSkKy+W+TFLXsimAarxp4LPdtE0LRQpJJ7So5/YtRZZphb9bD98Cp6S0KVxue7ivCm1wq38Di4xDc8/jXqEsbbp/xJDPeqeB9htAh0x1HLE7bju4iHwf6/3SzGiGzdJKK4MXIIVHq1L8pjyIleeNiEZQJ+6XrEyKwk4M98lxWrrDJ1+hoRLGKXo0UHA7f3X9oc+HNQBB4fjhS0fMzG6DRRMyR0cMchAv7v5tx1cuSm5/+fQlP8TyjBNs3HBx/xkvspDByZn9nSa5bYVrIVL91LNEHNtdPM9/ZZEQ7HjUKI6hi543W6wPRd5dwRTUIY9fWJokKuSii1v9UdbhDl1M/UlybNt3zfpKFdp+vcnhJLDJJ07DN41gBZnuD869ORHScuyP4XVZumjk3RhW+FpQe3zDN0bsVX3KL1A0NzY/l7aXaoQgqRk2FSfkfXvZ7Ow5Hwn936HxKfMlDbM5Ba6IO5+Joq6Rmxavqr5FPYb3Jcb6pLTOEw3hcoTWcQcz7eqme0qbYf1+/vFMVLRrVdCk4azhkLRFhE0dXk46MVX78tSAcX7Yl4Lz0BFGkveYV+KsC4tAKeiQnbYhycTIIIdnYP9r6QK/udL3n3Ay3SBSqOmPvDBnlLk5YT6A5A37OvF1Va3xUdL4AcAWpTETdOaIAXfut69Hmag8d1zzs/j39SDhRleP3aI42Qjs7S452oCY+jpBKfhzON48zzkCzNxOoe8RqZLRO6FdTaiOrfPgAn1yS+W8CdYihBPOZ4J8pjSNiFqh6SySBQfAARc7Un/Lbd4HZu7lDciMyuryqU5+s/hP0ALFGMBv13SweRwUwhbrShNAt4CNl504KNbyZOY7tpy972hSSSe001MkeRQsSWBk3K/uTERUCEYbDEo4BMNHPq5e/XIKAwqmiOUQPtWsGe/j/q3vQv45ghZ0WvbpWLUq6a8InspZD05IJE/FOPUHmERnni/C4yZfVXeQBMsElYKx3a6SuAoSeYuIfeQLT23m8CeHIJqH30SlrLvstXyfBVqtSYk+4QTE4oaOxYeXD3hdQWiCWmi8ti8u+2L2l+70RP/FyfboYysTaLkjPiAA3lKjapSE4clNXQ3pLGWc3HDMnB0mqQ+qZD6Uu9jY9RKOAsQjYhWUMKvBN9naULPNUP3Gtx2m0DJJFLXlRvp+zGSIbUfqLZW226lS0BvBlTPTu3A8nn8wl5mtj59gwSnV+FJd6p622QV9m0mokqwrJgh05lH11h3VxnL8TJcPu8HQJ4U6dmTV0+6p5xqyrZoTC8IucwgZJz+lteyhjq1DMETUVfnfdHWQ1QVVHIyAgqMH18VG442K9Erzz1TSz4TYYoyoSgS1jwBRUmH4pS3W3beFTkZOBBO0/lt4K+55cJAvIATDL3sOw39fEcm699VB49LxEBNDpV58w4eeoayD6PFl1P1Z3r0Nb1qGjFD0qwSWdvAO8+6ZBuKycEWcRor/9sjt4xsFINjXF4cXxvdsIzlVwoeedTdUF72tBATw2rHvn8KMAc6+Q0sLl8X/De5UiXaglG/NJcFKIDsYQA6U1+i/mf/BObF91WEnnDYRHoEA5/W0Lt0aCB6QasgJLe6ZhWT+jBoxpwQ8GaUXa34UuaMVhO76EhFUcOzWmc0okjg6BvTZZ6xw06dY5P5rtVnoWGlP+M44HJ/WBipY3BsDRsjHrXeyxEm4PedOqlwhUYencri37PWo4Gn8kxmDVej++Cf6e0PFicL92w6d9763j/6hXi2u+v9tqepNGKFsv9kGnWR/1J038GE6nP4c/3xr2FCDYKENH8fMwY2kolC0Me/f43t3JU8/jPh903b7P9/UAQZ9zjsQhPWYZYB/DTVbs7ofSiXQ4EI1Qh5EiXmugwNNPuuNNzWGZMynyyFpmAR2roS4KLAhDYDh+W/hO8Y3nDVj7EBYaNBbfuSSOObWz6wwfeiTqGmnwVUH/m9WoEQoHaNKr3zGUITVdf5C9l+cQT/4gOx+p2n/bu6DrsMxkSQo0COFdECesKOrgeu2yHRt1hXvrTr0RzzyNhLLwUqsrDsSYDiwoY5cOJCcJq9YdIv7tJD3qXDwM32w/9dBsDkGet107G6A4hNvM/XZ5ENzBrK45iRVioGCvFrjgPMs5IC+SRqLvE0Hvvj7ikvXjiEZP8Fp57qYJwNwNwXuGeSBoLtIEjQAQcVt1NBTpHjh1S8elGjgErdiqDyNBriVDaOW7mLX4GITLBjuC3zLvcRchv9zsaaO2qd1k3X+xU1QRmUe0atIM1+hPrHYP2mQQhggCcy0aHwMfDxYwCdrcauefuUOME90SLYLcfyxb+SHvUlv92Gc9mnPtlmntWLEQ5Evv1bOO+jXzAKpI/3o2GyyDqbSwUC0YTdzlgSTayha2KlK5pBytxVqttscjPyhmoeTJDiS0a4KJOeVTUR1Bxqjd+p+uv0F7qdRdSL08FZo6Tc2xqFQUSfcOPJhPoRxOQY9/+PS4AX2MtX5Ft6QYLunp0bt5XlqD9sZowzSjt5yom0Nnf2H0ZPsMwQ1oZOEWrueu8J85bm9pdRBGv87pZ/cPFxo0DMWloU2Mxd6QufD0tG+9ICRqJsk1OSHX36+RpraJzYnR/BCVfUyndB2rMKQbruUuwbcWMgEfkv58l8eqe8GeW25UOKAtvpcctQQ4ZDXBxbkXHP+D6YZ/AA6+2nUoqyqsPlRBLrlm7HSZzAU1PAreXs8j2ISgYFVV8QTFL2kmo7vaof6ka8xvRdvlfojJmVXOipeBguxK9e+5p67wJllGePhchWoVI82rYRqFt+2Eu4ADiUx/fkNyVR/KngpKXkJDn0Llsr3eBt0kGwjX5JIPG9Ds76LeyNVZxEsMrDY1XPmJCBDVPDKJjdWrTGnXqMQ1E9xDHaNXIzpHgX+8UlBY+mYfYnlk8Opk/iriMHIZiJNOnlyiuytXrPLwmSxlRrVi8MZ1yag+OQjpKkfeA3WaMgqd3V46Vg0YR6B3L9py4df1zcNViZC/aHZ/HnGVcKTuNwp58xbkl9hOVjRSQLv9AaukCYWbEgvWRneXgfZkYAUOBYMsBDAQPB9jZn2fGyA9S5MOutJqLKPXnXOA2VEBwydUcYesBrBhw6B2PJGE7KyxadUtVAqmbiKkvL/dnq5NyN24ZvlLmM6yGJgcTnInktusicX4NxJ3rAjc6RKQgDZRQazMZnou3NSy055ohe6SD3AAywzs+ndVxukN+hTddZwt4rIPmtmHD7DdnV6NMA6mcfZgSZeTtr9JwDjg35hSprGU9tW1e9q+yMRshZ6lgYnCvDQlWkg40QZk2dqZuyD9XfrZcyKo28ktLRM77Kl5rQdiAFvT+oyqYjyfAllXmvkJPjP0URvFj3HOJA6eo/iGoZj0FiKY3ePWhU65gjhsxJZdRM8udGBTLzgESEwWp2h6qX4DWuXb54uh7/35G/MfHZerpC/bRigr4tj08PiEA7dGay4/Yglt558SOiOnf3KVoRzyeNTSyyUQr3Xp+VVDJsM70TBSwyUl5bKig9dEBXCAR68EMG9LfJm46UPLVkF4T8e8XlX0HFho42NkdxPctBjXZUFaz6SCpprxUJimm4DU2yDGXjwC3SMvA/oN+GLQpW8zDk3qc61JifxlLwmAWeFCURanAybmJbJeIfNCWY5Dm88APogHfrhfrZgUa0dX+HBgMY2KAK5QIxy9ghTJcvBr18dkdxe0RFEtgGFJJgdz1CerniWZdED8N+ZcRb8/aIWDb9z0APGF12CmA4fHVAXtUvMO6VRph6HJ+xM71k5MlxPtKxYTIMNLNXGP2MEccAfEoFv8lR3hzb/7RH272EmicWUxEEX4UTJ+Sb0YN9fQmcroCBjdcAdwO6ZcNScTSPhU81cQhoguCTG+bf6XlNYkBAqJAoK0S3RayScwu+VW5XGwNVT2I4W7pWmAcJfHHbKa8R4tiu9ntKNZZ9AnR1zUkJBsrmCb8TzT8j9YqhdtCeIVXn7SMtXzXRsnO0UbpGhiAl/8P678n3Ugv92cmSD6oUNwePWjcUIT+sJcZcx03nLjDwsHYCjoWv9cSwZ8eW9pwf3/s1TZCedj2nI/32HT1jjkwHbvdlUsS5x/R8UjEEG61jvtuLmCwuv5MNzE1wOBjBfuXTmI4f+37Axyj87ek8SXsKreJqCQzGtytSiXrSaciRPcnQQamD7kw1KmwisZnTTa7lgp7dX1Sz0j7Ym+dA3f/0WTnXLlZ/D+5tyyrP3pOyY0Iib7BwCXwxLyjw54hAOuRc6xHBL6vE2+PEC70KMipceuN/oLKdFCzwvaicSpzob55wkJoqVTwl3MRyPshcQbX3YatesKlHgiF423vlmJe+DpZM74I55jGjbnAjy6foo5gnqr9rUYcAufasoYFjIE0dGuxecUSSJEeOnjGQUmD+WnxqDGXuYi6J2J02A5eELgEZ6ngHLZa8KRLR+z+S119BbNGQ6x/v5JjGW/xvKD6ULGIQQ3GB+mtOuDsVipDyfs42A6HHg5QnwD+UC9fMFkeLq+e3mS2icEOXG/KeWDyBCALC9R9S6T5UhMiV3vvx6VtyjFzdSDr7evE80nBBI5sP6rtELFNDZdFlAwZoY21jNQm3VxbOvNod5dcdfEX1/fcsrL1haIUiAHmDTm1kTrV15i4f9kQKf9fcBNw6QgrF0omYYqI3McvNiEUm0ULc9FrlvDermFRh1Fn9VNJaREaA5Bi05PswRoeAbRWt2przleTQfvY479Z5E3G1Y/ORCznuksFVBBJ1+fhMENMUoG5D8Yv1X+tED3NcROxSHIa0LlXJb/6Hw4Gx1VzUEqOBP0H55AXeUjmrQIW6fM/gNkZovWq+zQl/tqIIegshn+rTFxY/is3CCNk71pQ4aMkebJOA4uFIL30d8ho4x3vSoBa6iTaXRXWFInEpqV9FozQwKpHsw+IyF2ZU/LyQvGQ0C3vUyShna0/dWM7GAd5tGOeCq8zwJa7uJcqj6vzVLGOwGvhUpVTK5KiiLWTjO3kvL5+3xOnKMXx7w/ZOWTkN7Z5xDmgtKTKHHpH4/Z77QhQMcta8qUluoDTvmj+uCJUGlrOsXbhSTsQTZOChhwjwnLcgE4vHHiOO0M2MKu5Ov/kNcPtJcA59Wot4rxUujH3DmVXEgOA7nAAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: JOURNAL ENTRIES FORM GST TRANSACTION @ SHUBHAM 12-OCT-18
+ * **************************************************************************************
+ * 
+ * Created on 16 Sep, 2017 6:14:08 PM
+ *
+ * @FileName: omusrtranjrnlgsttransaction.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+//
+//
+if ($transactionType == 'TransPayment') {
+    $desc = 'GST Transaction';
+    $transType = 'TransPayment';
+}
+
+if ($transactionType == 'TransPayment') {
+    $query = "SELECT * FROM transaction WHERE transaction_own_id = '$sessionOwnerId' "
+            . "AND transaction_upd_sts = 'PaymentPending' "
+            . "AND transaction_firm_id = '$firmId' AND transaction_pre_vch_id = '$payPreInvoiceNo' "
+            . "AND transaction_post_vch_id = '$payInvoiceNo'";
+    //echo '$query =='.$query;
+    //
+     $resQuery = mysqli_query($conn, $query);
+    while ($row = mysqli_fetch_array($resQuery)) {
+        
+    $jrtrMainDrAmount = $row['transaction_amt'];
+    $jrtrTransDrAccId = $row['transaction_to_dr_acc_id'];
+    $jrtrMainTransCRDR = 'DR';
+    $jrtrTransDrDesc = $row['transaction_sub'];
+    $jrtrTransDesc = 'GST Transaction';
+    //echo '$jrtrMainDrAmount =='.$jrtrMainDrAmount.'<br />';
+    //echo '$jrtrTransDrAccId =='.$jrtrTransDrAccId.'<br />';
+//if (($jrtrMainCrAmount == 0 && ($jrtrMainDrAmount != 0 && $jrtrMainDrAmount != '' && $jrtrMainDrAmount != NULL)) ||
+//        ($jrtrMainDrAmount == 0 && ($jrtrMainCrAmount != 0 && $jrtrMainCrAmount != '' && $jrtrMainCrAmount != NULL))) {
+    $jrtrJId = '';
+    $jrtrJrnlId = $jrnlId;
+    $jrtrOwnId = $sessionOwnerId;
+    $jrtrUserId = $userId;
+    $jrtrUserType = $userType;
+    $jrtrTransId = $transId;
+    $jrtrTransType = $transType;
+    $jrtrFirmId = $firmId;
+
+    $jrtrTransCRDR = $jrtrMainTransCRDR;
+    $jrtrDrAmt = $jrtrMainDrAmount;
+    $jrtrDrAccId = $jrtrTransDrAccId;
+    $jrtrDrDesc = $jrtrTransDrDesc;
+    $jrtrCrAmt = $jrtrMainCrAmount;
+    $jrtrCrAccId = $jrtrTransCrAccId;
+    $jrtrCrDesc = $jrtrTransCrDesc;
+    $jrtrDesc = $jrtrTransDesc;
+    $jrtrOthInfo = '';
+    $jrtrDOB = $jrnlDate;
+    $custFirstName = '';
+    $custLastName = '';
+
+    $apiType = $transApiType;
+    include 'ommpjrtr.php';
+    
+    
+//        }
+    }
+    //
+    $jrnlTransCrAccId = $sundryDebAccId;
+    $jrnlTransCrDesc = $sundryDebAccName;
+    //
+    $jrnlTransDrAccId = $jrnlTransAccId;
+    $jrnlTransDrDesc = $jrnlTransDesc;
+    //
+    $jrnlTransDesc = $desc;
+    //*********************************************************************************************************************************************
+    /*********************************************************************************************************************************************
+    // Start JRTR entry data @ PRIYANKA-18-SEP-17
+    /**********************************************************************************************************************************************
+    //******************************************************************************************************************************************** */
+    //
+    // DR account details
+    $jrtrMainTransCRDR = 'DR';
+    //
+    $jrtrMainCrAmount = 0;
+    //
+    $jrtrTransCrAccId = ''; // $sundryDebAccId
+    $jrtrTransCrDesc = $sundryDebAccName;
+    //
+    if ($payRoundOffAmt > 0.5) {       
+        $jrtrMainDrAmount = ($jrnlDrAmount - $payTotOthChgs - $payCGSTaxAmt - $paySGSTaxAmt - $payIGSTaxAmt - $payMkgCGSTAmt - $payMkgSGSTAmt) - (1 - $payRoundOffAmt);
+    } else {
+        $jrtrMainDrAmount = ($jrnlDrAmount - $payTotOthChgs - $payCGSTaxAmt - $paySGSTaxAmt - $payIGSTaxAmt - $payMkgCGSTAmt - $payMkgSGSTAmt) + $payRoundOffAmt;
+    }
+    //
+    //$jrtrMainDrAmount = $jrnlDrAmount - $payTotOthChgs - $payCGSTaxAmt - $paySGSTaxAmt - $payIGSTaxAmt - $payMkgCGSTAmt - $payMkgSGSTAmt;
+    //
+    $jrtrTransDrAccId = $jrnlTransAccId;
+    $jrtrTransDrDesc = $jrnlTransDesc;
+    //
+    $jrtrTransDesc = $desc;
+    //        
+    //********************************************************************************************************************************************
+    // START CODE FOR BANK TRANSACTIONS @ PRIYANKA-18-SEP-17
+    //********************************************************************************************************************************************
+    // Cash account
+    //
+    $jrtrCashCRDR = 'CR';
+    //
+    $jrtrCashCrAmount = $payCashAmt;
+    $jrtrCashCrAccId = $cashAccId;
+    $jrtrCashCrDesc = $cashAccName;
+    //
+    $jrtrCashDrAmount = 0;
+    $jrtrCashDrAccId = '';
+    $jrtrCashDrDesc = $jrnlTransDrDesc;
+    $jrtrCashDesc = 'Cash Payment';
+    //
+    $jrtrBankCRDR = 'CR';
+    //
+    $jrtrBankCrAmount = $payChequeAmt;
+    $jrtrBankCrAccId = $bankAccId;
+    $jrtrBankCrDesc = $bankAccName;
+    //
+    $jrtrBankDrAmount = 0;
+    $jrtrBankDrAccId = '';
+    $jrtrBankDrDesc = $jrnlTransDrDesc;
+    $jrtrBankDesc = 'Bank NEFT/IMPS Payment';
+    //
+    $jrtrCardCRDR = 'CR';
+    // 
+    $jrtrCardCrAmount = $payCardAmt;
+    $jrtrCardCrAccId = $cardAccId;
+    $jrtrCardCrDesc = $cardAccName;
+    //
+    $jrtrCardDrAmount = 0;
+    $jrtrCardDrAccId = '';
+    $jrtrCardDrDesc = $jrnlTransDrDesc;
+    $jrtrCardDesc = 'Card Payment';
+    //
+    $jrtrOnlinePayCRDR = 'CR';
+    //
+    $jrtrOnlinePayCrAmount = $payOnlinePayAmt;
+    $jrtrOnlinePayCrAccId = $onlinePayAccId;
+    $jrtrOnlinePayCrDesc = $onlinePayAccName;
+    //
+    $jrtrOnlinePayDrAmount = 0;
+    $jrtrOnlinePayDrAccId = '';
+    $jrtrOnlinePayDrDesc = $jrnlTransDrDesc;
+    $jrtrOnlinePayDesc = 'Online Payment';
+    //
+    $jrtrDiscountCRDR = 'CR';
+    //
+    $jrtrDiscountCrAmount = $payDiscountAmt;
+    $jrtrDiscountCrAccId = $discountAccId;
+    $jrtrDiscountCrDesc = $discountAccName;
+    //
+    $jrtrDiscountDrAmount = 0;
+    $jrtrDiscountDrAccId = '';
+    $jrtrDiscountDrDesc = $jrnlTransDrDesc;
+    $jrtrDiscountDesc = 'Discount Paid';
+    //
+    //******************************************************************************************************************************************
+    // START CODE FOR CGST, SGST & IGST TAXES @ PRIYANKA-18-SEP-17
+    //******************************************************************************************************************************************
+    //
+    $jrtrCGSTCRDR = 'DR';
+    //
+    $jrtrCGSTCrAmount = 0;
+    $jrtrCGSTCrAccId = '';
+    $jrtrCGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrCGSTDrAmount = ($payCGSTaxAmt + $payMkgCGSTAmt);
+    $jrtrCGSTDrAccId = $CGSTAccId;
+    $jrtrCGSTDrDesc = $CGSTAccName;
+    $jrtrCGSTDesc = 'CGST TAX Rec.';
+    //
+    $jrtrSGSTCRDR = 'DR';
+    //
+    $jrtrSGSTCrAmount = 0;
+    $jrtrSGSTCrAccId = '';
+    $jrtrSGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrSGSTDrAmount = ($paySGSTaxAmt + $payMkgSGSTAmt);
+    $jrtrSGSTDrAccId = $SGSTAccId;
+    $jrtrSGSTDrDesc = $SGSTAccName;
+    $jrtrSGSTDesc = 'SGST TAX Rec.';
+    //
+    $jrtrIGSTCRDR = 'DR';
+    //
+    $jrtrIGSTCrAmount = 0;
+    $jrtrIGSTCrAccId = '';
+    $jrtrIGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrIGSTDrAmount = $payIGSTaxAmt;
+    $jrtrIGSTDrAccId = $IGSTAccId;
+    $jrtrIGSTDrDesc = $IGSTAccName;
+    $jrtrIGSTDesc = 'IGST TAX Rec.';
+    //
+    // START CODE FOR MAKING CHARGES @PRIYANKA-14-DEC-17
+    //
+    $jrtrMKGCRDR = 'DR';
+    //
+    $jrtrMKGCrAmount = 0;
+    $jrtrMKGCrAccId = '';
+    $jrtrMKGCrDesc = $mkgChrgsAccName;
+    //
+    $jrtrMKGDrAmount = $payTotOthChgs;
+    $jrtrMKGDrAccId = $mkgChrgsAccId;
+    $jrtrMKGDrDesc = $mkgChrgsAccName;
+    $jrtrMKGDesc = 'LABOUR CHARGES';
+    //
+    // END CODE FOR MAKING CHARGES @PRIYANKA-14-DEC-17
+    // 
+    // ********************************************************************************************************************************************
+    // START CODE FOR GOLD ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Gold Account
+    //
+    if ($payGoldAccId != NULL && $payGoldAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'DR';
+        //       
+        $jrtrGoldSilverStockInvCrAmount = 0;
+        $jrtrGoldSilverStockInvCrAccId = '';
+        $jrtrGoldSilverStockInvCrDesc = $jrnlTransDrDesc;
+        //
+        $jrtrGoldSilverStockInvDrAmount = $payCashAmt;
+        $jrtrGoldSilverStockInvDrAccId = $goldAccId;
+        $jrtrGoldSilverStockInvDrDesc = $goldAccName;
+        $jrtrGoldSilverStockInvDesc = 'Gold';
+    }
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR GOLD ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // 
+    // ********************************************************************************************************************************************
+    // START CODE FOR SILVER ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Silver Account
+    //
+    if ($paySilverAccId != NULL && $paySilverAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'DR';
+        //
+        $jrtrGoldSilverStockInvCrAmount = 0;
+        $jrtrGoldSilverStockInvCrAccId = '';
+        $jrtrGoldSilverStockInvCrDesc = $jrnlTransDrDesc;
+        //
+        $jrtrGoldSilverStockInvDrAmount = $payCashAmt;
+        $jrtrGoldSilverStockInvDrAccId = $silverAccId;
+        $jrtrGoldSilverStockInvDrDesc = $silverAccName;
+        $jrtrGoldSilverStockInvDesc = 'Silver';
+    }
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR SILVER ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // 
+    // ********************************************************************************************************************************************
+    // START CODE FOR STOCK & INVENTORY ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Stock & Inventory Account
+    //
+    if ($payStockInvAccId != NULL && $payStockInvAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'DR';
+        //     
+        $jrtrGoldSilverStockInvCrAmount = 0;
+        $jrtrGoldSilverStockInvCrAccId = '';
+        $jrtrGoldSilverStockInvCrDesc = $jrnlTransDrDesc;
+        //
+        $jrtrGoldSilverStockInvDrAmount = $payCashAmt;
+        $jrtrGoldSilverStockInvDrAccId = $stockInvAccId;
+        $jrtrGoldSilverStockInvDrDesc = $stockInvAccName;
+        $jrtrGoldSilverStockInvDesc = 'Stock & Inventory';
+    }
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR STOCK & INVENTORY ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // 
+    //*********************************************************************************************************************************************
+    // START CODE FOR UDHAAR OR DEPOSITE MONEY CASE @ PRIYANKA-18-SEP-17
+    //*********************************************************************************************************************************************
+    if ($payTotalAmtBal < 0) {
+        //
+        $jrtrAmtBalCRDR = 'CR';
+        //
+        $jrtrAmtBalCrAmount = $payTotalAmtBal;
+        $jrtrAmtBalCrAccId = $totalAmtBalAccId;
+        $jrtrAmtBalCrDesc = $totalAmtBalAccName;
+        //
+        $jrtrAmtBalDrAmount = 0;
+        $jrtrAmtBalDrAccId = '';
+        $jrtrAmtBalDrDesc = $jrnlTransDrDesc;
+        $jrtrAmtBalDesc = 'On Purchase Balance Amt';
+    }
+    //
+    if ($payTotalAmtBal > 0) { 
+        //
+        $jrtrAmtBalCRDR = 'DR';
+        //
+        $jrtrAmtBalCrAmount = 0;
+        $jrtrAmtBalCrAccId = '';
+        $jrtrAmtBalCrDesc = $jrnlTransDrDesc;
+        //
+        $jrtrAmtBalDrAmount = $payTotalAmtBal;
+        $jrtrAmtBalDrAccId = $totalAmtBalAccId;
+        $jrtrAmtBalDrDesc = $totalAmtBalAccName;
+        $jrtrAmtBalDesc = 'On Purchase Balance Amt';
+        //
+    }
+}
 ?>

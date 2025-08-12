@@ -1,3 +1,145 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 28, 2020 11:57:06 AM
+ *
+ * @FileName: omTransUpdSubDiv_1.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:SHRI
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$selFirmId = NULL;
+if (isset($_GET['firmId'])) {
+    $selFirmId = $_GET['firmId'];
+} else {
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+
+if ($noOfTransactionsAftSecondTrans > 0) {
+    $transactionEntryCount = 3;
+}
+
+
+while ($rowAllTransactionsDetails = mysqli_fetch_array($resAllTransactionsDetails, MYSQLI_ASSOC)) {
+    $subTransId = $rowAllTransactionsDetails['transaction_id'];
+    $mainTransId = $rowAllTransactionsDetails['transaction_trans_id'];
+    ?>
+    <div id="transactionEntryDiv<?php echo $transactionEntryCount; ?>" name="transactionEntryDiv<?php echo $transactionEntryCount; ?>">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="left" width="23%" class="textBoxCurve1px backFFFFFF">
+                    <input type="hidden" id="del<?php echo $transactionEntryCount; ?>" name="del<?php echo $transactionEntryCount; ?>" value="<?php echo $transactionEntryCount; ?>" />
+                    <input type="hidden" id="transactionDiv<?php echo $transactionEntryCount; ?>" name="transactionDiv<?php echo $transactionEntryCount; ?>" />
+                    <input type="hidden" id="addTransactionDivCount" name="addTransactionDivCount" value="<?php echo $transactionEntryCount; ?>"/>
+                    <input type="hidden" id="panelName" name="panelName" value="updateTransaction"/>
+                    <input type="hidden" id="transId<?php echo $transactionEntryCount; ?>" name="transId<?php echo $transactionEntryCount; ?>" value="<?php echo $subTransId; ?>" />
+                    <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                        <?php
+                        $prevFieldId = 'transAmtCr2';
+                        $nextFieldId = 'transAmtDr' . $transactionEntryCount;
+                        $allAccountDivId = 'transToAcc' . $transactionEntryCount;
+                        $accIdSelected = $rowAllTransactionsDetails['transaction_to_dr_acc_id'];
+                        $accNameSelected = '';
+                        $allAccountDivClass = 'textLabel14CalibriReq';
+                        $firmIdSelected = $rowVoucherNoDetails['transaction_firm_id'];
+                        include 'omacpalt.php';
+                        ?>
+                    </div>
+                </td>
+                <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+                    <input id="transAmtDr<?php echo $transactionEntryCount; ?>" style="padding-right:10px"
+                           name="transAmtDr<?php echo $transactionEntryCount; ?>" spellcheck="false" type="text" placeholder="AMOUNT" value="<?php echo $rowAllTransactionsDetails['transaction_dr_amt']; ?>"
+                           onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('transFromAcc'.$transactionEntryCount').focus();
+                                               return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('transToAcc<?php echo $transactionEntryCount; ?>').focus();
+                                       return false;
+                                   }"
+                           onblur="if (this.value == '') {
+                                       this.value = '<?php echo $rowAllTransactionsDetails['transaction_dr_amt']; ?>';
+                                   }
+                                   appendDecimalsOnTransAmts();"
+                           onkeyup="calcTotTransAmount();"
+                           spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+                </td>
+                <td align="left" width="23%" class="textBoxCurve1px backFFFFFF">
+                    <div class="selectStyledBorderLess backFFFFFF floatLeft">
+                        <?php
+                        $prevFieldId = 'transAmtDr' . $transactionEntryCount;
+                        $nextFieldId = 'transAmtCr' . $transactionEntryCount;
+                        $allAccountDivId = 'transFromAcc' . $transactionEntryCount;
+                        $accIdSelected = $rowAllTransactionsDetails['transaction_from_cr_acc_id'];
+                        $accNameSelected = '';
+                        $allAccountDivClass = 'textLabel14CalibriReq';
+                        $firmIdSelected = $rowVoucherNoDetails['transaction_firm_id'];
+                        include 'omacpalt.php';
+                        ?>
+                    </div>
+                </td>
+                <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+                    <input id="transAmtCr<?php echo $transactionEntryCount; ?>" style="padding-right:10px"
+                           name="transAmtCr<?php echo $transactionEntryCount; ?>" spellcheck="false" type="text" placeholder="AMOUNT" value="<?php echo $rowAllTransactionsDetails['transaction_cr_amt']; ?>"
+                           onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('transSub').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('transFromAcc<?php echo $transactionEntryCount; ?>').focus();
+                                       return false;
+                                   }"
+                           onblur="if (this.value == '') {
+                                       this.value = '<?php echo $rowAllTransactionsDetails['transaction_cr_amt']; ?>';
+                                   }
+                                   appendDecimalsOnTransAmts();"
+                           onkeyup="calcTotTransAmount();"
+                           spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+                </td>
+                <?php // if($transactionEntryCount < 10){ ?>
+    <!--            <td align="center" class="padLeft3">
+                    <a style="cursor: pointer;" 
+                       onclick="if (document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == '' || document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == 'true')
+                                   getTransDivFunc('<?php echo $transactionEntryCount + 1; ?>', 'transactionAddDiv', '<?php echo $transactionId; ?>', '<?php echo $trans_id; ?>', '', '<?php echo $documentRootBSlash; ?>', '<?php echo $selFirmId; ?>');">
+                        <img src="<?php echo $documentRootBSlash; ?>/images/update16.png" alt="Click Here To New Trans Div" class="marginTop5"
+                             onload="<?php if ($panelName != 'updateusergroup') { ?>
+                                                               document.getElementById('LastDiscountPercent').focus();
+                <?php } ?>"/>
+                    </a>
+                </td>-->
+                <?php // } ?>
+                <?php if ($transactionEntryCount != 3) { ?>
+                    <td align="right" class="padLeft3">
+                        <a style="cursor: pointer;" 
+                           onclick ="closeTransFunc('<?php echo $transactionEntryCount; ?>', 'updateTransactions', '<?php echo $mainTransId; ?>', '<?php echo $subTransId; ?>', '<?php echo $documentRootBSlash; ?>');">
+                            <img src="<?php echo $documentRootBSlash; ?>/images/delete16.png" alt="delete" class="marginTop5"/>
+                        </a>
+                    </td>
+                <?php } else { ?>
+                    <td align="right" class="padLeft3">
+                    </td>
+                <?php } ?>
+            </tr>
+        </table>
+    </div>
+    <?php
+    $transactionEntryCount++;
+}
+?>
+<div id = "transactionAddDiv<?php echo $transactionEntryCount + 1; ?>"></div>
+

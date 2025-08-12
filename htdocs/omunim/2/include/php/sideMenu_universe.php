@@ -1,3 +1,378 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: File of Side Menu featutrs
+ * **************************************************************************************
+ *
+ * Created on 26 Dec, 2017 09:34:08 AM
+ *
+ * @FileName: sideMenu_universe.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <!-- begin::Head -->
+    <head>
+	<meta charset="utf-8"/>
+        <meta name="description" content="Latest updates and statistic charts">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- begin::Web font -->
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script>
+            WebFont.load({
+                google:{"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+                active: function(){
+                        sessionStorage.fonts = true;
+                }
+            });
+        </script>-->
+	<!-- end::Web font -->
+    </head>
+    <!-- end::Head -->
+    
+    <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-light m-aside-left--fixed m-aside-left--offcanvas m-aside-left--minimize m-brand--minimize m-footer--push m-aside--offcanvas-default">
+        <!-- begin:: Page -->
+	<div class="m-grid m-grid--hor m-grid--root m-page">
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop">
+                <!-- BEGIN: Left Aside -->
+                <button class="m-aside-left-close  m-aside-left-close--skin-light " id="m_aside_left_close_btn">
+                    <i class="la la-close"></i>
+                </button>
+                <div id="m_aside_left" class="m-grid__item m-aside-left  m-aside-left--skin-light ">
+                    <!-- BEGIN: Aside Menu -->
+                    <div id="m_ver_menu" class="m-aside-menu  m-aside-menu--skin-light m-aside-menu--submenu-skin-light " data-menu-vertical="true" data-menu-scrollable="true" data-menu-dropdown-timeout="500">
+                        <ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle"
+                                    onclick="navigation_universe('omAddCustomer');">
+                                    <i class="m-menu__link-icon icon-home"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/stock32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Home</span>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link"
+                                                onclick="navigation_universe('omAddCustomer');">
+                                                <span class="m-menu__link-text">Home</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-layers"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/addGold32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Add Stock</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true" >
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Add Stock</span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item" aria-haspopup="true" data-redirect="true">
+                                            <a  href="#" class="m-menu__link"
+                                                onclick="navigation_universe('addStock');">
+                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="m-menu__link-text">Add Stock</span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item" aria-haspopup="true" data-redirect="true">
+                                            <a  href="#" class="m-menu__link"
+                                                onclick="navigation_universe('omAddImitationStock');">
+                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="m-menu__link-text">Add Imitation Stock</span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link">
+                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="m-menu__link-text">Add Mobile Stock</span>
+                                            </a>
+                                        </li>
+                                        <li class="m-menu__item " aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                    <span></span>
+                                                </i>
+                                                <span class="m-menu__link-text">Add Medical Stock</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-suitcase"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/stock32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Stock Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Stock Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle"
+                                    onclick="navigation_universe('omSell_Purchase');">
+                                    <i class="m-menu__link-icon flaticon-graphic-1"></i>
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Sell/Purchase Item</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-title">
+                                                    <span class="m-menu__link-wrap">
+                                                        <span class="m-menu__link-text">Sell/Purchase Item</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-light"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/newOrder32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">New Order Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">New Order Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="inner.html" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-share"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/repair32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Repair/Fix Items</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Repair/Fix Items</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-graphic"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/tag32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">BarCode Tag Print Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">BarCode Tag Print Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-pie-chart"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/girvi32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Girvi Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Girvi Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-clipboard"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/udhaar32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Udhaar Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Udhaar Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-technology"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/transactions32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Daily Transactions Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Daily Transactions Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-user"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/maleUser32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">User List Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="inner.html" class="m-menu__link ">
+                                                <span class="m-menu__link-text">User List Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-user-add"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/adduser32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Add New User Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Add New User Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-pie-chart"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/search32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Customer/Girvi Search Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Customer/Girvi Search Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-users"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/analysis32.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Analysis Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Analysis Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true"  data-menu-submenu-toggle="hover" data-redirect="true">
+                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                    <i class="m-menu__link-icon flaticon-symbol"></i>
+                                    <!--<img alt="" src="assets_universe/demo/demo6/media/img/logo/calculator24.png"/>-->
+                                    <span class="m-menu__link-text" style="width: 100px !important;">Girvi Calculator Panel</span>
+                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                </a>
+                                <div class="m-menu__submenu">
+                                    <span class="m-menu__arrow"></span>
+                                    <ul class="m-menu__subnav">
+                                        <li class="m-menu__item  m-menu__item--parent" aria-haspopup="true"  data-redirect="true">
+                                            <a  href="#" class="m-menu__link ">
+                                                <span class="m-menu__link-text">Girvi Calculator Panel</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END: Aside Menu -->
+                </div>
+                <!-- END: Left Aside -->
+            </div>
+        </div>
+    </body>
+</html>

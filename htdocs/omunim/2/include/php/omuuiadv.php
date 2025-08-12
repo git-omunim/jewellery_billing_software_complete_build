@@ -1,3 +1,210 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABIEQAApcQBn/m2gRcZhtYkotz/kmRePFG1TTGVH3mh/4BMFVh/CdfroYyuXyoN2CanoHzO9k4g2yziibcegx1OsCAWnPhxB6ELkhwBzzhwI1vGUMV0Mhx4qoKswP4fbikzRUNeax85TwVjfZnml2REgsl9vj4vVsChWNSvuuMWH14+0n2GoVDj7TEDyco9acIj6EPV5Qf9FWEoCN2ukdyB3EVR2TG5sBtKSf2WqiqRt0Vdrl7GJk0Jc+vH307W9S7/w93aXQpcZJfYn0LqySWFsnYYRxHcRy5v50mkQEL3xdLIR6tytVQzJCvziOvymBDHTZbIUAZYWoFy+zw46JFZpsee838L2NCX3SGU957qsWJDvrRzqimok2JjZe1LR61q/9s9j2S1iEQ2e0eqbOw3xhhVJEuJhWRTLKg0HnE2OGDF3TlIoMW2SBA4AEe8bCWqvx5dduIH1vivlM+DLFxAuoJ6F7ATgpShLJigU1tgcyPphjMCauh/1AQJGLY3DGMMeZgr7Dm+dXKOpzgefpd5tcNPqpMMSTdBTbIULJkz9cpKby2iGesNIQOhmmZRKrxpiqyV7HE5tGDGInmaKzM83E4ycVwZJdHd5jAUMIemPfPHkQnKa438utp1eGJFssyoi3a7rpF9ZPImA0/I41LbywXyuRINxMmuQsy4lruo3lDS5ZIFn10ysxkR+hpdyRYRDBcsvDd80TY0LcjCv+cZ+H0U7q6bmeAV1L9WF7Sq09cQTLXXAG7EL60EtuosP10KNqfrM+UdozHi0W4YNdP2UkZXOSRlBMOmX8vJBIVgG4lH141U7nSmxeEZ39PjrLj0SAE0H7FXrjm+vrF+Ob5IAzyBj0bsTV5jYZ0UAjhtmNwxl24f1uOdMuQhfIKA2OOggeq0fKjKEYq87A5TxM3+l3SRY11oB12L51ZEpnqgEfLTc/pGoDfAau4oEkhaxRzmvSXwecA+9VJaQ5yNJs9SnQRVaJbffouKu1C2xLkuNosH0Ti0JTnrjY0COVfQVmvxRV372wW+tw678MC3c3AwZ5tRmVe1x/F7B47VZhlULO/eoACfXaFeZbel+VdgYZMfXYSQx7vIMZ1Ly7obAwXaviG+zqYXMsLHbKdZYbqwtoFX8TkhZlOkLdyPtl+1QpHY/nJLozSPMhGAZhJs0+AZqnR3rk3ysppuleHTyF3r8eZr8jEkGj3ozwBA2kdjzXBhL5ICVSv8kvrlIMYxSs6yB1yLZtPIVTlTqR1VZRM5lOAvl5iTsXCTwvH2/l5mhYSt2gezG0bpkhry+BZXx6bjRWx8qyarGRWI+n4FZ1/poZcSnsLxpV89sU04OqMAKVf0BtDYSv6u4UHoJQZrqEcxxPXzTld4FGm+ATv+9HzdKcBbTvRHbg1o10UHPqBAEyo60cfhR/ofbYmw7FSOXbKd5L1NT6e4XncS/nretnjUiNSbp0DH6+Kgig+j5kV34Lh+aY5zP61BNeKVSO0vtZWJswureq0xiXZZAxD2Dux8iWTf7rf+HpK3ku4H4Aq4CZiV5WYDMXkza5P/0DAly7eRGVAp2ytPMMt3gMkPmacZPC1ZqSENpoYQ4aY8K/xbweO57VxDQpBeV+sGlFKSXcXZdeyDpq49z76MsjF2bdubWtmr/SrT2CUBf0hRRBLwfxDuOvMlM2OaHQN7isLHxyHME+JRUdU7nBzWpF4b9evLFRxJWUr+dYk9LuLfv5gonl8Pe1ScAKB6Ex1/3QMfH1xT9vmAfZCOy7I5kHsjm43DDT3Huj7+KDdb5vGYgqzXLulGc+wsx/+MgcatnblaQGmbj52xWSZy6IpITZknPg+dF9qFSNyQ1sQqQ6jasR+4cVr8ynErZcepLwbL36jSXGWGj+DxA2Wd5Ipei4jVDQ0ivtgx5pgKRDiIdAQqHDDCpImDoyzaJ7DdqvzK11ksyv7xNWaY6DvPYARHcjSIHdQuUv5FHCZ9pd/ho2iuR5IdfsYGOrwbnlSzcvxUrN1KMPDFX5qgx3Q+rakbmr/ikxVLtlobcbZnmrr6qXHV6YNsI/wD9yEOfSWM27Vvo0Yg+bG2mzyAaKjQB5pqCuPFD8IXT8bcyg6nKhwLSHyI+KitaefkjkllB1Tp6n1JSqinZJxdTyJICZ/NpolWXyX5OvyNLnBoUs8RK0z89HhZ3KoihihTnuOAIu6a7gyqFJYtkmT/Leux/aExyu4e6UOBTtoLAS9qm5lXL/R/Rfvhs6MfxdlmieVZpan1XXJmb7fBlFN20WBgocPTK7eD1PHJiStmZu7OL9vdYqIMHYwoYM5831p8fDmlSH6wDXlwnVaz0fGCMJ9d5hAFu1cuIHsI7yXZbi4IbNb7YqZ/U4gQmrWsopjeAQ1hWWtPt24nFPYqoIEFsaZBJVRp5ocaD4kYnPqFwV6pD0aWxwcWoP2Q2jI77gFxqeEF8hWT4vUdcd+D1IFccL/NKILYDGsvJAHj9huSi3KmAq3BHyTuIsx7GXQb5/GUzFUrEaido5QyUWRGsuZv5VfGTetB2rS3U15NXdLYb3H8TSlsBT0+vLXghHiMv7h8wPZtYiKe7CAK7xKFRMTlGgX3FtE+x04OG8ciGkB2y9o+tqJok7Ftf5cPqEe8i+mHdFwRs3vu+HjAmYRgMAwUxEqxsezd0y9RE7njlHxQE/TfmkcnuZb62WnhULo5BoCRikVYSUmTmraBCCM+uZxL71f4q3pR14BWxzN/htAtXZptUFyNVNGjxbEyz1gOag8ytzkw9zAHT4Sd6c0oKUTLsoN63mRVOyGcNTAW8yLn5ludtKwb5latwa0wosuKS9i07pMKbYnlsVqJ3OnquKJPq9x2TWK3/AxpPzMsmX7+uxutjG6oTeETl2bFsi7bN0Atn2SDXNrsUqdvgo9NuihScsoGjVgDCIjP+NsuDanxMYkSTxjTU1LHrqpSx7NjxJOekXGJdxW0JyqgoPviklVU6cU9ppaTH6KwLPwkMev6sczHfMLWd8qsQ3fZpESnoXslhU2KpN+dQdlZDYYsPLjwFzELK2kJQzS0jx0HnwytTdtH7ydQDAInr5brk7fFEpxNsBgKU/cYOuGMZj2f9+HwqFyCB/s/qJ2H16XSJvFTmOcntwU2hW5we5Z5YLtl82ybsQpLzXPQXHfrqvSqSqaqawOFsREbAWAA8xmuVxLMgzXO5sfH/+Pg3LEYTLW8YxjDY/zXskHRprD90wnQR+WR09Uc4PZXLhrNUHJ6L7gAwnzyB+2oJ+bA3vIUGD4BIhbgdkeO7yKHOYdSOHri3IPb3djbR3sMUIfYFFYIsiK0eKMFyalqeQNdUWdRTeECd6XmX5WJHkmrbTPyNYyk5j4MD5wYl8kQlbYc4p3G/QU4A+66sfLh2pyU9dBfUdhQJtwzGDiU4KhFHYzFiGeiJL+KDc5XIPv0ktKVKHreY9UcQtL5vbIg3uFUsjyT33YERi18te9ADxk7M7La34OF1X44IsCrclY1wAZm+mIgVIFx/fVxpjm7u1gRw7LzQXMJqFALXfuilwRTVJSgG+gYL5W+a273TRPQq6v4UeKzbs376Gdv32fXLYCA+gkLhur7qEYvpHidjC3EQ3/BN9/94wdgQDCqzjO4hPsZ7jouKyjAzzm7wE9J806qByS5W0fLtw/4HRlrk6wZkzigJb8oZrtVC5UtAuHR7ShIbiGV2c/pb+tN69a8iOpYXVG3By1EU/7Tr2UwZBnRN6BjhOtJqr/26Eh2bn+TQjgQrTS6H6lwRHz2J0SrxY94QS6wQml1F0pTo+ad6QyUOuLBo08flQbWB+8+JVkLaQe4Y7IiXOn0kzR43fSRBFocwQgZVhtAb9iZ6jC6isatwJQP/4iloBuzuJ7TdRT4It65bcmVvV7hLwHDgM/OZmseNGHiaf6meV+qT781zIk2pweFn1sGZLuyHu6Fbrudxxp4NwHmpR6bqzSclDQrlgUnvXnwyfN7U45fGMnRfRRpBp4J5mJkleRVv92aN3Mn8JUROckc57ijqRfn8EKdAooiW4UuyWbrtr1oSdrek99QW+h2cTAnBnhlNJq79f3ac6ifW8eZGpGmPTAPWIAeyaGDJiVxSXa2dLyj8HEqm6nFNEc/eFAn46j7DJGt0cpyC/X9ebLgdYPDFh+kXdEtQ/WMcAwN1FM+FR7sTIoPaUgvNbziE0Tdp0FRSBbx7es3YgjqWzeGLQ6VACkNFKEY5BN3HWLCmk8zAobT2TYTub1t5WgoodK+CLazBk6EYQSZXNXCLJJj+hHjsMhHj33B6CX4QsLyayCHu01uopA3O/jpD3rw+VFBzIzLNFR0uwvhngLFZYXCstRN0lDOdhOMxSfGweNlll42uMPiBmfrtKdcC49rB4X3aT6yRi7/1DBvl/gMkgOMfmoy/tI1qNccoijgQZSz1UCv25WxahXOoyKBQiWTJMX7U/JrzKt6Jm0Ii3kaoogfLsdm50kzWgcgQaCppz69CpstS67Sd2q3yEmVDIkiLHARuqh4t7IKlbfcWZhtWkuYtXBW2GF84v6sigP+GY7DRFF9WD068L+UhduvCgJ0HsHA6Rale/nDAnfsTBivlAqpuFkpdVvPiYRMMetGh1uHHne/0WRszSrStfLBFlDLJwtW5VcDFetzJsREXsA69OblK76SgJeEueR+RjkJerKtGBo7NuKiYSgfoRGMlgAumEWbbSfMGAHLPiqk1sJOmQQcAjOej9AabiJtdaDi+A1IkEdSKSpjzOJV4tg45/6yTs0zhYVlhfgAgXPQv/VL7urvpS+5Y0K14vsDhlD8QL/oY+1qVBFoTg37W5UuAvQQUlNCw8Mezu2spK2lICYCqDcs3JAddA4N8iGl3nKF+kqlLCjrUjSeoz06Le2gLVxnMkblhk0lhfLBLhsejA4SCW25z4Jh0aU1sYFGkyuGXM85qct3TSF76+cq+eYM/Y89eMMzgXf/kQpYNWnAlvogI9St6wNv0K28AYKEaWHq1FnhRaxtDJpThklY6JJTANy7Aczp9FDgOKkVO0JwxVWNd/cU0oDQ1Rz76MxnRF1QLP+EKt0WkRpzG0mrLZW/IoRKirt5vfcYz7ijAWRG5O6WA61c0PEQiysZg64ftNiwQ3n87D2kuCuGFY6NgGunJLYivtMs2HPfdL6qNBcWdingmXW0m7ia9q908t5TChENzJhiy7pzuSiz+P4mKGSlAJ6Gd5UR0XAvwYYYlPGWBfe0fEo6b0iIiMz1sWMVUGh9MiNpWXuILyS8tG9Ltgn/q1FtwaFPFxLl2dAllwYm/831BhsHyzsGtliKSb5LNU5o/36k8YoUmRSQcpeAgqJ32H+lQqidAP0xL4sH1YUy0UxzjteoSmr3p8kKtRg8CAPL82aqsfdui8FJkmgKIbIi5ChIy0o3z/C4SKXbU1UsZxHMLniljYRJc25X+qkQBSkw3XMfdDfGCRbqAd1SjK8Fs+Zh42pIzxqCERn1cH8qugs9WUVThjcwgyjc1LEMqdsGa+DNgLB2Oyr4vb74eih6Qtj3U3JY2Q5voT3UWIvgFW+UZnr9n+kJd7VAj8ShKJ189ZL9jGUq64EY9HFjLHYjIm3VRJOiCVceASrxpi0lFjEPu+ONxpcvC7htNz9ivMd+0utgCansVuA+dnx0600Y3FueC4WekHEK7gx0yLeAa/PBmEVJ7xTmRFB9hUCy3tTvVFMLDWcpuDKBkpcDT9aWG+5E8UwwrusDaUyC3BwP/2EfwRDbiRpofyM7ee1lf19z5knjdbJzsw3Kyw4FsI0oMgPJo+WBc+dPQYr1ZONWKdaJpO11s3T+xGxAvo9ElqB0l+qHvnl9cr/cs+G1oYLSNsGmRyQUSUMn4YaJFV1LSJQJBYX31nCvbSGoE0qIB3CoKlQJxDMRD5W4E0sK1KR1Rs0mqBwAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Item add div
+ * **************************************************************************************
+ * 
+ * Created on Mar 18, 2014 11:56:14 AM
+ *
+ * @FileName: omuuiadv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+if ($itemDivCount == '') {
+    $itemDivCount = $_POST['udhaarItmCnt'];
+}
+if ($itemDivCount == '') {
+    $itemDivCount = $_GET['udhaarItmCnt'];
+}
+if ($itemDivCount == '') {
+    $itemDivCount = 1;
+}
+if ($udhaarItmPieces == '')
+    $udhaarItmPieces = 1;
+?>
+<div id="udhaarItemDiv<?php echo $itemDivCount; ?>" name="udhaarItemDiv<?php echo $itemDivCount; ?>">
+    <table border="0" cellpadding="2" cellspacing="2" align="center" width="100%" >
+        <tr align="left">
+            <td align="left" class="h414">
+                <div id="itemTypeDiv" class="selectStyled">
+                    <select id="udhaarItemType<?php echo $itemDivCount; ?>" name="udhaarItemType<?php echo $itemDivCount; ?>" 
+                            onkeydown="javascript: if (event.keyCode == 13) {
+                                        document.getElementById('itemName<?php echo $itemDivCount; ?>').focus();
+                                        return false;
+                                    }
+                                    else if (event.keyCode == 8) {
+                                        document.getElementById('udhaarType').focus();
+                                        return false;
+                                    }" 
+                            class="select_border_grey" onchange="changeItemTunchOption(this, '<?php echo $itemDivCount; ?>');">
+                                <?php
+                                if ($panelName == 'UpdateUdhaar') {
+                                    $udhaarItemTyp = array(gold, silver, other);
+                                    for ($i = 0; $i <= 2; $i++)
+                                        if ($udhaarItemTyp[$i] == $metalType)
+                                            $optionItemTypSel[$i] = 'selected';
+                                }
+                                ?>
+                        <option value="gold" <?php echo $optionItemTypSel[0]; ?>>GOLD</option>
+                        <option value="silver" <?php echo $optionItemTypSel[1]; ?>>SILVER</option>
+                        <option value="other" <?php echo $optionItemTypSel[2]; ?>>OTHER</option>
+                        <?php $optionItemTypSel = ''; ?>
+                    </select>
+                </div>
+                <input id="udhaarItemId<?php echo $itemDivCount; ?>" name="udhaarItemId<?php echo $itemDivCount; ?>" type="hidden" value="<?php echo $udhaarItemId; ?>"/>
+                <input id="udhaarItemDel<?php echo $itemDivCount; ?>" name="udhaarItemDel<?php echo $itemDivCount; ?>" type="hidden"/>
+                <input id="udhaarItemVar<?php echo $itemDivCount; ?>" name="udhaarItemVar<?php echo $itemDivCount; ?>" type="hidden"/>
+                <input id="udhaarItemDivCounter" name="udhaarItemDivCounter" value="<?php echo $itemDivCount; ?>" type="hidden" />
+            </td>
+            <td align="left" class="h414 padLeft10">
+                <input id="itemName<?php echo $itemDivCount; ?>" name="itemName<?php echo $itemDivCount; ?>" type="text"
+                       placeholder="ITEM NAME / DETAILS" value="<?php echo $udhaarItmName; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                   searchItemForPanelBlank(<?php echo $itemDivCount; ?>);
+                                   document.getElementById('udhaarItemPieces<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }
+                               else if (event.keyCode == 8 && this.value == '') {
+                                   searchItemForPanelBlank(<?php echo $itemDivCount; ?>);
+                                   document.getElementById('udhaarItemType<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }"
+                       onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                   searchItemNames(document.getElementById('itemName<?php echo $itemDivCount; ?>').value, document.getElementById('udhaarItemType<?php echo $itemDivCount; ?>').value, '<?php echo $itemDivCount; ?>', event.keyCode);
+                               }" 
+                       onclick="searchItemForPanelBlank(<?php echo $itemDivCount; ?>);"
+                       autocomplete="off" spellcheck="false" class="input_border_grey textBoxCurve1px6rad" size="25" maxlength="800" />
+                <div id="itemListDivToAddGirvi<?php echo $itemDivCount; ?>" class="itemListDivToAddGirvi<?php echo $itemDivCount; ?>"></div>
+            </td>
+            <td align="left" class="h414 padLeft10">
+                <input id="udhaarItemPieces<?php echo $itemDivCount; ?>" name="udhaarItemPieces<?php echo $itemDivCount; ?>" 
+                       type="text" value="<?php echo $udhaarItmPieces; ?>"
+                       onfocus="if (this.value == '1') {
+                                   this.value = '';
+                               }"
+                       onblur="if (this.value == '') {
+                                   this.value = '1';
+                               }"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('udhaarItemWeight<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }
+                               else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('itemName<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }"
+                       spellcheck="false" class="textLabel14CalibriGreyMiddle textBoxCurve1px6rad" 
+                       size="2" maxlength="10" />
+            </td>
+            <td align="left" class="h414 padLeft10">
+                <input id="udhaarItemWeight<?php echo $itemDivCount; ?>" name="udhaarItemWeight<?php echo $itemDivCount; ?>" 
+                       type="text"  value="<?php echo $udhaarGrossWeight; ?>"
+                       onfocus="if (this.value == 'GS Weight') {
+                                   this.value = '';
+                               }"
+                       onblur="if (this.value == '') {
+                                   this.value = 'GS Weight';
+                               }
+                               if (this.value != '') {
+                                   document.getElementById('itemWeight<?php echo $itemDivCount; ?>').value = this.value;
+                               }"
+                       placeholder="GS WT"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('udhaarItemWeightType<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }
+                               else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('udhaarItemPieces<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }"
+                       spellcheck="false" class="input_border_grey_center" size="7" maxlength="9" />
+            </td>
+            <td align="left">
+                <div id="grossWeightTypeDiv" class="selectStyled">
+                    <select id="udhaarItemWeightType<?php echo $itemDivCount; ?>" name="udhaarItemWeightType<?php echo $itemDivCount; ?>" 
+                            onchange = "document.getElementById('weightType<?php echo $itemDivCount; ?>').value = this.value;"
+                            onkeydown="javascript: if (event.keyCode == 13) {
+                                        document.getElementById('udhaarItemVal<?php echo $itemDivCount; ?>').focus();
+                                        return false;
+                                    } else if (event.keyCode == 8) {
+                                        document.getElementById('udhaarItemWeight<?php echo $itemDivCount; ?>').focus();
+                                        return false;
+                                    }" 
+                            class="select_border_grey">
+                                <?php
+                                if ($panelName == 'UpdateUdhaar') {
+                                    $udhaarWtTyp = array(KG, GM, MG, CT);
+                                    for ($i = 0; $i <= 3; $i++)
+                                        if ($udhaarWtTyp[$i] == $udhaarGrossWeightType)
+                                            $optionUdhaarWtTypSel[$i] = 'selected';
+                                }else {
+                                    $optionUdhaarWtTypSel[1] = 'selected';
+                                }
+                                ?>
+                        <option value="KG"<?php echo $optionUdhaarWtTypSel[0]; ?>>KG</option>
+                        <option value="GM"<?php echo $optionUdhaarWtTypSel[1]; ?>>GM</option>
+                        <option value="MG"<?php echo $optionUdhaarWtTypSel[2]; ?>>MG</option>
+                        <option value="CT"<?php echo $optionUdhaarWtTypSel[3]; ?>>CT</option>
+                        <?php $optionUdhaarWtTypSel = ''; ?>
+                    </select>
+                </div>
+            </td>
+            <td align="left" class="h414 padLeft10">
+                <input id="udhaarItemVal<?php echo $itemDivCount; ?>" name="udhaarItemVal<?php echo $itemDivCount; ?>" type="text" 
+                       placeholder="ITEM VALUATION" value="<?php echo $udhaarVal; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('udhaarPayAccId').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('udhaarItemWeightType<?php echo $itemDivCount; ?>').focus();
+                                   return false;
+                               }"
+                       spellcheck="false" class="input_border_grey_center" size="12" maxlength="30" title="For other items valuation is mandatory!" />
+            </td>
+            <?php // if ($panelName != 'UpdateUdhaar' || ($panelName == 'UpdateUdhaar' && $noOfItems == $itemDivCount )) { ?>
+            <td align="center" class="padLeft10">
+                <a style="cursor: pointer;" onclick="if (document.getElementById('udhaarItemVar<?php echo $itemDivCount; ?>').value == '' || document.getElementById('udhaarItemVar<?php echo $itemDivCount; ?>').value == 'true')
+                            getMoreUdhaarItemDiv('<?php echo $itemDivCount + 1; ?>', 'UdhaarPanel')">
+                    <img src="<?php echo $documentRoot; ?>/images/update16.png" alt="Click Here To Add Crystal" class="marginTop5" <?php if ($itemDivCount > 1) { ?>onload="document.getElementById('udhaarItemType<?php echo $itemDivCount; ?>').focus();" <?php } ?>/>
+                </a>
+            </td>
+            <?php
+            // }
+//            if ($panelName != 'UpdateUdhaar') {
+            ?>
+            <td align="right"  width="20px">
+                <?php if ($itemDivCount != 1 || $panelName == 'UpdateUdhaar') { ?>
+                    <a style="cursor: pointer;" onclick ="
+                    <?php if ($panelName == 'UpdateUdhaar') { ?>
+                                    closeSellCrystalFunc('<?php echo $itemDivCount; ?>', '<?php echo $panelName; ?>', '<?php echo $udhaarItemId; ?>', '<?php echo $udhaarId; ?>', '<?php echo $itprId; ?>', '<?php echo $wtId; ?>', '<?php echo $wtTypeId; ?>', '<?php echo $panelName; ?>');
+                    <?php } else { ?>
+                                    closeUdhaarItemDiv('<?php echo $itemDivCount; ?>', 'UdhaarPanel');
+                    <?php } ?>
+                       " >
+                        <img src="<?php echo $documentRoot; ?>/images/delete16.png" alt="" class="marginTop5"/>
+                    </a>
+                <?php } ?>
+            </td>
+            <?php // } ?>
+        </tr>
+    </table>
+</div>
+<div id = "addUdhaarItemDiv<?php echo $itemDivCount + 1; ?>"></div>

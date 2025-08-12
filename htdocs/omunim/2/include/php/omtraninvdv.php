@@ -1,3 +1,270 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /*
+ * Created on FEB 1, 2018 06:30:06 PM
+ *
+ * @FileName: omtraninvdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ */ ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+require_once 'conversions.php';
 ?>
+<?php
+$panelName = $_POST['panelName'];
+$utinId = $_POST['utinId'];
+
+
+$selectAllEntries = "SELECT * FROM user_transaction_invoice "
+        . "WHERE utin_transaction_type IN ('Transaction') "
+        . "and utin_type IN ('TransEntry') "
+        . "and utin_status NOT IN ('Deleted','PaymentDone') "
+        . "order by utin_id desc";
+
+$allResult = mysqli_query($conn, $selectAllEntries) or die("selectAllEntries :" . $selectAllEntries . mysqli_error($conn));
+$entryCount = mysqli_num_rows($allResult); // All ENTRY COUNT
+?>
+<?php
+if ($mainPanel == '') {
+    $mainPanel = $_GET['mainPanel'];
+}
+
+if ($entryCount > 0) {
+    ?>
+    <div id="voucherId_div" style="margin-bottom: 10px;">
+        <h1>
+            INVOICE <?php echo $utin_pre_invoice_no . '-' . $utin_invoice_no; ?>
+        </h1>
+    </div>
+    <table border="0" cellspacing="0" cellpadding="5" width="100%">
+        <tr>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="Voucher NO." width="90px">
+                <div class="spaceLeft5">
+                    V.NO.
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="100px">
+                <div class="spaceLeft5">
+                    DATE
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="DATE" width="100px">
+                <div class="spaceLeft5">
+                    PARTY NAME
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="DESCRIPTION" width="300px">
+                <div class="spaceRight5">
+                    DESCRIPTION
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="TRANSACTION TYPE" width="120px">
+                <div class="spaceLeft5">
+                    TRANSACTION TYPE
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="TYPE" width="90px">
+                <div class="spaceRight5">
+                    TYPE
+                </div>
+            </td>
+            <td align="center" class="brwnCalibri12Font border-color-grey-rb" title="AMOUNT"  width="150px">
+                <div class="spaceRight5">
+                    AMOUNT
+                </div>
+            </td>
+            <!--<td align="center" class="brwnCalibri12Font border-color-grey-rb" title="TRANSACTION STATUS" width="90px">
+                <div class="spaceRight5">
+                    STATUS
+                </div>
+            </td>-->
+            <td align="center" class="brwnCalibri12Font border-color-grey-b" title="DELETE" width="90px">
+                <div class="spaceRight5">
+                    DELETE
+                </div>
+            </td>
+        </tr>
+
+        <?php
+        while ($entryRow = mysqli_fetch_array($allResult)) {
+
+            $utin_id = $entryRow['utin_id'];
+            $utin_firm_id = $entryRow['utin_firm_id'];
+            $utin_transaction_type = $entryRow['utin_transaction_type'];
+            $utin_history = $entryRow['utin_history'];
+            $utin_total_amt = $entryRow['utin_total_amt'];
+            $utin_CRDR = $entryRow['utin_CRDR'];
+            $utin_other_info = $entryRow['utin_other_info'];
+            $utin_pre_invoice_no = $entryRow['utin_pre_invoice_no'];
+            $utin_invoice_no = $entryRow['utin_invoice_no'];
+            $utin_dr_acc_id = $entryRow['utin_dr_acc_id'];
+            $utin_cr_acc_id = $entryRow['utin_cr_acc_id'];
+            $payAddDate = $entryRow['utin_date'];
+            $partyName = $entryRow['utin_user_name'];
+            //$utin_status = $entryRow['utin_status'];
+            $totalFinalAmount += $entryRow['utin_total_amt'];
+            ?>
+
+            <tr>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($utin_invoice_no != '') {
+                            echo $utin_pre_invoice_no . '-' . $utin_invoice_no;
+                        } else {
+                            echo '-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($payAddDate != '') {
+                            echo $payAddDate;
+                        } else {
+                            echo '-/-/-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($partyName != '') {
+                            echo $partyName;
+                        } else {
+                            echo '-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <a style="cursor: pointer;" title="Single click to view Item Details!" class="spaceLeft5"
+                       onclick="showPaymentTransactionDetailsDiv('<?php echo $utin_id; ?>', 'TransactionPaymentUpdate');">
+                           <?php
+                           if ($utin_other_info != '') {
+                               echo $utin_other_info;
+                           } else {
+                               echo '-';
+                           }
+                           ?>
+                    </a>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($utin_transaction_type != '') {
+                            echo $utin_transaction_type;
+                        } else {
+                            echo '-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($utin_history != '') {
+                            echo $utin_history;
+                        } else {
+                            echo '-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        if ($utin_total_amt != '') {
+                            echo $utin_total_amt;
+                        } else {
+                            echo '-';
+                        }
+                        ?>
+                    </div>
+                </td>
+                <!--<td align="center" class="blackCalibri12Font border-color-grey-rb">
+                    <div class="spaceLeft5">
+                        <?php
+                        /*if ($utin_status != '') {
+                            echo $utin_status;
+                        } else {
+                            echo '-';
+                        }*/
+                        ?>
+                    </div>
+                </td>-->
+                <td align="center" class="blackCalibri12Font border-color-grey-b">
+                    <input type="hidden" id="upPanel" name="upPanel"/>
+                    <a style="cursor: pointer;"
+                       onclick="deleteTransactionItem('<?php echo $utin_id ?>', 'TransactionPaymentDel')">
+                        <img src="<?php echo $documentRoot; ?>/images/delete16.png" alt="" class="marginTop5" />
+                    </a>
+                </td>
+            </tr>  
+        <?php } ?>
+    </table>
+
+    <table border="0" cellspacing="0" cellpadding="5" align="left" width="100%">
+        <tr>
+            <td width="100"></td>
+            <td width="100"></td>
+            <td width="100"></td>
+            <td width="100"></td>
+            <td width="100"></td>
+            <td width="100"></td>
+            <td align="right" class="blackCalibri13FontBold" colspan="3">
+                <div class="spaceRight5">
+                    TOTAL AMOUNT :
+                </div>
+            </td>
+            <td align="right" class="blackCalibri13FontBold">
+                <div class="spaceRight5">
+                    <?php echo formatInIndianStyle($totalFinalAmount); ?>
+                </div>
+            </td>
+            <td width="100"></td>
+            <td width="140"></td>
+        </tr>
+    </table>
+    <hr style="margin-top: 10px; margin-bottom: 10px;" color="#FD9A00" size="0.1px" />
+    <div>
+        <?php
+        $mainPanel = 'TransactionPayment';
+        $payPanelName = 'TransactionPayment';
+        $totalValuation = $totalFinalAmount;
+        $totalFinalBalance = $totalFinalAmount;
+        $utin_total_amt = $totalValuation;
+        $payPreInvoiceNo = $utin_pre_invoice_no;
+        $payInvoiceNo = $utin_invoice_no;
+
+        $utin_pay_cgst_tot_amt = $totalFinalAmount;
+        $utin_pay_sgst_tot_amt = $totalFinalAmount;
+        $firmId = $utin_firm_id;
+        $utin_pay_cgst_chk = 'checked';
+        $utin_pay_sgst_chk = 'checked';
+        $utin_pay_cgst_chrg = 1.5;
+        $utin_pay_sgst_chrg = 1.5;
+        $utin_pay_cgst_amt = $totalFinalAmount * $utin_pay_cgst_chrg / 100;
+        $utin_pay_sgst_amt = $totalFinalAmount * $utin_pay_sgst_chrg / 100;
+        include 'ompyamt.php';
+    }
+    ?>
+</div>

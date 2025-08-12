@@ -1,3 +1,116 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Add Girvi Item
+ * **************************************************************************************
+ * 
+ * Created on Mar 19, 2011 6:21:39 PM
+ *
+ * @FileName: orgaagmi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+//require_once '../../omGlobal.php';
+?>
+<?php
+
+require_once 'system/omssopin.php';
+
+$girviOwnerId = $_SESSION['sessionOwnerId'];
+$custId = trim($_POST['custId']);
+ if ($gbLanguage == 'English') //Add Condition for hindi language Author:DIKSHA3SEPT2018 
+$itemName = om_ucfirst(trim($_POST['itemName']));
+ else
+   $itemName = trim($_POST['itemName']);  
+$itemType = trim($_POST['itemType']);
+$itemPieces = trim($_POST['itemPieces']);
+$grossItemWeight = trim($_POST['grossItemWeight']);
+$grossWeightType = trim($_POST['grossWeightType']);
+$itemWeight = trim($_POST['itemWeight']);
+$weightType = trim($_POST['weightType']);
+$itemTunch = trim($_POST['itemTunch']);
+$addMoreItem = trim($_POST['addMoreItem']);
+
+// Start To protect MySQL injection
+$itemName = stripslashes($itemName);
+$itemType = stripslashes($itemType);
+$itemPieces = stripslashes($itemPieces);
+$grossItemWeight = stripslashes($grossItemWeight);
+$grossWeightType = stripslashes($grossWeightType);
+$itemWeight = stripslashes($itemWeight);
+$weightType = stripslashes($weightType);
+$itemTunch = stripslashes($itemTunch);
+
+$itemName = mysqli_real_escape_string($conn,$itemName);
+$itemType = mysqli_real_escape_string($conn,$itemType);
+$itemPieces = mysqli_real_escape_string($conn,$itemPieces);
+$grossItemWeight = mysqli_real_escape_string($conn,$grossItemWeight);
+$grossWeightType = mysqli_real_escape_string($conn,$grossWeightType);
+$itemWeight = mysqli_real_escape_string($conn,$itemWeight);
+$weightType = mysqli_real_escape_string($conn,$weightType);
+$itemTunch = mysqli_real_escape_string($conn,$itemTunch);
+// End To protect MySQL injection
+
+if ($custId == '' or $custId == NULL or $itemName == '' or $itemName == NULL or $itemType == '' or $itemType == NULL or
+        $itemPieces == '' or $itemPieces == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+    if ($itemType != 'Other') {
+        if ($itemWeight == '' or $itemWeight == NULL or $weightType == '' or $weightType == NULL or
+                $grossItemWeight == '' or $grossItemWeight == NULL or $grossWeightType == '' or $grossWeightType == NULL or
+                $itemTunch == '' or $itemTunch == NULL) {
+            header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+            exit();
+        }
+    }
+
+    /*     Item Table  */
+
+    $qSelGirviId = "SELECT girv_id FROM girvi where girv_cust_id='$custId' and girv_own_id='$_SESSION[sessionOwnerId]' order by girv_ent_dat desc";
+    $resGirviId = mysqli_query($conn,$qSelGirviId);
+    $rowGirviId = mysqli_fetch_array($resGirviId, MYSQLI_ASSOC);
+    $girviItemGriviId = $rowGirviId['girv_id'];
+
+    $queryItem = "INSERT INTO girvi_items (
+		girv_itm_girv_id, girv_itm_cust_id, girv_itm_own_id, 
+		girv_itm_metal_type, girv_itm_name, girv_itm_pieces, girv_itm_weight, girv_itm_weight_type, girv_itm_gross_weight, girv_itm_gross_weight_type,
+		girv_itm_tunch_id, girv_itm_DOB, girv_itm_DOR,
+		girv_itm_upd_sts, girv_itm_comm,
+		girv_itm_ent_dat) 
+		VALUES (
+		'$girviItemGriviId','$custId','$girviOwnerId',
+		'$itemType','$itemName','$itemPieces','$itemWeight','$weightType','$grossItemWeight','$grossWeightType',
+		'$itemTunch','', '',
+		'','', 
+		$currentDateTime)";
+
+    if (!mysqli_query($conn,$queryItem)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+
+    if ($addMoreItem == "Add More Items") {
+        header("Location: $documentRoot/include/php/orgagmit.php?custId=$custId");
+    } else {
+        header("Location: $documentRoot/include/php/olggcgdt.php?custId=$custId");//changes in navigation AS per new filename @AUTHOR: SANDY20NOV13
+    }
+}
+require_once 'omssclin.php';
 ?>

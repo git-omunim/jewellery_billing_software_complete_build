@@ -1,3 +1,190 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: YEAR CLOSING FUNCTIONALITY ON TRIAL BALANCE @PRIYANKA-18DEC2020
+ * **************************************************************************************
+ * 
+ * Created on DEC 18, 2020 04:55:00 PM
+ *
+ * @FileName: omYearClosingAd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-18DEC2020
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+//
+//
+//echo '<pre>';
+//print_r($_REQUEST);
+//die;
+//
+//
+// MAIN YEAR CLOSING JSON ARRAY @PRIYANKA-18DEC2020
+$mainYearClosingArr = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['encodedMainYearClosingArr'])));
+//
+//
+//echo '<pre>';
+//print_r($mainYearClosingArr);
+//
+//
+// TO REMOVE '\' FROM JSON ARRAY @PRIYANKA-18DEC2020
+$mainYearClosingArr = str_replace('\"', '"', $mainYearClosingArr);
+//
+//
+//echo '<pre>';
+//print_r($mainYearClosingArr);
+//
+//
+// DECODE JSON ARRAY @PRIYANKA-18DEC2020
+$decodedMainYearClosingArr = json_decode($mainYearClosingArr, TRUE);
+//
+//echo '<pre>';
+//print_r($decodedMainYearClosingArr);
+//
+//
+// CURRENT DATE TIME @PRIYANKA-18DEC2020
+$currentDateTime = 'NOW()';
+//
+//
+// LOOP THROUGH ARRAY @PRIYANKA-18DEC2020
+for($i = 0; $i < count($decodedMainYearClosingArr); $i++) {
+    //
+    //
+    $totalEntries = 0;
+    //
+    //
+    //echo ($decodedMainYearClosingArr[$i]['firmId']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['ownerId']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['startYear']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['closeYear']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_acc_id']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_tt_dr']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_tt_cr']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_op_bal']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_op_bal_type']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_cl_bal']) . "<br/>";
+    //echo ($decodedMainYearClosingArr[$i]['jrmn_cl_bal_type']) . "<br/>";
+    //
+    //
+    //$decodedMainYearClosingArr[$i]['jrmn_op_bal'] = '10,000'; FOR TESTING PURPOSE @PRIYANKA-07JUNE2021
+    //
+    //
+    $jrmn_tt_dr = str_replace(',','',$decodedMainYearClosingArr[$i]['jrmn_tt_dr']); // DR AMOUNT @PRIYANKA-07JUNE2021
+    $jrmn_tt_cr = str_replace(',','',$decodedMainYearClosingArr[$i]['jrmn_tt_cr']); // CR AMOUNT @PRIYANKA-07JUNE2021     
+    $jrmn_op_bal = str_replace(',','',$decodedMainYearClosingArr[$i]['jrmn_op_bal']); // OPENING BAL @PRIYANKA-07JUNE2021     
+    $jrmn_cl_bal = str_replace(',','',$decodedMainYearClosingArr[$i]['jrmn_cl_bal']); // CLOSING BAL @PRIYANKA-07JUNE2021
+    //
+    //
+    //echo '$jrmn_op_bal == ' . $jrmn_op_bal . "<br/>";
+    //
+    //
+    $jrmn_own_id = $decodedMainYearClosingArr[$i]['ownerId']; // OWNER ID @PRIYANKA-18DEC2020
+    $jrmn_firm_id = $decodedMainYearClosingArr[$i]['firmId']; // FIRM ID @PRIYANKA-18DEC2020
+    $jrmn_acc_id = $decodedMainYearClosingArr[$i]['jrmn_acc_id']; // ACC ID @PRIYANKA-18DEC2020
+    //
+    //$jrmn_tt_dr = $decodedMainYearClosingArr[$i]['jrmn_tt_dr']; // DR AMOUNT @PRIYANKA-18DEC2020
+    //$jrmn_tt_cr = $decodedMainYearClosingArr[$i]['jrmn_tt_cr']; // CR AMOUNT @PRIYANKA-18DEC2020       
+    //$jrmn_op_bal = $decodedMainYearClosingArr[$i]['jrmn_op_bal']; // OPENING BAL @PRIYANKA-18DEC2020          
+    //$jrmn_cl_bal = $decodedMainYearClosingArr[$i]['jrmn_cl_bal']; // CLOSING BAL @PRIYANKA-18DEC2020  
+    //
+    $jrmn_op_bal_type = $decodedMainYearClosingArr[$i]['jrmn_op_bal_type']; // OPENING BAL TYPE @PRIYANKA-18DEC2020 
+    $jrmn_cl_bal_type = $decodedMainYearClosingArr[$i]['jrmn_cl_bal_type']; // CLOSING BAL TYPE @PRIYANKA-18DEC2020        
+    $jrmn_start_yr = $decodedMainYearClosingArr[$i]['startYear']; // START YEAR @PRIYANKA-18DEC2020   
+    $jrmn_end_yr = $decodedMainYearClosingArr[$i]['closeYear']; // CLOSE YEAR @PRIYANKA-18DEC2020   
+    //
+    //
+    // TO CHECK ENTRY IS PRESENT OR NOT IN journal_main TABLE @PRIYANKA-18DEC2020
+    $selEntryDetails = "SELECT * FROM journal_main WHERE jrmn_own_id = '$jrmn_own_id' "
+                     . "AND jrmn_firm_id = '$jrmn_firm_id' "
+                     . "AND jrmn_acc_id = '$jrmn_acc_id' "
+                     . "AND jrmn_start_yr = '$jrmn_start_yr' "
+                     . "AND jrmn_end_yr = '$jrmn_end_yr'";
+    //
+    //echo '$selEntryDetails == ' . $selEntryDetails . '<br /><br />';
+    //
+    $resEntryDetails = mysqli_query($conn, $selEntryDetails);
+    $totalEntries = mysqli_num_rows($resEntryDetails); // NO. OF ENTRIES @PRIYANKA-18DEC2020
+    //   
+    //
+    //echo '$totalEntries == ' . $totalEntries . '<br /><br />';
+    //   
+    //   
+    if ($totalEntries == 0) {    
+        //
+        // INSERT OPERATION @PRIYANKA-18DEC2020
+        $queryJournalMainInsert = "INSERT INTO journal_main (
+		                   jrmn_own_id, jrmn_firm_id, jrmn_acc_id,
+                                   jrmn_tt_dr, jrmn_tt_cr,
+                                   jrmn_op_bal, jrmn_op_bal_type, 
+                                   jrmn_cl_bal, jrmn_cl_bal_type,
+                                   jrmn_start_yr, jrmn_end_yr, jrmn_since) 
+		                   VALUES (
+		                  '$jrmn_own_id', '$jrmn_firm_id', '$jrmn_acc_id', 
+                                  '$jrmn_tt_dr', '$jrmn_tt_cr', 
+                                  '$jrmn_op_bal', '$jrmn_op_bal_type', 
+                                  '$jrmn_cl_bal', '$jrmn_cl_bal_type', 
+                                  '$jrmn_start_yr', '$jrmn_end_yr', 
+                                   $currentDateTime)";
+        //
+        //echo '$queryJournalMainInsert == ' . $queryJournalMainInsert . '<br/><br />';
+        //
+        if (!mysqli_query($conn, $queryJournalMainInsert)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        //
+        //
+    } else {
+        //
+        // UPDATE OPERATION @PRIYANKA-18DEC2020
+        $queryJournalMainUpdate = "UPDATE journal_main SET
+		                  jrmn_tt_dr = '$jrmn_tt_dr',
+                                  jrmn_tt_cr = '$jrmn_tt_cr',
+                                  jrmn_op_bal = '$jrmn_op_bal',
+                                  jrmn_op_bal_type = '$jrmn_op_bal_type',
+                                  jrmn_cl_bal = '$jrmn_cl_bal',
+                                  jrmn_cl_bal_type = '$jrmn_cl_bal_type',
+                                  jrmn_since = $currentDateTime 
+                                  WHERE jrmn_own_id = '$jrmn_own_id' 
+                                  AND jrmn_firm_id = '$jrmn_firm_id' 
+                                  AND jrmn_acc_id = '$jrmn_acc_id' 
+                                  AND jrmn_start_yr = '$jrmn_start_yr' 
+                                  AND jrmn_end_yr = '$jrmn_end_yr'";
+        //
+        //echo '$queryJournalMainUpdate == ' . $queryJournalMainUpdate . '<br/><br />';
+        //
+        if (!mysqli_query($conn, $queryJournalMainUpdate)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        //
+        //
+    }
+    //
+    //
+}
+//
+//
+// MESSAGE DISPLAY @PRIYANKA-18DEC2020
+if ($_REQUEST['yearClosingMessageDisplay'] == 'YES') {
+    $messageDisplay = 'Step 2 - Go to "Accounts" -> "Account Balance" panel, re-check the accounts and proceed for year closing process.';
+}
+//
+//
+//
 ?>

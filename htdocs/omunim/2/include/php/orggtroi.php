@@ -1,3 +1,77 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Display TROI options
+ * **************************************************************************************
+ *
+ * Created on Mar 17, 2013 4:26:02 PM
+ *
+ * @FileName: orggtroi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+?>
+<div id="ROIMonthlyAdd" style="visibility: visible;">
+    <table border="0" cellpadding="2" cellspacing="1">
+        <tr align="left">
+            <td align="left" valign="bottom">
+                <h5>
+                    <?php
+//                    $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM troi where troi_type='Monthly'"; //To display data in this form
+//                    $resultROI = mysqli_query($conn,$qSelectROI) or die("Error: " . mysqli_error($conn) . " with query " . $qSelectROI);
+//                    while ($rowROI = mysqli_fetch_array($resultROI, MYSQLI_ASSOC)) {
+//                        if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+//                            
+                    ?>
+                    <!--                    <INPUT id="selTROI" TYPE="RADIO" NAME="selTROI" class="lgn-field-without-order" 
+                                               VALUE="//<?php echo "{$rowROI['troi_id']}"; ?>" <?php echo "{$rowROI['troi_default']}"; ?> /><?php echo "{$rowROI['tiroi_value']}"; ?> %&nbsp;-->
+                    <?php
+//                               } else {
+//                                   
+                    ?>
+                    <!--                    <INPUT id="selTROI" TYPE="RADIO" NAME="selTROI" class="lgn-field-without-order" 
+                                               VALUE="//<?php echo "{$rowROI['troi_id']}"; ?>" <?php echo "{$rowROI['troi_default']}"; ?> /><?php echo "{$rowROI['troi_value']}"; ?> %&nbsp;-->
+                    <?php
+//                               }
+//                           }
+//                           
+                    $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM roi where roi_type='Annually' and roi_value = '$ROIVal'"; //To display data in this form
+                    $resultROI = mysqli_query($conn,$qSelectROI);
+                    $totalROI = mysqli_num_rows($resultROI);
+                    if ($totalROI == 0) {
+                        $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM roi where roi_type='Annually' and roi_default = 'checked'"; //To display data in this form
+                        $resultROI = mysqli_query($conn,$qSelectROI);
+                        $rowROI = mysqli_fetch_array($resultROI);
+                        $TROIVal = $rowROI['troi_value'];
+                    }
+                    ?>
+                    <INPUT id="selTROI" type = "text" NAME="selTROI"  value="<?php echo $ROIVal; ?>%"
+                           onkeyup = " if(event.keyCode == 8 && this.value == ''){searchRoiForPanelBlank(); return false;}
+                               if(event.keyCode != 9 && event.keyCode != 13){searchTROI(document.getElementById('selTROI').value,'<?php echo $roiOption; ?>','<?php echo $girviId; ?>','<?php echo $custId; ?>','<?php echo $panelName; ?>',event.keyCode);}"
+                           onclick = "this.value=''; searchTRoiForPanelBlank();"
+                           autocomplete = "off"
+                           spellcheck = "false" class = "lgn-txtfield12black-without-borderAndBackground" size = "3" maxlength = "80" />
+                    <div id = "tRoiListDivToAddROI" class = "itemListDivToAddStock"></div>
+                </h5>
+            </td>
+        </tr>
+    </table>
+</div>

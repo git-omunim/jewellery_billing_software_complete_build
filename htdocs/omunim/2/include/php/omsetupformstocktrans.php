@@ -1,3 +1,217 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Set Indicatorrs  for form in omindicators table
+ * **************************************************************************************
+ * 
+ * Created on APR 26, 2018 5:26:25 PM
+ *
+ * @FileName: omsetupformstocktrans.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * In form 1st row we need 21 options pass blank in case of no option
+ * In form 2nd row we need 22 options
+ * In form 3rd row we need 13 options
+ */
 ?>
+<?php
+
+// ***************************************************************************
+// Start Code To Include Global Files
+// ***************************************************************************
+
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//include_once 'ommpfndv.php';
+// ***************************************************************************
+// End Code To Include Global Files
+// ***************************************************************************
+// ***************************************************************************
+// Start Code To omindicator function Files
+// ***************************************************************************
+
+include 'ommpomindicator.php';
+
+// ***************************************************************************
+// End Code To omindicator function Files
+// ***************************************************************************
+// ***************************************************************************
+// Start Code To Create Array For Fine Jwellery Form Setup
+// ***************************************************************************
+include 'omsetupformstocktrans_jewellery.php';
+////* * *************************************************************************
+// *  End Code To  Create Array For Fine Jwellery Form Setup
+// * ***************************************************************************
+// *
+// * ***************************************************************************
+// *  Start Code To  Create Array For Imitation Jwellery Form Setup
+// * ***************************************************************************
+// */
+include 'omsetupformstocktrans_imitation.php';
+
+//
+/* * *************************************************************************
+ * End Code To  Create Array For Imitation Jwellery Form Setup
+ * ***************************************************************************
+ *
+ * ***************************************************************************
+ *  Start Code To  Create Array For Raw Metal  Form Setup
+ * ***************************************************************************
+ */
+
+include 'omsetupformstocktrans_metal.php';
+
+/* * **************************************************************************
+ *  End Code To  Create Array For Raw Metal  Form Setup
+ * ***************************************************************************
+ *
+ * ***************************************************************************
+ *  Start Code To  Create Array For Crystal  Form Setup
+ * ***************************************************************************
+ */
+
+include 'omsetupformstocktrans_crystal.php';
+
+/* * **************************************************************************
+ * End Code To  Create Array For Crystal  Form Setup
+ * ***************************************************************************
+ * 
+* ***************************************************************************
+ *  Start Code To  Create Array For Crystal  Form Setup
+ * ***************************************************************************
+ */
+
+include 'omsetupformstocktrans_garments.php';
+
+/* * **************************************************************************
+ * End Code To  Create Array For Crystal  Form Setup
+ * ***************************************************************************
+ *
+ * ***************************************************************************
+ * Start Code To  Create Array For Panels which are Inserted With Every Colums in omindicators
+ * ***************************************************************************
+ */
+
+$panelName = array("FINE_JEWELLERY_PURCHASE", "FINE_JEWELLERY_WHOLESALE_PURCHASE","IMITATION_JEWELLERY", "METAL", "CRYSTAL","FINE_JEWELLERY_SELL","READYMADE_GARMENTS",);
+
+/* * **************************************************************************
+ * End Code To  Create Array For Panels which are Inserted With Every Colums in omindicators
+ * ***************************************************************************
+ *
+ * ***************************************************************************
+ * Start Code To  Create Array For All colums from stock transaction table 
+ * ***************************************************************************
+ */
+
+$ColumNames = array();
+$GetcolumNameQuery = "SHOW COLUMNS FROM stock_transaction";
+$resSelColumnNames = mysqli_query($conn, $GetcolumNameQuery);
+
+while ($row = mysqli_fetch_array($resSelColumnNames)) {
+    $ColumNames[] = $row['Field'];
+}
+
+//print_r($ColumNames);
+//print_r($stock);exit;
+
+/* * **************************************************************************
+ * End Code To  Create Array For All colums from stock transaction table 
+ * ***************************************************************************
+ * 
+ * **************************************************************************
+ * Start Code To Insert indicator to Omindicator  for Fine Jwellery
+ * ***************************************************************************
+ */
+
+for ($i = 0; $i < count($panelName); $i++) {
+    $array[] = array();
+    if ($i == 0) {
+        $array = $fineJewelleryPurchase;
+        $arrayWidth = $fineJewelleryPurchaseSize;
+        $arrayMandatory = $fineJewelleryPurchaseMandatory;
+        $arrayHorizontal = $fineJewelleryPurchaseHorizontal;
+        $arrayValidationMessage=$fineJewelleryPurchaseLable;
+        $arrayGoogleSuggTable = $fineGoogleSuggTableArray;
+        $arrayGoogleSuggColumn = $fineGoogleSuggColumnArray;
+        $arrayGoogleSuggColumnDisp = $fineGoogleSuggColumnDisplayArray;
+        $arrayGoogleSuggWhereCond = $fineGoogleSuggWhereCondArray;
+    }else if ($i == 1) {
+        $array = $fineJewelleryWholesalePurchase;
+        $arrayWidth = $fineJewelleryWholesalePurchaseSize;
+        $arrayMandatory = $fineJewelleryWholesalePurchaseMandatory;
+        $arrayHorizontal = $fineJewelleryPurchaseWholesaleHorizontal;
+        $arrayValidationMessage=$fineJewelleryWholesalePurchaseLable;
+        $arrayGoogleSuggTable = $fineWholesaleGoogleSuggTableArray;
+        $arrayGoogleSuggColumn = $fineWholesaleGoogleSuggColumnArray;
+        $arrayGoogleSuggColumnDisp = $fineWholesaleGoogleSuggColumnDisplayArray;
+        $arrayGoogleSuggWhereCond = $fineWholesaleGoogleSuggWhereCondArray;
+    } else if ($i == 2) {
+        $array = $imitationJewellery;
+        $arrayWidth = $imitationJewellerySize;
+        $arrayMandatory = $imitationJewelleryMandatory;
+        $arrayHorizontal = $imitationJewelleryPurchaseHorizontal;
+        $arrayValidationMessage=$imitationJewelleryPurchasevalidationMessage;
+    } else if ($i == 3) {
+        $array = $METAL;
+        $arrayWidth = $METALSIZE;
+        $arrayMandatory = $METALSIZEMANDATORY;
+        $arrayHorizontal = $fineJewelleryPurchaseHorizontal;
+        $arrayValidationMessage=$METALvalidationMessage;
+    } else if ($i == 4) {
+        $array = $Crystal;
+        $arrayHorizontal = $CrystalHorizontal;
+        $arrayWidth = $CrystalSize;
+        $arrayMandatory = $CystalMandatory;
+        $arrayValidationMessage=$CystalPurchaseLable;
+        $arrayGoogleSuggTable = $CystalGoogleSuggTableArray;
+        $arrayGoogleSuggColumn = $CystalGoogleSuggColumnArray;
+        $arrayGoogleSuggColumnDisp = $CystalGoogleSuggColumnDisplayArray;
+        $arrayGoogleSuggWhereCond = $CystalGoogleSuggWhereCondArray;
+       
+    }
+    else if ($i == 5) {
+        $array = $fineJewellerySell;
+        $arrayWidth = $fineJewellerySellSize;
+        $arrayMandatory = $fineJewellerySellMandatory;
+        $arrayHorizontal = $fineJewellerySellHorizontal;
+        $arrayValidationMessage=$fineJewellerySellLable;
+        $arrayGoogleSuggTable = $fineGoogleSuggTableArray;
+        $arrayGoogleSuggColumn = $fineGoogleSuggColumnArray;
+        $arrayGoogleSuggColumnDisp = $fineGoogleSuggColumnDisplayArray;
+        $arrayGoogleSuggWhereCond = $fineGoogleSuggWhereCondArray;
+    } else if ($i == 6) {
+        $array = $ReadymadeGarments;
+        $arrayWidth = $ReadymadeGarmentsSize;
+        $arrayMandatory = $ReadymadeGarmentsMandatory;
+        $arrayHorizontal = $ReadymadeGarmentsHorizontal;
+        $arrayValidationMessage = $ReadymadeGarmentsLable;
+    }
+
+    for ($j = 0,$k=0; $j <= count($array) - 1; $j++) {
+        // Start Code to Check  Condition check wheather cloumn is present in Panel or not
+        
+
+            CheckMpFormIndicators($array[$j], 'Y', 'CheckIndicator', $panelName[$i], $arrayWidth[$j], 
+                                  $arrayMandatory[$j], $arrayHorizontal[$k],$arrayValidationMessage[$j],
+                                  $arrayGoogleSuggTable[$j],$arrayGoogleSuggColumn[$j],$arrayGoogleSuggColumnDisp[$j],
+                                  $arrayGoogleSuggWhereCond[$j]);
+            if (in_array($array[$j], $ColumNames)) {
+            $k++;
+        }
+        // End Code to Check  Condition check wheather cloumn is present in panel or not
+    }
+}
+       

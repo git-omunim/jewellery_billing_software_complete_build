@@ -1,3 +1,1104 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Sell Invoice SAMPLE 4 FOMART
+ * **************************************************************************************
+ * 
+ * Created on 15 APRIL 2022
+ *
+ * @FileName: omspinvnewItemReturnheader.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpnmwd.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+include_once 'conversions.php';
+?>
+<?php
+//
+//Start Code to get Cust and Firm Details 
+//Start Code To Select FirmId
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+// salepurchase to  stock_sell @Author: GAUR18MAR16
+$userId = $_GET['userId'];
+//echo '$userId=='.$userId.'<br>';
+//
+if ($invName == 'XRF_PAYMENT') {
+//
+//    $qSelCustId = "SELECT transaction_firm_id FROM transaction WHERE transaction_own_id = '$sessionOwnerId' "
+//            . "and transaction_pre_vch_id = '$slPrPreInvoiceNo' and "
+//            . "transaction_post_vch_id = '$slPrInvoiceNo' and transaction_firm_id IN ($strFrmId) "
+//            . "AND transaction_upd_sts IN ('PaymentDone') "
+//            . "order by transaction_id asc";
+//
+////echo '$qSelCustId == '.$qSelCustId;
+//
+//    $resCustId = mysqli_query($conn, $qSelCustId);
+//    $rowCustId = mysqli_fetch_array($resCustId, MYSQLI_ASSOC);
+        $firmId = $getUserTransDetails['invoice'][0]['utin_firm_id'];
+    $metal_type = "TransPayment";
+    $sttr_transaction_type = "TransPayment";
+//
+} else {
+//
+//
+//   $qSelCustId = "SELECT sttr_user_id, sttr_firm_id, sttr_metal_type,sttr_counter_name, sttr_transaction_type,sttr_staff_id FROM stock_transaction "
+//            . "WHERE sttr_owner_id='$sessionOwnerId' and sttr_pre_invoice_no='$slPrPreInvoiceNo' and "
+//            . "sttr_invoice_no='$slPrInvoiceNo' and sttr_firm_id IN ($strFrmId) AND sttr_status NOT IN ('DELETED') "
+//            . "and sttr_indicator IN ('stock','PURCHASE','rawMetal','crystal','imitation','strsilver','ItemReturn','APPROVAL', 'PurchaseReturn') "
+//            . "and sttr_transaction_type IN('STOCK', 'newOrder','sell','ESTIMATESELL','PURCHASE','PURBYSUPP','ESTIMATE','ItemReturn','APPROVAL', 'PurchaseReturn') "
+//            . "and sttr_user_id='$userId' order by sttr_id asc";
+//
+//    $resCustId = mysqli_query($conn, $qSelCustId);
+//    $resDet = mysqli_query($conn, $qSelCustId);
+//    $rowCustId = mysqli_fetch_array($resCustId, MYSQLI_ASSOC);
+    $firmId = $getStockTransDetails[0]['sttr_firm_id'];
+    $metal_type = $getStockTransDetails[0]['sttr_metal_type'];
+    $sttr_transaction_type = $getStockTransDetails[0]['sttr_transaction_type'];
+    $sttr_staff_id = $getStockTransDetails[0]['sttr_staff_id'];
+//
+//   
+}
+//
+//
+//parse_str(getTableValues("SELECT firm_id,firm_reg_no,firm_form_header,firm_name,firm_long_name,firm_address,firm_phone_details,firm_email,firm_desc,firm_pan_no,"
+//                . "firm_owner_sign_ftype,firm_tin_no,firm_left_thumb_ftype,firm_right_thumb_ftype,"
+//                . "firm_bank_details, firm_bank_acc_no, firm_bank_ifsc_code, firm_bank_declaration "
+//                . " FROM firm where firm_own_id='$sessionOwnerId' and firm_id='$firmId' $sessionFirmStr"));
+//************************Start change code for data from customer to user Author@:SANT12JAN16******************************************************************************************
+//
+//$qSelFirm = "SELECT firm_id,firm_reg_no,firm_form_header,firm_name,firm_long_name,firm_address,firm_phone_details,firm_email,firm_desc,firm_pan_no,"
+//        . "firm_tin_no,firm_left_thumb_ftype,firm_right_thumb_ftype FROM firm where firm_own_id='$sessionOwnerId' and firm_id='$firmId' $sessionFirmStr";
+//$resFirmCount = mysqli_query($conn, $qSelFirm);
+////
+//while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+//    $firm_long_name = $rowFirm['firm_long_name'];
+//}
+//if ($_REQUEST['directOrderAssign'] == 'YES') {
+//    $directOrderAssignUserId = $_REQUEST['directOrderAssignUserId'];
+//    parse_str(getTableValues("SELECT user_type,user_fname,user_lname,user_prefix_name,user_father_name,user_pan_it_no,user_sale_tax_no,user_add,user_official_address,user_city,user_pincode,user_state,user_country,user_cst_no,user_phone,"
+//                    . "user_adhaar_card,user_shipping_address,user_mobile,user_shop_name, user_current_address, user_village, user_tehsil,user_ward_no FROM user where user_owner_id='$sessionOwnerId' and user_id='$directOrderAssignUserId'"));
+//} else {
+////--------Start code for prefix by Ashwini Patil-----
+//    parse_str(getTableValues("SELECT user_type,user_fname,user_lname,user_prefix_name,user_father_name,user_pan_it_no,user_sale_tax_no,user_add,user_official_address,user_city,user_pincode,user_state,user_country,user_cst_no,"
+//                    . "user_phone,user_adhaar_card,user_shipping_address,user_shipping_fname,user_shipping_city,user_shipping_state,user_shipping_mob_no,user_shipping_gst_no,user_shipping_pan_no,user_mobile,user_shop_name,user_current_address,user_village, user_tehsil,user_ward_no FROM user where user_owner_id='$sessionOwnerId' and user_id='$userId'"));
+////--------Start code for USER ADDRESS by RUTUJA KORPE 20NOV2020-----
+//}
+if ($user_type == 'CUSTOMER') {
+    if ($user_add == '' || $user_add == NULL) {
+        $user_add = $user_current_address;
+    } else {
+        $user_add = $user_add;
+    }
+}
+
+if ($user_type == 'SUPPLIER') {
+    if ($user_add == '' || $user_add == NULL) {
+        $user_add = $user_official_address;
+    } else {
+        $user_add = $user_add;
+    }
+}
+//$showSecPagePrint = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'showSecPagePrint'";
+//$resShowSecPagePrint = mysqli_query($conn, $showSecPagePrint);
+//$rowShowSecPagePrint = mysqli_fetch_array($resShowSecPagePrint);
+$showSecPagePrint = $getLayoutDetails['showSecPagePrint'];
+//
+//$showHeaderBorderQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'showHeaderBorder'";
+//$resShowHeaderBorder = mysqli_query($conn, $showHeaderBorderQuery);
+//$rowResShowHeaderBorder = mysqli_fetch_array($resShowHeaderBorder);
+$showHeaderBorder = $getLayoutDetails['showHeaderBorder'];
+//
+if ($showSecPagePrint == 'YES') {
+    if ($showHeaderBorder == 'NO') {
+        ?>
+<thead>     
+<?php } ?>
+    <?php } ?>
+<tr>
+    <td valign="top">
+        <table width="100%" valign="top">
+            <tr style="display: flex; justify-content: space-between;"> <!--// align-items:center;  Yuvraj remove this css @yuvraj 17082022-->
+                <td valign="top" width="44%">
+                    <p style="color:#FD9A00;font-size:12px;font-weight: 600;margin:0;padding:0;margin-left: -28px;">
+                        <?php
+//                        $fieldName = 'detailsOfRec';
+//                        parse_str(getTableValues("SELECT label_field_check,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                            $label_field_font_size = '';
+//                        $detailsOfRec = $detailsOfRec_check;
+                        if ($detailsOfRec_check == 'true') {
+                            ?>
+                                                                                                                             <!--<div class="ff_calibri fw_b font_color_<?php echo $detailsOfRec_color; ?>" style="font-size:<?php echo $detailsOfRec_size; ?>px" onClick="this.contentEditable = 'true';">-->
+                            <!----START CODE TO SHOW BILL FROM FOR RAW METAL PURCHASE INVOICE,@AUTHOR:HEMA-3MAY2020----->
+                            <?php if ($invName == 'metalPurchase') { ?>
+                                <span class="spaceRight25" style="font-size: <?php echo $detailsOfRec_size; ?>px;"><?php echo 'Details Of Receiver ' . '  ' . ' (Bill From) ' ?></span><br>
+                                <!----END CODE TO SHOW BILL FROM FOR RAW METAL PURCHASE INVOICE,@AUTHOR:HEMA-3MAY2020----->
+                            <?php } else { ?>
+                                <span class="spaceRight25" style="font-size: <?php echo $detailsOfRec_size; ?>px;"><?php echo 'Details Of Receiver ' . '  ' . ' (Bill To)' ?> </span><br>
+                            <?php } ?>
+                            <!--</div>--> 
+                            <?php
+                        }
+                        ?>
+                    </p>
+                    <!--************* START YUVRAJ ADDTHIS CODE FOR SET LAYOUT INVOICE @YUVRAJ 17082022 -->
+                    <table style="margin-left: 13px;">
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+//                                $fieldName = 'userName';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $userNamefontsize = $userName_size;
+                                if ($user_fname != NULL && $userName_check == 'true') {
+//                                    $fieldName = 'userNameLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userNameLb_size; ?>px;"><?php echo $userNameLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $userNamefontsize; ?>px; ">
+                                        <?php
+                                            if ($user_type != 'SUPPLIER') {
+                                                if ($user_fname != 'EBILL') {
+                                            //
+                                                    if (preg_match("/^[a-zA-Z]$/", substr($user_fname, 0, 1))) {
+                                                        if (preg_match("/^[a-zA-Z]$/", substr($user_lname, 0, 1))) {
+                                                            echo om_strtoupper($user_fname . ' ' . $user_lname);
+                                                    } else {
+                                                            echo om_strtoupper($user_fname) . ' ' . $user_lname;
+                                                    }
+                                                    } else if ((preg_match("/^[a-zA-Z]$/", substr($user_lname, 0, 1)))) {
+                                                        echo $user_fname . ' ' . om_strtoupper($user_lname);
+                                                } else {
+                                                        echo $user_fname . ' ' . $user_lname;
+                                                    }
+                                                }
+                                            } else {
+                                                echo $user_shop_name;
+                                                    }
+                                            ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fLetter = $user_father_name[0];
+                                if ($fLetter == 'S' || $fLetter == 'F') {
+//                                    $fieldName = 'userSo';
+//                                    parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    $fatherNamefontsize = $userSo_size;
+                                    if ($user_father_name != '' && $userSo_check == 'true') {
+//                                        $fieldName = 'userSoLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        ?>
+                                        <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userSoLb_size; ?>px;"><?php echo $userSoLb_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100%;">
+                                        <span style="font-size: <?php echo $fatherNamefontsize; ?>px; ">
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_father_name, 0, 1))) {
+                                                echo om_strtoupper(substr($user_father_name, 1));
+                                            } else {
+                                                echo substr($user_father_name, 1);
+                                            }
+                                            ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fLetter = $user_father_name[0];
+                                if ($fLetter == 'D') {
+//                                    $fieldName = 'userDo';
+//                                    parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    $fatherNamefontsize = $userDo_size;
+                                    if ($user_fname != NULL && $userDo_check == 'true') {
+//                                        $fieldName = 'userDoLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        ?>
+                                        <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userDoLb_size; ?>px;"><?php echo $userDoLb_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100%;">
+                                        <span style="font-size: <?php echo $fatherNamefontsize; ?>px; ">
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_father_name, 0, 1))) {
+                                                echo om_strtoupper(substr($user_father_name, 1));
+                                            } else {
+                                                echo substr($user_father_name, 1);
+                                            }
+                                            ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fLetter = $user_father_name[0];
+                                if ($fLetter == 'W') {
+//                                    $fieldName = 'userWo';
+//
+//                                    parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    $fatherNamefontsize = $userWo_size;
+                                    if ($user_fname != NULL && $userWo_check == 'true') {
+//                                        $fieldName = 'userWoLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        ?>
+                                        <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userWoLb_size; ?>px;"><?php echo $userWoLb_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100%;">
+                                        <span style="font-size: <?php echo $fatherNamefontsize; ?>px; ">
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_father_name, 0, 1))) {
+                                                echo om_strtoupper(substr($user_father_name, 1));
+                                            } else {
+                                                echo substr($user_father_name, 1);
+                                            }
+                                            ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fLetter = $user_father_name[0];
+                                if ($fLetter == 'C') {
+//                                    $fieldName = 'userCo';
+//                                    parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                                    $fatherNamefontsize = $label_field_font_size;
+                                    if ($user_fname != NULL && $userCo_check == 'true') {
+//                                        $fieldName = 'userCoLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        ?>
+                                        <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userCoLb_size; ?>px;"><?php echo $userCoLb_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100%;">
+                                        <span style="font-size: <?php echo $fatherNamefontsize; ?>px; ">
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_father_name, 0, 1))) {
+                                                echo om_strtoupper(substr($user_father_name, 1));
+                                            } else {
+                                                echo substr($user_father_name, 1);
+                                            }
+                                            ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <!-- START CODE FOR ADDED USER VILLAGE, TEHSIL, CITY @SIMRAN:05AUG2023-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fieldName = 'userVillage';
+//                                $label_field_check = '';
+//                                parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                  $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                if ($label_field_check == 'true' && $user_village != '') {
+                                    $fieldName = 'userVillageLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                     
+                                     $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                     $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                     $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                    if ($label_field_font_size == 0) {
+                                        $label_field_font_size = 14;
+                                    }
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $label_field_font_size; ?>px;"><?php echo $label_field_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $label_field_font_size; ?>px; ">
+                                        <?php echo $user_ward_no . ' ' . $user_village; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fieldName = 'userTaluka';
+                                $label_field_check = '';
+//                                parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                               
+                                if ($label_field_check == 'true' && $user_tehsil != '') {
+                                    $fieldName = 'userTalukaLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                    $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                    $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                    if ($label_field_font_size == 0) {
+                                        $label_field_font_size = 14;
+                                    }
+                                    ?>
+
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $label_field_font_size; ?>px;"><?php echo $label_field_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $label_field_font_size; ?>px; ">
+                                        <?php echo $user_tehsil; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                $fieldName = 'userCity';
+//                                $label_field_check = '';
+//                                parse_str(getTableValues("SELECT label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                if ($label_field_check == 'true' && $user_city != '') {
+                                    $fieldName = 'userCityLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                      $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                      $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                      $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                    if ($label_field_font_size == 0) {
+                                        $label_field_font_size = 14;
+                                    }
+                                    ?>
+
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $label_field_font_size; ?>px;"><?php echo $label_field_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $label_field_font_size; ?>px; ">
+                                        <?php echo $user_city; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!-- END CODE FOR ADDED USER VILLAGE, TEHSIL, CITY @SIMRAN:05AUG2023-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+                                //
+//                                $fieldName = 'userAddress';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $addresssize = $userAddress_size;
+                                if ($userAddress_check == 'true' && $user_add != NULL) {
+//                                    $fieldName = 'userAddressLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userAddressLb_size; ?>px;"><?php echo $userAddressLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:300px;">
+                                    <span style=" font-size: <?php echo $addresssize; ?>px;">
+                                        <?php
+                                        if (preg_match("/^[a-zA-Z]$/", substr($user_add, 0, 1))) {
+                                            echo om_strtoupper($user_add);
+                                        } else {
+                                            echo $user_add;
+                                        }
+                                        ?> 
+                                        <?php if ($user_city != '' || $user_pincode != '') { ?>
+
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_city, 0, 1))) {
+                                                echo om_strtoupper($user_city) . ', ' . $user_pincode;
+                                            } else {
+                                                echo $user_city . ', ' . $user_pincode;
+                                            }
+                                            ?>
+
+                                        <?php } if ($user_state != '' || $user_country != '') { ?>
+                                            <?php
+                                            if (preg_match("/^[a-zA-Z]$/", substr($user_state, 0, 1))) {
+                                                if (preg_match("/^[a-zA-Z]$/", substr($user_country, 0, 1))) {
+                                                    echo om_strtoupper($user_state . ' ' . $user_country);
+                                                } else {
+                                                    echo om_strtoupper($user_state) . ' ' . $user_country;
+                                                }
+                                            } else if ((preg_match("/^[a-zA-Z]$/", substr($user_country, 0, 1)))) {
+                                                echo $user_state . ' ' . om_strtoupper($user_country);
+                                            } else {
+                                                echo $user_state . ' ' . $user_country;
+                                            }
+                                            ?></span>
+                                    <?php }
+                                    ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+//                                $fieldName = 'userContact';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $usercontact = $userContact_size;
+//
+                                if ($user_mobile != NULL && $userContact_check == 'true') {
+//                                    $fieldName = 'userContactLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userContactLb_size; ?>px;"><?php echo $userContactLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $usercontact; ?>px; ">
+                                        <?php echo $user_mobile; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+//                                $fieldName = 'userPan';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                if ($user_pan_it_no != '' && $userPan_check == 'true') {
+//                                    $fieldName = 'userPanLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    $panLbFontSize = $userPanLb_size;
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userPanLb_size; ?>px;"><?php echo $userPanLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $panLbFontSize; ?>px; ">
+                                        <?php echo $user_pan_it_no; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="left" style="width:120px;" >
+                                <?php
+//                                $fieldName = 'userGstIn';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $usercstno = $userGstIn_size;
+//echo '$usercstno=='.$usercstno.'<br>';
+                                if ($user_cst_no != '' && $userGstIn_check == 'true') {
+//                                    $fieldName = 'userGstInLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                            echo '$label_field_co/ntent=='.$label_field_content.'<br>';
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userGstInLb_size; ?>px;"><?php echo $userGstInLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $usercstno; ?>px; ">
+                                        <?php echo $user_cst_no; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                            <!--***************************************************************-->
+                <tr>
+                     <td align="left" style="width:120px;" >
+                                <?php
+//                                $fieldName = 'userAdhaar';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $useradharfont = $userAdhaar_size;
+                                if ($user_adhaar_card != '' && $userAdhaar_check == 'true') {
+//                                    $fieldName = 'userAdhaarLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:120px;  color:#D23100;font-weight: bold;font-size:<?php echo $userAdhaarLb_size; ?>px;"><?php echo $userAdhaarLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100%;">
+                                    <span style="font-size: <?php echo $useradharfont; ?>px; ">
+                                        <?php echo $user_adhaar_card; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                    </table>
+                    <!--***************************************************************-->
+                </td>
+                <?php
+                    if ($user_shipping_address != null && $user_shipping_address != '') {
+                    ?>
+                        <td width="30%">
+                            <p style="color:#FD9A00;font-size:12px;font-weight: 600;margin:0;padding:0;margin-left: -28px;">
+                                            <?php
+                            $fieldName = 'shipAddress';
+//                            parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                              $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                              $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                              
+                            if ($label_field_check == 'true') {
+                                $fieldName = 'shipDetTop';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size,label_field_font_color,label_field_content FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                //$label_field_font_size = '';
+                                $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                ?>
+                                <span class="spaceRight25" style="font-size: <?php echo $label_field_font_size; ?>px;color:#D23100;"><?php echo $label_field_content.":" ?> </span>
+
+                                <?php
+                            }
+                            ?>
+                            </p>
+                            <table style="margin-left: 13px;">
+                                <tr>
+                            <?php
+                                $fieldName = 'shipAddress';
+//                                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                                $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                if ($label_field_check == 'true') {
+                                    ?>
+                                    <td align="left" style="width:100%;">
+                                        <?php
+                                        $fieldName = 'shipAddress';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        ?>
+                                            <span style="text-align: center;font-size:<?php echo $label_field_font_size; ?>px; color:<?php echo $label_field_font_color; ?>;">
+                                            <?php
+                                            echo $user_shipping_address;
+                                            ?>
+                                        </span>
+                                </td>
+                                            <?php
+                                            }
+                                            ?>        
+                                </tr>
+                        </table>
+                    </td>
+                    <?php } ?>
+                    <?php
+//                    $showFinancialYrQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'showFinancialYr' and omly_own_id = '$sessionOwnerId'";
+//                    $resShowFinancialYr = mysqli_query($conn, $showFinancialYrQuery);
+//                    $rowShowFinancialYr = mysqli_fetch_array($resShowFinancialYr);
+                    $showFinancialYr = $getLayoutDetails['showFinancialYr'];
+                    ?>
+                <td class="customerDetails" style="margin-right:24px;">
+                    <table style="margin-left: 1px;">
+                        <!--***************************************************************-->
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                                $fieldName = 'invNoTitle';
+//                                parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,"
+//                                                . "label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' "
+//                                                . "and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $invNoFont = $invNoTitle_size;
+                                if ($invNoTitle_check == 'true') {
+//                                    $fieldName = 'invNoTitleLb';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,"
+//                                                    . "label_field_font_color,label_field_check FROM labels "
+//                                                    . "WHERE label_own_id = '$sessionOwnerId' and "
+//                                                    . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $invNoTitleLb_size; ?>px;"><?php echo $invNoTitleLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:120px;">
+                                    <span style="font-size: <?php echo $invNoFont; ?>px; ">
+                                        <?php
+                                          if ($nepaliDateIndicator == 'YES') {
+                                                $date_components = explode('-', $invoiceDate);
+                                                $date_d = $date_components[2];
+                                                $selMnth = $date_components[1];
+                                                $date_y = $date_components[0];
+                                                $DOBDate = $nepali_date->validate_en($date_y, $selMnth, $date_d);
+                                                if ($DOBDate != '1' || $DOBDate != 'TRUE') {
+                                                    $date_ne = $nepali_date->get_eng_date($date_y, $selMnth, $date_d);
+                                                    $invoiceDate = $date_ne[d] . '-' . $date_ne[m] . '-' . $date_ne[y];
+                                                }
+                                                $invFinMMStart = date('n', strtotime($invoiceDate));
+                                                if ($invFinMMStart <= 3) {
+                                                    $invFinYYStart = $date_y - 1;
+                                                    $invFinYYEnd = $date_y;
+                                                } else {
+                                                    $invFinYYStart = $date_y;
+                                                    $invFinYYEnd = $date_y + 1;
+                                                }
+                                                if ($showFinancialYr == 'YES') {
+                                                    echo $slPrPreInvoiceNo . '/' . $slPrInvoiceNo . '/' . substr($invFinYYStart, -2) . '-' . substr($invFinYYEnd, -2);
+                                                } else {
+                                                    echo $slPrPreInvoiceNo . '/' . $slPrInvoiceNo;
+                                                }
+                                            } else {
+                                        $invFinMMStart = date('n', strtotime($invoiceDate));
+                                        if ($invFinMMStart <= 3) {
+                                            $invFinYYStart = date('y', strtotime($invoiceDate)) - 1;
+                                            $invFinYYEnd = date('y', strtotime($invoiceDate));
+                                        } else {
+                                            $invFinYYStart = date('y', strtotime($invoiceDate));
+                                            $invFinYYEnd = date('y', strtotime($invoiceDate)) + 1;
+                                        }
+                                        
+                                            if ($showFinancialYr == 'YES') {
+                                            echo $slPrPreInvoiceNo . '/' . $slPrInvoiceNo . '/' . $invFinYYStart . '-' . $invFinYYEnd;
+                                            } else {
+                                            echo $slPrPreInvoiceNo . '/' . $slPrInvoiceNo;
+                                        }
+                                            }
+                                        ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!-------------------------------------->
+
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                    $fieldName = 'dateTitle';
+//                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $dateFontSize = $dateTitle_size;
+                                if ($dateTitle_check == 'true') {
+//                        $fieldName = 'dateTitleLb';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $dateTitleLb_size; ?>px;"><?php echo $dateTitleLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100px;">
+                                    <span style="font-size: <?php echo $dateFontSize; ?>px; ">
+                                        <?php
+                                                  if ($nepaliDateIndicator == 'YES') {
+                                        $day_en = substr($invoiceDate, 0, 2);
+                                        $selMnth = substr($invoiceDate, 3, -5);  
+
+                                        if (preg_match("/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/", $selMnth)) {
+                                        // Convert the month abbreviation to its numeric representation (zero-padded)
+                                            $selMnth = date('m', strtotime($selMnth));
+                                        }
+                                        $year_en = substr($invoiceDate, -4);
+                                         //
+                                                $DOBDate = $nepali_date->validate_en($year_en, $selMnth, $day_en);
+                                                if ($DOBDate != '1' || $DOBDate != 'TRUE') {
+                                                    $DOBArray = explode(' ', $invoiceDate);
+                                                    if (is_numeric($girviDOBArray[1])) {
+                                                        $DOBMnth = $nepali_date->get_nepali_month($DOBArray[1]);
+                                            }
+                                             if ($nepaliDateMonthFormat == 'displayInNumber') {
+                                                        echo $DOBArray[0] . '-' . $DOBArray[1] . '-' . $DOBArray[2];
+                                                    } else {
+                                                        echo $DOBArray[0] . ' ' . $DOBMnth . ' ' . $DOBArray[2];
+                                            }
+                                                } else {
+                                        $date_ne = $nepali_date->get_nepali_date($year_en, $selMnth, $day_en);
+                                        if ($nepaliDateMonthFormat == 'displayInNumber') {
+                                                        echo $date_ne[d] . '-' . $date_ne[m] . '-' . $date_ne[y];
+                                                    } else {
+                                                        echo $date_ne[d] . '-' . $date_ne[M] . '-' . $date_ne[y];
+                                            }
+                                        } 
+                                        } else {
+                                            if ($dateOpt == 'customizedDate') {
+                                                $invoiceDate = date_create($invoiceDate);
+                                                $invoiceDate = date_format($invoiceDate, "m/d/y");
+                                                echo $invoiceDate;
+                                            } else if ($dateOpt == 'normalDateFormat') {
+                                                $invoiceDate = date_create($invoiceDate);
+                                                $invoiceDate = date_format($invoiceDate, "d-m-Y");
+                                                echo $invoiceDate;
+                                            } else {
+                                                $invoiceDate = date_create($invoiceDate);
+                                                $invoiceDate = date_format($invoiceDate, "d M Y");
+                                                echo strtoupper($invoiceDate);
+                                            }
+                                        }
+                                        ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                            <!--****************START CODE TO DISPLAY SELL MAIN INV NO BY AUTHOR @DNYANESHWARI 21DEC2023************-->
+                             <tr>
+                                <td align="right" style="width:170px;" >
+                                    <?php
+//                                    parse_str(getTableValues("SELECT sttr_id,sttr_sttr_id FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_user_id ='$userId' and sttr_pre_invoice_no ='$slPrPreInvoiceNo' and sttr_invoice_no= '$slPrInvoiceNo' "));
+//                                    //
+//                                    parse_str(getTableValues("SELECT sttr_pre_invoice_no,sttr_invoice_no,sttr_add_date FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_sttr_id='$sttr_id' and sttr_user_id ='$userId' and sttr_transaction_type = 'ItemReturn'"));
+                                    // 
+                                    foreach($getStockTransDetails as $getstockdetails){
+                                        if($getstockdetails['sttr_sttr_id'] = $getstockdetails['sttr_id'] && $getstockdetails['sttr_user_id'] = $userId && $getstockdetails['sttr_transaction_type'] = 'ItemReturn'){
+                                            $sttr_pre_invoice_no = $getstockdetails['sttr_pre_invoice_no'];
+                                            $sttr_invoice_no = $getstockdetails['sttr_invoice_no'];
+                                            $sttr_add_date = $getstockdetails['sttr_add_date'];
+                                        }
+                                    }
+                                    ?>  
+                                    <?php
+                                    //start code Show Return Main Inv No @Author:Vinod:30-11-2023
+                                    if ($_REQUEST['invName'] == 'ItemReturn') {
+//                                          parse_str(getTableValues("SELECT sttr_pre_invoice_no,sttr_invoice_no,sttr_add_date FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_id='$sttr_sttr_id' and sttr_user_id ='$userId' and sttr_transaction_type = 'sell'"));
+                                        //
+                                        foreach($getStockTransDetails as $getstockdetail){
+                                        if($getstockdetails['sttr_id'] = $getstockdetail['sttr_sttr_id'] && $getstockdetail['sttr_user_id'] = $userId && $getstockdetail['sttr_transaction_type'] = 'sell'){
+                                            $sttr_pre_invoice_no = $getstockdetail['sttr_pre_invoice_no'];
+                                            $sttr_invoice_no = $getstockdetail['sttr_invoice_no'];
+                                            $sttr_add_date = $getstockdetail['sttr_add_date'];
+                                        }
+                                    }
+                                        $fieldName = 'sellMainInvNo';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+//                                        echo '$sttr_pre_invoice_no==>'.$sttr_pre_invoice_no.'<br>';
+                                        if ($label_field_check == 'true' && $sttr_pre_invoice_no != '' && $sttr_invoice_no != '') {
+                                            ?>
+
+                                            <?php
+                                            $fieldName = 'sellMainInvNoLb';
+//                                            parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                            ?> 
+                                            <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $invNoTitleLb_size; ?>px;"><?php echo $label_field_content; ?>
+                                            </span>
+                                        </td>
+                                        <td align="center" >
+                                            <span>&nbsp;:&nbsp;</span>
+                                        </td>
+                                        <td align="left" style="width:120px;">
+                                            <span style="font-size: <?php echo $invNoFont; ?>px; ">
+                                                <?php
+                                                echo $sttr_pre_invoice_no . '/' . $sttr_invoice_no . '/' . $invFinYYStart . '-' . $invFinYYEnd;
+                                                ;
+                                                ?>
+                                            </span>
+                                        </td>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </tr>
+                            <!--**********END CODE TO DISPLAY SELL MAIN INV NO BY AUTHOR @DNYANESHWARI 21DEC2023******-->
+
+
+
+                            <!--*********************************************************************************************************-->
+                            <!-- *******************START CODE TO ADD INV RETURN INV NO & DATE @SIMRAN:14SEPT2023************************-->
+                            <!--*********************************************************************************************************-->
+                            <tr>
+                                <td align="right" style="width:170px;" >
+                                    <?php
+                                    //
+//                                    parse_str(getTableValues("SELECT sttr_id FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_user_id ='$userId' and sttr_pre_invoice_no ='$slPrPreInvoiceNo' and sttr_invoice_no= '$slPrInvoiceNo' "));
+                                    //
+//                                    parse_str(getTableValues("SELECT sttr_pre_invoice_no,sttr_invoice_no,sttr_add_date FROM stock_transaction WHERE sttr_owner_id = '$sessionOwnerId' and sttr_sttr_id='$sttr_id' and sttr_user_id ='$userId' and sttr_transaction_type = 'ItemReturn'"));
+                                    //
+                                    //
+                                    $fieldName = 'returnInvNo';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                    if ($label_field_check == 'true' && $sttr_pre_invoice_no != '' && $sttr_invoice_no != '') {
+                                        $fieldName = 'returnInvNoLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                                $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                        ?>
+                                        <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $label_field_font_size; ?>px;"><?php echo $label_field_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100px;">
+                                        <span style="font-size: <?php echo $label_field_font_size; ?>px; ">
+                                            <?php echo $sttr_pre_invoice_no . $sttr_invoice_no; ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                                ?>
+                            </tr>
+                            <tr>
+                                <td align="right" style="width:170px;" >
+                                    <?php
+                                    $fieldName = 'returnInvNoDate';
+//                                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                    if ($label_field_check == 'true' && $sttr_add_date != '') {
+                                        $fieldName = 'returnInvNoDateLb';
+//                                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                        $label_field_font_size = $getLabelDetails[strtolower($fieldName)]['label_field_font_size'];
+                                        $label_field_check = $getLabelDetails[strtolower($fieldName)]['label_field_check'];
+                                        $label_field_content = $getLabelDetails[strtolower($fieldName)]['label_field_content'];
+                                        $label_field_font_color = $getLabelDetails[strtolower($fieldName)]['label_field_font_color'];
+                                        ?>
+                                        <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $label_field_font_size; ?>px;"><?php echo $label_field_content; ?>
+                                        </span>
+                                    </td>
+                                    <td align="center" >
+                                        <span>&nbsp;:&nbsp;</span>
+                                    </td>
+                                    <td align="left" style="width:100px;">
+                                        <span style="font-size: <?php echo $label_field_font_size; ?>px; ">
+                                            <?php echo $sttr_add_date; ?>
+                                        </span>
+                                    </td>
+                                    <?php
+                                }
+                                ?>
+                            </tr>
+
+                            <!--*********************************************************************************************************-->                           
+                            <!-- *************END CODE TO ADD INV RETURN INV NO & DATE @SIMRAN:14SEPT2023********************************-->
+                            <!--*********************************************************************************************************-->
+                        <!--------------------------------------------->
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                    $fieldName = 'dueDateTitle';
+//                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $duedateFont = $dueDateTitle_size;
+                                if ($label_field_check == 'true' && $dueDate != '' && $dueDate != NULL) {
+//                        $fieldName = 'dueDateTitleLb';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $dueDateTitleLb_size; ?>px;"><?php echo $dueDateTitleLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100px;">
+                                    <span style="font-size: <?php echo $duedateFont; ?>px; ">
+                                        <?php echo strtoupper($dueDate); ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--------------------------------------------->
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                                parse_str(getTableValues("SELECT user_fname as name ,user_lname as surname FROM user where user_owner_id='$sessionOwnerId' "
+//                                                . "and user_id='$sttr_staff_id' and user_type='STAFF'"));
+//                                 echo '$sttr_staff_id==>'.$sttr_staff_id.'<br>';
+//                                      foreach ($getUserDetails as $getUser) {
+//                                                if($getUser['user_type']=='STAFF' && $getUser['user_id']==$sttr_staff_id)
+//                                                {
+//                                                $name= $getUserDetails['user_fname'];
+//                                                echo '$name==>'.$name.'<br>';
+//                                                $surname = $getUserDetails['user_lname'];       
+//                                                }
+//                                            }
+                                $sale_staffname = $getUserDetails['staff_name'];//$name . ' ' . $surname;
+//                    $fieldName = 'firmTin';
+//                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+//                    $firmtinFont = $firmTin_size;
+                                if ($staffname_check == 'true' && $sale_staffname != ' ') {
+//                        $fieldName = 'firmTinLb';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $staffNameLb_size; ?>px;"><?php echo $staffNameLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100px;">
+                                    <span style="font-size: <?php echo $duedateFont; ?>px; ">                        
+                                        <?php echo $sale_staffname; ?>
+                                    </span>  
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                    $fieldName = 'firmTin';
+//                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $firmtinFont = $firmTin_size;
+                                if ($firm_tin_no != NULL && $firmTin_check == 'true') {
+//                        $fieldName = 'firmTinLb';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $firmTinLb_size; ?>px;"><?php echo $firmTinLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100px;">
+                                    <span style="font-size: <?php echo $duedateFont; ?>px; ">                        
+                                        <?php echo $firm_tin_no; ?>
+                                    </span>  
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        <!--------------------------------------------->
+                        <tr>
+                            <td align="right" style="width:170px;" >
+                                <?php
+//                    $fieldName = 'firmPan';
+//                    parse_str(getTableValues("SELECT label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                $firmPan = $firmPan_size;
+                                if ($firm_pan_no != '' && $firmPan_check == 'true') {
+//                        $fieldName = 'firmPanLb';
+//                        $label_field_font_size = '';
+//                        $label_field_font_color = '';
+//                        parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color,label_field_check FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                                    ?>
+                                    <span style="width:170px;  color:#D23100;font-weight: bold;font-size:<?php echo $firmPanLb_size; ?>px;"><?php echo $firmPanLb_content; ?>
+                                    </span>
+                                </td>
+                                <td align="center" >
+                                    <span>&nbsp;:&nbsp;</span>
+                                </td>
+                                <td align="left" style="width:100px;">
+                                    <span style="font-size: <?php echo $firmPan; ?>px; ">   
+                                        <?php echo $firm_pan_no; ?>
+                                    </span>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                        </table>
+                                    </td>
+                               
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+    <?php if ($showSecPagePrint == 'YES') { ?>
+</thead>
+<?php } ?>  
+<!--************* END YUVRAJ ADDTHIS CODE FOR SET LAYOUT INVOICE @YUVRAJ 17082022 -->

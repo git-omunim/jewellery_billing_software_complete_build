@@ -1,3 +1,453 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Loan Notice Setup Table
+ * **************************************************************************************
+ * 
+ * Created on Jan 5, 2013 3:51:54 PM
+ *
+ * @FileName: omtbgvnt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by KHUSH20JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+
+$query = "CREATE TABLE IF NOT EXISTS loan_notice_setup (
+lns_id                          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+lns_own_id                      VARCHAR(50),
+lns_def_lang                    VARCHAR(20),
+lns_lang                        VARCHAR(20),
+lns_top_margin                  VARCHAR(6),  
+lns_left_margin                 VARCHAR(6),  
+lns_border_check                VARCHAR(6), 
+lns_header_width                VARCHAR(20),
+lns_header_display              VARCHAR(30),
+lns_firm_left_logo_check        VARCHAR(6),
+lns_firm_right_logo_check       VARCHAR(6),
+lns_cust_image_check            VARCHAR(6),
+lns_header_left_section         VARCHAR(100),
+lns_header_left_section_font    VARCHAR(20),
+lns_header_left_section_color   VARCHAR(30),
+lns_header_left_sec_check       VARCHAR(6),
+lns_header_right_section        VARCHAR(100),
+lns_header_right_section_font   VARCHAR(20),
+lns_header_right_section_color  VARCHAR(30),
+lns_header_right_sec_check      VARCHAR(6),
+lns_header                      VARCHAR(100),
+lns_header_font                 VARCHAR(20),
+lns_header_color                VARCHAR(30),
+lns_header_check                VARCHAR(6),
+lns_firm_header_font            VARCHAR(20),
+lns_firm_header_color           VARCHAR(30),
+lns_firm_header_check           VARCHAR(6),
+lns_firm_name_font              VARCHAR(20),
+lns_firm_name_color             VARCHAR(30),
+lns_firm_name_check             VARCHAR(6),
+lns_firm_desc_font              VARCHAR(20),
+lns_firm_desc_color             VARCHAR(30),
+lns_firm_desc_check             VARCHAR(6),
+lns_firm_address_font           VARCHAR(20),
+lns_firm_address_color          VARCHAR(30),
+lns_firm_address_check          VARCHAR(6),
+lns_firm_phone_font             VARCHAR(20),
+lns_firm_phone_color            VARCHAR(30),
+lns_firm_phone_check            VARCHAR(6),
+lns_firm_email_font             VARCHAR(20),
+lns_firm_email_color            VARCHAR(30),
+lns_firm_email_check            VARCHAR(6),
+lns_firm_regno_label            VARCHAR(100),
+lns_firm_regno_font             VARCHAR(20),
+lns_firm_regno_color            VARCHAR(30),
+lns_firm_regno_check            VARCHAR(6),
+lns_cust_name_lbl               VARCHAR(150),
+lns_cust_name_font              VARCHAR(20),
+lns_cust_name_color             VARCHAR(30),
+lns_cust_name_check             VARCHAR(6),
+lns_date_lbl                    VARCHAR(20),
+lns_date_font                   VARCHAR(20),
+lns_date_color                  VARCHAR(30),
+lns_father_spouse_lbl           VARCHAR(150),
+lns_father_font                 VARCHAR(20),
+lns_father_color                VARCHAR(30),
+lns_father_check                VARCHAR(6),
+lns_wife_of_lbl                 VARCHAR(150),
+lns_guardian_lbl                VARCHAR(150),
+lns_wife_of_font                VARCHAR(20),
+lns_wife_of_color               VARCHAR(30),
+lns_wife_of_check               VARCHAR(6),
+lns_cust_add_lbl                VARCHAR(150),
+lns_cust_add_font               VARCHAR(20),
+lns_cust_add_color              VARCHAR(30),
+lns_cust_add_check              VARCHAR(6),
+lns_notice_cont                 VARCHAR(2000),
+lns_notice_font                 VARCHAR(20),
+lns_notice_color                VARCHAR(30),
+lns_notice_check                VARCHAR(6),
+lns_loan_detail_lbl             VARCHAR(150),
+lns_loan_detail_font            VARCHAR(20),
+lns_loan_detail_color           VARCHAR(30),
+lns_loan_detail_check           VARCHAR(6),
+lns_loan_date_lbl               VARCHAR(150),
+lns_loan_date_font              VARCHAR(20),
+lns_loan_date_color             VARCHAR(30),
+lns_loan_date_check             VARCHAR(6),
+lns_principal_lbl               VARCHAR(150),
+lns_principal_font              VARCHAR(20),
+lns_principal_color             VARCHAR(30),
+lns_principal_check             VARCHAR(6),
+lns_interest_lbl                VARCHAR(150),
+lns_interest_font               VARCHAR(20),
+lns_interest_color              VARCHAR(30),
+lns_interest_check              VARCHAR(6),
+lns_total_amt_lbl               VARCHAR(150),
+lns_total_amt_font              VARCHAR(20),
+lns_total_amt_color             VARCHAR(30),
+lns_total_amt_check             VARCHAR(6),
+lns_articles_lbl                VARCHAR(500),
+lns_articles_font               VARCHAR(20),
+lns_articles_color              VARCHAR(30),
+lns_articles_check              VARCHAR(6),
+lns_tnc_lbl                     VARCHAR(100),
+lns_tnc_font                    VARCHAR(20),
+lns_tnc_color                   VARCHAR(30),
+lns_tnc_content_font            VARCHAR(20),
+lns_tnc_content_color           VARCHAR(30),
+lns_tnc                         VARCHAR(2000),
+lns_tnc_check                   VARCHAR(6),
+lns_cust_sign_lbl               VARCHAR(150),
+lns_cust_sign_font              VARCHAR(20),
+lns_cust_sign_color             VARCHAR(30),
+lns_owner_sign_lbl              VARCHAR(150),
+lns_owner_sign_font             VARCHAR(20),
+lns_owner_sign_color            VARCHAR(30),
+lns_footer                      VARCHAR(200),
+lns_footer_font                 VARCHAR(20),
+lns_footer_color                VARCHAR(30),
+lns_footer_check                VARCHAR(6),
+lns_since                       DATETIME,
+lns_other_info                  VARCHAR(500),
+lns_cusmnot_content             VARCHAR(2000),
+lns_cusmnot_width               VARCHAR(6),
+lns_cusmnot_height              VARCHAR(6),
+lns_form_size                   VARCHAR(20),
+lns_default_size                VARCHAR(20),
+lns_form_width                  VARCHAR(6),
+lns_staff_id                   	VARCHAR(16),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qLoanNoticeSetupDetails = "SELECT * FROM loan_notice_setup WHERE lns_def_lang = 'English'";
+$resLoanNoticeSetupDetails = mysqli_query($conn, $qLoanNoticeSetupDetails) or die(mysqli_error($conn));
+$totalLoanNoticeSetupDetails = mysqli_num_rows($resLoanNoticeSetupDetails);
+if ($totalLoanNoticeSetupDetails <= 0) {
+    //
+    $defLang = 'English';
+    $lang = 'English';
+    $header = 'GIRVI/LOAN NOTICE';
+    $custNameLabel = 'CUSTOMER NAME:'; //alt removed @Author:PRIYA28DEC13
+    $dateLabel = 'DATE:';
+    $fatherSpouseLabel = 'FATHER/SPOUSE NAME:';
+    $custAddLabel = 'CUSTOMER ADDRESS:';
+    $noticeContent = 'Dear Sir, &NewLine;&NewLine;&Tab;As per secured loan clause 404 you are hereby informed that you had applied for principal loan of Rs. PRINCIPAL/- whose loan no. is SNO dated DDMMYYYY at our shop. According to the loan clauses in case of deposition failure of the interest on the total principal within 11 months from the date of loan sanction or a loss upon the loan, a legal action would be taken in this regard. Being contacted many times you did not respond to the notices. &NewLine;&Tab;This is a final notice being issued to bring into your notice to clear all your debts or else your article would be destroyed or auctioned and no future dealings would be entertained. We hope that you would come as soon as possible and clear your account and maintain a healthy relationship.';
+    $loanDetailsLabel = 'GIRVI/LOAN DETAILS';
+    $loanDateLabel = 'GIRVI/LOAN DATE:';
+    $loanPrincipalLabel = 'PRINCIPAL AMOUNT:';
+    $loanIntLabel = 'TOTAL INTEREST:';
+    $loanTotalAmtLabel = 'TOTAL AMOUNT:';
+    $loanArticles = 'ARTICLES DETAILS:';
+    $tNCLabel = 'TERMAS AND CONDITIONS:';
+    $tNC = '';
+    $loanCustSign = 'CUSTOMER SIGNATURE';
+    $loanOwnerSign = 'OWNER SIGNATURE';
+    $footer = '';
+    $regNoLabel = 'REGISTRATION NUMBER';
+    $wifeOfLabel = 'W/O';
+
+// Start To protect MySQL injection
+    $defLang = stripslashes($defLang);
+    $lang = stripslashes($lang);
+    $header = stripslashes($header);
+    $custNameLabel = stripslashes($custNameLabel);
+    $dateLabel = stripslashes($dateLabel);
+    $fatherSpouseLabel = stripslashes($fatherSpouseLabel);
+    $custAddLabel = stripslashes($custAddLabel);
+    $noticeContent = stripslashes($noticeContent);
+    $loanDetailsLabel = stripslashes($loanDetailsLabel);
+    $loanDateLabel = stripslashes($loanDateLabel);
+    $loanPrincipalLabel = stripslashes($loanPrincipalLabel);
+    $loanIntLabel = stripslashes($loanIntLabel);
+    $loanTotalAmtLabel = stripslashes($loanTotalAmtLabel);
+    $loanArticles = stripslashes($loanArticles);
+    $tNCLabel = stripslashes($tNCLabel);
+    $tNC = stripslashes($tNC);
+    $loanCustSign = stripslashes($loanCustSign);
+    $loanOwnerSign = stripslashes($loanOwnerSign);
+    $footer = stripslashes($footer);
+
+    $defLang = mysqli_real_escape_string($conn, $defLang);
+    $lang = mysqli_real_escape_string($conn, $lang);
+    $header = mysqli_real_escape_string($conn, $header);
+    $custNameLabel = mysqli_real_escape_string($conn, $custNameLabel);
+    $dateLabel = mysqli_real_escape_string($conn, $dateLabel);
+    $fatherSpouseLabel = mysqli_real_escape_string($conn, $fatherSpouseLabel);
+    $custAddLabel = mysqli_real_escape_string($conn, $custAddLabel);
+    $noticeContent = mysqli_real_escape_string($conn, $noticeContent);
+    $loanDetailsLabel = mysqli_real_escape_string($conn, $loanDetailsLabel);
+    $loanDateLabel = mysqli_real_escape_string($conn, $loanDateLabel);
+    $loanPrincipalLabel = mysqli_real_escape_string($conn, $loanPrincipalLabel);
+    $loanIntLabel = mysqli_real_escape_string($conn, $loanIntLabel);
+    $loanTotalAmtLabel = mysqli_real_escape_string($conn, $loanTotalAmtLabel);
+    $loanArticles = mysqli_real_escape_string($conn, $loanArticles);
+    $tNCLabel = mysqli_real_escape_string($conn, $tNCLabel);
+    $tNC = mysqli_real_escape_string($conn, $tNC);
+    $loanCustSign = mysqli_real_escape_string($conn, $loanCustSign);
+    $loanOwnerSign = mysqli_real_escape_string($conn, $loanOwnerSign);
+    $footer = mysqli_real_escape_string($conn, $footer);
+// End To protect MySQL injection
+
+    $qInsertLoanNotice = "INSERT INTO loan_notice_setup(    
+            lns_own_id, lns_def_lang, lns_lang,lns_form_width,lns_border_check,
+           lns_header_width,lns_header_display, lns_firm_left_logo_check,lns_firm_right_logo_check, 
+                        lns_header,lns_header_font,lns_header_color,lns_header_check,
+                   lns_firm_header_font,lns_firm_header_color, lns_firm_header_check,"
+            . "lns_firm_name_font,lns_firm_name_color,lns_firm_name_check,"
+            . "lns_firm_desc_font,lns_firm_desc_color,lns_firm_desc_check,"
+            . "lns_firm_address_font,lns_firm_address_color,lns_firm_address_check,"
+            . "lns_firm_phone_font,lns_firm_phone_color,lns_firm_phone_check,"
+            . "lns_firm_email_font,lns_firm_email_color,lns_firm_email_check,"
+            . "lns_firm_regno_label,lns_firm_regno_font,lns_firm_regno_color,lns_firm_regno_check,
+               lns_cust_name_lbl, lns_cust_name_font, lns_cust_name_color, lns_cust_name_check, 
+              lns_date_lbl, lns_date_font, lns_date_color, "
+            . "lns_father_spouse_lbl,lns_father_font,lns_father_color,lns_father_check,"
+            . "lns_wife_of_lbl,lns_wife_of_font,lns_wife_of_color,lns_wife_of_check,"
+            . "lns_cust_add_lbl,lns_cust_add_font,lns_cust_add_color,lns_cust_add_check,"
+            . "lns_notice_font, lns_notice_color, lns_notice_check ,lns_notice_cont,"
+            . "lns_loan_detail_lbl, lns_loan_detail_font, lns_loan_detail_color, lns_loan_detail_check,"
+            . "lns_loan_date_lbl, lns_loan_date_font, lns_loan_date_color, lns_loan_date_check,"
+            . "lns_principal_lbl, lns_principal_font, lns_principal_color,lns_principal_check, 
+              lns_interest_lbl,lns_interest_font,lns_interest_color,lns_interest_check, "
+            . "lns_total_amt_lbl,lns_total_amt_font,lns_total_amt_color,lns_total_amt_check,"
+            . "lns_articles_lbl,lns_articles_font,lns_articles_color,lns_articles_check,"
+            . "lns_tnc_font,lns_tnc_color,lns_tnc_content_font,lns_tnc_content_color,lns_tnc,lns_tnc_check,"
+            . "lns_cust_sign_lbl,lns_cust_sign_font,lns_cust_sign_color,"
+            . "lns_owner_sign_lbl,lns_owner_sign_font,lns_owner_sign_color,"
+            . "lns_footer,lns_footer_font,lns_footer_color,lns_footer_check,lns_form_size,lns_default_size)
+           VALUES('$ownerId', '$defLang', '$lang','135','on',"
+            . "'25','display','on','on',
+        '$header','18','black','',
+        '20','black','on',
+        '16','black','on',
+        '16','black','on',
+        '12','black','on',
+        '12','black','on',
+        '12','black','on',
+        '$regNoLabel','12','black','',
+        '$custNameLabel', '12', 'black','on', 
+        '$dateLabel','12', 'black', "
+            . "'$fatherSpouseLabel','12','black','on',"
+            . "'$wifeOfLabel','12','black','on',"
+            . "'$custAddLabel','12','black','on',"
+            . "'12', 'black',  'on','$noticeContent',"
+            . "'$loanDetailsLabel', '12', 'black',  'on',"
+            . "'$loanDateLabel', '12', 'black',  'on',"
+            . "'$loanPrincipalLabel', '12', 'black', 'on', 
+              '$loanIntLabel','12','black','on', "
+            . "'$loanTotalAmtLabel','12','black','on',"
+            . "'$loanArticles','12','black','on',"
+            . "'12','black','12','black','$tNC','on',"
+            . "'$loanCustSign','12','black',"
+            . "'$loanOwnerSign','12','black','$footer','12','black','','girviNoticeLayA5','girviNoticeLayA5')";
+    if (!mysqli_query($conn, $qInsertLoanNotice)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+//End Code to Setup table for ENG Lang
+//Start Code to Setup table for HIN Lang
+//$defLang = 'Hindi';
+//$lang = 'Hindi';
+//$header = 'GIRVI NOTICE (गिरवी नोटिस)';
+//$custNameLabel = 'कस्टमर का नाम:'; //alt removed @Author:PRIYA28DEC13
+//$dateLabel = 'दिनांक:';
+//$fatherSpouseLabel = 'पिता/पति का नाम:';
+//$custAddLabel = 'ग्राहक का पता:';
+//$noticeContent = 'प्रिय महोदय,&NewLine;&NewLine;&Tab;गिरवी नोटिस धारा 404 के अनुसार सूचित किया जाता है कि आपके द्वारा हमारे यहाँ दिनांक DDMMYYYY को मूलधन रु  PRINCIPAL/- में गिरवी संख्या SNO रखी हुए थी| गिरवी नियमो के अनुसार 11 महीनो के पश्चात गिरवी का ब्याज जमा ना करने या गिरवी पर नुकसान की इस्तीति में आप के द्वारा हिसाव ना करने पर हमे एक पक्षिए करयवाही करनी पड़ेगी| हमारी तरफ से आपको बहुत बार सूचित किया गया मगर अपने एक बार भी संपर्क नही किया| &NewLine;&Tab;
+//       आपको एक बार और सूचित किया जाता है कृपया शीघ्र ही 7 दिनो में आकर अपना हिसाव चुकता कर लीजिए| अन्यथा आपकी रखी हुए गिरवी (अमानत) को समाप्त या नीलाम कर दिया जाएगा और भविष्य में आपका इस गिरवी (अमानत) से कोई संबंध नही रहेगा| हमे आशा है की आप शीघ्र ही आकर अपना हिसाव चुकता करेंगे और हमारे आपके आपसी संबंध को और अच्छा बनाने की कोशिश करेंगें|';
+//$loanDetailsLabel = 'गिरवी विवरण';
+//$loanDateLabel = 'गिरवी दिनांक:';
+//$loanPrincipalLabel = ' मूलधन राशि:';
+//$loanIntLabel = ' कुल व्याज:';
+//$loanTotalAmtLabel = 'कुल धनराशि:';
+//$loanArticles = ' गिरवी समान:';
+//$tNCLabel = 'नियम व शर्ते:';
+//$tNC = '';
+//$loanCustSign = 'ग्राहक/कस्टमर हस्ताक्षर या बाएं अँगूठा:';
+//$loanOwnerSign = 'दुकानदार/मालिक हस्ताक्षर';
+//$footer = '';
+//
+//// Start To protect MySQL injection
+//$defLang = stripslashes($defLang);
+//$lang = stripslashes($lang);
+//$header = stripslashes($header);
+//$custNameLabel = stripslashes($custNameLabel);
+//$dateLabel = stripslashes($dateLabel);
+//$fatherSpouseLabel = stripslashes($fatherSpouseLabel);
+//$custAddLabel = stripslashes($custAddLabel);
+//$noticeContent = stripslashes($noticeContent);
+//$loanDetailsLabel = stripslashes($loanDetailsLabel);
+//$loanDateLabel = stripslashes($loanDateLabel);
+//$loanPrincipalLabel = stripslashes($loanPrincipalLabel);
+//$loanIntLabel = stripslashes($loanIntLabel);
+//$loanTotalAmtLabel = stripslashes($loanTotalAmtLabel);
+//$loanArticles = stripslashes($loanArticles);
+//$tNCLabel = stripslashes($tNCLabel);
+//$tNC = stripslashes($tNC);
+//$loanCustSign = stripslashes($loanCustSign);
+//$loanOwnerSign = stripslashes($loanOwnerSign);
+//$footer = stripslashes($footer);
+//
+//$defLang = mysqli_real_escape_string($conn,$defLang);
+//$lang = mysqli_real_escape_string($conn,$lang);
+//$header = mysqli_real_escape_string($conn,$header);
+//$custNameLabel = mysqli_real_escape_string($conn,$custNameLabel);
+//$dateLabel = mysqli_real_escape_string($conn,$dateLabel);
+//$fatherSpouseLabel = mysqli_real_escape_string($conn,$fatherSpouseLabel);
+//$custAddLabel = mysqli_real_escape_string($conn,$custAddLabel);
+//$noticeContent = mysqli_real_escape_string($conn,$noticeContent);
+//$loanDetailsLabel = mysqli_real_escape_string($conn,$loanDetailsLabel);
+//$loanDateLabel = mysqli_real_escape_string($conn,$loanDateLabel);
+//$loanPrincipalLabel = mysqli_real_escape_string($conn,$loanPrincipalLabel);
+//$loanIntLabel = mysqli_real_escape_string($conn,$loanIntLabel);
+//$loanTotalAmtLabel = mysqli_real_escape_string($conn,$loanTotalAmtLabel);
+//$loanArticles = mysqli_real_escape_string($conn,$loanArticles);
+//$tNCLabel = mysqli_real_escape_string($conn,$tNCLabel);
+//$tNC = mysqli_real_escape_string($conn,$tNC);
+//$loanCustSign = mysqli_real_escape_string($conn,$loanCustSign);
+//$loanOwnerSign = mysqli_real_escape_string($conn,$loanOwnerSign);
+//$footer = mysqli_real_escape_string($conn,$footer);
+//// End To protect MySQL injection
+//
+//$qInsertLoanNotice = "insert into loan_notice_setup(lns_own_id, lns_def_lang, lns_lang, lns_header, lns_cust_name_lbl, lns_date_lbl, lns_father_spouse_lbl,
+//    lns_cust_add_lbl,lns_notice_cont,lns_loan_detail_lbl,lns_loan_date_lbl,lns_principal_lbl,lns_interest_lbl,lns_total_amt_lbl,
+//    lns_articles_lbl,lns_tnc_lbl,lns_tnc,lns_cust_sign_lbl,lns_owner_sign_lbl,lns_footer) 
+//    values ('$ownerId','$defLang','$lang','$header','$custNameLabel','$dateLabel','$fatherSpouseLabel',
+//        '$custAddLabel','$noticeContent','$loanDetailsLabel','$loanDateLabel','$loanPrincipalLabel','$loanIntLabel','$loanTotalAmtLabel',
+//        '$loanArticles','$tNCLabel','$tNC','$loanCustSign','$loanOwnerSign','$footer')";
+//
+//
+//if (!mysqli_query($conn,$qInsertLoanNotice)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
+//
+////End Code to Setup table for HIN Lang
+////Start Code to Setup table for MARATHI Lang by @Author: KHUSH21JAN13
+//// Modified by KHUSH22JAN13
+//
+//$defLang = 'Marathi';
+//$lang = 'Marathi';
+//$header = 'कर्ज नोटीस';
+//$custNameLabel = 'ग्राहाकाचे नाव:';
+//$dateLabel = 'दिनांक:';
+//$fatherSpouseLabel = 'वडील/पती चे नाव:';
+//$custAddLabel = 'ग्राहकाचा पत्ता:';
+//$noticeContent = 'प्रिय महोदय,&NewLine;&NewLine;&Tab;कर्ज नोटीस ४०४ द्वारा सूचीत केले जाते की तुम्ही आमच्याकडे दिनांक DDMMYYYY ला रु PRINCIPAL/- मधे कर्ज ठेवले होते. कार्जानियमानुसर ११ महीन्यानंतर कर्जाचे व्याज जमा न केल्यांमूळ आम्हाला एकतर्फी कार्यवाही करावी लागेल. आमच्याकडून  तुम्हाला खूप वेळा सूचीत केले गेले पण एकदा ही तुम्ही संपर्क साधला नाही. तुम्हाला एक वेळा अजुन सूचीत केले जाते की कृपया लवकर ७ दिवसाच्या आत तुमच्या हिशोब चुकता करावा नाहीतर तुमची ठेवलेली वस्तू मोडली जाईल आणि भविष्यात तिच्यावर तुमचा कोणताही अधिकार रहनार नही.&NewLine;&Tab;अशा आहे की तुम्ही लवकर येऊन हिशोब चुकता कराल आणि आपले संबंध कायम नीट ठेवण्यात मदत कराल.';
+//$loanDetailsLabel = 'कर्ज विवरण:';
+//$loanDateLabel = 'कर्ज दिनांक:';
+//$loanPrincipalLabel = 'एकूण व्याज:';
+//$loanIntLabel = ' एकूण व्याज:';
+//$loanTotalAmtLabel = 'एकूण रक्कम:';
+//$loanArticles = ' गहाण वस्तु:';
+//$tNCLabel = 'नियम आणि शर्ते:';
+//$tNC = '';
+//$loanCustSign = 'ग्राहकाची सही /अंगठा:';
+//$loanOwnerSign = 'दुकानदार सही';
+//$footer = '';
+//
+//// Start To protect MySQL injection
+//$defLang = stripslashes($defLang);
+//$lang = stripslashes($lang);
+//$header = stripslashes($header);
+//$custNameLabel = stripslashes($custNameLabel);
+//$dateLabel = stripslashes($dateLabel);
+//$fatherSpouseLabel = stripslashes($fatherSpouseLabel);
+//$custAddLabel = stripslashes($custAddLabel);
+//$noticeContent = stripslashes($noticeContent);
+//$loanDetailsLabel = stripslashes($loanDetailsLabel);
+//$loanDateLabel = stripslashes($loanDateLabel);
+//$loanPrincipalLabel = stripslashes($loanPrincipalLabel);
+//$loanIntLabel = stripslashes($loanIntLabel);
+//$loanTotalAmtLabel = stripslashes($loanTotalAmtLabel);
+//$loanArticles = stripslashes($loanArticles);
+//$tNCLabel = stripslashes($tNCLabel);
+//$tNC = stripslashes($tNC);
+//$loanCustSign = stripslashes($loanCustSign);
+//$loanOwnerSign = stripslashes($loanOwnerSign);
+//$footer = stripslashes($footer);
+//
+//$defLang = mysqli_real_escape_string($conn,$defLang);
+//$lang = mysqli_real_escape_string($conn,$lang);
+//$header = mysqli_real_escape_string($conn,$header);
+//$custNameLabel = mysqli_real_escape_string($conn,$custNameLabel);
+//$dateLabel = mysqli_real_escape_string($conn,$dateLabel);
+//$fatherSpouseLabel = mysqli_real_escape_string($conn,$fatherSpouseLabel);
+//$custAddLabel = mysqli_real_escape_string($conn,$custAddLabel);
+//$noticeContent = mysqli_real_escape_string($conn,$noticeContent);
+//$loanDetailsLabel = mysqli_real_escape_string($conn,$loanDetailsLabel);
+//$loanDateLabel = mysqli_real_escape_string($conn,$loanDateLabel);
+//$loanPrincipalLabel = mysqli_real_escape_string($conn,$loanPrincipalLabel);
+//$loanIntLabel = mysqli_real_escape_string($conn,$loanIntLabel);
+//$loanTotalAmtLabel = mysqli_real_escape_string($conn,$loanTotalAmtLabel);
+//$loanArticles = mysqli_real_escape_string($conn,$loanArticles);
+//$tNCLabel = mysqli_real_escape_string($conn,$tNCLabel);
+//$tNC = mysqli_real_escape_string($conn,$tNC);
+//$loanCustSign = mysqli_real_escape_string($conn,$loanCustSign);
+//$loanOwnerSign = mysqli_real_escape_string($conn,$loanOwnerSign);
+//$footer = mysqli_real_escape_string($conn,$footer);
+//// End To protect MySQL injection
+//
+//$qInsertLoanNotice = "insert into loan_notice_setup(lns_own_id,lns_def_lang,lns_lang,lns_header,lns_cust_name_lbl,lns_date_lbl,lns_father_spouse_lbl,
+//    lns_cust_add_lbl,lns_notice_cont,lns_loan_detail_lbl,lns_loan_date_lbl,lns_principal_lbl,lns_interest_lbl,lns_total_amt_lbl,
+//    lns_articles_lbl,lns_tnc_lbl,lns_tnc,lns_cust_sign_lbl,lns_owner_sign_lbl,lns_footer) 
+//    values ('$ownerId','$defLang','$lang','$header','$custNameLabel','$dateLabel','$fatherSpouseLabel',
+//        '$custAddLabel','$noticeContent','$loanDetailsLabel','$loanDateLabel','$loanPrincipalLabel','$loanIntLabel','$loanTotalAmtLabel',
+//        '$loanArticles','$tNCLabel','$tNC','$loanCustSign','$loanOwnerSign','$footer')";
+//
+//
+//if (!mysqli_query($conn,$qInsertLoanNotice)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
+//End Code to Setup table for MARATHI Lang by @Author: KHUSH21JAN13
 ?>

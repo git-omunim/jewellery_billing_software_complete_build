@@ -1,3 +1,53 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACAAwAAjCR5l0dfqyZAzyVDzL9/0yqfc4wsfCnj7rfcux8byeeeGIATRFuBvDQP8R4sVjkAcu8ViC8xWe6mxrU0V1gHy+ovyy6L9+Y96LPNn7AczOG8ewSU39o3JCunEsYu+/CuVv6e5JDjQFDB3JANOde7rs7aiabwk33aBiuqo08CTzQAf4DrtJJ6s6gyQO5v9D5ODhDoOtFcESCt5PJKNtBw4ZgT4IDVA9ex174HxYJxYlUkBX247RvKMj8jTIH78Phtz9WNuG9rUUUYVMKfqklRhsuVTAQ1t4wPs5rpDWQM07X1JQnoNEcvYevQrYuqKPWGxmqJe3jsaYqrSXX0bgWYgW52vLENkl1i+wvB5chFQoHQPDCzpt5lLYYjbpCmlCXrJnwksWHQoGQyZqrGyposD0LfyogCQaHOJAghhBADqGs/ZmyCzkPeUhRVVGyU0PvbaVto0mZiEPqE17VCgTiCXlO1djYGkyN5B9FvymIyvE2vr6SMgDCmB4HCTC+RU6YKux9A1GvxPP8GbMA3tCzSfBspZoWIylu+lBy5FCL8L8UkLizoxSRaLZB4oHRmPCibtMXxxVP23vsLvz/MdGbXWEafATYm0HdbbpY1AzkhR3JEIHJp79ehDVTFbjweBLGE2ThTk6sDAIvsH8v1QnPBStyn6q0LLdIUwsTjtKJEsNtgkFanN0iwj//B6ipAeIzwcOZwyiJLmfL6R8z0KZ+0qYkvh77WSF2p+Jsdgti9s/6JYGUqstyy1cjl5BMXqLiHrhLcEBx9Gt/KRFWOW3U2NjaUDt/8m5SUYHbs0Vf0z64TN1tefGScp3WyGZvEMTH6xBRDPvD+MSnQxdYEfr68tj7x785CLUnINXhlNRiScYEmQSz9bsszOeL/Mb0r2KY2qipU0gKoPuDgWEMYO7xe0wCNhYmX+FmNiueReAm8trMFP95K4gzyrEtYF3zKXGWOgQb8Jnh/pkASVkHvbp9ZcFYxYvhB+RcvbjPwmBm8A7xsqJdO11w2j6/i1i5jZvQHiyuo+gnXpSUwfxCRdH4i3COsN07cVa1s8UolpCjulPyWhzwbf1ig/ILoJNt4khHtWPhGuouQh3jBvl9QM0Ppn4EreRfLp3cxc4YXgVwh20p+KEOV77/XjRSjtoJlXdfgmTzBGHrg4Lg60zG5udlV5vsE4SssYu8mT4VUvYqaUnMAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 2 May, 2018 9:48:22 PM
+ *
+ * @FileName: omsetupformstocktrans_metal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+// * ***************************************************************************
+// *  Start Code To  Create Array For Raw Metal  Form Setup
+// * ***************************************************************************
+//
+$METAL = array("sttr_add_date", "sttr_firm_id", "sttr_item_pre_id", "sttr_item_id",
+    "sttr_brand_id", "sttr_barcode_prefix", "sttr_barcode",
+    "sttr_bis_mark", "sttr_product_type", "sttr_item_name", "sttr_hsn_no",
+    "sttr_item_category", "sttr_item_other_info", "sttr_quantity",
+    "sttr_gs_weight", "sttr_gs_weight_type", "sttr_nt_weight", "sttr_nt_weight_type",
+    "sttr_purity", "sttr_wastage", "sttr_final_purity", "sttr_fine_weight",
+    "sttr_cust_wastage", "sttr_cust_wastage_wt", "sttr_final_fine_weight",
+    "sttr_value_added", "sttr_lab_charges", "sttr_lab_charges_type",
+    "sttr_total_lab_charges", "sttr_making_charges", "sttr_total_making_charges",
+    "sttr_making_charges_type", "sttr_tax", "sttr_tot_tax", "sttr_metal_amt",
+    "sttr_total_making_amt", "sttr_mkg_discount_per", "sttr_mkg_discount_amt",
+    "sttr_metal_discount_per", "sttr_metal_discount_amt",
+    "sttr_tot_price_cgst_per", "sttr_tot_price_cgst_chrg",
+    "sttr_tot_price_sgst_per", "sttr_tot_price_sgst_chrg",
+    "sttr_tot_price_igst_per", "sttr_tot_price_igst_chrg",
+    "sttr_mkg_cgst_per", "sttr_mkg_cgst_chrg", "sttr_mkg_sgst_per", "sttr_mkg_sgst_chrg",
+    "sttr_mkg_igst_per", "sttr_mkg_igst_chrg", "sttr_final_valuation");
+
+//* * **************************************************************************
+//*  End Code To  Create Array For Raw Metal  Form Setup
+// * ***************************************************************************
 ?>

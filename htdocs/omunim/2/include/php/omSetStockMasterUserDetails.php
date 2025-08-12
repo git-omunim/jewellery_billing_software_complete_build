@@ -1,3 +1,184 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * ***********************************************************************************************
+ * @tutorial: SET STOCK MASTER DETAILS ACCORDING TO USER @PRIYANKA-29APR19
+ * ***********************************************************************************************
+ * 
+ * Created on APR 29, 2019 17:41:00 PM
+ *
+ * @FileName: omSetStockMasterUserDetails.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 2.6.100
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-29APR19
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+//
+?>
+<?php
+//
+$itemCategory = $_REQUEST['itemCategory'];
+$itemName = $_REQUEST['itemName'];
+$userId = $_REQUEST['userId'];
+//
+// START CODE SET STOCK MASTER DETAILS ACCORDING TO USER @PRIYANKA-29APR19
+//
+$qSelect = "SELECT * FROM master_item WHERE ms_itm_category = '$itemCategory' and ms_itm_name = '$itemName'";
+//
+$resultQuery = mysqli_query($conn, $qSelect);
+//
+//echo '$qSelect == '.$qSelect.'<br />';
+//
+$row = mysqli_fetch_array($resultQuery, MYSQLI_ASSOC);
+//
+$ms_itm_id = $row['ms_itm_id'];
+$ms_itm_model_no = $row['ms_itm_model_no'];
+$ms_itm_category = $row['ms_itm_category'];
+$ms_itm_name = $row['ms_itm_name'];
+//
+$qSelectInfo = "SELECT * FROM master_subitem WHERE ms_sub_itm_ms_item_id = '$ms_itm_id' AND ms_sub_itm_user_id = '$userId'";
+//
+$resultQueryInfo = mysqli_query($conn, $qSelectInfo);
+//
+$rowInfo = mysqli_fetch_array($resultQueryInfo, MYSQLI_ASSOC);
+//
+$count = mysqli_num_rows($resultQueryInfo);
+//
+if ($count > 0) {
+    //
+    $ms_sub_itm_from_wt = $rowInfo['ms_sub_itm_from_wt']; 
+    $ms_sub_itm_to_wt = $rowInfo['ms_sub_itm_to_wt'];
+    $ms_sub_itm_wstg_max = $rowInfo['ms_sub_itm_wstg_max'];
+    $ms_sub_itm_wstg_min = $rowInfo['ms_sub_itm_wstg_min'];
+    $ms_sub_itm_wstg_max_per = $rowInfo['ms_sub_itm_wstg_max_per'];
+    $ms_sub_itm_wstg_min_per = $rowInfo['ms_sub_itm_wstg_min_per'];
+    $ms_sub_itm_mkg_max = $rowInfo['ms_sub_itm_mkg_max'];
+    $ms_sub_itm_mkg_min = $rowInfo['ms_sub_itm_mkg_min'];
+    $ms_sub_itm_mkg_max_pp = $rowInfo['ms_sub_itm_mkg_max_pp'];
+    $ms_sub_itm_mkg_min_pp = $rowInfo['ms_sub_itm_mkg_min_pp'];
+    $ms_sub_itm_mkg_max_fx = $rowInfo['ms_sub_itm_mkg_max_fx'];
+    $ms_sub_itm_mkg_min_fx = $rowInfo['ms_sub_itm_mkg_min_fx'];
+    $ms_sub_itm_disc_max_gm = $rowInfo['ms_sub_itm_disc_max_gm'];
+    $ms_sub_itm_disc_min_gm = $rowInfo['ms_sub_itm_disc_min_gm'];
+    $ms_sub_itm_disc_max_pp = $rowInfo['ms_sub_itm_disc_max_pp'];
+    $ms_sub_itm_disc_min_pp = $rowInfo['ms_sub_itm_disc_min_pp'];
+    $ms_sub_itm_disc_mkg_max_fx = $rowInfo['ms_sub_itm_disc_mkg_max_fx'];
+    $ms_sub_itm_disc_mkg_min_fx = $rowInfo['ms_sub_itm_disc_mkg_min_fx'];
+    //
+} else {
+//
+parse_str(getTableValues("SELECT user_membership FROM user WHERE user_id = '$userId'"));
+//
+$qSelectInfo = "SELECT * FROM master_subitem WHERE ms_sub_itm_ms_item_id = '$ms_itm_id' AND ms_sub_itm_user_group = '$user_membership'";
+//
+$resultQueryInfo = mysqli_query($conn, $qSelectInfo);
+//
+$rowInfo = mysqli_fetch_array($resultQueryInfo, MYSQLI_ASSOC);
+//
+$count = mysqli_num_rows($resultQueryInfo);
+    //
+    $ms_sub_itm_from_wt = $rowInfo['ms_sub_itm_from_wt']; 
+    $ms_sub_itm_to_wt = $rowInfo['ms_sub_itm_to_wt'];
+    $ms_sub_itm_wstg_max = $rowInfo['ms_sub_itm_wstg_max'];
+    $ms_sub_itm_wstg_min = $rowInfo['ms_sub_itm_wstg_min'];
+    $ms_sub_itm_wstg_max_per = $rowInfo['ms_sub_itm_wstg_max_per'];
+    $ms_sub_itm_wstg_min_per = $rowInfo['ms_sub_itm_wstg_min_per'];
+    $ms_sub_itm_mkg_max = $rowInfo['ms_sub_itm_mkg_max'];
+    $ms_sub_itm_mkg_min = $rowInfo['ms_sub_itm_mkg_min'];
+    $ms_sub_itm_mkg_max_pp = $rowInfo['ms_sub_itm_mkg_max_pp'];
+    $ms_sub_itm_mkg_min_pp = $rowInfo['ms_sub_itm_mkg_min_pp'];
+    $ms_sub_itm_mkg_max_fx = $rowInfo['ms_sub_itm_mkg_max_fx'];
+    $ms_sub_itm_mkg_min_fx = $rowInfo['ms_sub_itm_mkg_min_fx'];
+    $ms_sub_itm_disc_max_gm = $rowInfo['ms_sub_itm_disc_max_gm'];
+    $ms_sub_itm_disc_min_gm = $rowInfo['ms_sub_itm_disc_min_gm'];
+    $ms_sub_itm_disc_max_pp = $rowInfo['ms_sub_itm_disc_max_pp'];
+    $ms_sub_itm_disc_min_pp = $rowInfo['ms_sub_itm_disc_min_pp'];
+    $ms_sub_itm_disc_mkg_max_fx = $rowInfo['ms_sub_itm_disc_mkg_max_fx'];
+    $ms_sub_itm_disc_mkg_min_fx = $rowInfo['ms_sub_itm_disc_mkg_min_fx'];
+    //
+}
+//
+//
+//echo '$ms_sub_itm_from_wt == '.$ms_sub_itm_from_wt.'<br />';
+//echo '$ms_sub_itm_to_wt == '.$ms_sub_itm_to_wt.'<br />';
+//echo '$ms_sub_itm_wstg_max == '.$ms_sub_itm_wstg_max.'<br />';
+//echo '$ms_sub_itm_wstg_min == '.$ms_sub_itm_wstg_min.'<br />';
+//echo '$ms_sub_itm_wstg_max_per == '.$ms_sub_itm_wstg_max_per.'<br />';
+//echo '$ms_sub_itm_wstg_min_per == '.$ms_sub_itm_wstg_min_per.'<br />';
+//echo '$ms_sub_itm_mkg_max == '.$ms_sub_itm_mkg_max.'<br />';
+//echo '$ms_sub_itm_mkg_min == '.$ms_sub_itm_mkg_min.'<br />';
+//echo '$ms_sub_itm_mkg_max_pp == '.$ms_sub_itm_mkg_max_pp.'<br />';
+//echo '$ms_sub_itm_mkg_min_pp == '.$ms_sub_itm_mkg_min_pp.'<br />';
+//echo '$ms_sub_itm_mkg_max_fx == '.$ms_sub_itm_mkg_max_fx.'<br />';
+//echo '$ms_sub_itm_mkg_min_fx == '.$ms_sub_itm_mkg_min_fx.'<br />';
+//echo '$ms_sub_itm_disc_max_gm == '.$ms_sub_itm_disc_max_gm.'<br />';
+//echo '$ms_sub_itm_disc_min_gm == '.$ms_sub_itm_disc_min_gm.'<br />';
+//echo '$ms_sub_itm_disc_max_pp == '.$ms_sub_itm_disc_max_pp.'<br />';
+//echo '$ms_sub_itm_disc_min_pp == '.$ms_sub_itm_disc_min_pp.'<br />';
+//echo '$ms_sub_itm_disc_mkg_max_fx == '.$ms_sub_itm_disc_mkg_max_fx.'<br />';
+//echo '$ms_sub_itm_disc_mkg_min_fx == '.$ms_sub_itm_disc_mkg_min_fx.'<br />';
+//
+//
+//echo '$count == '.$count.'<br />';
+//
+if ($count == 0) {
+    //
+    parse_str(getTableValues("SELECT * FROM master_item WHERE ms_itm_category = '$itemCategory' and ms_itm_name = '$itemName'"));
+    //
+    if ($ms_itm_category != '' && $ms_itm_category != NULL) {
+        $count = 1;
+        $ms_sub_itm_from_wt = NULL; 
+        $ms_sub_itm_to_wt = NULL; 
+        $ms_sub_itm_wstg_max = NULL; 
+        $ms_sub_itm_wstg_min = NULL; 
+        $ms_sub_itm_wstg_max_per = NULL; 
+        $ms_sub_itm_wstg_min_per = NULL; 
+        $ms_sub_itm_mkg_max = NULL; 
+        $ms_sub_itm_mkg_min = NULL; 
+        $ms_sub_itm_mkg_max_pp = NULL; 
+        $ms_sub_itm_mkg_min_pp = NULL; 
+        $ms_sub_itm_mkg_max_fx = NULL; 
+        $ms_sub_itm_mkg_min_fx = NULL; 
+        $ms_sub_itm_disc_max_gm = NULL; 
+        $ms_sub_itm_disc_min_gm = NULL; 
+        $ms_sub_itm_disc_max_pp = NULL; 
+        $ms_sub_itm_disc_min_pp = NULL; 
+        $ms_sub_itm_disc_mkg_max_fx = NULL; 
+        $ms_sub_itm_disc_mkg_min_fx = NULL; 
+    }
+}
+//
+//
+if ($count > 0) { ?>
+        <img src="<?php echo $documentRootBSlash; ?>/images/abx-t.png"
+         onload="stockMasterUserDetailsDisplay('<?php echo $ms_sub_itm_from_wt; ?>', '<?php echo $ms_sub_itm_to_wt; ?>', 
+                                               '<?php echo $ms_sub_itm_wstg_max; ?>', '<?php echo $ms_sub_itm_wstg_min; ?>', 
+                                               '<?php echo $ms_sub_itm_wstg_max_per; ?>', '<?php echo $ms_sub_itm_wstg_min_per; ?>',                                                
+                                               '<?php echo $ms_sub_itm_mkg_max; ?>', '<?php echo $ms_sub_itm_mkg_min; ?>', 
+                                               '<?php echo $ms_sub_itm_mkg_max_pp; ?>', '<?php echo $ms_sub_itm_mkg_min_pp; ?>',                                              
+                                               '<?php echo $ms_sub_itm_mkg_max_fx; ?>', '<?php echo $ms_sub_itm_mkg_min_fx; ?>', 
+                                               '<?php echo $ms_sub_itm_disc_max_gm; ?>', '<?php echo $ms_sub_itm_disc_min_gm; ?>',                                              
+                                               '<?php echo $ms_sub_itm_disc_max_pp; ?>', '<?php echo $ms_sub_itm_disc_min_pp; ?>', 
+                                               '<?php echo $ms_sub_itm_disc_mkg_max_fx; ?>', '<?php echo $ms_sub_itm_disc_mkg_min_fx; ?>',                                               
+                                               '<?php echo $ms_itm_category; ?>', '<?php echo $ms_itm_name; ?>', '<?php echo $ms_itm_model_no; ?>');"/>
+<?php
+}
+//
+// END CODE SET STOCK MASTER DETAILS ACCORDING TO USER @PRIYANKA-29APR19
+?>
+

@@ -1,3 +1,104 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACIAwAARFVMla6XmhZ2tnE/mZ0K0GpcFc/rHbcrAufgoQhnRNwNytYZB3wY0Gom3m0+qFvd0yYfm7Z14c8lf1xhg1XMbAnxbiUFuaIlhSrHkqvGHcHXr2FW7mjFYvoNImcKh6zp/H/rHZAzoVIv3Et1Ej8PbwyoWFVqHuVOkBuDf2ITF9akx65wd8/k5dgM49kkCXKwyML6b/gTJ+vGOsdmmEo7moDCXky9iZ52R41dLhpjov/T0O3fRyP37r9x6SfZ8h6HgVGrZYD5am3rH/RbCRWr8FAnfWwBIK9FuIE5m6OgKTyKKOGnYZTCFZ3uO/9VC4AwrN/7xWegXn6M0WQydSjbN+xzb7VyddnjnbC2Uw+FLOg1melcJJpuxJzd+nCJQg/gBKgS31iHNOxWZnpa/aVmhm2e/d/fBbSqUUpbyjzFevnU20Xc3IsM05bUGrGAHsBAxbPdx7FABX4o4DjmndYLmFgVCKUNIXpuo4vUMuEbnl5JfLKwD7M+hJCNabmOpWXhjAlU+PhhW5gexCKqLw1t47tPTiQAlMruYGL3FRGWwPqOmVpvglrzSLF2aMfmEjcuysTV71vFet896QaXaGPvcVQJvbdCZ+y/0HUMbNlJXG/WdGnMRIEe0bWaDKIV/DSds04mwhw4jLCiEPcqU+ui1xvpJrwBjt+jLgbsez1xXd7wCnB1CeX+y0u7H1kqOSl9D1o7MRSNw6WyylbTLPnY7jkC6DWlquuX71qpSoeCAdYOdkE1bQAVnXEmanbcXppK0VK5IKdYP3XpE6iM6JhgvdfNDJW2ARyV1Sbh+rB1DyWP4IE0rigCgMN/EYN+nvejn14N2Z5QIAjsvz/uF7bH9AlQCDFx8Hi5yGbCmY3228OjDDfjkBYqV8IG8FmXPMnpHaWYki2nXG0jenMzUCIMyhebQdJOdC7s4CcDYoKzEOCQd6g+ohouoQDfISoL8dG2quzgw1GQVLVh7vJg3h22FKZgRLiBDC00q6ReZonx5+abCLQHy9TPQVbjpapZ2hrD1ZP0TgJrOgK699iWcmLk7aj1TJMbY7gXSULyN2lPdgqBKxxK7PnKZP5z6k9BTjmc0KTXD9cokloe25f5yp1kBmT7S3PYyn5NuDINEdEufpEDscR0QBfw804fjs4JgTlTTfJx1xemnPedGG1QiCROurTAFaw97v6yEqIZW8Hcs/pwLVE9bzYLnwAAAAA=');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK TRANSFER REPORT CALCULATE CLOSING FILE @AUTHOR:PRIYANKA-09DEC2021
+ * **************************************************************************************************
+ *
+ * Created on DEC 09, 2021 05:30:01 PM 
+ * **************************************************************************************
+ * @FileName: omStockTransferReportClosingCal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.102
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:09DEC2021
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.102
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK TRANSFER REPORT CALCULATE CLOSING @AUTHOR:PRIYANKA-09DEC2021
+//***********************************************************************************************************
+//
+//
+$ClosingQTY = 0;
+$ClosingGsWeight = 0;
+$ClosingNtWeight = 0;
+$ClosingFnWeight = 0;
+//
+// 
+// CLOSING QTY @AUTHOR:PRIYANKA-09DEC2021
+$ClosingQTY = (($OpeningQTY + $InwardQTY) - abs($OutwardQTY));
+//
+//
+// CLOSING GS WEIGHT @AUTHOR:PRIYANKA-09DEC2021
+$ClosingGsWeight = (($OpeningGsWeight + $InwardGsWeight) - abs($OutwardGsWeight));
+//
+//
+// CLOSING NET WEIGHT @AUTHOR:PRIYANKA-09DEC2021
+$ClosingNtWeight = (($OpeningNtWeight + $InwardNtWeight) - abs($OutwardNtWeight));
+//
+//
+// CLOSING FINE WEIGHT @AUTHOR:PRIYANKA-09DEC2021
+$ClosingFnWeight = (($OpeningFnWeight + $InwardFnWeight) - abs($OutwardFnWeight));
+//
+//                    
+//
+//echo '$totalOpeningQty == ' . $totalOpeningQty . '<br />';
+//echo '$totalInwardQty == ' . $totalInwardQty . '<br />';
+//echo '$totalOutwardQty == ' . $totalOutwardQty . '<br />'; 
+//
+//echo '$ClosingQTY == ' . $ClosingQTY . '<br />';
+//echo '$ClosingGsWeight == ' . $ClosingGsWeight . '<br />';
+//echo '$ClosingNtWeight == ' . $ClosingNtWeight . '<br />'; 
+//die;
+//
+//
+//$totalClosingQty += (($totalOpeningQty + $totalInwardQty) - abs($totalOutwardQty)); 
+//$totalClosingGsWt += (($totalOpeningGsWt + $totalInwardGsWt) - abs($totalOutwardGsWt)); 
+//$totalClosingNtWt += (($totalOpeningNtWt + $totalInwardNtWt) - abs($totalOutwardNtWt));
+//$totalClosingFnWt += (($totalOpeningFnWt + $totalInwardFnWt) - abs($totalOutwardFnWt));
+//
+//
+$totalClosingQty += $ClosingQTY;
+$totalClosingGsWt += $ClosingGsWeight;
+$totalClosingNtWt += $ClosingNtWeight;
+$totalClosingFnWt += $ClosingFnWeight;
+//
+//
+//echo '$totalClosingQty == ' . $totalClosingQty . '<br />';
+//echo '$totalClosingGsWt == ' . $totalClosingGsWt . '<br />';
+//echo '$totalClosingNtWt == ' . $totalClosingNtWt . '<br />'; 
+//echo '$totalClosingFnWt == ' . $totalClosingFnWt . '<br />'; 
+//
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK TRANSFER REPORT CALCULATE CLOSING @AUTHOR:PRIYANKA-09DEC2021
+//***********************************************************************************************************
+//
 ?>

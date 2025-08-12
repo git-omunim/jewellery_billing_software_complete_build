@@ -1,3 +1,87 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACQAwAAAOW1lN8+7WIctCDtd+4RZFkFieCsO+/LqUHBv1HfThVrYl9+f1xBUiC6jmcWKZJUvKdptLdJXjNW+hXqDLIMwm29VOz3MC+xK5YhBtfPjpGW0AKBvB6YDzzRiKido1D4W1b9eLWhtC+P43kNzibJwvr9bISpU3ciMjxhpzT04f9q5CavQENd3ehzkYcLn+qDMysVu25wohokbiM7HZPvsn8TtdARPNDMF6DfStamnN3lLp/Sh+QGACXtv4Amafx+BVDlSTJ2kWfyO1/qINlQ33MK2zYso7NUQTP19/3jwBsSh21A9Rzn5lYWHRDHPSCDKMGDUWjf2PMlhcSF0kUsiwYO4UM/UfXqCp1QM2jMjRqSwZ0u9reSDqr1Ljo3TsRwDXrycktaJTT955O3ZpkgMXR8gBhE0KIHMs4VQkZW2V6DydD1skS2C4rm/mH1YYa4myy+iJdGnkOuIGuQQTo3Z68kumcFVO9IMGnVFGS9E5uWNhZVEPVHVBlu+riSWxL83VfgtF8q2JGP57u3UQb7nAqNqSVD4WyL1G4z1wgclS7SPSdqO4n+FAUjq48aF9P4MX7/iRl6e9Fp8L8R0QiaakPuYpbZuG0Zcwh3mDCYXQCwG9iRZDxncfwYHe9RdW5dVy9diw8bAh22hwIY8SWSEGjyPMGHEkb0TzEJWpk9/XViuBm7Rzbl7UJCSB/A8ebY5S+raDFj0rJVhemkSSf27vlAxernP23y6x0TrcOf6m2XhZokl+42bnCNK+99Fm1m3ZbF7wcCewmOyia/3CrU7Eeziv/lkPm4AYKZyuPsoBavvNpt1LKqSiKhBC6LMDequHuW/tbjVr3y/7AYW0X54JMXPBzTFCUuYtVYlWPXRMovw6yirlomoJ79KOy8eQ4HNbATFXEmeOiotgt0CtObzx2YdZUMLl7ry9VGM+a/uzD+Go7B+vzQSyUG6qgvPGJAygyH0N5eb4JA7NwBtezZ7zG3OmnrG5vwXnaIVjazeIcgmYEgH5/c1wuGqC2oTgut3ptzaxlsm9QdMJ2qo/Ll0xpJerch620yxWuceWp9LUlrzrW3OMmzvnD4Oc/1fEAfB3wC9htrd2sIpYibcJcWqGCd2h+ll41vRxspCcnQgdUNFNQVwc7itj2D1FmyGuVBvbCST/YGXrmARAPW9YrczlF2n8jYnSFyScszktbzmXy9n5WgFz5LF42KktT3Or5lAAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Main Journal Table 
+ * **************************************************************************************
+ *
+ * Created on 29 JAN, 2012 11:43:27 PM
+ *
+ * @FileName: omtbjrnl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:Modified by @AUTHOR:PRIYA29JAN13 
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//require_once 'system/omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS journal (
+jrnl_id           INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+jrnl_own_id	  VARCHAR(16),
+jrnl_jid          VARCHAR(10),
+jrnl_userid       VARCHAR(30),
+jrnl_user_type    VARCHAR(30),
+jrnl_trans_id     VARCHAR(30),
+jrnl_trans_type   VARCHAR(30),
+jrnl_firm_id      VARCHAR(30),
+jrnl_tt_dr        VARCHAR(50),
+jrnl_tt_odr        VARCHAR(50),
+jrnl_tt_dr_int    VARCHAR(50),
+jrnl_ggw_dr       VARCHAR(15),
+jrnl_ggw_dr_tp    VARCHAR(10),
+jrnl_gnw_dr       VARCHAR(15),
+jrnl_gnw_dr_tp    VARCHAR(10),
+jrnl_gfw_dr       VARCHAR(15),
+jrnl_gfw_dr_tp    VARCHAR(10),
+jrnl_sgw_dr       VARCHAR(15),
+jrnl_sgw_dr_tp    VARCHAR(10),
+jrnl_snw_dr       VARCHAR(15),
+jrnl_snw_dr_tp    VARCHAR(10),
+jrnl_sfw_dr       VARCHAR(15),
+jrnl_sfw_dr_tp    VARCHAR(10),
+jrnl_dr_acc_id      VARCHAR(10),
+jrnl_dr_acc_id_int  VARCHAR(10),
+jrnl_dr_desc        VARCHAR(100),
+jrnl_idr_desc        VARCHAR(100),
+jrnl_tt_cr	  VARCHAR(50),
+jrnl_tt_ocr	  VARCHAR(50),
+jrnl_tt_cr_int	  VARCHAR(50),
+jrnl_ggw_cr       VARCHAR(15),
+jrnl_ggw_cr_tp    VARCHAR(10),
+jrnl_gnw_cr       VARCHAR(15),
+jrnl_gnw_cr_tp    VARCHAR(10),
+jrnl_gfw_cr       VARCHAR(15),
+jrnl_gfw_cr_tp    VARCHAR(10),
+jrnl_sgw_cr       VARCHAR(15),
+jrnl_sgw_cr_tp    VARCHAR(10),
+jrnl_snw_cr       VARCHAR(15),
+jrnl_snw_cr_tp    VARCHAR(10),
+jrnl_sfw_cr       VARCHAR(15),
+jrnl_sfw_cr_tp    VARCHAR(10),
+jrnl_cr_acc_id        VARCHAR(10),
+jrnl_cr_acc_id_int    VARCHAR(10),
+jrnl_cr_desc          VARCHAR(100),
+jrnl_icr_desc          VARCHAR(100),
+jrnl_desc	  VARCHAR(100),
+jrnl_oth_info     VARCHAR(200),
+jrnl_dob 	  VARCHAR(30),
+jrnl_since	  DATETIME,
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+//Trans_id = Cust trans id which trans cust has done
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

@@ -1,3 +1,426 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * ***************************************************************
+ * @tutorial: Whatsapp API
+ * ***************************************************************
+ * 
+ * Created on 29 APRIL 2022 12:03:12 PM
+ *
+ * @FileName: omwhatsapppanel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omecom_mvc
+ * @version 1.0.0
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$staffId = $_SESSION['sessionStaffId'];
+//
+if ($staffId != '')
+    $instanceId = $sessionOwnerId . '_' . $staffId;
+else
+    $instanceId = $sessionOwnerId;
+//
+if ($_SESSION['sessionStaffMobNo'] == '')
+    $mobileNum = $_SESSION['sessionOwnerMobNo'];
+else
+    $mobileNum = $_SESSION['sessionStaffMobNo'];
+//echo "<pre>";
+//print_r($_SESSION['sessionOwnerMobNo']);
+//echo "</pre>";
+//
+if ($_REQUEST['apiCall'] == 'yes') {
+    include 'omwpapi.php';
+}
+?>
+<!DOCTYPE html>
+<html>
+    <body>
+        <table width="100%" align="center" valign="top">
+            <tr>
+                <td>
+                    <h3 style="font-size: 19px; font-weight:600; color: #D76B00; margin-bottom: 5px;">WhatsApp API Panel</h3>
+                </td>
+            </tr>
+            <?php if ($_SESSION['sessionOwnIndStr'][33] != 'A') { ?>
+                <tr>
+                    <td style="color: #cb4335;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;font-size: 14px;">
+                        &nbsp;&nbsp;Whatsapp API feature is chargeable and its add-on feature. To activate please contact with Support Team!
+                    </td>
+                </tr>
+            <?php } else { ?>
+                <tr>
+                    <td width="50%" align="middle">
+                        <div class="product-item" style="width:99%; height:425px;padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td class="paddingTop4 textLabel14CalibriBrownBold" 
+                                        style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" 
+                                        align="center">
+                                        Create WhatsApp Instance Here!
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table valign="middle" cellspacing="0" cellpadding="0" border="0" align="center" style="padding-top:20px;">
+                                            <tr>
+                                                <td valign="middle" align="right" style="font-size: 16px; font-weight: bold; color: #239b56;">
+                                                    <?php
+                                                    $querySecretKey = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$instanceId' and omly_option='whatsapp_secret_id_$instanceId'";
+                                                    //
+                                                    $resSecretKey = mysqli_query($conn, $querySecretKey);
+                                                    $noOfRowsSecretKey = mysqli_num_rows($resSecretKey);
+                                                    //echo $querySecretKey;
+                                                    //
+                                                    if ($noOfRowsSecretKey > 0) {
+                                                        //
+                                                        $rowSecretKey = mysqli_fetch_assoc($resSecretKey);
+                                                        $secretKey = $rowSecretKey['omly_value'];
+                                                        //
+                                                        $_SESSION['wa_instance_id'] = $secretKey;
+                                                        //
+                                                        echo "Instance '$secretKey' is already created!";
+                                                        //
+                                                    } else {
+                                                        ?>
+                                                        <button id="wa_instance_create_btn" onclick="wa_instance_create('<?php echo $sessionOwnerId; ?>');" style="width:120px;height:30px;font-size: 14px;cursor: pointer;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Start Instance</button>
+                                                    <?php } ?>
+                                                </td>                                      
+                                            </tr>                               
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:20px" align="middle">
+                                        <?php
+                                        if ($noOfRowsSecretKey > 0) {
+                                            ?>
+                                            <button id="wa_instance_restart_btn" onclick="wa_instance_restart();" style="width:120px;height:30px;font-size: 14px;cursor: pointer;color: #b7950b;border: 1px solid #d68910;background-color: #f7dc6f;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Re-start</button>
+                                            <button id="wa_instance_terminate_btn"  onclick="wa_instance_terminate();" style="width:120px;height:30px;font-size: 14px;cursor: pointer;color: #a93226;border: 1px solid #922b21;background-color: #f5b7b1;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Terminate</button>
+                                        <?php } ?>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td style="padding:20px" align="middle">
+                                        <?php
+                                        $testMess = urlencode('Hello\nWelcome to Online Munim.\nTo get latest updates, please subscribe our YouTube Channel \nhttps://www.youtube.com/onlinemunim ');
+                                        ?>
+                                        <?php
+                                        if ($noOfRowsSecretKey > 0) {
+                                            if ($mobileNum != '') {
+                                                ?>
+                                                <button id="wa_api_send_message_btn" name="wa_api_send_message_btn"  onclick="wa_api_send_message('<?php echo $mobileNum; ?>', '<?php echo $testMess; ?>', '', '');" style="width:230px;height:30px;font-size: 14px;cursor: pointer;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Send Test Message To <?php echo $mobileNum; ?></button>
+                                            <?php } else { ?>
+                                                Please update your mobile number, Mobile Number not found to send test message!
+                                                <?php
+                                            }
+                                        }
+                                        ?>
+                                    </td> 
+                                </tr>
+                            </table>
+                        </div>                 
+                    </td>
+                    <td width="50%" align="middle">
+                        <div class="product-item" style="width:99%; height:425px;padding: 0px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                    <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                        <table valign="middle" cellspacing="0" cellpadding="0" border="0" align="center">
+                                            <tr>
+                                                <td>
+                                                    <?php
+                                                    if ($noOfRowsSecretKey > 0) {
+                                                        ?>
+                                                        <img id="whatsappImage" onload="wa_qrcode_generate();"
+                                                             src="<?php echo $documentRoot; ?>/images/whatsapp24.png" />
+                                                         <?php } ?>
+                                                </td>
+                                                <td>
+                                                    &nbsp;Scan Image with WhatsApp Application (Link Device Option)
+                                                </td>
+                                            </tr>                               
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table valign="middle" cellspacing="0" cellpadding="0" border="0" align="center" style="padding-top:20px">
+                                            <tr>
+                                                <td valign="top" align="right">
+                                                    <div id="qrcode_display" style="margin-bottom:10px;">
+                                                        <img id="qrcode_image" style='display:block;' src="" alt="First Create Instance!"/>
+                                                    </div>
+                                                </td>                                      
+                                            </tr>                               
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="middle">
+                                        <?php
+                                        if ($noOfRowsSecretKey > 0) {
+                                            ?>
+                                            <button id="ref_btn" onclick="wa_qrcode_generate();" style="width:120px;height:30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight:600;text-transform:uppercase;">Refresh</button>
+                                        <?php } ?>
+                                    </td> 
+                                </tr>
+                            </table>
+                        </div>
+                    </td> 
+                </tr>
+            <?php } ?>
+        </table>
+        
+       <!--- select payment gateway options for E-commerce @RANI15JAN2024---> 
+        
+       <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0" style="border-bottom:1px solid #c1c1c1;padding-bottom:10px;">
+           <tr>
+               <td width="50%">
+                   <h3 style="font-size: 19px; font-weight:600; color: #D76B00; margin-bottom: 5px;">Payment Gateway Setting Panel</h3>
+               </td>
+              <?php if($_SESSION['sessionOwnIndStr'][2] ==  'S' ||  $_SESSION['sessionOwnIndStr'][2] ==  'A'){ ?>
+                 <td width="50%">
+                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td width="50%">
+                                <h3 style="font-size: 19px; font-weight:600; color: #D76B00; margin-bottom: 5px;">Paytm POS Setting Panel</h3>
+                            </td>
+                            <td align="right" width="50%">
+                                <button type="button" class="frm-btn" onclick="openDocpop();"/>REQUIRED DOCUMENT</button>                         
+                            </td>
+                        </tr> 
+                    </table>
+               </td>
+              <?php  } ?>
+           </tr>
+           <tr>
+               <td width="50%" valign="top" align="center"> 
+                   <div class="product-item" style="width:99%; height:auto;padding: 0px;margin-top:1%;">
+                       <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                <tr>
+                                   <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                     PAYMENT GATEWAY
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td title="Click here to Select Patment Gateway Options!" align="center">
+                                       <table valign="top" cellspacing="2" cellpadding="2" border="0" align="center" width="80%">
+                                           <tr>
+                                               <td align="left" >
+                                                   <label class="textLabel14CalibriBlue">SELECT PAYMENT GATEWAY</label>
+                                               </td>
+                                                   <td valign="top" align="right" colspan="">
+                                                        <select style="height:30px;width:100%;border:1px solid #c1c1c1;" onchange="setLayoutFieldInDb('paymentGateway', this.value);">
+                                                           <option class="content-mess-blue">SELECT PAYMENT GATEWAY</option>
+                                                           <option class="content-mess-blue">PHONE PAY</option>
+                                                           <option class="content-mess-blue">RAZORPAY</option>
+                                                           <option class="content-mess-blue">PAYTM</option>
+                                                       </select>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   
+                                                   <td width="30%" valign="bottom" align="left">
+                                                       <label class="textLabel14CalibriBlue">&nbsp;M ID</label>
+                                                   </td>
+                                                   <td valign="bottom" align="left" width="60%">
+                                                       <input type="text"  class="lgn-txtfield-middle" placeholder="M ID" name="appMId" style="width:100%;height:30px;border:1px solid #c1c1c1;">
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td width="30%" valign="bottom" align="left">
+                                                       <label class="textLabel14CalibriBlue">&nbsp;KEY</label>
+                                                   </td>
+                                                   <td valign="bottom" align="left" width="60%">
+                                                       <input type="text"  class="lgn-txtfield-middle" placeholder="Key" name="appMId" style="width:100%;height:30px;border:1px solid #c1c1c1;">
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td></td>
+                                                   <td align="center" colspan="2">
+                                                       <div style="margin:5px 0;">
+                                                           <button type="submit" id="submit" name="" value="Submit" onclick="setLayoutFieldInDb(&quot;anniverserySmsTemplate&quot;, document.getElementById(&quot;anniverserySmsTemplate&quot;).value);" class="btn btn1 btn1Hover om_btn_style" style="width:100%;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important; ">
+                                                               <span>Submit </span>
+                                                           </button>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                       </table>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                       DEFAULT GATEWAY FOR SOFTWARE
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td title="Click here to Select Patment Gateway Options!" align="center">
+                                       <table valign="top" cellspacing="2" cellpadding="5" border="0" align="center" width="80%">
+                                           <tr>
+                                               <td valign="top" align="right" colspan="">
+                                                   <select style="height:30px;width:68%;border:1px solid #c1c1c1;" onchange="setLayoutFieldInDb('paymentGatewayForSw', this.value);">
+                                                       <option class="content-mess-blue">SELECT PAYMENT GATEWAY</option>
+                                                       <option class="content-mess-blue">PHONE PAY</option>
+                                                       <option class="content-mess-blue">RAZORPAY</option>
+                                                       <option class="content-mess-blue">PAYTM</option>
+                                                   </select>
+                                               </td>
+                                           </tr> 
+                                       </table>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td class="paddingTop4 textLabel14CalibriBrownBold" style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;" align="center">
+                                       DEFAULT GATEWAY FOR E-COMMERCE
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td title="Click here to Select Patment Gateway Options!" align="center">
+                                       <table valign="top" cellspacing="2" cellpadding="5" border="0" align="center" width="80%">
+                                           <tr>
+                                               <td valign="top" align="right" colspan="">
+                                                   <select style="height:30px;width:68%;border:1px solid #c1c1c1;" onchange="setLayoutFieldInDb('paymentGatewayForEcom', this.value);">
+                                                       <option class="content-mess-blue">SELECT PAYMENT GATEWAY</option>
+                                                       <option class="content-mess-blue">PHONE PAY</option>
+                                                       <option class="content-mess-blue">RAZORPAY</option>
+                                                       <option class="content-mess-blue">PAYTM</option>
+                                                   </select>
+                                               </td>
+                                           </tr> 
+                                       </table>
+                                   </td>
+                               </tr>
+                     </table>
+                   </div>
+               </td>
+               <td width="50%" valign="top" align="center">
+        <!-- ************************************************************************************************ -->
+        <!-- START CODE TO ADD PAYTM PAYMENT GATEWAY @SIMRAN:01DEC2023 -->
+        <!-- ************************************************************************************************ -->
+        <?php 
+        //
+         $queryPaytmMId = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'appMId'";
+        $resPaytmMId = mysqli_query($conn, $queryPaytmMId );
+        $rowPaytmMId = mysqli_fetch_array($resPaytmMId);
+        $appMId = $rowPaytmMId['omly_value'];
+        //
+         $queryPaytmTId = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'appTId'";
+        $resPaytmTId = mysqli_query($conn, $queryPaytmTId);
+        $rowPaytmTId = mysqli_fetch_array($resPaytmTId);
+        $appTId = $rowPaytmTId['omly_value'];
+
+         $queryPaytmAppKey = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'appKey'";
+        $resPaytmAppKey = mysqli_query($conn, $queryPaytmAppKey);
+        $rowPaytmAppKey = mysqli_fetch_array($resPaytmAppKey);
+        $appKey = $rowPaytmAppKey['omly_value'];
+        //  
+        if($_SESSION['sessionOwnIndStr'][2] ==  'S' ||  $_SESSION['sessionOwnIndStr'][2] ==  'A'){
+        ?>
+        <table width="100%" align="left" valign="top">
+            <tr>
+                <td align="left" width="50%">
+                    <div class="product-item" style="width:99%; height:auto;padding: 0px;margin-top:1%;">
+                    <table width="100%" cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                            <td align="center" class="paddingTop4 textLabel14CalibriBrownBold" 
+                                style="background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                                OPTION FOR PAYTM API CALL
+                            </td>
+                        </tr>
+                          <tr>
+                <td  title="PAYTM PAYMENT!"  >
+                    <table  border="0" cellspacing="0" cellpadding="2" align="center" valign="top" style="padding-top: 5px; ">
+                        <tr>
+                            <td  width="35%" align="center" valign="bottom">
+                                <label class="textLabel14CalibriBlue">&nbsp;M ID</label>
+                            </td>   <td align="left" valign="bottom">
+                                <input type="text" id="appMId" value="<?php echo $appMId; ?>" class="lgn-txtfield-middle" placeholder="M ID" name="appMId" style="width:100%;height:30px;border:1px solid #c1c1c1;"/>
+                            </td></tr><!-- comment -->
+                        <tr> 
+                            <td  width="35%" align="center" valign="bottom">
+                                <label class="textLabel14CalibriBlue">&nbsp;T ID</label>
+                            </td>
+                            <td width="35%" align="left" valign="bottom">
+                                <input type="text" id="appTId" value="<?php echo $appTId; ?>" class="lgn-txtfield-middle"   placeholder="T ID" name="appTId" style="width:100%;height:30px;border:1px solid #c1c1c1;"/>
+                            </td>
+                        </tr>
+                        <tr > 
+                            <td width="35%" align="center" valign="bottom">
+                                <label class="textLabel14CalibriBlue">&nbsp;KEY</label>
+                            </td>
+                            <td width="15%" align="left" valign="bottom">
+                                <input type="text" id="appKey" value="<?php echo $appKey; ?>" class="lgn-txtfield-middle"  placeholder="KEY" name="appKey" style="width:100%;height:30px;border:1px solid #c1c1c1;"/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-top: 2px;padding-bottom: 5px;" align="right" colspan="2">
+                                <!---Start to Changes button @AUTHOR: RENUKA13JULY2022----->
+                                <div>
+                                    <?php
+                                    $inputId = "submit";
+                                    $inputType = 'submit';
+                                    $inputFieldValue = 'Submit';
+                                    $inputIdButton = "submit";
+                                    $inputNameButton = '';
+                                    $inputTitle = '';
+//                    $inputFieldNextId = $arrStockFormFieldSequence[array_search('sttr_final_valuation', $arrStockFormFieldSequence) + 1];
+//                    $inputFieldPrevId = $arrStockFormFieldSequence[array_search('sttr_tax', $arrStockFormFieldSequence) - 1];
+//
+                                    // This is the main class for input flied
+                                    $inputFieldClass = 'btn btn1 btn1Hover ' . $om_btn_style;
+                                    $inputStyle = "width: 50%;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;";
+                                    $inputLabel = 'Submit'; // Display Label below the text box
+//
+                                    // This class is for Pencil Icon                                                           
+                                    $inputIconClass = '';
+                                    $inputPlaceHolder = '';
+                                    $spanPlaceHolderClass = '';
+                                    $spanPlaceHolder = '';
+                                    $inputOnChange = "";
+                                    $inputOnClickFun = 'setLayoutFieldInDb("paytmPayment",document.getElementById("appMId").value+"/"+document.getElementById("appTId").value+"/"+document.getElementById("appKey").value);';
+                                    $inputKeyUpFun = '';
+                                    $inputDropDownCls = '';  // This is the main division class for drop down 
+                                    $inputselDropDownCls = '';  // This is class for selection in drop down
+                                    $inputMainClassButton = ''; // This is the main division for Button
+                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                    ?>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr> 
+                    </table>
+                    </div>  
+                </td> 
+                <!--<td align="center" width="50%"></td>-->
+            </tr>
+          
+        </table>
+        <?php } ?>
+        </td>
+           </tr>
+       </table>
+         <div id = "myModalDocpop" class="modal" style="display: none;"></div>
+        <!-- ************************************************************************************************ -->
+        <!-- END CODE TO ADD PAYTM PAYMENT GATEWAY @SIMRAN:01DEC2023 -->
+        <!-- ************************************************************************************************ -->
+    </body>
+</html>

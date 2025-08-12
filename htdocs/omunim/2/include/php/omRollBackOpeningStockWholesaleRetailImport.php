@@ -1,3 +1,309 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************************
+ * @tutorial:  Roll Back Import Data From CSV File for
+ *             Opening Stock - Wholesale/Retail @AUTHOR:SANSKRUTI-10JULY2023
+ * **********************************************************************************************************************************
+ * @FileName: omRollBackOpeningStockWholesaleRetailImport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.148
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2022 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:SANSKRUTI
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+$currentFileName = basename(__FILE__);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+?>
+<?php
+//
+//print_r($_REQUEST);
+//print_r($_FILES['CVSFile']);
+//die;
+//
+//echo 'Current PHP version: ' . phpversion();
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+//
+//
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm  @AUTHOR:PRIYANKA-07MAY2022
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//
+//echo '$selFirmId == ' . $selFirmId . '</br>';
+//
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' "
+            . "$sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' "
+            . "$sessionFirmStr order by firm_since desc";
+}
+//
+//
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+//
+//
+//echo '$selFirmId : ' . $selFirmId . '<br />';
+//die;
+//
+//
+if ($openingStockType == NULL || $openingStockType == '') {
+    $openingStockType = $_REQUEST['openingStockType'];
+}
+//
+//echo '$openingStockType : ' . $openingStockType . '<br />';
+//die;
+//
+//
+//
+// Start Code to Import Data From CSV File to Mysql Database for Add Stock Opening Stock - Wholesale/Retail @AUTHOR:SANSKRUTI-10JULY2023
+//
+$fileName = $_FILES['CVSFile']['name'];
+//
+// Input Field Name @AUTHOR:PRIYANKA-07MAY2022
+$importFile = $_FILES['CVSFile']['tmp_name'];
+// 
+$readImportFile = fopen($importFile, "r");
+//
+//
+$rowsCounter = 0;
+//
+//
+while (($prodDetails = fgetcsv($readImportFile, 10000, ",")) !== false) {
+    //
+    //print_r($prodDetails);
+    //echo '$prodDetails == ' . $prodDetails . '<br />';
+    //       
+    if ($rowsCounter == 0) {
+        //
+        $columnCounter = count($prodDetails);
+        //echo 'selFirmId == ' . $selFirmId;
+        //echo("<br/>");
+        //die;
+        //
+        for ($i = 0; $i < $columnCounter; $i++) {
+            //
+            //echo '$i == ' . $i. '<br />';
+            //echo '$prodDetails == ' . $prodDetails[$i] . '<br />';
+            //
+            if ($prodDetails[$i] == 'FIRM') {
+                $json1 = '{"columnName":"FIRM", "position":' . $i . ',' . '"tableColumnName":"FIRM"}';
+                $allData[] = json_decode($json1, true);
+            }
+            if ($prodDetails[$i] == 'PRE ID' || $prodDetails[$i] == 'Model No') {
+                $json2 = '{"columnName":"PRE ID", "position":' . $i . ',' . '"tableColumnName":"PRE ID"}';
+                $allData[] = json_decode($json2, true);
+            }
+            if ($prodDetails[$i] == 'POST ID') {
+                $json3 = '{"columnName":"POST ID", "position":' . $i . ',' . '"tableColumnName":"POST ID"}';
+                $allData[] = json_decode($json3, true);
+            }
+            if ($prodDetails[$i] == 'STOCK TYPE') {
+                $json4 = '{"columnName":"STOCK TYPE", "position":' . $i . ',' . '"tableColumnName":"STOCK TYPE"}';
+                $allData[] = json_decode($json4, true);
+            }
+        }
+        $json_merge = ($allData);
+//        echo '<pre>';
+//        print_r($json_merge);
+//        echo '</pre>';
+    }
+    //
+    if ($rowsCounter > 0) {
+
+        foreach ($json_merge as $headings) {
+            //
+            //echo '$headings'.$headings;
+           //
+            if ($headings['columnName'] == 'FIRM') {
+                $firmName = $prodDetails[$headings['position']];
+            }
+            if ($headings['columnName'] == 'PRE ID' || $headings['columnName'] == 'Model No') {
+                $sttr_item_pre_id = $prodDetails[$headings['position']];
+            }
+            //
+            if ($headings['columnName'] == 'POST ID') {
+                $sttr_item_id = $prodDetails[$headings['position']];
+            }
+            //
+            if ($headings['columnName'] == 'STOCK TYPE') {
+                $stockType = $prodDetails[$headings['position']];
+            }
+        }
+        //
+        //
+        $sttr_firm_id = $selFirmId;
+        //
+        $sttr_stock_type = $openingStockType;
+        //
+        if ($sttr_firm_id != '' && $sttr_firm_id != NULL) {
+            // 
+            // 
+//            print_r($prodDetails);
+            //
+            //
+//            echo '$firmName 1== ' . $firmName . '<br />';
+            //die;
+            //
+            if ($stockType != '' && $stockType != NULL) {
+                $sttr_stock_type = $stockType;
+            }
+            //
+            //
+//            echo '$sttr_stock_type == ' . $sttr_stock_type;
+//            echo("<br/>");
+            //
+            //
+            // STOCK TYPE @AUTHOR:PRIYANKA-07MAY2022
+            if ($sttr_stock_type == '' || $sttr_stock_type == NULL) {
+                $sttr_stock_type = 'wholesale';
+            }
+            //
+            //
+//            echo '$sttr_stock_type == ' . $sttr_stock_type;
+            //echo("<br/>");
+            //
+            //
+            if ($sttr_stock_type == 'wholesale' || $sttr_stock_type == 'Wholesale' ||
+                $sttr_stock_type == 'WHOLESALE' || $sttr_stock_type == 'W') {
+                $sttr_stock_type = 'wholesale';
+            }
+            //
+            //
+            if ($sttr_stock_type == 'retail' || $sttr_stock_type == 'Retail' ||
+                $sttr_stock_type == 'RETAIL' || $sttr_stock_type == 'R') {
+                $sttr_stock_type = 'retail';
+            }
+            //
+            //
+            //
+            $sttr_item_pre_id = strtoupper($sttr_item_pre_id);
+            //
+            if ($sttr_stock_type == 'wholesale') {
+                $sttr_item_id = NULL;
+            }
+            //
+            $sttr_item_code = ($sttr_item_pre_id . $sttr_item_id);
+            //
+            //
+//            echo '$sttr_item_code == ' . $sttr_item_code;
+            
+            if ($_SESSION['sessionOwnIndStr'][19] == 'Y') {
+                $stockDelete = 'Y';
+            } else {
+                $stockDelete = 'N';
+            }
+            //
+           if ($stockDelete == 'N') {
+                $delFromStock = 'yes';
+            }
+            $query = "SELECT sttr_item_code,sttr_id,sttr_st_id,sttr_jrnl_id from stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_item_code = '$sttr_item_code' "
+                    . "AND sttr_stock_type = '$sttr_stock_type' AND sttr_firm_id = '$sttr_firm_id' ";
+//            echo '$query'.$query;
+            $resQuery = mysqli_query($conn, $query);
+            while ($rowQuery = mysqli_fetch_array($resQuery, MYSQLI_ASSOC)) {
+                $sttr_id = $rowQuery['sttr_id'];
+                $sttr_st_id = $rowQuery['sttr_st_id'];
+                $sttr_jrnl_id = $rowQuery['sttr_jrnl_id'];
+                 //
+                stock_transaction('delete', array(), $sttr_id, '', $delFromStock);
+                
+                if ($sttr_jrnl_id != '') {
+
+                    $apiType = 'delete';
+                    $jrtrOwnId = $_SESSION[sessionOwnerId];
+                    $jrnlId = $sttr_jrnl_id;
+                    $jrtrJrnlId = $sttr_jrnl_id;
+                    //
+                    include 'ommpjrnl.php';
+                    include 'ommpjrtr.php';
+                    //
+                }
+            }
+           //
+            $deleteStockTransDelQuery = "DELETE FROM stock_transaction_del WHERE sttr_item_code = '$sttr_item_code' AND sttr_stock_type = '$sttr_stock_type' AND sttr_status = 'DELETED'";
+            //
+            if (!mysqli_query($conn, $deleteStockTransDelQuery)) {
+                die('Error (Line No - ' . __LINE__ . '): ' . mysqli_error($conn));
+            }
+            
+        }
+           else {
+          ?>
+           <div class="fs_13 ff_calibri bold" style="color:red;">Issue has been detected with Firm. Please select Firm! </div>
+           <?php
+           die;
+        }
+    }
+    //
+    //
+    $_REQUEST = array();
+    $type = array();
+    $sttr_item_pre_id = NULL;
+    $sttr_item_id = NULL;
+    $sttr_stock_type = NULL;
+    //
+    //
+    $rowsCounter++;
+    //  
+    //
+}
+//
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+     $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/omHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully' . "&barcodePrintPanel=" . 'YES');
+} else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/orHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully' . "&barcodePrintPanel=" . 'YES');
+} else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/olHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully' . "&barcodePrintPanel=" . 'YES');
+} else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/ogHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully' . "&barcodePrintPanel=" . 'YES');
+} else {
+    $showMess = 'Your session has expired. Please log in again!!!';
+    header('Location: ' . $documentRootBSlash . '/omLoginPage.php?showMess=' . $showMess);
+    exit;
+}
 ?>

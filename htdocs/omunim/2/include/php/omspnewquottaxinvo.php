@@ -1,3 +1,155 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:  SAMPLE 4 QUOTATION TAX INVOICE : AUTHOR @DARSHANA 15 APRIL 2022
+ * **************************************************************************************
+ * 
+ * Created on Aug 17 , 2024 2:01:44 PM
+ *
+ * @FileName: omspnewquottaxinvo.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+//
+ob_start();
+//print_r($_REQUEST);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$slPrPreInvoiceNo = $_GET['slPrPreInvoiceNo'];
+$slPrInvoiceNo = $_GET['slPrInvoiceNo'];
+$invoiceDate = $_GET['invoiceDate'];
+$invoicePanel = $_GET['invoicePanel'];
+$roughEstimate = $_GET['roughEstimate'];
+$slprinSubPanel = $_GET['slprinSubPanel'];
+$invName = $_GET['invName'];
+$labelType = $_GET['labelType'];
+//echo '$labelType'.$labelType;
+$panelName = $_GET['panelName'];
+$panel = $_GET['panel'];
+$sellSampleInv = $_GET['sellSampleInv'];
+
+$sellInvOption = $_GET['customizationOption'];
+//echo '$sellInvOption'.$sellInvOption;
+if ($sellInvOption == 'byMetalValue') {
+    parse_str(getTableValues("SELECT sttr_metal_type FROM stock_transaction "
+                    . "WHERE sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo'"));
+
+    $sttr_gold_count = noOfRowsCheck('sttr_metal_type', 'stock_transaction', "sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo' and sttr_metal_type='Gold'");
+    $sttr_silver_count = noOfRowsCheck('sttr_metal_type', 'stock_transaction', "sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo' and sttr_metal_type='Silver'");
+
+//    echo '$sttr_gold_count : '.$sttr_gold_count.'<br>';
+//    echo '$sttr_silver_count : '.$sttr_silver_count.'<br>';
+
+    if ($sttr_gold_count > 0 && $sttr_silver_count > 0) {
+        $labelType = $_GET['labelType'];
+    } else if ($sttr_metal_type == 'Gold') {
+        $labelType = 'GoldSellPurchase';
+//       echo '$labelType'.$labelType;
+    } else if ($sttr_metal_type == 'Silver') {
+        $labelType = 'SilverSellPurchase';
+//        echo '$labelType'.$labelType;
+    }
+//    echo '$labelType'.$labelType;
+}
+//echo '$labelType=='.$labelType;
+if ($labelType == '' || $labelType == NULL) {
+    if ($labelType == 'estimateSell') {
+        $labelType = 'estimateSell';
+    } else {
+        $labelType = 'SellPurchase';
+    }
+}
+$invoiceQuery = "SELECT * FROM labels WHERE label_own_id = '$sessionOwnerId' and label_type = '$labelType'";
+$invoicereq = mysqli_query($conn, $invoiceQuery);
+while ($invoiceres = mysqli_fetch_array($invoicereq, MYSQLI_ASSOC)) {
+    $nameVar = $invoiceres['label_field_name'].'_name';
+    $$nameVar = $invoiceres['label_field_name'];
+    $contentVar = $invoiceres['label_field_name'].'_content';
+    $$contentVar = $invoiceres['label_field_content'];
+    $sizeVar = $invoiceres['label_field_name'] . '_size';
+    $$sizeVar = $invoiceres['label_field_font_size'];
+    $colorVar = $invoiceres['label_field_name'] . '_color';
+    $$colorVar = $invoiceres['label_field_font_color'];
+    $checkVar = $invoiceres['label_field_name'] . '_check';
+    $$checkVar = $invoiceres['label_field_check'];
+}
+?>
+<html>
+    <head>
+        <title>Online Munim &mdash; Girvi Software, Jewellery Software, Jewellery &amp; Money Lending Accounting Software...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/invoice.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/signature-pad.css">      
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>            
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/app.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/signature_pad.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+            .border-color-grey-bottom{
+                border-bottom : 1px solid #000000;
+            }
+            .border-color-grey-top{
+                border-top : 1px solid #000000;
+            }
+
+            /*            body {
+                            display: block;
+                            page: main;
+                            counter-reset: page 1
+                        }
+                        @page main {
+                            @top { content: string(chapter-title) }
+                            @bottom {
+                                content: counter(page)
+                            }
+                        }*/
+            @page {
+                size: auto !important;
+            }
+
+        </style>
+    </head>
+    <body style="margin:0; padding:0; box-sizing: border-box;">
+        <?php
+        include 'omspnewquottaxRight.php';
+        ?>
+    </body>
+</html>
+<script>
+    $(document).ready(function () {
+
+
+        $('#tableHeadColorChng').click(function () {
+            var color = 'rgb(' + Math.floor(Math.random() * 255) + ','
+                    + Math.floor(Math.random() * 255) + ','
+                    + Math.floor(Math.random() * 255) + ')';
+            $('.tableHeadColorChng').css('background-color', color);
+        });
+    });
+
+</script>

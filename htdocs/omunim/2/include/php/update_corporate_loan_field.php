@@ -1,3 +1,79 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAwCAAAy+6/YiiVkqHAhPWXisWji2u82AeCu90hgoWJdbxXa7+Vj9jTwad/8Do7kUJpa+5AD2ARZgBkjnFzD7nY5kw9X6+BdoHf58Ao3OZ3jx7BL+e3qOwQ9Ojw7tjSsvb5I8jjANJy04hjenFf6qCFJ8s3C0uGd1JbRBRmeUpjZlf5mxTyg8+FCUjL5c7+B9a6JUc6ISmJyXl0F9JKdNE1V5Y5x5ITuvmH7+69JTLEt/UeJAorTntdKsxdl7oCV8mCLGpvYeTXhHG5mnf1UBIr12wwwL6fVqZzQztM073F+5EukscJ/Ylglmt+ZzksilzcF0uQgttJS6js136J9hoLfCt9n5/xhWvMWlkUMECmAz1sGmneUaxWJ/AlAqyay6kmlkWySVP9k7AJfM5vug6luGwvtWS0k0lUTte0CvHG4lsszQ4PtJJ2bKawp9Qz54bzir5k+e91DjBBSvPshxh8Ip1WmQOKHjrsydlsuuy1jIZq2x4DKwXYoJCLMeGerWWfYb4jyMEzeJQKLMDa4+pZ2PO2b7kleZFswWQX+QIAXLCFQ27py3tOMH9wvcLI8lefUq1I46vtoHq3zk8dd3L/tkBJmRExqN0bUdqUTuuvcaIRZuDoznbnqD7gVgfnv1E0b50FWbOIbwUvz50w+RUREkDbGQ7QKtvQ8+Gi7wbWHWv8UmdIQtVdQsuJFG/uzsW7Q98ab8IcZzQ4T87x4nQ+WYX/YDgSAhW3DvMr/VQ7dtniM3gOYSBffXoAzpT20l3yrhNp83q5VzA1XMZd3TFiKXEfeJfJqc4b0VMvJmljMVNZ2UItuhBaqDt+Znjh7l9bSWyxhELp5B5GrZOiVbXS4J8bQveFWX61ZjrEIGdbHF3wdiEHeFeXszQYd1/jmJ3fPlnl9LeyZ/8ldbh+0vn2RVlUKf8q+y3CZ91cHf/l1lfZ09pbxtQy/alKxLbQaS+IQfiY/sRFb5dv36qtzf/SxmD8BwOr5tnddlQgbbCk3XcU+jJnotjXElqYs7fAPXvQoYRDJrTIw0wRhthlgcQz4DNyE/g0Yd5/cGDETLT24ZXiTIjIFa9iftHq0QCGh9zzRLxbz5uV0v+ZGNulQxOkW8y2T+KWyTBV0dbaLcgvbkaih5r0wDtm4A2TKhlVrxMbuI2A/9FcIxSTWOonK1dZHJUuo0KdWEcujdXOt6W67KGQA4x7A3kW54JSLNB9EpSo3mCefEGBA8zq/5T+xZLy3+Kna+uT0KWIoJ1DLsPXKO4vd9+HQxGAqmsHL/WAgHlt9yoYj9yKIt6j05qVLGa3WrP2Q21wbl9xEO9Ul2kl9djmrmp2KwwjB67bXMpqhqKdttRtfCGeYVJ8Og7hi4pCSMFH3x+GMd9i4m27baPSQUWczRQQVFHR4FAs19wjpGS1pUyEqAcOtJzyEgRiizvRcKwyrs2j4u5S/+AYqJ+OY3Xu0oFCtNAZqBOh3z9e9pBi75ktkVJumxXm3XAe9fCO2VGPekGWCxjr4Ck+GeH1bTsNuIXVdeJfDxLulRj/xsvBE57V/zResOUQ6Rtc7oJ/1zb5HC2SfyqhOprnPc518/obw+EOAy/lo3xexxzr6bBDA9gxrqPl9gzU7XRPdCoH3Fj3nsKcrruJbz88VLrIwcC3gi7mRSe3wje+0oHvN/ZVqkOamLlFnGitrJZD+uKo5Wwj6l0pQVpYfA4hsmiZTzn1lWuRWZjX6/Pqe+yeZ6PNnTp4Ss3SVGd0pBKRz73Tyr4dMQ4kTcDK/wE1xlznb2qit6TMnNW/ULjyuglkqmYfYvNr/CajaK8fAE+y1NizZsmIYhdK0BZJvPxpVRQmGZEoLMcumsGaQ1TbN4WA2Ggy9MYVgV3dJRcEhJGB34ot2QVCznkzmhC61sWowNYO/zpdwASBeOEOKAs57ZxiXitF+CBr3+oXpyXOpWJYABtnsDzFnV0xZMMgp64AedR/kUF3LDWp6HxEYmyCYlq82+wcRbRli+QWZhd7SLGQykNoLmDdJk9OSkjK840+6ZukaSGipBil3ZsJudy0jhh5twp4pEjdbNqMeSTGUWnHa9KVWIMRSg0G6q+qJUz+O2l5IvakBr6beGPGg/+f73z2hI5Ymo+PypgTpyLhL2AutfDiepowYMBUpCyXvRZey2kDJ4weKRub6WPUNcUZ8xUQDWXKri0+s6UKbapRG8G9KbyC3POHYKbTt22Q7LPGZLZk8t3mDs3mkZoZ4Wzzr+gdDRvB5NKBGMS4va/tXCCjPCf1LRZSZr0StyVXZnHjy7yNOoeGDICM/2N1h3JcNhwqNQyZ/BDHXkzcrRYz9BjQTnOBzr5co6tmwhETs9HppthQTBcZSWMFTuaokzkDQnWRbQbH/E2no/TUy0cdhujOeG2ASu4c5rrNdkBxxDQq1ie7yEuhLd4x3Am1Ce2JQJhZQvgcfVejNAfsFZOkRSDsQwOEI5LY/VfOWa7ic74jfFBXnoGC39QeqLUeNb6jC18iTqG4l8ktZEfIEn9iwN3hUCWlNY/M9c4s1neeV5Rfdx2EiIbRn3Y6uEg24Un3NtQMNVlbJH5oxyAulmaCW4AC0LzLAJclBEnKTvV8F/I7/d+L0y5JsOyLktr058M67fKekIUebNVJDhx5mVCqqKvC2GX7IZeeAKAFJtYIST5LXaeiJahIMSeYPa9l9QJn/lb/Iio7RdbwYcwovwy9Z6Nh1mz8p1OrXc7KdwjkzHsJHo2Vzg/wOU04A2ZsLvbq8vZi+1osNN2U6f1mIq88oFHQNlEgz6jkpo7JhtNOXYcGnHwbpCPDlXsAAAAA');
+<?php
+// Use the same includes as orgusrnm.php to ensure database connection is available.
+
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+// Make sure $conn is set (from omsachsc.php)
+if (!isset($conn) || !$conn) {
+    echo "error: database connection not set";
+    exit;
+}
+
+// --- BEGIN: Corporate Loan Field Update (AJAX) ---
+
+// Check required parameters
+if (
+    isset($_POST['girvi_item_update']) &&
+    isset($_POST['girv_id']) &&
+    isset($_POST['field']) &&
+    isset($_POST['value'])
+) {
+    // Map field keys to actual DB columns
+    $field_map = array(
+        'tpp_no'                    => 'girv_tpp_no',
+        'old_gl_no'                 => 'girv_old_gl_no',
+        'crm_code'                  => 'girv_crm_code',
+        'selected_scheme'           => 'girv_selected_scheme',
+        'purpose'                   => 'girv_purpose',
+        'penal_charges'             => 'girv_penal_charges',
+        'effective_annualized_rate' => 'girv_effective_annualized_rate',
+        'interest_mode'             => 'girv_interest_mode',
+        'min_interest_days'         => 'girv_min_interest_days',
+        'effective_rate'            => 'girv_effective_rate',
+        'rebate'                    => 'girv_rebate',
+        'paid_within'               => 'girv_paid_within'
+    );
+
+    $girv_id = mysqli_real_escape_string($conn, $_POST['girv_id']);
+    $field   = $_POST['field'];
+    $value   = $_POST['value'];
+
+    if (!isset($field_map[$field])) {
+        echo "error: invalid field";
+        exit;
+    }
+    $column = $field_map[$field];
+    $value_safe = mysqli_real_escape_string($conn, $value);
+
+    // Optional: Duplicate check for TPP No
+    if ($column == 'girv_tpp_no') {
+        $qCheck = "SELECT $column FROM girvi WHERE $column = '$value_safe' AND girv_id != '$girv_id'";
+        $resCheck = mysqli_query($conn, $qCheck);
+        if ($resCheck && mysqli_num_rows($resCheck) > 0) {
+            echo "FieldAlreadyExist";
+            exit;
+        }
+    }
+
+    $qUpdate = "UPDATE girvi SET $column = '$value_safe' WHERE girv_id = '$girv_id'";
+    if (!mysqli_query($conn, $qUpdate)) {
+        echo "error: update failed: " . mysqli_error($conn);
+        exit;
+    }
+    echo "success";
+    exit;
+} else {
+    echo "error: invalid parameters";
+    exit;
+}
+// --- END: Corporate Loan Field Update (AJAX) ---
 ?>

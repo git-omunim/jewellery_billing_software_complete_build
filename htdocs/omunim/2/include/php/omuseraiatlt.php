@@ -1,3 +1,938 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADoTQAAPpfK44JRADun08YgC1Eq7S0/KhHtITk3T7aq/ob9Yg30m9fL8WMjghfFV+jQUbRcwm696JN41mNdKMLmdCfay+KoRVct4VqT21sz2K4ArpkCd76C5AVTXHrDzVjwG0jb2w/fwwL7MxWdmyyZWLDvd308cu1FFQrkS34u97oKAR+CSRq2GiOvyL5j7WIhgXZCG0xMiu23VNO8qM0pu58IpYI0puFtliOYxBWHdq1pyRfIb2C0s1ZT5cbHVizc/kU+qpM4lmnctfoPbNmsdup4WRpl1jY0ushpqGZFLnVTebCDut+Wx8NQENdkZoT44dNmEuaZ8x/k53xld9i08BD17N74ma8fLt6ckLj5jitZLgCS6jnTbhywxAC8flSX5brXsPy/0l8rN9YDkcdSNOTLGS545EeByGUvjjZtQBpeiYfhUvVXT7c7bbQHbGQX1Usc4vWVOcbOIO0vASGiq2KJKkSXHTeRCyrp2h9IUyUtxZ07ei/6gsU7dcVyfM36mKfCymqRlP4SkuK7hapDfZ89MWKrtIbikuOGUxnh6ZQ4kW5Youkxm6hPQXEuKVW9CnEuYALCSvnFhbXj+nxlWIoXvL3xu6XkN1gaqZ/R4lE7fP7eR479duIdgtMcPEONUc0MSTYrdNCzRNKTksWjpyEafFPgP9DGnQ24Egt3AD4ocX4ggPn6ygJI1lOErHD8GWY2QgObEvpWuceTOertuRL/IhBPvNiqw8Sexdbl//rJCWJMksJ8Uc5sVw5KR8jKrPZDRhtVwljtnKMiu++MwdAFV4jMwHoTjjesXlielau25N/sY+sqeI++Pyh/NRdQhTtOKaBXLKFdsRaw1AFxiSARpteDj5oMFF93F8xnO71r1nlIgdqc1VY0GwyDf1vLQ+hVS9pSw3CeKy38X2JCN6mlVTuLYh6MtHJ5wVpocdEGZ3F9/5mBhbHDmudYKTdac/J4HWa4J2UviQdOcUmKarOvjfUGopH+aiRzEw+AXLaTVFn6ogEwDcU0FUAt3Dyio+vQs1XE9TRyjVk8RE8N4n/4i/F1W3C2s1mQf3vz4+xNclWScGxieKjFSy6IImAp3Cp72rIIOd6ehDsZilpbIB/47h7Dp+lrns605N9G05cdnpKX/tMl1/PozToS9XjTDP7oe6vLz0NOfRSMiQQdvJU3EQspH2daHI22gqSLswzvSJ8iI8KKGFKQJr61Q65gzIZP6o/21GHeBZ6hNZj5QZxO2DrZlkhiSBv75Lv5p7a70fhUGGL0v3s1jKZBkurrPKx8MBZW8L+3xsnLNZxNgWeCX7FUbJQvFGpdqfgOXsWZOK2zSvR1iRgEqRKSnbFwlwZxxbhn7RUdk8NVZ8QEvz3LLG1NqEw7/A27rWwQ9KPkfhMVDNbLAr/LzdP+ocap33l+DDv75NhaLN8e2c0FxwAy+qXgyxOK7mQtati2lPT666FvTqrYUHYZ1kAokZ2ykcxuSt2bcsIG8jD/giUG4OKpSEhxhZ+T5Pu8JkpuOHyrgP6WTPzi0JCxtc2DRx7kXLzxWu8gbCoZgADcrSMVq9nav2Tu4oCE12NWxmoB2K19E4B33bR/Vd8W7tcTW7CtUQV1i1aE7NbINahjb7uDIlMDv88wNfDujjP7jcZ1NKX6/lHRfKNW8O2c24OuVV/nqyxdXZ3Gq5jg38npuPfJjA8And+eFKVMIVhQ+Oz3bApHxpkqAKRl3zV3HVgOReUDw97lD35clTlzG33K+7gP5xj/FniXl7Sy/wsItSVGB5ZvLqsH6OPJhZE3rfl/1L5IyCaH9cAw0B1t/FLGXdSqSY/TzJdFJQJ+hprAZ/9Qr4eBN4l086LairR5KTjxKc3qGe3QI6YZCUKSP9JeVM5IuVBBy+nZQVeFynQB8aDfj7Br+ijwyETaNtByqr3Z0m4jlpl4Msbse3pJ3X7nu7SZ7gvODu4oQ/fkb+dnOZaapJBU+klLNhz6z9wIpOuJXcZG7FYDF5tCCRn+KM/FLeHTemaIlmhteVy6JU23NnSfdpEz1JK2WNHfca1kgDikkHA1rXgP0sfDxzRCa71+u5hdBr5XlxnArvKp+DEDAkC+kzJQCLnUgt4NoC/TDhXo54UBJ4JKPjDV7LZq8NakHxspFvI4E4P73NqQhxzoSv54e7IAVpU8WWoFt/mw8aJahmFclIeIBHvxwxmMYTxdWYJR7o35wvbMd42mvIavuhf7URP9BuI63ovC+gXbZkvzu0E5jHmJMGjs5aUDznakg/RVgdn4SpMteudDv2cGKe1682IQ46Dc/mfxUhKwVcUVnj8lBIkuK7sHBrTnJKLL1v2fpkKg+E74yui4r7K2umhuFeF5aYH/fHysIm3isOpoNLKKJj7es1/eLhRjTsJoNR2tSl2e6ww7pyJh9rJrBoZqyuHmGXZoNKNhp0wxzVBA5b0nm+KzR8hZsjb8C7qAolHENwCTlUcKHd+8Wk3AlFqxbRS4dSzCgPd3zENfr0mMFJfzLlGo4G1r2MtUk0VEIwIr0EPqsWPE7cpYPc5yhGbxRM+QY/T5/wzcXx8w6hVPBQt8krFEbmP5b/iqrTVhHuG8SUMqrPPGoTTwWIvv01s9X74ft4E/twWa5qN3X5LZAStKt29nksI+bCuE2eXmzaivMiF/LgXCP7/leAHBrclKD+R1/dHwPOCn/aezPcLNufJnYPA3wi01Cg1lzLE1TmKx3bNXp8xpJNcg8YInjYD16dNeEDfvf7VeWZuHuc/Cc8SshgVlgKv+PEJLrlrwf8Ys5CZ8YzBIhMTxK8zQMrxRGlgPOlULkuTDH4P8DsWk/SxtztpAMVrogOnBkbifniQsPhfb4LKWHVaXARRc06Ns9pUvt24G7wkjpUBzXRTBEdNhHxcnKYK909wJ5FV9SLhes1UfGHMTKhvoSuMzHvftoHihSVtfm+xEwh6Mh6jEBnT24dCfHjFoe5PC9snfn+RmNAnnaLU/oMKSJkoNeNDDKB5yft60kMz8si6KtFqsNCHPwNOLvOtSa2VdxQEwTFN4TRsCInuq+ZjO3Vxj/CkmIHY4V3+38f8Ar+53xdY9Z7d5fOG5PW4p/OtdC4BjXJfyFzOmxteBth0jMOhQPipExJSbkalnycuP6pX4W5s0VevNuSkgnhKUQbkVsgwFaYa6S38RVXfuO3jC0YfqmlycqHsPRrc1JB4OLXTwiLGfTBaMdVJyfuqrYXejojvqNsNpmGmuMKlWi/AO2tJACyXYpNp88JklM6Dcv+PW4roa63cGpkjpQiM14ySuQP9bH3B8suyfeilCYA2jht+lLIRHwcMPJOAb2hc8jfiaHrWA9Xnzb+gS65P9mvfRerAuERm5BwhwQcU9DekwN/irlDhAINav6trlbi1ld/i7upePKCMQyB+iHFFr++R54hDXEuwzUGemOiKi43n+7i8IuHIj/S1dkfgHbkwZP0RsWxfYNYe5ZDgR2WBsYwj1qmCm0fNC8EfE1WZnWUK5bYZFp8ABGbAZBSso1ZfTTMHfEX01mzyZ4sv7Sy3FuiAgS2QfxH/VkkON/dZvirbxhChivwD84nQR+j1jR9nqJ+SlumXdKF6JW6rzMG1YjRrXuPpCiZQlpdAGwyDeFN7vm+/BhFgozdUw57GAH0CbiEgtXg9x+AL5x9OZ9LljmkEy5QRyLHXSEazSl3ruAKjgdLWqOWNALpWbSbsbgLCNETPACGE5saRWbsDZr/GMlRSvhQtqRE1MvmwMGu/SpWa6DH70TyfnwzZ4YiQyxNxnA+YoHJtt0dJf8PsXCATOrxm7dZ1DRNuPgCYb4/9FiCU4ubBn/1sP+jBd4dagmXukRXrkhtcBi2CpCYh6Ui3C/d5AGv4vji/+1D7Cu/PIpm59B/fBSMTt9qxkMuexofr/A09aXH6GFdWD58UxrfJxU/4zh4o3NndUS/TjbpnlKvb72rbQ5Hb8oMXKjBe3EGs/+mbaj7quyEXbkIOGkrsm8up/UXpQRqQCrm9xQg9xwjZJuzX3bB2EK7cBk86n4F7YCeKQGZlosqJv7Oa68lA6hI0cHofrhyxfBZ0rd3kx7UHC+JJWJm7IGHcWfZYwpdV5Y0R5mYONu6l5J71e8Gl2uU7vJAXz4oI8Fp4OUCprcWvaleoES+w5pq5qfwsrKYj1VaJklM4wsJ4Zpuo5GocZiwhgc6yyoSjtwRK7q8+OFgKCz+Uil8qdvIPtsesf3Q9BQ4T+CoYdBA2Yli/rrHDZvI6jbAuQFQd4pof54eyJlEC6s6OlvgbYJXLlhURRaM0lOAq1QfYaX3EZO698CwBFBGYyiXse/ivN2jqRdrZU/VuL4hW6pZcCE7Zow99ldpfOyRlGI03e0X8aPQSIuV57TiOx71B/tyPYWnsFc6EGu7U8k1wyOjdF67+tAwQbb0N7BylCog4UVAM7oBD2VQU0XIBEj4eXs3X+dWqv+olueGNkwucQegzIWN0IkAnzE/RDYzHvgomRmQXgY1XhaKOA9ZzxB+OJ92ClEBw3S3IJd09S7Ldr03zikgxW8ViwDNmkDbqdjjqg63YuXyZ2Pt5oqnMVNQhIDih7KzQfyqmUuROBSA0iM2iECkTeDXDxQdm8QlxPBL6d5ujgK1Sb/WhQKErq6bR3QNmk7xd9r+Afq9Ug+BLhOyPMnUZSk1WbECfVeM+7BVUzwDLYZUjDSSQDQiufj4IfEU6T9FHfNAgi+Q/5iZbs2SqqFeaPVO0V0Gf34m1XBVE1cAXbn00lOjzxfa+qEQnkg0O9Dhzu0O8aCVwfY8aoUAxAQeBt+uVdctGGPWnQcJe2rLv/juLxCIYsmjXioKV1SvtcSFxuaUUwng5MF/zQp10ICdnmCgfdOIlnUQYagJSIBynS1RNkuy40vFEie6y1mT2ljQGC/oD0nUPdfSanQ6NdEo8Wm89uojjQRsWcsNnXDcoTfI5O1eqNGDJUv3McMzUcgsef7hYh1yOhTMhKxg395c0ihVeJvuMfh63DLVK7CPaMNhybV5f3UujJ/Dfd+9STl+0nfqdB3ZEbYGaQbm6vpF/mReCGlrtnKOKd6rQ/Gkbk3/YjWVBwh0B0V3n5jemfCkoAiFVk4AxJCtvxh+Q0uthuNPVaTNlBVQgB951xFeNznnJEkeIdfXgMv0gIwN662K93QJCFj9zguC22faAkhmnVWRqnsMrjzqDIDqMmaeYjSR4MQ6rIzN1E8REFzMZ+ik55Wnp6UbkLFUGV7o/+V86fYWXN8Rr36HKTcv6E2gg8/ovkmvql85O2Up2xbq/W7uFV/Olyvd4Q2fzdY0eJUt6v9Z0OHPhSTWZxYJ7QiBAB+5kUdjNlR142rPxoGtuMqxOsg1Rs3IcMN+oC/SXbTrvzCSDIy1yTRRAdKY8t9XkAcvMeG0g1cqBMAKsXuCJVBc6yBa/Tr/ujf5ohHRjf/Dc/DvnMXJfgcw6WSRfYZHRBqYmeWO89q/RB4B9IH6KZ+L87+bYZl1PWwtj8QpwwyJpd8aJGlaON5RMDBd77LKcAzv/vX84dNzzlF0fQpCEq908/9peRbhkZOnM1qNjoJ9Y9yJH0jyGvnYd+38lAEPzm55yhw0W8GVNbtTTthGwdjxXcNYXCspD30L8iDC5cZ8+OWkU8uhPx6Kss/x48nLlKzBFbP2cqb/piysDAUcMt5u4MG3IpBWDucAhGT+jo3q94e8tm0e6iRZsLaCH3Brhk0PVaMoNSf14lyXUJbEIkU5KBma1bhzCZhTKYWy+eG/oX+KCCnKjtO7l+s74+QeCbkDFwLqqhno87G6JJexTCLtgBdZt6JwFvP6Md7YMRdG8bs824A5P5dUDaJ21Ad7zueBxht244+pYGLE4Oy91pzos2F6RZ4GdfOqaZDvhC7Zvb5JcFUL2e0q7jpavIPyIH/OkBx6WBP7MOysGvYOsPq9zUQmH0BRCoPB9CJy8KibCQTsuppf2pH/H2d5vqE1qFwlk9Z6uUXueJ2O0W0H0A4qSqjm2d6Bb0U+7qQ9wI0tHmDkCWgrtRu+12XXl6nZhOlhrdcSVj9SFYieCb6I8eO7DYWwI6frESvJjtSo0YGuG1sBdF4yBK/6naeAD8ZwXZNPqXeEM0EuOhZFirOgo1FvSyhhIRcmPsM7pcn4d6m5Scywx9rvVCDWuLc2PsikHYHVYMEeJHX9y+5VVPSC0qNAHeDEgRivO69JxP3SNnEUaBynbCTOvnuadDDq1VK4LaECGNYCbI5zEIwbFV9PeVc4uCOTgcNPE64Aoa1xyWSqD1gVjpa285riuj9gk4expRqQIyPL/VxTIEpAXg9pdrXCIDSgBCnqzglIBbbkjykm51PEYS3y73PbgcSwrLJiFSvC+1UZ9UKBpE1NnFxFjmKP5XmTbj7qpwN1bWDN1+5kaPobdYaa5c9gm14rIdAWl4SKQSsp3SbVrTxLgvj0M6jOLtHsPPAevGMVh45GJ3uBrG1lBwxQnScNx2oqbhzkflGU4Ct5h3lIaRVSm5DFNvFysLinkhvTXtIBf/w1QZ7uA8dvv3I19XOGGZAEzEuaxIYNSiF7hVeD5QrvHvspEOvV5jI3wcoyeSFW19QXS8+x2FmkuVadm8KtvnGThSXSz1/97fR48SncUgtepjWm1H1gm8gAnOa2Xo8wPIGGUICuZAyLnB2sALk4LcDBGKxpqNLywWtWhLe/BYnSUEk6WQ5sBn6yzx/DRf+/+FMqdvNE6ORdGsMyhzfkbLrDOtAaMEeI0tYTQmAt82iyoaQkIUo13p4+Wu9Np2E87RoPE065hcFRifK98HucZ1n2Unp+mNSWBHzGV/IO8FazQBULYug/A2WhsRV1apFZl+CFnUktG04upgvb7kSFIT2MRkBp3jY8XVDAQwtvuxF5wuSfR6ssWo6+ul/lZfOXfUdWJBLMxeYrg98eEfyeSfYx4Uo5DwH0f334u9JAa4rlIJq8/47Vtg1wKweMJrEDZ0G3BNwySBNEPhbrJ50H+0iaoxJZgutt9Z9EVWSXf//cAS6uim84vnPms24RzKXxrBSnXBmlzzdlaLJn1H8LpFfZNTgEZAz5kbLmqimRus3NYLI5A/w6aFb3tGfdmLz23eVJCT4d59OppJQnkMqXbvV+Qe6iQKm5fRNwNYEXnpL9DptR7cNk/FrBXHpkb3MVnZRuJbk8c12YUnbMfL0YUnb/6RvGxDrk5cf49N3lBZ7d91uF2g4Q3cM9ApwRRGYHUXAg6mGQf1l23qjQqsYlnII23UgcwXgeXLKRzkRvvqLGAHW7gsqnHRJyxE/k1WanqoQl4oOa4oF59NVgd0MTqatQfA4+OjcXdxhqSJ4iMIv7SPShVwST5XEqk5Q1auGkjGg08MKE/u8QPZ9vDC6UtxuXqtw+anaN1X47Z+3KJvEr7hUL82++UnmDx8zmN1GMb5h6XjJMX9+aku88guaFIc5c8TbtPjJPy9xHkJks6j7aVY5t0ngftiFvstWARUx9WRyZ5/6SBcnCWxAxgXdOwoB2lEIrgkj1h7QYxemQIQw5eJLe2e7osESN/Q5T8D1DIeQArIl3uYve7+T0nuYtVgw68bv+paFnj08KHA/GRXgbTD/uoaEv4JufjWfK2K9GOYoq1CX+4FdVmWhCJ2L22hH5ifXbxtOIC7ketqNf7X/q/gmGVv1a9au2SrmKsSgZAx+tIBODVRcOjeHTeuwut4FA+oCDexwqaCJvXftrWOLsN+KI+2pFKiGjUi9B5q/dlN15/qscuVCfnZ6iKf/OmxMoSyybCIqTgAHOAcXXl22ymZ6oT8kbWkSQDy+zIRUuXN2Yab15k21YjqaItgVlm+L+HUE3yzVKwjZDb/V4tgXevFnvRKm92Dhbgz08NbBgiXEjKXHRJyCk0ekv9+gjrkRoM+UNa9URj+TgRUiB8ZoRhtjm7zAXRa14SXjroYSWZLo3fFNfV3lzgr3GnmLcQlkM1FVjI14TcYIRGlViErQCbVA/LnnSFnn0st1IcVdIxH9ciTFmf/Sp+BZq07lFD9LEg9J2FLlvJqnZqW4+c/owx+e8ijF9H10h14l/ssNAq9xhV+ALIg7iwn1mVFVu3aq29r/WyqhHMJX9gWXNApYy9HA/sosmRg2RIyuZhEV7PCe5Iqo+nNX9dOfn3MNF2fLrYxJENJjq44Z19nrbc0k0tBYpP6Ltp7gKTpv+wgkazU9+m1mNY7PcJFE6OtcRjc7Yz05z+/Qz6+6vurdMuO89WCTxclWDVthkhYENMTspkOCjvtyW7FKT6/179jJkqqRZGPMvRfdROVJqfSVdJyGIrbG6VtRMsZgeO0rRpxSQ0EIslsAHAmrXcMylYnuFQJli6FEaWKblWQqhowT7psQEc1FMbNrRsEO0J3zGHD1xxRDRCP8C9drXVAp7q2SyzDvMqT4uD2Vr61NyVaoYgR6fN5n6wQxSKSttdGepNNhC8+LXeLjNtR4lHgJk3meKN4ei5c/gzHGlzKvxcKU8xU18JQB82gabstaECgFn5cJW5GBV1abZtwE/r5qHdIcAqGKD3HoMnBJHv1w+NbajuJZKlhE9episs9tb3CSULmjMhyZK//RvfDHFgUuFgrgUy6p7w8iW1yZFnvm8EVkFY6el5HAsvfiwGbQqeLU6kCSITtqweVYr2BTYJCVCqw/N53jBCMX3qwaGf4Zf/jQhFwxuhRXD2MGygXh+G88DDFPFYO4BOUmt2OHeXQxtpFsk+meuQh9fyHfZ5uBe+01VRwhxUu/eT5mm3SI7YF7Fc1pbQCt/Z/EbRi/CTRf8sIWtuA1jw3P4K1PE6tBnjnSAmZeQ+iVtjNM427Hjc2e8fooRJC/Q6eKYbJPoFcLfCMyxcMeqg6V70k0gnwrJ5aV9cgLQOOe2R9u2I6JzHZHOXXTEEBCREAYxSGexxXMpu31NKdy9YYrRHI6T+efOB/FoEtZ5l9+uFMbrAm7+6X6G5+iWAcyp3+3bRnuYlFp3rTuNXo8DYiYdcqKtfRHHCkXZOsHz1lVgsO19nG3pYFL2mtYNpOHEMAnyBBNJ/9o5DBVKJUJq44WGfsXnGgbIJLrrEvax1p/Gh6tJh8lWyeyq7D1jFg4mUHwVADtj8v6FmsQiAvFF47mNOS1GBoFdl7Wu/7r4wHsJ6MJKncDxitLt+qL034NjSvjA9XTJtcs1E+q0Dmt1cgxQ8WMSCwJUNW9JRAThssXF+YFt2TrqBGMe207fNP2wB8S5mREvG351DFSEpznyU2woWb9LmsUGx4kg0IR1T5gds4F69PdaM6ZvlIUlSrB6WPFMMJefyB08xGsQHzNAPtjZas+us8sgCYfTwwdUGO7jnGB08YbBnsdRF394Uw6M2JyBb4E17NZyA9Eo1snXozR2bU45Xnmc8RVjtvwsslVjiipOzXXn125oAlOGUvnrkQ4a2cf+XvIY9QGLGfXYlTTE/fmK/jR/xjzFl628Cm0neCxayiRuAi021MsSooUnKZB6x7RfkYXHG1OcSKUVBHZ0hkA1e4IU39CpzTOws+1fLvqWL8c2OCEx6HfCw0QP/w328jRItwB6y4GLHCH9A6BXKJWQxJ7Kb7XgpbI8PM/G35eiV+xK2bjO60T9enfb8e0nAlu390d0S1PISQT/H7lv583u9KwCRBscV83Q4G+vR4v2BJB6/5YRfrFvV1H3mA6HVRINxVnujIT3uW1NI5F6Jf+mTavuhVMnBcHUPxzdRhI9zSgtO2E6PSXtvNGc+ixWCEZELwC0njXPRA0ncOgsOTUSr2DCdmBJMx7dHVPOBvbxto6c6QqeYiPmMuMEYSNq/78lR30r5mi2gWe3IWmm/PrX5gIMqNwR1eGHACd7kGONwsk/zmAZcX01/1WPf94j8uZ7Ek3r+GwO1Lp8ZcWrK2am8Wd7Gz3V710cUWxwLnta0Jt2+8TGq7e2BtcxC/aT2GCVSxBzbQ9xQLcds1hdfVx26KSY8FR4G0REcNli49ZEFeXWv0XTrus9JHNiFXhX9/izesIOJZnb75v/qUJSYbHSVNKhb0qAZ3B4ElrSCJ1/ZK++Lz1vEIl8aBafC9baN/fzE7AaLU9qfTO2hUzJCLQ/VRSojOEhDiABOBwZOg9ihtVgLvfl7LUJIGpkUc807w23SAGeCVdyPkxD3fHNAfCDzvGyxmaPkrLPIWYVivoxCf+B2DLxNnWPnA+JvVGH+6C9xU4iJOc4Q7pYqbGSNEofcz5N/37zexw6jPwa60bJr5On3iluLWwTaFOZw4r/gFucfS8KcdEwEP5L1IyqX4F3lySnTLEZ9AzTS5in/A1MYurnJP2aryMK1bDht6HWNNfCiToivBs8O9Vxgi7RmKNFMFNvn4SUILQirVsfrTywLpkB9AWVbft0ygWOuvGgc/o0PAVn+YbCuxZTfefzRJKiZ4k+b82YURdXgt6VW29K9i7DIingejObW8l3Api/4hB3NHGzxrRiRFMd34SoOkcDj80kJYB/nXv+xX91tjs6HgxGF7bRt/C6R0mLCXSLCAe6PqBidCy8Uj6lqiOKorGVUQ+AeHaGIHwMMdr/lbqFBEnH8hcww9c1Fiw26ngWzXJD+gpkGcvgnVhkIR9uRWdSAiMn7KNxxPvW2pq83fIjajZ2w13sd6w2XAZRXnkqhyGotrr+9Wm73XEBJLnkTtY3bUwzW0avVEFmoN09owdbTD+/q/TK2Fpa/HJrFdYE/gvVk/tZhEwrLImvGKlo1U+hnmF++ohwtjYS+PgXl4+PACluf2xQr7HoyqhVBluqMSf9c7u5l8pL8v9jyy+yadxOs2GIeFshW85e1I8YRtJGhgf6ug1u+PHxYApbjEyCgOlbc4UNcfgpppZgRlFByeKVX7wGLkobfUXSJuASOyDiBimdmwv/2CnGOgrfoz8C8NmG/vS6XEPc1M2e5r3unlX38N+O+paeFdt1rgjXwzLeZmOb4FIUtqEZ2Cu8hYoBPx7AwT+m4shMpdET5xNZeDw02xllg1MH0EkGFnWwznKMZHpWG1OVJBctOva3tXkDJm6QEPS/+IdCjNJKmLtmC5F4qm0F8gVuWHclCduwa/+HjcRVjIyc0aRAElNks1sAGakx83U8WdlxdAjQHMcLxlCoMud8v53GqPHMW9B09oNLDiI72+PDW0AE4TnOQ38ZLDTpJ2i4BhG62nO8f4UshOPGSGgnLCKdsVUfbVFEiiC6rovWzCzq0/teOkECVV5yA3ydKIqOf2ooVtHjpbug8t4k0uc4v9/CJGsg5+Z7q1TL9I5n2AbEWPCNKBVDIc7Q/OLEseJn7BDMBl3Tq79B7qEhww+ZhMow7hFb+Ix18WxapY9VGKqBIYOKTzlE6d7DpY0EK87c0Z2i/DhiMUDQ+ZnGTdArXaHyMtE/IeCFr0f+z3NfAURy3OMjNS2C6Vhw4X15PjiLWj3cbtVgXE4jq1b14CSmKIoizfswm3oJlrH/DoQaXDvrHg3bVqwKTTKnCTkNrH3/TsaBtwhZ4VsGqG+tibmC2Pr6B0DdX6GRw1ljt09R2+1xyP1QdfCmqLCtcHkuhsLgdZHur6ahEEU6tuymwHX+LiyBKt3O9/qj/DsSYp/Qfm5KeXgO2SMUPYT1UN8+TPj96vKjN3iQDP68pFhC/NN550+vIulFMPzJ+5kI2nxNt5r7SSYXGyI7jsxuc4ltbBFDVe5Czse9gZ2x2fLIhEuO7mj28O8U2tiNdkGgrCte6flZAJjqREjd+UVpP6/YI2nDpIWGNOStNZvnNSu8qqBR9/Z1l4fQ0HLuX8n5LdK23z+Oqmwx4E87CEzUFFNNVc/FQLjHQCiJO35iVLMNfF4VuWS7zWcaCI6XAOnx5CL24FbvzRuPvdujGH7G6GNW7DIGqJklmaqtx4rpM5vf903IeJgMJY6V46v/TOQzdm6HrcDfU7d/f2M0b6yKy8o6xN7H3F7z+XYIPfCyQvuo3I0PpwI1dp60ilsihEgxGqpqYTAS1w5rz7FI5MP2MLXZ58IXvOA763tR2/75XVap0Db4ly0LWSPNZeNsZTguRV6Vlr9l/o4VfqjYkD330ud019u6kxVPrscnafS0v8xzqkFjcd2NtUYGZfuwpxTRCWxtu79icBSl+olX8XXvtyf59a8sEg7B6aB8THyMUiV3VmzJ+CJ1pyE/hAVXGtaa4u9ecAXZZ0TbbWjF+HDsG6DN0LLRklW19tFk+Z7kvP8P5mMX/kcwVuC3xo6OVbnbjaNzr83cY6kI7r1l6ML6KHx4nQRWJByErSLSlWj7s+FECf5+XCG+raieZSptrR4YN2zDRkxlN7PHm5WJxnrSfD0TJfxpVpk0OzVzuR7eYoTXk3Hl84/Ql9ohUcX9bBqpCkj3w5rbfZXe7ZSUqoJav5hAMle+E26QgcUQJ9axfq+QLycHmojpR8IGVJPpO6GjLOzYk4YE7/SoAnAYCR08hwlFGpaCd6n/d5WsAdkKQZk74sLLX42GqYEim6B+5ZpYgaeooDnvyQCG/5AmUPraXpggPlNch1ABmF3hiO/9G9q7OpVW4SU0MlH2+ec1nvVulIugE6EDwIjY4ItUNs6peGqlI/zLtNxg2EF4qp4uu90AU8erIpfP8Mhe3v8hqMuQPYIbVltLa31WkNcsxFQW2Y70bKy0zzGqdw54Fvqy6Tll6xlsc9T0ls32wOrobJlazMU7Gs6e8nxDQyexJcBJqyQ+T9CaorqDqqtd3mYlgdz+PgsSmJR4p4/SfwS46pPDw5oSdQN5EcMbU5/vzWvJ1NIUJjDW+5gvRQxO79idfIHbysh7RanXH33CydMzYGUHlstmXCW1aDZisuzywKB00+BnNVlnFtFYzYtkQ+Fj9hwI2GQfOz+7+ft2z1TWxGSNjg/Y0tbTs9aQiQuHGn2Xn7FKZnH/o9hw6gXF87/XcOx48imBF/U3hS7gIlSjxxj6sYX7dGkefxi0yBbzoLFEmCAX2YWX3iQD56I4L6CTUGUAGaudTbQA7c9XYjcy/8uuN/nb8EP+2Z01RcsABIwXvwIdmO9i6W0CYxHEzP2hSlRXNlnTIO5XZEwmbWkyH4MgK/28AH5NMRa8UoDyfOj/B/rQrfYBDuN+S8uOZ/bwx7FavAQYBbr+pqW4x8NihAiaw8KojTpjbYwNVpeLPmASGyOEAIOnAGGZ/lBhdzRkKVKaUnTvktpI3ROKu9//nRFa6vHEWo8pBkmWSde9w92V+dS5H6KX8tD8u7SxAgszEFBS2L9D+NOLGNTq9IudofcKU03gCc/ewHrt7XdeHOnDOjw15+TIpQLWGwTg13kb9CGlNSPkZ8gq1wNwHXVBdpNXvmcnaEs+pTEEWiq6E7cfiJhDJtMgOndw5u6GV1qheY9FUW1RvhiV6aPuEnDAOrgAhbMVIE9fWDkEd58AAcK6ExEmEQE29R//SaGVDJ+E+YH6XshgnXiD4SnYlPgLay5+LyvO8q7OQ4/IcwO/mRu9N8k5e3wEzmi3/mSWYeNze8GxXsQikQLYFu/o5XAL+4+7sDSN+cBKlXp0gXwak5vJsyTych5M5fZFa2pzLEAlZK17Fc58mFe0I1pp1legH3IoeBSZafI+43AF0WPVMDaEvbfJiSpCUISPNAFvMi36XGRpF0PMxmyYeojL6d4ncCJ3EiZOrNKi1JKXg1G9urb+HvP9mwJtP/OI3D/1j5pVJKwA/IQ6A27jRCAEVd267Q5GBMaqygmnt6jktSSScLLNBG7+K4GjbGdomYYIAzvL45JdGiUaR0uLh8Jp5racgi8bTCoKlRPjxFlNH33ICLzUMHE8KudQy/jwrexOVpoxtYbd0+z/lVhxjf8JZ1Gb7QkIT7Mo9kgUN/UMlUxLstgg23nVM6WrnXL3t43OcljcQgjtbzERqNydZtkhV/S+TI3M5Psh0zGAtvvVY0jcXQDvJqlaKP+VEdVg3BpsPhtUioG0tfkHNUYJmxsQoEqZYfXjwlvmGng7kCon+FhaK17m0uAfU8MXLKqpLPvK0WAzhg7XEmWiBqptcHVjZBRWXkt/X2Um9Wq3cIFw/Se1XHCW9JWd+DM4sQ4xAGiPSKIn0piXEk7xH/9g12UUOkC8pvjbz/LHR/KVK9K7iH1azbW122ey1jPGGFF9DjFEe/TVV0EPbo6UFbgUPJyoPiyi2BCdOwR0S2/U3TWfffKmyAf2EmtDM3r+8e6vyqutuYLOnbAQgG1IG+nBMuA2ETZBTGgSxuOdP9N3c+VTyuEV66+vJzWtgX9TZXo/eYzT7ABZJsmlFDAXsA3E8SAYLV5jYNvgZdZ7R0+nZ7VQ+imnttX0Tk59rCf9wu586cyhMt0U/W6n9tMSCGZMFIyef/YTwP4IgrTwmkQ5OfhNsX1IDhOsm4dzWOb9AKh3RhTHNR5sQc5UEt2SKlCmAPmtvzK8Of2Ba2i0J1Z2rYhQKFMP7yghBOF76A2sCCTJ5MqZhNBJ3el40CR+eKPhoWTlJePasHV/r9Ogbh8TpFuVYnvbFwWj1xCL7JAXusHEIfws6+gP7Q1yZmfS4J5yu94Cm0+lCmEf+Lt8JNowrqXuTzYXK/uIK+qA0Qw1Gxk2fJam7ce0xZYwzWeJL3x7uIR8i5O3C5tXpBxjjPMjPPW5327fuKCcTJQxnb9l8t4JrCH0aImB494myTjF9Pkuy9wrhwiJ67iNDe6YKIqB9t2Nf4YTqmzQxDJd3uyvokXZKGEJL0Hw5i1P8yvVuB4zBO4IShTJOZ3nMZaQ7N8e3ZbKZvkjfsxhekODCwFvh5LDYTsRdhP4cvcVH+tEhNLEP1fesEgl45xBDfZp0YKlw9yHiO8OL817f9JvvYXXBp6W8st3JaTQwERONScDJez8JlDVxygOg+P5E28/Jn3MN2vV0QRiGbDfG7pKS+jCldHKqN46LroBhmTb0fLN+dhmLKftDYUCKtw/Dea/3rAdg9CsXnyTHvZGFAmRA19OJQqZSiPg0ebbJBKjGdtkIFUW4AXwCqeffpcu96GKC+rBeA9lq9ooodP9OG2C0t2GL0Q4m0JDeqnkU+T9BlrwMqgx6kkWeRQnLWnhRPayEkvtDOXltFpssKDGvx9RFRQFfKLHo/F1B8/G+41i00T4YvWhhbHgrX3UGs/SZLyA1SW3QAtUGVkGvi2cWvR9KPjo9RsdKqwaLaCV3P4mD+jfi10bHrf9yauLCGpuCumGE8RnIYdfG76Jmu9GgBBxl2aShbmzUN/JVDcoo0FpI0vMKTvkTb8Dp0exl40Nm30n3HRNa4BJfimtynCK3zoUkndOQnIuVuvnbms8jukOB5lRT33IaGfRUG+ifg0sou2Ai6fNMuM05Tdmgtm8jCtBNwgtJomap80+46hhQZQmQ42T7UOY8djNf+nP/ngjijQpN1tPHXKT926vcNGvuFNiRDp+ARin7yzKaE3+FSWB4Js+ZD33FyqX0cl0tsB48Hx7Vs57jDepVYwIx6kT3ZZILQ3lwndxv1kfK2Vc4GLgprsGBa+0o3wkBV6c0Xnqe1v0UB02gBgDWaatMHHhCqvwwy2AZGwfxixz4JFA/8yPWP1yM54RHrTnrtZuROUCYnPHxb8AGREWjlX5fM73rogtdm+DS3JDzDgVILVDl7eqn8qCq/NT6cnk+mcLo7+uH/iQ8rS9ifr6n6XXVuSD8IEqJHpq4Ojd5ZRxjLOkkDwMFaDhEBrAPX3JW413Jv/uDx2GHD47+G2sxzJQ/5HZxzdlizfcRL9v9qNkOiwjnCwCJsyQn/UjRdWOsHMp+2XrUggDuDwxfqlGWqyfhchclG4eneRQ9XyMvMDLvpVN+gLOe4PeQ306TlGPH5nT6VDc2ucXh03RFndHDDgoDd3L9MY6i1qXefe7902qMuQdemPtlQq5ifi0XdBGaJfrviDnDgsNf4hqq3sF8mfUxSbEWirKQy89Adz9e+GDdjcZHsveqepCWf8PIx10b9EIU2OYFLBMxHgvzL96UnZyB2709iWLOHuTdIHzxun+1rQeeLmsmqpavMKXiQHwj2AsBYyIol2ZR3OaMbrZzWLJAgiXY5oljrUN0sMJzRwxR8yhSyNCKiQdjTgl4kI+Uwzi5v72Fl+2gyWTu1a6yOMAeeMSK39lRDq8mTRfGz9lko+NOexJ2oGMzZ/8JwSTY5b/mW0g6oSRINqb52zSvY0bl1b+4Z3bzzqvQfTKNCaC8VdFuoagV1IlfDZ/l3JRxJ5nQWpg3+LSShnwK6SivOfXxUhUUJfn8Yl8janyvSB3EX0rmw1IVzvAbdkL+ep6oCNycQw3VGmDKbWH6IMZUrvJC7kHqdpvE23DbDmsVZI2wH1a3VeDki451sTm34JHsH+G3F+tKaoTQR8XFkMaNSq/9x+wleNnnTv/Gk6UBXPwOK7EdY752SD9nieL0ng2yVzsHw1+TG0QgXd24j/0IGlAmKbS0miLPi8a7ilIzfaiaHly239wemrtaFTHhUYm+R1o8Zn9jmlU3HAcI+89eM9n61d8MULakPdTRy195o7SJ6mBQ+UYkIeZjFaCYT8Hw+z4ebMtY6v60y39NY5A86h9yKeQm/Qj5PucH8H1mfeQyg+rRR+1WNg1bUwC+qHcfvLa4cMG3VsQZS1Y7lyb/HNsCWIZMN+j2NBHeL9fZQGB/vnlJT43vLLPHgoeUo4TiFw3r5SqZ4FWJGLj/XUtitfazyN1Sj2F8z64znQXlGm8oX/AyWA79Y2xFGSC2/WT1dFUu97hxh1IBMmez6Cp8gT5CUQ8oD9L88GdcHEbxIMKbF3WPdLwoOlXGHSzj9O0D34aVpXPz3HzZiNs9FLd+Fcwox3djiWYU9yEfT6A8RIW/uXEa9ls9erAifTIbasYbZ/sttSKmCQ9k9vDox7K9thFAHlTLwYDTJDUbDCnHmtmW9F9ujAXmXlLWI1g2AxAVSooLYjD1U1UMst/fNLAu1Dw0caU7IYF0o/OS5QbHBt8NTiwuLAJxJGIb1FKh5aejovKP86Xw3qdXJ6dG59tiyo1DhJtwS8SoL95X1RipCQDmRZt2DLFSD9xzKJwFWE5oO6x/bkF3Wi9AwOiwE6t2uBoXXxhJvlWcZWfJX4JxJSwMel+XTLCN4gxd4rOx7mMKfaw24BCbCCCYd2RxqJkB7O3GsHN6bzOdjulvF1Sn44YsIKz02pww3f76RshIA3yjYuNcFcoeBZ44XctA2LruowcU0XiU5Wd7SeXedYYb3We4NWx9ETr+IGNok79ErQkj6pBJNvykLuse8yZvr0KxLYWVQqd3giNR7XLqrBAGRZwZGvh3quOypNyS3R1irwNS64IZjRwS0B6npcc4mX3kqI+Jh8t+5+SZUz6iNcRABzg3/LyGXUgKBPg/MMjvNtYqppaj/B3VwhKHJTTIUn+zYYnowEKsO+bQyGPY5K8YqVdrod1n3ny6GYtgR6L7MhPAvu6EKi8jBCyLOHn0l4sxjpuOeEy6k5IiDqDRuP5BsXuJ081/tN7Yj8ccdcVSN/KhsAzdxbvK2yaPZZhMQaPsC+VcyTXVYnp/GapKzIVR5vlCaE6s5dnZd7HnBoLAW42BLo41FrdWmv/AEkWBpG7A9cdJ4DKy/s55TT3siZjbf7B27Sd7MnuMZXv5Zr1FdY3ivfsohEAIIo4csmokO4jiwUEv8bV0XX5lCNK8Y974BX9LIw5WfdCrCcLfmGwYEaXltSDdlRHtrx5J7MbvrERA604+/4+2L4Y2J0pKv8cVWC0mUUgCMkQGtwfk0cSVBHXj9vbCqO81adg/JOlFXIIwtMpT03lIvZxyDYkasrCT970Bb/O3C21wxGC57kfOUr4IlRkVfIXfeEaw9mHyrLvcdPjdqShMNI9gQzG8SPJwCeE4d6WnXKScKUvuVpbCNrUm81u8X03ah1mpdkPp4iofnHSA99HrauoNBrhFTT8Aq/KBpX8V+FrL+660TOpKfKqY4Qr2TpoSYOuPAv0qpvpi6Jju6DXpyrqDNh5VjekAoPJ6mvLPt3x68+hlEXP9PKaqUa6Gb6LY3FyRwJ7dzj/UysSJQ194V4aKJtqmMo97broSM9BIvRm4h/WideA1c1dKz7RLTHTjsTxOtXkeUp7VzpS88FRkyDcQL3g87xJGhltLpkYzXWjQQjd1X9h6qc/3wDHvZJOSag+cGI6OdUr+0c4SZ471myF1KX4bV+LMijsHESFZzUTbYveHdqgTQMeISyHM9xiQzjzmP2MLigSof82AYXWWZYYWk+eYYlP2kmq7q7bXRFCMW05tZKOCGUxb39Fxod2EXd/OuBJAt/GW2fTW88fvzw33/gLfLtcTd7qqJpYZdOe11uzUrOsJekt2y0S6NLMs7VZhYeiovRyVpQZxssygiyrFf2nXjbD2bIcv4ZyHgue8sb/8i3FE9qjdD5gRAMtFp/ez0yEj2EKrFWv2jwP4+BqXkLmAxTaDB0dY7rZOYyQxuGg0C1RFuIxBdQSmgyU/sFCQ1u4GPEK9eiVGEu+tPcMUQkj5pFnjdQZHzC0wHFNma6W/ig2d98+dPleZ5CxWLpZGCDV9SRzdoVLR78UBmCevOhHwTsPl5kGllaX7K+MBBT9UKiT7C87IFtQPI/H0gwGuHYQ+exQF7/kpG5JaaneE1reL+P/gC8EzUVimzRViqhIysOq/ioNs/lcR96hRsfwMJFds4RNUFghnAjLrGlh4ENA/HHRPBUnJmPj+Hjalk+s/qRlgD/uJmmx+YoigkcZMrw0LiQ/ZbJfOPe25cEdoHxqmer8QJIztLACP+0Tu3wEEPx/7Kr75disCZMlG3VDxyJph79D0bBZdlHiCAQgelJMkDhU7HHig8zic644xOZfFvBj2Kfd080WFnT5+ZW8FIsnTxSrdE0lDa+iVWM5YxUPFnZZMD+/RAGJ/V+KfmhNeo6urwds0iqHO+JNX9iQW9M8TMQcNu5kjQ0NhwoG2SdFNrUuuPhpRj4q+x4LlsABw9gZVWwc+Jmly/6allw0BsWx1PFOrRPj6YUevKciwKZcYMxqW41uXsK7DylSuzGVyCJdbtZTFD2S5Z9X8lzmxdPCSU2cO37bTG1q+AYcRCsBN3MG7TBbzD6q0lvkxPmj/65qn9s8wY1j+u2FM1fC6jcrvIO7yZTmqWaOH/qeh0wqsbjdf4iMmmBk/CRAzlIBhWTxXvxrp5maL0m7yTz4JbMcRn/kZfbZ1IWziAXonkueo4udTqFt78Hp4t16zVWhhsjJ3ZhuQPUKWlgIe0Ov9/hDa1BZu0esvL6YS8RLX3AfFwunY+EfRnOpP0qKv/wuatNww0cMvuQEhj9dh4H/Hl7e+JO9JeTs3FAQukEBmYLYdmP/RsZpnlG3PzBjGu/h0wXitQn5m0cdkUoeKGx+T+JTnd1XesVZw1DIiOF4NeolfT0cn1MXmmPYPMUSfVwD+vbWrU8cChW/Tggbjnav9aBVWzhwzOhVAk3LR8vXHSJtCAahT6C1u39kne2PVuOIqCvmEi9s9QUEMTFHOlaC1OqgVQg73HuunYwUCX4AmAaKIfbIhnFRiIwqn03P/FRtuT4/i8dVT73/MhNoR3aIuYZQlG5q6VnEoK3SSv3BZmquft+RRK/vVkcgE1yW1XphQ8Hd+MUb9XEbjZz3brPmpAN0UhmBkM2FMjVfziOXB/z84By+CKNUJGUt/D7e3K55NUMrMVp8lFGM7DiKgkIhBKjQIq1Ek+o9FOk1bV62CtUqBGJviulyYy7BxktnVAwtHs4uPjMOin4EQC8HItPzhSafUbfl76knhYk9R/868KWxA3JzI86KBuj91dEtmKcHgLLU0pdO8C0XcUTYDwjeksY/fjoTHy0hRgK1Q/5znnt7NaoPYomw0u7zZ/lxI9VXx7BWSZXUqsDF1XetNXjkgsxNfZjPnA++thPL+Q4iotd+b81trK7XC+YGmO9mdlxOSYPmQjCB+xJtx6JMEl0puo2S6PXeWINA/xveYTJdW98X3AcGf2ozNiclI52gfDk1pWxS82Ggyn3Ef1csAQz2/QBG+sRD87hT22EnLgrDg6td2DfL/OTPymjcCapeMwJO+L4miROTZe4gif3KKE1Md8a4Sv/3jLq3QJJueSW1SPz158sh8Nr01nr/viuEddDkQHBEZPI09TwjV6Oq0nNf6hw1iOhbZZdMfFWr+f2Mq2yeyfJNe7EyRbb6h4mPtPNyyFh4tOpRpY8NCMfqXEzg4D1a59KYRXCvMonIR5lQJLbl1jayqQbgujjt7hYtkCTAaLPAy8kIK/ddOKtNz7qs6Oq31QdlXkD+1BjUJlyic/izqMXQG/B2CRH0q/o4avCIXSqYBAt4x0LqFBPBf82bt1cix1+49pqqGI7USKDDCXKAYNZcreDZcJISOwa401L+1Amd6dYMofRhEqkOmeFawoaEfsM7XgTOPKWYeT6X3KXzmFQ07Iy7JPo7sO1oXRmtBc6cKhoIFbzdJJZwukVejSWkMoZjUZoi6YrO6mRXB8D2rEiEXdLn7IUwEI4LwA78/X7/FXA+K/mW4Zf8pX72iHAxaPB8gPCzqMYDIX7cXuBqbCvak/7RagUjjhxGn85nsDbNrdgAFUPmj09ZY3jLj9Rl+5Yb25XJ6PC8iNSeUDU+ApiglWC/pGLM+yJoKsy3ylvOtMIefk/oVNjAA8772UmQwwsNd96VNRkB1AH8jb3q+gMM/8ZqLwacFki+1ZAm0cEZvbL+tGWuWEVSMLkp8K8E5N2QyJz6Ut+WvjKqNSqiMBGf8rS3rZm6zAh7agk9eZbAiaFqhseMGIQw+ke1MEr16ISFd0x3oiPBOKph5dCa+ZXtUCmMPKyXTk40KGGHM97i+rSwA2kLbeYUkXKW6Ls4eoWV8+PJrLWZgWDQGFRLG/lOSdC/SXBZgeVtg2NoKdooRxeTt9le/3kdauiyTyaPLZKdWOVRx83BpqARJDdZz+oPCIHZZfZmcqfhMZLJs8jur4ognM4DA7ahdBotKFukpXP2ODZAaz+9igLFHNgD/JrI+WJmork0S4sxsaVRg5SdBcUhu4vYOd6Jgp1wKXH/t+FIy4rI+OrWc1lCNhkt52MDbTKUIxg6FQFbbUXtxkXFQb/leHxBi/S+WHZzbU8Uk3WwRYG7NceXOPMBXPchTuTnHI2ZTZOtyzD0h0iHv/Qzs2wYHry5OO7tqwhaTgxS7aRlXUVPsLxnZT0ccw+1eU/CoxjG0xxwziz/cej9V1dvgAIPTbGbN4u7R6XDLiph/dqeGYGh5/EjP0TxHTw41ppzLFZyXHq5be2MdzFxI9hogdTCtcKy4gp9xWmOpHpM83rGezgHVMakWs55Uq/7frkl+bgmQ0VNhR9xGRmSKGfrVA2WpwwarMowrTokCoGbqrPFCfmcGSHm4CGGtnEm35Gryrgg9NfliCN9wfBTNPYDEleuIXFFxNnlKCfkJZNSaOkGfnb9+CejZiPylz21x0e/oJqcVFnHDiw4sODN1y/CnexS+SPePwE2C+xoBzGFrE0GMGU+/8nGGNFK1fyOlOLz8/V43EU4XxHFLVyG5mAW52V50xCutvP7CW2KEJ2w7yJkMv8EpcuRZE3l/Rby7ue4G3B/w4PpxHbg5Y3j0pZLrJKrl72AoPja0TjlzU3D/IRKozPH5sn3pAlPfjwMvGOguLvW92pGY7BtjO0nvyHgzfdT8LlXLTIMuIHq120SfoX6s1qK/41MPNxucZTiDYluVuD0ACgyCTyEO/VuFmWNntZxGmae3XQyagoSdLo2hGHLZwieOF737R/lSPyp3WXAB34hqr0BY42Pa3WRQebv7EfJD2HakW6J/Vc4pNXFdiqRFfw7kqAZxNUdb4C1EZh6IyW6d+XTvtIdPxoVacvaJf7JSzUHeyDdYIGjZDifcOCvcSzLfD03J4oEXOSU0zPtxU5Azb+Lfp6PqYBdzJyLrVwbTNyHFf6bVKU1CrflYv8hdZO+8Xu+spAnVXnrR/RvW6ILSNWlw/e9d9Ed7XwFn1QanzNCiO2CnUXZ+agK+4jqkCDOFddZCOD7DMusVxrUZGVkDNdJaa/A4CNhi8y+D17dVPltHToqsAYK+Vt7CW6s5xIvhSj8ior87qEniosgYoSJhAqEcXuiEHe04j677v9e/Ly9TzUTkBfYMVl+oXQxq0/2lsv68rVVlIczjdq67aCfqG7RsiGGZ4c4NLFqlSbfyM9wHrmlD7LiXQ5MBabgR93kOg593n1jYaACucOP9BbbAl02mR1osg0F3cMyk53cTJfK8mmKbQvLZdE1Qtm4SKd/2p5wPDZX1xPkp3onm3SeVt0KYf5i6DiXUtu6VuNC+/BwshCIGWc5Wt0bhmHsTMfu+MTZAcQVNPAupk2jIbYJjTM8gyiLlKXJ8jDw3Z6CMatQlB3NminHwWe1cvkI+dV5gHL572OoB2C85Yj2wgIrSqN7z9ei9LHN+W6keNcIHw/IAxCDtQXHlfeIMrmdUhsHrcjZWkGCbOhzF7DW31FdE1BvNlT956YE+dS+SvMPH6baquMQmbCXpN/EE48eRhDpEY3cptl4MiIS4J3G8EY/rmNmxgAxHGU7o2FuvQUxhX5GCQdeJ9oxHo/6IYoXueJqy3L2FHIC2+ywgytwEjxdvSXCcPea9l2J8800e5cPueNzGUoDx7LLRowXFK6KLB5V1yRscvFUcINMdI/+b49+2JJIjhf2vbV0r9o92Py58kNQRXdn/1srJKqlQkT+GmGqWevuUVe07N1+R8wWu+RSGZ+pe55612LPcBltT0CVhMsnTejrUOuXrEz891/mQ0ypTbhH4r7VJTQu110f/cVM+rYC9Isjjn3BdXrshFyrKXrcxnO5UwfvzKqnXz6es4yTSLqsu/oghZIkcoZgQWSxbOHpYlptXy+A3PKlyoAgz8wyPLX8a7pbBQyhO24ZJwo+x3aF4Dz2aZ9VVqds6TV8NWDA00xhjVxKK6aLn5qXijXOlQQvzOrFqUxX652Nm9P3gjUTJJIVjLbIN2k0RQMRJg+U4s0rEyz+NGuBvYAZWgbX7OeV39+wwPmgDQuKTcvwEmj8irqQJgImQ8utTtpFT93MR+dNI0WmsIh1HcclS/+7cZh4Fx2Cb+KLWDF5IbsuxPpttF5/TKnBOgQ70fRCGjgdPhzl1Lm19rad+F0mfw5ymX18mCN9+4B44viuLW+ib6KVInsslNyrD8Xb6QOTRtzdlpc3Bles6rL1L87KdyOAKa/fFjki9IZiiDG/B2dKotIhruOpG6e4sJKkifcbuMTcedduTEzBTtqvxkl44+uMUl9r2E3RCXlWc+TUZDFPpWGWf5GHyJRnuc045ZY18iO8ybAnQO9SgE1NNg3hoodTgANAkMkjrV3b1kD3wdI1XW78t+B3nWiOFKrgJuD162nZSddu9f9ARDWIl4qVFIKKWA1D9CP2+sBmgg7i9a4cWM4U3/wMDpaSVunTwQciUCx16WZP8zjhr6iywNIp3bxtiqhripTdXERCJFaMt7OHdCPFXS3T11ETXFJe5kqPLRhGnTzhxg+7NaMIFAfJKQhkscJAXi9j2Z8ndzFq8cAeFpeGeo4TggjGkB9FNBSQqayfnwID8sVRWtHjKudLt5vttwyAIspk05AkLiaNtWoNnWYve9NDohIrxRcKlG2etnGmUad2rFTIs3aefQTRVHGkP6l5igKyURxRN1BHJgWHyBmVmWjr7XTaRoER+vBy8ZDgRxvWf7hY+r3JSyUoHXv9ozfxV6eq+GG8l+FBCGueJpQCTNXQzooXxJ6RqCxFhezQ8+rNXK/fKyU8N9cw0gjTlx8ecghh3CbjbW2EgOz1dmH/i5TGCvRB0uVF9z+ZAV+EQmVhKRxBM8R4j0eMYW4vRbVUo8Bd+ujC3Se9QxMj9/j/HRQ9CdAW0YxQKrLrSDpZJ63Y6H0mX/Z0PRAmX7jyizCmVr6cAXtKRh7QPdzavMuOeK0/E2tnhGhUuBVWHwo8Z9DvmNyGek7s5V145yR60C1DXZIE5DxCdlT4d3Jo6GvxePIp12B6L86/GmE76cO4OeWtiZLo4AKUISil2pPoB7+adTW5My6Hpmk1TI/A7Pl6zgJ0GzfNF2aaLUTVgf5GPkkjIAe/C77pmALyTcC8+DOZ2Mt6Tuh4KnFYcMbrSuLMyYDaun+qP5OQcDb3OoNbLLMHLOGzgsaauNvQPdNlyy3LYJPQzVv/bBCVA+s2Z2Cmqiyjtshcmw10E8MVWeePFefg407O54RfJtbaNOGTf6H3nAozaGEtHuNMwppT+INdVWqEUrp7WpARqNLob6djsxQNmFpy9q5PbpCB/T9BKSliY9dKXpmc50Z/Jf0zXBf+3r2Gn75MQvRR95faT461VAAUj5tWudcmSQ/fgyf65UJwjcWXMV9xIGrLb/gDZHFMMbOzxTJsjK1I79+YU5CdAHirpvozLnRALI/ZtC8DwIcMFhZe7L6Ysh3jwZB4tFa08Ms7C1uVqasnM1g6FZbYyy/R6IEDiA/kAN3+BHoBtX6YwTuB4iLbn8BeZKkTZivBe64pEMVBTguDnWMaoex541nSA+32NG52Q1t32+sMa/ufbCzpb6B3mLYAx9zeVNGg0Lo3kCAysQ50cehnxOslwdHyh25ypy+0WaxDEF3GX0f3V2utDB47LrStchHGCrZnBijLeD+guJhrnqsR9Oehnv03GVWLGXiYIEu1dJzxjHwCv4CeNqYGPuB8mIMDcv4JnRy8+cqUD9nQwdWjt/00INbW660OO9XBOov6JiFlPu3zIRTth3AwJ7mYHuT8tNoUugg1zBBdyjcQj6k6b3I5WHzKyPKrs0vhEvIiYit6sPl/eU8JOsIandDErXidJAINTzTEJktf3v5Igo0fvlgpstjkvtQ/mgu0bEj/3E6oQViypRlnfXBT9F0Y8r1Ix0pYsNHr7+qTJLjYAqM5KMf3TNUsrVi9vWB/ChPB6UQolD0HqK2jp0iCTjA6surjQKZL41RDRtQGQ/F/WdcHfVDBCOulhZ1MDyNJqW66vQYpgOjluXgE1NKP7yGCnXCIYAzMRoFDEuO7shdzEnOJMQ3s6Er0Clu9Rh+cCcpEY6TXYWanHkt+Jsfh203IYKZEu/4Od+cgh0yimAT3l6rhmrxKbnmQnoXEHFQI95SEXXErf9Po3+1I8oJMcng7sKilWgAakMsLaam8S5xNvNSl9s8MM8zKWDsXsKB05YTRZeTS3m1eew8DROhddOP4NyyN2xrTToesmmo81gH+luR645Xyd8ReGqtKRRviZNHsesOjtKfckZuagx124j3TLouk7VIZ5XzLsj46+Iph+Pp7T+ssKMV0a/xdoo2KUJt+R6YnCj8S82YSy/oCey6OiPkp72r2Dz4SW6tR8vO1DAjqxRH8Hh/LQ0bybD0OamMrCd2nhf7fHvRoQCIESp9+76B39lw6rIxab3tD8mWvHP7Z/ggMfZM7JulQ0nBPLeSn9IppkSv2I2DgGNIw+gVtX3QUJkQtBi2zBttdu4YQmsPuECFfJ7Z/W2bVrKtk9Dl7qdEkr1AHrHAFlUnHNmMTI7dvp/LgwKr27RE4xzkkB9cpoN/+a2i5dg6EjgACfXFnkKNff+gutMYDNmY9qk4syHnBkza9zGRnsvCswuz/DQYDNQYm2hqYyfN8Zz4sflqnyhG42D8O1D7ynveNHiWdTYyXX83zJVQoz3RaiW33XTTt/5axOLD+bmUFuBks206CyNKcpx+ZqA219B0/wg2iJ0nxQumaLEKFguh8ffvA3+PXLr/JlFH+l4K9OF7k1fGtZVuen+bGlJc4pim1GhJa/9i+YdZV64bvzNyiK7PMgpd8+JhDTbKnDGnhZk+vxcC6xb0oN5qAmCjRyCyXCAugioBLxFt+z6gJoQ0ZqLT/Jk41UvaDQGnt505EQR2+DWY3ZMQdu9Y+BYKpw+KKj4KctPRi9c7Od7JmMYPz3IAcoRvXu7OibHUmqL45IHyYbJ97d5Yho0brwHUxYmE299EaoRpRu9ihI5p4eKLu/Oq9jOzkeU7N65mq0Y5MBORJ4S1HarlcTrvngzm4aSrgsQ3WlrJq+Ju0lVX9wzSCQ30GAwKaOfUdOGcyrzu4m4Lo9//uhJDZHhIzAEK9MQTfBdD2Gb/jK8wZiMmrgQLSD1DbGg8nWYstOiqt5XZLlAlrprp9RES4GbmzJisw5KfLHk9hbuO13eXB5NJFP/uJgqO0CfIPI8PhjJyJ3o7vqvyKYAJeaShyHxTiijYrnK/OqaxW8oI+8TQq8eR4S53TJpKF+Lo3RGf0ty8BRCDaQLzXtYCO6BJ3SvMVi+eXepcbQgLalyESdoPBswYbsMIc/U3ZObY2FMruN5YdHBT7lyNZlVbq7jHD7USZcK2nSEwQR8yXmmFvorqbf4byXSgNXd34wmxbHgD/4oySpctpj8SdT5ZBsGjc9XXIM0/QhkOVJkfEPC8cwnXOLljCZyuORbYGCI/01ElCtP4sZbHBKOIY1zZqSNTIb4iMXoj98fEWEVX0VBy/jmJIPfEH2o9EHmXDcRHYyPsxUsgoioL/9FPcvLLI/U5n/02uwazibZIEbo4Oj4WxqdgXCkVkcnRKuJS4VqObhOSLCDTEovH6S4cZlOsnCqs0V+UAXw17tq6VhNr17KKX76QzKN+jjCO4IWv6xcqUBZ3KUZ0oCRsZECttytKuiBWa/YhnSX2VfJhI8/oRncAAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 16 Feb, 2021 5:57:50 PM
+ *
+ * @FileName: omuseraiatlt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php'; //added @Author:PRIYA13MAR15
+//<!--***********start code to show user reminder list :Author:RUTUJA18FEB21-->
+$custId = $_REQUEST['custId'];
+// <!--***********start code to individual staff access :Author:SWAPNIL20JAN2020-->
+if ($staffId != NULL) {
+    $userid = "SELECT user_login_id,user_category FROM user where user_id='$staffId' and user_type='STAFF'";
+    $resacitid = mysqli_query($conn, $userid);
+    $rowacitid = mysqli_fetch_array($resacitid);
+    $acitid = $rowacitid['user_login_id'];
+    $user_category = $rowacitid['user_category'];
+}
+
+// <!--***********End code to individual staff access :Author:SWAPNIL20JAN2020-->
+//if ($custId != NULL) {
+//    $userCustid = "SELECT user_fname FROM user where user_id='$custId'";
+//    $rescustacitid = mysqli_query($conn, $userCustid);
+//    $rowcustacitid = mysqli_fetch_array($rescustacitid);
+//    $acituserid = $rowcustacitid['user_fname'];
+////    $user_category = $rowcustacitid['user_category'];
+//}
+?>
+
+<div id="addActionItemDiv">
+    <?php
+    $selFirmId = NULL;
+    $listPanel = $_GET['listPanel'];
+////    $todoListAccess = $_GET['todoListAccess'];
+//    //
+    if ($listPanel == 'doneList') {
+        $statusStr = " acit_status IN ('Done') ";
+        /* START CODE TO ADD CONDITION FOR COMPLETE LIST @AUTHOR:MADHUREE-07JULY2020 */
+    } else if ($listPanel == 'completeList') {
+        $statusStr = " acit_status IN ('Complete') ";
+        /* END CODE TO ADD CONDITION FOR COMPLETE LIST @AUTHOR:MADHUREE-07JULY2020 */
+    } else if ($listPanel == 'deletedList') {
+        $statusStr = " acit_status IN ('Deleted') ";
+    } else {
+        $statusStr = " acit_status IN ('Active','Updated') ";
+    }
+//    if (isset($_GET['searchKeyword'])) {
+//        $searchKeyword = $_GET['searchKeyword'];
+//    }
+    if (isset($_GET['selFirmId'])) {
+        $selFirmId = $_GET['selFirmId'];
+    } else {
+        $selFirmId = $_SESSION['setFirmSession'];
+    }
+//    if (isset($_GET['sortKeyword'])) {
+//        $sortKeyword = $_GET['sortKeyword'];
+//    }
+//    if (isset($_GET['searchColumn'])) {
+//        $searchColumn = $_GET['searchColumn'];
+//    }
+//    if (isset($_GET['searchValue'])) {
+//        $searchValue = $_GET['searchValue'];
+//    }
+    if (isset($_GET['sNo'])) {
+        $sNo = $_GET['sNo'];
+    }
+//    //
+//    if ($sortKeyword == '')
+//        $sortKeyword = 'acit_login_id';
+//    
+//    //
+//    $searchColumnName = $searchColumn;
+//    $searchColumnValue = $searchValue;
+//
+//    $sortKeyword = stripslashes($sortKeyword);
+//    $searchColumn = stripslashes($searchColumn);
+//
+//    $sortKeywordValue = $sortKeyword;
+//    $sortKeywordValue = stripslashes($sortKeywordValue);
+//
+    $updateRows = $_GET['updateRows'];
+
+    if ($updateRows == 'updateRows' || $updateRows == 'AcitUpdateRows') {
+        $rowsPerPage = $_GET['rowsPerPage'];
+        $ominValue = $rowsPerPage;
+        $ominOption = 'indiacitpnrw';
+        include 'ommpindc.php';
+    }
+    $qSelGNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiacitpnrw'";
+    $resGNoOfRows = mysqli_query($conn, $qSelGNoOfRows);
+    $rowGNoOfRows = mysqli_fetch_array($resGNoOfRows, MYSQLI_ASSOC);
+    $rowsPerPage = $rowGNoOfRows['omin_value'];
+    if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+        $rowsPerPage = 10;
+    }
+    $checkNextRows = $rowsPerPage * 2;
+// by default we show first page
+    $pageNum = 1;
+    $gCounter = 0;
+// if $_GET['page'] defined, use it as page number
+    if (isset($_GET['page'])) {
+        $pageNum = $_GET['page'];
+        $gCounter = ($pageNum - 1) * $rowsPerPage;
+    }
+// counting the offset
+    $perOffset = ($pageNum - 1) * $rowsPerPage;
+    $isAtrate = strpos($searchColumn, '@');
+
+    if ($isAtrate == true) {
+        $searchColumn = explode("@", $searchColumn);
+        $searchColumn1 = $searchColumn[0];
+        $searchColumn2 = $searchColumn[1];
+        $searchColumn3 = $searchColumn[2];
+
+        if ($searchColumn1 == "DAY(STR_TO_DATE(acit_start_DOB,'%d/%m/%Y'))" || $searchColumn1 == "DAY(STR_TO_DATE(acit_end_DOB,'%d/%m/%Y'))") {
+            $isDot = strpos($searchValue, '.');
+
+            if ($isDot == true) {
+                $searchValue = explode(".", $searchValue);
+                $searchValue1 = $searchValue[0];
+                $searchValue2 = $searchValue[1];
+                $searchValue3 = $searchValue[2];
+                if ($searchValue3 == '') {
+                    $searchColumnStr = " and $searchColumn2='$searchValue1' and $searchColumn3 = '$searchValue2' ";
+                } else if ($searchValue1 != '' && $searchValue2 != '' && $searchValue3 != '') {
+                    $searchColumnStr = " and $searchColumn1='$searchValue1' and $searchColumn2='$searchValue2' and $searchColumn3 = '$searchValue3' ";
+                }
+            } else {
+                $searchColumnStr = " and $searchColumn3 ='$searchValue' ";
+            }
+            if ($searchColumn1 == "DAY(STR_TO_DATE(acit_start_DOB,'%d/%m/%Y'))")
+                $dateStr = " order by STR_TO_DATE(acit_start_DOB,'%d %b %Y') asc ";
+            else
+                $dateStr = " order by STR_TO_DATE(acit_end_DOB,'%d %b %Y') asc ";
+        }
+    } else {
+        if ($searchColumn != NULL)
+            $searchColumnStr = " and $searchColumn LIKE '$searchValue%' ";
+    }
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]'";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' order by firm_since desc";
+    }
+    if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+        $resFirmCount = mysqli_query($conn, $qSelFirmCount) or die(mysqli_error($conn));
+        $strFrmId = '0';
+
+        //Set String for Public Firms
+        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        }
+    } else {
+        $strFrmId = $selFirmId;
+    }
+//    
+//    
+ if ($custId != NULL && $custId != '') {
+     $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_user_id ='$custId' order by STR_TO_DATE(acit_since,'%d %b %Y') desc";
+     $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]'  and acit_user_id='$custId'  and $statusStr and acit_FirmId IN ($strFrmId) order by STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+       
+    }
+//    //// <!--***********start code to individual staff access :Author:SWAPNIL20JAN2020-->
+//    if ($sortKeyword != NULL) {
+//        echo'1';
+//        if ($staffId != NULL && $staffId != '') {
+//              echo'2';
+//            $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id='$acitid' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id='$acitid' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//        } else if ($user_category == 'Administrator') {
+//              echo'3';
+//            $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_login_id NOT IN ('','NotSelected') and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//        } else {
+//            echo'4';
+//            if ($listPanel == 'staffActionItemList') {
+//                echo'5';
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//            } else if ($listPanel == 'doneList' || $listPanel == 'deletedList' || $listPanel == 'completeList') {
+//                echo'6';
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//            } else {
+//                echo'7';
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+////                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_user_id IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+////                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_user_id='$acituserid'  and acit_user_id IN ('Selected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+////           
+////                 $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_user_id IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+////                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_user_id='$acituserid'  and acit_user_id IN ('Selected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+////           
+//                
+//                echo '$totActionItemForPaging=='.$totActionItemForPaging.'</br>';
+//                echo '$qSelActionItem###'.$qSelActionItem;
+//                }
+//        }
+//    } else if ($searchColumnStr != NULL) {
+//        if ($dateStr != '' || $dateStr != NULL) {
+//            $selDateStr = $dateStr;
+//        } else {
+//            $selDateStr = " order by STR_TO_DATE(acit_since,'%d %b %Y') desc ";
+//        }
+//        if ($staffId != NULL && $staffId != '') {
+//            $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') $selDateStr";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id='$acitid' and acit_login_id NOT IN ('','NotSelected') $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) $selDateStr LIMIT $perOffset, $rowsPerPage";
+//        } else if ($user_category == 'Administrator') {
+//            $$totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') $selDateStr";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_login_id NOT IN ('','NotSelected') and acit_FirmId IN ($strFrmId) $selDateStr LIMIT $perOffset, $rowsPerPage";
+//        } else {
+//            if ($listPanel == 'staffActionItemList') {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//            } else if ($listPanel == 'doneList' || $listPanel == 'deletedList' || $listPanel == 'completeList') {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) $selDateStr";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) $selDateStr LIMIT $perOffset, $rowsPerPage";
+//            } else {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id IN ('','NotSelected') $selDateStr";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' $searchColumnStr  and acit_login_id IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) $selDateStr LIMIT $perOffset, $rowsPerPage";
+//            }
+//        }
+//    } else {
+//        if ($staffId != NULL && $staffId != '') {
+//            $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id='$acitid' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId)";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]'and acit_login_id='$acitid' and $statusStr and acit_FirmId IN ($strFrmId)  and acit_login_id NOT IN ('','NotSelected') order by acit_subject asc LIMIT $perOffset, $rowsPerPage";
+//        } else if ($user_category == 'Administrator') {
+//            $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected')";
+//            $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId)  and acit_login_id NOT IN ('','NotSelected') order by acit_subject asc LIMIT $perOffset, $rowsPerPage";
+//            //echo 'hello1'.hello1;
+//        } else {
+//            if ($listPanel == 'staffActionItemList') {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id NOT IN ('','NotSelected') and $statusStr and acit_FirmId IN ($strFrmId) order by $sortKeyword asc,STR_TO_DATE(acit_since,'%d %b %Y') desc LIMIT $perOffset, $rowsPerPage";
+//            } else if ($listPanel == 'doneList' || $listPanel == 'deletedList' || $listPanel == 'completeList') {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId)";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) order by acit_subject asc LIMIT $perOffset, $rowsPerPage";
+//            } else {
+//                $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id IN ('','NotSelected')";
+//                $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and $statusStr and acit_FirmId IN ($strFrmId)  and acit_login_id IN ('','NotSelected') order by acit_subject asc LIMIT $perOffset, $rowsPerPage";
+//            }
+//        }
+//        // <!--***********End code to individual staff access :Author:SWAPNIL20JAN2020-->
+//    }
+//    //echo '$qSelActionItem'.$qSelActionItem;
+//    if ($todoListAccess == 'YES' && $staffId != NULL && $staffId != '') {
+//        $todoStaffId = $_GET['staffId'];
+//        parse_str(getTableValues("SELECT user_login_id FROM user WHERE user_type='STAFF' AND user_id='$todoStaffId'"));
+//        $todoStaffLoginId = $user_login_id;
+//        echo 'TESTING';
+//        $totActionItemForPaging = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]' and acit_login_id='$todoStaffLoginId' and $statusStr and acit_login_id NOT IN ('','NotSelected') and acit_FirmId IN ($strFrmId)";
+//        $qSelActionItem = "SELECT * FROM actionitem where acit_owner_id='$_SESSION[sessionOwnerId]'  and acit_login_id='$todoStaffLoginId' and $statusStr and acit_FirmId IN ($strFrmId) and acit_login_id NOT IN ('','NotSelected') order by acit_subject asc LIMIT $perOffset, $rowsPerPage";
+////        echo '$totActionItemForPaging : '.$totActionItemForPaging.'<br>';
+////        echo '$qSelActionItem : '.$qSelActionItem.'<br>';
+//        $resActionItemForPaging = mysqli_query($conn, $totActionItemForPaging) or die(mysqli_error($conn));
+//        $totalAcitCheck = mysqli_num_rows($resActionItemForPaging);
+//    } else {
+//        $totalAcitCheck = 1;
+//    }
+//    //echo '$totActionItemForPaging : '.$totActionItemForPaging;
+//
+    if (($totalAcitCheck % $rowsPerPage) == 0) {
+        $noOfPagesAsLink = $totalAcitCheck / $rowsPerPage;
+    } else {
+        $noOfPagesAsLink = ($totalAcitCheck / $rowsPerPage) + 1;
+    }
+    $resActionItem = mysqli_query($conn, $qSelActionItem) or die(mysqli_error($conn));
+    $totalNextGirvi = mysqli_num_rows($resActionItem);
+    ?>
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+     <tr>
+                <td align="left" colspan="2">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td valign="bottom" align="left" width="33px" >
+                                <img src="<?php echo $documentRoot; ?>/images/actions32.png" alt="omgold jewellery home" />
+                            </td>
+                            <td align="left" width="120px" class="marginTop7"
+                                title="इस पॅनल की सहायता से आप अपने ज़रूरी कार्यो की सूची बना सकते है! &#10;This panel will help you to make the list of your important works!">
+                                <img src="<?php echo $documentRoot; ?>/images/to-do.png" alt="TO DO LIST" />
+                            </td>
+                            <td align="left" width="60px" class="marginTop7">
+                                <!----------Start code to add code @Author:PRIYA11JUL14-------------->
+                                <?php
+                                $qSelNoOfRows = "SELECT omin_value FROM omindicators where omin_own_id='$_SESSION[sessionOwnerId]' and omin_option = 'indiacitpnrw'";
+                                $resNoOfRows = mysqli_query($conn, $qSelNoOfRows);
+                                $rowNoOfRows = mysqli_fetch_array($resNoOfRows, MYSQLI_ASSOC);
+                                $rowsPerPage = $rowNoOfRows['omin_value'];
+                                if ($rowsPerPage == '' || $rowsPerPage == NULL || $rowsPerPage == 0) {
+                                    $rowsPerPage = 10;
+                                }
+                                ?>
+                                (<input id="acitRowsPerPage" name="acitRowsPerPage" type="text" value="<?php echo $rowsPerPage; ?>" title="Enter number of Items To See In List"
+                                        size="1" maxlength="4" class="inputFieldWithotBorder orange"
+                                        onkeyup="if (event.keyCode == 13 && document.getElementById('acitRowsPerPage').value != '') {
+                                                    showNoOfRows('<?php echo $documentRoot; ?>', document.getElementById('acitRowsPerPage').value, '1', 'AcitUpdateRows', '<?php echo $panel; ?>', '');
+                                                    document.getElementById('rowsPerPage').value = '';
+                                                }"
+                                        onblur="if (document.getElementById('acitRowsPerPage').value != '') {
+                                                    showNoOfRows('<?php echo $documentRoot; ?>', document.getElementById('acitRowsPerPage').value, '1', 'AcitUpdateRows', '<?php echo $panel; ?>', '');
+                                                    document.getElementById('rowsPerPage').value = '';
+                                                }"
+                                        onclick="this.placeholder = 'ROWS';
+                                                this.value = '';"
+                                        onkeypress="javascript:return valKeyPressedForNumber(event);"   />)
+                                <!----------End code to add code @Author:PRIYA11JUL14-------------->
+                            </td>
+                            <!--  START CODE PRIYA24 -->
+                            <td valign="middle" align="center" width="5px">
+                                &nbsp;
+                            </td>
+<!--                            <td valign="middle" align="center" width="18px" title="Click here to Add New Action Item!">
+                                <a style="cursor: pointer;" onclick="showAddNewActionItemDiv()">
+                                    <img src="<?php echo $documentRoot; ?>/images/update16.png" alt="" class="marginTop5" />
+                                </a>
+                            </td>-->
+                            <!--  END CODE PRIYA24 -->
+
+                            <!--START CODE TO ADD DIV @AUTHOR:PRIYA19JAN13-->
+                            <!-------------Start code to change div @Author:PRIYA03JUL14------------->
+                            <td align="center" valign="bottom">
+                                <div class="analysis_div_rows" id="messDisplayDiv">
+                                    <?php
+                                    $getMessage = $_GET['message'];
+                                    if ($getMessage != '') {
+                                        echo $getMessage;
+                                    }
+                                    ?>
+                                </div>
+                            </td>
+                            <!-------------End code to change div @Author:PRIYA03JUL14------------->
+                            <!--END CODE TO ADD DIV @AUTHOR:PRIYA19JAN13-->
+                            <td valign="middle" align="center" width="5px">
+                                <div id="ajaxLoadSrchCustToAddGirviDiv" style="visibility: hidden">
+                                    <?php include 'omzaajld.php'; ?>
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" width="100px" title="Click To View List !">
+                                <div class="floatLeft cursor selectWithoutArrow_noFont bold">
+                                    <select id="acitList" name="acitList"
+                                            onchange="javascript: getActionItemList(this.value,'<?php echo $custId; ?>');"
+                                            class="cursor selectWithoutArrow_noFont fs_13">
+                                        <option value="activeList" <?php echo $optionDailyAcitSel[0]; ?>>ACTIVE LIST</option>
+                                        <option value="doneList" <?php echo $optionDailyAcitSel[1]; ?>>DONE LIST</option>
+                                        <!-- START CODE TO ADD OPTION STAFF ACTION ITEM LIST FOR OWNER @AUTHOR:MADHUREE-03JULY2020 -->
+                                        <!--<option value="completeList" <?php echo $optionDailyAcitSel[4]; ?>>COMPLETE LIST</option>-->
+                                        <!-- END CODE TO ADD OPTION STAFF ACTION ITEM LIST FOR OWNER @AUTHOR:MADHUREE-03JULY2020 -->
+                                        <option value="deletedList" <?php echo $optionDailyAcitSel[2]; ?>>DELETED LIST</option>
+                                        <!-- START CODE TO ADD OPTION STAFF ACTION ITEM LIST FOR OWNER @AUTHOR:MADHUREE-03JULY2020 -->
+                                        <?php if ($staffId == '' || $staffId == NULL) { ?>
+                                            <!--<option value="staffActionItemList" <?php echo $optionDailyAcitSel[3]; ?>>STAFF TO-DO LIST</option>-->
+                                        <?php }
+                                        ?>
+                                        <!-- END CODE TO ADD OPTION STAFF ACTION ITEM LIST FOR OWNER @AUTHOR:MADHUREE-03JULY2020 -->
+                                    </select>
+                                </div>
+                            </td> 
+                            <td valign="middle" align="right" width="15px" style="padding-top: 8px;" title="Click To close details ! ">
+                                <div id="ajaxCloseAddNewActionItem" style="visibility: hidden" class="ajaxClose">
+                                    <a style="cursor: pointer;" onclick="closeAddMoreActionItemTaskDiv();">
+                                        <?php include 'omzaajcl.php'; ?>
+                                    </a>
+                                </div>
+                            </td> 
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><!---Change in line @AUTHOR: SANDY09JAN14----->
+                    <div class="hrGold"></div>
+                </td>
+            </tr>
+    </table>
+    <div id ="acitListDiv">
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <?php
+        if ($sNo == '')
+            $sNo = 1;
+        else {
+            $sNo = $perOffset + 1;
+        }
+        $cat;
+        if ($totalNextGirvi <= 0) {
+            ?>
+            <tr>
+                <td valign="middle" align="center" class="ff_tnr fs_12 brown">
+                    <?php if ($searchColumn != NULL) { ?>NO RECORED FOUND<?php } ?>
+                </td>
+            </tr>
+            <?php if (($totalAcitCheck != NULL || $totalAcitCheck == 0) && $searchColumn != NULL) { ?>
+                <tr>
+                    <td valign="middle" align="center" width="58px" height="50px">
+                        <a onclick="searchActionItemPanel('<?php echo $documentRoot; ?>', '', '', '', '', '', '');"
+                           style="cursor: pointer;">
+                            <img src="<?php echo $documentRoot; ?>/images/back32.png" alt="Back" 
+                                 title="Click to get back on page!"/>
+                        </a>
+                    </td>
+                </tr>
+                <?php
+            }
+        } else {
+            ?> 
+            <tr>
+                <td align="center">
+                    <div class="ff_calibri fs_13 fw_b brown">S NO</div>
+                </td>
+                <td align="left" class="ff_calibri fs_13 fw_b brown">
+                    <table border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tr>
+                            <td align="left">
+
+                                <div class="ff_calibri fs_13 fw_b brown spaceLeft5">
+                                    <input id="taskDescTitle" type="text" name="taskDescTitle" placeholder="TASK DESC"
+                                           value = "<?php
+                                           if ($searchColumnName == 'acit_subject')
+                                               echo $searchColumnValue;
+                                           else
+                                               echo 'TASK DESC';
+                                           ?>"
+                                           onclick = "javascript:this.value = '';"
+                                           onblur = "javascript:if (document.getElementById('taskDescTitle').value != '') {
+                                                           searchActionItemPanel('<?php echo $documentRoot; ?>', 'acit_subject', document.getElementById('taskDescTitle').value,
+                                                                   '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                       } else {
+                                                           document.getElementById('taskDescTitle').value = '<?php
+                                           if ($searchColumnValue == 'acit_subject')
+                                               echo $searchColumnValue;
+                                           else
+                                               echo 'TASK DESC';
+                                           ?>';
+                                                       }"
+                                           onkeyup = "if (event.keyCode == 13 && document.getElementById('taskDescTitle').value != '') {
+                                                           searchActionItemPanel('<?php echo $documentRoot; ?>', 'acit_subject', document.getElementById('taskDescTitle').value,
+                                                                   '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                       }"
+                                           size = "7" maxlength = "30" class = "lgn-txtfield-without-borderAndBackground13-Arial" />
+                                </div>
+                            </td> 
+<!--                            <td align="left">
+                                <a style="cursor: pointer;" title="Click To View List By Desc"
+                                   onclick="sortActionItemPanel('<?php echo $documentRoot; ?>', 'acit_subject', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>');">
+                                       <?php if ($sortKeywordValue == "acit_subject") { ?>
+                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                </a>
+                            </td>-->
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" class="ff_calibri fs_13 fw_b brown">
+                    <table border="0" cellspacing="0" cellpadding="0" align="left">
+                        <tr>
+                            <td align="left">
+                                <div class="ff_calibri ff_calibri fs_13 fw_b brown">
+                                    <input id="taskCatTitle" type="text" name="taskCatTitle" placeholder="CATEGORY"
+                                           value = "<?php
+                                           if ($searchColumnName == 'acit_category')
+                                               echo $searchColumnValue;
+                                           else
+                                               echo 'CATEGORY';
+                                           ?>"
+                                           onclick = "javascript:this.value = '';"
+                                           onblur = "javascript:if (document.getElementById('taskCatTitle').value != '') {
+                                                           searchActionItemPanel('<?php echo $documentRoot; ?>', 'acit_category', document.getElementById('taskCatTitle').value,
+                                                                   '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                       } else {
+                                                           document.getElementById('taskCatTitle').value = '<?php
+                                           if ($searchColumnValue == 'acit_category')
+                                               echo $searchColumnValue;
+                                           else
+                                               echo 'CATEGORY';
+                                           ?>';
+                                                       }"
+                                           onkeyup = "if (event.keyCode == 13 && document.getElementById('taskCatTitle').value != '') {
+                                                           searchActionItemPanel('<?php echo $documentRoot; ?>', 'acit_category', document.getElementById('taskCatTitle').value,
+                                                                   '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                       }"
+                                           size = "7" maxlength = "30" class = "lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5" />
+                                </div>
+                            </td>
+<!--                            <td align="left">
+                                <a style="cursor: pointer;" title="Click To View List By Category"
+                                   onclick="sortActionItemPanel('<?php echo $documentRoot; ?>', 'acit_category', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>')">
+                                       <?php if ($sortKeywordValue == "acit_category") { ?>
+                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                </a>
+                            </td>-->
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" class="ff_calibri fs_13 fw_b brown" width='120px'>
+                    <table border="0" cellspacing="0" cellpadding="0" width='100%' align="left">
+                        <tr>
+                            <td align="left">
+                                <input id="sDate" type="text" name="sDate" placeholder="DD.MM.YY" 
+                                       value="<?php
+                                       if ($searchColumnName == "DAY(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'),\'%y\')")
+                                           echo $searchColumnValue;
+                                       else
+                                           echo 'START DATE';
+                                       ?>" 
+                                       onclick="this.value = '';"
+                                       onblur="javascript:if (document.getElementById('sDate').value != '') {
+                                                       searchActionItemPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'),\'%y\')', document.getElementById('sDate').value,
+                                                               '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                   } else {
+                                                       document.getElementById('sDate').value = '<?php
+                                       if ($searchColumnName == "DAY(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'),\'%y\')")
+                                           echo $searchColumnValue;
+                                       else
+                                           echo 'START DATE';
+                                       ?>';
+                                                   }"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                          
+                                       onkeyup="if (event.keyCode == 13 && document.getElementById('sDate').value != '') {
+                                                       searchActionItemPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\'),\'%y\')', document.getElementById('sDate').value,
+                                                               '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                   }"
+                                       size="8" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                            </td>
+<!--                            <td align="left">
+                                <a style="cursor: pointer;" title="Click To View List By Start date"
+                                   onclick="sortActionItemPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(acit_start_DOB,\'%d/%m/%Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>')">
+                                       <?php if ($sortKeywordValue == "STR_TO_DATE(acit_start_DOB,'%d/%m/%Y')") { ?>
+                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                </a>
+                            </td>-->
+                        </tr>
+                    </table>
+                </td>
+                <td align="left" class="ff_calibri fs_13 fw_b brown" width='120px'>
+
+                    <table border="0" cellspacing="0" cellpadding="0" width='100%' align="left">
+                        <tr>
+                            <td align="left">
+                                <input id="eDate" type="text" name="eDate" placeholder="DD.MM.YY" 
+                                       value="<?php
+                                       if ($searchColumnName == "DAY(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'),\'%y\')")
+                                           echo $searchColumnValue;
+                                       else
+                                           echo 'END DATE';
+                                       ?>" 
+                                       onclick="this.value = '';"
+                                       onblur="javascript:if (document.getElementById('eDate').value != '') {
+                                                       searchActionItemPanel('<?php echo $documentRoot; ?>', 'DAY(acit_end_DOB,\'%d/%m/%Y\'))@MONTH(acit_end_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\')', document.getElementById('eDate').value,
+                                                               '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                   } else {
+                                                       document.getElementById('eDate').value = '<?php
+                                       if ($searchColumnName == "DAY(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'),\'%y\')")
+                                           echo $searchColumnValue;
+                                       else
+                                           echo 'END DATE';
+                                       ?>';
+                                                   }"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"                          
+                                       onkeyup="if (event.keyCode == 13 && document.getElementById('eDate').value != '') {
+                                                       searchActionItemPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@MONTH(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'))@DATE_FORMAT(STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\'),\'%y\')', document.getElementById('eDate').value,
+                                                               '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>', '<?php echo $sNo; ?>');
+                                                   }"
+                                       size="7" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                            </td>
+<!--                            <td align="left">
+                                <a style="cursor: pointer;" title="Click To View List By End Date"
+                                   onclick="sortActionItemPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(acit_end_DOB,\'%d/%m/%Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>')">
+                                       <?php if ($sortKeywordValue == "STR_TO_DATE(acit_end_DOB,'%d/%m/%Y')") { ?>
+                                        <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                                    <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                                </a>
+                            </td>-->
+                        </tr>
+                    </table>
+                </td>
+                <?php if ($listPanel != 'completeList') { ?>
+                    <td align="center">
+                        <div class="ff_calibri fs_13 fw_b brown">DONE</div>
+                    </td>
+                    <!--***********start code to hide delete and Reschedule :Author:SWAPNIL14JAN2020-->
+                    <?php if ($staffId == '' || ($staffId && $array['updateActionItemAccess'] == 'true')) { ?>
+                        <td align="center">
+                            <div class="ff_calibri fs_13 fw_b brown">RESCHEDULE</div>
+                        </td>
+                    <?php } ?>
+                    <?php if ($staffId == '' || ($staffId && $array['updateActionItemAccess'] == 'true')) { ?>
+                        <td align="center">
+                            <div class="ff_calibri fs_13 fw_b brown">DELETE</div>
+                        </td>
+                    <?php } ?>
+                <?php } else { ?>
+                    <td align="left">
+                        <div class="ff_calibri fs_13 fw_b brown spaceLeft5">DONE DATE</div>
+                    </td>
+                    <td align="left">
+                        <div class="ff_calibri fs_13 fw_b brown spaceLeft5">COMPLETE DATE</div>
+                    </td>
+                <?php } ?>
+                <td align="left">
+                    <div class="ff_calibri fs_13 fw_b brown spaceLeft5">USER NAME</div>
+                </td>
+                <td align="left">
+                    <div class="ff_calibri fs_13 fw_b brown spaceLeft5">OCCURRENCE</div>
+                </td>
+                
+                <td align="left">
+                    <div class="ff_calibri fs_13 fw_b brown spaceLeft5">STAFF ID
+
+<!--                        <a style="cursor: pointer;" title="Click To View List By Category"
+                           onclick="sortActionItemPanel('<?php echo $documentRoot; ?>', 'acit_login_id', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $listPanel; ?>')">
+                               <?php if ($sortKeywordValue == "acit_login_id") { ?>
+                                <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+                            <?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                        </a>-->
+                    </div>
+                </td>
+
+                <td align="left">
+                    <div class="ff_calibri fs_13 fw_b brown spaceLeft5">FIRM</div>
+                </td>
+            </tr>
+            <?php
+            $todayDate = strtoupper(date('yy-m-d'));
+            $staffCheck;
+            while ($rowActionItem = mysqli_fetch_array($resActionItem, MYSQLI_ASSOC)) {
+                parse_str(getTableValues("SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and"
+                                . " firm_id='$rowActionItem[acit_FirmId]'"));
+
+                $date = explode(" ", $rowActionItem['acit_start_DOB']);
+                $date = $date[0];
+                $eDate = explode(" ", $rowActionItem['acit_end_DOB']);
+                $eDate = $eDate[0];
+
+                $staff = explode(" ", $rowActionItem['acit_login_id']);
+                $staff = $staff[0];
+                
+                $custId = $rowActionItem['acit_user_id'];
+                
+                $custAcitId = $rowActionItem['acit_id'];
+
+
+//                echo '$eDate'.$eDate;
+                if (($staffId != NULL && $staffId != '') || ($listPanel == 'staffActionItemList' || $listPanel == 'doneList' || $listPanel == 'deletedList' || $listPanel == 'completeList')) {
+                    if ($sortKeyword == 'acit_login_id' && om_strtoupper($staffCheck) != om_strtoupper($staff)) {
+                        ?>
+                        <tr>
+                            <td align="left" class="paddingLeft15 ff_calibri fs_13 fw_b" colspan="12">
+                                <div class="ff_calibri fs_13"><?php echo om_strtoupper($staff); ?>&nbsp;TO-LIST</div>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                }
+                if ($sortKeyword == 'acit_category' && om_strtoupper($rowActionItem['acit_category']) != om_strtoupper($cat)) {
+                    ?>
+                    <tr>
+                        <td align="left" class="paddingLeft15 ff_calibri fs_13 fw_b" colspan="12">
+                            <div class="ff_calibri fs_13"><?php echo om_strtoupper($rowActionItem['acit_category']); ?>&nbsp;TO-LIST</div>
+                        </td>
+                    </tr>
+                    <?php
+                }
+                if ($sortKeyword == "STR_TO_DATE(acit_start_DOB,'%d/%m/%Y')" && $date != $startDate) {
+                    ?>
+                    <tr>
+                        <td align="left" class="paddingLeft15 ff_calibri fs_13 fw_b" colspan="12">
+                            <div class="ff_calibri fs_13"><?php echo $date; ?>&nbsp;TO-LIST</div>
+                        </td>
+                    </tr>
+                <?php } else if ($sortKeyword == "STR_TO_DATE(acit_end_DOB,'%d/%m/%Y')" && $eDate != $endDate) {
+                    ?>
+                    <tr>
+                        <td align="left" class="paddingLeft15 ff_calibri fs_13 fw_b" colspan="12">
+                            <div class="ff_calibri fs_13"><?php echo $eDate; ?>&nbsp;TO-LIST</div>
+                        </td>
+                    </tr>
+                <?php } ?>
+                <tr>
+                    <td align="center">
+                        <div class="ff_calibri fs_13"><?php echo $sNo; ?></div>
+                    </td>
+                    <?php if ($staffId == '' || ($staffId && $array['updateActionItemAccess'] == 'true') || $user_category == 'Administrator') { ?>
+                        <td align="left"><!--***********Start code to add update function for Reminder Panel:Author:SANT07FEB17-->
+                            <div class="ff_calibri fs_13 spaceLeft5">
+                                <?php if ($paypanelName == 'ReminderPanel') { ?>
+                                    <a style="cursor: pointer;" title="CLICK TO UPDATE/MODIFY DETAILS!"
+
+                                       onclick="showUpdateReminderItemDiv('<?php echo $rowActionItem['acit_id']; ?>');"> 
+                                        <div class="orangeCalibriLink"><?php echo $rowActionItem['acit_subject']; ?></div>
+                                    </a>
+                                <?php } else { ?>
+                                    <a style="cursor: pointer;" title="CLICK TO UPDATE/MODIFY DETAILS!"
+                                    <?php if ($listPanel != 'completeList') { ?>
+                                           onclick="showUpdateNewActionItemDiv('<?php echo $rowActionItem['acit_id']; ?>');" <?php } ?>>
+                                        <div <?php if ($todayDate == $date) { ?> style="color:#228df2;" <?php } ?><?php if ($eDate == $todayDate || $eDate < $todayDate) { ?> style="color:#d10a0a;" <?php } ?>><?php echo strtoupper($rowActionItem['acit_subject']); ?></div>
+                                    </a>
+                                </div>
+
+                            </td><!--***********End code to add update function for Reminder Panel:Author:SANT07FEB17-->
+                        <?php } ?>
+                    <?php } else {
+                        ?>
+                        <!--//***********Start code to add update function for Reminder Panel:Author:SANT07FEB17-->
+                        <td align="left">
+
+                            <div class="ff_calibri fs_13 spaceLeft5">
+                                <?php if ($paypanelName == 'ReminderPanel') { ?>
+                                    <a style="cursor: pointer;" 
+
+                                       onclick=""> 
+                                        <div class="orangeCalibriLink"><?php echo strtoupper($rowActionItem['acit_subject']); ?></div>
+                                    </a>
+                                <?php } else { ?>
+                                    <!--***********Start code to Remove  update function for staff Panel:Author:SWAPNIL22JAN2020-->
+                                    <a style="cursor: pointer;" 
+
+                                       onclick="">  
+                                        <!--\\ check condition to change color task description author @SWAPNIL10FEB2020-->
+                                        <div <?php if ($todayDate == $date || strtoupper(date('jMY')) == $date) { ?> style="color:#228df2;" <?php } ?><?php if ($eDate == $todayDate || $eDate < $todayDate || $eDate == strtoupper(date('jMY')) || $eDate < strtoupper(date('jMY'))) { ?> style="color:#d10a0a;" <?php } ?>><?php echo strtoupper($rowActionItem['acit_subject']); ?></div>
+                                    </a>
+                                    <!--***********End code to Remove  update function for staff Panel:Author:SWAPNIL22JAN2020-->
+
+                                </div>
+
+                                <!--</td>***********End code to add update function for Reminder Panel:Author:SANT07FEB17-->
+                            <?php } ?>
+                        <?php }
+                        ?>
+
+                    <td align="left">
+                        <div class="ff_calibri fs_13 spaceLeft5"><?php echo strtoupper($rowActionItem['acit_category']); ?></div>
+                    </td>
+                    <td align="left">
+                        <?php
+                        $acitStartDateArray = explode(' ', $rowActionItem['acit_start_DOB']);
+                        $acitStartDate = $acitStartDateArray[0];
+                        ?>
+                        <div class="ff_calibri fs_13 spaceLeft5"> <?php echo $acitStartDate; ?> </div>
+                    </td>
+                    <td align="left">
+                        <?php
+                        $acitEndDateArray = explode(' ', $rowActionItem['acit_end_DOB']);
+                        $acitEndDate = $acitEndDateArray[0];
+                        ?>
+                        <div class="ff_calibri fs_13 spaceLeft5"><?php echo $acitEndDate; ?></div>
+                    </td>
+                    <?php
+                    if ($listPanel != 'completeList') {
+                        if ($listPanel == 'doneList' || $listPanel == 'deletedList') {
+                            ?>
+                            <td align="center">
+                                <a style="cursor: pointer;"  id="<?php echo "$actionItemID"; ?>" onclick="addActionItemToDoneList('<?php echo $rowActionItem['acit_id']; ?>', 'doneList');">
+                                    <img src="<?php echo $documentRoot; ?>/images/active.png" alt="" class="marginTop5" />
+                                </a>
+                            </td>
+                        <?php } else { ?>
+                            <td align="center">
+                                <a style="cursor: pointer;"  id="<?php echo "$actionItemID"; ?>" onclick="addActionItemToDoneList('<?php echo $rowActionItem['acit_id']; ?>', 'activeList');">
+                                    <img src="<?php echo $documentRoot; ?>/images/right16.png" alt="" class="marginTop5" />
+                                </a>
+                            </td>
+                        <?php } ?>
+                        <!------Start code to add conditions to check staffId @Author:PRIYA13MAR15---------->
+                        <?php if ($staffId == '' || ($staffId && $array['updateActionItemAccess'] == 'true')) { ?>
+                            <td align="center">
+                                <?php if ($staffId == '' || ($staffId && $array['updateActionItemAccess'] == 'true')) { ?>
+                                    <a style="cursor: pointer;"  id="<?php echo "$actionItemID"; ?>" onclick="showUpdateNewActionItemDiv('<?php echo $rowActionItem['acit_id']; ?>');">
+                                        <img src="<?php echo $documentRoot; ?>/images/update16.png" alt="" class="marginTop5"/>
+                                    </a>
+                                <?php } ?>
+                            </td>
+                            <td align="center">
+                                <?php if ($staffId == '' || ($staffId && $array['deleteActionItemAccess'] == 'true')) { ?>
+                                    <a style="cursor: pointer;" onclick="deleteActionItem('<?php echo $rowActionItem['acit_id']; ?>', '<?php echo $listPanel; ?>');">
+                                        <img src="<?php echo $documentRoot; ?>/images/delete16.png"/>
+                                    </a>
+                                <?php } ?>
+                            </td>
+                            <?php
+                        }
+                    } else {
+                        ?>
+                        <td align="left">
+                            <?php
+                            $acitDoneDateArray = explode(' ', $rowActionItem['acit_done_date']);
+                            $acitDoneDate = $acitDoneDateArray[0];
+                            ?>
+                            <div class="ff_calibri fs_13 spaceLeft5"> <?php echo $acitDoneDate; ?> </div>
+                        </td>
+                        <td align="left">
+                            <?php
+                            $acitCompleteDateArray = explode(' ', $rowActionItem['acit_complete_DOB']);
+                            $acitCompleteDate = $acitCompleteDateArray[0];
+                            ?>
+                            <div class="ff_calibri fs_13 spaceLeft5"><?php echo $acitCompleteDate; ?></div>
+                        </td>
+                    <?php }
+                    ?>
+                    <!------End code to add conditions to check staffId @Author:PRIYA13MAR15---------->
+                    <td align="left">
+                        <div class="ff_calibri fs_13 spaceLeft5">
+                            <?php
+                                    $userCustmid = "SELECT user_fname FROM user where user_id='$custId'";
+                                    $rescustmacitid = mysqli_query($conn, $userCustmid);
+                                    $rowcustmacitid = mysqli_fetch_array($rescustmacitid);
+                                    $acituserid = $rowcustmacitid['user_fname'];
+                                    //
+                                    echo strtoupper($acituserid);
+                            ?>
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="ff_calibri fs_13 spaceLeft5"><?php echo strtoupper($rowActionItem['acit_TaskRepeat']); ?></div>
+                    </td>
+                    <td align="left">
+                        <div class="ff_calibri fs_13 spaceLeft5"><?php echo strtoupper($rowActionItem['acit_login_id']); ?></div>
+                    </td>
+
+                    <td align="left">
+                        <div class="ff_calibri fs_13 spaceLeft5"><?php echo $firm_name; ?></div>
+                    </td>
+                </tr>
+                <?php
+                $sNo++;
+                $cat = $rowActionItem['acit_category'];
+                $startDate = $date;
+                $endDate = $eDate;
+                $staffCheck = explode(" ", $rowActionItem['acit_login_id']);
+                $staffCheck = $staffCheck[0];
+            }
+            ?>
+            <?php
+            if ($totalAcitCheck > 0) {
+                $noOfPagesAsLink = ceil($totalAcitCheck / $rowsPerPage);
+                if ($pageNum > $noOfPagesAsLink || $pageNum < 0) {
+                    echo "<h1> ~ This Page is not available. ~ </h1>";
+                } else {
+                    ?>
+                    <tr>
+                        <td colspan="12" align="right" class="noPrint">
+                            <table cellpadding="2" cellspacing="2" border="0" align="right" class="noPrint">
+                                <tr>
+                                    <td align="right">
+                                        <?php if (($pageNum - 1) != '0') { ?>
+                                            <input type="submit" id="prvPageButt" name="prvPageButt" value="PREV" class="pageNoButton"
+                                                   onclick="javascript:showSelectedPage('<?php echo $pageNum - 1; ?>', 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');" />
+                                               <?php } ?>
+                                    </td>
+                                    <?php
+                                    if ($pageNum == 1 || $pageNum < 10) {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            if (($noOfPagesAsLink >= $i) && ($noOfPagesAsLink != 1)) {
+                                                ?>
+                                                <td align="right">
+                                                    <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" <?php if (($i == 1) && ($pageNum == 1)) { ?>class="currentPageNoButton" <?php } else { ?>class="pageNoButton" <?php } ?>
+                                                           value="<?php echo $i ?>"
+                                                           onclick="javascript:showSelectedPage(this.value, 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');"/>
+                                                </td>
+                                                <?php
+                                            }
+                                        }
+                                    } else {
+                                        for ($i = 1; $i <= 10; $i++) {
+                                            ?>
+                                            <td align="right">
+                                                <input type="submit" id="pageNoTextField<?php echo $i; ?>" name="pageNoTextField<?php echo $i; ?>" class="pageNoButton" 
+                                                       onclick="javascript:showSelectedPage(this.value, 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');"/>
+                                            </td>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                    <td align="right">
+                                        <?php if (($pageNum + 1) <= $noOfPagesAsLink) { ?>
+                                            <input type="submit" id="nextPageButt" name="nextPageButt" value="NEXT" class="pageNoButton"
+                                                   onclick="javascript:showSelectedPage('<?php echo $pageNum + 1; ?>', 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');"
+                                                   />
+                                               <?php } ?>
+                                    </td>
+                                    <?php if ($noOfPagesAsLink > 1) { ?>
+                                        <!--Start to add textfield to navigate to any page randomly @AUTHOR: SANDY31OCT13------------->
+                                        <!---Change in value of input field @AUTHOR: SANDY9NOV13------------------>
+                                        <td align="right" class="paddingLeft15">
+                                            <input type="text" id="enterPageNo" name="enterPageNo" placeholder="PAGE NO" class="pageNoButton" size="7"
+                                                   onblur="if (this.value !== '') {
+                                                                               javascript:showSelectedPage(this.value, 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');
+                                                                           }"
+                                                   onkeypress="if (event.keyCode == '13') {
+                                                                               if (this.value !== '') {
+                                                                                   javascript:showSelectedPage(this.value, 'AcitList', '<?php echo $rowsPerPage; ?>', '<?php echo $noOfPagesAsLink; ?>', '', '<?php echo $sortKeyword; ?>', '<?php echo $searchColumnName; ?>', '<?php echo $searchColumnValue; ?>', '', '<?php echo $sNo; ?>', '<?php echo $listPanel; ?>');
+                                                                               }
+                                                                           }"     
+                                                   onclick="this.value = '';"
+                                                   />
+                                        </td>
+                                        <!--End to add textfield to navigate to any page randomly @AUTHOR: SANDY31OCT13------------->
+                                    <?php } ?>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            }
+        }
+        ?>
+                    <!--***********END code to show user reminder list :Author:RUTUJA18FEB21-->
+    </table>
+        </div>
+
+</div>

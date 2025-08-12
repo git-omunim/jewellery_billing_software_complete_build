@@ -1,3 +1,441 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Feb 29, 2020 10:09:46 PM
+ *
+ * @FileName: omsalaryslipdetails.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.o
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+?>
+<div id="salaryslip">
+    <?php
+    $staffId = $_REQUEST['staffId'];   
+    $Salaryqueary = "SELECT * FROM user WHERE user_id ='$staffId'";
+    $resSalary = mysqli_query($conn, $Salaryqueary);
+    while ($rowSalary = mysqli_fetch_array($resSalary)) {
+        $user_fname = $rowSalary['user_fname'];
+        $user_lname = $rowSalary['user_lname'];
+        $user_id = $rowSalary['user_id'];
+        $user_category = $rowSalary['user_category'];
+        $user_id = $rowSalary['user_id'];
+        $user_bank_details = $rowSalary['user_bank_acc_name'];
+        $user_Band = $rowSalary['user_Band'];
+        $user_Level = $rowSalary['user_Level'];
+        $user_bank_Account_Num = $rowSalary['user_bank_acc_number'];
+        $user_bank_Branch = $rowSalary['user_bank_Branch'];
+        $user_bank_IFSC = $rowSalary['user_bank_ifsc_code'];       
+//             echo '%%%'.$current_monthW;
+        if($current_monthW == ''){
+        $current_month = date("M");
+        }  else {
+            $current_month = $current_monthW;
+        }
+        
+         if($current_yearw == ''){
+                $current_year = date("Y");
+        }  else {
+            $current_year = $current_yearw;
+        }
+        
+//        echo '@@'.$current_month;
+    //
+    $selLopFromDBQ = "SELECT * FROM omdata WHERE omdata_option = 'LOP' and omdata_user_id = '$staffId' and omdata_year='$current_year' and omdata_month='$current_month'";
+    $resLOP = mysqli_query($conn, $selLopFromDBQ);
+    $rowLOP = mysqli_fetch_array($resLOP);
+    $Lop = $rowLOP['omdata_value'];
+    //
+    $selPaybleDayFromDBQ = "SELECT * FROM omdata WHERE omdata_option = 'PAYABLE' and omdata_user_id = '$staffId' and omdata_year='$current_year' and omdata_month='$current_month'";
+    $resPayble = mysqli_query($conn, $selPaybleDayFromDBQ);
+    $rowPay = mysqli_fetch_array($resPayble);
+    $Payable = $rowPay['omdata_value'];
+    //
+    $selTotalWorkingDayFromDBQ = "SELECT * FROM omdata WHERE omdata_option = 'TOTAL_WORKING_DAY_IN_MONTH' and omdata_user_id = '$staffId' and omdata_year='$current_year' and omdata_month='$current_month'";
+    $resWorkingDay = mysqli_query($conn, $selTotalWorkingDayFromDBQ);
+    $rowWorkingDay = mysqli_fetch_array($resWorkingDay);
+    $WorkingDay = $rowWorkingDay['omdata_value'];
+    //
+        
+    $Staffqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_month='$current_month'and omdata_year='$current_year'";
+    $resStaff = mysqli_query($conn, $Staffqueary);
+    $row = mysqli_fetch_array($resStaff);
+    $omdata_option = $row ['omdata_option'];
+//        echo '$omdata_option'.$omdata_option;
+        if($omdata_option != ''){
+    ?>
+    <table border="0" align="center">
+        <tr>
+            <td>
+                <span style="text-align: center; font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                    SALARY SLIP OF THIS MONTH <span> <?php echo $current_month;?></span> <span><?php echo $current_year;  ?></span>
+                </span>
+            </td>
+        </tr>
+    </table>
+        <div class="container-fluid">
+            <table border="1" cellspacing="0" cellpadding="0" width="80%" valign="top" align="center">
+                <tr>
+                    <td width="50%">    
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            NAME :
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo om_strtoupper($user_fname . ' ' . $user_lname) ?>
+                        </span>
+                    </td>
+                    <td colspan="2">
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            WORKING DAYS :
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $WorkingDay; ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            EMP CODE : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_id; ?>
+                        </span>
+
+                    </td>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            DAYS PAYABLE :
+                        </span>
+                         <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $Payable; ?>
+                        </span>
+                    </td>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            LOP :
+                        </span>
+                         <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $Lop; ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            DESIGNATION : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_category; ?>
+                        </span>
+                    </td>
+                    <td colspan="2">
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            BANK NAME : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_bank_details; ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            BAND : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_Band; ?>
+                        </span>
+                    </td>
+                    <td colspan="2">
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            ACCOUNT NO : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_bank_Account_Num; ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            LEVEL : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_Level; ?>
+                        </span>
+                    </td>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            BRANCH : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_bank_Branch; ?>
+                        </span>
+                    </td>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            IFSC CODE : 
+                        </span>
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            <?php echo $user_bank_IFSC; ?>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+
+                        </span>
+                    </td>
+                    <td colspan="2">
+                        <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            TOTAL SAVING :
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <?php } ?>
+    <?php
+     if ($staffId != '') { 
+    $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'EARNING' AND omdata_user_id ='$staffId'and omdata_month='$current_month'and omdata_year='$current_year'";
+     }else{
+         $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'EARNING' AND omdata_user_id ='$staffId'and omdata_month='$current_month'and omdata_year='$current_year'and omdata_status='APPROVE'";
+     }
+    $resRowcountquery1 = mysqli_query($conn, $Rowcountquery1);
+    $FirstRowCount = mysqli_num_rows($resRowcountquery1);
+//                    echo '$FirstRowCount'.$FirstRowCount;
+     if ($staffId != '') { 
+    $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'DEDECTION' AND omdata_user_id ='$staffId'and omdata_month='$current_month'and omdata_year='$current_year'";
+     }else{
+         $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'DEDECTION' AND omdata_user_id ='$staffId'and omdata_month='$current_month'and omdata_year='$current_year'and omdata_status='APPROVE'";
+     }
+    $resRowcountquery1 = mysqli_query($conn, $Rowcountquery1);
+    $SecondRowCount = mysqli_num_rows($resRowcountquery1);
+//                    echo '$SecondRowCount'.$SecondRowCount;
+
+    $totalcount = $FirstRowCount - $SecondRowCount;
+//                    echo '$totalcount'.$totalcount;
+    ?>
+    <div class="container-fluid" style="margin-top: 10px;">
+        <table border="0" cellspacing="0" cellpadding="0" width="80%" valign="top"align="center">
+            <tr>
+                <td width="50%">
+                    <table border="1" cellspacing="0" cellpadding="0" width="100%" valign="top">
+                        <tr>
+                            <td colspan="2" align="center">
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Earnings
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Description
+                                </span>
+                            </td>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Amount
+                                </span>
+                            </td>
+                        </tr>
+                        <?php
+                         if ($staffId != '') { 
+                        $SalaryEarning = "SELECT * FROM omdata WHERE omdata_user_id ='$staffId' and omdata_panel='SALARY' and omdata_input_field ='EARNING'and omdata_month='$current_month'and omdata_year='$current_year'";
+                         }else{
+                             $SalaryEarning = "SELECT * FROM omdata WHERE omdata_user_id ='$staffId' and omdata_panel='SALARY' and omdata_input_field ='EARNING'and omdata_month='$current_month'and omdata_year='$current_year' and omdata_status='APPROVE'";
+                         }
+                        $resSalaryEarning = mysqli_query($conn, $SalaryEarning);
+                        while ($rowSalaryEarning = mysqli_fetch_array($resSalaryEarning)) {
+                            $omdata_optionEar = $rowSalaryEarning ['omdata_option'];
+                            $omdata_valueEar = $rowSalaryEarning['omdata_value'];
+                            ?>              
+                            <tr>
+                                <td>
+                                    <span style="font-size: 15px; color : #0d0c0c;">
+                                        <?php echo $omdata_optionEar; ?>
+                                    </span>   
+                                </td>
+                                <td> 
+                                    <span style="font-size: 15px; color : #0d0c0c;">
+                                        <?php echo $omdata_valueEar; ?>
+                                    </span>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                                    Total Earning
+                                </span>
+                            </td>
+                            <td>
+                                <?php
+                                  if ($staffId != '') { 
+                                   $Earingqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId'and omdata_input_field ='TOTALEARNING'and omdata_month='$current_month'and omdata_year='$current_year'";
+                                  }else{
+                                     $Earingqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId'and omdata_input_field ='TOTALEARNING'and omdata_month='$current_month'and omdata_year='$current_year' and omdata_status='APPROVE'"; 
+                                  }
+                                  $resEarning = mysqli_query($conn, $Earingqueary);
+                                   $rowSalary = mysqli_fetch_array($resEarning);
+                                   $Earning = $rowSalary['omdata_value'];
+                                ?>
+                                <span style="font-size: 15px; font-weight: bold; margin-left: 2px;color : #0d0c0c;">
+                                    <?php echo $Earning; ?>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="1" cellspacing="0" cellpadding="0" width="100%" valign="top">
+                        <tr>
+                            <td colspan="2" align="center">
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Deduction
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Description
+                                </span>
+                            </td>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color:#11a0d9;">
+                                    Amount
+                                </span>
+                            </td>
+                        </tr>
+                        <?php
+                        if ($staffId != '') { 
+                        $SalaryDeduction = "SELECT * FROM omdata WHERE omdata_user_id ='$staffId' and omdata_panel='SALARY' and omdata_input_field ='DEDECTION'and omdata_month='$current_month'and omdata_year='$current_year'";
+                        }else{
+                            $SalaryDeduction = "SELECT * FROM omdata WHERE omdata_user_id ='$staffId' and omdata_panel='SALARY' and omdata_input_field ='DEDECTION'and omdata_month='$current_month'and omdata_year='$current_year'and omdata_status='APPROVE'";
+                        }
+                        $resSalaryDeduction = mysqli_query($conn, $SalaryDeduction);
+                        while ($rowSalaryDeduction = mysqli_fetch_array($resSalaryDeduction)) {
+                            $omdata_optionDed = $rowSalaryDeduction ['omdata_option'];
+                            $omdata_valueDed = $rowSalaryDeduction['omdata_value'];
+                            ?>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 15px; color : #0d0c0c;">
+                                        <?php echo $omdata_optionDed; ?>
+                                    </span>   
+                                </td>
+                                <td> 
+                                    <span style="font-size: 15px; color : #0d0c0c;">
+                                        <?php echo $omdata_valueDed; ?>
+                                    </span>
+                                </td>
+                            </tr>    
+                        <?php } ?>
+                        <?php for ($i = 0; $i < $totalcount; $i++) { ?>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 15px; color : #0d0c0c;">
+                                        &nbsp;
+                                    </span>
+                                </td>
+                                <td></td>                    
+                            </tr>
+                        <?php } ?>
+                        <tr>
+                            <td>
+                                <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                                    Total Deduction
+                                </span>
+                            </td>
+                            <td>
+                                 <?php
+                                   if ($staffId != '') { 
+                                   $Deductionqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_input_field ='TOTALDEDECTION'and omdata_month='$current_month'and omdata_year='$current_year'";
+                                   }else{
+                                   $Deductionqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_input_field ='TOTALDEDECTION'and omdata_month='$current_month'and omdata_year='$current_year'and omdata_status='APPROVE'";
+                                   }
+                                   $resDeduction = mysqli_query($conn, $Deductionqueary);
+                                   $rowSalary = mysqli_fetch_array($resDeduction);
+                                   $Deduction = $rowSalary['omdata_value'];
+                                ?>
+                                <span style="font-size: 15px; font-weight: bold; margin-left: 2px;color : #0d0c0c;">
+                                    <?php echo $Deduction; ?>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>        
+        </table>
+        <div class="container-fluid">
+            <table border="0" cellspacing="0" cellpadding="0" width="" valign="top" align="center" style="margin-top: 10px;">
+                <tr>
+                    <td width="270px">
+                        <span style="font-size: 15px; color : #0d0c0c;">
+                            &nbsp;
+                        </span>
+                    </td>
+                    <td width="145px">
+                         <span style="font-size: 15px; color : #0d0c0c;">
+                            &nbsp;
+                        </span>
+                    </td>
+                    <td colspan="0" width="0px">
+                        <table border="1" cellspacing="0" cellpadding="0" width="" valign="top" align="right" style="margin-top: 10px;">
+                            <tr>
+                                <td colspan="0" width="250px">
+                                    <span style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                                        Net Payment
+                                    </span>
+                                </td>
+                                <td width="150px">
+                                          <?php
+                                          if ($staffId != '') { 
+                                            $Netamtqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_input_field ='NETAMOUNT'and omdata_month='$current_month'and omdata_year='$current_year'";
+                                          }else{
+                                              $Netamtqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_input_field ='NETAMOUNT'and omdata_month='$current_month'and omdata_year='$current_year'and omdata_status='APPROVE'";
+                                          }
+                                          $resNetamt = mysqli_query($conn, $Netamtqueary);
+                                            $rownet = mysqli_fetch_array($resNetamt);
+                                            $Netamt = $rownet['omdata_value'];
+                                            ?>
+                                    <span style="font-size: 18px; font-weight: bold; margin-left: 2px;color : #0d0c0c;">
+                                            <?php echo $Netamt; ?>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>                   
+                </tr>
+            </table>
+        </div>
+    </div>   
+</div>  
+    <?php } ?>

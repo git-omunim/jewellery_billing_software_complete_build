@@ -1,3 +1,595 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: REPAIR ORDER ASSIGNMENT DATABASE INSERTION FILE @PRIYANKA-03APR2021
+ * **************************************************************************************
+ *
+ * Created on APR 03, 2021 12:30 PM
+ *
+ * @FileName: omrwmtad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM
+ * @version 2.7.45
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-03APR2021
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.45
+ * Version: 2.7.45
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+include 'ogiamtrts.php';
+?>
+<?php
+// 
+// Start Code to Check Demo Mode
+$qSelItemCount = "SELECT sttr_id FROM stock_transaction where sttr_item_category IN ('RawGold', 'RawSilver','OldGold','OldSilver')";
+$resItemCount = mysqli_query($conn, $qSelItemCount);
+$totalItem = mysqli_num_rows($resItemCount);
+//
+if (($_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) && $totalItem >= 5) {
+     $message = "In Demo, You can not add more than five Items!";
+     header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=False&message=' . $message);
+} else if ($_SESSION['sessionDongleStatus'] != NULL &&
+        ((($_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) && 
+           $totalItem < 5) ||
+         (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD) &&
+           $_SESSION['sessionDongleStatus'] == $gbDongleRegStatus))) {
+    //
+    /****************************************************************************************** */
+    /*************************ALL INPUTS FOR RAW METAL ENTRY********************************** */
+    /****************************************************************************************** */
+    //
+    if ($_POST['addItemDOBMonth'] == 'NotSelected' || $_POST['addItemDOBDay'] == 'NotSelected' || 
+        $_POST['addItemDOBYear'] == 'NotSelected') {
+        $rawMetalAddDob = 'N/A';
+    } else {
+        $rawMetalAddDob = $_POST['addItemDOBDay'] . ' ' . $_POST['addItemDOBMonth'] . ' ' . $_POST['addItemDOBYear'];
+    }
+    //
+    $rawOwnerId = $_SESSION['sessionOwnerId'];
+    //
+    include 'ogadrwids.php';
+    //
+    /****************************************************************************************** */
+    /*************************ALL INPUTS FOR RAW METAL ENTRY********************************** */
+    /****************************************************************************************** */
+    //
+    /****************************************************************************************** */
+    /*************************CHECK IF ALL REQUIRED I/P ARE PRESENT**************************** */
+    /****************************************************************************************** */
+    //
+    //
+    $conditionStr = " sttr_owner_id='$rawOwnerId' AND sttr_indicator = 'rawMetal' and sttr_status NOT IN ('DELETED') order by sttr_id desc LIMIT 0,1 ";
+    parse_str(getTableValues("SELECT sttr_id,sttr_owner_id, sttr_jrnl_id, sttr_firm_id, sttr_brand_id, sttr_add_date, sttr_account_id, sttr_mfg_date,
+            sttr_pre_invoice_no, sttr_invoice_no, sttr_item_pre_id, sttr_item_id, sttr_metal_type, sttr_item_name, sttr_barcode ,sttr_item_category, sttr_quantity, sttr_bis_mark,
+            sttr_gs_weight, sttr_gs_weight_type, sttr_pkt_weight, sttr_pkt_weight_type, sttr_nt_weight, sttr_nt_weight_type, sttr_fine_weight,sttr_final_fine_weight, sttr_purity,sttr_wastage,  
+            sttr_final_purity, sttr_cust_wastage,sttr_metal_rate, sttr_lab_charges, sttr_lab_charges_type,sttr_making_charges,sttr_making_charges_type,
+            sttr_valuation, sttr_stone_valuation,sttr_final_valuation, sttr_tax,sttr_tot_tax,sttr_status,sttr_item_other_info, sttr_metal_rate_id, sttr_final_val_by, sttr_size,
+            sttr_pkt_qty1,sttr_pkt_qty2,sttr_pkt_qty3,sttr_pkt_qty4,sttr_pkt_qty5,
+            sttr_pkt_weight1,sttr_pkt_weight2,sttr_pkt_weight3,sttr_pkt_weight4,sttr_pkt_weight5,sttr_total_lab_charges,
+            sttr_lab_chrg_qty1,sttr_lab_chrg_qty2,sttr_lab_chrg_qty3,sttr_lab_chrg_qty4,sttr_lab_chrg_qty5,
+            sttr_lab_chrg_val1,sttr_lab_chrg_val2,sttr_lab_chrg_val3,sttr_lab_chrg_val4,sttr_lab_chrg_val5,
+            sttr_lab_chrg_type1,sttr_lab_chrg_type2,sttr_lab_chrg_type3,sttr_lab_chrg_type4,sttr_lab_chrg_type5,
+            sttr_lab_chrg_tot1,sttr_lab_chrg_tot2,sttr_lab_chrg_tot3,sttr_lab_chrg_tot4,sttr_lab_chrg_tot5,sttr_other_charges_by
+            FROM stock_transaction where $conditionStr"));
+    //
+    $selDOBDay = substr($sttr_add_date, 0, 2);
+    $selDOBMnth = substr($sttr_add_date, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($sttr_add_date, -4);
+
+    if ($mainPanel == 'Customer' || $mainPanel == 'Supplier') {
+        if (($rawMetalType != 'Other') && ($rawMetalAddDob == '' or $rawMetalAddDob == NULL or
+             $rawPreInvNo == '' or $rawPreInvNo == NULL or $rawPostInvNo == '' or $rawPostInvNo == NULL or
+             $rawMetalName == '' or $rawMetalName == NULL or
+             $rawMetalGrossWt == NULL or $rawMetalGrossWt == '' or $rawMetalNetWt == '' or $rawMetalNetWt == NULL or
+             $rawMetalTunch == '' or $rawMetalTunch == NULL or $rawMetalRate == '' or $rawMetalRate == NULL or $rawMetalVal == '' or $rawMetalVal == NULL or $rawMetalVal == 0 or
+             $rawMetalFinalVal == '' or $rawMetalFinalVal == NULL or $rawMetalFinalVal == 0)) {
+             header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+        }
+    } 
+    else {
+        if (($rawMetalType != 'Other') && ($rawMetalAddDob == '' or $rawMetalAddDob == NULL or
+             $rawMetalName == '' or $rawMetalName == NULL or
+             $rawMetalGrossWt == NULL or $rawMetalGrossWt == '' or $rawMetalNetWt == '' or $rawMetalNetWt == NULL or
+             $rawMetalTunch == '' or $rawMetalTunch == NULL or $rawMetalRate == '' or $rawMetalRate == NULL or $rawMetalVal == '' or $rawMetalVal == NULL or $rawMetalVal == 0 or
+             $rawMetalFinalVal == '' or $rawMetalFinalVal == NULL or $rawMetalFinalVal == 0)) {
+             header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+        }
+    }
+
+    /****************************************************************************************** */
+    /*************************CHECK IF ALL REQUIRED I/P ARE PRESENT**************************** */
+    /****************************************************************************************** */
+
+    /****************************************************************************************** */
+    /*************************ADD SUPPLIER IF NOT PRESENT************************************** */
+    /****************************************************************************************** */
+   
+    if ($mainPanel != 'Customer' && $mainPanel != 'Supplier') {
+       
+        if (($panelName == 'RawDetUpPanel' || $panelName == 'RawPayUp') && $rawSupplierName != '') {
+            $suppIdPresent = callSupplierTable('select', $panelName, $supp_id, $rawFirmId, $rawSupplierName, '', '', '');
+            if ($suppIdPresent == 0) {
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$rawFirmId' and acc_user_acc='Sundry Creditors'"));
+                callSupplierTable('insert', $panelName, $supp_id, $rawFirmId, $rawSupplierName, '', '', '');
+                parse_str(getTableValues("SELECT user_id from user where user_owner_id = '$rawOwnerId' and user_type = 'SUPPLIER' and user_category = 'WholeSeller' order by user_since desc LIMIT 0, 1"));
+                $supp_id = $user_id;
+            }
+        } 
+        else {
+            if ($supp_id == '' && $rawSupplierName != '') {
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$rawFirmId' and acc_user_acc='Sundry Creditors'"));
+                $suppPresent = noOfRowsCheck('user_id', 'user', "user_owner_id = '$rawOwnerId' AND user_fname = '$rawSupplierName' AND user_type = 'SUPPLIER'");
+                if ($suppPresent > 0) {
+                    parse_str(getTableValues("SELECT user_id from user where user_owner_id = '$rawOwnerId' and user_fname = '$rawSupplierName' and user_type = 'SUPPLIER'"));
+                } else {
+                    callSupplierTable('insert', $rawPanelName, $supp_id, $rawFirmId, $rawSupplierName, '', '', $acc_id);
+                    parse_str(getTableValues("SELECT user_id from user where user_owner_id = '$rawOwnerId' and user_type = 'SUPPLIER'"));
+                }
+                $supp_id = $user_id;
+            }
+        }
+    }
+    /****************************************************************************************** */
+    /*************************ADD SUPPLIER IF NOT PRESENT************************************** */
+    /***************************************************************************************** */
+    
+    if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') {
+        
+        parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id='$_SESSION[sessionOwnerId]' AND sttr_id='$rwprId'"));
+        
+        stock_transaction('update', $_REQUEST, '');
+        
+        $sttr_id = $rwprId;
+        
+        if ($file_size != 0) {
+            // 
+            // Start Code To call common image id insertion file in stock_transaction table or stock table 
+            //
+               include 'omimginsrt.php';
+            //
+            // End Code To call common image id insertion file in stock_transaction table or stock table 
+            //
+        }
+        
+    } 
+    else if (($rawPanelName == 'AddRawStock') || ($rawPanelName == 'RawPayment') ||  
+             ($rawPanelName == 'SimilarItem')) {
+        //
+        //
+        //print_r($_REQUEST);
+        //
+        //
+        $sttr_id = stock_transaction('insert', $_REQUEST, '');
+        //
+        //
+        //
+        //
+        // *********************************************************************************************************
+        // Start Code to Assign Received Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+        // *********************************************************************************************************
+        if ($_REQUEST['mainEntryAssignStatus'] == 'READY TO ASSIGN') {
+            //
+            //
+            if ($_SESSION['setFirmSession'] != '') {
+                $strFrmId = $_SESSION['setFirmSession'];
+            } else {
+                $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+            }
+            //    
+            //
+            if ($_REQUEST['sttr_assign_entry_indicator'] == 'crystal' || 
+                $_REQUEST['sttr_assign_entry_indicator'] == 'rawMetal') {
+                //  
+                //
+                $updateQuery = "UPDATE stock_transaction SET sttr_assign_status = 'ASSIGNED', "
+                             . "sttr_assign_pre_invoice_no = '$_REQUEST[sttr_pre_invoice_no]', "
+                             . "sttr_assign_invoice_no = '$_REQUEST[sttr_invoice_no]' "
+                             . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                             . "AND sttr_firm_id IN ($strFrmId) "
+                             . "AND sttr_assign_user_id = '$_REQUEST[sttr_user_id]' "
+                             . "AND sttr_assign_status = 'READY TO ASSIGN' "
+                             . "AND sttr_indicator IN ('$_REQUEST[sttr_assign_entry_indicator]') "
+                             . "AND sttr_transaction_type IN ('RECEIVED') "
+                             . "AND sttr_id = '$_REQUEST[sttr_assign_entry_id]' "
+                             . "AND sttr_status IN ('PaymentDone') ORDER BY sttr_id ASC";
+                //
+                //echo '</br>$updateQuery @@ == @@ ' . $updateQuery . '</br>';
+                //
+                mysqli_query($conn, $updateQuery);
+                //
+                //
+                if ($_REQUEST['sttr_assign_entry_indicator'] == 'rawMetal') {
+                //
+                //    
+                if ($_REQUEST['sttr_metal_type'] == 'GOLD' || $_REQUEST['sttr_metal_type'] == 'Gold' || 
+                    $_REQUEST['sttr_metal_type'] == 'gold') {
+                    $metalTypeStr = "GOLD','Gold','gold";
+                } 
+                else if ($_REQUEST['sttr_metal_type'] == 'SILVER' || $_REQUEST['sttr_metal_type'] == 'Silver' || 
+                         $_REQUEST['sttr_metal_type'] == 'silver') {
+                    $metalTypeStr = "SILVER','Silver','silver";
+                }
+                //
+                //
+                if ($_REQUEST['sttr_metal_type'] == 'GOLD' || $_REQUEST['sttr_metal_type'] == 'Gold' || 
+                    $_REQUEST['sttr_metal_type'] == 'gold' ||
+                    $_REQUEST['sttr_metal_type'] == 'SILVER' || $_REQUEST['sttr_metal_type'] == 'Silver' || 
+                    $_REQUEST['sttr_metal_type'] == 'silver') {
+                //
+                $qSelMetalDet = "SELECT * FROM stock_transaction "
+                              . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                              . "and sttr_panel_name IN ('addNewOrder', 'addNewOrderB2') "
+                              . "and sttr_indicator IN ('stock') "
+                              . "and (sttr_assign_pre_invoice_no IS NULL OR sttr_assign_pre_invoice_no = '') "
+                              . "and sttr_direct_assign_status != 'YES' "
+                              . "and sttr_status IN ('PaymentDone') "
+                              . "and sttr_assign_status IN ('ASSIGNED') "
+                              . "and sttr_metal_type IN ('$metalTypeStr') "
+                              . "and sttr_assign_user_id IN ('$_REQUEST[sttr_user_id]') "
+                              . "and sttr_transaction_type IN ('newOrder') ORDER BY sttr_id ASC";
+                //        
+                //echo '$qSelMetalDet @@ : ' . $qSelMetalDet.'<br />';
+                //       
+                $resMetDet = mysqli_query($conn, $qSelMetalDet);
+                //        
+                //$noOfMetalEntries = mysqli_num_rows($resMetDet);
+                //        
+                while ($rowMetDet = mysqli_fetch_array($resMetDet)) {
+                    //
+                    $updateQuery2 = "UPDATE stock_transaction SET "
+                                  . "sttr_assign_pre_invoice_no = '$_REQUEST[sttr_pre_invoice_no]', "
+                                  . "sttr_assign_invoice_no = '$_REQUEST[sttr_invoice_no]' "
+                                  . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                                  . "and (sttr_id = '$rowMetDet[sttr_id]' OR sttr_sttr_id = '$rowMetDet[sttr_id]') "
+                                  . "and sttr_panel_name IN ('addNewOrder', 'CRYSTAL', 'CRYSTAL_ORDER', 'addNewOrderB2') "
+                                  . "and sttr_indicator IN ('stock', 'stockCrystal') "
+                                  . "and sttr_direct_assign_status != 'YES' "
+                                  . "and (sttr_assign_pre_invoice_no IS NULL OR sttr_assign_pre_invoice_no = '') "
+                                  . "and sttr_status IN ('PaymentDone') "
+                                  . "and sttr_assign_status IN ('ASSIGNED') "
+                                  . "and sttr_assign_user_id IN ('$_REQUEST[sttr_user_id]') "
+                                  . "and sttr_transaction_type IN ('newOrder') ORDER BY sttr_id ASC";
+                    //
+                    //echo '</br>$updateQuery2 ## == ## ' . $updateQuery2 . '</br>';
+                    //
+                    mysqli_query($conn, $updateQuery2);
+                    //
+                        }
+                    }
+                }
+                //
+                //
+            } else {
+                //
+                //
+                if ($_REQUEST['sttr_metal_type'] == 'GOLD' || $_REQUEST['sttr_metal_type'] == 'Gold' || 
+                    $_REQUEST['sttr_metal_type'] == 'gold') {
+                    $metalTypeStr = "GOLD','Gold','gold";
+                } 
+                else if ($_REQUEST['sttr_metal_type'] == 'SILVER' || $_REQUEST['sttr_metal_type'] == 'Silver' || 
+                         $_REQUEST['sttr_metal_type'] == 'silver') {
+                    $metalTypeStr = "SILVER','Silver','silver";
+                }
+                //
+                //
+                if ($_REQUEST['sttr_metal_type'] == 'GOLD' || $_REQUEST['sttr_metal_type'] == 'Gold' || 
+                    $_REQUEST['sttr_metal_type'] == 'gold' ||
+                    $_REQUEST['sttr_metal_type'] == 'SILVER' || $_REQUEST['sttr_metal_type'] == 'Silver' || 
+                    $_REQUEST['sttr_metal_type'] == 'silver') {
+                //
+                $qSelMetalDet = "SELECT * FROM stock_transaction "
+                              . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                              . "and sttr_panel_name IN ('addNewOrder', 'addNewOrderB2') "
+                              . "and sttr_indicator IN ('stock') "
+                              . "and sttr_direct_assign_status != 'YES' "
+                              . "and (sttr_assign_pre_invoice_no IS NULL OR sttr_assign_pre_invoice_no = '') "
+                              . "and sttr_status IN ('PaymentDone') "
+                              . "and sttr_assign_status IN ('ASSIGNED') "
+                              . "and sttr_metal_type IN ('$metalTypeStr') "
+                              . "and sttr_assign_user_id IN ('$_REQUEST[sttr_user_id]') "
+                              . "and sttr_transaction_type IN ('newOrder') ORDER BY sttr_id ASC";
+                //        
+                //echo '$qSelMetalDet @@ : ' . $qSelMetalDet.'<br />';
+                //       
+                $resMetDet = mysqli_query($conn, $qSelMetalDet);
+                //        
+                //$noOfMetalEntries = mysqli_num_rows($resMetDet);
+                //        
+                while ($rowMetDet = mysqli_fetch_array($resMetDet)) {
+                    //
+                    $updateQuery2 = "UPDATE stock_transaction SET "
+                                  . "sttr_assign_pre_invoice_no = '$_REQUEST[sttr_pre_invoice_no]', "
+                                  . "sttr_assign_invoice_no = '$_REQUEST[sttr_invoice_no]' "
+                                  . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                                  . "and (sttr_id = '$rowMetDet[sttr_id]' OR sttr_sttr_id = '$rowMetDet[sttr_id]') "
+                                  . "and sttr_panel_name IN ('addNewOrder', 'CRYSTAL', 'CRYSTAL_ORDER', 'addNewOrderB2') "
+                                  . "and sttr_indicator IN ('stock', 'stockCrystal') "
+                                  . "and sttr_direct_assign_status != 'YES' "
+                                  . "and (sttr_assign_pre_invoice_no IS NULL OR sttr_assign_pre_invoice_no = '') "
+                                  . "and sttr_status IN ('PaymentDone') "
+                                  . "and sttr_assign_status IN ('ASSIGNED') "
+                                  . "and sttr_assign_user_id IN ('$_REQUEST[sttr_user_id]') "
+                                  . "and sttr_transaction_type IN ('newOrder') ORDER BY sttr_id ASC";
+                    //
+                    //echo '</br>$updateQuery2 ## == ## ' . $updateQuery2 . '</br>';
+                    //
+                    mysqli_query($conn, $updateQuery2);
+                    //
+                    }
+                }
+            }
+        }
+        // *********************************************************************************************************
+        // End Code to Assign Received Orders From Assign Metal Panel @Author:PRIYANKA-11JUNE2021
+        // *********************************************************************************************************
+        //
+        //
+        //
+        //
+        $transType = mysqli_real_escape_string($conn, stripslashes(trim($_POST['sttr_transaction_type'])));
+        $panelSimilarDiv = mysqli_real_escape_string($conn, stripslashes(trim($_POST['panelSimilarDiv'])));
+        //      
+        if ($file_size != 0) {
+            // 
+            // Start Code To call common image id insertion file in stock_transaction table or stock table 
+            //
+               include 'omimginsrt.php';
+            //
+            // End Code To call common image id insertion file in stock_transaction table or stock table 
+            //
+        }
+        //
+        if ($transType == 'PURBYSUPP' && $panelSimilarDiv == 'NoSimilarItem') {
+            //
+            // START CODE TO ADD CODE FOR ADD STOCK JOURNAL ENTRIES 
+            $firmId = mysqli_real_escape_string($conn, stripslashes(trim($_POST['firmId'])));
+            $metalType = mysqli_real_escape_string($conn, stripslashes(trim($_POST['sttr_metal_type'])));
+            //
+            //
+            //echo '$firmId == '.$firmId.'<br />';
+            //echo '$metalType == '.$metalType.'<br />';
+            //
+            //
+//            if ($metalType == 'Gold' || $metalType == 'GOLD') {
+//                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock Gold'"));
+//                $accId = $acc_id;
+//            }
+//
+//            if ($metalType == 'Silver' || $metalType == 'SILVER') {
+//                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock Silver'"));
+//                $accId = $acc_id;
+//            }
+//
+//            if (($metalType != 'Gold' && $metalType != 'GOLD') && ($metalType != 'Silver' && $metalType != 'SILVER')) {
+//                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Stock (Inventory)'"));
+//                $accId = $acc_id;
+//            }
+//
+//            $date = trim($_POST['addItemDOBDay']) . ' ' . trim($_POST['addItemDOBMonth']) . ' ' . trim($_POST['addItemDOBYear']);
+//            $payAddDate = mysqli_real_escape_string($conn, stripslashes($date));
+//            $payFinalPayableAmt = mysqli_real_escape_string($conn, stripslashes(trim($_POST['sttr_final_valuation'])));
+//            $transApiType = 'insert';
+//            $transactionType = 'EXISTING';
+//            include 'omusrtranjrnl.php';
+            // END CODE TO ADD CODE FOR ADD STOCK JOURNAL ENTRIES
+        }
+    }
+    
+    //*************************************************************************************************
+    //****************** Start code to add Crystal **********************************
+    //*************************************************************************************************
+    //
+    // Add Code for Stone Functionality 
+    if ($crystalEntered != '') {
+        //
+        $cryCount = 0;
+        $cryTotWt = 0;
+        //
+        for ($j = 1; $j <= $crystalEntered; $j++) {
+            //
+            $cryAvail = trim($_POST['del' . $j]);
+            //
+            if ($cryAvail != 'Deleted') {
+                //
+                include 'ogadcyid.php';
+                //
+                // ADDED CONDITION TO MANAGE EXTRA CRYSTAL AT UPDATE TIME 
+                //if ($j > $itemCodeCount && ($panelName == 'RawDetUpPanel' || $panelName == 'RawPayUp')) {
+                    //$tableCryId = $sttr_id;
+                //}
+                //
+                $qSelCryDet = "SELECT cry_id from crystal where cry_own_id = '$_SESSION[sessionOwnerId]' "
+                            . "and cry_crystal_id = '$addItemCryId'"; // crystal table
+                $resCryDet = mysqli_query($conn, $qSelCryDet);
+                $cryAvailCount = mysqli_num_rows($resCryDet);
+                //
+                if ($cryAvailCount <= 0) {
+                    //
+                    $query = "INSERT INTO crystal (
+                    cry_own_id,cry_crystal_id,cry_name,cry_dob,cry_rate,
+                    cry_rate_type,cry_clarity,cry_color,
+                    cry_other_info,cry_upd_sts,cry_since,cry_comm) 
+                    VALUES (
+                    '$_SESSION[sessionOwnerId]','$addItemCryId','$addItemCryName','$itemDOBDay','$addItemCryRate',
+                    '$addItemCryRateTyp','$addItemCryClarity',
+                    '$addItemCryColor', '$addItemCryOtherInfo','User',$currentDateTime,'Created By User')";
+                    //
+                    if (!mysqli_query($conn, $query)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                }
+                //
+                // 
+                if ($tableCryId != '') {
+                    //
+                    // Start Code To Update Stone Values Into stock_transaction Table 
+                    //
+                       stock_transaction('update', $_REQUEST, $tableCryId, $j);
+                    //
+                    // End Code To Update Stone Values Into stock_transaction Table 
+                    //
+                } else {
+                    //
+                    // Start Code To Add Stone Values Into stock_transaction Table 
+                    //
+                    //
+                    // SET METAL TYPE FOR STONE ENTRIES FOR MASTER ITEM DETAILS FUNCTIONALITY 
+                       $itemIndicator = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_indicator'.$j])));
+                    //
+                    if ($itemIndicator == 'stockCrystal') {
+                        //
+                        $itemCryName = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_item_name'.$j])));
+                        $itemCryCat =  mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_item_category'.$j])));       
+                        $cryMetalType = 'Crystal';
+                        //
+                        callItemNameTable('select', 'Crystal', $itemCryName, $itemCryCat, $cryMetalType);
+                        //
+                    }
+                    //
+                    //
+                       stock_transaction('insert', $_REQUEST, $sttr_id, $j);
+                    //
+                    // End Code To Add Stone Values Into stock_transaction Table 
+                    //
+                }
+            }
+        }
+        //
+        // Add Code for Stone Functionality 
+        if (($rawPanelName == 'AddRawStock') || ($rawPanelName == 'RawPayment') || 
+            ($rawPanelName == 'SimilarItem') && $crystalEntered != '') {
+            //
+            // Start code to set crystal entry field in stock_transaction 
+            $query = "UPDATE stock_transaction SET sttr_crystal_yn = 'yes' WHERE  "
+                    . "sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_id = '$sttr_id'";
+            //
+            if (!mysqli_query($conn, $query)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            // End code to set crystal entry field in stock_transaction 
+            // 
+            // Start code to get LAST INSERT ID  
+            //
+            parse_str(getTableValues("SELECT * FROM stock_transaction WHERE sttr_owner_id='$_SESSION[sessionOwnerId]' "
+                                   . "AND sttr_status NOT IN ('DELETED') "
+                                   . "AND sttr_id = '$sttr_id'"));
+            // 
+            // END code to get LAST INSERT ID  
+            // 
+            //
+            $queryUpdateStone = "UPDATE stock_transaction SET sttr_barcode_prefix = '$sttr_barcode_prefix', "
+                              . "sttr_barcode = '$sttr_barcode', sttr_rfid_no = '$sttr_rfid_no', "
+                              . "sttr_user_id = '$sttr_user_id', sttr_firm_id = '$sttr_firm_id', "   
+                              . "sttr_item_pre_id = '$sttr_item_pre_id', sttr_item_id = '$sttr_item_id', "
+                              . "sttr_brand_id = '$sttr_brand_id', sttr_counter_name = '$sttr_counter_name', "
+                              . "sttr_pre_invoice_no = '$sttr_pre_invoice_no', sttr_invoice_no = '$sttr_invoice_no', "
+                              . "sttr_stock_type = '$sttr_stock_type', sttr_counter_name = '$sttr_counter_name', "
+                              . "sttr_location = '$sttr_location', sttr_transaction_type = '$sttr_transaction_type' "
+                              . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_sttr_id = '$sttr_id' "
+                              . "AND sttr_indicator = 'stockCrystal'";
+            //
+            if (!mysqli_query($conn, $queryUpdateStone)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        }
+        //
+    }
+    //*****************************************************************************************
+    //******************* End code to add Crystal ***************************
+    //*****************************************************************************************
+    //
+    //
+    if ($NavPanelName == '' || $NavPanelName == NULL)
+        $NavPanelName = $_REQUEST['NavPanelName'];
+    //
+    //
+    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+         $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        if ($clickId == 'true') {
+            header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockList&listPanel=PurchaseRawStockList' . '&NavPanelName=' . $NavPanelName);
+        } else {
+            if ($panelSimilarDiv == 'SimilarItem') {
+                header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&dispMsg=Added&rawPanelName=' . $panelSimilarDiv . '&transactionPanel=' . $transactionPanel . '&simButton=similirItem' . '&NavPanelName=' . $NavPanelName);
+            } else if ($mainPanel == 'Supplier') {
+                if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') {                   
+                    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SuppHome&suppPanelOption=SuppRawMetalInvoice&suppPanelName=addMetalByCash&suppId=" . $supp_id . "&userId=$supp_id&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SuppHome&suppPanelOption=SuppRawMetalInvoice&suppPanelName=addMetalByCash&suppId=' . $supp_id . '&userId=' . $supp_id . '&dispMsg=Added&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                }
+            } else if ($mainPanel == 'Customer') {
+                if ( $rawPanelName == 'RawPayUp') {
+                    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&panelDivName=SellPanel&suppPanelName=addMetalByCash&custId=$supp_id&userId=$supp_id&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&panelDivName=SellPanel&suppPanelName=addMetalByCash&custId=' . $supp_id . '&userId=' . $supp_id . '&dispMsg=Added&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                }
+            } else {
+                if ($rawPanelName == 'RawPayUp') {
+                    header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    if($rawPanelName == 'RawDetUpPanel' && $_REQUEST['condition'] == 'NO'){
+                        header("Location: " . $documentRoot . "/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel.'&condition='.$_REQUEST['condition'] . '&NavPanelName=' . $NavPanelName);
+                    } else{
+                        header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&dispMsg=Added&transactionPanel=' . $transactionPanel. '&simButton=similirItem' . '&NavPanelName=' . $NavPanelName); // Because Similar Item Button Should be Visible At all Situation
+                    }                    
+                }
+            }
+        }
+    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+                $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        if ($clickId == 'true') {
+            header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockList&listPanel=PurchaseRawStockList' . '&NavPanelName=' . $NavPanelName);
+        } else {
+            if ($panelSimilarDiv == 'SimilarItem') {
+                header("Location: " . $documentRoot . "/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&rawPanelName=" . $panelSimilarDiv . '&transactionPanel=' . $transactionPanel . '&simButton=similirItem' . '&NavPanelName=' . $NavPanelName);
+            } else if ($mainPanel == 'Supplier') {
+                if ($panelName == 'RawDetUpPanel' || $panelName == 'RawPayUp') {
+                    header("Location: " . $documentRoot . "/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SuppHome&suppPanelOption=SuppRawMetalInvoice&suppPanelName=addMetalByCash&suppId=" . $supp_id . "&userId=$supp_id&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SuppHome&suppPanelOption=SuppRawMetalInvoice&suppPanelName=addMetalByCash&suppId=' . $supp_id . '&userId=' . $supp_id . '&dispMsg=Added&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                }
+            } else if ($mainPanel == 'Customer') {
+                if ($panelName == 'RawDetUpPanel' || $panelName == 'RawPayUp') {
+                    header("Location: " . $documentRoot . "/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&panelDivName=SellPanel&suppPanelName=addMetalByCash&custId=$supp_id&userId=$supp_id&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=CustHome&panelDivName=SellPanel&suppPanelName=addMetalByCash&custId=' . $supp_id . '&userId=' . $supp_id . '&dispMsg=Added&transactionPanel=' . $transactionPanel . '&mainPanel=' . $mainPanel . '&metType=' . $metType . '&NavPanelName=' . $NavPanelName);
+                }
+            } else {
+                if ($panelName == 'RawDetUpPanel' || $panelName == 'RawPayUp') {
+                    header("Location: " . $documentRoot . "/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&rawPanelName=" . $rawPanelName . '&rwprId=' . $rwprId . '&transactionPanel=' . $transactionPanel . '&NavPanelName=' . $NavPanelName);
+                } else {
+                    header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=StockAdded&panelName=RawStock&dispMsg=Added&transactionPanel=' . $transactionPanel . '&NavPanelName=' . $NavPanelName);
+                }
+            }
+        }
+    }
+}
 ?>

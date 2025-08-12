@@ -1,3 +1,252 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/* FILE TO SHOW GIRVI LIST BY ML NAME
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orglbyml.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+
+$grvMlName = $_POST['girviSearchByMlName'];
+
+if ($grvMlName == '') {
+    $grvMlName = $_GET['girviSearchByMlName'];
+}
+//GET ML CODE
+//-------------------------------- Start code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+$selMlCode = "SELECT user_unique_code FROM user WHERE user_fname='$grvMlName' and user_owner_id='$_SESSION[sessionOwnerId]'";
+//-------------------------------- End code for change data from Supplier table to user table Author@:SANT16JAN16---------------------------------------------------------------->                  
+$resMlCode = mysqli_query($conn,$selMlCode);
+$strMlCode = '0';
+while ($rowMlCode = mysqli_fetch_array($resMlCode, MYSQLI_ASSOC)) {
+    $strMlCode = $strMlCode . ",";
+    $strMlCode = $strMlCode . "$rowMlCode[supp_id]";
+}
+// how many rows to show per page
+$rowsPerPage = 15;
+$checkNextRows = $rowsPerPage * 2;
+
+// by default we show first page
+$pageNum = 1;
+$gCounter = 0;
+
+// if $_GET['page'] defined, use it as page number
+if (isset($_GET['page'])) {
+    $pageNum = $_GET['page'];
+    $gCounter = ($pageNum - 1) * $rowsPerPage;
+}
+
+// counting the offset
+$perOffset = ($pageNum - 1) * $rowsPerPage;
+
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelPubFirmCount = "SELECT firm_id,firm_name,firm_owner,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+    $strFrmId = '0';
+
+    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+    }
+
+    $qSelTotalGirviCount = "SELECT girv_id FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and  girv_firm_id IN ($strFrmId) and girv_transfer_ml_id IN ($strMlCode) LIMIT $perOffset, $checkNextRows";
+    $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount);
+    $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+    $qSelAllGirvi = "SELECT * FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_firm_id IN ($strFrmId) and girv_transfer_ml_id IN ($strMlCode) order by STR_TO_DATE(girv_DOB,'%d %b %Y') desc, girv_pre_serial_num desc, girv_serial_num desc LIMIT $perOffset, $rowsPerPage";
+    $resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+    $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+    $qSelTotalGirviCount = "SELECT girv_id FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]'  and girv_transfer_ml_id IN ($strMlCode) LIMIT $perOffset, $checkNextRows";
+    $resTotalGirviCount = mysqli_query($conn,$qSelTotalGirviCount);
+    $totalGirvi = mysqli_num_rows($resTotalGirviCount);
+
+    $qSelAllGirvi = "SELECT * FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_transfer_ml_id IN ($strMlCode) order by STR_TO_DATE(girv_DOB,'%d %b %Y') desc, girv_pre_serial_num desc, girv_serial_num desc LIMIT $perOffset, $rowsPerPage";
+    $resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+    $totalNextGirvi = mysqli_num_rows($resAllGirvi);
+}
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td>
+            <table border="0" cellspacing="1" cellpadding="0">
+                <tr>
+                    <td valign="middle" align="left" width="26px">
+                        <div class="analysis_div_rows"><img src="<?php echo $documentRoot; ?>/images/village.png" alt="" /></div>
+                    </td>
+                    <td valign="middle" align="left">
+                        <div class="main_link_brown">Girvi List By Money Lender Name:</div>
+                    </td>
+                    <td align="left">
+                        <div class="main_link_green"><?php echo $grvMlName; ?></div>
+                    </td>
+                    <td align="right" valign="bottom" class="frm-lbl">
+                        <div class="spaceRight20">
+                            <div id="ajaxLoadGirviDetailsDiv" style="visibility: hidden">
+                                <?php include 'omzaajld.php'; ?>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+            <table border="0" cellspacing="1" cellpadding="1" width="100%">
+                <?php
+                if ($totalGirvi <= 0) {
+                    echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ Girvi List is empty. ~ </div></div>";
+                } else {
+                    ?>
+                    <tr>
+                        <td></td><td></td>
+                        <td colspan="5">
+                            <div id="display_girvi_info_popup" class="display-girvi-info-popup"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" width="10px">
+                            <div class="h7">S. No.</div>
+                        </td>
+                        <td align="right"  width="50px">
+                            <div class="h7">PRIN. AMT.</div>
+                        </td>
+                        <td align="right"  width="10px">
+                            <div class="h7">&nbsp;</div>
+                        </td>
+                        <td align="left" width="100px">
+                            <div class="h7">CUSTOMER NAME</div>
+                        </td>
+                        <td align="left" width="100px">
+                            <div class="h7">CITY</div>
+                        </td>
+                        <td align="left"  width="100px">
+                            <div class="h7">FIRM</div>
+                        </td>
+                        <td align="left"  width="100px">
+                            <div class="h7">ML NAME</div>
+                        </td> 
+                        <td align="left" width="50px">
+                            <div class="h7">GIRVI DATE</div>
+                        </td>      
+                    </tr>
+                    <?php
+                }
+                while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+                    $gId = $rowAllGirvi['girv_id'];
+                    $custId = $rowAllGirvi['girv_cust_id'];
+                    $gFirmId = $rowAllGirvi['girv_firm_id'];
+                    $gCustName = $rowAllGirvi['girv_cust_fname'] . ' ' . $rowAllGirvi['girv_cust_lname'];
+                    $gCustCity = $rowAllGirvi['girv_cust_city'];
+                    $gMainPrinAmt = $rowAllGirvi['girv_main_prin_amt'];
+                    $gDOB = $rowAllGirvi['girv_DOB'];
+                    $gPreSerialNo = $rowAllGirvi['girv_pre_serial_num'];
+                    $gSerialNo = $rowAllGirvi['girv_serial_num'];
+
+                    $qSelFirm = "SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$gFirmId'";
+                    $resFirm = mysqli_query($conn,$qSelFirm);
+                    $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+
+                    $gFirmName = $rowFirm['firm_name'];
+                    ?>
+                    <tr>
+                        <td align="left">
+                            <input type="submit" name="sNo" id="sNo" title="Single Click To View Girvi / Double Click To Select Girvi"
+                                   ondblclick="searchGirviByGirviId(<?php echo $gId; ?>)"
+                                   onclick="getGirviInfoPopUp(<?php echo $custId; ?>,<?php echo $gId; ?>)"
+                                   value="<?php echo $gPreSerialNo . $gSerialNo; ?>" class="frm-btn-without-border" readonly="true"/>
+                            <input type="hidden" name="girviId<?php echo $gCounter; ?>" id="girviId<?php echo $gCounter; ?>" value="<?php echo $gId; ?>"/>
+                        </td>
+                        <td align="right">
+                            <div class="amount"><?php echo $gMainPrinAmt; ?></div>
+                        </td>
+                        <td align="right"  width="10px">
+                            <div class="h7">&nbsp;</div>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $gCustName; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $gCustCity; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $gFirmName; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $grvMlName; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo date('d  M  y', strtotime($gDOB)); ?></h5>
+                        </td>
+                    </tr>
+                    <?php
+                    $gCounter++;
+                }
+                ?>
+            </table>
+            <div id="ajaxLoadNextGirviPanelList" style="visibility: hidden" align="right">
+                <?php include 'omzaajld.php'; ?>
+            </div>
+            <?php
+            if ($totalNextGirvi > 0) {
+                ?>
+                <div id="ajaxLoadNextGirviPanelListButt">
+                    <table border="0" cellpadding="2" cellspacing="0" align="right">
+                        <tr>
+                            <?php
+                            if ($pageNum > 1) {
+                                ?>
+                                <td align="right">
+                                    <form name="prev_girvi" id="prev_girvi"
+                                          action="javascript:navigationGirviPanel(<?php echo "$pageNum - 1"; ?>);"
+                                          method="get"><input type="submit" value="Previous Girvi" class="frm-btn"
+                                                        maxlength="30" size="15" /></form>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                            <?php
+                            if ($totalGirvi > $rowsPerPage) {
+                                ?>
+                                <td align="right">
+                                    <form name="next_girvi" id="next_girvi"
+                                          action="javascript:navigationGirviPanel(<?php echo $pageNum + 1; ?>);"
+                                          method="get"><input type="submit" value="Next Girvi" class="frm-btn"
+                                                        maxlength="30" size="15" /></form>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                    </table>
+                </div>
+                <?php
+            }
+            ?>
+        </td>
+    </tr>
+</table>
+

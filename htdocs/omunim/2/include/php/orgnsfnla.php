@@ -1,3 +1,189 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orgnsfnla.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+$getYear = $_GET['year'];
+$getMonth = $_GET['month'];
+$firmId = $_GET['firmId'];
+if ($getYear == '' && $getMonth == '' && $firmId = ' ') {
+    $getYear = $_POST['year'];
+    $getMonth = $_POST['month'];
+    $firmId = $_POST['firmId'];
+}
+//echo '$firmId'.$firmId;
+if (!$getMonth) {
+    $getMonth = date(M);
+}
+if (!$getYear) {
+    $getYear = date(Y);
+}
+if (!isset($_GET['firmId'])) {
+    $firmId = $_SESSION['setFirmSession'];
+}
+//echo '$firmId'.$firmId;
+?>
+<?php
+$mainGetYear = $getYear;
+//echo  "Today date:  " . date("l dS \of F Y h:i:s A") . "  ";
+$todayDate = date(d) . ' ' . date(M) . ' ' . date(Y);
+$todayDateNum = strtotime($todayDate);
+
+if ($getYear != '' && $getMonth != '') {
+
+    $todayMM = date(n, strtotime('01 ' . $getMonth . ' ' . $getYear));
+    $todayMonth = $getMonth;
+    $todayYear = $getYear;
+} else {
+
+    $todayMM = date(n);
+    $todayMonth = date(M);
+    $todayYear = date(Y);
+}
+
+/*$finYear = 0;
+
+if ($todayMM <= 3) {
+    $finYear = $todayYear + 1;
+} else {
+    $finYear = $todayYear;
+}
+
+if ($finYear > date(Y) && date(M) <= 3 && $mainGetYear == '') {
+    $finYear = $finYear - 1;
+}
+
+if ($finYear != 0) {
+    $startDate = '01 ' . $todayMonth . ' ' . $finYear;
+}comment @AUTHOR: SANDY07JAN14*/
+
+$startDate = '01 ' . $todayMonth . ' ' . $todayYear;//@AUTHOR: SANDY07JAN14
+
+$startDate = strtotime($startDate);
+
+$monthCounter = 1;
+$monthCounterLimit = 0;
+
+//START Code to fix counter for Month
+$arrLeapYear = array(31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+$arrYear = array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+
+if (($finYear % 4) == 0) {
+    $monthCounterLimit = $arrLeapYear[$todayMM - 1];
+} else {
+    $monthCounterLimit = $arrYear[$todayMM - 1];
+}
+//END code to fix Month Counter
+
+while ($monthCounter <= $monthCounterLimit) {
+
+    $totalReceivedGirviPrincipal = 0;
+    $receivedGirviPrincipal = 0;
+    $receivedNoOfGirvi = 0;
+
+
+    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+    }
+    //$qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    $resPubFirmCount = mysqli_query($conn,$qSelFirmCount);
+    if ($firmId != NULL) {
+        $strFrmId = $firmId;
+    } else {
+        $strFrmId = '0';
+
+//Set String for Public Firms
+
+        while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+            $strFrmId = $strFrmId . ",";
+            $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+        }
+    }
+
+//Recieved Girvi On Given Date
+    $qSelect = "SELECT SUM(girv_main_prin_amt) as total_prin, COUNT(girv_id) as no_of_girvi FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_DOB='" . date('d M Y', $startDate) . "' and girv_firm_id IN ($strFrmId)";
+    $qResult = mysqli_query($conn,$qSelect) or die("Error: " . mysqli_error($conn) . " with query " . $qSelect);
+    $row = mysqli_fetch_array($qResult, MYSQLI_ASSOC);
+
+    $receivedGirviPrincipal = $row['total_prin'];
+    $receivedNoOfGirvi = $row['no_of_girvi'];
+
+    //Get Total Principal Amount from Additional Pricipal Table
+    $qSelectDDNewTotalAddedPrin = "SELECT SUM(girv_prin_prin_amt) as total_prin FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_prin_DOB='" . date('d M Y', $startDate) . "' and girv_prin_firm_id IN ($strFrmId)";
+    $qResultDDNewTotalAddedPrin = mysqli_query($conn,$qSelectDDNewTotalAddedPrin);
+    $rowTotalNewPrinGirvi = mysqli_fetch_array($qResultDDNewTotalAddedPrin, MYSQLI_ASSOC);
+
+    $totalAdditionalGirviPrincipal = $rowTotalNewPrinGirvi['total_prin'];
+
+    $receivedGirviPrincipal += $totalAdditionalGirviPrincipal;
+
+    //
+    $totalReceivedGirviPrincipal += $receivedGirviPrincipal;
+    $totalReceivedNoOfGirvi += $receivedNoOfGirvi;
+//Start code to add data into PHP Chart Table
+    if ($monthCounter == '1') {
+        $queryItem = "DELETE FROM pchart";
+
+        if (!mysqli_query($conn,$queryItem)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    $queryItem = "INSERT INTO pchart (
+		pchart_xaxis, pchart_yaxis, pchart_counter, 
+		pchart_xaxis_title, pchart_yaxis_title,
+		pchart_series_desc, pchart_abscissa, pchart_comm,
+		pchart_ent_dat) 
+		VALUES (
+		'$totalReceivedGirviPrincipal','$monthCounter', '$monthCounter',
+		'Girvi Received','GirviReceived',
+                'GirviReceived', 'GirviReceived', '',
+		$currentDateTime)";
+
+    if (!mysqli_query($conn,$queryItem)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //End code to add data into PHP Chart Table
+    $monthCounter++;
+    $startDate = $startDate + 60 * 60 * 24;
+}
+$pChartFileName = date("Y_m_d_H_i_s");
+//include 'ompcmain.php';
+include 'ompcmain.php';
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td colspan="3"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+            <img src="<?php echo $documentRootBSlash; ?>/include/php/temp/<?php echo $pChartFileName; ?>.png" alt="New Loans Analysis" />
+        </td>
+    </tr>
+</table>

@@ -1,3 +1,97 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:  SAMPLE 1 Customer Sign Update  CHETAN 26 APR 2022
+ * **************************************************************************************
+ * 
+ * Created on 26 APR 2022
+ *
+ *
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<div class="modal-content"  style="width:90%; height:95vh;text-align: center;padding-top:5px;border:5px solid #f39c12;">
+    <div class="modal-header" style="padding-top:0px;padding-bottom: 0px;">
+        <table width="100%">
+            <tr>
+                <td align="center" style="width:350px;">
+                    <span>
+                        <h4 class="modal-title" style="text-align: center;font-size:20px;">
+                            <strong>
+                                Update Customer Signatory
+                            </strong>
+                        </h4>
+                    </span>  
+                </td>
+                <td align="right" style="width:100px;">
+                    <button type="button" onclick="closeUpdateSignModal();" 
+                            data-dismiss="modal" style="background-color: transparent;border: none;margin-top:-10px;margin-left:10px;cursor: pointer;">
+                        <strong style="font-size:25px;font-weight: bold;color:#736f6e;border:black;">&times;</strong>
+                    </button> 
+                </td>                                    
+            </tr>
+        </table>
+        </div>
+        <div class="modal-body">
+            <?php
+            $custId = $_REQUEST['userId'];
+                $qSelectCustSnap = "SELECT user_sign_snap_fname FROM user WHERE user_id='$custId'";
+                $resCustSnap = mysqli_query($conn,"$qSelectCustSnap");
+                $rowCustSnap = mysqli_fetch_array($resCustSnap);
+                $custSign = $rowCustSnap['user_sign_snap_fname'];
+            //include 'omcdsign.php';
+            ?>
+            <div id="mainCdSign">
+                <div>
+                    <img src="<?php echo $documentRoot; ?>/images/spacer.gif" onload="javascript:loadCanvas();" />
+                </div>
+                <div id="signature-pad" class="m-signature-pad" style="width:90%;height:85vh;margin:10px;">
+                    <link rel="stylesheet" href="<?php echo $documentRoot; ?>/css/signature-pad.css">
+                    <?php if ($custSign != NULL) { ?>
+                        <div class="m-signature-pad--body">
+                         <canvas></canvas><img src="<?php echo $documentRootBSlash; ?>/include/php/omccsnim.php?cust_id=<?php echo "$custId"; ?>" 
+                                                                          id="sign" border="0" style="border-color: #B8860B; width : 100%; height : 100%; margin-top : 40px" alt=""/>
+                        </div>
+                    <?php } else { ?>
+                        <div class="m-signature-pad--body">
+                            <canvas></canvas>
+                        </div>
+                    <?php } ?>
+                    <div class="m-signature-pad--footer">
+                        <div class="description">Sign above</div>
+                        <button type="button" data-action="clear" style="left:10px;" class=button clear onclick="<?php if ($custSign != NULL || $custSign != '') { ?> clearOldSignImage();<?php } ?>">Clear</button>
+                        <button type="button" data-action="save"  class="button save">Save</button>
+                        <input type="hidden" id="custId" name="custId" value='<?php echo $custId; ?>'>
+                        <input type="hidden" id="custSign" name="custSign" value='<?php echo $custSign; ?>'>
+                        <input type="hidden" id="doc" name="doc" value='<?php echo $documentRoot; ?>'>
+                        <input type="hidden" id="getsign" name="getsign" value='custInvoicesign'>
+                        <input type="hidden" id="savedate" name="savedate" value='<?php echo date('Y-m-d H:i:s');?>'>
+                        <input type="hidden" id="lastplace" name="lastplace" value="invoices">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="padding:2px;"> </div>
+    </div> 
+</div>
+</div>

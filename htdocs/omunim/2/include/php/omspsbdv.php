@@ -1,3 +1,101 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Estimate Sub div
+ * **************************************************************************************
+ * 
+ * Created on JUNE 07, 2018 03:24:44 PM
+ *
+ * @FileName: omspsbdv.php
+ * @Author: SoftwareGen Developement Team (@PRIYANKA-07JUNE18)
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.76
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$newItemPreId = $_GET['srchItemPreId'];
+$newItemPostId = $_GET['srchItemPostId'];
+
+if ($custId == '')                   
+    $custId = $_GET['custId'];
+
+$panelName = $_GET['panelName'];
+
+$alphaFirstLetter = substr($newItemPreId, 0, 1);
+$alphaId = substr($newItemPreId, 1);
+
+if ($newItemPreId == '' && $newItemPostId != '') {
+    $itemBarCodeId = substr($newItemPostId, 1);
+}
+
+$newProdCode = $newItemPreId . $newItemPostId;
+
+//echo '$newProdCode **== '.$newProdCode.'<br />';die;
+
+?>
+<table border="0" cellspacing="0" cellpadding="1" width="100%" align="center">
+    <tr>
+        <td colspan="16" align="center">
+            <?php
+            if ($newProdCode != '') {
+                
+                if ($newItemPostId != '') {
+                    
+                    if ($newItemPreId == '' && $newItemPostId != '') {
+                        $qSelStockItemId = "SELECT sttr_id,sttr_status,sttr_sell_status FROM "
+                                . "stock_transaction where sttr_owner_id='$_SESSION[sessionOwnerId]' and sttr_barcode = '$itemBarCodeId'";
+                    } else {
+                        $qSelStockItemId = "SELECT sttr_id,sttr_status,sttr_sell_status FROM "
+                                . "stock_transaction where sttr_owner_id='$_SESSION[sessionOwnerId]' AND "
+                                . "sttr_item_pre_id = '$newItemPreId' AND sttr_item_id = '$newItemPostId'";
+                    }
+
+                    $resStockItemId = mysqli_query($conn, $qSelStockItemId);
+
+                    $stockAvail = mysqli_num_rows($resStockItemId);
+                    
+                    if ($stockAvail > 0) {
+                        
+                        $rowStockItemId = mysqli_fetch_array($resStockItemId, MYSQLI_ASSOC);
+                        $sttr_status = $rowStockItemId['sttr_status'];
+
+                        if ($sttr_status == 'SOLDOUT') {
+                                
+                                ?>
+                                <div class="fs_14 ff_calibri orange fw_b">THIS ITEM IS ALREADY SOLD OUT</div>
+                                <?php
+                            
+                        } 
+                    } else {
+                        $itemStockPresent = noOfRowsCheck('st_id', 'stock', "st_owner_id='$_SESSION[sessionOwnerId]' AND st_item_code='$newProdCode'");
+                        $stockAvail = 1;
+                    }
+                } else {
+                    $itemStockPresent = noOfRowsCheck('st_id', 'stock', "st_owner_id='$_SESSION[sessionOwnerId]' AND st_item_code='$newProdCode'");
+                    $stockAvail = 1;
+                }
+            } else {
+                $stockAvail = 0;
+            }
+            ?>
+        </td>
+    </tr>
+</table>

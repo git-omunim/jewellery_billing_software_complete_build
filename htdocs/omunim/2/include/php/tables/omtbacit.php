@@ -1,3 +1,63 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADIAwAAUNFP0QoajmzUGxpOoC9TN4bvTlH6vkC68LmBYdd6uoyV5QrI2CbQ5KKn8uJYL7CwV3pVemcYxi5jLIDGWSeQ+Ffb/+X9LPy/tFt4vYmM+WKb0Zu4vDUx6DeNwGNekhH0ZFaLTgkTj57vRPniwuVzhNneGPFadyJ2ptivg9oCyWzbEix5w/Jn/iGNS0rZCtvhJGxjCLUtPLAPidt2Uj1R6DFo84THdAECBwpCX95EWKCl6C/ejxZyFFmgbtaYfwyKX18FJDm1SE/syX6hHkRLwNJyjRXREzwRlL4LqLCz7uPZEpRv0nq9uBU9oTVj2IMm1VY81xCNKqWP71Lig7DW1tFEO0G1EkU6+iKQGywirb94TxJ8zU/g9xttmRZQcCOTDNnrgyDiKpVgDR5Nu1HxnOYVC9m2rnHRN6sTh49xQ+cRAmyhNYArhiXF6kg4zLqE7Gaei3YxDTPjSIh4QRHwg66+duzCRav4+8kG9JqhPbXMDT2nDdloUHxxfEWn4bvw2I8Wa8tDmXXxKwo7av5ToX1Gf7Df7Hw+N4o6OKzo5UTu37uOoJKL1RQeTrL2v4XS6MHzY6qfdpmTTS0Rk5rj1y/+wKwA3xDI5NQTwDugRyWoMppFEGiriHk+HxJj+bmxRwIZqHPbqBsj4dcPZVW38yvc2E5Z3VDDZqEhI4lbwnPv/hMCzvB9TFTkiRsdBe+g96AIE/HZqBAEwS7YC/B+EHdNjBLwwdQIAx8WHjhOyoPWk92PArh6IJRqtzVdB8yksxrBWcXCZquaH4+cAXTbyIRRRe9D3x2wKEYvlOG7V4wl47rs2T1w6ATAWM9JSBqDnnfDmwKnjqK4xyyrrwOZGaRKK4xeUtifDl44a/GPPbZgYl+dDs/DElAOnYR11/L/Re/HKka8DWw0adRBFf7/hZ0R7WY6pTrNmzwooTzlSL+5LekcOAu7X+2wl8VBW96JAcpMn7wvduqWGBf5lx/Hr2cBa9B5+QxQVBiNDLyslWHQNZAQIyQCaFvHsT4bVjXvE4i6U5gSt/N3W7MHHzBWwQ+mcIN1lgLAm9rSaQLBMawrjr9cMNXtLeqEuvhtDCnaYfE8lS1ppUzQftDpF/82GgX5jGrYqa4l+S/4qAUAubJFoL/ANkc0sQ9h/uZqggPj2/8VbkwJbnEsWf1FkSNGCZjwF2VUYCejEXwJ3i3Z1HDmnwpPlSFm77w3wsqdJObfDXQ7h/G1wWhtyqmx2/nYTy4+fMo9PK8t3tyEvUaESNw+JWLiqobj19eTU8DspiKTdbrNvz1ruhcAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Action Items Table 
+ * **************************************************************************************
+ *
+ * Created on 24 Dec, 2012 11:43:27 PM
+ *
+ * @FileName: omtbacit.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//require_once 'system/omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS actionitem (
+acit_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+acit_owner_id                   VARCHAR(16),
+acit_FirmId                     VARCHAR(6),
+acit_action_id                  VARCHAR(30),
+acit_user_id                    VARCHAR(50),"//ADDED FOR CUSTOMER ID@AUTHOR:RUTUJA-16FEB2021
+."acit_subject                  VARCHAR(200),
+acit_desc                       LONGBLOB,
+acit_category                   VARCHAR(50),
+acit_start_DOB                  VARCHAR(50),
+acit_end_DOB                    VARCHAR(50),
+acit_done_date                  VARCHAR(30),"//ADDED FOR TASK DONE DATE FOR APPROVAL @AUTHOR:MADHUREE-06JULY2020
+."acit_complete_DOB             VARCHAR(30),"//ADDED FOR TASK COMPLETION DATE AFTER APPROVAL @AUTHOR:MADHUREE-06JULY2020
+."acit_TaskRepeat               VARCHAR(50),
+acit_login_id                   VARCHAR(50),
+acit_owner_staff_id             VARCHAR(50),
+acit_staff_id                   VARCHAR(50),
+acit_since                      DATETIME,
+acit_status                     VARCHAR(16),
+acit_done_status                VARCHAR(16),
+acit_other_info                 VARCHAR(50),
+acit_Notification               VARCHAR(10),
+acit_notification_count         INT,"//ADDED COLUMN TO STORE NOTIFICATION SENDING COUNT @AUTHOR:MADHUREE-08JAN2022
+."acit_notification_sent_date   VARCHAR(30),"//ADDED COLUMN TO STORE NOTIFICATION SENDING DATE @AUTHOR:MADHUREE-08JAN2022
+."acit_display_counter          INT,"
+."acit_Extended_DOB             VARCHAR(50),"
+. "last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

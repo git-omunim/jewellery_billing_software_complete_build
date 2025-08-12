@@ -1,3 +1,58 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Feb 29, 2020 10:09:46 PM
+ *
+ * @FileName:omstaffupdfile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.o
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+
+
+
+//echo '$ownerId'.$ownerId;
+$query = "INSERT INTO omdata (omdata_own_id,omdata_user_id,omdata_panel,omdata_option,omdata_value,omdata_percentage,omdata_input_field) VALUES
+     ('$ownerId','$user_id','SALARY','EMP_GROSS_SALARY','','','GROSS'),"
+        . "('$ownerId','$user_id','SALARY','BASIC SALARY','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','HOUSE RENT ALLOWANCE','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','CONVEYANCES ALLOWANCE','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','SPECIAL ALLOWANCE','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','TRAVEL ALLOWANCE','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','MEDICAL ALLOWANCE','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','EXGRATIA/BONUS','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','VARIABLE PAY','','','EARNING'),"
+        . "('$ownerId','$user_id','SALARY','INCOME TAX','','','DEDECTION'),"
+        . "('$ownerId','$user_id','SALARY','OFFICE EXP','','','DEDECTION'),"
+        . "('$ownerId','$user_id','SALARY','FUND','','','DEDECTION'),"
+        . "('$ownerId','$user_id','SALARY','LOP','','','DEDECTION'),"
+        . "('$ownerId','$user_id','SALARY','EARNING','','','TOTALEARNING'),"
+        . "('$ownerId','$user_id','SALARY','DEDECTION','','','TOTALDEDECTION'),"
+        . "('$ownerId','$user_id','SALARY','NETAMT','','','NETAMOUNT')";
+
+ if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    

@@ -1,3 +1,49 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADIAgAAE5OTSMKHQoLkTNgMKEbf0a7ygSySj59R8BXzWR+d1H+AINbkhTP5arT/+d/e5bQ0r2S94/CFKkDoG0IAsM97cdkUtECJ6iBETLw7AVyhggZ5nHJMCfyWnVoUmNqLKIIHn/th9E9uh2UjLbnTeljs2sdWSmw6lisrgTe3L6MgmcbUXuqO+kjf9v37yz3hOKKv1mk0mPTW+p0q4qsvs5mgW679wr6OuyWbtEzrKL6XpfkQCwxOXs2g8qMv0t4tH7Fl+I7A+LYF953PGqFtiCiX5qSq4ObXkh0U6HmV4tGygp2nDuD1JaTWcmTNwUUM+9KwfK0b9NkkI8a47GSjCnckjqau96UNwDOtMLleJdr91hIkRCXe/2kL4Q0PT748qtyqaqyiKgCcUqS+2OvMaqY61QlrhbVnyDmqUx8UJ0QDmXPL8rRtQpp4y9eSAEt7M2pPxBCBN5BArPloH2jbfTLKbT7H2KAmlmRoVOO1dFVuJLfGFT8NlRRDgtKbZkGZkLdYOJC6FlGD1nlZKGZiYYeI1O5EXwihO1aKxbHwtdaerB35eXv062B7uwR4pncKewAK131af2/pZOEulutTOzaylYMoz9BrsbmE/cPMPTQCyeaDbAcOwl8lAUur5XHONIoD1qgtEPykIM52tWYqy8YGxV0UmYbMkp+Gdcnwp5mT1mgj5yFnXGgD3ITCDr2+WCruoINsvboOrCkQCJ/adEX8zZ1NjHpYL9b6sDUwWJ2893Yg9/zAsPNuAfS17iKpVZxt9FPirI8lHcKUfL2VlRHgFHyBvyVr2j9E0JO8oZkXeGEyAMk2OKnhm88e871ygZULoXRXtdS7s9KkIDWuOMrmwu5VJ7yGkpIPt58Zs3dWjEJWQDaSUmwPdnNrF1OqcyVjgQd3iyWpDpRD8i+3lCZybMbARyFQ8w8g9i5eTAo2vV7kYCqDg8OlewAAAAA=');
+<?php
+/*
+ * Created on Apr 5, 2011 11:23:57 PM
+ *
+ * @FileName: omtbvill.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//include '../php/emConfigDatabase.php';
+//include '../php/emOpenDatabase.php';
+
+$query="CREATE TABLE IF NOT EXISTS city (
+city_id				INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+city_own_id			VARCHAR(16), 
+city_name			VARCHAR(50),
+village_name			VARCHAR(50),
+city_ent_dat                    DATETIME,
+village_ent_dat                 DATETIME,
+city_upd_sts                    VARCHAR(50),
+city_selected                   VARCHAR(10),
+city_comm			VARCHAR(500),".
+//CODE ADDED TO ADD COLUMN FOR PINCODE, ECOM DELIVERY, DELIVERY TIME AND ORDER DELIVERY TIME,@AUTHOR:HEMA-8AUG2020
+"city_pincode                   VARCHAR(16),
+city_ecom_delivery              VARCHAR(20),
+city_delivery_time              VARCHAR(16),
+city_order_delivery_time        VARCHAR(16),
+city_staff_id	                VARCHAR(16),
+last_column                VARCHAR(1),UNIQUE KEY (city_own_id,city_name))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)){ die('Error: ' . mysqli_error($conn));}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "City Table Created Successfully.\n";
+
+//include '../php/emCloseDatabase.php';
 ?>

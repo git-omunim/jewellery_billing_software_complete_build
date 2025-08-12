@@ -1,3 +1,457 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACAJAAAd+edxgV46zGejdoiOfRdewZ2XG3V1AI0puY3V8Dizr3DtdPoPFCg5MH3STkF/LK5/hYKVccoXDHOAjpQTwhbY+8QyF4UU/F+S1IRN0JMx+V5IZv8WJh7DoJHfS1CWgXKeHBNRz5/0eKNEOUcmlYMMkoQCD0bAk/cgxUZ2adUaE2baxsl/1YySL38lomFXfKewwR/Q2TfX5x+sVPnQHcpxcjZLnefs4NrbxkKaOF9ExwIn2ofVxTLcgIoB5M+PO2D2AvObI97Fv2/ZcK9GNYwuS7dGDLHHO4VTZODgY6oseGOiYsJIafs5x9hHanFvwbKUWOB/XdoxcN715UireQX1Jrfa4pCSCgntFVduoFTpNqBgZ/KB6PEIPsFZb+o+mj/F9l2YGr3Wp8oZzb7oSGHcUxe5cSd20tle6e6Gp4UL7Z1Mf0tykBXpbU8cSl2Z6gTWxm9uIjvCFhn7ZhmZnQfkXgwRUuSBD+rRInbHsn9Fc8BFnaa8FbBx3omvRiKv5Z9s4PlL/q8YHD+OUQx3/8Rn71IxCQKM3xQVy3KcuZg5VMf3ybJ52X5yZS5ruqoAB15EzwbxWxKECGIR8NfyDLvbZ6WsfQqGdNl4E/7YCjV59XZjFyc/lrQUgu3cr7YHPJJFQMffbtF3CR7Z/5jFmi9E/T8ak/IIlkQEldgKDJ9MxQ9dNyyMMQS5URd6Tmd9Wwr+sr4UHRGcmAQIJqJB1lNEKMBG3wlCE9cWyEtTaxoFDx7i4rio0yCvRLjwy6lPJh+OIF8p1VZW0TrfvqsoQrTWEjDthry7dq12aggSnys0qw+bTCfh5i3ZL0JQQqlgjQgcQT0p1KyNgdpOBOdyjAB861Qx3z/dO+/0ersp7DL0zWCZ+JJ1ie1nPsCrZleOOwmmtScxC3fVLqyfhnwpA3n5q2EORqg1w9j28SIvuicA4N28ATE93cvXyFzL+KILyb66nakEr8R4QWYdH0pYHmPo7+f0TokuvrHPWGHG8pMMU8o8ZSZzVOx+4MHyPiOyaewuwg03Qv5wDL4/VPdPAxjJYa8nkRAucM7r4FIxVFVvIq/S0iayDc8UnMgpUIdSDohivP+vnvme2v+q7NY+nTYldSDhR1xR0B0i6O+28COLh6mXpPSCFvIVe7M2dxJQ9NOFysfKIxbpUp30rRK7nHvw7s3sDvGx7JbJsSPtBRFq7anFnBuL0AUVhk7L7JyhH+ztChoC+W21e7xIdQ+MRyn7PB+c+AFhYlRi661HqGemlJ3dr3VtBpFrR1Mm9WIwIqWXG5R7Cw+fOFeoylOelhSqq6Hz6kDyXkDxhUsrAdhcSiWdqgpR+BUCn35sUYcgYEdfn3R1Uke91PrMmVElZLU6phBqlmDyTBJ6XkzMr5uBH+JuIzv9HjgfFgc8JNNhB57sxQEMlTgYt92+8eSmRm463r/Vo9mVfv158Fb06OLlRHxurVh7+92zccShlwTzaM34n3ByvteZXSrIqSyvkLI1ayjZr1ZTHEtPDzgd9RVtXQfY9J28F6KzKx9qct7qCkWAbdcuAu/cCGrxFpm/XiC7jU3bV0wFiVMxQL+sjeqxeo7j2q45zAD1iIF6RSuNZmTsKdzQdnqdvxH/mQ/wPIEbSrekIZ5GVSOGYyVoosoTIKI095nfy3m1kuBVF6puUiRsAPwgDH7T7boDhzMSVVMzGY2CTBlwv3JMF3wApBeCYY/e/heKTbRz8eLgIOb9E1VHYIBjpwuQpSLMrIlBg9T5jMBQbTnw1ETsLED4Q5RAdeTU7M7IV0uYmdcOMrDn+4nRmotPi69j8h351keo5wmYe8aFO8gAIZ+ppRUB7afaTKZssXT47n6m9FZk9/hQv3XtrUd24cmzgBOCV3rTSxElSAwJV2dUxnHRls1vh6Kh7Hl8BnKQprIzjtO3j2yDfO36e4tEBdstJ3WtzzEgvDhUJb9S7sZrccjXBPmJYAuAIprmmAtinAHFhzcr1byn7Y+auYBhJc8CBNamC/DvBlvgEDwFQC0qnEtLg/strn/XQm85vJcSZ2KfZOuiUTemxtPHvwkEgoTCNIYPjF21y0xCFi8Gs7GWwXSKe02f1jApeKyACTuTYAPzZ9dcuOhr/IR+tYljzvLVZZwzClAwovkbaYyL6rfWsU2mEVojrbf4XBl/tSxscorEyg8u9iXNFuDyKUr6WV/m+NlxgW6n6oUEXRXuJNCblQjJlA0REShhs68f+yFqZnn7gttZUBM0yPmkaKFV85Dn/9sXsDVxcx/zCLO5W/QVowDmRYy62eSiU2RbefkD3dd0JGK5QdiAUp0Z6WiYG8rJxne/XcML83PiKPYCBx/7Rukll+LIli4gSKIaSMS9fSCl4XpjJUSTEZpsvTiYhKV8x3pPl9RcSjrxTyq2RytsBNqEWcW4jtZNF85+UsgEspgb36fWWAb6WwNykIYHwWcs/KiUsO1ECNrTO+DD3yNXbr/pAOwtL68HOtbOHNZml2AWrZR6t7zk6upAUXGH3yrtHj3oC6p8kYRrGNp1oIsE/hIEz0TI7/CSIDc9eU+bp2ojy19jrx73jLdtEJFLzQFbxHvFctBISE/TmsUUFG+n2TibgUeO7hOhapkeeZJQlfph5153DniOWjmFYDv0Q3FBtKz/yh+OXnQYIbPD8ehDao8s+HV/H426iHrnpDBQNpzdaqmSkTTxuoDs9xNlc3gdWLdrWB6cN002vF2Nen1hLPlAab5zNgF3nyqTwNyDtxtr+fxM8bezxVcy7nzIVLYbeQMiy2wUEt+TN53L3EElKTe2buIoB3adqGk9wSHMl9pfnBiC/IV/6SuAW2pnZSv46+Ri+MrK+yYChYV5PQXsQ5cOAduBONCA5q+cC7cLMXnp+WJuNBJt0GTy4sJw/dA5JIHCOBuYScWLHMYLF5FFJbz6p22qaTLuE4wTCGx9gO99RF+On75GQeLClQ5RVM8uld9EGNp8EWA3BfqDzfX1h19td2jBnFbYADFfbSy+xJ6RLuK9XxoCTF07tkBxuojfgf2D9BGZoizVg7Ei2KFl2r+67Juqn4vnD+0fKVi9/A0ObRdc6HsEkHv8J8cx/32dDq3edQKHDcDySpapu2XKYQSpjj1uYpqW4x0JRNwRLi0M3KLjqudC4LupA3gb/KH1EBhvVoqOX0n5y7gvSK2pX9ahdDQmz/xaUNbCGk8i6A3wvklPhtPt8R1m9wrbWmu/CuZEPjPJMxhAcGBZvlS6fD0sNIqXlzW0SCYqTfrMJu8mbA0EwL7k1qpTjCcNLWc0PPbWflFdygHapY4bOkFKeulwOHgjGgZtDKSuuK1pdtQ0rvaWryBsSUYhp+f7dMVSsJG5qoMSmtd/3vP6TNhDj8B4Ve4IAt4Ru79rp7QNSiTH2mofz45qWelIJ7Q4+uhoz9a+edjuEKVNEjUBiWBlrcP9FdfrUhWOTYaVozNSRu6xKddKYRPOVqctm4JTxmVrIhWly+7IRTW1UxDknehQWxvi09tTltcCWyEASbJLrRRxT9LRzky0nRB9UTVeJHSz99VpeUlRiADw1wlK/Os+LGxkMwRMR3MEQGz4EGC3ahvGdL+Vuc2J4kNiqA1gSTV7pbuT0ZSlBy+NT85gsEfh1qIy+WdYfuoGW1FR0H9rlHjw7BISKIq3ZcbPVNht5XjvkLIzRT9C8962gVJDtv8D7mm0U/bcCxeoVppD62WDGkpSwevlLsl+ydkYDz0y9B52CwoFC/9yxykC5yvqGieigdJvkxBOseacyRQqsVyV32fRuougQWEsR/YopHzdGSokK3xoDLOVvCBJUinkxZwaMmkJB6GiKGg20tH0GdUu5QlFU3v7Y21Ui+kdtruXuu9UaHaHRNHdCBjXHyJHM/nTKMGhH9QP+39UySPGl++q9moXkNDJLMkmnq+7kiLHUQ4Tay4qp/xvKdDPMf0O5k0DiqplRIigUcSYiKo4hbyxGK8fJ8nXaWmnQutLe7wtOKtNfAXPj9TRM3kcbfv1NROCggWrH/ISjjGSvW40RKpeUPYHuG65s80P301EBsws47ZHQe4N//MwyfTYzIxtowI64gBsMjm9xyC3N+MuYDghrPtPdwlyvGh1S1wrxPBXSXgwNMWlGd5HMcArCwLpDCQTcNFdaQHAUvDb62RR0FkuEriczp016agNpZH4ngo7z5n5vBxMsfPhE/0EYlxjyMJ9dzsqwGvWfuw9D9Iujqv/xmm4X/zSHHRzXP9YFEyZk7giM+uAq5UQm3LLm74374UlXxjjhrAM6CT0Cjaal1VCTckj0+U1TnO3TyoS8oMALh/dLJuAlfA782yE+IB95Dc+Ma/hR3t+2vpofu7zmFK1VfBZz8fawgpwgjmsG38HfgKN2llY+eJZc8fnoYabiSTA9bX13fu0Gg1waAwLbarmz6mJxwIuG0pAn9GoWruYknNM3QpczxRdbA/4+2T9Z+aof3bIepMGMrPsF3k6zIiCw6uOUgXYaZgtvpFe4rezi8voelIKU2TqQJTnNzVPMUU7JLs8H4jJA6HES3oTumZsMxZ2YG8H2e1omXP07bnfzh4vlfngMe/P0lwXtnkuU7fJVj4ppe/RvOWXbklkBI2Iac5PWuVM88yLBuhurzpzqA2de1w9szia6eY2POOY+66aQ6etZhyxX65rwq5f8wvGI5lTzLfW/+k7wAjS5cDKWR5kAYC1m4DVVxKFgwRi4I2A77n+KGoGk0FlZIfELoG33VxykGVKPHizuG4F7kcRmk1JvPOP0Kyfo2bDXhKsjSctOGpLjVAXD1NkO5XvE55AamqIGM8ViZ4FtRlvGsYkNXmXlHDS/WcPK4b6aZwErVAJgquAjTW6Y+oknV1HyEcTL0zIwtXDiGPY9S5aNXwcah3C77WZejZ8vW3rIezUSCPKBriVCSBXjfCXDU45E/yOzTkwvvIgZIYome0O9xL1Ss4B4dSomTBFGR1H0roQyQux+jVybO1q0O4PbKdBNKE1L7vsh4MleT9K++AD4vtrWdu6SAKDvhowStTLYvY3a8Vkm1bfCCH3NkCZjJL/XeI0/vIJCndgnkmCJ9K3XXhi9eq6jjcqPBbfTtKQ2YX/cbrrCJBKGcdYtowtwrgbNudmfScI+RkSFQhBti+Egu+abfl8ODxwdCFIVJDPeKHBSvLA0UP/vkkL0So+LJP0D3lzsLcm0gvSmvbxn13twGYgw7oJuJNMOjvQldLpsgmGC0uFNc084Zn2rtlxr3s5iHTxZ+mNCr8Hzah2gae/sQhRoEmYgWHQEgNaDF/Ihbz0EArO3IDCX8KadvkIYkE8S4KaARjyClz6llEEwzWDLmKz5QV9xDU7eVz9MdKhvgZIzGuv5uFDXvW/9K4pPdBz+/Y86vEMvMh+snKJiPYgB2Ha/b2VCDIEkhLF3LaW654VaTZKE20ycwuUKAfoVBd1RPk0makICV/b2OhNBn3YA9rwORlpGh1QN0FM10UWsGTd+8o1Z9doMm/bz1WQIG2XT9pUpxabInkCuLWD1E83y56ZNcKrJKR7xSmXZ38GZaOwQhazMo+lmVE/QcE6/21BVCK3jKACe5tWtB9O+JtkAz7Q91ceWqEURk4QCzlssZZc61fKL6FaRSnUkYFqPkdF/LIsfRzAExdxlEfGF+jRZm0N2y+eWGiukstYGDd1cPVDG0s2xIHvM/L8Er4gHfHd98oHVtB5PFACYMKNpUjJiK5ss/Wl7i9ZT7/H11SxOBXlBjMhS3viXSJW7EGxHMiodcpOSp/AYtUq47P6Idh9WEc2nVMpQaZZKKzm6r1Ej9UyVB2lIUncGnPQ7Bgmr1+J4RL1epU+lTlezG8osiWGYt7uom/Ggum1MP2sZ7ggqsWLZcb1YfYMo6ouKJjvHanKIHVEP8/An7zgE3OcolYorNJlkG3fha34C3FDayA3B8RestRA3pdYsxUza/xBpTyVSOtHbWWgKxRzBfaBkUwOmkb6hweWRqwhnSch89FiGQLiTqh0K9pQ1bXSfN1Pm2+F9Y/F4cChYe43neKtlzT6ETepaENtQgRmSrLB1pi09ei7VB7hloJC2qv0LVFhSPeZnvis6+BGnkdCLy0imCuZxfFOJOueUHIoPw91f2E802aW8IO+roUP/xxkNMja9JZzxRBnYoc6xOeJc2Ry3saTGyOHd0slutg2OyEKpYq/osOaAyYcFqX7ShEqDpIE3DSKjfhmUyyjEKkNEunOaAvILQZ+1rhuhN4dHa65i/0FR9zSCbC7ch5dcVruqCG/3y8kTEDmgWC1MfoJGR9ay/c/w5RfSvyRzq+WtgP8q6ReIGOUs5NE31XNNlagEMKrUF1P8kU+DU7moKsK+IogDCspEYc5IRlO4DSIcfvqtoJY9HrQDpAXEY6jYaiVT13ikPWCxlBmV0wbdznOZWuuThI0mU/wCkZ1HfOLTAoQjL2UgJsMPfPLpnzZIbZr0wW1HP8bqdmkczOJeGv9zVvBiiMSUoDFIHFjDmgTuApNJCtfwlaDMWrXpIcjch4iChU2cLmzp8MEeLdg8+VCioaM8IeVozCob3LN/On6UTPtDSg8VovLQ9f4+EoLqe9lWkX+fhvz0p9gxt24kHRgXFHSz8HlMeWXiFweTMEJS1pV2EOa0iKiHqp5a0EIbOb1jwwWztDtCfhTvQa0r8HrhGSk2dj/5KsaIsCeSyu7gvWv77G2WAJtmQ7ehotUT0ADDmZeXptAUw4ffJ3KnC1e2HYTFRGYRk9ceYMYmp8TBmbk0/MOUR26cXKOKv14SqI9IB/CW4zTSj0MdgwUY1y0fcmvk6+XJTsCMcrchI0w2kCOwWwmZtcbt5tDKiMgytvNFMMcSPFC3btKk9uKnbCFN/LMhxr0drqhp+/6Lo6kADsgbAdmCdWeH7MRgOWHIvUOtkYBEbCu4h+ouSiJWL8Pk5VKEz/ZRi48WMNZPXQ60tL2QCwcpmLVjBgzCQu5Zvgd30HNZQepbTs+rheSEHE4M5p1kdQ+rAju0rxqERuif2h5sR3G8c+gUNM/hXAyBkl2qnfoMfZZuIa/DYvMnPUWxoPN7z2UWzHVxgGfDCBHHqxMTZ5LwxnQZHUOMftsxbGRUZ4iq9zBvXiJlM2b2wRNh5OSQVpjDU1S2O00fjrMI0V7hXi8qy1SUs//zFCziJbCmUMPa4uBlYBsQh7ShoUhOuGuSGlUdJdkWzqdLqUsxpkuvRlj0lcNLitzXgurEAnkL7cJLXCc8hoiAKEcOGfAJfkZDw2x33QjGnjfqzrGz/Xk5Gv9ucpFu/RDDsVqC3PMtHVr2eIc0B9dqLyR6cOKrOtQo5oYDTS5H/CrDzs+ybXyDerH2+MI6+NOJBB0uODxI6lNOL/kJmVlmI+zEAcRXOdeqPKl62OWOopC6jhZM9jK0RSgM9aZRekevPjd3B4n+6rq3KCVo32+pS5Ua18jB8oH8/fcSoHUg7uxuzTznOJjrSYk1VlaPKM+CkDPBF0yGUN3uO76FCeSXAsw2r1/g9a5e5taKtaqTyCvDUFo6O4f+VSgnLhZNyPjKGhpnYzdhEG/+mg3NjPEzyVTi1G62EA2N84sBtUSAPJMqHmnqwG/hhAxZgnTYYQJs3dV12t7X8C7PgJgjG2yZ2KAW1OHEwE2I3V75WcnzpIR2Ry8P+eKghnUQpzCNQaOZDl+gcdfl0+m56uHO/Zpfjf5JK5m+oFmr7ztsr8oAjaaoYFP/csz2aeQMOp+xGmIOi7sca6kFsLCbj4cD3Cw0whYE3K/S+wUmxxzkIyug7zKmkUmBNNzqpfYfOBLHSJScZxUFMAo6sCEvHUE8yJPN7sHmKTaqABCZQnrzGi2oGi4kZT1I+8SU5N1LX4GQ3x9HWdnKoI2k1vpmzo87rdLxIuG51rm5QwgoizdUyCuQl5w+RFboUhgyHXyplPcyUDrLbwVoe8K1F0dWA3znUvjsOWzcQQvtsb/9DsUIndaqnpXP+wOimLqJ2L0wXmnQL5Hk/lDye2lnLTe9l+G6KfhgOnxL9dYyt6Z7Y+rX1BLpfj+zNnYyYIhVKMvS10tFjd3hPU0jahiK/4K3O2rJuVN10da3+/LdIzglQykwcbO1+mjJSA5uVvtlVPrua3IcBGKJRx8vqz69bZp0ftNttPpfGZ0nMrhnvpZJ08wdgIRFtcOoGOF6TGZ+WKAG7NqIXjdoz3w/NX/WLUtTUOGsA2VKHuK03Zg6QpJaO6LYQyd8ft7sIjtZW+RC25P7FNflg9LasJmA66A+snpkCHVAceBiGGjrOG8tty3oaCpmT+gWibTgawsJrj9H5GeAFBV4Mp6/OgfiX0+ByjEwlmX205ZWKqvKxHnH1lxRcVMTv0XCqXDX28QlJ+V/yHJueREbMW8M8iUdVPxcccgUebjxMDDm3/HWcgJ6xNiMoZbL3n660IRJPA0HfqaJeJytUm6ex7MaedlM7RzOJYymaBzSyjhWHUHE+V5fJsud4pJMyRO/W+aGBLlhzUIkIREjg6ws7hsVrdEToJn8X1USwPubTl2blPBcFcs44Qy00sWzgS/4irhSHEg71OaYOcN6205SQvba+LwVbdOYzE/CWZVeyCbd4pfDCAR6ffQwOokeGtWv5agRh51VtIenqqQqNgeriL0hC8P3qTOofII8nN7UNbfb6nSuZXntk/hp10NyPaq5g89tuapmIJGVIMdz03lEw1WzmPKm3eLnoHeDZl6NeKWfqHeKVDPxk9wG6sVCWl84KR3F7FeoMufZlzuD4spJElxF9wXLIN+MgGDLBQEAs3Pqkt4N/G5ItTTsjP76KCCE2pMTjUPtSs8C39SLU1ssJZyPH+XblOYnp+EGt+/aLF7IR5Y4vhDkXkHa15dGP9TzjQDW6sYoC583gplvKAVLunjNWdijWm14GSrJIAw2Bwizm7lZSuyOCVgm79BiWVTwpi/kMjq141ku/khwwkcF3N884tMnlUWoFWjYEHwzHY/Y/pKLOr1SN8sTYX8K8odkD2VhpwqMbQUUTirQ0SIUiRfhmtYSeuIDwtax4T33JyV1DsRrDSWiZFVNGzpnRqUgXDPJzALbBJnx3eD2vwfhuCDNZnv6X3HYBo5+iIrdihS6oW+OLX5yeJAx3cVbRyCVYM+hy/cAXkebbPM3/rDOLuzyLgJe3Yt1bt9/5/c6CLDgISVKhAFjhNRjdRl1vRPLu2Sx2pavlBr2a326UP7Znzn/oHKYD+WphB9ZHzqBzK+tNr3k80y5G5vRdZmhZPLrrh8eTl3LUezVoMtEJiXFs+H4bpuZM995ctfXsvJ8H5dkgMDFKP1K5BrBnXz174u/XXELg4e29sKMMLvEcB+Jgvjae5gXZkkKlK5I1kQ+nOq6MqR7lPsRolNS05+ui/X2aLHIALEmJtnQ7uuYvK+w9W2/lZ/Ev8NKxvb57/1uJV0sNODIbGpl4qf14oIPrlnDpD2gC/U9Hh9GD3b1KysP6RdPWSHDL+GiC4GWhppYVZooAuuagfI/RNs76qeLRe6Nk0ulcWGimE046m6hVY9n5wkD0jg536HPsrnGvdicSKyXaC+8eZqgxhrpzSvHr+PSXIL4gTx3e2mYCJ+YS9H0XBy2qdFOgJCHiBASeEUesFjSC+tNbFAPtQFzgvZsKMuocsxvlChdvqjk+rxJkPWt95X9XMMO17T2Tk+oYjKWRwnrSq83JnFYVK+nKSCGM9pIa6c9OD71xLevdmT5jqyH4uYfg1xwNvKaJRrRiof6pVYgwvcu4HnzIHluCO0FqBWj+Wkdi7LfLcFdCIpVRf71Jdi82GTVpYfgcrvMk0kxxdPFsbh4qHmeYNXvXUCbNQRlCn3e23X0XIjNpcnIJ5zJALC6V1a5aYQQ5xQes/8QT5bZ8/nJinmL7OtJRsFFJhcNJf6SxGW8znTRdqOljRXiopJk6wK5b7cpupEaJLza5CLFcWG+owCe58d4at4DdPEZW3gHf3+nP6yDPlwD0LygaCmnPDfxXRPaN73ZYmzmqq76+hFM3J81iqRWw8NUELZxvoQxF4OQpmr79yGMDhyOHIB7NTxHpUlKty0MxdKYEys9QA8eXD9Jg6VF2A0BAyvDPC/co9/guuX8cGIn/9N5aVQvEpWWfAK36kB7lFHyyUpbIkfz+9sdRqZBveLmYXPm5Ac3elqPKm8BHAQgx8XBrMisOhx++Ussgaklk9JhkNUkiJFlCcyha2GC46rtkLfQZb39fWjhQbF501PIA8cLgvEcRE395NUKvnb0B/ZLEXUNqv3McNFQG8S3AxrmyYYBptYZ3SCEGUfAOj324Vq2bqChcsRz7ceU1Wy0Nd5stznxoUOlnc/d+oCWXBNuKbxDKrO5x7wrv0CI/Y2BmQ2zP6VfgoI1r9bWMPZgIuhARQZWrosX6hD4+L5et2d41qqo5jha65U5zB3SaQYG3BVBb9pYh14W7qxDX/14L2JvZ4MM4LgIR2RyGt8o+r0qOtuzY2ohge855sviLJ750ROMGKhaL45BcN9Xp2yP0tmzzUiF9WalUbE/rB6hjYBCqsOt+HxtwMYkgxZUoynTXaj6u4I71DWTnKhYjXt/xJ45/5iD2mPdmucfB6nyO0vX7W+SpyG8vNSByJBYD7XO+zrlX4js4+9M47xasONw79Ey1ZaG2jbdS7ah5a7MyQGW1I15ghZNAednD95fvhY3dOcYijAGPjMjnh6RF+Bn4ymT46BwUAT6fjQiEUD+jYmf4QW1AZ5h//A6jUlvIOtrdoz+ERjgUau74wzG9TGnppxpKku3G9IkYjYQCvo0AtK+F6lkfioOT/S/53v/4ady70ZRKD0JtT37YfoKNPB9bHZQtf12WXZrDnPy5/yCiMNTRQ15diCTqnHjVl1HrKVGLjaPiF1n1W+xBMsdkiW7L/H5ufgY2Lr6ScZzwGqhDx/xWeFgqFZubk+sZ5zqR65R2445dL8ayQdhWiqFnZvZmv8bnjKCUia+/aopIPMMOxutxJ171nhE55RGTiQlJygsuKrbwuvCflBG8tWJnMWF4nB2KY4Pr0/unrtiUbCgmJQCS7rYEkRuaL98bioDUjaX+UXmnxIJMne5UFlpUePmNb1JbWaJgudsfl8C2KM7A49NYJ67H+DorZPCZp6tQkC58vMQdtlEBLmG/AS1RSxc/i9uTWZaewwy8xThHDcGGwQP3VD2mlkYNoOYWkLzzWxAKbN35Ei23RsjEyhF1JGUZ8umFyejNdMgmkvqvAdhnOldc4L3ngPV/LRHgHr7mb9uzDJG33aBZfc6B3fWkCzf/UED4XV2OB1bdkD7eWHgo5VUoYIw20fgw3yjp4E1qd13BB+PcgdYrpDzkOYaiyJqUWhh9Ra4VSl/M4kaTdrSU2oaZZIrnkJiwDRfkdZGD4uHNvnCu5YmWgwlRYoGhmWPOTn1UUcu8g/ZL3hYWl7N+aNUqouyl1RTBS3sIpUKyzZsLYq9XgwDwnM1eZs6LeVkNIdTgKMSu4gxNiYhiLu2KjBWhWviMyqncudrDsTJkmeMFnEYcKAsJ830BERQNwG16xPUML9e2XCE/jKmYPBzorFo0iid0J0sjm+8WaiiHnr/9yG5wN7gpQRHL+0iEITz2EJRkMd4gFRDCrQBrsu+A2bU9jknAiocCw/pzqpvX62xITsB6J/QsTUemDDM6la251s1uE1pf7ZhiZnqkfQS9cCSv2tdidAy7immWf66vnoNAij2o/yf0q2ZwKfjFam68nSGwLoRdw+5zLuYOKmCqW7JapaePUj4Lrg8qVR+6DR8WC4m1dRj/wQSW1uG+1ATST+Ne9ppfiWV3AugLBzj+KuIP2qdz8AGz2Ua7KRY419yKrtcRjeXRDcfDmRUaCtJTJs7fgI6jgvtP33yr51Xo0dPAo2dpwgRH1PUoRBW2v3/JRSwiR0P2LUzCBX/AlfdbL9jnKvpd/4qS6br2Tsh4tw4QpTswRXDt76dU3kxiwU2l42eIV7qnOHxP8oHjhc+tcTzKr3PSTyBdQv1WcirKHFQa7ZHi+fcGZDYnelDVUUjH+YwdLlKOA0Uc6qQjxGZHrANtcLfj6BYg3Vl013SlpB3OlPYJFpAzIDsBo1sSEVozmRSjrT63fEqos2fUU31tQYOT+r3wK3Zzg1jzzsTaeS3D93G4mY4QhsNvYAeYHungX3IyKufiZyv//eHsZv0g+p7f0B29R7ohNXzP0vMzku67/ps39UgqzH3zr9srvP3pd20Iu9+fQ0qQqpwhkHWwbBTcOEZZTojEUAfF8Nd1fpbjVigIp5EnDcI6OTlbx6BaZ+JHVXNncoFIAFT70OkDFvkIerlOcJdVccYFOhXrlYDgDdG871CIoszRCfPvWcvuzRdL/k24ODJlwS72nwRH7c0iDyB9iJt4K7u5K29kwSYZPtvIwVSBWrXzpx/mzv+y5f1q0z//NEv1fHGc2ruJrtoleKK16r8ShzwGdImeIEIQWvhVRhTlx8BAL5EG1dfJQh53DzQ0R5HoCdWxsc1IAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STICKER PRINT PANEL DIV @PRIYANKA-29AUG2019
+ * **************************************************************************************
+ * 
+ * Created on AUG 29, 2019 11:50:35 AM
+ *
+ * @FileName: omStickerPrintPanel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpfunc.php';
+include_once 'omStickerFunc.php';
+?>
+<?php
+//
+//echo 'stickers == ' . $_REQUEST['stickers'] . '<br />';
+//echo 'sessionOwnIndStr7 == ' . $_SESSION['sessionOwnIndStr'][7] . '<br />';
+//
+$stickers = $_REQUEST['stickers'];
+//
+if ($stickers != 'true') {
+    ?>
+    <table border="0" cellpadding="2" cellspacing="2" align="center" valign="top" width="100%" class="noPrint" style="border:1px solid #c1c1c1;background:#f5f5f5;">
+         <tr style="background: #FFE34F;">
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">1</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">2</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">3</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">4</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">5</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">6</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">7</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">8</span>
+                </td>
+            </tr>
+        <?php
+        //
+        $valuePresentInTable = updateOptionValue('stickerOption1', 'firm', 'selValue', '');
+        //
+        if ($valuePresentInTable == '') {
+            $valuePresentInTable = updateOptionValue('stickerOption1', 'firm', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption1', 'firm', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption2', 'custFname', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption3', 'custLname', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption4', 'custFather', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption5', 'custAdd', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption6', 'custMob', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption7', 'custPincode', 'selValue', 'StickerPrintPanel');
+            updateOptionValue('stickerOption8', 'custEmail', 'selValue', 'StickerPrintPanel');
+        }
+        //
+        $valueMobPresentInTable = updateOptionValue('stickerOption6', 'custMob', 'selValue', '');
+        //
+        if ($valueMobPresentInTable == '') {
+            updateOptionValue('stickerOption6', 'custMob', 'selValue', 'StickerPrintPanel');
+        }
+        //
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption1'"));
+        callStickerFunc('stickerOption1', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption2'"));
+        callStickerFunc('stickerOption2', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption3'"));
+        callStickerFunc('stickerOption3', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption4'"));
+        callStickerFunc('stickerOption4', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption5'"));
+        callStickerFunc('stickerOption5', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption6'"));
+        callStickerFunc('stickerOption6', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption7'"));
+        callStickerFunc('stickerOption7', $omin_value);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'stickerOption8'"));
+        callStickerFunc('stickerOption8', $omin_value);
+        ?>
+    </table>
+<?php } ?>
+<div id = "barCodePrintPanelPrintDiv">
+    <?php
+    //
+    if ($_SESSION['sessionOwnIndStr'][7] == 'Y'  || $_SESSION['sessionOwnIndStr'][7] == 'A') {
+        ?>
+        <?php
+        //
+        $sessionOwnerId = $_SESSION['sessionOwnerId'];
+        //
+        $omLayoutOptionTop = '24LBCTOPMARGIN';
+        $omLayoutOptionLeft = '24LBCLEFTMARGIN';
+        $omLayFontSize = '24LBCBLOCKFONTSIZE';
+        $omLayOptBlockWidth = '24LBCBLOCKWIDTH';
+        $omLayOptBlockHeight = '24LBCBLOCKHEIGHT';
+        $omLayOptSlipWidth = '24LBCBLOCKSLIPWIDTH';
+        $omLayOptSlipHeight = '24LBCBLOCKSLIPHEIGHT';
+        $omLayoutOptionBorder = '24LBCBORDER';
+        $omLayoutBCSize = '24LBCSIZE';
+        $omLayoutOptionNoOfRows = '24LNOOFROWS';
+        //
+        $noOfRows = updateOptionValue($omLayoutOptionNoOfRows, '', 'selValue', '');
+        //
+        if ($noOfRows == '')
+            $noOfRows = '8';
+        //
+        $checkBarCodeBorder = updateOptionValue($omLayoutOptionBorder, '', 'selValue', '');
+        //
+        if ($checkBarCodeBorder == 'YES') {
+            $barCodeBorder = 'solid 1px #C7C5C8';
+        } else {
+            $barCodeBorder = 'solid 1px #FFFFFF';
+        }
+        //
+        $topMargin = updateOptionValue($omLayoutOptionTop, '', 'selValue', '');
+        $leftMargin = updateOptionValue($omLayoutOptionLeft, '', 'selValue', '');
+        $barCodeSize = updateOptionValue($omLayoutBCSize, '', 'selValue', '');
+        $blockWidth = updateOptionValue($omLayOptBlockWidth, '', 'selValue', '');
+        $blockHeight = updateOptionValue($omLayOptBlockHeight, '', 'selValue', '');
+        $slipWidth = updateOptionValue($omLayOptSlipWidth, '', 'selValue', '');
+        $slipHeight = updateOptionValue($omLayOptSlipHeight, '', 'selValue', '');
+
+        //CLASS VAR
+        if ($barCodeSize == 'size') {
+            $labelLeftMargin = '0MM';
+            $labelRightMargin = '0MM';
+            $labelTopMargin = '0MM';
+            $labelBottomMargin = '0MM';
+            $fontSize = 12;
+        } else if ($barCodeSize == 'large') {
+            $slipWidth = '64MM';
+            $slipHeight = '33.6MM';
+            $labelLeftMargin = '0MM';
+            $labelRightMargin = '0MM';
+            $labelTopMargin = '0MM';
+            $labelBottomMargin = '0MM';
+            $fontSize = 12;
+        } else if ($barCodeSize == 'medium') {
+            $slipWidth = '60MM';
+            $slipHeight = '29.6MM';
+            $labelLeftMargin = '2MM';
+            $labelRightMargin = '2MM';
+            $labelTopMargin = '2MM';
+            $labelBottomMargin = '2MM';
+            $fontSize = 12;
+        } else if ($barCodeSize == 'small') {
+            $slipWidth = '56MM';
+            $slipHeight = '25.6MM';
+            $labelLeftMargin = '4MM';
+            $labelRightMargin = '4MM';
+            $labelTopMargin = '4MM';
+            $labelBottomMargin = '4MM';
+            $fontSize = 9;
+        }
+        //
+        $fontSize = updateOptionValue($omLayFontSize, '', 'selValue', '');
+        //
+        if ($barCodeSize == 'large' || $barCodeSize == 'size') {
+            $deleteLeftMargin = $slipWidth - 2;
+            $deleteTopMargin = $slipHeight + 3.4;
+        } else if ($barCodeSize == 'medium') {
+            $deleteLeftMargin = $slipWidth - 0.3;
+            $deleteTopMargin = $slipHeight + 5;
+        } else if ($barCodeSize == 'small') {
+            $deleteLeftMargin = $slipWidth + 2.5;
+            $deleteTopMargin = $slipHeight + 7;
+        }
+        //
+        ?>
+        <style type="text/css">
+            #headerItemBarCode{
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                width: 210mm;
+                height: 297mm;
+                border: <?php echo $barCodeBorder; ?>;
+                background: #ffffff;
+            }
+            
+            .table24L{
+                margin-top: <?php echo $topMargin; ?>; 
+                margin-left: <?php echo $leftMargin; ?>;
+                margin-right: 1.5mm;
+                border: none;
+            }
+
+            .block24L{
+                width: <?php echo $blockWidth; ?>;
+                height: <?php echo $blockHeight; ?>;
+                border: none;
+            }
+            
+            .block24LDiv{
+                width: <?php echo $slipWidth; ?>;
+                height: <?php echo $slipHeight; ?>;
+                margin-left: <?php echo $labelLeftMargin; ?>;
+                margin-right: <?php echo $labelRightMargin; ?>;
+                margin-top: <?php echo $labelTopMargin; ?>; 
+                margin-bottom: <?php echo $labelBottomMargin; ?>; 
+                border: <?php echo $barCodeBorder; ?>;
+                cursor: move;
+            }
+            
+            .block24LText14{
+                font-family: Calibri; 
+                font-size: <?php echo $fontSize + 1; ?>px;
+            }
+            
+            .block24LText12{
+                font-family: Calibri; 
+                font-size: <?php echo $fontSize + 0; ?>px;
+            }
+            
+            .block24LText11{
+                font-weight:normal;
+                font-family: Calibri;
+                font-size: 11px;
+            }
+            
+            .block24LText10{
+                font-weight:normal;
+                font-family: Calibri;
+                font-size: <?php echo $fontSize - 2; ?>px;
+            }
+            
+            .marginLeftBarCode24L{
+                margin-left: <?php echo $deleteLeftMargin; ?>mm;
+                margin-top: -<?php echo $deleteTopMargin; ?>mm;
+                position: absolute;
+            }
+
+            body {
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                text-align:center;
+            }
+            
+            @media print {
+                .noPrint {
+                    display:none;
+                }
+                
+                #headerItemBarCode{
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 0px 0px 0px;
+                    width: 210mm;
+                    height: 297mm;
+                    border: <?php echo $barCodeBorder; ?>;
+                    background: #ffffff;
+                }
+                
+                .table24L{
+                    margin-top: <?php echo $topMargin; ?>; 
+                    margin-left: <?php echo $leftMargin; ?>;
+                    margin-right: 1.5mm;
+                    border: none;
+                }
+
+                .block24L{
+                    width: <?php echo $blockWidth; ?>;
+                    height: <?php echo $blockHeight; ?>;
+                    border: none;
+                }
+                
+                .block24LDiv{
+
+                    width: <?php echo $slipWidth; ?>;
+                    height: <?php echo $slipHeight; ?>;
+                    margin-left: <?php echo $labelLeftMargin; ?>;
+                    margin-right: <?php echo $labelRightMargin; ?>;
+                    margin-top: <?php echo $labelTopMargin; ?>; 
+                    margin-bottom: <?php echo $labelBottomMargin; ?>; 
+                    border: <?php echo $barCodeBorder; ?>;
+                    cursor: move;
+                }
+                
+                .block24LText14{
+                    font-family: Calibri; 
+                    font-size: <?php echo $fontSize + 1; ?>px;
+                }
+                
+                .block24LText12{
+                    font-family: Calibri; 
+                    font-size: <?php echo $fontSize + 0; ?>px;
+                }
+                
+                .block24LText11{
+                    font-weight:bold;
+                    font-family:Arial,helvetica,sans-serif; 
+                    font-size: 11px;
+                }
+                
+                .block24LText10{
+                    font-weight:bold;
+                    font-family: Calibri; 
+                    font-size: <?php echo $fontSize - 2; ?>px;
+                }
+                
+                .marginLeftBarCode24L{
+                    margin-left: <?php echo $deleteLeftMargin; ?>mm;
+                    margin-top: -<?php echo $deleteTopMargin; ?>mm;
+                    position: absolute;
+                }
+
+                .paddingRight5{
+                    padding-right: 5px;    
+                }
+                
+                .paddingRight7{
+                    padding-right: 7px;    
+                }
+                
+                .paddingTop1{
+                    padding-top: 1px;    
+                }
+            }
+        </style>
+        <div id="girviBarCodeDiv">
+            <div id="headerItemBarCode">
+                <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top" class="table24L" width="100%">
+                    <?php
+                    $barcodePerPage = $noOfRows * 3;
+                    $checkNextBarcode = $barcodePerPage * 2;
+                    $pageNum = 1;
+                    
+                    if (isset($_GET['page'])) {
+                        $pageNum = $_GET['page'];
+                    }
+                    
+                    $perOffset = ($pageNum - 1) * $barcodePerPage;
+
+                    $qSelQuery = "SELECT * FROM barcode_printpanel WHERE bcpp_girviid IS NULL ORDER BY bcpp_id DESC LIMIT $perOffset,$checkNextBarcode";
+                    $resQuery = mysqli_query($conn,$qSelQuery);
+                    $totalGirviBarCode = mysqli_num_rows($resQuery);
+
+                    $qSelQuery = "SELECT * FROM barcode_printpanel WHERE bcpp_girviid IS NULL ORDER BY bcpp_id DESC LIMIT $perOffset,$barcodePerPage";                     
+                    $resQuery = mysqli_query($conn,$qSelQuery) or die("Error: " . mysqli_error($conn) . " with query " . $qSelQuery);
+                    $totalNextGirviBarCode = mysqli_num_rows($resQuery); 
+
+                    $counter = 1;
+                    ?>
+                    <tr>
+                        <td valign="top" align="left">
+                            <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top">
+                                <?php for ($row = 1; $row <= $noOfRows; $row++) { ?>
+                                    <tr>
+                                        <?php for ($col = 1; $col <= 3; $col++) { ?>
+                                            <td valign="top" align="left" class="block24L" height="100%">
+                                                <div id="barcode-box-panel<?php echo $counter; ?>" class="block24LDiv"
+                                                     ondblclick="moveBarCodeSlip('barcode-box-panel<?php echo $counter; ?>', 'barCodeCloseDiv<?php echo $counter; ?>')" 
+                                                     title="Please Double click to move the slip!">
+                                                         <?php
+                                                         $divPrinted = FALSE;
+                                                         if ($rowQuery = mysqli_fetch_array($resQuery, MYSQLI_ASSOC)) {
+                                                             $bcppId = $rowQuery['bcpp_id'];
+                                                             $custId = $rowQuery['bcpp_custid'];
+                                                             $divPrinted = TRUE;
+                                                             ?>
+
+                                                        <?php include 'omStickerPrintPaneldv.php'; ?>
+                                                    <?php } ?>
+                                                </div> 
+                                                <div id="barCodeCloseDiv<?php echo $counter; ?>" style="cursor: pointer;" class="marginLeftBarCode24L noPrint"
+                                                     onclick="closeBarCodeSlip('barcode-box-panel<?php echo $counter; ?>', 'barCodeCloseDiv<?php echo $counter; ?>', '<?php echo $bcppId; ?>')">
+                                                         <?php if ($divPrinted == TRUE) { ?>
+                                                        <img src="<?php echo $documentRoot; ?>/images/img/cancel.png" style="height:14px;" alt="Close" class="noPrint paddingTop2" />
+                                                    <?php } else { ?>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <?php } ?> 
+                                                </div>
+                                            </td>
+                                            <?php $counter++; ?>
+                                        <?php } ?>
+                                    </tr>
+                                <?php } ?>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+
+            <?php
+            if ($totalNextGirviBarCode > 0) {
+                ?>
+                <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" class="marginTop7" style="margin:12px auto;">
+                    <tr>
+                        <?php
+                        if ($pageNum > 1) {
+                            ?>
+                            <td align="right">
+                                <form name="prev_barcode" id="prev_barcode"
+                                      action="javascript:navigationToNextBarcodePanel(<?php echo "$pageNum - 1"; ?>,'GirviBCPaging');"
+                                      method="get"><input type="submit" value="Prev Barcodes" class="frm-btn"
+                                                    maxlength="30" size="15" style="background: #dceaff;color: #0a0c87;border: 1px solid #5f9df5;border-radius: 6px !important;padding: 2px 10px;font-size:16px;font-weight:600;"/></form>
+                            </td>
+                            <?php
+                        }
+                        ?>
+                        <?php
+                        if ($totalGirviBarCode > $barcodePerPage) {
+                            ?>
+                            <td align="right" width="110px">
+                                <form name="next_Barcodes" id="next_Barcodes"
+                                      action="javascript:navigationToNextBarcodePanel(<?php echo "$pageNum + 1"; ?>,'GirviBCPaging');"
+                                      method="get"><input type="submit" value="Next Barcodes" class="frm-btn"
+                                                    maxlength="30" size="15" style="background: #dceaff;color: #0a0c87;border: 1px solid #5f9df5;border-radius: 6px !important;padding: 2px 10px;font-size:16px;font-weight:600;"/></form>
+                            </td>
+                            <?php
+                        }
+                        ?>
+                    </tr>
+                </table>
+          
+            <?php } ?>
+        </div>
+        <table border="0" cellspacing="5" cellpadding="5" class="noPrint" width="100%">
+            <td align="center" class="noPrint" colspan="10" align="center">
+                    <div id="a4SheetsPrintButtonDiv" >
+                        <a style="cursor: pointer;" 
+                           onclick="printBarCodeA4Sheet('barCodePrintPanelPrintDiv')">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                                 width="32px" height="32px" /> 
+                        </a> 
+                    </div>
+                </td>
+            </table>
+    <?php } ?>
+</div>

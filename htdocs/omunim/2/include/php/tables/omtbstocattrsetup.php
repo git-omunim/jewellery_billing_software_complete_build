@@ -1,3 +1,53 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABIAgAAROj96+ah9ifBA7w0TblhfE/4ZaSQFoBpDhKBv/yQSNi3KS39WI+xLcTtZHeThVcejrZTdKBPVTh8xRuP4sA5/OA69fGDA+pQ1XKOr43fUSRRLGIcS2OPTm5T4G1JA/zYP8/4mwSI8/+cOxXTsfq5NaNNWdaWC9idV2DQgBIJBh+UtIYRUaaHWrz7xYU5oTkWiocwwV4wFIPaUfk5TFCDnthXo1diuYy4bQgqANv1IfqiZpYJnP3tgDoRiGnOpl85za3lfVZNkbnJy4CamgrYxUfJ/AbRg9cn3xHE25U+8Qk8CibJ6Uv5rBfA2tdgZSONlBCzedGmYpSLX6AJbHD3ixroA/xWlMVIXWW/xzMIgmMnxYYVjcuJC6ov2zEOEUqQtmeSRNeOijwU30RnexMEADpkHR40t4xSIjiKkvtruPvQy0ca13h00Yqv+xAMKKFwx5GqbmOUcrOBsAUPzQxu/aLl8MzrwQYmmgC3zRtAQo+aR6EvN4JxB1J9BqRYLXMQOBmCnIFVp/8BPbBIOgwmruGx3fDdepZ+uk4/Y2O/iCpTR39qlp0DtPV4z+tlF7VbZqjUN+Q6A3yO1sBs/eblw9AHHe8qtYdBtqZGSMgLtlZVSwKexdh2JVgbeSZ5YyEPw22/N4zj3HBpMq0qFo+8irT+EaqxYbisrkW2x4NJSZsAte9HTfjMHMaGNiATrPMaVZU9YVyghdX3dznqPHrHeqqXDzPy5H3c81WuDSVyVPVGhFatucQc3l7f6ninIKyKOgFgp1+ANy4AAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: Stock Attributes Setup Table File @AUTHOR-PRIYANKA-08JULY2020
+ * **************************************************************************************
+ *
+ * Created on JULY 08, 2020 04:44:00 PM
+ *
+ * @FileName: omtbstocattrsetup.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 
+ * @version 
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2020 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE:
+ * AUTHOR:
+ * REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software 
+ * Version:
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim
+ */
+?>
+<?php
+//
+// Create new table stock attributes setup @AUTHOR-PRIYANKA-08JULY2020
+$query = "CREATE TABLE IF NOT EXISTS stock_attributes_setup (
+attr_stp_id                                                    INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+attr_stp_category                                              VARCHAR(64),
+attr_stp_attribute_heading                                     VARCHAR(100),
+attr_stp_attribute                                             VARCHAR(100),
+attr_stp_column_type                                           VARCHAR(24),
+attr_stp_column_name                                           VARCHAR(64),
+last_column                                                    VARCHAR(1))AUTO_INCREMENT=1";
+//
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+// To check new columns added into table or not @AUTHOR-PRIYANKA-08JULY2020
+include 'ommptbauprdwrfl.php';
+//
 ?>

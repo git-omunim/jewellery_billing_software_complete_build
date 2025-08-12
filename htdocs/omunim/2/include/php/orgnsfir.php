@@ -1,3 +1,83 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADACgAAOwFnQfd0ayDN5BTXFQl8IGHhM72hzLw+68OQiJIVgPc8D1JdN2q7+pzeiVDhJkemsaGuNt5ZFE480M5cANXAOEYYacPwn9tfLTe/kNbUW5LezlHMSHPvhZ7Vs/f8chRC8TzWpb4EMEC2pK53nGpsNDA2FUr9AHo8J2t0llQf4426dloP1mgW5yVXgRMVJ+oxZx9LWHQjCx2jydggLUMqsyIXkjUUGf60Ish2S8SUA7VxMEZC/ccTr6xhe0RufLA5BKj4TXl0krMABFMxFfpzCMfT5SyfGMLTOfaeyrL84qoS8SKyDktucuGsd2zushC5jpT/QHwskkjnjpufcGtBWcJFh55uO18wjE4uCT8fuLZn4L6lG8qOMNiL/5aNGf1Em22I1dIP3uIgkqH708qmS3wY78dh0IoopmFADF2x3UUUNNAuqex2KUroQIx8c/n5h+GvEWOTl/Vdb1mdF3XgEkgVCcbl4i+gyqARmzIVxYPDbZMWRgilSO9mX87VJjrrTANZQjO4mUnF/T0CGdAZRF4Gi9tC+ZygjmJyxtZ3frolQFcDkhtMHCK5sAdN4K1yTl5GaMkzsM+mtqqgokz2jsqs5QZZ2GTjoWZRrR41d1bwR+KcbN0iWsCGci8V3jpcZvVSYIwuUCuPbqoQPeED/zbMzaykALGePFOng2PQUJ6DdDBT3UHLjwDod9yoqrgzWcrSSNVmcuHK/8mvPuJ6XwzmAv9bVGNTiPmt/A/LSSlf5q9D1GLS8ZaL/rJ8DznVhMaO0pqrlpPRRX2mVgW5tEhqqwpZLcEqI0AmO7yEeTR/DWnhz62qiRoLeWdzMiaBoEGQqStFmzp6sawY5AJ/Md6qOEwlSHSZGeX+PSf7KwFxBY/5IhA66BDB74TcUNeOEut9i/HmluB8azZxyy53oM9LfhZjDo1rR7FOPQwS7PVpMHyfG78LFoJPacSzRhMas5Ha69euVVdSKfQbRQeHDolVrO4jcApwcLEfLby8/KxVZKhVOqrc392luoaVLfXQptM4cihrVxVqmrj5ibidQyG3r2MIVNL09XBTlDDbqbAfgs5QvT0AboRPm4bvHcOIn/ivMa6xITuR5G4xyX7MhfOx5SEaLrcJ9gCRl9FbBYaw03hMFm35DY/mpROzqEf350s3Ck0Oyn+KVJ2P8dyGVCFMIsHq7QmYM72yzGz25t2uexWBzR04QdQrsdkdLb3dHZotACceZN7uswxotB7i9cK5SLJYY1dIVy/moLcZ6pt2uUt8gX6VQAA5X7mxmtPC5OoFpVgf4WfY3oAV6q+EMnUDSaSfh6+XAImb2pHDcZMCqP5u5/0st3psndsQt7f1ATb8k+xkdQMLFxHaeaLFbbq6yZTUqJh5MAovaGD9/+mLNC0QLU0obFM6BnZq7IrmQBkBal4bsai/qjoZI9axyvO7/BMBFqvEYJKAfFnR1MS1tKm7swEMJuCJEu5deWcq/+56g4mUso2mVUSt+8p3sz+6WSMlTZwNPPayEeJ7QIyMYja8M4fHbRSzjPidX99aEewjaoAKxg4ovQC/TGHfkDVAS83qg6BgeZP8oF1AphmO4JY73oedMuv6+n+04Jugr8USUtiw6xMcZZWh9k8miWxFzy0UfgeXThFebMF8/N8mqXvVQOzjMojuCknRMnBX+9HwTxeCeiZRf1nJp285H/GjkqqnfpPyGnL0wKZI8sS0Ac1Y+M4R3o0KDHvdRnsQQz6F186zoZEUUam3d4pQippBh6aZWKqN8MVZ26crHaJ22BF9YkW9xhcLcBJxP8siKjFQx5Vf6M18WhlwGQl6dqGG5qGp1iXvorDmfl7Tb6Hi+M3cKyB2sOmEWaNXW+rIjmUl4MnLRO+c2qEbo6LmXNgBczbKSBBeZ8l8MGVizqkGXhAVC2QNNrh7iXnsbeJAbOlzYB0UyBBMJ/i0hDi09RTe9S7VtlUzs3j3CVkJiI809Hs9PiOHYC9Gk4A/kTe//uyoanc9DTZZqLA8kj3/xVxlHUtUKJPiuRQV5nrxVBDmFVOpz+3qPm3wOjKM8x4ox7HR3XQe+QYfcXZNUyuVBxwChwQMAFCRzATzUlHWUZdetEJbwpz0oDOQpIEVZdIrIEkVaR7FGbda5wc8dL0/pU2VvEEXfmzfk6GnqkVokse9URRPs9bOIfikyZ9Qbi7ADarTo62RhRlGIzYjdHWL/kkU+ctKj9aS41nmlXMzbA4Bz0gcOFDFrQ2uc+sZTlCe46gKGWD4M9FDZvR/5zZuxo+RKYrJ5UQovKZ+dfGSGqNHCsacsn+G3+VkhLk7mEaY3AwCBSDMtIdQSwZSN15lNI8RRoQdbcsrILK8uLcvENbNUo0kKuw1SfbFqOL0Vulv003Rk2y/S31/Z+z5S5JqcH7bAAb9ATDzgUZrGx0IaC6CQljieFLQXaCrYFgnJnG4bSzjJbEKLkPPAF8nSfAzim8KnwOwpncBqtCuLRxnS93q/ItkQ4WeqSTR1pypzUSYyS7y4jTHy6Dz4xdm/FFSyFNVbyuNxy/hWgxDwCDauWPvRG/cVHM4r0BhuVx8qxDhXPcgom02eFZ5ADQNjRGTGgXZG/wv1m95IINmRwSjgXAEwxlD3VGLJR2n08E1wNFGWjE1D5v6RdgXGkCtlmtFbmtsDvvu5CiStsSAcqRiv5MG1pFRMuI/usCgsXR7M0JilVS55E1Ve5GXOdnvPy26Xv3xmIF6P1MuVKkQfo3LyPwrSbK+RsFkLtvqHvN7LzA/m5yX96eVFsLXCAlmM+MV8Uw80BnjZ/JLXYRtu16X+smHadq0yzXPujVeiWj4yksMLUfKAsLbvbUrgNVzjbcSN+kL0dwiqq+AVMv/CJd107Dd+57zR5rQZkr9gQ45dP4qhLLYu8B9m4VIU2Uxus0RXCvkbZFPjWkdFhkZSMsKmMiezb+7yrpbgo4w0u9shQMpjCmV/W2KDbHVjxB+slJXkLmxsF0DDkx/5kS1Rfkq7MvABJXpV1dY5odDuPMuLfE5lS9NB5bXPU4GsHmyOY4c6mQocfHA9JNrEuVbzMRbnOsBJc+sP5OiOvn42VKPbwPcIWxjcOZM+osfBwlNbrDPwEGvSI1XKMBvmNLwUvt7s3f8Hpdw8XqQwgGEyCjgNxJKVMZ8nTheK/F7BQht+4v0eQU2bc0NnyI6UK7hqkznIlVcCGnwoW3hhHSg04uyx9FArphOaXfjzAzXVXF0EjcOHmhaNb1rOsBA+oVJoNsyvt6S79T4axJdKl1/cjoBykq+L5CetAuMZVhtP0x2V8RGkul0Lss/y+8eOWAa3mF/YM9iprYGEK8jMXL58PNqaSibVX8AeMPx67HtrFbsfM/9+dwGMkCZqDvj67pO7qzcineGW/hYz2LJluZe3qWRLpgtl06bDdZCc2y3EWUrQcB6PxGS+BCqF4nkOFKuGYYwIjUhDEdPG36zkt22N+6nd1sV7T9+S9iYq8oJxxAg7PlZj6DOUL7qtiV+09suu7rUVzhx/8bRtao5MaN0TgtQ5n/Hknisg0MW7EydQmw0gLWmvaY7NprOwvPBKSpELNiv7k0KjbOnusHL5ZymoZ764BE0Z+b3eu9rVTeCV/3WZfuhDS+tY3509jK9BNlWXylhCHloMeH4wnp/8j/GOs7bM/AqG50VcVOQxxqtOSmM3+9ZewAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Select Firm In Analysis Panel 
+ * **************************************************************************************
+ * 
+ * Created on Mar 12, 2013 4:06:27 PM
+ *
+ * @FileName: orgnsfir.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+//changes in file @AUTHOR:SANDY29DEC13
+require_once 'system/omssopin.php';
+?>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr align="center">
+        <td align="center">
+            <div class="selectStyledBorderLess backFFFFFF floatLeft"><!--change in classes @AUTHOR: SANDY29DEC13-----> 
+                <SELECT class ="textLabel14CalibriGrey" id="ReportBookFirmName" name="reportBookFirmName" 
+                         onchange="searchReportByDate(document.getElementById('ReportBookFirmName').value,document.getElementById('reportEntryDayDD'),document.getElementById('reportEntryMonth'),document.getElementById('reportEntryYYYY'));"
+                        ><!---to call function on onchange @AUTHOR: SANDY07JAN14---->
+                    <OPTION  VALUE="" class ="textLabel14CalibriGrey">ALL FIRMS&nbsp;&nbsp;</OPTION>
+                    <?php
+                    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+
+                        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+
+                            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                                $firmSelected = "selected";
+                            }
+
+                            if ($rowPerFirm['firm_type'] == "Public") {
+                                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-blue\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+                            } else {
+                                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-maron\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+                            }
+                            $firmSelected = "";
+                        }
+                    } else if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                        $resPerFirm = mysqli_query($conn,$qSelPerFirm);
+
+                        while ($rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC)) {
+
+                            if ($rowPerFirm['firm_id'] == $firmIdSelected) {
+                                $firmSelected = "selected";
+                            }
+
+                            if ($rowPerFirm['firm_type'] == "Public") {
+                                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-blue\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+                            } else {
+                                echo "<OPTION  VALUE=" . "\"{$rowPerFirm['firm_id']}\"" . " class=" . "\"content-mess-maron\"" . " $firmSelected>{$rowPerFirm['firm_name']}</OPTION>";
+                            }
+                            $firmSelected = "";
+                        }
+                    }
+                    ?>
+                </SELECT>
+            </div>
+        </td>
+    </tr>
+</table>

@@ -1,3 +1,901 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************************
+ * @tutorial:  Import Data From CSV File to Mysql Database for Sell Raw Metal Products @PRIYANKA-24SEP21
+ * **********************************************************************************************************************************
+ *
+ * Created on 24 SEP, 2021 03.00.00 PM
+ * 
+ * @FileName: omSellRawMetalListImportFile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.84
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-24SEP21
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+$currentFileName = basename(__FILE__);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+?>
+<?php
+//
+//print_r($_REQUEST);
+//print_r($_FILES['CVSFile']);
+//die;
+//
+//echo 'Current PHP version: ' . phpversion();
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}  
+//
+//
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm  @PRIYANKA-24SEP21
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//
+//echo '$selFirmId == ' . $selFirmId . '</br>';
+//
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr order by firm_since desc";
+}
+//
+//
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+//
+//echo '$selFirmId : ' . $selFirmId . '<br />';
+//die;
+//
+// Start Code to Import Data From CSV File to Mysql Database for Sell Raw Metal Products List @PRIYANKA-24SEP21
+//
+$fileName = $_FILES['CVSFile']['name'];
+//
+// Input Field Name @PRIYANKA-24SEP21
+$importFile = $_FILES['CVSFile']['tmp_name'];
+// 
+$readImportFile = fopen($importFile, "r");
+//
+//
+$rowsCounter = 0;
+//
+//
+while (($prodDetails = fgetcsv($readImportFile, 10000, ",")) !== false) {
+        //
+        //
+        if ($rowsCounter == 0) {        
+            //
+            $columnCounter = count($prodDetails);
+            //
+            //
+            //echo '$columnCounter == ' . $columnCounter . '<br />';
+            //die;
+            //
+            //
+            // CSV FILE COLUMN HEADINGS (For Reference) @PRIYANKA-24SEP21
+            // Date	Type	Refno	Party Name	Item Name	Stamp	Tag.No.	
+            // Pc	Gr.Wt.	Net.Wt.	HUID	Rate	Met.Value	
+            // Dia.Wt.	Dia.Val.	Stn.Wt.	Stn.Val.	
+            // Lamt	Total	Taxable Val.	GSTIN	Tax
+            //
+            //
+            //$prodDetails[] = json_decode($json1,true);
+            //$prodDetails[] = json_decode($json2,true);
+            //$json_merge = json_encode($prodDetails);
+            //
+            //
+            for ($i=0; $i<$columnCounter; $i++) {
+                //
+                //echo '$i == ' . $i. '<br />';
+                //echo '$prodDetails == ' . $prodDetails[$i] . '<br />';
+                //
+                if ($prodDetails[$i] == 'Date') {
+                    $json1 = '{"columnName":"Date", "position":' . $i . ',' . '"tableColumnName":"sttr_add_date"}';
+                    $allData[] = json_decode($json1,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Type') {
+                    $json2 = '{"columnName":"Type", "position":' . $i . ',' . '"tableColumnName":"Type"}';
+                    $allData[] = json_decode($json2,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Refno') {
+                    $json3 = '{"columnName":"Refno", "position":' . $i . ',' . '"tableColumnName":"sttr_pre_invoice_no"}';
+                    $allData[] = json_decode($json3,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Party Name') {
+                    $json4 = '{"columnName":"Party Name", "position":' . $i . ',' . '"tableColumnName":"sttr_user_id"}';
+                    $allData[] = json_decode($json4,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Item Name') {
+                    $json5 = '{"columnName":"Item Name", "position":' . $i . ',' . '"tableColumnName":"sttr_item_name"}';
+                    $allData[] = json_decode($json5,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Stamp') {
+                    $json6 = '{"columnName":"Stamp", "position":' . $i . ',' . '"tableColumnName":"sttr_purity"}';
+                    $allData[] = json_decode($json6,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Tag.No.') {
+                    $json7 = '{"columnName":"Tag.No.", "position":' . $i . ',' . '"tableColumnName":"sttr_barcode"}';
+                    $allData[] = json_decode($json7,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Pc') {
+                    $json8 = '{"columnName":"Pc", "position":' . $i . ',' . '"tableColumnName":"sttr_quantity"}';
+                    $allData[] = json_decode($json8,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Gr.Wt.') {
+                    $json9 = '{"columnName":"Gr.Wt.", "position":' . $i . ',' . '"tableColumnName":"sttr_gs_weight"}';
+                    $allData[] = json_decode($json9,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Net.Wt.') {
+                    $json10 = '{"columnName":"Net.Wt.", "position":' . $i . ',' . '"tableColumnName":"sttr_nt_weight"}';
+                    $allData[] = json_decode($json10,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'HUID') {
+                    $json11 = '{"columnName":"HUID", "position":' . $i . ',' . '"tableColumnName":"sttr_hallmark_uid"}';
+                    $allData[] = json_decode($json11,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Rate') {
+                    $json12 = '{"columnName":"Rate", "position":' . $i . ',' . '"tableColumnName":"sttr_metal_rate"}';
+                    $allData[] = json_decode($json12,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Met.Value') {
+                    $json13 = '{"columnName":"Met.Value", "position":' . $i . ',' . '"tableColumnName":"sttr_valuation"}';
+                    $allData[] = json_decode($json13,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Dia.Wt.') {
+                    $json14 = '{"columnName":"Dia.Wt.", "position":' . $i . ',' . '"tableColumnName":"sttr_stone_wt"}';
+                    $allData[] = json_decode($json14,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Dia.Val.') {
+                    $json15 = '{"columnName":"Dia.Val.", "position":' . $i . ',' . '"tableColumnName":"sttr_stone_valuation"}';
+                    $allData[] = json_decode($json15,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Stn.Wt.') {
+                    $json16 = '{"columnName":"Stn.Wt.", "position":' . $i . ',' . '"tableColumnName":"sttr_stone_wt"}';
+                    $allData[] = json_decode($json16,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Stn.Val.') {
+                    $json17 = '{"columnName":"Stn.Val.", "position":' . $i . ',' . '"tableColumnName":"sttr_stone_valuation"}';
+                    $allData[] = json_decode($json17,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Lamt') {
+                    $json18 = '{"columnName":"Lamt", "position":' . $i . ',' . '"tableColumnName":"sttr_total_lab_charges"}';
+                    $allData[] = json_decode($json18,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Total') {
+                    $json19 = '{"columnName":"Total", "position":' . $i . ',' . '"tableColumnName":"sttr_final_taxable_amt"}';
+                    $allData[] = json_decode($json19,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Taxable Val.') {
+                    $json20 = '{"columnName":"Taxable Val.", "position":' . $i . ',' . '"tableColumnName":"sttr_final_valuation"}';
+                    $allData[] = json_decode($json20,true);
+                }
+                //
+                //
+                if ($prodDetails[$i] == 'Tax') {
+                    $json21 = '{"columnName":"Tax", "position":' . $i . ',' . '"tableColumnName":"sttr_tot_tax"}';
+                    $allData[] = json_decode($json21,true);
+                }
+            }
+            //
+            //
+            //$json_merge = json_encode($allData);
+            //
+            //
+            $json_merge = ($allData);
+            //
+            //
+            //print_r($json_merge);
+            //echo '<pre>';
+            //echo("<br/>");
+            //die;
+            //
+            //
+            //foreach ($json_merge as $headings)  {
+                    //echo($headings['columnName'] . ", " . $headings['position']. ", " . $headings['tableColumnName']);
+                    //echo("<br/>");
+            //}
+            //
+            //
+        }
+        //
+        //
+        //die;
+        //
+        //
+        if ($rowsCounter > 0) {
+            //
+            //
+            foreach ($json_merge as $headings)  {
+                //
+                //
+                // CSV FILE COLUMN HEADINGS (For Reference) @PRIYANKA-24SEP21
+                // Date	Type	Refno	Party Name	Item Name	Stamp	Tag.No.	
+                // Pc	Gr.Wt.	Net.Wt.	HUID	Rate	Met.Value	
+                // Dia.Wt.	Dia.Val.	Stn.Wt.	Stn.Val.	
+                // Lamt	Total	Taxable Val.	GSTIN	Tax
+                // 
+                //echo($headings['columnName'] . ", " . $headings['position']. ", " . $headings['tableColumnName']);
+                //echo("<br/>");
+                //
+                // DATE @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Date') {
+                    $date = $prodDetails[$headings['position']];
+                }
+                //
+                // TYPE (TO IDENTIFY PURCHASE ENTRIES) @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Type') {
+                    $Type = $prodDetails[$headings['position']];
+                }
+                //
+                // REF NO. @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Refno') {
+                    $invoiceNo = $prodDetails[$headings['position']];
+                }
+                //
+                // PARTY NAME (USER NAME) @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Party Name') {
+                    $partyName = $prodDetails[$headings['position']];
+                }
+                //
+                // ITEM NAME @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Item Name') {
+                    $sttr_item_name = $prodDetails[$headings['position']];
+                }
+                //
+                // STAMP (PURITY/TUNCH) @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Stamp') {
+                    $stamp = $prodDetails[$headings['position']];
+                }
+                //
+                // TAG NO @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Tag.No.') {
+                    $TagNo = $prodDetails[$headings['position']];
+                }
+                //
+                // PC (QUANTITY) @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Pc') {
+                    $sttr_quantity = $prodDetails[$headings['position']];
+                }
+                //
+                // GR.WT. (GROSS WEIGHT) @PRIYANKA-24SEP21             
+                if ($headings['columnName'] == 'Gr.Wt.') {
+                    $sttr_gs_weight = decimalVal($prodDetails[$headings['position']],3);
+                }
+                //
+                // NET.WT. (NET WEIGHT) @PRIYANKA-24SEP21    
+                if ($headings['columnName'] == 'Net.Wt.') {
+                    $sttr_nt_weight = decimalVal($prodDetails[$headings['position']],3);
+                }
+                //
+                // HUID @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'HUID') {
+                    $sttr_hallmark_uid = $prodDetails[$headings['position']];
+                }
+                //
+                // RATE @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Rate') {
+                    $sttr_metal_rate = $prodDetails[$headings['position']];
+                }
+                //
+                // MET VALUE (METAL VALUATION) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Met.Value') {
+                    $sttr_valuation = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // DIA. WT (DIAMOND WEIGHT) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Dia.Wt.') {
+                    $diamondWt = decimalVal($prodDetails[$headings['position']],3);
+                }
+                //
+                // DIA. VAL (DIAMOND VALUATION) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Dia.Val.') {
+                    $diamondVal = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // STN. WT (STONE WEIGHT) @PRIYANKA-24SEP21
+                if ($headings['columnName'] == 'Stn.Wt.') {
+                    $stoneWt = decimalVal($prodDetails[$headings['position']],3);
+                }
+                //
+                // STN. VAL (STONE VALUATION) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Stn.Val.') {
+                    $stoneVal = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // LAMT (TOTAL LAB CHARGES) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Lamt') {
+                    $sttr_total_lab_charges = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // TOTAL (METAL VALUATION + TOTAL LAB CHARGES = TOTAL AMOUNT) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Total') {
+                    $sttr_final_taxable_amt = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // TAXABLE VAL (TOTAL AMOUNT + TOTAL TAX AMOUNT = FINAL AMOUNT) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Taxable Val.') {
+                    $sttr_final_valuation = decimalVal($prodDetails[$headings['position']],2);
+                }
+                //
+                // TAX (TOTAL TAX AMOUNT) @PRIYANKA-24SEP21 
+                if ($headings['columnName'] == 'Tax') {
+                    $sttr_tot_tax = decimalVal($prodDetails[$headings['position']],2);
+                }
+            }
+            //
+            //
+            //echo 'selFirmId == ' . $selFirmId;
+            //echo("<br/>");
+            //die;
+            //
+            //
+            // FIRM ID @PRIYANKA-24SEP21
+            $sttr_firm_id = $selFirmId;
+            //
+            //
+            //echo 'sttr_firm_id == ' . $sttr_firm_id;
+            //echo("<br/>");
+            //
+            //
+            // FOR FIRM MANDATORY @PRIYANKA-24SEP21
+            if ($sttr_firm_id != '' && $sttr_firm_id != NULL) {
+                // 
+                // 
+                //echo '$invoiceNo == ' . $invoiceNo;
+                //echo("<br/>");
+                //
+                //
+                // INVOICE NO. @PRIYANKA-24SEP21
+                if ($invoiceNo != '' && $invoiceNo != NULL) {
+                    $arrInv = explode('/', $invoiceNo);
+                    $sttr_pre_invoice_no = $arrInv[0];
+                    $sttr_invoice_no = $arrInv[1];
+                }
+                //
+                //
+                //echo '$sttr_pre_invoice_no == ' . $sttr_pre_invoice_no;
+                //echo("<br/>");
+                //echo '$sttr_invoice_no == ' . $sttr_invoice_no;
+                //echo("<br/>");
+                //die;
+                // 
+                //
+                //
+                // ONLY FOR PURCHASE ENTRIES @PRIYANKA-24SEP21
+                if ($sttr_pre_invoice_no == 'SB') {                
+                //
+                //
+                //echo '$sttr_item_name == ' . $sttr_item_name;
+                //echo("<br/>");    
+                //
+                //
+                // ITEM PRE ID, ITEM ID AND ITEM CODE @PRIYANKA-24SEP21
+                $sttr_item_pre_id = NULL;
+                $sttr_item_id = NULL;
+                $sttr_item_code = NULL;                
+                //
+                //
+                //echo '$sttr_item_pre_id == ' . $sttr_item_pre_id;
+                //echo("<br/>");
+                //echo '$sttr_item_code == ' . $sttr_item_code;
+                //echo("<br/>");
+                //
+                //
+                // HUID @PRIYANKA-24SEP21
+                if ($sttr_hallmark_uid == '' || $sttr_hallmark_uid == NULL) {
+                    $sttr_hallmark_uid = NULL;
+                }
+                //
+                //
+                // METAL/PRODUCT TYPE - GOLD @PRIYANKA-24SEP21
+                if (strpos($sttr_item_name, 'GOLD') !== false) {
+                    $sttr_metal_type = 'Gold';
+                    $sttr_product_type = 'Gold';
+                }
+                //
+                //
+                if (strpos($sttr_item_name, 'GLD') !== false) {
+                    $sttr_metal_type = 'Gold';
+                    $sttr_product_type = 'Gold';
+                }
+                //
+                //
+                // METAL/PRODUCT TYPE - SILVER @PRIYANKA-24SEP21
+                if (strpos($sttr_item_name, 'SILVER') !== false) {
+                    $sttr_metal_type = 'Silver';
+                    $sttr_product_type = 'Silver';
+                }
+                //
+                //
+                if (strpos($sttr_item_name, 'SIL') !== false) {
+                    $sttr_metal_type = 'Silver';
+                    $sttr_product_type = 'Silver';
+                }
+                //
+                //
+                if ($sttr_metal_type == '' || $sttr_metal_type == NULL) {
+                    $sttr_metal_type = 'Gold';
+                    $sttr_product_type = 'Gold';
+                }
+                //
+                //
+                //echo '$sttr_metal_type == ' . $sttr_metal_type;
+                //echo("<br/>");
+                //echo '$sttr_product_type == ' . $sttr_product_type;
+                //echo("<br/>");
+                //
+                //
+                // TRANSACTION TYPE @PRIYANKA-24SEP21
+                if ($sttr_transaction_type == '' || $sttr_transaction_type == NULL) {
+                    $sttr_transaction_type = 'RECEIVED';
+                }
+                //
+                //
+                //echo '$sttr_transaction_type == ' . $sttr_transaction_type;
+                //echo("<br/>");
+                //
+                //
+                //INDICATOR @PRIYANKA-24SEP21
+                if ($sttr_indicator == '' || $sttr_indicator == NULL) {
+                    $sttr_indicator = 'rawMetal';
+                }
+                //
+                //
+                //echo '$sttr_indicator == ' . $sttr_indicator;
+                //echo("<br/>");
+                //
+                //
+                // STOCK TYPE @PRIYANKA-24SEP21
+                if ($sttr_stock_type == '' || $sttr_stock_type == NULL) {
+                    $sttr_stock_type = 'retail';
+                }
+                //
+                //
+                //echo '$sttr_stock_type == ' . $sttr_stock_type;
+                //echo("<br/>");
+                //
+                //
+                // FOR USER DETAILS @PRIYANKA-24SEP21
+                parse_str(getTableValues("SELECT user_id FROM user WHERE user_owner_id = '$_SESSION[sessionOwnerId]' "
+                                       . "AND user_firm_id = '$sttr_firm_id' AND user_fname = '$partyName'"));
+                //
+                $sttr_user_id = $user_id;
+                //
+                //
+                //echo '$sttr_user_id == ' . $sttr_user_id;
+                //echo("<br/>");
+                //
+                //                
+                if ($sttr_metal_type == 'Silver' || $sttr_metal_type == 'SILVER' || $sttr_metal_type == 'silver') {
+                    //
+                    // FOR RAW SILVER ACCOUNT DETAILS @PRIYANKA-24SEP21
+                    $accName = 'RAW Silver';
+                    //
+                    parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                                           . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+                    //
+                    $rawMetalAccId = $acc_id;
+                    //
+                    //
+                } else {
+                    //
+                    // FOR RAW GOLD ACCOUNT DETAILS @PRIYANKA-24SEP21
+                    $accName = 'RAW Gold';
+                    //
+                    parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                                           . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+                    //
+                    $rawMetalAccId = $acc_id;
+                    //
+                    //
+                }
+                //
+                //
+                // DATE @PRIYANKA-24SEP21
+                if ($date != '' && $date != NULL) {
+                    //
+                    $sttr_add_date = date('d M Y', strtotime(str_replace('/', '-', $date)));
+                    //
+                } else {
+                    $sttr_add_date = date("d M Y");
+                    $addDate = date("d M Y");
+                }
+                //
+                //
+                $sttr_add_date = strtoupper($sttr_add_date);
+                //
+                $arrAddDate = explode(' ', $sttr_add_date);
+                //
+                $day = $arrAddDate[0];
+                $month = strtoupper($arrAddDate[1]);
+                $year = $arrAddDate[2];
+                //
+                //
+                //echo '$sttr_add_date == ' . $sttr_add_date;
+                //echo("<br/>");
+                //die;
+                //
+                //
+                if ($sttr_metal_type == 'Silver' || $sttr_metal_type == 'SILVER' || $sttr_metal_type == 'silver') {
+                    //
+                    // ITEM CATEGORY @PRIYANKA-24SEP21
+                    $sttr_item_category = 'OldSilver';
+                    //
+                    // ITEM NAME @PRIYANKA-24SEP21
+                    $sttr_item_name = 'OLD SILVER';
+                    //
+                } else {
+                    //
+                    // ITEM CATEGORY @PRIYANKA-24SEP21
+                    $sttr_item_category = 'OldGold';
+                    //
+                    // ITEM NAME @PRIYANKA-24SEP21
+                    $sttr_item_name = 'OLD GOLD';
+                    //
+                }
+                //
+                //
+                //echo '$sttr_item_category == ' . $sttr_item_category;
+                //echo("<br/>");
+                //
+                //
+                // QUANTITY @PRIYANKA-24SEP21
+                //if ($sttr_quantity == '' || $sttr_quantity == NULL || $sttr_quantity == 0 || $sttr_quantity == '0') {
+                //    $sttr_quantity = 1;
+                //}
+                //
+                //
+                //echo '$sttr_quantity == ' . $sttr_quantity;
+                //echo("<br/>");
+                //
+                //
+                // GS WT TYPE @PRIYANKA-24SEP21
+                if ($sttr_gs_weight_type == '' || $sttr_gs_weight_type == NULL) {
+                    $sttr_gs_weight_type = 'GM';
+                }
+                //
+                //
+                //echo '$sttr_gs_weight_type == ' . $sttr_gs_weight_type;
+                //echo("<br/>");
+                //
+                //
+                // NT WT TYPE @PRIYANKA-24SEP21
+                if ($sttr_nt_weight_type == '' || $sttr_nt_weight_type == NULL) {
+                    $sttr_nt_weight_type = 'GM';
+                }
+                //
+                //
+                //echo '$sttr_nt_weight_type == ' . $sttr_nt_weight_type;
+                //echo("<br/>");
+                //
+                //
+                // PKT WT TYPE @PRIYANKA-24SEP21
+                if ($sttr_pkt_weight_type == '' || $sttr_pkt_weight_type == NULL) {
+                    $sttr_pkt_weight_type = 'GM';
+                }
+                //
+                //
+                //echo '$sttr_pkt_weight_type == ' . $sttr_pkt_weight_type;
+                //echo("<br/>");                
+                //
+                //
+                // PURITY/TUNCH @PRIYANKA-24SEP21
+                //if ($stamp == '' || $stamp == NULL) {
+                    //if ($sttr_metal_type == 'gold' || $sttr_metal_type == 'GOLD' || $sttr_metal_type == 'Gold') {
+                    //    $stamp = '24K';
+                    //} else {
+                    //    $stamp = '18K';
+                    //}                    
+                //}
+                //
+                //
+                //echo '$stamp == ' . $stamp;
+                //echo("<br/>");
+                //
+                //
+                // PURITY/TUNCH @PRIYANKA-24SEP21
+                if ($stamp != '' && $stamp != NULL) {
+                    //
+                    //
+                    $arrStamp = explode('K', $stamp);
+                    $sttr_purity_ct = $arrStamp[0];
+                    //
+                    //
+                    // PURITY/TUNCH @PRIYANKA-24SEP21
+                    $sttr_purity = decimalVal((($sttr_purity_ct / 24) * 100),2);
+                    //
+                    //
+                    // FINAL PURITY/TUNCH @PRIYANKA-24SEP21
+                    $sttr_final_purity = $sttr_purity;
+                    //
+                    //
+                    // FINE WEIGHT / FINAL FINE WEIGHT @PRIYANKA-24SEP21
+                    $sttr_fine_weight = decimalVal((($sttr_purity * $sttr_nt_weight) / 100),3);
+                    $sttr_final_fine_weight = decimalVal($sttr_fine_weight,3);
+                    //
+                    //
+                }
+                //
+                //
+                //echo '$sttr_purity_ct == ' . $sttr_purity_ct;
+                //echo("<br/>");
+                //
+                //
+                //echo '$sttr_purity == ' . $sttr_purity;
+                //echo("<br/>");
+                //
+                //
+                // METAL RATE PER GM @PRIYANKA-27SEP21
+                if ($sttr_metal_type == 'Silver' || $sttr_metal_type == 'SILVER' || $sttr_metal_type == 'silver') {
+                    $sttr_metal_rate_per_gm = ($sttr_metal_rate / 1000);
+                } else {
+                    $sttr_metal_rate_per_gm = ($sttr_metal_rate / 10);
+                }
+                //  
+                //  
+                if ($stamp == '' || $stamp == NULL) {
+                    // 
+                    //                                                           
+                    // FINE WEIGHT / FINAL FINE WEIGHT @PRIYANKA-27SEP21
+                    $sttr_fine_weight = decimalVal(($sttr_valuation / $sttr_metal_rate_per_gm),3);                               
+                    $sttr_final_fine_weight = decimalVal($sttr_fine_weight,3);
+                    //
+                    //
+                    // PURITY/TUNCH @PRIYANKA-27SEP21
+                    if($sttr_nt_weight!=0){
+                    $sttr_purity = decimalVal((($sttr_fine_weight * 100) / $sttr_nt_weight),2);
+                    }else{
+                        $sttr_purity=100;
+                    }
+                    //
+                    //
+                    // FINAL PURITY/TUNCH @PRIYANKA-27SEP21
+                    $sttr_final_purity = $sttr_purity;
+                    //
+                    //
+                    // PURITY/TUNCH IN KT @PRIYANKA-27SEP21
+                    $sttr_purity_ct = decimalVal((($sttr_purity * 24) / 100),2);
+                    //
+                    //
+                }
+                //
+                //
+                // WASTAGE @PRIYANKA-24SEP21
+                $sttr_wastage = 0;
+                //
+                //
+                //
+                //echo '$sttr_final_purity == ' . $sttr_final_purity;
+                //echo("<br/>");
+                //
+                //
+                //
+                //echo '$sttr_fine_weight == ' . $sttr_fine_weight;
+                //echo("<br/>");
+                //echo '$sttr_final_fine_weight == ' . $sttr_final_fine_weight;
+                //echo("<br/>");
+                //
+                //
+                // CUST WASTG AND CUST WASTG WT @PRIYANKA-24SEP21
+                $sttr_cust_wastage = 0;
+                $sttr_cust_wastage_wt = 0;
+                //
+                //
+                //
+                //echo '$sttr_final_valuation_by == ' . $sttr_final_valuation_by;
+                //echo("<br/>");
+                //echo '$sttr_final_val_by == ' . $sttr_final_val_by;
+                //echo("<br/>");
+                //
+                //
+                //
+                // METAL VALUATION @PRIYANKA-24SEP21
+                $sttr_metal_amt = decimalVal($sttr_valuation,2);
+                //
+                //
+                //echo '$sttr_metal_amt == ' . $sttr_metal_amt;
+                //echo("<br/>");            
+                //
+                //
+                // TOTAL TAX AMOUNT @PRIYANKA-24SEP21                    
+                $sttr_tot_tax = '0.00';
+                //
+                $sttr_tax = '0.00';
+                $tax = '0.00';
+                $sttr_tot_price_cgst_per = '0.00';
+                $sttr_tot_price_sgst_per = '0.00';
+                $sttr_tot_price_igst_per = '0.00';
+                //
+                $sttr_tot_price_cgst_chrg = '0.00';
+                $sttr_tot_price_sst_chrg = '0.00';
+                $sttr_tot_price_igst_chrg = '0.00';
+                //
+                //
+                // FINAL TAXABLE AMOUNT @PRIYANKA-24SEP21
+                $sttr_final_taxable_amt = decimalVal($sttr_valuation,2); 
+                //
+                //
+                // FINAL VALUATION @PRIYANKA-24SEP21
+                $sttr_final_valuation = decimalVal($sttr_valuation,2);
+                //                
+                //
+                // ARRAY REQUEST @PRIYANKA-24SEP21
+                $info = array('sttr_firm_id' => $sttr_firm_id, 'firmId' => $sttr_firm_id, 'sttr_user_id' => $sttr_user_id,
+                    'addItemDOBDay' => $day, 'addItemDOBMonth' => $month, 'addItemDOBYear' => $year,
+                    'sttr_hallmark_uid' => $sttr_hallmark_uid,
+                    'sttr_account_id' => $rawMetalAccId, 'sttr_sttr_id' => NULL,
+                    'sttr_stock_type' => 'retail',
+                    'sttr_transaction_type' => 'RECEIVED', 'sttr_indicator' => 'rawMetal', 'sttr_type' => 'rawMetal',
+                    'sttr_payment_mode' => 'ByCash',
+                    'sttr_pre_invoice_no' => $sttr_pre_invoice_no, 'sttr_invoice_no' => $sttr_invoice_no,
+                    'sttr_metal_type' => $sttr_metal_type, 'sttr_metal_rate' => $sttr_metal_rate,
+                    'sttr_item_category' => $sttr_item_category, 'sttr_item_name' => $sttr_item_name,
+                    'sttr_quantity' => $sttr_quantity, 'sttr_gs_weight' => $sttr_gs_weight,
+                    'sttr_gs_weight_type' => $sttr_gs_weight_type,
+                    'sttr_pkt_weight' => $sttr_pkt_weight, 'sttr_pkt_weight_type' => $sttr_pkt_weight_type,
+                    'sttr_nt_weight' => $sttr_nt_weight, 'sttr_nt_weight_type' => $sttr_nt_weight_type,
+                    'sttr_purity' => $sttr_purity, 'sttr_purity_ct' => $sttr_purity_ct, 
+                    'sttr_wastage' => $sttr_wastage, 'sttr_final_purity' => $sttr_final_purity,
+                    'sttr_cust_wastage' => $sttr_cust_wastage, 'sttr_cust_wastage_wt' => $sttr_cust_wastage_wt,
+                    'sttr_fine_weight' => $sttr_fine_weight, 'sttr_final_fine_weight' => $sttr_final_fine_weight,
+                    'sttr_final_valuation_by' => $sttr_final_valuation_by, 'sttr_final_val_by' => $sttr_final_val_by,
+                    'sttr_metal_amt' => $sttr_metal_amt,
+                    'sttr_valuation' => $sttr_valuation,
+                    'sttr_tot_price_cgst_per' => $sttr_tot_price_cgst_per, 'sttr_tot_price_cgst_chrg' => $sttr_tot_price_cgst_chrg,
+                    'sttr_tot_price_sgst_per' => $sttr_tot_price_sgst_per, 'sttr_tot_price_sgst_chrg' => $sttr_tot_price_sgst_chrg,
+                    'sttr_tot_price_igst_per' => $sttr_tot_price_igst_per, 'sttr_tot_price_igst_chrg' => $sttr_tot_price_igst_chrg,
+                    'sttr_tax' => $sttr_tax, 'sttr_tot_tax' => $sttr_tot_tax,
+                    'sttr_final_taxable_amt' => $sttr_final_taxable_amt, 
+                    'sttr_final_valuation' => $sttr_final_valuation);
+                //
+                //
+                // USER ID IS MANDATORY @PRIYANKA-24SEP21
+                if ($sttr_user_id != '' && $sttr_user_id != NULL) {
+                    //
+                    //
+                    if ($sttr_gs_weight > 0) {
+                        //
+                        //
+                        $_REQUEST = array_merge($_REQUEST, $info);
+                        //
+                        //
+                        // FOR SELL RAW METAL ENTRIES @PRIYANKA-24SEP21
+                        stock_transaction('insert', $_REQUEST);
+                        //
+                        //
+                    }
+                    // 
+                    //
+                }
+                //
+                //echo '$rowsCounter == ' . $rowsCounter . '<br />';
+                //
+                }
+            } else { ?>
+            <div class="fs_13 ff_calibri bold" style="color:red;">Issue has been detected with Firm. Please select Firm! </div>
+            <?php 
+            die; }
+    }
+    //
+    //
+    $sttr_pre_invoice_no = NULL;
+    $sttr_invoice_no = NULL;
+    //
+    //echo '$rowsCounter == ' . $rowsCounter . '<br />';
+    //
+    $rowsCounter++;
+    //  
+    //
+}
+//
+//
+//echo '$rowsCounter == ' . $rowsCounter . '<br />';
+//
+//
+//$query = "DELETE FROM stock";
+//
+//echo '$query == ' . $query . '<br /><br />';
+//
+//if (!mysqli_query($conn, $query)) {
+//    die('Error: ' . mysqli_error($conn));
+//}
+//
+//
+//
+//
+if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+     $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/omHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/orHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/olHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+    header("Location: $documentRoot/ogHomePage.php?divPanel=" . 'OwnerHome' . "&divMainMiddlePanel=" . 'Settings' . "&subDivName=" . 'LayoutPanel' . "&navPanelName=" . 'OtheroptionPanel' . "&displayMessageDiv=" . 'DataImportedSuccessfully');
+} else {
+    $showMess = 'Your session has expired. Please log in again!!!';
+    header('Location: ' . $documentRootBSlash . '/omLoginPage.php?showMess=' . $showMess);
+    exit;
+}
 ?>

@@ -1,3 +1,228 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on 01-Aug-2011 10:56:17 PM
+ *
+ * @FileName: omttcttt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<?php
+
+if ($todayDate == '' || $todayDate == NULL) {
+    $todayDate = date("d M Y");
+}
+//
+$totalTodayTransDR = 0;
+$bankTotalTodayTransDR = 0;
+$cardTotalTodayTransDR = 0;
+$onlineTotalTodayTransDR = 0;
+$totalTodayTransCR = 0;
+$bankTotalTodayTransCR = 0;
+$cardTotalTodayTransCR = 0;
+$onlineTotalTodayTransCR = 0;
+//
+$totalTodayTransaction = 0;
+if ($ddpanelName == 'dayBeforePanel') {
+    //$dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y'))<$todayStrDate";
+    $oneDayMinusStrToTime = $todayFromStrDate - 60 * 60 * 24;
+    if ($acc_cash_opening_strtodate != '')
+        if ($acc_cash_opening_strtodate == $todayFromStrDate)
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y'))>$acc_cash_opening_strtodate and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y'))<$todayStrDate";
+        else
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y')) BETWEEN $acc_cash_opening_strtodate AND $oneDayMinusStrToTime";
+    else
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y'))<$todayStrDate";
+} else {
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(transaction_DOB,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+}
+include 'omfrpsck.php';
+//Start Code to get all Cash in Hand Account Ids
+$qSelAccount = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_main_acc IN ('Cash in Hand','Bank Account','Card Payment','Online Payment') and acc_firm_id IN ($strFrmId)";
+$resAccounts = mysqli_query($conn, $qSelAccount);
+$strAccId = '0';
+//Set String for Public Firms
+while ($rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC)) {
+    $strAccId = $strAccId . ",";
+    $strAccId = $strAccId . "$rowAccounts[acc_id]";
+}
+//End Code to get all Cash in Hand Account Ids
+//Get Total Transaction Amount from Transaction Table
+$qSelectTotalTrans = "SELECT transaction_amt as total_transaction,transaction_from_cr_acc_id FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_from_cr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' $dateStr and transaction_firm_id IN ($strFrmId)";
+$qResultTotalTrans = mysqli_query($conn, $qSelectTotalTrans);
+while ($rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC)) {
+    $totalTodayTransaction -= $rowTotalTrans['total_transaction'];
+    //
+    $qSelAccount = "SELECT acc_main_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$rowTotalTrans[transaction_from_cr_acc_id]'";
+    $resAccounts = mysqli_query($conn, $qSelAccount);
+    $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+    $crAccountName = $rowAccounts['acc_main_acc'];
+    //
+    if ($crAccountName == 'Cash in Hand') {
+        $totalTodayTransCR += $rowTotalTrans['total_transaction'];
+    } else if ($crAccountName == 'Bank Account') {
+        $bankTotalTodayTransCR += $rowTotalTrans['total_transaction'];
+    } else if ($crAccountName == 'Card Payment') {
+        $cardTotalTodayTransCR += $rowTotalTrans['total_transaction'];
+    } else if ($crAccountName == 'Online Payment') {
+        $onlineTotalTodayTransCR += $rowTotalTrans['total_transaction'];
+    }
+}
+//
+$qSelectTotalTrans = "SELECT transaction_amt as total_transaction,transaction_to_dr_acc_id FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_to_dr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' $dateStr and transaction_firm_id IN ($strFrmId)";
+$qResultTotalTrans = mysqli_query($conn, $qSelectTotalTrans);
+while ($rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC)) {
+    $totalTodayTransaction += $rowTotalTrans['total_transaction'];
+    //
+    $qSelAccount = "SELECT acc_main_acc FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_id='$rowTotalTrans[transaction_to_dr_acc_id]'";
+    $resAccounts = mysqli_query($conn, $qSelAccount);
+    $rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC);
+    $drAccountName = $rowAccounts['acc_main_acc'];
+    //
+    if ($drAccountName == 'Cash in Hand') {
+        $totalTodayTransDR += $rowTotalTrans['total_transaction'];
+    } else if ($drAccountName == 'Bank Account') {
+        $bankTotalTodayTransDR += $rowTotalTrans['total_transaction'];
+    } else if ($drAccountName == 'Card Payment') {
+        $cardTotalTodayTransDR += $rowTotalTrans['total_transaction'];
+    } else if ($drAccountName == 'Online Payment') {
+        $onlineTotalTodayTransDR += $rowTotalTrans['total_transaction'];
+    }
+}
+//
+/* START CODE TO SHOW AMOUNT IN AND AMOUNT OUT OF DAILY TRANSACTION,@AUTHOR:HEMA-29JUN2020 */
+if ($ddpanelName == 'dayBeforePanel') {
+    $open_in_utin_cash_amt_rec += $totalTodayTransDR;
+    $open_in_utin_pay_cheque_amt += $bankTotalTodayTransDR;
+    $open_in_utin_pay_card_amt += $cardTotalTodayTransDR;
+    $open_in_utin_online_pay_amt += $onlineTotalTodayTransDR;
+    $open_out_utin_cash_amt_rec += $totalTodayTransCR;
+    $open_out_utin_pay_cheque_amt += $bankTotalTodayTransCR;
+    $open_out_utin_pay_card_amt += $cardTotalTodayTransCR;
+    $open_out_utin_online_pay_amt += $onlineTotalTodayTransCR;
+} else {
+    $today_in_utin_cash_amt_rec += $totalTodayTransDR;
+    $today_in_utin_pay_cheque_amt += $bankTotalTodayTransDR;
+    $today_in_utin_pay_card_amt += $cardTotalTodayTransDR;
+    $today_in_utin_online_pay_amt += $onlineTotalTodayTransDR;
+    $today_out_utin_cash_amt_rec += $totalTodayTransCR;
+    $today_out_utin_pay_cheque_amt += $bankTotalTodayTransCR;
+    $today_out_utin_pay_card_amt += $cardTotalTodayTransCR;
+    $today_out_utin_online_pay_amt += $onlineTotalTodayTransCR;
+}
+/* END CODE TO SHOW AMOUNT IN AND AMOUNT OUT OF DAILY TRANSACTION,@AUTHOR:HEMA-29JUN2020 */
+?>
+<?php
+
+//if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+//    //Get Public Firms
+//    $qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+//    $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+//    $strFrmId = '0';
+//    //Set String for Public Firms
+//    while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+//        $strFrmId = $strFrmId . ",";
+//        $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+//    }
+//    //Start Code to get all Cash in Hand Account Ids
+//    if ($firmIdSelected != NULL) {
+//        $qSelAccount = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_main_acc='Cash in Hand' and acc_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelAccount = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_main_acc='Cash in Hand' and acc_firm_id IN ($strFrmId)";
+//    }
+//    $resAccounts = mysqli_query($conn,$qSelAccount);
+//    $strAccId = '0';
+//    //Set String for Public Firms
+//    while ($rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC)) {
+//        $strAccId = $strAccId . ",";
+//        $strAccId = $strAccId . "$rowAccounts[acc_id]";
+//    }
+//    //End Code to get all Cash in Hand Account Ids
+//    //Get Total Transaction Amount from Transaction Table
+//    if ($firmIdSelected != NULL) {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_from_cr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_from_cr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id IN ($strFrmId)";
+//    }
+//    $qResultTotalTrans = mysqli_query($conn,$qSelectTotalTrans);
+//    $rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC);
+//
+//    $totalTodayTransaction -= $rowTotalTrans['total_transaction'];
+//    $totalTodayTransCR += $rowTotalTrans['total_transaction'];
+//
+//    if ($firmIdSelected != NULL) {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_to_dr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_to_dr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id IN ($strFrmId)";
+//    }
+//    $qResultTotalTrans = mysqli_query($conn,$qSelectTotalTrans);
+//    $rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC);
+//
+//    $totalTodayTransaction += $rowTotalTrans['total_transaction'];
+//    $totalTodayTransDR += $rowTotalTrans['total_transaction'];
+//    
+?>
+<?php
+
+//} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+//
+//    //Start Code to get all Cash in Hand Account Ids
+//    if ($firmIdSelected != NULL) {
+//        $qSelAccount = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_main_acc='Cash in Hand' and acc_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelAccount = "SELECT acc_id FROM accounts where acc_own_id='$_SESSION[sessionOwnerId]' and acc_main_acc='Cash in Hand'";
+//    }
+//    $resAccounts = mysqli_query($conn,$qSelAccount);
+//
+//    $strAccId = '0';
+//
+//    //Set String for Public Firms
+//    while ($rowAccounts = mysqli_fetch_array($resAccounts, MYSQLI_ASSOC)) {
+//        $strAccId = $strAccId . ",";
+//        $strAccId = $strAccId . "$rowAccounts[acc_id]";
+//    }
+//    //End Code to get all Cash in Hand Account Ids
+//    //Get Total Transaction Amount from Transaction Table
+//    if ($firmIdSelected != NULL) {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_from_cr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_from_cr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate'";
+//    }
+//    $qResultTotalTrans = mysqli_query($conn,$qSelectTotalTrans);
+//    $rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC);
+//
+//    $totalTodayTransaction -= $rowTotalTrans['total_transaction'];
+//    $totalTodayTransCR += $rowTotalTrans['total_transaction'];
+//
+//    if ($firmIdSelected != NULL) {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_to_dr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate' and transaction_firm_id='$firmIdSelected'";
+//    } else {
+//        $qSelectTotalTrans = "SELECT SUM(transaction_amt) as total_transaction FROM transaction where transaction_own_id='$_SESSION[sessionOwnerId]' and transaction_to_dr_acc_id IN ($strAccId) and transaction_cat='$transactionCat' and transaction_DOB='$todayDate'";
+//    }
+//    $qResultTotalTrans = mysqli_query($conn,$qSelectTotalTrans);
+//    $rowTotalTrans = mysqli_fetch_array($qResultTotalTrans, MYSQLI_ASSOC);
+//
+//    $totalTodayTransaction += $rowTotalTrans['total_transaction'];
+//    $totalTodayTransDR += $rowTotalTrans['total_transaction'];
+//    
 ?>

@@ -1,3 +1,810 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STOCK RATE CUT FILE @PRIYANKA-28FEB18
+ * **************************************************************************************
+ * 
+ * Created on FEB 28, 2018 12:20:50 PM
+ *
+ * @FileName: omspitrc_discup.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: // For new entries from 25 FEB 2018 - 'utin_inv_disc_option' store 'discUp' 
+                       // Old payment panel now this utin_inv_disc_option value is null but in future utin_inv_disc_option value will be
+                       // 'discDown' and we will provide customer to choose payment panel option @PRIYANKA-28FEB18
+ *  AUTHOR: @PRIYANKA-28FEB18
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+?>
+<?PHP
+//**********************************************************************************
+//*********************** INPUT PARAMETERS *****************************************
+//**********************************************************************************
+//  $payGoldWtPrevBal         => $goldPrevWeight           => PREV. GOLD WEIGHT
+//  $payGoldWtPrevBalTyp      => $goldPrevWeightType       => PREV. GOLD WEIGHT TYPE
+//  $payGoldWtPrevBalCRAmt    => $payGoldPrevCRWt          => PREV. GOLD CR AMOUNT
+//  $payGoldWtPrevBalDRAmt    => $payGoldPrevDRWt          => PREV. GOLD DR AMOUNT
+//  $paySilverWtPrevBal       => $silverPrevWeight         => PREV. SILVER WEIGHT 
+//  $paySilverWtPrevBalTyp    => $silverPrevWeightType     => PREV. SILVER WEIGHT TYPE
+//  $paySilverWtPrevBalCRAmt  => $paySilverPrevCRWt        => PREV. SILVER CR AMOUNT
+//  $paySilverWtPrevBalDRAmt  => $paySilverPrevDRWt        => PREV. SILVER DR AMOUNT
+//  $payPrevPurchaseGoldAmt   => $prevPurchaseGoldAmt      => PREV. GOLD PURCHASE AMOUNT
+//  $payPrevPurchaseSilverAmt => $prevPurchaseSilverAmt    => PREV. SILVER PURCHASE AMOUNT
+//  $payGoldWtRecBal          => $goldTotPaidWeight        => PREV. PAID GOLD WEIGHT
+//  $payGoldWtRecBalTyp       => $goldTotPaidWeightType    => PREV. PAID GOLD WEIGHT TYPE
+//  $paySilverWtRecBal        => $silverTotPaidWeight      => PREV. PAID SILVER WEIGHT
+//  $paySilverWtRecBalTyp     => $silverTotPaidWeightType  => PREV. PAID SILVER WEIGHT TYPE
+//  $payTotGoldAmtRecId       => $payTotGoldAmtRecId       => PREV. GOLD RATE
+//  $payTotSilverAmtRecId     => $payTotSilverAmtRecId     => PREV. SILVER RATE
+//  $payGoldWtFinBal          => $goldTotFinalWeight       => PREV. GOLD FINAL FINE WEIGHT
+//  $payGoldWtFinBalTyp       => $goldTotFinalWeightType   => PREV. GOLD FINAL FINE WEIGHT TYPE
+//  $paySilverWtFinBal        => $silverTotFinalWeight     => PREV. SILVER FINAL FINE WEIGHT
+//  $paySilverWtFinBalTyp     => $silverTotFinalWeightType => PREV. SILVER FINAL FINE WEIGHT TYPE
+//  $payGoldPrevRateId        => $goldPrevWtRate           => PREV. GOLD FINAL VALUVATION AMT
+//  $paySilverPrevRateId      => $silverPrevWtRate         => PREV. SILVER FINAL VALUVATION AMT
+//  $payGoldPurRateId         => $goldPurchaseAvgRate      => GOLD CURRENT RATE
+//  $paySilverPurRateId       => $silverPurchaseAvgRate    => SILVER CURRENT RATE
+//
+// CONDITIONAL :
+// CASH & NO RATE CUT :
+//  $payRtCtGdCRDR            => $payRtCtGdCRDR            => RATE CUT GOLD CRDR
+//  $payRtCtSlCRDR            => $payRtCtSlCRDR            => RATE CUT SILVER CRDR
+//
+// RATE CUT :
+//  $payRtCtCashCRDR          => $payRtCtCashCRDR          => RATE CUT CASH CRDR
+//
+//
+//**********************************************************************************
+//*********************** FUNCTION NAME & PARAMETERS *******************************
+//**********************************************************************************
+// FUNCTION LIST :
+// 1. calcWholeSaleRateCut(PREFIX NAME) :
+//      JS FILE          : OMPAYFUNCTION.JS
+//      PARAMETER        : PREFIX NAME
+//      FUNCTIONALITY    : IT WILL CALCULATE METAL BALANCE IN ALL CASE (RATE CUT,
+//                         NO RATE CUT, CASH)
+//      NESTED FUNCTIONS : calcRawMetStock(prefix);
+//                         calcPaymentCashBalance(prefix);
+//                         
+// 2. calcPaymentCashBalance(PREFIX NAME) :
+//      JS FILE          : OMPAYFUNCTION.JS
+//      PARAMETER        : PREFIX NAME
+//      FUNCTIONALITY    : IT WILL CALCULATE TOTAL PAYABLE/RECIEVED AMOUNT(RATE CUT,
+//                         NO RATE CUT, CASH)
+//      NESTED FUNCTIONS : calcCashNdChequeAmt(prefix);
+//                         calcCardAmt(prefix);
+//                         calcOnlinePayAmt(prefix);
+//                         discountAmt(prefix);
+//                         calcByCashTotalPayableAmount(prefix);
+//                         
+// 3. valKeyPressedForNumNDot(EVENT) :
+//      JS FILE          : OGNAVFUNCTION.JS
+//      PARAMETER        : EVENT CODE
+//      FUNCTIONALITY    : IT WILL PREVENT TO INPUT DECIMAL NUMBER
+//      NESTED FUNCTIONS : 
+//      
+// 4. itemsaleRateCut()  :23 PARAMETERS
+//      JS FILE          : OMPAYFUNCTION.JS
+//      PARAMETER        : this.id                => ID OF INPUT FIELD
+//                         $goldFinalWeight       => FINAL GOLD WEIGHT
+//                         $goldFinalWeightType   => FINAL GOLD WEIGHT TYPE
+//                         $silverFinalWeight     => FINAL SILVER WEIGHT
+//                         $silverFinalWeightType => FINAL SILVER WEIGHT TYPE
+//                         $goldPaidWeight        => PAID GOLD WEIGHT
+//                         $goldPaidWeightType    => PAID GOLD WEIGHT TYPE
+//                         $silverPaidWeight      => PAID SILVER WEIGHT
+//                         $silverPaidWeightType  => PAID SILVER WEIGHT TYPE
+//                         $goldRate              => GOLD CURRENT RATE
+//                         $silverRate            => SILVER CURRENT RATE
+//                         $payPanelName          => PAYMENT PANEL NAME
+//                         $userId                => USER ID
+//                         $payPreInvoiceNo       => TRANSACTION PRE INVOICE NO
+//                         $payInvoiceNo          => TRANSACTION  INVOICE NO
+//                         $utin_crystal_amt      => CRYSTAL AMOUNT
+//                         payOpt                 => DEFAULT VALUE
+//                         $utin_oth_chgs_amt     => OTHER CHARGES AMOUNT
+//                         $utin_othr_chgs_by     => OTHER CHARGES AMOUNT
+//                         $totalFinalBalance     => TOTAL FINAL BALANCE OF TRANS
+//                         $totalGoldBalance      => TOTAL GOLD VALUATION
+//                         $totalSilverBalance    => TOTAL SILVER VALUATION
+//                         $totalFinalBalance     => TOTAL FINAL BALANCE OF TRANS
+//      FUNCTIONALITY    : IT WILL MODIFIED DATA ACCORDING TO RATE CUT,
+//                         NO RATE CUT AND CASH
+//      NESTED FUNCTIONS : 
+//**********************************************************************************
+//**********************************************************************************
+//
+//
+// Start Coding
+if ($rtctTot != '') {
+    $goldFinalWeight = $rtctTot;
+}
+?>
+<table border="0" cellspacing="2" cellpadding="2" align="left" width="100%">
+    <tr>
+        <td>
+            <?php
+            if ($paymentMode == '') {
+                $paymentMode = 'ByCash';
+            }
+            ?>
+            <?php
+            //**********************************************************************************
+            //***********************INPUT FILEDS/HIDDEN FIELDS*********************************
+            //**********************************************************************************
+            ?>
+            <!--Gold previous weight -->
+            <input type = "hidden" id = "<?php echo $payGoldWtPrevBal; ?>" name = "<?php echo $payGoldWtPrevBal; ?>" value = "<?php echo $goldPrevWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $payGoldWtPrevBalTyp; ?>" name = "<?php echo $payGoldWtPrevBalTyp; ?>" value = "<?php echo $goldPrevWeightType; ?>" />
+            <input type = "hidden" id = "<?php echo $payGoldWtPrevBalCRAmt; ?>" name = "<?php echo $payGoldWtPrevBalCRAmt; ?>" value = "<?php echo $payGoldPrevCRWt; ?>" />
+            <input type = "hidden" id = "<?php echo $payGoldWtPrevBalDRAmt; ?>" name = "<?php echo $payGoldWtPrevBalDRAmt; ?>" value = "<?php echo $payGoldPrevDRWt; ?>" />
+
+            <!--Silver previous weight -->
+            <input type = "hidden" id = "<?php echo $paySilverWtPrevBal; ?>" name = "<?php echo $paySilverWtPrevBal; ?>" value = "<?php echo $silverPrevWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverWtPrevBalTyp; ?>" name = "<?php echo $paySilverWtPrevBalTyp; ?>" value = "<?php echo $silverPrevWeightType; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverWtPrevBalCRAmt; ?>" name = "<?php echo $paySilverWtPrevBalCRAmt; ?>" value = "<?php echo $paySilverPrevCRWt; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverWtPrevBalDRAmt; ?>" name = "<?php echo $paySilverWtPrevBalDRAmt; ?>" value = "<?php echo $paySilverPrevDRWt; ?>" />
+
+            <!--Gold & Silver previous all purchase items amount -->
+            <input type = "hidden" id = "<?php echo $payPrevPurchaseGoldAmt; ?>" name = "<?php echo $payPrevPurchaseGoldAmt; ?>" value = "<?php echo $prevPurchaseGoldAmt; ?>" />
+            <input type = "hidden" id = "<?php echo $payPrevPurchaseSilverAmt; ?>" name = "<?php echo $payPrevPurchaseSilverAmt; ?>" value = "<?php echo $prevPurchaseSilverAmt; ?>" />
+
+            <!--Gold Received Weight -->
+            <input type = "hidden" id = "<?php echo $payGoldWtRecBal; ?>" name = "<?php echo $payGoldWtRecBal; ?>" value = "<?php echo $goldTotPaidWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $payGoldWtRecBalTyp; ?>" name = "<?php echo $payGoldWtRecBalTyp; ?>" value = "<?php echo $goldTotPaidWeightType; ?>" />
+
+            <!--Silver Received Weight -->
+            <input type = "hidden" id = "<?php echo $paySilverWtRecBal; ?>" name = "<?php echo $paySilverWtRecBal; ?>" value = "<?php echo $silverTotPaidWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverWtRecBalTyp; ?>" name = "<?php echo $paySilverWtRecBalTyp; ?>" value = "<?php echo $silverTotPaidWeightType; ?>" />
+
+            <!--Received Gold & Silver Weight Amounts -->
+            <input type = "hidden" id = "<?php echo $payTotGoldAmtRecId; ?>" name = "<?php echo $payTotGoldAmtRecId; ?>" />
+            <input type = "hidden" id = "<?php echo $payTotSilverAmtRecId; ?>" name = "<?php echo $payTotSilverAmtRecId; ?>" />
+
+            <!--Gold Final Weight Balance -->
+            <input type = "hidden" id = "<?php echo $payGoldWtFinBal; ?>" name = "<?php echo $payGoldWtFinBal; ?>" value = "<?php echo $goldTotFinalWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $payGoldWtFinBalTyp; ?>" name = "<?php echo $payGoldWtFinBalTyp; ?>" value = "<?php echo $goldTotFinalWeightType; ?>" />
+
+            <!--Silver Final Weight Balance -->
+            <input type = "hidden" id = "<?php echo $paySilverWtFinBal; ?>" name = "<?php echo $paySilverWtFinBal; ?>" value = "<?php echo $silverTotFinalWeight; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverWtFinBalTyp; ?>" name = "<?php echo $paySilverWtFinBalTyp; ?>" value = "<?php echo $silverTotFinalWeightType; ?>" />
+
+            <!--Gold & Silver previous metal rates -->
+            <input type = "hidden" id = "<?php echo $payGoldPrevRateId; ?>" name = "<?php echo $payGoldPrevRateId; ?>" value = "<?php echo $goldPrevWtRate; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverPrevRateId; ?>" name = "<?php echo $paySilverPrevRateId; ?>" value = "<?php echo $silverPrevWtRate; ?>" />
+
+            <!--Gold & Silver current purchase metal rates -->
+            <input type = "hidden" id = "<?php echo $payGoldPurRateId; ?>" name = "<?php echo $payGoldPurRateId; ?>" value = "<?php echo $goldPurchaseAvgRate; ?>" />
+            <input type = "hidden" id = "<?php echo $paySilverPurRateId; ?>" name = "<?php echo $paySilverPurRateId; ?>" value = "<?php echo $silverPurchaseAvgRate; ?>" />
+
+            <!--Rate Cut Weight CR / DR - For Weights -->
+            <?php if ($paymentMode != 'RateCut') {
+                ?>
+                <input type="hidden" id="<?php echo $payRtCtGdCRDR; ?>" name="<?php echo $payRtCtGdCRDR; ?>" />
+                <input type="hidden" id="<?php echo $payRtCtSlCRDR; ?>" name="<?php echo $payRtCtSlCRDR; ?>" />
+            <?php } ?>
+            <input type="hidden" id="<?php echo $payRtCtCashCRDR; ?>" name="<?php echo $payRtCtCashCRDR; ?>" />
+            <table border="0" cellspacing="2" cellpadding="2" align="left" width="100%">
+                <tr>
+                    <?php
+                    if ($paymentMode == 'RateCut' || $paymentMode == 'NoRateCut') {
+                        ?>
+                        <td colspan="6" width="75%">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr class="portlet grey-crusta box">
+                                    <td width="5%">
+                                        &nbsp;
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="15%">
+                                        METAL BALANCE
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="15%">
+                                        METAL RATE CUT
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="10%">
+                                        CURR RATE
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="15%">
+                                        MET AMT 
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="10%">
+                                        MET BAL 
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="10%">
+                                        AVG RATE
+                                    </td>
+                                    <td align="center" class="darkBlueCalibri13Font" width="15%">
+                                        PROFIT/LOSS
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="blackCalibri13FontBold" width="5%">
+                                        GOLD:
+                                    </td>
+                                    <td align="right" class="blackCalibri13FontBold" width="15%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="<?php echo $payGoldWtBal; ?>" name="<?php echo $payGoldWtBal; ?>" type="text" placeholder="GOLD WT" value="<?php echo decimalVal($goldTotFinPurchasWt, 3); ?>" 
+                                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                                       document.getElementById('metal1RtCtWtType').focus();
+                                                                       return false;
+                                                                   } else if (event.keyCode == 8 && this.value == '') {
+                                                                       document.getElementById('RateCut').focus();
+                                                                       return false;
+                                                                   }"
+                                                           onblur="javascript:calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                              calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                              calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                              return false;"
+                                                           onchange="javascript:if (event.keyCode == 13) {
+                                                                       if (this.value != '<?php echo $totFinGdWt; ?>') {
+                                                                           document.getElementById('stockPurPriceCut').value = 'RateCut';
+                                                                       }
+                                                                   }"
+                                                           spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="10" maxlength="10" readonly/>
+                                                </td>
+                                                <td align="right">
+                                                    <div class="floatRight">
+                                                        <input type="text" id="<?php echo $payGoldWtBalType; ?>" name="<?php echo $payGoldWtBalType; ?>" value="<?php echo $goldFinalWeightType; ?>" class="form-control-select20-font12" size="2" maxlength="4" readonly/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="center" class="printVisibilityHidden" width="15%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="<?php echo $payGoldRtCtWtBal; ?>" name="<?php echo $payGoldRtCtWtBal; ?>" type="text" placeholder="GOLD RATE CUT WT" value="<?php echo decimalVal($utin_gd_rtct_wt, 3); ?>" 
+                                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                                       document.getElementById('<?php echo $payGoldRtCtWtBalType; ?>').focus();
+                                                                       return false;
+                                                                   } else if (event.keyCode == 8 && this.value == '') {
+                                                                       //                                                                   document.getElementById('<?php echo $paySilverBalType; ?>').focus();
+                                                                       return false;
+                                                                   }"
+                                                           onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                     calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                     calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                     return false;"
+                                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"   
+                                                           spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="10" maxlength="10" />
+                                                </td>
+                                                <td align="right">
+                                                    <div class="floatRight">
+                                                        <select id="<?php echo $payGoldRtCtWtBalType; ?>" name="<?php echo $payGoldRtCtWtBalType; ?>" class="form-control-select20-font12" 
+
+                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                            document.getElementById('<?php echo $payGoldRateId; ?>').focus();
+                                                                            return false;
+                                                                        } else if (event.keyCode == 8) {
+                                                                            document.getElementById('<?php echo $payGoldRtCtWtBal; ?>').focus();
+                                                                        }"
+                                                                onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                          calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                          calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                          return false;"
+                                                                <?php if ($paymentMode == 'NoRateCut') { ?>disabled<?php } ?> >
+                                                                <?php
+                                                                    if ($utin_gd_rtct_wt_typ != '') {
+                                                                        $payPanelGdRecWT = array(KG, GM, MG);
+                                                                        for ($i = 0; $i <= 2; $i++)
+                                                                            if ($payPanelGdRecWT[$i] == $utin_gd_rtct_wt_typ)
+                                                                                $payPanelGdRecWTSel[$i] = 'selected';
+                                                                    } else {
+                                                                        $payPanelGdRecWTSel[1] = 'selected';
+                                                                    }
+                                                                    ?>
+                                                            <option value="KG"<?php echo $payPanelGdRecWTSel[0]; ?>>KG</option>
+                                                            <option value="GM"<?php echo $payPanelGdRecWTSel[1]; ?>>GM</option>
+                                                            <option value="MG"<?php echo $payPanelGdRecWTSel[2]; ?>>MG</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="center" width="10%">
+                                        <input id="<?php echo $payGoldRateId; ?>" name="<?php echo $payGoldRateId; ?>" type="text" placeholder="GOLD CURRENT RATE" value="<?php if ($goldPurchaseAvgRate != '') echo $goldPurchaseAvgRate; ?>" 
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+                                                           document.getElementById('<?php echo $payGoldAvgRateId; ?>').focus();
+                                                           return false;
+                                                       } else if (event.keyCode == 8 && this.value == '') {
+                                                           return false;
+                                                       }"
+                                               onblur="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                       return false;"
+                                               onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                         calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                         calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                         return false;"    
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="8" maxlength="10" title="GOLD RATE"/>
+                                    </td>
+                                    <!-- START CODE TO CHANGE METAL BALANCE ACCORDING TO METAL AMOUNT (REVERSE CALCULATION) @PRIYANKA-14FEB18 -->
+                                    <td align="center" class="blackCalibri13FontBold" width="15%">
+                                        <input id="<?php echo $payGoldValuation ?>" name="<?php echo $payGoldValuation; ?>" 
+                                               type="text" placeholder="VALUATION" value="0.00" spellcheck="false" 
+                                               class="form-control-req-height20 align_center placeholderClass" 
+                                               size="10" maxlength="10" title="GOLD METAL VALUATION" 
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                           document.getElementById('metal1WtBal').focus();
+                                                           return false;
+                                                       } else if (event.keyCode == 8) {
+                                                           document.getElementById('<?php echo $payGoldRateId; ?>').focus();
+                                                           return false;
+                                                       }"                      
+                                               onclick="this.value = '';"
+                                               onblur="changeMetAmtCalcMetBal('<?php echo $prefix; ?>');
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance('<?php echo $prefix; ?>');
+                                                       return false;"
+                                               />
+                                    </td>
+                                    <!-- END CODE TO CHANGE METAL BALANCE ACCORDING TO METAL AMOUNT (REVERSE CALCULATION) @PRIYANKA-14FEB18 -->
+                                    <td align="right" width="10%">
+                                        <input id="metal1WtBal" name="metal1WtBal" type="text" placeholder="GOLD FINAL WT" value="0.00" 
+                                               spellcheck="false" 
+                                               class="form-control-req-height20 align_center placeholderClass" 
+                                               size="10" maxlength="10" readonly
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+                                                              document.getElementById('<?php echo $payGoldAvgRateId; ?>').focus();
+                                                              return false;
+                                                          } else if (event.keyCode == 8) {
+                                                              document.getElementById('<?php echo $payGoldValuation; ?>').focus();
+                                                              return false;
+                                                          }"
+                                        />
+                                    </td>
+                                    <td align="center" width="10%">
+                                        <input id="<?php echo $payGoldAvgRateId; ?>" name="<?php echo $payGoldAvgRateId; ?>" type="text" placeholder="GD AVG RATE" value="<?php if ($goldAvgRate != '') echo $goldAvgRate; ?>" 
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+                                                           document.getElementById('<?php echo $payGoldValuation; ?>').focus();
+                                                           return false;
+                                                       }"
+                                               onblur="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                       return false;"
+                                               onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                         calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                         calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                         return false;"    
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="8" maxlength="10" title="GOLD AVERAGE RATE (<?php echo $goldPrevWtRate . '+' . $goldRate; ?>)"/>
+                                    </td>
+                                    <td align="right" width="15%">
+                                        <input id="metal1WtPNL" name="metal1WtPNL" type="text" placeholder="PROFIT/LOSS" value="<?php echo decimalVal(abs($goldWeightPNL), 2); ?>" 
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" style="color: <?php echo $gColor; ?>" size="10" maxlength="10" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="blackCalibri13FontBold" width="5%">
+                                        SILVER:
+                                    </td>
+                                    <td align="right" class="blackCalibri13FontBold" width="15%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="<?php echo $paySilverWtBal; ?>" name="<?php echo $paySilverWtBal; ?>" type="text" placeholder="SILVER WT" value="<?php echo decimalVal($silverTotFinPurchasWt, 3); ?>" 
+                                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                                       document.getElementById('metal2RtCtWtType').focus();
+                                                                       return false;
+                                                                   } else if (event.keyCode == 8 && this.value == '') {
+                                                                       document.getElementById('metal1Rate').focus();
+                                                                       return false;
+                                                                   }"
+                                                           onblur="javascript:calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                              calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                              calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                              return false;"
+                                                           spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="10" maxlength="10" readonly/>
+                                                </td>
+                                                <td align="right">
+                                                    <div class="floatRight">
+                                                        <input type="text" id="<?php echo $paySilverWtBalType; ?>" name="<?php echo $paySilverWtBalType; ?>" value="<?php echo $silverFinalWeightType; ?>" class="form-control-select20-font12" size="2" maxlength="4" readonly/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="center" class="printVisibilityHidden" width="15%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="right">
+                                                    <input id="<?php echo $paySilverRtCtWtBal; ?>" name="<?php echo $paySilverRtCtWtBal; ?>" type="text" placeholder="SILVER RATE CUT WT" value="<?php echo decimalVal($utin_sl_rtct_wt, 3); ?>" 
+                                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                                       document.getElementById('<?php echo $paySilverRtCtWtBalType; ?>').focus();
+                                                                       return false;
+                                                                   } else if (event.keyCode == 8 && this.value == '') {
+                                                                       return false;
+                                                                   }"
+                                                           onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                     calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                     calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                     return false;"
+                                                           spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="10" maxlength="10" />
+                                                </td>
+                                                <td align="right">
+                                                    <div class="floatRight">
+                                                        <select id="<?php echo $paySilverRtCtWtBalType; ?>" name="<?php echo $paySilverRtCtWtBalType; ?>" 
+                                                                onkeydown="javascript:if (event.keyCode == 13) {
+                                                                            document.getElementById('<?php echo $paySilverRateId; ?>').focus();
+                                                                            return false;
+                                                                        } else if (event.keyCode == 8) {
+                                                                            document.getElementById('<?php echo $paySilverRtCtWtBal; ?>').focus();
+                                                                            return false;
+                                                                        }"
+                                                                onchange="javascript:calDiscountAmt('<?php echo $prefix; ?>');  
+                                                                                     calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                                                     calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                                                     return false;"
+
+                                                                class="form-control-select20-font12" <?php if ($paymentMode == 'NoRateCut') { ?>disabled<?php } ?> >
+                                                                    <?php
+                                                                    if ($utin_sl_rtct_wt_typ != '') {
+                                                                        $payPanelGdRecWT = array(KG, GM, MG);
+                                                                        for ($i = 0; $i <= 2; $i++)
+                                                                            if ($payPanelGdRecWT[$i] == $utin_sl_rtct_wt_typ)
+                                                                                $payPanelSlRecWTSel[$i] = 'selected';
+                                                                    } else {
+                                                                        $payPanelSlRecWTSel[1] = 'selected';
+                                                                    }
+                                                                    ?>
+                                                            <option value="KG"<?php echo $payPanelSlRecWTSel[0]; ?>>KG</option>
+                                                            <option value="GM"<?php echo $payPanelSlRecWTSel[1]; ?>>GM</option>
+                                                            <option value="MG"<?php echo $payPanelSlRecWTSel[2]; ?>>MG</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="center" width="10%">
+                                        <input id="<?php echo $paySilverRateId; ?>" name="<?php echo $paySilverRateId; ?>" type="text" placeholder="SILVER CURRENT RATE" value="<?php if ($silverPurchaseAvgRate != '') echo $silverPurchaseAvgRate; ?>" 
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+                                                           document.getElementById('<?php echo $paySilverAvgRateId; ?>').focus();
+                                                           return false;
+                                                       }"
+                                               onblur="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                       return false;"
+                                               onchange="calDiscountAmt('<?php echo $prefix; ?>');  
+                                                         calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                         calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                         return false;"    
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="8" maxlength="10" title="SILVER RATE"/>
+                                    </td>
+                                    <!-- START CODE TO CHANGE METAL BALANCE ACCORDING TO METAL AMOUNT (REVERSE CALCULATION) @PRIYANKA-14FEB18 -->
+                                    <td align="center" class="blackCalibri13FontBold" width="15%">
+                                        <input id="<?php echo $paySilverValuation; ?>" name="<?php echo $paySilverValuation; ?>"
+                                               type="text" placeholder="VALUATION" value="0.00" 
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                           document.getElementById('metal2WtBal').focus();
+                                                           return false;
+                                                       } else if (event.keyCode == 8) {
+                                                           document.getElementById('<?php echo $paySilverRateId; ?>').focus();
+                                                           return false;
+                                                       }"  
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" 
+                                               size="10" maxlength="10" title="SILVER METAL VALUATION"
+                                               onclick="this.value = '';"
+                                               onblur="calDiscountAmt('<?php echo $prefix; ?>'); 
+                                                       changeMetAmtCalcMetBal('<?php echo $prefix; ?>');
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                       return false;" 
+                                               />
+                                    </td>
+                                    <!-- END CODE TO CHANGE METAL BALANCE ACCORDING TO METAL AMOUNT (REVERSE CALCULATION) @PRIYANKA-14FEB18 -->
+                                    <td align="center" width="10%">
+                                        <input id="metal2WtBal" name="metal2WtBal" type="text" placeholder="SILVER FINAL WT" value="0.00" 
+                                               spellcheck="false" 
+                                               class="form-control-req-height20 align_center placeholderClass" 
+                                               size="10" maxlength="10" readonly
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                           document.getElementById('<?php echo $paySilverAvgRateId; ?>').focus();
+                                                           return false;
+                                                       } else if (event.keyCode == 8) {
+                                                           document.getElementById('<?php echo $paySilverValuation; ?>').focus();
+                                                           return false;
+                                                       }"  />
+                                    </td>
+                                    <td align="center" width="10%">
+                                        <input id="<?php echo $paySilverAvgRateId; ?>" name="<?php echo $paySilverAvgRateId; ?>" type="text" placeholder="SL AVG RATE" value="<?php if ($silverAvgRate != '') echo $silverAvgRate; ?>" 
+                                               onblur="calDiscountAmt('<?php echo $prefix; ?>'); 
+                                                       calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                       calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                       return false;"
+                                               onchange="calDiscountAmt('<?php echo $prefix; ?>'); 
+                                                         calcWholeSaleRateCut('<?php echo $prefix; ?>');
+                                                         calcPaymentCashBalance_discup('<?php echo $prefix; ?>');
+                                                         return false;"    
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass" size="8" maxlength="10" title="SILVER AVERAGE RATE (<?php echo $silverPrevWtRate . '+' . $silverRate; ?>)"/>
+                                    </td>
+                                    <td align="right" width="15%">
+                                        <input id="metal2WtPNL" name="metal2WtPNL" type="text" placeholder="PROFIT/LOSS" value="<?php echo decimalVal(abs($silverWeightPNL), 2); ?>" 
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"     
+                                               spellcheck="false" class="form-control-req-height20 align_center placeholderClass redFont" style="color: <?php echo $sColor; ?>" size="10" maxlength="10" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <?php
+                    }
+                    if ($paymentMode == 'RateCut') {
+                        $cashPaymentDetailsDiv = 'hidden';
+                    } else if ($paymentMode == 'ByCash') {
+                        $cashPaymentDetailsDiv = 'visible';
+                    }
+                    ?>
+                    <?php
+                    if ($_SESSION['sessionPayOptionStr'][6] != 'TRUE' && $paymentMode != 'NoRateCut') {
+                        ?>
+                        <td align="left">
+                            <div id="cashPaymentDetailsDiv" style="visibility: <?php echo $cashPaymentDetailsDiv; ?>; position: absolute;">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top:-10px;">
+                                    <tr>
+                                        <td align="right" class="blackCalibri13FontBold">
+                                            <input id="<?php echo $payTotalFinalAmt; ?>" name="<?php echo $payTotalFinalAmt; ?>" type="text" placeholder="TOTAL AMT" value="<?php echo $totalFinalBalance; ?>" 
+                                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                                               document.getElementById('<?php echo $payTotalAmtRec; ?>').focus();
+                                                               return false;
+                                                           }"
+                                                   spellcheck="false" class="input_border_grey_center" size="20" maxlength="10" />
+                                        </td>
+                                        <td align="right" class="blackCalibri13FontBold" >
+                                            <input id="<?php echo $payTotalAmtRec; ?>" name="<?php echo $payTotalAmtRec; ?>" type="text" placeholder="METAL AMT REC" value="<?php echo $invTotMetAmtRec; ?>" 
+                                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                                               document.getElementById('<?php echo $paySilverWtBal; ?>').focus();
+                                                               return false;
+                                                           } else if (event.keyCode == 8 && this.value == '') {
+                                                               document.getElementById('<?php echo $paySilverBalType; ?>').focus();
+                                                               return false;
+                                                           }"
+                                                   spellcheck="false" class="input_border_grey_center" size="20" maxlength="10"/>
+
+                                        </td>
+                                        <td align="right" class="blackCalibri13FontBold" >
+                                            <input id="<?php echo $payTotalFinalAmt; ?>" name="<?php echo $payTotalFinalAmt; ?>" type="text" placeholder="TOTAL AMT BAL" value="<?php echo $totBalance; ?>" 
+                                                   spellcheck="false" class="input_border_grey_center" size="20" maxlength="10" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    <?php } ?>
+                    <?php
+                    //}
+                    //
+//                    print_r($_REQUEST);
+//                    echo '<br /><br />$advanceMoneyNumRows @== ' . $advanceMoneyNumRows . '<br />';
+//                    echo '$panelName @== ' . $panelName . '<br />';
+//                    echo '$mainPanel @== ' . $mainPanel . '<br />';
+//                    echo '$payPanelName @@== ' . $_REQUEST['payPanelName'] . '<br />';
+//                    echo '$transPanelName @@== ' . $_REQUEST['transPanelName'] . '<br />';
+//                    echo '$payPanelName @== ' . $payPanelName . '<br />';
+//                    echo '$transPanelName @== ' . $transPanelName . '<br />';
+//                    echo '$paymentMode @== ' . $paymentMode . '<br />';
+//                    echo '$prefix @== ' . $prefix . '<br />';
+                    //
+                    ?>
+                    <?php if (($payPanelName != 'schemeCashPayment' || $payPanelName == 'schemeCashPayment') && $_REQUEST['metalType'] != 'CASH') { ?>
+                        <td align="right" width="25%" colspan="3" valign="top">
+                            <table border="0" cellpadding="0" cellspacing="1" valign="top">
+                                <tr>
+                                    <?php // if ($mainPanel != 'scheme') {     ?>
+                                    <td align="center" class="blackCalibri13FontBold" style="background-color: #999999">
+                                        <input type="text" value="NO RATE CUT" class="form-control-req-height20New align_center cursor" id="NoRateCut" 
+                                               size="10"  maxlength="30" onclick="itemsaleRateCut(this.id, '<?php echo $goldFinalWeight; ?>', '<?php echo $goldFinalWeightType; ?>', '<?php echo $silverFinalWeight; ?>', '<?php echo $silverFinalWeightType; ?>', '<?php echo $goldPaidWeight; ?>', '<?php echo $goldPaidWeightType; ?>', '<?php echo $silverPaidWeight; ?>', '<?php echo $silverPaidWeightType; ?>', '<?php echo $goldRate; ?>', '<?php echo $silverRate; ?>', '<?php echo $payPanelName; ?>', '<?php echo $userId; ?>', '<?php echo $payPreInvoiceNo; ?>', '<?php echo $payInvoiceNo; ?>', '<?php echo $utin_crystal_amt; ?>', 'payOpt', '<?php echo $utin_oth_chgs_amt; ?>', '<?php echo $utin_othr_chgs_by; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $totalGoldBalance; ?>', '<?php echo $totalSilverBalance; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $PaymentReceiptPanel; ?>', '<?php echo $utin_hallmark_chrgs_amt; ?>');" />
+                                    </td>
+                                    <td align="center" class="blackCalibri13FontBold" style="background-color: #999999">
+                                        <input type="text" value="RATE CUT" class="form-control-req-height20New align_center cursor" id="RateCut" 
+                                               size="7"  maxlength="30" onclick="itemsaleRateCut(this.id, '<?php echo $goldFinalWeight; ?>', '<?php echo $goldFinalWeightType; ?>', '<?php echo $silverFinalWeight; ?>', '<?php echo $silverFinalWeightType; ?>', '<?php echo $goldPaidWeight; ?>', '<?php echo $goldPaidWeightType; ?>', '<?php echo $silverPaidWeight; ?>', '<?php echo $silverPaidWeightType; ?>', '<?php echo $goldRate; ?>', '<?php echo $silverRate; ?>', '<?php echo $payPanelName; ?>', '<?php echo $userId; ?>', '<?php echo $payPreInvoiceNo; ?>', '<?php echo $payInvoiceNo; ?>', '<?php echo $utin_crystal_amt; ?>', 'payOpt', '<?php echo $utin_oth_chgs_amt; ?>', '<?php echo $utin_othr_chgs_by; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $totalGoldBalance; ?>', '<?php echo $totalSilverBalance; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $PaymentReceiptPanel; ?>', '<?php echo $utin_hallmark_chrgs_amt; ?>');" />
+                                    </td> 
+                                    <?php // }    ?>
+                                    <?php // if ($payPanelName != 'schemeMetalPayment' && $payPanelName != 'schemeMetalPayUp') {  ?>
+                                    <td align="center" class="blackCalibri13FontBold" style="background-color: #999999">
+                                        <input type="text" value="CASH" class="form-control-req-height20New align_center cursor" id="ByCash" 
+                                               size="7"  maxlength="30" onclick="itemsaleRateCut(this.id, '<?php echo $goldFinalWeight; ?>', '<?php echo $goldFinalWeightType; ?>', '<?php echo $silverFinalWeight; ?>', '<?php echo $silverFinalWeightType; ?>', '<?php echo $goldPaidWeight; ?>', '<?php echo $goldPaidWeightType; ?>', '<?php echo $silverPaidWeight; ?>', '<?php echo $silverPaidWeightType; ?>', '<?php echo $goldRate; ?>', '<?php echo $silverRate; ?>', '<?php echo $payPanelName; ?>', '<?php echo $userId; ?>', '<?php echo $payPreInvoiceNo; ?>', '<?php echo $payInvoiceNo; ?>', '<?php echo $utin_crystal_amt; ?>', 'payOpt', '<?php echo $utin_oth_chgs_amt; ?>', '<?php echo $utin_othr_chgs_by; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $totalGoldBalance; ?>', '<?php echo $totalSilverBalance; ?>', '<?php echo $totalFinalBalance; ?>', '<?php echo $PaymentReceiptPanel; ?>', '<?php echo $utin_hallmark_chrgs_amt; ?>');" />
+                                    </td><?php
+//                                    }
+                                    ?>
+                                </tr>
+                            </table>
+                        </td>
+                    <?php } ?>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="16">
+            <div class="hrGrey"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="16">
+            <table border="0" cellspacing="2" cellpadding="2" align="left" width="100%">
+                <tr>
+                    <td colspan="3"></td>
+                    <td width="40%">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="right" class="spaceRight20">
+                            <tr>
+                                <td align="right" class="blackCalibri13FontBold" width="45%">
+                                    GD PREV BAL:
+                                </td>
+                                <td align="right" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="right" class="itemAddPnLabels12ArialLink">
+                                                <input type="text" id="metal1WtPrevBal" name="metal1WtPrevBal" value="<?php echo decimalVal($goldPrevWeight, 3) . ' ' . $goldPrevWeightType; ?>"
+                                                       spellcheck="false" class="bgTransNoBorderArial12Right" size="10" maxlength="10" readonly="true" />
+                                            </td>
+                                            <td align="right" class="itemAddPnLabels12ArialLink">
+                                                <input type="text" id="<?php echo $payGoldWtPrevBalCRDR; ?>" name="<?php echo $payGoldWtPrevBalCRDR; ?>" value="<?php echo $payGoldPrevWtBalCRDR; ?>" 
+                                                       class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td align="right" class="blackCalibri13FontBold" width="45%">
+                                    SL PREV BAL:
+                                </td>
+                                <td align="right" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="right" class="itemAddPnLabels12ArialLink">
+                                                <input type="text" id="metal2WtPrevBal" name="metal2WtPrevBal" value="<?php echo decimalVal($silverPrevWeight, 3) . ' ' . $silverPrevWeightType; ?>"
+                                                       spellcheck="false" class="bgTransNoBorderArial12Right" size="10" maxlength="10" readonly="true" />
+                                            </td>
+                                            <td align="right" class="itemAddPnLabels12ArialLink">
+                                                <input type="text" id="<?php echo $paySilverWtPrevBalCRDR; ?>" name="<?php echo $paySilverWtPrevBalCRDR; ?>" value="<?php echo $paySilverPrevWtBalCRDR; ?>" 
+                                                       class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <?php if ($paymentMode == 'RateCut' || $paymentMode == 'NoRateCut') { ?>
+                                <?php if ($_SESSION['sessionPayOptionStr'][6] != 'TRUE') { ?>
+                                    <tr>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            GD <?php echo $PurVar; ?>:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <input type="text" id="metal1WtPurBal" name="metal1WtPurBal" value="<?php echo decimalVal($goldFinalWeight, 3) . ' ' . $goldFinalWeightType; ?>"
+                                                   spellcheck="false" class="bgTransNoBorderArial12Right darkblueFont" size="10" maxlength="10" readonly="true" />
+                                        </td>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            SL <?php echo $PurVar; ?>:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <input type="text" id="metal2WtPurBal" name="metal2WtPurBal" value="<?php echo decimalVal($silverFinalWeight, 3) . ' ' . $silverFinalWeightType; ?>"
+                                                   spellcheck="false" class="bgTransNoBorderArial12Right darkblueFont" size="10" maxlength="10" readonly="true" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            GD REC:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <input type="text" id="metal1WtRecBal" name="metal1WtRecBal" value="<?php echo decimalVal($goldPaidWeight, 3) . ' ' . $goldPaidWeightType; ?>"
+                                                   spellcheck="false" class="bgTransNoBorderArial12Right greenFont" size="10" maxlength="10" readonly="true" />
+                                        </td>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            SL REC:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <input type="text" id="metal2WtRecBal" name="metal2WtRecBal" value="<?php echo decimalVal($silverPaidWeight, 3) . ' ' . $silverPaidWeightType; ?>"
+                                                   spellcheck="false" class="bgTransNoBorderArial12Right greenFont" size="10" maxlength="10" readonly="true" />
+                                        </td>
+                                    </tr>
+                                <?php } if ($paymentMode == 'RateCut') { ?>
+                                    <tr>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            GD RATE CUT:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="right" class="itemAddPnLabels12ArialLink">
+                                                        <input type="text" id="metal1RtCtWtBal" name="metal1RtCtWtBal" value="<?php echo decimalVal($utin_gd_rtct_wt, 3) . ' ' . $utin_gd_rtct_wt_typ; ?>"
+                                                               spellcheck="false" class="bgTransNoBorderArial12Right greenFont" size="10" maxlength="10" readonly="true" />
+                                                    </td>
+                                                    <td align="right" class="itemAddPnLabels12ArialLink">
+                                                        <input type="text" id="<?php echo $payRtCtGdCRDR; ?>" name="<?php echo $payRtCtGdCRDR; ?>" 
+                                                               class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td align="right" class="blackCalibri13FontBold" width="45%">
+                                            SL RATE CUT:
+                                        </td>
+                                        <td align="left" class="itemAddPnLabels12ArialLink" width="15%" colspan="2">
+                                            <table border="0" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td align="right" class="itemAddPnLabels12ArialLink">
+                                                        <input type="text" id="metal2RtCtWtBal" name="metal2RtCtWtBal" value="<?php echo decimalVal($utin_sl_rtct_wt, 3) . ' ' . $utin_sl_rtct_wt_typ; ?>"
+                                                               spellcheck="false" class="bgTransNoBorderArial12Right greenFont" size="10" maxlength="10" readonly="true" />
+                                                    </td>
+                                                    <td align="right" class="itemAddPnLabels12ArialLink">
+                                                        <input type="text" id="<?php echo $payRtCtSlCRDR; ?>" name="<?php echo $payRtCtSlCRDR; ?>"
+                                                               class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                                <tr>
+                                    <td align="right" class="blackCalibri13FontBold border-color-grey-top border-color-grey-bottom" width="45%">
+                                        GD BALANCE:
+                                    </td>
+                                    <td align="left" class="itemAddPnLabels12ArialLink border-color-grey-top border-color-grey-bottom" width="15%" colspan="2">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="right" class="itemAddPnLabels12ArialLink">
+                                                    <input type="text" id="metal1WtFinBal" name="metal1WtFinBal" value="<?php echo decimalVal($goldTotFinVal, 3) . ' ' . $goldTotFFineWtType; ?>"
+                                                           spellcheck="false" class="bgTransNoBorderArial12Right redFont" size="10" maxlength="10" readonly="true" />
+                                                </td>
+                                                <td align="right" class="itemAddPnLabels12ArialLink">
+                                                    <input type="text" id="<?php echo $payFinalGdCRDR; ?>" name="<?php echo $payFinalGdCRDR; ?>" value="<?php echo $utin_gd_CRDR; ?>"
+                                                           class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td align="right" class="blackCalibri13FontBold border-color-grey-top border-color-grey-bottom" width="45%">
+                                        SL BALANCE:
+                                    </td>
+                                    <td align="left" class="itemAddPnLabels12ArialLink border-color-grey-top border-color-grey-bottom" width="15%" colspan="2">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td align="right" class="itemAddPnLabels12ArialLink">
+                                                    <input type="text" id="metal2WtFinBal" name="metal2WtFinBal" value="<?php echo decimalVal($silverTotFinVal, 3) . ' ' . $silverTotFFineWtType; ?>"
+                                                           spellcheck="false" class="bgTransNoBorderArial12Right redFont" size="10" maxlength="10" readonly="true" />
+                                                </td>
+                                                <td align="right" class="itemAddPnLabels12ArialLink">
+                                                    <input type="text" id="<?php echo $payFinalSlCRDR; ?>" name="<?php echo $payFinalSlCRDR; ?>" value="<?php echo $utin_sl_CRDR; ?>"
+                                                           class="bgTransNoBorderArial12Right" size="2" maxlength="4" readonly="true" />
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

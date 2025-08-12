@@ -1,3 +1,54 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on May 25, 2011 10:12:09 AM
+ *
+ * @FileName: omvvccdl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+include_once 'ommpfndv.php';
+require_once 'system/omssopin.php';
+
+$cityOwnerId = $_SESSION['sessionOwnerId'];
+$cityId = trim($_POST['cityId']);
+
+$qSelCity = "SELECT city_name FROM city where city_id = '$cityId' and city_own_id='$cityOwnerId' and city_upd_sts='Default'";
+$resCity = mysqli_query($conn,$qSelCity);
+
+if ($rowCity = mysqli_fetch_array($resCity, MYSQLI_ASSOC)) {
+    header('Location: ' . $documentRoot . '/include/php/omvvaacd.php?divMainMiddlePanel=CityNotDeleted');
+} else {
+    /*     * *******Start code to add sys_log api @Author:PRIYA10APR14******************** */
+    parse_str(getTableValues("SELECT city_name FROM city where city_own_id = '$cityOwnerId' and city_id = '$cityId'"));
+    $sslg_trans_sub = 'CITY DELETED';
+    $sslg_trans_comment = $city_name . ' CITY DELETED';
+    include 'omslgapi.php';
+    /*     * *******End code to add sys_log api @Author:PRIYA10APR14******************** */
+    $query = "DELETE FROM city WHERE city_own_id = '$cityOwnerId' and city_id = '$cityId'";
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    header('Location: ' . $documentRoot . '/include/php/omvvaacd.php?divMainMiddlePanel=CityDeleted');
+}
+require_once 'omssclin.php';
 ?>

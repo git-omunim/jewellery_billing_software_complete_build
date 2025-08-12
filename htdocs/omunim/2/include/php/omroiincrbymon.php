@@ -1,3 +1,296 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on OCT 14, 2021 7:22PM
+ *
+ * @FileName: omroiincrbymon.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by @Author: DARSHANA 14 OCT 2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+require_once 'nepal/nepali-date.php';
+$nepali_date = new nepali_date();
+if ($globalProcess != 'YES') {
+    $currentFileName = basename(__FILE__);
+    include 'system/omsachsc.php';
+    require_once 'system/omsgeagb.php';
+    require_once 'system/omssopin.php';
+} else {
+    $conn = $GLOBALS['conn'];
+}
+require_once 'ommpincr.php';
+include_once 'ommpfndv.php';
+
+$ownerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+
+//
+//********************************************************************************************
+//START CODE FOR UPDATE ROI AND IROI OF GIRVI AS PER TIME SLOT : AUTHOR @DARSHANA 18 OCT 2021
+//********* ***********************************************************************************
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+//
+$girvId = $_GET['girvId'];
+if ($girvId == null || $girvId == '') {
+    $girvId = $_GET['girviId'];
+}
+$currentDate = $TodayDate = strtoupper(date('d M Y'));
+if ($girvId != '' && $girvId != NULL) {
+    $girv_ROI_Id = '';
+    parse_str(getTableValues("SELECT girv_ROI_Id FROM girvi WHERE girv_id='$girvId' AND girv_own_id='$ownerId' AND (girv_updated_roi_DOB != '$TodayDate' OR girv_updated_roi_DOB IS NULL)"));
+    $roiId = $girv_ROI_Id;
+} else {
+    $roiId = '';
+}
+//
+if ($roiId != '' && $roiId != NULL) {
+    $selectRoiMonth = "SELECT roi_month, roi_increse_by, roi_comm,roi_value,iroi_value,roi_id FROM roi WHERE roi_id='$roiId' AND roi_own_id='$ownerId'";
+} else {
+    $selectRoiMonth = "SELECT roi_month, roi_increse_by, roi_comm,roi_value,iroi_value,roi_id FROM roi WHERE roi_own_id='$ownerId'";
+}
+$queryMonth = mysqli_query($conn, $selectRoiMonth);
+while ($resMonth = mysqli_fetch_array($queryMonth, MYSQLI_ASSOC)) {
+    $roi_month = $resMonth['roi_month'];
+    $roi_id = $resMonth['roi_id'];
+    $roi_increse_by = $resMonth['roi_increse_by'];
+    $roi_comm = $resMonth['roi_comm'];
+    $roi_value = $resMonth['roi_value'];
+    $iroi_value = $resMonth['iroi_value'];
+    //
+    $monthArray = explode("#", $roi_month);
+    //
+    $time_slot_1 = $monthArray[0];
+    $time_slot_2 = $monthArray[1];
+    $time_slot_3 = $monthArray[2];
+    $time_slot_4 = $monthArray[3];
+    //
+    $increse_by = explode("#", $roi_increse_by);
+    $increse_by_1 = $increse_by[0];
+    $increse_by_2 = $increse_by[1];
+    $increse_by_3 = $increse_by[2];
+    $increse_by_4 = $increse_by[3];
+    //
+    $arrayRecuroiroi = explode('#', $roi_comm);
+    //
+    $recurssing = $arrayRecuroiroi[0];
+    $roi = $arrayRecuroiroi[1];
+    $iroi = $arrayRecuroiroi[2];
+    //
+    if ($girvId != '' && $girvId != NULL) {
+        $selectLoandate = "SELECT girv_DOB,girv_ROI,girv_IROI,girv_updated_roi_DOB,girv_ROI_Id FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_id='$girvId' AND girv_own_id='$ownerId'";
+    } else {
+        $selectLoandate = "SELECT girv_DOB,girv_ROI,girv_IROI,girv_updated_roi_DOB,girv_ROI_Id FROM girvi WHERE (girv_omprocess_date='' OR girv_omprocess_date IS NULL OR girv_omprocess_date!='$todayOmprocessDate') AND girv_own_id='$ownerId'  ORDER BY girv_id DESC LIMIT 0,50";
+    }
+    //
+    //echo '$selectLoandate : '.$selectLoandate.'<br><br>';
+    //
+    $queryLoanDate = mysqli_query($conn, $selectLoandate);
+    //
+    while ($resSelectRoi = mysqli_fetch_array($queryLoanDate, MYSQLI_ASSOC)) {
+        $girv_DOB = $resSelectRoi['girv_DOB'];
+        $girv_updated_roi_DOB = $resSelectRoi['girv_updated_roi_DOB'];
+        if ($girvId == '' || $girvId == NULL) {
+            $girv_id = $resSelectRoi['girv_id'];
+        } else {
+            $girv_id = $girvId;
+        }
+
+         $girv_ROI = $resSelectRoi['girv_ROI'];
+        $girv_IROI = $resSelectRoi['girv_IROI'];
+        $girv_ROI_Id = $resSelectRoi['girv_ROI_Id'];
+        $date_diff = abs(strtotime($currentDate) - strtotime($girv_DOB));
+
+        //start code to calculate month
+        $todaysDate = date('d M Y');
+        //
+        if($nepaliDateIndicator == 'YES'){
+            $day =  substr($girv_DOB, 0, 2);
+            $selMnth = substr($girv_DOB, 3, -5);
+            $year_en = substr($girv_DOB, -4);
+            if (preg_match("/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/", $selMnth)) {
+            $selMnth = (int) date('m', strtotime($selMnth));
+            } 
+            $startdate = $nepali_date->validate_en($year_en, $selMnth, $day);
+            if ($startdate != '1' || $startdate != 'TRUE') {
+                $eng_date = $nepali_date->get_eng_date($year_en, $selMnth, $day);
+                $girviDOB1 = $eng_date['d'] . ' '.$eng_date['m'] .' '.$eng_date['y'];
+            }else{
+                $girviDOB1 = $girv_DOB;
+            }    
+            
+            $diff = $todaysDate - $girviDOB1;
+            $years = floor($diff / 365);
+            $remainingDays = $diff % 365;
+            $months = floor($remainingDays / 30);
+            $days = $remainingDays % 30;
+        }else{
+        // Convert to DateTime objects
+        $datetime1 = new DateTime($girv_DOB);
+        $datetime2 = new DateTime($todaysDate);
+        // Calculate the difference
+        $interval = $datetime1->diff($datetime2);
+        // Get the total number of years and months
+        $years = $interval->y;
+        $months = $interval->m + ($years * 12); 
+        }
+        
+        //end code to calculate month
+        //
+        //FOR TIME SLOT 1
+        //
+        if ($girv_ROI_Id == $roi_id) {
+            if (($months == $time_slot_1 || $months >= $time_slot_1) && ($months < $time_slot_2 || $time_slot_2 == null || $time_slot_2 == 0) && ($months != '' && $months != NULL && $months != 0) && ($time_slot_1 != '' && $time_slot_1 != NULL && $time_slot_1 != 0)) {
+                $selectGirviDeposit = "SELECT * FROM girvi_money_deposit WHERE girv_mondep_girv_id='$girv_id' AND girv_mondep_own_id='$ownerId' "
+                        . " AND girv_mondep_date BETWEEN '$girv_DOB' AND '$currentDate'";
+
+                $queryGirviDeposit = mysqli_query($conn, $selectGirviDeposit);
+                $rowGorviDeposit = mysqli_num_rows($queryGirviDeposit);
+                $resGirviDeposit = mysqli_fetch_array($queryGirviDeposit, MYSQLI_ASSOC);
+
+                if ($rowGorviDeposit <= 0) {
+
+                    if ($roi == 'roi') {
+                        $updateRoi = $roi_value + $increse_by_1;
+//                    echo '$updateRoi=' . $updateRoi;
+                        $updateGirviRoi_time_slot_1 = "UPDATE girvi SET girv_ROI='$updateRoi',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+                        mysqli_query($conn, $updateGirviRoi_time_slot_1);
+                    }
+                    if ($iroi == 'iroi') {
+                        $updateIRoi = $iroi_value + $increse_by_1;
+                        $updateGirviIRoi_time_slot_1 = "UPDATE girvi SET girv_IROI='$updateIRoi',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+                        mysqli_query($conn, $updateGirviIRoi_time_slot_1);
+                    }
+                }
+            }
+            //FOR TIME SLOT 2
+            else if (($months == $time_slot_2 || $months >= $time_slot_2) && ($months < $time_slot_3 || $time_slot_3 == null || $time_slot_3 == 0) && ($months != '' && $months != NULL && $months != 0) && ($time_slot_2 != '' && $time_slot_2 != NULL && $time_slot_2 != 0)) {
+                $selectGirviDeposit = "SELECT * FROM girvi_money_deposit WHERE girv_mondep_girv_id='$girv_id' AND girv_mondep_own_id='$ownerId' "
+                        . " AND girv_mondep_date BETWEEN '$girv_DOB' AND '$currentDate'";
+
+                $queryGirviDeposit = mysqli_query($conn, $selectGirviDeposit);
+                $rowGorviDeposit = mysqli_num_rows($queryGirviDeposit);
+                $resGirviDeposit = mysqli_fetch_array($queryGirviDeposit, MYSQLI_ASSOC);
+
+                if ($rowGorviDeposit <= 0) {
+
+                    if ($roi == 'roi') {
+                        $updateRoi_2 = $roi_value + $increse_by_1 + $increse_by_2;
+                        $updateGirviRoi_time_slot_2 = "UPDATE girvi SET girv_ROI='$updateRoi_2',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviRoi_time_slot_2);
+                    }
+                    if ($iroi == 'iroi') {
+                        $updateIRoi_2 = $iroi_value + $increse_by_1 + $increse_by_2;
+
+                        $updateGirviIRoi_time_slot_2 = "UPDATE girvi SET girv_IROI='$updateIRoi_2',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviIRoi_time_slot_2);
+                    }
+                }
+            }
+            //FOR TIME SLOT 3
+            else if (($months == $time_slot_3 || $months >= $time_slot_3) && ($months < $time_slot_4 || $time_slot_4 == null || $time_slot_4 == 0) && ($months != '' && $months != NULL && $months != 0) && ($time_slot_3 != '' && $time_slot_3 != NULL && $time_slot_3 != 0)) {
+                $selectGirviDeposit = "SELECT * FROM girvi_money_deposit WHERE girv_mondep_girv_id='$girv_id' AND girv_mondep_own_id='$ownerId' "
+                        . " AND girv_mondep_date BETWEEN '$girv_DOB' AND '$currentDate'";
+
+                $queryGirviDeposit = mysqli_query($conn, $selectGirviDeposit);
+                $rowGorviDeposit = mysqli_num_rows($queryGirviDeposit);
+                $resGirviDeposit = mysqli_fetch_array($queryGirviDeposit, MYSQLI_ASSOC);
+
+                if ($rowGorviDeposit <= 0) {
+
+                    if ($roi == 'roi') {
+                        $updateRoi_3 = $roi_value + $increse_by_1 + $increse_by_2 + $increse_by_3;
+
+                        $updateGirviRoi_time_slot_3 = "UPDATE girvi SET girv_ROI='$updateRoi_3',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviRoi_time_slot_3);
+                    }
+                    if ($iroi == 'iroi') {
+                        $updateIRoi_3 = $iroi_value + $increse_by_1 + $increse_by_2 + $increse_by_3;
+
+                        $updateGirviIRoi_time_slot_3 = "UPDATE girvi SET girv_IROI='$updateIRoi_3',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviIRoi_time_slot_3);
+                    }
+                }
+            }
+            //FOR TIME SLOT 4
+            else if (($months == $time_slot_4 || $months >= $time_slot_4) && ($months != '' && $months != NULL && $months != 0) && ($time_slot_4 != '' && $time_slot_4 != NULL && $time_slot_4 != 0)) {
+                $selectGirviDeposit = "SELECT * FROM girvi_money_deposit WHERE girv_mondep_girv_id='$girv_id' AND girv_mondep_own_id='$ownerId' "
+                        . " AND girv_mondep_date BETWEEN '$girv_DOB' AND '$currentDate'";
+
+                $queryGirviDeposit = mysqli_query($conn, $selectGirviDeposit);
+                $rowGorviDeposit = mysqli_num_rows($queryGirviDeposit);
+                $resGirviDeposit = mysqli_fetch_array($queryGirviDeposit, MYSQLI_ASSOC);
+
+                if ($rowGorviDeposit <= 0) {
+
+                    if ($roi == 'roi') {
+                        $updateRoi_4 = $roi_value + $increse_by_1 + $increse_by_2 + $increse_by_3 + $increse_by_4;
+
+                        $updateGirviRoi_time_slot_4 = "UPDATE girvi SET girv_ROI='$updateRoi_4',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviRoi_time_slot_4);
+                    }
+                    if ($iroi == 'iroi') {
+                        $updateIRoi_4 = $iroi_value + $increse_by_1 + $increse_by_2 + $increse_by_3 + $increse_by_4;
+
+                        $updateGirviIRoi_time_slot_4 = "UPDATE girvi SET girv_IROI='$updateIRoi_4',girv_updated_roi_DOB='$TodayDate' "
+                                . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                        mysqli_query($conn, $updateGirviIRoi_time_slot_4);
+                    }
+                }
+            } else {
+                $updateGirviRoi_time_slot_4 = "UPDATE girvi SET girv_ROI='$roi_value'"
+                        . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                mysqli_query($conn, $updateGirviRoi_time_slot_4);
+
+                $updateGirviRoi_time_slot_4 = "UPDATE girvi SET girv_IROI='$iroi_value'"
+                        . "WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+
+                mysqli_query($conn, $updateGirviRoi_time_slot_4);
+            }
+            //
+            $todayOmprocessDate = date("Y-m-d");
+            //
+            $qUpdateGirvProcessDate = "UPDATE girvi SET girv_omprocess_date='$todayOmprocessDate' WHERE girv_id='$girv_id' AND girv_own_id='$ownerId'";
+            //
+            if (!mysqli_query($conn, $qUpdateGirvProcessDate)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+            //
+        }
+    }
+}
+//********************************************************************************************
+//END CODE FOR UPDATE ROI AND IROI OF GIRVI AS PER TIME SLOT : AUTHOR @DARSHANA 18 OCT 2021
+//********************************************************************************************
+//
+?>
+

@@ -1,3 +1,207 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Mar 13, 2011 6:53:20 PM
+ *
+ * @FileName: omtbgvtb.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by @Author: KHUSH24JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$query = "CREATE TABLE IF NOT EXISTS girvi (
+girv_id					INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+girv_cust_id				VARCHAR(16),
+girv_type				VARCHAR(16),".
+//  
+// ADDED CODE FOR TRANSACTION TYPE @AUTHOR:PRIYANKA-17MAR2023        
+"girv_trans_type			VARCHAR(16),
+girv_own_id				VARCHAR(16), 
+girv_jrnlid     			INT,
+girv_jrmnid                             INT,
+girv_firm_id 				VARCHAR(16),
+girv_firm_girvi_no			INT,
+girv_cust_fname 			VARCHAR(50),
+girv_cust_lname 			VARCHAR(50),
+girv_cust_Address 			VARCHAR(500),
+girv_cust_city				VARCHAR(50),
+girv_main_prin_amt			INT,
+girv_prin_amt				VARCHAR(50),".
+"girv_cash_paid_amt                     INT," . //ADDED TO STORE CASH PAID AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_cheque_paid_amt                   INT," . //ADDED TO STORE CHEQUE PAID AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_card_paid_amt                     INT," . //ADDED TO STORE CARD PAID AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_online_paid_amt                   INT," . //ADDED TO STORE ONLINE PAID AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_main_prin_amt_int			INT,
+girv_prin_amt_int		        INT,
+girv_processing_per                     INT," . //ADDED TO STORE PROCESSING AMOUNT PERCENTAGE @AUTHOR:MADHUREE-10MARCH2021
+"girv_charge_per                        INT," . //ADDED TO STORE EXTRA CHARGES AMOUNT PERCENTAGE @AUTHOR:MADHUREE-10MARCH2021
+"girv_processing_amt                    INT,
+girv_charge_amt                         INT,
+girv_main_prin_final_amt                INT,
+girv_ROI				FLOAT,
+girv_IROI				FLOAT,
+girv_custody_ROI                        FLOAT,
+girv_ROI_Id				INT,
+girv_ROI_typ				VARCHAR(30),
+girv_cust_girvi_num			INT,
+girv_pre_serial_num			VARCHAR(5),
+girv_serial_num				INT,
+girv_serial_code			VARCHAR(30),
+girv_pre_rel_serial_num			VARCHAR(5),
+girv_rel_serial_num			INT,
+girv_packet_num				VARCHAR(30),
+girv_grace_period_day			VARCHAR(30),
+girv_DOB				VARCHAR(50),
+girv_other_lang_DOB			VARCHAR(50),". //ADDED TO STORE OTHER LANGUAGE DATE @AUTHOR:MADHUREE-01DEC2021
+"girv_new_DOB				VARCHAR(50),
+girv_updated_roi_DOB                    VARCHAR(50),". //ADDED COLUMN FOR STORE UPDATED DATE OF ROI : AUTHOR @DARSHANA 10 NOV 2021
+"girv_DOR				VARCHAR(50),
+girv_int_opt				VARCHAR(10),
+girv_monthly_intopt                     VARCHAR(10),
+girv_compounded_opt			VARCHAR(15),
+girv_total_time				VARCHAR(50),
+girv_total_princ                        FLOAT, 
+girv_total_int				FLOAT,
+girv_total_iint				FLOAT,
+girv_total_amt				FLOAT,
+girv_total_iamt				FLOAT,
+girv_paid_amt				FLOAT,
+girv_paid_iamt				FLOAT,
+girv_paid_int				FLOAT,
+girv_paid_iint				FLOAT,
+girv_discount_amt			FLOAT,
+girv_discount_iamt			FLOAT,
+girv_extra_amt                          FLOAT,
+girv_extra_oamt                         FLOAT,"//ADDED TO STORE EXTRA AMOUNT WHILE RELEASEING LOAN @AUTHOR:MADHUREE-15NOV2021
+."girv_total_oint			FLOAT,
+girv_total_oamt				FLOAT,
+girv_paid_oamt				FLOAT,".
+"girv_cash_rec_amt                      INT," . //ADDED TO STORE CASH RECEIVED AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_cheque_rec_amt                    INT," . //ADDED TO STORE CHEQUE RECEIVED AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_card_rec_amt                      INT," . //ADDED TO STORE CARD RECEIVED AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_online_rec_amt                    INT," . //ADDED TO STORE ONLINE RECEIVED AMOUNT @AUTHOR:MADHUREE-20NOV2021
+"girv_paid_oint				FLOAT,
+girv_discount_oamt			FLOAT,
+girv_total_valuation			FLOAT,
+girv_auction_amt			FLOAT,
+girv_ent_dat 				DATETIME,
+girv_upd_sts				VARCHAR(50),
+girv_rel_upd_sts			VARCHAR(50),
+girv_rel_ipass_sts			VARCHAR(50),
+girv_transfer_id			INT,
+girv_trans_firm_id                      VARCHAR(10),
+girv_transfer_ml_id                     VARCHAR(100),
+girv_trans_loan_id                      VARCHAR(30),
+girv_comm 				VARCHAR(2000),
+girv_time_period                        VARCHAR(6),
+girv_sms_id                             VARCHAR(16),
+girv_cr_acc_id				VARCHAR(50),".
+"girv_cr_cheque_acc_id                  VARCHAR(50)," . //ADDED TO STORE CHEQUE AMOUNT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_cr_card_acc_id                    VARCHAR(50)," . //ADDED TO STORE CARD AMOUNT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_cr_online_acc_id                  VARCHAR(50)," . //ADDED TO STORE ONLINE AMOUNT ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_dr_acc_id				VARCHAR(50),
+girv_cr_acc_id_int			VARCHAR(50),
+girv_dr_acc_id_int			VARCHAR(50),
+girv_cheque_no				VARCHAR(50),
+girv_pay_other_info			VARCHAR(100),
+girv_cash_narration                     VARCHAR(25),
+girv_cheque_narration                   VARCHAR(25),
+girv_card_narration                     VARCHAR(25),
+girv_online_narration                   VARCHAR(25),
+girv_tally_date                         VARCHAR(100),
+girv_MonthIntOpt                        VARCHAR(10),
+girv_fst_mn_int			        VARCHAR(10), 
+girv_prin_pre_id                        VARCHAR(16),
+girv_prin_post_id                       INT,
+girv_dr_cash_acc_id                     VARCHAR(16),".
+"girv_dr_cheque_acc_id                  VARCHAR(50)," . //ADDED TO STORE CHEQUE AMOUNT RECEIVED ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_dr_card_acc_id                    VARCHAR(50)," . //ADDED TO STORE CARD AMOUNT RECEIVED ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_dr_online_acc_id                  VARCHAR(50)," . //ADDED TO STORE ONLINE AMOUNT RECEIVED ACC ID @AUTHOR:MADHUREE-20NOV2021
+"girv_loan_acc_id                        VARCHAR(16),
+girv_int_rec_acc_id                     VARCHAR(16),
+girv_disc_acc_id                        VARCHAR(16),
+girv_extra_amt_acc_id                   VARCHAR(16),"//ADDED TO STORE EXTRA AMOUNT ACCOUNT ID @AUTHOR:MADHUREE-15NOV2021
+."girv_staff_id                         VARCHAR(16),
+girv_hindi_DOB                          VARCHAR(50),
+girv_hindi_new_DOB                      VARCHAR(50),
+girv_hindi_DOR                          VARCHAR(50),
+girv_hindi_tithi                        VARCHAR(16),
+girv_hindi_new_tithi                    VARCHAR(16),
+girv_hindi_paksh                        VARCHAR(16),
+girv_hindi_new_paksh                    VARCHAR(16),
+girv_hindi_rel_tithi                    VARCHAR(16),
+girv_hindi_rel_paksh                    VARCHAR(16),
+girv_date_type                          VARCHAR(40),
+girv_EMI_days                           VARCHAR(40),
+girv_EMI_occurrences                    VARCHAR(40),
+girv_fin_interest                       VARCHAR(40),
+girv_fin_final_amount                   VARCHAR(40),
+girv_fin_process_amt                    VARCHAR(40)," .
+// Added By @PRIYANKA-06JULY18
+"girv_fin_prd_typ                        VARCHAR(20),
+girv_EMI_status                         VARCHAR(20),
+girv_fin_collect_amt                    VARCHAR(40),
+girv_pl_total_prin_amt                  VARCHAR(30),
+girv_pl_total_final_intrest             VARCHAR(30),
+girv_pl_total_iamt                      double,
+girv_pl_total_final_iintrest            VARCHAR(30),
+girv_pl_total_amt                       double,
+girv_pl_total_value                     double,
+girv_pl_amt                             double,
+girv_pl_sts                             varchar(3),
+girv_pl_month                           INT,
+girv_locker_no                          INT,
+girv_image_id                           INT, 
+girv_locker_status                      VARCHAR(10),
+girv_rel_loan_by_userid                 VARCHAR(32),
+girv_rel_loan_by_user_details           VARCHAR(100),
+girv_omprocess_date                     VARCHAR(100),"//ADDED TO STORE OMPROCESS DATE @AUTHOR:MADHUREE-10NOV2021
+."girvi_location                        VARCHAR(100)," . //ADDED TO STORE BOX ITEM LOCATION FOR LOAN @AUTHOR:MADHUREE-04MARCH2021
+"girvi_sms_status                       VARCHAR(10)," .  //ADDED TO STORE LOAN DUE MSG SENT STATUS @AUTHOR:MADHUREE-04MARCH2021
+"girvi_last_sms_date            	VARCHAR(50)," .
+"girvi_fine_emi_amt                     VARCHAR(20),". //ADDED TO FINE AMOUNT AND EMI ON FINANCE @AUTHOR @DARSHANA 25 OCT 2021
+"girv_auction_chrg                      VARCHAR(20),". // ADDED FOR AUCTION CHARGES : @AUTHOR DARSHANA 1 APRIL 2022
+"girv_auction_chrg_acc                      INT(20),". // ADDED FOR AUCTION CHARGES : @AUTHOR DARSHANA 1 APRIL 2022       
+"girv_auction_extra_chrg                VARCHAR(20),". // ADDED FOR AUCTION EXTRA CHARGES : @AUTHOR DARSHANA 1 APRIL 2022
+"girv_auction_extra_chrg_acc               INT(20),". // ADDED FOR AUCTION EXTRA CHARGES : @AUTHOR DARSHANA 1 APRIL 2022
+"girv_fin_staff_id                      VARCHAR(50),".
+"girv_voucher_no                      VARCHAR(20),".
+"girv_monthly_compounded_opt          VARCHAR(8),".//PRATHAMESH ADDED FOR store compound interest monthly options
+"girv_joint_loan_sr_no                VARCHAR(16),".//PRATHAMESH ADDED FOR store GIRVI joint loan serial no
+"girv_loan_box_name                        VARCHAR(16),".//AKSHAY ADDED FOR store GIRVI loan box name  
+"girv_loan_packet_wt                        VARCHAR(16),".//AKSHAY ADDED FOR store GIRVI loan box name    
+"girv_box_pouch_no                        VARCHAR(20),".//AKSHAY ADDED FOR store GIRVI loan box name   
+"girv_box_other_info                      VARCHAR(20),". //SALONI ADDED FOR store GIRVI loan box other info 
+"girv_roi_type                      VARCHAR(20),".
+"girv_tpp_no                   VARCHAR(50),".
+"girv_old_gl_no                VARCHAR(50),".
+"girv_crm_code                 VARCHAR(50),".
+"girv_selected_scheme          VARCHAR(100),".
+"girv_purpose                  VARCHAR(200),".
+"girv_penal_charges            VARCHAR(50),".
+"girv_effective_annualized_rate VARCHAR(50),".
+"girv_interest_mode            VARCHAR(50),".
+"girv_min_interest_days        VARCHAR(10),".
+"girv_effective_rate           VARCHAR(50),".
+"girv_rebate                   VARCHAR(20),".
+"girv_paid_within              VARCHAR(20),"
+        . "last_column                VARCHAR(1),UNIQUE KEY (girv_pre_serial_num,girv_serial_num))AUTO_INCREMENT=100001";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

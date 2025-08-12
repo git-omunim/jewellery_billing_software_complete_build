@@ -1,3 +1,45 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACAAgAAt0JMm0Z6PEbYF3jQp5Cg+jHYMu9Xs6OhkoMQ8LET7XC5WKucCW5+mTnQN6D6WEnNeAlbCudXyjrBr6CKhQzds6ajn7/1rPyfSikWJz6TPwSbhO1TUL/SyFK1SjxHDzcwzs73a7F2iaZsaCw3NTzNhbHjJvuKXD3W5b7WgeP9Gf90P6tadUKkDAWj45xCOuAV7/Lf+EejnqEcYFuCXq9PX2C0u6/L1KnJqMUsLYbVGuMR6TRyDtoaaes8xiZue92+fUdN7XifNgAYT3rEkTwJ243NJOXqrzTup9GAw/vubJVnxY3/C8Q4mYNncH+egFETsEbs080HGFaerZ5HTmFzERhARJPOOSNeAAKPvIawuDNrLNa3nSHzE+/4budRWf17te2I2R3anh9YFeTahG6GCOPVqmkVQKrRJwm2QmRypE23vxOAqG8+iuXPlTwnXpHZZy2ic2DEW26P0DCYCO0zgCp6HO9qTAERUEaYETir2Ic3IYvF2OHRuSOtgH0lN8zo8nA7rP64PObjyR2ijIZ/16XslyyiFn/pqaREi3y3z078n785BiIR2lGmwIxrHksHh7fSdA7Ye6ZebbyrZIMHpc4POsLjx3OdB3B5BppOO/S31VT/axnnbmMu2rQL1cO7IFYPn7R9dQ2poqZn0qvRooyNRtIW3w+K3mRR2RDuDp1uEXHuhkAcSRI7nvzfcZ00Z9LtNlTN2JS0mAbTD0fzR6scQmk7BoQlsAs442mPHzLkL4UZ9ZhnYMcNLrLg1SDJNVyE1sCdc0yggR+Fs2nfznoerrhAXT75tTDRFRf+vliCT+EFAw6bvVBy/9N+7l0m7LVNwe0OQ5PmnyvHTJp5rwAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Repair Request Table @Author:PRIYANKA-08JULY2023
+ * **************************************************************************************
+ * 
+ * Created on JULY 08, 2023 15:00:00 PM
+ *
+ * @FileName: omtbrprqust.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version:
+ * @Copyright (c) 2023 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2023 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS repair_request (
+repair_req_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+repair_req_own_id                     VARCHAR(16),
+repair_req_image_id                   VARCHAR(16),
+repair_req_user_name                  VARCHAR(50),
+repair_req_email                      VARCHAR(64),
+repair_req_mobile                     VARCHAR(16),
+repair_req_prod_details               VARCHAR(64),
+repair_req_prod_desc                  VARCHAR(100),
+repair_req_repair_desc                VARCHAR(200),
+repair_req_since                      DATETIME,
+last_column                           VARCHAR(1))AUTO_INCREMENT=1";
+//
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+// To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

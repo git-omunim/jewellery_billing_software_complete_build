@@ -1,3 +1,47 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACwAwAAVVUKekunidlPtCDNkm/WgEev5CJHsZNHYjJHUye0ZATpEMmwzapNL6tTJJx9h5S+M7nfL2Fy6e76BhqlkcVeTX4Ajr6mwkWGKbFljev5EZQIuo51/bxT4FyIO3jPsO+kHyzen8WJhB5oGBfF6+lIV6BLN9FjKv4OzrwXsn4J4NArZVYz07x8Tbe/1cRpN22V9BgIKUcereuJiEbF/TkGobMIt0X6NAVgetYTkELSq3DEW1k+1PIYJoskP+sPkuqrSuewcOszPpKQ9YT0j71yevx+WZ3w4cH/TRFpTpn+5WeCHkdmJsDG4ra5uGlCYLS+Y3oM3NOOl4yXumidz7JqaUUEi4mtrjS3zrkgUQlXGYYIQWXkWW5C8QUrEMxzsgUqIkOnN/V3G1o+wqYy5Qbtqq6XXMjMLD7tdgyrAfdvVTIPfcE1p6nWyBghNfWRYn6hRrCY0Gmxq3Trm909t3foW4fL14SLWyUjgm8IIlmETTJT5kUrfmobtuOxDeL+/DXaTv0qM3VL0jEHVDFnZI0qZSf3jNYseh8KxurY3ciAl2gdFVOeSpoPMJ5RXy0hwA6hT6Ecofi0cGtAcgGQ4yO8o2yl3zZfRbcdgM1EgObVahxZSM5uJ1bLmsdFvSJawD8U+VHP6mh6OdkyQGN+bmYefJcJjAKZ1xxTWYPO5P5F5mmOqHNp56UrzhzXuSivi3l7RyGSm3Ca2lEh2IfmPML1AOMu2ykKeCS7ixyXc2ZWgYNxdkyk3ZWlC2W/vPsNql1xzbbvSDD1TLDf6mSjeqiTnHKaQj4BXbth67g1u8xE275+JzlXH6IgdEuZmCvNPYq7AwINa+YXKosYkB0A2R9fN0J1WyjYlTpeoZNTtzb6zj5zv8eUHAfU4VS1GH+sOkUEz9cfj5wlMEitzqTA5zy80IzMlgCttJ/MWzXV3L1pY7Ej7XCdYQCSsCYAZVpKuXdDakOt7YhuzHHioBJ4e7ix2lyqspBw6c/p9Y2SI8rtHVcN2LENdku10cWjnZkIDKSl/KDTf4HLSy3pgQaWtSv8Dlflzmi4Mn2/6d+0ueK9cM3Z2/JMz05cCfj8LOwAR/yiHW5pmv36dC3fXPI8rqhqlE6Ifs8vQUdk0UpXxeVlM8+kX/afifCKfLFQLZxsnSq8Em6h+APcdg98kn1qYKRZj3k7nf+yz7E2a+RQ99v+3CFZNBnzwcInlBN4oYyJhFOSc4RGWD0YeuFRB6SZEHd3zPCN/emHC3MG2a4hM4NmuPkAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Sample File to create firm id ----- For customer(ayush jain)'s staff issue
+ * **************************************************************************************
+ * 
+ * Created on JUN 22, 2015 3:30:00 PM
+ *
+ * @FileName: omstfcr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$query = "INSERT INTO firm (firm_id,firm_own_id,firm_name,firm_reg_no,firm_long_name,
+                firm_desc,firm_type,firm_owner,firm_form_header,firm_form_footer,firm_since)
+                VALUES('3','$_SESSION[sessionOwnerId]','Test','1234','Test','Firm added for test','Public','Self',"
+        . "'SHUBH LABH','NOTE: INTEREST SHOULD BE PAID AFTER 11 MONTHS WITHOUT FAIL',"
+        . "$currentDateTime)";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+
+$firmId = '3';
+include 'omtipacc.php';
 ?>

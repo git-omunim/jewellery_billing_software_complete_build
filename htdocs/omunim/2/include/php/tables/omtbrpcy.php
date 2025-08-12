@@ -1,3 +1,56 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAgAwAAzXfmfJJifwiJ5YEwEuFE7Zb62wGidb7Lv/1X3/YbjVUu9dOCu++sLZYjCYAhlehIQb2de0dapDgI1BbpElqhTMlkV+oLMYsDRO+GaoNveVNpAkt2gwqDmIOWlCDjH7EKWd7g/tn6HWMfhCcVktYE213e6S/5zLt4KBcKROWCPkVe5tIXcsqJA21SZocKfiV5UFGT3++7eAQmS5eV5uAysOIAuoWqBbSacUHLmPZhdlw9ZW0FIxkolrcK/AX7my3q7wiVn0FKbAavZolWwFxoAmVWu6Lr2SG+uahud9SxeXuMwz3Qcghabbwje35G9/aj7DAfDruUSQs8G2ZFslS20zXLbYs14iyAiBUi3IliD9QWy02xc1scjl9506tab6suw+63cv7oU/4uwLfN9LyIvKt9VY6TBUrgSCiSJoBsAg2b58+1zxUvoPDKQQ2H21vv+pNOlKyT7otFA04ETMncKQheil99K+T0Jh/GsLKahzFxT2sQAWbWm7LFqmukDvOgIhtG0Z8SPGdttt/FH6JHNUGS0yrhm2Ign/3DYVyB/zSfU0WTnJCmt01Q0WuyYGi/T+xIOcU3jQoSESPwd7+my1Nf07axSuvEFETwxg1InEtmBCAp9agR8NZX3Ocg5Sg95qWQKMZqpjD5/8OeyJEPXjZM1FVdLvEe7dhL9fL5gEisDY45Ff2u43VWh6TGz6M8B6BOTMol3oM7/mIo4fIOOJ3txIK4wvSZD2NJQWEAyCg2F+oLzk46Tb+ajYg1X39MRkVVf0ngC0h46a6vwpzoNjNa8ebQIMn1Lq9QMDPv2wAsBP1j2JoWg4xnX+US+AeEYHR8vypc78rGoqn9zicDJ2mYoVCu7mL4trZi6RzE9bn8pIsZzQ9lBx0o1412ko5YW4bqtgEOIfvmixLibXSs0rl6zSxXNcHBDp1a+Pf4Dt95vXNoog3oTy8TkFSq2GD0etqh4iKc0GJV/K0HDe2jNxgzO+6MzE/zg0+6OgbFSLfFlQGwafyB9qFh5zeEDEs4bLKGA0mx6SiIbgI8mCyjNKJjLBRbX0NniNfkEUuLr7YAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Supp Order Crystal Table
+ * **************************************************************************************
+ * 
+ * Created on Jan 09, 2015 12:01:37 PM
+ *
+ * @FileName: omtbrpcy.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS repair_item_crystal (
+repair_crystal_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+repair_crystal_own_id                     VARCHAR(16),
+item_repair_item_id                       VARCHAR(16),
+repair_crystal_firm_id                    VARCHAR(16), 
+repair_crystal_acc_id                     VARCHAR(16), 
+repair_crystal_cust_id                    INT,
+repair_crystal_DOB                        VARCHAR(50),
+repair_crystal_name                       VARCHAR(80),
+repair_crystal_quantity                   VARCHAR(10),
+repair_crystal_gs_weight                  VARCHAR(15),
+repair_crystal_gs_wt_type                 VARCHAR(10),
+repair_crystal_rate                       VARCHAR(20),
+repair_crystal_rate_type                  VARCHAR(20),
+repair_crystal_valuation                  VARCHAR(30),
+repair_crystal_final_valuation            VARCHAR(30),
+repair_crystal_tax                        VARCHAR(15),
+repair_crystal_clarity                    VARCHAR(15),
+repair_crystal_color                      VARCHAR(15),
+repair_cry_oth_info                       VARCHAR(80),
+repair_crystal_status                     VARCHAR(32),
+repair_crystal_since                      DATETIME,
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

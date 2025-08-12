@@ -1,3 +1,93 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: REPAIR PANEL FILE @Author-PRIYANKA-19OCT2020
+ * **************************************************************************************
+ *
+ * Created on 19 OCT 2020 02:43:32 PM
+ *
+ * @FileName: omrpsdv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim 2.7.21
+ * @version 2.7.21
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @Author-PRIYANKA-19OCT2020
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+$staffId = $_SESSION['sessionStaffId'];
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+$subPanel = $_GET['subPanel'];
+//
+$custId = $_GET['custId'];
+//
+if ($custId == '') {
+    $custId = $_POST['custId'];
+    $firmId = $_POST['firmId'];
+}
+//
+?>
+<?php if ($_SESSION['sessionOwnIndStr'][12] == 'Y') { ?>
+    <div class="main_middle_common" id="itemRepairSubDiv">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="left" class="border-color-grey-b">
+                    <table align="left" border="0" cellspacing="0" cellpadding="2" width="100%">
+                        <tr>
+                            <!--<td valign="middle" align="left" width="20px">
+                                <div class="analysis_div_rows">
+                                    <img src="<?php echo $documentRoot; ?>/images/repair32.png" 
+                                         alt="Repair Panel" width="25px" height="25px"/>
+                                </div>
+                            </td>
+                            <td align="left" valign="middle">
+                                <div id="SellPurchase" class="textLabelHeading">
+                                    REPAIR PANEL
+                                </div>
+                            </td> -->
+                            <td align="right" valign="right">
+                                <div id="messDisplayDiv">
+                                </div>
+                            </td>
+                            <td align="right" class="printVisibilityHidden">
+                                <input type="submit" id="repairList" name="repairList" value="REPAIR LIST" class="frm-btn"
+                                       onclick="showRepairListPanel('<?php echo $custId; ?>')" />
+                                <input type="submit" id="addNewRepairItem" name="addNewRepairItem" 
+                                       value="ADD NEW ITEM" class="frm-btn"
+                                       onclick="showAddRepairItemPanelForm('<?php echo $custId; ?>')" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="itemRepairDiv" class="main_middle_common">
+        <?php
+        //
+        // ADDED CODE FOR @PRIYANKA-18JAN2021
+        $setupPanelName = 'ADD_REPAIR_ITEMS';
+        //
+        include $_SESSION['documentRootIncludePhp'] . '/stock/omStockTransForm.php';
+        //
+        //include 'omrpsdv.php';
+        //
+        ?>
+    </div>
+<?php } ?>

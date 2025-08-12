@@ -1,3 +1,341 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 10, 2011 7:33:17 PM
+ *
+ * @FileName: orgsgvpd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+$currentFileName = basename(__FILE__);
+//Start Staff Access API @AUTHOR: SANDY09JAN14
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @AUTHOR: SANDY09JAN14
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+//Change in layout of display @AUTHOR: SANDY08FEB14
 ?>
+<table border="0" cellspacing="1" cellpadding="0" width="100%" align="center">
+    <tr>
+        <td valign="middle" align="center">
+            <table border="0" cellspacing="2" cellpadding="0" width="100%" align="center">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft200"><img src="<?php echo $documentRoot; ?>/images/calender.png" alt="" /></div>
+                    </td>
+                    <td valign="middle" align="left">
+                        <div class="text_14_brown spaceLeft10">
+                            Search By Date
+                        </div>
+                    </td>
+                    <td valign="bottom" align="right">
+                        <div id="ajaxCloseSearchGirviButt" style="visibility: visible" class="ajaxClose">
+                            <a style="cursor: pointer;" onclick="closeSearchGirviPanelDiv()">
+                                <?php include 'omzaajcl.php'; ?>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center">
+            <form name="search_girvi_panel" id="search_girvi_panel" 
+                  action="javascript:searchGirviByDate(document.getElementById('search_girvi_panel'));" method="post">
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td valign="middle"  align="left" width="250px">
+                            <div class="spaceLeft80 tnr_nr_12_red">
+                                Select Date: 
+                            </div>
+                        </td>
+                        <td valign="middle" align="left" width="250px">
+                            <table>
+                                <tr>
+                                    <td class="textBoxCurve1px">
+                                        <?php include 'omdadsed.php'; ?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="middle"  width="50px">
+                            <div id="girviByDateSearchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft200"><img src="<?php echo $documentRoot; ?>/images/udhaar24.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="text_14_brown spaceLeft10">
+                            Search By Amount
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center">
+            <table border="0" cellspacing="0" cellpadding="1" align="center">
+                <tr>
+                    <td align="right">
+                        <form name="srch_girvi_fixedAmt" id="srch_girvi_fixedAmt" 
+                              action="javascript:searchGirviByFixedAmount(document.getElementById('srch_girvi_fixedAmt'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td valign="middle" align="left" width="250px">
+                                        <div class="spaceLeft80 tnr_nr_12_red">
+                                            Enter Amount:
+                                        </div>
+                                    </td>
+                                    <td valign="middle"  align="left" width="250px">
+                                        <table>
+                                            <tr>
+                                                <td class="textBoxCurve1px spaceLeft10" width="200px">
+                                                    <h5>
+                                                        <input id="grvFixedAmt" type="text"
+                                                               class="border-no textLabel12CalibriGrey" value="Enter Girvi Principal Amount" maxlength="50"
+                                                               onfocus="if(this.value == 'Enter Girvi Principal Amount'){this.value = '';}"
+                                                               onblur="if (this.value ==''){this.value = 'Enter Girvi Principal Amount';}"
+                                                               size="30" spellcheck="false" />
+                                                    </h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="middle"  width="50px">
+                                        <div id="girviByFixedAmtSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <form name="srch_girvi_amtRange" id="srch_girvi_amtRange" 
+                              action="javascript:searchGirviByAmountRange(document.getElementById('srch_girvi_amtRange'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td valign="middle" align="left"  width="250px">
+                                        <div class="spaceLeft80 tnr_nr_12_red">
+                                            Select Amount Range:
+                                        </div>
+                                    </td>
+                                    <td valign="middle"  align="left" width="250px">
+                                        <table>
+                                            <tr>
+                                                <td  width="200px">
+                                                    <div class="selectStyled">
+                                                        <h5><select id="grvAmtRange" name="grvAmtRange" class="border-no textLabel12CalibriGrey">
+                                                                <option value="NotSelected">~ &nbsp;Principal Amount Range&nbsp; ~</option>
+                                                                <option value="1000"><?php echo $globalCurrency.' '; ?> 1 to <?php echo $globalCurrency.' '; ?> 1,000</option>    
+                                                                <option value="5000"><?php echo $globalCurrency.' '; ?> 1,001 to <?php echo $globalCurrency.' '; ?> 5,000</option>    
+                                                                <option value="10000"><?php echo $globalCurrency.' '; ?> 5,001 to <?php echo $globalCurrency.' '; ?> 10,000</option>    
+                                                                <option value="20000"><?php echo $globalCurrency.' '; ?> 10,001 to <?php echo $globalCurrency.' '; ?> 20,000</option>    
+                                                                <option value="30000"><?php echo $globalCurrency.' '; ?> 20,001 to <?php echo $globalCurrency.' '; ?> 30,000</option>    
+                                                                <option value="40000"><?php echo $globalCurrency.' '; ?> 30,001 to <?php echo $globalCurrency.' '; ?> 40,000</option>    
+                                                                <option value="50000"><?php echo $globalCurrency.' '; ?> 40,001 to <?php echo $globalCurrency.' '; ?> 50,000</option>    
+                                                                <option value="60000"><?php echo $globalCurrency.' '; ?> 50,001 to <?php echo $globalCurrency.' '; ?> 60,000</option>    
+                                                                <option value="70000"><?php echo $globalCurrency.' '; ?> 60,001 to <?php echo $globalCurrency.' '; ?> 70,000</option>    
+                                                                <option value="80000"><?php echo $globalCurrency.' '; ?> 70,001 to <?php echo $globalCurrency.' '; ?> 80,000</option>    
+                                                                <option value="90000"><?php echo $globalCurrency.' '; ?> 80,001 to <?php echo $globalCurrency.' '; ?> 90,000</option>    
+                                                                <option value="100000"><?php echo $globalCurrency.' '; ?> 90,001 to <?php echo $globalCurrency.' '; ?> 1,00,000</option>    
+                                                                <option value="150000"><?php echo $globalCurrency.' '; ?> 1,00,001 to <?php echo $globalCurrency.' '; ?> 1,50,000</option>    
+                                                                <option value="200000"><?php echo $globalCurrency.' '; ?> 1,50,001 to <?php echo $globalCurrency.' '; ?> 2,00,000</option>    
+                                                                <option value="Infinite"><?php echo $globalCurrency.' '; ?> 2,00,001 to <?php echo $globalCurrency.' '; ?> Infinite</option>    
+                                                            </select> 
+                                                        </h5>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td valign="middle"  width="50px">
+                                        <div id="girviByAmtRangeSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr> 
+                <tr>
+                    <td align="right">
+                        <form name="srch_girvi_customAmtRange" id="srch_girvi_customAmtRange" 
+                              action="javascript:searchGirviByCustomAmountRange(document.getElementById('srch_girvi_customAmtRange'));" method="post">
+                            <table border="0" cellspacing="0" cellpadding="2">
+                                <tr>
+                                    <td valign="middle" align="left"  width="250px">
+                                        <div class="spaceLeft80 tnr_nr_12_red">
+                                            Enter Amount Range:
+                                        </div>
+                                    </td>
+                                    <td valign="middle"  align="left" width="250px">
+                                        <h5>
+                                            <table>
+                                                <tr>
+                                                    <td class="textBoxCurve1px">
+                                                        <input id="grvCustomAmtStartRange" type="text"
+                                                               class="border-no textLabel12CalibriGrey" value="Start Range" maxlength="50"
+                                                               onfocus="if(this.value == 'Start Range'){this.value = '';}"
+                                                               onblur="if (this.value ==''){this.value = 'Start Range';}"
+                                                               size="10" spellcheck="false" />
+                                                    </td>
+                                                    <td> TO</td>
+                                                    <td class="textBoxCurve1px">
+                                                        <input id="grvCustomAmtEndRange" type="text"
+                                                               class="border-no textLabel12CalibriGrey" value="End Range" maxlength="50"
+                                                               onfocus="if(this.value == 'End Range'){this.value = '';}"
+                                                               onblur="if (this.value ==''){this.value = 'End Range';}"
+                                                               size="11" spellcheck="false" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </h5>
+                                    </td>
+                                    <td valign="middle"  width="50px">
+                                        <div id="girviByCustomAmtRangeSrchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                </tr> 
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft200"><img src="<?php echo $documentRoot; ?>/images/village.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="text_14_brown spaceLeft10">
+                            Search By City / Village
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center">
+            <form name="search_girvi_by_city" id="search_girvi_by_city" 
+                  action="javascript:searchGirviByCity(document.getElementById('search_girvi_by_city'));" method="post">
+                <table border="0" cellspacing="0" cellpadding="2">
+                    <tr>
+                        <td valign="middle"  width="250px" align="left">
+                            <div class="spaceLeft80 tnr_nr_12_red">
+                                Select City:
+                            </div>
+                        </td>
+                        <td valign="middle"  align="left" width="250px">
+                            <table>
+                                <tr>
+                                    <td  align="left" width="200px">
+                                        <div class="selectStyled">
+                                            <h5>
+                                                <SELECT  id="searchGirviCity" name="searchGirviCity" class="border-no textLabel12CalibriGrey">
+                                                    <OPTION  VALUE="NotSelected">~&nbsp;&nbsp;&nbsp;&nbsp;Select Girvi City / Village &nbsp;&nbsp;&nbsp;&nbsp;~</OPTION>
+                                                    <?php include 'omvvgtcc.php'; ?>
+                                                </SELECT>
+                                            </h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="middle"  width="50px">
+                            <div id="girviByCitySearchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <!---Start to add code to search girvi by ml  name @AUTHOR: SANDY27JAN14------------
+    <tr>
+        <td valign="middle" align="left">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
+                <tr>
+                    <td valign="middle" width="26px">
+                        <div class="spaceLeft200"><img src="<?php echo $documentRoot; ?>/images/supplier26.png" alt="" /></div>
+                    </td>
+                    <td valign="middle">
+                        <div class="text_14_brown spaceLeft10">
+                            Search Transferred Girvi By MoneyLender Name
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center">
+            <form name="search_girvi_by_ml_name" id="search_girvi_by_ml_name" 
+                  action="javascript:searchGirviByMlName(document.getElementById('search_girvi_by_ml_name'));" method="post">
+                <table border="0" cellspacing="0" cellpadding="2" width="550px">
+                    <tr>
+                        <td valign="middle" width="250px" align="left">
+                            <div class="spaceLeft80 tnr_nr_12_red">
+                                Select MoneyLender Name:
+                            </div>
+                        </td>
+                        <td valign="middle" width="250px" align="left">
+                            <table>
+                                <tr>
+                                    <td  width="200px">
+                                        <div class="selectStyled">
+                                            <h5>
+                                                <SELECT class="border-no textLabel12CalibriGrey" id="searchGirviByMlName" name="searchGirviByMlName" >
+                                                    <OPTION  VALUE="NotSelected">~&nbsp;&nbsp;&nbsp;&nbsp;Select Money Lender Name&nbsp;&nbsp;&nbsp;&nbsp;~</OPTION>
+    <?php
+ //***************************************************** Start code to change data from supplier to user table Auther@:SANT12JAN16**************************************************************************
+    $selMlNames = "SELECT user_fname FROM user WHERE user_category='Money Lender' and user_owner_id='$_SESSION[sessionOwnerId]'";
+    $resMlNames = mysqli_query($conn,$selMlNames);
+    while ($rowMlNames = mysqli_fetch_array($resMlNames, MYSQLI_ASSOC)) {
+        ?>
+                                                            <OPTION  VALUE="<?php echo $rowMlNames['user_fname']; ?>"><?php echo $rowMlNames['user_fname']; ?></OPTION>
+    <?php
+     //***************************************************** End code to change data from supplier to user table Auther@:SANT12JAN16**************************************************************************
+   } ?>
+                                                </SELECT>
+                                            </h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="middle" width="50px">
+                            <div id="girviByMlNameSearchButt"><input type="submit" value="Search" class="frm-btn" /></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    --End to add code to search girvi by ml  name @AUTHOR: SANDY27JAN14 comment by @AUTHOR: SANDY07FEB14------------->
+</table>

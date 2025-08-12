@@ -1,3 +1,120 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * 
+ * Created on Sep 13, 2022 12:22:17 AM
+ *
+ * @FileName: C:\Project\Retail\htdocs\omretail\2\include\php\tables\omrtbvisitor.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMunim Retail 
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: YUVRAJ KAMBLE 
+ *  REASON: VISITOR NEW TABLE CREATED 
+ *
+ */
+?>
+<?php
+
+//
+$query = "CREATE TABLE IF NOT EXISTS visitor (
+visitor_id 		INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+visitor_owner_id	VARCHAR(16),
+visitor_firm_id		VARCHAR(16),
+visitor_gid             VARCHAR(20),
+visitor_login_id        VARCHAR(20),
+visitor_password        VARCHAR(40),
+visitor_product_key     VARCHAR(20),
+visitor_api_key         VARCHAR(20),
+visitor_type            VARCHAR(16),
+visitor_lead_team       VARCHAR(10),
+visitor_lead_type       VARCHAR(10), 
+visitor_fname 	        VARCHAR(50),
+visitor_lname 		VARCHAR(50),
+visitor_DOB 		VARCHAR(25),
+visitor_sex 		VARCHAR(16),
+visitor_occupation 	VARCHAR(16),
+visitor_add 	        VARCHAR(16),
+visitor_pincode 	VARCHAR(16),
+visitor_city 		VARCHAR(50),
+visitor_address 	VARCHAR(80),
+visitor_country_code 	VARCHAR(5),
+visitor_country 	VARCHAR(50),
+visitor_state 		VARCHAR(50),
+visitor_phone		VARCHAR(20),
+visitor_mobile		VARCHAR(20),
+visitor_mobile_reg	VARCHAR(20),
+visitor_rfid_no		VARCHAR(50),
+visitor_acc_id		VARCHAR(20),
+visitor_comm_upd_date	VARCHAR(20),
+visitor_reference	VARCHAR(20),
+visitor_status	        VARCHAR(20),
+visitor_since	        VARCHAR(20),
+visitor_email		VARCHAR(40),
+visitor_intime		TIME,
+visitor_email_reg	VARCHAR(20),
+visitor_software_price  VARCHAR(20),
+visitor_printer_pack    VARCHAR(20),
+visitor_printer_srno    VARCHAR(20),
+visitor_scanner_pack    VARCHAR(20),
+visitor_scanner_srno    VARCHAR(20),
+visitor_labels_pack     VARCHAR(20),
+visitor_inkroll_pack    VARCHAR(20),
+visitor_other_accessories  VARCHAR(20),
+visitor_other_accessories2  VARCHAR(20),
+visitor_cloud_charges    VARCHAR(20),
+visitor_gst_charges      VARCHAR(20),
+visitor_advance_amount   VARCHAR(20),
+visitor_total_amount     VARCHAR(20),
+visitor_discount         VARCHAR(20),
+visitor_final_amount     VARCHAR(20),
+visitor_remaining_amount VARCHAR(20),
+visitor_system_verified  VARCHAR(20),
+visitor_owner_verified  VARCHAR(20),
+visitor_images          VARCHAR(20),
+visitor_amc_charges          VARCHAR(20),
+visitor_services	VARCHAR(20),
+visitor_message		VARCHAR(500),
+visitor_indicator       VARCHAR(10),
+visitor_other_info      VARCHAR(500),
+visitor_entry_date      VARCHAR(20),
+visitor_next_date       VARCHAR(20),
+visitor_last_comment_date     VARCHAR(20),
+visitor_last_comment_time     VARCHAR(20),
+visitor_conversion_date     VARCHAR(20),
+visitor_staff_name      VARCHAR(20),
+visitor_sec_staff_name  VARCHAR(20),
+visitor_staff_id           VARCHAR(16),
+visitor_sec_staff_id       VARCHAR(16),
+visitor_interest        VARCHAR(20),
+visitor_approved        VARCHAR(20),
+visitor_extended_access    VARCHAR(500),
+visitor_last_comment    VARCHAR(20),
+visitor_block_status    VARCHAR(20),
+visitor_whatsapp_send_status    VARCHAR(20),
+visitor_whatsapp_send_date    VARCHAR(20),
+visitor_otp                 VARCHAR(50),
+visitor_billing_name        VARCHAR(50),
+visitor_gstin               VARCHAR(20),
+visitor_ip_address          VARCHAR(20),
+visitor_time_zone           VARCHAR(20),
+visitor_currency_code       VARCHAR(5),
+visitor_currency_symbol     VARCHAR(10),
+visitor_latitude            VARCHAR(20),
+visitor_longitude           VARCHAR(20),
+last_column                VARCHAR(1),
+UNIQUE KEY (visitor_mobile),
+UNIQUE KEY (visitor_email))";
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

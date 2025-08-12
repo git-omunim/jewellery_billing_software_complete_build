@@ -1,3 +1,638 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Item Bar Code Print Panel Div
+ * **************************************************************************************
+ * 
+ * Created on Apr 30, 2012 11:57:35 PM
+ *
+ * @FileName: omstockTransibbc84l.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+//include_once 'ommpfunc.php';
+include_once 'ommstockpfunc.php';
+?>
+<?php
+/* * ***********Start code to change file @Author:ANUJA4FEB15************************ */
+$tags = $_GET['tags']; //var changed @Author:PRIYA07APR15
+$panelName = 'BclPanel';
+if ($tags != 'true') {
+    ?>
+    <table border="0" cellpadding="2" cellspacing="2" align="center" valign="top" width="100%" class="noPrint" style="border:1px solid #c1c1c1;background:#f5f5f5;">
+        <tr style="background: #FFE34F;">
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">1</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">2</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">3</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">4</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">5</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">6</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">7</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">8</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">9</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">10</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">11</span>
+                </td>
+                <td align='center' width="8%">
+                    <span style="font-size:15px;font-weight: 600">12</span>
+                </td>
+
+            </tr>
+        <?php
+        $valuePresentInTable = updateOptionValue('bc84lOption1', 'productid', 'selValue', '');
+        if ($valuePresentInTable == '') {
+            $valuePresentInTable = updateOptionValue('bc84lOption1', 'productid', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption1', 'productid', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption2', 'itemname', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption3', 'itemwt', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption4', 'itemnwt', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption5', 'cryval', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption6', 'mkgch', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption7', 'crywt', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption8', 'firm', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption9', 'price', 'selValue', 'barCode');
+            updateOptionValue('bc84lOption10', 'otherInfo', 'selValue', 'barCode'); // add Option @Author:ANUJA24FEB15
+            updateOptionValue('bc84lOption11', 'barcodeNumber', 'selValue', 'barCode');  //START CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+            updateOptionValue('bc84lOption12', 'itmsize', 'selValue', 'barCode');  //START CODE FOR ADDDED ITEM SIZE AUTHPR @SIMRAN-09AUG2022-->
+//            
+        }
+//        $valueMobPresentInTable = updateOptionValue('loanBcOption9', 'custMob', 'selValue', '');
+//        if ($valueMobPresentInTable == '') {
+//            updateOptionValue('loanBcOption8', 'custMob', 'selValue', 'barCode');
+//            updateOptionValue('loanBcOption9', 'itemname', 'selValue', 'barCode');
+//            updateOptionValue('loanBcOption10', 'otherInfo', 'selValue', 'barCode');
+//        }
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption1'"));
+        // echo "SELECT omin_value FROM omindicators where omin_option = 'loanBc65lOption1'";
+        callImiLoanBCLFunc85l('bc84lOption1', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption2'"));
+        callImiLoanBCLFunc85l('bc84lOption2', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption3'"));
+        callImiLoanBCLFunc85l('bc84lOption3', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption4'"));
+        callImiLoanBCLFunc85l('bc84lOption4', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption5'"));
+        callImiLoanBCLFunc85l('bc84lOption5', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption6'"));
+        callImiLoanBCLFunc85l('bc84lOption6', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption7'"));
+        callImiLoanBCLFunc85l('bc84lOption7', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption8'"));
+        callImiLoanBCLFunc85l('bc84lOption8', $omin_value, $panelName);
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption9'"));
+        callImiLoanBCLFunc85l('bc84lOption9', $omin_value, $panelName);
+        /*         * ****************** Start code to add Button @Author:ANUJA24FEB15 *********************************** */
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption10'"));
+        callImiLoanBCLFunc85l('bc84lOption10', $omin_value, $panelName);
+        /*         * ****************** End code to add Button @Author:ANUJA24FEB15 *********************************** */
+
+        //START CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption11'"));
+        callImiLoanBCLFunc85l('bc84lOption11', $omin_value, $panelName);
+        //END CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+        //
+        //
+        //START CODE FOR ADDDED ITEM SIZE ON TAG AUTHPR @SIMRAN-09AUG2022-->
+        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption12'"));
+        callImiLoanBCLFunc85l('bc84lOption12', $omin_value, $panelName);
+        //END CODE FOR ADDDED ITEM SIZE ON TAG AUTHPR @SIMRAN-09AUG2022-->
+        ?>
+    </table>
+    <?php
+}
+/* * ******ENd code to @Author:ANUJA4FEB15************ */
+?>
+<?php
+/* * ******Start code to add panel indiacator @Author:PRIYA16MAY14************ */
+if ($_SESSION['sessionOwnIndStr'][7] == 'Y' || $_SESSION['sessionOwnIndStr'][7] == 'A') {
+    ?>
+    <?php
+    $sessionOwnerId = $_SESSION['sessionOwnerId'];
+//OPTION ID
+    $omLayoutOptionTop = '84LBCTOPMARGIN';
+    $omLayoutOptionLeft = '84LBCLEFTMARGIN';
+    $omLayFontSize = '84LBCBLOCKFONTSIZE';
+    $omLayOptBlockWidth = '84LBCBLOCKWIDTH';
+    $omLayOptBlockHeight = '84LBCBLOCKHEIGHT';
+    $omLayOptSlipWidth = '84LBCBLOCKSLIPWIDTH';
+    $omLayOptSlipHeight = '84LBCBLOCKSLIPHEIGHT';
+    $omLayoutOptionBorder = '84LBCBORDER';
+    $omLayoutBCSize = '84LBCSIZE';
+    $omLayoutOptionNoOfRows = '84LNOOFROWS';
+
+//SELECT OPTION VALUE
+    $noOfRows = updateOptionValue($omLayoutOptionNoOfRows, '', 'selValue', '');
+    if ($noOfRows == '')
+        $noOfRows = '21';
+    $checkBarCodeBorder = updateOptionValue($omLayoutOptionBorder, '', 'selValue', '');
+    if ($checkBarCodeBorder == 'YES') {
+        $barCodeBorder = 'solid 1px #C7C5C8';
+    } else {
+        $barCodeBorder = 'solid 1px #FFFFFF';
+    }
+    $topMargin = updateOptionValue($omLayoutOptionTop, '', 'selValue', '');
+    $leftMargin = updateOptionValue($omLayoutOptionLeft, '', 'selValue', '');
+    $blockWidth = updateOptionValue($omLayOptBlockWidth, '', 'selValue', '');
+    $blockHeight = updateOptionValue($omLayOptBlockHeight, '', 'selValue', '');
+    $slipWidth = updateOptionValue($omLayOptSlipWidth, '', 'selValue', '');
+    $slipHeight = updateOptionValue($omLayOptSlipHeight, '', 'selValue', '');
+    $barCodeSize = updateOptionValue($omLayoutBCSize, '', 'selValue', '');
+    
+// *************************************************************************************************************
+// START CODE FOR SHOW WHOLESALE ITEM DEATILS AT 84L STOCK @SIMRAN-01JULY2022
+// *************************************************************************************************************
+    $qSelwholesaleDetail84lstock = "SELECT omly_value FROM omlayout WHERE omly_option = 'wholesaleDetail84lstock'";
+    $reswholesaleDetail84lstock = mysqli_query($conn, $qSelwholesaleDetail84lstock);
+    $rowwholesaleDetail84lstock = mysqli_fetch_array($reswholesaleDetail84lstock);
+    $wholesaleDetail84lstock = $rowwholesaleDetail84lstock['omly_value'];
+// *************************************************************************************************************
+// END CODE FOR SHOW WHOLESALE ITEM DEATILS AT 84L STOCK @SIMRAN-01JULY2022
+// *************************************************************************************************************
+// 
+
+    
+//CLASS VAR
+    if ($barCodeSize == 'size') {
+        $labelLeftMargin = '0MM';
+        $labelRightMargin = '0MM';
+        $labelTopMargin = '0MM';
+        $labelBottomMargin = '0MM';
+    } else if ($barCodeSize == 'large') {
+//    updateOptionValue($omLayOptSlipWidth, '46MM', 'update', '');
+//    updateOptionValue($omLayOptSlipHeight, '11MM', 'update', '');
+        $slipWidth = '46MM';
+        $slipHeight = '11MM';
+        $labelLeftMargin = '0MM';
+        $labelRightMargin = '0MM';
+        $labelTopMargin = '0MM';
+        $labelBottomMargin = '0MM';
+        //  $height84l = '2.75MM';
+        $deleteLeftMargin = $slipWidth - 2;
+        $deleteTopMargin = $slipHeight + 2;
+    } else if ($barCodeSize == 'medium') {
+//    updateOptionValue($omLayOptSlipWidth, '44MM', 'update', '');
+//    updateOptionValue($omLayOptSlipHeight, '1MM', 'update', '');
+        $slipWidth = '44MM';
+        $slipHeight = '10MM';
+        $labelLeftMargin = '3MM';
+        $labelRightMargin = '3MM';
+        $labelTopMargin = '1MM';
+        $labelBottomMargin = '1MM';
+        // $height84l = '2.5MM';
+    } else if ($barCodeSize == 'small') {
+//    updateOptionValue($omLayOptSlipWidth, '42MM', 'update', '');
+//    updateOptionValue($omLayOptSlipHeight, '9MM', 'update', '');
+        $slipWidth = '42MM';
+        $slipHeight = '9MM';
+        $labelLeftMargin = '4MM';
+        $labelRightMargin = '4MM';
+        $labelTopMargin = '1.5MM';
+        $labelBottomMargin = '1.5MM';
+        // $height84l = '2.25MM';
+    }
+    $fontSize = updateOptionValue($omLayFontSize, '', 'selValue', '');
+
+    if ($barCodeSize == 'large' || $barCodeSize == 'size') {
+        $deleteLeftMargin = $slipWidth - 2;
+        $deleteTopMargin = $slipHeight + 2;
+    } else if ($barCodeSize == 'medium') {
+        $deleteLeftMargin = $slipWidth + 1;
+        $deleteTopMargin = $slipHeight + 3;
+    } else if ($barCodeSize == 'small') {
+        $deleteLeftMargin = $slipWidth + 2;
+        $deleteTopMargin = $slipHeight + 2.7;
+    }
+    include 'ombcclass.php';
+    ?>
+
+    <div id="barCode84L">
+        <div id="headerItemBarCode" style="margin:auto;">
+            <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top" class="table84L" width="100%">
+                <?php
+                $selFirmId = $_GET['firmId'];
+                if (!isset($selFirmId)) {
+                    $firmIdSelected = $_SESSION['setFirmSession'];
+                    $selFirmId = $firmIdSelected;
+                } else {
+                    $firmIdSelected = $selFirmId;
+                }
+                //End Code To Select FirmId
+                if ($selFirmId == '' || $selFirmId == NULL) {
+                    $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='1'";
+                } else {
+                    $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='$selFirmId'";
+                }
+                //To display data in this form
+                $resultFirm = mysqli_query($conn, $qSelectFirm);
+                $rowFirm = mysqli_fetch_array($resultFirm);
+                //
+                if ($selFirmId != NULL) {
+                    $strFrmId = $selFirmId;
+                } else {
+                    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+                }
+
+                $barcodePerPage = 84;
+                $checkNextBarcode = $barcodePerPage * 2;
+                $pageNum = 1;
+                if (isset($_GET['page'])) {
+                    $pageNum = $_GET['page'];
+                }
+                $perOffset = ($pageNum - 1) * $barcodePerPage;
+         //************************************************************************************************************************************************
+         //  ADDED CODE FOR SHOW WHOLESALE ITEM DETAILS AT 84L STOCK @AUTHOR SIMRAN-01JULY2022
+         //************************************************************************************************************************************************
+              if($wholesaleDetail84lstock == 'NO'){
+                  
+                     $qSelInItemBarCode = "SELECT * FROM stock_transaction where sttr_gs_weight!='0' and sttr_stock_type != 'wholesale' and sttr_status NOT IN ('DELETED','SOLDOUT') and "
+                            . "sttr_indicator NOT IN ('stockCrystal','imitation','rawMetal') and sttr_transaction_type NOT IN ('newOrder','sell','ESTIMATESELL','APPROVAL') and sttr_firm_id IN ($strFrmId) order by sttr_id desc LIMIT $perOffset,$checkNextBarcode"; 
+              }else{
+
+                if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                    $qSelInItemBarCode = "SELECT * FROM stock_transaction where "
+                            . "sttr_indicator!='stockCrystal' and sttr_transaction_type!='sell'  and sttr_firm_id IN ($strFrmId) order by sttr_id desc LIMIT $perOffset,$checkNextBarcode";
+                } else {
+                    $qSelInItemBarCode = "SELECT * FROM stock_transaction where sttr_gs_weight!='0'  and sttr_status NOT IN ('DELETED','SOLDOUT') and "
+                            . "sttr_indicator NOT IN ('stockCrystal','imitation','rawMetal') and sttr_transaction_type NOT IN ('newOrder','sell','ESTIMATESELL','APPROVAL') and sttr_firm_id IN ($strFrmId) order by sttr_id desc LIMIT $perOffset,$checkNextBarcode";
+                }
+                
+              }
+         //************************************************************************************************************************************************
+         //  END CODE FOR SHOW WHOLESALE ITEM DETAILS AT 84L STOCK @AUTHOR SIMRAN-01JULY2022
+         //************************************************************************************************************************************************
+                $resInItemBarCode = mysqli_query($conn, $qSelInItemBarCode);
+                $totalItemBarCode = mysqli_num_rows($resInItemBarCode);
+
+                if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                    $qSelInItemBarCode1 = "SELECT * FROM stock_transaction where "
+                            . "sttr_indicator!='stockCrystal' and sttr_transaction_type!='sell' and sttr_firm_id IN ($strFrmId) order by sttr_id desc LIMIT $perOffset,$barcodePerPage";
+                } else {
+                    $qSelInItemBarCode1 = "SELECT * FROM stock_transaction where sttr_gs_weight!='0' and sttr_status NOT IN ('DELETED','SOLDOUT') and "
+                            . "sttr_indicator NOT IN ('stockCrystal') and sttr_transaction_type NOT IN ('newOrder','sell','ESTIMATESELL','APPROVAL') and sttr_firm_id IN ($strFrmId) order by sttr_id desc LIMIT $perOffset,$barcodePerPage";
+                }
+
+                $resInItemBarCode1 = mysqli_query($conn, $qSelInItemBarCode1);
+                $totalNextItemBarCode = mysqli_num_rows($resInItemBarCode1);
+
+                $counter = 1;
+                ?>
+                <tr>
+                    <td valign="top" align="left">
+                        <table border="0" cellpadding="0" cellspacing="0" align="left" valign="top" width="100%">
+                            <?php
+                            for ($row = 1; $row <= $noOfRows; $row++) {
+                                ?>
+                                <tr>
+                                    <?php
+                                    for ($col = 1; $col <= 4; $col++) {
+                                        ?>
+                                        <td class="block84L" valign="top" style="border:1px solid #c1c1c1;position: relative;">
+                                            <div id="block84LDiv<?php echo $counter; ?>" class="block84LDiv"
+                                                 ondblclick="moveBarCodeSlip84L('block84LDiv<?php echo $counter; ?>', 'barCodeCloseDiv<?php echo $counter; ?>')" 
+                                                 title="Please Double click to move the slip!">
+                                                     <?php
+                                                     $divPrinted = FALSE;
+                                                     if ($rowInItemBarCode = mysqli_fetch_array($resInItemBarCode, MYSQLI_ASSOC)) {
+                                                         $bcId = $rowInItemBarCode['sttr_id'];
+                                                         $bcFirmId = $rowInItemBarCode['sttr_firm_id'];
+                                                         $bcItemId = $rowInItemBarCode['sttr_barcode'];
+                                                         $bcItemPreId = trim($rowInItemBarCode['sttr_item_pre_id']);
+                                                         $bcItemPostId = trim($rowInItemBarCode['sttr_item_id']);
+                                                         $bcItemName = trim($rowInItemBarCode['sttr_item_name']);
+                                                         $bcItemWt = trim($rowInItemBarCode['sttr_gs_weight']);
+                                                         $bcItemWtType = trim($rowInItemBarCode['sttr_gs_weight_type']);
+                                                         $bcItemNtWt = trim($rowInItemBarCode['sttr_nt_weight']);
+                                                         $bcItemCustPri = trim($rowInItemBarCode['sttr_cust_price']);
+                                                         $bcItemNtWtType = trim($rowInItemBarCode['sttr_nt_weight_type']);
+                                                         $bcItemCrystalVal = intval($rowInItemBarCode['sttr_stone_amt']);
+                                                         $bcItemCryNtWt = trim($rowInItemBarCode['sttr_stone_wt']);
+                                                         $bcItemCryNtWtType = trim($rowInItemBarCode['sttr_stone_wt_type']);
+                                                         $bcItemMkChrg = trim($rowInItemBarCode['sttr_making_charges']);
+                                                         $bcItemMkChrgType = trim($rowInItemBarCode['sttr_making_charges_type']);
+                                                         $bismark = trim($rowInItemBarCode['sttr_bis_mark']);
+                                                         $bcItemPrefixId = trim($rowInItemBarCode['sttr_barcode_prefix']);
+                                                         $girviOtherInfo = trim($rowInItemBarCode['sttr_other_info']);
+                                                         $bcItemSize = trim($rowInItemBarCode['sttr_size']);                    //ADDED ITEM SIZE @AUTHOR SIMRAN-09AUG2022
+
+
+                                                         if ($bcItemPrefixId == '' && $bcItemPrefixId == NULL || $bcItemPrefixId === 'undefined') {
+                                                             $bcItemPrefixId = 1;
+                                                         }
+//                                                         if ($bcItemPrefixId == '2' && $girviOtherInfo == 'WholeSale') {
+//                                                             $bcItemId = $bcItemPreId;
+//                                                         }
+                                                         $divPrinted = TRUE;
+
+                                                         $qSelPerFirm = "SELECT firm_name,firm_long_name FROM firm 
+                                                     where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$bcFirmId'";
+                                                         $resPerFirm = mysqli_query($conn, $qSelPerFirm);
+                                                         $rowPerFirm = mysqli_fetch_array($resPerFirm, MYSQLI_ASSOC);
+                                                         $firmNameLabel = $rowPerFirm['firm_long_name'];
+                                                         if ($firmNameLabel == '') {
+                                                             $firmNameLabel = $rowPerFirm['firm_name'];
+                                                         }
+                                                         $firmNameLabel = om_strtoupper(substr($firmNameLabel, 0, 19));
+
+                                                         $tunch = $rowInItemBarCode['sttr_purity'];
+                                                         $metal = $rowInItemBarCode['sttr_product_type'];
+                                                         $qSelBarcodeColor = "SELECT itm_tunch_bccolor,itm_tunch_bctext FROM item_tunch where itm_tunch_own_id='$_SESSION[sessionOwnerId]' and itm_tunch_value='$tunch' and itm_tunch_metal_type='$metal'";
+                                                         $resBarcodeColor = mysqli_query($conn, $qSelBarcodeColor);
+                                                         $rowBarcodeColor = mysqli_fetch_array($resBarcodeColor, MYSQLI_ASSOC);
+                                                         $color = $rowBarcodeColor['itm_tunch_bccolor'];
+                                                         $barCodeText = $rowBarcodeColor['itm_tunch_bctext'];
+
+                                                         if ($color == '') {
+                                                             $color = 'white';
+                                                         }
+                                                         if ($barCodeSize == 'large') {
+                                                             $firmNameLabel = om_strtoupper(substr($firmNameLabel, 0, 18));
+                                                             $bcItemName = trim(om_strtoupper(substr($bcItemName, 0, 12)));
+                                                             $barCodeText = om_strtoupper(substr($barCodeText, 0, 16));
+                                                             $bisHeight = '';
+                                                             $barCodeHeight = '6px';
+                                                         } else if ($barCodeSize == 'medium') {
+                                                             $firmNameLabel = om_strtoupper(substr($firmNameLabel, 0, 11));
+                                                             $bcItemName = trim(om_strtoupper(substr($bcItemName, 0, 11)));
+                                                             $barCodeText = om_strtoupper(substr($barCodeText, 0, 5));
+                                                             $bisHeight = '9px';
+                                                             $barCodeHeight = '6px';
+                                                         } else if ($barCodeSize == 'small') {
+                                                             $firmNameLabel = om_strtoupper(substr($firmNameLabel, 0, 10));
+                                                             $bcItemName = trim(om_strtoupper(substr($bcItemName, 0, 10)));
+                                                             $barCodeText = om_strtoupper(substr($barCodeText, 0, 3));
+                                                             $bisHeight = '9px';
+                                                             $barCodeHeight = '6px';
+                                                         }
+                                                         ?>  
+                                                    <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%" height="100%" class="barcode_background_color_<?php echo $color; ?>" >
+                                                        <tr>
+                                                            <td align="left" width="50%" class="borderRightDotted" valign="middle">
+                                                                <!--START CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+                                                                <?php
+                                                                if ($bismark == 'FALSE' || $bismark == 'NULL' || $bismark == '') {
+                                                                    '&nbsp;';
+                                                                } else {
+                                                                    ?>
+                                                                    <div class="floatRight padBottom0 marginBottom0 paddingRight5">
+                                                                        <img src="<?php echo $documentRoot; ?>/images/BIS18x12.png" alt="" height="<?php echo $bisHeight; ?>"/>
+                                                                    </div>
+                                                                <?php } ?>
+                                                                <!--START CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+                                                                <!---------------------------Start change in code @Author:ANUJA10FEB15---------------------------------------------->  
+                                                                <div class="block84LText9 paddingLeft2 padBottom0 marginBottom0 marTopMin2">
+                                                                    <?php $bcItemPreId; ?><?php $bcItemPostId; ?> 
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption1'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo, $bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                </div>
+                                                                <div class="block84LText9 paddingLeft2 marTopMin2">
+                                                                    <?php $bcItemWt; ?><?php '' . $bcItemWtType; ?> 
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption2'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo, $bcItemSize,$barcodeNo);
+                                                                    ?>
+                                                                </div>
+                                                                <div class="floatLeft divWidthPX">
+                                                                    <div class="block84LText9 paddingLeft2 floatLeft marTopMin2">
+                                                                        <?php
+                                                                        if ($bcItemNtWt == NULL || $bcItemNtWt == '' || $bcItemNtWt == 0) {
+                                                                            '&nbsp;';
+                                                                        } else {
+                                                                            $bcItemNtWt . '' . $bcItemNtWtType;
+                                                                        }
+                                                                        ?> 
+                                                                        <?php
+                                                                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption3'"));
+                                                                        callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo, $bcItemSize,$barcodeNo);
+                                                                        ?>
+                                                                    </div> 
+                                                                    <div class="block84LText9 paddingRight2 floatRight marTopMin2">
+                                                                        <?php
+                                                                        if ($bcItemCryNtWt == NULL || $bcItemCryNtWt == '' || $bcItemCryNtWt == 0) {
+                                                                            '&nbsp;';
+                                                                        } else {
+                                                                            'CW&dash;' . $bcItemCryNtWt . '' . $bcItemCryNtWtType;
+                                                                        }
+                                                                        ?>
+                                                                        <?php
+                                                                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption4'"));
+                                                                        callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                        ?>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="floatLeft divWidthPX">
+                                                                    <div class="block84LText8 paddingLeft2 floatLeft marTopMin2">
+                                                                        <?php
+                                                                        if ($bcItemMkChrg == NULL || $bcItemMkChrg == '' || $bcItemMkChrg == 0) {
+                                                                            '&nbsp;';
+                                                                        } else {
+                                                                            'M&dash;' . $bcItemMkChrg . '' . $bcItemMkChrgType;
+                                                                        }
+                                                                        ?> 
+                                                                        <?php
+                                                                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption5'"));
+                                                                        callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                        ?>
+                                                                    </div>
+                                                                    <div class="block84LText8 paddingRight2 floatRight marTopMin2">
+                                                                        <?php
+                                                                        if ($bcItemCrystalVal == NULL || $bcItemCrystalVal == '' || $bcItemCrystalVal == 0) {
+                                                                            '&nbsp;';
+                                                                        } else {
+                                                                            '&nbsp;CV&dash;' . $bcItemCrystalVal;
+                                                                        }
+                                                                        ?>
+                                                                        <?php
+                                                                        parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption6'"));
+                                                                        callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                        ?>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td align="left" width="50%" class="paddingLeft1" valign="middle">
+                                                                <div class="block84LText9 paddingLeft1 marTopMin1">
+                                                                    <?php $bcItemName; ?>
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption7'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                </div>
+                                                                <div class="block84LText9 paddingLeft1 marTopMin2">
+                                                                    <?php
+                                                                    if ($barCodeText == NULL || $barCodeText == '')
+                                                                        echo '&nbsp;';
+                                                                    else
+                                                                        echo $barCodeText;
+                                                                    ?>
+                                                                </div>
+                                                                <div class="block84LText6 paddingLeft1">
+                                                                    <img src="<?php echo $documentRootBSlash; ?>/include/php/ommpitbc.php?panel=84L&bar_id=<?php echo $bcItemPrefixId . $bcItemId; ?>" 
+                                                                         alt="BC: <?php echo $bcItemPrefixId . $bcItemId; ?>" height="<?php echo $barCodeHeight; ?>" />
+                                                                         <?php
+                                                                         parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption5'"));
+                                                                         callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                         ?>
+                                                                </div>
+                                                                <div class="block84LText8 paddingLeft1 marTopMin1">
+                                                                    <?php
+                                                                    $firmNameLabel = $rowPerFirm['firm_long_name'];
+                                                                    if ($firmNameLabel == '') {
+                                                                        $firmNameLabel = $rowPerFirm['firm_name'];
+                                                                    }
+                                                                    $firmNameLabel = om_strtoupper(substr($firmNameLabel, 0, 19));
+                                                                    ?>
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption8'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                    <!---------------------------End change in code @Author:ANUJA10FEB15----------------------------------------------> 
+                                                                    <!---------------------------Start add div  in code @Author:ANUJA24FEB15---------------------------------------------->  
+                                                                </div>
+                                                                <div class="block84LText8 paddingLeft1 marTopMin1">
+                                                                    <?php
+                                                                    if ($bcItemCustPri == NULL || $bcItemCustPri == '')
+                                                                        '&nbsp;';
+                                                                    else
+                                                                        $bcItemCustPri;
+                                                                    ?>
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption9'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                    <!---------------------------Start add div  in code @Author:ANUJA24FEB15---------------------------------------------->  
+                                                                    <!---------------------------End change in code @Author:ANUJA10FEB15---------------------------------------------->  
+                                                                </div>
+                                                                <!--START CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+                                                                <div class="block84LText9 paddingLeft2 marTopMin2">
+                                                                    <?php
+                                                                    $barcodeNo = $bcItemPrefixId . $bcItemId;   
+                                                                    ?>
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption11'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo,$bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                </div>
+                                                                <!--END CODE FOR ADDDED BIS LOGO ON TAG AUTHPR @SIMRAN-27JUNE2022-->
+                                                                <div class="block84LText9 paddingLeft2 marTopMin2">
+                                                                    <?php $bcItemSize; ?>
+                                                                    <?php
+                                                                    parse_str(getTableValues("SELECT omin_value FROM omindicators where omin_option = 'bc84lOption12'"));
+                                                                    callImiSwitchbcCase85l($omin_value, $bcItemPreId, $bcItemPostId, $bcItemName, $bcItemWt, $bcItemWtType, $bcItemNtWt, $bcItemNtWtType, $bcItemMkChrg, $bcItemMkChrgType, $bcItemCrystalVal, $bcItemCryNtWt, $bcItemCryNtWtType, $firmNameLabel, $bcItemCustPri, $girviGoldItems, $girviSilverItems, $girviOtherItems, $girviOtherInfo, $bcItemSize, $barcodeNo);
+                                                                    ?>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                <?php } ?>
+                                            </div>
+                                            <div id="barCodeCloseDiv<?php echo $counter; ?>" style="cursor: pointer;right:4px;margin-top:-10mm" class="marginLeftBarCode84L noPrint"
+                                                 onclick="deleteItemBarCode84L('block84LDiv<?php echo $counter; ?>', 'barCodeCloseDiv<?php echo $counter; ?>', '<?php echo $bcId; ?>')">
+                                                     <?php if ($divPrinted == TRUE) { ?>
+                                                    <img src="<?php echo $documentRoot; ?>/images/img/cancel.png" alt="" class="noPrint" style="height:14px;"/>
+                                                <?php } else { ?>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <?php } ?> 
+                                            </div>
+                                        </td>
+                                        <?php $counter++; ?>
+                                    <?php } ?>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <?php
+        if ($totalNextItemBarCode > 0) {
+            ?>
+            <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" class="marginTop7">
+                <tr>
+                    <?php
+                    if ($pageNum > 1) {
+                        ?>
+                        <td align="right">
+                            <form name="prev_barcode" id="prev_barcode"
+                                  action="javascript:navigationToNextBarcodePanel(<?php echo "$pageNum - 1"; ?>,'84LPaging');"
+                                  method="get"><input type="submit" value="Prev Barcodes" 
+                                                maxlength="30" size="15" style="background: #dceaff;color: #0a0c87;border: 1px solid #5f9df5;border-radius: 6px !important;padding: 2px 10px;font-size:16px;font-weight:600;"/></form>
+                        </td>
+                        <?php
+                    }
+                    ?>
+                    <?php
+                    if ($totalItemBarCode > $barcodePerPage) {
+                        ?>
+                        <td align="right" width="110px">
+                            <form name="next_Barcodes" id="next_Barcodes"
+                                  action="javascript:navigationToNextBarcodePanel(<?php echo "$pageNum + 1"; ?>,'84LPaging');"
+                                  method="get"><input type="submit" value="Next Barcodes" style="background: #dceaff;color: #0a0c87;border: 1px solid #5f9df5;border-radius: 6px !important;padding: 2px 10px;font-size:16px;font-weight:600;"
+                                                maxlength="30" size="15" /></form>
+                        </td>
+                        <?php
+                    }
+                    ?>
+                </tr>
+            </table>
+            <table border="0" cellspacing="5" cellpadding="5" class="noPrint" width="100%" align="center">
+                <td align="center" class="noPrint">
+                    <div id="a4SheetsPrintButtonDiv" >
+                        <a style="cursor: pointer;" 
+                           onclick="printBarCodeA4Sheet('barCodePrintPanelPrintDiv')">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                                 width="32px" height="32px" /> 
+                        </a> 
+                    </div>
+                </td>
+            </table>
+        <?php } ?>
+    </div>
+<?php } ?>
+<!-------------End code to add panel indiacator @Author:PRIYA17MAY14---------------><?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+

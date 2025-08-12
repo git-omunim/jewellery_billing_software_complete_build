@@ -1,3 +1,142 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Get all stock categories available in stock tables. Prathamesh 24Jan2024
+ * **************************************************************************************
+ *
+ * Created on 24 JAN, 2024
+ *
+ * @FileName:omsearchstockcategories.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+$panelName = trim($_REQUEST['panelName']);
+//
+if ($panelName == 'getAllStockCatForBlank') {
+    $qStCategory = "select distinct sttr_item_category from stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_item_category != '' AND sttr_indicator NOT IN ('stockCrystal');";
+    $resStCategory = mysqli_query($conn, $qStCategory);
+    $totalCategory = mysqli_num_rows($resStCategory);
+    //
+    if ($totalCategory > 0) {
+        ?>
+        <SELECT class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF cityListDivToAddNewCustSelect" 
+                id="stockCategory" name="stockCategory" 
+                onkeydown="if (event.keyCode == 13) {
+                                    event.preventDefault();
+                                    return false;
+                                }"
+                multiple="multiple" >
+                    <?php while ($row = mysqli_fetch_array($resStCategory, MYSQLI_ASSOC)) { ?>
+                <option value="<?php echo $row['sttr_item_category']; ?>" class="content-mess-maron" onclick="giveValueToInput(this.value);searchStockCategory('getAllStockCatForBlank');"><?php echo $row['sttr_item_category']; ?></option>
+            <?php } ?>
+        </select>
+    <?php } ?>
+    <?php
+} else if ($panelName == 'getStockCat') {
+    //
+    $sttr_item_category = $_REQUEST['sttr_item_category'];
+    $qStCategory = "select distinct sttr_item_category from stock_transaction where sttr_owner_id = '$_SESSION[sessionOwnerId]' AND sttr_item_category LIKE '%$sttr_item_category%'  AND sttr_item_category != '' AND sttr_indicator NOT IN ('stockCrystal');";
+    $resStCategory = mysqli_query($conn, $qStCategory);
+    $totalCategory = mysqli_num_rows($resStCategory);
+    //
+    if ($totalCategory > 0) {
+        ?>
+        <SELECT class="textBoxCurve1px margin2pxAll textLabel14CalibriGrey backFFFFFF cityListDivToAddNewCustSelect" 
+                id="stockCategory" name="stockCategory" 
+                onkeydown="if (event.keyCode == 13) {
+                                    event.preventDefault();
+                                    return false;
+                                }"
+                multiple="multiple" >
+                    <?php
+                    while ($row = mysqli_fetch_array($resStCategory, MYSQLI_ASSOC)) {
+                        ?>
+                <option value="<?php echo $row['sttr_item_category']; ?>" class="content-mess-maron" onclick="giveValueToInput(this.value);searchStockCategory('getAllStockCatForBlank');"><?php echo $row['sttr_item_category']; ?></option>
+                <?php
+            }
+            ?>
+        </select>
+    <?php } ?>
+    <?php
+} else if ($panelName == 'addPreInvByCat') {
+    //
+    $sttr_pre_inv_no = strtoupper(mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_pre_inv_no']))));
+    $sttr_item_category = mysqli_real_escape_string($conn, stripslashes(trim($_REQUEST['sttr_item_category'])));
+    //
+    if (substr($sttr_pre_inv_no, 0, 1) != 'I') {
+        $sttr_pre_inv_no = 'I' . $sttr_pre_inv_no;
+    }
+    //
+    if (substr($sttr_item_category, -1) == '|') {
+        $sttr_item_category = rtrim($sttr_item_category, '|');
+    }
+    //
+    $sttr_item_categorys = explode('|', $sttr_item_category);
+    $rows = count($sttr_item_categorys);
+    //
+    for ($i = 0; $i < $rows; $i++) {
+        $qInsCat = "INSERT INTO omlayout(omly_own_id,omly_option,omly_value,omly_panel_name) "
+                . "VALUES ('$_SESSION[sessionOwnerId]','$sttr_item_categorys[$i]','$sttr_pre_inv_no','addPreInvByCat');";
+        //
+        if (!mysqli_query($conn, $qInsCat)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+} else if ($panelName == 'deleteCat') {
+    $omly_id = $_REQUEST['omly_id'];
+    //
+    $qDelCat = "DELETE FROM omlayout where omly_own_id = '$_SESSION[sessionOwnerId]' AND omly_id = '$omly_id'";
+    //
+    if (!mysqli_query($conn, $qDelCat)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//START CODE TO SEND UPDATED RESPONCE
+if ($panelName == 'deleteCat' || $panelName == 'addPreInvByCat') {
+    //    
+    $qInvByCat = "SELECT omly_id,omly_option,omly_value FROM omlayout where omly_panel_name = 'addPreInvByCat' order by omly_id desc;";
+    $resInvByCat = mysqli_query($conn, $qInvByCat);
+    //
+    while ($rowInvByCat = mysqli_fetch_array($resInvByCat)) {
+        ?>
+        <table class="okkk" width="100%" cellpadding="1" cellspacing="2">
+            <tr>
+                <td align="center" width="60%">
+                    <input type="text" class="form-control" value="<?php echo $rowInvByCat['omly_option']; ?>" readonly="true"/>
+                </td>
+                <td align="center" width="30%">
+                    <input type="text" class="form-control" value="<?php echo $rowInvByCat['omly_value']; ?>" readonly="true"/>
+                </td>
+                <td align="center" width="10%">
+        <!--                 <img src = "images/img/add.png" alt = "Add" height="18px"
+                       onclick=""   />-->
+                </td>
+                <td align="center" width="10%">
+                    <img src = "images/img/trash.png" alt = "delete" height="20px"
+                         onclick="deleteInvByCat('deleteCat', '<?php echo $rowInvByCat['omly_id']; ?>');"   />
+                </td>
+            </tr>
+        </table>
+        <?php
+    }
+//                                        
+}
+//END CODE TO SEND UPDATED RESPONCE

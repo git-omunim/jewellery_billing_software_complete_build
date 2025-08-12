@@ -1,3 +1,114 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 26-Jan-2011 2:58:14 AM
+ *
+ * @FileName: omtbfrmt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//require_once 'system/omssopin.php';
+//START CODE TO ADD FIRM @AUTHOR: PRIYA29//CHANGE IN DATA TYPE OF firm_reg_no @AUTHOR: SANDY28JAN14
+$query="CREATE TABLE IF NOT EXISTS firm (
+firm_id			 INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+firm_own_id		 VARCHAR(16),
+firm_name 		 VARCHAR(8),
+firm_reg_no 		 VARCHAR(30),
+firm_type 		 VARCHAR(30),
+firm_owner 		 VARCHAR(30),
+firm_long_name 		VARCHAR(100),
+firm_desc 		VARCHAR(50),
+firm_address 		VARCHAR(100),
+firm_city               VARCHAR(30), 
+firm_pincode            INT, 
+firm_phone_details 	VARCHAR(100),
+firm_email       	VARCHAR(100),"
+//Adding website name by CHETAN@28072023         
+."firm_website          VARCHAR(100),
+firm_comments		VARCHAR(200),
+firm_smtp_email		VARCHAR(100),
+firm_smtp_pass		VARCHAR(100),
+firm_formN		VARCHAR(30),
+firm_formR 		VARCHAR(30),
+firm_form_header        VARCHAR(200),
+firm_form_footer 	VARCHAR(200),
+firm_op_cash_bal	VARCHAR(30),
+firm_op_cash_bal_crdr	VARCHAR(30),
+firm_op_cash_date	VARCHAR(30),
+firm_op_gold_bal	VARCHAR(30),
+firm_op_gold_bal_wtype  VARCHAR(30),
+firm_op_gold_bal_crdr	VARCHAR(30),
+firm_op_silv_bal	VARCHAR(30),
+firm_op_silv_bal_wtype  VARCHAR(30),
+firm_op_silv_bal_crdr	VARCHAR(30),
+firm_capital_acc_id     INT,
+firm_pan_no             VARCHAR(20),
+firm_tin_no     	VARCHAR(20),
+firm_since 		 DATETIME,
+firm_principal_amt_limit VARCHAR(20),
+firm_left_thumb          LONGBLOB,
+firm_left_thumb_ftype	 VARCHAR(20),
+firm_right_thumb	 LONGBLOB,
+firm_right_thumb_ftype	 VARCHAR(20),
+firm_other_info 	 VARCHAR(100),
+firm_bank_details        VARCHAR(200),
+firm_bank_acc_no         VARCHAR(20),
+firm_bank_ifsc_code      VARCHAR(20),
+firm_bank_declaration    VARCHAR(500),
+firm_icici_aggr_id       VARCHAR(15),
+firm_icici_aggr_name     VARCHAR(15),
+firm_icici_corp_id       VARCHAR(15),
+firm_icici_user_id       VARCHAR(15),
+firm_icici_urn           VARCHAR(15),
+firm_icici_alias_id      VARCHAR(15),
+firm_icici_api_key       VARCHAR(42),
+firm_owner_sign 	 LONGBLOB,
+firm_owner_sign_ftype	 VARCHAR(20),
+firm_owner_qrcode 	 LONGBLOB,
+firm_owner_qrcode_ftype	 VARCHAR(20),
+firm_left_logo_id        VARCHAR(16),
+firm_right_logo_id       VARCHAR(16),
+firm_user_sign_id        VARCHAR(16),
+firm_country             VARCHAR(100), 
+firm_state               VARCHAR(100),
+firm_currency            VARCHAR(20), 
+firm_currency_option_type VARCHAR(20),
+firm_smtp_server         VARCHAR(100),"// ADDED TO STORE SMTP SERVER DETAILS @AUTHOR:MADHUREE-02MAY2022
+."firm_smtp_port         VARCHAR(50),"// ADDED TO STORE SMTP PORT DETAILS @AUTHOR:MADHUREE-06MAY2022
+."firm_smtp_cc_email     VARCHAR(100),"// ADDED TO STORE SMTP CC EMAIL ID DETAILS @AUTHOR:MADHUREE-06MAY2022
+."firm_otp               VARCHAR(50),"// ADDED TO STORE FIRM OTP @AUTHOR:MADHUREE-01SEP2022
+."firm_staff_id	         VARCHAR(16),"
+."firm_geolocation_latitude        VARCHAR(24)," // ADDED TO FIRM GEOLOCATION @AUTHOR:PRASHANT-19APR2024
+."firm_geolocation_longitude        VARCHAR(24),"
+."firm_whatsapp_link        VARCHAR(250),"
+."firm_facebook_link        VARCHAR(250),"
+."firm_instagram_link       VARCHAR(250),"
+."firm_einv_app_id          VARCHAR(50),"
+."firm_einv_app_key         VARCHAR(50),"
+."firm_einv_username        VARCHAR(24),"//hrushali
+."firm_einv_password        VARCHAR(24),"
+."firm_ship_token           LONGBLOB,"
+."firm_ship_token_date            VARCHAR(24),"
+. "firm_bis_no                VARCHAR(15),"
+. "cinInput                VARCHAR(21),"
+. "rbiLicenseInput                VARCHAR(21),"        
+. "last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)){ die('Error: ' . mysqli_error($conn));}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "Firm Table Created Successfully.\n";
+//START CODE PRIYA28 to add firm
 ?>

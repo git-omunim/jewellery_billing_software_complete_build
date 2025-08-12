@@ -1,3 +1,401 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACQOAAA/MHAje7TFOb4altp7LlxIr0AGfW4vL9LuXTQN/PlnUFuQYwGn8IYa7vmyi2Lhwte7LkkjDrhmpf+ibtPcqPUO8HayT1bXvUhYdN4kp7Sl+MnW5dsmbq6OOrYSwKveVCCcey6I7hMd3fFzoXigWohYFgiZuLH4T1DT4D42I5GDJu+RJb2VnRF26gocWDJYuX852H2b5yqeXw5qIp8W6aFxF59NEiYGfHL0W6B/BBHrgZVYiSZ0oSUF2rtAo5o/pnOqhH0Jrco1WE6tdRKqsIFz6sANPM7YsRORX/ipjxa5/AF9W5TqjgY5uRaB9Btq5hjp6QFRhoQ5vuwl6VSYbA9p8lUmaS9yb3kndOLu2fgezyYWPD/nT2PkTQLpMhCfrpD4Qo9nhQDvhWEeqg96hbHp7ep9mvnxwiGIoVFFTOUwExME91CJd97zl2M7gFnblxY228bT4Hk8g//7hRP3onKVdzyEEwbXnhPvPjpjbquetf2Qyd1vJ1yMvoXt7+n2OkcPWmi+E8f49I9TAQRhinPN2zsTH8dfOK6/bK4NBtyP06ghUnk4NjE9rcfUojCcniu4AXod2+ocFJQFL93vdN+tPRwG+heYOHbgAagE4YEVpTnhPyreVwdi8XsjM8bNZFW0YyV+PQMXlf45yRBrt7QQlPco7qmc2R+/ZAwrAyTyN8JnxsJ72hgUbJ0pgKJSBgPq3PDOGzFWMdCfwNjqxcMh+aGAghWaOBLABmfpdlZfn6I/PllOWWYU1UZVn7agyHVdJZCQRHsH5dQ0QOwCN4oTn4aLjFKcOTAzsAtr6vbja+ehwM+QKTmnzejrNgA9nobTFg5QZAX1NWRARGjk+k7JdGJc/sBoXzoFmfhqie5Pel5Jqm1uTT94wWiX+N1Z8Fpr+SgFpEopk/JjNQw7GATDiqviJH2It0SLAk3rLCiAryNLloZQ+zIcHdIVAkIAFpkEMZEwct0UtqBpoO9yupdsPOziLdhMih38B95Tua+0PEA5UB+689eZcpyyj662gX0d1SvlVz2v7T5y7/HLsRPPbmKonKWVmnpKAka1NAIWI7FS4mDMsOSzl+yLRpANmmzgU+cYx74YziZXV41D9EeZ7xLZlw5wsJpv8ZKgEIg6Q/8ltP+8IGUvxNOmMGNwzpL6Yw2DVQCk0qBejP5e5qfQYbWlagaxzddkZyjxHUDJe77yfddc8jN8Kxk6glvPTXUfKnc5z0w8m5sxTDqVMV5KvBX/eleZVtYS+4BPfFqt1+9JgifnR0ffZWAQbyTOHedXwtwzP7rSxRs+H+/04V/24Br+GBjGTe7zbtRsjZRoUdbkxrh2nNdLxZvGOlhB2pb71yl7Jiu2fArCByxc4r8NLruOCOh5Rtq/0I2kwyg01KZZR6hJ/7lMYV+FR2MLN709EtfJxU7hg98Q0jj/ThqvF/Ppzm8GEUWP8nDxV8kdcHAwhGx9q9j515YyyVzOzHf9GWe/8/GFR2XB4Rr3fldYRApv3BONseLQ4qMT6daTzn7gwWPql06gdHLkChEx3+cElABbQ+D9pIZQydUWIH67GZFcnnoen5K+eeew5Uzppc6O2RhsoyuKpoVV74FTuIy7D3DInW1WDeTpcD1wFTpEp/1SuGp8OLIke4achPKF+qduyEb4e5Dpq8T58h6ib3iZuGn/IkyLa/soexJh+3aSHpVYCvfyrGSgWIceUGTi3ItUhdWDd6MY4J3vL+AqcOugQdAvyWMDtz5PgEpCI/B2Uclry/RGUA+6fZ1TRZRsMzEmeYWrTcOeS8ypyKFTZzVkFoBE0vTjY/CfCAqHy/sG/zjBlxIM9iaQtbnRFDjJYkcbvAz/fX7ImQpwz7EF8/T5zp9/yXqL7QbrOSHYloeWaeTalx5SqUpgNKO9zexpoxR4016ihFbOWJtRQJB7Wad1gH8BRWooDncSQ1yTjpmltKeU7ln8tuC8o6f63XM6bbVO3iM6/l59P0GPFpDY3/m/c8thB77nXzg83C5ludbeyxvcKaofJmWdXaWggSALe59b9+oh9Uha4KfSK1VoG4heiSB9wnVYOzvDYhFTlj2HCJj2IGfbplXfTiTZ4s3uBUoWLgNcBD5gvF4fSE5W8zcugJtHbm97TOTkibE6A/Kj+PxMhYj/sVH99RJL3idOsJF290xyQ+K5Nul6PzI2Q1MD5QegtecfKqLQ+U0FZVkO2tSvNSLu8dCOwooltLHjbzw2MvR5ZAL5lVxsM4pHcF2+QsNx5UYztGcIfo7akUz5XoglJkn62smuIpaNI14Ci1QaQqifARsDOX0Zb5xLsxyXqwSNMSIGxHpj/2WxDVRnR+HHf86rmvLI3Fwek31eTziD0WmGtM6GwIFQ7uxe9qOrxoObrVoOj85CZucqzX2n/UPWIacuXLRxqODmW3DYXcvNQTwpuO/bM9gOXnrsGHHZkBlPibt0WCPnzARIS3ry53iSCtRyuEbgcVP5J39uGNjspTj+/oGYmKiiEcA2ehVVjeLA7nrdTmODt1jIZpRAInMV8xJLtnSSzjYJyLCd/eaVLkl1y3+3WkkTvzvk+aGLKbYSRns/AzjlIGK0mMsruCMZR93FsUjE4VFSZyaWOBb3myWnhQEMxFmao0Og3NDOxUoQlmIu+f+GcWXjC3bH6yX3orn9X1U8o5wEHKPBtu+vxax5UC9Ue/uK1Of0jnZooLoPU4Spd6qFEtq1k3oMPc/iGmX9BMpOjodrMflv6/4ZCxA+Hdy6eSkfArsnGMU2dt3g4PxATwW0t0jnDd7KA3HgQY8ssMks1QkYsCDTz3gw8xASkaAe9VIxn3vtx+EUF9yW4Pd4nPJyQGWpD0xX4gxemDKHBYp6aX1gT8vTmTlZyijnCi/xYTmWBp02aRkMqegEYjCPM84b2tALXxZLojI96ovbokQrrUgIdDNJfX+cJJBtJUo6q0LPUTGS2KPu9j55hI02MHEn6IOpIHj3/nsO6w1YAnsOP0Sj4xeQu+FpvBadf/21OQhr+hbVJyFtYyuAqmH/+cISnQ25fatXuMfa8rhZi7RUmDD3gKi/Ki9yIIAQVE4Rfg93cSlI3VNG/fgPlyhumTNWkGAbtmvjCs2P37Jh6I9Q40yEB9m0nq478B928m78boOX3cngnRSdZM3zEsoOFs65GbMDLD7gr2yERvtExFhvz+a/SdySNl2xegbAd/u/Jw+o+QZ9LSDBd/gpbsH0sb/OF035fOpZrexBWqhkMnIpfitENSM9Z7j0er3ND4Ve95m+zWy8grGHHsb9wxszJ40JBEp/KhgYYK4FIHe2/E8tQn0pzveixs9YouPntwdWztqn4czw+ABwh1peU0UUUGlnnUNl/xa5NxbL3anU3mD4DUyw0WIKjsH7hi6dVW3YxUZTKosad+8ftnlyNFDCD+ja/FM87tgjnpIMfKmwVUjF4aCY+mnaSzhcRCWJDsBEhKbUO4Awgpi03Lq4wZVo373YVWMaMmer/YESt3Sw1dR8azu0qW7UQcgNoMgRw1Y2MT0vzwYo9qG3BlymoZV5VwITmfkW4j6QU0Ygyrp0CdsrkVn3O5mkNn55RLIkY7qKPtqSUFl48H5ZJhddy36TtqNDzDELXefESH5QP1XlC724rAtL51DEw7Sby9cf+h9luP+hGwrJ6FIFP9A0MHDU5cBSigoRq0CcxfXZ+mQEt2eawA0xXBUgu3aD7P1B7/uv0/vUtv18O9r0VYhcn8f8vYH7SWMTXpFE3gRQNFjyFG0wmvgkzWaly126DZHtHD99QcNiSVw1h6xRXMw6kgpY7YmkFu8itLIDXjmHoTG+qLnSeRS2Zh6ORIa9OtSmEodqd/HDmsfKrorQNw+/uSiwcljSaj3dd0VMrd4SjKK5f1O0vJcpkYL1o+FMuiTD6sgpvDmyuffz8dCb6Bk8Bp33VRNqnlo0a29+uv3y6tOyU1l1svuKOIhWIxxbea4VezUQYtqCAFCRLlBPt/P03SjFd9PJcgqLNBMMb6eWApaMBq5ygJdSGzaMQkvZLnY+lFY5jk5F60v1t3IyTrCngSVqMxC+VHOKNqobB8Z6QsDJDD9DME2f/SuQHeMVKccU1W7S/l2yy+O8LI4T+H8ISH34fQPLtczJ3GaaAFbxFEJNS06hT3ns58yielZ7gYKeggPCegHyCrbEITOK7xcVYAr++RJaZskWzu01m1Rw4zgamFVfyQIP23TdSurmn3W3sSyEAtxeZBzMiv0mSr3HPHHLuECQ7Vwss5jmoK16YlF+TNk7wtU31HQqJcwnqIT8CSiI8jR/YssnM13CfS9CTfPffvVrsvEYiqmLD3kB/cOKnQT466ISALVYx/jhOP/YEpC84FNQWDbia1t+pcSH3RcoxFQvoMy5LKPIjRGNcH+szsdLrKiP3EmNu5iXJKDjmhhATlbJ5UiYJv3oRbTQbelS7TdcdeLO9C6KxX9FBS4RLawg5h2tP8h5gbtNKVi9SKxsgag0e8JN/R3/WyE9BxNzq5fiEfMFcraRRQMII8pv8G8ab43bkoDHWL1JWDjggIJ/7+TbrBNj9gZFAg/U65IIhikEKPQXCvcRsN+YPQ6iZxd9Wgqa9y7Z9JCNAVbvwlGOcif0hPRUg4+jqfV06aGoLzAUDykSj6WromFGTmtCzmhWDW+3NbzmNPuKor+PWezKbsf2hT2ZfLM0vRgfkjY86Rc2q4fFGqzZ+bTKObqK8obTm2A9+NcZSEK/OOvAukgwiDqhoKm6GLqKJTmbEBj6A71Rsy0ofROCxAomYCOAdnxFyWwrU+XuWPZkLY7pyqM396O6V58Vfone9nmW6fWF+kyjRFS28LVLGm1mOlPF0ukfLu+OkWwf+jEmST6VSXucI9mIKlR5Ei6r9J3LNO0mWd0TecswCj9uhgSJsJessxQ4THAtsxedv8eirBYUChYmRX38q+wwHSu4b/auh0ffUUhiJtaAdSEvXa2oe0g2Waj20zodeP/bEzOwWV3RcS/Q8wuPZz6yXQbBPn+xf9dv/DrZY7IxxnV4RSBPHj1cl24N8jdEJLjQIWwwb1g2ehER4+y6OIrqIuQmQFlbZx+SzBEzArvyLsvratnclHfmGlgFKvlgCgUXVgWLpLEfpHZWMdYn4EEmTpc5OxztWrJ050fqoyhxUm/JtHO7Ig0PcPjZ6CdA4c51zCQXzaX0xvpdoyVDAciRVAfh+fKAGLLKjxW9ITrJTVzY+4XcRs1VYF7QK873hz/nyYE4usbNP1E53hZpIZKM2BkULSjbErbp3Qcd+NVKAoYGa8iGoMrrZCErTJ87xJ+MGSHuK3VCOoh+5YjJ70lHPjcm/Jomwidcadkr97YtmgtSv8o+JKPA+58oztHSSv5DWKxb9FZb8cIb4c9X30WTr23/x4Vo+0S1bPIhZxSEtvgyRfF4VevsBYPLR1laCYJ0n75cEaA/Z0wE/QuoOyC5yK3Be1vy2lJwO8Geaci4xXJuPKS3RJae5kkJI2e3HAoG1dfXudf3rPnFxibVECo8QWKgihwEnL7FwQSLeekM4UbFpViGI2TQmS914f8BGPz7+wIMdmJIBgSb4/nOrDc8+pMflb1UG98Rr5OtNNZY246GLMLP8wt11IJ3UZz/lu1umz0OPmuKFJePSvGHJfHAlZ2CUYyz7WaYeU8VTPj0K38mbei4hmJWhicSMm7Y71n2AQBLEyk666YC+gbg9xTA0TrGxbO9iOSgejA30O0pRTrXwrLA6J6Yt3GKB9rCMvoZ2JruzI+5lnN9V64/c59Hbf2Go8dFk0pmruRE7plp6wKhRYq0XNxn7JN/gtGsC2BxFuSfFQc8+0KHnUGKRo2wQxOl1Fv6S9gX8MLy2DWbEQKR4YlRpGLWCMHhirNZqoTm34XGh0IumMYVk6sznbHIJgRfcX9jH+DDCk30wrSkozlXhagL9VQmA04sC2ahiaO/XkiwI6OY1zaVTFIMZCCltKf+lEqJg4rNjxA+fqAYyWsb06rqAZH49MYoYu3ChyVl72HP1TERfszJj1KS4L+SMn3aXJ1SUCsWdvunbjUfYwLphZg7oCJQZipb0d0sYQM9+ORIOUtlc333zvAYVt8aJ8wCN3pY7+omnt86QM8sCFKY1UxNOA4YYvBWawzvJ1EYXuRcjkVXekFvW+LT/uTfTfSGwgoZtfUMhfLDwmIrgYRY5bX6yTnpZl+xqZ/PD/ELF12y91Vv6ciS4gvZzZmPItIH4uvOHV0GSgMvO/DmH9HKCHVYLpg3n7dJyjXen2HlYf9VtKGzJsalxPq4cA1RRPosSolFs6QOdAX1DRtZJcnvg/J4DXVzQvwAUpxpCl8tOzGuUaq8QaZWbltcDcmJQQut0A1Z66zKRMUFkNj8BftxEAsOvUQFDcWmN49X/6uVRZEo/WTp/e5zSitSWQUJoyM3f0BHsug7yLVQf+duJIcpKZXzWEf6QkfLOqw2Zblks0Oc0w0HP58z8ilJ0j7US2R3+Enx5EUBE0PNILPdgQ6ow5GAXJfYHM/ueJX8xaxRvZuXVOR0j2FyTHs/sDOPclmKuCZEV77Lva0fpVvKFE8lAVMQosPKid19lOgdRqrqhXBsHQC3+5j83xzRZHQHB2aWitynQT3Sj7y5ZdO3iEgMlZxDw2yp5nXXYVxG7DqvVuO+qezOWBd9RGdjlD328ciHWy5WrHemyXCnsURAKs8jOR5mjlnebY7euGBzQBfj+jK/Slt5UyW1R5IIN9LYl70ky4SLf+g2HrR96rvus+ehBkhZxq5Fpl8jrKIzulxp+3v701qt1RyGpbpoLj9JdZKEKZ9vhPx/NADtt59zh18ovsuCGbhAVbo955H6znELUt27eX1i75QlcNGLY/M2kc90MlPzNtXvH0VmZetYoBAb469Iez1jWsLiAkQqkBFpKzi+cvrVrI2pBfErOhZLq1YBBCm5pGNxM3CSqtLFrZz94U9oWgkOCAhICuhJUc5QkmDP7C/SYwS5zaIhwBHcjOzzKlSnJCwuP8x0mhacFHtRJLw5uVzom3hf3UwbRTG/1WIP2Sz/uLy47HIv159NS3NHeTS+HQnj/SiB9/I2j5qCucvH6iOm6X0Db+PcYiMFqHjq0+o2Hb5EkODKt2eVWhlaMuF6q1q9pJiqIBrhRE/2y7FsOHj6zU/U4E3OvfUh1by+Knx46P6F3OPBKhn1He0Zos1uMY5DFJBjSdcAmIMeQiWhQShGpXlDp9waOJzjuednOy4xp90whiUPanj6xv+1HdxPoWVtoBAG4iCBCGER9pge7oMCXWnKyaSHhcmLghnw4DVZe3EMfYJwRequqk5DF3Fxj8FFyIDeLdBqb5ut4wTZ5Ut0jwhZQe7hM5QTlV98Iastik7MrUZUxN3rKF6/DTARuncLi/IvIhy7UwuWBjBpgqsYOqezbWAfXkXN50tLqEsk9Ay914PmjUetfz5yIokqSTaL2GgSPmZJRTwUZiXGOCCsyUn4rI3tCp081cVB6C3Y3JdGy+tj0NzsPNsVGDQAc3lJRT3n1yBEF5SxpP27MslnR5WxOnv1IYx+zE9lK8G3FXOGdf0U3wMGgZP8YHJdWn/LFRwwyBFyK+i9RW9MsY8JRlALiBZ4CiGSnNNYkU43ku137Qryf1CCte3R+UGcg5xzKQc+0Q6laxNwpqK0s486CXHZGmj6zeG54+TX2fGip1dS8RoIF9MP4ADSAr3g0+bu6qA96IidF1o69hWE+v3azmxqkkFUMn01C/+kIShScVjjr2YIR8xbdfwcrOQET1cnZB9JwoIg2VZ3kUK120GfqGFA638l0IjYNWka5bdi9+ThezbvDC4zbcUT4YhBrucdie5ijVcoUVUOtZ0otXZqDoiK8jSf1Kv569VTvfC3J9Jly5l+1p0lMCxuglg3UL1Trn5XrWWpGGgD0Q1KkB0zh5spB4cyT+s5hku1+APRHaKhsLyRg8aLMR8XIdRtb42GUtCbVZfNFykcbsFmK01vGu8s6nw0Skh7kqr9VDavAW7oZUKz0mlIGuip2rzpvbPkaIROuJr23IpaEIpo/HFhZH7mihhUEKzbO0WDrjOw3E8nWekXtTk1AR9MhELYgTE8BHr9AtFO8P2P476AYbfc2esOs8FsL4eqZVC0fnTe1b/bfwayNqRSmNlJlAL1p52YBclzZWQvdU4TwVBjzpM6SMcFmQRlZvjeOXHE8UlE5u8C8F+jZt4D9KtCdvllpacI11Zm7mQryON10ilkQDsC51S7VfTm+gTUEmMmvC5JKlpZefc/APrzyYNEWwixpP3PYaHP8ckdFUyJ41AkabuXDks//tn57StWP2XQVETXKoCYpeAss0mpmyNzdeADBVoTtHpNk5M/W/GxDZOryAG0pRMgljsyrvu40/ua9UcxX+J06vbVmIQI0sHmi9HFhHwtI/5XNAtLJdnNR9kos9jOk+47BHCPQxg6qnAMIiqJ2iEnrNeLz/MVB9PLyXOLtQxzyYUrWDINqq1lQAr8+n4bhiz9dGnhhA9mvKJgbKMWQlgDVvfT9yLaotlrCj539bE/3voNt3qejg9mwQoAL/mytln8F9VGUmKyS4Lkx4DgpvgE2QO5wyZpN/2loMg+wqwd5DninQIrovnJa8EQfWwwmqZbusJ3QSj1vQA9WehjxmhW1Ej2rCeaZJ7t3U/+dnu55nZxrFrvolmK+0fAjqI7Kg/185LYWRBmXiba+IM4IXgjBocAKfdwXV2S/xYAHmZw2UkFNmVRz3pC3sqqrjK0nSPqEhBZXfeG5jJB9GfFv1KZYG4mUi0gma+LaKGfuy3/NMZ1NCjR1Y5lMgxx5nHcv+KQyvZEEv0kgNt9C0rKEWhLtCL9RVZbO1krLBPHMsWP4jKgoGe3GK1UfHevccfvMpso9gRtOD92Mcu0fJ1WQYOjqzYyRYx+diIIYndambQyZpnYHsLCVniRgqdwBbJBgrS/u2ygS0DEe6IFTpk+KnEpqQDbUV+0g4ZCO3n1jxnEXF5B+x1IvRa2I9ObtEbCGyt+z5bE5Rj7pFsqobD1Pmcn7hJl9gz9Olfa6Xolif5E1yyDX2Ivo0E0DBagwHJK5MN3xhjzlmp4OWm9/wxbJqhBq0fCwZZSWFjoS1iBVc1Dqi9M710M5dhsqPZun+FxnG8m9Z//1j8TOqY9lvR2AMJQM2bvzsMaaD9u/qBuRpLpVV21N1zdy3Jpm0vxtHEPRR7YHpRh9tMWCeOtZPhyCBRNaSB2ixmwRjz/y4unOvESZEXpXwshNkobuN37I4Fd5MpCi8ojQFumsFx9rn9p+hZPZyKp3sPbOizKDOWr7K9QyVsBgxxj12zvIn8CxbqNY8rJFiJbhT5i658MQKaUljVfwJFILlfj0L17/EdgBVm0sEZhny9MP5NvvsMag18rT4FVjKVpBzkLycoe/xtlWvShFdOPAypCbjG2VgatTTA8uO7d63gHqoPgatpXyNHqN0GmWJCFx6LNwwor7lKSMt/28uL0we7kbZwHXr0WddPV8N43mccad4amP2GaMLFEdt6oLgfRdfUVgMStQQHrqCo4Ra1tM7B5scxcSQPp32dkJccCG1HBbPZZOVvlzlAC1T2wzDVc/bY6lAcSeOz5RIu3vfYd6gBmBh33vonaHsIdrmJ3OmCB+JpHgD6y900jNlmhJXgNahgN0nGqvOetW0AsXEUdOXIC4aZu3jL+giFLnOFREv4S0QkuGcopL+KQm++uN0KJehNjURgDkjMHsCSslCIb12r5rbzC3RzX5e3WMYVpDo795hIUYzM5AvqQJvZyxgZ+Q5acBruQfDRm6kgHvdcVRF4PynEwjPtyMOkSXVC2/+JPIHP9AT/yVToJmC/N+tajlwPNqfqSz393OIIBk5ARdOHAfw3VkcR9soCBx9pw79KNP9VkbDRhn9xbWY8SYVwmxW0vRTLawwbJRQ7s53i/Af92BCVWzmqVToPn10fuvGY6kscjYOfh4VsEmQZ7tLxgA/HPMFjXjRljAYClTgR0YAdR+BvmPq5qVHw15C7VsuzElSVqW6QJvo+cBGn1JSah/Kl3FefjGBtEzuIJJdf7IIfv/NMoJmSSmJf3dsxc6Vw55Y0tpxzSakZluoQhdDj2CEqSz71YgPaoP6IBTL41g9SBnvaefEXzAux1YdSXpZMecl8Ou/tPzB81YnhX73ASYs+A03+zRw5DamP+LYvXSkpNGXffSVl0eHwyZ8+nykoOD4oMB8nSDnrC8mElFFkL76Dpi/PajKf1jTQV5ttpb9IflnhNJ9alFWn3nyDfcKpf/3KfA92Gd8jNWATGS+6LGHDU3KH38RAIzk2iU3U4sjozHNwPBvilgR2N+PzJVWFoQJgQ7ueks/H4Gs0Li+8uR2n/UX25ObiJ98WpuRE0FzROHk+w7x3UngHRUxAM/1FkuDCvwVhlebVCBjmrx7N56qWeUR+Yf2S3UNvWwhcpS1ew9kvOkn25+jn/35aqzFYXB3OjbI8QOuCYRjZYWsaE0AZ2m6guhSuo2oq41psNC5Qj1DoDVKP4DSe/T9bb/loEmwORq7iH6Z/vKpbE3GlQNtLGHtIit6Vwlwf7aeuhVXEU0JAxqd0wbcdRkgAZpz3aP2j3GWqd0n/b/DcE0YBmi5IYccEyRalUIkKoni+0ROqrd7NSQlVMBJ4nmiVkh2LdUP9wmoyerHhM6cGRSxRB55f4PV5qPOKREiEpBjVn8ODOF0XBijZYbXsizTbGbVx2wOM7Gz2BHzOANFN7094Hx46LaCPNaWQyGI75Rad3BHJyhckZelKyfvxwHVVYwpiEBPEOMRKcmqJyUvmL+ZI5l+00vMHIgksGk/KgF56Qvgcewr/dqnjJx3iPKpXfEmSKs7x8n6KzWO99/W/ZcbRZtI6imRV9vcjCiYgcMIqSNiPi9ECaUE49VuLLgQBjmoV8yFEJfA0acLmrmYRAsWRSg9ERqzFtnfldzVHBLPO56wXuMbm5Jy+vVEb3tD45W9r+xP/FlhPBqbm8wZVGk3qU8r7BmRyS0y1oVgG9LIPMC11eF/5GpcR2u3uuPCLLZota4HbOxl/yEFCxaURdKs2I74DRMUX4rqVjmGYGcuXwmobvp6mKjpNsFiLtPC3Zr2uKiIuKdiV/drHaPigmONMQ808fJe4nLAGRbOMeTSmcUnnWmDTBVFvewFIvfudfj8Mr39/ZAY/wU/SytG6zmS4S0lw/OMddDFZhFAix34V66cb3jWstwyJ2Lp7t8pV7f7OMfJtmYbqDKSiZUMvOKkPLOeGQMtWQC9WXdVWlPB5MXiuOTP4gVFDUdHP/EE9ITM+GUCnVbliLfXjsJtJqEHyOOkO+JWei3LYcS0Co2A+R87J6aR7d/lzvBX1/iEGZM238fKhoQwWGMELXKWPD2mtfmou6F/lEuWWGmcKVsKU6CFahjdDIL+gDSAQBpS5iKlKtyCREHPTwrGxmsh0avMxmpMyNuhLXWsOLzASK90v1322Qg173Jj3NPx0ZWfRjSeMkWy0UCw/na6ILkvIUxhkMGRROZvTcQILhP3j6T79ukbogXPRAH4vrer6yEtvIxyTR/UOqSHk5V4I36BOCOiSTxIRQHH1kpjpJbhJX1KKz7KhPjwRx1BUr1T04zod297gOMqVxZn4QAmdSw155Zb8zmgHC9H8OSvhNjHveIEJBTgMhInEcND7BNd1Z+/cs3KQ/Oo57LgL4V3pUMlzl8GvVRgGpgbDUJmfncXkHzDZ4fCk+uL51ekBJQbOjroUMemE6blPjOAJnDjAc7Sm7kmR8vcczrWEfdY1lWADprMzJeVBqbcTe9+TH33wLHhLyn9Jw9KF5lVffWdcTS51fYcgD7wXqUJBzaV/wW01fPnJ1ZXnTevhFXGUsJTeik3gAWY5Mcny2N5y25KjSRBxpTUTMRKo87rFJoaW8wpXH3rxGpI+gP4jQNXG38++tbHLb5DTVK0vrBbAhE6vxaTQbK4plqfp/BCckKxcPkqaLN4nGhDbY6Mjfz5g4UgiTdduR+aBIov4z2THd5H+rT/vGVRvbZK/X5tgwX4fUijrIwlOQVh3PeU6nEeCCfhLJX5hEqpEtK7AH36mo5aj+4llSf4jJmy2mRkSKGnyGdSBFBLwHep50LzG6mEa78MDJAqNF5rJC1BEyyWCWGc6WM+NQBHW1JyXdwv+NXsqJg2oLifpzKPmYerkV9p7Y09clPz/7ofROVdqHwMOP6eobb0YIuF9ju6dRy5asw41kZJlpC5x5onM0QdPJID4rat77Gf2WCAnIdnHN/g9VP29H+3wP05JLTkfaE5lJiieBbNe9NTWc8LBMuhmVsXR3rxeFoBHF2g6zkpFdoC0rGkwZV6lykvtehILH7ApDcds8cPfsjhQyY2YLDQnUO5ellaFe7YiGyhwZ/Scbh1nAllzXeyiSdS4KidHpLV/N7HSfyhLBPZSUe3dnW3bCln1v3sqyX9U1c5ncuyyaRSvOGzgLZg76plm1qIE0YdvkfaeMlbOvo5yuV6fOLsnpe5AyJeED0GT3bId8tE6pO1QnbGW2uS81Dod0zFUP6OieoNywyUMaTPWFvpJQZE8yPtAa6XWfH1AKTpjHIjQKw3+7cYARO8s8tFPrOkB178lNiVJLFVTqjsQhc7+xCLrHI3rwTLsJFWSJqj+PkZ4Bd/Fi6umnUE9Dtla7iBP5oHGWrqgiK+dtyXRBbpfRaCt3vjaT9ipWHODGiaENmuCZNB+l10g1A9+AsRwZMWo63eWgxfzBHh8c1z6B/8jCJtYXy+puXBkqdKrxkHU3yte33JZSxwaVehEG9yDknz+iuhwQ7w113mlxegkQkIbf56s4JrKPiLWUG3kFyGiWbf919cLCddlX2Jxu1XHyrilL+6o2BEaEze8UEM8QP57f5R+s5OIhTyxJBW0WXqLOmjfnq2p28DX1b1CZaCB+++gZCuso49Awcl5d7TSSMngJ7AAlp4uRyLPIcPgHzmARWYtWX3a6gz2WRDEZ+dDb5UWJI7bg7PeWYoCP59vKWYmqxo/OWSXmyOV5l/qnBhfnzU3PWMSMNwyjdeXz9WqltaRlOnJrG0inAAvKDgcYcU8Yl8Ep3tiEibKK3TQ1FdSmHxjPZrnxupuwoJLqKekBY3aB37vNCsVVre2hmc6lVcSZTKVemnJHRqTRZftFBK5UbAMadSgeD0vpVj8ggiW0+qeiCXF9reVpa6SKO/sw+i5bwQvsvhdabzHDtPWffiSSCB301W/H/HuVB7bJ2L0JXNp2jppFxamlhmHYtUs8RDKgGddzQwWmCzoIptUU7PS6/YfID9QUYPt2G+1iLduH3EZXgJjlTmwhYa/QHFTkJDnmoVOCxjMYVhe+ALUKY5VqTP0RdYVk3L+MaK5VbX+XQghB+WdgHkZW/kR4nsfh3lprTjGrw6FGEBGaGmNuxwk84GyLZKkDL7rQed9u8/TP7l5FysWmO2Ku6fLI+J9gntkcDIo3N40kUWAHDy5/Px2uCJpHjzk/WsPDDyIaRviQQEaD+jFEzwCp+JSQPlfELdM1hHswESAKGxMK3XxmawrrfXmcLYJVnl1tNpDu6WLxPB7fVqfboOKJNvOkx+jNMwQLonPn+9v600e21ovY5b6uT3mSaat8USHL4J+/BI3cKFpBadQR6wFQ3jen6IAphJVXKFfhgfSiHCvtREpS0ZXd5iHBNFmilkGxHNzC/gVTjfBvy4t8FRczlkh5fV0qLAla8sb/DHNB6ro/9ICtfyTvfvytc0jftPkaE9UrnfX2uR0FO2ULBVp9eHWE+rXmSgNWprMvmqS+XenpWC32PkacrnaOBncxJSVuHwYYoKhQ8bKgeZioCbkItkDDaNy9C/brvIzWMjxQuRSTbmJHjK0i+9UArIj/0puQBagJ0NBwTdZjcRSJE6Sd+nb3ae2uVqjI6hsdBOa9t+95OBJyOfp22OPdwyJbEWnzWaxZ3KbRFpBj8W7oi88QvSdeFIkqqdcpGAp4EvNhSdQtIkhr8Q4E/UpDVEK3JlR4rzyOh54uMPlqTUPHZJonLZYU3W7yHUpbnq2uuw495G1pwAyOpLDmVHFM3hrQN1hfbR1zPEmK3/T1Bck5n0QpTmsZtLlHQFIJklS67SCNNErXBIKKN0iPGF82xhcNzDFcBkD3sPzYS3QXFFsi3HgKRaVGXAJJaQ1QdxCk+CAw8kAHHmPIEFJVpM8ALYAKI811jO7U3dCxd3vdUyZNJV+O/KF73CshGuN2tCGJ/3m4XFkXUHaxCOUhM9TLHuId+E+qw1f04a4ySxp4RcACHTrafR4oyIEW6psDgivzBO/z4YgOgyzofWAR3UZ7SQn7seqOYLHYKpfeJNxeaZo4vbG3qPSzbga9tKt1aGzcUgzSNqAvfVZQcZoIrd59XuNzlSDeeHbJo6nQSTsHw5rY1M75mGm7G6jKtZjhzFZRTaRsBgF6tN2AGNVxedVd976+DqK1zbGMzFgSsIYeY6dWxK/vbAeiFIewltgZ6dvwAcK9BvOCzH4Kqc8hxL2x8vfJYI6KuZkTkFufU2bDcvuAdUCLGKQjDUVKlQzmnkcICXcrKcojC3a15U9QqLe0rrZDT1Kv6LS6KrKPR75qnT8Y2C/Ej5c8Jo21dt+3duKoTWEW1nHSmP5bU2rW4enO7lvT+aAGmCWymirsv8WqIsIOwOkLJm0DND/eMrrpPiP/g9P4IrM/rcMP7phD7dwel7YFXIrHAiqzs/aV7Pwxh5N4r+LfB0sOzhdMQR2QRm/UpLTUF+4nqy9P4c9erdqi4XOraUavwPyJPc6YutSGE8wHC7+IC2SZJKUX5RKjctEQlqjsFYy9xcHj1Nvrd7BH4rGKMEyunp91n8XDsuo9jwa2pD8Qab0bPumZE9Je4Z8GJ6IEkzXbbzi/2MgXHJk8ynnH21OdwFYZKclthccHYfyiJ6f/1d91UY1JRo4B6mdd7QdBH3Ml2ujVZddk5eiKAIdRfVwIiV9Db2yZuMH2mVMLbEghgv8ePKpo2yi5ooAqL6+EUvrzzoljolUVn6a0ZGayLPSfMZH2MttmYKnzQsFWjxfoBZGh6xnHpESuHPnsBFpPyw0TcAXndZV7pLKFTBgjnlRXafPkauOcX5dFz/VBFQc7UEdGDalDVOE76i8NcXQK80jgfiE0FkupuboOdrWUCjScajbCqNmTKULaksStYycy4m1t4cSbzse6TpFOgXbX/wg6zJ5CQVUmCiYjGyz0YzJRJKNJBv6xaTd/k4VzZhcynJbPXbMUQBZ1+HWpZhbsGZuDuQeqpeO2148WUvl7EBX49OMBhD2Ebl4tlXq3oW9P/wM4LSrRssfJppr35tJbu7A2IGnx9Bxk5VY3gtCSnICTxlPrtPgDEtDvJ/gfw+fghaUYN6kYhBYn6TdG6nO8nN1spYiOpc85eo0yXUFPWQNrUK/CZZEe+nvB4WHMXjP/56AUkDs4jnaaw3kSrWZ8CzgSKWu4UyrJhghJiWFWkustCDo4lmYZOyXLxwuSEBXFhZHyWzfhz36I9FXOehGmGu55iZ7BHgB+PWuKUpiTHnHHw6I9daPo6o9u/zieMubPsHRilVI4mpaAe1YwcqcPw+8AtiaYquMcgvuBISPjo+BPSGmNRmHzrrrZjbqjXRpGkF5BXw2HkK6EZYuX5V8sykHmVGbS91jy3fd2T2Z48CoQWFdniXQKzacbOodp4LN30ivdcHAvhdiJ9RgrEw8GrHi1hm2F1yxNiRJKcSiD0zs1YAxAdCLIzmIeItA+z3FSqvJBwnYcjyTziq6YFTMQemovFCh4VhipudS7hzz03/1PkiaovFJrldFnN3Lt3N2TwlnWNjFJjOJMOL6+2stOzLo98Jhk3qNGGT/En4ImhVi7Zf5e4J0JoETgn4Uyd72tW3UEig22cjqa365B8PG6r7qx2TNiL3S/z7OJLMerHcV6XnJ/Ky5Eqitkei+juKa4HxKDHJXoUywh3//dtUD0msjft9q+HJJ1MEoYxohzQticynzQGyXzAv6rbpXJz4rpfkb1GL8amILJjXDZuPzGOJGl8agtjeJRbBhLabguzRzrHEEsxrSDYL1d4gOYb7BSwzIPwhEeRjC/uouqjJU/1ESBOxQTKYUfUiOcraDXOLjs8I47q3k45Bctit6TnLBghAB2UJ4FgiSnWmS9v8O0UGewGHwVhYm+dJZP4yGxdlKnXLc2jh8C+Y6S3AvU6RJZ5or2CX0O1U03d03FloPnBTZXqtGsobnvRW8Y0xrRuZeBUqHJaekry26W1lS9C/iwZb0oMlWh0eFEoKONTvQZfuawLmmhlKFMVqqtnV9CCtDg3XZmW1xf8nyeASMQkPTdRc5iH9ghHwYAVxxZ5C8L32Vkpl4aBu8/brt1q4Ju4alurhRtZbE5jayxjg/O+Yq9GCPQh3tzX7sBRc3xd8gC7n13Fx0zonSDqMGtYvM0XylQIJfKfCO5jbWwYS+6Mt2hUvG+Bixi1wnpJtVnNhAzPAp8muADSzxkWbTOL0SqwQWAo1m4MuWuNB7Tqy3EctBJlQkP1dDHFKMKFtRxbdpXBm//KtJL0TC53Tucm/vqjesEnQ0tbCENHfikj1aodwxsi0KGcW9C2ZZyKBv24mxwYBo9ffEkvRSGqiyYy0d4j0od2zHPO/RYQtAhSpAfvoa1XLivFq0fQ9TeiYn4w2haWwsakzMrsIQZzcV7dqWX5a/T8G2Pj6VaHSL39OnxpPrQYy8JBaZwVTS5NoknDzYkmtqHzNazpe7xk1p++pZgQ7SlKxm9rXs31qc2Kcoqu6Ig4woTJb1Vyz5O/n/pV3PzGXsuVAuhBrzfSEMCtchnius0GyCXi86jH5mDHXRbQbJys3yQgwhLhVS2myKETGct1rmolfmCTIRJJ6BNB/JWpE9pPY9Mnet91aWALubMDpCLmNvXtUTVDaNpYwY4jDfM/wMrYX8jUYIw8dh3oeqBnASDggRrQ8xrKwEUtJyHzRbK6dK1zoECoNikDoF/PCBtGO+5nFGu6nK2x35ZkBn3ayVpxNMvb7pvo7oLJo024Zxy6455MdmxdMQ4/Y7nUvIzAgw62qmJStK8xauGXxjRu+eURplkwbrgAUKupssMD635hVyHC9VTm9KcejCGT6wgmarGT9RZcLmHr+lfbkU87PrvR6AxaXgBBEc6LvaL09ZNejuZTAOxEmMQgSELd9rq0vrv/6ySrFdEZPBWMlT0sarAOyJzp72TNhtnNw1JcLW4Pvi1LrIZN/pi8Daqsy7HYmUGIe2m6WYV29n7GI940q6BLa6qI1SCTtn0d31UvSUVitWvE+RI74vA9yL1g9LKAMYQfDLpAIjzqJvW0DviMr2YiJDTM8ZE+QMs+mVPI3N4grCJpKOzv8y4axVU5rnAb6m/Wn0Nl2ympi+gc+HtBi73RnM3Xamrfpx+296upogKM7l9iTgfyI40eNF5nOu5f8PcWce3l4npRm/eVB2mgvrRKA8gu2QEDEsMiHBGWtaCmq2JKk/Q1W2KqD62BGW1v/HtCEyL4joMFg9TCYiJJbjUNtduV6bjZwwZH8+2AO/TRW/W/3vRO40SbTe8ZwKCOQ8kmwjJHu/U5st+EW13mOpi9oQh0+6IseM7YvL+yEqOZIwgGhkLZNgt4kiSIa90auAMYo+mzp+98U7WD29OFF9DE8Z0MnzGkAm5G5ADYj83pFaMQVOKWx63Cnm9kMl5rzLy+eq/14viGEaYvg43LNIUgLtKvJj0fk0mCIKT0vwGYAUrliQUe1BcgrROcLidWm/5etzS34Qwf+ZBNVoJSeT1oaSipq1HSMLehITqSEItjEeqKppzQut/TRoSWfCQc1670iUenL2xsJRtwX2P102V13yl74vXBcEospiacoU9alx2kJPuk3xZwr4fVmGut69z/yLi8V3W8Lko2Ah3vbRH6qqP60i3zEZ/EbX1owcADcoRMrb7Bfhtlds1eifyR5Fny3Pr71Hl1d2WJbDdecAPLabxOYuDquCa8bJeFdtDXZczSBbbNDf5uVKfO10cB7jvaaNlLxHGJ8ymb6nLnjHqpe2ihHyzxAykowZqiexlHO6rC9lrN9TMdbZZcVw+FZf7uk/1WVLOLpZkeXiweiwKiAdyFuuPnJL5kn5VuIX2lNup1+m5rJQR0BNKunxy1k2Kn7fu63gX3O+dnf6I8Z+N3gMUk+Oych1Bs8e9I40xw4zGETs6CtggHeXKq4+Np0AxM5HQwZMR7DqxSG0ELGN5Wyt+4iBKDBZVlH65cq7qixXK7CG4FvOIbcK7D230AQU6wgCqIdO/el5Zs/Ovi0kHMmPHb3qgyMCnlI9ewUyfYE5H01gV7y8rVwceu6YZwVHdm/zWjz/RUih8iwSOSDSQoHFo3/u6QVi0lBjmQucJkdS+9AjomMh4+o50E6JHOn1cugmZpwgfdqv+KT5PK/T/zpEiLeKO2ptyZrnQnfWVpoT8+K/Ypr1crQ+JXzN2pN9L4b0ZR5wFrp+rEtU11++DLlEMKZpNMTKQCxqygwww8nKBOdBybesfAo2zZ1VzVAaYCDcbvvgUcBZjHXJO48Paw14L7DIHEXskjEjs9eZzehcCWVsrpInWOv2GOgaHSjYjZKo/LvIcCu7s6CUDgjHUhgEzkKnxjd0vlBtPXg6z4QCknaIPr+wLfN4AeANjLUQMmerOg2GgVxNhFj7VusctQLCONzZsAOJhe9hLrw0+ZIoYvEWbBuxg5CjLXkL7P8zC+w+P7nICtxdmWEb9vMQkMheM01g7k/8BfjeiAZgYv/jkQeRGaPN/xxTTmHXtrlwhwZQPGzMdTl4ziH+jSDm6l9VFyVRhT4pSXfRFpTdbHJiAZpcNlbJ5FjMql4iIlS4UmKnFUuDH6mJg55qDDrekw4gYR/AhSaRv7xgOOsmOVyGpbNHwwdlk+smH3XBW/8CepwSZLc9MEze6GBi5s97PRuEAyqP9VHP468UFMmZfz6ya4q1JRXHmp+BYR7WiSreTEyeNd3Y/gSy0pAnaKwILURp+4iG0CgSS4+8jRvTajm66+liQOUrYXCVjxrjVtOsCc3yA5ybQ9bcxDuyzPHIG7g+K5l9WCbyreIp0mv7yJsVARzd8Z0AdGOdsLd2cgZIJEm2nofqkzMkntqvjKs3RP8msy4UEa9f1orIAwhSk4Tm4brPvv2xO8XhMJheJNE5cJ8ryFYU5WkiEiQBMI4n48evV3rrvT2nKiOYtKlahUcXYSXw8xqxn0ksLBsDYBH9kEwplD/YVVg7hKlF2T2/TI6e1aQeG12M6aPdi6/jHoIw/+XJem+ecfubPifcUrVXbmcjhzvlQOLDDhgPUVvkS5ohagUaF4JInpQAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Deposit Udhaar EMI Amount
+ * **************************************************************************************
+ *
+ * Created on 11 Jun, 2015 10:52:33 AM
+ *
+ * @FileName: omuuemid.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+
+$custId = $_POST['custId'];
+$udhaarId = $_POST['udhaarId'];
+$udhaDepId = $_POST['udhaDepId'];
+$updateUdhaDepAmt = $_POST['updateUdhaDepAmt'];
+$updateUdhaDepIntAmt = $_POST['updateUdhaDepIntAmt'];
+//$udhaDepUId = $_POST['udhaDepUId'];
+$uFirmId = $_POST['uFirmId'];
+$uDOB = $_POST['uDOB'];
+$uSerialNo = $_POST['uSerialNo'];
+$totEMIAmt = $_POST['totEMIAmt'];
+$totEMIIntAmt = $_POST['totEMIIntAmt'];
+$emiPaidDate = trim($_POST['emiPaidDate']);
+//echo $emiPaidDate;
+if ($udhaDepId == '') {
+    $custId = $_GET['custId'];
+    $udhaarId = $_GET['udhaarId'];
+    $udhaDepId = $_GET['udhaDepId'];
+    $updateUdhaDepAmt = $_GET['updateUdhaDepAmt'];
+    $updateUdhaDepIntAmt = $_POST['updateUdhaDepIntAmt'];
+    $totEMIAmt = $_GET['totEMIAmt'];
+    $totEMIIntAmt = $_GET['totEMIIntAmt'];
+    $emiPaidDate = trim($_GET['emiPaidDate']);
+}
+//echo $emiPaidDate;
+?>
+<?php
+
+if ($udhaDepId == '' or $udhaDepId == NULL or $updateUdhaDepAmt == '' or $updateUdhaDepAmt == NULL or $updateUdhaDepIntAmt == '' or $updateUdhaDepIntAmt == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+    exit(0);
+} else {
+    /*     * ****************Start code to add sys log var @Author:PRIYA14APR14********************** */
+    $sslg_trans_sub = 'UDHAAR EMI AMT UPDATED';
+    $sysLogTransType = 'Udhaar';
+    $sysLogTransId = $uSerialNo;
+    $sslg_firm_id = $uFirmId;
+    $custId = $custId;
+    $sslg_trans_comment = 'Udhaar S.No: ' . $uSerialNo . ', Udhaar Dep EMI Amount Date: ' . $uDOB . ',Updated Udhaar Dep Amt: ' . $updateUdhaDepAmt;
+    include 'omslgapi.php';
+    /*     * ****************End code to add sys log var @Author:PRIYA14APR14*********************** */
+    $qSelUdhaDet = "SELECT udhaar_EMI_occurrences,udhaar_type,udhaar_DOB,udhaar_upd_sts FROM udhaar WHERE udhaar_id='$udhaarId' and udhaar_own_id='$_SESSION[sessionOwnerId]'";
+    $resUdhaDet = mysqli_query($conn,$qSelUdhaDet);
+    $rowUdhaDet = mysqli_fetch_array($resUdhaDet, MYSQLI_ASSOC);
+    $totEMI = $rowUdhaDet['udhaar_EMI_occurrences'];
+    $udhaar_type = $rowUdhaDet['udhaar_type'];
+    $udhaar_DOB = $rowUdhaDet['udhaar_DOB'];
+    $udhaar_upd_sts = $rowUdhaDet['udhaar_upd_sts'];
+
+    $qSelUdhaDepEMIAmt = "SELECT udhadepo_EMI_amt,udhadepo_EMI_int_amt,udhadepo_EMI_no FROM udhaar_deposit WHERE udhadepo_id='$udhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+    $resUdhaDepEMIAmt = mysqli_query($conn,$qSelUdhaDepEMIAmt);
+    $rowUdhaDepEMIAmt = mysqli_fetch_array($resUdhaDepEMIAmt, MYSQLI_ASSOC);
+    $prevUdhaDepAmt = $rowUdhaDepEMIAmt['udhadepo_EMI_amt'];
+    $prevUdhaDepIntAmt = $rowUdhaDepEMIAmt['udhadepo_EMI_int_amt'];
+    $emiNo = $rowUdhaDepEMIAmt['udhadepo_EMI_no'];
+    $totUdhaarEMIAmt = $updateUdhaDepAmt + $updateUdhaDepIntAmt;
+
+    $udhaarDepositHistory = '<b>Divide Udhaar EMI prin Amount ' . $updateUdhaDepAmt . ' and Int Amount ' . $updateUdhaDepIntAmt . ' updated on ' . $emiPaidDate . '</b>.<br/>';
+    $query = "UPDATE udhaar_deposit SET
+		udhadepo_EMI_amt='$updateUdhaDepAmt',udhadepo_EMI_int_amt='$updateUdhaDepIntAmt',udhadepo_history =  '$udhaarDepositHistory'
+                WHERE udhadepo_id='$udhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+    $qSelCustomer = "SELECT * FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+    $resCustomer = mysqli_query($conn,$qSelCustomer);
+    $rowCustomer = mysqli_fetch_array($resCustomer, MYSQLI_ASSOC);
+    $custFirstName = $rowCustomer['user_fname'];
+    $custLastName = $rowCustomer['user_lname'];
+    $custAddress = $rowCustomer['user_add'] . ' ' . $rowCustomer['user_city'] . ' ' . $rowCustomer['user_pincode'] . ' ' . $rowCustomer['user_state'] . ' ' . $rowCustomer['user_country'] . ' ' . 'Mob. No: ' . $rowCustomer['user_mobile'];
+    $custCity = $rowCustomer['user_city'];
+//---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->            
+    /*     * ********Start code to udhaar deposit amount @Author:SHRI15JUL15********************* */
+    if (($prevUdhaDepAmt >= $updateUdhaDepAmt) || ($prevUdhaDepIntAmt >= $updateUdhaDepIntAmt)) {
+        if ($prevUdhaDepAmt >= $updateUdhaDepAmt) {
+            $remUdhaDepAmt = $prevUdhaDepAmt - $updateUdhaDepAmt;
+            $nextUdhaDepId = $udhaDepId + 1;
+            $newEmiNo = $emiNo + 1;
+
+            if ($emiNo <= $totEMI) {
+                if ($emiNo != $totEMI) {
+                    parse_str(getTableValues("SELECT udhadepo_EMI_amt FROM udhaar_deposit WHERE udhadepo_id='$nextUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                    $newUpdateUdhaAmt = $udhadepo_EMI_amt + $remUdhaDepAmt;
+                    $query = "UPDATE udhaar_deposit SET
+		udhadepo_EMI_amt='$newUpdateUdhaAmt'
+                WHERE udhadepo_id='$nextUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+                    if (!mysqli_query($conn,$query)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                } else if ($emiNo == $totEMI) {
+                    $udhaDepAmt = $remUdhaDepAmt;
+                }
+            }
+        }
+        if ($prevUdhaDepIntAmt >= $updateUdhaDepIntAmt) {
+            $remUdhaDepIntAmt = $prevUdhaDepIntAmt - $updateUdhaDepIntAmt;
+            $nextUdhaDepId = $udhaDepId + 1;
+            $newEmiNo = $emiNo + 1;
+
+            if ($emiNo <= $totEMI) {
+                if ($emiNo != $totEMI) {
+                    parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt FROM udhaar_deposit WHERE udhadepo_id='$nextUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                    $newUpdateUdhaIntAmt = $udhadepo_EMI_int_amt + $remUdhaDepIntAmt;
+                    $newUpdateUdhaAmt = $udhadepo_EMI_amt + $remUdhaDepAmt;
+                    $query = "UPDATE udhaar_deposit SET
+		udhadepo_EMI_int_amt='$newUpdateUdhaIntAmt'
+                WHERE udhadepo_id='$nextUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+                    if (!mysqli_query($conn,$query)) {
+                        die('Error: ' . mysqli_error($conn));
+                    }
+                    if ($newUpdateUdhaIntAmt != '' && $newUpdateUdhaAmt != '') {
+                        $totEMIAmount = $newUpdateUdhaIntAmt + $newUpdateUdhaAmt;
+                        $query = "UPDATE udhaar_deposit SET
+		udhadepo_amt_left='$totEMIAmount',udhadepo_EMI_total_amt='$totEMIAmount'
+                WHERE udhadepo_id='$nextUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                        if (!mysqli_query($conn,$query)) {
+                            die('Error: ' . mysqli_error($conn));
+                        }
+                    }
+                } else if ($emiNo == $totEMI) {
+                    $udhaIntAmt = $remUdhaDepIntAmt;
+                }
+            }
+        }
+    }
+    if (($prevUdhaDepAmt < $updateUdhaDepAmt) || ($prevUdhaDepIntAmt < $updateUdhaDepIntAmt)) {
+        /*         * ********End code to udhaar deposit amount @Author:SHRI15JUL15********************* */
+        /*         * ********Start code to udhaar deposit interest amount @Author:SHRI15JUL15********************* */
+
+        if ($prevUdhaDepIntAmt < $updateUdhaDepIntAmt) {
+            $totCnt = 0;
+            $newEmiNo = $emiNo + 1;
+            $advUdhaDepIntAmt = $updateUdhaDepIntAmt - $prevUdhaDepIntAmt;
+            if ($emiNo <= $totEMI) {
+                if ($emiNo != $totEMI) {
+                    $tEMI = $totEMI - $emiNo;
+
+                    $updateUdhaDepIntAmt = $totEMIIntAmt - $updateUdhaDepIntAmt;
+                    $prevUdhaDepId = $udhaDepId - 1;
+                    for ($i = $emiNo; $i > 1; $i--) {
+                        parse_str(getTableValues("SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$prevUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                        if ($udhadepo_EMI_status != 'Paid') {
+                            $totCnt++;
+                        }
+                        $prevUdhaDepId--;
+                    }
+                    $nextUdhaDepId1 = $udhaDepId + 1;
+                    for ($i = $emiNo; $i < $totEMI; $i++) {
+                        parse_str(getTableValues("SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nextUdhaDepId1' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                        if ($udhadepo_EMI_status != 'Paid') {
+                            $totCnt++;
+                        }
+                        $nextUdhaDepId1++;
+                    }
+
+                    $updateUdhaDepIntAmt = om_round(($advUdhaDepIntAmt / $totCnt), 2);
+
+                    $pUdhaDepId = $udhaDepId - 1;
+                    if ($emiNo != 1) {
+                        for ($i = $emiNo - 1; $i > 0; $i--) {
+                            parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                            $newUpdateUdhaIntAmt = $udhadepo_EMI_int_amt - $updateUdhaDepIntAmt;
+                            $newUpdateUdhaAmt = $udhadepo_EMI_amt + $updateUdhaDepAmt;
+                            if ($udhadepo_EMI_status != 'Paid') {
+                                $query = "UPDATE udhaar_deposit SET
+                                        udhadepo_EMI_int_amt='$newUpdateUdhaIntAmt'
+                                        WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                                if (!mysqli_query($conn,$query)) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
+                                parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                                $totEMIAmount = $udhadepo_EMI_int_amt + $udhadepo_EMI_amt;
+                                $query = "UPDATE udhaar_deposit SET
+                                            udhadepo_amt_left='$totEMIAmount',udhadepo_EMI_total_amt='$totEMIAmount'
+                                            WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                                if (!mysqli_query($conn,$query)) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
+//                            }
+                            }
+                            $pUdhaDepId--;
+                        }
+                    }
+                    $nUdhaDepId = $udhaDepId + 1;
+                    for ($i = $emiNo; $i < $totEMI; $i++) { //echo '<br>$nUdhaDepId=='.$nUdhaDepId;
+                        parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                        $newUpdateUdhaIntAmt = $udhadepo_EMI_int_amt - $updateUdhaDepIntAmt;
+                        $newUpdateUdhaAmt = $udhadepo_EMI_amt + $updateUdhaDepAmt;
+
+                        if ($udhadepo_EMI_status != 'Paid') {
+                            $query = "UPDATE udhaar_deposit SET
+                                    udhadepo_EMI_int_amt='$newUpdateUdhaIntAmt'
+                                    WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                        echo '<br>Next' . $query;
+                            if (!mysqli_query($conn,$query)) {
+                                die('Error: ' . mysqli_error($conn));
+                            }
+
+//                    if ($newUpdateUdhaIntAmt != '' && $newUpdateUdhaAmt != '') {
+                            parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'"));
+                            $totEMIAmount = $udhadepo_EMI_int_amt + $udhadepo_EMI_amt;
+                            $query = "UPDATE udhaar_deposit SET
+                                            udhadepo_amt_left='$totEMIAmount',udhadepo_EMI_total_amt='$totEMIAmount'
+                                            WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                            if (!mysqli_query($conn,$query)) {
+                                die('Error: ' . mysqli_error($conn));
+                            }
+//                    }           
+                        }
+                        $nUdhaDepId++;
+                    }
+                } else {
+                    $intAmt = $advUdhaDepIntAmt;
+                }
+            }
+        }
+        if ($prevUdhaDepAmt < $updateUdhaDepAmt) {
+//            echo $updateUdhaDepAmt;
+            $totCnt = 0;
+            $newEmiNo = $emiNo + 1;
+            $advUdhaDepAmt = $updateUdhaDepAmt - $prevUdhaDepAmt;
+            if ($emiNo <= $totEMI) {
+                if ($emiNo != $totEMI) {
+                    $tEMI = $totEMI - $emiNo;
+
+                    $updateUdhaDepAmt = $totEMIAmt - $updateUdhaDepAmt;
+                    $prevUdhaDepId = $udhaDepId - 1;
+                    for ($i = $emiNo; $i > 1; $i--) {
+                        parse_str(getTableValues("SELECT udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$prevUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                        if ($udhadepo_EMI_status != 'Paid') {
+                            $totCnt++;
+                        }
+                        $prevUdhaDepId--;
+                    }
+                    $nextUdhaDepId1 = $udhaDepId + 1;
+                    for ($i = $emiNo; $i < $totEMI; $i++) {
+                        parse_str(getTableValues("SELECT udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nextUdhaDepId1' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                        if ($udhadepo_EMI_status != 'Paid') {
+                            $totCnt++;
+                        }
+                        $nextUdhaDepId1++;
+                    }
+
+                    $updateUdhaDepAmt = om_round(($updateUdhaDepAmt / $totCnt), 2);
+//echo $updateUdhaDepAmt;
+                    $pUdhaDepId = $udhaDepId - 1;
+                    if ($emiNo != 1) {
+                        for ($i = $emiNo - 1; $i > 0; $i--) {
+                            $qSelNextAllRow = "SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' ";
+                            $resNextAllRow = mysqli_query($conn,$qSelNextAllRow);
+                            $resNextAllRowCount = mysqli_num_rows($resNextAllRow);
+//                            parse_str(getTableValues("SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                            if ($resNextAllRowCount > 0) {
+                                $query = "UPDATE udhaar_deposit SET
+                                        udhadepo_EMI_amt='$updateUdhaDepAmt'
+                                        WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                                if (!mysqli_query($conn,$query)) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
+
+                                parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                                $totEMIAmount = $udhadepo_EMI_int_amt + $udhadepo_EMI_amt;
+                                $query = "UPDATE udhaar_deposit SET
+                                            udhadepo_amt_left='$totEMIAmount',udhadepo_EMI_total_amt='$totEMIAmount'
+                                            WHERE udhadepo_id='$pUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                                if (!mysqli_query($conn,$query)) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
+                            }
+                            $pUdhaDepId--;
+                        }
+                    }
+                    $nUdhaDepId = $udhaDepId + 1;
+                    for ($i = $emiNo; $i < $totEMI; $i++) { //echo '<br>$nUdhaDepId=='.$nUdhaDepId;
+                        $qSelNextAllRow = "SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL";
+                        $resNextAllRow = mysqli_query($conn,$qSelNextAllRow);
+                        $resNextAllRowCount = mysqli_num_rows($resNextAllRow);
+//                        parse_str(getTableValues("SELECT udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                        if ($resNextAllRowCount > 0) {
+                            $query = "UPDATE udhaar_deposit SET
+		udhadepo_EMI_amt='$updateUdhaDepAmt'
+                WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                        echo '<br>Next' . $query;
+                            if (!mysqli_query($conn,$query)) {
+                                die('Error: ' . mysqli_error($conn));
+                            }
+
+                            parse_str(getTableValues("SELECT udhadepo_EMI_int_amt,udhadepo_EMI_amt,udhadepo_EMI_status FROM udhaar_deposit WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]' and udhadepo_paid_amt IS NULL"));
+                            $totEMIAmount = $udhadepo_EMI_int_amt + $udhadepo_EMI_amt;
+                            $query = "UPDATE udhaar_deposit SET
+                                            udhadepo_amt_left='$totEMIAmount',udhadepo_EMI_total_amt='$totEMIAmount' 
+                                            WHERE udhadepo_id='$nUdhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+//                            echo '<br>Prev' . $query;
+                            if (!mysqli_query($conn,$query)) {
+                                die('Error: ' . mysqli_error($conn));
+                            }
+                        }
+                        $nUdhaDepId++;
+                    }
+                } else {
+                    $depAmt = $advUdhaDepAmt;
+                }
+            }
+        }
+    }
+    $prevAmt = $prevUdhaDepAmt + $prevUdhaDepIntAmt;
+    $totUdhaAmt = $totUdhaarEMIAmt;
+    if ($prevAmt > $totUdhaAmt) {
+        $udhaAmtLeft = $prevAmt - $totUdhaAmt;
+    } else {
+        $udhaAmtLeft = $totUdhaAmt - $prevAmt;
+    }
+    if ($totUdhaAmt != '') {
+        $query = "UPDATE udhaar_deposit SET
+		udhadepo_paid_amt='$totUdhaAmt', udhadepo_EMI_total_amt='$totUdhaAmt' ,udhadepo_amt_left='$udhaAmtLeft'
+                WHERE udhadepo_id='$udhaDepId' and udhadepo_own_id='$_SESSION[sessionOwnerId]'";
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    /*     * ********End code to udhaar deposit interest amount @Author:SHRI15JUL15********************* */
+
+    if ($intAmt != '' || $depAmt != '') {
+        $totAdvAmt = $intAmt + $depAmt;
+        $uSerialNoArr = explode(' ', $uSerialNo);
+//                print_r($uSerialNoArr);
+        $advMoneyOtherInfo = "$globalCurrency " . $totAdvAmt . " amount deposited of udhaar deposite EMI <br/>";
+        $query = "INSERT INTO advance_money (
+		admn_cust_id, admn_own_id, admn_firm_id,admn_pre_serial_num,admn_serial_num,
+		admn_amt, admn_comm, admn_DOB, admn_upd_sts,admn_dr_acc_id, admn_cr_acc_id, admn_pay_other_info, 
+		admn_other_info, admn_since) 
+		VALUES (
+		'$custId','$_SESSION[sessionOwnerId]','$uFirmId','$uSerialNoArr[0]','$uSerialNoArr[1]',
+		'$totAdvAmt','UDHAAR DEPOSIT EMI AMOUNT','$uDOB', 'New', '','',"
+                . "'','$advMoneyOtherInfo',$currentDateTime)";
+
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    if ($udhaIntAmt != '' || $udhaDepAmt != '') {
+        $totUdhaAmt = $udhaIntAmt + $udhaDepAmt;
+        $udhaarHistory = "$globalCurrency " . $totUdhaAmt . " amount left of udhaar deposite EMI <br/>";
+        $query = "INSERT INTO udhaar (
+		udhaar_cust_id, udhaar_own_id, udhaar_firm_id,
+		udhaar_cust_fname, udhaar_cust_lname, udhaar_cust_Address, udhaar_cust_city,
+		udhaar_amt, udhaar_comm, udhaar_DOB, udhaar_type,
+		udhaar_upd_sts, udhaar_other_info, udhaar_history,
+		udhaar_ent_dat) 
+		VALUES ('$custId','$_SESSION[sessionOwnerId]','$uFirmId','$custFirstName','$custLastName','$custAddress','$custCity',"
+                . "'$totUdhaAmt','UDHAAR DEPOSIT EMI REMAINING AMT','$udhaar_DOB','$udhaar_type','$udhaar_upd_sts','','$udhaarHistory',$currentDateTime)";
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    header("Location: $documentRoot/include/php/omuudetl.php?custId=$custId&firmId=$uFirmId"); //change in filename @AUTHOR: SANDY20NOV13
+}
 ?>

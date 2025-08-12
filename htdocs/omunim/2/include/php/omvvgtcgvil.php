@@ -1,3 +1,64 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Get City List to add Girvi
+ * **************************************************************************************
+ *
+ * Created on 16 May, 2012 11:16:32 PM
+ *
+ * @FileName: omvvgtcgvil.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+
+$custCity = trim($_POST['custVillage']);
+$panelName = trim($_POST['panelName']);
+
+$qSelCity = "SELECT village_name FROM city where city_own_id='$_SESSION[sessionOwnerId]' and village_name LIKE '$custCity%' order by village_name asc";
+$resCity = mysqli_query($conn,$qSelCity);
+$totalCities = mysqli_num_rows($resCity);
+
+if ($totalCities > 0) {
+    if ($panelName == 'addNewCustomer') {
+        ?>
+        <SELECT class="cityListDivToAddNewCustSelect" id="custVillageForAddNewCustSelect" name="custVillageForAddNewCustSelect" 
+                onKeyDown="if(event.keyCode == 13) { document.getElementById('village').value=this.value;searchVillageForPanelBlank('addNewCustomer');
+                document.getElementById('village').focus();}"
+                onclick="document.getElementById('village').value=this.value; searchVillageForPanelBlank('addNewCustomer');document.getElementById('village').focus();"
+                multiple="multiple" size="8"><!--Focus Added @Author:PRIYA24AUG13-->
+                    <?php
+                    while ($row = mysqli_fetch_array($resCity, MYSQLI_ASSOC)) {
+                        echo "<OPTION  VALUE=" . "\"{$row['village_name']}\"" . " class=" . "\"content-mess-maron\"" . " >{$row['village_name']}</OPTION>";
+                    }
+                    ?>
+        </select>
+    <?php } else if($panelName == 'directAddCust'){ ?>
+        <SELECT class="cityListDivToAddGirviSelect" id="custVillageForAddNewCustSelect" name="custVillageForAddNewCustSelect" 
+                onKeyDown="if(event.keyCode == 13) { document.getElementById('custVillageForAddGirvi').value=this.value; searchVillageForPanelBlank('directAddCust');}"
+                onclick="document.getElementById('custVillageForAddGirvi').value=this.value; searchVillageForPanelBlank('directAddCust');"
+                multiple="multiple" size="8">
+                    <?php
+                    while ($row = mysqli_fetch_array($resCity, MYSQLI_ASSOC)) {
+                        echo "<OPTION  VALUE=" . "\"{$row['village_name']}\"" . " class=" . "\"content-mess-maron\"" . " >{$row['village_name']}</OPTION>";
+                    }
+                    ?>
+        </select>
+<?php } } ?>

@@ -1,3 +1,630 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description:  Transferred & Released Unsettled Loan Details
+ * **************************************************************************************
+ *
+ * Created on Aug 14, 2015 11:16:18 AM
+ *
+ * @FileName: orgptgml.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+require_once 'system/omssopin.php';
+include_once 'ommpincr.php';
+
+$selFirmId = $_SESSION['setFirmSession'];
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]'";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' order by firm_since desc";
+}
+$resFirmCount = mysqli_query($conn,$qSelFirmCount);
+$strFrmId = '0';
+while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+    $strFrmId = $strFrmId . ",";
+    $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+}
+//$strGFirmId = $_GET['firmId'];
+$strGFirmId = $strFrmId;
+if (($selFirmId != NULL && $selFirmId != '' && $selFirmId != 'NotSelected')) {
+    $strFrmId = $selFirmId;
+}
+if ($_GET['selTFirmId'] != '') {
+    $selTFirmId = $_GET['selTFirmId'];
+    $selMlName = 'TR ML';
+}
+//start code @AUTHOR: SANDY28JAN14
+if ($_GET['selMlName'] != '' && $_GET['selMlName'] != 'NotSelected' && $_GET['selMlName'] != 'TR ML') {
+    $selMlName = $_GET['selMlName'];
+    $selTFirmId = 'Selected';
+}
+//echo '$selMlName=='.$selMlName;
+if ($selMlName != '' && $selMlName != NULL && $selMlName != 'TR ML') {
+    if ($selFirmId != NULL || $selFirmId != '') {
+        $qSelAllGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Transferred') and gtrans_exist_firm_id IN ($selFirmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan WHERE ml_lender_fname='$selMlName') and gtrans_act_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+    } else {
+        $qSelAllGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Transferred') and gtrans_exist_firm_id IN ($strFrmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan WHERE ml_lender_fname='$selMlName') and gtrans_act_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+    }
+} else {
+    $qSelAllGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Transferred') and gtrans_exist_firm_id IN ($strGFirmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan) and gtrans_act_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+}
+
+//$qSelAllGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_exist_firm_id IN ($strFrmId) and gtrans_trans_loan_id IS NULL and gtrans_firm_id IN ($strFrmId) and gtrans_upd_sts IN ('Transferred') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+//echo $qSelAllGirvi;
+$resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+$totalGirviCheck = mysqli_num_rows($resAllGirvi);
+
+$qSelAllSettledLoans = "SELECT * FROM trans_loan_settle_trans order by lstran_id desc LIMIT 0,1";
+$resAllSettledLoans = mysqli_query($conn,$qSelAllSettledLoans);
+$rowAllSettledLoans = mysqli_fetch_array($resAllSettledLoans, MYSQLI_ASSOC);
+$lastSettledLoan = mysqli_num_rows($resAllSettledLoans);
+?>
+<table width="100%">
+    <tr>
+        <td align="center">
+            <div class="minHeight400">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" height="100%">
+                    <tr>
+                        <td align = "right" width="50%" class="itemAddPnLabels14">
+                            &nbsp;
+                        </td>
+                        <td align = "center" width="50%" class="itemAddPnLabels14">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td valign = "bottom" align = "right" width="80%" class="itemAddPnLabels14 paddingLeft5">
+                                        MONEY LENDER :
+                                    </td> 
+                                    <td align = "left" valign="top" width="20%" class="itemAddPnLabels14 paddingLeft5">
+                                        <?php
+                                        $firmIdSelected = $selTFirmId;
+                                        $mlSelected = $selMlName;
+                                        $panelName = 'mLender';
+                                        $sortKeyword = addslashes($sortKeyword);
+                                        include 'omfrmcd.php';
+                                        ?>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="8" >&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="8" class="hrGrey"></td>
+                    </tr>
+                    <?php if ($lastSettledLoan > 0) { ?>
+                        <tr>
+                            <td align = "left" width="50%" class="itemAddPnLabels14">
+                                PREVIOUS BAL :
+                            </td>
+                            <td align = "center" width="50%" class="itemAddPnLabels14">
+                                <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <td valign = "bottom" align = "right" width="30%" >
+
+                                        </td> 
+                                        <td align = "left" valign="top" width="20%" >
+
+                                        </td>
+                                        <td valign = "bottom" align = "right" width="30%" class="itemAddPnLabels14 paddingLeft5">
+                                            <?php
+                                            if ($rowAllSettledLoans['lstran_amt_left'] > 0) {
+                                                $class = 'redFont';
+                                                echo 'AMOUNT LEFT :';
+                                            } else if ($rowAllSettledLoans['lstran_amt_left'] < 0) {
+                                                $class = 'greenFont';
+                                                echo 'AMOUNT DEP :';
+                                            }
+                                            ?>
+                                        </td> 
+                                        <td align = "left" valign="top" width="20%" class="itemAddPnLabels14 paddingLeft5 <?php echo $class; ?>">
+                                            <?php
+                                            echo abs($rowAllSettledLoans['lstran_amt_left']);
+                                            ?>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                    <tr>
+                        <td class="hrGrey" width="100%" colspan="8"></td>
+                    </tr>
+                    <tr>
+                        <td align = "center" width="50%" class="itemAddPnLabels14 border-color-grey-rb paddingLeft5">
+                            NEW TRANSFERRED LOAN
+                        </td>
+                        <td align = "center" width="50%" class="itemAddPnLabels14 border-color-grey-b paddingLeft5">
+                            RELEASED LOAN
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" align = "center" width="50%" class="border-color-grey-r paddingLeft5 paddingRight2">
+                            <div class="minHeight400">
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <?php if ($totalGirviCheck <= 0) { ?>
+                                        <tr><td>
+                                                <div class="spaceLeft100 paddingTop5"><div class="h7"> ~Transferred Girvi List is empty. ~ </div></div>
+                                            </td>
+                                        <tr>
+                                        <?php } ?>
+                                        <?php
+//                                        echo '$qSelAllGirvi=='.$qSelAllGirvi;
+                                        $totTransPrin = 0;
+                                        $totGTransAmt = 0;
+                                        $counter = 0;
+                                        $gCounter = 0;
+                                        while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+                                            $gId = $rowAllGirvi['gtrans_id'];
+                                            $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                            $gTransFirmType = $rowAllGirvi['gtrans_firm_type'];
+                                            $custId = $rowAllGirvi['gtrans_cust_id'];
+                                            $gFirmId = $rowAllGirvi['gtrans_firm_id'];
+                                            $girviDOB = $rowAllGirvi['gtrans_DOB'];
+                                            $gMainPrinAmt = $rowAllGirvi['gtrans_prin_amt'];
+                                            $gMainInt = $rowAllGirvi['gtrans_paid_int'];
+                                            $gTotalAmt = $rowAllGirvi['gtrans_paid_amt'];
+                                            $girviDOR = $rowAllGirvi['gtrans_DOR'];
+                                            $girviTransferLoanId = $rowAllGirvi['gtrans_trans_loan_id'];
+                                            $globalGTransSerailNum = $rowAllGirvi['global_gt_serial_num'];
+
+                                            if ($girviTransferLoanId != '') {
+                                                $selAllTransGirvi = "SELECT ml_pre_serial_num,ml_serial_num FROM ml_loan WHERE ml_id='$girviTransferLoanId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+                                                $resAllTransGirvi = mysqli_query($conn,$selAllTransGirvi);
+                                                $rowAllTransGirvi = mysqli_fetch_array($resAllTransGirvi, MYSQLI_ASSOC);
+                                                $gPreSerialNo = $rowAllTransGirvi['ml_pre_serial_num'];
+                                                $gSerialNo = $rowAllTransGirvi['ml_serial_num'];
+                                            } else {
+                                                $gPreSerialNo = $rowAllGirvi['gtrans_pre_serial_num'];
+                                                $gSerialNo = $rowAllGirvi['gtrans_serial_num'];
+                                            }
+
+                                            $girviTransStatus = $rowAllGirvi['gtrans_upd_sts'];
+                                            $prinType = $rowAllGirvi['gtrans_prin_typ'];
+                                            if ($prinType == 'MainPrin' || $prinType == null) {
+                                                $prinType = 'PRN';
+                                                $prinTitle = "Main Principle";
+                                                $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                            } else {
+                                                $prinType = 'APRN';
+                                                $prinTitle = "Additional Principle";
+                                                $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                            }
+                                            $totTransPrin += $gMainPrinAmt;
+                                            $totGTransAmt += $gTotalAmt;
+                                            $qSelFirm = "SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' and firm_id='$gFirmId'";
+                                            $resFirm = mysqli_query($conn,$qSelFirm);
+                                            $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+                                            $gFirmName = $rowFirm['firm_name'];
+ //---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->                                                   
+                                            $selFatherName = "SELECT user_father_name,user_fname,user_lname,user_city FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+                                            $resFatherName = mysqli_query($conn,$selFatherName);
+                                            $rowFatherName = mysqli_fetch_array($resFatherName, MYSQLI_ASSOC);
+                                            $gCustName = $rowFatherName['user_fname'] . ' ' . $rowFatherName['user_lname'];
+                                            $fatherName = $rowFatherName['user_father_name'];
+                                            if ($fatherName[0] == 'S' || $fatherName[0] == 's') {
+                                                $fatherName = 'W/o  ' . substr($fatherName, 1);
+                                            } else {
+                                                $fatherName = 'S/o  ' . substr($fatherName, 1);
+                                            }
+                                            $gCustCity = om_strtoupper($rowFatherName['user_city']);
+
+                                            $qSelCustInfo = "SELECT girv_cust_fname,girv_cust_lname,girv_cust_city,girv_firm_id FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_id = '$gTransGirviId'";
+                                            $resCustInfo = mysqli_query($conn,$qSelCustInfo);
+                                            $rowCustInfo = mysqli_fetch_array($resCustInfo);
+                                            $girviFirmId = $rowCustInfo['girv_firm_id'];
+
+                                            $qSelFirm = "SELECT firm_name FROM firm where firm_id='$girviFirmId' and firm_own_id='$_SESSION[sessionOwnerId]'";
+                                            $resFirm = mysqli_query($conn,$qSelFirm);
+                                            $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+                                            $girviFirmName = $rowFirm['firm_name'];
+                                            if ($gTransFirmType == 'MoneyLender') {
+                                                $selMlCode = "SELECT user_unique_code FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id IN(SELECT ml_lender_id FROM ml_loan WHERE ml_id='$girviTransferLoanId' and ml_own_id='$_SESSION[sessionOwnerId]')";
+                                                $resMlCode = mysqli_query($conn,$selMlCode);
+                                                $rowMlCode = mysqli_fetch_array($resMlCode, MYSQLI_ASSOC);
+                                            }
+                                            if ($rowAllGirvi['gtrans_DOR'] != '')
+                                                $releaseDate = date('d M y', strtotime($rowAllGirvi['gtrans_DOR']));
+
+                                            $allGTransId = $allGTransId . ',' . $gId;
+                                            ?>
+                                            <?php if ($counter == 0) { ?>
+                                            <tr align="right" class="om_header">
+                                                <td align="left" width="60px" class ="itemAddPnLabels12 border-right-bottom"> 
+                                                    S.NO.
+                                                </td>
+                                                <td align="right" width="420px" class ="itemAddPnLabels12 border-right-bottom">
+                                                    PRIN. AMT. 
+                                                </td>
+                                                <td align="left" width="300px" class ="itemAddPnLabels12 border-right-bottom">
+                                                    C. NAME
+                                                </td>
+                                                <td align="left" width="850px" class ="itemAddPnLabels12 border-right-bottom">
+                                                    CITY
+                                                </td>
+                                                <td align="left" width="70px" class="itemAddPnLabels12 border-right-bottom">
+                                                    TFIRM
+                                                </td>
+                                                <td align="right" width="650px" class ="itemAddPnLabels12 border-right-bottom">
+                                                    S.DT
+                                                </td>
+                                                <td align="right" class="itemAddPnLabels12 border-right-bottom" width="620px">
+                                                    R.DT
+                                                </td>
+                                                <?php if ($staffId && $array['delTransLoan'] == 'false') { ?>
+                                                <?php } else { ?>
+                                                    <td align="center" width="22px" class="noPrint itemAddPnLabels12 border-bottom">
+                                                        UNREL
+                                                    </td>
+                                                <?php } ?>
+                                            </tr>
+                                        <?php } $counter++; ?>
+                                        <tr>
+                                            <td align="left" class="border-color-grey-rb paddingLeft5" width="60px">
+                                                <input type="submit" name="sNo" id="sNo" title="Single Click To View Girvi / Double Click To Select Girvi"
+                                                       ondblclick="<?php if ($upPanelName != 'updateSettledLoans') { ?>searchTransGirviByGirviId('<?php echo $custId; ?>', '<?php echo $gTransGirviId; ?>', 'mlLoanDetailsNavi');<?php } ?>"
+                                                       onclick="<?php if ($upPanelName != 'updateSettledLoans') { ?>getGirviInfoPopUp(<?php echo $custId; ?>,<?php echo $gTransGirviId; ?>, '<?php echo $documentRootBSlash; ?>')<?php } ?>"
+                                                       value="<?php echo $gPreSerialNo . $gSerialNo; ?>" class="frm-btn-lnk-arial-Normal" readonly="true"/>
+                                                <input type="hidden" name="girviId<?php echo $gCounter; ?>" id="girviId<?php echo $gCounter; ?>" value="<?php echo $gTransGirviId; ?>"/>
+                                            </td>
+                                        <div id="display_girvi_info_popup" class="girvi_info_popup_trans_list"></div><td align="right" class="border-color-grey-rb" width="400px">
+                                            <div class="h5 spaceLeftRight2"><?php echo formatInIndianStyle($gMainPrinAmt); ?></div>
+                                        </td>
+                                        <td align="left" class="border-color-grey-rb" title="<?php echo $fatherName; ?>" width="700px">
+                                            <div class="h5 spaceLeftRight2"><?php echo substr($gCustName, 0, 7); ?></div>
+                                        </td>
+                                        <td align="left" class ="border-color-grey-rb" title="<?php echo $gCustCity; ?>" width="750px">
+                                            <div class="h5 spaceLeftRight2"><?php echo substr($gCustCity, 0, 14); ?></div>
+                                        </td><?php if ($gTransFirmType == 'MoneyLender') { ?>
+                                            <td align="left" class ="border-color-grey-rb" width="70px">
+                                                <div class="h5 spaceLeftRight2"><?php echo $rowMlCode['user_unique_code']; ?></div>
+                                            </td>
+                                        <?php } else { ?>
+                                            <td align="left" class ="border-color-grey-rb" width="70px">
+                                                <div class="h5 spaceLeftRight2"><?php echo $gFirmName; ?></div>
+                                            </td>
+                                        <?php } ?>
+                                        <td align="right" width="650px" class =" border-color-grey-rb" <?php if ($releaseDate != '') { ?>title="RELEASE DATE : <?php echo om_strtoupper($releaseDate); ?>"<?php } ?>>
+                                            <div class="h5 spaceLeftRight2"><?php echo om_strtoupper(date('d  M  y', strtotime($girviDOB))); ?></div>
+                                        </td>
+                                        <td align="right" width="620px" class=" border-color-grey-rb widthPX96" <?php if ($releaseDate != '') { ?>title="RELEASE DATE : <?php echo om_strtoupper($releaseDate); ?>"<?php } ?>>
+                                            <div class="h5 spaceLeftRight2">  <?php
+                                                if ($girviDOB != '')
+                                                    echo om_strtoupper(date('d  M  y', strtotime($girviDOB)));
+                                                else
+                                                    echo '-';
+                                                ?></div>
+                                        </td>
+                                        <?php if ($staffId && $array['delTransLoan'] == 'false') { ?>
+                                        <?php } else { ?>
+                                            <td align="center" width="22px" class="border-color-grey-b paddingTop1 noPrint" valign="middle">
+                                                 <div id="reactiveTransGirvi" width="70px">
+                                                    <a style="cursor: pointer;" onclick ="unreleaseTransGirvi('<?php echo "$girviId"; ?>', '<?php echo "$custId"; ?>', '<?php echo $gId; ?>', '<?php echo $panelName; ?>');" >
+                                                        <img src="<?php echo $documentRootBSlash; ?>/images/back16.png" alt="Unrelease Transferred Girvi Detail"  title="Unrelease Transferred Girvi Detail" class="marginTop5"/>
+                                                    </a>
+                                                </div>
+<!--                                                <div id="transGirviDeleteButDiv">
+                                                    <img src="<?php echo $documentRoot; ?>/images/delete16.png" width="13px" alt="" style="cursor: pointer;" 
+                                                         onclick="javascript:unreleaseTransGirvi('<?php echo "$gId"; ?>', 'mLender', '<?php echo $gTransGirviId; ?>', '<?php echo $prinType; ?>', '<?php echo $upPanelName; ?>');" />
+                                                </div>-->
+                                            </td>
+                                        <?php } ?>
+                                        </tr>
+                                        <?php
+                                        $gCounter++;
+                                    }
+                                    ?>
+                                    <tr align="right" class="om_header">
+                                        <?php if ($totTransPrin != 0) { ?>
+
+                                            <td align="left" class="h5 heightPX15 bold border-color-grey-rb paddingLeft5" >
+                                                Total
+                                            </td>
+                                            <td align="right"  class="h5 heightPX15 bold border-color-grey-rb paddingLeft5" >
+                                                <div class="spaceRight5"><?php echo formatInIndianStyle($totTransPrin); ?></div>
+                                            </td>
+                                            <td colspan="6" class="h5 heightPX15 bold border-color-grey-b">&nbsp;
+                                            </td>
+
+                                        <?php } ?>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td align = "left" valign="top" width="50%" class="paddingLeft5 paddingRight2">
+                            <?php
+                            if ($selMlName != '' && $selMlName != NULL && $selMlName != 'TR ML') {
+                                if ($selFirmId != NULL || $selFirmId != '') {
+                                    $qSelAllRelGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Released') and gtrans_exist_firm_id IN ($selFirmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan WHERE ml_lender_fname='$selMlName') and gtrans_rel_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+                                } else {
+                                    $qSelAllRelGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Released') and gtrans_exist_firm_id IN ($strGFirmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan WHERE ml_lender_fname='$selMlName') and gtrans_rel_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc ";
+                                }
+                            } else {
+                                $qSelAllRelGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_upd_sts IN ('Released') and gtrans_exist_firm_id IN ($strGFirmId) and  gtrans_trans_loan_id IN(SELECT ml_id FROM ml_loan) and gtrans_rel_sts IN ('UNSETTLED') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc ";
+                            }
+//                            $qSelAllRelGirvi = "SELECT * FROM girvi_transfer where gtrans_own_id='$_SESSION[sessionOwnerId]' and gtrans_exist_firm_id IN ($strFrmId) and gtrans_trans_loan_id IS NULL and gtrans_firm_id IN ($strGFirmId) and gtrans_upd_sts IN ('released') order by STR_TO_DATE(gtrans_DOB,'%d %b %Y') desc, gtrans_serial_num desc";
+                            $resAllRelGirvi = mysqli_query($conn,$qSelAllRelGirvi);
+                            $totalGirviCheck = mysqli_num_rows($resAllRelGirvi);
+                            ?>
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <?php if ($totalGirviCheck <= 0) { ?>
+                                    <tr><td>
+                                            <div class="spaceLeft100 paddingTop5"><div class="h7"> ~Released transferred Girvi List is empty. ~ </div></div>
+                                        </td>
+                                    <tr>
+                                    <?php } ?>
+                                    <?php
+                                    $totTransRelPrin = 0;
+                                    $totGTransRelInt = 0;
+                                    $totGTransInt = 0;
+                                    $totGTransAmt = 0;
+                                    $counter = 0;
+                                    $gRCounter = 0;
+                                    while ($rowAllGirvi = mysqli_fetch_array($resAllRelGirvi, MYSQLI_ASSOC)) {
+
+                                        $gId = $rowAllGirvi['gtrans_id'];
+                                        $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                        $gTransFirmType = $rowAllGirvi['gtrans_firm_type'];
+                                        $custId = $rowAllGirvi['gtrans_cust_id'];
+                                        $gFirmId = $rowAllGirvi['gtrans_firm_id'];
+                                        $girviDOB = $rowAllGirvi['gtrans_DOB'];
+                                        $gMainPrinAmt = $rowAllGirvi['gtrans_prin_amt'];
+                                        $gMainInt = $rowAllGirvi['gtrans_paid_int'];
+                                        $gTotalAmt = $rowAllGirvi['gtrans_paid_amt'];
+                                        $girviDOR = $rowAllGirvi['gtrans_DOR'];
+                                        $girviTransferLoanId = $rowAllGirvi['gtrans_trans_loan_id'];
+                                        $globalGTransSerailNum = $rowAllGirvi['global_gt_serial_num'];
+
+                                        if ($girviTransferLoanId != '') {
+                                            $selAllTransGirvi = "SELECT ml_pre_serial_num,ml_serial_num FROM ml_loan WHERE ml_id='$girviTransferLoanId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+                                            $resAllTransGirvi = mysqli_query($conn,$selAllTransGirvi);
+                                            $rowAllTransGirvi = mysqli_fetch_array($resAllTransGirvi, MYSQLI_ASSOC);
+                                            $gPreSerialNo = $rowAllTransGirvi['ml_pre_serial_num'];
+                                            $gSerialNo = $rowAllTransGirvi['ml_serial_num'];
+                                        } else {
+                                            $gPreSerialNo = $rowAllGirvi['gtrans_pre_serial_num'];
+                                            $gSerialNo = $rowAllGirvi['gtrans_serial_num'];
+                                        }
+
+                                        $girviTransStatus = $rowAllGirvi['gtrans_upd_sts'];
+                                        $prinType = $rowAllGirvi['gtrans_prin_typ'];
+                                        if ($prinType == 'MainPrin' || $prinType == null) {
+                                            $prinType = 'PRN';
+                                            $prinTitle = "Main Principle";
+                                            $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                        } else {
+                                            $prinType = 'APRN';
+                                            $prinTitle = "Additional Principle";
+                                            $gTransGirviId = $rowAllGirvi['gtrans_girvi_id'];
+                                        }
+                                        $totTransRelPrin += $gMainPrinAmt;
+                                        $totGTransRelInt += $gMainInt;
+                                        $totGTransRelAmt += $gTotalAmt;
+                                        $qSelFirm = "SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' and firm_id='$gFirmId'";
+                                        $resFirm = mysqli_query($conn,$qSelFirm);
+                                        $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+                                        $gFirmName = $rowFirm['firm_name'];
+                                        $selFatherName = "SELECT user_father_name,user_fname,user_lname,user_city FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+                                        $resFatherName = mysqli_query($conn,$selFatherName);
+                                        $rowFatherName = mysqli_fetch_array($resFatherName, MYSQLI_ASSOC);
+                                        $gCustName = $rowFatherName['user_fname'] . ' ' . $rowFatherName['user_lname'];
+                                        $fatherName = $rowFatherName['user_father_name'];
+                                        if ($fatherName[0] == 'S' || $fatherName[0] == 's') {
+                                            $fatherName = 'W/o  ' . substr($fatherName, 1);
+                                        } else {
+                                            $fatherName = 'S/o  ' . substr($fatherName, 1);
+                                        }
+                                        $gCustCity = om_strtoupper($rowFatherName['user_city']);
+//---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+                                        $qSelCustInfo = "SELECT girv_cust_fname,girv_cust_lname,girv_cust_city,girv_firm_id FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_id = '$gTransGirviId'";
+                                        $resCustInfo = mysqli_query($conn,$qSelCustInfo);
+                                        $rowCustInfo = mysqli_fetch_array($resCustInfo);
+                                        $girviFirmId = $rowCustInfo['girv_firm_id'];
+
+                                        $qSelFirm = "SELECT firm_name FROM firm where firm_id='$girviFirmId' and firm_own_id='$_SESSION[sessionOwnerId]'";
+                                        $resFirm = mysqli_query($conn,$qSelFirm);
+                                        $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+                                        $girviFirmName = $rowFirm['firm_name'];
+                                        if ($gTransFirmType == 'MoneyLender') {
+//---------------------------------- Start code for change data from customer table and supplier to user table Author@:SANT15JAN16---------------------------------------------------------------->                                                    
+                                            $selMlCode = "SELECT user_unique_code FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id IN(SELECT ml_lender_id FROM ml_loan WHERE ml_id='$girviTransferLoanId' and ml_own_id='$_SESSION[sessionOwnerId]')";
+                                            $resMlCode = mysqli_query($conn,$selMlCode);
+                                            $rowMlCode = mysqli_fetch_array($resMlCode, MYSQLI_ASSOC);
+                                        }
+                                        if ($rowAllGirvi['gtrans_DOR'] != '')
+                                            $releaseDate = date('d M y', strtotime($rowAllGirvi['gtrans_DOR']));
+
+                                        $allGTransId = $allGTransId . ',' . $gId;
+                                        ?>
+                                        <?php if ($counter == 0) { ?>
+                                        <tr align="right" class="om_header">
+                                            <td align="left" width="60px" class ="itemAddPnLabels12 border-right-bottom"> 
+                                                S.NO.
+                                            </td>
+                                            <td align="right" width="100px" class ="itemAddPnLabels12 border-right-bottom">
+                                                PRIN. AMT. 
+                                            </td>
+                                            <td align="right" width="300px" class ="itemAddPnLabels12 border-right-bottom">
+                                                INT. AMT. 
+                                            </td>
+        <!--                                            <td align="right" width="80px" class ="itemAddPnLabels12 border-right-bottom">
+                                                TOT. AMT. 
+                                            </td>-->
+                                            <td align="center" width="450px" class ="itemAddPnLabels12 border-right-bottom">
+                                                C.NAME
+                                            </td>
+                                            <td align="left" width="150px" class ="itemAddPnLabels12 border-right-bottom">
+                                                CITY
+                                            </td>
+                                            <td align="left" width="70px" class="itemAddPnLabels12 border-right-bottom">
+                                                TFIRM
+                                            </td>
+                                            <td align="right" width="650px" class ="itemAddPnLabels12 border-right-bottom">
+                                                <div class="spaceRight4"> S.DT</div>
+                                            </td>
+                                            <td align="right" class="itemAddPnLabels12 border-right-bottom" width="650px">
+                                                <div class="spaceRight4"> R.DT</div>
+                                            </td>
+<!--                                            <td align="right" class="itemAddPnLabels12 border-bottom" width="22px">
+                                                <div class="spaceRight4">DEL</div>
+                                            </td>-->
+                                        </tr>
+                                    <?php } $counter++; ?>
+                                    <tr>
+                                        <td align="left" class="border-color-grey-rb" width="60px">
+                                            <input type="submit" name="sNo" id="sNo" title="Single Click To View Girvi / Double Click To Select Girvi"
+                                                   ondblclick="searchTransGirviByGirviId('<?php echo $custId; ?>', '<?php echo $gTransGirviId; ?>', 'mlLoanDetailsNavi');"
+                                                   onclick="getGirviInfoPopUp(<?php echo $custId; ?>,<?php echo $gTransGirviId; ?>, '<?php echo $documentRootBSlash; ?>')"
+                                                   value="<?php echo $gPreSerialNo . $gSerialNo; ?>" class="frm-btn-lnk-arial-Normal" readonly="true"/><!--Class Changed @Author:PRIYA26AUG13-->
+                                            <input type="hidden" name="girviId<?php echo $gRCounter; ?>" id="girviId<?php echo $gRCounter; ?>" value="<?php echo $gTransGirviId; ?>"/>
+                                        </td>
+                                    <div id="display_girvi_info_popup" class="girvi_info_popup_trans_list"></div>
+                                    <td align="right" class="border-color-grey-rb" width="100px">
+                                        <div class="h5 spaceRight4"><?php echo formatInIndianStyle($gMainPrinAmt); ?></div>
+                                    </td>
+                                    <td align="right" title="Total Interest Amount of This Page!" class="border-color-grey-rb" width="300px">
+                                        <div class="h5 spaceRight4"><?php echo formatInIndianStyle($gMainInt); ?></div>
+                                    </td>
+    <!--                                    <td align="right" title="Total Amount of This Page!" class="border-color-grey-rb" width="80px">
+                                        <div class="spaceRight4"><?php echo formatInIndianStyle($totGTransRelAmt); ?></div>
+                                    </td>-->
+                                    <td align="left" class="border-color-grey-rb" title="<?php echo $gCustName . ' ' . $fatherName; ?>" width="450px">
+                                        <div class="h5 spaceRight4"><?php echo substr($gCustName, 0, 5); ?></div>
+                                    </td>
+                                    <td align="left" class ="border-color-grey-rb" title="<?php echo $gCustCity; ?>" width="150px">
+                                        <div class="h5 spaceLeft4"><?php echo substr($gCustCity, 0, 5); ?></div>
+                                    </td>
+                                    <?php if ($gTransFirmType == 'MoneyLender') { ?>
+                                        <td align="left" class ="border-right-bottom border-color-grey-rb" width="70px">
+                                            <div class="h5 spaceLeft4"><?php echo $rowMlCode['user_unique_code']; ?></div>
+<!--------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->                                                   
+                                        </td>
+                                    <?php } else { ?>
+                                        <td align="left" class ="border-right-bottom border-color-grey-rb" width="70px">
+                                            <div class="h5 spaceLeft4"><?php echo $gFirmName; ?></div>
+                                        </td>
+                                    <?php } ?>
+                                    <td align="right" width="750px" class ="border-right-bottom border-color-grey-rb" <?php if ($releaseDate != '') { ?>title="RELEASE DATE : <?php echo om_strtoupper($releaseDate); ?>"<?php } ?>>
+                                        <div class="h5 spaceRight4"><?php echo om_strtoupper(date('d  M  y', strtotime($girviDOB))); ?></div>
+                                    </td>
+                                    <td align="right" width="750px" class="border-right-bottom border-color-grey-rb" <?php if ($releaseDate != '') { ?>title="RELEASE DATE : <?php echo om_strtoupper($releaseDate); ?>"<?php } ?>>
+                                        <div class="h5 spaceRight4">  <?php
+                                            if ($girviDOB != '')
+                                                echo om_strtoupper(date('d  M  y', strtotime($girviDOB)));
+                                            else
+                                                echo '-';
+                                            ?></div>
+                                    </td>
+                                    <?php if ($staffId && $array['delTransLoan'] == 'false') { ?>
+                                    <?php } else { ?>
+<!--                                        <td align="center" width="22px" class="border-color-grey-b paddingTop1 noPrint" valign="middle">
+                                            <div id="transGirviDeleteButDiv">
+                                                <img src="<?php echo $documentRoot; ?>/images/delete16.png" width="13px" alt="" style="cursor: pointer;"  title="click here to unsettle loan"
+                                                     onclick="javascript:unreleaseTransGirvi('<?php echo "$gId"; ?>', '', '<?php echo $gTransGirviId; ?>', '<?php echo $prinType; ?>', '<?php echo $upPanelName; ?>');" />
+                                            </div>
+                                        </td>-->
+                                    <?php } ?>
+
+                        </tr>
+                        <?php
+                        $gRCounter++;
+                    }
+                    ?>
+                    <tr class="om_header">
+                        <?php if ($totTransRelPrin != 0) { ?>
+                            <td align="left"  class="h5 heightPX15 bold border-color-grey-rb paddingLeft5" >
+                                Total
+                            </td>
+                            <td align="right"  class="h5 heightPX15 bold border-color-grey-rb paddingLeft5" >
+                                <div class="spaceRight5"><?php echo formatInIndianStyle($totTransRelPrin); ?></div>
+                            </td>
+                            <td align="right"  class="h5 heightPX15 bold border-color-grey-rb paddingLeft5" >
+                                <div class="spaceRight5"><?php echo formatInIndianStyle($totGTransRelInt); ?></div>
+                            </td>
+                            <td colspan="6" class="heightPX15 border-color-grey-b">&nbsp;
+                            </td>
+                        <?php } ?>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+    <?php
+    if ($totTransPrin != 0 || $totTransRelPrin != 0) {
+        $totTransRelAmt = $totTransRelPrin + $totGTransRelInt;
+        $totTransAmt = $totTransPrin + $totGTransInt;
+        $totBal = $totTransAmt - $totTransRelAmt;
+    }
+    ?>
+</table>
+</div>
+</td>
+</tr>
+
+
+<tr>
+    <td class="hrGrey"></td>
+</tr>
+
+<tr>
+    <td>
+        &nbsp;
+    </td>
+</tr>
+<?php
+if ($totTransPrin != 0 || $totTransRelPrin != 0 || $totGTransRelInt != 0) {
+    if ($totBal > 0) {
+        $class = "greenFont";
+    } else {
+        $class = "redFont";
+    }
+    ?>
+    <tr>
+        <?php include 'orgplsdtl.php'; ?>
+    </tr>
+    <tr>
+        <td class="hrGrey"></td>
+    </tr> 
+<?php } if ($totBal != 0) { ?>
+    <div id="loanSettleDiv">
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <?php include 'orgplnstl.php'; ?>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="hrGrey"></td>
+        </tr> 
+    </div>
+<?php } ?>
+</table>

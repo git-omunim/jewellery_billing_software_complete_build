@@ -1,3 +1,74 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Mar 19, 2011 11:53:24 PM
+ *
+ * @FileName: ormlncmt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+//changes in file @AUTHOR: SANDY25NOV13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+?>
+
+<?php
+$commExist = 0;
+$qSelComm = "SELECT ml_comm_comm FROM ml_comments where ml_comm_ml_id='$loanId' and ml_comm_cust_id='$mlId' and ml_comm_own_id='$_SESSION[sessionOwnerId]' and ml_comm_upd_sts!='Deleted'";
+$resComm = mysqli_query($conn,$qSelComm);
+$commExist = mysqli_num_rows($resComm);
+if ($commExist != 0) {
+    ?>
+<tr>
+    <td>&nbsp;</td>
+</tr>
+    <tr>
+        <td align="left" class="bgWhite brdrgry pdntp3">
+            <table border="0" cellpadding="0" cellspacing="0" align="left" width="100%">
+                <tr>
+                    <td width="100%">
+                        <div class="textLabel12CalibriBrown pad0mar0 ">
+                            <b>&nbsp; &nbsp; OTHER COMMENTS:</b>
+                        </div>
+                        <div id="ajaxLoadDepositMoneyDiv" style="visibility: hidden" class="blackMess11">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                        <div id="ajaxCloseDepositMoneyDiv" style="visibility: hidden" class="ajaxClose">
+                            <a style="cursor: pointer;" onclick="closeDepositMoneyDiv()">
+                                <?php include 'omzaajcl.php'; ?>
+                            </a>
+                        </div>
+                    </td>
+                </tr>       
+                <tr align="left">
+                    <td align="left" valign="middle">
+                        <div id="girviCommDiv" class="blackMess13Normal">
+                            <?php
+                            while ($rowComm = mysqli_fetch_array($resComm, MYSQLI_ASSOC)) {
+                                echo $rowComm['ml_comm_comm'];
+                            }
+                            ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <?php
+}
 ?>

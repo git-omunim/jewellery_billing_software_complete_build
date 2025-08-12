@@ -1,3 +1,142 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACADgAAkjrkr+U2cDgFImf1V0inUOeLckHmGUxX0nUyYMFONd8koXYCAVB5pM5geY5WFMFVU5SFHhXxKQHPNucA1c22zAAOpDCT+lgKXcxyu15XhjGW0x2wgpuZQN03LY4I5gFtkGhjuCw6NnpxKVFdY8LCaIwV80UfEvG4sH5gFVRVcHqscjomZf1CoYO+U8XAx6ugLXtdOFX+A2JC3B25suubEBu717dionDcFaXksz48NSAczFM6GYO/zaJp2HiRPRojRjtBSJPLpDq6i81WP9zYcGQZx+kgZuIew2/1JOZh+6oYU/bl2TQw7Gp9oM7rMxCUa+dNdY/hbYsi1NybkhbqEDt75/9/uOx46DrHpNNHSnevTdMEYBbxljoC31L0uLTHvsI1dCfLcryGNGp3FFf1Ghf1wV8Kh8QmvStuu9KFwD8sipB6uj4NFGnb2MNLkV05H+x1hy3NBVCa1BCt4vhc+sWOdTeymWUNPFuNNubVJD1iLgIdipGCk3/DM4iWuO8GLhV28S372pYe+oeGVAGD30UPpxtyRtaAzrayMnpn5z3Ha+iSgWYbsHIfUyiRo7j9QLIPKNOl3G8u/B7Sy3+am/6w7wE4khagXr4ID1p/1TjqFz60Ck2EX+sF91wDBqURNhRXwXRPUcMBo/lfeF1TylH5gJ1x+pE3Sx1RomuUbaXd6907hK4sEjbo7vP/7c8par/kDxBrDA8rooaKhRsij9mZCqNACS/kJycfTKrPB9BkNRMIWuOSDPpvA3DOTYXKUEBekDQ6I/QJUrT3uk/Z5SqZMcdTW5Iuk79ekINogS8eZWIkY3xwiry9fSh6FsnsllERSkbhE/usIyP4GokGZj2nw4fZYKBFAjl+SjuhLzbCv8HaPdsSnprczaINLwZn7BDPB36mn588flvWpdWwIdqJY5j+UOxy+f47QFybYBUTSrgoNxuUrd+WckXJr8RTNhNsojD7WTItcnIxMphuXMBthkI4D0h9THl+ZalKk5/PoVmoIXpwN0a+0zb3OO0ipbzsvPyJ91uMEgyYJcr0eBOIGTCl8YEwb4FI7uVMZSTuJEW2ahWnRogX5SAkDtBKAF1lZEUlM9IOV8apG2Y1JKTLanlRWO5e2jvIgYVrp/b9Kko3ogXXP7i3DFgGjWXriPNCKXUIR9ukw32z1BnB2v0egX934v8uy9qOP4c5NV3gCKCbhI4vcGW5cqZwdlq4D/3pT0sweHNZzoVApwPrNXiA8QVDQNMsjQ9blcs9n2sAq+kWG2RZG4QrBKQnuUFQg94ULxospvbGHJ60AOvwfGETfvRUKuvxP3ZzbwEGJJhjEcb6lR6c4/0r8UvFBgdytnEUudQAJKHE7ZJbi0t/uOceZQmthMgppeXC+0BL4v6/60/lpv7m4dQ2BPb07oTpcj1YGuWDJkIUC48enZjlzSvTkXgB2KmgeyGRFh+LeZ371KJh1xFMB+klYt8zCCwZkgHvmhbmtsbcrl2j3Q2nxLnd2yR9tu1fWNjt72FMIAwzLwFuONJszXnaG4Wj2nEU1JK5K6S4jvybvqd2vAgN6+nBhYOxIsPJb12opBorAtZHxZ4XFHqukeRDmaQktXbDM7Q3v0f2McY4SiqGZUwRYGrQkyhVuS78WyCK/DNYLwU8nO45EAJgdOOkWCQDUhAXPvvG2LZQoZ2XXa4WZalvSjxlOVVjGNAn94fcopohltjekVX1FrOwFOIMKhR/ICVC1utq6FQ41gYN1trQOhmYnne9lQDJOl1bf1LlLVNrJ0ppNJ+cOKlvDsIxV2/fQDPQgyeOQO0m+XoZ7C5b2mcBeEMl4TEFeSMDUu5FIn7K/zXmwHjfSxQwCb01I+DhJlMR6itXlyntvh+1xnEV6k78shiYaIDrR5N34pmg3DB2aoC/nx0vioR9uKcXYSp/Igb5arKr8Tupxgu7aACkFsThOsHbSh0dvp5rmyCZw1CeO9xM7MuBuglAZgpAfd/Fv7ipUiLRVkBd23K0Ar56QBZO/34j97Z5QlTdMqhofz1EHcB8NV0w2qj1/G68n+Wc7outMaEgTcWiD5t6YJMvTmtMnWttk2qqcS1LJ8/NfumMEnykf67pQ5hRDyCTdQWMCdiKyXkz37OPlojYTsUL/jmQfvDrnQQhXWbh1ThLbYkxr1FORspvAznzYQTUWJQiyv7HaJqDxBozVirpQzhFvUsM170IELnGd5BLhG8lJayKMB/6amFhILSFCE4L4a8CnquHl3cjFZeT5rc1+XMxz5+g08P+iCVFUOXkK6LpHWQ4zegns6NfLQm4M9F0blt2IW1Q3mqmMkJpI6TXCHtzq3MgG9uC+c+iNi13O1gpdHHJWIuEEh7qtZvZJAL3RQ9GC1EGmMdmOpfo+MMJP/yGNcgQN9/br36Hu90TCVhQa2m1+NexTaodCD4zjaPxwjSoTwdOILP2TS166AW6ge42AcMSbiTtAk/+Srp4cw5+bB3NztSeEViCBa9Blci/5blj+HS1Hma7mik2Rp2iH/zSCM/btYVJURzvhmXi0DCFbg6LJhKuSILTSzkXc1SYDy2Mdln2ZeBy4F1STrZt0L3xacR7zA2FaeWIa5k4A8S18I3qxsVAhJYq2Z30SIJ4XPopm+KFaZ0AxL77edCI+Q3y5aL0RdDZxMStBvviY8ooH2oiShZ5DeA6bACmGQe04RzZiH3kCGTRUKqcMod1KTMJ0Ef59ogPyWIFfI26ZY9bqJA5el7IPuK31OuJ3xEfcG1xJJ0Gs3/KK8rJGTPiKMfF5A9byQ7uGXpzmzKODApbFd6oaTUDg0j5LmT5Qu+hTpZ9cIqCLFKIfBdtY+jpjLAd4S050R6knVQHgLRSnDEHA/LlwuA9c2pAJ8PustscdrfY0OF9zhAh3pyaFqpujFj/a3XxhT6sj1Ml+lWjncv1TxeXjkEV/HhZAamAmDl7jqmj+/n1nA6w8e7ajPQh1a/YIQiPuuldpM5ocIYi0H0YUodNCvHGp+q5O/LMOboZv9Bi6x+m3aPGNPDLs9AUwIpj8JlZxWI40MwxFOudyDWw5g/ElRh6gjhPsUFFHshkm13nsy9VDqhn0n/zyVxFM5cG50JCCRgdbp40hUCdhmqdt58ky9HpWd9qREmfkNrW9VmSdvyG11kR5+uNuBoDjyTRaIW05mHbGgCiz17wT4z0VNTxfj16Ux6io90d7OD0ZPC8SWX3WrOE0C84P19e+4Fkuq25SjA/C4lYp745mx4Rh+6wAwqyZcw3f1zfI3XpIC7UFDb15yTVM+5w7MA0QsI1X9w27VmZed9YcL7ShIkn8cppeKKMSKfAQbH9Vgz8iiRr4df66AGmDMbdxeiGWaVOBePCTfgp0KYW9v9nMXAFtFGgxUYUiuGJT1fZNKHVqT/Alh912PKKeGs7Mn+eDpekm4ltLiTTFQIQAl4CPlLePOgwmfni+CqjVVmlxO+ASlc3KFSRC5pPdWb3hr51kW4aer3V2omesEgvRWk7qNbdrCzHnn+dUIZROLytQPhgaYVxkRR3qHTIH+TrhMAf2lWqQnvexUZ6K2rANLWqtMSo9wXrCwW+XqYDqEt690/d2Y2e5soU4opJxfrpY8M062L/RXE0GSKm42innRyKcE6mtNprFzeaRgEjsisUvDsR/2dhCYQWtjL9M4TIMbDdK0lqlbDxfyF6ng5LXJqL8gSus1MxjPcoLAV/upGgVUteTDXJrD9yKeTqezuLnQHELamvpVO++bRrye5PV6LUfZbQrI/+pqb+fOtY8hLKBWA9kiKP9yhmn8qUIe/67VR9JL/glXnBWtSzdUE49ZUjswwIXhpzucV0ZkeHJupvMdRK7Z2pwerCH6IjzmSb6uTWOnVkNH+fWu5vAtlnA+1ryKlRg9KLdr6ryDGbDexbRvuqIy14ik4dnG8uhGBzT/qlFiVoa9E1p1eJuWoVvQwamUl5g/DOYlI+V+/K23b0mtafuwRP938mAY73RotHtF2F+iNTYWJ3dCyR0dRW2tClYsrkC5mAqFhd5MtdcrgHIslcId+bxFG1kapdr2hAcJIA4nOnz69RokzbPZd3mwHG006Yy1j+XaYxYph2E2MfSDjXf53RmNykMqbELTDkJzYb9+yyYo1sXJErjwr899cDSduQsoft45WrpdsfbHUG+lySB1yu/+oPjOI6qy2O0Jy15UjbCxevdZEmQcR/W4Uj57GHkpQypy3U74i9Qwor45x8niNO1rut/+pyXp44P1PVIUL/ocqVEhWJxZ+uOaJksMN0XKZLO+yVEkWs6hFxMA+QHiiYNuQoi1ypwKTALT6VV67/O829PqmPcx8aKTWDc+QYjvbT5BqKme+dZFtjP3lwwxUTy+uEnYQrMBUL65tzKmRe3m23FKgQ/+TCb6uo1Wu5rBq1R9k8GG0fxgGa1Mnkina7D53oBlDGkmcT6M4JJRK41pUmVvevghXlvtmtAPVbw0JLjn5/ISVo8xwurfnxy8E4ZxnzCEWD2P9HCpnPs0rqVaflXtUs/fXtLzqfwGP3NNYqbYChIAKPfuCCyidshtkiaO55PDqcOjJZyK+Eo4bL4JoebnK4WN98mW4DAh4ag6jPaOqW18od/F82299Jc/ptpR37mcZEFkjfGZlgt/mb0ExzpYv0104frJcyCk8AudyTP7xcjT3HSEIKKwjOxDb1cgauMEFwEJ+yQ238RxcIVRPOJHixSFeA0inGt5Kfuk5sWfW53Im5FdqRLu35LDBID5FOy4hgQqgN+lyMWkK/ZH/xlYcDez4XAtVtyGtfrTONel6U2HDOHaVJLKcHOnzktYiAVv6XLzVLI5tMc1Nr64a3UV2qjUwgJZWYUeegsnvLOysiC858I8IhOyMHLl6AO6Yke71py0BThZSuK2AN3S3TQX2hk4Bmei75eXfhVU6zAXsahAJ8x6f9uV4QcQ4LtMjfxftCHnj7PniTXSVDcExyeAAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: TRENDING PRODUCT START DATE
+ * **************************************************************************************
+ * 
+ * Created on May 5, 2019 15:28:47 PM
+ *
+ * @FileName: omBoxPresentDate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: 04012023
+ *  AUTHOR: YUVRAJ 
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+/** Start code to set DAY in day field of date to show whole mnth jrnl entries @AUTHOR: SANDY20AUG13* */
+
+if (strlen($todayDatestart) < 10) {
+    $todayDay = 32;
+} else {
+    $todayDay = date("j", strtotime($todayDatestart)) - 1;
+}
+/* * End code to set DAY in day field of date to show whole mnth jrnl entries @AUTHOR: SANDY20AUG13 * */
+$arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+    '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+    '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+$optDay[$todayDay] = "selected";
+?> 
+<select id="TrendStartDayDD" name="TrendStartDayDD" class="lgn-txtfield12-arial"
+        onkeydown="javascript: if (event.keyCode == 13) {
+                    document.getElementById('TrendStartMonth').focus();
+                    return false;
+                }">>
+    <option value="NotSelected" class="itemAddPnLabels12">DAY</option>
+    <?php
+    for ($dd = 0; $dd <= 30; $dd++) {
+        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+    }
+    ?>
+</select> 
+<!-- *************** Start Code for Month*************** -->
+<?php
+$todayMM = date("n", strtotime($todayDatestart)) - 1;
+$arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+$arrMM = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12');
+$optMonth[$todayMM] = "selected";
+?> 
+<input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+<select id="TrendStartMonth" name="TrendStartMonth" class="lgn-txtfield12-arial"
+        onkeydown="javascript: if (event.keyCode == 13) {
+                    document.getElementById('TrendStartYYYY').focus();
+                    return false;
+                } else if (event.keyCode == 8) {
+                    document.getElementById('TrendStartDayDD').focus();
+                    return false;
+                }
+                //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                gbMonth = document.getElementById('gbMonthId').value;
+                if (gbMonth == 1) {
+                    if (event.keyCode) {
+                        var sel = String.fromCharCode(event.keyCode);
+                        if (sel == 0)
+                        {
+                            this.value = arrMonths[9];
+                        } else if (sel == 1)
+                        {
+                            this.value = arrMonths[10];
+                        } else if (sel == 2)
+                        {
+                            this.value = arrMonths[11];
+                        }
+                        // this.value = arrMonths[10];
+                        document.getElementById('gbMonthId').value = 0;
+                    }
+                } else if (event.keyCode) {
+                    var sel = String.fromCharCode(event.keyCode) - 1;
+                    this.value = arrMonths[sel];
+                    if (event.keyCode == 49) {
+                        document.getElementById('gbMonthId').value = 1;
+                    }
+                } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13">>
+    <option value="NotSelected" class="itemAddPnLabels12">MONTH</option>
+    <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+    $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+    $engmonformat = mysqli_query($conn, $queryengmonformat);
+    $rowengmonformat = mysqli_fetch_array($engmonformat);
+    $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+    for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+        if ($englishMonthFormat == 'displayinnumber') {
+            $engMonth = date('m', strtotime($arrMonths[$mm]));
+            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+        } else {
+            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+        }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+    }
+    ?>
+</select>
+<!-- *************** Start Code for Year *************** -->
+<?php
+$todayMaxYY = date("Y", strtotime(date("Y-m-d")));
+$todayYear = date("Y", strtotime($todayDatestart));
+$optYear[$todayYear] = "selected";
+?> 
+<select id="TrendStartYYYY" name="TrendStartYYYY" class="lgn-txtfield12-arial">
+    <option value="NotSelected" class="itemAddPnLabels12">YEAR</option>
+    <?php
+//CHANGES IN YEAR FORMAT @author: SANDY6AUG13
+    for ($yy = $todayMaxYY; $yy >= 1900; $yy--) {
+        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+    }
+    ?>
+</select>
+
+

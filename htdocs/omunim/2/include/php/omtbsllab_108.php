@@ -1,3 +1,46 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 3 Jan, 2020 2:47:05 PM
+ *
+ * @FileName: omtbsllab_108.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+require_once 'system/omssopin.php';
+
+$qSel = "SELECT label_field_name FROM labels where label_own_id='$_SESSION[sessionOwnerId]' and label_field_name = 'otherInfo'";
+$res = mysqli_query($conn, $qSel);
+$row = mysqli_num_rows($res);
+$labelType = 'SellPurchase';
+if ($row == 0) {
+    $qInsert = "INSERT INTO LABELS
+            (label_own_id, label_type, label_field_name, label_field_content,label_field_font_size,label_field_font_color,label_field_check) VALUES
+            ('$_SESSION[sessionOwnerId]','$labelType','otherInfo','','14','black','true'),
+            ('$_SESSION[sessionOwnerId]','$labelType','otherInfoLb','OTHER INFO','14','black','true'),
+            ('$_SESSION[sessionOwnerId]','$labelType','totalAmtBeforeDisc','','14','black','true'),
+            ('$_SESSION[sessionOwnerId]','$labelType','totalAmtBeforeDiscLb','TOT AMT BEFORE DISC','14','black','true'),
+            ('$_SESSION[sessionOwnerId]','$labelType','totalDiscount','','14','black','true'),
+            ('$_SESSION[sessionOwnerId]','$labelType','totalDiscountLb','TOTAL DISC AMT','14','black','true')";
+    if (!mysqli_query($conn, $qInsert)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
 ?>

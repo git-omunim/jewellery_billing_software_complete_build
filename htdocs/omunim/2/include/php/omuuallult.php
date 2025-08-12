@@ -1,3 +1,171 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: All Udhaar List
+ * **************************************************************************************
+ *
+ * Created on 19 Jan, 2018 03:17:57 PM
+ *
+ * @FileName: omuuallult.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMREVO
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<div id="girviPanelTrId"></div>
+<div id="allUdhaarListDiv">
+    <div id="udhharListDiv">
+        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+            <tr>
+                <td align="left" colspan="14">
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                        <tr>
+                            <td valign="middle" align="left">
+                                <div class="main_link_orange">ALL UDHAAR LIST
+                                    <input type="hidden" id="documentRootPath" name="documentRootPath" value="<?php echo $documentRootBSlash; ?>" />  
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="center" valign="middle">
+                    <div id="messDisplayDiv"></div>
+                    <div class="analysis_div_rows main_link_red_12">
+                        <?php if ($showDiv == 'Settled') { ?>
+                            <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ This Transaction Is Settled, You Can Not Delete This Transaction ~ </div>
+                        <?php } ?>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <?php
+        //Start Code to add Datatable Implementation @AUTHOR:PRIYANKA-23JUNE17
+        /*         * ********* Start Code To GET Firm Details ********* */
+        if (isset($_GET['selFirmId'])) {
+            $selFirmId = $_GET['selFirmId'];
+        } else {
+            //if not selected assign session firm @AUTHOR: SANDY10JUL13
+            $selFirmId = $_SESSION['setFirmSession'];
+        }
+        if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+            $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+        } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+            $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+        }
+        if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+            $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+            $strFrmId = '0';
+            //Set String for Public Firms
+            while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                $strFrmId = $strFrmId . ",";
+                $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+            }
+        } else {
+            $strFrmId = $selFirmId;
+        }
+        //parse_str(getTableValues("SELECT utin_user_id FROM user_transaction_invoice WHERE utin_id='$utinId'"));
+        // $u_user_id  = $utin_user_id;
+        /*         * ********* End Code To GET Firm Details ********* */
+        //Data Table Main Columns
+        include 'omdatatablesUnset.php';
+        //
+        $dataTableColumnsFields = array(
+            array('dt' => 'S.No.'),
+            array('dt' => 'DATE'),
+            array('dt' => 'USER TYPE'),
+            array('dt' => 'CUST. NAME'),
+            array('dt' => 'MOB NO.'),
+            array('dt' => 'CITY'),
+            array('dt' => 'UDH. TYPE'),
+            array('dt' => 'Trans Type'),
+            array('dt' => 'UDH. AMT'),
+            array('dt' => 'DEP. AMT'),
+            array('dt' => 'LFT. AMT'),
+            array('dt' => 'GOLD'),
+            array('dt' => 'SILVER')
+        );
+        //
+        $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+        // Table Parameters
+        $_SESSION['tableName'] = "user_transaction_invoice as u"; // Table Name
+        $_SESSION['tableNamePK'] = 'u.utin_id'; // Primary Key
+        // DB Table Columns Parameters 
+        $dbColumnsArray = array(
+            "CONCAT(u.utin_pre_invoice_no,' ',u.utin_invoice_no)",
+            "STR_TO_DATE(u.utin_date,'%d %b %Y')",
+            "t.user_type",
+            "CONCAT(COALESCE(t.user_fname, ''), ' ', COALESCE(t.user_lname, ''))",
+            "t.user_mobile",
+            "t.user_city",
+            "UPPER(u.utin_type)",
+            "UPPER(u.utin_transaction_type)",
+            "CAST(ifnull(u.utin_total_amt,0) AS DECIMAL(10,2))",
+            "IF((u.utin_total_amt_deposit='' || u.utin_total_amt_deposit IS NULL) ,0.00,CAST(u.utin_total_amt_deposit AS DECIMAL(10,2)))",
+            "CAST(ifnull(u.utin_cash_balance,0) AS DECIMAL(10,2))",
+            "CONCAT(u.utin_gd_due_wt, ' ', u.utin_gd_due_wt_typ)",
+            "CONCAT(u.utin_sl_due_wt, ' ', u.utin_sl_due_wt_typ)"
+        );
+        $_SESSION['dbColumnsArray'] = $dbColumnsArray;  // No Change
+        $_SESSION['dtSumColumn'] = '8,9,10';
+        $_SESSION['dtDeleteColumn'] = '';
+        $_SESSION['dtSortColumn'] = '1,0';
+        // Extra direct columns we need pass in SQL Query
+        $_SESSION['sqlQueryColumns'] = "u.utin_id,u.utin_user_id as 'u.utin_user_id',";
+        //
+        // On Click Function Parameters
+        $_SESSION['onclickColumnImage'] = "";
+        $_SESSION['onclickColumn'] = "CONCAT(u.utin_pre_invoice_no,' ',u.utin_invoice_no)"; // On which column
+        $_SESSION['onclickColumnId'] = "u.utin_id";
+        $_SESSION['onclickColumnValue'] = "u.utin_id";
+        $_SESSION['onclickColumnFunction'] = "showCustUdhaarDetails";
+        $_SESSION['onclickColumnFunctionPara1'] = "u.utin_id";
+        $_SESSION['onclickColumnFunctionPara2'] = "u.utin_user_id";
+        $_SESSION['onclickColumnFunctionPara3'] = "";
+        $_SESSION['onclickColumnFunctionPara4'] = "";
+        $_SESSION['onclickColumnFunctionPara5'] = "";
+        $_SESSION['onclickColumnFunctionPara6'] = "";
+        //
+        // Delete Function Parameters
+        $_SESSION['deleteColumn'] = "u.utin_id"; // On which column
+        $_SESSION['deleteColumnId'] = "u.utin_id";
+        $_SESSION['deleteColumnValue'] = "u.utin_id";
+        $_SESSION['deleteColumnFunction'] = "deleteCustUdhaarDetailsFromUdhaarPanel";
+        $_SESSION['deleteColumnFunctionPara1'] = "u.utin_user_id";
+        $_SESSION['deleteColumnFunctionPara2'] = "u.utin_id";
+        $_SESSION['deleteColumnFunctionPara3'] = "DeleteFromUdhaarAllDetails";
+        $_SESSION['deleteColumnFunctionPara4'] = "";
+        $_SESSION['deleteColumnFunctionPara5'] = "CONCAT(u.utin_pre_invoice_no,u.utin_invoice_no)";
+        $_SESSION['deleteColumnFunctionPara6'] = "u.utin_date";
+        $_SESSION['deleteColumnFunctionPara7'] = "u.utin_total_amt";
+        //
+        // Extra direct columns we need pass in SQL Query
+        $_SESSION['tableWhere'] = "u.utin_firm_id IN ($strFrmId) and "
+                . " u.utin_transaction_type IN ('UDHAAR','OnPurchase') "
+                . " AND u.utin_status NOT IN ('Deleted')";
+        // Table Joins
+        //
+    $_SESSION['tableJoin'] = " INNER JOIN firm AS f ON u.utin_firm_id=f.firm_id "
+                . "LEFT JOIN user AS t ON u.utin_user_id=t.user_id ";
+        //
+        // Data Table Main File
+        include 'omdatatables.php';
+        //END Code to add Datatable Implementation @AUTHOR:PRIYANKA-23JUNE17
+        ?>
+    </div>

@@ -1,3 +1,146 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 25-Mar-2020 4:15:55 pm
+ *
+ * @FileName: omPhpMailer.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if (!isset($_SESSION)) {
+    session_start();
+}
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//echo $_SERVER['DOCUMENT_ROOT'];
+//die;
+/* Exception class. */
+require $_SERVER['DOCUMENT_ROOT'] . '/plugin/PHPMailer/src/Exception.php';
+
+/* The main PHPMailer class. */
+require $_SERVER['DOCUMENT_ROOT'] . '/plugin/PHPMailer/src/PHPMailer.php';
+
+/* SMTP class, needed if you want to use SMTP. */
+require $_SERVER['DOCUMENT_ROOT'] . '/plugin/PHPMailer/src/SMTP.php';
+
+/* ... */
+/* Create a new PHPMailer object. Passing TRUE to the constructor enables exceptions. */
+$mail = new PHPMailer(TRUE);
+
+/* Open the try/catch block. */
+$custId = $_REQUEST['user_id'];
+try {
+//
+    parse_str(getTableValues("SELECT user_fname,user_lname,user_email,user_firm_id FROM user WHERE user_id='$custId'"));
+//
+    $emailToName = ucfirst($user_fname) . ' ' . ucfirst($user_lname);
+    $emailTo = $emailToName;
+    //
+//
+    parse_str(getTableValues("SELECT firm_long_name,firm_smtp_server,firm_smtp_email,firm_smtp_pass,firm_smtp_port,firm_smtp_cc_email FROM firm WHERE firm_id='$user_firm_id'"));
+//
+    $emailFromName = $firm_long_name;
+    $smtp_server = $firm_smtp_server;
+    /* SMTP parameters. */
+    $emailFrom = $firm_smtp_email;
+    $emailPassword = $firm_smtp_pass;
+    $smtpPort = $firm_smtp_port;
+    $ccEmail = $firm_smtp_cc_email;
+    //
+
+    parse_str(getTableValues("SELECT acit_subject,acit_desc FROM actionitem WHERE acit_category='LOAN'"));
+//    if ($emailSubject == '') {
+    $emailBody = "# Dear Customer,
+Your OTP for National Gold Loan is $otpCode. Please do not share this OTP.
+Regards,
+National Gold Loan
+nationalgoldloan.com";
+//     ;
+    $emailSubject = $acit_subject;
+  //
+    if ($user_email != '' && $smtp_server != '' && $emailFrom != '' && $emailPassword != '' && $emailBody != '') {
+        /* Tells PHPMailer to use SMTP. */
+        $mail->isSMTP();
+
+        /* SMTP server address. */
+        $mail->Host = $smtp_server;
+
+        /* Use SMTP authentication. */
+        $mail->SMTPAuth = TRUE;
+
+        /* Set the encryption system. */
+        $mail->SMTPSecure = 'tls';
+
+        /* SMTP authentication username. */
+        $mail->Username = $emailFrom;
+
+        /* SMTP authentication password. */
+        $mail->Password = $emailPassword;
+
+        /* Set the SMTP port. default 587 */
+        $mail->Port = $smtpPort;
+
+        if ($ccEmail != '')
+            $mail->AddCC($ccEmail);
+//
+        /* Set the mail sender. */
+        $mail->setFrom($emailFrom, $emailFromName);
+
+        /* Add a recipient. */
+        $mail->addAddress($user_email, $emailToName);
+        /* Set the subject. */
+
+        $mail->Subject = $emailSubject;
+
+        /* Set the mail message body. */
+        $mail->Body = $emailBody;
+
+        $mail->isHTML(true);
+
+        /* Finally send the mail. */
+        $mail->send();
+//
+       $mailSentStatus = "Email sent successfully!";
+//
+    } else {
+        if ($user_email == '')
+            $mailSentStatus = 'User email address not valid or empty!';
+        else if ($smtp_server == '')
+            $mailSentStatus = 'Smtp server not valid or empty!';
+        else if ($emailFrom == '')
+            $mailSentStatus = 'Email from address not valid or empty!';
+        else if ($emailPassword == '')
+            $mailSentStatus = 'Email from password not valid or empty!';
+        else if ($emailSubject == '')
+            $mailSentStatus = 'Email subject not valid or empty!';
+        else if ($emailBody == '')
+           $mailSentStatus = 'Email body not valid or empty!';
+    }
+} catch (Exception $e) {
+    $mailSentStatus = $e->errorMessage();
+} catch (\Exception $e) {
+    /* PHP exception (note the backslash to select the global namespace Exception class). */
+    $mailSentStatus = $e->getMessage();
+}
+echo $mailSentStatus;
 ?>

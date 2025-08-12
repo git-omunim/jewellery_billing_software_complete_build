@@ -1,3 +1,186 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 24-Dec-2019 2:46:13 PM
+ *
+ * @FileName: omSchemeuser_row.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+/* * ********Start code to @Author:SWAPNIL24DEC19************** */
+$fatherOrSpouseName = $rowCustomer['user_father_name'];
+$checkFatherOrSpouse = substr($fatherOrSpouseName, 0, 1);
+$labelFatherOrSpouse = "Father Name:";
+$panelDivName = $_REQUEST['panelDivName'];
+$chitSuppId = $_REQUEST['chitSuppId'];
+$chitId = $_REQUEST['chitId'];
+
+if ($checkFatherOrSpouse == 'S') {
+    $labelFatherOrSpouse = "Spouse Name:";
+}
+//
+if ($gbLanguage == 'English')
+    $fatherOrSpouseName = om_ucfirst(substr($fatherOrSpouseName, 1));
+else
+    $fatherOrSpouseName = substr($fatherOrSpouseName, 1);
+//
+$custId = $rowCustomer['user_id'];
+//
+if ($gbLanguage == 'English')
+    $custName = $rowCustomer['user_fname'] . ' ' . om_ucfirst($rowCustomer['user_lname']);
+else
+    $custName = $rowCustomer['user_fname'] . ' ' . $rowCustomer['user_lname'];
+//
+$firmId = $rowCustomer['user_firm_id'];
+$custType = $rowCustomer['user_category'];
+//
+if ($gbLanguage == 'English')
+    $custVillage = om_ucfirst($rowCustomer['user_village']);
+else
+    $custVillage = $rowCustomer['user_village'];
+//
+if ($gbLanguage == 'English')
+    $custCity = om_ucfirst($rowCustomer['user_city']);
+else
+    $custCity = $rowCustomer['user_city'];
+//
+if ($gbLanguage == 'English')
+    $custState = om_ucfirst($rowCustomer['user_state']);
+else
+    $custState = $rowCustomer['user_state'];
+//
+$custMobNo = $rowCustomer['user_mobile'];
+
+$custBlockStatus = $rowCustomer['user_block_status'];
+
+$qSelFirm = "SELECT firm_name,firm_owner,firm_type FROM firm where firm_id='$firmId' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+$resFirm = mysqli_query($conn, $qSelFirm);
+$rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+//
+if ($gbLanguage == 'English')
+    $firmName = om_strtoupper($rowFirm['firm_name']);
+else
+    $firmName = $rowFirm['firm_name'];
+//
+
+$custStaffId = $rowCustomer['user_staff_id'];
+//
+//
+$qSelectStaffLoginId = "SELECT user_login_id FROM user WHERE user_id='$custStaffId'";
+$resStaffLoginId = mysqli_query($conn, $qSelectStaffLoginId);
+$rowStaffLoginId = mysqli_fetch_array($resStaffLoginId);
+$staffLoginId = $rowStaffLoginId['user_login_id'];
+//
+//
+?>
+<?php if ($themeName == 'Universe') {
+    ?>
+
+<?php } else { ?>
+    <tr>
+        <td align="left">
+            <span class="cust-btn-lnk">
+                <?php
+                if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO ||
+                        $_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+                        $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                    ?>
+                    <input type="submit" name="custId" id="<?php echo $custId; ?>"
+                           value="<?php echo $custName; ?>" class="cust-btn-lnk" title='Click Here to view Details!'
+                           onclick="getCustomerDetailsForScheme('CustHome', '<?php echo $custId; ?>', '<?php echo $firmId; ?>');
+                                           return false;" />
+                           <?php
+                       } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+                               $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                           echo $custName;
+                       } else {
+                           ?>
+
+                <?php } ?>
+            </span>
+        </td>
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php echo $fatherOrSpouseName; ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php echo $custVillage . ' / ' . $custCity . ' / ' . $custState; ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php echo $custMobNo; ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php echo $firmName; ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php
+                        if ($staffLoginId != '')
+                            echo $staffLoginId;
+                        else
+                            echo 'Admin';
+                        ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+
+        <td align="left">
+            <span class="gold">
+                <b>
+                    <h5>
+                        <?php
+                        if ($custBlockStatus == 'YES')
+                            echo 'BLOCK';
+                        else
+                            echo '-';
+                        ?>
+                    </h5>
+                </b>
+            </span>
+        </td>
+
+    </tr>
+<?php } ?>

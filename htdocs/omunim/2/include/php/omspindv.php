@@ -1,3 +1,340 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SELL METAL FORM B2 - PRODUCT DETAILS DIV FILE @PRIYANKA-08MAR2021
+ * **************************************************************************************
+ * 
+ * Created on MARCH 08, 2021 01:38:00 PM
+ *
+ * @FileName: omspindv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.37
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-08MAR2021
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+include_once 'ommpcmfcc.php';
+?>
+<?php if ($panelName != 'SellValues') { ?>
+<div id="slPrCurrentInvBeforePay">
+<?php } ?>
+<?php
+//
+//
+//echo '$utin_currency_change_chk == ' . $utin_currency_change_chk . '<br />';
+//
+//$currencyPrice = '60';
+//
+//
+if ($_SESSION['setFirmSession'] != '') {
+    $strFrmId = $_SESSION['setFirmSession'];
+} else {
+    $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+}
+// End Code To Select FirmId
+// 
+// print_r($_REQUEST);
+// 
+// Start code to Change File
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$newItemPreId = $_GET['srchItemPreId'];
+$newItemPostId = $_GET['srchItemPostId'];
+$custId = $_GET['custId'];
+$slPrItemPreId = $_GET['slPrItemPreId'];
+//
+$accCrId = $_REQUEST['accCrId'];
+//
+//echo '$accCrId11==='.$accCrId;
+//
+$errorMess = $_GET['errorMess'];
+if ($errorMess != NULL || $errorMess != '') {
+    echo $errorMess;
+}
+if ($sellPanelName == '' || $sellPanelName == NULL) {
+    $sellPanelName = $_GET['panelName'];
+}
+//
+// print_r($_REQUEST);
+// 
+// echo '$sellPanelName:'.$sellPanelName;
+//
+if ($payPanelName == '' || $payPanelName == NULL) {
+    $payPanelName = $_GET['paymentPanelName'];
+}
+//
+if ($slPrInvoiceNo == '') {
+    $slPrPreInvoiceNo = $_GET['preInvoiceNo'];
+    $slPrInvoiceNo = $_GET['postInvoiceNo'];
+}
+//
+if ($payPreInvoiceNo == '') {
+    $payPreInvoiceNo = $_GET['preInvoiceNo'];
+}
+//
+if ($payInvoiceNo == '') {
+    $payInvoiceNo = $_GET['postInvoiceNo'];
+}
+//
+if ($mainPanel == '') {
+    $mainPanel = $_GET['mainPanel'];
+}
+//
+if ($otherChgsBy == '') {
+    $otherChgsBy = $_GET['otherChgsBy'];
+}
+//
+$rateCutOption = $_GET['rateCutOption'];
+//
+if ($slprinPanel == '') {
+    $slprinPanel = $_GET['slprinPanel'];
+}
+//
+if ($strFrmId == '') {
+    $strFrmId = $_GET['strFrmId'];
+}
+//
+// *******************************************************************************
+// START CODE TO GET FINE JEWELLERY DEFAULT FORM OPTION 
+// *******************************************************************************
+//
+$selDefaultFormOptionQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'DefaultFormOption'";
+$resDefaultFormOption = mysqli_query($conn, $selDefaultFormOptionQuery);
+$rowDefaultFormOption = mysqli_fetch_array($resDefaultFormOption);
+$DefaultFormOption = $rowDefaultFormOption['omly_value'];
+//
+// *****************************************************************************
+// END CODE TO GET FINE JEWELLERY DEFAULT FORM OPTION 
+// *****************************************************************************
+//
+if ($panelName != 'SellValues') { ?>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" align="left">
+        <?php
+        }
+        if ($payPanelName == '') {
+            $payPanelName = $_GET['paymentPanelName'];
+        }
+        //
+        if ($sellPanelName == '') {
+            $sellPanelName = $_GET['sellPanelName'];
+        }
+        //
+        if ($panelName == 'SellValues') {
+            $qSelSlPrItemDetails = "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' and  sttr_pre_invoice_no='$payPreInvoiceNo' and "
+                                 . "sttr_invoice_no='$payInvoiceNo' and sttr_firm_id IN ($strFrmId) and sttr_indicator='stock' and sttr_transaction_type IN ('sell','ESTIMATESELL') and sttr_status NOT IN('DELETED') and sttr_user_id='$custId'";
+        } 
+        else if ($sellPanelName == 'SellPayUp' || $sellPanelName == 'SellDetUpPanel' || 
+                 $sellPanelName == 'SellItemReturn' || $sellPanelName == 'SellItemReturnUp' || 
+                 $sellPanelName == 'finalOrderUp') {
+            $qSelSlPrItemDetails = "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' and sttr_pre_invoice_no='$slPrPreInvoiceNo' and "
+                                 . "sttr_invoice_no='$slPrInvoiceNo' and sttr_firm_id IN ($strFrmId) and sttr_indicator='stock' and sttr_transaction_type IN ('sell','ESTIMATESELL') and sttr_status NOT IN('DELETED') and sttr_user_id='$custId'";
+        } 
+        else if ($panelName == 'StockReturnPanel') {
+            $qSelSlPrItemDetails = "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' and sttr_pre_invoice_no='$slPrPreInvoiceNo' and "
+                                 . "sttr_invoice_no='$slPrInvoiceNo' and sttr_firm_id IN ($strFrmId) and sttr_indicator='ItemReturn' and sttr_transaction_type='ItemReturn' and sttr_status NOT IN('DELETED') and sttr_user_id='$custId'";
+        } 
+        else {
+            $qSelSlPrItemDetails = "SELECT * FROM stock_transaction where sttr_owner_id='$sessionOwnerId' and sttr_status='PaymentPending'"
+                                 . " and sttr_firm_id IN ($strFrmId) and sttr_indicator='stock' and sttr_transaction_type IN ('sell','ESTIMATESELL') and sttr_status NOT IN('DELETED') and sttr_user_id='$custId'";
+        }
+        //
+        // echo $qSelSlPrItemDetails;
+        //
+        if ($omly_value == '') {
+            parse_str(getTableValues("SELECT omly_value FROM omlayout WHERE omly_option = 'sellAutoEntry'"));
+        }
+        //
+        // print_r($_REQUEST);
+        //
+        $resSlPrItemDetails = mysqli_query($conn, $qSelSlPrItemDetails);
+        $noOfItemsAvail = mysqli_num_rows($resSlPrItemDetails);
+        $listName = 'PURCHASE LIST';
+        ?>
+        <tr>
+            <td align="left" colspan="16" class="paddingTop4 padBott4">
+                <table border="0" cellspacing="0" cellpadding="0" align="center" width='100%'>
+                    <?php
+                    include 'omspinvn.php';
+                    ?>
+                </table>    
+            </td>
+        </tr> 
+        <?php
+        if ($panelName != 'SellValues' && $sellPanelName != 'ItemApproval' && 
+            $sellPanelName != 'ItemApprovalUp' && ($goldTotGrossWt > 0 || $silverTotGrossWt > 0)) {
+            ?>
+            <tr>
+                <td align="center" colspan="16">
+                    <?php
+                    //
+                    $payPreInvoiceNo = $slPrPreInvoiceNo;
+                    $payInvoiceNo = $slPrInvoiceNo;
+                    //
+                    if ($userId == '')
+                        $userId = $custId;
+                    //
+                    if ($sellPanelName == 'StockPurchasePanel')
+                        $payPanelName = 'SlPrPayment';
+                    else
+                        $payPanelName = $sellPanelName;
+                    //
+                    if ($mainPanel == 'orderPickStock')
+                        $ordDelv = 'orderPickStock';
+                    //
+                    $mainPanel = 'stock';
+                    //
+                    //echo 'utin_pay_tax_on_total_amt_chk @@== '.$utin_pay_tax_on_total_amt_chk.'<br />';
+                    //
+                    //echo '$utin_oth_chgs_amt @@== ' . $utin_oth_chgs_amt . '<br />';
+                    //echo '$totalMakingCharges @@== ' . $totalMakingCharges . '<br />';
+                    //echo '$totalFinalBalance @@== ' . $totalFinalBalance . '<br />';
+                    //echo '$goldFinalVal @@== ' . $goldFinalVal . '<br />';
+                    //echo '$silverFinalVal @@== ' . $silverFinalVal . '<br />';
+                    //echo '$totalLabOrMkgCharges @@== ' . $totalLabOrMkgCharges . '<br />';
+                    //echo '$slPrItemFinalVal @@== ' . $slPrItemFinalVal . '<br />';
+                    //echo '$slPrCryValuation @@== ' . $slPrCryValuation . '<br />';
+                    //echo '$slPrItemValuation @@== ' . $slPrItemValuation . '<br />';
+                    //echo '$sttr_metal_amt @@== ' . $sttr_metal_amt . '<br />';
+                    //echo '$sttr_total_making_charges @@== ' . $sttr_total_making_charges . '<br />';
+                    //echo '$totalSilverBalance @@== ' . $totalSilverBalance . '<br />';
+                    //echo '$totalGoldBalance @@== ' . $totalGoldBalance . '<br />';
+                    //echo '$utin_total_amt @@== ' . $utin_total_amt . '<br />';
+                    //
+                    if ($currencyPrice != '' && $currencyPrice != NULL && $currencyPrice != 'undefined') {
+                        //
+                        $utin_oth_chgs_amt = decimalVal(($utin_oth_chgs_amt / $currencyPrice), 2);
+                        //   
+                        $totalMakingCharges = decimalVal(($totalMakingCharges / $currencyPrice), 2);
+                        //    
+                        $totalFinalBalance = decimalVal(($totalFinalBalance / $currencyPrice), 2);
+                        //
+                        $goldFinalVal = decimalVal(($goldFinalVal / $currencyPrice), 2);
+                        //    
+                        $silverFinalVal = decimalVal(($silverFinalVal / $currencyPrice), 2);
+                        //
+                        $totalLabOrMkgCharges = decimalVal(($totalLabOrMkgCharges / $currencyPrice), 2);
+                        //
+                        $slPrItemFinalVal = decimalVal(($slPrItemFinalVal / $currencyPrice), 2);
+                        //
+                        $slPrCryValuation = decimalVal(($slPrCryValuation / $currencyPrice), 2);
+                        //
+                        $slPrItemValuation = decimalVal(($slPrItemValuation / $currencyPrice), 2);
+                        //
+                        $sttr_metal_amt = decimalVal(($sttr_metal_amt / $currencyPrice), 2);
+                        //
+                        $sttr_total_making_charges = decimalVal(($sttr_total_making_charges / $currencyPrice), 2);
+                        //
+                        $totalSilverBalance = decimalVal(($totalSilverBalance / $currencyPrice), 2);
+                        //
+                        $totalGoldBalance = decimalVal(($totalGoldBalance / $currencyPrice), 2);
+                        //
+                        $utin_total_amt = decimalVal(($utin_total_amt / $currencyPrice), 2);
+                        //
+                        $utin_crystal_amt = decimalVal(($utin_crystal_amt / $currencyPrice), 2);
+                    }
+                    //
+                    //
+                    //echo '<br /><br />';
+                    //echo '$utin_oth_chgs_amt @@##== ' . $utin_oth_chgs_amt . '<br />';
+                    //echo '$totalMakingCharges @@##== ' . $totalMakingCharges . '<br />';
+                    //echo '$totalFinalBalance @@##== ' . $totalFinalBalance . '<br />';
+                    //echo '$goldFinalVal @@##== ' . $goldFinalVal . '<br />';
+                    //echo '$silverFinalVal @@##== ' . $silverFinalVal . '<br />';
+                    //echo '$totalLabOrMkgCharges @@##== ' . $totalLabOrMkgCharges . '<br />';
+                    //echo '$slPrItemFinalVal @@##== ' . $slPrItemFinalVal . '<br />';
+                    //echo '$slPrCryValuation @@##== ' . $slPrCryValuation . '<br />';
+                    //echo '$slPrItemValuation @@##== ' . $slPrItemValuation . '<br />';
+                    //echo '$sttr_metal_amt @@##== ' . $sttr_metal_amt . '<br />';
+                    //echo '$sttr_total_making_charges @@##== ' . $sttr_total_making_charges . '<br />';
+                    //echo '$totalSilverBalance @@##== ' . $totalSilverBalance . '<br />';
+                    //echo '$totalGoldBalance @@##== ' . $totalGoldBalance . '<br />';
+                    //echo '$utin_total_amt @@##== ' . $utin_total_amt . '<br />';
+                    //
+                    //
+                    if ($sellPanelName != 'SellDetUpPanel' && $sellPanelName != 'SellPayUp' &&
+                        $sellPanelName != 'EstimateUpdate' && $sellPanelName != 'EstimatePayUp' &&
+                        $sellPanelName != 'SellItemReturnUp' && $sellPanelName != 'finalOrderUp') {
+                        //
+                        //
+                        // 
+                        // ***********************************************************************************************************************
+                        // START CODE FOR BILL DISCOUNT ON / OFF SETTING @AUTHOR-PRIYANKA-03DEC2020
+                        // ***********************************************************************************************************************
+                        $selBillDiscOnOffSettingQuery = "SELECT omly_value FROM omlayout WHERE "
+                                                      . "omly_option = 'BillDiscountOnOff'";
+                        //
+                        $resBillDiscOnOffSetting = mysqli_query($conn, $selBillDiscOnOffSettingQuery);
+                        $rowBillDiscOnOffSetting = mysqli_fetch_array($resBillDiscOnOffSetting);
+                        $BillDiscountOnOff = $rowBillDiscOnOffSetting['omly_value'];
+                        // ***********************************************************************************************************************
+                        // END CODE FOR BILL DISCOUNT ON / OFF SETTING @AUTHOR-PRIYANKA-03DEC2020
+                        // ***********************************************************************************************************************
+                        //
+                        //
+                        // ********************************************************************************************************
+                        // START CODE TO CHECK BILL DISCOUNT IS APPLICABLE OR NOT @PRIYANKA-10NOV2020
+                        // ********************************************************************************************************
+                        if ($BillDiscountOnOff == 'ON' &&
+                           ($_SESSION['sessionOwnIndStr'][35] == 'A' ||
+                            $_SESSION['sessionOwnIndStr'][35] == 'B')) {
+                            //
+                            //include 'omSellSetBillDiscount.php';
+                            //
+                        }
+                        // ********************************************************************************************************
+                        // END CODE TO CHECK BILL DISCOUNT IS APPLICABLE OR NOT @PRIYANKA-10NOV2020
+                        // ********************************************************************************************************
+                    }
+                    //
+                    //
+                    $utin_prev_amt_CRDR = 'DR';
+                    $utin_CRDR = 'DR'; // CHANGE CRDR FOR SELL ENTRY @PRIYANKA-26MAY18
+                    //
+                    //
+                    //echo '$sellPanelName == ' . $sellPanelName . '<br />';
+                    //
+                    //
+                    if ($sellPanelName != 'SellDetUpPanel' && $sellPanelName != 'SellPayUp' &&
+                        $sellPanelName != 'EstimateUpdate' && $sellPanelName != 'EstimatePayUp' &&
+                        $sellPanelName != 'SellItemReturnUp' && $sellPanelName != 'finalOrderUp') {
+                        //
+                        $paymentMode = 'NoRateCut';
+                        $setByDefaultPaymentMode = 'NoRateCut';
+                        //
+                    } 
+                    else {
+                        $hideCashButtonOnPaymentPanel = 'YES';
+                    }
+                    //
+                    //
+                    //echo '$paymentMode == ' . $paymentMode . '<br />';
+                    //echo '$setByDefaultPaymentMode == ' . $setByDefaultPaymentMode . '<br />';
+                    //
+                    //
+                    include 'ompyamt.php';
+                    //
+                    //
+                    ?>
+                </td>
+            </tr>
+        <?php
+        }
+        if ($panelName != 'SellValues') { ?>
+        </table>
+    </div>
+<?php } ?>

@@ -1,3 +1,150 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/* Release Loan Panel @AUTHOR: SANDY27NOV13
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: ormlnrel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpdpmsg.php'; //add msg file @AUTHOR: SANDY31JAN14
+?>
+<?php
+//CHNAGE IN FILE @AUTHOR: SANDY31JAN14
+
+if ($mlId == '' || $loanId == '') {
+    $mlId = $_GET['mlId'];
+    $loanId = $_GET['loanId'];
+}
+if ($loanId == '') {
+    $serialNum = $_GET['loanSerNo'];
+    $preSerNo = preg_replace("/[^a-zA-Z]+/", "", $serialNum);
+    $serNo = preg_replace("/[^0-9]+/", "", $serialNum);
+    $getLoanDetFromSerNo = "SELECT ml_id FROM ml_loan WHERE ml_pre_serial_num='$preSerNo' and ml_serial_num='$serNo' and ml_own_id='$_SESSION[sessionOwnerId]'";
+    $resLoanDetFromSerNo = mysqli_query($conn,$getLoanDetFromSerNo);
+    $rowLoanDetFromSerNo = mysqli_fetch_array($resLoanDetFromSerNo, MYSQLI_ASSOC);
+    $loanId = $rowLoanDetFromSerNo['ml_id'];
+}
+$newLoanAdded = $_GET['newLoanAdded'];
+//For navigation FROM TRANS GIRVI RELEASE PANEL @AUTHOR: SANDY22JAN14
+//
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+?>
+<div class="ShadowFrm">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" width="18px">
+                <div class="spaceLeft10 paddingTop2">
+                    <img src="<?php echo $documentRoot; ?>/images/orange16.png" width="16px" height="16px">
+                </div>
+            </td>
+            <td align="left">
+                <div>
+                    <div class="textLabel16CalibriNormalYellow" style="color: #DF264A;"><b> &nbsp;RELEASE LOAN PANEL</b></div><!--USE MSG VARIABLE @AUTHOR: SANDY31JAN14--->
+                </div>
+            </td>
+        </tr>
+<!--        <tr>
+            <td valign="top" align="left" class="border-top" colspan="2">
+        </tr>-->
+    </table>
+    <?php
+    $qSelAllGirvi = "SELECT * FROM ml_loan where ml_own_id='$_SESSION[sessionOwnerId]' and ml_id='$loanId'";
+    $resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+    $rowAllGirvi = mysqli_fetch_array($resAllGirvi);
+    $girviId = $rowAllGirvi['ml_id'];
+    $loanId = $girviId;
+    $mlId = $rowAllGirvi['ml_lender_id'];
+    //$custId = $mlId;
+    $mainPrincAmount = $rowAllGirvi['ml_main_prin_amt'];
+    $princAmount = $rowAllGirvi['ml_prin_amt'];
+    $firmLoanNo = $rowAllGirvi['ml_firm_mli_no'];
+    $firm = $rowAllGirvi['ml_firm_id'];
+
+    $selFirmName = "SELECT firm_name FROM firm WHERE firm_id='$firm' AND firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+    $resSelFirmName = mysqli_query($conn,$selFirmName);
+    $rowSelFirmName = mysqli_fetch_array($resSelFirmName, MYSQLI_ASSOC);
+    $firmName = $rowSelFirmName['firm_name'];
+
+    $ROIId = $rowAllGirvi['ml_ROI_Id'];
+
+    //Start Code to check ROI Id is null or not
+    if ($ROIId == NULL || $ROIId == '' || $ROIId == 0) {
+        $ROI = $rowAllGirvi['ml_ROI'];
+
+        $qSelROI = "SELECT roi_id FROM roi where roi_value='$ROI'";
+        $resROI = mysqli_query($conn,$qSelROI);
+        $rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+        $ROIId = $rowROI['roi_id'];
+
+        $qUpdGirvi = "UPDATE ml_loan SET ml_ROI_Id='$ROIId'
+                                         WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+        if (!mysqli_query($conn,$qUpdGirvi)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //End Code to check ROI Id is null or not
+
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $ROI = $rowAllGirvi['ml_IROI'];
+    } else {
+        $ROI = $rowAllGirvi['ml_ROI'];
+    }
+    $ROIType = $rowAllGirvi['ml_ROI_typ'];
+    $girviJrnlId = $rowAllGirvi['ml_jrnlid']; //@AUTHOR: SANDY15JAN14
+    $girviDOB = $rowAllGirvi['ml_DOB'];
+    $girviDOR = $rowAllGirvi['ml_DOR']; //@AUTHOR: SANDY22JAN14
+    $girviNewDOB = $rowAllGirvi['ml_new_DOB'];
+    if ($nepaliDateIndicator == 'YES') {
+        $girviDOB = $girviDOB;
+       $girviNewDOB = $girviNewDOB;
+    }else{
+       $girviDOB = om_strtoupper(date("d M Y", strtotime($girviDOB)));
+       $girviNewDOB = om_strtoupper(date("d M Y", strtotime($girviNewDOB)));
+    }
+    $girviIntOpt = $rowAllGirvi['ml_int_opt'];
+    $girviIntCompoundedOpt = $rowAllGirvi['ml_compounded_opt'];
+    $girviType = $rowAllGirvi['ml_type'];
+    $mlLnNo = $rowAllGirvi['ml_cust_mli_num'];
+    $preSerialNum = $rowAllGirvi['ml_pre_serial_num'];
+    $serialNum = $rowAllGirvi['ml_serial_num'];
+    $loanOtherInfo = $rowAllGirvi['ml_comm'];
+    $girviUpdSts = $rowAllGirvi['ml_upd_sts'];
+    $selInerestType = $rowAllGirvi['ml_ROI_typ'];
+    $mlTrType = $rowAllGirvi['ml_ln_cr_dr']; //@AUTHOR: SANDY27DEC13
+    $omPanelDiv = 'mlLoanInfoToRelease'; //set panel @AUTHOR: SANDY28DEC13
+    $gMonthIntOption = $rowAllGirvi['ml_monthly_intopt']; //@AUTHOR: SANDY21JAN14
+    //Start code to add new Girvi DOB
+    if ($girviNewDOB == '' || $girviNewDOB == NULL) {
+        $qUpdateGirvi = "UPDATE ml_loan SET ml_new_DOB='$girviDOB'
+                                         WHERE ml_id='$loanId' and ml_lender_id='$mlId' and ml_own_id='$_SESSION[sessionOwnerId]'";
+
+        if (!mysqli_query($conn,$qUpdateGirvi)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+        $girviNewDOB = $girviDOB;
+    }
+    $grvRelPayDetails = 'TRUE';
+    include 'orlnrldt.php';
+    ?>
+</div>

@@ -1,3 +1,457 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACgJgAA8jIyUvfivZ+yLz93z4KYYRX/DBiT1dPcVwqOZeTKppozZcKsWXdePeV3yuTpaB4aFvpp9z8G8pWRPv1Mjzq6N2HD5i8JEEVpz0VkSkW/8BW3vE3Nz7CJJjjJwDRd1LDisVGeb3wUmAT3Y8ILSXGiJmclGt+LP4ZuKJq+6k4B6aM4GMIbqjp5eF5JQkxTo/k1hQ/UJ7gaY8lttyiKDn+r0+sEoXR3+mo69423sTW/fxllWzaaIcgEw0735gh0m8FTmoURg+RxfiTa9JvT1bn5a5sVfsEKfNTbmCeNzrHwlN6FrVR4lh5p5Vob5buXM3IqxnKo3zYGLz1jY3DRfi5c/L8q4HeZv+vMC2g689+VDZfJEIAuNe/2KM5N76AfNs9SDbYLvCy57uq+Nmj4/7PDs1OBpt3G6rQ8wMyomxKhpZQbrzG7EKnXqBD9cWIb4zHwTQ/tAyDgSHzJTGc1dJtifhUJOdewPS3DDK7qpqfGvZlRCsGymznvQ3QXYiElr55CSliJIkspJdd9A++xw4+aUiQdLlSYsV2p8EE+WViqtL3XwfZQY38mZ5musL/nXiwFddoo6OHbm1MS6SZqoAyNSKkBZPy2ITA5QJJPK8uOA9078/YDK+oUxNJfiH0IJwjT0/Aj/bXxhgfoCNXedKxiKsh/EG6gvsjL+aL2SNfnYmc6MfVTvbcTG13S1qTV9JMa37z0SMq3+o95APP8EWBZx89LAQwl4cgIEbG8u0mmgA40r1XtTagDyFj3Ju7oY123r3t0yQ8ooF0G3QP8qfG/oJiyn5curvY2WA0FJO9aw5Noao9l1PBW7jDLN1W9snt0/DPPiECoDObf9d/dNNUsnN3RW0e9TRifNXPYJ3ricnctMMs/vbNARxUrSXTPqTVlIGsc8qBjSVWrtbvNdFCV35n06z8LVgr8xHrLvCnHpbjO913vQbFKvUgu3q+3kixxnKkUMKE3DRklsxCUnMNtHdNxGKudpGLMbK6NcLwD+daKteSLrXYdC7twMaiIv6fmALwINTcqVN61HXPaooeUPVuSB/QXFpfmHpNL9VMslg/Ae6m9DiDijB3tn6IrCG5i/cbOytywZe3va9vVdCiL/rPIecGtOYHsYQ3EpxRVkDevQY+HmFk8fWEM4F/Xqi+rXbPr2wns0brBVXg5PFt2bfnd0gzueJeai1nJxfFKUMBPoY/flRGOPEN/Ob7IsdVUqG9zico3D8CffjT46v4FIVHhxIMc2qN21hijxOgE4CSCEHEDjfEexLh49V3/iCdGUR3AmKQZUnhZc0mwdvkzLegDQL3UYNYP5kiDQCfpyFlo5sUTyeHNE81VGOZOpyP/0W1u2iN+Vnl0w9tzg7wXkQ/GxUzgLINA62VRGRW2prjNbA4DV+U1n1TPVn2X9izQ3xDFlAul3JuzaqqdgECFRs0ra7t8sxVk1e0NhavEEwY/yfQDi8QnCpd+ufrRZK9Pn6hsm5LQYCLBoaO800qxXBZBPOgwbzEsG3cAxmv+rs8NdoIMCMWIw1bWQjO7en45oqC6MxRYquid7MWa2YaOqVWBSLAawD8iFoDVOpCtk4vpgbaEnMrb0aVcfJzaIDzxl59cFYQw+BobHzS8TjszTHKKFB7jqNV5ygwC07NADEgnGpJ+FFrKsQH4QoTjwGk3jSIrSaMljsTb+sQVwhdv+tQgKYESacuiQYDMjKFqS7QwNgcs82FuVTLOLd5cmPeOOcA/IJIW0kOaHgG1PYZrnGTgDTkXXwCZr4Mv9aRovyJ1CDxRBoQGsDKYkGWPYPLUEsYuVkbj9zKhhkCZIzz6RmgNpurvdsp26J79Elhq/0nk7eizezPAw4K+Agy/UqOEDZrgu4SNG7L3Gt3HTaMlgAHXWWDv3rgLIlIGGFerxigL2ekbB5bJHSBcMj5WV+Fw+zqEzDs2qoCpuxcfm2KllTViTGr10nU9SjlvsHjgs83E/0TDwsebY6XLBW0PKIb9DDCJUI2XesD2/8OUm4S1jETh91Yp4graNWOTDFpuze6UQMzB+vxLZxkEzLE5NTZinSMn8cvrEJfqBFe1hzALLGaxnzcsAwTYhQhzqEKMyxyqB73kFGDhtozQAwQYuYzrrzT3JNt0eqQaHMyGwmaEcS4Gs3+OqZeJyklb4Jot4KJ+XWLyg0wT5SEZkhrZYhS6k5ZDkZ6zvdPVhgzR+4DUCYyNIJp+wAdifUpApDiFbSsgC4q9BgaEOPRnZwRK+0udT9jKRuymj+bs/KWGd6HIaQ8dIRohJFyJltXVpXK9Kz6EF7EL8DSaYTOiKyYmVJHLSoVCMs2nOff3Pys+DOoAS1dA1AhI0JpIJLlzek4d01DnNUcNIxHFr/diGNva9RashRXOfliUmHGyKKfNL40K3/oypzoAcgKRcdZOM88nePzWpAdwq2VbQypku7b6SUZsg8YVBF3INnLGSxFjSRG2N/CpR7Yrn+qxX+IhPlxIYvCcgELhIoMafZt1x/eobAgAKyztoP16cWzl8s6kKN0H0Vg2jV2oSY31nZPstFV6fkanC+MDHpqlswpjgRcp3voHGn5/N6yec+U2273wNrdT8DdpWH9TaPGufes2g+uFaNbaTWdRukgYKZIzpFo0mltu9a9UdpFSrIOLIk8/7qvIGz9IspCyj7/H8aE1Xs60d+WXZaoETWYYyQ+PyF+xpfFT6z0A1mmzHHNf2qlrX++b6fqns4ENYgdO1+aawds2zHDjRuxdjyphsoxx3imqIsmH020t34AmBWJZghRvUTVi1c1B+Ubb2Abon56ccSuRetVOMqLoS+FAoaO1sOJsBtwb2hs90y3vjGL6n1yGS0NoMDMSJpU1/bfBn9gm9tTYr2+KAmx/P6NQqoDHV3GLml0lv5vjgBzZS7oLiG44h97JU8xD+JSfalYnqkTGgeuGuK7mbLau/kuFKtStcmm/nO0byvDFOpCPFRlJyUrLq0IZhD8oLL2FmM/yZtZd4OS8Pj+sUskbiP+Sq6VUSND24YKcqc5qKciPJltK+LAh0JnJ1VpW/OSgrpUVgVOX+s6HAD1OcQxih8H2XFttuAOPgqBmXpyUfR7vKXgAVYgY0er/04AlngdOdUFQDZ5b38l+KXSbV00O0ai55ak0io8M1ZA1XdA/SJc0acjJ9RBIlpbvAoqR8BVQiEFxDeAZsZTuFWNbMSOZFZ9/N345qNMDrZ2u8L1S0VSxvVjxgMzCvrpiOBebJozftSYuz/nLzUqAs2+w2linfj+cLFxVFDoYfEwsT7c/beacT5yWRBCloq/igFSKWO5KiydVzdmfGG5JRRJbCKOEylOPhqyVgTlbdswfeD0PqaoSmArBqUf8g2paLqLrtGJEjm2wSqdOcYnQPR/Ost6hb5bUKJMRMBSzUH3saTpOyKObBOTnqnUQohMaJXot19uLWEAqkhkTxCPzG8ad3iXRwF+CkHguTpRjD38jpT/SGUGghRzmOqkQKXYWTLsR7k1yCRxu8S0dlvZiLv9gP8omcBt+9s2rxMISr9IupsD1RY4wysfS3CCfeXGa3vEooZg1eZsCyd0v2Qq8N2t6GEVA4o6e0vq19otsLaLMcziFXDX1o+dKNY+9wPYeAd6+42qVvcOdbkXDY/L4LIh9bdGAWgkzHqX2OBa/MZOvyZgN/rHTjxd2we4uwbla72cR0v2XfPLJO/eqEVeCbksnWG22jYr9W2GtUC/1wknvPu85BbARFNqoH5WC0TM8l65nlnLNmcAFGPIrBiyT/cw2YFH6m4TzNrXsOoIpdP/sscLw4TrS2ESDgdeKBjhczHEXSAId9GziF6tTDO0SGikmg67YJ680qkeL/DODnBXIpl8iCiLSUsFU/ZYkI0X3rKkKHVUAMi3PWNVdX1uKV2I4ZurMT7Pq3a0A90gMNGtR+bTxveyCSpqz7jslI9ycBmLGUekEQH0cJTJG1t8dMgqr6Zy2jf86JpErkKu0DvW2AOjBkK5Sis9xduis/lMGLiBcBlicIyDk2jN5SUdfhUILhscGX29gQ1YC4VjuEGFaPAc9xffoAGAMMmYAH9l/tvkW0rlQEPwyLCDKYrVHbdyRSXlGwU3qK1WSltwin+JlAT8X5ZoUd1tJWhjzGcxDWciZe87mqnbOYcbJX+ArknNoyncrh5CxuS18RIuuuyeAvOM3ormgMkEn9TfegqHUoc7m0I3GjXGXc6cL6WsBi0qbr3/rmEfB3fkwWiCmT6kNhDkQyJCFMx0cApFXHOQD6UVnRMteCbGrEyEmvJnql2F1ukeLauhS6RQ4y5hSiOGcSAXJp12SCH7mlzDHWkqDGHNf4RQ/djzl6uSy0JtkZ4vf2u+N16Fcju6AXls8xafSaSoW8PLHO/QPz1R+9hzFfrBexT84Azz20HUqkvho4hUV4N7vyUwATr7Ud+Kr4NCG7sxgtOEsOYP2bfJeGx2Z5VpSGplD6AIjrtnHKqGsiMUC+6BB8ezljrfmZeRWbttyBvXt4Ia6145U0XhhSrjPlmU8C0bs4CtIyDlYBYOwnckYkRptr9RZVc1db4DtbezeJNaFHcEeMpT3x1uHp9FFkHhIhGdiBricyhAzrflGO5tPEZ2nbUgN2GdPfZLU077GuGyAnVZZVjZllPsR9J4jTEf84m/yoCTU8ttKf2+BhFtmJTS/6Lv34WWV4nvoy7jF97BLFdgOnl5s88jBPJqNZ4/kDaG3s3fnyZFVmXlDhbeZJJa3n6l6U+6nRSHBwYSV41tc2TKX3whF6E6kd/34CgcZPA/d4jqj7UTwwqPLYeI+vPszQ0BKxLn41yfrT23r/cEx22ILOLCjgh6AvkEA2sMV1fNASYKb0R3atzCogtrBRCoE549Vp7pBy6+p5QijQoMhcISvakKV/Ff6Y+/UXqSB/w2zCnIpmA963YjdyJk4MuL5tWzhZf8YiRQ5aKlpzvb/ylPvF8+r7OLcGZ8IR5mPS/1xkIgT4UtXM3tLnhyEtejiMAZMGtZvaLhRTas9PS1DlsRgHekkSE8601ALGFCbhEBr0n2XqS/Kplfs4MLNwDccUy1wc+Lb6H8rEc+YFHpwE48G/B7nT/A5Fj8jKaBjtxp3XsIUko0le8aOJW7nV0Xc2YT/PWEO5bEFWRNQPREeJkjmNo8m6nr27vIoJzzfd1lMrYS76WLUiX/IMbkOJeltERaG3woitfTHzR1FAPPQJr8jN/uqpOEQaDxLBdLw5dI85EPOs10Kyuxa7fQMZTNmUIQtsduJmQ2pDj9J0QfWLbJSrfh1cEE4vuL8PEt9vK5pCVU2nLrb9YDJRvDK8i1rrpzTib8p3YauZaxGiGIH3ooGcu5vUyt/u4MDiAj38i/AepkWpxWT2yCyJJYCL5IxYq6kS4Qm/j3Ztg2d2l6XyGZS+QPLLZX+yqjibPsq+p3XV8FNaN8ctJQYnfd7+jqDe1xMq5ordNRah5JC0ofK4qZZmQIwrWYnWHh9vcY0Ldogzccv5UBOXeb88E4/Z3zfo91toiB5INpfp+ylwnVdzaQyHpMxejHv//n1qsvf+oblAnvNqVOUEmCXl9zO3Pyuq9zhH5m7KiUZV1rHuyCpte0Xzxj5LN34dq5el+wb6Jnq6ojhNSHOp5Xcy8OHB/QaCRdJUxEEWauWsqshmCuH32PuPPRfs6najvYCuu3dqV2QyshKm2pOnSwh07adD4WbqSDOD91660kwRCQbBmgxFj4ba4e0eWnlTYk22oDjZj8cX6neGewlGFT5g4hap8YMi1hu+W5ZnEFsPjT6DvUit5klKOSi2lI+agWwdSvISgNOfglQ0LohEe4mw2FAIGtANskqsYJ3h6AF4Uv3WJDFmTFlcTrJfHa8/Vbt6BeQzMs6wM3ekFrvDWFaPQw1m3Iyrk6ebvjXLCF6PIi3GBbf4ZOwaULYUvay87bsS9SQoxcFUgXF7TxuhhQ+GJjl1+UVRojAHhAGw3mHI4WSnPIHjB8B7MTS2oCuzTCGJWGZmhDFJ2C17hW/BVCcRvpPB0VNfEADlqOrJqgmR0kjSEryGnd9pOXornEqkSPijl4Nt2RHVmNz12vdYgLGnGqQsBPepzPBrRO29jfwbMxn05Oz77Elt6FDGSBC1kJdfjrZQDzUDm0/pVH5QaY96OJHktiTZZCeac06prOfnRkghTXHEbddQ1KI62+XaRnd+oHRWw8HA2QRITCtS+pO2iWtEFQweQfwXYPjHbMZGUHBTEwLGqlUdbKWcnyjHhp/QSLqSJ0P1JPs1ew2Pdd61tpnyGx4VmKYN5uGFVy27oNj5LyqU+2JuluMJq2A72bDB+dQ7C6HAD/E2UHzEbBmxf4CV6jvNMYG+DuKMS+ht8mE/a/cUO0cHswgUAcR0Wc76IXLIQSWG0Qq185l9Yz4fCwOHBBivuc9fRtQhAfhqkaaDNICLD9EKrBWoAeR1IRsaujSXJMvNFk+arXF7xdoBOSEJU3bWdaCcRK0UnvgC9YjbBw2Po5o3TGaKld8rWDkerrT4zDJgy7T9InXe6WlZ8XyFsUsGkCg2EUa7I8YgIzWmg8Y5n2QC5ruqx82GGinYApsBl1PZ4IAKvkvRPFJ0xC8jjrNiRECFhrT3OWEgOFAersxPrvFwCHISyVRgntcUw7lOHMwDDayzkF5e/3TPAfqtl+ZAbQIrwzULyGQRvxEnPnsYYB7GizwxmeKqOalCpj0i1DseEt2ukJ59FOB+fhNPGqyDZP30sv47atBOVDzANCC9WYa20CN/YI+9EaFMPJgjnE0ccvG8toEraEBOhKuTW2wwDJIgm+6spAmhLovwWnf3+cWv6qBhvnbMOjWxzZN/10B5L47uupjnY8JREzeXfom8TIwkY9Kipir7BTBWjwCVl3Jhfw4SkhY/DZ1ZZySpdVKzoS4EiFf5UqFtHvqbIXpD+Hd0rxCucSmdVEGPmcw5uYzhH2f4pjroDc9ooRJ4598rtzjyD64lN4rcYpRBO0E9f0+uJGfR0yYM9LLGs+J/2EK05mz1nrDcRf8ZOpTyhT8urupFNdzQTfuxuSrtPNQwepzoi7j65/fSF2sgJQ9U+pkjP/vLQIv1sJEuqMa2z+/ZNQxpi8qVGMQsmQKT0zN4fjKmmXmC79EDhFViW90WkwzBToVUfBM6MYG+0177GAYifn3yCgoynsC9loeWS18LxEoNSwIwLGkZt9f22Rgd5WEjNR73JD2oM2upGIsK4k1dRhtzveumHdvjhFxC8/uzi+QmtUeEk/e/qMlHYhg7ZpSYwPkmC2Nm3EK6dQeKuyHJecmQ412/9b3M7CRx9J1eHqUCeBSdxd63kNBomCp6OA16e73yH8n1kg6NWIQCOSseZKsMvTMm7JmmEOj7flYJkTua4c984+WffuiRuClOcazku92UrNGzkWwwHFWWdkvOv1QC5Wd5bFnJrtWXX8+dhGRqKzfChI78kUWD+9ZpUxQFTDPOmqcSRQTwnA1pYMjSbkG7P19I/5et46f69EvqhbfzANcrWvGcZErnMarVPwhLA5V4zc5zES7w/A5Nh5HFREL7BJsTMRwh2Gf2uWIDVmu4vAslx3LPv/zHQq1O83hTBAExS/7NLOHn+TOJObIPsKSAmSOvDhsg2byMIztr86mSGebOmO5YwXE0RWEbayASJYgoqc2NNO1U4VD6gTY0+QyxGJeyg6YemXSmrwtqNeRsb0X1zfisaJHuQPuNlcapCeQH2cUCyEUKtMlikGNN6OqMzradWbg28YQZBEqqQ3PDXSo/9JpQbejrM4FHPQt8vM1B4DtKHcf09WxydXuOanJD10D/GG0emMbsHojzh6YhrYUFCuzn62/SS7PLwFA2dH+40Bt/wMlLpNsM66gzVg/8Q+SwKh71cvSJAq6278gGnelOkvBZPL6Jf20sszqkFl+Bxy9pWeI16zzgpul4pOe/tXC6UMODgcBq4dMLJiUKs2NuJpUzUaIJm+WXElpIg0crjfC60xWAOLuRa5CWLcl1MmWCMZWiJOF+ask4DAzPk/edhisSljon55s27WSNNnI0A5SFMDtzaUB/x6Ja7a4fJMGmI79OFUZi+BT8d+O/twxdT1Xnwm0AHxJ10e2Ovi5xy2NYz9a5pWfz8njwiDVMdpUtjWgc1Ko4ra1I+XScHisrcrwtgIivJHvO8uATrzRDaiSW2SODiFFm8L+IB7g+OT8GcPM8Mb59MkMN69zn5HHbXsSv/5CO/vzDYv1Qm0lDIR9esZrLAYIw2gIWyAlWD/hL8IrFPqISI5+xcpy0KHgu5L1dAhBBWOJpazxOAodIu2pQJS3rGe7gt0eyhRVbsy87yBq9+lY8QdoSvfXrbNfxwGKhH+fPT4YGs72Du01NxSSk4gNHPNuW6ZymPt5l9LP4KnuOuOPwwEeyOf9iCe+OhQ/kUK3fprLv1S+lzKsTWAhl/YYm8nO1SSEnCBwwR4b9483uuvzOwKDh9MVMu3TC0KeINEV3m3ojUsUqk8vAoU7FMD7/ixPolSt7WppmBD4gNFOAKXVkXMVYzmqsDDPY4jXdqdgwmXNs7/2HJixt1tR0zu2qbPr+c8e5MXz5ttwsXuH9xNK+a19k0agXeHtIMnn78Z42Bn+dHd8BvWzgMRnCi23YzRoU+KoL9uhRpEKOyszUJhedVUjqCAWW5X3M0L4/dJVhcZN5kkhLcV5V3omAfwCjQHMAglaz7eK72FFubv7Y4MS83QLQQPGF9TDQxpW+DgxF4IpbNcTU/34TuIIkPJ3TD0hJL/WVE1k+854ZeAVsuwUXLuddM0GyPXPiqdshf1vCTXUEzDaibiBKFPoGnzTSAvgP6S+il1+lOJH6psloxW+1EDRrW4NLA0Z7tKqUmng6UNnT5p9E6xg7LnJ7sD65IE2QHH4lfhYU3Yh0XLgPjrXwb+0yfTEtU8j5eFJeakiP0EKPQqg2NvoNRIvwKkq18NnfllAcdXzy3lpxp75Yi9iuvZ2Weu6ze39NnvGR92KW2WLr6WhQWcVF4saVeBnCrmBuCKRykiCIyh/TTOkrtW8GnyqT2E3dsIcKIeHaNsae2CT0D2dyAlf9trHhlXQBEIv2IbB0YhB3F+g1ayPsdwIuvI5wiMkaC+lhp7Wporu1Sa64rT7iVUpopfLZfvzaKo6vLQpEX7yr7SeWC15cyqdJjgVFA17R1oFp0WqXVvdxGJkShVYH9lImoatRbtL6O9gXRYMfPMn9bkVT6Qq1sIeX8ksyiS1IcWttRHUJYgcs8fAHi8uZvIYmVvSROeVEySHgGV8ez9RzFllxloWv6l1zDSLu/r17Bs+buHOJt3L3Izy+qp+rG1PferSMshEfYKe41jwyDBgqI8xTJl1a5HUxn1djos7LCoi3efaVr6sbo2lGhGHE+qVKm5Iz+sM6fKGgsLSmYU6neMgdRqlxFl6EeIvo9QNOQX8juLt+k4JZ3T7/TpqOB0wYPZjYxJChO/2XrQ76DPMAdrGCdgOh58+QPYFRadgegeu/mOhoEObFFaKsiDFt2yHwu6HFK6xZdHVwM7VFE1NIWVibqDEW2sAvKdUevL0028jwG92zSIoMYWu5lM6Ea3gu0N8KLpgrnvN1LkiM26mL6xLPqA+NabXuhLTbT0vZwPPs0nnme7ZE4cCPyHo15w8fL7pVxU+4O3fvhkCHsnG2sETBMvlq7r8eUyMK+uOu5iaivc+vN8vgs5prsDNeMc6vkYq2ZBd2cGZjG4WIc6X686X47XdicByWj3HSTJzp20cYg/WyOXGNTgUlHLnq4Vz5Ubhd8nFhO+/fEUCB8yZGiXH7Uedoda3UX3u8qzO8psiFPzft4JQv8zzneWZJsiF9DX5qvi2idjUIk9I2F+xKYjS8AX8zyqU1wp1UgMjyiVK4CSAdOghUCO5K6PQ56yufb+Q/zRG4I2BHSw6PL8Y7rXS5QDJGDHyOc2wQAE8/zITlzqpZ830q4O5qlayw0//F692zubu8X3z5Oro+4Ccvn2er4BhY6jJ30S1HnW7jSlAo3DsiqIj/DbLSIrNzSlm1p1Y/Ly0cTcvBSsF7zqmhubKaf5O7HS+kGU5qHZlE1HSWK3ATlT8okco3qL8eu5wINk44lXTktkp5DxNMiz/6lvAUXkK8W+q1628odj8b+nohdkd8jQZDz6mTBZ0jumhG3I9U7W08DbvNLIBdKRLzcJacOALfy5zFMMd8PfJkhtC64bEthWkT8Q/ua9oZWEGnj3PUQjeQ0c2brPpapQNAyod7CrzrYkkiHmc7AL96g5ILZUAwN8+sH1N7qqvXRYIgKRTK4d5mNVBbt3K0HT4wrFPgq8gqWBm76zX3CnGkhiXdbzJrNiXlNvNcfuMtGARqWHskFTSpnWG4bLHLzTvaxFoZcFjlBuujWe/JuArpW3EYd6sf/Xz8tLOAYYu8Ht0sekbOaLjxlPiIoNSWUNgj+rYsmqzybI0zj1UoafwKM3KHnlz8YfzdOa7G7Bv/3IvYoxIvaxw51CibJXa9yATk263E7XanJPdQYIWDfsprECyNtyEfcxsQ65H1OWh2R7TTb1UzHghhvy/rE3IIsCNGwFf1mxoTOXT7a6kmQj46dNTu0F1Il1LL3Gl0+e21PHTMKGeZM6scPEpO+X7CjCehD8P7AzjQzEQPuFk8ScyoKiCmULU6Ifh4U5LH5s4m6bmW0oopkCtyJkJeDo8a1vIsKyWCF/IBlS7kH3JfTtnG8xDN5MHlbl20WMHNGxGHlcU9EerA88M5XA04ilB7rUNVOJzxbk9ZSWBIyYOqklK33O6G4WsyIFo7sAaUBtyLNMCs8V3YZfeBo9bTD3qC9sMOOI1xmkJjv2xjvsjNKSFWBLBw0T6wT76xg8c6ie2dLUDGhcO7hWQTPzpHImyJ0CbJv8X6Mk/imhui/bb2umaZLUekdW3ZyNawxTLoZp8IM0g2cV4Wcm5lkOKsaSMQLZsOg9DJjgkP1hZd6HkciP9LhXAdATu6nHeMtNuFn8ytGiwuau4eacKhy0w28/n+p5uPippxcX/c0mwo249VkL1c8WXHFJM4JhZOp6S2E/LfzhwEaBhGnywFRrK+f5Hs1MLUJLHxgx6nFfhhX2Ak1AgtAPQdQwtagwRl1uv8Yam2j019ViWcicpF/XJcWaWxQyEoHfhK1WsLpfiYSEmifSGPWJDPqCWKP60qzUYq6SDsNLEdGDuTR3pQ9rZs0oYAZgSdiMplnxc9+ZBmAoiB6ni54+tyjR6UoHX7fhFiKbcKNiWFKfH+ZiNr9HnPzmgV4mIqg/o4uhZUFvA2Gs5EuD1jtgFiDQ5jzD4vexV23/LRztF012Mvl7RrexZp1NLwxhq7a0kksd4U4hIFErq7wrJvq2H7bkeF15YqiXSrCszW4wSfY3JPJ6XsqA4bDyVPJDXKkc0wrR2ooULCbgzKbxBCFIh52D9yu4Pvq+7peM0BmDbMmxVbL9fcT0uw8ug82eqE4ix4VB5xJCDGNutvE5kUpYu33Hkyr336BauLLafgjiX9ZHepxJaQvjTB2CUPSXz6X7CPcgqbxVfN/rV89KhOcYB8Ov7heRQsw8MP1O4bI3VyTwUWkgA8eqSOCA8PNH7AU1HfZBFqDXnU0Uom82UH2pqwGOJvOHpzdjciQ7Wv/fPEm+fSImBNKPeeRwmAvs1tFwJCDQBY7FixBLUNMvSYKEklptskLEa5NRMBMuTX8+420HHulXZNUcQwU6RD5iWoNLk2Yy1uP1EsKBqjedspOe2ebSGc2cZ/N34fTQOiLLfzSr0Aw2GD945rqevFGxAD+mAl5e2RbCh4K11+rBv+r+veY3VkymUSrlx4e527/pAsC07hCL03oW9jf396azcD8C3HUu98rlsH95yTUio3O3+Vizw5OvcXOFTjoKvCHwQAcuXt17DoeXN41wU9J2L8lRrYEwv4RawCcGImaJW5tHJMIFLK6rfKVrfHJwCxY7IWcJbQrfqCNQBCu0O32jsJsacN4d5jhstK9m6ZKZw1YAWcB8VTug2XtrRBFU3YQQq1wOOUGhh9GRkOtWTSsmCJaFKlQoRsHYvQyRejpoXd+ow8kJXI/xtZzGF6iNM5hWJhJilFjGqNjniu7S4gEbANDOUIHLZvdsFi2iSiZjwvvSnkMUvv+gmwtA5Zggevaf4lOa++ScJEkHJssWCNLmrSXuy+MGdk+YVHTC9Pqsr1nJKDXfQYj+tmtbepOYWoqAv9JaMJezUj8lUfSJksRJUypnO3qpOVF5L8YAqjRPVytw7iWucB4g+7Aiun2oNzbtsvD8sMWkDi0NDEpLt6W4TjJRNFlJ+qWgJ9BnNBlFrlwzDqgY1mu64RonKMF92u1GxPrsGCe7OkXILc/+9wcjDec0y4xu3uVpJ5C6cJROHxlFz/r9sKmk3wI/kC2HiX7ClSpfQ8pTFWtdbQTgigzFFvSY/XkqeEjfu9BTI9r1fh/WoTeHeVEDOglJD7aIcXwc5LTJA0o8r/UX3uLzjxKIJix0dJI0T4fLRP/8gFPurbLyH3j3vE+8ujqRHl3b4C/vXF1tpGPAksDRyjH3kZekrD1kDxQOtThwWIa5eu+HXxG+/nlH5aM5Jhb9smGA18aTxcxAkJUtCU3h3BZVwsySG4ZgYvOJRN5fILJ7PEjWR2PcPeOeghQbW2GKhNftQns+CQyfP08eKOJOp5QwPi3sXeTu3aiqILe/7uX9evicO6+6nFrRjt5v/CA/exoPcmtECl6TP63JXEODmr3fWI4NJY2rcDfLQNsGcIpPcX53SG+JDxJiFG54qZK8zuf8flIDCa9jQgyuYL+8QBgomBLlh9ydtIDPu+zWgqMnyvClIda+4yv/31Nmf9yakxkeLEoQ61K/Neqz9+QObEEyWk7qsDnX+P3q1OpSAKwgKEwF/0eP8Z5fzurLrJZI8rM6MxP/BDHFhTht5NoahzyNLO9tIrZWtmhKyZ5/2VQQkuB3b8EHweJR9WMRs9kN1TFAMklvRycOA29KkydYvCRzODGYZv17Jk/Vbw73IesRcoBmGt3IHK5oB5qjOPeKav9UC1m4CW21wTQ156iyXQpibmXwg89bbuZxV1CrpaLiEsfBMO71szawasBPueqlWNUSUhcLzpn+cZH2kvkp/AEFJymilUWZSOVk3sGVfPNEGrBkPgt0ww+DEQSI0i2sEiIG2DpCmQrEBtrGVmlkoeXebbqE0XcJRSRc7cBZPYX18asYgBm1m9ZudzNLVAAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on Feb 29, 2020 10:09:46 PM
+ *
+ * @FileName:omsalaryslip.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.o
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+require_once 'system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+?>
+<div id="salarydiv">
+    <?php
+          $staffId = $_REQUEST['staffId'];
+          $componentname = $_REQUEST['compontename'];
+          $inputfield = $_REQUEST['inputfield'];
+          $panel = $_REQUEST['panel'];
+          $operation = $_REQUEST['operation'];
+          $Id = $_REQUEST['Id'];
+          $Grspay = $_REQUEST['value'];
+          $pervalue = $_REQUEST['pervalue'];
+          $componenetamt = $_REQUEST['componentamt'];
+          $omdata_id = $_REQUEST['omdata_id'];
+       
+//      START CODE UPDATE COMPNENT NAME   
+          if ($operation == 'Addcomponent') {
+            $componentupdateqeary = "UPDATE omdata SET omdata_option ='$Id' WHERE omdata_user_id = '$staffId' and omdata_id='$omdata_id' and omdata_panel='$panel' and omdata_option='$componentname' and omdata_input_field='$inputfield'";
+         if (!mysqli_query($conn, $componentupdateqeary)) {
+             die('Error: ' . mysqli_error($conn));
+             }
+          }
+//      END CODE UPDATE COMPNENT NAME        
+       
+
+//      START CODE ADD COMPNENT 
+            if ($operation == 'Add') {
+         $compoaddqeary = "INSERT INTO omdata (omdata_own_id,omdata_user_id,omdata_panel,omdata_option,omdata_value,omdata_percentage,omdata_input_field) VALUES ('$ownerId','$staffId','$panel','$componentname','0','0','$inputfield')";
+         if (!mysqli_query($conn, $compoaddqeary)) {
+             die('Error: ' . mysqli_error($conn));
+             }
+          }
+//      END CODE ADD COMPONET
+
+//      START CODE DELETE COMPNET 
+        if ($operation == 'Delete') {
+            $compodeleteqeary = "DELETE FROM omdata WHERE omdata_user_id = '$staffId' and omdata_id ='$Id' and omdata_panel = '$panel' and omdata_option ='$componentname' and omdata_user_id = '$staffId'";
+            if (!mysqli_query($conn, $compodeleteqeary)) {
+                die('Error: ' . mysqli_error($conn));
+            }
+        }
+//      END CODE DELETE COMPONET 
+
+//      START CODE TO UPDATE GROSS SALARY 
+       if($Grspay != '' ){
+      $Grspay = "UPDATE omdata SET omdata_value = '$Grspay' WHERE omdata_input_field = 'GROSS' and omdata_user_id = '$staffId'";
+          if (!mysqli_query($conn, $Grspay)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+       }
+//      END CODE TO UPDATE GROSS SALARY
+
+//      START CODE TO CHECK GROSS SALARY 
+     $Grossqueary = "SELECT omdata_value FROM omdata WHERE omdata_panel = 'SALARY' and omdata_input_field = 'GROSS' and omdata_user_id = '$staffId'";
+     $result = mysqli_query($conn, $Grossqueary);
+     $rowgrsamt = mysqli_fetch_assoc($result);
+     $Grspay = $rowgrsamt['omdata_value'];
+//      END CODE TO CHECK GROSS SALARY   
+ 
+//      START CODE TO UPDATE PERCENTAGE VALUE     
+    if($pervalue != '' ){
+      $Perqueary = "UPDATE omdata SET omdata_percentage ='$pervalue' WHERE omdata_option = '$componentname' and omdata_user_id = '$staffId'";
+          if (!mysqli_query($conn, $Perqueary)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    }
+//      END CODE TO UPDATE PERCENTAGE VALUE 
+    
+//      START CODE TO UPDATE AMOUNT     
+    if($componenetamt != ''){   
+    $omdata_percentage = (($componenetamt / $Grspay )*100);
+    $Compamtqueary = "UPDATE omdata SET omdata_value ='$componenetamt',omdata_percentage = '$omdata_percentage' WHERE omdata_option = '$componentname' and omdata_user_id = '$staffId'"; 
+           if (!mysqli_query($conn, $Compamtqueary)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    }
+//       END CODE TO UPDATE AMOUNT    
+    ?>
+     <table border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" style="margin-top: 0px;">
+         <tr style="">      
+            <td valign="left" align="center" style="width: 300px;">
+                <div class="caption" style="align:left">
+                    <h1 style="margin-left: -300PX">
+                        EMPLOYEE SALARY SETUP PANEL 
+                    </h1>                
+                </div>
+            </td>
+            <td style="width: 300px;"></td>   
+        </tr>  
+    </table>  
+         <table border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" style="margin-top: 10px;">
+         <tr style="">      
+            <td valign="right" align="right" style="width: 300px;">
+                <div class="" style="font-size: 15px; font-color:#a8a823;">
+                    <span style="margin-left: 0PX;  color : #a8a823;  font-weight: bold;">
+                        EMPLOYEE GROSS SALARY : 
+                    </span>   
+                </div>
+            </td>
+            <td style="margin-left: 5px;">
+                <table border="0" cellspacing="0" cellpadding="0" style="width: 150px; margin-left: 5px;">
+                    <tr>
+                        <td style="width: 0px;">
+                            <div>
+                                <input id="empgrosssalary" name="empgrosssalary" placeholder="" value="<?php echo $Grspay;?>"
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                             document.getElementById('ComputerImage').focus();
+                                               return false;
+                                             } else if (event.keyCode == 8 && this.value == '') {
+                                             document.getElementById('Accuntnum').focus();
+                                            return false;
+                                           }"
+                                       type="text" spellcheck="false" class="input_border_grey"
+                                       maxlength="50" style="text-transform:uppercase; width: 150px; color : #0d0c0c;"onchange="grospayment(this.value,'<?php echo $staffId;?>');"/>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>  
+    </table>  
+   <div class="container-fluid"> 
+     <table border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" style="margin-top: 10px;  ">
+         <tr style="">      
+            <td valign="left" align="center" style="width: 300px;">
+                <div class="" style="font-size: 15px; font-color:#a8a823;">
+                    <span style="float:left;  color : #31d642;  font-weight: bold;  margin-left: 10px;">
+                        EARNING : 
+                    </span>
+                </div>
+            </td>
+             <td valign="left" align="center" style="width: 300px;">
+                <div class="" style="font-size: 15px; font-color:#a8a823;">
+                    <span style="float:left;  color : #e33c30;  font-weight: bold; margin-left: 10px;">
+                        DEDECTION : 
+                    </span>
+                </div>
+             </td>
+        </tr>  
+    </table>  
+   </div>
+    <div class="container-fluid">
+        <table border="0" cellspacing="0" cellpadding="2" width="100%" valign="top">
+            <tr>
+                <!--////-->
+                <td valign="top">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%" valign="top">
+                        <tr cellspacing="2" collspan="2" style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            <td>COMPONENT NAME</td>
+                            <td>PERCENTAGE</td>
+                            <td>AMOUNT</td>
+                            <td>ADD MORE/DELETE</td>                 
+                        </tr>
+                      <?PHP
+                        $Salaryqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId'and omdata_input_field ='EARNING' and omdata_month IS NULL  ORDER BY omdata_option";
+                        $resSalary = mysqli_query($conn, $Salaryqueary);
+                        while ($rowSalary = mysqli_fetch_array($resSalary)) {
+                            $omdata_id = $rowSalary['omdata_id'];
+                            $omdata_option = $rowSalary['omdata_option'];
+                            $omdata_value = $rowSalary['omdata_value'];
+                            $omdata_percentage = $rowSalary['omdata_percentage'];
+                            ?>
+                        <tr>
+                               <td style="width: 200px;">
+                                   <div>
+                                           <input align="right" id="componentName" name="componentName" placeholder="" value="<?php echo $omdata_option; ?>"
+                                                  onkeydown="javascript: if (event.keyCode == 13) {
+                                                 document.getElementById('percentage').focus();
+                                                   return false;
+                                                 } else if (event.keyCode == 8 && this.value == '') {
+                                                 document.getElementById('empgrosssalary').focus();
+                                                return false;
+                                               }"
+                                                  type="text" spellcheck="false" class="input_border_grey"
+                                                  maxlength="50" style="text-transform:uppercase; width: 200px; color: #20242b;" onblur="getaddcomponent('<?php echo $staffId; ?>',this.value,'<?php echo $omdata_option; ?>',<?php echo $omdata_id; ?>,'EARNING','SALARY','Addcomponent');"/>  
+                                   </div>
+                                </td>
+                             <td style="width: 80px;" align="right">
+                                <div>
+                                <input align="right" id="percentage[]" name="percentage[]" placeholder="" value="<?php echo $omdata_percentage; ?> "
+                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                             document.getElementById('amount').focus();
+                                               return false;
+                                             } else if (event.keyCode == 8 && this.value == '') {
+                                             document.getElementById('componentName').focus();
+                                            return false;
+                                           }"
+                                           type="text" spellcheck="false" class="input_border_grey"
+                                           maxlength="50" style="text-transform:uppercase; width: 80px;" onchange="pervalue(this.value,'<?php echo $omdata_option; ?>','<?php echo $staffId; ?>');"/>
+                                </div>
+                            </td>
+                                <td style="width: 100px;">
+                                <div>                               
+                                    <?php 
+                                    if($Grspay != ''){
+                                     $omdata_value = (($Grspay / 100)*$omdata_percentage);
+                                     $Totalearnig +=  $omdata_value;
+                                     
+                                       $Earningqueary = "UPDATE omdata SET omdata_value ='$Totalearnig' WHERE omdata_option = 'EARNING' and omdata_user_id = '$staffId' and omdata_input_field ='TOTALEARNING' and omdata_panel='SALARY'"; 
+                                       if (!mysqli_query($conn, $Earningqueary)) {
+                                       die('Error: ' . mysqli_error($conn));
+                                       }
+                      
+                                      }
+                                        $Compamtqueary = "UPDATE omdata SET omdata_value ='$omdata_value',omdata_percentage = '$omdata_percentage' WHERE omdata_option = '$omdata_option' and omdata_user_id = '$staffId'and omdata_panel='SALARY'"; 
+                                       if (!mysqli_query($conn, $Compamtqueary)) {
+                                       die('Error: ' . mysqli_error($conn));
+                                       }
+                                    ?>
+                                <input id="amount" name="amount" placeholder="" value="<?php echo $omdata_value; ?>"
+                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                             document.getElementById('ComputerImage').focus();
+                                               return false;
+                                             } else if (event.keyCode == 8 && this.value == '') {
+                                             document.getElementById('Accuntnum').focus();
+                                            return false;
+                                           }"
+                                           type="text" spellcheck="false" class="input_border_grey"
+                                           maxlength="50" style="text-transform:uppercase; width: 100px;"onload="componentamt(this.value,'<?php echo $omdata_option; ?>');" onchange="componentamt(this.value,'<?php echo $omdata_option; ?>','<?php echo $staffId; ?>');" />
+                                </div>
+                            </td>
+                            <td >
+                                <span style="margin-left: 10px;">
+                                        <a style="cursor: pointer;" 
+                                       onclick="getaddcomponent('<?php echo $staffId; ?>','<?php echo $omdata_id; ?>','<?php echo $omdata_option; ?>','EARNING','SALARY','Add');">
+                                        <img src="<?php echo $documentRootBSlash; ?>/images/update16.png" alt="Click Here To Add More Component" class="marginTop5"
+                                             onload="<?php if ($panelName != 'updateusergroup') { ?>
+                                               document.getElementById('LastDiscountPercent').focus();
+                                             <?php } ?>"/>
+                                        </a>
+                                    </span>
+                                    
+                                    <span style="margin-left: 5px;">
+                                        <a style="cursor: pointer;" 
+                                       onclick ="getaddcomponent('<?php echo $staffId; ?>','<?php echo $omdata_id; ?>','<?php echo $omdata_option; ?>','EARNING','SALARY','Delete');">
+                                        <img src="<?php echo $documentRootBSlash; ?>/images/delete16.png" alt="delete" class="marginTop5"/>
+                                        </a>
+                                    </span>                                   
+                                </td>
+                        </tr>
+                       <?php } ?>
+                        <tr>
+                            <td colspan="2" align="right">
+                                <span style="font-weight: bold; font-size: 15px; color : #0d0c0c; margin-left: 130px;">TOTAL EARNINGS :</span>
+                            </td>
+                            <td>
+                                <span style="font-weight: bold; color : #0d0c0c; font-size: 18px;">
+                                    <?php echo $Totalearnig; ?>
+                                </span>
+                            </td>
+                            <td></td>
+                        </tr>
+                  </table>
+                </td>
+                <?php
+                $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'EARNING' AND omdata_user_id ='$staffId' and omdata_month IS NULL ";
+                $resRowcountquery1 = mysqli_query($conn, $Rowcountquery1);
+                $FirstRowCount = mysqli_num_rows($resRowcountquery1);
+//                    echo '$FirstRowCount'.$FirstRowCount;
+
+                $Rowcountquery1 = "SELECT * FROM omdata where omdata_panel='SALARY' AND omdata_input_field = 'DEDECTION' AND omdata_user_id ='$staffId' and omdata_month IS NULL ";
+                $resRowcountquery1 = mysqli_query($conn, $Rowcountquery1);
+                $SecondRowCount = mysqli_num_rows($resRowcountquery1);
+//                    echo '$SecondRowCount'.$SecondRowCount;
+
+                $totalcount = $FirstRowCount - $SecondRowCount;
+//                    echo '$totalcount'.$totalcount;
+                ?>
+                <!--////-->
+                <td valign="top">
+                    <table border="1" cellspacing="0" cellpadding="2" width="100%" valign="top" style="padding-top: -2px;">
+                        <tr cellspacing="2" collspan="2" style="font-weight: bold; font-size: 15px; color : #0d0c0c;">
+                            <td>COMPONENT NAME</td>
+                            <td>PERCENTAGE</td>
+                            <td>AMOUNT</td>
+                            <td>ADD MORE/DELETE</td>       
+                        </tr>
+                      <?PHP
+                        $Salaryqueary = "SELECT * FROM omdata WHERE omdata_panel = 'SALARY' and omdata_user_id ='$staffId' and omdata_input_field ='DEDECTION' and omdata_month IS NULL ORDER BY omdata_option";
+                        $resSalary = mysqli_query($conn, $Salaryqueary);
+                        while ($rowSalary = mysqli_fetch_array($resSalary)) {
+                            $omdata_id = $rowSalary['omdata_id'];
+                            $omdata_option = $rowSalary['omdata_option'];
+                            $omdata_value = $rowSalary['omdata_value'];
+                            $omdata_percentage = $rowSalary['omdata_percentage'];
+                            ?>
+                        <tr>
+                            <td style="width:200px;">
+                                <div>
+                                        <input align="right" id="amount" name="amount" placeholder="" value="<?php echo $omdata_option; ?>"
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                                     document.getElementById('ComputerImage').focus();
+                                                       return false;
+                                                     } else if (event.keyCode == 8 && this.value == '') {
+                                                     document.getElementById('Accuntnum').focus();
+                                                    return false;
+                                                   }"
+                                               type="text" spellcheck="false" class="input_border_grey"
+                                               maxlength="50" style="text-transform:uppercase; width: 200px; color: #20242b;" onblur="getaddcomponent('<?php echo $staffId; ?>',this.value,'<?php echo $omdata_option; ?>',<?php echo $omdata_id; ?>,'DEDECTION','SALARY','Addcomponent');"/>
+                                    </div>
+                            </td>
+                          <td style="width: 70px;">
+                                <div>
+                                <input id="percentage" name="percentage" placeholder="" value="<?php echo $omdata_percentage; ?>"
+                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                             document.getElementById('ComputerImage').focus();
+                                               return false;
+                                             } else if (event.keyCode == 8 && this.value == '') {
+                                             document.getElementById('Accuntnum').focus();
+                                            return false;
+                                           }"
+                                           type="text" spellcheck="false" class="input_border_grey"
+                                           maxlength="50" style="text-transform:uppercase; width: 80px;" onchange="pervalue(this.value,'<?php echo $omdata_option; ?>','<?php echo $staffId; ?>');"/>
+                                </div>
+                            </td>
+                            <td style="width: 100px;">
+                                <div>
+                                      <?php 
+                                    if($Grspay != ''){
+                                    $omdata_value = (($Totalearnig / 100)*$omdata_percentage);                                   
+                                    $totaldedection += $omdata_value;
+                                    //
+                                       $Deductionqueary = "UPDATE omdata SET omdata_value ='$totaldedection' WHERE omdata_option = 'DEDECTION' and omdata_user_id = '$staffId' and omdata_input_field ='TOTALDEDECTION' and omdata_panel='SALARY'"; 
+                                       if (!mysqli_query($conn, $Deductionqueary)) {
+                                       die('Error: ' . mysqli_error($conn));
+                                       }
+                                    
+                                    
+                                    }
+                                       $Compamtqueary = "UPDATE omdata SET omdata_value ='$omdata_value',omdata_percentage = '$omdata_percentage' WHERE omdata_option = '$omdata_option' and omdata_user_id = '$staffId'"; 
+                                       if (!mysqli_query($conn, $Compamtqueary)) {
+                                       die('Error: ' . mysqli_error($conn));
+                                       }
+                                    ?>
+                                    <input id="amount" name="amount" placeholder="" value="<?php echo $omdata_value; ?>"
+                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                             document.getElementById('ComputerImage').focus();
+                                               return false;
+                                             } else if (event.keyCode == 8 && this.value == '') {
+                                             document.getElementById('Accuntnum').focus();
+                                            return false;
+                                           }"
+                                           type="text" spellcheck="false" class="input_border_grey"
+                                           maxlength="50" style="text-transform:uppercase; width: 100px;" onchange="componentamt(this.value,'<?php echo $omdata_option; ?>','<?php echo $staffId; ?>');"/>
+                                </div>
+                            </td>
+                            <td>
+                                <span style="margin-left: 10px;">
+                                    <a style="cursor: pointer;" 
+                                           onclick="getaddcomponent('<?php echo $staffId; ?>','<?php echo $omdata_id; ?>','<?php echo $omdata_option; ?>','DEDECTION','SALARY','Add');">
+                                            <img src="<?php echo $documentRootBSlash; ?>/images/update16.png" alt="Click Here To Add More Component" class="marginTop5"
+                                                 onload="<?php if ($panelName != 'updateusergroup') { ?>
+                                                                          document.getElementById('LastDiscountPercent').focus();
+                                                 <?php } ?>"/>
+                                        </a>
+                                    </span>
+                                    <span style="margin-left: 5px;">
+                                        <a style="cursor: pointer;" 
+                                               onclick ="getaddcomponent('<?php echo $staffId; ?>','<?php echo $omdata_id; ?>','<?php echo $omdata_option; ?>','DEDECTION','SALARY','Delete');">
+                                                <img src="<?php echo $documentRootBSlash; ?>/images/delete16.png" alt="delete" class="marginTop5"/>
+                                            </a>
+                                    </span>
+                                </td>
+                        </tr>
+             <?php } ?>
+                      <?php for ($i = 0; $i < $totalcount; $i++) { ?>
+                            <tr>
+                                <td  style="font-weight: bold; font-size: 18px; height: 20px;">&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        <?php } ?>
+                            <tr>
+                                <td colspan="2" align="right">
+                                    <span style="font-weight: bold; font-size: 15px; color : #0d0c0c; margin-left: 130px;">TOTAL DEDECTION :</span>
+                                </td>
+                                <td>
+                                    <span style="font-weight: bold; color : #0d0c0c; font-size: 18px;">
+                                       <?php echo $totaldedection; ?>
+                                    </span>
+                                </td>
+                                <td></td>
+                            </tr>
+                  </table>
+                </td>
+            </tr>           
+        </table> 
+                    
+        <table border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" style="margin-top: 10px;" align="right">
+            <tr style="" align="right">  
+                <td colspan="2" style="width: 400px;"></td>
+                <td style="width: 400px;">
+            <table border="1" cellspacing="0" cellpadding="0" width="100%" valign="top" style="margin-top: 10px;">
+                <tr style="">      
+                    <td valign="left" align="center" style="width: 300px;">
+                        <div class="" style="font-size: 18px; font-color:#a8a823;">
+                            <span style="margin-left: 0PX;  color : #736565;  font-weight: bold; float:Right;">
+                                NET PAYABLE SALARY : 
+                            </span>
+                        </div>
+                    </td>
+                    <td style="width: 300px;">
+                         <div class="" style="font-size: 10px; font-color:#0d0c0c;">
+                             <?php                       
+                                    $Netpayamt = $Totalearnig - $totaldedection; 
+                                    //
+                                      $Netamtqueary = "UPDATE omdata SET omdata_value ='$Netpayamt' WHERE omdata_option = 'NETAMT' and omdata_user_id = '$staffId' and omdata_input_field ='NETAMOUNT' and omdata_panel='SALARY'"; 
+                                       if (!mysqli_query($conn, $Netamtqueary)) {
+                                       die('Error: ' . mysqli_error($conn));
+                                       }  
+                                    ?>
+                             <div style="color : #0d0c0c; ">
+                                 <span style="font-size: 20px; font-weight: bold; margin-left: 2px;">
+                                         <?php echo $Netpayamt;  ?>   
+                                 </span>
+                             </div>
+                        </div>                       
+                    </td>
+                </tr>  
+            </table>  
+          </td>
+        </tr>  
+     </table> 
+  </div>
+</div>

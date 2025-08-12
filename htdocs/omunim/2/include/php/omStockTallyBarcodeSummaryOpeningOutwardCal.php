@@ -1,3 +1,269 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK STOCK TALLY CALCULATE OPENING OUTWARD FILE @AUTHOR:YUVRAJ-28OCT2022
+ * **************************************************************************************************
+ *
+ * Created on DEC 07, 2021 01:20:12 PM 
+ * **************************************************************************************
+ * @FileName: omStockLedgerSummaryOpeningOutwardCal.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.102
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:YUVRAJ-28OCT2022
+ *  AUTHOR: 
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.102
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:YUVRAJ-28OCT2022
+//***********************************************************************************************************
+//
+//
+$OutwardQTYOp = 0;
+$OutwardGsWeightOp = 0;
+$OutwardNtWeightOp = 0;
+$OutwardFnWeightOp = 0; 
+//
+$OutwardGsWeightOpMG = 0;
+$OutwardNtWeightOpMG = 0;
+$OutwardFnWeightOpMG = 0;
+//
+$OutwardGsWeightOpGM = 0;
+$OutwardNtWeightOpGM = 0;
+$OutwardFnWeightOpGM = 0;
+//
+$OutwardGsWeightOpKG = 0;
+$OutwardNtWeightOpKG = 0;
+$OutwardFnWeightOpKG = 0;
+//
+$OutwardGsWeightOpCT = 0;
+$OutwardNtWeightOpCT = 0;
+$OutwardFnWeightOpCT = 0;
+//
+$SumOfOutwardTagQTYOpMG = 0;
+$SumOfOutwardTagGsWeightOpMG = 0;
+$SumOfOutwardTagNtWeightOpMG = 0;
+$SumOfOutwardTagFnWeightOpMG = 0;
+//
+$SumOfOutwardTagQTYOpGM = 0;
+$SumOfOutwardTagGsWeightOpGM = 0;
+$SumOfOutwardTagNtWeightOpGM = 0;
+$SumOfOutwardTagFnWeightOpGM = 0;
+//
+$SumOfOutwardTagQTYOpKG = 0;
+$SumOfOutwardTagGsWeightOpKG = 0;
+$SumOfOutwardTagNtWeightOpKG = 0;
+$SumOfOutwardTagFnWeightOpKG = 0;
+//
+$SumOfOutwardTagQTYOpCT = 0;
+$SumOfOutwardTagGsWeightOpCT = 0;
+$SumOfOutwardTagNtWeightOpCT = 0;
+$SumOfOutwardTagFnWeightOpCT = 0;
+//
+$TotalSumOfOutwardTagGsWeightOpMG = 0;
+$TotalSumOfOutwardTagNtWeightOpMG = 0;
+$TotalSumOfOutwardTagFnWeightOpMG = 0;
+//
+$TotalSumOfOutwardTagGsWeightOpGM = 0;
+$TotalSumOfOutwardTagNtWeightOpGM = 0;
+$TotalSumOfOutwardTagFnWeightOpGM = 0;
+//
+$TotalSumOfOutwardTagGsWeightOpKG = 0;
+$TotalSumOfOutwardTagNtWeightOpKG = 0;
+$TotalSumOfOutwardTagFnWeightOpKG = 0;
+//
+$TotalSumOfOutwardTagGsWeightOpCT = 0;
+$TotalSumOfOutwardTagNtWeightOpCT = 0;
+$TotalSumOfOutwardTagFnWeightOpCT = 0;
+//
+$TotalSumOfOutwardTagQTYOp = 0;
+$TotalSumOfOutwardTagGsWeightOp = 0;
+$TotalSumOfOutwardTagNtWeightOp = 0;
+$TotalSumOfOutwardTagFnWeightOp = 0;
+//
+//
+//
+// START CODE TO GET OUTWARD QTY, GS WEIGHT, NET WEIGHT FOR MG, GM, KG, CT @AUTHOR:YUVRAJ-28OCT2022
+$outwardStockDetOp = "SELECT "
+        . "OutwardQTYOp, "
+        . "OutwardGsWeightOpMG, "
+        . "OutwardGsWeightOpGM, "
+        . "OutwardGsWeightOpKG, "
+        . "OutwardGsWeightOpCT, "
+        . "OutwardNtWeightOpMG, "
+        . "OutwardNtWeightOpGM, "
+        . "OutwardNtWeightOpKG, "
+        . "OutwardNtWeightOpCT, "
+        . "OutwardFnWeightOpMG, "
+        . "OutwardFnWeightOpGM, "
+        . "OutwardFnWeightOpKG, "
+        . "OutwardFnWeightOpCT, "
+        . "sttr_indicator "
+        . "FROM TEMP_BARCODE_OPENING_OUTWARD_STOCK "
+        . "WHERE sttr_owner_id = '$sessionOwnerId' "
+        . "and sttr_firm_id = '$rowStockReportMainQuery[multi_barcode_firm_id]' "
+        . "and sttr_item_category = '$Category' "
+        . "and sttr_item_name = '$Name' "
+        . "and sttr_stock_type = '$StockType' "  
+        . "and sttr_transaction_type NOT IN ('SELL','sell') "
+        . "and sttr_purity = '$Purity' "
+        . "and sttr_metal_type = '$MetalType' ";
+//
+//echo '$outwardStockDetOp == ' . $outwardStockDetOp . '<br /><br />';
+//
+$resOutwardStockDetOp = mysqli_query($conn, $outwardStockDetOp);
+$rowOutwardStockDetOp = mysqli_fetch_array($resOutwardStockDetOp);
+//
+$OutwardGsWeightOpMG = ($rowOutwardStockDetOp[OutwardGsWeightOpMG] / 1000);
+$OutwardNtWeightOpMG = ($rowOutwardStockDetOp[OutwardNtWeightOpMG] / 1000);
+$OutwardFnWeightOpMG = ($rowOutwardStockDetOp[OutwardFnWeightOpMG] / 1000);
+//
+$OutwardGsWeightOpGM = ($rowOutwardStockDetOp[OutwardGsWeightOpGM]);
+$OutwardNtWeightOpGM = ($rowOutwardStockDetOp[OutwardNtWeightOpGM]);
+$OutwardFnWeightOpGM = ($rowOutwardStockDetOp[OutwardFnWeightOpGM]);
+//
+$OutwardGsWeightOpKG = ($rowOutwardStockDetOp[OutwardGsWeightOpKG] * 1000);
+$OutwardNtWeightOpKG = ($rowOutwardStockDetOp[OutwardNtWeightOpKG] * 1000);
+$OutwardFnWeightOpKG = ($rowOutwardStockDetOp[OutwardFnWeightOpKG] * 1000);
+//
+$OutwardGsWeightOpCT = ($rowOutwardStockDetOp[OutwardGsWeightOpCT] / 5);
+$OutwardNtWeightOpCT = ($rowOutwardStockDetOp[OutwardNtWeightOpCT] / 5);
+$OutwardFnWeightOpCT = ($rowOutwardStockDetOp[OutwardFnWeightOpCT] / 5);
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+//
+//echo 'sttr_transaction_type == ' . $rowStockReportMainQuery['sttr_transaction_type'] . '<br />';
+//
+//
+//
+// IF TRANSACTION TYPE IS PURBYSUPP @AUTHOR:YUVRAJ-28OCT2022
+if ((($rowStockReportMainQuery['multi_barcode_transaction_type'] == 'PURBYSUPP' ||
+      $rowStockReportMainQuery['multi_barcode_transaction_type'] == 'PURONCASH' ||  
+      $rowStockReportMainQuery['multi_barcode_transaction_type'] == 'EXISTING') &&
+      $rowStockReportMainQuery['multi_barcode_stock_type'] == 'wholesale')) {
+    //
+    //
+    // START CODE TO GET TAG QTY, GS WEIGHT, NET WEIGHT FOR MG, GM, KG, CT @AUTHOR:YUVRAJ-28OCT2022
+    parse_str(getTableValues("SELECT SUM(sttr_quantity) AS SumOfOutwardTagQTYOp, "
+                    . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_gs_weight,0)) AS SumOfOutwardTagGsWeightOpMG, "
+                    . "SUM(IF(sttr_nt_weight_type = 'MG', sttr_nt_weight,0)) AS SumOfOutwardTagNtWeightOpMG, "
+                    . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_fine_weight,0)) AS SumOfOutwardTagFnWeightOpMG, "
+                    . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_gs_weight,0)) AS SumOfOutwardTagGsWeightOpGM, "
+                    . "SUM(IF(sttr_nt_weight_type = 'GM', sttr_nt_weight,0)) AS SumOfOutwardTagNtWeightOpGM, "
+                    . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_fine_weight,0)) AS SumOfOutwardTagFnWeightOpGM, "
+                    . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_gs_weight,0)) AS SumOfOutwardTagGsWeightOpKG, "
+                    . "SUM(IF(sttr_nt_weight_type = 'KG', sttr_nt_weight,0)) AS SumOfOutwardTagNtWeightOpKG, "
+                    . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_fine_weight,0)) AS SumOfOutwardTagFnWeightOpKG, "
+                    . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_gs_weight,0)) AS SumOfOutwardTagGsWeightOpCT, "
+                    . "SUM(IF(sttr_nt_weight_type = 'CT', sttr_nt_weight,0)) AS SumOfOutwardTagNtWeightOpCT, "
+                    . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_fine_weight,0)) AS SumOfOutwardTagFnWeightOpCT "
+                    . "FROM stock_transaction "
+                    . "WHERE sttr_owner_id = '$sessionOwnerId' "
+                    . "and sttr_firm_id = '$rowStockReportMainQuery[multi_barcode_firm_id]' "
+                    . "and sttr_st_id = '$rowStockReportMainQuery[multi_barcode_st_id]' "
+                    . "and sttr_transaction_type IN ('TAG') "
+                    . "and sttr_stock_type IN ('retail') "
+                    . "and sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal') "
+                    . "and sttr_status NOT IN ('DELETED','NotDelFromStock') "
+                    . " $dateStrForOutwardssttr "));
+    //
+    //
+    $TotalSumOfOutwardTagGsWeightOpMG = ($SumOfOutwardTagGsWeightOpMG / 1000);
+    $TotalSumOfOutwardTagNtWeightOpMG = ($SumOfOutwardTagNtWeightOpMG / 1000);
+    $TotalSumOfOutwardTagFnWeightOpMG = ($SumOfOutwardTagFnWeightOpMG / 1000);
+    //
+    $TotalSumOfOutwardTagGsWeightOpGM = $SumOfOutwardTagGsWeightOpGM;
+    $TotalSumOfOutwardTagNtWeightOpGM = $SumOfOutwardTagNtWeightOpGM;
+    $TotalSumOfOutwardTagFnWeightOpGM = $SumOfOutwardTagFnWeightOpGM;
+    //
+    $TotalSumOfOutwardTagGsWeightOpKG = ($SumOfOutwardTagGsWeightOpKG * 1000);
+    $TotalSumOfOutwardTagNtWeightOpKG = ($SumOfOutwardTagNtWeightOpKG * 1000);
+    $TotalSumOfOutwardTagFnWeightOpKG = ($SumOfOutwardTagFnWeightOpKG * 1000);
+    //
+    $TotalSumOfOutwardTagGsWeightOpCT = ($SumOfOutwardTagGsWeightOpCT / 5);
+    $TotalSumOfOutwardTagNtWeightOpCT = ($SumOfOutwardTagNtWeightOpCT / 5);
+    $TotalSumOfOutwardTagFnWeightOpCT = ($SumOfOutwardTagFnWeightOpCT / 5);
+    //
+    //
+    $TotalSumOfOutwardTagQTYOp = ($SumOfOutwardTagQTYOp);
+    $TotalSumOfOutwardTagGsWeightOp = ($TotalSumOfOutwardTagGsWeightOpMG + $TotalSumOfOutwardTagGsWeightOpGM + $TotalSumOfOutwardTagGsWeightOpKG + $TotalSumOfOutwardTagGsWeightOpCT);
+    $TotalSumOfOutwardTagNtWeightOp = ($TotalSumOfOutwardTagNtWeightOpMG + $TotalSumOfOutwardTagNtWeightOpGM + $TotalSumOfOutwardTagNtWeightOpKG + $TotalSumOfOutwardTagNtWeightOpCT);
+    $TotalSumOfOutwardTagFnWeightOp = ($TotalSumOfOutwardTagFnWeightOpMG + $TotalSumOfOutwardTagFnWeightOpGM + $TotalSumOfOutwardTagFnWeightOpKG + $TotalSumOfOutwardTagFnWeightOpCT);
+    //
+    //
+}
+//
+//
+//echo '$TotalSumOfOutwardTagQTYOp == ' . $TotalSumOfOutwardTagQTYOp . '<br />';
+//echo '$TotalSumOfOutwardTagGsWeightOp == ' . $TotalSumOfOutwardTagGsWeightOp . '<br />';
+//echo '$TotalSumOfOutwardTagNtWeightOp == ' . $TotalSumOfOutwardTagNtWeightOp . '<br />';
+//echo '$TotalSumOfOutwardTagFnWeightOp == ' . $TotalSumOfOutwardTagFnWeightOp . '<br />';
+//
+//
+//***********************************************************************************************************
+//***********************************************************************************************************
+//
+//
+// OUTWARD QTY @AUTHOR:YUVRAJ-28OCT2022
+$OutwardQTYOp = ($rowOutwardStockDetOp[OutwardQTYOp] + $TotalSumOfOutwardTagQTYOp);
+//
+//
+if ($OutwardQTYOp == '' || $OutwardQTYOp == NULL) {
+    $OutwardQTYOp = 0;
+}
+//
+//
+// OUTWARD GS WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OutwardGsWeightOp = (($OutwardGsWeightOpMG + $OutwardGsWeightOpGM + $OutwardGsWeightOpKG + $OutwardGsWeightOpCT) + $TotalSumOfOutwardTagGsWeightOp);
+//
+//
+// OUTWARD NT WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OutwardNtWeightOp = (($OutwardNtWeightOpMG + $OutwardNtWeightOpGM + $OutwardNtWeightOpKG + $OutwardNtWeightOpCT) + $TotalSumOfOutwardTagNtWeightOp);
+//
+//
+// OUTWARD FN WEIGHT @AUTHOR:YUVRAJ-28OCT2022
+$OutwardFnWeightOp = (($OutwardFnWeightOpMG + $OutwardFnWeightOpGM + $OutwardFnWeightOpKG + $OutwardFnWeightOpCT) + $TotalSumOfOutwardTagFnWeightOp);
+//
+//
+//echo '$OutwardQTYOp == ' . $OutwardQTYOp . '<br />';
+//echo '$OutwardGsWeightOp == ' . $OutwardGsWeightOp . '<br />';
+//echo '$OutwardNtWeightOp == ' . $OutwardNtWeightOp . '<br />'; 
+//
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:YUVRAJ-28OCT2022
+//***********************************************************************************************************
+//
+//
 ?>

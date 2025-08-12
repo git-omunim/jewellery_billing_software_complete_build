@@ -1,3 +1,161 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Stock Tally Multi Barcode Scan Delete @AUTHOR-PRIYANKA-15SEP23
+ * **************************************************************************************
+ * 
+ * Created on 15 SEP, 2025 18:30:40 PM
+ *
+ * @FileName: omStockTallyMultiBarcodeScanDelete.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.280
+ * @Copyright (c) 2023 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2023 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: 
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+//
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+//
+//
+// Start Code for Firm String
+include 'ommpfrmstr.php';
+// End Code for Firm String
+//
+//
+?>
+<?php
+//
+//
+//print_r($_REQUEST);
+//
+//
+if ($_REQUEST['productCategory'] != '' && $_REQUEST['productCategory'] != NULL) {
+//
+//
+// Update status in stock_transaction table @AUTHOR-PRIYANKA-15SEP23
+$updateMultiBarcodeStock = "UPDATE stock_transaction s1
+                            LEFT JOIN temp_view_multibarcode_stock s2
+                            ON s1.sttr_item_code = s2.sttr_item_code
+                            SET s1.sttr_status = 'DELETED'          
+                            WHERE s1.sttr_status != 'SOLDOUT'
+                            and s1.sttr_item_category = '$_REQUEST[productCategory]'
+                            and s1.sttr_stock_type = 'retail'
+                            and s1.sttr_transaction_type IN ('EXISTING','PURONCASH','TAG')
+                            and s1.sttr_indicator IN ('stock')
+                            and (s2.sttr_barcode_tally_status != 'Y' OR s2.sttr_barcode_tally_status IS NULL OR s2.sttr_barcode_tally_status = '')"; 
+// 
+//echo '<br />$updateMultiBarcodeStock == ' . $updateMultiBarcodeStock . '<br /><br />';
+//
+if (!mysqli_query($conn, $updateMultiBarcodeStock)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+// Move into stock_transaction_del table @AUTHOR-PRIYANKA-15SEP23
+    $query = "INSERT INTO stock_transaction_del (sttr_id,sttr_st_id,sttr_sttrin_id,sttr_owner_id,sttr_jrnl_id,sttr_firm_id,sttr_user_id,sttr_account_id,sttr_utin_id,sttr_staff_id,sttr_transaction_type,sttr_item_pre_id,sttr_item_id,sttr_metal_type,sttr_stock_type,sttr_item_category,sttr_item_name,sttr_barcode_prefix,sttr_barcode,sttr_add_barcode_date,sttr_item_code,sttr_indicator,sttr_brand_id,sttr_bis_mark,sttr_image_id,sttr_add_date,sttr_bill_date,sttr_mfg_date,sttr_tally_date,sttr_hsn_no,sttr_size,sttr_shape,sttr_color,sttr_quantity,sttr_clarity,sttr_metal_rate,sttr_metal_rate_id,sttr_purity,sttr_wastage,sttr_final_purity,sttr_cust_wastage,sttr_gs_weight,sttr_gs_weight_type,sttr_pkt_weight,sttr_pkt_weight_type,sttr_nt_weight,sttr_nt_weight_type,sttr_fine_weight,sttr_final_fine_weight,sttr_lab_charges,sttr_lab_charges_type,sttr_total_lab_charges,sttr_making_charges,sttr_making_charges_type,sttr_tax,sttr_tot_tax,sttr_valuation,sttr_stone_valuation,sttr_final_valuation,sttr_status,sttr_current_status,sttr_sell_status,sttr_bc_print_status,sttr_stock_add,sttr_item_ent_type,sttr_other_info,sttr_item_other_info,sttr_pre_invoice_no,sttr_invoice_no,sttr_purchase_rate,sttr_purchase_rate_type,sttr_sell_rate,sttr_sell_rate_type,sttr_crystal_yn,sttr_other_charges_by,sttr_final_val_by,sttr_since,sttr_comments,sttr_value_added,sttr_item_safe_tray,sttr_cust_itmcalby,sttr_cust_itmcode,sttr_cust_itmnum,sttr_item_length,sttr_item_width,sttr_item_model_no,sttr_item_sales_pkg,sttr_price,sttr_cust_price,sttr_purchase_price,sttr_pkt_qty1,sttr_pkt_qty2,sttr_pkt_qty3,sttr_pkt_qty4,sttr_pkt_qty5,sttr_pkt_weight1,sttr_pkt_weight2,sttr_pkt_weight3,sttr_pkt_weight4,sttr_pkt_weight5,sttr_lab_chrg_type1,sttr_lab_chrg_type2,sttr_lab_chrg_type3,sttr_lab_chrg_type4,sttr_lab_chrg_type5,sttr_lab_chrg_qty1,sttr_lab_chrg_qty2,sttr_lab_chrg_qty3,sttr_lab_chrg_qty4,sttr_lab_chrg_qty5,sttr_lab_chrg_val1,sttr_lab_chrg_val2,sttr_lab_chrg_val3,sttr_lab_chrg_val4,sttr_lab_chrg_val5,sttr_lab_chrg_tot1,sttr_lab_chrg_tot2,sttr_lab_chrg_tot3,sttr_lab_chrg_tot4,sttr_lab_chrg_tot5,sttr_wt_auto_less) "
+           . "SELECT sttr_id,sttr_st_id,sttr_sttrin_id,sttr_owner_id,sttr_jrnl_id,sttr_firm_id,sttr_user_id,sttr_account_id,sttr_utin_id,sttr_staff_id,sttr_transaction_type,sttr_item_pre_id,sttr_item_id,sttr_metal_type,sttr_stock_type,sttr_item_category,sttr_item_name,sttr_barcode_prefix,sttr_barcode,sttr_add_barcode_date,sttr_item_code,sttr_indicator,sttr_brand_id,sttr_bis_mark,sttr_image_id,sttr_add_date,sttr_bill_date,sttr_mfg_date,sttr_tally_date,sttr_hsn_no,sttr_size,sttr_shape,sttr_color,sttr_quantity,sttr_clarity,sttr_metal_rate,sttr_metal_rate_id,sttr_purity,sttr_wastage,sttr_final_purity,sttr_cust_wastage,sttr_gs_weight,sttr_gs_weight_type,sttr_pkt_weight,sttr_pkt_weight_type,sttr_nt_weight,sttr_nt_weight_type,sttr_fine_weight,sttr_final_fine_weight,sttr_lab_charges,sttr_lab_charges_type,sttr_total_lab_charges,sttr_making_charges,sttr_making_charges_type,sttr_tax,sttr_tot_tax,sttr_valuation,sttr_stone_valuation,sttr_final_valuation,sttr_status,sttr_current_status,sttr_sell_status,sttr_bc_print_status,sttr_stock_add,sttr_item_ent_type,sttr_other_info,sttr_item_other_info,sttr_pre_invoice_no,sttr_invoice_no,sttr_purchase_rate,sttr_purchase_rate_type,sttr_sell_rate,sttr_sell_rate_type,sttr_crystal_yn,sttr_other_charges_by,sttr_final_val_by,sttr_since,sttr_comments,sttr_value_added,sttr_item_safe_tray,sttr_cust_itmcalby,sttr_cust_itmcode,sttr_cust_itmnum,sttr_item_length,sttr_item_width,sttr_item_model_no,sttr_item_sales_pkg,sttr_price,sttr_cust_price,sttr_purchase_price,sttr_pkt_qty1,sttr_pkt_qty2,sttr_pkt_qty3,sttr_pkt_qty4,sttr_pkt_qty5,sttr_pkt_weight1,sttr_pkt_weight2,sttr_pkt_weight3,sttr_pkt_weight4,sttr_pkt_weight5,sttr_lab_chrg_type1,sttr_lab_chrg_type2,sttr_lab_chrg_type3,sttr_lab_chrg_type4,sttr_lab_chrg_type5,sttr_lab_chrg_qty1,sttr_lab_chrg_qty2,sttr_lab_chrg_qty3,sttr_lab_chrg_qty4,sttr_lab_chrg_qty5,sttr_lab_chrg_val1,sttr_lab_chrg_val2,sttr_lab_chrg_val3,sttr_lab_chrg_val4,sttr_lab_chrg_val5,sttr_lab_chrg_tot1,sttr_lab_chrg_tot2,sttr_lab_chrg_tot3,sttr_lab_chrg_tot4,sttr_lab_chrg_tot5,sttr_wt_auto_less "
+           . "FROM stock_transaction WHERE sttr_status = 'DELETED'";
+    //  
+    //
+    //echo '$query == ' . $query . '<br /><br />';
+    //
+    //
+    if (!mysqli_query($conn, $query)) {
+        die('Error (Line No - ' . __LINE__ . '): ' . mysqli_error($conn));
+    }
+    //
+    // Show delete date into stock_transaction_del table @AUTHOR-PRIYANKA-15SEP23
+    //
+    $delDate = strtoupper(date('d M Y'));
+    //
+    // Show delete log @AUTHOR-PRIYANKA-15SEP23
+    //
+    $currentDate = date('Y-m-d H:i:s');
+    $currentFile = 'omStockTallyMultiBarcodeScanDelete';
+    $currentFunction = 'stock_transaction';
+    $currentLine = __LINE__;
+    //
+    $sttr_del_log = $currentDate . ' ' . 'File: ' . $currentFile . ' ' . 'Function: ' . $currentFunction . ' ' . 'Line ' . $currentLine;
+    //
+    $deleted_sttr_id = $sttrId;
+    //
+    $upd_query = " UPDATE stock_transaction_del SET sttr_del_date = '$delDate', sttr_del_log = ' $sttr_del_log' "
+               . " WHERE sttr_owner_id = '$sessionOwnerId' AND sttr_id = '$deleted_sttr_id' ";
+    //
+    if (!mysqli_query($conn, $upd_query)) {
+        die('Error (Line No - ' . __LINE__ . '): ' . mysqli_error($conn));
+    }
+//
+//
+// Delete stock from stock_transaction table @AUTHOR-PRIYANKA-15SEP23
+$deleteMultibarcodeStock = "DELETE s1 FROM stock_transaction s1
+                            LEFT JOIN temp_view_multibarcode_stock s2
+                            ON s1.sttr_item_code = s2.sttr_item_code
+                            WHERE s1.sttr_status != 'SOLDOUT'
+                            and s1.sttr_item_category = '$_REQUEST[productCategory]'
+                            and s1.sttr_stock_type = 'retail'
+                            and s1.sttr_transaction_type IN ('EXISTING','PURONCASH','TAG')
+                            and s1.sttr_indicator IN ('stock')
+                            and (s2.sttr_barcode_tally_status != 'Y' OR s2.sttr_barcode_tally_status IS NULL OR s2.sttr_barcode_tally_status = '')"; 
+// 
+//echo '$deleteMultibarcodeStock == ' . $deleteMultibarcodeStock . '<br /><br />';
+//
+if (!mysqli_query($conn, $deleteMultibarcodeStock)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+//
+// Delete stock from temp_view_multibarcode_stock table @AUTHOR-PRIYANKA-16SEP23
+$deleteFromTempViewMultibarcodeStock = "DELETE FROM temp_view_multibarcode_stock 
+                                        WHERE sttr_item_category = '$_REQUEST[productCategory]'
+                                        AND sttr_status != 'SOLDOUT'
+                                        AND sttr_stock_type = 'retail'
+                                        AND sttr_transaction_type IN ('EXISTING','PURONCASH','TAG')
+                                        AND sttr_indicator IN ('stock')
+                                        AND (sttr_barcode_tally_status != 'Y' OR sttr_barcode_tally_status IS NULL OR sttr_barcode_tally_status = '')"; 
+// 
+//echo '$deleteFromTempViewMultibarcodeStock == ' . $deleteFromTempViewMultibarcodeStock . '<br /><br />';
+//
+if (!mysqli_query($conn, $deleteFromTempViewMultibarcodeStock)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+//
+//
+}
+//
+//
+?>
+<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td align="center" valign="middle">
+            <div id="messDisplayDiv"></div>
+            <div class="analysis_div_rows main_link_red_12">
+                <div id="ajax_upated_div" style="visibility: visible; background:none; font-size: 14px;"> ~ Deleted Successfully ~ </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<?php
+//
+//
+include 'ogtallyMultiBarcodeScanResult.php'; 
+//
+//
 ?>

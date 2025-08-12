@@ -1,3 +1,92 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Mar 12, 2011 2:02:10 PM
+ *
+ * @FileName: omtdtrns.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+
+require_once 'ommpincr.php';
+require_once 'system/omssopin.php';
+
+$ownerId = $_SESSION['sessionOwnerId'];
+$transId = $_POST['transId'];
+$transactionCat = $_POST['transactionCat'];
+$jrnlId = $_GET['transJrnlId'];
+$transUId = $_GET['transUId'];
+$transAmt = $_GET['transAmt'];
+$transDOB = $_GET['transDOB'];
+$transFirmId = $_GET['transFirmId'];
+$transSub = $_GET['transSub'];
+if ($transId == '') {
+    $transId = $_GET['transId'];
+    $transactionCat = $_GET['transactionCat'];
+}
+
+$transPanel = $_GET['transPanel'];
+
+if ($transId == '' || $transId == NULL) {
+    header("Location: " . $documentRoot . "/include/php/ommperrp.php");
+} else {
+    /*     * *******Start code to add sys_log api @Author:PRIYA14APR14******************** */
+    $sslg_trans_sub = 'DAILY TRANSACTION DELETED';
+    $sysLogTransType = 'Trans';
+    $sysLogTransId = $transUId;
+    $sslg_firm_id = $transFirmId;
+    $sslg_trans_comment = 'Transaction Id: ' . $sysLogTransId . ', Transaction Date: ' . $transDOB . ',Transaction Amount: ' . formatInIndianStyle($transAmt) . ',Sub: ' . substr($transSub, 0, 16);
+//
+//Start Code To Delete Transaction from transaction table @AUTHOR: SANDY20JUL13
+    $query = "DELETE FROM transaction WHERE transaction_own_id = '$ownerId' and transaction_id = '$transId'";
+
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //End Code To Delete Transaction from transaction table @AUTHOR: SANDY20JUL13
+    
+    //DELETE ALL SUB TRANSACTION ENTRIES @AUTHOR:SHRI14AUG20
+    if ($transPanel == 'NEW_TRANS_PANEL') {
+        $queryDelSubTrans = "DELETE FROM transaction WHERE transaction_own_id = '$ownerId' and transaction_trans_id = '$transId'";
+
+        if (!mysqli_query($conn, $queryDelSubTrans)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+
+    /*     * ******************************************************************************************* */
+    /*                        Start Code To Delete Transaction from journal table @AUTHOR: SANDY20JUL13               */
+    /*     * ******************************************************************************************* */
+    $jrnlId = $jrnlId;
+    $apiType = 'delete';
+    include 'ommpjrnl.php';
+
+    $jrtrJrnlId = $jrnlId;
+    $apiType = 'delete';
+    include 'ommpjrtr.php';
+    /*     * ******************************************************************************************* */
+    /*                        End Code To Delete Transaction from journal table @AUTHOR: SANDY20JUL13            */
+    /*     * ******************************************************************************************* */
+
+//change in header @AUTHOR: SANDY06JAN14
+    header("Location: " . $documentRoot . "/include/php/omtatrnd.php?divMainMiddlePanel=TransactionDeleted");
+}

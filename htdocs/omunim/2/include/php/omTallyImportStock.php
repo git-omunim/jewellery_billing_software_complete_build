@@ -1,3 +1,136 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: IMPORT OPTIONS : AUTHOR @ RENUKA 19 OCT 2022
+ * **************************************************************************************
+ * 
+ * Created on 19 OCT 2022
+ *
+ * @FileName:  omTallyImportStock.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:.com
+ * @All rights reserved  info@softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+
+// *************************************************************************************************************
+// START CODE FOR IMPORT DATA @RENUKA OCT_2022
+// *************************************************************************************************************
+$firmid = $_SESSION['setFirmSession'];
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$qSelFirmDetails = "SELECT firm_id, firm_own_id, firm_name, firm_address, firm_city, firm_long_name, firm_phone_details, firm_email, firm_tin_no from "
+        . "firm where firm_own_id = '$sessionOwnerId' and firm_id = '$firmid' ";
+$resFirmDetails = mysqli_query($conn, $qSelFirmDetails) or die(mysqli_error($conn));
+while ($resFirmData = mysqli_fetch_array($resFirmDetails, MYSQLI_ASSOC)) {
+//print_r($resFirmData);
+    $sellerGST = $resFirmData['firm_tin_no'];
+    $firmname = $resFirmData['firm_name'];
+    $sellerName = $resFirmData['firm_long_name'];
+    $sellerAddress = $resFirmData['firm_address'];
+    $sellerCity = $resFirmData['firm_city'];
+    $sellerMobNo = $resFirmData['firm_phone_details'];
+    $sellerEmail = $resFirmData['firm_email'];
+    $firm_id = $resFirmData['firm_id'];
+}
+?>
+<?php
+
+if (isset($_POST['submit'])) {
+    if (isset($_FILES['userUploadedFile']['name']) && $_FILES['userUploadedFile']['name'] != "") {
+        $allowedExtensions = array("xls", "xlsx");
+// Return the extension of the file
+        $ext = pathinfo($_FILES['userUploadedFile']['name'], PATHINFO_EXTENSION);
+        if (in_array($ext, $allowedExtensions)) {
+            $isUploaded = $_FILES['userUploadedFile']['tmp_name'];
+            if ($isUploaded) {
+                include "PHPExcel/Classes/PHPExcel/IOFactory.php";
+
+                try {
+                    $objPHPExcel = PHPExcel_IOFactory::load($isUploaded);
+                } catch (Exception $e) {
+                    die('Error loading file "' . pathinfo($isUploaded, PATHINFO_BASENAME) . '": ' . $e->getMessage());
+                }
+
+                $phpspreadsheet = $objPHPExcel->getSheet(0);
+
+                $total_products = $phpspreadsheet->getHighestRow();
+
+                $highest_column = $phpspreadsheet->getHighestColumn();
+                for ($row = 1; $row <= 3; $row++) {
+                    $userDataAll = $phpspreadsheet->rangeToArray('A' . $row . ':' . $highest_column . $row, NULL, TRUE, FALSE);
+                    if ($row == 1)
+                        $firm_name = $userDataAll[0][0];
+                    if ($row == 2)
+                        $firm_address = $userDataAll[0][0];
+                    if ($row == 3)
+                        $firm_phone_details = $userDataAll[0][0];
+                }
+                $firm_id = 0;
+                parse_str(getTableValues("SELECT firm_id FROM firm WHERE firm_own_id = '$sessionOwnerId' and firm_name = '$firm_name' "));
+                $f_id = $firm_id;
+//                echo '<table class=" table responsive" cellpadding="5" cellspacing="0" border="1">';
+
+                for ($row = 5; $row <= $total_products; $row++) {
+                    $userDataAll = $phpspreadsheet->rangeToArray('B' . $row . ':' . $highest_column . $row, NULL, TRUE, FALSE);
+                    $user_fname = $userDataAll[0][0];
+
+                    $st_item_name = $userDataAll[0][0];
+                    $st_quantity = $userDataAll[0][3];
+                    $st_gs_weight_type = $userDataAll[0][2];
+                    if ($st_gs_weight_type == ' Not Applicable') {
+                        $st_gs_weight_type = '';
+                    }
+
+                    $st_metal_rate = $userDataAll[0][4];
+                    $st_final_valuation = -($userDataAll[0][5]);
+                    $resultrow = "SELECT * FROM stock WHERE st_item_name = '$st_item_name' and st_owner_id = '$sessionOwnerId' ";
+                    //echo $qSelCustomerDetails;
+                    $resCustomerDetails = mysqli_query($conn, $resultrow) or die(mysqli_error($conn));
+                    $rowcount = mysqli_num_rows($resCustomerDetails);
+
+                    if ($rowcount == 0) {
+
+                        if ($user_fname != '' && $user_fname != NULL && $st_quantity != '' && $st_metal_rate != '' && $st_gs_weight_type != '') {
+                            $sql = " INSERT INTO stock (st_owner_id, st_firm_id, st_item_name,st_metal_type, st_quantity,st_metal_rate,st_gs_weight_type,st_fine_weight_type,st_final_valuation,st_stock_type,st_item_category ,st_purity,st_final_purity,st_wastage, st_avg_wastage,st_pur_avg_rate ,st_gs_weight,st_pkt_weight_type ,st_nt_weight,st_nt_weight_type,st_fine_weight,st_purchase_rate,st_final_fine_weight)"
+                                    . " VALUES ( '" . $sessionOwnerId . "', '" . $f_id . "','" . $st_item_name . "','xyz','" . $st_quantity . "','" . $st_metal_rate . "','" . $st_gs_weight_type . "','" . $st_gs_weight_type . "','" . $st_final_valuation . "','retail','stock','100','100','0','0','" . $st_final_valuation . "','" . $st_quantity . "','" . $st_gs_weight_type . "','" . $st_quantity . "','" . $st_gs_weight_type . "','" . $st_quantity . "','" . $st_final_valuation . "','" . $st_quantity . "') ";
+
+                            $result = mysqli_query($conn, $sql);
+                        }
+                    } else {
+                        echo "Stock Already Exist!";
+                        exit();
+                    }
+                }
+
+                if ($result) {
+                    echo "<script type=\"text/javascript\"> 
+                        alert(\" Your File is uploaded Successfully.\"); 
+                        </script>";
+                } else {
+                    echo "ERROR: " . mysqli_error($conn);
+                }
+                echo '</table>';
+            } else {
+                echo '<span class="msg">Sorry, File not uploaded!</span>';
+            }
+        } else {
+            echo '<span class="msg">This File type of file not allowed!</span>';
+        }
+    } else {
+        echo '<span class="msg">Please Select an excel file first!</span>';
+    }
+}
+//header("Location: $documentRoot/include/php/ompplypd.php");
 ?>

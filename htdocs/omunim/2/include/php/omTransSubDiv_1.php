@@ -1,3 +1,138 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 28, 2020 11:57:06 AM
+ *
+ * @FileName: omTransSubDiv_1.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:SHRI
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+$selFirmId = NULL;
+if (isset($_GET['firmId'])) {
+    $selFirmId = $_GET['firmId'];
+} else if (isset($_POST['firmId'])) {
+    $selFirmId = $_POST['firmId'];
+} else {
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//echo '$selFirmId:'.$selFirmId;
+
+if ($selFirmId == '' || $selFirmId == NULL || $selFirmId == 'undefined') {
+    parse_str(getTableValues("SELECT firm_id FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_id asc"));
+    $selFirmId = $firm_id;
+}
+if ($transactionEntryCount == '')
+    $transactionEntryCount = $_REQUEST['transactionEntryCount'];
+
+if ($transactionEntryCount == '')
+    $transactionEntryCount = 3;
+
+//echo '$transactionEntryCount:'.$transactionEntryCount;
+?>
+<div id="transactionEntryDiv<?php echo $transactionEntryCount; ?>" name="transactionEntryDiv<?php echo $transactionEntryCount; ?>">
+    <table border="0" cellspacing="1" cellpadding="0" width="100%">
+        <tr>
+            <td align="left" width="23%" class="textBoxCurve1px backFFFFFF">
+                <input type="hidden" id="del<?php echo $transactionEntryCount; ?>" name="del<?php echo $transactionEntryCount; ?>" value="<?php echo $transactionEntryCount; ?>" />
+                <input type="hidden" id="transactionDiv<?php echo $transactionEntryCount; ?>" name="transactionDiv<?php echo $transactionEntryCount; ?>" />
+                <input type="hidden" id="noOfTransactions" name="noOfTransactions" value="<?php echo $noOfTransactions; ?>"/>
+                <input type="hidden" id="addTransactionDivCount" name="addTransactionDivCount" value="<?php echo $transactionEntryCount; ?>"/>
+                <input type="hidden" id="panelName" name="panelName" value="<?php echo $panelName; ?>"/>
+                <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%">
+                    <?php
+                    $prevFieldId = 'transAmtCr2';
+                    $nextFieldId = 'transAmtDr' . $transactionEntryCount;
+                    $allAccountDivId = 'transToAcc' . $transactionEntryCount;
+                    $accIdSelected = '';
+                    $accNameSelected = '';
+                    $allAccountDivClass = 'textLabel14CalibriReq';
+                    $firmIdSelected = $selFirmId; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                    include 'omacpalt.php';
+                    ?>
+                </div>
+            </td>
+            <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+                <input id="transAmtDr<?php echo $transactionEntryCount; ?>" style="padding-right: 10px;width: 250px;"
+                       name="transAmtDr<?php echo $transactionEntryCount; ?>" spellcheck="false" type="text" placeholder="AMOUNT"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('transFromAcc<?php echo $transactionEntryCount; ?>').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('transToAcc<?php echo $transactionEntryCount; ?>').focus();
+                                   return false;
+                               }"
+                       onblur="appendDecimalsOnTransAmts();"
+                       onkeyup="calcTotTransAmount();"
+                       spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="15" maxlength="20" />
+            </td>
+            <td align="left" width="23%" class="textBoxCurve1px backFFFFFF" style="border:0">
+                <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%">
+                    <?php
+                    $prevFieldId = 'transAmtDr' . $transactionEntryCount;
+                    $nextFieldId = 'transAmtCr' . $transactionEntryCount;
+                    $allAccountDivId = 'transFromAcc' . $transactionEntryCount;
+                    $accIdSelected = '';
+                    $accNameSelected = '';
+                    $allAccountDivClass = 'textLabel14CalibriReq';
+                    $firmIdSelected = $selFirmId;
+                    include 'omacpalt.php';
+                    ?>
+                </div>
+            </td>
+            <td align="right" width="25%" class="textBoxCurve1px  backFFFFFF margin1pxAll">
+                <input id="transAmtCr<?php echo $transactionEntryCount; ?>" style="padding-right:10px;width: 250px;"
+                       name="transAmtCr<?php echo $transactionEntryCount; ?>" spellcheck="false" type="text" placeholder="AMOUNT"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                   document.getElementById('transSub').focus();
+                                   return false;
+                               } else if (event.keyCode == 8 && this.value == '') {
+                                   document.getElementById('transFromAcc<?php echo $transactionEntryCount; ?>').focus();
+                                   return false;
+                               }"
+                       onblur="appendDecimalsOnTransAmts();"
+                       onkeyup="calcTotTransAmount();"
+                       spellcheck="false" class="border-no inputBox14CalibriReqRight backFFFFFF" size="20" maxlength="20" />
+            </td>
+            <?php // if($transactionEntryCount < 10){ ?>
+            <td align="center" class="padLeft3">
+                <a style="cursor: pointer;" 
+                   onclick="if (document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == '' || document.getElementById('transactionDiv<?php echo $transactionEntryCount; ?>').value == 'true')
+                               getTransDivFunc('<?php echo $transactionEntryCount + 1; ?>', 'transactionAddDiv', '<?php echo $transactionId; ?>', '<?php echo $trans_id; ?>', '', '<?php echo $documentRootBSlash; ?>', '<?php echo $selFirmId; ?>');">
+                    <img src="<?php echo $documentRootBSlash; ?>/images/img/add.png" alt="Click Here To New Trans Div" class="marginTop5" height="18px"/>
+                </a>
+            </td>
+            <?php // } ?>
+            <?php if ($transactionEntryCount != 3) { ?>
+                <td align="right" class="padLeft3">
+                    <a style="cursor: pointer;" 
+                       onclick ="closeTransFunc('<?php echo $transactionEntryCount; ?>', '<?php echo $panelName; ?>', '<?php echo $schemeBonusEMIId; ?>', '<?php echo $kitty_id; ?>', '<?php echo $documentRootBSlash; ?>');">
+                        <img src="<?php echo $documentRootBSlash; ?>/images/img/trash.png" alt="delete" class="marginTop5" height="18px"/>
+                    </a>
+                </td>
+            <?php } else { ?>
+                <td align="right" class="padLeft3">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <?php } ?>
+        </tr>
+    </table>
+</div>
+<div id = "transactionAddDiv<?php echo $transactionEntryCount + 1; ?>"></div>

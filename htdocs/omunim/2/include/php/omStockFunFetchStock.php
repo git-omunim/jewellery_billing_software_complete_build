@@ -1,3 +1,155 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 12 May, 2018 12:42:45 PM
+ *
+ * @FileName: omStockFunFetchStock.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+// Start code to check item present in stock table or not
+if ($sttr_st_id != '') {
+    $qSelStockItemDetails = "SELECT * FROM stock where st_id = '$sttr_st_id' ";
+} else {
+    $qSelStockItemDetails = "SELECT * FROM stock where st_owner_id = '$sessionOwnerId' "
+            . "and  st_prod_type = '$addItemProdType' and st_item_name = '$addItemName' "
+            . "and st_item_category = '$addItemCategory' and st_stock_type = '$stocType' "
+            . "and st_firm_id = '$firmId'";
+}
+//
+$resStockItemDetails = mysqli_query($conn, $qSelStockItemDetails);
+$rowStockItemDetails = mysqli_fetch_array($resStockItemDetails);
+$noOfStockAvailable = mysqli_num_rows($resStockItemDetails);
+//
+if ($noOfStockAvailable > 0) {
+    //
+    $stId = $rowStockItemDetails['st_id'];
+
+    $stockQty = $rowStockItemDetails['st_quantity'];
+    $stockPurity = $rowStockItemDetails['st_purity'];
+    $stockWastage = $rowStockItemDetails['st_wastage'];
+    $stockLSW = $rowStockItemDetails['st_pkt_weight'];
+    $stockFinalPurity = decimalVal(($stockPurity + $stockWastage), 2);
+    $stockGSW = getTotalWeight($rowStockItemDetails['st_gs_weight'], $rowStockItemDetails['st_gs_weight_type'], 'weight');
+    $stockGSWT = $rowStockItemDetails['st_gs_weight_type'];
+    $stockNTW = getTotalWeight($rowStockItemDetails['st_nt_weight'], $rowStockItemDetails['st_nt_weight_type'], 'weight');
+    $stockNTWT = $rowStockItemDetails['st_nt_weight_type'];
+    $stockFineWt = $rowStockItemDetails['st_fine_weight'];
+    $stockFineWtType = $rowStockItemDetails['st_fine_weight_type'];
+    $stockFinalFineWt = $rowStockItemDetails['st_final_fine_weight'];
+    //
+    if ($process == 'IN')
+        $plusMinusOperation = "+";
+    else if ($process == 'OUT')
+        $plusMinusOperation = "-";
+    //
+    //
+    // Total Quantity
+    if ($inOrOutQty != NULL) {
+        $newQty = eval('return ' . $stockQty . $plusMinusOperation . $inOrOutQty . ';');
+    }
+    // Total Gross Weight
+    if ($inOrOutGrossWeight != NULL) {
+        // Convert in or out wt into GM
+        if ($inOrOutGrossWeightT != 'GM')
+            $inOrOutGrossWeight = getTotalWeight($inOrOutGrossWeight, $inOrOutGrossWeightT, 'weight');
+        //
+        $newGSW = eval('return ' . $stockGSW . $plusMinusOperation . $inOrOutGrossWeight . ';');
+        $newGSWT = 'GM';
+    }
+    // Total Net Weight
+    if ($inOrOutNetWeight != NULL) {
+        // Convert in or out wt into GM
+        if ($inOrOutNetWeightT != 'GM')
+            $inOrOutNetWeight = getTotalWeight($inOrOutNetWeight, $inOrOutNetWeightT, 'weight');
+        //
+        $newNTW = eval('return ' . $stockNTW . $plusMinusOperation . $inOrOutNetWeight . ';');
+        $newNTWT = 'GM';
+    }
+    //
+    if ($inOrOutFineWeight != NULL) {
+        // Convert in or out wt into GM
+        if ($inOrOutFineWeightT != 'GM')
+            $inOrOutFineWeight = getTotalWeight($inOrOutFineWeight, $inOrOutFineWeightT, 'weight');
+        //
+        $newFNWT = eval('return ' . $stockFineWt . $plusMinusOperation . $inOrOutFineWeight . ';');
+        $newFNWTT = 'GM';
+    }
+    //
+    if ($inOrOutFinalFineWeight != NULL) {
+        //
+        $newFFWT = eval('return ' . $stockFinalFineWt . $plusMinusOperation . $inOrOutFinalFineWeight . ';');
+        $newFFWTT = 'GM';
+    }
+    // Packet/Less Weight
+    if ($inOrOutLessWeight != NULL) {
+        // Convert in or out wt into GM
+        if ($inOrOutLessWeightT != 'GM')
+            $inOrOutLessWeight = getTotalWeight($inOrOutLessWeight, $inOrOutLessWeightT, 'weight');
+        //
+        $newLSW = eval('return ' . $stockLSW . $plusMinusOperation . $inOrOutLessWeight . ';');
+        $newLSWT = 'GM';
+    }
+    // Purity
+    if ($inOrOutPurity != NULL) {
+        //if ($process == 'IN')
+            $newPurity = decimalVal((($newFNWT / $newNTW) * 100), 2);
+        //else
+        //    $newPurity = decimalVal(($stockPurity * 1 - $inOrOutPurity) / (0 - 1), 2);
+    }
+    
+    // Final Purity Purity
+    if ($inOrOutFinalPurity != NULL) {
+        $newFTNCH = decimalVal(($stTNCH + $stWSTG), 2);
+        //if ($process == 'IN')
+            $newFinalPurity = decimalVal((($newFFWT / $newNTW) * 100), 2);
+        //else
+        //    $newFinalPurity = decimalVal(($stockFinalPurity * 1 - $inOrOutFinalPurity) / (0 - 1), 2);
+    }
+    // Wastage
+    if ($inOrOutWastage != NULL) {
+        //
+        //if ($process == 'IN')
+            $newWastage = $newFinalPurity - $newPurity;
+        //else
+            //$newWastage = decimalVal(($stockWastage * 1 - $inOrOutWastage) / (0 - 1), 2);
+    }
+    
+    // Fine Weight
+//    if ($inOrOutPurity != NULL && $inOrOutNetWeight != NULL) {
+//        $newFNWT = decimalVal((($newNTW * $newPurity) / 100), 3);
+//        $newFNWTT = 'GM';
+//    }
+    // Final Fine Weight
+//    if ($inOrOutPurity != NULL && $inOrOutNetWeight != NULL) {
+//        $newFFWT = decimalVal((($newNTW * $newFinalPurity) / 100), 3);
+//        $newFFWTT = 'GM';
+//    }
+}
+//
 ?>

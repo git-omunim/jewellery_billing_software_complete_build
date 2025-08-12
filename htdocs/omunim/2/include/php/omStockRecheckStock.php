@@ -1,3 +1,253 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAB4EgAABZFaXMZp80jWIhkN1DyFgrqMS/u5H2VHGo1TiX7wSxj++6VjyqOi+1QAfKB/ngPLwZis7WZtg7uCoBJe8I2+tySpu4+++I5vVoZiEFngPxcq/LjSAgNFJOXS/LTFAPUfJAUDcFshDTmXEkV5RgIk+VuOdxGfYWWfk9WotmLIt3X4dX2xu6WTxp3af69wdMXuJbtI/5aeoyqSOvKvkJioa1gEnu2E/ee6hsCo5ABSGbZ2/nnriGi5QlNFUPmZUbHJ39pZB1fDRquwpripdsurZHVonwGRhwtRTWL0eSHwfKaOvt3GBDASJ3B1vnocQKrDXHyisJ0ud6+TGUpY/hcaCV6E6GQZIgTD6bVtlFQAOVHilOd2M9TmFKwzZIstebfUZxBusIWTkJG3pxvS+m5cXXv1iuWkwTK5I5cyR34yeyvKrevw5NGiMCWMFBA1QOgnOxBzo+8rWLAywMAc9+A0wX4F1ShCMRa7bZfQWH+PLwj7ZInehqWusVNgbg7IEs5UVeQoscFrFxVKlnjeXiLeyp03N3Lo3Ly39MaoorNFq7DwR4jFSvd1DKIuH6F6AdUeSav3Y+mCRd1/eKC8pRe99zDqSuGBb4CKom0adLgii8pvlJ7LsGbGOUVR6/X9ipC9WjH4/xALUAiMUz1nh0VqPk30TicvAoJedD8iIfC78TE10dVHnnpU//lU45uxX91EJ1hHAMouTRaFVXXKpjranI1iEGCFR4UBNtR4GUJVuQGrEspZbGewE5ZDI9hUy5sjlfr41OHWqLBusj2bHB78OPBUz3wXxGJW1dXlnS5gJjAyc0fjjyZaO1F++OclWH/6eavqpmRit1Mxrwki1+PiF428dewdR1+mFJub+FK+eiK65ABsGf61HLSCQeCjGdgYCPkJ898znVwjwFGWihAvX3DfGGUfA5rkiXDYAe4u9IjR8gHDPn3aLMvXTjiduSoo/ytDrDVu7w+kDA36wDR69P719iKzeZg8IQcHAGZZ2C23OLueHfp9zdQewZe5F4UwTXaSBnWDUNGIFqAeVs8aHirywmrNaTi2OKi8IAQjgTLN1ztudhAtxhcjXPdiZMhRLb/IUZYuSvOhpfdAMgNyuCVv1uzpfDbsODtcr0zMmJYv4mqGZLXs3iAwLeoYyBCAUAlSAZoB6E5+vuRH6LLXRPM003wN4JaH6+SFCMbi7fvGeW7wvzIiH2tuNSII50Qfco3n7I2AsvtzDpey3U/ovDXQAKAmt1tZ9YDnxuoh0d4y4gybnDJatb4UCUwibHDgyJLWZ5wppxmaBnx0W7Il9fsCwZNH6RuS2qG1z40U9zwPJb/W7ys3jo+fiaLo6CbXQtFb7JnHtxI/XyF7ROR0tRprIUZoYMvOf9UYfnGhHpyDpMkU35F6HvYl3yXstwuJv1SZkIdGNNjR2JIlIGccNSffbdL8dOlcNbrFXvVlh6e/i61tDmH9axlPi3aHqU4Ah47pw6uifEzffR6HHTxinOxObTMS/BocPP5MxoNbXcyx8PMPSJ6ypHuN1XkG1N1Mfv8oA8XuSO4f59Ea3FN2aJJkmcjIIHrmgeE77ZQA2z+ElDstZ93GUTIG5cObjw9RHLRrkpJNeLCGyMQgj/h1G9oh3rNkl9zdghhuMKblHPeAHs/TyQPaOhkY17gnKzHLo4C4c8rahMLy2ap1+YdUbBc5Vnq6rii8hE3t2ypQ4XlR6h3fkELGmAQttV1XQiR41Aoly1Qsx6XWYXOv8SNSOhBog7VYeENtot7BbHvrTejNj2teFaSrqc7eLjp+b18xccEczaNDTWXghsIdz/qEKb6xxvvXxldcXEjqwX5YiYNVpNIEAbRh96Sg7JiCTf2xgqPu9hhBVSLLDQMDGDuExd2+dRgGc2oNQuPwMsyMTU4R99kihYWjVVyETlGzvEVjjrGdr0NW6f/w/9ZEa68Yl/PgV73ScPuQiEGZCNP6+TNAGo2q0wdFzk6kmW59wzUqwaFwskc690iGvXpzG42rvNBhgWXv2eJbowQS9SbkPwLlH499q/0MZIPV7XlhcJqEYhh7kRE4XnhCcLzvJ37ex4Pn+SrEYXdU/rqRFcCzbgCbuSvdQ4RMP/73/VwYP4NY1wL/1XNaazZ5HZwq/MY7k4VM9RVBaOQ9a+eW/jIM7QJ1ztNxsTBf9NnbDaeMMJUQgzri6H0Pz7MjKxtCCjGP5M78NfmFhjNZsroh5mL0ro2XfHBtLpU0AG9ATJ1Ukl6c3xx4BozdA/q8HRyZLYQ9xFzHjaQx0QH11A2Gp+RhLGxnWSuz/OMYdZnzGHmVvhhayQBDNG3agQ2573Uk6+33IahqpQ5O27ObwPAWFUtd0hZXW1AI/PLywqbvhzhdPt9kVHcSE+GQ+Ca5PQy2l3u+tPmQZ/QKKHU/WgMArwqd+6lqZNvTeWTzblYYRbYO26WHF5xHSBvktmR1iJo0HT5hl+iTN/4ob3BP9HOFwmETyai1Mqr1nAKnPwdF0ac31wfYTdW6JDlb72FQ+EZ1UnvexRKjBGe59tueNgTRXG39eA9SyBTMZAel2ph+P0/TNnUTVUyXjfek28NwnEFhnR9I7WkDQYpkVLHV24WOv+4piXCJaqpPd3sIJ8MhTtOlOD/rEfdMeSYxQwkTsVZNBAbcReFIHdbjtgtGPooZKiTEMU0jsVqiHEPtwAVxvzyKLgMj6S8VfhNtpFI5+7RHK6jFMTG9e7tTz9Vj2FMN1fPI/1cIIdt4xXO5J5GipDFM3WFgRneR9+y22DaY/4MYkV3xFsbAQ4F3KAVgqgtOb6kCEieE6TUc29eW3uN9NMFgat7Dw8mBmq5EhmQzbv6ZnNoCw8xV5J3xzE/T9W0bVNDmU4D9Gj1Z8A8b9wSsti7DdkpfaFLFZTHKcP1sQAi/Uqow7dGqgFu5MDzOdwir/jBM75HjX82sRGOIqgRHXWdyYE87a3q/5Zw+d2x/7SdoXOg6/nhE+xu9C//GN78OrIzJCxpg2gNtC1cMXvWFK3alV/b18rSatb061M50m3L6s6VacXLkIWwCOo4cXOSXrrSdCHB6Lj2Wycb8ZRBwlwVkCcmZJbaJ3xbgbuJpLeYyk8Hvmqm14ISoiWDaTdtmLMLFK3WfDlv/ey05a7DHMlQV0AH280QgMY+ksvGj/CIe4Aa0sI5HfU8Yeh7ZvxSxdkox2ZakZ55+g/SdR4sBh4P/dF0NrA3pHQD1nxxn35B3RnamRkNOSoeCiSt20MsQ6KwORPLnn1rvmre6Z97kAFHLmi1wPmwqOAuOdjRlYCV9lXE12TnQt/Dmmkx9Kc27IifZl/BhMAeomm4DLgCMENxr6aY1TMH8/h2TMrMwzHoCT7dPPw/xsfnEmtZD/jUN7YzwP7hxlRdsnyUVbTCl+wyg4OH0FSetBWfeMerpjq6C+DHlb+Ei8QV6mKb6AsW9OZ4ieSodOuTxaNGZTf1DUKY0lMa5RVIGDCPI3+zemQLHPnUkhU9hvjfck7sKVKAaUlvX/Sv3qrFdQg9B6+xyEnGAsJFDdalTpqgDU3psB2G2wOjHDfFbUYy/rVBXMSXhGuxEUTtplGdFFVTzsg61KPJ0DdKtireobGHplNLDvEBlg30iHz7Lzw5dRxu/CAb6riwUZm2suSPBo+rpe4EMTyzZWInauCBNyIpzeQI4VONJqnu53XFJnnuvrTariUCBLYZvWq82JiZZfkMWUojIUo7FHLbejflon7hUr7g7x3TZm9LjKMxVEz8/jdIaJDniKyI8LhtHWcImCYvm8TY3/rVkEz+daObF7spkAnHktFbVM8VeZljsaLqsKhCgc9MQWPevyI6qlOTyva4tXSy3Bv3ypKzLFnDj8WX1sF2gcOzSKAuDYtibYZAibGgaJtxVXZ6RhM2HsgOn2jomypwoxMO6yt2twEJi5PXD76kbo/oLqykSy76WBKsFW8vlNDsGoAPQpck5RquMn8ZnpAcN7Hbt6ps9/lh9PjrAP93kM8XEzaufhPUkO+ZWgBpfKS7NNpcusnRRhVZ6oEmjOmOJvvd5mWR9KeCunvcgx6049tMRj1BJf5JGaoV/xWNhimgTzfnWSo4l4k8fVro2BY5Cx0k3MjZEY3EYRWuG+uAYqhb9d1AO5jYI/HX9BuxilgY6rmSznrcxkJQcdVh10bqG/FeOgYlJ90lvt0Dao6Rkqo+DT+ri7VliQgptRdXkw51gQDEzZJxThfsYjwkglsdCzAsLXZELhwxZ6h01Vux1CE6S4N+zuz0r5cG/pq1obsNJErEGE9ASi3KO6frNyWI+sUPh8PdULzg1FWwswkbFHebQbktZy1cUKA9MPUb5XqPktS6mbvGeLo6nO60XNLJ0PN6SLKxHCP/rlzOnttaD85PNHIba9MTLCA4BES66opdoEnKWEYB15u6Jt1jqvre2Rpt7limFvaL6vPCmIBk4gw+6A2rzx+MI110jwXpebCjCuoDsDNYSaX8qoSCglweI85nc3X5ymI7jEc/wBsG9/M1lVdVESmLFzyXKi4ujrfl29VbfSlUKOarWJKPtg1Ch6iDo+uyo+SzsMPbdNJWKuputCavPuzSVhCqSa2WQyVV4t37K1BFqh9EeCmxvg5tfkim0TPwUKN23UhHjwev4ab4jgJfa24Bjnn0X0GQYJ/lIDWgu/Cc+xWd6MJWsH8Vjcvaa25fLV0E9sSFf3tSfyuqin1rDR0FTNUx4XJYN2Jh2f3xKdWZSftaDt6o0mzNYK8r/AkCKo8bVjHDtpogFA59W3aCrPsC1glI+TL3Ym466EojAuSrxg9BKt9bZrr5L/FRguCMcnqJjTllVcnvrzgCIdMGJGypJCIyx3VZV+/raECv32E4EWALanLdtkMflrfr3/juP+Qa8WKNfwweOGmvI63OaDf0pu24ymRT7+55V6TiyCBRG/yYPQwdx3/lstDhMJJOvYNlr9lxF/RR6mj3B8Mm3f7/dcIoe1wGz9dohC3Pbby/s0vLhjISLnXXRGE3ccXSO8lNpMYr6JFglqT0im/Ik39Sb97VSGMMtWX+/S9yaspRyUvJ5PClERLhRCjc48RNH7sv0FcZsq0j0SzOgRALAUpbgg5RgV1y8uzIUv7C2lBb2dYIIPvNeE0BQ76lRCfHwwDz/mM/Wk7XSlU644Veot7GLps0x6dOwne50YLiPEpF1X9UU5ttAgfoL9biIKDXbU0MrL42PfOvqsoNzekyvYBnFTrvArAvePsXCusXYY1xd9BCjj9GsBSzLbpcT3lJD0WQ8wJjhgMOYdmbouZ6u9HKgheCJfCiGGlphKoxwO+W/OLGH6suVtFH20RpJPO5DOozsLvLARaSf+lB3NbtYgXmUYKtrciPy2snLIm9tBA8fDty5Rp/wZkWZ7Ty5YFjud8aSfowWcKGKABarPzOuQWa7iaJLrHMNZLDzYIgbamfYmNYxWVZV+VM4ho912sB3zUSeEPR2/voCuHnaY7h9+ZYLZVGyDAnuyxxvBLWlDyAhBz9DpeFl559JhO7v5+bLCG+Kce9gthdiJd1VNzkYVLzluM+id76+n0qLjN78O7tVZHKKhD7iYpbneJkYLMLN01Scumr6fGddso35ymLcL7ElqxWpJhJqxnvy1mQJF/oFeStTsMaM3N3JgOIS2P7IaRJC/CtsKU7yL3cTjRj/VoxWJu2oEje4WD6gt7sMzcwqWa1z4JOE+7HlfXIE1Kloo13Oh56fi4DSU5BmwRARYR6YsE9NfKkEqtOtVT62QLB/D5XCkZE5NkFQDsdnS3uDOHk9F4uhb0Z7GqZwMndVvOgJmKikWV3A/MBuQCoqYozl9bQoDvGcrFlUQra34kKO5PIbJS6+wB5DSxjzPLb8TyYH/uoXBellPqhMRKDfDp6A4UgF7k7se+gxMkJDMLT4rKPm5MG0EMQWVniL9qHA/Jr/H5GE6Gs4WpPgOy42f1PBLrRgNH4GQC6uMOKmal3KjxCplCx5IzJc/INCd4DiRm64LtZTd8QhYD//dHcs3WkIMXbOs96WPgyU2puYxkzEsFtNpmlp0aV/ugkgOuOpcnW8dSaYqVhpSZvFAYKveY7di6kRFSv2KIQtG7x200gJuFdlLAWixdhnWF2msgF3pA0bPsbOTV1ONw+1cL3W8U2qIr9UEfjizVwplzb07vsSZCbqx9lLUHWOiLWoUTLdOvktOc2rZ0vuLcW1SwIPDw8t/RQ+UXtjNGeK7u7p8vtpLHsOZIdlTIzJ913nvNVWcINuE+GzG3vOX2gFWYlLCbxQfFYpv+hiiCDRUUre+5jm0uej2Np3lgCbRTluFHd2cZPY7SUgr6MTAAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: RECREATE STOCK CONSOLIDATION INTO STOCK TABLE FOR ALL CATEGORY @PRATHAMESH 05 SEPT
+ * **************************************************************************************
+ * 
+ * Created on 05 SEPT, 2024 04:00:00 PM
+ *
+ * @FileName: omStockRecheckStock.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.274
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: 
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+
+//SELECT st.sttr_id as 'sttr_id',
+//            st.sttr_transaction_type as 'sttr_transaction_type',
+//            st.sttr_sttr_id as 'sttr_sttr_id',
+//            st.sttr_sttrin_id as 'sttr_sttrin_id',
+//            st.sttr_item_pre_id as 'sttr_item_pre_id',
+//            st.sttr_item_id as 'sttr_item_id',
+//            f.firm_name as 'firm_name',
+//            st.sttr_metal_type as 'sttr_metal_type',
+//            st.sttr_purity as 'sttr_purity',
+//            st.sttr_product_purchase_rate as 'sttr_product_purchase_rate',
+//            st.sttr_item_model_no as 'sttr_item_model_no',
+//            st.sttr_barcode_prefix as 'sttr_barcode_prefix',
+//            st.sttr_barcode as 'sttr_barcode',
+//            st.sttr_item_category as 'sttr_item_category',
+//            st.sttr_item_name as 'sttr_item_name',
+//            st.sttr_stock_type as 'sttr_stock_type',
+//            (IFNULL(SUM(distinct(if((st.sttr_final_quantity IS NULL),st.sttr_quantity,st.sttr_final_quantity))), 0)) as 'sttr_quantity',
+//            (IFNULL(ROUND(SUM(distinct(if((st.sttr_final_gs_weight IS NULL OR st.sttr_final_gs_weight = 0),
+//            IF(st.sttr_gs_weight_type='KG',(ifnull(round(st.sttr_gs_weight,3),0)*1000),
+//            IF(st.sttr_gs_weight_type='MG',(ifnull(round(st.sttr_gs_weight,3),0)*0.001),
+//            (ifnull(round(st.sttr_gs_weight,3),0)*1))),
+//            IF(st.sttr_gs_weight_type='KG',(ifnull(round(st.sttr_final_gs_weight,3),0)*1000),
+//            IF(st.sttr_gs_weight_type='MG',(ifnull(round(st.sttr_final_gs_weight,3),0)*0.001),
+//            (ifnull(round(st.sttr_final_gs_weight,3),0)*1)))))),3), 0)) as 'sttr_gs_weight',
+//            .st.sttr_pkt_weight as 'sttr_pkt_weight',
+//             .st.sttr_less_weight as 'sttr_less_weight',
+//            (IFNULL(ROUND(SUM(distinct(if((st.sttr_final_nt_weight IS NULL OR st.sttr_final_nt_weight = 0),
+//            IF(st.sttr_nt_weight_type='KG',(ifnull(round(st.sttr_nt_weight,3),0)*1000),
+//            IF(st.sttr_nt_weight_type='MG',(ifnull(round(st.sttr_nt_weight,3),0)*0.001),
+//            (ifnull(round(st.sttr_nt_weight,3),0)*1))),
+//            IF(st.sttr_nt_weight_type='KG',(ifnull(round(st.sttr_final_nt_weight,3),0)*1000),
+//            IF(st.sttr_nt_weight_type='MG',(ifnull(round(st.sttr_final_nt_weight,3),0)*0.001),
+//            (ifnull(round(st.sttr_final_nt_weight,3),0)*1)))))),3), 0)) as 'sttr_nt_weight',
+//            (IFNULL(SUM(distinct(if((st.sttr_final_tag_weight IS NULL),st.sttr_tag_weight,st.sttr_final_tag_weight))), 0)) as 'sttr_tag_weight', 
+//            (IFNULL(SUM(CASE WHEN stnst.sttr_item_category != 'diamond' THEN stnst.sttr_quantity ELSE 0 END), 0)) as 'stone_quantity', 
+//             (IFNULL(SUM(CASE WHEN stnst.sttr_item_category  = 'diamond' THEN stnst.sttr_quantity ELSE 0 END), 0)) as 'diamond_quantity', 
+//			(IFNULL(SUM(CASE WHEN LOWER(stnst.sttr_item_category) != 'diamond' THEN 
+//        IF(stnst.sttr_final_gs_weight IS NULL OR stnst.sttr_final_gs_weight = 0, 
+//        CASE LOWER(stnst.sttr_gs_weight_type) 
+//        WHEN 'kg' THEN (stnst.sttr_gs_weight * 1000) 
+//        WHEN 'mg' THEN (stnst.sttr_gs_weight * 0.001) 
+//        WHEN 'ct' THEN (stnst.sttr_gs_weight * 0.2) 
+//        ELSE stnst.sttr_gs_weight END, 
+//        CASE LOWER(stnst.sttr_gs_weight_type) 
+//        WHEN 'kg' THEN (stnst.sttr_final_gs_weight * 1000) 
+//        WHEN 'mg' THEN (stnst.sttr_final_gs_weight * 0.001) 
+//        WHEN 'ct' THEN (stnst.sttr_final_gs_weight * 0.2) 
+//        ELSE stnst.sttr_final_gs_weight END 
+//        ) END), 0)) as 'stone_gs_weight', 
+//		(IFNULL(SUM(CASE WHEN LOWER(stnst.sttr_item_category) = 'diamond' THEN 
+//        IF(stnst.sttr_final_gs_weight IS NULL OR stnst.sttr_final_gs_weight = 0, 
+//        CASE LOWER(stnst.sttr_gs_weight_type) 
+//        WHEN 'kg' THEN (stnst.sttr_gs_weight * 1000) 
+//        WHEN 'mg' THEN (stnst.sttr_gs_weight * 0.001) 
+//        WHEN 'ct' THEN (stnst.sttr_gs_weight * 0.2) 
+//        ELSE stnst.sttr_gs_weight END, 
+//        CASE LOWER(stnst.sttr_gs_weight_type) 
+//        WHEN 'kg' THEN (stnst.sttr_final_gs_weight * 1000) 
+//        WHEN 'mg' THEN (stnst.sttr_final_gs_weight * 0.001) 
+//        WHEN 'ct' THEN (stnst.sttr_final_gs_weight * 0.2) 
+//        ELSE stnst.sttr_final_gs_weight END 
+//        ) END), 0)) as 'diamond_gs_weight', 
+//        st.sttr_stone_wt as 'sttr_stone_wt',
+//            st.sttr_status as 'sttr_status',
+//            st.sttr_st_id as 'sttr_st_id', 
+//            st.sttr_hallmark_uid as 'sttr_hallmark_uid', 
+//            st.sttr_hallmark_status as 'sttr_hallmark_status' 
+//            FROM stock_transaction as st 
+//             INNER JOIN firm AS f ON st.sttr_firm_id = f.firm_id
+//             LEFT JOIN stock_transaction as stnst ON st.sttr_id = stnst.sttr_sttr_id 
+//             WHERE 
+//			 st.sttr_firm_id IN (1) and st.sttr_metal_type IN ('GOLD','gold','Gold') 
+//                and st.sttr_status NOT IN ('SOLDOUT','DELETED','ItemReturn','ApprovalDone') 
+//                and (st.sttr_melting_status IS NULL OR st.sttr_melting_status = '') 
+//                and st.sttr_indicator IN ('stock', 'AddInvoice')
+//                and st.sttr_transaction_type IN ('EXISTING','PURONCASH','PURBYSUPP','TAG') 
+//                and st.sttr_item_category = 'MANI' and st.sttr_stock_type = 'retail'
+//                and st.sttr_item_name = 'MANI'
+//                and st.sttr_purity = '92'
+//                group by st.sttr_id;
+//
+// Input Parameters
+if ($sttr_stock_type == '')
+    $sttr_stock_type = $_REQUEST['sttr_stock_type'];
+if ($sttr_item_category == '')
+    $sttr_item_category = $_REQUEST['sttr_item_category'];
+if ($sttr_item_name == '')
+    $sttr_item_name = $_REQUEST['sttr_item_name'];
+if ($sttr_purity == '')
+    $sttr_purity = $_REQUEST['sttr_purity'];
+if ($sttr_purity == '')
+    $sttr_metal_type = $_REQUEST['sttr_metal_type'];
+
+//
+$qSelStockItemSumDetails = "SELECT
+            (IFNULL(SUM((if((st.sttr_final_quantity IS NULL),st.sttr_quantity,st.sttr_final_quantity))), 0)) as 'sttr_quantity',
+            
+            (IFNULL(ROUND(SUM((if((st.sttr_final_gs_weight IS NULL OR st.sttr_final_gs_weight = 0),
+            IF(st.sttr_gs_weight_type='KG',(ifnull(round(st.sttr_gs_weight,3),0)*1000),
+            IF(st.sttr_gs_weight_type='MG',(ifnull(round(st.sttr_gs_weight,3),0)*0.001),
+            (ifnull(round(st.sttr_gs_weight,3),0)*1))),
+            IF(st.sttr_gs_weight_type='KG',(ifnull(round(st.sttr_final_gs_weight,3),0)*1000),
+            IF(st.sttr_gs_weight_type='MG',(ifnull(round(st.sttr_final_gs_weight,3),0)*0.001),
+            (ifnull(round(st.sttr_final_gs_weight,3),0)*1)))))),3), 0)) as 'sttr_gs_weight',
+            
+            (IFNULL(ROUND(SUM((if((st.sttr_final_nt_weight IS NULL OR st.sttr_final_nt_weight = 0),
+            IF(st.sttr_nt_weight_type='KG',(ifnull(round(st.sttr_nt_weight,3),0)*1000),
+            IF(st.sttr_nt_weight_type='MG',(ifnull(round(st.sttr_nt_weight,3),0)*0.001),
+            (ifnull(round(st.sttr_nt_weight,3),0)*1))),
+            IF(st.sttr_nt_weight_type='KG',(ifnull(round(st.sttr_final_nt_weight,3),0)*1000),
+            IF(st.sttr_nt_weight_type='MG',(ifnull(round(st.sttr_final_nt_weight,3),0)*0.001),
+            (ifnull(round(st.sttr_final_nt_weight,3),0)*1)))))),3), 0)) as 'sttr_nt_weight' 
+            
+            FROM stock_transaction as st 
+             INNER JOIN firm AS f ON st.sttr_firm_id = f.firm_id
+
+             WHERE st.sttr_firm_id IN ($firm_id)  
+                and st.sttr_status NOT IN ('SOLDOUT','DELETED','ItemReturn','ApprovalDone') 
+                and (st.sttr_melting_status IS NULL OR st.sttr_melting_status = '') 
+                and st.sttr_indicator IN ('stock', 'AddInvoice')
+                and st.sttr_transaction_type IN ('EXISTING','PURONCASH','PURBYSUPP','TAG')
+                and st.sttr_stock_type = 'retail'
+                and st.sttr_item_category = '$sttr_item_category' 
+                and st.sttr_item_name = '$sttr_item_name'
+                and st.sttr_purity = '$sttr_purity'
+                and st.sttr_metal_type = '$sttr_metal_type'
+                group by st.sttr_stock_type,st.sttr_item_category,st.sttr_item_name,st.sttr_purity,st.sttr_metal_type";
+//
+//and st.sttr_metal_type IN ('GOLD','gold','Gold','SILVER','gold','Gold')  // REMOVE THIS TO CONSOLIDATE ALL METAL TYPE
+//if ($sttr_item_name == 'BRACELATE')
+//    echo '<br/><br/>$qSelStockItemSumDetails:' . $qSelStockItemSumDetails;
+//
+//LEFT JOIN stock_transaction as stnst ON st.sttr_id = stnst.sttr_sttr_id 
+$resStockItemSumDetails = mysqli_query($conn, $qSelStockItemSumDetails);
+//
+$noOfStockSumAvailable = mysqli_num_rows($resStockItemSumDetails);
+//
+//
+if ($noOfStockSumAvailable > 0) {
+    while ($rowStockItemSumDetails = mysqli_fetch_array($resStockItemSumDetails)) {
+//
+        $sttr_quantity = $rowStockItemSumDetails['sttr_quantity'];
+        $sttr_gs_weight = $rowStockItemSumDetails['sttr_gs_weight'];
+        $sttr_nt_weight = $rowStockItemSumDetails['sttr_nt_weight'];
+
+        if ($sttr_stock_type == 'retail') {
+            //
+            $qSelStockToCheckRetStck = "SELECT st_id "
+                    . "FROM stock "
+                    . "WHERE st_metal_type = '$sttr_metal_type' and st_item_category = '$sttr_item_category' and st_item_name = '$sttr_item_name' and st_firm_id = '$firm_id' and st_purity = '$purity' AND st_stock_type='retail'";
+            //
+            $resSelStockToCheckRetStck = mysqli_query($conn, $qSelStockToCheckRetStck);
+            //
+            $noOfSelStockToCheckRetStck = mysqli_num_rows($resSelStockToCheckRetStck);
+
+            if ($noOfSelStockToCheckRetStck > 0) {
+                //
+                $queryRet = "UPDATE stock SET st_metal_rate='$sttr_metal_rate', 
+             st_quantity='$sttr_quantity', st_gs_weight='$sttr_gs_weight', st_gs_weight_type='$sttr_gs_weight_type', "
+                        . "st_pkt_weight='$sttr_calc_pkt_weight', st_pkt_weight_type='$sttr_pkt_weight_type',
+             st_nt_weight='$sttr_nt_weight', st_nt_weight_type='$sttr_nt_weight_type', st_fine_weight='$sttr_calc_fine_weight', st_final_fine_weight='$sttr_calc_final_fine_weight',
+             st_purity='$purity', st_wastage='$sttr_wastage', st_final_purity='$sttr_final_purity',
+             st_item_model_no='$sttr_item_model_no', st_cust_itmcalby='$sttr_cust_itmcalby', st_cust_itmnum='$sttr_cust_itmnum', st_cust_itmcode='$sttr_cust_itmcode', 
+             st_price='$sttr_price', st_cust_price='$sttr_cust_price', st_item_sales_pkg='$sttr_item_sales_pkg',
+             st_purchase_rate='$sttr_purchase_rate', st_purchase_rate_type='$sttr_purchase_rate_type', st_sell_rate='$sttr_sell_rate', st_sell_rate_type='$sttr_sell_rate_type',
+             st_lab_charges='$sttr_calc_lab_charges', st_lab_charges_type='$sttr_lab_charges_type', st_making_charges='$sttr_calc_making_charges', st_making_charges_type='$sttr_making_charges_type',  
+             st_tax='$sttr_calc_tax', st_tot_tax='$sttr_calc_tot_tax', st_valuation='$sttr_calc_valuation', st_final_valuation='$sttr_calc_final_valuation' 
+              WHERE st_metal_type = '$sttr_metal_type' and st_item_category = '$sttr_item_category' and st_item_name = '$sttr_item_name' and st_firm_id = '$firm_id' and st_purity = '$purity' AND st_stock_type='retail'";
+//
+            } else {
+                //
+                $queryRet = "INSERT INTO stock (st_owner_id, st_firm_id, st_metal_type, st_metal_rate, 
+             st_item_category, st_item_name, st_item_code, st_type, st_stock_type,
+             st_quantity, st_gs_weight, st_gs_weight_type, st_pkt_weight, st_pkt_weight_type,
+             st_nt_weight, st_nt_weight_type, st_fine_weight, st_final_fine_weight,
+             st_purity, st_wastage, st_final_purity,
+             st_item_model_no, st_cust_itmcalby, st_cust_itmnum, st_cust_itmcode, 
+             st_price, st_cust_price, st_item_sales_pkg,
+             st_purchase_rate, st_purchase_rate_type, st_sell_rate, st_sell_rate_type,
+             st_lab_charges, st_lab_charges_type, st_making_charges, st_making_charges_type,  
+             st_tax, st_tot_tax, st_valuation, st_final_valuation) 
+             VALUES ('$_SESSION[sessionOwnerId]', '$firm_id', '$sttr_metal_type', '$sttr_metal_rate',
+             '$sttr_item_category', '$sttr_item_name', '$sttr_item_code', '$sttr_indicator', '$sttr_stock_type',
+             '$sttr_calc_quantity', '$sttr_calc_gs_weight', '$sttr_gs_weight_type', '$sttr_calc_pkt_weight', '$sttr_pkt_weight_type',
+             '$sttr_calc_nt_weight', '$sttr_nt_weight_type', '$sttr_calc_fine_weight', '$sttr_calc_final_fine_weight',
+             '$purity', '$sttr_wastage', '$sttr_final_purity',              
+             '$sttr_item_model_no', '$sttr_cust_itmcalby', '$sttr_cust_itmnum', '$sttr_cust_itmcode',
+             '$sttr_price', '$sttr_cust_price', '$sttr_item_sales_pkg',
+             '$sttr_purchase_rate', '$sttr_purchase_rate_type', '$sttr_sell_rate', '$sttr_sell_rate_type',    
+             '$sttr_calc_lab_charges', '$sttr_lab_charges_type', '$sttr_calc_making_charges', '$sttr_making_charges_type',
+             '$sttr_calc_tax', '$sttr_calc_tot_tax', '$sttr_calc_valuation', '$sttr_calc_final_valuation')";
+            }
+
+//    
+//            if ($sttr_item_name == 'BRACELATE')
+//                echo '<br/><br/>$queryRet:' . $queryRet;
+            //
+            if (!mysqli_query($conn, $queryRet)) {
+                die("FileName:omNewStockRecreateFile.php<br/>Error:" . mysqli_error($conn));
+            }
+        }
+//
+        //if ($sttr_calc_quantity != $sttr_quantity || round($sttr_calc_gs_weight,3) != $sttr_gs_weight || round($sttr_calc_nt_weight,3) != $sttr_nt_weight) {
+        //
+//        if (strtolower($sttr_metal_type) == 'gold' && strtolower($sttr_item_name) == 'antique bangles') {
+////            echo '<br/><br/>Stock: ' . $firm_id . ' | ' . $sttr_metal_type . ' | ' . $sttr_item_category . ' | ' . $sttr_item_name . ' | ' . $sttr_purity
+//            . ' | ' . $sttr_stock_type
+//            . ' | ' . $sttr_calc_quantity . '/' . $sttr_quantity
+//            . ' | ' . round($sttr_calc_gs_weight, 3) . '/' . $sttr_gs_weight
+//            . ' | ' . round($sttr_calc_nt_weight, 3) . '/' . $sttr_nt_weight;
+//
+//            echo '<br/><br/>$queryRet:' . $queryRet;
+//        }
+        //}
+    }
+}
+//
 ?>

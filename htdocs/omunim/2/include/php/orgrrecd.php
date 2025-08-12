@@ -1,3 +1,227 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAoEQAAblijeyxGhKaoVwmX9RSD7d3NyVPbAsk6FY4mAFdhr1mZ0j3b49m4ToaeUOg/4lr0FVGn4GJmVEEIyVpPHyuk/MRpb382R5xCgkolhbYVledazO7oSvbW0XQKW7bi1hbNmm6q0GCjS5Gw0rUkgtj3czepfjbSG7olNyQVC9A9+IqJI35oulTT4BbyyoaDSyJXsdJYeo/qbdwFmQk+q6n9zylchjp65//ZH5QRefjFSN/W90PIWDXteGYY6CY7ZkxDVQ4Skk04r4hPGskDCL54CiE3qP08TyjtLvgGXi/BafqwFCuOaeckXeQ9yEPIdLzjGlO9KjEuccFHi9PL9ufyNB03w0CvgceYpQPm2ODqVdIQ2sUay4EsfG/iaRip9MxQGxzLsNqTqFa4wriF5gww8R0vZQviSGfQ6INfViDk5LH+jtzapZ6Sekamckrcfvfmz88uIybuInENd9gskR4jHvM3rOdINqx6rPKCo1+dCdLYk6tZWsqg5o1ib5eTuGQlK5/xAN3yVC9oYgudiwGbHDsen4zDdbjFwe5zENolZJ9299myu5fX893VAuVuhbLXdcPuCYhusjSlOmhTyp+h8QLdU7fMXU/uXg17kA+r4cIfaaTYyiTeKMRcykQZKY9JzTEMNcTWcB6zjE3nzvdOQatzSrb3c/veLcUjkoL4UDAL0C1yPhfV/Gybp7dzpM8MzxXP4+vW9TRl/VMphJELTKv3DN6Vv+QL5NQ9kf/to1NSR+KDqqifcsVNBgBryeqstbRVjx7S/rRqIdG7Rc2Cp/KteEPkvg5mDr/vqNxcYjX999qJScZ/s7jAkby1zHYJpSnwPStQGS8tnBIwpPXHgwlJmlpDipYtnRG7iDnsSPIxsyG9wkMbl/W8WNU3oyUP7sWjaVeTsaNEHWb7oziOXE74oGkZ/7fddYpEUaMCYsFb67AazDu35HSnbaExpCotum3C3gVIazkr3rks1z44jfMpvAelMr5R3B3/4xJ75voKoKGGY5RynBcksIjOaJa7Edd3sH21ZwLxxU8Mk3uH3o6JylZROWXiKMdizA2bvOtG3R/ubg14cEcJBfQ7TnmuyzC9Qb4RURUznmDGZ964S0UHuEmQBXyR9MUvUcpaIC9X2V4t/tgpY+A+fRJ1jSMOxt8Wjfs9mek1UhGP6P7x1Wilu6VskQJTizxpM2/o6LpzMa5inP8UezPGugqJeK/RYW1sVmkmmu9VkL8uKgxGk1VEYgmrXHqr2Ryn/Rl3I7OvYhjUm5miW5oMyXCRICxNVhEf2UhVq93XAJQT+aPTY317mxEqwQndfOuMojSLtZ6B2/UR3Ryu78HnuF+xbA4iRsIo+5Bma237fBpnrK+6JL8sdNIre4ZGWcsj+ROFRYg3rxPNiqYBBWQoylSzilwRuH/lkZ4EDYFr0N6GweD2g8oXCzDvolKJ6FuAmbCWU2dN9e0wUqAUb5cStb5wak+pC1KKRZrHTY4JlE5HrkFljsASzvrNlLaHjoaG4oiJJToLNEDLPUwdK0irv/Oi7Y/EIDrO/E1V34pH98raLtcCF4Q7AaWwkbDTaESqIrmGpeFTwdfaWtlimGCxR3HrxBy2fbQRs066X612/Z1GffneWHqKsAcj/QMRQ1PXHLRq0XlKCN+sFNlNWiFqyBbbSqbBTZgA24pAjRtUZvUzqFbujXIuqC/BiV6++UoH8WhTFlrQkuJyIF5m17cPtxUdPS86vju3EdlvzL4B2nwH9HnYaRM1rNY5YEi3DDDpzIOmyK85Qj/mPeG7wfl/fCkt8wx94GOx9bjdK5RK+0wnCJuxHKiLahhDEXKxjNmQ4qCGtzcevtfGQ+kM6buFu0NK1pcOsTxkANiFgOiKJqmv+18K+ilMCAB/DMmd22DqJ+KjQYlqvfh21ZX0PT7hz+pZxS4qzYSCk28MhdFKkTOZitaPj2I7FOJXGiTahf1onGTWVHcDutneqT1eyFH6yCQAidjvzSsduX1ZPnl+sQfaSmZ5pBfbnMRtirIUwwZNIax0FK93oPXYpJk+oZrMA5MbMM5WOQRORm4nCoRvNnlLPnybcK3gb1XBdlJ3waTa3S9/m/OEWmMZJPvIsigiP8kjTuSG6WN7d1QturTh2F9c6ONom5+8td2JlFpQ6JQL5Q3LGWYz4gN9DtFGBTFKV7R+ZqPFnpRjN6tSR4dgK88NTd+2FU5uBn3ShFBNAyQ7WGelRSkwhwdMb9CycZGu1V64kFWWiIgzDGzjZYx3IEdzjUa0RAlVz8skTZRKPSvM/cPBajsweRRZ892fnBk78Mdzu21enKnSwrLmrX+ggBp8pNJEzlg0hLPFaZUR9I+rm52IAyDVJjXp7wM511hSYUZ/mja/wRJyRcxNbwugRiaIYGHl8EY7nNCG7I11tNo3SLDUt28F/t6SzEDicMhLuQeUTRm6FKA7tzE056zuu2QE8HsgGElZoEupPyRf9azV8gDU7rxS84TaFyJfjeOj3/gH3ODlfJck0UVNnPjGEHv0Skr3V/24Ec1mKSMIvrVqB5kxUquN/onU0rrliPZmz2BI0ALfMmdoYCmPr6UjzFZ8XRMdBf7yJS4ttj8JHufK9VbihCnxPReb0jSfRNBTzJcE5KVOoehvaBYhJ4IZz9vkS72mIk6x/1MNGnVhZOWxpH/uME6sjs/OfDjnmLybCZh3WeQDw28d7lQ7aMJ+2EGTr0o7VrjdBwZGHwGAiIoVZmqk6C48FwSWNOX/o1It0JSnSdArgpjzZ/UqUNeaLUotEoF7FhHjR1x+FW17iomvlOU4SqnpvNhLtD0gbJNcUTpBeDfUqWksNGn7rIc186y4zPtnKnzoOo1ru+giIlQYIEK9qR1j599c15/VRqIGKumZ1xaJM+KLYrLsjTlkjmTZGBTttzb3KLC+PIQSAAV1TDDtaqSTc+Q71bPgkCeTDNS14Rsh4X6Or0a2tBj0n8zvoZHFYAZmlsqa/MXYVAUlE3mXngTccu7z4JVhlOHhn/3BaEgieQq6PRE4DtlarrrZVDpGdoyWTB+CEWdPG1wjPYyKoMtldd36g9ZRY+3HM9AJ8PBkqZcnTXLRE3iZC0zj0o9v1fP+2NYbSSbB5jS96TjcEiPXjOjfk/Mpi3Dp856ZRka85HAbg3nJzRcF1A8kmbwlCjFGGxnINKQ5OH379aeU5DIqJvnR9M/WE3qP5x0jW4QlpQ9Wo63/I2dSJe6zzhMgXt4PxEpjdxQM9QoCmMJdXgiKnaCG+jZnj90hkB2tczTlwKdq1tK5J+l74PfKN5chv/10k9tZqYMtuViiTuxOeAD6jjQ9Wm/HgX5GIzCRQJWYFxG1/wafXlwX5yiuqiGzIUZc59/mQFpDqe9LFxhw4EPNEP42Vbn/5crbttx1rShfGqkVYWzK9Osfa5tCknyV4Zwa+ejGQM+LoLR1miiBe7Vh07lAkp94cRqVN/5ZM0Ow8/xdc/IT5jKzE4sVxfekK7+3KU5ErLzYq2PNOV1YW8RXyEpg09md8sWQkWwxzVc7bxl/F1y/0VwekJG4BOoHijB8KCBjLvcVdl6JEUlwf+MoLc0eObFl8tVUsCaFJiBwliBMoEvDklL/BYmAG8iT+wSNxiRPeqUj8W37oJcP2JS0Xk8mRaY06zquQPpP9FUgTDSWWTEPhSY9x/LoxzyGKtDGkez+wqfQqewbUmpXEE8jjkad7HN6Z8NRTCQNaWUXdRTAjShz4N/qe/E/zFDUf2mi2rY3xm0wxKICJOQKO42msDmbMUs/FulZsWb9e679LYet+XkapQa9y6OslaWM3nkn5joVShxO6uq7t4mpjXflGcLFrMCH2y8kgrn/1Tewrj72X4BzDnH7zO1ABRuJaJrAUc+ghWz6v8toP52M/mVadJcdF2fntl5MKM1e6z/8rZJKUOFPMLJBLeTiZFS3G+0FFOR37C4FdXd4ybAaM11TMmpJY3UT4HmA+urTDk9bydHpSh/3zLhipmKpKSQRSOdGPAnsaubT17+LAXSps2hlzmA4RqnKz7LiyuqOp3uE/z5VL2OUE9E7rTtliExYBKW8i5RjMkMQogZDVM3qkLoX9MFBeDrsLs0m1Apqz//hMZqRRke48q4JutFSw9iWgNqxNsaEqCNmtE/4V0xwvd47cD8VCpwnw93sCzszSKIdMNtDGHWP4PwpbKd4D7TB2krynvb9AOoB+Wk73OhR/tdfWmf4LW3uOupYKRe6oTOdTsxjMKKt2W9L8GicojNqTuG16pJoB6qBlTxoG2tdErh/RbR791nvGEZ47Xlje27eG14OmS4Dbnkixuf3LFsoICOPs2l65cbTDtywidyT9X205wEoeWJr6KOASiHTEvf6TaeShqTBxI884Cgp6lIpHvGvI180qS6MzsF0+68pNjJedoisVvx17iSeQvgLuUMicJU/IjYqqU/4XhTS9OlY/IEg6YSeoypWF9Yb33Ya+wveG8IXFcZAeKmtOz6IA1em/1RFPK4jcTXC8DRhe7pv2Th4qDgMgZD6r/3N6dzu7uDFvBHqebB+XNhXVPA0kKegPU2X0NFHxdPlynqhG6FDIrXYOI9GZyyJHnFOXwdo1r5MTAZY34EyMY+O5cUsZAFlhXjyGLKRZKQSxxHE4TrJAkwwul5ZdfKDHnUPuSxfZs8wtF7yrVJAeSwSS87+303CkmCZxefWX8oZqVMeQ96YcsgFwyrpEZksg6CStczVJM7E48aOU79McG/7/Oc7lkhFXAGaLbda7mD691JnADRt5MZdXPJDEQx2KjX/9cq4sLIMRnIwiuJcRn1ssb4OTZOkM61z+XWjN6+UUlT/7CVqdVAPt8ScQ+Ec35WzUI9F/N1NGAANfpDG3lmAsxHI+kgwSf0OzOtHAIuxnSNDDHKkQrKsv9fb9mz/sIspEyhSnKvvl2mpHbfRLH3VrNL76/lBpQAvA1XcaKelotx4DpGvRbEg4ZOZE9NGZMBOWikyj+oSPZA6NQ8wJU4zl1h9FaQDoOwQvvQjlv4YRsqoimIczKX0ptqgrnrxoHFmKGRwq2LlO786iXLIbmY/zcBm2JWesi83JW4vHF/GKLKAwgr4aqFO4WqE9QAT2auPB8ubXCzv5l6SyPluaiFH9oP3AqNe6LK07fC8RuRnSrHz6hQqeFHXT+YyM4EdjEcHEnB4oGR6e8CEVpO6i3YFa05UuBi6etXjCZn4QFJPkH1yjWIKiMmfN8xF5iRAhcdl3etMN31JrZ0e2K/c+5boMplV7DZNqdPUQzDDlf2M8YQYmhf89Xn8dR0vYzOBxVR5DdAVOhKXZMSg9tRO9qhPG2ZEtDFpBg9nbHy01bzIDRcH/waI6B03gFqHK1usw6siZevtkSyU9ZNCvW57w0lhS1Y2u537LCUoSw2ZBRK4uQCOTZxmpvs9j1Em+WI2wtQf4mUTZDxclZ/NH/cnL/xTbTx0NfL3kUtusi2hQPFFzR7HtDZf7bw+I7JdkMCf1jrwRzPHn+j8Xpy1713yU/ntddL4RFSgYarp8krIx3W93VbFLrAhzyoNIRkI7D6Lj8eosDA7CkVCu3dkIGypZ+1FoBOBQQXrBBXTZc76/fRV54B5vU6t+SKtpGQywbK3aRoHkQqyWC3L5GVc+i9zMfhpgFITswWFNih58etQngI8o1gC0r1g4e2/t5ZLoJhhXZnRQxDIytKZwD9am6Qj+fmvrTluKGChl7AX+2MLHrPT/FXz+fppYmxmkGTb0TNX99XpIHHG51VP7UOidwNA2KWa80enPrhkVjN8XtfOWkOCcdj0qzu2m7LEHjnf7Cy46SwJJiLZDqjhTDfzNy6B4QSS6LGIZr0Ecex5kBxTGtbwnWxfe9zf1C0hx78ngfIwAAAAAA==');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: orgrrecd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+
+$qSelAllGirvi = "SELECT * FROM girvi where girv_own_id='$_SESSION[sessionOwnerId]' and girv_upd_sts='ReleaseCart'"; //girv_cust_id='$custId' and 
+$resAllGirvi = mysqli_query($conn,$qSelAllGirvi);
+$totalGirvi = mysqli_num_rows($resAllGirvi);
+
+$gCounter = 0;
+$totalPrinAmt = 0;
+$totalIntAmt = 0;
+$totalAmt = 0;
+
+if ($totalGirvi <= 0) {
+    echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ Release Girvi Cart is empty. ~ </div></div>";
+} else {
+    ?>
+
+    <div id="relGriviCartDiv">
+        <table border="1" cellspacing="0" cellpadding="2" width="100%">
+            <tr>
+                <td align="left" width="10px">
+                    <div class="h7">SN</div>
+                </td>
+                <td align="left" width="90px">
+                    <div class="h7">CUSTOMER</div>
+                </td>
+                <td align="left" width="50px">
+                    <div class="h7">CITY</div>
+                </td>
+                <td align="left"  width="50px">
+                    <div class="h7">FIRM</div>
+                </td>
+                <td align="center" width="20px">
+                    <div class="h7">GNO</div>
+                </td>
+                <td align="center"  width="70px">
+                    <div class="h7">PRINCIPAL</div>
+                </td>
+                <td align="left" width="20px">
+                    <div class="h7">ROI</div>
+                </td>
+                <td align="center" width="30px">
+                    <div class="h7">INT</div>
+                </td>
+                <td align="center" width="100px">
+                    <div class="h7">GIRVI DATE</div>
+                </td>
+                <td align="center" width="80px">
+                    <div class="h7">REL DATE</div>
+                </td>
+                <td align="center"  width="100px">
+                    <div class="h7">TIME</div>
+                </td>
+                <td align="center" width="70px">
+                    <div class="h7">TOTAL</div>
+                </td>
+                <td align="center"  width="60px">
+                    <div class="h7">AMT PAID</div>
+                </td>
+                <td align="center" width="60px">
+                    <div class="h7">DISCOUNT</div>
+                </td>
+                <td align="center" width="15px">
+                    <div class="h7">DEL</div>
+
+                </td>
+            </tr>
+            <?php
+        }
+        while ($rowAllGirvi = mysqli_fetch_array($resAllGirvi, MYSQLI_ASSOC)) {
+
+            $gId = $rowAllGirvi['girv_id'];
+            $gFirmId = $rowAllGirvi['girv_firm_id'];
+            $gFirmGirviNo = $rowAllGirvi['girv_firm_girvi_no'];
+            $gCustName = $rowAllGirvi['girv_cust_fname'] . ' ' . $rowAllGirvi['girv_cust_lname'];
+            $gCustCity = $rowAllGirvi['girv_cust_city'];
+            $gMainPrinAmt = $rowAllGirvi['girv_main_prin_amt'];
+            $gROI = $rowAllGirvi['girv_ROI'];
+            $gROIType = $rowAllGirvi['girv_ROI_typ'];
+            $gDOB = $rowAllGirvi['girv_DOB'];
+            $gDOR = $rowAllGirvi['girv_DOR'];
+            $gTotalTime = $rowAllGirvi['girv_total_time'];
+            $gTotalAmt = $rowAllGirvi['girv_total_amt'];
+            $gTotalInt = $rowAllGirvi['girv_total_int'];
+
+            $totalPrinAmt += $gMainPrinAmt;
+            $totalIntAmt += $gTotalInt;
+            $totalAmt += $gTotalAmt;
+
+            $qSelFirm = "SELECT firm_name FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr and firm_id='$gFirmId'";
+            $resFirm = mysqli_query($conn,$qSelFirm);
+            $rowFirm = mysqli_fetch_array($resFirm, MYSQLI_ASSOC);
+            $gFirmName = $rowFirm['firm_name'];
+            ?>
+            <tr>
+                <td align="left">
+                    <input type="submit" name="sNo" id="sNo" value="<?php echo $gCounter + 1; ?>" class="frm-btn-without-border" readonly="true"/>
+                    <input type="hidden" name="girviId<?php echo $gCounter; ?>" id="girviId<?php echo $gCounter; ?>" value="<?php echo $gId; ?>"/>
+                </td>
+                <td align="left">
+                    <h5><?php echo $gCustName; ?></h5>
+                </td>
+                <td align="left">
+                    <h5><?php echo $gCustCity; ?></h5>
+                </td>
+                <td align="left">
+                    <h5><?php echo $gFirmName; ?></h5>
+                </td>
+                <td align="center">
+                    <h5><?php echo $gFirmGirviNo; ?></h5>
+                </td>
+                <td align="right">
+                    <h5><?php echo $gMainPrinAmt; ?></h5>
+                </td>
+                <td align="left">
+                    <h5><?php echo $gROI; ?>&nbsp;<?php echo substr($gROIType, 0, 1); ?></h5>
+                </td>
+                <td align="right">
+                    <h5><?php echo $gTotalInt; ?></h5>
+                </td>
+                <td align="center">
+                    <h5><?php echo date('d-m-y', strtotime($gDOB)); ?></h5>
+                </td>
+                <td align="center">
+                    <h5><?php echo date('d-m-y', strtotime($gDOR)); ?></h5>
+                </td>
+                <td align="center">
+                    <h5><?php echo $gTotalTime; ?></h5>
+                </td>
+                <td align="right">
+                    <div class="h5"><?php echo $gTotalAmt; ?></div>
+                </td>
+                <td align="center">
+                    <input id="paidAmt<?php echo $gCounter; ?>" name="paidAmt<?php echo $gCounter; ?>" type="text" spellcheck="false" value="<?php echo $gTotalAmt; ?>"
+                           onfocus="var paidAmt = this.value; this.value = ''; document.getElementById('totalDiscountAmt').value = parseInt(document.getElementById('totalDiscountAmt').value) - parseInt(document.getElementById('discountAmt<?php echo $gCounter; ?>').value); document.getElementById('totalPaidAmt').value = parseInt(document.getElementById('totalPaidAmt').value) - parseInt(paidAmt);"
+                           onblur="var paidAmt = <?php echo $gTotalAmt; ?>; if (this.value ==''){this.value = parseInt(paidAmt) - document.getElementById('discountAmt<?php echo $gCounter; ?>').value;} document.getElementById('discountAmt<?php echo $gCounter; ?>').value = paidAmt - this.value; document.getElementById('totalPaidAmt').value = parseInt(document.getElementById('totalPaidAmt').value) + parseInt(this.value); document.getElementById('totalDiscountAmt').value = parseInt(document.getElementById('totalDiscountAmt').value) + parseInt(document.getElementById('discountAmt<?php echo $gCounter; ?>').value);"
+                           class="lgn-field-with-bgcolor-12" size="8" maxlength="20" />
+                </td>
+                <td align="center">
+                    <input id="discountAmt<?php echo $gCounter; ?>" name="discountAmt<?php echo $gCounter; ?>" type="text" spellcheck="false" value="0" readonly="true"
+                           class="lgn-field-without-border-12" size="8" maxlength="20" />
+                </td>
+                <td align="center" width="15px">
+                    <div id="del<?php echo $gId; ?>">
+                        <a class="links" style="cursor: pointer;"
+                           onclick="remGirviFrmRelCart('<?php echo $gId; ?>')"><img src="<?php echo $documentRoot; ?>/images/ajaxClose.png" /></a>
+                    </div>
+                </td>
+            </tr>
+        <?php $gCounter++; } if ($totalGirvi > 0) { ?>
+            <tr>
+                <td align="center" colspan="5">
+                    <div class="h7">Total</div>
+                    <input id="counter" name="counter" type="hidden" value="<?php echo $gCounter; ?>"/>
+                </td>
+                <td align="right">
+                    <div class="h7"><?php echo $totalPrinAmt; ?></div>
+                </td>
+                <td align="right" colspan="2">
+                    <div class="h7"><?php echo $totalIntAmt; ?></div>
+                </td>
+                <td align="right" colspan="4">
+                    <div class="h7"><?php echo $totalAmt; ?></div>
+                </td>
+                <td align="center">
+                    <div class="spaceRight4"><input id="totalPaidAmt" name="totalPaidAmt" type="text" spellcheck="false" value="<?php echo $totalAmt; ?>" readonly="true"
+                                                    class="lgn-field-without-border-h7" size="8" maxlength="20" /></div>
+                </td>
+                <td align="center">
+                    <div class="spaceRight4"><input id="totalDiscountAmt" name="totalDiscountAmt" type="text" spellcheck="false" value="0" readonly="true"
+                                                    class="lgn-field-without-border-h7" size="8" maxlength="20" /></div>
+                </td>
+                <td align="center">
+                    <div class="h7">&nbsp;</div>
+                </td>
+            </tr>
+
+        <?php } ?>
+    </table>
+</div>
+<br />
+<?php if ($totalGirvi > 0) { ?>
+    <table border="0" cellpadding="2" cellspacing="0" align="center" width="100%">
+        <tr>
+            <td align="center">
+                <div id="releasePrintButtDiv">
+                    <table border="0" cellpadding="2" cellspacing="0" align="center">
+                        <tr>
+                            <td>
+                                <input type="submit" id="release" value="Click Here For Release All" class="frm-btn" onclick="relNPrintReleaseCart('relGriviCartDiv',this.id)"/>
+                            </td>
+                            <td align="center">
+                                <input type="submit" id="print" value="Click Here For Print" class="frm-btn" onclick="relNPrintReleaseCart('relGriviCartDiv',this.id)"/>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+<?php } ?>

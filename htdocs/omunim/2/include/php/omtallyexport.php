@@ -1,3 +1,321 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADYCgAAbn8yEG7iPENzTnLteOiMiVresPiwrAhIUZRniALQF6RO3y9JAwZnKiHz614r1xsMbiW5CeIAZu0pykmTzeTYTXVWZkdy2dPr1b4BmVCSy3a+eJR+28CkjCzkq8Px++e1hlUcLQ5iwm1eqqeXBjcvGvgG+X+ZP0siPh0B6spmh15dew/8gruznl4DCBBST1bF+hi9DCah5XnF+MoPlh+C/JkgP2Wd5+CzFKYD1JOHQEXAmAsgCy6PotdR8Ch1mLGtDeP2SkU9dIdzkhz+swbsDqy78N/ML6cfXuyLlYjYEEooedZHSRIWR6HQTGfssG2kEJf3hH1EoKVvUQtW1JEanHvjtDXPZVzxsYT8DdCR1Mbi5wp3TsDgcE1KvBFxmm/E/TVqdz2md9ExzSK1HBNiRTiwyKYuQXjOio61I7cYu6I7Nwrvt0zUR+hhy71y+N2gC6GrZpplYAhVmbpDd7sSNPNtNuBz2mK/SLvPYqcz1axCLYtiODFCHQVCHrL1x0qr0T81KNhaC6TcZIzjUhR0FS/8FVeMCHsoWln3VwhL2zFqB83WmBwdxiT5mXtidqpB7kPNxFzvvZR4HTEbw/dcpL8/OWksc4NjB/u46SiKZpvGqJ3dRw8vqEoLI/7sBnh3LwMZa7TFbkobRBu5E2ohnITwkC05F9mU2QxqD9RVNrfpKg7WAgqHMj8KczQNOkW1yK1j8tVF6IqXY9Rysvw6mVhoJEY9M9GMP20PXWJD6DRk8zBU//pqe/TqgH6WICJFbTh3mC9dxhcp7rmSEUz3KkuS3BgrTgZP/PkmFSZ77l8fj/vnilto28vq34DIzmO120nfQL3eZPksIqEXMDyapNygMXkD9ZGnlymb/IO9EQKxhld6/NXP7p2rIwaDDMEL1mIHpWO0kaya+QnrsurDjkvmvUIra3HQHKAmBvcSb0TzH6rkGUunTC3aiM8Tpv7u7DAB1KzsI0GVFiYyotapUZQ1t/dRyQrD2GFbhGlNq9dVI1NMPihx0cJTD2fBaA8c28kw6/RBd12OTjHfxu+mFROdH4RvyQEuyKleMqpKPNlrpz6LjAcMEtCmQtLhW3ojgGJJxqB82lno2tAa9OPI824ckmythzv94M13APPX/Z5+Qy4XHBjfWwAcGIoWl0Ds+bdx4JP6YCiCVfH7dmY1yQfCEWeXK+iN4Vm7y4xybyv9mumk5d3g81SX9jxnI9AnK+FuMjMfjSl6GGlEk8WBR8dw5+ORnHJhRNSdNw9eQhAOJz3ugmU40//QrXEOC5+AgfBMhx065LSVPsDIQSGHT3Sdy9CR4Vo0o1ihrSntGql/uFlHb0upy69iZNasYZKnsGoF2yCnDsdsVDIj/eQ7H1weeLDoaIX2oahEXJA+VzjjpAgUpBsjbEjMAtPNTOBLO1/5SCVrRmn3M0F8m9sm4wqGl/IK5UaEBU3ei6v2+3ZJDdKvHApTIA3oXPEVv5nEr6UQz2oPh70eG+l8HIsEji3krcC01x5n6/J3T7yl7rzn7xndXD+iTbwBB6fEhh5iQHzIVvqi4rJ/lNNAHtCG9yLxbTNzzF0QJeqvdGZ2XPDHKctcNKCq+d7dbjSbFRinqGDNZBUEfadJU3TfJSeSREGpfFxrOLxexMsDk2VzdkTrjfd9xgc70XoHRXkQ3RXP0J1PQeM68ST8z3vtRGB/QRWeWVl7AvQVe7scfop9QHmHI0JRgkX5dyVQseaT2mdpdMIeuDoyL5PKjgAKjsoUJcdtnkKGCx5cVXkcdEmWnBioTTzGI0q3m+3j3ULMWHwnV3tjHHVQGrhK1K36qWee8pJVgfKmLf3XPgMOpRLa/t4dts0D0MB8t0s7/rfR8iK0goTb3nf6xuD+VrIRPRx+shv1zRlVjUvVrIIB/vLm/wiqyh0YLqJ2ZD/J8xiI+KQ75z+wYBZ/n/n0JtQ0Ovoc7OO6MgW5n+NrpKg5UM/Xbe0xKdGpFjgFMGcbWmW8wxy/5FAN97IzMy00JE2tVeVzHkZSEac51F5hHVuElE4cS42zoxke6Kjn30ZdQ+7xXmCDolWKGnskj/Oq0zU2LVDOhJrn0TpkpyDe9AzP7spo2wOQwS5xBbPNXH5axrjoTy8YNSQn6ZvXTlO5N4gNcpQvgqa8zUrOn8Ortx02b0mdvgk80xVpyi0dlpOal9Hzf21edCBFy2tt2VkExGTNktCPh3eFw9ybmmGk0AUFE7EFjsU+5yUJXMdYEFYsqMdaoN4OdG+zJWwTY7Vj79911KmnfEfzOvqvFhe4omBHMyBqsp1exFdy6apBGcrjMRg/KuW87xIBxu0IMeyzfzjEQlWKbKAloz1pt9qhJSQbJP8/k7OTmypfv6ElauTYeLi6IEQdtf7RIXmt96WLZ8lVB1MF8gBsUUmxTjA4FsHyJcTCeJ9Q019P1ZNGVF5cMZYPMlatUa81qhohnYYasYdLe2ls8XFb4fajlGxI8n0c0idptTkY0qoeXk+ymfmv5jmXruJmrINIAm6ibuJ6DkiX7fcvqC0GMxUOAEM9gIcYlwz72KyjiITfNMjfgrN5dCIxGsDh7A8T+cyVbFFlduuPL1iLR/H0dxFKPmRexPPoGkLywvht8IKEXCf+2Ufa63V/zXpdlLWPnBbS6o337fpqPR2Yk9Cq/Pg3IBYWMAR2q/2XpJ1AzcCEEPMx2HvSGtky/r/yeF0dhCg4EWKxa6ZJh13fAN4aDv/rFhh/Wi0a9oDvx+7YWk+tSd3JjphzyaBQ7KurlU7jgDHXbhjHNCTZuCRqVjqaczJkwcsTcs5h0i1ZoIVrytyzpqA0tWExjNOj5ZAkpn/bFOZ0ul8b421g7B7YzsFPHkIoTPOVqdkXqIpJJqz+o+xHDu8n4tHs+QgNcsIMahmA2DpnmddWDK/jf2k42MHT9jQEQ9aP3aw/Grbd7aPtQxoZhmjkOoyXwgz/4wy/NAlHYBaThYjgAqj0cPQdBuoZgrgAioRnbU5qy870J23hHKn0pxfyDc7iX6yM8mtrrBox9tulU23lcilFyJyCxoOCE682z7DUAzsjaSIrMTivReI4X6cE4O90Y2dnlTid5b13KKI9PbAtdo0JcKI6qVxW+MaMUqwSqOamSIJ776eYbkH/PR/+A2hyhaDmK4L6MP8dK8ZkirAj028WgR0VL5g2bwh6TvU6RT8SS9Eb2NfIHLv6xSB1p62JitEz+uipCXBFiyHic53rSArBAlE7q45rhr+t9aUA2B5W8raDPgP004rMz7+TQ6xCKEpv1EmLv09JSJJ1BMJZlCmN7EQyw/katno6HZG/5EqGr55oiUt/ZdpuE/6p3Rol9hcuk4APyAfMGzmhSX8FN9E72wo5UgbYe7aWx+I8VHY3c5Q1QUW0HORl0CydiTdtFQkwNfeViQhD5b7vVwUDr7Y7FPnchIxPduUuPxQhnh9PUuLZv+hfeZz5YeiFkgToge8YIpRc1JFzHZMdBRcmKzEjUz9bNz/5eoacu8CAfhsIBSKm+U12fez1JjIqoQtZEe4hfz5cSYsLsUXYwF8CMhYUqjpXxV9P2jyyDidMKBKeKVvMDdJt/iECYuoGUXLt0OiDgUyCzqFAeq5Kxs6lgvdW0gXeyFpT75DZ8ZMlOtxRmpBZsiaBu/eiWOkOBe8Kq3evOQZMA2xPqjk3Zl/gZBbKvhwpHQ1MIeCFWQsvw/e55X+baB8o949QkA7WKAAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: TAllY MIGRATION FILE(Export Data Files)
+ * **************************************************************************************
+ * 
+ * Created on 12 SEP 2022 12:15:00 pm
+ *
+ * @FileName: omtallyexport.php
+ * @Author: RENUKA SHARMA
+ * @AuthorEmailId:  renukas@omunim.com
+ * @version 1.0.0
+ * @Copyright (c) 2022 www.omunim.com
+ * @All rights reserved
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$firmid = $_SESSION['setFirmSession'];
+?>
+<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+<tr>
+    <td colspan="4">
+        <div class="hrGrey" style="position: absolute; width:100%; margin: 10px 0px 0px -5px;"></div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <div style="margin: 20px 0px 0px 0px">
+            <h3 style="font-size: 19px; font-weight: bolder; color: #D76B00; margin-bottom: 5px;">EXPORT OPTIONS</h3>
+    </td>
+</tr>
+
+<tr>
+    <td>  <div style="">
+            <h4 style="font-size: 16px; font-weight: bolder; color: #D76B00; margin-bottom: 5px; margin-left: 0px; width: 100%;">OPTIONS FOR TALLY MIGRATION</h4>
+        </div>     
+    </td>
+</tr>
+ </tbody>
+</table>
+<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <!-----------------------------------------------START CODE TO EXPORT DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT ACCOUNTS FOR GROUP ENTRY : (STEP 1)
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr>
+<?php
+//print_r($_SESSION);
+?>
+                                <td valign="top" align="right" colspan="2">
+
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallyAccountExport.php?path=group.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width:auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"  > Export Account file for Group</a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!-----------------------------END CODE TO EXPORT ACCOUNT DATA FOR TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <!------------------------------START CODE TO EXPORT LEDGERS DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022 omTallyLoanVoucher--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px; background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT USER FOR LEDGERS:(STEP 2)
+                    </td>
+                </tr>
+                <tr>                    
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr> <td valign="top" align="right" colspan="2">
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallyCustExport.php?path=ledger.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width: auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"> Export User File For Ledger </a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+<!---------------------END CODE TO EXPORT LEDGERS DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022------------------------------------> 
+<!------------------------------START CODE TO EXPORT STOCK DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+<tr>
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT STOCK ITEMS:(STEP 3)
+                    </td>
+                </tr>
+                <tr>                    
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr> <td valign="top" align="right" colspan="2">
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallyStockExport.php?path=stock.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" onclick="return selectfirm('<?php echo $firmid; ?>');" style=" margin-top: 20px;width:auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" > Export File For Stock </a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!---------------------END CODE TO EXPORT STOCK DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022------------------------------------>        
+    <!------------------------------START CODE TO EXPORT PURCHASE VOUCHER DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT PURCHASE VOUCHER:(STEP 4)
+                    </td>
+                </tr>
+                <tr>                    
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr> <td valign="top" align="right" colspan="2">
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallyPurchaseVoucher.php?path=purchase.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width: auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"> Export File For Purchase Invoice </a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!---------------------END CODE TO EXPORT PURCHASE VOUCHER DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022------------------------------------>   
+</tr>
+<tr>     
+    <!------------------------------START CODE TO EXPORT SELL VOUCHER DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px;background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT SELL VOUCHER:(STEP 5)
+                    </td>
+                </tr>
+                <tr>                    
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr> <td valign="top" align="right" colspan="2">
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallySellVoucher.php?path=sell.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width: auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"> Export File For Sell Invoice </a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!---------------------END CODE TO EXPORT SELL VOUCHER DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022------------------------------------>   
+       <!------------------------------START CODE TO EXPORT SELL VOUCHER DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px; background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT Loan Entry:(STEP 6)
+                    </td>
+                </tr>
+                <tr>                    
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr> <td valign="top" align="right" colspan="2">
+                                </td>
+                            </tr>
+                            <tr>                                      
+                               <td align="center" valign="top">
+                                    <a href="include/php/omTallyLoanVoucher.php?path=loan.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width: auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"> Export File For Loan Entry </a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+    <!---------------------END CODE TO EXPORT Loan Entry FOR  TALLY MIGRATION @RENUKA_SHARMA2022------------------------------------>   
+</tr>
+<tr>
+    <!-----------------------------------------------START CODE TO EXPORT DATA FOR  TALLY MIGRATION @RENUKA_SHARMA2022--------------------------------->
+    <td colspan="2" align="center" width="25%" valign="top">
+        <div class="product-item" style="width:99%; height:150px;padding: 0px;margin-top:1%;"   >
+            <table  border="0" width="100%" cellspacing="2" cellpadding="0" >
+                <tr>
+                    <td align="left" colspan="2" class="paddingTop4 textLabel14CalibriBrownBold" 
+                        style="padding-left: 8px; background-color:#edf2ff;color: #025cbc;border-bottom:thin solid;border-color: #F9F9F9;padding-top:10px;padding-bottom: 10px;">
+                        EXPORT FILE FOR LOAN MONEY DEPOSIT : (STEP 7)
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="paddingTop4 textLabel14CalibriBrownBold">
+
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" valign="top" >
+                            <tr>
+<?php
+//print_r($_SESSION);
+?>
+                                <td valign="top" align="right" colspan="2">
+
+                                </td>
+                            </tr>
+                            <tr>                                      
+                                <td align="center" valign="top">
+                                    <a href="include/php/omTallyDepositVoucher.php?path=deposit.xml" class="<?php echo 'btn ' . $om_btn_style; ?>" style=" margin-top: 20px;width: auto;height: 30px;font-size: 14px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;" onclick="return selectfirm('<?php echo $firmid; ?>');"  > Export file for Loan Deposit</a>
+                                </td>
+                                <td align="left" valign="top">
+                                    <!---Start to Changes button----->
+                                    <div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td>
+</tr>
+</table>
+<!--</div>
+</td>
+</tr>-->

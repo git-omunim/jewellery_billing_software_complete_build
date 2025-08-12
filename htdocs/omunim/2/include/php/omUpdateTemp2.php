@@ -1,3 +1,77 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAYBAAArrmh8GzdnxC7Nc4FW5A5AhDIaBBwI0SC2oObjqret2E1pNmPZErQyZluTzIa2WHwB8EqpAkkI2d2ueGJK8AebypjGYDYAm+PXRk6kkGDn0G/WzmcoG4E6di1yaBwjvjojkCMZ0bDnbF8pg9Y3Sq28uMFJKD/pBbD/ym2RH777uZrj+Lb9XA1wJCs3gIjewRkdO/U4akN2ZwDECSYbWQNM51yRPSybZ+y9OUwUPdAATlBiyukSgAITX6Fs7XQcgiK7WDXZslhk3+0N3x7siQGgEM6zb7zPiCLSmNq1EaDYs8HcJ2zc8IZcBXSv7ohbC2YWjvFJqOydA1aXwAHiWuMbty4Eu6zeuBdPDbu+/yGvXLeLpjNZfo1KkzwxPblQ4leQ/52tKXcexRuX3cgTmk6qH3muQjU92/32uPvUmfZ24F+p4bO5d+yxslbuVu120gHgc506AnfnWnhn87lg2byMhsBaR74X5AvbxCHR5C3AK/zhmvaF6rK5lI0D/ahyTJLh0T+aWPTyASMQXMBqZhldDa30whZdWvx50+1RBEivG4hMZisYXSCkd9uQswainhLxphvmHWvQvE7w2BD8CK4Y55y5GHmaNj9oHKOjdSknw+HohZgF4850szeKK2OaKW9lrdDUEQqb++5JLq3XPgYxFN8F+NLusRoHBZZOZr3SV2WsJgIzpcChh1I6bHzs866sM+POFUljMjPCZuL863hhwl9ZOGu4LRSbmtuGX/Of9b0s76DgqXZakRGPgtowYgaZ4r5r6zv/PEvX0liqsQ/Lg5KKTO6BZFmu4GfoDtMHZG8bKzbeCuv2/le9z3x96oQBM6w25TSxItSAsYxU+Xv6dktWtNSwRmPdzHSmeihfmvWcxEXMWI2kAyiukw5CuaopwOwpqDdKVimD/dQmvIssYHjkNXMfQqH/bkL8JYNZfA5Q6PskJfH8bHkE5yiFUEwmbh6AtmPMkDRWnmOMDIPl0WscrMaVDw38kKE8nxhHGdn/rrcf/jT6lCydb476BNE0nKceDnI71Vf/8f31Ik4B0303DQcamCIwhpV7DaZscWAD/ZrwGLBzZhPOk/CBVolVXiNahl8nKW13422c4SZE4eDmzC3JXtWf9FRpUn8vJ0nkocYbn9Ydrgoosb66VjvZgIVuFpDbu021EWuNFyKnjkSyCMdEoIzXFaDXKO6R9l0d4xyrmsnEMf3UqcYh4fTWg3PHiE9eexrg7R7UNYrvOGs9M8LaYMHClALJcjiWDnxihfsVtoEGMyCE6XCii01YVSMxKgqQE7V4P8NQ+QlYkDbn3fLzBXern2np1EiLSs7bwWcX2q+TrVarLxZL5RDxzvgdsocT+F9/PE25BEt1UbeHDXub8Tby5smKS6x9N8GD9JIruY6NwAAAAA=');
+<?php
+/*
+ * ********************************************************************************************************************
+ * @tutorial: DHANEJ CUSTOMER TEMP UPDATE FILE @AUTHOR:PRIYANKA-28MAR2022
+ * ********************************************************************************************************************
+ * 
+ * Created on 28 MAR, 2022 06:30:56 PM
+ *
+ * @FileName:omUpdateTemp2.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@omunim.com
+ * @ProjectName: omunim
+ * @version 2.7.136
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: 
+ *  AUTHOR: @AUTHOR:PRIYANKA-28MAR2022
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+$updateStockEntryQuery1 = "UPDATE stock_transaction SET sttr_purity = '85'
+                           WHERE sttr_item_name = 'GOL MANI'
+                           AND sttr_item_category = 'GOL MANI'
+                           AND sttr_purity = '9'
+                           AND sttr_item_pre_id = 'GM' AND sttr_item_id = '1175' 
+                           ORDER BY sttr_id ASC ";
+//
+//
+//echo '$updateStockEntryQuery1 == ' . $updateStockEntryQuery1 . '<br /><br />';
+//
+//
+if (!mysqli_query($conn, $updateStockEntryQuery1)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+$updateStockEntryQuery = "UPDATE stock_transaction SET sttr_recreate_status = 'YES' 
+                          WHERE sttr_item_name = 'GOL MANI'
+                          AND sttr_item_category = 'GOL MANI'
+                          AND sttr_transaction_type = 'EXISTING' 
+                          ORDER BY sttr_id ASC ";
+//
+//
+//echo '$updateStockEntryQuery == ' . $updateStockEntryQuery . '<br /><br />';
+//
+//
+if (!mysqli_query($conn, $updateStockEntryQuery)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+$deleteStockEntryQuery = "DELETE FROM stock WHERE st_item_name = 'GOL MANI'
+                          AND st_item_category = 'GOL MANI' ";
+//
+//
+//echo '$deleteStockEntryQuery 1== ' . $deleteStockEntryQuery . '<br /><br />';
+//
+//
+if (!mysqli_query($conn, $deleteStockEntryQuery)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
 ?>

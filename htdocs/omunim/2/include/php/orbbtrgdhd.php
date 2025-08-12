@@ -1,3 +1,94 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAC4AwAA+83pcyuz/CxpjaivhytD+zpXHoIarXf5f2fDf9jKVQdqJUZb5kxAAegJb/m6FxUEMUJRa+Dl3b4Oh+xgaOWvOrTFK6eMnMgi95hhCKpdm8wmmvot5lNgkO5iV6J3TBfgzuO3u+e+SPw/xpqmz7Ei4mZC5D+bpZle8LRdG/LoCj1YHsi46xFnGRT/tAPouGoKcbKc4GPXelUQANU3xwhvnEgjc9MjQ8gzYgblSXhT0Kxh+HkgXRKoBbFUcCfkDZ8EzVYhG7cFt87CPLt4DVGlBdIOZiTEQQ+iH53Mu0SEmh32XwcdkpbCHq0SCTI+9qkwTxS5svCwWhcAi6CYYyAUPKh2Qi5OlHP3ncMrEImngoIYZB0eGAai/sVvgzkrSvb0xjJrByb9MaEwVtZhYX3K+mIMgBIvgeDB4Nfrxnp3x1XOj04Rh2vJKTqLmDX5qvjMtvMnVNnpUgZZWDewxn/7qqDEwuyV7oQM0/i0kS5WnAlKYqNMr4Ujfdba2cYfSiyYcsYeT/xz5VXaEXt4eX5I7Vr+TYnru/sCbAhYWy9F4AhrMY/y1xxU1j2bL0j819hlBCBW3H61IVJNkeL8EB+Q+HwNpOTRJ5lqMS3Frw2xCzmuYZEmHA6I1wbEE7eh5GzNw7XkT0Nuo1ud4nvTL1q++p6CGx02++nhnE2VSdzLwi7pbBjuhwXxpT9vutmceWl6Qo5llhPC/DYCkhB9zP3CuL6KfpvI6FO2M6CaY45I5faaccvmQG7ujwYQHTAZ/ael7uwr5Wz0dyJ0ruPYvs+yu6Wes+ZwWrSsKbBiZoCS6RJllJnuB7OBnCVbIjXyrtbf2Y889vynLyI68z3j+Et60rGsfzdQWt4Gxym5qy95Dev4ysLUIKeMbyIJpkT/lE8egI23riv9++WcyyHEdFyzRn/CX3DQ6gLeMEevKEtgD5Ud0ezQAVOHX+KvnUzqkkZ+sje9Pa2ioIJO7pnksJ9UiqX0/+OiijE859H2+ar6egObqSNXZVoxGJ0j7i3NNtV7Qx4vz9fvlqqZ3CSxI2ZbX8d92INLbfUeyZ3Z3OoZORiD7od3Vn46LZyzU5buq8VWI0/i4tICUAIuxX6A2NQs5enp6tLzpNWPshSA9z/NmRQVfmXWqQ0apAruo6ELnYxo34PDL8mscU9im3v1EciSjKJflpTM1cG55cP8cJNOzZ4xrKbKYk+Vr9MZELtoVhZ+9mGn1lMSpcY8Rtf5ueWqb0D0orSW0skOQZOu6vP9yv7w9eKl0mD5bQAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transferred Girvi Ledger Content
+ * **************************************************************************************
+ * 
+ * Created on Jun 8, 2013 11:59:25 AM
+ *
+ * @FileName: orbbtrgdhd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+?>
+<td>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" class="balanceSheetPrintDiv"><!--Class Added @Author:PRIYA19AUG13-->
+        <!--Start Code To Change Width @Author:PRIYA19AUG13-->
+        <td align="center" width="61px" valign="top" class="border-color-grey-top border-color-grey-left border-color-grey-r">
+            <div class="main_link_brown12">DATE</div>
+        </td>
+        <td align="center" width="164px" colspan="2" class="border-color-grey-top border-color-grey-r">
+            <div class="main_link_brown12">OPENING BALANCE</div>
+        </td>
+        <td align="center" colspan="2" width="164px"class="border-color-grey-top border-color-grey-r">
+            <div class="main_link_brown12">TRANSFERRED GIRVI</div>
+        </td>
+        <td align="center" colspan="2" width="164px" class="border-color-grey-top border-color-grey-r">
+            <div class="main_link_brown12">TOTAL</div>
+        </td>
+        <td align="center" colspan="2" width="164px"class="border-color-grey-top border-color-grey-r">
+            <div class="main_link_brown12">RELAESED GIRVI</div>
+        </td>
+        <td align="center" colspan="2" width="164px"class="border-color-grey-top border-color-grey-r">
+            <div class="main_link_brown12">FINAL TOTAL</div>
+        </td>
+        <td align="center" rowspan="2" width="100px" class="border-color-grey-rbu">
+            <div class="main_link_brown12">INTEREST</div>
+        </td>
+    </tr>
+    <!--End Code To Change Width @Author:PRIYA19AUG13-->
+    <tr>
+        <td align="center" class="border-color-grey-rbu border-color-grey-left" width="60px">
+            <div class="main_link_brown10"></div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="128px">
+            <div class="main_link_brown10">AMOUNT</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="36px" >
+            <div class="main_link_brown10">GIRVI</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="128px">
+            <div class="main_link_brown10">AMOUNT</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="36px">
+            <div class="main_link_brown10">GIRVI</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="128px">
+            <div class="main_link_brown10">AMOUNT</div>
+        </td>
+        <td align="center"  class="border-color-grey-rbu" width="36px">
+            <div class="main_link_brown10">GIRVI</div>
+        </td>
+        <td align="center"  class="border-color-grey-rbu" width="128px">
+            <div class="main_link_brown10">AMOUNT</div>
+        </td>
+        <td align="center"  class="border-color-grey-rbu" width="36px">
+            <div class="main_link_brown10">GIRVI</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="128px">
+            <div class="main_link_brown10" >AMOUNT</div>
+        </td>
+        <td align="center" class="border-color-grey-rbu" width="36px">
+            <div class="main_link_brown10">GIRVI</div>
+        </td>
+      
+    </tr>
+</table></td>

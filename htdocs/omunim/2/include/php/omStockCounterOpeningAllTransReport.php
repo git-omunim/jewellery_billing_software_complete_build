@@ -1,3 +1,376 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STOCK COUNTER OPENING ALL TRANSACTIONS REPORT @AUTHOR:PRIYANKA-21FEB2022
+ * **************************************************************************************
+ * 
+ * Created on FEB 21, 2022 05:30:08 PM
+ *
+ * @FileName: omStockCounterOpeningAllTransReport.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.126
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @AUTHOR:PRIYANKA-21FEB2022
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+$currentFileName = basename(__FILE__);
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+if ($todayFromStrDate == $todayToStrDate) {
+    //
+    $dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(st.sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+    $dateStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(st.sttr_add_date,'%d %b %Y'))<=$todayFromStrDate ";
+    //
+} else {
+    //
+    $dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(st.sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+    //$dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<=$todayFromStrDate ";
+    //
+    $dateStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(st.sttr_add_date,'%d %b %Y'))<=$todayFromStrDate ";
+    //
+}
+//
+//
+?>
+<style>
+    .thBorder .trBorder{
+        border: 1px solid black; 
+    }
+</style>
+<div id="balanceSheetPrintDiv">
+    <div style="border-radius: 5px !important; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+         background: #fff;">
+        <div class="card-body">
+            <div style="border-radius: 5px !important;">
+                <div class="card-header" 
+                     style="border-radius: 5px;color:#E56717; font-size: 18px; font-weight:bold; background: #f1f1f1;">
+                    <table width="100%">
+                        <tr id="headerTable">
+                            <td align="left" width="50%">OPENING STOCK TRANSACTIONS</td>
+                            <!--<td align="right" style="float:right;" width="50%"> 
+                                <button align="right" class="btn" 
+                                        style="padding:7px; border-radius: 4px !important; background-color: #add779; 
+                                        color:#fff;font-weight: bold;"
+                                        onclick="getStockLedgerSummaryPanel();">
+                                    STOCK SUMMARY
+                                </button>
+                            </td>-->
+                        </tr>
+                    </table>
+                </div>
+                <div class='card-body'>
+                    <?php
+                    //
+                    //
+                    if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+                        $qSelFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+                    } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                        $qSelFirmCount = "SELECT firm_id,firm_name,firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+                    }
+                    //
+                    //
+                    if ($selFirmId != NULL) {
+                        $strFrmId = $selFirmId;
+                    } else {
+                        //
+                        $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+                        //
+                        $strFrmId = '0';
+                        //
+                        // Set String for Public Firms @AUTHOR:PRIYANKA-21FEB2022
+                        while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+                            $strFrmId = $strFrmId . ",";
+                            $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+                        }
+                    }
+                    //
+                    //
+                    ?>
+                    <div id="purchaseDetailsSubDiv">
+                        <input type="hidden" id="sessionProVersion" name="sessionProVersion" value="<?php echo $_SESSION['sessionProdVer']; ?>" />
+                        <input type="hidden" id="documentRootPath" name="documentRootPath" value="<?php echo $documentRootBSlash; ?>" />                            
+                        <?php
+                        //
+                        //
+                        $dateStrForOp = "UNIX_TIMESTAMP(STR_TO_DATE(st.sttr_add_date,'%d %b %Y'))<$todayFromStrDate";
+                        //
+                        //
+                        // Table Where @AUTHOR:PRIYANKA-17JAN2022
+                        $whereStr =  " stock.sttr_id NOT IN "
+                                   . "(SELECT sttr.sttr_sttr_id FROM temp_view as sttr "
+                                   . " WHERE sttr.sttr_transaction_type IN ('sell', 'ESTIMATESELL', 'APPROVAL') "
+                                   . " AND sttr.sttr_status IN ('PaymentDone', 'PaymentPending', 'ApprovalDone') "
+                                   . " AND sttr.sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'APPROVAL') "
+                                   . " AND UNIX_TIMESTAMP(STR_TO_DATE(sttr.sttr_add_date,'%d %b %Y'))<$todayFromStrDate "
+                                   . " AND sttr.sttr_item_category = '$Category' "
+                                   . " AND sttr.sttr_item_name = '$transName' "
+                                   . " AND sttr.sttr_purity = '$transPurity' "
+                                   . " AND sttr.sttr_counter_name = '$transCounter' "
+                                   . " AND sttr.sttr_stock_type = 'retail') "
+                                   . " AND stock.sttr_indicator IN ('stock', 'AddInvoice', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'ItemReturn') "
+                                   . " AND stock.sttr_transaction_type IN ('EXISTING', 'PURONCASH', 'PURBYSUPP', 'TAG', 'ItemReturn') ";
+                        //
+                        //
+                        //echo '<br/>$whereStr:' . $whereStr; die;
+                        //
+                        //
+                        // Table Temp View Where @AUTHOR:PRIYANKA-21FEB2022
+                        $tempViewWhere = " st.sttr_firm_id IN ($strFrmId) "
+                                    . "AND st.sttr_status NOT IN ('DELETED', 'ApprovalDone') "
+                                    . "AND ( $dateStrForOp ) "                                
+                                    . "AND st.sttr_item_category = '$Category' "
+                                    . "AND st.sttr_item_name = '$transName' "
+                                    . "AND st.sttr_purity = '$transPurity' "
+                                    . "AND st.sttr_counter_name = '$transCounter' "
+                                    . "AND st.sttr_stock_type = 'retail' ";
+                        //
+                        //
+                        //echo '<br/>$tempViewWhere:' . $tempViewWhere; die;
+                        //
+                        //
+                        // Table Joins @AUTHOR:PRIYANKA-21FEB2022
+                        $viewJoin = " INNER JOIN firm AS f ON stock.sttr_firm_id=f.firm_id ";
+                        //
+                        //
+                        //
+                        //
+                        $createView = "CREATE table temp_view AS "
+                                . "SELECT st.sttr_id as 'sttr_id',"
+                                . "st.sttr_transaction_type as 'sttr_transaction_type',"
+                                . "st.sttr_sttr_id as 'sttr_sttr_id',"
+                                . "st.sttr_firm_id as 'sttr_firm_id',"
+                                . "st.sttr_sttrin_id as 'sttr_sttrin_id',"
+                                . "st.sttr_add_date as 'sttr_add_date',"
+                                . "st.sttr_item_pre_id as 'sttr_item_pre_id',"
+                                . "st.sttr_item_id as 'sttr_item_id',"
+                                . "st.sttr_barcode_prefix as 'sttr_barcode_prefix',"
+                                . "st.sttr_barcode as 'sttr_barcode',"
+                                . "st.sttr_metal_type as 'sttr_metal_type',"
+                                . "st.sttr_metal_rate as 'sttr_metal_rate',"
+                                . "st.sttr_purity as 'sttr_purity',"
+                                . "st.sttr_product_purchase_rate as 'sttr_product_purchase_rate',"
+                                . "st.sttr_item_model_no as 'sttr_item_model_no',"
+                                . "st.sttr_item_category as 'sttr_item_category',"
+                                . "st.sttr_item_name as 'sttr_item_name',"
+                                . "st.sttr_stock_type as 'sttr_stock_type',"
+                                . "st.sttr_counter_name as 'sttr_counter_name',"
+                                . "st.sttr_indicator as 'sttr_indicator',"
+                                //
+                                /* START CODE TO ADD CONDITIONS FOR FINAL QTY, WEIGHT FOR RETAIL REMAINING STOCK @AUTHOR:PRIYANKA-11JAN2022 */
+                                //
+                                . "(if((st.sttr_final_quantity IS NULL),st.sttr_quantity,st.sttr_final_quantity)) as 'sttr_quantity',"
+                                . "(ROUND(if((st.sttr_final_gs_weight IS NULL),st.sttr_gs_weight,st.sttr_final_gs_weight),3)) as 'sttr_gs_weight',"
+                                . "(ROUND(if((st.sttr_final_nt_weight IS NULL),st.sttr_nt_weight,st.sttr_final_nt_weight),3)) as 'sttr_nt_weight',"
+                                . "(ROUND(if((st.sttr_final_fn_weight IS NULL),st.sttr_fine_weight,st.sttr_final_fn_weight),3)) as 'sttr_fine_weight',"
+                                //
+                                /* END CODE TO ADD CONDITIONS FOR FINAL QTY, WEIGHT FOR RETAIL REMAINING STOCK @AUTHOR:PRIYANKA-11JAN2022 */
+                                // 
+                                . "st.sttr_stone_wt as 'sttr_stone_wt',"
+                                . "st.sttr_status as 'sttr_status',"
+                                . "st.sttr_st_id as 'sttr_st_id',"
+                                . "st.sttr_hallmark_uid as 'sttr_hallmark_uid' "
+                                . "FROM stock_transaction as st "
+                                . " WHERE $tempViewWhere ";
+                        //
+                        //
+                        //echo $createView; exit();
+                        //
+                        //
+                        $sqlTable = 'DESC temp_view;';
+                        //
+                        //
+                        mysqli_query($conn, $sqlTable);
+                        //
+                        if (mysqli_errno($conn) == 1146) {
+                            mysqli_query($conn, $createView) or die('Query:' . $createView . '<br/> ERROR:' . mysqli_error($conn));
+                        } else {
+                            $dropView = "TRUNCATE table temp_view";
+                            mysqli_query($conn, $dropView) or die('Query:' . $dropView . '<br/> ERROR:' . mysqli_error($conn));
+                            $dropView = "DROP table temp_view";
+                            mysqli_query($conn, $dropView) or die('Query:' . $dropView . '<br/> ERROR:' . mysqli_error($conn));
+                            mysqli_query($conn, $createView) or die('Query:' . $createView . '<br/> ERROR:' . mysqli_error($conn));
+                        }
+                        //
+                        //
+                        //
+                        //
+                        // Data Table Main Columns @AUTHOR:PRIYANKA-21FEB2022
+                        include $_SESSION['documentRootIncludePhp'] . 'omdatatablesUnset.php';
+                        //
+                        //
+                        $dataTableColumnsFields = array(
+                            array('dt' => 'DATE'),
+                            array('dt' => 'PID'),
+                            array('dt' => 'PNO'),
+                            array('dt' => 'FIRM'),
+                            array('dt' => 'METAL'),
+                            array('dt' => 'HUID'),
+                            array('dt' => 'COUNTER'),
+                            array('dt' => 'CATEGORY'),
+                            array('dt' => 'NAME'),
+                            array('dt' => 'TYPE'),
+                            array('dt' => 'QTY'),
+                            array('dt' => 'GS WT'),
+                            array('dt' => 'ST WT'),
+                            array('dt' => 'NT WT'),
+                            array('dt' => 'PURITY'),
+                            array('dt' => 'FN WT'),
+                            array('dt' => 'PUR RATE'),
+                            array('dt' => 'BC NO')
+                        );
+                        //
+                        //
+                        $_SESSION['dataTableColumnsFields'] = $dataTableColumnsFields; // No Change
+                        //
+                        //
+                        // Table Parameters @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['tableName'] = 'temp_view as stock'; // Table Name
+                        $_SESSION['tableNamePK'] = 'stock.sttr_id'; // Primary Key
+                        //
+                        //
+                        //
+                        // DB Table Columns Parameters @AUTHOR:PRIYANKA-21FEB2022
+                        $dbColumnsArray = array(
+                            "stock.sttr_add_date",
+                            "stock.sttr_item_pre_id",
+                            "CAST(stock.sttr_item_id AS UNSIGNED)",
+                            "f.firm_name",
+                            "stock.sttr_metal_type",
+                            "stock.sttr_hallmark_uid",
+                            "stock.sttr_counter_name",
+                            "stock.sttr_item_category",
+                            "stock.sttr_item_name",
+                            "stock.sttr_stock_type",
+                            "stock.sttr_quantity",
+                            "stock.sttr_gs_weight",
+                            "stock.sttr_stone_wt",
+                            "stock.sttr_nt_weight",
+                            "CONCAT(stock.sttr_purity,' ','%')",
+                            "stock.sttr_fine_weight",
+                            "stock.sttr_metal_rate",
+                            "CONCAT(stock.sttr_barcode_prefix,'',stock.sttr_barcode)"
+                        );
+                        //
+                        //
+                        //
+                        //
+                        $_SESSION['dbColumnsArray'] = $dbColumnsArray;  // No Change @AUTHOR:PRIYANKA-21FEB2022
+                        //
+                        //
+                        //$_SESSION['multipleColCounter'] = '';
+                        //
+                        //
+                        //if ($_SESSION['sessionProdName'] == 'OMRETL') {
+                        //    $_SESSION['dtSumColumn'] = '';
+                        //} else {
+                            $_SESSION['dtSumColumn'] = '10,11,12,13,15';
+                        //}
+                        //
+                        //
+                        $_SESSION['dtSortColumn'] = '1,1';
+                        $_SESSION['dtASCDESC'] = 'asc,asc';
+                        //
+                        //
+                        //$_SESSION['dtDeleteColumn'] = '';
+                        //
+                        //
+                        // Extra direct columns we need pass in SQL Query @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['sqlQueryColumns'] = "stock.sttr_id, stock.sttr_sttr_id, stock.sttr_counter_name, stock.sttr_add_date, stock.sttr_sttrin_id, stock.sttr_transaction_type, stock.sttr_quantity,";
+                        //
+                        //
+//                            if ($transPanelDetailsDisplay != 'OutwardDetails') {
+//                                //
+//                                // Colorful column name
+//                                //$_SESSION['colorfulColumn'] = "if(sttr_transaction_type IN ('sell'),(-1*sttr_gs_weight),sttr_gs_weight)";
+//                                //$_SESSION['colorfulColumnCheck'] = 'sttr_gs_weight';
+//                                //$_SESSION['colorfulColumnTitle'] = 'GS WT';
+//                                //
+//                                //
+//                                $_SESSION['colorfulColumn4'] = "if(sttr_transaction_type IN ('sell'),(-1*sttr_quantity),sttr_quantity)"; // For Color Options Pass Column Name Here
+//                                $_SESSION['colorfulColumn41'] = "if(sttr_transaction_type IN ('sell'),(-1*sttr_gs_weight),sttr_gs_weight)"; // For Color Options Pass Column Name Here
+//                                $_SESSION['colorfulColumn42'] = "if(sttr_transaction_type IN ('sell'),(-1*sttr_nt_weight),sttr_nt_weight)"; // For Color Options Pass Column Name Here
+//                                $_SESSION['colorfulColumn43'] = "if(sttr_transaction_type IN ('sell'),(-1*sttr_fine_weight),sttr_fine_weight)"; // For Color Options Pass Column Name Here
+//                                $_SESSION['colorfulColumnCheck4'] = 'Y'; // Check this for Color + / - Value sh be 'Y'
+//                                $_SESSION['colorfulColumnTitle4'] = '';
+//                                $_SESSION['colorfulColumnCheck4Value'] = '';
+//                                $_SESSION['colorfulColumnCheck4Value1'] = '';
+//                                $_SESSION['colorfulColumnCheck4Value2'] = '';
+//                            }
+                        //
+                        //
+                        // On Click Function Parameters @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['onclickColumnImage'] = "";
+                        $_SESSION['onclickColumn'] = "stock.sttr_item_category"; // On which column @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['onclickColumnId'] = "stock.sttr_id";
+                        $_SESSION['onclickColumnValue'] = "stock.sttr_id";
+                        $_SESSION['onclickColumnFunction'] = "stock.sttr_item_category";
+                        $_SESSION['onclickColumnFunctionPara1'] = "stock.sttr_id";
+                        $_SESSION['onclickColumnFunctionPara2'] = "";
+                        $_SESSION['onclickColumnFunctionPara3'] = "";
+                        $_SESSION['onclickColumnFunctionPara4'] = "";
+                        $_SESSION['onclickColumnFunctionPara5'] = "";
+                        $_SESSION['onclickColumnFunctionPara6'] = "";
+                        //
+                        //
+                        // Delete Function Parameters @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['deleteColumn'] = ""; // On which column @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['deleteColumnId'] = "";
+                        $_SESSION['deleteColumnValue'] = "";
+                        $_SESSION['deleteColumnFunction'] = "";
+                        $_SESSION['deleteColumnFunctionPara1'] = ""; // Panel Name @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['deleteColumnFunctionPara2'] = "";
+                        $_SESSION['deleteColumnFunctionPara3'] = "";
+                        $_SESSION['deleteColumnFunctionPara4'] = "";
+                        $_SESSION['deleteColumnFunctionPara5'] = "";
+                        $_SESSION['deleteColumnFunctionPara6'] = "";
+                        //
+                        //
+                        // Where Clause Condition @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['tableWhere'] = " $whereStr ";
+                        //
+                        //
+                        //echo 'tableWhere ==  ' . $_SESSION['tableWhere'];
+                        //
+                        //
+                        // Table Joins @AUTHOR:PRIYANKA-21FEB2022
+                        $_SESSION['tableJoin'] = " $viewJoin ";
+                        //
+                        //
+                        $dataTableFooter = 'N';
+                        //
+                        //
+                        // Data Table Main File @AUTHOR:PRIYANKA-21FEB2022
+                        include $_SESSION['documentRootIncludePhp'] . 'omdatatables.php';
+                        //
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,487 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpnmwd.php';
+require_once 'ommpincr.php';
+require_once 'nepal/nepali-date.php';
+$nepali_date = new nepali_date();
+//
+$transaction_pre_vch_id = $_GET['slPrPreInvoiceNo'];
+$transaction_post_vch_id = $_GET['slPrInvoiceNo'];
+//
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+
+$selnepaliDateMonthFormat = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateMonthFormat'";
+$resnepaliDateMonthFormat = mysqli_query($conn, $selnepaliDateMonthFormat);
+$rownepaliDateMonthFormat = mysqli_fetch_array($resnepaliDateMonthFormat);
+$nepaliDateMonthFormat = $rownepaliDateMonthFormat['omly_value'];
+//
+$selexpenseInvoice = "SELECT omly_value FROM omlayout WHERE omly_option = 'expenseInvLay'";
+$resexpenseInvoice = mysqli_query($conn, $selexpenseInvoice);
+$rowexpenseInvoice = mysqli_fetch_array($resexpenseInvoice);
+$expenseInvoice = $rowexpenseInvoice['omly_value'];
+if ($expenseInvoice == 'expenseInvLayA4' || $expenseInvoice == '') {
+    $width = 793;
+    $fontSize = '14px';
+}
+if ($expenseInvoice == 'expenseInvLayA5') {
+    $width = 559;
+    $fontSize = '13px';
+}
+if ($expenseInvoice == 'expenseInvLayA6') {
+    $width = 396;
+    $fontSize = '12px';
+}
+if ($expenseInvoice == 'expenseInvLay80mm') {
+    $width = 302;
+    $fontSize = '11px';
+}
+//
+$qSelTransSub = "SELECT * FROM transaction WHERE transaction_own_id='$_SESSION[sessionOwnerId]' AND transaction_pre_vch_id='$transaction_pre_vch_id' "
+        . "AND transaction_post_vch_id='$transaction_post_vch_id'";
+$resTransSub = mysqli_query($conn, $qSelTransSub);
+$rowTransSub = mysqli_fetch_array($resTransSub, MYSQLI_ASSOC);
+//
+$transaction_id = $rowTransSub['transaction_id'];
+$transaction_panel = $rowTransSub['transaction_panel'];
+$transaction_pre_vch_no = $rowTransSub['transaction_pre_vch_id'];
+$transaction_post_vch_no = $rowTransSub['transaction_post_vch_id'];
+$transaction_supp_vch_id = $rowTransSub['transaction_supp_vch_id'];
+$transaction_date = $rowTransSub['transaction_DOB'];
+$transaction_subject = $rowTransSub['transaction_sub'];
+$transaction_category = $rowTransSub['transaction_cat'];
+$transaction_user_id = $rowTransSub['transaction_user_id'];
+$transaction_amt = $rowTransSub['transaction_amt'];
+//
+parse_str(getTableValues("SELECT user_fname,user_lname,user_prefix_name,user_father_name,user_add,user_official_address,user_current_address,user_mobile,user_phone,user_cst_no FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$transaction_user_id'"));
+//
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Munim &mdash; Girvi Software, Jewellery Software, Jewellery &amp; Money Lending Accounting Software...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <style>
+            .expenseInvoice{
+                font-family: calibri;
+                font-size: <?php echo $fontSize; ?> !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="expenseInvoice" style="height: auto;">
+            <table align="center" valign="middle" style="width: <?php echo $width; ?>px; height:auto;border:1px black solid;">
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td align="left">
+                                    <table>
+                                        <tr>
+                                            <td align="left" style="font-weight: bold;">
+                                                PARTY NAME
+                                            </td>
+                                            <td style="font-weight: bold;"> &nbsp;: </td>
+                                            <td style="font-weight: bold;">
+                                                <?php
+                                                if ($user_fname != '') {
+                                                    echo strtoupper($user_prefix_name) . ' ' . strtoupper($user_fname) . ' ' . strtoupper(substr($user_father_name, 1)) . ' ' . strtoupper($user_lname);
+                                                } else {
+                                                    echo '-';
+                                                }
+                                                ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                                <td align="right">
+                                    <table>
+                                        <tr>
+                                            <td align="right" style="font-weight: bold;">
+                                                <?php if ($width < 310) { ?>
+                                                    V NO
+                                                <?php } else { ?>
+                                                    VOUCHER NO
+                                                <?php } ?>
+                                            </td>
+                                            <td style="font-weight: bold;">&nbsp;: </td>
+                                            <td style="font-weight: bold;">
+                                                <?php
+                                                echo $transaction_pre_vch_no . '' . $transaction_post_vch_no;
+                                                ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%">
+                            <tr>
+                                <td align="left">
+                                    <table>
+                                        <tr>
+                                            <td align="left" style="font-weight: bold;">
+                                                ADDRESS
+                                            </td>
+                                            <td style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                                            <td>
+                                                <?php
+                                                if ($user_add != '') {
+                                                    echo strtoupper($user_add);
+                                                } else if ($user_current_address != '') {
+                                                    echo strtoupper($user_current_address);
+                                                } else if ($user_official_address != '') {
+                                                    echo strtoupper($user_official_address);
+                                                } else {
+                                                    echo '-';
+                                                }
+                                                ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                                <td align="right">
+                                    <table>
+                                        <tr>
+                                            <td align="right" style="font-weight: bold;">
+                                                    P. V. NO
+                                            </td>
+                                            <td style="font-weight: bold;"> 
+                                                <?php if ($width < 310) { ?>
+
+                                                <?php } else { ?>
+                                                    :
+                                                <?php } ?>
+                                            </td>
+                                            <td>
+                                                <?php echo $transaction_supp_vch_id; ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%">
+                            <tr>
+                                <td align="left">
+                                    <table>
+                                        <tr>
+                                            <td align="left" style="font-weight: bold;">
+                                                MOBILE NO
+                                            </td>
+                                            <td style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+                                            <td>
+                                                <?php
+                                                if ($user_mobile != '') {
+                                                    echo strtoupper($user_mobile);
+                                                } else if ($user_phone != '') {
+                                                    echo $user_phone;
+                                                } else {
+                                                    echo '-';
+                                                }
+                                                ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                                <td align="right">
+                                    <table>
+                                        <tr>
+                                            <td align="right" style="font-weight: bold;">
+                                                <?php if ($width < 310) { ?>
+
+                                                <?php } else { ?>
+                                                    DATE
+                                                <?php } ?>
+                                            </td>
+                                            <td style="font-weight: bold;"> 
+                                                <?php if ($width < 310) { ?>
+
+                                                <?php } else { ?>
+                                                    :
+                                                <?php } ?>
+                                            </td>
+                                            <td>
+                                                <?php 
+                                                if($nepaliDateIndicator == 'YES'){
+                                                    $date_comp = explode(' ',$transaction_date);
+                                                    $day = $date_comp[0];
+//                                                    $month = $date_comp[1];
+//                                                    $month = date('f',$transaction_date);
+                                                    $timestamp = strtotime($transaction_date);
+                                                    // Get the month number from the timestamp
+                                                    $monthNumber = date('m', $timestamp);
+                                                    $year = $date_comp[2];
+                                                    
+                                                    $date_ne = $nepali_date->get_nepali_date($year,$monthNumber,$day);
+                                                    echo $date_ne[d].' '.$date_ne[m].' '.$date_ne[y];
+                                                 
+                                                }else{
+                                                echo $transaction_date; 
+                                                } ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table width="100%">
+                            <tr>
+                                <td align="left">
+                                    <table>
+                                        <tr>
+                                            <td align="left" style="font-weight: bold;">
+                                                GSTIN NO
+                                            </td>
+                                            <td style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
+                                            <td>
+                                                <?php
+                                                if ($user_cst_no != '') {
+                                                    echo $user_cst_no;
+                                                } else {
+                                                    echo '-';
+                                                }
+                                                ?>
+                                            </td> 
+                                        </tr>                                
+                                    </table>
+                                </td>
+                                <td align="right">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <table class="table" style="width: 100%;border-top:1px solid #c1c1c1;padding-top:5px;">
+                            <tr>
+                                <td align="center">
+                                    <div style="font-weight:600;font-size: 16px;text-transform: uppercase;">Expence Reciept</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="100%">
+                        <table class="table" cellspacing="0" cellpadding="1" style="width: 100%;margin-top:5px;border-bottom:1px solid #c1c1c1;">
+                            <tr style="background:#dedede;">
+                                <td style="font-weight: bold;">
+                                    <?php if ($width < 310) { ?>
+                                        NO
+                                    <?php } else { ?>
+                                        SR NO
+                                    <?php } ?>
+                                </td>
+                                <td style="font-weight: bold;">
+                                    PARTICULAR
+                                </td>
+<!--                                <td style="font-weight: bold;">
+                                    CATEGORY
+                                </td>-->
+                                <td align="right" style="font-weight: bold;">
+                                    <?php if ($width < 310) { ?>
+                                        PRICE
+                                    <?php } else { ?>
+                                        UNIT PRICE
+                                    <?php } ?>
+                                </td>
+                                <td align="right" style="font-weight: bold;">
+                                    AMOUNT
+                                </td>
+                            </tr>
+<!--                            <tr>
+                                <td colspan="4"><div style="color: #CACACA;background-color: #CACACA;height: 2px;"></div></td>
+                            </tr>-->
+                            <?php
+                            if ($transaction_panel == 'NEW_TRANS_PANEL') {
+                                $qSelSubTrans = "SELECT * FROM transaction WHERE transaction_own_id='$_SESSION[sessionOwnerId]' AND transaction_trans_id='$transaction_id' ORDER BY transaction_id ASC";
+                                $resSelSubTrans = mysqli_query($conn, $qSelSubTrans);
+                                $count = 1;
+                                while ($rowSelSubTrans = mysqli_fetch_array($resSelSubTrans, MYSQLI_ASSOC)) {
+                                    $trans_cr_amt = $rowSelSubTrans['transaction_cr_amt'];
+                                    $trans_dr_amt = $rowSelSubTrans['transaction_dr_amt'];
+                                    $trans_cr_acc_id = $rowSelSubTrans['transaction_from_cr_acc_id'];
+                                    $acc_user_acc = '';
+                                    parse_str(getTableValues("SELECT acc_user_acc FROM accounts WHERE acc_id='$trans_cr_acc_id'"));
+                                    $trans_cr_acc_name = $acc_user_acc;
+                                    $trans_dr_acc_id = $rowSelSubTrans['transaction_to_dr_acc_id'];
+                                    $acc_user_acc = '';
+                                    parse_str(getTableValues("SELECT acc_user_acc FROM accounts WHERE acc_id='$trans_dr_acc_id'"));
+                                    $trans_dr_acc_name = $acc_user_acc;
+                                    if ($count == 1) {
+                                        ?>
+                                        <tr>
+                                            <td style="font-weight: bold;">
+                                                1.
+                                            </td>
+                                            <td>
+                                                <?php echo strtoupper($transaction_subject); ?>
+                                            </td>
+            <!--                                            <td>
+                                            <?php // echo strtoupper($transaction_category); ?>
+                                            </td>-->
+                                            <td align="right" valign="right">
+                                                <?php
+                                                if ($trans_dr_amt < $trans_cr_amt) {
+                                                    echo $trans_dr_amt;
+                                                } else {
+                                                    echo $trans_cr_amt;
+                                                }
+                                                ?>
+                                            </td>
+                                            <td align="right" valign="right">
+                                                <?php
+                                                if ($trans_dr_amt < $trans_cr_amt) {
+                                                    echo $trans_dr_amt;
+                                                } else {
+                                                    echo $trans_cr_amt;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <tr>
+                                            <td style="font-weight: bold;">
+
+                                            </td>
+                                            <td>
+                                                <?php
+                                                if ($trans_dr_amt != '') {
+                                                    echo strtoupper($trans_dr_acc_name);
+                                                } else {
+                                                    echo strtoupper($trans_cr_acc_name);
+                                                }
+                                                ?>
+                                            </td>
+            <!--                                            <td>
+                                            <?php // echo '-'; ?>
+                                            </td>-->
+                                            <td align="right" valign="right">
+                                                <?php
+                                                if ($trans_dr_amt != '') {
+                                                    echo $trans_dr_amt;
+                                                } else {
+                                                    echo $trans_cr_amt;
+                                                }
+                                                ?>
+                                            </td>
+                                            <td align="right" valign="right">
+                                                <?php
+                                                if ($trans_dr_amt != '') {
+                                                    echo $trans_dr_amt;
+                                                } else {
+                                                    echo $trans_cr_amt;
+                                                }
+                                                ?>
+                                            </td>
+                                        </tr>
+                                        <?php
+                                    }
+                                    $count++;
+                                }
+                            } else {
+                                ?>
+                                <tr>
+                                    <td style="font-weight: bold;">
+                                        1.
+                                    </td>
+                                    <td>
+                                        <?php echo strtoupper($transaction_subject); ?>
+                                    </td>
+    <!--                                    <td>
+                                    <?php // echo strtoupper($transaction_category); ?>
+                                    </td>-->
+                                    <td align="right" valign="right">
+                                        <?php
+                                        echo $transaction_amt;
+                                        ?>
+                                    </td>
+                                    <td align="right" valign="right">
+                                        <?php
+                                        echo $transaction_amt;
+                                        ?>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="margin-top: 100px; width: 100%">
+
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" >
+                            <tr>
+                                <td align="left" style="font-weight: bold" <?php if ($width > 400) { ?>width="70%"<?php } else { ?>width="50%"<?php } ?>>
+                                </td>
+                                <td align="right" style="border-top:1px solid black;" <?php if ($width > 400) { ?>width="30%"<?php } else { ?>width="50%"<?php } ?>>
+                                    <div class="greenFont paddingRight2">
+                                        <b>FINAL AMOUNT : </b>
+                                        <?php
+                                        echo formatInIndianStyle($transaction_amt);
+                                        ?>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" colspan="2" style="border-top:1px solid black;border-bottom:1px solid black;" width="100%">
+                                    <div class="greenFont paddingRight2">
+                                        <b>PAYABLE AMOUNT : </b>
+                                        <?php
+                                        echo "$globalCurrency" . ' ' . ucwords(numToWords((abs($transaction_amt)))) . ' Only/-';
+                                        ?>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td align="left" width="50%">
+                                    <div class="paddingRight2" style="margin-top:25px;">
+                                        <b>CUSTOMER SIGNATORY</b>
+                                    </div>
+                                </td>
+                                <td align="right" width="50%">
+                                    <div class="paddingRight2" style="margin-top:25px;">
+                                        <b>AUTHORIZED SIGNATORY</b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width="100%" style="margin-top:15px;">
+                <tr>
+                    <td class="noPrint" align="center">
+                        <a style="cursor: pointer;" onclick="window.print();">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt="Print" title="Print" width="30px" height="30px"> 
+                        </a> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

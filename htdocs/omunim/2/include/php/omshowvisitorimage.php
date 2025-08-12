@@ -1,3 +1,174 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Show Image @SANSKRUTI
+ * **************************************************************************************
+ *
+ * @FileName: omshowvisitorimage.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+$imageId = $_GET['itst_id'];
+//echo '<br/>$remoteMYSQL:' . $remoteMYSQL; // $remoteHostIPAdd
+// Start Input Fields
+// $imageId // Image Id
+// End Input Fields
+if ($imageId == NULL || $imageId == '') {
+    $imageId = $_REQUEST['image_id'];
+}
+if ($imageId != NULL && $imageId != '') {
+    $selectImageQuery = "SELECT image_user_id,image_snap_fname,image_user_type,image_snap_fszMB,image_snap_ftype,image_snap_fsize,image_get_by_file_name FROM image WHERE image_id='$imageId'";
+    $resultImageQuery = mysqli_query($conn, $selectImageQuery);
+    $rowImageQuery = mysqli_fetch_array($resultImageQuery, MYSQLI_ASSOC);
+//    echo '$selectImageQuery'.$selectImageQuery.'</br>';
+//    echo '$imageId'.$imageId;
+    $imageFileName = $rowImageQuery['image_snap_fname'];
+    $imageFileSize = $rowImageQuery['image_snap_fsize'];
+    $imageFileType = $rowImageQuery['image_snap_ftype'];
+
+    $imageUserType = $rowImageQuery['image_user_type'];
+    $image_user_id = $rowImageQuery['image_user_id'];
+    $image_get_by_file_name = $rowImageQuery['image_get_by_file_name'];
+//    echo '$image_get_by_file_name :' . $image_get_by_file_name . '</br>';
+
+    if ((float) $imageFileSize > 0) {
+        if ($_SESSION['sessionSoftHost'] == 'HOSTING') {
+            $images_omunim = 'images_omunim';
+        } else {
+            $images_omunim = 'images.omunim';
+        }
+        if ($remoteMYSQL == 'Y' && $remoteHostIPAdd != '') {
+            $dirPath = substr($_SERVER["DOCUMENT_ROOT"], 0, strrpos($_SERVER["DOCUMENT_ROOT"], '/'));
+            if ($imageUserType == 'ads') {
+                $dirName = $remoteHostIPAdd . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/' . $imageUserType;
+            } else if ($imageUserType != null) {
+                $dirName = $remoteHostIPAdd . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/user';
+            } else {
+                $dirName = $remoteHostIPAdd . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/visitor/visitor_document';
+            }
+        } else if ($systemOnOrOff == 'ON') {
+            $dirPath = substr($_SERVER["DOCUMENT_ROOT"], 0, strrpos($_SERVER["DOCUMENT_ROOT"], '/'));
+            if ($imageUserType == 'ads') {
+                $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/' . $imageUserType;
+            } else if ($imageUserType != null) {
+                $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/user';
+            } else {
+                $dirName = $dirPath . "/$images_omunim/" . $_SESSION['sessionOwnerId'] . '/visitor/visitor_document';
+            }
+        } else {
+            $dirPath = $_ENV["S2G_DB_PATH"] . 'images.omunim';
+            //Check if the directory already exists.
+            if (!is_dir($dirPath)) {
+                //Directory does not exist, so lets create it.
+                mkdir($dirPath, 0755);
+            }
+            //
+            if ($imageUserType == 'ads') {
+                $dirName = $dirPath . "\\" . $_SESSION['sessionOwnerId'] . '\\' . $imageUserType;
+            } else if ($imageUserType != null) {
+                $dirName = $dirPath . '\\' . $_SESSION['sessionOwnerId'] . '\user';
+            } else {
+                $dirName = $dirPath . '\\' . $_SESSION['sessionOwnerId'] . '\\' . 'visitor\\visitor_document\\';
+                // 
+            }
+        }
+//        echo '$dirName :' . $dirName . '</br>';
+//
+//Check if the directory already exists.
+        if (!is_dir($dirName) && $remoteHostIPAdd == '') {
+            //Directory does not exist, so lets create it.
+            mkdir($dirName, 0755);
+        }
+//
+        // Get the extension name
+        $path_parts = pathinfo($imageFileName);
+        $fileExtension = $path_parts['extension'];
+        //
+        if ($fileExtension == '' || $fileExtension == NULL)
+            $fileExtension = 'jpg';
+        //
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+        // START CODE TO CHECK INDICATOR FOR SHOWING IMAGE BY IMAAG NAME INSTED OF ID @AUTHOR:MADHUREE-18AUGUST2020 //
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+        //
+        if ($image_get_by_file_name == 'Y') {
+            if ($systemOnOrOff == 'ON') {
+                $fileName = "$dirName/$imageFileName";
+                if (file_exists($fileName)) {
+                    $fileName = "$dirName/$imageFileName";
+                } else {
+                    $fileName = "$dirName/$imageFileName.jpg";
+                }
+            } else {
+                $fileName = "$dirName" . "\\" . "$imageFileName";
+                if (file_exists($fileName)) {
+                    $fileName = "$dirName" . "\\" . "$imageFileName";
+                } else {
+                    $fileName = "$dirName" . "\\" . "$imageFileName.jpg";
+                }
+            }
+        } else {
+            if ($systemOnOrOff == 'ON') {
+                $fileName = "$dirName/$imageId.$fileExtension";
+                if (file_exists($fileName)) {
+                    $fileName = "$dirName/$imageId.$fileExtension";
+                } else {
+                    $fileName = "$dirName/$imageId.jpg";
+                }
+            } else {
+                $fileName = "$dirName" . "\\" . "$imageId.$fileExtension";
+                if (file_exists($fileName)) {
+                    $fileName = "$dirName" . "\\" . "$imageId.$fileExtension";
+                } else {
+                    $fileName = "$dirName" . "\\" . "$imageId.jpg";
+                }
+            }
+        }
+        //
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+        // END CODE TO CHECK INDICATOR FOR SHOWING IMAGE BY IMAAG NAME INSTED OF ID @AUTHOR:MADHUREE-18AUGUST2020 //
+        // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+        //
+//        echo '<br/>ImageFileType: ' . $imageFileType;
+//        echo '<br/>FileName: ' . $fileName;
+//        exit();
+//
+        if ($remoteMYSQL == 'Y' && $remoteHostIPAdd != '') {
+            $imageContent = file_get_contents('http://' . $fileName);
+        } else {
+            $imageContent = file_get_contents($fileName);
+        }
+        //
+        if ($noEcho != 'Y') {
+            header("Content-type: $imageFileType");
+            echo $imageContent;
+        }
+    } else {
+        echo 'Image Size is Zero!';
+    }
+} else {
+    echo 'No Image Present!';
+}
 ?>

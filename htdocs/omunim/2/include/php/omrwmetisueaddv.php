@@ -1,3 +1,726 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 ?>
+<table border="0" cellspacing="0" cellpadding="0" width="99.6%" align="center">
+    <tr>
+        <td>
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="brdrgry-dashed margtp10">
+                <tr class="height28 goldBack">
+                    <td align="center" class="textLabel14CalibriBrownBold" colspan="2" width="10%">
+                        TYPE
+                    </td>
+
+                    <td  align="center" class="textLabel14CalibriBrownBold" width="10%">
+                        NAME
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" width="5%">
+                        HSN
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" width="5%">
+                        QTY
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" colspan="2" width="10%">
+                        GROSS WT
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold"  width="5%">
+                        NET WT
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" width="5%">
+                        PURITY
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" colspan="2" width="10%">
+                        FINE WT
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" colspan="2" width="10%">
+                        WSTG
+                    </td>
+                    <td align="center" class="textLabel14CalibriBrownBold" colspan="2" width="10%">
+                        LAB CHRG
+                    </td>                    
+
+                    <td align="center" class="textLabel14CalibriBrownBold" width="10%">
+                        TOT LAB CHRG
+                    </td>
+<!--                    <td align="center" class="textLabel14CalibriBrownBold">
+
+                    </td>-->
+                </tr>
+                <tr>
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemValueAdded" name="sttr_value_added" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_total_making_amt" name="sttr_total_making_amt" type="hidden" />
+                <input <?php echo $mkgDiscPerStaffAccessStr; ?> id="sttr_mkg_discount_per" name="sttr_mkg_discount_per" type="hidden" />
+                <input <?php echo $mkgDiscAmtStaffAccessReadOnlyStr; ?> id="sttr_mkg_discount_amt" name="sttr_mkg_discount_amt" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="slPrItemQtyMkgCgstPer" name="sttr_mkg_cgst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemMkgCgstChrg" name="sttr_mkg_cgst_chrg" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="slPrItemMkgSgstPer" name="sttr_mkg_sgst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemMkgSgstChrg" name="sttr_mkg_sgst_chrg" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="slPrItemMkgIgstPer" name="sttr_mkg_igst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemMkgIgstChrg" name="sttr_mkg_igst_chrg" type="hidden" />
+
+                <div id="metalRateDiv">
+                    <input id="sttr_product_purchase_rate" name="sttr_product_purchase_rate" type="hidden" />
+                    <input <?php echo $staffAccessStr; ?> id="slPrItemMetalRate" name="sttr_metal_rate" type="hidden" />
+                    <div id="metalRateSelectDiv"></div>
+                </div>
+
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_metal_amt" name="sttr_metal_amt" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_metal_discount_per" name="sttr_metal_discount_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_metal_discount_amt" name="sttr_metal_discount_amt" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_valuation" name="sttr_valuation" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="sttr_tot_price_cgst_per" name="sttr_tot_price_cgst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_tot_price_cgst_chrg" name="sttr_tot_price_cgst_chrg" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="sttr_tot_price_sgst_per" name="sttr_tot_price_sgst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_tot_price_sgst_chrg" name="sttr_tot_price_sgst_chrg" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="sttr_tot_price_igst_per" name="sttr_tot_price_igst_per" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="sttr_tot_price_igst_chrg" name="sttr_tot_price_igst_chrg" type="hidden" />
+                <input id="addItemOtherChrgsChanged" name="addItemOtherChrgsChanged" type="hidden" />
+                <input type="hidden" id="sttr_final_valuation" name="sttr_final_valuation" />
+                <input type="hidden" id="sttr_tot_tax" name="sttr_tot_tax" />
+<!--                                                                <input <?php echo $staffAccessStr; ?> id="sttr_other_charges" name="sttr_other_charges" type="hidden" />
+                <input <?php echo $staffAccessStr; ?> id="sttr_other_charges_type" name="sttr_other_charges_type" type="hidden" />-->
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="totalValuation" name="sttr_total_cust_price" type="hidden"  />
+                <input <?php echo $staffAccessStr; ?> id="sttr_tax" name="sttr_tax" type="hidden" />
+                <input <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemTotTax" name="sttr_tot_tax" type="hidden"  />
+                <input type="hidden" id="sttr_price" name="sttr_price" />
+                <input type="hidden" id="reverseCal" name="reverseCal" value="No" />
+                <input type="hidden" id="slPrItemFinalValHidden" name="slPrItemFinalValHidden" />
+                <input type="hidden" <?php echo $staffAccessReadOnlyStr; ?> id="slPrItemFinalVal" name="sttr_final_valuation" />
+                <input type="hidden" id="sttr_pkt_weight" name="sttr_pkt_weight" />
+                <input type="hidden" id="slPrCustWastage" name="slPrCustWastage" />
+                <input type="hidden" id="slPrCustWastageWt" name="slPrCustWastageWt" />
+                <input type="hidden" id="slPrItemLabCharges" name="slPrItemLabCharges" />
+                <input type="hidden" id="addItemLbNOthCh" name="addItemLbNOthCh" />
+                <input type="hidden" id="sttr_other_charges" name="sttr_other_charges" />
+                <input type="hidden" id="sttr_total_other_charges" name="sttr_total_other_charges" />
+                <input type="hidden" id="sttr_metal_rate" name="sttr_metal_rate" value="<?php echo $sttr_metal_rate; ?>">
+
+
+                <td align="center" title="" width="8%">
+                    <div id="itemTypeDiv">
+
+                        <select id="sttr_metal_type" name="sttr_metal_type" 
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('sttr_item_category').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('sttr_account_id').focus();
+                                            return false;
+                                        }"
+                               
+                                class="form-control text-center form-control-font13">
+                                    <?php
+                                    if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp' || $rawPanelName == 'SimilarItem' || $rawPanelName == 'AddRawStock') {
+                                        $metalType = array(Gold, Silver, Other);
+                                        for ($i = 0; $i <= 2; $i++)
+                                            if ($metalType[$i] == $sttr_metal_type)
+                                                $optionMetalSel[$i] = 'selected';
+                                    }
+                                    ?>
+                            <option value="Gold" <?php echo $optionMetalSel[0]; ?>>GOLD</option>
+                            <option value="Silver" <?php echo $optionMetalSel[1]; ?>>SILVER</option>
+                            <option value="Other" <?php echo $optionMetalSel[2]; ?>>OTHER</option>
+                        </select>
+                    </div>
+                    <div id="SelectMetalDiv"></div>
+                </td>
+
+                <td align="center" title="" width="8%" class="padLeft3">
+                    <div name="box" id="metal_desc_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        METAL DESCRIPTION
+                    </div>
+                    <div id="itemTypeDescDiv">
+                        <select id="sttr_item_category" name="sttr_item_category" 
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('slPrItemName').focus();
+                                            document.getElementById('slPrItemName').value = '';
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('slPrItemMetal').focus();
+//                                            document.getElementById('slPrItemMetal').value = '';
+                                            return false;
+                                        }"
+                                class="form-control text-center form-control-font13">
+                                    <?php
+                                    if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp' || $rawPanelName == 'AddRawStock' || $rawPanelName == 'SimilarItem') {
+                                        $metalDesc = array(RawGold, RawSilver, OldGold, OldSilver);
+
+                                        for ($i = 0; $i <= 3; $i++)
+                                            if ($metalDesc[$i] == $sttr_item_category)
+                                                $optionMetalDescSel[$i] = 'selected';
+                                    }
+                                    ?>
+                                    <?php if ($listPanel == 'MeltingTransList' || $listPanel == 'MeltingTransListUp' || $listMetalPanel == 'MeltingTransListUp') { ?>
+                                <option value="RawGold" <?php echo $optionMetalDescSel[0]; ?>>RAW GOLD</option>
+                                <option value="RawSilver" <?php echo $optionMetalDescSel[1]; ?>>RAW SILVER</option>
+                            <?php } else { ?>
+                                <option value="RawGold" <?php echo $optionMetalDescSel[0]; ?>>RAW GOLD</option>
+                                <option value="RawSilver" <?php echo $optionMetalDescSel[1]; ?>>RAW SILVER</option>
+                                <option value="OldGold" <?php echo $optionMetalDescSel[2]; ?>>OLD GOLD</option>
+                                <option value="OldSilver" <?php echo $optionMetalDescSel[3]; ?>>OLD SILVER</option>
+                                <option value="Other" <?php echo $optionMetalDescSel[4]; ?>>OTHER</option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </td>
+                <td align="center" title="" class="padLeft3" width="8%">
+                    <div name="box" id="metal_name_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        METAL NAME
+                    </div>
+                    <input id="sttr_item_name" name="sttr_item_name" type="text" placeholder="METAL NAME" value="<?php
+                    if ($listPanel == 'MeltingTransList' || $listPanel == 'MeltingTransListUp' || $listMetalPanel == 'MeltingTransListUp') {
+                        echo $sttr_metal_type;
+                    } else {
+                        echo $sttr_item_name;
+                    }
+                    ?>"
+                           onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                       clearDivision('itemListDivToaddRawStock');
+                                       document.getElementById('sttr_quantity').focus();
+                                      
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+
+                                       document.getElementById('sttr_item_category').focus();
+                                       //document.getElementById('sttr_item_category').value = '';
+                                       clearDivision('itemListDivToaddRawStock');
+                                       return false;
+                                   }"
+                           onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                       document.getElementById('itemListDivToaddRawStock').focus();
+//                                       searchRawItemNames(document.getElementById('sttr_item_name').value, document.getElementById('sttr_metal_type').value, 'RawStockItemName', document.getElementById('sttr_item_category').value, event.keyCode);
+                                   }" 
+                           onclick="this.value = '';"
+                           onblur="document.getElementById('metal_name_label_box').style.visibility = 'hidden';
+                                   if (this.value == '')
+                                       this.value = '<?php echo $sttr_item_name; ?>';
+                                   if (event.keyCode == 13) {
+                                       clearDivision('itemListDivToaddRawStock');
+                                   }"
+                           onkeypress=""
+                           onfocus="document.getElementById('metal_name_label_box').style.visibility = 'visible';"
+                           autocomplete="off" spellcheck="false" 
+                           class="form-control text-center form-control-font13" 
+                           size="13" maxlength="80" /><!--description: START CODE TO Add customerStatement @Author: DISH08OCT16 i changed size 15 to 13-->
+                    <div id="itemListDivToaddRawStock" class="itemListDivToAddStock" style="margin-left: -117px !important;"></div>
+                </td>
+
+                <td align="left" title="" class="paddingLeft2" width="5%">
+                    <div name="box" id="hsn_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        ITEM HSN NUMBER
+                    </div>
+                    <input id="sttr_hsn_no" name="sttr_hsn_no" type="text" placeholder="HSN" 
+                           value="<?php echo $sttr_hsn_no; ?>"
+                           onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                       document.getElementById('sttr_quantity').focus();
+                                       
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('sttr_item_name').focus();
+                                      
+                                       return false;
+                                   }"
+                           onclick="this.value = '';"
+                           onblur="document.getElementById('hsn_label_box').style.visibility = 'hidden';
+                                   if (this.value == '') {
+                                       this.value = '<?php echo $itst_item_size; ?>';
+                                   }"
+                           onfocus="document.getElementById('hsn_label_box').style.visibility = 'visible';"
+                           autocomplete="off" spellcheck="false" 
+                           class="form-control text-center form-control-font13" size="8" maxlength="15" />
+                </td>
+
+                <td align="right" title="" class="padLeft3" width="5%">
+                    <div name="box" id="qty_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        ITEM QUANTITY
+                    </div>
+                    <input id="sttr_quantity" name="sttr_quantity" type="text" 
+                           value="<?php
+                           if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp' ||
+                                   $rawPanelName == 'SimilarItem' || $rawPanelName == 'AddRawStock') {
+                               echo $sttr_quantity;
+                           } else {
+                               if ($sttr_quantity == '')
+                                   echo '1';
+                           }
+                           ?>" 
+                           placeholder="QTY"   
+                           onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                           <?php if ($HSNOptionInForms == 'NO') { ?>
+                                           document.getElementById('sttr_gs_weight').focus();
+                           <?php } else { ?>
+                                           document.getElementById('sttr_gs_weight').focus();
+                           <?php } ?>
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('slPrItemName').focus();
+                                       document.getElementById('slPrItemName').value = '';
+                                       return false;
+                                   }" 
+                           onblur="calculateRawMetalIssue();
+       document.getElementById('qty_label_box').style.visibility = 'hidden';"
+                           onfocus="document.getElementById('qty_label_box').style.visibility = 'visible';"
+                           spellcheck="false" class="form-control text-center form-control-font13" size="1" maxlength="10" />
+                </td>
+                <td width="10%" colspan="2">
+                    <table cellspacing="0" cellpadding="0" width="100%" align="center">
+                        <tr>
+                            <td class="padLeft3" width="60%">
+                                <div name="box" id="gswt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    GROSS WT
+                                </div>
+                                <input id="sttr_gs_weight" name="sttr_gs_weight" 
+                                       type="text" placeholder="GS WT" 
+                                       <?php if ($listPanel != 'MeltingTransList') { ?> value="<?php echo $sttr_gs_weight; ?>" <?php } ?>
+                                       <?php
+                                       /* ------------------------------------------------------------------------------------------------------- */
+                                       /* Start Code to Get Weight from Weighing Scale
+                                         /* ------------------------------------------------------------------------------------------------------- */
+                                       $selFormsLayoutDet = "SELECT omly_value FROM omlayout WHERE omly_option = 'checkWSComPort'";
+                                       $resFormsLayoutDet = mysqli_query($conn, $selFormsLayoutDet);
+                                       $rowFormsLayoutDet = mysqli_fetch_array($resFormsLayoutDet);
+                                       $checkWSComPortVal = $rowFormsLayoutDet['omly_value'];
+                                       ?>
+                                       <?php if ($_SESSION['sessionOwnIndStr'][16] == 'Y' && $checkWSComPortVal == 'true') { ?>
+                                           onfocus="getWeightFromWeighingScale('sttr_gs_weight', 'sttr_nt_weight');"
+                                           onclick="getWeightFromWeighingScale('sttr_gs_weight', 'sttr_nt_weight');"
+                                           <?php
+                                       }
+                                       /* ------------------------------------------------------------------------------------------------------- */
+                                       /* End Code to Get Weight from Weighing Scale
+                                         /* ------------------------------------------------------------------------------------------------------- */
+                                       ?>    
+                                       onblur="document.getElementById('gswt_label_box').style.visibility = 'hidden';
+                                               if (this.value == '') {
+                                                   this.value = '<?php echo $sttr_gs_weight; ?>';
+                                               } else if (this.value != '' && this.value != null) {
+//                                                   document.getElementById('sttr_pkt_weight').value = 0.00;
+                                                   document.getElementById('sttr_nt_weight').value = this.value;
+                                                   document.getElementById('netWeight').value = this.value;
+                                               }
+                                               calculateRawMetalIssue();
+                                               return false;"
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                   document.getElementById('sttr_gs_weight_type').focus();
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                       <?php if ($HSNOptionInForms == 'NO') { ?>
+                                                       document.getElementById('slPrItemPieces').focus();
+                                       <?php } else { ?>
+                                                       document.getElementById('slPrItemPieces').focus();
+                                       <?php } ?>
+                                                   return false;
+                                               }"
+                                       onclick="this.value = '';"
+                                       onfocus="document.getElementById('gswt_label_box').style.visibility = 'visible';"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                       autocomplete="off" spellcheck="false" class="form-control text-center form-control-font13" size="13" maxlength="20"  title=""/>
+                            </td> 
+                            <?php
+                            if ($sttr_gs_weight_type == '') {
+                                $sttr_gs_weight_type = 'GM';
+                            }
+                            $sttr_pkt_weight_type = $sttr_gs_weight_type;
+                            $sttr_nt_weight_type = $sttr_gs_weight_type;
+                            ?>
+                            <td align="left" class="padLeft3" width="40%">
+                                <select id="sttr_gs_weight_type" name="sttr_gs_weight_type" title=""
+                                        onchange ="document.getElementById('sttr_nt_weight_type').value = this.value;
+                                                document.getElementById('sttr_pkt_weight_type').value = this.value;
+                                                document.getElementById('sttr_nt_weight_type').value = this.value;
+
+                                                if ((document.getElementById('sttr_gs_weight').value) != '') {
+                                                    return false;
+                                                }"
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                    document.getElementById('sttr_nt_weight').focus();
+                                                    return false;
+                                                } else if (event.keyCode == 8) {
+                                                    document.getElementById('sttr_gs_weight').focus();
+//                                                    document.getElementById('slPrItemGSW').value = '';
+                                                    return false;
+                                                }"
+                                        class="form-control text-center form-control-font13" style="width:100%;">
+                                            <?php
+                                            if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') {
+                                                $itemGsWtType = array(KG, GM, MG);
+                                                for ($i = 0; $i <= 2; $i++) {
+                                                    if ($itemGsWtType[$i] == $sttr_gs_weight_type)
+                                                        $optionGSWTypeSel[$i] = 'selected';
+                                                }
+                                            } else {
+                                                $optionGSWTypeSel[1] = 'selected';
+                                            }
+                                            ?>
+                                    <option value="KG" <?php echo $optionGSWTypeSel[0]; ?>>KG</option>
+                                    <option value="GM" <?php echo $optionGSWTypeSel[1]; ?>>GM</option>
+                                    <option value="MG" <?php echo $optionGSWTypeSel[2]; ?>>MG</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+
+                <td align="right" class="padLeft3" width="5%">
+                    <div name="box" id="net_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        NET WT
+                    </div>
+                    <!-- Add Code for Crystal Less Weight Functionality @Author:PRIYANKA-14MAR19 -->
+                    <input type="hidden" id="totNetWeight" name="totNetWeight" value="<?php echo $sttr_nt_weight; ?>" />
+                    <input type="hidden" id="netWeight" name="netWeight" value="<?php echo $sttr_nt_weight; ?>" />
+                    <input id="sttr_nt_weight" name="sttr_nt_weight" type="text" placeholder="NT WT" 
+                           <?php if ($listPanel != 'MeltingTransList') { ?> value="<?php echo $sttr_nt_weight; ?>" <?php } ?>
+                           <?php
+                           /* ------------------------------------------------------------------------------------------------------- */
+                           /* Start Code to Get Weight from Weighing Scale
+                             /* ------------------------------------------------------------------------------------------------------- */
+                           ?>
+                           <?php if ($_SESSION['sessionOwnIndStr'][16] == 'Y' && $checkWSComPortVal == 'true') { ?>
+                               onfocus="getWeightFromWeighingScale('sttr_gs_weight', 'sttr_nt_weight');"
+                               onclick="getWeightFromWeighingScale('sttr_gs_weight', 'sttr_nt_weight');"
+                               <?php
+                           }
+                           /* ------------------------------------------------------------------------------------------------------- */
+                           /* End Code to Get Weight from Weighing Scale
+                             /* ------------------------------------------------------------------------------------------------------- */
+                           ?>   
+                           onblur="document.getElementById('net_wt_label_box').style.visibility = 'hidden';
+                                   if (this.value == '') {
+                                       this.value = '<?php echo $sttr_nt_weight; ?>';
+                                   }
+                                  calculateRawMetalIssue();
+                                   return false;"
+                           onfocus="document.getElementById('net_wt_label_box').style.visibility = 'visible';"
+                           onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('sttr_purity').focus();
+                                       //document.getElementById('sttr_nt_weight_type').value = '';
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('sttr_gs_weight').focus();
+                                       //document.getElementById('sttr_gs_weight_type').value = '';
+                                       return false;
+                                   }"
+                           onclick="this.value = '';"        
+                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                           autocomplete="off" spellcheck="false" class="form-control text-center form-control-font13" size="6" maxlength="20" title=""/>
+
+                    <input type="hidden" id="sttr_nt_weight_type" name="sttr_nt_weight_type" title="NET WEIGHT TYPE"
+                           value="<?php echo $sttr_nt_weight_type; ?>" onblur="document.getElementById('sttr_nt_weight_type').value = document.getElementById('sttr_gs_weight_type').value;"
+                           />
+                </td>
+
+                <td align = "left" title="" style="width: 5%;" class="padLeft3" >
+                    <div name="box" id="purity_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        PURITY / TUNCH
+                    </div>
+                    <div id = "itemTunchDiv" style="position:relative;">
+                        <?php
+                        $tunchDivId = 'sttr_purity';
+                        $nextFieldId = 'sttr_fine_weight';
+                        $prevFieldId = 'sttr_nt_weight';
+                        $netWeightFieldId = 'slPrItemNTW';
+                        $fineWeightFieldId = 'slPrItemFineWeight';
+                        $finalFineWeightFieldId = 'sttr_final_fine_weight';
+                        $tunchDivClass = 'form-control text-center form-control-font13';
+                        $metalType = $sttr_metal_type;
+                        $itstItemTunch = $sttr_purity;
+                        $itemDivCount = 'addRawMetalIssue';
+                        $TunchValue = $sttr_purity;
+                        include 'omiatndv.php';
+                        ?>
+                    </div>
+                </td>
+                <td width="10%" colspan="2" class="padLeft3">
+                    <table cellpadding="1" cellspacing="0" width="100%" align="center">
+                        <tr>
+                            <td align="left" title="" class="" width="50%">
+                                <div name="box" id="fine_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    FINE WEIGHT
+                                </div>
+                                <input id="sttr_fine_weight" name="sttr_fine_weight" type="text" placeholder="FN WT" <?php if ($listPanel != 'MeltingTransList') { ?> value="<?php echo $sttr_fine_weight; ?>" <?php } ?>
+                                       onkeypress="javascript:return valKeyPressedForNum
+                                               NDot(event);"  readonly="true"
+                                       spellcheck="false" class="form-control text-center form-control-font13" size="7" maxlength="20" 
+
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                   document.getElementById('sttr_final_fine_weight').focus();
+//                                                   document.getElementById('sttr_valuation').value = '';
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   document.getElementById('sttr_purity').focus();
+                                                   document.getElementById('sttr_purity').value = '';
+                                                   return false;
+                                               }"
+                                       onblur="document.getElementById('fine_wt_label_box').style.visibility = 'hidden';"
+                                       onfocus="document.getElementById('fine_wt_label_box').style.visibility = 'visible';"
+                                       />
+                            </td>
+                            <td align="left" title="" class="" width="50%">
+                                <div name="box" id="ffine_wt_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    FFN WEIGHT
+                                </div>
+                                <input id="sttr_final_fine_weight" name="sttr_final_fine_weight" type="text" placeholder="FFN WT" value="<?php echo $sttr_final_fine_weight; ?>"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"  readonly="true"
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                   document.getElementById('sttr_wastage').focus();
+//                                                   document.getElementById('sttr_valuation').value = '';
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   document.getElementById('sttr_fine_weight').focus();
+//                                                   document.getElementById('sttr_purity').value = '';
+                                                   return false;
+                                               }"
+                                       onblur="document.getElementById('ffine_wt_label_box').style.visibility = 'hidden';"
+                                       onfocus="document.getElementById('ffine_wt_label_box').style.visibility = 'visible';"
+                                       spellcheck="false" class="form-control text-center form-control-font13" 
+                                       size="5" maxlength="20" 
+                                       <?php if ($TaxAndGstSettingValue == 'GST') { ?>  
+                                           style="width:100%;" 
+                                       <?php } else { ?>
+                                           style="width:100%;"
+                                       <?php } ?>  
+                                       />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="center" width="10%" align="center" colspan="2" >
+                    <table border="0" cellspacing="0" cellpadding="1" width="100%"
+                    <?php if ($TaxAndGstSettingValue == 'TAX') { ?>
+                               width="100%"
+                           <?php } ?>
+                           >
+                        <tr>
+                            <td align="left" title="" class="" width="50%">
+                                <div name="box" id="wastage_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    WASTAGE
+                                </div>
+                                <input type="hidden" id="addCustWastageWtInSpecifiedWt" name="addCustWastageWtInSpecifiedWt" />
+                                <input id="addRawStockWastageChnged" name="addRawStockWastageChnged" type="hidden" value="<?php echo $sttr_wastage; ?>" />
+                                <input id="sttr_wastage" name="sttr_wastage" type="text" placeholder="WASTAGE" value="<?php echo $sttr_wastage; ?>"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                   if (this.value != '') {
+                                                       document.getElementById('addRawStockWastageChnged').value = this.value;
+                                                   }
+                                                   document.getElementById('sttr_lab_charges').focus();
+                                                   document.getElementById('sttr_lab_charges').value = ''
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   document.getElementById('sttr_purity').focus();
+                                                   //document.getElementById('sttr_purity').value = ''
+                                                   return false;
+                                               }"
+                                       onblur="javascript:document.getElementById('wastage_label_box').style.visibility = 'hidden';
+                                               if (this.value == '') {
+                                                   this.value = document.getElementById('addRawStockWastageChnged').value;
+                                               }
+                                               if (document.getElementById('sttr_purity').value != 'NotSelected') {
+                                                   if (document.getElementById('sttr_wastage').value == '') {
+                                                       document.getElementById('sttr_wastage').value = 0;
+                                                   }
+                                                   document.getElementById('sttr_final_purity').value = (parseFloat(this.value) + parseFloat(document.getElementById('sttr_purity').value));
+                                                   calculateRawMetalIssue();
+                                               }"
+                                       onclick="document.getElementById('sttr_wastage').value = this.value;
+                                               this.value = '';"
+                                       onfocus="document.getElementById('wastage_label_box').style.visibility = 'visible';"
+                                       spellcheck="false" class="form-control text-center form-control-font13" size="5" maxlength="20"  />
+                            </td>
+                            <td align="left" title="" class="" width="50%">
+                                <div name="box" id="final_tunch_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    FINAL TUNCH
+                                </div>
+                                <input type="hidden" id="addItemFinalTunchChanged" name="addItemFinalTunchChanged" value="<?php echo $sttr_final_purity; ?>" />
+                                <input id="sttr_final_purity" name="sttr_final_purity" type="text" placeholder="FN PR%" title=""
+                                       readonly="true" value = "<?php echo $sttr_final_purity; ?>"
+                                       onkeyup="calculateRawMetalIssue();
+                                                return false;"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                       onblur="document.getElementById('final_tunch_label_box').style.visibility = 'hidden';"
+                                       onfocus="document.getElementById('final_tunch_label_box').style.visibility = 'visible';"
+                                       spellcheck="false" class="form-control text-center form-control-font13" size="5" maxlength="15" />
+                                <?php 
+                                $slffpurity = $_REQUEST['slffpurity'];
+                                ?>
+                                <input type="hidden" id="slffpurity" name="slffpurity" value="<?php echo $slffpurity;?>">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="10%" colspan="2" align="left" <?php if ($TaxAndGstSettingValue == 'TAX') { ?> class="" <?php } ?>>
+                    <table border="0" cellpadding="1" cellsapcing="0" width="100%"
+                    <?php if ($TaxAndGstSettingValue == 'TAX') { ?>
+                               cellpadding="1" cellsapcing="0" width="100%"
+                           <?php } ?>
+                           >
+                        <tr>
+                            <td align="right" title="" >
+                                <div name="box" id="lab_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                                    LABOUR CHARGES
+                                </div>
+                                <input type="hidden" id="addItemLabChargesChanged" name="addItemLabChargesChanged" value="<?php echo $sttr_lab_charges; ?>" />
+                                <input id="sttr_lab_charges" name="sttr_lab_charges" type="text" placeholder="LB CHRG" value="<?php echo $sttr_lab_charges; ?>"
+                                       title="Double click to calculate labour charges in weight!"
+                                       onkeydown="javascript: if (event.keyCode == 13) {
+                                                   clearDivision('itemLabChrgsSelDiv');
+                                                   document.getElementById('sttr_lab_charges_type').focus();
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   clearDivision('itemLabChrgsSelDiv');
+                                                   document.getElementById('sttr_wastage').focus();
+                                                   document.getElementById('sttr_wastage').value = '';
+                                                   return false;
+                                               }"
+                                       onblur="javascript: document.getElementById('lab_chrg_label_box').style.visibility = 'hidden';
+                                               if (this.value == '') {
+                                                   this.value = document.getElementById('addItemLabChargesChanged').value;
+                                               }
+                                               calculateRawMetalIssue();"
+                                       onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                                       <?php if ($metType != 'SELL') { ?>
+                                           ondblclick ="getItemLabChrgsByWt('itemLabChrgsSelDiv', 'sttr_lab_charges', event.keyCode, 'rawPurchase');"
+                                       <?php } ?>
+                                       onfocus="document.getElementById('lab_chrg_label_box').style.visibility = 'visible';"
+                                       autocomplete="off" spellcheck="false" class="form-control text-center form-control-font13" size="6" maxlength="10" title="LABOUR CHARGES"/>
+                                <div id="itemLabChrgsSelDiv"></div>
+                            </td>
+                            <td align="left" <?php if ($TaxAndGstSettingValue == 'TAX') { ?>style="width: 2%;"<?php } ?>> 
+                                <select id="sttr_lab_charges_type" name="sttr_lab_charges_type" 
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                    document.getElementById('sttr_total_lab_charges').focus();
+                                                    return false;
+                                                } else if (event.keyCode == 8) {
+                                                    document.getElementById('sttr_lab_charges').focus();
+                                                    document.getElementById('sttr_lab_charges').value = '';
+                                                    return false;
+                                                }"
+                                        onchange="javascript: if (document.getElementById('sttr_lab_charges').value != '') {
+                                                    return false;
+                                                }"
+                                        class="form-control text-center form-control-font13" title="">
+                                            <?php
+                                            //if ($simItem == 'SimilarItem' || $panelSimilarDiv == 'SimilarItem' || $UpPanel == 'UpPanel') {
+                                            $itemLabChType = array(KG, GM, MG, PP);
+                                            for ($i = 0; $i <= 3; $i++) {
+                                                if ($itemLabChType[$i] == $sttr_lab_charges_type) {
+                                                    $optionLbChTypeSel[$i] = 'selected';
+                                                } else {
+                                                    $optionLbChTypeSel[1] = 'selected';
+                                                }
+                                            }
+                                            ?>
+                                    <option value="KG" <?php echo $optionLbChTypeSel[0]; ?>>KG</option>
+                                    <option value="GM" <?php echo $optionLbChTypeSel[1]; ?>>GM</option>
+                                    <option value="MG" <?php echo $optionLbChTypeSel[2]; ?>>MG</option>
+                                    <option value="PP" <?php echo $optionLbChTypeSel[3]; ?>>PP</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="center" title="" class="">
+                    <div name="box" id="tot_lab_chrg_label_box" class="hidden_box" style="visibility:hidden;"> 
+                        TOTAL OF LABOUR CHARGES
+                    </div>
+                    <input id="sttr_total_lab_charges" name="sttr_total_lab_charges" 
+                           value="<?php echo $sttr_total_lab_charges; ?>" 
+                           type="text" placeholder="TOT LAB CHRGS"                                
+                           onkeydown="javascript:if (event.keyCode == 13) {
+                                       document.getElementById('addRawStockSubButt').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('sttr_lab_charges_type').focus();
+                                       return false;
+                                   }"
+                           onblur="javascript:document.getElementById('tot_lab_chrg_label_box').style.visibility = 'hidden';
+                                   if (document.getElementById('sttr_gs_weight').value != '') {
+                                       return false;
+                                   }" 
+                           style="width:100%;"
+                           onfocus="document.getElementById('tot_lab_chrg_label_box').style.visibility = 'visible';"
+                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"
+                           spellcheck="false" class="form-control text-center form-control-font13" size="8" maxlength="30"  />
+                </td>
+                <!--<td colspan="3">-->
+                    <?php if ($listPanel != 'MeltingTransList' && $listPanel != 'MeltingTransListUp' && $listMetalPanel != 'MeltingTransListUp') { ?>
+<!--                        <a style="cursor: pointer;" 
+                           onclick ="resetStockCrystalFunc();
+                                       getStockCrystalRawMetalIssueDivFunc('', 'crystalAddDiv', '<?php echo $commonPanel; ?>', '<?php echo $documentRootBSlash; ?>');
+                                       return false;">
+                            <table border="0" cellspacing="2" cellpadding="0" width="100%" align="left">
+                                <tr>    
+                                    <td> 
+                                        <img src="<?php echo $documentRootBSlash; ?>/images/diamond-icon16.png" alt="" 
+                                             style="padding-top: 5px;margin-left: 10px;"
+                                             onload="
+                                             <?php if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp') { ?>
+                                                             calcRawMetalCrystalVal();
+                                                             return false;
+                                             <?php } else if ($NavPanelName == "AssignRepairOrderPanel") { ?>
+                                                             document.getElementById('sttr_item_name').focus();
+                                             <?php } else { ?>
+                                                             document.getElementById('sttr_gs_weight').focus();
+                                             <?php } ?>
+                                             "/>
+                                    </td>
+                                    <td>
+                                        STONE
+                                    </td>                       
+                                </tr>
+                            </table>
+                        </a>-->
+                    <?php } ?>
+                <!--</td>-->
+    </tr>
+</table>
+</td>
+</tr>
+        <!--<tr>  
+            <td colspan="12">
+                <table>
+                    <tr>
+                        <td width="100%"></td>
+                       
+                    </tr>
+                </table>
+            </td>
+        
+        </tr>-->
+<tr>
+    <td>
+        <div id="crystalAddDiv">
+            <?php
+//            echo '$noOfCry='.$noOfCry;
+            if ($noOfCry > 0) {
+//                    include 'omrwcrydv.php';
+            }
+            ?>
+        </div>
+    </td>
+</tr>
+<!--<tr>
+    <td  class="paddingTop7 padBott4">
+        <div class="hrGold"></div>
+    </td>
+</tr>-->
+<tr>
+    <td align="center" width="100%">
+        <div id="addRawStockSubButtDiv">
+            <input type="submit" value="<?php
+            if ($rawPanelName == 'RawDetUpPanel' || $rawPanelName == 'RawPayUp' || $listPanelUp == 'MeltingTransListUp' || $listPanel == 'MeltingTransListUp' || $listMetalPanel == 'MeltingTransListUp')
+                echo 'UPDATE ITEM';
+            else
+                echo 'SUBMIT';
+            ?>" 
+                   class="btn btn1 btn1Hover" id="addRawStockSubButt" 
+                   maxlength="30" size="20" style = "height:30px;width:120px;font-weight:bold;border: 1px solid #97ca97;border-radius:5px!important;font-size:14px;padding-top:0px;margin-top: 5px;margin-bottom: 5px;text-align:center;color:#006400;background:#D8F6D8"
+                   />
+        </div>  
+    </td>
+</tr>
+</table>

@@ -1,3 +1,172 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: SCHEME APPROVE STATUS CHANGING POPUP FILE @AUTHOR: HEMA25FEB2020
+ * **************************************************************************************
+ * 
+ * Created on Feb 25, 2020 12:54:56 PM
+ *
+ * @FileName: omSchemeApproveStatusPopupFrame.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+?>
+<?php
+$kittyMondepId = $_GET['kittyMondepId'];
+$kittyCustId = $_GET['kittyCustId'];
+$delStatus = $_GET['delStatus'];
+
+if ($kittyMondepId == '') {
+    $kittyMondepId = $_GET['kittyMondepId'];
+}
+if ($kittyCustId == '') {
+    $kittyCustId = $_GET['kittyCustId'];
+}
+if ($delStatus == '') {
+    $delStatus = $_GET['delStatus'];
+}
+//echo '$kittymondepId : '.$kittyMondepId;
+//echo '$kittyCustId : '.$kittyCustId;
+//echo '$delStatus : '.$delStatus;
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css" />
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emNavigation.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emAddOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emUpdateOwner.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emOwnerLogin.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/ogAddFunctions_1_6_1.js"></script>
+    </head>
+    <body>
+        <div class="grey-back">
+            <table border="0" cellspacing="0" cellpadding="0" width="100%" style="margin-top: 10px;">
+                <tr>
+                    <td valign="top" align="left" width="32px" colspan="">
+                        <div class="analysis_div_rows">
+                            <img src="<?php echo $documentRoot; ?>/images/delivery_pending_24.png" alt=""/>
+                        </div>
+                    </td>
+                    <td valign="top" align="" colspan="" >
+                        <a class="links" onclick=""
+                           style="cursor: pointer;" title="">
+                            <div class="textLabelHeading">
+                               SCHEME APPROVE STATUS
+                            </div>
+                        </a>
+                    </td>
+                    <td><div id="itemDelStatuschangediv"></div></td>
+                </tr>
+            </table>
+            <!-- Code Start inside Box -->
+            <div id="itemDelStatuschangediv">
+                <table class="border-color-grey" border="0" cellspacing="2" cellpadding="2" width="100%" style="margin-top: 30px;">
+                    <?php
+                    $qSelProductDetails = "SELECT * FROM kitty_money_deposit where kitty_mondep_id='$kittyMondepId' and kitty_mondep_own_id='$_SESSION[sessionOwnerId]'";
+                    $resProductDetails = mysqli_query($conn, $qSelProductDetails) or die("Error: " . mysqli_error($conn) . " with query " . $qSelProductDetails);
+                    $rowProductDetails = mysqli_fetch_array($resProductDetails, MYSQLI_ASSOC);
+                    $kitty_mondep_kitty_id = $rowProductDetails['kitty_mondep_kitty_id'];
+                    $kitty_mondep_EMI_status = $rowProductDetails['kitty_mondep_EMI_status'];
+                    parse_str(getTableValues("SELECT kitty_serial_num,kitty_token_num FROM kitty WHERE kitty_id=$kitty_mondep_kitty_id"));
+                    $kitty_mondep_firm_id = $rowProductDetails['kitty_mondep_firm_id'];
+                    parse_str(getTableValues("SELECT firm_name FROM firm WHERE firm_id='$kitty_mondep_firm_id'"));
+                    $kitty_mondep_cust_id = $rowProductDetails['kitty_mondep_cust_id'];
+                    parse_str(getTableValues("SELECT user_fname,user_lname FROM user WHERE user_id='$kitty_mondep_cust_id'"));
+                    $kitty_mondepd_recipit_no = $rowProductDetails['kitty_mondepd_recipit_no'];
+                    $kitty_mondep_EMI_no = $rowProductDetails['kitty_mondep_EMI_no'];
+                    $kitty_mondep_EMI_total_amt = $rowProductDetails['kitty_mondep_EMI_total_amt'];
+                    $kitty_mondep_EMI_paid_date = $rowProductDetails['kitty_mondep_EMI_paid_date'];
+                    $kitty_approve_status = $rowProductDetails['kitty_approve_status'];
+                    ?>
+                    <tr>
+                        <td align="center" class="fs_13 bold brown" title="SR NO.">
+                            <div class="fs_14 bold brown">SR NO.</div>
+                        </td>
+                        <td align="center" class="fs_13 bold brown" title="TOKEN NO.">
+                            <div class="fs_14 bold brown">TOKEN NO.</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="FIRM NAME">
+                            <div class="fs_14 bold brown">FIRM NAME</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="CUST NAME">
+                            <div class="fs_14 bold brown">CUST NAME</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="RECPT NO.">
+                            <div class="fs_14 bold brown">RECPT NO.</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="INT NO.">
+                            <div class="fs_14 bold brown">INT NO.</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="AMOUNT">
+                            <div class="fs_14 bold brown">AMOUNT</div>
+                        </td>
+                          <td align="center" class="ff_calibri fs_14 brown" title="PAID DATE">
+                            <div class="fs_14 bold brown">PAID DATE</div>
+                        </td>
+                        <td align="center" class="ff_calibri fs_14 brown" title="APPROVE STATUS">
+                            <div class="fs_14 bold brown">APPROVE STATUS</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="ITEM CODE">
+                            <div class="spaceLeft5"><?php echo $kitty_serial_num; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="ITEM NAME">
+                            <div class="spaceRight5"><?php echo $kitty_token_num; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="DATE">
+                            <div class="spaceLeft5"><?php echo $firm_name; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="CUST NAME">
+                            <div class="spaceRight5"><?php echo strtoupper($user_fname) . '&nbsp;&nbsp;' . strtoupper($user_lname); ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="ITEM QTY">
+                            <div class="spaceRight5"><?php echo $kitty_mondepd_recipit_no; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="WEIGHT">
+                            <div class="spaceRight5"><?php echo $kitty_mondep_EMI_no; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="AMOUNT">
+                            <div class="spaceRight5"><?php echo $kitty_mondep_EMI_total_amt; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="AMOUNT">
+                            <div class="spaceRight5"><?php echo $kitty_mondep_EMI_paid_date; ?></div>
+                        </td>
+                        <td style="overflow: hidden;border-top: 1px solid silver" align="center" class="brwnCalibri13Font" title="AMOUNT">
+                            <div class="spaceRight5"><?php echo $kitty_approve_status; ?></div>
+                            <input type="hidden" id="documentRootPath" name="documentRootPath" class="select_border_grey" value="<?php echo $documentRootBSlash;?>">
+                            <input type="button" id="ApproveBtn" name="ApproveBtn" value="APPROVE"  onclick="changeSchemeApproveStatus('<?php echo $kittyMondepId; ?>', 'APPROVE');" />  
+                        </td
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

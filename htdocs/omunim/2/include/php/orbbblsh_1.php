@@ -1,3 +1,143 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Girvi Ledger 
+ * **************************************************************************************
+ * 
+ * Created on NOV 08, 2016 11:59:25 AM
+ *
+ * @FileName: orbbblsh_1.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+?>
+<div id="girviLedgerDetails">
+    <?php
+    /*     * ******Start code to add panel indiacator @Author:SANT09NOV16************ */
+    if ($_SESSION['sessionOwnIndStr'][9] == 'Y') {
+        $getYear = $_GET['balanceSheetYear'];
+        $getMonth = $_GET['balanceSheetMonth'];
+        $selFirmId = $_GET['firmId'];
+        if (!isset($selFirmId)) {
+            $firmIdSelected = $_SESSION['setFirmSession'];
+            $selFirmId = $firmIdSelected;
+        } else {
+            $firmIdSelected = $selFirmId;
+        }
+        if ($selFirmId == '' || $selFirmId == NULL) {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='1'";
+        } else {
+            $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='$selFirmId'";
+        }
+        $resultFirm = mysqli_query($conn,$qSelectFirm);
+        $rowFirm = mysqli_fetch_array($resultFirm);
+        ?>
+        <div id="balanceSheetHeaderDiv">
+            <table  border="0" cellspacing="0" cellpadding="0" class="width_260mm" align="center"><!----Class changed @Author:PRIYA25JUN14------------>
+                <tr>
+                    <td colspan="2" align="left">
+                        <table border="0" cellspacing="0" cellpadding="1" width="100%">      
+                            <tr>
+<!--                                <td valign="middle" align="left" width="10px">-Change in setScrollIdFun parameter ID @AUTHOR: SANDY10DEC13----
+                                    <img src="<?php echo $documentRoot; ?>/images/girvi24.png" height="15px" alt="" onLoad="setScrollIdFun('headerTable')"/>Id changed @Author:PRIYA24OCT13 to add image and chanes in width of tables @AUTHOR: SANDY30JUL13 
+                                </td>-->
+<!--                                <td>
+                                    <div class="itemAddPnLabels12">TRANSACTION LEDGER</div>
+                                    <div class="main_link_brown16">USER TRANSACTION LEDGER (लेनदेन विवरण)</div>
+                                </td>-->
+                                <td valign="middle" align="center" width="100px">
+                                    <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden" class="blackMess11">
+                                        <?php include 'omzaajld.php'; ?>
+                                    </div>
+                                </td>
+                                <td align="left" valign="middle">                                
+                                </td>
+                                <td align="center"  width="150px">
+                                    <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                        <tr>
+                                            <td align="right">
+                                                <!--                                                <div id="selectFirmDiv" class="spaceRight20" >
+                                                <?php
+                                                $firmPanelName = 'OMREVO';
+                                                include 'ombbglfr.php';
+                                                ?>
+                                                                                                </div>-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="right" valign="middle" class="noPrint">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+<!--                <tr>
+                    <td align="center" colspan="6"class="paddingTop4 padBott4" >
+                        <div class="hrGrey"></div>
+                    </td>
+                </tr>-->
+            </table>
+            <div id="balanceSheetDiv">
+                <table class="width_196mm" border="0" cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <td colspan="5">
+                            <table border="0" cellspacing="2" cellpadding="0" width="100%"  onclick="contentEditable = true">
+                                <tr>
+
+                                </tr>
+                                <tr>
+
+                                </tr>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="marginTop5">
+                                <tr>
+                                    <td align="left">
+                                        <div id="balanceSheetSubDiv">
+                                            <?php
+                                            include 'orbbblsd_2.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                <br/>
+                <tr>
+                    <td align="center" class="noPrint">
+                        <div id="ajaxLoadPrintBalanceSheetDiv" style="visibility: hidden">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                        <a style="cursor: pointer;" class="noPrint"
+                           onclick="printBalanceSheetDiv('balanceSheetDiv', document.getElementById('get_balance_sheet_form'), 'OMREVO')">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                                 width="32px" height="32px" />
+                        </a>  
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <?php } ?>
+    <!--/*     * ******End code to add panel indiacator @Author:SANT09NOV16************ */-->

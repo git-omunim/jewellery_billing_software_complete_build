@@ -1,3 +1,129 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar deposit jrnl
+ * **************************************************************************************
+ * 
+ * Created on Mar 26, 2014 4:22:02 PM
+ *
+ * @FileName: omudpjrn.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+if ($apiType == 'insert') {
+    $jrnlDesc = 'UDHAAR DEPOSIT MONEY';
+} else if ($apiType == 'update') {
+    $jrnlDesc = 'UDHHAR DEPOSIT UPDATED';
+    parse_str(getTableValues("SELECT udhadepo_jrnl_id FROM udhaar_deposit WHERE udhadepo_own_id='$sessionOwnerId' and udhadepo_id='$udhadepo_id'"));
+    $jrnlId = $udhadepo_jrnl_id;
+}
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+$qSelCustDetails = "SELECT user_fname,user_lname FROM user where user_owner_id='$sessionOwnerId' and user_id='$custId'";
+$resCustDetails = mysqli_query($conn,$qSelCustDetails);
+$rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+$custFirstName = $rowCustDetails['user_fname'];
+$custLastName = $rowCustDetails['user_lname'];
+//---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+$selAccName = "SELECT acc_id,acc_main_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Cash in Hand'"; //6  //Right now rec amt in CASH
+$resAccName = mysqli_query($conn,$selAccName);
+$rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+$cashAccId = $rowAccName['acc_id'];
+$cashAccName = $rowAccName['acc_main_acc'];
+
+$selAccName = "SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Sundry Debtors'";
+$resAccName = mysqli_query($conn,$selAccName);
+$rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+$SundryDebAccId = $rowAccName['acc_id'];
+
+$jrnlOwnId = $sessionOwnerId;
+$jrnlJId = '';
+$jrnlUserId = $custId;
+$jrnlUserType = 'cust';
+$jrnlTransId = $udhaarId; // Used to navigate
+$jrnlTransType = 'Udhaar'; //Where we hv to navigate
+$jrnlFirmId = $firmId;
+$jrnlTTDr = $udhaarDepositAmount;
+$jrnlDrAccId = $cashAccId;
+$jrnlDrDesc = $cashAccName;
+$jrnlTTCr = $udhaarDepositAmount;
+$jrnlCrAccId = $SundryDebAccId;
+$jrnlCrDesc = $custFirstName . ' ' . $custLastName;
+//$jrnlDesc = 'Udhaar Deposit Money';
+$jrnlOthInfo = '';
+$jrnlDOB = $udhaarDepositDate;
+
+include 'ommpjrnl.php';
+
+if ($apiType == 'insert') {
+//Start Code to Get Last Journal Id
+    parse_str(getTableValues("SELECT jrnl_id FROM journal where jrnl_own_id='$jrnlOwnId' order by jrnl_id desc"));
+    $jrnlId = $jrnl_id;
+//End Code to Get Last Journal Id
+}
+
+$selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Unsecured Loans'"; //23
+$resAccName = mysqli_query($conn,$selAccName);
+$rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+$crAccId = $rowAccName['acc_id'];
+$crAccName = $rowAccName['acc_user_acc'];
+
+$selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$sessionOwnerId' and acc_firm_id='$firmId' and acc_user_acc='Cash in Hand'"; //6
+$resAccName = mysqli_query($conn,$selAccName);
+$rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+$drAccId = $rowAccName['acc_id'];
+$drAccName = $rowAccName['acc_user_acc'];
+
+$jrtrJId = '';
+$jrtrJrnlId = $jrnlId;
+$jrtrOwnId = $sessionOwnerId;
+$jrtrUserId = $custId;
+$jrtrUserType = 'cust';
+$jrtrTransId = $udhaarId;
+$jrtrTransType = 'Udhaar';
+$jrtrFirmId = $firmId;
+$jrtrTransCRDR = 'DR';
+$jrtrDrAmt = $udhaarDepositAmount;
+$jrtrDrAccId = $drAccId; //Unsecured Loan
+$jrtrDrDesc = $drAccName;
+$jrtrCrAmt = $udhaarDepositAmount;
+$jrtrCrAccId = $crAccId; //Girvi Payment Account Id
+$jrtrCrDesc = $crAccName;
+$jrtrDesc = 'UDHAAR DEPOSIT MONEY';
+$jrtrOthInfo = '';
+$jrtrDOB = $udhaarDepositDate;
+include 'ommpjrtr.php';
+
+if ($apiType == 'insert') {
+    $query = "UPDATE udhaar_deposit SET 
+            udhadepo_jrnl_id='$jrnlId'
+            WHERE udhadepo_own_id='$sessionOwnerId' and udhadepo_id ='$udhaarDepId'";
+
+    if (!mysqli_query($conn,$query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
 ?>

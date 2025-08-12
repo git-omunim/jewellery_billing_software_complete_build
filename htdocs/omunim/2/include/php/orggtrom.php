@@ -1,3 +1,127 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transfer Girvi ROI Monthly Options
+ * **************************************************************************************
+ *
+ * Created on Mar 17, 2013 4:51:49 PM
+ *
+ * @FileName: orggtrom.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+
+require_once 'system/omssopin.php';
+?>
+<div id="ROIMonthly">
+    <?php
+    if ($ROIValue == NULL || $ROIValue == '') {
+        $ROIValue = trim($_POST['ROIValue']);
+    }
+    $optChecked = '';
+
+    //Start Code to get ROI Value
+    $qSelROI = "SELECT troi_value,tiroi_value FROM troi where troi_id='$ROIValue'";
+    $resROI = mysqli_query($conn,$qSelROI);
+    $rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+    if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+        $ROIValue = $rowROI['tiroi_value'];
+    } else {
+        $ROIValue = $rowROI['troi_value'];
+    }
+    //End Code to get ROI Value 
+    //    if ($ROIValue) { line commented @Author:PRIYA16MAR15
+    if ($ROIValue != '' || $ROIValue != 0) { // line added @Author:PRIYA16MAR15
+        $princAmount = trim($_POST['princAmount']);
+        $girviNewDOB = trim($_POST['girviDate']);
+        $girviType = trim($_POST['girviType']);
+        $girviId = trim($_POST['girviId']);
+        $custId = trim($_POST['custId']);
+        $girviUpdSts = trim($_POST['girviStatus']);
+        $panelName = trim($_POST['panelName']);
+        $girviTransId = trim($_POST['girviTransId']);
+    }
+    //Start Code to check Girvi Release Details Option
+    if ($grvRelPayDetails == NULL || $grvRelPayDetails == '') {
+        $grvRelPayDetails = trim($_POST['grvRelPayDetails']);
+    }
+    if ($grvRelPayDetails == NULL || $grvRelPayDetails == '') {
+        $grvRelPayDetails = trim($_GET['grvRelPayDetails']);
+    }
+    //End Code to check Girvi Release Details Option
+    ?>
+    <table border="0" cellpadding="2" cellspacing="2">
+        <tr align="left">
+            <td align="left">
+                <h5>
+                    <?php
+                    $qSelectROI = "SELECT troi_id,troi_value,tiroi_value,troi_default FROM troi where troi_type='Monthly'"; //To display data in this form
+                    $resultROI = mysqli_query($conn,$qSelectROI);
+                    while ($rowROI = mysqli_fetch_array($resultROI, MYSQLI_ASSOC)) {
+
+                        if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                            if ($ROIValue == $rowROI['tiroi_value'] || $ROI == $rowROI['tiroi_value']) {
+                                $optChecked = 'checked';
+                            }
+                        } else {
+                            if ($ROIValue == $rowROI['troi_value'] || $ROI == $rowROI['troi_value']) {
+                                $optChecked = 'checked';
+                            }
+                        }
+
+                        if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+                            ?>
+                            <INPUT id="selROI" TYPE="RADIO" NAME="selROI" class="lgn-field-without-order" 
+                                   onclick="changeROIValue('<?php echo $documentRoot; ?>', '<?php echo $grvRelPayDetails; ?>', this.value, '<?php echo $princAmount ?>', document.getElementById('interestType'), '<?php echo $girviNewDOB; ?>', document.getElementById('girviTotAmtDiv'), '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $girviType; ?>', '<?php echo $girviUpdSts; ?>', '<?php echo $omPanelDiv; ?>');"
+                                   VALUE="<?php echo "{$rowROI['troi_id']}"; ?>" <?php echo $optChecked; ?> /><?php echo "{$rowROI['tiroi_value']}"; ?> %&nbsp; 
+                                   <?php
+                                   $optChecked = '';
+                               } else {
+                                   ?>
+                            <INPUT id="selROI" TYPE="RADIO" NAME="selROI" class="lgn-field-without-order" 
+                                   onclick="changeROIValue('<?php echo $documentRoot; ?>', '<?php echo $grvRelPayDetails; ?>', this.value, '<?php echo $princAmount ?>', document.getElementById('interestType'), '<?php echo $girviNewDOB; ?>', document.getElementById('girviTotAmtDiv'), '<?php echo $girviId; ?>', '<?php echo $custId; ?>', '<?php echo $girviType; ?>', '<?php echo $girviUpdSts; ?>', '<?php echo $omPanelDiv; ?>');"
+                                   VALUE="<?php echo "{$rowROI['troi_id']}"; ?>" <?php echo $optChecked; ?> /><?php echo "{$rowROI['troi_value']}"; ?> %&nbsp; 
+                                   <?php
+                                   $optChecked = '';
+                               }
+                           }
+                           ?>
+                </h5>
+            </td>
+            <!-- <?php //if ($omPanelDiv == 'GirviUpdate') {    ?>
+                 <td align="center" title="ब्याज दर बदल ने के लिए यहाँ क्लिक करे! &#10;Click here to change rate of interest!" valign="bottom">
+                     <a style="cursor: pointer;" onclick="updateTROIValue('<?php echo $documentRoot; ?>','<?php echo $custId; ?>','<?php echo $girviId; ?>',document.getElementById('girviROIForm'))">
+                         <div id="ajaxUpdateROIValueButt">
+                             <img src="<?php echo $documentRoot; ?>/images/update16.png" />
+                         </div>
+                     </a>
+                 </td>
+            <?php //}  ?>-->
+            <?php if ($panelName == 'updateTROI') { ?>
+                <td align="center" title="ब्याज दर बदल ने के लिए यहाँ क्लिक करे! &#10;Click here to change rate of interest!" valign="bottom">
+                    <a style="cursor: pointer;" onclick="updateTROIValue('<?php echo $documentRoot; ?>', '<?php echo $girviTransId; ?>', document.getElementById('girviROIForm'))">
+                        <div id="ajaxUpdateROIValueButt">
+                            <img src="<?php echo $documentRoot; ?>/images/update16.png" />
+                        </div>
+                    </a>
+                </td>
+            <?php } ?>
+        </tr>
+    </table>
+</div>

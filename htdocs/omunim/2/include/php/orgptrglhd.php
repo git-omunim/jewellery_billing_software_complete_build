@@ -1,3 +1,220 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Transferred Girvi Header Hidden Div
+ * **************************************************************************************
+ * 
+ * Created on May 22, 2013 2:45:31 PM
+ *
+ * @FileName: orgptrglhd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<td align="left" width="50px"> <!-- changes in width @AUTHOR: SANDY29DEC13 -->
+    <div class = "border-right-bottom heightPX20">
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+                <td align="left">
+                    <input id="sNoHd" type="text" name="sNoHd" placeholder="S.NO."
+                           value="<?php
+                           if ($searchColumnName == 'gtrans_serial_num')
+                               echo $searchColumnValue;
+                           else
+                               echo 'S.NO.';
+                           ?>" 
+                           onclick="this.value = '';"
+                           onblur="javascript:if (document.getElementById('sNo').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'gtrans_serial_num', document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   } else {
+                                       document.getElementById('sNo').value = '<?php
+                           if ($searchColumnName == 'gtrans_serial_num')
+                               echo $searchColumnValue;
+                           else
+                               echo 'S.NO.';
+                           ?>';
+                                   }"
+                           onkeyup="if (event.keyCode == 13 && document.getElementById('sNo').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'gtrans_serial_num',
+                                               document.getElementById('sNo').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   }"
+                           size="3" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial"/>
+                </td>
+                <td align="right">
+                    <a style="cursor: pointer;" title="Click To View Girvi By Serial No"
+                       onclick="sortGirviTransferPanel('<?php echo $documentRoot; ?>', 'gtrans_serial_num', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>')">
+                        <?php if ($sortKeyword == 'gtrans_serial_num') { ?>
+                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+<?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</td>
+<td align="right"  width="80px">
+    <div class = "border-right-bottom heightPX20">
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="right">
+                    <input id="prinAmtHd" type="text" name="prinAmtHd" placeholder="PRIN. AMT." 
+                           value="<?php
+                           if ($searchColumnName == 'gtrans_prin_amt')
+                               echo $searchColumnValue;
+                           else
+                               echo 'PRIN. AMT.';
+                           ?>" 
+                           onclick="this.value = '';"
+                           onblur="javascript:if (document.getElementById('prinAmt').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'gtrans_prin_amt',
+                                               document.getElementById('prinAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   } else {
+                                       document.getElementById('prinAmt').value = '<?php
+                           if ($searchColumnName == 'gtrans_prin_amt')
+                               echo $searchColumnValue;
+                           else
+                               echo 'PRIN. AMT.';
+                           ?>';
+                                   }"
+                           onkeyup="if (event.keyCode == 13 && document.getElementById('prinAmt').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'gtrans_prin_amt',
+                                               document.getElementById('prinAmt').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   }"
+                           size="7" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                </td>
+                <td align="right">
+                    <a style="cursor: pointer;" title="Click To View Girvi By Principal Amount"
+                       onclick="sortGirviTransferPanel('<?php echo $documentRoot; ?>', 'gtrans_prin_amt', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>')">
+<?php if ($sortKeyword == 'gtrans_prin_amt') { ?>
+                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+<?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                    </a>
+                </td>
+            </tr>
+        </table>  </div>
+</td>
+<td align="right" width="70px">
+    <div class = "border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceRight5">INT AMT
+        </div>  </div>
+</td>
+<td align="right" width="70px">
+    <div class = "border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceRight5">TOT AMT
+        </div>  </div>
+</td>
+<td align="left" width="110px">
+    <div class = "border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">CUST NAME
+        </div>  </div>
+</td>
+<td align="left" width="85px">
+    <div class = "border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceLeft5">CITY
+        </div>  </div>
+</td>
+<td align="left" width="60px">
+    <div class = "border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial">EX. FIRM                       
+        </div>  </div>
+</td>
+<!---Start to change code @AUTHOR: SANDY29JAN14------------->
+<td align="left" width="60px" class="border-right-bottom heightPX20 spaceLeft5">
+    <div id="transDet1">
+        <?php
+//to assign default firm id @AUTHOR: SANDY10JUL13
+        $firmIdSelected = $selTFirmId;
+        $panelName = 'transGirviList';
+        $sortKeyword = addslashes($sortKeyword);
+        include 'ommlnmcd.php';
+        ?>  
+    </div>
+</td>
+<!---End to change code @AUTHOR: SANDY29JAN14------------->
+<td align="right" width="60px">
+    <div class = "border-right-bottom heightPX20">
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="right">
+                    <input id="sDateHd" type="text" name="sDateHd" placeholder="dd.mm.yy"                                                           
+                           value="<?php
+        if ($searchColumnName == "DAY(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(gtrans_DOB,\'%d %M %Y\'),\'%y\')")
+            echo $searchColumnValue;
+        else
+            echo 'S . DATE';
+        ?>"
+                           onclick="this.value = '';"
+                           onblur="javascript:if (document.getElementById('sDate').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(gtrans_DOB,\'%d %M %Y\'),\'%y\')',
+                                               document.getElementById('sDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   } else {
+                                       document.getElementById('sDate').value = '<?php
+                           if ($searchColumnName == "DAY(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(gtrans_DOB,\'%d %M %Y\'),\'%y\')")
+                               echo $searchColumnValue;
+                           else
+                               echo 'S . DATE';
+        ?>';
+                                   }"
+                           onkeyup="if (event.keyCode == 13 && document.getElementById('sDate').value != '') {
+                                       searchTransferGirviPanel('<?php echo $documentRoot; ?>', 'DAY(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@MONTH(STR_TO_DATE(gtrans_DOB,\'%d %M %y\'))@DATE_FORMAT(STR_TO_DATE(gtrans_DOB,\'%d %M %Y\'),\'%y\')',
+                                               document.getElementById('sDate').value, '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage; ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>');
+                                   }"
+                           size="5" maxlength="30" class="lgn-txtfield-without-borderAndBackground13-Arial-right"/>
+                </td>
+                <td align="right">
+                    <a style="cursor: pointer;" title="Click To View Girvi By Girvi Date"
+                       onclick="sortGirviTransferPanel('<?php echo $documentRoot; ?>', 'STR_TO_DATE(gtrans_DOB,\'%d %M %Y\')', '<?php echo $selFirmId; ?>', '<?php echo $rowsPerPage ?>', '<?php echo $selTFirmId; ?>', '<?php echo $gTransStatus; ?>')">
+<?php if ($sortKeyword == "STR_TO_DATE(gtrans_DOB,'%d %b %Y')") { ?>
+                            <img src="<?php echo $documentRoot; ?>/images/arrow10x13.png" alt="" />
+<?php } else { ?> <img src="<?php echo $documentRoot; ?>/images/arrowInAct10x13.png" alt="" /><?php } ?>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</td>
+<td align="right"width="60px">
+    <div class ="border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial spaceRight5">REL DATE
+        </div></div>  
+</td>
+<!--------Start code to add column @Author:PRIYA29OCT13 ------------------>
+<!-----Start to add column principal type @AUTHOR: SANDY18DEC13------------->
+<td align="center"width="20px">
+    <div class ="border-right-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial">TYP
+        </div></div>  
+</td>
+<td align="left" width="53px" class = "border-right-bottom  heightPX20">
+    <div>
+<?php
+$gTransStatSelected = $gTransStatus;
+// $sortKeyword = addslashes($sortKeyword);
+include 'orgptgst.php';
+?>
+    </div>
+</td>
+<td align="center" width="5px">
+    <div class = "border-bottom heightPX20">
+        <div class="lgn-txtfield-without-borderAndBackground13-Arial">DEL</div>  
+    </div>
+</td>
+<!--------End code to add column @Author:PRIYA29OCT13 ------------------>
+

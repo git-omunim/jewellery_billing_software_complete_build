@@ -1,3 +1,64 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABQAwAAUvzJOeK2eQNKfVFQKsGerPdxbzxp6ENnmvLaylmzzELYalnXHRLpYrpqIZGias5tMqw5t8Xvi2am3JMwn48yJi7b26aq2WYbdUceyoPC2c8T7sgwsDDXzhDV6iw6lYbupIVQWrcerYn9gtAME5agXEjjSWL5SJP+IphMaLIshtKr/w5f2FW8W1eg2uc3Vnkj+Qn4ShtlbOdDjoyjTCNOg7FykAulqjmd6AnNh45CHg5+cljn89aw3aPn+PFsuETSZacPMHrMbnJfHhuSZNg/cv6Cd/4szRQ9QcWLOg3LotsKpxUhR0btknrberxgMyOa4HKuD3fdHoNnL+SUgux/HFbn/mMAOZ8TNxhQ+QyE+6QeVC7Ls1A6Y+iiHBEvYa8bsna6kc1raJILyoyHGumcKjXo0wuGxtXzgLoOeXZ0qlyDIdO1ADlLa1UkmHsWK9j+Y2MS7RsMGnQkUIlIgEY215rfvjA9tmr9eLHydrwfVRDTYTa6BupKAdy5gO43JXJfAoUU9OFIQ5qiWt9mY7jNDfgXvXZxCdGdmsVotBaZXSU1szrowsFqxcZftmnl4UDzFcEaD3I3aQl49aJR71Apg2ic+GJfY9E0gZgWEzKBJRYQ7A2t82871cEXSDhtl4sXtSnJjgUXGhbv01nsOH07heZNCNKiSj6qarbPw71AIgZYYdiUBB5k2mJ/MH3ww85O+/HQTAzJSycKZwkiURXPI/FuJPv9E8Q3iqeG6bhrK4b8YV6nQa1oWAo2Z56nIRhSyQ5/eqhQJmI06lura4HD0WyuePfbHn8VISc6uWi4zkWCN1pANtBRokuh/I8TjDw8D8TLMxgSXwF1ErxM/SPJlUYCfsveSlIidqMq70Qu00pt99DWP0QE209J5dvSpEVelyhgEz1gDU42qPzSAjGxQKASnvC8/a6S4UohU1eGI4Hk0hD0fF3N/DiNCLK1i0od+zEcY9O/3xwGZqPHv3oXziKBs2akcIwJzSev19svwNGCLh0K/ApXRM0ZXS74w0h5yz8rS+Jd4lyUwYU6JaXNAU8MQXvXuMRENDAK1gIIqDPhsO3sks87ORVVcVkKVbrQ5NBb1GjulU6vwAvsw7HlzwP8qaKM/ZnIbsT9ZG3pAJUAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: OMGOLD Contact table
+ * **************************************************************************************
+ *
+ * Created on 17 Aug, 2018 13:09:36 PM
+ *
+ * @FileName: omtbcontact.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.86
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$query = "CREATE TABLE IF NOT EXISTS contact (
+contact_id                      INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+contact_name                    VARCHAR(60),
+contact_phn_no                  VARCHAR(32),
+contact_email                   VARCHAR(100),
+contact_sub                     VARCHAR(1000),
+contact_serv                    VARCHAR(1000),
+contact_mesg                    VARCHAR(1000),
+contact_website                 VARCHAR(60),
+contact_date                    VARCHAR(40),
+contact_lead                    VARCHAR(60),
+contact_prod_id                 VARCHAR(60),
+contact_login_id                VARCHAR(60),
+contact_rating                  VARCHAR(60),
+contact_feature                 VARCHAR(60),
+contact_indi                    VARCHAR(60),
+contact_city                    VARCHAR(60),
+contact_country                 VARCHAR(60),
+contact_state                   VARCHAR(60),
+contact_reqType                 VARCHAR(60),
+contact_down_product            VARCHAR(60),
+contact_ip_address              VARCHAR(64),
+contact_ref                     VARCHAR(60),
+contact_entry_date              VARCHAR(60),
+contact_update_date             VARCHAR(60),
+contact_status                  VARCHAR(60),
+contact_next_date               VARCHAR(60),
+contact_cmnt                    VARCHAR(60),
+sgen_sub_srch_date              VARCHAR(10),
+contact_sms_status              VARCHAR(3),
+contact_del_status              VARCHAR(60),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+//
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

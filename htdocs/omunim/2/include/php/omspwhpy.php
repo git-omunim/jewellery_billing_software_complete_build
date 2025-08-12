@@ -1,3 +1,772 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description:
+ * **************************************************************************************
+ *
+ * Created on Apr 30, 2015 10:11:47 PM
+ * @FileName: ogspwhpy.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:@PRIYA
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'ommpcmfc.php';
+?>
+<?php
+// modify file to change raw metal acc name @OMMODTAG SHRI_10JAN16
+$metalTypePanel = $_GET['metalTypePanel'];
+$metalPanelName = $_POST['metalPanelName'];
+
+if ($payPanelName == '') {
+    $payPanelName = $_POST['panelName'];
+}
+if ($payPanelName == '') {
+    $payPanelName = $_GET['panelName'];
+}
+if ($userId == '') {
+    $userId = $_POST['userId'];
+}
+if ($userId == '') {
+    $userId = $_GET['userId'];
+}
+//
+// echo '$userId==='.$userId;
+//
+$cntr = 'true';
+$mcntr = 'true';
+//
+if ($payPanelName == 'StockPayment' ||
+        $payPanelName == 'ItemRepairPayment' ||
+        $payPanelName == 'SlPrPayment' || $transPanelName == 'NewOrderPayment' ||
+        $payPanelName == 'CustSellPayment' || $payPanelName == 'NwOrPayment' ||
+        $payPanelName == 'RawPayment' || $payPanelName == 'SuppAddOrder' ||
+        $payPanelName == 'SuppUdhaDep' || $payPanelName == 'InvoicePayment' ||
+        $payPanelName == 'NwOrDelPayment' ||
+        $payPanelName == 'SuppPayment' || $payPanelName == 'SuppOrderDelivery') { //add code for PanelName For Payment:Author:SANT30NOV16****
+    
+    if ($saveMetalCount != 0 && $slPrOthInfo == 'PaymentSaved') {
+        //
+        $metalCount = $saveMetalCount + 1;
+        //
+    } else {
+        //
+        if ($payPanelName == 'SlPrPayment' && $noOfEstimateReceivedRawMet > 0) {
+            //$metalCount = 1;
+        } else {
+            $metalCount = 1;
+        }
+        //        
+    }
+
+    if ($metalPanelName == 'rawMoreMetalPanel') {
+        $rawPreId = $_POST['rawPreId'];
+        $rawPostId = $_POST['rawPostId'];
+        $metalCount = $_POST['metalDivCount'];
+        $firmId = $_POST['firmId'];
+        $rawMetType = $_POST['metalType'];
+        $rawMetName = $_POST['metalName'];
+        $rawGdPreId = $_POST['rawGdPreId'];
+        $rawGdPostId = $_POST['rawGdPostId'];
+        $mcntr = $_POST['mcntr'];
+        $rawGdPostId = $rawGdPostId + 1;
+
+
+        $rawSlPreId = $_POST['rawSlPreId'];
+        $rawSlPostId = $_POST['rawSlPostId'];
+
+        $rawAlPreId = $_POST['rawAlPreId']; //alloy Pre Id
+        $rawAlPostId = $_POST['rawAlPostId']; //alloy Post Id
+        $otherChgsBy = $_POST['otherChgsBy'];
+        $goldPurchaseAvgRate = $_POST['gMetalAvgRate'];
+        $silverPurchaseAvgRate = $_POST['sMetalAvgRate'];
+
+//        $metalAvgRate = $_POST['metalAvgRate'];
+    }
+
+//    echo '$metalTypePanel='.$metalTypePanel;
+
+    if ($metalTypePanel == 'rawMetalType') {
+        $metalCount = $_GET['metalDivCount'];
+        $firmId = $_GET['firmId'];
+        $rawMetType = $_GET['metalType'];
+        $rawMetName = $_GET['metalName'];
+        $cntr = $_GET['cntr'];
+        $rawGdPreId = $_GET['rawGdPreId'];
+        $rawGdPostId = $_GET['rawGdPostId'];
+        $rawSlPreId = $_GET['rawSlPreId'];
+
+        $rawSlPostId = $_GET['rawSlPostId'];
+        $rawAlPreId = $_GET['rawAlPreId']; //alloy Pre Id
+        $rawAlPostId = $_GET['rawAlPostId']; //alloy Post Id
+        $otherChgsBy = $_GET['otherChgsBy'];
+        $goldPurchaseAvgRate = $_GET['gMetalAvgRate'];
+        $silverPurchaseAvgRate = $_GET['sMetalAvgRate'];
+
+//        $metalAvgRate = $_GET['metalAvgRate'];
+
+        $cntr = 'false';
+    } else if ($metalPanelName != 'rawMoreMetalPanel' && $metalPanelName != 'rawMetalType') {
+
+        if ($rawMetType == '' || $rawMetType == 'Gold') {
+            $rawMetType = 'Gold';
+            $rawGdPreId = $rawGoldPreId;
+            $rawGdPostId = $rawGoldPostId;
+            $rawSlPreId = $rawSilverPreId;
+            $rawSlPostId = $rawSilverPostId;
+            $rawAlPreId = $rawAlloyPreId;
+            $rawAlPostId = $rawAlloyPostId;
+            $metalAvgRate = $goldPurchaseAvgRate;
+        }
+    }
+}
+if ($metalDueBalType == NULL || $metalDueBalType == '') {
+    $metalDueBalType = 'GM';
+}
+
+//if ($payPanelName == 'StockPayUp' || $payPanelName == 'StockPayment') {
+//    $rawType = 'AddStock';
+//} else if ($payPanelName == 'SellPayUp' || $payPanelName == 'SlPrPayment') {
+//    $rawType = 'SellPurchase';
+//} else if ($payPanelName == 'NwOrPayUp' || $payPanelName == 'NwOrPayment') {
+//    $rawType = 'newOrder';
+//}
+
+if ($payPanelName == 'StockPayUp' || $payPanelName == 'StockPayment') {
+    $rawType = 'PAID';
+} else if ($payPanelName == 'SellPayUp' || $payPanelName == 'SlPrPayment' ||
+        $payPanelName == 'ItemRepairPayUp' || $payPanelName == 'ItemRepairPayment' ||
+        $transPanelName == 'NewOrderPayment') {
+    $rawType = 'RECEIVED';
+} else if ($payPanelName == 'RawPayUp' || $payPanelName == 'RawPayment') {
+    if ($transactionPanel == 'RawPurchase')
+        $rawType = 'PAID';
+    else
+        $rawType = 'RECEIVED';
+} else if ($payPanelName == 'NwOrPayUp' || $payPanelName == 'NwOrPayment') {
+    $rawType = 'newOrder';
+}
+
+include 'omrmsldt.php';
+include 'omiamrtdv.php';
+
+//echo '$rawMetName='.$rawMetName;
+?>
+<table border="0" cellspacing="0" cellpadding="0" align="left">
+    <tr>
+        <td align="left" valign="top">
+            <!-- START CODE TO DEFINE HIDDEN VARIABLE FOR METAL RATE FRACTIONS @AUTHOR:MADHUREE-14JAN2022 -->
+            <input type="hidden" id="defaultGmWtInGm" name="defaultGmWtInGm" value="<?php echo $gmWtInGm; ?>"/>
+            <input type="hidden" id="defaultGmWtInKg" name="defaultGmWtInKg" value="<?php echo $gmWtInKg; ?>"/>
+            <input type="hidden" id="defaultGmWtInMg" name="defaultGmWtInMg" value="<?php echo $gmWtInMg; ?>"/>
+            <input type="hidden" id="defaultSrGmWtInGm" name="defaultSrGmWtInGm" value="<?php echo $srGmWtInGm; ?>"/>
+            <input type="hidden" id="defaultSrGmWtInKg" name="defaultSrGmWtInKg" value="<?php echo $srGmWtInKg; ?>"/>
+            <input type="hidden" id="defaultSrGmWtInMg" name="defaultSrGmWtInMg" value="<?php echo $srGmWtInMg; ?>"/>
+            <!-- END CODE TO DEFINE HIDDEN VARIABLE FOR METAL RATE FRACTIONS @AUTHOR:MADHUREE-14JAN2022 -->
+            <input type="hidden" id="urdValuationBy" name="urdValuationBy" value="<?php echo $urdValuationBy; ?>" />
+            <input type="hidden" id="<?php echo $payMetal1TransType; ?>" name="<?php echo $payMetal1TransType; ?>" value="<?php echo $rawType; ?>" />
+            <input type="hidden" id="<?php echo $payMetal1Indicator; ?>" name="<?php echo $payMetal1Indicator; ?>" value="rawMetal"/>
+            <input type="hidden" id="<?php echo $payMetal1PreInvNo; ?>" name="<?php echo $payMetal1PreInvNo; ?>" value="<?php echo $payPreInvoiceNo; ?>" />
+            <input type="hidden" id="<?php echo $payMetal1PostInvNo; ?>" name="<?php echo $payMetal1PostInvNo; ?>" value="<?php echo $payInvoiceNo; ?>" />
+            <input type="hidden" id="<?php echo $payMetal1UserId; ?>" name="<?php echo $payMetal1UserId; ?>" value="<?php echo $userId; ?>" />
+            <input type="hidden" id="<?php echo $payMetal1StocType; ?>" name="<?php echo $payMetal1StocType; ?>" value="retail" />
+            <input type="hidden" id="<?php echo $payMetal1StockType; ?>" name="<?php echo $payMetal1StockType; ?>" value="rawMetal" />
+
+            <div id="rawMetalDiv<?php echo $metalCount; ?>" name="rawMetalDiv<?php echo $metalCount; ?>">
+                <div id="rawMetalIdDiv<?php echo $metalCount; ?>">
+<?php
+if ($payPanelName == 'StockPayment' || $payPanelName == 'SlPrPayment' ||
+        $payPanelName == 'ItemRepairPayment' ||
+        $payPanelName == 'CustSellPayment' || $payPanelName == 'SuppOrderDelivery' ||
+        $payPanelName == 'NwOrPayment' || $payPanelName == 'RawPayment' ||
+        $payPanelName == 'SuppAddOrder' || $payPanelName == 'NwOrDelPayment' ||
+        $payPanelName == 'SuppPayment') { //add code for PanelName For Payment:Author:SANT30NOV16****
+    if ($rawMetType == 'Gold') {
+        $metalDueBal = $goldFinalWeight;
+        $metalDueBalType = $goldFinalWeightType;
+//                            $metalAvgRate = $goldPurchaseAvgRate;
+        if ($goldPurchaseAvgRate != '') {
+            $metalRate = $goldPurchaseAvgRate;
+            $metalAvgRate = $goldPurchaseAvgRate;
+        } else {
+            $metalRate = callMetalRateTable('select', 'LatestMetalRate', '', '', 'Gold');
+            $metalAvgRate = $metalRate;
+        }
+        $gdRate = $metalRate;
+    } else if ($rawMetType == 'Silver') {
+        $metalDueBal = $silverFinalWeight;
+        $metalDueBalType = $silverFinalWeightType;
+        if ($silverPurchaseAvgRate != '') {
+            $metalRate = $silverPurchaseAvgRate;
+            $metalAvgRate = $silverPurchaseAvgRate;
+        } else {
+            $metalRate = callMetalRateTable('select', 'LatestMetalRate', '', '', 'Silver');
+            $metalAvgRate = $metalRate;
+        }
+        $slRate = $metalRate;
+    } else if ($rawMetType == 'Alloy') {
+        $metalRate = '';
+    }
+}
+if ($rawMetDesc == '') {
+    parse_str(getTableValues("SELECT met_rate_metal_id FROM metal_rates WHERE met_rate_own_id='$_SESSION[sessionOwnerId]' AND met_rate_metal_name='$rawMetType' order by met_rate_ent_dat desc LIMIT 0, 1"));
+    $rawMetDesc = $met_rate_metal_id;
+    parse_str(getTableValues("SELECT rwmt_item_name FROM raw_metal where rwmt_owner_id='$_SESSION[sessionOwnerId]' and rwmt_metal_type='$rawMetType' and rwmt_metal_rate_id ='$met_rate_metal_id' ORDER BY rwmt_since DESC LIMIT 0, 1"));
+//                        $rawMetName = $rwmt_item_name;
+}
+
+$checkRawGdPresent = noOfRowsCheck('rwmt_id', 'raw_metal', "rwmt_metal_type='Gold' and rwmt_status = 'PaymentDone'");
+$checkRawSlPresent = noOfRowsCheck('rwmt_id', 'raw_metal', "rwmt_metal_type='Silver' and rwmt_status = 'PaymentDone'");
+?>
+                    <table width="100%" border="0" cellspacing="2" cellpadding="0">
+                        <tr>
+                            <td align="left"  class="itemAddPnLabels14" width="60px">
+                                <input id="metalDiv<?php echo $metalCount; ?>" name="metalDiv<?php echo $metalCount; ?>" type="hidden"/>
+                                <input id="metalDel<?php echo $metalCount; ?>" name="metalDel<?php echo $metalCount; ?>" value="<?php echo $metalCount; ?>" type="hidden" />
+                                <input id="rawId" name="rawId" type="hidden" value="<?php echo $rawId; ?>"/>
+                                <input id="metalPanel" name="metalPanel" type="hidden" value="<?php echo $payPanelName; ?>"/>
+                                <input id="metalCount" name="metalCount" type="hidden" value="<?php echo $metalCount; ?>"/>
+
+                                <input type="hidden" id="totPrevMetal" name="totPrevMetal" value="<?php echo $saveMetalCount; ?>" />
+
+                                <SELECT class="input_border_grey" id="<?php echo $payMetalType1; ?>" name="<?php echo $payMetalType1; ?>"
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                    document.getElementById('<?php echo $payMetal1FirmId; ?>').focus();
+                                                    return false;
+                                                } else if (event.keyCode == 8) {
+                                        <?php if ($metalCount > 1 && ($payPanelName != 'SlPrPayment' && $slPrOthInfo != 'PaymentSaved')) { ?>
+                                                        document.getElementById('<?php echo $prefix . 'PayMetalType1' . ($metalCount - 1); ?>').focus();
+                                        <?php } else if ($itemMainPanel == 'addByInv') { ?>
+                                                        document.getElementById('suppItemFinVal1').focus();
+                                        <?php } ?>
+                                                    return false;
+                                                }"
+                                        onchange ="getWholeRawMetalType('<?php echo $payPanelName; ?>', this.value, '<?php echo $metalCount; ?>', '<?php echo $firmId; ?>',
+                                                        '<?php echo $rawGdPreId; ?>', '<?php echo $rawGdPostId; ?>',
+                                                        '<?php echo $rawSlPreId; ?>', '<?php echo $rawSlPostId; ?>', '<?php echo $rawAlPreId; ?>', '<?php echo $rawAlPostId; ?>', 'rawMetalType', '<?php echo $cntr; ?>', '<?php echo $goldPurchaseAvgRate; ?>', '<?php echo $silverPurchaseAvgRate; ?>', '<?php echo $userId; ?>');"
+                                        size="1"> 
+                                        <?php
+                                        $metTypeNew = array('Gold', 'Silver', 'Alloy');
+                                        for ($i = 0; $i <= 2; $i++) {
+                                            if ($metTypeNew[$i] == $rawMetType)
+                                                $optionRawMetalSel[$i] = 'selected';
+                                        }
+                                        ?>
+                                    <option value="Gold" <?php echo $optionRawMetalSel[0]; ?>>GOLD</option>
+                                    <option value="Silver" <?php echo $optionRawMetalSel[1]; ?>>SILVER</option>
+                                    <option value="Alloy" <?php echo $optionRawMetalSel[2]; ?>>ALLOY</option>
+<?php unset($optionRawMetalSel); ?>
+                                </SELECT>
+                            </td>
+                            <!--<td align="left" width="78px" title="<?php echo $rawSelTitle; ?>">-->
+<?php if ($rawMetType == 'Gold') { ?>
+                            <input type="hidden" id="<?php echo $payRawGoldPreId; ?>" name="<?php echo $payRawGoldPreId; ?>" value="<?php echo $rawGdPreId; ?>">
+                            <input type="hidden" id="<?php echo $payRawGoldPostId; ?>" name="<?php echo $payRawGoldPostId; ?>" value="<?php echo $rawGdPostId; ?>">
+                            <input type="hidden" id="payRawMetalSelId<?php echo $metalCount; ?>" name="payRawMetalSelId<?php echo $metalCount; ?>" placeholder="RAW METAL" 
+                                   value="<?php if ($rawGdPostId != '') echo $rawGdPreId . $rawGdPostId; ?>"
+                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetal1FirmId; ?>').focus();
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetalType1; ?>').focus();
+                                                   return false;
+                                               }"
+                                   <?php
+                                   if ($payPanelName == 'StockPayment' || $payPanelName == 'StockPayUp' ||
+                                           $payPanelName == 'CustSellPayment' || $payPanelName == 'CustSellPayUp' ||
+                                           $payPanelName == 'RawPayment' || $payPanelName == 'SuppAddOrder' ||
+                                           $payPanelName == 'InvoicePayment' || $payPanelName == 'NwOrDelPayment' ||
+                                           $payPanelName == 'SuppOrderDelivery') { //add code for PanelName For Payment:Author:SANT30NOV16****
+                                       if ($checkRawGdPresent > 0) {
+                                           ?>
+                                           onclick="this.value = '';"
+                                       <?php } ?>
+                                       onkeyup ="<?php if ($checkRawGdPresent > 0) { ?>
+                                                               if (event.keyCode != 8 && event.keyCode != 13) {
+                                                                   getRawMetalList(event.keyCode, '<?php echo $payPanelName; ?>', document.getElementById('<?php echo $payMetalType1; ?>').value, '<?php echo $rawPreId; ?>', '<?php echo $rawPostId; ?>',
+                                                                           'rawMetalSelectDiv<?php echo $metalCount; ?>', '<?php echo $metalCount; ?>');
+                                                               }
+                                       <?php } ?>"
+                                       onblur="if (this.value == '') {
+                                                               this.value = '<?php if ($rawGdPostId != '') echo $rawGdPreId . $rawGdPostId; ?>';
+                                                           }
+                                                           return false;"
+                                   <?php } ?>
+                                   autocomplete="off" spellcheck="false" class="input_border_red_center" size="8" maxlength="15" />
+                            <div id="rawMetalSelectDiv<?php echo $metalCount; ?>"></div>
+                               <?php } else if ($rawMetType == 'Alloy') { ?>
+                            <input type="hidden" id="<?php echo $payRawGoldPreId; ?>" name="<?php echo $payRawGoldPreId; ?>" value="<?php echo $rawAlPreId; ?>">
+                            <input type="hidden" id="<?php echo $payRawGoldPostId; ?>" name="<?php echo $payRawGoldPostId; ?>" value="<?php echo $rawAlPostId; ?>">
+                            <input type="hidden" id="payRawMetalSelId<?php echo $metalCount; ?>" name="payRawMetalSelId<?php echo $metalCount; ?>" placeholder="RAW METAL" 
+                                   value="<?php if ($rawAlPostId != '') echo $rawAlPreId . $rawAlPostId; ?>"
+                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetal1FirmId; ?>').focus();
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetalType1; ?>').focus();
+                                                   return false;
+                                               }"
+                                   <?php
+                                   if ($payPanelName == 'StockPayment' || $payPanelName == 'StockPayUp' ||
+                                           $payPanelName == 'CustSellPayment' || $payPanelName == 'CustSellPayUp' ||
+                                           $payPanelName == 'RawPayment' || $payPanelName == 'SuppAddOrder' ||
+                                           $payPanelName == 'InvoicePayment' || $payPanelName == 'NwOrDelPayment' ||
+                                           $payPanelName == 'NwOrPayment' || $payPanelName == 'SuppOrderDelivery') { //add code for PanelName For Payment:Author:SANT30NOV16****
+                                       if ($checkRawGdPresent > 0) {
+                                           ?>
+                                           onclick="this.value = '';"
+                                       <?php } ?>
+                                       onkeyup ="<?php if ($checkRawGdPresent > 0) { ?>
+                                                               if (event.keyCode != 8 && event.keyCode != 13) {
+                                                                   getRawMetalList(event.keyCode, '<?php echo $payPanelName; ?>', document.getElementById('<?php echo $payMetalType1; ?>').value, '<?php echo $rawPreId; ?>', '<?php echo $rawPostId; ?>',
+                                                                           'rawMetalSelectDiv<?php echo $metalCount; ?>', '<?php echo $metalCount; ?>');
+                                                               }
+                                       <?php } ?>"
+                                       onblur="if (this.value == '') {
+                                                               this.value = '<?php if ($rawAlPostId != '') echo $rawAlPreId . $rawAlPostId; ?>';
+                                                           }
+                                                           return false;"
+                                   <?php } ?>
+                                   autocomplete="off" spellcheck="false" class="input_border_red_center" size="8" maxlength="15" />
+                            <div id="rawMetalSelectDiv<?php echo $metalCount; ?>"></div>
+                               <?php } else { ?>
+                            <input type="hidden" id="<?php echo $payRawGoldPreId; ?>" name="<?php echo $payRawGoldPreId; ?>" value="<?php echo $rawSlPreId; ?>">
+                            <input type="hidden" id="<?php echo $payRawGoldPostId; ?>" name="<?php echo $payRawGoldPostId; ?>" value="<?php echo $rawSlPostId; ?>">
+                            <input type="hidden" id="payRawMetalSelId<?php echo $metalCount; ?>" name="payRawMetalSelId<?php echo $metalCount; ?>" placeholder="RAW METAL"
+                                   value="<?php if ($rawSlPostId != '') echo $rawSlPreId . $rawSlPostId; ?>"
+                                   onkeydown="javascript: if (event.keyCode == 13) {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetal1FirmId; ?>').focus();
+                                                   return false;
+                                               } else if (event.keyCode == 8 && this.value == '') {
+                                                   clearDivision('rawMetalSelectDiv<?php echo $metalCount; ?>');
+                                                   document.getElementById('<?php echo $payMetalType1; ?>').focus();
+                                                   return false;
+                                               }"
+                                   <?php
+                                   if ($payPanelName == 'StockPayment' || $payPanelName == 'StockPayUp' ||
+                                           $payPanelName == 'CustSellPayment' || $payPanelName == 'CustSellPayUp' ||
+                                           $payPanelName == 'RawPayment' || $payPanelName == 'SuppAddOrder' ||
+                                           $payPanelName == 'InvoicePayment' || $payPanelName == 'NwOrDelPayment' ||
+                                           $payPanelName == 'SuppOrderDelivery') { //add code for PanelName For Payment:Author:SANT30NOV16****
+                                       if ($checkRawSlPresent > 0) {
+                                           ?>
+                                           onclick="this.value = '';"
+                                       <?php } ?>
+                                       onkeyup ="<?php if ($checkRawSlPresent > 0) { ?>
+                                                               if (event.keyCode != 8 && event.keyCode != 13) {
+                                                                   getRawMetalList(event.keyCode, '<?php echo $payPanelName; ?>', document.getElementById('<?php echo $payMetalType1; ?>').value, '<?php echo $rawPreId; ?>', '<?php echo $rawPostId; ?>',
+                                                                           'rawMetalSelectDiv<?php echo $metalCount; ?>', '<?php echo $metalCount; ?>');
+                                                               }<?php } ?>"
+                                       onblur="if (this.value == '') {
+                                                               this.value = '<?php if ($rawSlPostId != '') echo $rawSlPreId . $rawSlPostId; ?>';
+                                                           }
+                                                           return false;"
+                                   <?php } ?>
+                                   autocomplete="off" spellcheck="false" class="input_border_red_center" size="8" maxlength="15" />
+                            <div id="rawMetalSelectDiv<?php echo $metalCount; ?>"></div>
+                               <?php } ?>
+                        <!--</td>-->
+                        <td align="center" width="90px">
+                            <div id="payFirmDiv<?php echo $metalCount; ?>">
+<?php
+$selPayFirmId = $payMetal1FirmId;
+$prevFieldId = $payMetalType1;
+$nextFieldId = $payMetal1AccId;
+if ($rawFirmId != '')
+    $firmIdSelected = $rawFirmId;
+else if ($firmIdSelected == '')
+    $firmIdSelected = $firmId;
+$panelName = $firmPanelName;
+include 'omrwpyfr.php';
+//                                include 'ogrwpyfr.php';
+?>
+                            </div>
+                        </td>
+                        <td align="left" width="100px">
+<?php
+//acc name changed @OMMODTAG SHRI_10JAN16
+$prevFieldId = $payMetal1FirmId;
+$nextFieldId = $payMetal1MetalType;
+$selAccountId = $payMetal1AccId;
+$selFirmId = $firmId;
+$selMainAccName = "'RAW Metal','RAW/OLD Gold','RAW/OLD Silver'"; // for MYSQLI Query
+$accNameSelected = 'RAW Gold';
+if ($payPanelName == 'suppPendingOrderUp' || $payPanelName == 'StockPayUp' ||
+        $payPanelName == 'SellPayUp' || $payPanelName == 'ItemRepairPayUp' ||
+        $payPanelName == 'SellItemReturn' ||
+        $payPanelName == 'CustSellPayUp' || $payPanelName == 'NwOrPayUp' ||
+        $payPanelName == 'SuppOrderUp') {
+    if ($rawMetType == 'Gold') {
+        if ($rawAccId != '') {
+            $selFirmId = $rawFirmId;
+            $accNameSelected = '';
+            $accIdSelected = $rawAccId;
+        } else {
+            $accIdSelected = '';
+            $accNameSelected = 'RAW Gold';
+        }
+    }if ($rawMetType == 'Silver') {
+        if ($rawAccId != '') {
+            $selFirmId = $rawFirmId;
+            $selMainAccName = "'RAW Metal','RAW/OLD Gold','RAW/OLD Silver'"; // for MYSQLI Query
+            $accNameSelected = '';
+            $accIdSelected = $rawAccId;
+        } else {
+            $accIdSelected = '';
+            $accNameSelected = "'RAW Silver'";
+        }
+    }if ($rawMetType == 'Alloy') {
+        if ($rawAccId != '') {
+            $selFirmId = $rawFirmId;
+            $selMainAccName = "'RAW Metal','RAW/OLD Gold','RAW/OLD Silver'"; // for MYSQLI Query
+            $accNameSelected = '';
+            $accIdSelected = $rawAccId;
+        } else {
+            $accIdSelected = '';
+            $accNameSelected = "'RAW Alloy'";
+        }
+    }
+} else {
+    if ($rawMetType == 'Silver') {
+        $selMainAccName = "'RAW Metal','RAW/OLD Gold','RAW/OLD Silver'"; // for MYSQLI Query
+        $accNameSelected = 'RAW Silver';
+        $accIdSelected = '';
+    }
+    if ($rawMetType == 'Alloy') {
+        $selMainAccName = "'RAW Metal','RAW/OLD Gold','RAW/OLD Silver'"; // for MYSQLI Query
+        $accNameSelected = 'RAW Alloy';
+        $accIdSelected = '';
+    }
+}
+$selAccountClass = 'input_border_red';
+if (($payPanelName == 'StockPayment' || $payPanelName == 'SlPrPayment' ||
+        $payPanelName == 'ItemRepairPayment' ||
+        ($itemMainPanel == 'addByInv' || $itemMainPanel == 'addByItems')) ||
+        $payPanelName == 'SuppAddOrder' || $payPanelName == 'InvoicePayment' ||
+        $payPanelName == 'NwOrPayment' || $payPanelName == 'NwOrDelPayment' ||
+        $payPanelName == 'SuppOrderDelivery') { //add code for PanelName For Payment:Author:SANT30NOV16****
+    $accIdSelected = '';
+}
+include 'omacsalt.php';
+?>
+                        </td>
+                        <td align="center" width="100px">
+
+                            <?php
+                            if ($rawMetType == 'Gold') {
+                                $rawMetalDesc = 'OldGold';
+                            }
+                            if ($rawMetType == 'Silver') {
+                                $rawMetalDesc = 'OldSilver';
+                            }
+                            ?>
+                            <select id="<?php echo $payMetal1MetalType; ?>" name="<?php echo $payMetal1MetalType; ?>" 
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                document.getElementById('<?php echo $payMetal1MetalDesc; ?>').focus();
+                                                return false;
+                                            } else if (event.keyCode == 8) {
+                                                document.getElementById('<?php echo $payMetal1AccId; ?>').focus();
+                                                return false;
+                                            }"
+                                    class="input_border_red" >
+                                    <?php
+                                    $metalDesc = array(RawGold, RawSilver, OldGold, OldSilver);
+                                    if ($payPanelName == 'SellPayUp' || $payPanelName == 'RawPayUp' ||
+                                            $payPanelName == 'ItemRepairPayUp') {
+                                        for ($i = 0; $i <= 3; $i++)
+                                            if ($metalDesc[$i] == $rmpr_metal_desc)
+                                                $optionMetalDescSel[$i] = 'selected';
+                                    } else {
+                                        for ($i = 0; $i <= 3; $i++)
+                                            if ($metalDesc[$i] == $rawMetalDesc)
+                                                $optionMetalDescSel[$i] = 'selected';
+                                    }
+                                    ?>
+                                <option value="RawGold" <?php echo $optionMetalDescSel[0]; ?>>RAW GOLD</option>
+                                <option value="RawSilver" <?php echo $optionMetalDescSel[1]; ?>>RAW SILVER</option>
+                                <option value="OldGold" <?php echo $optionMetalDescSel[2]; ?>>OLD GOLD</option>
+                                <option value="OldSilver" <?php echo $optionMetalDescSel[3]; ?>>OLD SILVER</option>
+                            </select>
+                        </td>
+                        <td align="center" width="50px">
+                            <input id="<?php echo $payMetal1MetalDesc; ?>" name="<?php echo $payMetal1MetalDesc; ?>" type="text" placeholder="METAL NAME" value="<?php echo $rawMetName; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               searchItemForPanelBlank('rawSell', '<?php echo $metalCount; ?>');
+                                               document.getElementById('<?php echo $payMetal1RecWt; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               searchItemForPanelBlank('rawSell', '<?php echo $metalCount; ?>');
+                                               document.getElementById('<?php echo $payMetal1MetalType; ?>').focus();
+                                               return false;
+                                           }"
+                                   onkeyup="if (event.keyCode != 9 && event.keyCode != 13) {
+                                               searchRawSellItemNames(this.value, document.getElementById('<?php echo $payMetalType1; ?>').value, 'rawSell', document.getElementById('<?php echo $payMetal1MetalType; ?>').value, event.keyCode, '<?php echo $prefix; ?>', '<?php echo $metalCount; ?>');
+                                           }"
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="15" maxlength="15" title="METAL NAME"/>
+                            <div id="itemListDivToaddRawMetSellStock<?php echo $metalCount; ?>" class="itemListDivToAddStock" style="padding-right: 70px;"></div>
+                        </td>
+                        <td colspan="2">
+                            <table border="0" cellspacing="2" cellpadding="0" >
+                                <td class="itemAddPnLabels14" align="left"  width="60px">
+                                    <input id="<?php echo $payMetal1RecWt; ?>" name="<?php echo $payMetal1RecWt; ?>" type="text" placeholder="Total Wt" value="<?php echo $invRecWT; ?>"
+                                           onkeydown="javascript:if (event.keyCode == 13) {
+                                                       document.getElementById('<?php echo $payMetal1RecWtType; ?>').focus();
+                                                       return false;
+                                                   } else if (event.keyCode == 8 && this.value == '') {
+                                                       document.getElementById('<?php echo $payMetal1MetalDesc; ?>').focus();
+                                                       return false;
+                                                   }"
+                                           onchange="calcStockItemBalance();
+                                                   return false;"
+                                           onblur="calcStockItemBalance();
+                                                   return false;"
+                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                           autocomplete="off" spellcheck="false" class="input_border_grey_center" size="5" maxlength="15"/>
+                                </td>
+                                <td class="itemAddPnLabels14" width="40px">
+                                    <div class="floatRight">
+                                        <select id="<?php echo $payMetal1RecWtType; ?>" name="<?php echo $payMetal1RecWtType; ?>" 
+                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                            document.getElementById('<?php echo $payMetal1Tunch; ?>').focus();
+                                                            return false;
+                                                        } else if (event.keyCode == 8) {
+                                                            document.getElementById('<?php echo $payMetal1RecWt; ?>').focus();
+                                                            return false;
+                                                        }"
+                                                onchange="
+                                                        checkWeight(document.getElementById('<?php echo $payRawGoldPreId; ?>').value, document.getElementById('<?php echo $payRawGoldPostId; ?>').value,
+                                                                document.getElementById('<?php echo $payMetal1RecWt; ?>').value, document.getElementById('<?php echo $payMetal1RecWtType; ?>').value,
+                                                                document.getElementById('payPanelName').value, '<?php echo $rawSlStatus; ?>');
+                                                        javascript:
+
+                                                                if (document.getElementById('<?php echo $payMetal1RecWt; ?>').value != '') {
+
+                                                            calcStockItemBalance();
+                                                            return false;
+
+                                                        }"
+                                                class="input_border_grey">
+                                                <?php
+                                                if ($payPanelName == 'StockPayUp' || $payPanelName == 'SellPayUp' ||
+                                                        $payPanelName == 'ItemRepairPayUp' ||
+                                                        $payPanelName == 'SellItemReturn' ||
+                                                        $payPanelName == 'CustSellPayUp' || $payPanelName == 'NwOrPayUp' ||
+                                                        $payPanelName == 'RawPayUp') {
+                                                    $payPanelGdRecWT = array(KG, GM, MG);
+                                                    for ($i = 0; $i <= 2; $i++)
+                                                        if ($payPanelGdRecWT[$i] == $invRecWType)
+                                                            $payPanelGdRecWTSel[$i] = 'selected';
+                                                    ?>
+                                                <option value="KG"<?php echo $payPanelGdRecWTSel[0]; ?>>KG</option>
+                                                <option value="GM"<?php echo $payPanelGdRecWTSel[1]; ?>>GM</option>
+                                                <option value="MG"<?php echo $payPanelGdRecWTSel[2]; ?>>MG</option>
+                                                        <?php
+                                                        unset($payPanelGdRecWTSel);
+                                                    } else {
+                                                        ?>
+                                                <option value="KG">KG</option>
+                                                <option value="GM" selected>GM</option>
+                                                <option value="MG">MG</option>
+                                            <?php } ?>
+                                        </select>
+                                    </div>
+                                </td>
+                            </table>
+                        </td>
+                        <td align="center" width="50px">
+                            <input id="<?php echo $payMetal1Tunch; ?>" name="<?php echo $payMetal1Tunch; ?>" type="text" placeholder="Tunch%" value="<?php echo $invRecPurity; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Rate; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1RecWtType; ?>').focus();
+                                               return false;
+                                           }"
+                                   onchange="calcStockItemBalance();
+                                           return false;"
+                                   onblur="calcStockItemBalance();
+                                           return false;"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="3" maxlength="10" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="81px">
+                            <input id="<?php echo $payMetal1FnWt; ?>" name="<?php echo $payMetal1FnWt; ?>" type="text" placeholder="Fine Weight" value="<?php echo $invRecFNWT; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Rate; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1Tunch; ?>').focus();
+                                               return false;
+                                           }"
+                                   onblur="calcStockItemBalance();
+                                           return false;"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="6" maxlength="12" readonly="true" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="75px">
+                            <input id="<?php echo $payMetal1Rate; ?>" name="<?php echo $payMetal1Rate; ?>" type="text" placeholder="Rate" value="<?php echo $metalRate; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Val; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1Tunch; ?>').focus();
+                                               return false;
+                                           }"
+                                   onblur="javascript:calcStockItemBalance();
+                                           return false;"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="7" maxlength="15" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="100px">
+                            <input id="<?php echo $payMetal1Val; ?>" name="<?php echo $payMetal1Val; ?>" type="text" placeholder="Valuation" value="<?php echo $invMetVal; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Bal; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1Rate; ?>').focus();
+                                               return false;
+                                           }"
+                                   onchange="javascript:changeMetalRateByVal('<?php echo $prefix; ?>', '<?php echo $metalCount; ?>');
+                                           calcStockItemBalance();
+                                           return false;"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off"  spellcheck="false" class="input_border_grey_center" size="8" maxlength="15" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="75px">
+                            <input id="<?php echo $payMetal1AvgRate; ?>" name="<?php echo $payMetal1AvgRate; ?>" type="text" placeholder="Avg Rate" value="<?php echo $metalAvgRate; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Val; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1Tunch; ?>').focus();
+                                               return false;
+                                           }"
+                                   onblur="javascript:calcStockItemBalance();
+                                           return false;"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="7" maxlength="15" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="75px">
+                            <input id="<?php echo $payMetal1Pnl; ?>" name="<?php echo $payMetal1Pnl; ?>" type="text" placeholder="Profit/Loss" value="<?php echo $metalProfitNLoss; ?>"
+                                   onkeydown="javascript:if (event.keyCode == 13) {
+                                               document.getElementById('<?php echo $payMetal1Val; ?>').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('<?php echo $payMetal1Tunch; ?>').focus();
+                                               return false;
+                                           }"
+                                   onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                   autocomplete="off" spellcheck="false" class="input_border_grey_center" size="7" maxlength="15" />
+                        </td>
+                        <td align="left" class="itemAddPnLabels14" width="140px" colspan="2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input id="<?php echo $payMetal1Bal; ?>" name="<?php echo $payMetal1Bal; ?>" type="hidden" placeholder="Due Weight" value="<?php echo $metalDueBal; ?>"
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+                                                           document.getElementById('<?php echo $payMetal1BalType; ?>').focus();
+                                                           return false;
+                                                       } else if (event.keyCode == 8 && this.value == '') {
+                                                           document.getElementById('<?php echo $payMetal1Val; ?>').focus();
+                                                           return false;
+                                                       }"
+                                               onkeypress="javascript:return valKeyPressedForNumNDot(event);"    
+                                               autocomplete="off" spellcheck="false" class="input_border_grey_center" size="6" maxlength="15"/>
+                                    </td>
+                                    <td>
+                                        <input id="<?php echo $payMetal1BalType; ?>" name="<?php echo $payMetal1BalType; ?>" type="hidden" placeholder="Due WeightType" value="<?php echo $metalDueBalType; ?>"
+                                               onkeydown="javascript:if (event.keyCode == 13) {
+<?php if ($metalCount > 1) { ?>
+                                                               document.getElementById('<?php echo $payMetalType1; ?>').focus();
+                                                               return false;
+                                               <?php } else { ?>
+                                                               document.getElementById('<?php echo $payAccId; ?>').focus();
+                                                               return false;
+                                               <?php } ?>
+                                                       } else if (event.keyCode == 8 && this.value == '') {
+                                                           document.getElementById('<?php echo $payMetal1Bal; ?>').focus();
+                                                           return false;
+                                                       }"
+                                               autocomplete="off" spellcheck="false" class="input_border_grey_center" size="3" maxlength="4"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+<?php
+//                        echo '$payPanelName:'.$payPanelName;
+if ($payPanelName != 'StockPayUp' && $payPanelName != 'SellPayUp' &&
+        $payPanelName != 'ItemRepairPayUp' &&
+        $payPanelName != 'SellItemReturn' && $payPanelName != 'SellItemReturnUp' &&
+        $payPanelName != 'CustSellPayUp' && $payPanelName != 'RawPayUp' &&
+        $payPanelName != 'NwOrPayUp' && $payPanelName != 'InvoicePayUp' &&
+        $payPanelName != 'SuppOrderDeliveryUp' && $payPanelName != 'SuppOrderUp' &&
+        $payPanelName != 'NwOrDelPaymentUp') { //add panel for order panel prev balance :Author:SANT30NOV16
+    ?>
+                            <td align = "right" width = "20px">
+                                <a style = "cursor: pointer;"
+                                   onclick = "
+                                               if (document.getElementById('metalDiv<?php echo $metalCount; ?>').value == '' || document.getElementById('metalDiv<?php echo $metalCount; ?>').value == 'true') {
+                                                   getWholeMoreRawMetalDiv('<?php echo $metalCount + 1; ?>', '<?php echo $payPanelName; ?>',
+                                                           '<?php echo $firmIdSelected; ?>', '<?php echo $rawGdPreId; ?>', '<?php echo $rawGdPostId; ?>',
+                                                           'Gold', '<?php echo $rawSlPreId; ?>', '<?php echo $rawSlPostId; ?>', '<?php echo $rawAlPreId; ?>', '<?php echo $rawAlPostId; ?>', 'rawMoreMetalPanel', '<?php echo $mcntr; ?>',
+                                                           document.getElementById('<?php echo $payRawGoldPreId; ?>').value, document.getElementById('<?php echo $payRawGoldPostId; ?>').value, '<?php echo $goldPurchaseAvgRate; ?>', '<?php echo $silverPurchaseAvgRate; ?>', '<?php echo $userId; ?>');
+                                               }">
+                                    <img src = "images/update16.png" alt = "Click Here To Add More Raw Metal" class = "marginTop5"
+                                    <?php
+                                    if ($payPanelName == 'SlPrPayment' && $noOfEstimateReceivedRawMet > 0) { ?>
+                                        onload="setTimeout(function () {
+                                                    calcStockItemBalance();
+                                                }, 1000);" 
+                                    <?php } ?>   
+                                    />
+                                </a>
+                            </td>
+                            <td align = "right" width = "20px">
+    <?php if ($metalCount != 1) {
+        ?>
+                                    <a style="cursor: pointer;" onclick ="closeStockRawMetalDiv('<?php echo $metalCount; ?>', '<?php echo $payPanelName; ?>')" >
+                                        <img src="<?php echo $documentRoot; ?>/images/delete16.png"  alt="" class="marginTop5" 
+                                    <?php
+                                    if ($metalCount > 1 &&
+                                        $payPanelName != 'StockPayUp' &&
+                                        $payPanelName != 'SellPayUp' &&
+                                        $payPanelName != 'ItemRepairPayUp' &&
+                                        $payPanelName != 'CustSellPayUp') { ?>
+                                        onload="document.getElementById('<?php echo $payMetalType1; ?>').focus();" 
+                                    <?php } ?>/>
+                                    </a>
+    <?php } ?>
+                            </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+<div id = "payRawMetalDiv<?php echo $metalCount + 1; ?>">
+</div>

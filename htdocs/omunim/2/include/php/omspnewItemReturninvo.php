@@ -1,3 +1,186 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial:  SAMPLE 4 SELL RETURN INVOICE : AUTHOR @DNYANESHWARI 22DEC2023
+ * **************************************************************************************
+ * 
+ * Created on 15 APRIL 2022
+ *
+ * @FileName: omspnewItemReturninvo.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+require_once 'ommpincr.php';
+?>
+<?php
+//
+ob_start();
+//print_r($_REQUEST);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$slPrPreInvoiceNo = $_GET['slPrPreInvoiceNo'];
+$slPrInvoiceNo = $_GET['slPrInvoiceNo'];
+$invoiceDate = $_GET['invoiceDate'];
+$invoicePanel = $_GET['invoicePanel'];
+$roughEstimate = $_GET['roughEstimate'];
+$slprinSubPanel = $_GET['slprinSubPanel'];
+$invName = $_GET['invName'];
+$labelType = $_GET['labelType'];
+//echo '$labelType'.$labelType;
+$panelName = $_GET['panelName'];
+$panel = $_GET['panel'];
+$sellSampleInv = $_GET['sellSampleInv'];
+
+$sellInvOption = $_GET['customizationOption'];
+//echo '$sellInvOption'.$sellInvOption;
+if ($sellInvOption == 'byMetalValue') {
+//    parse_str(getTableValues("SELECT sttr_metal_type FROM stock_transaction_sell_2022_2023 "
+//                    . "WHERE sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo'"));
+     $sttr_metal_type = $getStockTransDetails[0]['sttr_metal_type']; 
+//    $sttr_gold_count = noOfRowsCheck('sttr_metal_type', 'stock_transaction_sell_2022_2023', "sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo' and sttr_metal_type='Gold'");
+//    $sttr_silver_count = noOfRowsCheck('sttr_metal_type', 'stock_transaction_sell_2022_2023', "sttr_pre_invoice_no = '$slPrPreInvoiceNo' and sttr_invoice_no = '$slPrInvoiceNo' and sttr_metal_type='Silver'");
+    //
+    $sttr_gold_count = 0;
+    $sttr_silver_count = 0;
+    foreach ($getStockTransDetails as $item) {
+    if($item['sttr_metal_type']== 'Gold')
+    {
+     $sttr_gold_count++;
+     }
+      if($item['sttr_metal_type']== 'Silver')
+    {
+     $sttr_silver_count++;
+     }
+    }
+//    echo '$sttr_gold_count : '.$sttr_gold_count.'<br>';
+//    echo '$sttr_silver_count : '.$sttr_silver_count.'<br>';
+
+    if ($sttr_gold_count > 0 && $sttr_silver_count > 0) {
+        $labelType = $_GET['labelType'];
+    } else if ($sttr_metal_type == 'Gold') {
+        $labelType = 'GoldSellPurchase';
+//       echo '$labelType'.$labelType;
+    } else if ($sttr_metal_type == 'Silver') {
+        $labelType = 'SilverSellPurchase';
+//        echo '$labelType'.$labelType;
+    }
+//    echo '$labelType'.$labelType;
+}
+//echo '$labelType=='.$labelType;
+if ($labelType == '' || $labelType == NULL) {
+    if ($labelType == 'estimateSell') {
+        $labelType = 'estimateSell';
+    } else {
+        $labelType = 'SellPurchase';
+    }
+}
+//$invoiceQuery = "SELECT * FROM labels WHERE label_own_id = '$sessionOwnerId' and label_type = '$labelType'";
+//$invoicereq = mysqli_query($conn, $invoiceQuery);
+//while ($invoiceres = mysqli_fetch_array($invoicereq, MYSQLI_ASSOC)) {
+//    $nameVar = $invoiceres['label_field_name'].'_name';
+//    $$nameVar = $invoiceres['label_field_name'];
+//    $contentVar = $invoiceres['label_field_name'].'_content';
+//    $$contentVar = $invoiceres['label_field_content'];
+//    $sizeVar = $invoiceres['label_field_name'] . '_size';
+//    $$sizeVar = $invoiceres['label_field_font_size'];
+//    $colorVar = $invoiceres['label_field_name'] . '_color';
+//    $$colorVar = $invoiceres['label_field_font_color'];
+//    $checkVar = $invoiceres['label_field_name'] . '_check';
+//    $$checkVar = $invoiceres['label_field_check'];
+//}
+
+foreach ($getLabelDetails as $getLabel) {
+    if (isset($getLabel['label_type']) && $getLabel['label_type'] == "$labelType") {
+          $nameVar = $getLabel['label_field_name'].'_name';
+          $$nameVar = $getLabel['label_field_name'];
+        $contentVar = $getLabel['label_field_name'].'_content';
+        $$contentVar = $getLabel['label_field_content'];
+//        $contentVar = $invoiceres['label_field_name'].'_content';
+//        $$contentVar = $getLabel['label_field_name'];
+        $sizeVar = $getLabel['label_field_name'] . '_size';
+        $$sizeVar = $getLabel['label_field_font_size'];
+        $colorVar = $getLabel['label_field_name'] . '_color';
+        $$colorVar = $getLabel['label_field_font_color'];
+        $checkVar = $getLabel['label_field_name'] . '_check';
+        $$checkVar = $getLabel['label_field_check'];
+        $checkNoPrintVar = $getLabel['label_field_name'] . '_noPrintCheck';
+        $$checkNoPrintVar = $getLabel['label_noprint'];
+    }
+}
+?>
+<html>
+    <head>
+        <title>Online Munim &mdash; Girvi Software, Jewellery Software, Jewellery &amp; Money Lending Accounting Software...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/invoice.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/ogcss.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $documentRootBSlash; ?>/css/signature-pad.css">      
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/emValidate.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/omMainNav.js"></script>            
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/app.js"></script>
+        <script type="text/javascript" src="<?php echo $documentRootBSlash; ?>/scripts/signature_pad.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+            .border-color-grey-bottom{
+                border-bottom : 1px solid #000000;
+            }
+            .border-color-grey-top{
+                border-top : 1px solid #000000;
+            }
+
+            /*            body {
+                            display: block;
+                            page: main;
+                            counter-reset: page 1
+                        }
+                        @page main {
+                            @top { content: string(chapter-title) }
+                            @bottom {
+                                content: counter(page)
+                            }
+                        }*/
+            @page {
+                size: auto !important;
+            }
+
+        </style>
+    </head>
+    <body style="margin:0; padding:0; box-sizing: border-box;">
+        <?php
+           include 'omspnewItemReturnRight.php';
+        ?>
+    </body>
+</html>
+<script>
+    $(document).ready(function () {
+
+
+        $('#tableHeadColorChng').click(function () {
+            var color = 'rgb(' + Math.floor(Math.random() * 255) + ','
+                    + Math.floor(Math.random() * 255) + ','
+                    + Math.floor(Math.random() * 255) + ')';
+            $('.tableHeadColorChng').css('background-color', color);
+        });
+    });
+
+</script>

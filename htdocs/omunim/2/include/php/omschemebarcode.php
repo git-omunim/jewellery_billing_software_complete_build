@@ -1,3 +1,139 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$kittyCustId = $_REQUEST['kittyCustId'];
+$kittyId = $_REQUEST['kittyId'];
+$depositeAmt = $_REQUEST['depositeAmt'];
+$barcodeNo = $_REQUEST['barcodeNo'];
+$paymentMode = $_REQUEST['paymentMode'];
+$paiddate = $_REQUEST['paiddate'];
+$accountNo = $_REQUEST['accountNo'];
+$operation = $_REQUEST['operation'];
+$query = "SELECT * FROM kitty WHERE kitty_own_id = '$_SESSION[sessionOwnerId]' "
+        . "AND kitty_cust_id = '$kittyCustId' "
+        . "AND kitty_id = '$kittyId'";
+$CustDetails = mysqli_query($conn, $query);
+$rowCustDetails = mysqli_fetch_array($CustDetails, MYSQLI_ASSOC);
+$kittyGroup = $rowCustDetails['kitty_group'];
+$kittyDOB = $rowCustDetails['kitty_DOB'];
+$kittyDOB = om_strtoupper(($kittyDOB));
+$kittyPreSerialNum = $rowCustDetails['kitty_pre_serial_num'];
+$kittySerialNum = $rowCustDetails['kitty_serial_num'];
+$kitty_barcode = $rowCustDetails['kitty_barcode'];
 ?>
+<div class="modal" id="sssssss" style="display: block;">
+    <div class="modal-dialog" style="text-align: center;width:80%;height:90% !important;">    
+        <div class="modal-content" style="text-align: center;width:55%;height:202px !important;padding:0;/*! border:20px solid #f39c12; */overflow: hidden;background: #d8d8d8;background-color: #d8d8d8 !important;background-color: #d8d8d8;">
+            <div class="modal-body" style="padding: 0px;height: 100%;background: white;width: 100%;">
+                <?php
+                if($operation == 'monthlypay'){
+                ?>
+                <div style="display: flex;justify-content: end;align-items: center">
+                    <button type="button" onclick="document.getElementById('sssssss').style.display = 'none';" data-dismiss="modal" style="background-color: transparent;border: none;margin-top:-10px;margin-left:10px;cursor: pointer;">
+                        <strong style="font-size:35px;font-weight: bold;color:#736f6e;">×</strong>
+                    </button> 
+                </div>
+                <div style="height: 83%;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;margin-top: -6px;">
+                    <div class="col-lg-12" style="height: 83%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                        <div style="width: 36%;height: 10%;background: #d8d8d8;">
+                            <div class="labeltail"></div>
+                        </div>
+                        <div style="width: 50%;height: 50%;background: #d8d8d8;">
+                            <div class="labelBody" id="schemelabelBody">
+                                <div style="width: 100%;height: 100%;">
+                                    <div style="display: flex;justify-content: center;align-items: center;margin-top: -4px;" >
+                                        <span style="margin-top: 0px;width: 78px;font-size: 12px;margin-left: -150px;">
+                                            <?php
+                                            echo $accountNo;
+                                            ?>
+                                        </span>
+                                        <span style="font-size: 12px;margin-left: -17px;margin-right: -140px;">
+                                        <?php
+                                        echo $barcodeNo ;
+                                        ?>
+                                            </span>
+                                        <span style="margin-left: 5px; font-size: 12px;margin-left: 180px;">
+                                        <?php
+                                        echo $depositeAmt;
+                                        ?>
+                                            </span>
+                                    </div>
+                                    <div style="display: flex;justify-content: space-around;align-items: center">
+                                        <span style="font-size: 12px;margin-left: 8px;">
+                                        <?php
+                                        echo $paiddate;
+                                        ?>
+                                        </span>
+                                        <span style="margin-right: 104px;font-size: 12px;">
+                                        <?php
+                                        echo $paymentMode;
+                                        ?>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-bottom: 8px;" class="col-lg-12">
+                        <a style="cursor: pointer;" onclick="printBarCodeDiv('schemelabelBody')" id="print_link">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='print tag'  class="noPrint" /></a>
+                    </div>
+                </div>
+                <?php }else{ ?>
+                <div style="display: flex;justify-content: end;align-items: center">
+                    <button type="button" onclick="document.getElementById('sssssss').style.display = 'none';" data-dismiss="modal" style="background-color: transparent;border: none;margin-top:-10px;margin-left:10px;cursor: pointer;">
+                        <strong style="font-size:35px;font-weight: bold;color:#736f6e;">×</strong>
+                    </button> 
+                </div>
+                <div style="height: 83%;width: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;margin-top: -6px;">
+                    <div class="col-lg-12" style="height: 83%;width: 100%;display: flex;justify-content: center;align-items: center;">
+                        <div style="width: 36%;height: 10%;background: #d8d8d8;">
+                            <div class="labeltail"></div>
+                        </div>
+                        <div style="width: 50%;height: 50%;background: #d8d8d8;">
+                            <div class="labelBody" id="schemelabelBody">
+                                <div style="width: 100%;height: 100%;">
+                                    <div style="display: flex;justify-content: center;align-items: center">
+                                        <span style="margin-top: 5px;">
+                                        <img src="<?php echo $documentRootBSlash; ?>/include/php/ommpitbc.php?panel=SchemeBarcode&bar_id=<?php
+                                        echo $kitty_barcode;
+                                        ?>" alt="Barcode"height="13px"style="margin-left: -132px;width: 100px;"/>
+                                        </span>
+                                        <span style="margin-left: 24px; font-size: 12px;margin-right: 12px;">
+                                        <?php
+                                        echo $kittyGroup;
+                                        ?>
+                                            </span>
+                                    </div>
+                                    <div style="display: flex;justify-content: space-around;align-items: center">
+                                        <span style="font-size: 12px;">
+                                        <?php
+                                        echo $kitty_barcode;
+                                        ?>
+                                        </span>
+                                        <span style="margin-right: 70px;">
+                                        <?php
+                                        echo $kittyDOB;
+                                        ?>
+                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: center;align-items: center;margin-bottom: 8px;" class="col-lg-12">
+                        <a style="cursor: pointer;" onclick="printBarCodeDiv('schemelabelBody')" id="print_link">
+                            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='print tag'  class="noPrint" /></a>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            <div class="modal-footer" style="padding:2px;">
+            </div>
+        </div> 
+    </div>
+</div>

@@ -1,3 +1,587 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: XRF Invoice Payment Details File @PRIYANKA-02AUG18
+ * **************************************************************************************
+ * 
+ * Created on 02 AUG, 2018 11:29:49 AM
+ *
+ * @FileName: omspinvPayInfo.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.82
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+parse_str(getTableValues("SELECT * FROM user_transaction_invoice WHERE utin_owner_id = '$sessionOwnerId' and "
+                . "utin_pre_invoice_no = '$slPrPreInvoiceNo' and utin_invoice_no = '$slPrInvoiceNo' and "
+                . "utin_type IN ('XRF') and utin_transaction_type IN ('sell') and "
+                . "utin_user_id = '$userId' and utin_firm_id IN ($strFrmId)"));
+//       
+?>
+</table>
+</td>
+</tr>
+<?php
+//
+$qSelRawMetSettleDet = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$sessionOwnerId' and utin_amt_settled_inv_id = '$utin_id' and utin_amt_pay_chk = 'checked' and utin_user_id = '$userId' and utin_firm_id IN ($strFrmId) ";
+//
+$resRawMetSettleDet = mysqli_query($conn, $qSelRawMetSettleDet);
+$noOfRawMet = mysqli_num_rows($resRawMetSettleDet);
+//
+while ($rowRawMetSettleDet = mysqli_fetch_array($resRawMetSettleDet)) {
+    $rawMetPreInvNo = $rowRawMetSettleDet['utin_pre_invoice_no'];
+    $rawMetInvNo = $rowRawMetSettleDet['utin_invoice_no'];
+    $rawMetInvNo = $rowRawMetSettleDet['utin_invoice_no'];
+    $rawMetCashBal = $rowRawMetSettleDet['utin_cash_balance'];
+    $utin_pay_tax_on_total_amt_chk = $rowRawMetSettleDet['utin_pay_tax_on_total_amt_chk'];
+    $utin_discount_amt_discup = $rowRawMetSettleDet['utin_discount_amt_discup'];
+    ?>
+    <tr>
+        <td colspan="<?php echo $colspan; ?>" class="spaceRight5">
+            <table align="left" border="0" cellpadding="0" width="100%" cellspacing="0">
+                <?php
+//                $fieldName = 'settleAmt';
+//                parse_str(getTableValues("SELECT label_field_check,label_field_font_size FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                if ($settleAmt_check == 'true') {
+//                    $fieldName = 'settleAmtLb';
+//                    parse_str(getTableValues("SELECT label_field_content,label_field_font_size,label_field_font_color FROM labels WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'"));
+                    if ($settleAmtLb_size == 0) {
+                        $settleAmtLb_size = 12;
+                    }
+                    ?>
+                    <tr>
+                        <td align = "left">
+                            <div class = "ff_calibri font_color_<?php echo $settleAmtLb_color; ?>" style = "font-size:<?php echo $settleAmtLb_size; ?>px"
+                                 onClick = "this.contentEditable = 'true';">
+                                     <?php
+                                     echo 'INV NO : ' . $rawMetPreInvNo . '' . $rawMetInvNo . '   ' . 'URD AMT' . ':' . $rawMetCashBal;
+                                     ?>
+
+                            </div>
+                        </td>
+
+                    </tr>
+                <?php } ?>
+            </table>
+        </td>
+    </tr>
+    <?php
+}
+?>  
+<tr>
+    <td align="center" colspan="<?php echo $colspan; ?>">
+        &nbsp;
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <?php
+        $querysetteledinvoice = "SELECT * FROM user_transaction_invoice where utin_owner_id = '$sessionOwnerId' and "
+                              . "utin_type NOT IN ('OnPurchase') and utin_user_id = '$userId' and utin_firm_id IN ($strFrmId) and "
+                              . "(utin_amt_settled_inv_id = '$utin_id' OR utin_gd_settled_inv_id = '$utin_id' OR utin_sl_settled_inv_id = '$utin_id') ";
+        $resSetteledInvDetails = mysqli_query($conn, $querysetteledinvoice);
+        $noOfsetteledInv = mysqli_num_rows($resSetteledInvDetails);
+        ?>
+        <?php if ($noOfsetteledInv > 0) { ?>
+            <table border="1" style="border-collapse: collapse;border:1px solid black;">
+                <tr>
+                    <th style="padding: 10px;">INVOICE NO</th>
+                    <th style="padding: 10px;">GOLD WT</th>
+                    <th style="padding: 10px;">SILVER WT</th>
+                    <th style="padding: 10px;"> CASH BALANCE</th>
+
+                </tr>
+
+                <?php
+                while ($rowSetteledInvDetails = mysqli_fetch_array($resSetteledInvDetails)) {
+                    ?> <tr>  <td align="center"><?php echo $rowSetteledInvDetails['utin_pre_invoice_no'] . $rowSetteledInvDetails['utin_invoice_no']; ?></td>
+                        <td align="right"><?php if ($rowSetteledInvDetails['utin_gd_settled_inv_id'] != null || $rowSetteledInvDetails['utin_gd_settled_inv_id'] != '') {
+                        ?>  <span style="color:<?php
+                                if ($rowSetteledInvDetails['utin_gd_CRDR'] == 'CR') {
+                                    echo "green";
+                                } else {
+                                    echo "red";
+                                }
+                                ?>"> <?php echo abs($rowSetteledInvDetails['utin_gd_due_wt']) . " " . $rowSetteledInvDetails['utin_gd_due_wt_typ'] . " " . $rowSetteledInvDetails['utin_gd_crdr']; ?> </span>
+                                      <?php
+                                  } else {
+                                      echo "-";
+                                  }
+                                  ?>
+                        </td>
+                        <td align="right"><?php if ($rowSetteledInvDetails['utin_sl_settled_inv_id'] != null || $rowSetteledInvDetails['utin_sl_settled_inv_id'] != '') {
+                                      ?> <span style="color:<?php
+                                if ($rowSetteledInvDetails['utin_sl_CRDR'] == 'CR') {
+                                    echo "green";
+                                } else {
+                                    echo "red";
+                                }
+                                ?>">  <?php echo abs($rowSetteledInvDetails['utin_sl_due_wt']) . " " . $rowSetteledInvDetails['utin_sl_due_wt_typ'] . " " . $rowSetteledInvDetails['utin_sl_crdr']; ?> </span>
+                                      <?php
+                                  } else {
+                                      echo "-";
+                                  }
+                                  ?>
+                        </td>
+                        <td align="right">
+                            <?php if ($rowSetteledInvDetails['utin_amt_settled_inv_id'] != null || $rowSetteledInvDetails['utin_amt_settled_inv_id'] != '') {
+                                ?> <span style="color:<?php
+                                if ($rowSetteledInvDetails['utin_cash_CRDR'] == 'CR') {
+                                    echo "green";
+                                } else {
+                                    echo "red";
+                                }
+                                ?>"> <?php echo abs($rowSetteledInvDetails['utin_cash_balance']) . " " . $rowSetteledInvDetails['utin_cash_CRDR']; ?> </span>
+                                      <?php
+                                  } else {
+                                      echo "-";
+                                  }
+                                  ?>
+                        </td> 
+                    </tr><?php
+                }
+                ?>
+
+                <tr >
+                    <th> TOTAL</th>
+                    <th align="right" style="color:<?php
+                    if ($utin_prev_gd_CRDR == 'CR') {
+                        echo "green";
+                    } else {
+                        echo "red";
+                    }
+                    ?>">  <?php
+                            if ($utin_gs_prev_wt > 0) {
+                                echo abs($utin_gs_prev_wt) . " " . $utin_gd_prev_wt_typ; //. " " . $utin_prev_gd_CRDR;
+                            } else {
+                                echo "-";
+                            }
+                            ?></th>
+                    <th  align="right"style="color:<?php
+                    if ($utin_prev_sl_CRDR == 'CR') {
+                        echo "green";
+                    } else {
+                        echo "red";
+                    }
+                    ?>"> <?php
+                             if ($utin_sl_prev_wt > 0) {
+                                 echo abs($utin_sl_prev_wt) . " " . $utin_sl_prev_wt_typ; //." " . $utin_prev_sl_CRDR;
+                             } else {
+                                 echo "-";
+                             }
+                             ?> </th>
+                    <th  align="right" style="color:<?php
+                    if ($utin_prev_amt_CRDR == 'CR') {
+                        echo "green";
+                    } else {
+                        echo "red";
+                    }
+                    ?>"><?php
+                             if ($utin_prev_cash_bal > 0) {
+                                 echo abs($utin_prev_cash_bal); //. " " . $utin_prev_amt_CRDR;
+                             } else {
+                                 echo "-";
+                             }
+                             ?></th>
+                </tr>
+            </table>
+
+        <?php } ?>
+    </td>
+    <td colspan="2" width="100%" align="center">
+        <table border="0" cellspacing="0">
+            <?php
+            if ($slprin_stoc_type != 'oldStock' && $utin_payment_mode != 'ByCash') {
+                if ($utin_transaction_type == 'PURBYSUPP' || $utin_transaction_type == 'PURCHASE')
+                    $inv_trans_type = 'PURCHASE';
+                else
+                    $inv_trans_type = 'SELL';
+                ?>
+                <tr>
+
+                    <?php if ($totFinGdWt != '' && $totFinGdWt != 0) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">GD <?php echo $inv_trans_type; ?> :</div>
+                        </td>
+                        <td align="right" width="15%">
+                            <div class="blackCalibri13Font"><?php echo decimalVal($totFinGdWt, 3) . ' ' . $goldTotFFineWtType; ?>
+                            </div>
+                        </td>
+                    <?php } if ($totFinSlWt != '' && $totFinSlWt != 0) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">SL <?php echo $inv_trans_type; ?> :</div>
+                        </td>
+                        <td align="right" width="10%">
+                            <div class="blackCalibri13Font paddingRight2"><?php echo decimalVal($totFinSlWt, 3) . ' ' . $silverTotFFineWtType; ?></div>
+                        </td>
+                    <?php } ?>
+                </tr>
+                <tr>
+
+                    <?php if ($utin_gd_paid_wt != '' && $utin_gd_paid_wt != 0.000) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">GD RECEIVED :</div>
+                        </td>
+                        <td align="right" width="15%">
+                            <div class="blackCalibri13Font"><?php echo decimalVal($utin_gd_paid_wt, 3) . ' ' . $utin_gd_paid_wt_typ; ?>
+                            </div>
+                        </td>
+                    <?php } if ($utin_sl_paid_wt != '' && $utin_sl_paid_wt != 0.000) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">SL RECEIVED :</div>
+                        </td>
+                        <td align="right" width="10%">
+                            <div class="blackCalibri13Font paddingRight2"><?php echo decimalVal($utin_sl_paid_wt, 3) . ' ' . $utin_sl_paid_wt_typ; ?></div>
+                        </td>
+                    <?php } ?>
+                </tr>
+                <tr> 
+  
+                    <?php if ($utin_gs_prev_wt != '' && $utin_gs_prev_wt != 0) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">GOLD PAID :</div>
+                        </td>
+                        <td align="right" width="15%">
+                            <div class="blackCalibri13Font"><?php echo decimalVal($totalGdPaid, 3) . ' ' . $goldTotFFineWtType; ?>
+                            </div>
+                        </td>
+                    <?php } if ($totalSlPaid != '' && $totalSlPaid != 0) { ?>
+                        <td align="right" width="20%">
+                            <div class="blackCalibri13FontBold">SILVER PAID :</div>
+                        </td>
+                        <td align="right" width="10%">
+                            <div class="blackCalibri13Font paddingRight2"><?php echo decimalVal($totalSlPaid, 3) . ' ' . $silverTotFFineWtType; ?></div>
+                        </td>
+                    <?php } ?>
+                </tr>
+                <tr> 
+     
+                    <?php if ($utin_gs_prev_wt != '' && $utin_gs_prev_wt != 0) { ?>
+                        <td align="right" width="20%">
+                            <?php if ($utin_prev_gd_CRDR == 'CR') { ?>
+                                <div class="blackCalibri13FontBold"> PREV GOLD BAL :</div>
+                            <?php } else { ?>
+                                <div class="blackCalibri13FontBold"> PREV GOLD ADVANCE :</div>
+                            <?php } ?>
+                        </td>
+                        <td align="right" width="15%">
+                            <div  style="color: <?php
+                            if ($utin_prev_gd_CRDR == 'CR') {
+                                echo "green";
+                            } else {
+                                echo "red";
+                            }
+                            ?>;" class="blackCalibri13Font"><?php echo decimalVal($utin_gs_prev_wt, 3) . ' ' . $utin_gd_prev_wt_typ . " " . $utin_prev_gd_CRDR; ?>
+                            </div>
+                        </td>
+                    <?php } if ($utin_sl_prev_wt != '' && $utin_sl_prev_wt != 0) { ?>
+                        <td align="right" width="20%">
+                            <?php if ($utin_prev_sl_CRDR == 'CR') { ?>
+                                <div class="blackCalibri13FontBold"> PREV SILVER BAL :</div>
+                            <?php } else { ?>
+                                <div class="blackCalibri13FontBold"> PREV SILVER ADVANCE :</div>
+                            <?php } ?>
+                        </td>
+                        <td align="right" width="10%">
+                            <div style="color: <?php
+                            if ($utin_prev_sl_CRDR == 'CR') {
+                                echo "green";
+                            } else {
+                                echo "red";
+                            }
+                            ?>;" class="blackCalibri13Font paddingRight2"><?php echo decimalVal($utin_sl_prev_wt, 3) . ' ' . $utin_sl_prev_wt_typ . " " . $utin_prev_sl_CRDR; ?></div>
+                        </td>
+                    <?php } ?>
+                </tr>
+                <?php if ($utin_payment_mode == 'RateCut') { ?>
+                    <tr>
+   
+                        <?php if ($totalGdRtCt != '' && $totalGdRtCt != 0) { ?>
+                            <td align="right" width="20%">
+                                <div class="blackCalibri13FontBold">GOLD RT CUT :</div>
+                            </td>
+                            <td align="right" width="15%">
+                                <div class="blackCalibri13Font">
+                                    <?php echo (decimalVal($totalGdRtCt, 3) . ' ' . $goldTotFFineWtType); ?>
+                                </div>
+                            </td>
+                        <?php } if ($totalSlRtCt != '' && $totalSlRtCt != 0) { ?>
+                            <td align="right" width="20%">
+                                <div class="blackCalibri13FontBold ">SILVER RT CUT :</div>
+                            </td>
+                            <td align="right" width="10%">
+                                <div class="blackCalibri13Font paddingRight2">
+                                    <?php echo (decimalVal($totalSlRtCt, 3) . ' ' . $silverTotFFineWtType); ?>
+                                </div>
+                            </td>
+                        <?php } ?>
+                    </tr>
+                <?php } ?>
+
+
+                <tr>
+                    <td align="right" class="paddingTop5">                      
+                    </td>
+                    <td colspan="3" class="paddingTop5">
+                    </td>
+                </tr>
+
+                <tr>
+                    <?php
+                    if (($totFinGdWt != '' && $totFinGdWt != 0) ||
+                            ($totalGdRtCt != '' && $totalGdRtCt != 0) ||
+                            ($totalGdPaid != '' && $totalGdPaid != 0) ||
+                            ($utin_gd_ffn_wt != '' && $utin_gd_ffn_wt != 0)) {
+                        ?>
+                        <td align="right" width="20%">
+                            <?php if ($utin_gd_due_wt < 0) { ?>
+                                <div class="blackCalibri13FontBold">GD DEPOSIT :</div> <?php
+                } else {
+                                ?>
+                                <div class="blackCalibri13FontBold">GD BALANCE :</div> <?php
+                }
+                ?>
+                        </td>
+                        <td align="right" width="15%">
+                            <div class="blackCalibri13Font"><?php echo (decimalVal(abs($utin_gd_due_wt), 3) . ' ' . $utin_gd_due_wt_typ); ?>
+                            </div>
+                        </td>
+                        <?php } if (($totFinSlWt != '' && $totFinSlWt != 0) || ($totalSlRtCt != '' && $totalSlRtCt != 0) || ($totalSlPaid != '' && $totalSlPaid != 0) || ($utin_sl_ffn_wt != '' && $utin_sl_ffn_wt != 0)) { ?>
+                        <td align="right" width="20%">
+                            <?php if ($utin_sl_due_wt < 0) { ?> 
+                                <div class="blackCalibri13FontBold">SL DEPOSIT :</div>
+                            <?php } else { ?>
+                                <div class="blackCalibri13FontBold">SL BALANCE :</div> <?php }
+                ?>
+                        </td>
+                        <td align="right" width="10%">
+                            <div class="blackCalibri13Font paddingRight2"><?php echo (decimalVal($utin_sl_due_wt, 3) . ' ' . $utin_sl_due_wt_typ); ?></div>
+                        </td>
+    <?php } ?>
+                </tr>
+                <tr>
+                    <td align="right" class="paddingTop5">
+                        <div style="width:116px"></div>
+                    </td>
+                    <td colspan="3" class="paddingTop5">
+                        <div></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="paddingTop5">
+                        &nbsp;
+                    </td>
+                </tr>
+<?php } ?>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5 ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'TAXABLE AMOUNT'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial">
+                    <div class="paddingRight2">
+                        <?php echo formatInIndianStyle(($utin_pay_tax_tot_amt)); ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5 ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'CGST'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial">
+                    <div class="paddingRight2">
+                        <?php echo $utin_pay_cgst_amt; ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5  ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'SGST'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial">
+                    <div class="paddingRight2">
+                        <?php echo $utin_pay_sgst_amt; ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<?php if($utin_pay_igst_amt > 0) { ?>
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5 ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'IGST'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial ">
+                    <div class="paddingRight2">
+                        <?php echo formatInIndianStyle(($utin_pay_igst_amt)); ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<?php } ?>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5  border-color-grey-top border-color-grey-bottom  ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'FINAL AMOUNT'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial border-color-grey-top border-color-grey-bottom">
+                    <div class="paddingRight2">
+                        <?php echo formatInIndianStyle(om_round($utin_tot_payable_amt)); ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial"> 
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5 border-color-grey-bottom  ff_calibri fw_b font_color_black" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'CASH PAID'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial border-color-grey-bottom ">
+                    <div class="greenFont paddingRight2">
+                        <?php echo formatInIndianStyle(om_round($utin_cash_amt_rec)); ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="<?php echo $colspan; ?>">
+        <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+            <tr>
+                <td align="right" width="670px" class="itemAddPnLabels12Arial">
+                    <div  class="paddingRight5  ff_calibri fw_b font_color_black border-color-grey-bottom" style="width:120px;font-size:12px" onClick="this.contentEditable = 'true';">
+                        <?php echo 'TOTAL REC. AMOUNT'; ?> : 
+                    </div>
+                </td>
+                <td align="right" class="itemAddPnLabels12Arial border-color-grey-bottom">
+                    <div class="greenFont paddingRight2">
+                        <?php echo formatInIndianStyle(om_round($utin_cash_amt_rec)); ?>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+        <td colspan="<?php echo $colspan; ?>">
+            <table border="0" cellpadding="0" width="100%" cellspacing="0" class="margin2pxAll">
+                    <tr >
+                        <td align="left" class="">
+                            &nbsp;
+                        </td>
+
+                        <td align="right" class="itemAddPnLabels12Arial font_color_black" style="font-size:14px">
+                            <table border="0" cellpadding="0" width="<?php echo $finalamtwidth; ?>" cellspacing="0" >
+                                <tr>
+                                    <td width="50%" align="right" class="border-color-grey-top  " >
+                                        <?php
+                                        if ($utin_cash_balance >= 0) {
+                                            $class = 'redFont';
+                                            $label = 'AMT BALANCE :';
+                                        } else {
+                                            $class = 'greenFont';
+                                            $label = 'AMT DEPOSIT :';
+                                        }
+                                        ?>
+                                        <div class="<?php echo $class; ?>  ff_calibri fw_b font_color_black" onClick="this.contentEditable = 'true';" style="font-size:18px;">
+                                            <span class="spaceRight5  ff_calibri font_color_black" onClick="this.contentEditable = 'true';"><?php echo $label; ?>
+                                                <span class="ff_calibri fw_b font_color_black" onClick="this.contentEditable = 'true';">
+                                                    <?php
+                                                        echo om_round(abs($utin_cash_balance), 2);
+                                                    ?>
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+
+                    <tr>
+                        <td align="left"  class="border-color-grey-bottom border-color-grey-top itemAddPnLabels12Arial font_color_black" style="font-size:14px">
+                            <?php echo "PAYABLE AMOUNT"; ?> :
+                        </td>
+                        <td align="left" class="border-color-grey-bottom border-color-grey-top itemAddPnLabels12Arial">
+                            <?php
+                                echo "$globalCurrency" . ' ' . ucwords(numToWords((abs($utin_tot_payable_amt)))) . ' Only/-';
+                            ?>
+
+                        </td>
+                    </tr>
+                    <br>               
+            </table>
+        </td>
+    </tr>

@@ -1,3 +1,518 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php /**
+ * 
+ * Created on Jul 26, 2011 11:57:06 AM
+ *
+ * @FileName: omtutrnd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<?php
+//
+//
+//CHANGES IN FILE @AUTHOR: SANDY27JAN14
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+include 'ommpfndv.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+// print_r($array);
+require_once 'system/omssopin.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$transactionId = $_GET['transId'];
+$preVch = $_GET['preVch'];
+$firmVch = $_GET['firmVch'];
+$postVch = $_GET['postVch'];
+$subPanelName = $_REQUEST['subPanelName'];
+
+$transMainId = $_GET['transId']; //@AUTHOR: SANDY25JAN14
+if ($transMainId == '' || $transMainId == NULL) { //ADD CONDITION @AUTHOR: SANDY25JAN14 
+    $qSelVoucherNoDetails = "SELECT * FROM transaction where transaction_own_id='$sessionOwnerId' and transaction_pre_vch_id='$preVch' and transaction_pre_vch_firm_id='$firmVch' and transaction_post_vch_id='$postVch'";
+} else {
+    $qSelVoucherNoDetails = "SELECT * FROM transaction where transaction_own_id='$sessionOwnerId' and transaction_id='$transMainId'";
+}
+//echo '$qSelVoucherNoDetails=='.$qSelVoucherNoDetails.'<br>';
+$resVoucherNoDetails = mysqli_query($conn, $qSelVoucherNoDetails) or die(mysqli_error($conn));
+$rowVoucherNoDetails = mysqli_fetch_array($resVoucherNoDetails);
+$transId = $rowVoucherNoDetails['transaction_id'];
+$transaction_user_id = $rowVoucherNoDetails['transaction_user_id'];
+if ($subPanelName == '' && $transaction_user_id != '' & $transaction_user_id != NULL) {
+    $subPanelName = 'updateWithUserId';
+}
 ?>
+<!--<div id="mainMiddle">
+    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <tr>
+            <td align="left" colspan="2">
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td valign="middle" align="left" width="34px">
+                            <div class="analysis_div_rows">
+<?php if ($selFirmId != NULL) { ?> 
+                                                                                                        <img src = "images/transactions32.png" onload = "document.getElementById('transAmt').focus();"
+                                                                                                             alt = "Daily Transactions" />
+<?php } else {
+    ?>
+                                                                                                        <img src="<?php echo $documentRoot; ?>/images/transactions32.png" onload="document.getElementById('DOBDay').focus();"
+                                                                                                             alt="Daily Transactions" />
+<?php } ?>
+                            </div>
+                        </td>
+                        <td valign="middle" align="left" width="250px">
+                            <div class="analysis_div_rows textLabelHeading">
+                                TRANSACTION PANEL
+                            </div>
+                        </td>
+                        <td align="center">
+<?php
+$showTransactionAddedDiv = $_GET['divMainMiddlePanel'];
+if ($showTransactionAddedDiv == "TransactionAdded") {
+    include 'omzaaamg.php';
+} else if ($showTransactionAddedDiv == "TransactionUpdated") {
+    include 'omzaaumg.php';
+} else if ($showTransactionAddedDiv == "TransactionDeleted") {
+    include 'omzaadmg.php';
+}
+?>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" colspan="2">
+                <hr color="#B8860B" />
+            </td>
+        </tr>
+    </table>
+    <div id="addUpdateTransactionDiv">-->
+<table border="0" cellspacing="2" cellpadding="2" width="100%" style="background: #e9f7f5;border: 1px dashed #0079c2;padding-bottom: 8px;">
+    <tr>
+        <td colspan="6">
+            <table  border="0" cellspacing="2" cellpadding="2" >
+                <tr>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown" width="190px">
+                        <input type="hidden" id="transId" name="transId" value="<?php echo $transactionId; ?>" />
+                        <input type="hidden" id="subPanelName" name="subPanelName" value="<?php echo $subPanelName; ?>" />
+                        <b> DATE</b>
+                    </td>
+                        <td class="textBoxCurve1px backFFFFFF margin1pxAll" width="190px">
+                        <?php
+                        //
+                        // **********************************************************************************
+                        // START CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                        // **********************************************************************************
+                        //
+                        $selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+                        $resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+                        $rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+                        $nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+                        //
+                        // ********************************************************************************
+                        // END CODE TO GET VALUE OF NEPALI DATE INDICATOR OPTION @AUTHOR:MADHUREE-01DEC2021
+                        // ********************************************************************************
+                        //
+                        if ($nepaliDateIndicator == 'YES') {
+                            $tableAlignStyle = 'center';
+                            $nepaliDatePanel = 'expensePanel';
+                            $selDayId = $selDayName = 'DOBDay';
+                            $selDayStyle = 'width:35px;height:26px;';
+                            $selMonthId = $selMonthName = 'DOBMonth';
+                            $selMonthStyle = 'width:55px;height:26px;';
+                            $selYearId = $selYearName = 'DOBYear';
+                            $selYearStyle = 'width:55px;height:26px;';
+                            $date_nepali = $rowVoucherNoDetails['transaction_other_lang_DOB'];
+                            include $_SESSION['documentRootIncludePhp'] . 'nepal/omNepaliDate.php';
+                            ?>
+                            <input type="hidden" id="jrnlId" name="jrnlId" value="<?php echo $rowVoucherNoDetails['transaction_jrnl_id']; ?>" /><!---To pass jrnl id @AUTHOR: SANDY15JAN14 ----> 
+                            <?php
+                        } else {
+                            $selDOBDay = substr($rowVoucherNoDetails['transaction_DOB'], 0, 2);
+                            $selDOBMnth = substr($rowVoucherNoDetails['transaction_DOB'], 3, -5);
+                            $selDOBYear = substr($rowVoucherNoDetails['transaction_DOB'], -4);
+                            ?>
+                            <!-- *************** Start Code for dayDD *************** -->
+                            <?php
+                            $todayDay = $selDOBDay - 1;
+                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                            $optDay[$todayDay] = "selected";
+                            ?> 
+                            <div  class="selectStyledBorderLess backFFFFFF floatLeft" width="30%">
+                                <select id="DOBDay" name="DOBDay" 
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                        document.getElementById('DOBMonth').focus();
+                                                        return false;
+                                                    } else if (event.keyCode == 8) {
+                                                        return false;
+                                                    }"
+                                        class="textLabel14CalibriGrey" style="width:100%;height:30px">
+                                    <option value="NotSelected">DAY</option>
+                                    <?php
+                                    for ($dd = 0; $dd <= 30; $dd++) {
+                                        echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                    }
+                                    ?>
+                                </select> 
+                            </div>
+
+                            <!-- *************** Start Code for Month *************** -->
+                            <?php
+                            $todayMM = date('m', strtotime($selDOBMnth)) - 1;
+                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                            $optMonth[$todayMM] = "selected";
+                            ?> 
+                            <input type="hidden" id="jrnlId" name="jrnlId" value="<?php echo $rowVoucherNoDetails['transaction_jrnl_id']; ?>" /><!---To pass jrnl id @AUTHOR: SANDY15JAN14 ----> 
+                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                            <div  class="selectStyledBorderLess backFFFFFF floatLeft" style="width:30%">
+                                <select id="DOBMonth" name="DOBMonth" class="textLabel14CalibriGrey"
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                        document.getElementById('DOBYear').focus();
+                                                        return false;
+                                                    } else if (event.keyCode == 8) {
+                                                        document.getElementById('reportEntryDayDD').focus();
+                                                        return false;
+                                                    }
+                                                    //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                    var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                    gbMonth = document.getElementById('gbMonthId').value;
+                                                    if (gbMonth == 1) {
+                                                        if (event.keyCode) {
+                                                            var sel = String.fromCharCode(event.keyCode);
+                                                            if (sel == 0)
+                                                            {
+                                                                this.value = arrMonths[9];
+                                                            } else if (sel == 1)
+                                                            {
+                                                                this.value = arrMonths[10];
+                                                            } else if (sel == 2)
+                                                            {
+                                                                this.value = arrMonths[11];
+                                                            }
+                                                            // this.value = arrMonths[10];
+                                                            document.getElementById('gbMonthId').value = 0;
+                                                        }
+                                                    } else if (event.keyCode) {
+                                                        var sel = String.fromCharCode(event.keyCode) - 1;
+                                                        this.value = arrMonths[sel];
+                                                        if (event.keyCode == 49) {
+                                                            document.getElementById('gbMonthId').value = 1;
+                                                        }//END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                    }" style="width:100%;height:30px">
+
+                                    <option value="NotSelected">MONTH</option>
+                                    <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+$queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+$engmonformat = mysqli_query($conn, $queryengmonformat);
+$rowengmonformat = mysqli_fetch_array($engmonformat);
+$englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                    if ($englishMonthFormat == 'displayinnumber') {
+                                        $engMonth = date('m', strtotime($arrMonths[$mm]));
+                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+                                    } else {
+                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+        }                   
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                }
+                                    ?>
+                                </select>
+                            </div>
+
+                            <!-- *************** Start Code for Year *************** -->
+                            <?php
+                            $todayYear = date(Y); //changed @Author:PRIYA30APR14
+                            $optYear[$selDOBYear] = "selected";
+                            ?> 
+                            <div  class="selectStyledBorderLess backFFFFFF floatLeft" style="width:40%">
+                                <select id="DOBYear" name="DOBYear" 
+                                        onkeydown="javascript: if (event.keyCode == 13) {
+                                                        document.getElementById('transFirmId').focus();
+                                                        return false;
+                                                    } else if (event.keyCode == 8) {
+                                                        document.getElementById('DOBMonth').focus();
+                                                        return false;
+                                                    }"
+                                        class="textLabel14CalibriGrey" style="width:100%;height:30px">
+                                    <option value="NotSelected">YEAR</option>
+                                    <?php
+                                    for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                        echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+                        <?php } ?>
+                    </td>
+                </tr>
+             
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table width="100%" align="center" cellspacing="0" cellpadding="1" style="border:1px solid #c1c1c1;background:#fff;">
+                <tr  style="background: #FFE34F;">     
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> FIRM</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b>VOUCHER NO</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> AMOUNT</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> TO&nbsp;&nbsp;(DR+)</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> FROM&nbsp;&nbsp;(CR-)</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> TYPE</b>
+                    </td>
+                    <td align="center" valign="middle" class="textLabel12CalibriBrown">
+                        <b> SUBJECT</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="left"  width="90px">
+                        <div id="selectFirmDiv" class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;">
+                            <?php
+                            $prevFieldId = 'transPreVoucherNo'; //
+                            $nextFieldId = 'transAmt';
+                            $nextReqFieldId = 'transAmt';
+                            $firmIdName = 'transFirmId';
+                            $firmDivClass = 'textLabel14CalibriReq';
+                            $panelName = 'AddNewTrans';
+                            $firmIdSelected = $rowVoucherNoDetails['transaction_firm_id'];
+                            if (!$firmIdSelected) {
+                                $firmIdSelected = $_SESSION['setFirmSession'];
+                            }
+                            include 'omffrafr.php';
+                            ?>                                                                
+                        </div>
+                    </td>
+                    <td align="left"  width="50px">
+                        <div id="transVoucherNoDiv">
+                            <table border="0" cellpadding="0" cellspacing="0" >
+                                <tr>
+                                    <td>
+                                        <input id="transPreVoucherNo" name="transPreVoucherNo" type="text" placeholder="VCH" value="<?php echo $rowVoucherNoDetails['transaction_pre_vch_id']; ?>"
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                               document.getElementById('transPostVoucherNo').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('DOBYear').focus();
+                                               return false;
+                                           }"
+                                               spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" readonly="true" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;"/> 
+
+                                        <input id="transFirmVoucherNo" name="transFirmVoucherNo" type="hidden" readonly="true" placeholder="-" value="<?php echo $rowVoucherNoDetails['transaction_pre_vch_firm_id']; ?>"
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                               document.getElementById('transPostVoucherNo').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('transPreVoucherNo').focus();
+                                               return false;
+                                           }"
+                                               spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="4" maxlength="3" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;"/>
+                                    </td>
+                                    <td align="left"  class="inputBox14CalibriReqCenter">
+                                        &minus;
+                                    </td>
+                                    <td>
+                                        <input id="transPostVoucherNo" name="transPostVoucherNo" type="text" placeholder="Voucher No" value="<?php echo $rowVoucherNoDetails['transaction_post_vch_id']; ?>"
+                                               onkeydown="javascript: if (event.keyCode == 13) {
+                                               document.getElementById('transFirmId').focus();
+                                               return false;
+                                           } else if (event.keyCode == 8 && this.value == '') {
+                                               document.getElementById('transPreVoucherNo').focus();
+                                               return false;
+                                           }"
+                                               spellcheck="false" class="border-no inputBox14CalibriReqCenter  backFFFFFF" size="5" maxlength="16" readonly="true" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td align="left"  style="width:50px;">
+                        <input id="transAmt"
+                               name="transAmt" spellcheck="false" type="text" value="<?php echo number_format($rowVoucherNoDetails['transaction_amt'], 2, '.', ''); ?>"
+                               onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transFromAcc').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transFirmId').focus();
+                               return false;
+                           }"
+                               spellcheck="false" class="border-no inputBox14CalibriReqCenter text_right" size="15" maxlength="20" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;"/>
+                    </td>
+                    <td align="left"  width="170px" >
+                        <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;">
+                            <?php
+                            $prevFieldId = 'transAmt';
+                            $nextFieldId = 'transFromAcc';
+                            $allAccountDivId = 'transToAcc';
+                            $accIdSelected = $rowVoucherNoDetails['transaction_to_dr_acc_id'];
+                            $accNameSelected = '';
+                            $allAccountDivClass = 'textLabel14CalibriReq';
+                            $firmIdSelected = $rowVoucherNoDetails['transaction_firm_id']; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                            include 'omacpalt.php';
+                            ?>
+                        </div>
+                    </td>
+                    <td align="left"  width="170px" >
+                        <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;">
+                            <?php
+                            $prevFieldId = 'transToAcc';
+                            $nextFieldId = 'transactionCategory';
+                            $allAccountDivId = 'transFromAcc';
+                            $accIdSelected = $rowVoucherNoDetails['transaction_from_cr_acc_id'];
+                            $accNameSelected = '';
+                            $allAccountDivClass = 'textLabel14CalibriReq';
+                            $firmIdSelected = $rowVoucherNoDetails['transaction_firm_id']; //@ADD CLASS NAME @AUTHOR:PRIYA31
+                            include 'omacpalt.php';
+                            ?>
+                        </div>
+                    </td>
+                    <td align="left"  width="40px" >
+                        <?php
+                        $selType = $rowVoucherNoDetails['transaction_cat'];
+                        $transactionCat = $selType;
+                        switch ($selType) {
+                            case "Business":
+                                $option1 = "selected";
+                                break;
+                            case "Personal":
+                                $option2 = "selected";
+                                break;
+                            case "Other":
+                                $option3 = "selected";
+                                break;
+                        }
+                        ?>
+                        <div class="selectStyledBorderLess backFFFFFF floatLeft" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;">
+                            <SELECT class="textLabel14CalibriReq" id="transactionCategory" name="transactionCategory"
+                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                    document.getElementById('transactionDesc').focus();
+                                    return false;
+                                } else if (event.keyCode == 8 && this.value == '') {
+                                    document.getElementById('transSub').focus();
+                                    return false;
+                                }"
+                                    spellcheck="false">
+                                <OPTION value="NotSelected">Category</OPTION>
+                                <OPTION value="Business" <?php echo $option1; ?>>BT</OPTION>
+                                <OPTION value="Personal" <?php echo $option2; ?>>PT</OPTION>
+                                <OPTION value="Other" <?php echo $option3; ?>>OT</OPTION>
+                            </SELECT>
+                        </div>
+                    </td>
+                    <td style="width:120px;">
+                        <input id="transSub"
+                               name="transSub" spellcheck="false" type="text" value="<?php echo $rowVoucherNoDetails['transaction_sub']; ?>"
+                               onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('transSubButt').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('transactionCategory').focus();
+                               return false;
+                           }"
+                               spellcheck="false" class="border-no inputBox14CalibriReqCenter" size="20" maxlength="50" style="width:100%;height:30px;border:1px solid #c1c1c1;border-radius:3px;"/>
+                    </td>
+                </tr>
+    </tr>   
+</table>
+</td>
+
+    <tr>
+        <?php
+        ?>
+        <td colspan="7" align="center">
+            <?php
+//            echo '$staffId : ' . $staffId . '<br>';
+//            echo '$array[updateTransactionAccess] : ' . $array['updateTransactionAccess'] . '<br>';
+            if ($staffId == '' || (($staffId && $array['updateTransactionAccess'] == 'true') && ($staffId != '' && $array['updateTransactionForAllPanel'] == 'true'))) {
+                ?>
+                <input id="transSubButt" type="submit" value="Update" class="frm-btn"
+                       onclick="javascript:updateTransaction(document.getElementById('update_transaction'));"
+                       maxlength="30" size="15" style="text-transform:uppercase;"/>
+                   <?php } ?>
+            <!------------Start code to add param @Author:PRIYA01JUL14------------>
+
+            <?php
+//            echo '$staffId : ' . $staffId . '<br>';
+//            echo '$array[deleteTransactionAccess] : ' . $array['deleteTransactionAccess'] . '<br>';
+            if ($staffId == '' || (($staffId && $array['deleteTransactionAccess'] == 'true') && ($staffId != '' && $array['deleteTransactionForAllPanel'] == 'true'))) {
+                ?>
+
+                <input id = "deleteTransactionButt" type = "submit" value = "Delete" class = "frm-btn"
+                       onclick = "javascript:deleteTransaction('<?php echo $transactionCat; ?>',<?php echo $transId; ?>,
+                                           '<?php echo $rowVoucherNoDetails['transaction_jrnl_id']; ?>', '<?php echo $rowVoucherNoDetails['transaction_pre_vch_id'] . $rowVoucherNoDetails['transaction_post_vch_id']; ?>', '<?php echo $rowVoucherNoDetails['transaction_amt']; ?>',
+                                           '<?php echo $rowVoucherNoDetails['transaction_DOB']; ?>', '<?php echo $rowVoucherNoDetails['transaction_firm_id']; ?>', '<?php echo $rowVoucherNoDetails['transaction_sub']; ?>');"
+                       maxlength = "30" size = "15" style="text-transform:uppercase;background: #fdd;color: #df0707;border: 1px solid #ffadad;"/>
+                   <?php } ?>
+            <!------------End code to add param @Author:PRIYA01JUL14------------>
+        </td>
+
+    </tr>
+</table>
+<!--    </div>
+    <hr color="#FD9A00" size="0.1px" />
+    <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td colspan="2" align="center">
+                <div id="ajaxLoadNavigateTransactionList" style="visibility: hidden">
+<?php include 'omzaajld.php'; ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="transactionListDiv">
+<?php //include 'omttlisd.php';        ?>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><br />
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2" class="noPrint">
+                <a style="cursor: pointer;" 
+                   onclick="printPageDiv('transactionListDiv', '')">Start code to pass param @Author:PRIYA06FEB14
+                    <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                         width="32px" height="32px" /> 
+                </a> 
+            </td>
+        </tr>
+    </table>
+</div>-->

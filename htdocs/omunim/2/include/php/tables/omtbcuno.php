@@ -1,3 +1,196 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Customized notice table
+ * **************************************************************************************
+ * 
+ * Created on May 13, 2014 6:12:53 PM
+ *
+ * @FileName: omtbcuno.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessionOwnerId'];
+}
+
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+
+$query = "CREATE TABLE IF NOT EXISTS customized_notice (
+cuno_id                          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+cuno_own_id                      VARCHAR(50),
+cuno_border_check                VARCHAR(6), 
+cuno_type                        VARCHAR(30),
+cuno_default_type                VARCHAR(30),
+cuno_form_size                   VARCHAR(20),
+cuno_default_size                VARCHAR(20),
+cuno_notice_width                VARCHAR(6),
+cuno_notice_height               VARCHAR(6),
+cuno_notice_font                 VARCHAR(20),
+cuno_notice_color                VARCHAR(30),
+cuno_notice_cont                 VARCHAR(5000),
+cuno_since                       DATETIME,
+cuno_def_lang                    VARCHAR(20),
+cuno_lang                        VARCHAR(20),
+cuno_top_margin                  VARCHAR(6),  
+cuno_left_margin                 VARCHAR(6),
+cuno_staff_id                  	 VARCHAR(16),
+last_column                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+
+
+// *******************************************************************************************************************************************
+// START CODE TO UPDATE ALL TABLES AND DATABASE INTO UTF8 @LOVE-05SEP18
+// *******************************************************************************************************************************************
+//
+//$conn = mysqli_connect($dbhost, 'root', 'omrolrsr', $dbname, $dbPort) or die('Error connecting to mysql');
+//$db_selected = mysqli_select_db($conn, $dbname);
+//
+//if (!$db_selected) {
+//    die("Can\'t use test_db : " . mysqli_error($conn));
+//}
+// Alter DataBase
+$alterQuery = "ALTER DATABASE $dbname CHARACTER SET utf8 COLLATE utf8_general_ci";
+if ($dbname != '') {
+    mysqli_query($conn, $alterQuery) or die('Table:' . $tableName[0] . '<br/>Error:' . mysqli_error($conn));
+}
+// Alter item_name Table reduce the column size due to key size error
+// Error - Specified key was too long; max key length is 1000 bytes
+$alterQuery = "ALTER TABLE item_name MODIFY COLUMN itm_nm_name VARCHAR(250)";
+mysqli_query($conn, $alterQuery) or die('Table:' . $tableName[0] . '<br/>Error:' . mysqli_error($conn));
+//
+// Alter All Tables
+$resTableName = mysqli_query($conn, "show tables") or die(mysqli_error($conn));
+//
+while ($tableName = mysqli_fetch_array($resTableName)) {
+    //
+    $alterQuery = "ALTER TABLE $tableName[0] CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci";
+    if ($tableName[0] != '') {
+        mysqli_query($conn, $alterQuery) or die('Table:' . $tableName[0] . '<br/>Error:' . mysqli_error($conn));
+    }
+}
+//
+//Start Code to Setup table for ENG Lang
+$content = '**********************   ओमुनीम न्यायालय के अंतरगर्त  **********************
+सिर्फ़ छ: माह के लिए                                                                             Loan No. SNO
+
+आज दि.  DDMMYYYY को                                         (मोबा  न.  CUSTMOBNO) 
+------------------------------------------------------------------------------------------------------------------
+     मैं CUSTNAME  आत्मज् / पत्नी श्री CUSTCONAME  निवासी ग्राम CUSTCITY  से FIRMNAME के यहा अपना जेवर सोना / चांदी का नाम जेवर ITEMNAME. 
+अनुमानित शुद्धता PURITY  वजन लगभग WEIGHT  को गिरवी रखकर 
+अंको मे रुपया TOTALAMOUNT अक्षरो मे रुपया AMOUNTINWORDS कर्ज़ लिया है| 
+     यह जेवर पूरी तरह चोखा नही है बल्कि बट्टे वाला है| इस पर INTERESTRATE रुपया सैकड़ा माहवार के हिसाब से व्याज देनदार रहूँगा| साथ ही मैं यह वचन देता हूँ कि गिरवी रखी हुई वस्तु में छ: माह के अंदर मूलधन तथा व्याज की राशी चुकाकर छुड़ा लूँगा अथवा फिर से यह करारनामा लिखूंगा या पुन: हस्ताक्षर करूँगा अन्यथा FIRMNAME को अधिकार होगा कि मुझे नोटीस दिए बिना जेवर बेच डाले| मैं कोई आप्पति करने को अधिकारी नही रहूँगा| 
+     मैं यह घोषित करता हूँ कि यह जेवेर मेरा ही है| मुझे इस करारनामे की दोनो तरफ छपी, मेरे द्वारा स्वीकृत एक प्रति प्राप्त हुई है|
+
+
+गवाह          जेवर गिरवी रखकर रकम पाने वाले के हस्ताक्षर या  बाए हाथ का अंगूठे का निशान
+1
+2
+
+असल रकम                 व्याज रकम                  दिनांक            जेवर वापिस पाने वाले के हस्ताक्षर
+TOTALAMOUNT                 TOTALINTEREST            RELDATE        ';
+
+
+
+//Start Code to Add Indemnity Bond Content in Customized Notice Author:DIKSHA 27FEB2019
+//
+$contentIndemnityBond = '************************ Indemnity Bond ***************************
+
+To
+  THE PROPERITOR
+  VARDHAMAN BANKERS
+  HESARAGHATTA
+  BANGALOORU-88
+
+Dear Sir
+
+    I CUSTNAME S/W/D/O CUSTCONAME aged about CUSTAGE years, residing at CUSTADDRESS
+    am the pawner of Pawn ticket no. SNO The said pawn ticket is lost misplaced/destroyed 
+and hence untraceable. The said pawn ticket is not accompanied by any transfer deed signed by me and I have not nor any person by my order in any manner disposed off, parted with or pledged the said pawn ticket or assigned our interest there in or any part there of to any person. I am the sole and 
+
+absolute owner of following items         Pledged vide pawn ticket no      SNO
+
+                                SNO             ITEMNAME             WEIGHT
+                        
+and the purpose of redemption on referring to the pawn broker and explaining my inability to go through the legal procedures of declaration in Form D I hereby make this affidavit and hereby under take to indemnify the pawn broker against all procedings,
+claims,expenses and liabilities what so ever which may be taken or made against or incurred by the pawn broker by reason of the issue of such pawned articles
+
+Date : TODAYDATE
+
+BANGALOORU - 88
+
+(wittness)';
+//
+//End Code to Add Indemnity Bond Content in Customized Notice Author:DIKSHA 27FEB2019
+//Start To protect MySQL injection
+$content = mysqli_real_escape_string($conn, stripslashes($content));
+$contentIndemnityBond = mysqli_real_escape_string($conn, stripslashes($contentIndemnityBond));    //for Indemnity Bond Author:DIKSHA 27FEB2019
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qformSevenSetupDetails = "SELECT * FROM customized_notice WHERE cuno_type = 'agreement'";
+$resformSevenSetupDetails = mysqli_query($conn, $qformSevenSetupDetails) or die(mysqli_error($conn));
+$totalFormSevenSetupDetails = mysqli_num_rows($resformSevenSetupDetails);
+if ($totalFormSevenSetupDetails <= 0) {
+    $qInsertCustomNotice = "INSERT INTO customized_notice(    
+            cuno_own_id, cuno_type, cuno_default_type,cuno_form_size,cuno_notice_width,cuno_notice_height,cuno_notice_font,cuno_notice_color,cuno_notice_cont)
+           VALUES('$ownerId', 'agreement', 'agreement','custmNoticeLayA5','135','100','14','black','$content')";
+
+    if (!mysqli_query($conn, $qInsertCustomNotice)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
+// ======================================================================================================= //
+// START CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ======================================================================================================= //
+//
+$qformSevenSetupDetails = "SELECT * FROM customized_notice WHERE cuno_type = 'indemnityBond'";
+$resformSevenSetupDetails = mysqli_query($conn, $qformSevenSetupDetails) or die(mysqli_error($conn));
+$totalFormSevenSetupDetails = mysqli_num_rows($resformSevenSetupDetails);
+if ($totalFormSevenSetupDetails <= 0) {
+    $qInsertCustomNotice = "INSERT INTO customized_notice(    
+            cuno_own_id, cuno_type, cuno_default_type,cuno_form_size,cuno_notice_width,cuno_notice_height,cuno_notice_font,cuno_notice_color,cuno_notice_cont)
+           VALUES ('$ownerId', 'indemnityBond', 'indemnityBond','custmNoticeLayA5','135','100','14','black','$contentIndemnityBond')";
+
+    if (!mysqli_query($conn, $qInsertCustomNotice)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
+//
+// ===================================================================================================== //
+// END CODE TO ADD CONDITION FOR INSERTING ENTRY ONLY IF ENTRY IS NOT PRESENT @AUTHOR:MADHUREE-11NOV2020 //
+// ===================================================================================================== //
+//
 ?>

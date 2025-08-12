@@ -1,3 +1,139 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: customized scheme EMi form ad @SIMRAN:25APR2023
+ * **************************************************************************************
+ * 
+ * Created on 19 SEP 16
+ *
+ * @FileName: omschemefoad.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+?>
+<?php
+
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$panel = mysqli_real_escape_string($conn, stripslashes($_REQUEST['panel']));
+//print_r($_REQUEST);
+//
+if ($panel == 'CustomizedSchemeFormPanel') {
+    $count = mysqli_real_escape_string($conn, stripslashes(trim($_GET['count'])));
+    $fieldName = mysqli_real_escape_string($conn, stripslashes($_GET['fieldName']));
+    $fieldValue = mysqli_real_escape_string($conn, stripslashes($_GET['fieldValue']));
+    $fieldFont = mysqli_real_escape_string($conn, stripslashes($_GET['fontSize']));
+    $fieldColor = mysqli_real_escape_string($conn, stripslashes($_GET['fontColor']));
+    $fontWeight = mysqli_real_escape_string($conn, stripslashes($_GET['fontWeight'])); // // YUVRAJ ADD IN $query THIS COLOM FONT WEIGHT @09082022
+    $fieldCheck = mysqli_real_escape_string($conn, stripslashes($_GET['fieldCheck']));
+    $labelType = mysqli_real_escape_string($conn, stripslashes($_GET['labelType']));
+} else {
+    $count = mysqli_real_escape_string($conn, stripslashes(trim($_POST['count'])));
+    $labelType = mysqli_real_escape_string($conn, stripslashes(trim($_POST['labelType'])));
+    $fieldName = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fieldName'])));
+    $fieldValue = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fieldValue' . $count])));
+    $fieldFont = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fontSize' . $count])));
+    $fieldColor = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fontColor' . $count])));
+    $fontWeight = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fontWeight' . $count])));
+    $fieldCheck = mysqli_real_escape_string($conn, stripslashes(trim($_POST['fontCheckId' . $count])));
+}
+//echo 'asdasd=='.$fieldCheck;
+//
+parse_str(getTableValues("SELECT label_field_name FROM labels WHERE label_own_id = '$sessionOwnerId' and "
+                . "label_field_name = '$fieldName' and label_type = '$labelType'"));
+//
+if ($label_field_name == '' || $label_field_name == NULL) {
+    //
+    $query = "INSERT INTO labels(label_own_id, label_type, label_field_name, label_field_content,
+                                 label_field_font_size,label_field_font_color,label_field_font_weight,label_field_check)
+                         VALUES('$sessionOwnerId','$labelType','$fieldName','$fieldValue',"
+            . "'$fieldFont','$fieldColor','$fontWeight','$fieldCheck')";
+    //
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //
+    // START CODE TO UPDATE ALL FIELD FONT SIZE IF WE SET ALL FONT SIZE FROM CUSTOMIZATION PANEL FOR RETAIL SOFTWARE @AUTHOR:MADHUREE-26JAN2020
+    //
+    if ($fieldName == 'fontSizeValue' && $_SESSION['sessionProdName'] == 'OMRETL') {
+        $queryUpdateAllFontSize = "UPDATE labels SET label_field_font_size = '$fieldValue'"
+                . " WHERE label_own_id = '$sessionOwnerId' and label_type = '$labelType'";
+        //
+        if (!mysqli_query($conn, $queryUpdateAllFontSize)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //
+    // END CODE TO UPDATE ALL FIELD FONT SIZE IF WE SET ALL FONT SIZE FROM CUSTOMIZATION PANEL FOR RETAIL SOFTWARE @AUTHOR:MADHUREE-26JAN2020
+    //
+} else {
+    //
+    if ($fieldValue == '' || $fieldValue == NULL) {
+        if ($label_field_name == 'authschemeSignLb') {
+            $fieldValue = 'Authorized Signatory';
+        } else if ($label_field_name == 'tncschemeLb') {
+            $fieldValue = 'Terms and Conditions';
+        }
+    }
+    //
+    $query = "UPDATE labels SET label_own_id = '$sessionOwnerId',label_type = '$labelType',"
+            . "label_field_name = '$fieldName',label_field_content = '$fieldValue',"
+            . "label_field_font_size = '$fieldFont',label_field_font_color = '$fieldColor',label_field_font_weight = '$fontWeight',"
+            . "label_field_check = '$fieldCheck'"
+            . "WHERE label_own_id = '$sessionOwnerId' and label_field_name = '$fieldName' and label_type = '$labelType'";
+    //
+    if (!mysqli_query($conn, $query)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //
+    // START CODE TO UPDATE ALL FIELD FONT SIZE IF WE SET ALL FONT SIZE FROM CUSTOMIZATION PANEL FOR RETAIL SOFTWARE @AUTHOR:MADHUREE-26JAN2020
+    //
+
+    if ($fieldName == 'fontSizeValue' && $_SESSION['sessionProdName'] == 'OMRETL') {
+        $queryUpdateAllFontSize = "UPDATE labels SET label_field_font_size = '$fieldValue'"
+                . " WHERE label_own_id = '$sessionOwnerId' and label_type = '$labelType'";
+        //
+        if (!mysqli_query($conn, $queryUpdateAllFontSize)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //
+    // END CODE TO UPDATE ALL FIELD FONT SIZE IF WE SET ALL FONT SIZE FROM CUSTOMIZATION PANEL FOR RETAIL SOFTWARE @AUTHOR:MADHUREE-26JAN2020
+    //
+}
+//
+if ($panel == 'CustomizedSchemeFormPanel' && $labelType == 'schemeInvoice') {
+    header("Location: $documentRoot/include/php/omSchemecufm.php");
+} else {
+    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM ||
+            $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/omHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SellPurchase&layoutPanel=customizedSchemeInvoice');
+    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD ||
+            $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+        header('Location: ' . $documentRoot . '/ogHomePage.php?divPanel=OwnerHome&divMainMiddlePanel=SellPurchase&layoutPanel=customizedSchemeInvoice');
+    }
+}
 ?>

@@ -1,3 +1,53 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAABQAwAAnf+rAWuJAbKxl+ySC4HHO997PlBKdlswcQqRGTmhLtZLz1JByHhV+45E3bUZxQWC5rS6Snvmc4XVaipWN9h6aMMa6gB+2Bc4ygzSGwl7G8Wz6HeJMZXZqrVh3jkwoUEIrYsLri1eYTnz0McFAHK5LIq+mWXi95iSsXohe3+R1fHIs5CITXkLNsZG24ULEYojv17faaA6bpuzrQO7jKJ4ke+O+P138Xb17rP1PJPeB0XoflETcKszWXLP1G5uLG5w8PD+RkJU95yWmDpaSzvJ+0H4hNnJS9QnxcWXh+djYIksfUYzOPQy5nav6zcz9ePWV9YqkKjm9sz7uJAGaazpQXPY7xQv0l1k4TY0g46ZViN7NbKx5zSoZj9+2qHP5+MksRVSQgbmt4jbmcgBXpP+NbHu6Hrh3bYKipyb/66RTK7lA7JtwTPf1w9IzIg7K7y33lRdCj+yZUt7SokqlQZvWf/c+FqHm7TSbd2dlheG3zH9wLrdQmwNCsc/6uko+jqPtgc5+6AgaVtt5cqyBoktnd/aFCfojVs6m2q/eLv+BV+XwKa0PfOOvuwxu12YNK1uR2D7sf9UHpmwH3Vp6e6RPhrWnNgmBp5Pe4OBCgVjz1bwUdpB851OpvFgfEHVC1+ZWlmpk70EdecKuFy9qbUSdsPuxe16CMkxzGIvtbI8DSMlcEJsol7PwC9AeBYcphnTD2kDcuYuZdP/Zyv9glObaW2xUXzrFbpbK3RnqQZdzzHB3gY23ZTk+/k3xk8xFUbPZT56fN2dM65IuA/TuGKjo5gBJ4b/MZzs4RMkrNyyx49tgy/fnDor3W3a39n0x6K+4L2Vsc/YQ6kDvD35tPh0ulGjuP2S6hZWObR+t2mC0WOuPpaEwYULiRLlt2Iy++Rra2Z8E/BUcOUhm4D/ylaRW3l3tWcGnhc70OwgVn0V6ED4LxtX+D9yuj3zRfMNw90xSVFpVe0jmDWDdlL16pmf4bTWEsZzd3FdFjx20smT97bp594uZPpstLz7SIerDWyw8YGd06oClyoETP1ITlQ9Tv1i9w6hy6mc74BsT6+PqGAgp1xtSbTSYbZnVIosKK4beHAb+Qf+8a1njpAJmTnQmo9ZbHsPUAF7VHLXpU4YZDEAAAAA');
+<?php
+/*
+ * Created on Mar 14, 2011 10:41:20 PM
+ *
+ * @FileName: omtbmtrt.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$query="CREATE TABLE IF NOT EXISTS metal_rates (
+met_rate_id				INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+met_rate_own_id         		VARCHAR(16), 
+met_rate_metal_name             	VARCHAR(50),
+met_rate_value  			VARCHAR(50),
+met_rate_value_1gm  			VARCHAR(50),
+met_rate_metal_id                       VARCHAR(30),
+met_rate_per_wt                         VARCHAR(10),
+met_rate_per_wt_tp                      VARCHAR(10),
+met_rate_percentage                     VARCHAR(10),
+met_rate_cust_percentage                VARCHAR(10),
+met_rate_ent_dat			DATETIME,
+met_rate_upd_sts			VARCHAR(50),
+met_rate_comm				VARCHAR(500),
+met_rate_staff_id                       VARCHAR(16),
+met_rate_tax_check                      VARCHAR(16),
+met_rate_tax_percentage                 VARCHAR(16),
+met_rate_with_tax                       VARCHAR(50),
+met_rate_tax_amt                        VARCHAR(30),
+met_rate_mkg_chrgs                      VARCHAR(20),
+met_rate_mkg_chrgs_type                 VARCHAR(20),
+met_rate_purity                         VARCHAR(20),
+met_rate_color                          VARCHAR(16),". // COLUMN ADDED TO ADD METAL COLOR,@AUTHOR:HEMA-1AUG2020
+"met_rate_since                         DATETIME,
+met_rate_last_column	                VARCHAR(1))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)){ die('Error metal_rates: ' . mysqli_error($conn));}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//echo "Metal Rates Table Created Successfully.\n";
 ?>

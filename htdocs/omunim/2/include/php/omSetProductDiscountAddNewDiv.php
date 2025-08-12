@@ -1,3 +1,472 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * *************************************************************************************************
+ * @Description: SET PRODUCT DISCOUNT FORM FILE @AUTHOR-PRIYANKA-15OCT2020
+ * *************************************************************************************************
+ *
+ * Created on OCT 15, 2020 04:00:00 PM 
+ * *************************************************************************************************
+ * @FileName: omSetProductDiscountAddNewDiv.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2.7.21
+ * @version: OMUNIM 2.7.21
+ * @Copyright (c) 2020 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2020 SoftwareGen, Inc
+ * *************************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @AUTHOR-PRIYANKA-15OCT2020
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+?>
+<?php
+//
+// PANEL NAME
+$panelName = $_REQUEST['panelName'];
+//
+// DISCOUNT ID
+$discId = $_REQUEST['discId'];
+//
+//
+parse_str(getTableValues("SELECT * FROM discount WHERE disc_id = '$discId' and "
+                       . "disc_owner_id = '$sessionOwnerId'"));
+//
+parse_str(getTableValues("SELECT * FROM stock WHERE st_id = '$disc_st_id' and "
+                       . "st_owner_id = '$sessionOwnerId'"));
+//
+//echo '$disc_start_date == ' . $disc_start_date . '<br />';
+//
+    if ($disc_start_date != '' && $disc_start_date != NULL) {
+    //
+    // START DATE CODE @AUTHOR-PRIYANKA-21OCT2020
+    $selDOBDay = substr($disc_start_date, 0, 2);
+    $selDOBMnth = substr($disc_start_date, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($disc_start_date, -4);
+}
+//
+//echo '$disc_end_date == ' . $disc_end_date . '<br />';
+//
+    if ($disc_end_date != '' && $disc_end_date != NULL) {
+    //
+    // END DATE CODE @AUTHOR-PRIYANKA-21OCT2020
+    $selEDOBDay = substr($disc_end_date, 0, 2);
+    $selEDOBMnth = substr($disc_end_date, 3, -5);
+    $todayEMM = date("m", strtotime($selEDOBMnth)) - 1;
+    $selEDOBYear = substr($disc_end_date, -4);
+}
+//
+//echo '$disc_discount_checked == ' . $disc_discount_checked . '<br />';
+//                  
+?>  
+<table align="left" border="0" cellspacing="2" cellpadding="2" width="120%">                                
+    <tr id="discountRow<?php echo $count; ?>">   
+        <td>
+            <input type="hidden" id="panelName" name="panelName" value="<?php echo $panelName; ?>"/>
+            <input type="hidden" id="operation<?php echo $count; ?>" name="operation<?php echo $count; ?>" 
+                   value="insert"/>
+            <input type="hidden" id="main_st_id" name="main_st_id" value="<?php echo $disc_st_id; ?>"/>
+            <input type="hidden" id="main_st_item_category" name="main_st_item_category" 
+                   value="<?php echo $disc_st_item_category; ?>"/>
+            <input type="hidden" id="disc_st_id<?php echo $count; ?>" name="disc_st_id<?php echo $count; ?>" 
+                   value="<?php echo $disc_st_id; ?>"/>
+            <input type="hidden" id="disc_firm_id<?php echo $count; ?>" name="disc_firm_id<?php echo $count; ?>" 
+                   value="<?php echo $disc_firm_id; ?>"/>
+            <input type="hidden" id="disc_panel_name<?php echo $count; ?>" name="disc_panel_name<?php echo $count; ?>" 
+                   value="<?php echo "ProductDiscountPanel"; ?>"/>
+            <input type="hidden" id="disc_status<?php echo $count; ?>" name="disc_status<?php echo $count; ?>"/>
+        </td>
+
+        <td align="left" title="CHECKBOX" class="textLabel12CalibriBrown">
+            <input type="checkbox" class="checkbox" 
+                   id="disc_discount_checked<?php echo $count; ?>" 
+                   name="disc_discount_checked<?php echo $count; ?>" 
+                   onclick="if (!this.checked) {
+                               document.getElementById('disc_discount_checked<?php echo $count; ?>').value = 'unchecked';
+                           } else {
+                               document.getElementById('disc_discount_checked<?php echo $count; ?>').value = 'checked';
+                           }"
+                   onchange="" 
+                   title="DISCOUNT CHECK" 
+                   <?php
+                   echo $disc_active;
+                   echo " " . $disc_active . " ";
+                   ?> >
+        </td>
+
+        <td align="left" title="CATEGORY" class="textLabel12CalibriBrown">
+            <input id="disc_st_item_category<?php echo $count; ?>" 
+                   name="disc_st_item_category<?php echo $count; ?>" 
+                   type="text" placeholder="CATEGORY" 
+                   value="<?php echo $st_item_category; ?>" style="width: 103%;"
+                   onblur="if (this.value == '' || this.value == null) {
+                               this.value = '<?php echo $st_item_category; ?>'
+                           }"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('disc_st_item_name<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('discountEDOBYear<?php echo $count - 1; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="5" maxlength="10" />
+        </td>
+
+        <td align="left" title="PRODUCT NAME" class="textLabel12CalibriBrown">
+            <input id="disc_st_item_name<?php echo $count; ?>" 
+                   name="disc_st_item_name<?php echo $count; ?>" 
+                   type="text" placeholder="PRODUCT NAME" 
+                   value="<?php echo $st_item_name; ?>" style="margin-left: 2px; width: 94%;"
+                   onblur="if (this.value == '' || this.value == null) {
+                               this.value = '<?php echo $st_item_name; ?>'
+                           }"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('disc_product_amount<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('disc_st_item_category<?php echo $count; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="10" maxlength="10" />
+        </td>
+
+        <td align="left" title="MIN PROD AMOUNT" class="textLabel12CalibriBrown">
+            <input id="disc_product_amount<?php echo $count; ?>" 
+                   name="disc_product_amount<?php echo $count; ?>" 
+                   type="text" placeholder="MIN PROD AMOUNT" 
+                   value="<?php echo $disc_product_amount; ?>" style="margin-left: -5px; width: 114%;"
+                   onblur=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('disc_making_discount<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('disc_st_item_name<?php echo $count; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="11" maxlength="10" />
+        </td>
+
+        <td align="left" title="MAKING DISCOUNT" class="textLabel12CalibriBrown">
+            <input id="disc_making_discount<?php echo $count; ?>" 
+                   name="disc_making_discount<?php echo $count; ?>" 
+                   type="text" placeholder="MAKING DISCOUNT" 
+                   value="<?php echo $disc_making_discount; ?>" style="margin-left: 12px; width: 92%;"
+                   onblur=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('disc_stone_discount<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('disc_product_amount<?php echo $count; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="11" maxlength="10" />
+        </td>
+
+        <td align="left" title="STONE DISCOUNT" class="textLabel12CalibriBrown">
+            <input id="disc_stone_discount<?php echo $count; ?>" 
+                   name="disc_stone_discount<?php echo $count; ?>" 
+                   type="text" placeholder="STONE DISCOUNT" 
+                   value="<?php echo $disc_stone_discount; ?>" style="margin-left: 1px; width: 109%;"
+                   onblur=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('disc_product_discount<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('disc_making_discount<?php echo $count; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="9" maxlength="10" />
+        </td>
+
+        <td align="left" title="PRODUCT DISCOUNT" class="textLabel12CalibriBrown">
+            <input id="disc_product_discount<?php echo $count; ?>" 
+                   name="disc_product_discount<?php echo $count; ?>" 
+                   type="text" placeholder="PRODUCT DISCOUNT" 
+                   value="<?php echo $disc_product_discount; ?>" style="margin-left: 11px; width: 99%;"
+                   onblur=""
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('discountDOBDay<?php echo $count; ?>').focus();
+                               return false;
+                           } else if (event.keyCode == 8) {
+                               document.getElementById('disc_stone_discount<?php echo $count; ?>').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"  
+                   onclick="this.value = '';"
+                   spellcheck="false" class="form-control-req-height20 placeholderClass" 
+                   size="11" maxlength="10" />
+        </td>
+
+        <td align="left" title="START DATE" class="textLabel12CalibriBrown">
+            <table align="left" border="0" cellspacing="0" cellpadding="0" width="108%">
+                <tr>
+                    <td align="center" class="margin1pxAll">
+                        <!-- Start Date Code for DAY @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $todayDay = $selDOBDay - 1;
+
+                        $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                            '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+
+                        $optDay[$todayDay] = "selected";
+                        ?> 
+                        <select id="discountDOBDay<?php echo $count; ?>" 
+                                name="discountDOBDay<?php echo $count; ?>" 
+                                title="DAY" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('discountDOBMonth<?php echo $count; ?>').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('disc_product_discount<?php echo $count; ?>').focus();
+                                            return false;
+                                        }"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">DAY</option>
+                            <?php
+                            for ($dd = 0; $dd <= 30; $dd++) {
+                                $selected_day = ($arrDays[$dd] == $selDOBDay) ? 'selected="selected"' : '';
+                                echo "<option value=\"$arrDays[$dd]\" $selected_day>$arrDays[$dd]</option>";
+                            }
+                            ?>
+                        </select> 
+                        <!-- Start Date Code for MONTH @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC);
+                        $optMonth[$todayMM] = "selected";
+                        ?> 
+                        <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> 
+                        <select id="discountDOBMonth<?php echo $count; ?>" 
+                                name="discountDOBMonth<?php echo $count; ?>" 
+                                title="MONTH" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('discountDOBYear<?php echo $count; ?>').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('discountDOBDay<?php echo $count; ?>').focus();
+                                            return false;
+                                        }
+                                        //START CODE TO GET MONTH FROM KEYS @AUTHOR-PRIYANKA-17OCT2020
+                                        var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                        gbMonth = document.getElementById('gbMonthId').value;
+                                        if (gbMonth == 1) {
+                                            if (event.keyCode) {
+                                                var sel = String.fromCharCode(event.keyCode);
+                                                if (sel == 0)
+                                                {
+                                                    this.value = arrMonths[9];
+                                                } else if (sel == 1)
+                                                {
+                                                    this.value = arrMonths[10];
+                                                } else if (sel == 2)
+                                                {
+                                                    this.value = arrMonths[11];
+                                                }
+                                                document.getElementById('gbMonthId').value = 0;
+                                            }
+                                        } else if (event.keyCode) {
+                                            var sel = String.fromCharCode(event.keyCode) - 1;
+                                            this.value = arrMonths[sel];
+                                            if (event.keyCode == 49) {
+                                                document.getElementById('gbMonthId').value = 1;
+                                            }
+                                        } //END CODE TO GET MONTH FROM KEYS @AUTHOR-PRIYANKA-17OCT2020"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">MON</option>
+                            <?php
+                            for ($mm = 0; $mm <= 11; $mm++) {
+                                $selected_month = ($arrMonths[$mm] == $selDOBMnth) ? 'selected="selected"' : '';
+                                echo "<option value=\"$arrMonths[$mm]\" $selected_month>$arrMonths[$mm]</option>";
+                            }
+                            ?>
+                        </select> 
+                        <!-- Start Date Code for YEAR @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $todayYear = date(Y) + 10;
+                        $optYear[$selDOBYear] = "selected";
+                        ?> 
+                        <select id="discountDOBYear<?php echo $count; ?>" 
+                                name="discountDOBYear<?php echo $count; ?>" 
+                                title="YEAR" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('discountEDOBDay<?php echo $count; ?>').focus();
+
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('discountDOBMonth<?php echo $count; ?>').focus();
+                                            return false;
+                                        }"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">YEAR</option>
+                            <?php
+                            for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                $selected_year = ($yy == $selDOBYear) ? 'selected="selected"' : '';
+                                echo "<option value=\"$yy\" $selected_year>$yy</option>";
+                            }
+                            ?>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td align="left" title="END DATE" class="textLabel12CalibriBrown">
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="105%">
+                <tr>
+                    <td align="center" class="margin1pxAll">
+                        <!-- End Date Code for DAY @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $todayDay = $selEDOBDay - 1;
+
+                        $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                            '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+
+                        $optDay[$todayDay] = "selected";
+                        ?> 
+                        <select id="discountEDOBDay<?php echo $count; ?>" 
+                                name="discountEDOBDay<?php echo $count; ?>" 
+                                title="DAY" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('discountEDOBMonth<?php echo $count; ?>').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('discountDOBYear<?php echo $count; ?>').focus();
+                                            return false;
+                                        }"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">DAY</option>
+                            <?php
+                            for ($dd = 0; $dd <= 30; $dd++) {
+                                $selected_day = ($arrDays[$dd] == $selEDOBDay) ? 'selected="selected"' : '';
+                                echo "<option value=\"$arrDays[$dd]\" $selected_day>$arrDays[$dd]</option>";
+                            }
+                            ?>
+                        </select> 
+                        <!-- End Date Code for MONTH @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC);
+                        $optMonth[$todayEMM] = "selected";
+                        ?> 
+                        <input  id="gbEMonthId" name="gbEMonthId" type="hidden" value="0" /> 
+                        <select id="discountEDOBMonth<?php echo $count; ?>" 
+                                name="discountEDOBMonth<?php echo $count; ?>" 
+                                title="MONTH" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('discountEDOBYear<?php echo $count; ?>').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('discountEDOBDay<?php echo $count; ?>').focus();
+                                            return false;
+                                        }
+                                        //START CODE TO GET MONTH FROM KEYS @AUTHOR-PRIYANKA-17OCT2020
+                                        var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                        gbMonth = document.getElementById('gbEMonthId').value;
+                                        if (gbMonth == 1) {
+                                            if (event.keyCode) {
+                                                var sel = String.fromCharCode(event.keyCode);
+                                                if (sel == 0)
+                                                {
+                                                    this.value = arrMonths[9];
+                                                } else if (sel == 1)
+                                                {
+                                                    this.value = arrMonths[10];
+                                                } else if (sel == 2)
+                                                {
+                                                    this.value = arrMonths[11];
+                                                }
+                                                document.getElementById('gbEMonthId').value = 0;
+                                            }
+                                        } else if (event.keyCode) {
+                                            var sel = String.fromCharCode(event.keyCode) - 1;
+                                            this.value = arrMonths[sel];
+                                            if (event.keyCode == 49) {
+                                                document.getElementById('gbEMonthId').value = 1;
+                                            }
+                                        } //END CODE TO GET MONTH FROM KEYS @AUTHOR-PRIYANKA-17OCT2020"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">MON</option>
+                            <?php
+                            for ($mm = 0; $mm <= 11; $mm++) {
+                                $selected_month = ($arrMonths[$mm] == $selEDOBMnth) ? 'selected="selected"' : '';
+                                echo "<option value=\"$arrMonths[$mm]\" $selected_month>$arrMonths[$mm]</option>";
+                            }
+                            ?>
+                        </select> 
+                        <!-- End Date Code for YEAR @AUTHOR-PRIYANKA-17OCT2020-->
+                        <?php
+                        $todayYear = date(Y) + 10;
+                        $optYear[$selEDOBYear] = "selected";
+                        ?> 
+                        <select id="discountEDOBYear<?php echo $count; ?>" 
+                                name="discountEDOBYear<?php echo $count; ?>" 
+                                title="YEAR" style="width: 23%;"
+                                onkeydown="javascript: if (event.keyCode == 13) {
+                                            document.getElementById('disc_st_item_category<?php echo $count + 1; ?>').focus();
+                                            return false;
+                                        } else if (event.keyCode == 8) {
+                                            document.getElementById('discountEDOBMonth<?php echo $count; ?>').focus();
+                                            return false;
+                                        }"
+                                class="select-control-req-height20">
+                            <option value="NotSelected">YEAR</option>
+                            <?php
+                            for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                $selected_year = ($yy == $selEDOBYear) ? 'selected="selected"' : '';
+                                echo "<option value=\"$yy\" $selected_year>$yy</option>";
+                            }
+                            ?>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td align="center" class="blackCalibri13Font spaceLeft5" title="ADD">
+            <div class="spaceLeft5" id="addNewDiscount">
+                <a style="cursor: pointer;"
+                   onclick="addNewDiscountDiv('<?php echo $disc_id; ?>', '<?php echo $count + 1; ?>', (document.getElementById('noOfDiscount').value), '<?php echo $documentRoot; ?>', '<?php echo $panelName; ?>', '<?php echo $discountPanelName; ?>');">
+                    <img src="<?php echo $documentRoot; ?>/images/update16.png" alt="ADD" class="marginTop5" />
+                </a>
+            </div>
+        </td>
+
+        <td align="center" class="blackCalibri13Font spaceLeft5" title="DELETE">
+            <div class="spaceLeft5" id="deleteDiscount">
+                <a style="cursor: pointer;"
+                   onclick="deleteDiscountFromTable('', '<?php echo $count; ?>', '<?php echo $panelName; ?>', '<?php echo $discountPanelName; ?>');">
+                    <img src="<?php echo $documentRoot; ?>/images/delete16.png" alt="DEL" class="marginTop5" />
+                </a>
+            </div>
+        </td>
+    </tr>
+</table> 
+<div id="addNewDiscountDiv<?php echo $count + 1; ?>"></div>
+

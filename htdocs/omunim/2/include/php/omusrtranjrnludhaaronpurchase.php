@@ -1,3 +1,317 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 18 FEB, 2018 03:40:35 PM
+ *
+ * @FileName: omusrtranjrnludhaaronpurchase.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  ratnakar@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+
+//echo '<br/>$transactionType:' . $transactionType;
+if ($transactionType == 'OnPurchase') {
+    $desc = "ONPURCHASE UDHAAR ADDED";
+} else if ($mainTransType == 'OnPurchase') {
+    $desc = "MONEY DEPOSIT";
+}
+
+// If the below condition will true that mean - Its main udhaar entry for OnPurchase
+// ... In this case no udhaar deposit entry will be enter this if condition
+// we are processing money deposit entries in else condition
+if ($transactionType == 'OnPurchase') {
+    //
+      $payTotalAmtBal = 0;
+    $transType = $transactionType;
+
+    // *************************************************************************
+    // ************************ STRAT CODE FOR JRNL ENTRY **********************
+    // *************************************************************************
+    $jrnlTransCrAccId = $sundryDebAccId;
+    $jrnlTransCrDesc = $sundryDebAccName;
+    //
+    $jrnlTransDrAccId = $jrnlTransAccId;
+    $jrnlTransDrDesc = $jrnlTransDesc;
+    //
+    $jrnlTransDesc = $desc;
+
+    // *************************************************************************
+    // ************************* END CODE FOR JRNL ENTRY ***********************
+    // *************************************************************************
+    // *************************************************************************
+    // ************************ STRAT CODE FOR JRTR ENTRY **********************
+    // *************************************************************************
+
+    $jrtrMainTransCRDR = 'DR'; // CR account details
+    //
+
+    $jrtrMainCrAmount = 0;
+    $jrtrTransCrAccId = '';
+    $jrtrTransCrDesc = $sundryDebAccName;
+    //
+    $jrtrMainDrAmount = $jrnlDrAmount;
+    if ($payDiscountAmt != '') {
+        $jrtrMainDrAmount = abs($jrtrMainDrAmount + $payDiscountAmt);//IF DISCOUNT IS GIVEN, ADD DISCOUNT TO DR AMOUNT@AUTHOR:@VINOD:14-03-2024
+    }
+    $jrtrTransDrAccId = $jrnlTransDrAccId;
+    $jrtrTransDrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrTransDesc = $jrnlTransDesc;
+
+    // Cash account
+    $jrtrCashCRDR = 'CR';
+    //
+    $jrtrCashCrAmount = $payCashAmt;
+    $jrtrCashCrAccId = $cashAccId;
+    $jrtrCashCrDesc = $cashAccName;
+    //
+    $jrtrCashDrAmount = 0;
+    $jrtrCashDrAccId = '';
+    $jrtrCashDrDesc = $jrnlTransDrDesc;
+    $jrtrCashDesc = 'Cash Payment';
+    //
+    $jrtrBankCRDR = 'CR';
+    //
+    $jrtrBankCrAmount = $payChequeAmt;
+    $jrtrBankCrAccId = $bankAccId;
+    $jrtrBankCrDesc = $bankAccName;
+    //
+    $jrtrBankDrAmount = 0;
+    $jrtrBankDrAccId = '';
+    $jrtrBankDrDesc = $jrnlTransDrDesc;
+    $jrtrBankDesc = 'Bank NEFT/IMPS Payment';
+    //
+    $jrtrCardCRDR = 'CR';
+    // 
+    $jrtrCardCrAmount = $payCardAmt;
+    $jrtrCardCrAccId = $cardAccId;
+    $jrtrCardCrDesc = $cardAccName;
+    //
+    $jrtrCardDrAmount = 0;
+    $jrtrCardDrAccId = '';
+    $jrtrCardDrDesc = $jrnlTransDrDesc;
+    $jrtrCardDesc = 'Card Payment';
+    //
+    $jrtrOnlinePayCRDR = 'CR';
+    //
+    $jrtrOnlinePayCrAmount = $payOnlinePayAmt;
+    $jrtrOnlinePayCrAccId = $onlinePayAccId;
+    $jrtrOnlinePayCrDesc = $onlinePayAccName;
+    //
+    $jrtrOnlinePayDrAmount = 0;
+    $jrtrOnlinePayDrAccId = '';
+    $jrtrOnlinePayDrDesc = $jrnlTransDrDesc;
+    $jrtrOnlinePayDesc = 'Online Payment';
+    //
+    $jrtrDiscountCRDR = 'CR';
+    //
+    $jrtrDiscountCrAmount = $payDiscountAmt;
+    $jrtrDiscountCrAccId = $discountAccId;
+    $jrtrDiscountCrDesc = $discountAccName;
+    //
+    $jrtrDiscountDrAmount = 0;
+    $jrtrDiscountDrAccId = '';
+    $jrtrDiscountDrDesc = $jrnlTransDrDesc;
+    $jrtrDiscountDesc = 'Discount Paid';
+
+    // ********************************************************************************************************************************************
+    // START CODE FOR INTEREST PAID ACCOUNT ENTRY @VINOD:14-03-2024
+    // ********************************************************************************************************************************************
+    $jrtrInterestCRDR = 'DR';
+    //
+    $jrtrInterestDrAmount = abs($payInterestAmt);
+    $jrtrInterestDrAccId = $interestPaidAccId;
+    $jrtrInterestDrDesc = 'Interest Paid';
+    //
+    $jrtrInterestCrAmount = 0;
+    $jrtrInterestCrAccId = '';
+    $jrtrInterestCrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrInterestDesc = $interestPaidAccName;
+    // ********************************************************************************************************************************************
+    // END CODE FOR INTEREST PAID ACCOUNT ENTRY @VINOD:14-03-2024
+    // ********************************************************************************************************************************************
+    //
+    //**************************************************************************
+    // START CODE FOR CGST, SGST & IGST TAXES @VINOD:14-03-2024
+    //**************************************************************************
+    //
+    $jrtrCGSTCRDR = 'DR';
+    //
+    $jrtrCGSTCrAmount = 0;
+    $jrtrCGSTCrAccId = '';
+    $jrtrCGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrCGSTDrAmount = $payCGSTaxAmt;
+    $jrtrCGSTDrAccId = $CGSTAccId;
+    $jrtrCGSTDrDesc = $CGSTAccName;
+    $jrtrCGSTDesc = 'CGST TAX Rec.';
+    //
+    $jrtrSGSTCRDR = 'DR';
+    //
+    $jrtrSGSTCrAmount = 0;
+    $jrtrSGSTCrAccId = '';
+    $jrtrSGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrSGSTDrAmount = $paySGSTaxAmt;
+    $jrtrSGSTDrAccId = $SGSTAccId;
+    $jrtrSGSTDrDesc = $SGSTAccName;
+    $jrtrSGSTDesc = 'SGST TAX Rec.';
+    //
+    $jrtrIGSTCRDR = 'DR';
+    //
+    $jrtrIGSTCrAmount = 0;
+    $jrtrIGSTCrAccId = '';
+    $jrtrIGSTCrDesc = $jrnlTransDrDesc;
+    //
+    $jrtrIGSTDrAmount = $payIGSTaxAmt;
+    $jrtrIGSTDrAccId = $IGSTAccId;
+    $jrtrIGSTDrDesc = $IGSTAccName;
+    $jrtrIGSTDesc = 'IGST TAX Rec.';
+
+    // *************************************************************************
+    // ************************ END CODE FOR JRTR ENTRY ************************
+    // *************************************************************************
+    if ($payTotalAmtBal <> 0) {
+        die("ONPURCHASE UDHAAR : AMOUNT BALANCE SHOULD BE ZERO");
+    }
+} 
+// In the below else if we are processing deposit money entries for OnPurchase entries only 
+else if ($mainTransType == 'OnPurchase') {
+    
+        $payTotalAmtBal = 0;
+        $transType = $transactionType;
+
+        // *********************************************************************
+        // ************************ STRAT CODE FOR JRNL ENTRY ******************
+        // *********************************************************************
+        $jrnlTransCrAccId = $jrnlTransAccId;
+        $jrnlTransCrDesc = $jrnlTransDesc;
+        //
+        $jrnlTransDrAccId = $sundryDebAccId;
+        $jrnlTransDrDesc = $sundryDebAccName;
+        //
+        $jrnlTransDesc = $desc;
+
+        // *********************************************************************
+        // ************************ END CODE FOR JRNL ENTRY ********************
+        // *********************************************************************
+        //
+        // *********************************************************************
+        // ************************ STRAT CODE FOR JRTR ENTRY ******************
+        // *********************************************************************
+
+        $jrtrMainTransCRDR = 'CR';  // CR account details
+        //
+        $jrtrMainDrAmount = 0;
+        $jrtrTransDrAccId = '';  // DR ACCOUNT ID WILL BE EMPTY FOR CASH UDHAAR AND ADVANCE RETUEN
+
+        $jrtrTransDrDesc = $sundryDebAccName;
+        //
+        $jrtrMainCrAmount = abs($jrnlCrAmount);
+        //
+        if ($payDiscountAmt != '') {
+            $jrtrMainCrAmount = abs($jrtrMainCrAmount + $payDiscountAmt);//IF DISCOUNT IS GIVEN, ADD DISCOUNT TO CR AMOUNT@AUTHOR:VINOD:14-03-2024
+        }
+        //
+        $jrtrTransCrAccId = $jrnlTransCrAccId;
+        $jrtrTransCrDesc = $jrnlTransCrDesc;
+        $jrtrTransDesc = $jrnlTransDesc;
+
+        // Cash account
+        $jrtrCashCRDR = 'DR';
+        //
+        if ($payIntAmt != null || $payIntAmt != '') {
+            $jrtrCashDrAmount = abs($payCashAmt + $payIntAmt); //CODE ADDED FRO INTEREST ON UDHAAR,@AUTHOR:VINOD:14-03-2024
+        } else {
+            $jrtrCashDrAmount = abs($payCashAmt);
+        }
+        //
+        $jrtrCashDrAccId = $cashAccId;
+        $jrtrCashDrDesc = $cashAccName;
+        //
+        $jrtrCashCrAmount = 0;
+        $jrtrCashCrAccId = '';
+        $jrtrCashCrDesc = $jrnlTransCrDesc;
+        $jrtrCashDesc = 'Cash Payment';
+        //
+
+        $jrtrBankCRDR = 'DR';
+        //
+        $jrtrBankDrAmount = abs($payChequeAmt);
+        $jrtrBankDrAccId = $bankAccId;
+        $jrtrBankDrDesc = $bankAccName;
+        //
+        $jrtrBankCrAmount = 0;
+        $jrtrBankCrAccId = '';
+        $jrtrBankCrDesc = $jrnlTransCrDesc;
+        $jrtrBankDesc = 'Bank NEFT/IMPS Payment';
+        //
+        //
+
+        $jrtrCardCRDR = 'DR';
+        //
+        $jrtrCardDrAmount = abs($payCardAmt);
+        $jrtrCardDrAccId = $cardAccId;
+        $jrtrCardDrDesc = $cardAccName;
+        //
+        $jrtrCardCrAmount = 0;
+        $jrtrCardCrAccId = '';
+        $jrtrCardCrDesc = $jrnlTransCrDesc;
+        $jrtrCardDesc = 'Card Payment';
+        //
+        //
+
+        $jrtrOnlinePayCRDR = 'DR';
+        //
+        $jrtrOnlinePayDrAmount = abs($payOnlinePayAmt);
+        $jrtrOnlinePayDrAccId = $onlinePayAccId;
+        $jrtrOnlinePayDrDesc = $onlinePayAccName;
+        //
+        $jrtrOnlinePayCrAmount = 0;
+        $jrtrOnlinePayCrAccId = '';
+        $jrtrOnlinePayCrDesc = $jrnlTransCrDesc;
+        $jrtrOnlinePayDesc = 'Online Payment';
+        //
+    
+     $jrtrDiscountCRDR = 'DR';
+    //
+    $jrtrDiscountDrAmount = $payDiscountAmt;
+    $jrtrDiscountDrAccId = $sundryDebAccId;
+    $jrtrDiscountDrDesc = $sundryDebAccName;
+    //
+    $jrtrDiscountCrAmount = 0;
+    $jrtrDiscountCrAccId = '';
+    $jrtrDiscountCrDesc = $jrnlTransCrDesc;
+    $jrtrDiscountDesc = 'ONPURCHASE UDHAAR DISCOUNT PAID';
+
+//    echo $payCashAmt . "----" . $payDiscountAmt;
+
+    if ($payTotalAmtBal <> 0) {
+        die("ONPURCHASE UDHAAR DEPSOIT : AMOUNT BALANCE SHOULD BE ZERO");
+    }
+}
 ?>

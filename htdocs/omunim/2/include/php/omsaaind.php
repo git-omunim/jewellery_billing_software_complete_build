@@ -1,3 +1,315 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Aug 12, 2016
+ *
+ * @FileName: omsaaind.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//Changes in file to hide labels and add new class for input fields @AUTHOR: SANDY16DEC13
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+//Start Staff Access API @Author:PRIYA22JUL13
+$accFileName = $currentFileName;
+include 'ommpemac.php';
+//End Staff Access API @Author:PRIYA22JUL13
+require_once 'system/omsgeagb.php';
+
+$query = mysqli_query($conn,"SHOW COLUMNS FROM actionitem LIKE 'acit_scheme_prd_typ'");
+$columnExists = (mysqli_num_rows($query)) ? TRUE : FALSE;
+
+if (!$columnExists) {
+    mysqli_query($conn,"ALTER TABLE actionitem ADD (acit_scheme_prd_typ VARCHAR(20))") or die(mysqli_error($conn));
+}
+
+$query = mysqli_query($conn,"SHOW COLUMNS FROM actionitem LIKE 'acit_scheme_prd'");
+$columnExists = (mysqli_num_rows($query)) ? TRUE : FALSE;
+
+if (!$columnExists) {
+    mysqli_query($conn,"ALTER TABLE actionitem ADD (acit_scheme_prd VARCHAR(20))") or die(mysqli_error($conn));
+}
+$query = mysqli_query($conn,"SHOW COLUMNS FROM actionitem LIKE 'acit_scheme_amt_typ'");
+$columnExists = (mysqli_num_rows($query)) ? TRUE : FALSE;
+
+if (!$columnExists) {
+    mysqli_query($conn,"ALTER TABLE actionitem ADD (acit_scheme_amt_typ VARCHAR(20))") or die(mysqli_error($conn));
+}
+
+$query = mysqli_query($conn,"SHOW COLUMNS FROM actionitem LIKE 'acit_scheme_amt'");
+$columnExists = (mysqli_num_rows($query)) ? TRUE : FALSE;
+
+if (!$columnExists) {
+    mysqli_query($conn,"ALTER TABLE actionitem ADD (acit_scheme_amt VARCHAR(40))") or die(mysqli_error($conn));
+}
+?>
+<table border="0" cellspacing="0" cellpadding="1" width="100%">
+    <tr>
+        <td align="right" colspan="2">
+            <hr color="#B8860B" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div id="addUpdateSchemeNameDiv">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td align="left">
+                            <table border="0" cellspacing="0" cellpadding="0" class="spaceLeft20">
+                                <tr>
+<!--                                    <td>
+                                        <div class="spaceLeft10 paddingTop2">
+                                            <img src="<?php echo $documentRoot; ?>/images/ring32.png" alt="new item" />
+                                        </div>
+                                    </td>-->
+                                    <td align="left">
+                                        <div class="spaceLeft4">
+                                            <div class="textLabel16CalibriNormalBrown">ADD NEW SCHEME</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td width="65%" align="right" valign="bottom">
+                            <!--Start Code To Add onload Func @Author:PRIYA24AUG13-->
+                            <!--Start Code To Add focus @Author:PRIYA29AUG13-->
+<!--                            <img src="<?php echo $documentRoot; ?>/images/abx-t.png" alt="" height="2px" style="visibility:hidden;" onload="document.getElementById('addItemName').focus();
+                                    initFormName('add_itemName', 'addSettItemName');"/>-->
+                            <!--End Code To Add focus @Author:PRIYA29AUG13-->
+                            <!--End Code To Add onload Func @Author:PRIYA24AUG13-->
+                            <div class="analysis_div_rows">
+                                <?php
+                                $showMess = $_GET['getMessage'];
+                                $showItemNameAddedDiv = $_GET['getMessage'];
+                                if ($showItemNameAddedDiv == "SchemeNameAdded") {
+                                    include 'omzaaamg.php';
+                                } else if ($showItemNameAddedDiv == "SchemeNameUpdated") {
+                                    include 'omzaaumg.php';
+                                } else if ($showItemNameAddedDiv == "SchemeNameDeleted") {
+                                    include 'omzaadmg.php';
+                                } else if ($showMess == "SchemeNameAlreadyExist") {
+                                    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ Scheme Name Already Present, Please enter
+                                            different Scheme Name ~</div>
+                                    </div>
+                                    <?php
+                                } else if ($showItemNameAddedDiv == "SchemeNameNotDeleted") {
+                                    ?>
+                                    <div id="ajax_upated_div"
+                                         style="visibility: visible; background: none;" class="updateMess">
+                                        <div class="spaceRight20">~ Scheme Name Added by oMunim, User can not delete this Scheme Name. ~</div>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left">
+                            <div class="spaceLeftRight20Border">
+                                <!---Start of changes in form to remove input field heading and change in classes @AUTHOR: SANDY18NOV13---->
+                                <form name="add_schemeName" id="add_schemeName"
+                                      enctype="multipart/form-data" method="post"
+                                      action="include/php/omsaadin.php"
+                                      onsubmit="return addSettSchemeName();">
+                                    <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                                        <tr>
+                                            <td align="center" width="600px">
+                                                <table border="0" cellpadding="2" cellspacing="0" class="paddingTop10">
+                                                    <tr align="left" valign="middle">
+                                                        <td colspan="2">
+                                                            <table>
+                                                                <tr>
+                                                                    <td align="left" class="frm-r1"><input id="addSchemeName" placeholder="SCHEME NAME"
+                                                                                                           name="addSchemeName" spellcheck="false" type="text"
+                                                                                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                                       document.getElementById('addSchemePrdTyp').focus();
+                                                                                                                       return false;
+                                                                                                                   }"
+                                                                                                           class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" size="30" maxlength="50" />
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <!--Start Code To Add Item Category @AUTHOR:PRIYA11APR13-->
+                                                    <!--add item name in marathi Author:GAUR21JUL16-->
+                                                    <tr align="left" valign="middle">
+                                                        <td colspan="2">
+                                                            <table>
+                                                                <tr>
+                                                                    <td align="left" class="frm-r1">
+                                                                        <SELECT class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" id="addSchemePrdTyp" name="addSchemePrdTyp" placeholder="SCHEME TYPE"
+                                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                            document.getElementById('addSchemePrd').focus();
+                                                                                            return false;
+                                                                                        } else if (event.keyCode == 8) {
+                                                                                            document.getElementById('addSchemeName').focus();
+                                                                                            return false;
+                                                                                        }">
+                                                                            <OPTION value="MONTH" >MONTH</OPTION>
+                                                                            <OPTION value="DAY" >DAY</OPTION>
+                                                                        </SELECT> </td>
+
+
+                                                                    <td align="left" class="frm-r1"><input id="addSchemePrd" placeholder="MONTH / DAY"
+                                                                                                           name="addSchemePrd" spellcheck="false" type="text"
+                                                                                                           class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" size="18" maxlength="10" 
+                                                                                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                                       document.getElementById('addSchemeAmtTyp').focus();
+                                                                                                                       return false;
+                                                                                                                   } else if (event.keyCode == 8) {
+                                                                                                                       document.getElementById('addSchemePrdTyp').focus();
+                                                                                                                       return false;
+                                                                                                                   }"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr align="left" valign="middle">
+                                                        <td colspan="2">
+                                                            <table>
+                                                                <tr>
+                                                                    <td align="left" class="frm-r1">
+                                                                        <SELECT class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" id="addSchemeAmtTyp" name="addSchemeAmtTyp" placeholder="AMOUNT TYPE"
+                                                                                onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                            document.getElementById('addSchemeAmt').focus();
+                                                                                            return false;
+                                                                                        } else if (event.keyCode == 8) {
+                                                                                            document.getElementById('addSchemePrd').focus();
+                                                                                            return false;
+                                                                                        }">
+                                                                            <OPTION value="AMOUNT" >AMOUNT</OPTION>
+                                                                            <OPTION value="AMT %" >AMT %</OPTION>
+                                                                        </SELECT> </td>
+
+
+                                                                    <td align="left" class="frm-r1"><input id="addSchemeAmt" placeholder="AMOUNT"
+                                                                                                           name="addSchemeAmt" spellcheck="false" type="text"
+                                                                                                           class="textBoxCurve1px margin2pxAll textLabel12Calibri backF9F9F9" size="17" maxlength="50" 
+                                                                                                           onkeydown="javascript: if (event.keyCode == 13) {
+                                                                                                                       document.getElementById('submitItemNameButt').focus();
+                                                                                                                       return false;
+                                                                                                                   } else if (event.keyCode == 8) {
+                                                                                                                       document.getElementById('addSchemeAmtTyp').focus();
+                                                                                                                       return false;
+                                                                                                                   }"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table border="0" cellpadding="2" cellspacing="0" align="center"
+                                                       width="100%">
+                                                    <tr>
+                                                        <td width="100%" align="center">
+                                                            <table border="0" cellpadding="1" cellspacing="1" align="center">
+                                                                <tr>
+                                                                    <td>
+                                                                        <!---Start to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                                                <div style="text-align: center;">
+                                                                                    <?php
+                                                                                    $inputId = "submitItemNameButt";
+                                                                                    $inputType = 'submit';
+                                                                                    $inputFieldValue = 'Submit';
+                                                                                    $inputIdButton = "submitItemNameButt";
+                                                                                    $inputNameButton = 'submitItemNameButt';
+                                                                                    $inputTitle = '';
+                                                                                    // This is the main class for input flied
+                                                                                    $inputFieldClass = 'btn ' . $om_btn_style;
+                                                                                    $inputStyle = " ";
+                                                                                    $inputLabel = 'Submit'; // Display Label below the text box
+
+                                                                                    // This class is for Pencil Icon                                                           
+                                                                                    $inputIconClass = '';
+                                                                                    $inputPlaceHolder = '';
+                                                                                    $spanPlaceHolderClass = '';
+                                                                                    $spanPlaceHolder = '';
+                                                                                    $inputOnChange = "";
+                                                                                    $inputOnClickFun = '';
+                                                                                    $inputKeyUpFun = '';
+                                                                                    $inputDropDownCls = '';               // This is the main division class for drop down 
+                                                                                    $inputselDropDownCls = '';            // This is class for selection in drop down
+                                                                                    $inputMainClassButton = '';           // This is the main division for Button
+                                                                                    include $_SESSION['documentRootIncludePhp'] . 'formInputField/omInputField.php';
+                                                                                    ?>
+                                                                                </div>
+<!--                                                                        <input type="submit" value="Submit" class="frm-btn" id="submitItemNameButt" name ="submitItemNameButt"
+                                                                               maxlength="30" size="15" />-->
+                                                                        <!---End to Changes button @AUTHOR: DIKSHA24SEPT2018----->
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="left">
+            <table>
+                <tr>
+<!--                    <td>
+                        <div class="spaceLeft20 paddingTop2">
+                            <img src="<?php echo $documentRoot; ?>/images/ring32.png" alt="new item" />
+                        </div>
+                    </td>-->
+                    <td align="left">
+                        <div class="spaceLeft4">
+                            <div class="textLabel16CalibriNormalBrown">EXISTING SCHEME LIST</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" width="100%" valign="top">
+            <div class="spaceLeftRight20Border" id="schemeNamesListDiv">
+                <table border="0" cellspacing="0" cellpadding="2" width="100%">
+                    <tr valign="top">
+                        <td align="center" valign="top">
+                            <div id="itemNamesGoldListDiv"><?php include 'omslingl.php'; ?></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+

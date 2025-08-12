@@ -1,3 +1,230 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACYEQAA4zZzFO8cVTqcsWijYZkIlwZ6fYnfZ1OUBWUCn+1aIQO5J4I65BxI/nJ+yd4kS4t9YltclqnjjXFIFXx0gZcEcMPHjC04ei5RxaJf69QaLR8Q2FzVcNKu6ISZhrsc8/kHVHLhbcKt6smq8O+2YU2tWH1gPBn9WNxnjauqPabCn0J6P/jVEza3jF1Gf7aIh/21Tuc4oeZi0yrV+FoaupaCcCcurVObfnDtCpRGvETw6BD03yg0dLOqcgvhfevdVkSO7eRrlX518S/c37JYZVFaGBpvvr2ftev6MDn9OdiCTwUkgokPIhviCuKFvjKkLr+QyPWt+Zx1o9hvRj56VDo34acgDP/4WkWMEtav9MfxW4gTFltdwv+J+2UCHRTNrxS/e2USt4raYevSBhVwZU2gPyIK5M8vyQAO7LUoedUXrUbiuQXayEbt085zFPYw3l85dGC2eBWUu636HYCIkqEb3VL9QsG/ICZS/wckccagSzfFpO+fhPp+TfitCCn+9T91K/+xmg0QY6Pe2P1xqVePw3QkkCiSMsJFOEcQSrAOdYxPjjUrgtccvWLOnBtS5zxRlMrijOlE808M19pewN0eLM+gcNQ+XbK7ZeAS6HNTtVo7bHBeVzzIzYZQiwOlRQkQUm8FUpUEMqKgjLUVBHrKzCiSyTJg47+Ltl8NZDzanbY30uQYQ52HBLhbjWwgoY3dwOoNgJ65nM/a7BCBhFpLCrflOp10KLhO4WfoqJGtBYXE/SdrejAqq4ayfSYjGTrORALSEXLacQRuyaDRC0Nh5GHyS1+knOY1uNsMn0IzLVTji6gt2fUTnb10aLxKe14YiZdVCa1e/Kg9ukbim/uBgp/Twyw1mKtJbsghSLGKUjHpwCqFLd3BSEZ/RYnZjwMw4wSHo58DlQdtyE/KVbVTWr7P5pGNIzhIhjDEbLglUpdgpM85tr4FDgSTPtqJcYY2OvSHYuDTKJRE/s/hnPLWMFPehuteA6Fqhl39kKs8fabnjOGL+q89yVW1A39rVMtinbXdkzEMaNL5sSKfw11tXF5JmOoYva3pdfQHCiM9W0BWHZ2LjeFpW5w06CkY2p4xEpLmLqXZZrxpNlG+2KAo1AN8sZZELrwhImUFip5a4UtZs1/WZEfmgvlx1V4cL3+CVjMAy6YLRrHOiW/oDVW7vHo6YjXjDeGYXoBg0BlEaadxQJMEiuw/VO9MtqUdcXPGd9dMNtkTusd5oAoC6w8EvAQmpQJo6zw9INQZCZ1RKUNnJ4mAih8GUgY712TGOrY0iTqCv1Nt4S9IZd3ydnCyo2QJuH8pI56WGz3ZhcGUcjHivulFTnhrG3wDqQ5tJre7v+IcF52Z+V2ZYnQaGCJ2pH2W5DHfpb7LqlPL1tXQYt1iypwX0QGi6jE2pygoy291H21/275idop6lDFBCetR9Oeu7K4pJFQ42pY2UC+snJaNaLzfsKS405ly6XPQMb4gV6urapCoMdl7uNzhE1bVs4AMLhp7YdB/SZqUqU3QEpFeeNd1W6XnDd8YXXe1yBtn4lDO0uvfk91DTMnhC9LmUmehTWP0VYxBJYohcVZowtmhvySZeIvudjmj4z+/A0NSjv6pia2GarxbCx9K8sFFxo46kxQqdmmOiP7w53ZfX6yYsgYiHO4HIlJ74UthW7FdZKOoQSwSUW0KMcHidSNlqyGeIxbWvwF3+bIUj5FyMwfOAk4kjuDX92a64IQMsnlpytPDaBxdncKPvMY64yd7C7n00E4KA7hvyh+uEGO2MNhe7gq+R06e8XlUcAl2oWRgVoYMoeHG8NTJ7Zb3hayxBff3sW5X6Xec7nHJYB3tCRGMJho9zDhtFybujizBZuZn3lUFl5+zm0s4EbS6/tzQyidhEHm7DKyyX3a2SksGL2UgSFrBHSPNNjdmD+dggjkf8+WGs5Bk5oEZ6o2/U+N0oJlw5u+9/ZGDFAwKwz71f1JhlJcDW29UY9s+hMYbRObVednUnKeU4Qhqjcj6riMvKIwSrPFLNRGFhqgwNqivVC/WqjfRGol6F7t2baL6cKFKuPyItmygny6JFZr7NmnUhrG4OGVO7oyT0noT1rKJKoWP86DJABo8w0hUYirBquMsf1oDModXJU1jOc/dNsh6GEbnrwOUB361ePQoOg/NBI318Cz6bjUMn7/RImUTMHO4nbFl6G47Mr9FxUmSn4XqUPVfLSQtwY5Mj3xrLedhpow3GWgyuyFCvRLI98TgvR5/GLgYd0qzdLRyDykwyxQ/rWDDGSGcceaAMbwtkGFm8z64xRxvVHrMHl2+dDfpPExyl0xUCDXYvtirSKp4vFlrgUeRXo7c+kSmvr7dE6pMR32lNEHbQDspnhPqyTuNHXnyE7ic8GT3usFaQ1vVzauc1jOHg3i+Z1h2THgb2xDz0GaRJeX+eRU4bc7fCsasMvxUJ+utYVrUByq97OVnVIbdszaftljyPpOznhCRtB8Why3HURBG/7pj9Q3B4DcQ78s9f15A6ixzvxFF/hYYTbFO3RJXv1v+U4mhNaAduVUej93F7pY51KnS5EivwCOj4eltBicuuRI98j+Ip2E7drt0+GGLxpHqXfUklkDx01fgmHHOYluAVJ6KED7OmRhBTltvOMQzvA+JOGSBCfvZ5KiELKGJrerKOiOECroTSjYAIlAZaK7/uu0sdTLinSOzgz/WXS1NLvPq/3wn/6s5KJShknST5Gs5qM3NIsk4YALbYkQ8zeP7zW2ZPJvhFAG2cPJ21k3dUfS/sXm8oQTpd2GbUJTZ9sdtYc2snb6UHXrjbQcJnt3TadoTXVggDrZ3AWoywYbvMk57Rb7ANpWKgvm+w4cRBwC67wKRDQ0YsPYRjqozjPxhOg6sD4udpXdwe7cOnmYj/jkqCn1aCIcEOUM43S1wHN6SwBDP3KJXoKp9F82ki8z4KyUtEMVTVqZhPTdjheCFznyDNPXTQcvT4LZpzkrc90yZ3wZHUYWk/O/ptzIny8P8hPzUDnc1cW1ikHj3ssCYob5cyvXQWHmg3n0OE5qbXL/hsEr2PmZXJj4J+AFsQ9UvmlxR2gl7NMMe+BProiuo5DLu0AzXbwzAgVk4g7pHfP7tpO014RngiYMCad0NGok4yCLQn3Z7uSUKfPW6zUWAlbLIq6WlxOlZG0tpdlVxuCV/t9+6nPF8TphKd7XiApbiubE6lpVXQ60eu+/I4yFkdFiQ5l5tmBFz4ACdV2rTjB7BEObwT4sVpyNm3AGsyF60Lcu4KgvhRO8VxFBXV0YO8vRyCK4PyKbyvtKLtecKd8OUfqnClGTN6aZtj3KsiAcyJhaaYFhJtSYA6zqRyj8eLQD4/0vuAT85bvn2/9Rib8TDOXjZROfp8eOA+w+urTBLmGCX11rreftFQiuiuEZX/9CTDHH78HtpM9cXgvD3fNNqjXMpO2lfnE+ssyR4cJb2uYFbPtGO8bB2wTGfSY33Mnwsle6dCslm3x6bJ02t4tJfyFaHMdXoaYQ6ehH5w3dba/SHcmRV39/LSXmbL6NfJlPTy3wRagPN2fJkpoRor3/0muREFkTtBhr9YRgfl5vcDRK+2ZhNNl4YAZfkks9ioh4SKUXj18+Ku7FiUiPiF1LihDvrWFf87RQc3N+6XF49ogORSufak6eUVA7bopjh7OO9en63euwMIWdftbc7UVJYyXuLx/1685IL5t6ES5a3tl6UQlUdCTenlE2Q10mfpXuePcvC1GHYnMiqhwB6ZRvw1OLIbPwND9NDF/PDdfPXtjqWYSKVQUG+SnZi/EP5VtD1YiMnlCdT6ZsZKR9d+6HtsDveRDYchBUx8VdYgFTzyBxN5GloRLr8ZPpzJ2kEGWH94oy7+hAEMmAca3VM34Pi2g4CSJbUythBiJFX5ibBuAxiNuqp/USwcqPGqBIzRFxWCT20Zeq7JxmvhTxeA+BowcoHnk3jPNKGvxNv1qIWfdpgZgFONDLgKnlhDDuvwlel6eZWBkdt7kmahHY7kUFvlBxfrkErl2ARHPB+vxn91kQTr0jFh4g5/md5UdKJbgpW6R5yupPyLGsXyyklR7o8OXpQqdTb9t+F2b6eUM1Kzo4y1e8AIsluX78wZNUm9G1DcrzUAsyBRApzc9OfctlyB67QY3DMbznuQCMoaEN4/KnwucXGtNxPcN3edolosrdySYAIUDdXiVJQX7kILAJXZokvnFJcyFS2uCwxNUYxv4HQCS9+NrudXNWhw1ZfVSA4z5mmNrTeRrCoSG3b0W0Z9FS1Zeis3MtkaIaF4O7vsS7tkp5XsSMQaOWMVxakRYavxdn/082T7+t0Y1qMLlkdQQW6cKOXzcEFXCWEAVpVMLeA0IOgSnQjDkZjlGGIR+hggSgqocoAFnfJ/2Cdy86mUAjtIRkVuPzb6l+kBkdJzu+vQmWeA5uylWVClxyqfSMAzRHefNu0+xDx7FisRWsUyjTW5vK1HJeF7qZFOeahQDLmMqL9DpqUGyDZG10ASaLv9HxKniWzO3FzGbJwu1Mq7Xhjx7OVYnpV73cd4yq8w7qUz9+A5EnpEGStHn7gF5/mn6spc8SVhtrzs/5WedBGjAXmQVC8BgY2WKFAs0PWdcAZnQ4uAmtDtPzQv9fuzaf6KNKdpn3CATsBssPBfNliV4MZvMzeTmFyhUppfuevDskIEBOyQdtf+P+xVMof6JIyXfd9TWpBLzhb5Wm45NiVMEUD1xLght5lVUShCkF3+O1VVkpy9rg/OQ9yrF9WzreeWLgfDAWhHTb5OCkPIy6MU2wM7IQDAnMPSFGSJ+J1/anO34Y3FVeyjbUQrkhZUZQyBMxfqbr2yT0vo5u/9FN+PaX9qW3cmhnacJtsJHslpSvW/yM4BW0pTlmqkX5YBBCZoZCY8caPJUv5VhZsys1H5VbxCnN4ligRKtqK51cO0Qi60wv3ESJmpUSohFUmH10LMWknJ5BsIgS+V6dhLLB23pz9WFY4M6Le/tdf0dmLOfJguzBXSjxOlWBe3d3X0VhBKmTyg9LIZHgW1xVH7LliPNc+K5tW2/TLIGoL+bvLGCKntP+R+AuRwA2zd4yk7kbTXZhRBuq9MKGy1sgPBl2wCCVP0xsWBlxO0ulpegeQEWXBnS57HXj5L/JX2z3VZzZFCPro20xVVnxmJE709k6V3FxWedAUq7I+llRIEks3bN3Jg9Xd0ENbHW1egjQHrh98IqDg1hv2Gq4cy6IXSJYKXse8aRSu3tYlmlWVf/orARzYI57H9o19Oq7rb26Fy3I1MYqPi3UU7IGQ7+gH60EALCVZMHkH+sNKoL76SPHp1SkHm7G40QGmy352DcSsmPLzTtI2lqd4v6e5KQ8XMLRSCUf74yFHEFoCS5+OIpAO2RsRYSLMTVVWKl7D4ylvpDkwyPp7ZLak16U7baAo4dqETjTl4CQbvE6aYlFk3gYYp6sWBRqUVyARdT+S59LigDedyJEzmnL7wenQXKVAdYdbh9s/1CJg9REUjiRGSlg85gdeZ8dprV1/3oBq5WdpugBfSUDcEjkZ1wtadLVmihlZU8rSbA9nuX/kk1Y0+fMP01ZIITwOw/uMJV8UpRaBUTOlq2HHJFNelKPbcuGZFq0fQ0qwnt25fqlwCwg9gtemlAUq+vluK9KmSDNy4jZeT4iTv+ks9pqah4qQ9jYXne5KqwxbA2MHb6vyGBu0Z6fxNArL7TMFrumoCQpUeG88BltIeFPf9yoPP2b1G3Drd+iP/ULEKBhpKbpeC1HY9fve5+kNhOiyXlPHu7kzwFdxZn0/UQLWyBJCn85OVEp5oAMCMD2AbondoVJrNj2c/Sbja+KtkT2/ZFb6/A3/zPW/s4xp9Fpx+bzd1gijQQZH4uFlLKylJXoZi03isbhQ19XJ7VeXCKEB7qqzyTgD+x4KDA3dvl6IoP5FWbKO6OjS3xY+Nt7ZMfCzWaA+hlihzWWpzqhcqS3qowurvNNhunApjfKXo4Eckp36DrZMUpajRWneT+OUjePw6/AY6dTX2gxOvL1fVwAAAAA=');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: Girvi panel loan settled file
+ * **************************************************************************************
+ *
+ * Created on Sep 8, 2015 3:28:55 PM
+ *
+ * @FileName: orgplnstl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2015 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2015 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 1.0.0
+ * Version: 1.0.0
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+//echo '$ltran_amt_left='.$ltran_amt_left;
+?>
+<td align="left" class="noPrint">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left">
+                <form name="settle_all_loan" id="settle_all_loan"
+                      enctype="multipart/form-data" method="post"
+                      action="include/php/orgpslad.php"   
+                      onsubmit="return settleLoans();">  
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <?php // echo '$totBal=='.$totBal;?>
+                        <input type="hidden" id="allGTransIds" name="allGTransIds" value="<?php echo $allGTransId; ?>" />
+                        <input type="hidden" id="upPanelName" name="upPanelName" value="<?php echo $upPanelName; ?>" />
+                        <input type="hidden" id="lTransId" name="lTransId" value="<?php echo $ltranId; ?>" />
+                        <input type="hidden" id="totalBal" name="totalBal" value="<?php echo $totBal; ?>" />
+                        <tr>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft80 tnr_nr_12_red">
+                                    DATE: 
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" class="margin1pxAll">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td valign="middle" align="left" class="margin1pxAll">
+                                            <!-- *************** Start Code for dayDD *************** -->
+                                            <?php
+                                            $todayDay = date('d') - 1;
+                                            $arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                                                '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                                                '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+                                            $optDay[$todayDay] = "selected";
+                                            ?> 
+                                            <select id="stlTransDOBDay" name="stlTransDOBDay" title="DAY"
+                                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                                document.getElementById('addItemDOBMonth').focus();
+                                                                return false;
+                                                            } else if (event.keyCode == 8) {
+                                                                return false;
+                                                            }"
+                                                    class="form-control-req-height20">
+                                                <option value="NotSelected">DAY</option>
+                                                <?php
+                                                for ($dd = 0; $dd <= 30; $dd++) {
+                                                    echo "<option value=\"$arrDays[$dd]\" $optDay[$dd]>$arrDays[$dd]</option>";
+                                                }
+                                                ?>
+                                            </select> 
+                                        </td>
+                                        <td valign="middle" align="left" class="margin1pxAll">
+                                            <!-- *************** Bill Code for Month *************** -->
+                                            <?php
+                                            $todayMM = date('m') - 1;
+                                            $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                            $optMonth[$todayMM] = "selected";
+                                            ?> 
+                                            <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                            <select id="stlTransDOBMonth" name="stlTransDOBMonth" title="MONTH"
+                                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                                document.getElementById('addItemDOBYear').focus();
+                                                                return false;
+                                                            } else if (event.keyCode == 8) {
+                                                                document.getElementById('addItemDOBDay').focus();
+                                                                return false;
+                                                            }
+                                                            //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                            var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                            gbMonth = document.getElementById('gbMonthId').value;
+                                                            if (gbMonth == 1) {
+                                                                if (event.keyCode) {
+                                                                    var sel = String.fromCharCode(event.keyCode);
+                                                                    if (sel == 0)
+                                                                    {
+                                                                        this.value = arrMonths[9];
+                                                                    } else if (sel == 1)
+                                                                    {
+                                                                        this.value = arrMonths[10];
+                                                                    } else if (sel == 2)
+                                                                    {
+                                                                        this.value = arrMonths[11];
+                                                                    }
+                                                                    // this.value = arrMonths[10];
+                                                                    document.getElementById('gbMonthId').value = 0;
+                                                                }
+                                                            } else if (event.keyCode) {
+                                                                var sel = String.fromCharCode(event.keyCode) - 1;
+                                                                this.value = arrMonths[sel];
+                                                                if (event.keyCode == 49) {
+                                                                    document.getElementById('gbMonthId').value = 1;
+                                                                }
+                                                            } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13"
+                                                    class="form-control-req-height20">
+                                                <option value="NotSelected">MON</option>
+                                                <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                                $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+                                                $engmonformat = mysqli_query($conn, $queryengmonformat);
+                                                $rowengmonformat = mysqli_fetch_array($engmonformat);
+                                                $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                                for ($mm = 0; $mm <= 11; $mm++) {
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                                    if ($englishMonthFormat == 'displayinnumber') {
+                                                        $engMonth = date('m', strtotime($arrMonths[$mm]));
+                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$engMonth</option>";
+                                                    } else {
+                                                        echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                                    }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                                                }
+                                                ?>
+                                            </select> 
+                                        </td>
+                                        <td valign="middle" align="left" class="margin1pxAll">
+                                            <!-- *************** Start Code for Year *************** -->
+                                            <?php
+                                            $todayYear = date(Y); //chnaged @Author:PRIYA30APR14
+                                            $optYear[$todayYear] = "selected";
+                                            ?> 
+                                            <select id="stlTransDOBYear" name="stlTransDOBYear" title="YEAR"
+                                                    onkeydown="javascript: if (event.keyCode == 13) {
+                                                                document.getElementById('addItemSuppName').focus();
+                                                                return false;
+                                                            } else if (event.keyCode == 8) {
+                                                                document.getElementById('addItemDOBMonth').focus();
+                                                                return false;
+                                                            }"
+                                                    class="form-control-req-height20">
+                                                <option value="NotSelected">YEAR</option>
+                                                <?php
+                                                for ($yy = $todayYear; $yy >= 1900; $yy--) {
+                                                    echo "<option value=\"$yy\" $optYear[$yy]>$yy</option>";
+                                                }
+                                                ?>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft20 tnr_nr_12_red">
+                                    SETTLED AMOUNT: 
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft20">
+                                    <input id="stlTransAmount" name="stlTransAmount" type="text" value="<?php
+                                    if ($ltran_settle_amt != '') {
+                                        echo $ltran_settle_amt;
+                                    }
+                                    ?>" placeholder="SETTLED AMOUNT" size="15" maxlength="20" class="form-control-req-height20 align_center"
+                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);" 
+                                           onkeyup="javascript:calcGirviBal();"  />
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft20 tnr_nr_12_red">
+                                    BALANCE LEFT: 
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft20">
+                                    <input id="stlTransAmountLeft" name="stlTransAmountLeft" type="text" value="<?php echo $ltran_amt_left; ?>" placeholder="BALANCE LEFT" size="15" maxlength="20" class="form-control-req-height20 align_center"
+                                           onkeypress="javascript:return valKeyPressedForNumNDot(event);" readonly="true" />
+                                </div>
+                            </td>
+                            <td valign="middle" align="left" class="itemAddPnLabels14">
+                                <div class="spaceLeft20">
+                                    <input id="stlTransSubBtn" name="stlTransSubBtn" type="submit" value="<?php
+                                    if ($upPanelName == 'updateSettledLoans') {
+                                        echo 'UPDATE';
+                                    } else {
+                                        echo 'SETTLE';
+                                    }
+                                    ?>" size="15" maxlength="20" class="frm-btn" />
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</td> 

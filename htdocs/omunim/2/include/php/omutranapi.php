@@ -1,3 +1,123 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Mar 13, 2011 4:33:35 PM
+ *
+ * **************************************************************************************
+ * @tutorial: Journal Trans API
+ * **************************************************************************************
+ * @FileName: ommpjrtr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by @AUTHOR:PRIYA29JAN13 
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+if ($transactionPanel == 'insert') {
+
+    $queryUTrans = "INSERT INTO user_transaction (
+        utrans_owner_id,utrans_firm_id,utrans_user_id,utrans_pre_invoice_no,utrans_invoice_no,utrans_unique_id,utrans_type,
+        utrans_gd_gs_wt ,utrans_gd_gs_wt_type ,utrans_gd_nt_wt ,utrans_gd_nt_wt_type ,utrans_gd_fn_wt ,utrans_gd_fn_wt_type ,
+        utrans_gd_ffn_wt ,utrans_gd_ffn_wt_type ,utrans_sl_gs_wt ,utrans_sl_gs_wt_type ,utrans_sl_nt_wt ,utrans_sl_nt_wt_type ,
+        utrans_sl_fn_wt ,utrans_sl_fn_wt_type ,utrans_sl_ffn_wt ,utrans_sl_ffn_wt_type ,utrans_gd_paid_wt ,utrans_gd_paid_wt_typ ,
+        utrans_sl_paid_wt ,utrans_sl_paid_wt_typ ,utrans_paym_acc_id ,utrans_pay_cheque_acc_id ,utrans_pay_card_acc_id ,
+        utrans_pay_disc_acc_id ,utrans_pay_vat_acc_id ,utrans_cash_narratn ,utrans_cheque_no ,utrans_card_no ,utrans_disc_narratn ,
+        utrans_cash_amt_rec ,utrans_pay_cheque_amt ,utrans_pay_card_amt ,utrans_discount_amt ,utrans_pay_vat_amt ,
+        utrans_pay_tax_amt ,utrans_paym_oth_info ,utrans_date ,utrans_bal ,utrans_gd_rtct_wt ,utrans_gd_rtct_wt_typ ,
+        utrans_sl_rtct_wt ,utrans_sl_rtct_wt_typ ,utrans_gd_bal_wt ,utrans_gd_bal_wt_typ ,utrans_panelName ,
+        utrans_metal_val ,utrans_cash_rec ,utrans_item_desc ,utrans_utin_id ,utrans_jrnl_id ,utrans_vat_jrnl_id ,
+        utrans_gd_rate ,utrans_sl_rate ,utrans_quantity ,utrans_tunch ,utrans_metal_type ,utrans_item_name ,
+        utrans_final_fine_wt ,utrans_wastage ,utrans_lab_charges ,utrans_lab_charges_type ,utrans_valuation ,
+        utrans_crdr_type ,utrans_transaction_type ,utrans_tot_amt_rec ,utrans_gd_bal_crdr ,utrans_sl_bal_crdr ,
+        utrans_cash_bal_crdr ,utrans_sl_bal_wt ,utrans_sl_bal_wt_typ ,utrans_prev_metal_gd_rate ,utrans_prev_metal_sl_rate ,
+        utrans_avg_gd_rate ,utrans_avg_sl_rate ,utrans_gd_PNL_amt ,utrans_sl_PNL_amt ,utrans_gold_amt ,utrans_silver_amt ,
+        utrans_prev_gd_amt ,utrans_prev_sl_amt ,utrans_cash_balance ,utrans_status ,utrans_since ,utrans_other_info ,
+        utrans_othr_chgs_by ,utrans_gd_othr_chgs_wt ,utrans_gd_othr_chgs_wt_typ ,utrans_sl_othr_chgs_wt ,
+        utrans_sl_othr_chgs_wt_typ ,utrans_pay_opt ,utrans_oth_chgs_amt ,utrans_cry_chrg ,utrans_prev_cash_bal) VALUES (
+    '$utransOwnerId','$utransFirmId','$utransUserId','$utransPreInvoiceNo','$utransInvoiceNo','$utransUniqueId','$utransType',
+    '$utransGdGsWt' ,'$utransGdGsWtType' ,'$utransGdNtWt' ,'$utransGdNtWtType' ,'$utransGdFnWt' ,'$utransGdFnWtType' ,
+    '$utransGdFfnWt' ,'$utransGdFfnWtType' ,'$utransSlGsWt' ,'$utransSlGsWtType' ,'$utransSlNtWt' ,'$utransSlNtWtType' ,
+    '$utransSlFnWt' ,'$utransSlFnWtType' ,'$utransSlFfnWt' ,'$utransSlFfnWtType' ,'$utransGdPaidWt' ,'$utransGdPaidWtTyp' ,
+    '$utransSlPaidWt' ,'$utransSlPaidWtTyp' ,'$utransPaymAccId' ,'$utransPayChequeAccId' ,'$utransPayCardAccId' ,
+    '$utransPayDiscAccId' ,'$utransPayVatAccId' ,'$utransCashNarratn' ,'$utransChequeNo' ,'$utransCardNo' ,'$utransDiscNarratn' ,
+    '$utransCashAmtRec' ,'$utransPayChequeAmt' ,'$utransPayCardAmt' ,'$utransDiscountAmt' ,'$utransPayVatAmt' ,
+    '$utransPayTaxAmt' ,'$utransPaymOthInfo' ,'$utransDate' ,'$utransBal' ,'$utransGdRtCtWt' ,'$utransGdRtCtWtTyp' ,
+    '$utransSlRtCtWt' , '$utransSlRtCtWtTyp' ,'$utransGdBalWt' ,'$utransGdBalWtTyp' ,'$utransPanelName' ,
+    '$utransMetalVal' ,'$utransCashRec' ,'$utransItemDesc' ,'$utransUtinId' ,'$utransJrnlId' , '$utransVatJrnlId' ,
+    '$utransGdRate' ,'$utransSlRate' ,'$utransQuantity' ,'$utransTunch' ,'$utransMetalType' ,'$utransItemName' ,
+    '$utransFinalFineWt' , '$utransWastage' , '$utransLabCharges' ,'$utransLabChargesType' , '$utransValuation' ,
+    '$utransCrDrType' , '$utransTransactionType' ,'$utransTotAmtRec' ,'$utransGdBalCrDr' ,'$utransSlBalCrDr' ,
+    '$utransCashBalCrDr' ,'$utransSlBalWt' ,'$utransSlBalWtTyp' ,'$utransPrevMetalGdRate' ,'$utransPrevMetalSlRate' ,
+    '$utransAvgGdRate' ,'$utransAvgSlRate' ,'$utransGdPNLAmt' ,'$utransSlPNLAmt' ,'$utransGoldAmt' ,'$utransSilverAmt' ,
+    '$utransPrevGdAmt' ,'$utransPrevSlAmt' ,'$utransCashBalance' ,'$utransStatus' ,$currentDateTime ,'$utransOtherInfo' ,
+    '$utransOthrChgsBy' ,'$utransGdOthrChgsWt' ,'$utransGdOthrChgsWtTyp' ,'$utransSlOthrChgsWt' ,
+    '$utransSlOthrChgsWtTyp' , '$utransPayOpt' ,'$utransOthChgsAmt' ,'$utransCryChrg' ,'$utransPrevCashBal')";
+
+    if (!mysqli_query($conn, $queryUTrans)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+} else if ($transactionPanel == 'delete') {
+    //Delete Journal Entry
+    $queryUTrans = "DELETE FROM user_transaction where utrans_id='$utransId'";
+    if (!mysqli_query($conn, $queryUTrans)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+} else if ($transactionPanel == 'update') {
+    $queryUTrans = "UPDATE user_transaction SET
+               utrans_owner_id='$utransOwnerId',utrans_firm_id='$utransFirmId',utrans_user_id='$utransUserId',"
+            . "utrans_pre_invoice_no='$utransPreInvoiceNo',utrans_invoice_no='$utransInvoiceNo',utrans_unique_id='$utransUniqueId',"
+            . "utrans_type='$utransType',utrans_gd_gs_wt='$utransGdGsWt' ,utrans_gd_gs_wt_type='$utransGdGsWtType' ,"
+            . "utrans_gd_nt_wt='$utransGdNtWt' ,utrans_gd_nt_wt_type='$utransGdNtWtType' ,utrans_gd_fn_wt='$utransGdFnWt' ,"
+            . "utrans_gd_fn_wt_type='$utransGdFnWtType' ,utrans_gd_ffn_wt='$utransGdFfnWt' ,utrans_gd_ffn_wt_type='$utransGdFfnWtType' ,"
+            . "utrans_sl_gs_wt='$utransSlGsWt' ,utrans_sl_gs_wt_type='$utransSlGsWtType' ,utrans_sl_nt_wt='$utransSlNtWt' ,"
+            . "utrans_sl_nt_wt_type='$utransSlNtWtType' ,utrans_sl_fn_wt='$utransSlFnWt' ,utrans_sl_fn_wt_type='$utransSlFnWtType' ,"
+            . "utrans_sl_ffn_wt='$utransSlFfnWt' ,utrans_sl_ffn_wt_type='$utransSlFfnWtType' ,utrans_gd_paid_wt='$utransGdPaidWt' ,"
+            . "utrans_gd_paid_wt_typ='$utransGdPaidWtTyp' ,utrans_sl_paid_wt='$utransSlPaidWt' ,utrans_sl_paid_wt_typ='$utransSlPaidWtTyp' ,"
+            . "utrans_paym_acc_id='$utransPaymAccId' ,utrans_pay_cheque_acc_id='$utransPayChequeAccId' ,utrans_pay_card_acc_id='$utransPayCardAccId' ,"
+            . "utrans_pay_disc_acc_id='$utransPayDiscAccId' ,utrans_pay_vat_acc_id='$utransPayVatAccId' ,utrans_cash_narratn='$utransCashNarratn' ,"
+            . "utrans_cheque_no='$utransChequeNo' ,utrans_card_no='$utransCardNo' ,utrans_disc_narratn='$utransDiscNarratn' ,"
+            . "utrans_cash_amt_rec='$utransCashAmtRec' ,utrans_pay_cheque_amt='$utransPayChequeAmt' ,utrans_pay_card_amt='$utransPayCardAmt' ,"
+            . "utrans_discount_amt='$utransDiscountAmt' ,utrans_pay_vat_amt='$utransPayVatAmt' ,utrans_pay_tax_amt='$utransPayTaxAmt' ,"
+            . "utrans_paym_oth_info='$utransPaymOthInfo' ,utrans_date='$utransDate' ,utrans_bal='$utransBal' ,utrans_gd_rtct_wt='$utransGdRtCtWt' ,"
+            . "utrans_gd_rtct_wt_typ='$utransGdRtCtWtTyp' ,utrans_sl_rtct_wt='$utransSlRtCtWt' , utrans_sl_rtct_wt_typ='$utransSlRtCtWtTyp' ,"
+            . "utrans_gd_bal_wt='$utransGdBalWt' ,utrans_gd_bal_wt_typ='$utransGdBalWtTyp' ,utrans_panelName='$utransPanelName' ,"
+            . "utrans_metal_val='$utransMetalVal' ,utrans_cash_rec='$utransCashRec' ,utrans_item_desc='$utransItemDesc' ,"
+            . "utrans_utin_id='$utransUtinId' ,utrans_jrnl_id='$utransJrnlId' , utrans_vat_jrnl_id='$utransVatJrnlId' ,"
+            . "utrans_gd_rate='$utransGdRate' ,utrans_sl_rate='$utransSlRate' ,utrans_quantity='$utransQuantity' ,utrans_tunch='$utransTunch' ,"
+            . "utrans_metal_type='$utransMetalType' ,utrans_item_name='$utransItemName' ,utrans_final_fine_wt='$utransFinalFineWt' , "
+            . "utrans_wastage='$utransWastage' , utrans_lab_charges='$utransLabCharges' ,utrans_lab_charges_type='$utransLabChargesType' , "
+            . "utrans_valuation='$utransValuation' ,utrans_crdr_type='$utransCrDrType' , utrans_transaction_type='$utransTransactionType' ,"
+            . "utrans_tot_amt_rec='$utransTotAmtRec' ,utrans_gd_bal_crdr='$utransGdBalCrDr' ,utrans_sl_bal_crdr='$utransSlBalCrDr' ,"
+            . "utrans_cash_bal_crdr='$utransCashBalCrDr' ,utrans_sl_bal_wt='$utransSlBalWt' ,utrans_sl_bal_wt_typ='$utransSlBalWtTyp' ,"
+            . "utrans_prev_metal_gd_rate='$utransPrevMetalGdRate' ,utrans_prev_metal_sl_rate='$utransPrevMetalSlRate' ,"
+            . "utrans_avg_gd_rate='$utransAvgGdRate' ,utrans_avg_sl_rate='$utransAvgSlRate' ,utrans_gd_PNL_amt='$utransGdPNLAmt' ,"
+            . "utrans_sl_PNL_amt='$utransSlPNLAmt' ,utrans_gold_amt='$utransGoldAmt' ,utrans_silver_amt='$utransSilverAmt' ,"
+            . "utrans_prev_gd_amt='$utransPrevGdAmt' ,utrans_prev_sl_amt='$utransPrevSlAmt' ,utrans_cash_balance='$utransCashBalance' ,"
+            . "utrans_status='$utransStatus' ,utrans_other_info='$utransOtherInfo' ,utrans_othr_chgs_by='$utransOthrChgsBy' ,"
+            . "utrans_gd_othr_chgs_wt='$utransGdOthrChgsWt' ,utrans_gd_othr_chgs_wt_typ='$utransGdOthrChgsWtTyp' ,"
+            . "utrans_sl_othr_chgs_wt='$utransSlOthrChgsWt' ,utrans_sl_othr_chgs_wt_typ='$utransSlOthrChgsWtTyp' , utrans_pay_opt='$utransPayOpt' ,"
+            . "utrans_oth_chgs_amt='$utransOthChgsAmt' ,utrans_cry_chrg='$utransCryChrg' ,utrans_prev_cash_bal='$utransPrevCashBal' "
+            . "WHERE utrans_id = '$utransId'";
+
+    if (!mysqli_query($conn, $queryUTrans)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+}
 ?>

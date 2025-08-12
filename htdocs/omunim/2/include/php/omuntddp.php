@@ -1,3 +1,204 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on 01-Aug-2011 10:56:17 PM
+ *
+ * @FileName: omuntddp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+require_once 'ommpincr.php';
+?>
+<?php
+include 'omfrpsck.php';
+if ($ddpanelName == 'dayBeforePanel') {
+    //
+    //$dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    //
+    $oneDayMinusStrToTime = $todayFromStrDate - 60 * 60 * 24;
+    if ($acc_cash_opening_strtodate != '')
+        if ($acc_cash_opening_strtodate == $todayFromStrDate)
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))>$acc_cash_opening_strtodate and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+        else
+            $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $acc_cash_opening_strtodate AND $oneDayMinusStrToTime";
+    else
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+} else {
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+}
+//
+if ($ddMainPanel == 'custAccLedger'){
+    $accLedStrUdhDep = "and utin_user_id = '$custId'";
+} else {
+    $accLedStrUdhDep = NULL;
+}
+//
+if ($panelDDDetClick == 'ddDetClick') {
+    $invId = $_GET['tableId'];
+    $strFrmId = $_GET['firmId'];
+    $todayFromStrDate = $_GET['fromDate'];
+    $todayToStrDate = $_GET['toDate'];
+    if ($ddpanelName == 'dayBeforePanel') {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y'))<$todayStrDate";
+    } else {
+        $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate";
+    }
+    $qSelTodayNewUdhaarDeposit = "SELECT * FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_type = 'UDHAAR' and utin_transaction_type IN ('UDHAAR DEPOSIT') and utin_status IN ('New','Updated','Deleted','PAID')and utin_id = '$invId'";
+} else {
+    $qSelTodayNewUdhaarDeposit = "SELECT * FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' $dateStr $accLedStrNewOrder and utin_type = 'UDHAAR' and utin_transaction_type IN ('UDHAAR DEPOSIT') and utin_status IN ('New','Updated','Deleted','PAID') and utin_firm_id IN ($strFrmId) order by "
+                               . "UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) $ddOrderBy";
+}
+//
+//
+$resTodayNewUdhaarDeposit = mysqli_query($conn, $qSelTodayNewUdhaarDeposit);
+//
+//    
+if ($resTodayNewUdhaarDeposit) {
+//
+$totalTodayNewUdhaarDeposit = mysqli_num_rows($resTodayNewUdhaarDeposit);
+//
+//
+if ($totalTodayNewUdhaarDeposit > 0) {
+//
+//
+//$totalTodayNewUdhaarDeposit = 0;
+//      
+//    
+/*****************START code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17************************/
+$qSelect = "SELECT SUM(utin_total_amt_deposit) as total, "
+        . "SUM(utin_udhaar_int_amt) as total_int_rec, "
+        . "SUM(utin_cash_amt_rec) as utin_cash_amt_rec, "
+        . "SUM(utin_pay_cheque_amt) as utin_pay_cheque_amt, "
+        . "SUM(utin_pay_card_amt) as utin_pay_card_amt, "
+        . "SUM(utin_online_pay_amt) as utin_online_pay_amt, "
+        . "SUM(utin_pay_comm_paid) as utin_pay_comm_paid, "
+        . "SUM(utin_discount_amt) as utin_discount_amt "
+        . "FROM user_transaction_invoice where "
+        . "utin_owner_id='$_SESSION[sessionOwnerId]' $dateStr $accLedStrUdhDep "
+        . "and utin_status IN ('New','Updated','Deleted','PAID') and utin_firm_id IN ($strFrmId) "
+        . "and utin_type='UDHAAR' and  utin_transaction_type = 'UDHAAR DEPOSIT' "
+        . "and (utin_EMI_status  IN ('Paid') or utin_EMI_status IS NULL)"; //EMI Status condition added @Author:SHRI29MAY15 //status deleted added @Author:PRIYA17OCT13
+//
+$qResultdep = mysqli_query($conn,$qSelect);
+$rowdep = mysqli_fetch_array($qResultdep, MYSQLI_ASSOC);
+//
+$todaysudhaarDeposit = ($rowdep['total'] + $rowdep['total_int_rec'])-$rowdep['utin_discount_amt'];
+//
+//
+if ($panelName != 'TodaysUdhaarDeposit') {
+    //
+    $qSelectTotalTillToday = "SELECT SUM(utin_total_amt_deposit) as total, "
+        . "SUM(utin_udhaar_int_amt) as total_int_rec, "
+        . "SUM(utin_cash_amt_rec) as utin_cash_amt_rec, "
+        . "SUM(utin_pay_cheque_amt) as utin_pay_cheque_amt, "
+        . "SUM(utin_pay_card_amt) as utin_pay_card_amt, "
+        . "SUM(utin_online_pay_amt) as utin_online_pay_amt, "
+        . "SUM(utin_pay_comm_paid) as utin_pay_comm_paid, "
+        . "SUM(utin_discount_amt) as utin_discount_amt "
+        . "FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' "
+        . "and utin_date<='$todayDate' and utin_status IN ('New','Updated','Deleted','PAID') "
+        . "and  utin_transaction_type = 'UDHAAR DEPOSIT' and utin_firm_id IN ($strFrmId) "
+        . "and (utin_EMI_status  IN ('Paid') or utin_EMI_status IS NULL)"; //EMI Status condition added @Author:SHRI29MAY15 //status deleted added @Author:PRIYA17OCT13
+    //
+    $qResultTotalTillToday = mysqli_query($conn,$qSelectTotalTillToday);
+    $rowTotalTillToday = mysqli_fetch_array($qResultTotalTillToday, MYSQLI_ASSOC);
+    //
+    $totalTillToday = ($rowTotalTillToday['total'] + $rowTotalTillToday['total_int_rec']);
+    //
+    echo formatInIndianStyle($totalTillToday);
+    //
+}
+//
+//
+//
+/**********START CODE TO ADD TOTAL UDHARR IN AMOUNT,@AUTHOR:HEMA-5MAY2020***************/
+if ($ddpanelName == 'dayBeforePanel') {
+    //
+    $open_in_utin_cash_amt_rec += ($rowdep['utin_cash_amt_rec'] + $rowdep['total_int_rec']);
+    $open_in_utin_pay_cheque_amt += $rowdep['utin_pay_cheque_amt'];
+    $open_in_utin_pay_card_amt += $rowdep['utin_pay_card_amt'];
+    $open_in_utin_online_pay_amt += $rowdep['utin_online_pay_amt'];
+    $open_in_utin_pay_comm_paid += $rowdep['utin_pay_comm_paid'];
+    $open_in_utin_pay_disc_amt += $rowdep['utin_discount_amt'];
+    //
+} else {
+    //
+    $today_in_utin_cash_amt_rec += ($rowdep['utin_cash_amt_rec'] + $rowdep['total_int_rec']);
+    $today_in_utin_pay_cheque_amt += $rowdep['utin_pay_cheque_amt'];
+    $today_in_utin_pay_card_amt += $rowdep['utin_pay_card_amt'];
+    $today_in_utin_online_pay_amt += $rowdep['utin_online_pay_amt'];
+    $today_in_utin_pay_comm_paid += $rowdep['utin_pay_comm_paid'];
+    $today_in_utin_pay_disc_amt += $rowdep['utin_discount_amt'];
+    //
+    }
+    //
+    }
+}
+/**********END CODE TO ADD TOTAL UDHARR IN AMOUNT,@AUTHOR:HEMA-5MAY2020***************/
+/*****************END code to change udhaar_deposit table to user_transaction_invoice table @Author:PRIYANKA-01JULY17************************/
+/* if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+
+  if ($selFirmId != NULL) {
+  $strFrmId = $selFirmId;
+  } else {
+  //Get Public Firms
+  $qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+  $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+
+  $strFrmId = '0';
+
+  //Set String for Public Firms
+  while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+  $strFrmId = $strFrmId . ",";
+  $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+  }
+  }
+  /* $qSelectdep = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE( utin_date,'%d %b %Y'))=$girviDORStrToTime and utin_status IN ('New','Updated') and utin_firm_id IN ($strFrmId)"; */
+/* $qSelectdep = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_date='$todayDate' and utin_status IN ('New','Updated') and utin_firm_id IN ($strFrmId)";
+  $qResultdep = mysqli_query($conn,$qSelectdep);
+  $rowdep = mysqli_fetch_array($qResultdep, MYSQLI_ASSOC);
+  $todaysDeposit = $rowdep['total_udhadepo']; */
+
+//     //Get Public Firms
+//      $qSelPubFirmCount = "SELECT firm_id FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+//      $resPubFirmCount = mysqli_query($conn,$qSelPubFirmCount);
+//
+//      $strFrmId = '0';
+//
+//      //Set String for Public Firms
+//      while ($rowPubFirm = mysqli_fetch_array($resPubFirmCount, MYSQLI_ASSOC)) {
+//      $strFrmId = $strFrmId . ",";
+//      $strFrmId = $strFrmId . "$rowPubFirm[firm_id]";
+//      }
+//Get Total Principal Amount from udhadepo Table
+/*   if ($firmIdSelected != NULL) {
+  $qSelect = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_date='$todayDate' and utin_status IN ('New','Updated') and utin_firm_id='$firmIdSelected'";
+  } else {
+  $qSelect = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_date='$todayDate' and utin_status IN ('New','Updated') and utin_firm_id IN ($strFrmId)";
+  }  //comment @AUTHOR: SANDY4JUL13
+  } else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+
+  //Get Total Principal Amount from udhadepo Table
+  /* if ($selFirmId != NULL) {
+  $qSelectdep = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE( utin_date,'%d %b %Y'))=$girviDORStrToTime and utin_status IN ('New','Updated') and utin_firm_id IN ($selFirmId)";
+  } else {
+  $qSelectdep = "SELECT SUM(utin_total_amt) as total_udhadepo FROM udhaar_deposit where utin_owner_id='$_SESSION[sessionOwnerId]' and UNIX_TIMESTAMP(STR_TO_DATE( utin_date,'%d %b %Y'))=$girviDORStrToTime and utin_status IN ('New','Updated')";
+  }
+  } */
 ?>

@@ -1,3 +1,689 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAADILgAAy3wcxV5erqB1SNBr6gW5AKFLq2t3ADswICM3s21w4E0Kh38FW+Gu4CqmrMZ3/xl6rOKeSLh4BTEq654C7TKpuwymwbdfko9Ug0LT5efFnM1EEopDf+OeX1hN59nLn2L8hnTq77bHTTDw8vktxSPbl83LPwwHw0WLnFPXQX0YhoFWwEgMfoqt01fMUu6JrrRbVsIYD7m77RMF2LZa1TyAsh1yD4k9ijPAXchl2tJYppa/UczxOMC7u8S2XNjvOgqSsl7sE9PBAr6gawhvbpKjDxDvnjxNWqBmuvo/dKdzwgajhF19fS/E87VG2KZb+NBXy18OjaV15soJ6gOsdFD/ol+bdOM6tmw53+QyWzwg6nHzEsx2aCb9ISIjkOixB9uUraeHknFMx7ywUPq8FwgQX6dZyC+mQmpanl4gsxgqINRslCNZ+94Xmku4sOF2Z/xVE60XCv+Zqyx829lKQ6SmtwXw3HIiuPU9YE8R1lD51uTToSwo3mdL2a97Jyj6oqWne4aC3YaP/pHh1P/WNOM0Mt/QyZwUc1c9xbopt6nzwbKUBBE0qQMpU3+JcOKxxEnubVjIp8wjjvteMGnkNIRmLGvc0//5c5dPFQaAcuDsypbPcCJhbUcd1VNAMb6dYbjhMVxkVJ9ZyvbyaVaRSJIuiv3EZXzXbBIA6txOBgy55Wb6GU3e/99gWJ99Jxx3EeqYV/FZ7vgLHiku5vujj0dW04SY9K6XU4airUbMKL/JOdF5RruXXHT++Ug5+G1o2WutPTz1vrXERDYwiY1FZUtVVfMIK+a7sKxqeji/NS+0hzU0CNNEIz9BM/Kw8rtgP6+44Ci7uNkPH8M/Fdk3Ge/6+JGNRz5RWN/IOq47ZYp82nu+86u7dNn+H5mjXFAGTCFie1d2bGYVskVRxLsl0SvY0lsRdjcFAK9kKaMF+2bzypNki7YgW3ncKWpcS1DtcR4yX5LHQCm7Jp7fpdesCtgpyPCx3HtU23cK0ZwV7ZvLwGcnIBLaKksvPD5Oxyg0l2hyHENXVh7pYcDbEWN2se/S7fuAfRuJTfhmdXQvGqmWOQ8Y0Mq/1+/DS2as0/5/FB+FgU57lr2XXl/8oatAm2oNjEcX3iNgELbAnqtZ3A0r2sYDAV1IudWX9ZfrBbw+t/dINEl9CH50KhmapX0f2uzbBeO6g7/2mAUTmsotZLDh9jB2PwMyLlJHryp1VwWr74ggCxmkXdvAEuGew8FFzN2cHEihbXqXOP9LEA0Lt16/DQWvobQ+KaSoM8Lx1AgWz+Fitq9GgVmGTYGVHUGmLkwDDNZWIsgeQjsNLAGyEYrrircJF4DM15CaqqbzvF3BS4XSRDvSwYEvrK+OvGpAwEnbBtakP9hQxH2MC6Lfd9bKpjrjRsQeCqP9MCgHuUcrM2ai8SPkWVFtnRHnuksdjSyQcM+dEgooBlUvFWIyW9RyA/Ji9tOxDnNZwBBOkF38lXtB3KKxxIawPGfhptDDD6aKgsTvU19LffkN3f8JbtJGbtKOiO6sneQhchSIgDEof47svOjlbpBy7HdOZQM6FvDq1VlLd1I6HuIF3xc0JbMmTDlyV5q/I3GRRpUGIDurriyBxSFPykJEoeWsN2wT2kCyynu0HWrna1puhDfpGCMMf1zQed2TrkGHzsHLojr3sSNnJ7jf8l6DnmQC8Rg1fC6y4x+joOy0rtD5bpAkbQlmDgaakHfUWLNQ68c2tuuhWw2+qxtYVIGZxkyHtmBu8vTEIm41Hs2ne0Um9igH8vRVEK493DzpR2jX6ic7J2XbJnUXkMRTSw470Hs+vtoYGEYix1jDDBlpQ2VAxESI5hwaRoAgzYtKQoA5HF2EJh+HeCLYzeb7vNqXzqU13iQpC+zf7XLIqwcrQuFdR6e5GmeBIOVEW7qB2bA4+H/D6JNbOnZs5hUvsyfm6ne4vaABX0xVjg60BCMIovqge+aU6iFgh0BN71zdh2m4CacMlvP2hkSuVeM9r5ouyEPsXVkpZyNu1UT5wIqFS+7mdiYqYqVqHmDZQuCpMCwkVNwycGFDcFaIQXP8FAd3WhneZpVqnEKYCFjmzz5I5Ju90vk+YqJ+BfFqzHgus9epEuyOqoD1t4AyRrnUkh6HHMAIzBdMrNpF+yoOXI/X/38dfvpUgnWQuvJE+4eba0BgfPFh+QzMMhnzjQ91Go9iQ2VEIouqTqxyEjOLG6XElm9Jg2SremTZxSwywMRqxFGlsUGou9mRMzEy7CRvjs1twgWTGyPJ+48QOcMgSbe+k+QGfbY6YlDFSoEkANhU28izA4Kn98OobcbqLViNVlRzNpyORxu1HK46EwWzs/EtfcWQu3Rx568h1KI35WE7MJjYw8OjgoRmzsd/TO124VSTjwC/68ppfipVqd2vzCoPLlmpLtFrMSvt9hQcAQzlo2RzA989Z1/SHxjGdqrsGV0UBjY/QUArttMYj7BflzSzE9DpxQ/U1V/6r2kqV7s1pZaNU7tu0p/k0I4NRLaEqarxFRj+EmX8xFGeC32+XPm4oRjYwtS+ApxKjwlymMZNfgob8R0uBE4NzeBN4SvHV3XV9I1mppn0G74hLFn7N6udjQguOgrH1bASQh1gQR8M47/T7mvEYoYl1xXJjy618eBLW3j4XwF/bsYklRaE5KAB3TXdKRXQYM8mcHz4y6+SpZ+G16zbnE+V8Ve6e92Bgn74vnUdVNjqwIFMrsbes6KutyXl7AVRIXrcsankNFID/8V8R5Z8ntiyQlfmvvqNfv4ejqa6MMU3A3du/KOlr62mG/JLV2dcXxoiCXIG4gpUd7VNOL9tO6T2xqHYbiqk0VbEGB/z1xG7uAdK9MrI8R+GRIHqIeZFSAjchY9Jqho16+wrOoMIIfaX8pBlWjpvw4/2SELUjoUPrupkAa65p0MUGkvQ7jJErHGMVs7YaEeDEuLDVkxg4t+PeDeGACvIZ2jchvHQVi/03WftSmKOT84vls5wGA2ePVtJdVsEmivfxZm8zbqZ9k6DL3QP0JbnwLC+m5jCmLOx9qvRpks+O3ks8dKcYXRsMmvcWxaK34kJ9abzgEhjQniKl1+jAUjEiEadtKeMTWMXBTyzmlIxBygbvrz2amKhOWsVoMkMNnrY0Ky9Jrcbe2yCM8xMhBYwynqTaWwuw/tHUwUlS8cNT9nY5d185cG99yf9IEMCRTgF4MQWp/zltssLQbCvpdAE98JsR2pQh4UP1t8IFtJ7Wcr8WmTW5J2u66zBtXKm0ZxSDfsnNe3bwPYtwzzLhXeS0dWCKJuWZ2f6oYKAsrOXLf7daRCp9WsH/FXHlPSRYB9W5k1/r34XCQjS3A/9ujyJLZ/5MvWV0zUDgtrHPtTAUTAoJB3p1odI3murPVS0pG+Tv7yzDX1f6o6IwynXhq0SM/r4F/mrRG1/uLdXqXq56N9eLdtWHYpmq/uf89UCwfKfzXSo5uIHEHUDYXCRDT62+/s1j5eknZs0rgigG6rmAsKyxJJKhdYqIbP2jV5Ja1R/LuVT0i8gg7KV8nqzMocERcAGxFV/aGJxsLoTGwtk/acD0qVJOVUdLtk7foLkye4LJz10ZrxVrYWs0OChfNHjLjDQQ12ISwbz+gkiY3772qw3uWnZsMElagbP9m/0IaLDOgtDFF6mkTmWVYWuJHrniOMJfT54AJYBjmrBBswa5q1YJV/xSlHAYx4iOEBf9uyIP4zvhLd8ueZjYhlxrAHxAtcjy6B5Q70MDlFo7QtD7WYMbTLfO4DBAHsW3mIrMfyuSsaG2oP209NDlFhlRHh/WGuHNSOmjLtuPhCtghVxNzwR7eBAoIV2kCp+Y5v4/fBK49VL8yzMeWMv3m5oVRbGomW+GbChjJttv3dvcuDfESolmq5NojgVDj75ZfCLgP/4a4epq06yzVoiwqCr9gytJamTqGkhAyb2jWbPuU4xbP/SIRdUV4vLIwRg1ZOfdP1mqHEbHENVswWEBeE0WZ6i1nt0sqfAedQw2FDoEHR+vLCWCWLpG633OW3EiX7sKtYiNfEd20lUH9E8Hd72sMzGGEI/qu22EX6Lzmb5+5QZp1lHq8QaKQ920XyZfx+pgERBxLpCyuN1lJV4zUFa8iS0O8jwlixYe68W9hMSO2AscCkf9MbC068G33qXJ29hrVy7q5y+AUAG1FwgVB3tDlJcfg9H+pXWrD5eKDTG93DWPkwh8THTb03AxQ3LumTET3YUJTWFWRS9JHWQpYMK8k8/EGExTiSLOB9l+6ku6q7aW30lJ0Ba3i/8tdPMiG05fhU4hEfIYCsP5mP9DrpHXLhzlCmySyq7umMHC3HJnDvUPbyMlzZselB39VTzq0OIXWHg1SngNxYFF8Q0tw727iBVbkWa3Mkx2ZCSyR2z70GiC5nSEOZtHl+mkFb7StQpfTkOUdku0EMln+Gxds2avJmZzUCHD1dzwfUwRvEbcn9bKcLBni7D6lbUFEaCk+jznR+/OMckJgO3QEwsL4I6T15hbTXGHdhtdTQBBFUWyO8BB2fwAYuSCqiqoaQfGtC/l5q8oNK25SGuKl+nmq30hBzZRo9kdOcbBJLlpZO+KIBc4+c9z5+0dkLsGIqpwkUMMxBgUib2AomDH4iWldzw1bTUgMChnyTK9Disnme4SRyYNlLOmtI0rvpqOhy46FNi1Tw+rSD2y9scNFBs4Mbi58tPmF6X/b/zDT/lVOIVRzgWocIucUCQuXVSdDzcPEcXe6ZplpaB+UFR1evk3dkqREAf41+DEyUt7IFuzbU8l0daG+22XKx/sMUjfFkY7Pi0HolleYxXktW+LYVqXqz1b+M4HRe9GYaUoVQh8zoCd5VjHeuELsDXcXHlVa+VOBbpveeQ7l/GvcsnRYCbo1L2tfORkTtl7BmGGhC6m722hswO0nSs06ywnc17wi7gvPmIU8Zc+VC14xftqBbbxYZ/pR3yW9RGNUABFhRjW5tWU9EYqbMarVTdiAWsR8VS/EQYPEl7QMeVqzs6mr7vio5I/2KQL+qeJq6bnEeMw4YD6nyeZcVCbJv1hEgG51UsPtSqH1OpDd5fye1DgXXkVBLw4pvCH979UJejm02WkVHda2+tQwQ7/s4myfYa/JwJ0+lRuJ+OcQeUBWaDXps8OEBd/PRtBKDywdHpEMxoUwxOWTt1qL5Y3pdm+WQcRsH4Yv5P5hqlVJQRRBN1j8P+bd7gAU6Y0OzpRyNBf/FojHzRGVQvsowKBaY3YgyMGF8NVvw+xLOPu85Kl5hpzzqgdEkR2wbFpnG5YR06YYoHQXAalNtWQ+WHciPn6WFaHkLTGp9vAj61s+KbFLbzls7WWOT9n7Frg5qg5+GPDRRj/f/xRNdwwZqX1rBPMiNezkrdRLMW0Z7JyffuWs0xiTMMXWwQIXfqdMx8w25vdKpxjWTIzF40u4Mwp9kS0RUkUfytHY9Q1Z8/37pP1wxPdIxBKVvL7RWL9e3Jt6Cb6JcZhXkil/aM+3kU3uPZ9ro5FC0k2H+DfNo0EpMj95CZ52/fP2EwTONG35JkfreMiBNIMPL66N12TyS0gtiIP0ATuEt1X5P/jki4BSFoG7811aqKF48ZruiBSo0OLjJ7euBmYKYlbb6m2Jhlnx9f2EbrUPT7MgLRFYOYfAFWxChq7d2sxza4f0iRApg+1jKbHMI6XfIWEx6Ufsrv6m0OO3l+xHRjpv1+3Yyo8XYKtUTicoDB96ZpF15jNAOfMb/UG19h43i5vGYBIian+WgtMJlpTXC56e8PDxfdG12Bao//ZpwQlNlOaKlIUPpVRPYI48dwVwh+tMGoPN/BO13hANZNBc+5k5zKnj2CkTU1ZotmdLTnM6afxjgADKETk9c/WPYd2OTgqf7EUjEoHZbUpm0BvkvUf60c7amV8oeAqnXyjsh01vINBshnHuqPLJlalD+qYIslgKrD/14fVSnlYNlXnqnNNfmYhdp0qpnsf2DS+BITSdi50m0kQ/64IsDRqTYkXf4TyHU8J4NLNTIE0x+/XCUg6Q15gjXvg+QMN4EpO1I8+6LTaAlrmQDrr9/62EfJehMatnWpLluCn91wMMDjaxx5NASjTsfBUP6DR5S1wLnGXMSP5Uqt2pNRt/exRg3bxS8kmS4IBL1aCJnT77ImMGez7Ux9/WgSoRW6OjJLhrcpEYFDaTz1f1NMAU+C+ZNo4Ox93Aw6eaNykpFCdBWyihow69Jh9vcDLbjHDS1WYJ/VKQNc/loezGmFy1+N+xatYMe7WUifJycwjm6+Tt4BEqZJUl9TKhWnRrFPTN3/J5vfBGCTxX2vB0L4XwB5b0FUUVeghrPFPEKS1/fE53Lj87qmHW8qlm4oyBQ1DFgcOeRqooIwoBWfl5ouJM4w6sk4d1zxVWO2cF6DeVi7yJ0p9/UwuRBRhUaEjWjfgj1SyAjQIa2IxjV05kAcITynTlg/ma6R2RPnCQXvO/vsc0tuyHgfHa+V1bRW1+87i63jMN3GDtLcO/iRZpjt2A9atpaAF5rRr7ck+BUiv4TAU+orHHvVMvqb7KPi2J/MBsQVMprVGwVwqu5ObKGObiddAOIaOglhvKp2eFuEMntXy3e4Rf2hCm2N4iNQECuFfDdPVaPgseS0q6RjKBRIF+U0FKUvCY14Kxz7Tw3ju+uFSi4DrGWP4pNPq+d5puZFmyt4Z3Xj28XdMOR0dbl9qL7sTcZm6l5W1QajGWPW68YPA6mX9BVNNfoFeiukMl68+Ozuyol4LetufIIiE6fdc+J9yx6XnSjm3ZMMTA+ZH7KvUMxlqU237OoiKm+Uzzhs89FwAEYyUF/yW3vI5tV1OlhqTS2A/V7W0th/dPvYkiUuycnEev2UGFaVSPH90mByii3Rv/e9Iq3FkHk1jtjFG6B8TqSUiqCbMc+LJKe4ZbJC9Sj58xX37ptmj5vC+Im0bEnedGeV8MR1EeM11LgpfEXAk2LnNLJNp+VoIPA0sp/3s+ABW3hJagO+CGABmy0jVSGvR0TOrZBwqDrtwutcliq9fgdA4TUKCt42uLvdaH1bV4XCvDTI1DHcYsx+nxWcfV4OQkgUNKhtuImonUcCgKQm1kCHs/ncGylBuYzuxw/VOkBkFjZqlBGM97QqYiebLLICLhiV5e0rGF6yiZKmpTd/jmkJRvTS7Oe8bCAhE/GR8n9kH5no1r4ZSgTl2/bdgwcry3SuGbJLjF1HmdWWNKJB3z+WdhfP48/rfmvnsEiMG7acFwq5m4EhSohkMJKuamQ7X6VoI1OMgzzo8DZCp+YAzPbFRQai51B+ufueK44mCdvcPNyM5u3Oj7FuXsZz9ugMJNiJPdx4RGsxHD7n1rmSbNv6kUZEGqbqC081/8347b5rLdOTU4yXN48VxgXSRVU+4xSZyqxwPw/79Fu4oNGDiObk6Z/Jfg6Xp0fzyjCWjK7omiT/Y5sOAzZ7i/loqaWqGi55Z6vI404NMLVJr5D1lcZDlz5mZk92gj8veRgZdxAmdqBK+v5c0FDcVOBgaU1EnaiZfwRnTbBlQm5rdIPw1BcZcVGLeQYBH2yutlTMKV5xOItMKf5BODOvEZBzOBdCYCwt+3gH/H8RViaaHQ3N2GFflyAa+FCGDahHzLg8WtfIdioDQ+L+rYM2KYSnxzcU18+KmNrp9UmzhjXmNEBBBODVIW7W4BMINYShzkNsceV1tckZ8rRNJm8ueQbCoSLt7E1UvEFe3J4ruWLp2irEY3wUNFK1NsVMOMJFg1LjBBvXA7twSAFnDrNcfmujJiLSpG/l0WDZwlHsRDpam8ZFJ07pKN6g/HRGNBwBNhWVlXSEErAI+L61n08XMpTWMCOghDUM4bc7K0Ar1xos47xFs3BpCWw/NftSEG8Uhb8p5H63r9HsEupTP/2xYdldMIdIPjUdBWBvOyUmbbQzIoTbSEz6i1te6Pbfxpm6WwP3lZgPyJ9ivNVb+HaE1Wv15QpRwnO7Fdylm6GdXcHQXTrSgRFpUWZmLN+7aIdLdf1h7HSuLWiQhI07zH8Na49J/XvrH5usLVSXc3I7BMLJZuzsamxbyw4nGRDoJ7N4SPrajEXsyW9nqaTZZAQdefBhTNlXVKQIBTwdhLgBurBzGtWpDPt/dR8juAeUaKxCeB0tBGC/tzKD29MUdCFKK09ozeyyTORLNX1gZVLphuh5ZLdo87Y+uqT8AWfYERmzPhx8tGOO/KQD2t3aCO5m681H/7ZuUNWD+VTNZN5Rjmd/DbbbsDXYx4Ol75mYo5dfcEC0GLZWqdqCsn/bJFzdM2UWgKWv6KpkORdXhU/ccduW3RZoNpjpDKBaslagpL09aEKkTJwO7W25ZkSGT9XFv/PF1pcrqqVWOiYUQMgkJmZC+ZRgkz4MXciL3ldN2nzn26nXDWmF7w5MQUaYx8xyQqn6z6IX/gxrIEJO7DPYxKuhTdyUs3ysYyDrdJGK3Uoni8Is9J+bIs+G7AHXOBJ89TFSb3FTqEvxdWY3u5limuJ+n2+cVcLaGmxAOwW2JXXG3XhDk3ATo5wqZEE76KN1aXh0PpQvJkfEopFymB2It2NXqKLBuiqIidR9cpShatJF7vbLdNTRL46ob4ZvFJrRk1FSV4JuomP0I5xORdwqkdWhI7mO/fXHqpdxDMp8RinFk+lMA4yBvfLImSch+saWskiDNTvLCVA1ibvmcJOxR/O2xpSke6Rf3BR+k3l5zWrSOTpPrDtJcSu21bzVx6CvjY2mTNq0E6aUc9P5KJihRJX1/TdcyZvGXMgcMijwj3OVnn0w0Pcnxgz/dRrCf+lx+NyCrpuHoJri307WTfVw2v8M4S2a7jrNs4DUZ2OgxUl9w9+uuhZ07HhWdT5813YuKt06PwQ5oHCa+SYtxCZ/GE+6TIVAontfQOD991NI3kw5DtAkQRamj7FZ6gtVJ91DHsz+O111yOc3q16AGI9tFcH7rG2Li6a1JXOIAeVVblIsUdJG49HbEk0VOF682iAn1HdagVJKaQDw2b64wuF9uUt9TI9GwTR8ohLaoZ26RjvA4rJ6oZ+EbOstS7iH9M5FsUnKkJ1s1U70qYsgsnuEIdG5k1YsJF7n6seCc97lgQbXBWKIPbu9bKOqvEMU0yGmKE1w+klXCqZsBsnhWFasCR289S6tdDF6mZbQ36BT8wt60tZTDylxpJ8ny/r+zrIEwSJ/8IkFbiFoqRSfIicf02WC15ia7drm2n+Y1IN5/vK+Ahjs50KtQ6LzEJ5FDWJsDpS9UfHL6ypNlQG2vwBUrAcEsIQYAyGCNIX6m+P9LBltS4kNHiqU983pOQPtN9d86UerwbiVjr6ObTglmV0Hny/3jj/FxzE3PIn3qZjCU0jAxccHiAXEDMym/ekZ9aGThl5j3CZmxT4wfCm2v5cYayPpCIL4yVrJPdQGYHUTBE6AR0ivYijpgfCkOaQqSMvhcY63aN2ou7qV7grV4iOlCFhuOQsGoZPuzq6irvseNk7Eh6N10RwFQ07E0M5BOf97GnStIyMVNgNiJuWcjEPvYTPhbvtqmc6l+z/aB0VyUJBW9rcnryLqli1ndcMhjhH7q79k74rR4cwx3ISe2j1hHeZejeEzVvN39tYpi7CEtVt6sAt7hdE9xYodvpo1EmWbegybvxiRv5YHYSr6VcQ89s1e/nHW9z5UGu5FSzkkOJ0eIPq0IHDhijN+JrJ9t3h0ri4NqY71eHs8dJfejSCdSpzl5sKvgiTMA0noptIYo1If9qPspeCSfpSxNGuNWqjaI+LSslUe929HkUGhU1BLdxj99WgmUSCxgdZ7rAqgbT2qjavoBpghjObYZEtaOKwHqsIOqZM9Ty8byb0q1K5JuDktG5/WRmdBq+FYyls2tcIT3aegCln+qiFmAJ2MmMuElNrcngF3AVn+noWdQB4tTrm5PSOz0+WQsAotoFLRgQeTAh/S43Xp/20KsEofw6oclo76h1YEqiAYP8lgTYdjl3IRKxYk1lbXIKcZURYC4cmNeZVFCWeTUU5+N6A4vO//9H8PhiM2dnF8I1tIn1vDzVitp9zHPdwQ2NrDNpFKZI+VNmdgVmfw9KNR/wo19wEA1+eLtbIylW0w0/4Mmbzzjcpm/3UOf8O5IPWAPQ0OwgUkH4PYUlYPCqYQIne/FLOh1NtUf7X1zD+mwz9JUBQuAIUcfEJrIweK9Gz42jvyYMXr+R2G6tz50padTwsjbOKyg2+n86tmCmXq5SR5HYIyWZvJJIDB04ufe5S1aJ89VaxIS8oT/4iRG3epKvSsbOFYKrRZd1nOI3HBiVaNk3cby6MU6MaFEDdp09Ne3+bpLC+/3aUwbwyK5GoJux/DrfmC8x7hVhySBfNivcMRiFwDo/1D5pgb5+fxDO/d+N98JHSRvebzw0c7c1tDiujmpofQEqis7rvUdSb2RfOtFsTK8uk15jBTciziYAchiyCbkK6BuZAceNt8F46+Qd8a0tH5HCmXXilEvbHcNjbvhBy4criOw6v6d2U3lamqSsyk9GAlI6ZrdQhTHsrtWQKZUOsGHMMi5DYyaxO+Xp2Z6Oj/hDpREHk1+VRGLHoqxavgae9a/BxBboX59wwWkwUVSXqy25TKSHfdVfMVl63gMWZxzkAO+iQ0WwhQd0Rko11dMG2ehE25jspQK2gHVp8zs52xU/SkKBsL6OlkGw9VM7GZgcVEzrX+JZ5bRXnw1Nm1bru3xxwazu5yKhr+7LbRo1SosdSxIIhQQJbyh/uxjUkD1UirZq5FSuO3bgk2MS8TAMpGVBBm1ifIS1rPyzAzvZ/vEhqgyZcgvPh4m5DUGW2ay5dD1rQko82fB2V05Q3znLzmgA3LbGi0SfSqU9D8y0N1b8x1JkpqcFpFgBikzLceASCscI5Jcrtu6h1Bdyom43vP0CAwKIwkKU0qruaQv5bU8x+TxluPOD6/JdaSSEMFvciDF3IjiBPXc9mhuV4aU6ezbClix0/key3x6G6DZ03IgJ2sGgkGYCvX77AACtzIHKdXrSFgmXFEkqDf9pb1pXxtJdMcsWZcinYO2SqukTozycphm+anv46/qr1WMw3ZXc8l6ZXnx7++rztH+HiDXYgU6A2UZN3ulpq4oeOlRwzBTBptEn5Llj6YPQJ5gQYqrcg4+P5e04a0VvnXNuEumtg8MzE4TI8j4CbYeSjyG8EBgMlyHiJk6/OUOQajoGT2whAnZBbrq7qxnIbiJZO+UuNGryJWgZVpqOMinj3TJteLlYShqRK1erv8ZJ6oO8TRaKzaRkUn1OkW8c9Ib/wdq6w/0pdkab62t6bP8yy6mm+ki3IdTgh0lffhXC2c0dgYqvKqV4WRMNbHAITywvPvMhHoJSTbdse8+BkyvVA45d59ulE61MO/dOFI9vTZZdXjlrF1WU6B+UGkD7HhYTqU2dyGQekrPbf9EH1OnSQhPxnk4AzB9hK872HdqviBivjCKKtbiZQtWw77NwBuYEfH4c5uqBCPrYR0THxWY1wKcxE/nwSQh0FGQUIvEpPEA8FcNvf0OJwQlwiUyXEmCiUEOINSglu0N/Eho9k9jDb/d3ZhcmK+VL98L4aaB/CYZGf7dCfpIWKMQ+yNAzjuRaM74uIXR11xJgVOO0rjeOv0baj2rKbtJWh1cue34NtK2bny+j67iG5QP0iMgmwPFeoVzBZmuQa4R//zYfSiOTQbznIBqQXS51ZB9UpxohcWJcy7Nl8Mv+h2CRneZZ0M+gAysWJcgZClBBmefIiXamsSkkb+iP0c0InCLUaq3tA7ScyOIJHwqpRopuQ0wCAlcBpry/tirh79l8/j39C9WY8sVVH1Z/SxOCGuGNLIouggldbAAxXl0SJOjWciOX1a87VdQK+J17otz6XnqyNBiyiIt4IWOIeeaX+x/Acuxjwx0jzuH3dd/LAYAXDIh0+Mkr2MxroP5cYOL0LWbJornm16z6xIJxQKSOcoBSqwgSTvFLgq69P2niMsetW+NOsqsYiFikkkT8pLqyKyFXn7d4GjQ0OmnitR6lSiTJBcdikN6XQXemM2Su/xTV6kYgtO11mn+gkdibJaga1K3HobiTjEKaMPLsikbVjLCcRrUH4GfYRY3hXG1Mlo6DttbZTaCD61CFUm7e0in1AaVDQ1iO4R3DtXSo0IAW20uCr+xuBOZWwlehHiP/ePiK4/6k6G45+Jkk6P3LwvC/XREOLq4kdyhyRPAJWLYpJaZkdSMsy2ZSHC6ad9u6d9mxMwuXPN1W1zWt8cIGBhjqaDnW8tADslCI/0lp46JUQV0aIuoShJmOCxSIS37lHbn3yqXDctBPy29ovaZQEcBjjdlp4BdTzK22s3mxRC4YGpfzuq/3UYAY2bmcx/eSQY3FEsAp0XsbL3crEqQA329LQaZmar/AR1Umg8TL5R9pOi4/reV5UEoMff37WJfwgVj0/PyBxXFdFNvZdngQP8/j17o91ba6RnYXIQfVaWmUF/9K4qzNoZpL6f1HJipl7UgXasUgsHBUoWGM72msM8yg0rGNHK1QX9eV00c3/legt6rFEXfrjxjnCmwziq4Ay1dmEE12k1llXa9Kko6QUB1yWtCmC2AVoeKdnmMzU135sfVtkxTwC6Dr/C+gvZPcoqMfD0Daz18JfU7P0Pejqm5rCWidi8v90pUZ1HsQXw2XdkTZ+9d55ttFmOVKuzzJnaUVXFeVqzTp4ySJFqA3020/mafarRt/ou1J3jtuMdllFXxDW5XCCxr5S6G2GRxDfSBu7Ni67ewhYUcZ/fP3t4I88jn17JKg8K26qckYA+VEZ4U0DN5wURbSEbt9tqcWFwbKBaiB2kIux2E/OOyRpkWsspQOOv/REnz13qJTOwxS4HhNQjviZ6q+/fHm0GAZEEeJyqgx5gaZF4Q8zRA0TpvTRrfghugX8Ps+Y3DByeM1ojhStIbNfXsqCunYRmtzIuCgu+jdAmoc22wD91OtGSUkUgGZkZ4hQdaGGVsCxZB/UWTCAeQkMPAKEtaygIHXbr6BrsZYfvFYlmtX7EfeqBwlMHMLUOlH0dVbHzeVN5KjgETdcSHKAmJ5aHqeroHxxcNJMiKJRSs02ChJbQBq/wX0KqnaNG5T3Ik5yme/3ndZHUFT5SM6fZtuVBXSuVsYSSGPTl1jQjYHv/lDWDu9WH4sMqfygOZoG8MSQTRSwknTKO7vlM0tLoofo7tzwuPYh/nOEouNoMyyL/3sgdzM8XLGauq3/3OrtofA8rohORBlW+Dk6+GPGDJ4zLhLzu007o24Fd9sEybjBIgN382zt+PHAoBIimpGwJCNk9rPQsKaHO9dy81J0ZsvwLnK8O5Rk5kAQvTsH2mZs8IZHc0DWpwOfFpxiwJUiXaoi7tvAXAINVxvEPPOEo+A9yu3B3mj6LSClOQ5D+r78qSHWUObf1MfdOQoOhCFLZLf1fUPDn4CLrJ73NhgUmrRrQlUr+uahP+g/kUfrqvKZDAvxTGhPRNKfAuG2Hx1iTg6eStAJ/FcsmApYYaj9A0S+YlJhUPEjGPvi7cy/uLd43CMwaPs03KJa/P7zMfUbZ0DQ6Cr32VRCLzAvybYXJLDli2pU1AKfkNyG5/q2A6/WwW2VwIR9W8BMtJIROy8RE9HxPsxVoqQCm/BqZ5zwjdBNJaPGp6osIHcsnoFqh/0v5S+9O51rEqQWL5e17+c2IjrWkG7yXCOH92pexNH8sfChi4NT6roBHUIIdzCtQlVZibigv8cFKpxx2498wGx08pkbj3PwtNsGowkWGT8jEy/NP2q/U5jich/Jiafnx8D2if/UKMeYvdtcgww5rtV28BSRi1RbqlIOGrvb+ibASU0uRizR85VowS3qEoPUDDgjG1MioyqqAahL5TsvcdKF+0+OvFHpv0eRC7EP1YEpMiimuVxb9UYU9dx87PPs3bxIJwYcXGo13nlllmf3DxBN3EoTaFEMluqtWV5mixE7Z3acqIF7ceMq6ygaEJ1xt+AF+CM9Z6nyidKaUvF943YsxaOo0C6vQyQpycJsAMc7tyl4tocwjL4XTayel1bfuaZXhwoEQ2Vkvo6yTb+e9soZo9VoJI1ySE7wCtNX9oReyx76hCd49XYikFIDOv4v+VN7L/OpvuKLa3EL/yq9SHx8oKArbo+40Az7TLe/ek/H6OSBLK0Vvz9WwWaeWZuZXu55KgMkIBq3I89QtWrk7mhXsXunPBC3GRZVV7yvHFaNYqfkKr4xzzkZuvczc4Umb7tORdSehdO7hOiC+Tz6WHmQaxrEaZsnvHG09iRrfyX9Gsf92qpdvMsyi/3JH2lCLg/r2LUcMwN5AFyfZ8nQplC7Ean3JU+iP4lvZSsE5ZbV4RlwzS+Cw6PNJ/Dd/Rc2hZiHFCNXruS9H1TTvzvfa0kf8SKr5Cos2CbDywct2OyXTvyXCXnDDfT+8kZOlc4DuN9MOLq8PIUp+PYVpU1ml26e2KH/Jx1k8vzLrOvqq9nCS1UUjg5vkDrDiYBvCkTAPnQZk+ZHhZhbPgQS7qmR/d6u4u9BjMf6gBu5v5uSzBdMxx2onieFJaM7A3+j0Y66eoFyXkolfmItDhoLGnkJmgwgVUWjlMGJZLWo+nuaNGRVWPnIiua+mxFr7beGLvv7+yDVy1FcK6ChIVfoC1J8+H6xVXb5Q3T50DHVCHycrkqv2hsFJsvq5whprHWbVLx1uRHHDFfRy7hgg45LlzD6ksZ8X7YJC2d7CpgL5CeMW7dOCGm9qfWIMTKGyUkVVe1CP5cuajglTrdiq+8mw5odHef5JSHBzhmvtWQbPi/crfnyaXV072y3ZQzdujSiC0AkjVORphp7qvQnmaqX5w2rwaIGAhJ5XJwpkQWrBGmTDx2dLbiBklL7jnxe35ksT3zGFyduL+tX+PqhDY4oy7dygVBl2w8tBzs7/CerEF1pVfWwiKw6BzhAj3N7RzF/4Lxo5H2yBjzNS0S+aPRPOFklwyTwgyVzuaG31zE15HnPAmHoXs4qJw3ZhKFA/5a/wOafYBEs6N7lk/jHhMGq4A8xIHEPwyv38ZNnGh8SiZiuQdgIQNMf4pGWaawqt23RC84SAG26ncONd+/E6dozyVpw5o0uC7d29uBGOA3AsIaDvaV2/U4GRAxDFuqfhTuyDEYkqb2AGRo6XysdqsBDfcy8mwPapPZ1FtsNNwW6UlvoSULNJ9S9k7VZ/500LaWvedf3MhWcCKXzZJMLpTLX2oc8KrASaGJxBL0b9lV9qm6CtTSkkg5FaEZhc6Xfg7nTn1cVh88IzpjeVdC6xOiiBXNKtEAqoWvkf9FezoF+HNbtKflaMLYq3ya3cTtLJOJtzp5RvxHlaPBj7bbufHYqWVkegrDzTvD/SuVTAVqjOdmIzsIm0oyTn3c0G8VMoS3Fbr+iLTN9KKPX72bZ7rzzrfrRst20k1fTvNRJwECMEr8GB02lMSse+xeUASVrUXP7ZgfWARf5zdo9vPs/akNrdWjlYG+Z66ki9YWCRhRCuJKrJ10V7wkvyJCNL/oDZdFwjmDKhx1UR4p5ylPllcFci4hB8tD3ab773/VWSfB0O1sF38Em8MjTRXm/l+U1q2bQ7i1r5JTz6nlcr0sQhzNB4x6bHw70wVqGeFSmsqDW6TlOD0872EUd6tIZXtatotZaRelDEPlYw4ISLIzHSS5WjwONjlGQFQT3XEysM0Xe7qoQ3zhKSeGcTSJ5Y2oG2JV7+u1iHHA0QoWLD/stYfWWesnoJEkHepTNYBo1uWXkLVCm+gJsP8d4HDnHhp2ZmYXw0dToyygZ0Zef+jWL+Z+GZiKD4enVXGee86RV1ZcniArVNXGS08uKZmfMPbRhohn3Wioa64Xr8SPvBhX0ykDK9MGrSGPrd3m/AU0CDSMsU7T1c4VYQ3X4w6koR9vwpLYAkN7lUzMj+n//RGcACqlI169Ff7p7wjoKWnP/c8JBrVXXqG493HbxCkO+96X8OhbObGk1q672DMbZmIJiYuy9Q6+qRfzvcPK05wBIlRFs4bQ1ZLWVQcbsA5xUoX66FQf1yREbPCeWwZkN3Q80OAAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STOCK LEDGER MAIN REPORT VIEW @AUTHOR:PRIYANKA-25OCT2021
+ * **************************************************************************************
+ * 
+ * Created on OCT 25, 2021 12:55:20 PM
+ *
+ * @FileName: omStockLedgerSummaryMainTransReportView.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.92
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA-25OCT2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+require_once 'system/omssopin.php';
+include_once 'conversions.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+//
+//
+// Added Code To GET Firm Details @AUTHOR:PRIYANKA-25OCT2021
+$selFirmId = NULL;
+//
+$firmIdSelected = NULL;
+//
+$selFirmId = $_REQUEST['firmId'];
+//
+if (!isset($selFirmId)) {
+    $firmIdSelected = $_SESSION['setFirmSession'];
+    $selFirmId = $firmIdSelected;
+} else {
+    $firmIdSelected = $selFirmId;
+}
+//
+//
+//echo 'selFirmId == ' . $selFirmId . '<br />';
+//echo 'firmId == ' . $_REQUEST['firmId'] . '<br />';
+//echo 'firmIdSelected == ' . $firmIdSelected . '<br />';
+//echo 'setFirmSession == ' . $_SESSION['setFirmSession'] . '<br />';
+//echo 'documentRoot == ' . $documentRoot . '<br />';
+//
+//
+// Start Code To GET Firm Details @AUTHOR:PRIYANKA-25OCT2021
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm @AUTHOR:PRIYANKA-25OCT2021
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+//
+//
+//echo 'firmId == ' . $_REQUEST['firmId'] . '<br />';
+//echo 'strFrmId == ' . $strFrmId . '<br />';
+//echo 'selFirmId == ' . $selFirmId . '<br />';
+//
+//
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    if ($_REQUEST['firmId'] != NULL && $_REQUEST['firmId'] != '') {
+        $selFirmId = $_REQUEST['firmId'];
+    }
+}
+//
+//
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    //
+    $qSelFirmCount = "SELECT firm_id FROM firm where firm_type = 'Public' and firm_own_id = '$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr";
+    //
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    //
+    $qSelFirmCount = "SELECT firm_id, firm_name, firm_type FROM firm where firm_own_id = '$_SESSION[sessionOwnerId]' "
+                   . "$sessionFirmStr order by firm_since desc";
+    //
+}
+//
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms @AUTHOR:PRIYANKA-25OCT2021
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+// End Code To GET Firm Details @AUTHOR:PRIYANKA-25OCT2021
+//
+//
+//echo 'firmId == ' . $_REQUEST['firmId'] . '<br />';
+//echo 'strFrmId == ' . $strFrmId . '<br />';
+//echo 'selFirmId == ' . $selFirmId . '<br />';
+//
+//
+//
+//
+// START DATE @AUTHOR:PRIYANKA-25OCT2021
+$FromDate = $_REQUEST['FromDate'];
+//
+$DateCheck = $FromDate;
+//
+if ($FromDate != '') {
+    $fromDate = date("d M Y", strtotime($FromDate));
+}
+//
+if ($FromDate == '' || $FromDate == NULL) {
+    $FromDate = date("d-m-Y");
+    $fromDate = date("d M Y", strtotime($FromDate));
+}
+//
+//
+// END DATE @AUTHOR:PRIYANKA-25OCT2021
+$ToDate = $_REQUEST['ToDate'];
+//
+$toDate = date("d M Y", strtotime($ToDate));
+//
+if ($ToDate == '' || $ToDate == NULL) {
+    $ToDate = date("d-m-Y");
+    $toDate = date("d M Y", strtotime($ToDate));
+}
+//
+//
+$todayDate = $fromDate;
+//
+//
+$todayStrDate = strtotime($todayDate);
+//
+// START DATE STR @AUTHOR:PRIYANKA-25OCT2021
+$todayFromStrDate = strtotime($fromDate);
+// END DATE STR @AUTHOR:PRIYANKA-25OCT2021
+//
+$todayToStrDate = strtotime($toDate);
+//
+//
+//print_r($_REQUEST);
+//echo '<br />';
+//
+//echo '$todayFromStrDate == ' . $todayFromStrDate . '<br />';
+//echo '$todayToStrDate == ' . $todayToStrDate . '<br />';
+//
+//
+$startDate = $fromDate;
+$endDate = $toDate;
+//
+//
+//echo '$startDate == ' . $startDate . '<br />';
+//echo '$endDate == ' . $endDate . '<br />';
+//
+//
+$todayDate = date(d) . ' ' . date(M) . ' ' . date(Y);
+$todayDateStr = strtotime($todayDate);
+//
+//
+if ($todayFromStrDate == $todayToStrDate) {
+    //
+    $dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<$todayFromStrDate ";
+    //
+    $dateStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<$todayFromStrDate ";
+    //
+    // Code for DATE STR @AUTHOR:PRIYANKA-25OCT2021
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+    // DATE STR FOR TODAY OUTWARD @AUTHOR:PRIYANKA-18DEC2021
+    $dateStrForTodayOutwards = "and UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))=$todayFromStrDate ";
+    //
+} else {
+    //
+    //$dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+    //$dateRangeStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<=$todayFromStrDate ";
+    //
+    $dateRangeStrForOpening = "(UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate) ";
+    //
+    $dateStrForOpening = "UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<$todayFromStrDate ";
+    //
+    // Code for DATE STR @AUTHOR:PRIYANKA-25OCT2021
+    $dateStr = "and UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+    // DATE STR FOR TODAY OUTWARD @AUTHOR:PRIYANKA-18DEC2021
+    $dateStrForTodayOutwards  = "and UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y')) BETWEEN $todayFromStrDate AND $todayToStrDate ";
+    //
+}
+//
+//
+$dateStrForOutwards = "and UNIX_TIMESTAMP(STR_TO_DATE(sttr_add_date,'%d %b %Y'))<$todayFromStrDate ";
+//
+//
+//echo '$dateRangeStrForOpening == ' . $dateRangeStrForOpening . '<br />';
+//echo '$dateStrForOpening == ' . $dateStrForOpening . '<br />';
+//echo '$dateStr == ' . $dateStr . '<br />';
+//echo '$dateStrForOutwards == ' . $dateStrForOutwards . '<br />';
+//
+//
+//
+//
+//
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// START CODE FOR CREATE TEMP VIEW TABLE FOR STOCK LEDGER REPORT @AUTHOR:PRIYANKA-25OCT2021          //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// 
+$createView = "CREATE TABLE IF NOT EXISTS temp_view ("
+            . "sttr_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,"            
+            . "sttr_firm_id                    VARCHAR(50),"
+            . "sttr_metal_type                 VARCHAR(50),"
+            . "sttr_item_category              VARCHAR(100),"
+            . "sttr_item_name                  VARCHAR(100),"
+            . "sttr_stock_type                 VARCHAR(50),"
+            . "sttr_purity                     VARCHAR(50),"        
+            . "sttr_indicator                  VARCHAR(50),"
+            . "sttr_quantity_open              VARCHAR(50),"
+            . "sttr_gs_weight_open             VARCHAR(50),"
+            . "sttr_nt_weight_open             VARCHAR(50),"            
+            . "sttr_fine_weight_open           VARCHAR(50),"
+            . "sttr_quantity_in                VARCHAR(50),"
+            . "sttr_gs_weight_in               VARCHAR(50),"
+            . "sttr_nt_weight_in               VARCHAR(50),"            
+            . "sttr_fine_weight_in             VARCHAR(50),"
+            . "sttr_quantity_out               VARCHAR(50),"
+            . "sttr_gs_weight_out              VARCHAR(50),"
+            . "sttr_nt_weight_out              VARCHAR(50),"            
+            . "sttr_fine_weight_out            VARCHAR(50),"
+            . "sttr_quantity_close             VARCHAR(50),"
+            . "sttr_gs_weight_close            VARCHAR(50),"
+            . "sttr_nt_weight_close            VARCHAR(50),"            
+            . "sttr_fine_weight_close          VARCHAR(50),"
+            . "srNo                            VARCHAR(25))";
+// 
+$sqlTable = 'DESC temp_view';
+//
+mysqli_query($conn, $sqlTable);
+//
+if (!mysqli_errno($conn) == 1146) {
+    $dropView = "DROP table temp_view";
+    mysqli_query($conn, $dropView) or die('<br/> ERROR:' . mysqli_error($conn));
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+} else {
+    mysqli_query($conn, $createView) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+//
+// Table where Condition @AUTHOR:PRIYANKA-25OCT2021
+$viewWhere = " WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+           . " and sttr_firm_id IN ($strFrmId) "
+           . " and sttr_indicator IN ('PURCHASE', 'stock', 'imitation', 'RetailStock', 'crystal', 'strsilver') "
+           . " and sttr_status NOT IN ('DELETED', 'NotDelFromStock') "                              
+           . " and sttr_transaction_type IN ('PURONCASH', 'PURCHASE', 'EXISTING', 'TAG') ";
+//
+//
+// Table join @AUTHOR:PRIYANKA-25OCT2021
+$viewJoin = "";
+//
+//
+// Table column group by @AUTHOR:PRIYANKA-25OCT2021
+$viewGroupBy = " GROUP BY sttr_firm_id, sttr_item_category, sttr_item_name, sttr_stock_type, sttr_metal_type, sttr_purity ";
+//
+//
+// Table order by @AUTHOR:PRIYANKA-25OCT2021
+$viewOrderBy = " ORDER BY sttr_item_category, sttr_item_name  ASC ";
+//
+//
+//
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//$dropTempOpeningStock = "DROP table TEMP_OPENING_STOCK";
+//mysqli_query($conn, $dropTempOpeningStock) or die('<br/> ERROR:' . mysqli_error($conn));
+//
+//
+$sqlTable2 = "SHOW TABLES LIKE 'TEMP_OPENING_STOCK'";
+$resultSqlTable2 = mysqli_query($conn, $sqlTable2);
+$resultSqlTable2NoOfRows = mysqli_num_rows($resultSqlTable2);
+//
+//echo '$resultSqlTable2NoOfRows == ' . $resultSqlTable2NoOfRows . '<br/>';
+//
+if ($resultSqlTable2NoOfRows > 0) {
+    //
+    //echo "TEMP_OPENING_STOCK" . '<br/>';
+    //
+    $dropTempOpeningStock = "DROP table TEMP_OPENING_STOCK";
+    mysqli_query($conn, $dropTempOpeningStock) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+//. "and ((sttr_indicator IN ('PURCHASE') and sttr_transaction_type IN ('PURCHASE') "
+//. "and (sttr_user_id IS NOT NULL or sttr_user_id != '')) "
+//. "or (sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal') "
+//. "and sttr_transaction_type IN ('EXISTING', 'PURONCASH', 'TAG'))) "
+//
+//
+$openingStockDetView = "CREATE TABLE TEMP_OPENING_STOCK AS SELECT "
+        . "SUM(sttr_quantity) AS OpeningQTYOp, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_gs_weight,0)) AS OpeningGsWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_gs_weight,0)) AS OpeningGsWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_gs_weight,0)) AS OpeningGsWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_gs_weight,0)) AS OpeningGsWeightCT, "
+        . "SUM(IF(sttr_nt_weight_type = 'MG', sttr_nt_weight,0)) AS OpeningNtWeightMG, "
+        . "SUM(IF(sttr_nt_weight_type = 'GM', sttr_nt_weight,0)) AS OpeningNtWeightGM, "
+        . "SUM(IF(sttr_nt_weight_type = 'KG', sttr_nt_weight,0)) AS OpeningNtWeightKG, "
+        . "SUM(IF(sttr_nt_weight_type = 'CT', sttr_nt_weight,0)) AS OpeningNtWeightCT, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_fine_weight,0)) AS OpeningFnWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_fine_weight,0)) AS OpeningFnWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_fine_weight,0)) AS OpeningFnWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_fine_weight,0)) AS OpeningFnWeightCT, "
+        . "sttr_owner_id, sttr_indicator, sttr_item_category, sttr_item_name, "
+        . "sttr_stock_type, sttr_purity, sttr_metal_type, sttr_firm_id "
+        . "FROM stock_transaction "
+        . "WHERE sttr_owner_id = '$sessionOwnerId' "
+        . "and sttr_indicator IN ('stock', 'AddInvoice', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal') "                                                                                
+        . "and sttr_transaction_type IN ('EXISTING', 'PURBYSUPP', 'PURONCASH', 'TAG') "
+        . "and ( ($dateStrForOpening) or ($dateRangeStrForOpening) ) "
+        . "GROUP BY sttr_firm_id, sttr_item_category, sttr_item_name, sttr_stock_type, sttr_metal_type, sttr_purity ";
+//
+//
+//echo '$openingStockDetView == ' . $openingStockDetView . '<br />';
+//
+//
+$resOpeningStockDetView = mysqli_query($conn, $openingStockDetView);
+//
+//
+//
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//$dropTempOutwardStock = "DROP table TEMP_OPENING_OUTWARD_STOCK";
+//mysqli_query($conn, $dropTempOutwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+//
+//
+$sqlTable3 = "SHOW TABLES LIKE 'TEMP_OPENING_OUTWARD_STOCK'";
+$resultSqlTable3 = mysqli_query($conn, $sqlTable3);
+$resultSqlTable3NoOfRows = mysqli_num_rows($resultSqlTable3);
+//
+//echo '$resultSqlTable3NoOfRows == ' . $resultSqlTable3NoOfRows . '<br/>';
+//
+if ($resultSqlTable3NoOfRows > 0) {
+    //
+    //echo "TEMP_OPENING_OUTWARD_STOCK" . '<br/>';
+    //
+    $dropTempOutwardStock = "DROP table TEMP_OPENING_OUTWARD_STOCK";
+    mysqli_query($conn, $dropTempOutwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+//. "and ((sttr_transaction_type IN ('sell', 'ESTIMATESELL', 'APPROVAL') "
+//. "and sttr_status IN ('PaymentDone', 'PaymentPending', 'ApprovalDone') "
+//. "and (sttr_sell_status NOT IN ('RETURNED') OR sttr_sell_status IS NULL)) "
+//. "or (sttr_transaction_type IN ('TAG') and sttr_st_id IS NOT NULL)) "
+//. "and sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'APPROVAL') "
+//
+//
+$outwardStockDetView = "CREATE TABLE TEMP_OPENING_OUTWARD_STOCK AS SELECT "
+        . "SUM(sttr_quantity) AS OutwardQTYOp, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_gs_weight,0)) AS OutwardGsWeightOpMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_gs_weight,0)) AS OutwardGsWeightOpGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_gs_weight,0)) AS OutwardGsWeightOpKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_gs_weight,0)) AS OutwardGsWeightOpCT, "
+        . "SUM(IF(sttr_nt_weight_type = 'MG', sttr_nt_weight,0)) AS OutwardNtWeightOpMG, "
+        . "SUM(IF(sttr_nt_weight_type = 'GM', sttr_nt_weight,0)) AS OutwardNtWeightOpGM, "
+        . "SUM(IF(sttr_nt_weight_type = 'KG', sttr_nt_weight,0)) AS OutwardNtWeightOpKG, "
+        . "SUM(IF(sttr_nt_weight_type = 'CT', sttr_nt_weight,0)) AS OutwardNtWeightOpCT, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_fine_weight,0)) AS OutwardFnWeightOpMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_fine_weight,0)) AS OutwardFnWeightOpGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_fine_weight,0)) AS OutwardFnWeightOpKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_fine_weight,0)) AS OutwardFnWeightOpCT, "
+        . "sttr_owner_id, sttr_indicator, sttr_item_category, sttr_item_name, "
+        . "sttr_stock_type, sttr_purity, sttr_metal_type, sttr_firm_id "
+        . "FROM stock_transaction "
+        . "WHERE sttr_owner_id = '$sessionOwnerId' "
+        . "and sttr_transaction_type IN ('sell', 'ESTIMATESELL', 'APPROVAL') "
+        . "and (sttr_sell_status NOT IN ('RETURNED') OR sttr_sell_status IS NULL) "
+        . "and sttr_status IN ('PaymentDone', 'PaymentPending', 'ApprovalDone') "       
+        . "and sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'APPROVAL') "
+        . "$dateStrForOutwards "
+        . "GROUP BY sttr_firm_id, sttr_item_category, sttr_item_name, sttr_stock_type, sttr_metal_type, sttr_purity ";
+//
+//echo '$outwardStockDetView == ' . $outwardStockDetView . '<br /><br />';
+//
+$resOutwardStockDetView = mysqli_query($conn, $outwardStockDetView);
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING OUTWARD @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE TODAY OUTWARD @AUTHOR:PRIYANKA-18DEC2021
+//***********************************************************************************************************
+//
+//
+//$dropTempTodayOutwardStock = "DROP table TEMP_TODAY_OUTWARD_STOCK";
+//mysqli_query($conn, $dropTempTodayOutwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+//
+//
+$sqlTable32 = "SHOW TABLES LIKE 'TEMP_TODAY_OUTWARD_STOCK'";
+$resultSqlTable32 = mysqli_query($conn, $sqlTable32);
+$resultSqlTable32NoOfRows = mysqli_num_rows($resultSqlTable32);
+//
+//echo '$resultSqlTable32NoOfRows == ' . $resultSqlTable32NoOfRows . '<br/>';
+//
+if ($resultSqlTable32NoOfRows > 0) {
+    //
+    //echo "TEMP_TODAY_OUTWARD_STOCK" . '<br/>';
+    //
+    $dropTempOutwardStock = "DROP table TEMP_TODAY_OUTWARD_STOCK";
+    mysqli_query($conn, $dropTempOutwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+//. "and ((sttr_transaction_type IN ('sell', 'ESTIMATESELL', 'APPROVAL') "
+//. "and sttr_status IN ('PaymentDone', 'PaymentPending', 'ApprovalDone') "
+//. "and (sttr_sell_status NOT IN ('RETURNED') OR sttr_sell_status IS NULL)) "
+//. "or (sttr_transaction_type IN ('TAG') and sttr_st_id IS NOT NULL)) "
+//. "and sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'APPROVAL') "
+//
+//
+$todayOutwardStockDetView = "CREATE TABLE TEMP_TODAY_OUTWARD_STOCK AS SELECT "
+        . "SUM(sttr_quantity) AS OutwardQTY, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_gs_weight,0)) AS OutwardGsWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_gs_weight,0)) AS OutwardGsWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_gs_weight,0)) AS OutwardGsWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_gs_weight,0)) AS OutwardGsWeightCT, "
+        . "SUM(IF(sttr_nt_weight_type = 'MG', sttr_nt_weight,0)) AS OutwardNtWeightMG, "
+        . "SUM(IF(sttr_nt_weight_type = 'GM', sttr_nt_weight,0)) AS OutwardNtWeightGM, "
+        . "SUM(IF(sttr_nt_weight_type = 'KG', sttr_nt_weight,0)) AS OutwardNtWeightKG, "
+        . "SUM(IF(sttr_nt_weight_type = 'CT', sttr_nt_weight,0)) AS OutwardNtWeightCT, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_fine_weight,0)) AS OutwardFnWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_fine_weight,0)) AS OutwardFnWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_fine_weight,0)) AS OutwardFnWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_fine_weight,0)) AS OutwardFnWeightCT, "
+        . "sttr_owner_id, sttr_indicator, sttr_item_category, sttr_item_name, "
+        . "sttr_stock_type, sttr_purity, sttr_metal_type, sttr_firm_id "
+        . "FROM stock_transaction "
+        . "WHERE sttr_owner_id = '$sessionOwnerId' "
+        . "and sttr_transaction_type IN ('sell', 'ESTIMATESELL', 'APPROVAL') "
+        . "and (sttr_sell_status NOT IN ('RETURNED') OR sttr_sell_status IS NULL) "
+        . "and sttr_status IN ('PaymentDone', 'PaymentPending', 'ApprovalDone') "
+        . "and sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'APPROVAL') "
+        . "$dateStrForTodayOutwards "
+        . "GROUP BY sttr_firm_id, sttr_item_category, sttr_item_name, sttr_stock_type, sttr_metal_type, sttr_purity ";
+//
+//
+//echo '$todayOutwardStockDetView == ' . $todayOutwardStockDetView . '<br /><br />';
+//
+//
+$resTodayOutwardStockDetView = mysqli_query($conn, $todayOutwardStockDetView);
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE TODAY OUTWARD @AUTHOR:PRIYANKA-18DEC2021
+//***********************************************************************************************************
+//
+//
+//
+//***********************************************************************************************************
+// START CODE FOR STOCK LEDGER SUMMARY CALCULATE INWARD @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//$dropTempInwardStock = "DROP table TEMP_INWARD_STOCK";
+//mysqli_query($conn, $dropTempInwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+//
+//
+$sqlTable4 = "SHOW TABLES LIKE 'TEMP_INWARD_STOCK'";
+$resultSqlTable4 = mysqli_query($conn, $sqlTable4);
+$resultSqlTable4NoOfRows = mysqli_num_rows($resultSqlTable4);
+//
+//echo '$resultSqlTable4NoOfRows == ' . $resultSqlTable4NoOfRows . '<br/>';
+//
+if ($resultSqlTable4NoOfRows > 0) {
+    //
+    //echo "TEMP_INWARD_STOCK" . '<br/>';
+    //
+    $dropTempInwardStock = "DROP table TEMP_INWARD_STOCK";
+    mysqli_query($conn, $dropTempInwardStock) or die('<br/> ERROR:' . mysqli_error($conn));
+}
+//
+//
+//. "and ((sttr_indicator IN ('PURCHASE') and sttr_transaction_type IN ('PURCHASE') "
+//. "and (sttr_user_id IS NOT NULL or sttr_user_id != '')) "
+//. "or (sttr_indicator IN ('stock', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal') "
+//. "and sttr_transaction_type IN ('PURONCASH', 'TAG'))) "
+//. "and sttr_status NOT IN ('DELETED','NotDelFromStock') "
+//
+//
+$inwardStockDetView = "CREATE TABLE TEMP_INWARD_STOCK AS SELECT "
+        . "SUM(sttr_quantity) AS SumOfInwardQTY, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_gs_weight,0)) AS SumOfInwardGsWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_gs_weight,0)) AS SumOfInwardGsWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_gs_weight,0)) AS SumOfInwardGsWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_gs_weight,0)) AS SumOfInwardGsWeightCT, "
+        . "SUM(IF(sttr_nt_weight_type = 'MG', sttr_nt_weight,0)) AS SumOfInwardNtWeightMG, "
+        . "SUM(IF(sttr_nt_weight_type = 'GM', sttr_nt_weight,0)) AS SumOfInwardNtWeightGM, "
+        . "SUM(IF(sttr_nt_weight_type = 'KG', sttr_nt_weight,0)) AS SumOfInwardNtWeightKG, "
+        . "SUM(IF(sttr_nt_weight_type = 'CT', sttr_nt_weight,0)) AS SumOfInwardNtWeightCT, "
+        . "SUM(IF(sttr_gs_weight_type = 'MG', sttr_fine_weight,0)) AS SumOfInwardFnWeightMG, "
+        . "SUM(IF(sttr_gs_weight_type = 'GM', sttr_fine_weight,0)) AS SumOfInwardFnWeightGM, "
+        . "SUM(IF(sttr_gs_weight_type = 'KG', sttr_fine_weight,0)) AS SumOfInwardFnWeightKG, "
+        . "SUM(IF(sttr_gs_weight_type = 'CT', sttr_fine_weight,0)) AS SumOfInwardFnWeightCT, "
+        . "sttr_owner_id, sttr_indicator, sttr_item_category, sttr_item_name, "
+        . "sttr_stock_type, sttr_purity, sttr_metal_type, sttr_firm_id "
+        . "FROM stock_transaction "
+        . "WHERE sttr_owner_id = '$sessionOwnerId' "
+        . "and sttr_firm_id IN ($strFrmId) "
+        //. "and sttr_indicator IN ('stock', 'AddInvoice', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal') "
+        //. "and sttr_transaction_type IN ('EXISTING', 'PURONCASH', 'TAG', 'PURBYSUPP') "
+        . "and sttr_transaction_type IN ('EXISTING', 'PURONCASH', 'TAG', 'PURBYSUPP', 'ItemReturn') "
+        . "and sttr_indicator IN ('stock', 'AddInvoice', 'imitation', 'RetailStock', 'crystal', 'strsilver', 'rawMetal', 'ItemReturn') "
+        . "and sttr_status NOT IN ('DELETED','NotDelFromStock') "
+        . "$dateStr "
+        . "GROUP BY sttr_firm_id, sttr_item_category, sttr_item_name, sttr_stock_type, sttr_metal_type, sttr_purity ";
+//
+//echo '$inwardStockDetView == ' . $inwardStockDetView . '<br />';
+//
+$resInwardStockDetView = mysqli_query($conn, $inwardStockDetView);
+//
+//***********************************************************************************************************
+// END CODE FOR STOCK LEDGER SUMMARY CALCULATE INWARD @AUTHOR:PRIYANKA-07DEC2021
+//***********************************************************************************************************
+//
+//
+//
+//
+$selStockLedger = "SELECT * FROM stock_transaction $viewWhere $viewGroupBy $viewOrderBy ";
+//
+//echo '$selStockLedger == ' . $selStockLedger . '<br />';
+//
+$resStockReportMainQuery = mysqli_query($conn, $selStockLedger) or die(mysqli_error($conn));
+//
+//
+// SR NO. @AUTHOR:PRIYANKA-25OCT2021
+$srNo = 1;
+//
+$totalOpeningQty = 0;
+$totalOpeningGsWt = 0;
+$totalOpeningNtWt = 0;
+$totalOpeningFnWt = 0;
+$totalInwardQty = 0;
+$totalInwardGsWt = 0;
+$totalInwardNtWt = 0;
+$totalInwardFnWt = 0;
+$totalOutwardQty = 0;
+$totalOutwardGsWt = 0;
+$totalOutwardNtWt = 0;
+$totalOutwardFnWt = 0;
+$totalClosingQty = 0;
+$totalClosingGsWt = 0;
+$totalClosingNtWt = 0;
+$totalClosingFnWt = 0;
+//
+//
+while ($rowStockReportMainQuery = mysqli_fetch_array($resStockReportMainQuery)) {
+    //
+    // CATEGORY @AUTHOR:PRIYANKA-25OCT2021
+    $Category = mysqli_real_escape_string($conn, $rowStockReportMainQuery['sttr_item_category']);
+    //
+    // NAME @AUTHOR:PRIYANKA-25OCT2021
+    $Name = mysqli_real_escape_string($conn, $rowStockReportMainQuery['sttr_item_name']);
+    //
+    // STOCK TYPE @AUTHOR:PRIYANKA-25OCT2021
+    $StockType = $rowStockReportMainQuery['sttr_stock_type'];
+    //
+    // PURITY @AUTHOR:PRIYANKA-25OCT2021
+    $Purity = $rowStockReportMainQuery['sttr_purity'];
+    //
+    // INDICATOR @AUTHOR:PRIYANKA-25OCT2021
+    $Indicator = $rowStockReportMainQuery['sttr_indicator'];
+    //
+    // METAL TYPE @AUTHOR:PRIYANKA-25OCT2021
+    $MetalType = $rowStockReportMainQuery['sttr_metal_type'];
+    //
+    // FIRM @AUTHOR:PRIYANKA-25OCT2021
+    $Firm = $rowStockReportMainQuery['sttr_firm_id'];
+    //
+    //
+    //***********************************************************************************************************
+    // START CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    include 'omStockLedgerSummaryOpeningCal.php';
+    //
+    //***********************************************************************************************************
+    // END CODE FOR STOCK LEDGER SUMMARY CALCULATE OPENING @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    //
+    //***********************************************************************************************************
+    // START CODE FOR STOCK LEDGER SUMMARY CALCULATE INWARD @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    include 'omStockLedgerSummaryInwardCal.php';
+    //
+    //***********************************************************************************************************
+    // END CODE FOR STOCK LEDGER SUMMARY CALCULATE INWARD @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    //
+    //***********************************************************************************************************
+    // START CODE FOR STOCK LEDGER SUMMARY CALCULATE OUTWARD @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    include 'omStockLedgerSummaryOutwardCal.php';
+    //
+    //***********************************************************************************************************
+    // END CODE FOR STOCK LEDGER SUMMARY CALCULATE OUTWARD @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    //
+    //***********************************************************************************************************
+    // START CODE FOR STOCK LEDGER SUMMARY CALCULATE CLOSING @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    include 'omStockLedgerSummaryClosingCal.php';
+    //
+    //***********************************************************************************************************
+    // END CODE FOR STOCK LEDGER SUMMARY CALCULATE CLOSING @AUTHOR:PRIYANKA-25OCT2021
+    //***********************************************************************************************************
+    //
+    //
+    //echo '$srNo = ' . $srNo . '<br />';
+    //echo '$Firm = ' . $Firm . '<br />';
+    //echo '$MetalType = ' . $MetalType . '<br />';
+    //echo '$Category = ' . $Category . '<br />';
+    //echo '$Name = ' . $Name . '<br />';
+    //echo '$StockType = ' . $StockType . '<br />';
+    //echo '$Purity = ' . $Purity . '<br />';
+    //echo '$Indicator = ' . $Indicator . '<br />';
+    //
+    //
+    $InsertIntoTempView = "INSERT INTO temp_view (sttr_id, sttr_firm_id, sttr_metal_type,  "
+                        . "sttr_item_category, sttr_item_name, "
+                        . "sttr_stock_type, sttr_purity, sttr_indicator, "
+                        . "sttr_quantity_open, sttr_gs_weight_open, sttr_nt_weight_open, sttr_fine_weight_open, "
+                        . "sttr_quantity_in, sttr_gs_weight_in, sttr_nt_weight_in, sttr_fine_weight_in, "
+                        . "sttr_quantity_out, sttr_gs_weight_out, sttr_nt_weight_out, sttr_fine_weight_out, "
+                        . "sttr_quantity_close, sttr_gs_weight_close, sttr_nt_weight_close, sttr_fine_weight_close, srNo) "
+                        . " VALUES "
+                        . "('$rowStockReportMainQuery[sttr_id]', '$Firm', '$MetalType', "
+                        . "'$Category', '$Name', "
+                        . "'$StockType', '$Purity', '$Indicator', "
+                        . "'$OpeningQTY', '$OpeningGsWeight', '$OpeningNtWeight', '$OpeningFnWeight', "
+                        . "'$InwardQTY', '$InwardGsWeight', '$InwardNtWeight', '$InwardFnWeight', "
+                        . "'$OutwardQTY', '$OutwardGsWeight', '$OutwardNtWeight', '$OutwardFnWeight', "
+                        . "'$ClosingQTY', '$ClosingGsWeight', '$ClosingNtWeight', '$ClosingFnWeight', '$srNo')";
+    //
+    //echo '$InsertIntoTempView = ' . $InsertIntoTempView . '<br /><br /><br />';
+    //
+    mysqli_query($conn, $InsertIntoTempView) or die('<br/> ERROR:' . mysqli_error($conn));
+    //
+    //
+    $srNo++;
+    //
+    //
+}
+//
+//
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+// END CODE FOR CREATE TEMP VIEW TABLE FOR STOCK LEDGER REPORT @AUTHOR:PRIYANKA-25OCT2021              //
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX //
+//
+//
 ?>

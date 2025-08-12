@@ -1,3 +1,260 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @Description:
+ * **************************************************************************************
+ *
+ * Created on 20 Mar, 2013 11:51:08 PM
+ *
+ * @FileName: orggjrtpadpr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+/* * ******************************************************************************************* */
+/*                       START CODE To Add Journal Entry For Add Princpal @AUTHOR:PRIYA20MAR13                            */
+/* * ******************************************************************************************* */
+$qSelGirviPrin = "SELECT girv_prin_id,girv_prin_prin_DOB,girv_prin_prin_DOR,girv_prin_upd_sts,
+    girv_prin_cust_id,girv_prin_girv_id,girv_prin_firm_id,girv_prin_prin_amt,girv_prin_paid_amt,girv_prin_paid_int
+    FROM girvi_principal where girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_upd_sts NOT IN ('Deleted')";
+$resGirviPrin = mysqli_query($conn,$qSelGirviPrin) or die(mysqli_error($conn));
+
+$girviOwnerId = $_SESSION[sessionOwnerId];
+
+while ($rowGirviPrin = mysqli_fetch_array($resGirviPrin, MYSQLI_ASSOC)) {
+
+    $girviPrinId = $rowGirviPrin['girv_prin_id'];
+    $principalDOB = $rowGirviPrin['girv_prin_prin_DOB'];
+    $principalDOB = om_strtoupper(date("d M Y", strtotime($principalDOB)));
+    $principalDOR = $rowGirviPrin['girv_prin_prin_DOR'];
+    $principalDOR = om_strtoupper(date("d M Y", strtotime($principalDOR)));
+    $custId = $rowGirviPrin['girv_prin_cust_id'];
+    $girviId = $rowGirviPrin['girv_prin_girv_id'];
+    $girviFirmId = $rowGirviPrin['girv_prin_firm_id'];
+    $principalAmount = $rowGirviPrin['girv_prin_prin_amt'];
+    $totalPrinAmt = $rowGirviPrin['girv_prin_paid_amt'] - $rowGirviPrin['girv_prin_paid_int'];
+    $totalPrinInt = $rowGirviPrin['girv_prin_paid_int'];
+    $totalAmtPaid = $rowGirviPrin['girv_prin_paid_amt'];
+    $girviPrinUpdSts = $rowGirviPrin['girv_prin_upd_sts'];
+
+    if ($principalAmount != 0 && $principalAmount != NULL) {
+//---------------------------------- Start code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+        $qSelCustDetails = "SELECT user_fname,user_lname FROM user where user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+        $resCustDetails = mysqli_query($conn,$qSelCustDetails) or die(mysqli_error($conn));
+        $rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+
+        $custFirstName = $rowCustDetails['user_fname'];
+        $custLastName = $rowCustDetails['user_lname'];
+//---------------------------------- End code for change data from customer table to user table Author@:SANT15JAN16---------------------------------------------------------------->        
+        $selAccName = "SELECT acc_id,acc_main_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Cash in Hand'"; //6
+        $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+        $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+        $cashAccId = $rowAccName['acc_id'];
+        $cashAccName = $rowAccName['acc_main_acc'];
+
+        $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Sundry Debtors'";
+        $resAccName = mysqli_query($conn,$selAccName);
+        $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+        $SundryDebAccId = $rowAccName['acc_id'];
+
+        $jrnlOwnId = $girviOwnerId;
+        $jrnlJId = '';
+        $jrnlUserId = $custId;
+        $jrnlUserType = 'cust';
+        $jrnlTransId = $girviId; // Used to navigate
+        $jrnlTransType = 'Girvi'; //Where we hv to navigate
+        $jrnlFirmId = $girviFirmId;
+        $jrnlTTDr = $principalAmount;
+        $jrnlDrAccId = $SundryDebAccId;
+        $jrnlDrDesc = $custFirstName . ' ' . $custLastName;
+        $jrnlTTCr = $principalAmount;
+        $jrnlCrAccId = $cashAccId;
+        $jrnlCrDesc = $cashAccName;
+        $jrnlDesc = 'Additional Prin Added';
+        $jrnlOthInfo = '';
+        $jrnlDOB = $principalDOB;
+
+        $apiType = 'insert';
+        include 'ommpjrnl.php';
+
+//Start Code to Get Last Journal Id
+        $qSelJournalEntry = "SELECT * FROM journal where jrnl_own_id='$jrnlOwnId' order by jrnl_id desc LIMIT 0,1";
+        $resJournalEntry = mysqli_query($conn,$qSelJournalEntry) or die(mysqli_error($conn));
+        $rowJournalEntry = mysqli_fetch_array($resJournalEntry);
+        $jrnlId = $rowJournalEntry['jrnl_id'];
+//End Code to Get Last Journal Id
+
+
+        $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Secured Loans'"; //23
+        $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+        $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+        $drAccId = $rowAccName['acc_id'];
+        $drAccName = $rowAccName['acc_user_acc'];
+
+        $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Cash in Hand'"; //6
+        $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+        $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+        $crAccId = $rowAccName['acc_id'];
+        $crAccName = $rowAccName['acc_user_acc'];
+
+        $jrtrJId = '';
+        $jrtrJrnlId = $jrnlId;
+        $jrtrOwnId = $girviOwnerId;
+        $jrtrUserId = $custId;
+        $jrtrUserType = 'cust';
+        $jrtrTransId = $girviPrinId;
+        $jrtrTransType = 'Girvi';
+        $jrtrFirmId = $girviFirmId;
+        $jrtrTransCRDR = 'DR';
+        $jrtrDrAmt = $principalAmount;
+        $jrtrDrAccId = $drAccId; //Secured Loan
+        $jrtrDrDesc = $drAccName;
+        $jrtrCrAmt = $principalAmount;
+        $jrtrCrAccId = $crAccId; //Girvi Payment Account Id
+        $jrtrCrDesc = $crAccName;
+        $jrtrDesc = 'Additional Prin Added';
+        $jrtrOthInfo = '';
+        $jrtrDOB = $principalDOB;
+
+        $apiType = 'insert';
+        include 'ommpjrtr.php';
+//END CODE 
+
+        $query = "UPDATE girvi_principal SET 
+            girv_prin_jrnlid='$jrnlId'
+            WHERE girv_prin_own_id='$_SESSION[sessionOwnerId]' and girv_prin_id ='$girviPrinId'";
+
+        if (!mysqli_query($conn,$query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+
+        //echo '<br/>$principalDOR: ' . $principalDOR;    
+        if ($girviPrinUpdSts == 'Released') {
+
+//        $qSelCustDetails = "SELECT cust_fname,cust_lname,cust_add,cust_city,cust_pincode,cust_state,cust_country,cust_mobile FROM customer where cust_owner_id='$_SESSION[sessionOwnerId];' and cust_id='$custId'";
+//        $resCustDetails = mysqli_query($conn,$qSelCustDetails);
+//        $rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+//
+//        $custFirstName = $rowCustDetails['cust_fname'];
+//        $custLastName = $rowCustDetails['cust_lname'];
+
+            $selAccName = "SELECT acc_id,acc_main_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Cash in Hand'"; //6  //Right now rec amt in CASH
+            $resAccName = mysqli_query($conn,$selAccName);
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $cashAccId = $rowAccName['acc_id'];
+            $cashAccName = $rowAccName['acc_main_acc'];
+
+            $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Sundry Debtors'";
+            $resAccName = mysqli_query($conn,$selAccName);
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $SundryDebAccId = $rowAccName['acc_id'];
+
+            $jrnlOwnId = $girviOwnerId;
+            $jrnlJId = '';
+            $jrnlUserId = $custId;
+            $jrnlUserType = 'cust';
+            $jrnlTransId = $girviId; // Used to navigate
+            $jrnlTransType = 'Girvi'; //Where we hv to navigate
+            $jrnlFirmId = $girviFirmId;
+            $jrnlTTDr = $totalAmtPaid;
+            $jrnlDrAccId = $cashAccId;
+            $jrnlDrDesc = $cashAccName;
+            $jrnlTTCr = $totalAmtPaid;
+            $jrnlCrAccId = $SundryDebAccId;
+            $jrnlCrDesc = $custFirstName . ' ' . $custLastName;
+            $jrnlDesc = 'Additional Prin Released';
+            $jrnlOthInfo = '';
+            $jrnlDOB = $principalDOR;
+
+            $apiType = 'insert';
+            include 'ommpjrnl.php';
+
+            //Start Code to Get Last Journal Id
+            $qSelJournalEntry = "SELECT jrnl_id FROM journal where jrnl_own_id='$jrnlOwnId' order by jrnl_id desc LIMIT 0,1";
+            $resJournalEntry = mysqli_query($conn,$qSelJournalEntry) or die(mysqli_error($conn));
+            $rowJournalEntry = mysqli_fetch_array($resJournalEntry);
+            $jrnlId = $rowJournalEntry['jrnl_id'];
+            //End Code to Get Last Journal Id
+
+            $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Secured Loans'"; //23
+            $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $crAccId = $rowAccName['acc_id'];
+            $crAccName = $rowAccName['acc_user_acc'];
+
+            $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Cash in Hand'"; //6
+            $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $drAccId = $rowAccName['acc_id'];
+            $drAccName = $rowAccName['acc_user_acc'];
+
+            $jrtrJId = '';
+            $jrtrJrnlId = $jrnlId;
+            $jrtrOwnId = $girviOwnerId;
+            $jrtrUserId = $custId;
+            $jrtrUserType = 'cust';
+            $jrtrTransId = $girviPrinId;
+            $jrtrTransType = 'Girvi';
+            $jrtrFirmId = $girviFirmId;
+            $jrtrTransCRDR = 'DR';
+            $jrtrDrAmt = $totalPrinAmt;
+            $jrtrDrAccId = $drAccId; //Secured Loan
+            $jrtrDrDesc = $drAccName;
+            $jrtrCrAmt = $totalPrinAmt;
+            $jrtrCrAccId = $crAccId; //Girvi Payment Account Id
+            $jrtrCrDesc = $crAccName;
+            $jrtrDesc = 'Rel Add Prin Amt';
+            $jrtrOthInfo = '';
+            $jrtrDOB = $principalDOR;
+
+            $apiType = 'insert';
+            include 'ommpjrtr.php';
+
+            $selAccName = "SELECT acc_id,acc_user_acc FROM accounts WHERE acc_own_id='$_SESSION[sessionOwnerId]' and acc_firm_id='$girviFirmId' and acc_user_acc='Direct Incomes'"; //16
+            $resAccName = mysqli_query($conn,$selAccName) or die(mysqli_error($conn));
+            $rowAccName = mysqli_fetch_array($resAccName, MYSQLI_ASSOC);
+            $crAccId = $rowAccName['acc_id'];
+            $crAccName = $rowAccName['acc_user_acc'];
+
+            $jrtrJId = '';
+            $jrtrJrnlId = $jrnlId;
+            $jrtrOwnId = $girviOwnerId;
+            $jrtrUserId = $custId;
+            $jrtrUserType = 'cust';
+            $jrtrTransId = $girviPrinId;
+            $jrtrTransType = 'Girvi';
+            $jrtrFirmId = $girviFirmId;
+            $jrtrTransCRDR = 'DR';
+            $jrtrDrAmt = $totalPrinInt;
+            $jrtrDrAccId = $drAccId; //Income
+            $jrtrDrDesc = $drAccName;
+            $jrtrCrAmt = $totalPrinInt;
+            $jrtrCrAccId = $crAccId; //Girvi Payment Account Id
+            $jrtrCrDesc = $crAccName;
+            $jrtrDesc = 'Rel Add Prin Amt';
+            $jrtrOthInfo = '';
+            $jrtrDOB = $principalDOR;
+
+            $apiType = 'insert';
+            include 'ommpjrtr.php';
+        }
+    }
+}//while Add Princ
+/* * ******************************************************************************************* */
+/*                         END CODE To Add Journal Entry For Add Princpal @AUTHOR:PRIYA20MAR13                        */
+/* * ******************************************************************************************* */
 ?>

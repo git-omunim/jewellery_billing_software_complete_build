@@ -1,3 +1,338 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: COUPON LIST FILTER @SONALI-03NOV2023
+ * **************************************************************************************
+ * @FileName: omtempcoupon.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMGOLD
+ * @version 1.0.1
+ * @Copyright (c) 2023 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+//
+//print_r($_REQUEST);
+session_start();
+?>
+<div id="couponDiv">
+    <table id="couponTable" width="100%" style="margin-bottom:5px;">
+        <tr>
+            <td width="30%"></td>
+             <td width="25%" colspan="1">
+                        <div name="box" id="name_label_box" class="hidden_box" style="visibility:hidden;"> 
+                           OFFER NAME
+                        </div>
+                        <input id="addItemCoupon" name="addItemCoupon" type="hidden" value="<?php echo $cpnoffername ?>">
+                        
+                        <input type="hidden" id="couponItem" name="couponItem"/>
+                        <input class="couponText form-control" type="text" id="c_offer_list" name="c_offer_list" placeholder="Offer Name" 
+                             
+                               onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                               googleSuggestionDropdownBlank('itemListDivToAddStockItem');
+                               return false;
+                           } else if (event.keyCode == 8 &amp;&amp; this.value == '') {
+                               googleSuggestionDropdownBlank('itemListDivToAddStockItem');
+                               return false;
+                           }"
+                           
+                            onblur="if (this.value == '') {
+                               this.value = document.getElementById('addItemCoupon').value;
+                           }
+                           document.getElementById('name_label_box').style.visibility = 'hidden';"
+                           
+                            onkeyup="if (event.keyCode != 9 &amp;&amp; event.keyCode != 13) {
+                               searchCouponList(document.getElementById('c_offer_list').value,'c_offer_list', event.keyCode, '<?php echo $documentRootBSlash; ?>');
+                           }"
+                           
+                           
+                           onclick="googleSuggestionDropdownBlank('itemListDivToAddStockItem');
+                            this.value = '';"
+                            
+                         onfocus="document.getElementById('name_label_box').style.visibility = 'visible';"
+                         autocomplete="off" spellcheck="false" class="form-control text-center font-dark input-focus form-control-font13" maxlength="80">
+                        <div id="itemListDivToAddStockItem" class="itemListDivToAddStock placeholderClass" style="position:relative"></div>
+                   
+                    </td>
+            <td width="7%">
+                <input type="button" id="submitlistbtn" class="btn btnSubmit11" value="submit" onclick="setTemplate('<?php echo 'discountList'; ?>', 'COUPON LIST', document.getElementById('c_offer_list').value);">
+            </td>
+            <td width="30%"></td>
+        </tr>
+
+    </table>
+</div>  
+<div id="allcouponlistdiv">
+<?php
+//
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$selFirmId = $_SESSION['setFirmSession'];
+//
+///****************************************************************************************************************************/
+/******************************************* Start Code To GET Firm Details *************************************************** */
+/****************************************************************************************************************************/
+if (isset($_GET['selFirmId'])) {
+    $selFirmId = $_GET['selFirmId'];
+} else {
+    //if not selected assign session firm @AUTHOR: SANDY10JUL13
+    $selFirmId = $_SESSION['setFirmSession'];
+}
+if ($_SESSION['sessionIgenType'] == $globalOwnPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name as firmname,firm_phone_details as firmphoneno,firm_website as firmweb FROM firm where firm_type='Public' and firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr";
+} else if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+    $qSelFirmCount = "SELECT firm_id,firm_name as firmname,firm_phone_details as firmphoneno,firm_website as firmweb, firm_type FROM firm where firm_own_id='$_SESSION[sessionOwnerId]' $sessionFirmStr order by firm_since desc";
+}
+if ($selFirmId == NULL || $selFirmId == '' || $selFirmId == 'NotSelected') {
+    $resFirmCount = mysqli_query($conn, $qSelFirmCount);
+    $strFrmId = '0';
+    //Set String for Public Firms
+    while ($rowFirm = mysqli_fetch_array($resFirmCount, MYSQLI_ASSOC)) {
+        $strFrmId = $strFrmId . ",";
+        $strFrmId = $strFrmId . "$rowFirm[firm_id]";
+        $firmphoneno = $rowFirm[firmphoneno];
+        $firmweb = $rowFirm[firmweb];
+    }
+} else {
+    $strFrmId = $selFirmId;
+}
+/****************************************************************************************************************************/
+/***************************************************** End Code To GET Firm Details ******************************************* */
+//
+$offerName = $_REQUEST['c_offer_list'];
+if ($offerName == '') {
+    $offerNameq = "SELECT cpn_firm_name, cpn_offer_name,cpn_quantity, cpn_content,cpn_code, cpn_validity_detail, "
+            . "cpn_discount, cpn_start_date, cpn_end_date, cpn_height, cpn_width FROM coupon "
+            . "WHERE cpn_owner_id = '$sessionOwnerId'";
+    $resofferNameq = mysqli_query($conn, $offerNameq);
+} else {
+    $offerNameq = "SELECT cpn_firm_name,cpn_offer_name, cpn_quantity, cpn_content,cpn_code, cpn_validity_detail, "
+            . "cpn_discount, cpn_start_date, cpn_end_date, cpn_height, cpn_width FROM coupon "
+            . "WHERE cpn_owner_id = '$sessionOwnerId' AND  cpn_offer_name= '$offerName'";
+    $resofferNameq = mysqli_query($conn, $offerNameq);
+}
+//THIS VARIABLE USE FOR COUPON CODE PRINT SINGLE 
+$cpncodeinc =1;
+while ($rowofferCpnListquery = mysqli_fetch_array($resofferNameq, MYSQLI_ASSOC)) {
+
+    $cpn_firm_name = $rowofferCpnListquery['cpn_firm_name'];
+    $cpn_quantity = $rowofferCpnListquery['cpn_quantity'];
+    $cpn_content = $rowofferCpnListquery['cpn_content'];
+    $cpn_code = $rowofferCpnListquery['cpn_code'];
+    $offerName = $rowofferCpnListquery['cpn_offer_name'];
+    $cpn_validity_detail = $rowofferCpnListquery['cpn_validity_detail'];
+    $cpn_discount = $rowofferCpnListquery['cpn_discount'];
+    $cpn_height = $rowofferCpnListquery['cpn_height'];
+    $cpn_width = $rowofferCpnListquery['cpn_width'];
+    ?>
+
+        <div id="couponListDiv<?php echo $j;?>">
+            <style>
+    .discouponSection  .disccustomTable{
+        margin-top: 30px;
+        border-top: 1px solid #c1c1c1;
+    }
+    .discouponSection  .discouponTable{
+        width:100%;
+        margin-top: 5px;
+        padding-top: 5px;
+        border-top: 1px solid #c1c1c1;
+    }
+    .discouponSection  .disccustomTable label{
+        text-transform: uppercase;
+        color: #5f6f7e;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .discouponSection  .disccustomTable .couponText{
+        width: 100%;
+        height: 35px;
+        margin-bottom: 45px;
+    }
+    .disccustomTable .couponText.form-control::placeholder{
+        font-size: 16px;
+    }
+
+    .discouponSection  .disccustomTable .btnSubmit11,.btnSubmit11{
+        border-radius: 5px !important;
+        width: 100px;
+        padding: 5px 5px;
+        height: auto;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        color: #000080;
+        background-color: #D1E4FF;
+        border: 1px solid #74adfe;
+    }
+    .discouponSection  .discouponTable .discMain{
+        width: 50%;
+    }
+    .discouponTable .DisccoupDiv {
+        width: 100%;
+        border: 1px solid #b9979f;
+        border-radius: 5px;
+        background: #fff4e5;
+        height: 280px;
+    }
+    .DisccoupPic{
+        width: 40%;
+        clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+    }
+    .discFirmDet{
+        width: 60%;
+    }
+    .DisccoupPic img {
+        width: 100%;
+        height:100%;
+    }
+    .discouponTable .DisccoupDiv .discFirmDet{
+        padding: 10px 10px 10px 10px;
+    }
+    .DisccoupDiv .discFirmn h5{
+        font-size: 28px;
+        font-weight: bold;
+        color: #5d1f2d;
+        text-transform: capitalize;
+        text-align:center;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    .DisccoupDiv .discFirmn p {
+        text-indent: 0;
+        font-weight: 600;
+        font-size: 17px;
+        color: red;
+        text-transform: capitalize;
+        text-align: center;
+        padding: 0;
+        margin: 5px 0;
+    }
+    .DisccoupDiv .discouponc {
+        margin-top: 5px;
+        text-align: center;
+    }
+    .DisccoupDiv .discouponc span {
+        text-align:center;
+    }
+    .DisccoupDiv .discouponc h5{
+        padding: 5px;
+        background: #fff;
+        border: 1px dashed #5d1f2d;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 30px;
+        width: 95%;
+        margin: auto;
+        color: #5d1f2d;
+    }
+    .discFirmDet h6{
+        font-size: 16px;
+        color: #aa1717;
+        font-weight: normal;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align:center;
+    }
+    .discFirmDet .offerName p{
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: #c17f02;
+        padding: 0;
+        margin: 13px 0 17px;
+        text-indent: 0;
+    }
+    .discFirmDet span{
+        font-size: 16px;
+    }
+    .DisccoupDiv .discFirmsubDet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .DisccoupDiv .discFirmsubDet p{
+        text-indent: 0;
+        padding: 0;
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+        margin:0;
+    }
+</style>
+            <table class="discouponTable" align="center">
+                <tbody>  
+                    <!--// Generate the coupon codes based on the provided quantity-->
+                       <?php for ($i = 0; $i < $cpn_quantity; $i++) {?>
+                        <tr>
+                            <td class="discMain">
+                                <div class="DisccoupDiv" 
+                                     style="margin-bottom:10px;display: flex;
+                                     width: <?php echo $cpn_width; ?>px;
+                                     height: <?php
+                                        if ($cpn_height != '' || $cpn_height != null || $cpn_height != 0) {
+                                            echo $cpn_height . 'px';
+                                        } else {
+                                            echo '350px';
+                                        }
+                                        ?>" 
+                                     >
+                                    <div class="DisccoupPic">
+                                        <img src="<?php echo $documentMainRoot; ?>/webroot/theme/saas/common/img/coupon_jewel1.png" alt="Image"/>
+                                    </div>
+                                    <div class="discFirmDet text-center">
+                                        <div class="discFirmn">
+                                            <h5><?php echo $cpn_firm_name; ?></h5>
+                                            <p><?php echo $cpn_content; ?> </p>
+                                        </div>
+                                        <div class="discouponc">
+                                            <span>Coupon Code</span>
+
+                                            <h5><?php echo strtoupper($cpn_code); ?></h5>
+                                        </div>
+
+                                        <h6><?php echo $cpn_validity_detail; ?></h6>
+                                        <div class="offerName">
+                                            <P><?php echo $offerName; ?></p>
+                                        </div>
+                                        <div class="discFirmsubDet">
+                                            <p style="display: flex;align-items: center;justify-content: center;"><img src="<?php echo $documentMainRoot; ?>/webroot/theme/saas/common/img/telephone.png" alt="Phone" style="width: 20px;height: 20px;margin-right: 5px;"/><span><?php echo $firmphoneno; ?></span></p>
+                                            <p style="display: flex;align-items: center;justify-content: center;"><img src="<?php echo $documentMainRoot; ?>/webroot/theme/saas/common/img/internet.png" alt="Website" style="width: 20px;height: 20px;margin-right: 5px;"/><span><?php echo $firmweb; ?></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="noPrint" colspan="2" valign="bottom" align="center" style="padding: 20px 0;">
+                                    <a style="cursor: pointer;" onclick="printBarCodeA4Sheet('couponListDiv<?php echo $j++;?>')" id="print_coupon">
+                                        <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt="Print" title="Print" width="24px" height="24px" class="noPrint" > 
+                                    </a>     
+                                </div>    
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>  
+           </div> 
+        <?php
+    }
+}
+$cpncodeinc++;
+?>
+    <div class="noPrint" colspan="2" valign="bottom" align="center" style="padding: 20px 0;">
+        <a style="cursor: pointer;" onclick="printBarCodeA4Sheet('allcouponlistdiv')" id="print_coupon">
+            <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt="Print" title="Print" width="24px" height="24px" class="noPrint" > 
+        </a>
+    </div>
+</div>
+<div style="display:block;justify-items: center" id="coupunResponceList" >
+</div>

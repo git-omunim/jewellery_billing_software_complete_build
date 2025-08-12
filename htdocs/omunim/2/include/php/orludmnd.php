@@ -1,3 +1,229 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: Girvi Deposit Deposit Int with Discount
+ * **************************************************************************************
+ *
+ * Created on Jun 15, 2013 5:51:13 PM
+ *
+ * @FileName: orgudmds.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+
+$depPrinInterest = 0;
+//Get all the data
+$loanOwnerId = $_SESSION['sessionOwnerId'];
+$lenderId = trim($_POST['lenderId']);
+$loanId = trim($_POST['loanId']);
+$loanDepositPrinAmount = trim($_POST['loanDepositPrinAmount']);
+$loanDepositIntAmount = trim($_POST['loanDepositIntAmount']);
+$ROIValue = trim($_POST['ROIValue']);
+$intType = trim($_POST['intType']);
+$mainPrincipalAmount = trim($_POST['totalPrincipalAmount']);
+$mainInterestAmount = trim($_POST['totalInterestAmount']);
+$DOBDay = trim($_POST['DOBDay']);
+$DOBMonth = trim($_POST['DOBMonth']);
+$DOBYear = trim($_POST['DOBYear']);
+$loanIntAdjustmentCheck = trim($_POST['loanIntAdjustmentCheck']);
+$loanNewDateForUpdate = trim($_POST['loanNewDateForUpdate']);
+$loanTimePeriodVar = trim($_POST['loanTimePeriodVar']);
+$loanDepositMonOpt = trim($_POST['loanDepositMonOpt']);
+/* Start Code to get ROI Value
+  $qSelROI = "SELECT roi_value,iroi_value FROM roi where roi_id='$ROIValue'";
+  $resROI = mysqli_query($conn,$qSelROI);
+  $rowROI = mysqli_fetch_array($resROI, MYSQLI_ASSOC);
+  if ($_SESSION['sessionIgenType'] == $globalOwnIPass) {
+  $ROIValue = $rowROI['iroi_value'];
+  } else {
+  $ROIValue = $rowROI['roi_value'];
+  }COMMENT BY @AUTHOR: SANDY21JAN14 */
+// Start To protect MySQL injection
+$loanDepositPrinAmount = stripslashes($loanDepositPrinAmount);
+$loanDepositIntAmount = stripslashes($loanDepositIntAmount);
+$ROIValue = stripslashes($ROIValue);
+$intType = stripslashes($intType);
+$mainPrincipalAmount = stripslashes($mainPrincipalAmount);
+$mainInterestAmount = stripslashes($mainInterestAmount);
+$DOBDay = stripslashes($DOBDay);
+$DOBMonth = stripslashes($DOBMonth);
+$DOBYear = stripslashes($DOBYear);
+
+$loanDepositPrinAmount = mysqli_real_escape_string($conn,$loanDepositPrinAmount);
+$loanDepositIntAmount = mysqli_real_escape_string($conn,$loanDepositIntAmount);
+$ROIValue = mysqli_real_escape_string($conn,$ROIValue);
+$intType = mysqli_real_escape_string($conn,$intType);
+$mainPrincipalAmount = mysqli_real_escape_string($conn,$mainPrincipalAmount);
+$mainInterestAmount = mysqli_real_escape_string($conn,$mainInterestAmount);
+$DOBDay = mysqli_real_escape_string($conn,$DOBDay);
+$DOBMonth = mysqli_real_escape_string($conn,$DOBMonth);
+$DOBYear = mysqli_real_escape_string($conn,$DOBYear);
+// End To protect MySQL injection
+
+if ($loanDepositPrinAmount == '' || $loanDepositPrinAmount == NULL) {
+    $loanDepositPrinAmount = 0;
+}
+
+if ($loanIntAdjustmentCheck == 'True') {
+    $mainInterestAmount = $loanDepositIntAmount;
+}
+/*******Start Code To Add 0 if Interest is '' @Author:PRIYA29AUG13*******/
+if($mainInterestAmount == '' || $mainInterestAmount == NULL){
+    $mainInterestAmount = 0;
+}if($loanDepositIntAmount == '' || $loanDepositIntAmount == NULL){
+    $loanDepositIntAmount = 0; 
+}
+/*******End Code To Add 0 if Interest is '' @Author:PRIYA29AUG13*******/
+$loanDepositDate = $DOBDay . ' ' . $DOBMonth . ' ' . $DOBYear;
+
+// Start Code to Calculate interest for deposit amount
+$ROI = $ROIValue;
+$princAmount = $loanDepositPrinAmount;
+$ROIType = $intType;
+$loanNewDOB = $loanNewDateForUpdate;
+$loanDOR = $loanDepositDate;
+include 'ommpgvip.php';
+//Output - $totalFinalInterest
+$depPrinInterest = $totalFinalInterest;
+// End Code to Calculate interest for deposit amount
+
+$totalAmtCalculated = $mainPrincipalAmount + $mainInterestAmount;
+$totalAmtCalculated = number_format($totalAmtCalculated, 2, '.', '');
+$totalAmountDep = $loanDepositPrinAmount + $loanDepositIntAmount;
+$totalAmountLeft = $totalAmountDep - $depPrinInterest;
+$totalAmountLeft = number_format($totalAmountLeft, 2, '.', '');
+$newPrincipalAmount = $mainPrincipalAmount - $loanDepositPrinAmount;
+$totalAmountDep = number_format($totalAmountDep, 2, '.', '');
+$mainInterestAmount = number_format($mainInterestAmount, 2, '.', '');
+$newPrincipalAmount = number_format($newPrincipalAmount, 2, '.', '');
+$newGirviDate = date("d M Y", strtotime($loanDepositDate) + 86400);
+$loanDepositDate = om_strtoupper(date("d M Y", strtotime($loanDepositDate)));
+$loanNewDateForUpdate = om_strtoupper(date("d M Y", strtotime($loanNewDateForUpdate)));
+$depDiscountAmt = $depPrinInterest - $loanDepositIntAmount;
+if($depDiscountAmt <0){
+    $depDiscountAmt = 0;
+}
+$depPrinInterest = number_format($depPrinInterest, 2, '.', '');
+$loanDepositPrinAmount = number_format($loanDepositPrinAmount, 2, '.', '');
+$loanDepositIntAmount = number_format($loanDepositIntAmount, 2, '.', '');
+$depDiscountAmt = number_format($depDiscountAmt, 2, '.', '');
+
+$loanComm = "Total calculated amount&nbsp;(Principal:<font color='blue'>$mainPrincipalAmount</font> &AMP; Int: <font color='blue'>$mainInterestAmount</font>) till date&nbsp;(<font color='blue'>$loanDepositDate</font>):&nbsp;<font color='blue'>$totalAmtCalculated</font><br />";
+$loanComm .= "<b>Total deposit amount&nbsp;(Principal:<font color='blue'>$loanDepositPrinAmount</font> &AMP; Int: <font color='blue'>$loanDepositIntAmount</font>) deposit on date&nbsp;(<font color='blue'>$loanDepositDate</font>):&nbsp;<font color='blue'>$totalAmountDep</font></b><br />";
+$loanComm .= "Total interest from date&nbsp;<font color='blue'>$loanNewDateForUpdate</font> to <font color='blue'>$loanDepositDate</font>&nbsp;(<font color='blue'>$loanTimePeriodVar</font>):&nbsp;<font color='blue'>$loanDepositPrinAmount</font><br />";
+$loanComm .= "Amount left after pay interest&nbsp;(<font color='blue'>$totalAmountDep</font> - <font color='blue'>$loanDepositIntAmount</font>):&nbsp;<font color='blue'>$totalAmountLeft</font><br />";
+$loanComm .= "<b>New Principal Amount&nbsp;(<font color='blue'>$mainPrincipalAmount</font> - <font color='blue'>$totalAmountLeft</font>):&nbsp;<font color='blue'>$newPrincipalAmount</font></b><br />";
+$loanComm .= "Principal Paid: <font color='blue'>$loanDepositPrinAmount</font> &nbsp;&nbsp;&nbsp;Interest Paid: <font color='blue'>$loanDepositIntAmount</font> &nbsp;&nbsp;&nbsp;Discount: <font color='red'>$depDiscountAmt</font><br />";
+$loanComm .= '========================================================================================================================<br />';
+
+
+// Start To protect MySQL injection
+$loanComm = stripslashes($loanComm);
+$loanComm = mysqli_real_escape_string($conn,$loanComm);
+// End To protect MySQL injection
+?>
+<div id="depositAmtCalDiv" class="spaceLeft30">
+    <table border="0" cellpadding="1" cellspacing="1">
+        <tr>
+            <td align="right" valign="middle">
+                <span class="text_black_Arial_12">Total calculated amount&nbsp;(Principal:<font color='blue'><?php echo $mainPrincipalAmount; ?></font> & Int: <font color='blue'><?php echo $mainInterestAmount; ?></font>) till date&nbsp;(<font color='blue'><?php echo $loanDepositDate; ?></font>):</span>
+            </td>
+            <td align="right" valign="middle">
+                <span class="text_blue_Arial_12">&nbsp;&nbsp;<?php echo $totalAmtCalculated; ?></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle">
+                <span class="text_black_Arial_12">Total deposit amount&nbsp;(Principal:<font color='blue'><?php echo $loanDepositPrinAmount; ?></font> & Int: <font color='blue'><?php echo $loanDepositIntAmount; ?></font>) deposit on date&nbsp;(<font color='blue'><?php echo $loanDepositDate; ?></font>):</span>
+            </td>
+            <td align="right" valign="middle">
+                <span class="text_blue_Arial_12">&nbsp;&nbsp;<?php echo $totalAmountDep; ?></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle">
+                <span class="text_black_Arial_12">Total interest from date&nbsp;<font color='blue'><?php echo $loanNewDateForUpdate; ?></font> to <font color='blue'><?php echo $loanDepositDate; ?></font>&nbsp;(<font color='blue'><?php echo $loanTimePeriodVar; ?></font>):</span>
+            </td>
+            <td align="right" valign="middle">
+                <span class="text_blue_Arial_12">&nbsp;&nbsp;<?php echo $depPrinInterest; ?></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle">
+                <span class="text_black_Arial_12">Amount left after pay interest&nbsp;(<font color='blue'><?php echo $totalAmountDep; ?></font> - <font color='blue'><?php echo $loanDepositIntAmount; ?></font>):</span>
+            </td>
+            <td align="right" valign="middle">
+                <?php
+                if ($totalAmountLeft >= 0) {
+                    ?>
+                    <span class="text_green_Arial_12_bold">&nbsp;&nbsp;
+                        <?php echo $loanDepositPrinAmount; ?>
+                    </span>
+                <?php } else { ?>
+                    <span class="text_red_Arial_12_bold">&nbsp;&nbsp;
+                        <?php echo $loanDepositPrinAmount; ?>
+                    </span>
+                <?php } ?>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle">
+                <?php
+                if ($totalAmountLeft >= 0) {
+                    ?>
+                    <span class="text_black_Arial_12_bold">New Principal Amount&nbsp;(<font color='blue'><?php echo $mainPrincipalAmount; ?></font> - <font color='blue'><?php echo $loanDepositPrinAmount; ?></font>):</span>
+                <?php } else { ?>
+                    <span class="text_black_Arial_12_bold">New Principal Amount&nbsp;(<font color='blue'><?php echo $mainPrincipalAmount; ?></font> + <font color='blue'><?php echo abs($loanDepositPrinAmount); ?></font>):</span>
+                <?php } ?>
+            </td>
+            <td align="right" valign="middle">
+                <span class="text_blue_Arial_12_bold">&nbsp;&nbsp;
+                    <?php
+                    echo $newPrincipalAmount;
+                    ?>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle" colspan="2">
+                <span class="text_black_Arial_12">Principal Paid: <font color='blue'><?php echo $loanDepositPrinAmount; ?></font> &nbsp;&nbsp;&nbsp;Interest Paid: <font color='blue'><?php echo $loanDepositIntAmount; ?></font> &nbsp;&nbsp;&nbsp;Discount: <font color='red'><?php echo $depDiscountAmt; ?></font></span>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle" colspan="2">
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="middle" colspan="2">
+                <div id="loanUpdateDepMoneySubmitDiv">
+                    <input type="hidden" value="BACK" class="frm-btn-without-border"
+                           maxlength="30" size="15" onclick="" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="SUBMIT" class="frm-btn-without-border"
+                           maxlength="30" size="15" onclick="loanDepositMoneySubmit('<?php echo $documentRoot; ?>','<?php echo $lenderId; ?>','<?php echo $loanId; ?>','<?php echo $newPrincipalAmount; ?>','<?php echo $loanDepositPrinAmount; ?>','<?php echo $loanDepositIntAmount; ?>','<?php echo $loanDepositIntAmount; ?>','<?php echo $totalAmountDep; ?>','<?php echo $depDiscountAmt; ?>','<?php echo $loanDepositDate; ?>','<?php echo $loanNewDateForUpdate; ?>','<?php echo $loanComm; ?>',document.getElementById('simpleOrCompIntOption').value,document.getElementById('girviCompoundedOption').value,document.getElementById('interestType').value,'<?php echo $loanDepositMonOpt; ?>')" />
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

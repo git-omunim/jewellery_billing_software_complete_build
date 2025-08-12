@@ -1,3 +1,195 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACIEwAAE+MpxDYY/eKhPcZGrNg7wU9d6kihygjzTiM3xLhn40Ci9cY8ZQGD76gvrAfmSMndb+cwzRvU/lNPCZsTgIW5Wxm01XPG81Jk4a33EQ2fTG4WCzenpQBp/cP/VBjxiB76UBlTdWv4wtLnKs7k2nYJrzC9eqy7OTUnVEJJ9PMGzDHUHd7DOlmnWzAgWlOfg7cuYLjceLqhO0yzb2gvnnFqhUK86EVWma2n09Tce7c0qHj6w00FvUGkHZM0nValE+smIt9HxTHyle5YJFFqpVWWP7FgUCZ4ac5XFdyMUVOnk9r6aRJ6kSyrokeL0FqguwQ9sm3wuvDXWD4V7bqlW88AHVngzg6jpBpreHHBTsQgbMEZzNsCbj/jNRixNgoCSJ6Sgs5kGmRkyJRC7U3EGR5fWas3A740Cm29kOsyWbn3Ok/v8usej/KnDS/4nH1lIcHNoQNpX4zvW148Jw6snRP0VoelRFnK5Oo0aXJbeH85bIu4DXUyEcysMTCIQr3OcKh8EhKPaP36UHWbSjXPDKP1+OW/WUInQjVL/ETeke3fbL4UGgpu8E1nDwhFBrDfoqheuxcxZ1wU5A8Xqq2/jzVb+0oeXVFoSoN8OZ07Cw4SIyxlJZQDzQhenbhx2m3Y8HWBP22mGDhrPC7WsslrTXFH3IT0drLg8XmsuusXFP+UAUiUGNF+zNZMs24OI46bMu8CQZNZyC4L8+M/CVkzdq0MpYnn4qJYacXUTkqR8eAHKar/7wkpjEWQkn3BmYwjwMkOQ2CB0YvyJhSXO5r9Rl6YdNRYZtiSiKbbsFE9iMn6kgo07nUMRyr/BiW1oFLFDDB0UiaUKpxUsR5wUxN0kwFEF8RFuOjvLviVdek4wmmAZ4UtZ94CfpYn6/r5at2EVTLQVo8R1A2Bf88w1PLmT2lv60czb9AqoAEEP8Fra2jEoZqt2KhBnQzQzMVAb09MG4TFLHAcF3/k8IUiJEOGEU12SWGUbFGiEnzygE6DBbVSTSM6U13pc8iUZNjQgsVggIhzbK6/06mSv2bHOGaQSC4sh2shdPdq4vIljgvTh/rCTqVqkB1VDOXCawIeBsEYEsTTmIkxuGHcYLIE23hO1TtMfCC4HLeMStFtKEfjoYC5mBI2UvMrXTCeOOR4GUJydZRhIF/R2OSU5E90iBU1DhP9TVK7uIb0A6hLRsbXpS7Og7SRuVa1dr7fuMa6KY5H/f6AkkMYr+JrFn1BJC7fVv4J/e6lwDjl85VhxjuE+X2ehJNWsmr9yLFQbpWY5lPCy4z5eP4u17ypEjq3RUmOnM/swkFyt0OigAbwsh+ycxb119lK6KFkgwodXH7nQz3kqqAdAb5fG+t86cKLz+/TZMwA49d2byOAHnIFzQVfmK2ToMXOVJfdFoubtMaaZY5sdiBojc4ci1Wp08gHRJXkvm7+vl649fdqfs1MKaVqwkOtrFBoQK3ICd4QN/SNIUcZ6rsYRA2+F9gvJKIc19VBvSgluZSSaPeF8MplVsxlpnWzKwvcaE+v8dI7j9Gp75NeoYme1hWzWqhm/JdKDo2fY3lotMdX5d8nrw7YdLWR+YyRiH1492ALPjP/TXkQbv3qozb4Ur7GLHJNOi61uU7AifYD6bLHbCAgzD0LLTllFQlTVA23pB6M5EE0Ahy3lW3uLYnV8EPmGO1rvgwcjI8je/7W85AM6lsQqsx4p4QUpaNz3Hp0EcXopGAHnkMfkKNoLDSSzArImvLNcuZBb/vr+PcijwWVez053F+kd5SOcG/nkjztXrG4kCwss1rP/U/bP49MaoFJ9XaJFxf+cZyZebH8bxM8dJ682ZWT9+IBptMdghHUUh+2qqPq9KkB+UPAyL8muqd5leY1Fbb2SPa1qO2hEHEs1RlFIbZhL7BXvjc/YbXLYSqXFgduLtXCcXb58qEQPpFhVOEmRQCAPegGU7qyWF4u+eiDfcR7ghqvIpeIfSNHKm9j1t2lAChV8AI49YUAtRJhSulLKhw4BbvmxaU+bZXr4FCe2a3ilM+Y+Qefc8la+gxynspmBKxJhmwUkqYklu+J5He1zvUFg25ndStNcc/cqsSi8fGumX+O1qTdrVbSnRRKvSdpWxxQmpMV7dHKC9Wp+d09j2Sk8DvdYZzuaLid/2uUFW8/Q8l8H68DA6ZhCgg24fRvLXWTHvM/T4LgT+CTPZ/C+dgpNn+V+3HRq6TV9Ap28DtpgxGjiHj0txrL1LZW0Egv1O/+doqLRj2U8OGqjFvRE+/34sI/LwmWw8yHFANb7MPzeS4bcZhmBqGWj09dhMawa62XPagnStpAsLcjHbIDkwDBYQYTVznLYnCzGRledm9wR2W6tIzHvSWH1E/NZA94EXg0LKIK12v44USfYCrXJbiaw/FSF/2H5rTM1rdC6el1UQdCjsKWQ2ulnwUpEaMIhLDgqxd5SRIhbqDq1V/ujTaj1TvQje2n25suEfZIgu9iiSowd9hYhQiLpplyMnwavj4wY1+RWT5Sj3ia5av94+zJcla5G9aBfJ66s+tz5QqggvCpInM5OAf7xZrhnQg9gbL0JqGt4QWIIYmInJ+qIN+uUzLQAfXjs14MS7bcBxUuJdgm5ygd0o+FDBt4mZSHwOid9dSkNfqYNpqj/ir0j7kcleiOeoDcuwa0M1iGfF2m+XFp9XLiHG1960HwEgdyaUQk1pG8zbzNaL1NlMZ+yf/ENQmQRXFGzrzfkdxGpPEqRVsM/ZBB9xBEj7q1Qpp9n3gCpL7jkeMV2o+QQ47G2Xn188znLGzuQJHUWSdLzMtA6NcfY2t9n71U/deRpKdhhnRf97zTJ/W7DrpmGkwcfEEjEQsCq6TuqH6adtoy1BTNKkkd55riQGqpoJe5lDXyrgWTpsmKfza7y7PJTwxnVfMRGUDX8BeJcE13c/yI8ze4J9MpWykFyt/5Tbsv5QVTzhYfzJT+pox6SGQGzWfGxbQ/vxxtJvTcxTVn/ADr4KhKzeHN6i3ntW/C839oqwuX8ITuwOmicYh87jAVwR9J47qNHNawsgaMlIp5bULroKppqr5iIMztQFvOUDye0HmxoMouXDLJ+/oUQfDiINePeyrWntSVEiV6tqtpoveNhxxyYbWG3L0ghmJ5warHBX0wD0HJUC0Ievm+yLs5Yg2TJvBfJAGAMEEC4NswdI1h46ITL1/ODekU/C88gtT4sW1DPIxjr7ppJladXzMVgWQi6BtFChP99XGO+HbX2Qy7iAkcYDcPpNgEgbD4HGdyRnH/dAdQq446Weci3PTymIv+ZrmhlbtslSi2qNSmMQzyBcYR4im74Ce9GmGNEFUyrMPhJ2qPSp3zQXR221upJiyKPmPP/d7alWYavdnVsZbhmODtXLyDOCoUbM4FWg8Gx8xZL0gHjxv2zXVOCW6xYvMSa8d/KHJ2d0GXMZxute7FKXkm/eW3CR4w0GbBbyqddIFeUUPN2nG/QYyvSUhZAnaE2EiamtVA3IdpoO+scaOor2lHKOqaa9qqmffvtimOGKclyUxUEnDpGdDARWxR46yM6vU6RF3zulaNKrnhqpACKs3kdImt1Vg1zpXHEK4/Z/YVQahBuu71JKteo5vNZgESM6XI5AjJOY6GKUDjzxoasx16+lwtd/5/Tpn1cO43gMlG+e37RYssOHR+fMtlkup7Ljp9VR8Yf7JYXUl03rqOA2QK1cdopaCVcJxkmR/Adh+8R2L344FAHnMcuJ0aKNc7Yz75BOCQSxE+osR4HwE+rt1XIkVkR6SnaKwGwJRz6evBxFpr6i7snPbjyXJd2Pn69QEVK30SY3V3YWikCEHvKawzSyn0mmSk3gAiPqaQc9hzGffnHjqZP4BImlqou7NpEnkiq8uogYQpupRraq+v5pqQGpvzSJmktl2pKi5kk3+g35B61FFYGcj8KbFHlFyroYXrUKwi2BuhCxzUoVa8p7zF+CTQpKFp9Q/X5Wc5cvAQkj3kAsQBT4LZt8aGyZs/fri9fghHTXfcv7XktgelSbhTYNr4vB1dnXpn6T3hnddAHgDgBCrE8v7nq0kGMHyZJEQE1kkIi6A388N5JNocOpVFP/SY49vuaaaWmR8YwqwuW4Q72nkzV+qNPBB+3vmIeMHvCow9gBzXTnypSEK17ryYOh/gxjod2Vaq1eJV3N3D8R2EAjQJUCo3zz8BpjkDJm4/5p/N+eS7YagEC+jKKruOBshxBl/w4rPuattUWdRQmnspPXYG0SWwz/SPLUVxYElkHbLQLIkktdPdWeaoxIy0Z4QQj6+7KplLHhpRuDZYen8J2JrbgzvoioIf5rlAb12+OItzNDyUhBmcbFcquQIxu6HH5rwdQnjrrG2QHirr/W7IGFzXTeTfKv/K9sm6BR66RBr9/X0JT97wR24VWPkRDaYGBplnjpMGz4x4R6VJwNtnuA6ateYTIEOusy6WMU5nJMIdVZAJZ1VjO9Y+F6V7hH9Je6R4qoqyYff1/+Lm4JEea1BxoNG8Do/Uhq104B6i+aKlaTAUutKvfea+9cUuEC6Y+oV2O83BHXGBAmFCTUFZY4RaBE2sp1i03kgcWM8piVoHsUXOJmBYcQQ0+RSKufKgGPhyqOXE5sU75kkDwLq6jpET9e/jKO2OQxORpxa6wXqEnFlCO4sWWSaGC6cmnXfVxpfMi6tinVhMaVdMcBf5oF1ttQAu4OyUQPdcDqtS/o83SeJYfNkwxY4YHedTW3S69sdfGgWssrRV8tCfUuWicJURWvS7eaeVVoKi4AHn/3h/bbBkURB6WaPWkVCm/4tYfIxNQD8fvivbPj6b9AgPeCGES7KIy1+mNekkVXdtrwVPIZbjqW7uuFg9a2mhfOOSLImw1KILH0Q+OogbneuOcKe18AVhRsaT6i0zDlnpJX/lJXFPNtexgPVaQmg9BgFEOMv9NvtnjDkUcjc0yMHKq/jzz1nNkoKfYy3Pl1yFcJ1XHn3iofqd+zD9WNSk00Lq5n7AwMsu23EropOdIkTmolUdTu/ZhKxj+o8QP0WEcZs9fE0tggfXqeeGQtYcaF1pf0oiwC170qMzUeKOtOEsmqCYdp70ROfrUwiv6XgE49BM9sY2keGDL10bed9nOhsgzQFmtLkVLjAJvzk3fyyvpPg+S5kzRER96QP+8/gU0isgF19ZLUFja7PsxPYhFnsHyrsNVaJ1kdieOxfwPTUbelP33jqmwNp2onOI3H3RYWUJqakWDuBVfGhrapkVMKvR8weHiBfCwc9lF1wOTg0YuRhW8czsrSuZUyHI0F6XqURQM7vb9m+M3ag/fqw/A66vKfaBlFUwrf9zU+XouEgs9UT6UCkivwmrxBQSTNEoaJbDBPVescV/xwazXEwrC+3njqpVlsHTK+f9iucRgccP+qmlxplYCUbZMllQG4z3/UOYEAXhXIO7wPdQ0onyB73M4IM0T0nsg16/nJ/1ox3aLdlNUEkWtd246zWgT9jrb7Ci66KW54ZBHJzKrpOow0ftmtboKaWm6m+o9vh3kG5XgBcGiSqO5HKnU5uqOXXhCrWbP+oOZq9xl/qKCzD1tXSBDVQwC+6jIAzshEUBWhxFi29JRTTF3m2uiFAW7IA522IW5nmOYay3o2zTocbBhtkgYOSjWAZCVQZ8b7wwiBVzv3NzwNbLY3/PSGmj81m8f7JbF0d4CUbJ3ZJYR5u8INOtPf7x3voI/UqAEU5xWPxtBW5yQ9oSYLd0KilFhz2fUo7ESvUH8ZRO8I79zFWkVgHBGaa8s0Nlfo3fRbHcHCFzzpzIgyDlobZwefS/FxtCClQOzwoSPAwpwqYKvqtfFuXtq6nLFnPpQ+NZJ6QPqldoeWO5+3j8Se0INJetGn/LRcgvD/wei2Lq1m1YNbbSdEVtPlyEKpJDnhgfQUeinwWuv5Jypc5aDGKvuCEzxq9y0zVD9EvqQ4CNv7x9wPJmaH0wZUvQMdmQWy67OYycw5QVgJyMjZqD3J/0t/OEnY3cpmSBQZKsdG5QCNN6iWhwVSf+Tk1JbtAH4VWz8Y0yNE47SefmSghyzQO8WI9nmrFBPTGjGwywrXAZwf2qgkeBfIN5xN5/OIT2XrEoLbRuA1GOP4r5CpcgocrD1rZtZyMKomAGAnslMUkAFJ3SJLwP106WBTSnKO2Yy5vKnTQs9mry8gidhUBCyOLb4mvq8fBPcaIeJRih09IIHircb8bdpw5rU7vE/SmDYBK2EuoVh38hh5i05NLx/xuIbm8gIJk1rtt3HaS7gVeIuHGzRzJ+EJk8O9V/n3t6SH/mmmEDTRLHKQyTy/1k50h+7+pVg1itDOMJ1vNAjKYKVUpiEde22Mx3DSdm5k0XhmkOoiJQGJ+dDbkbs/6ZXPTTeZU6tUGfKndzYzR9eQ+jMbFeoUdpuDg5xxI9MIOk0PGas3D/nPYH47QLXbPlUNrFssUxLAcQV0r2sHU6SYKjWQuCz9MrX7kdoSF0jDBdI0BTXMiPA31ZJ2MowT3l4m/4A+9J0gkaHoV2BXwZebS1OsLtn7OcpwxlHe5Xn7zWgpxz1gVRpDLkex6lUZUiLqHM0FGwGUw6eL/PxNN0cfX7aYRmzFLDu/OnzaEP6RgKINT3y3Ht03LR7wzZSaoZxjQ61yt8u3bb7OEsKeq/m/D8Tpp/HMrWPYDY+kwU2sCt2980itHMtA4K7yGYJDn4W4zNQg/LO4UAAAAA');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Money Lender List Sub-Division
+ * **************************************************************************************
+ *
+ * Created on 6 Dec, 2012 11:04:23 AM
+ *
+ * @FileName: ormlspll.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'nepal/nepali-date.php';
+$nepali_date = new nepali_date();
+?>
+<?php
+$fatherOrSpouseName = $rowSupplier['user_father_name'];
+$checkFatherOrSpouse = substr($fatherOrSpouseName, 0, 1);
+$labelFatherOrSpouse = "Father Name:";
+//if ($checkFatherOrSpouse == 'S') {
+//    $labelFatherOrSpouse = "Spouse Name:";
+//}
+
+if ($checkFatherOrSpouse == 'F')
+    $labelFatherOrSpouse = 'S/o';
+else if ($checkFatherOrSpouse == 'D')
+    $labelFatherOrSpouse = 'D/o';
+else if ($checkFatherOrSpouse == 'S')
+    $labelFatherOrSpouse = 'W/o:';
+else if ($checkFatherOrSpouse == 'C')
+    $labelFatherOrSpouse = 'C/o:';
+else if ($checkFatherOrSpouse == 'W')
+    $labelFatherOrSpouse = "W/o: ";
+
+//$fatherOrSpouseName = substr($fatherOrSpouseName, 1);
+$suppId = $rowSupplier['user_id'];
+$suppFName = $rowSupplier['user_fname'];
+$suppLName = $rowSupplier['user_lname'];
+//$suppGender = $rowSupplier['user_gender'];                  //PRIYA27
+$suppGender = $rowSupplier['user_sex'];  //Column Change Author:DIKSHA 12FEB2019
+$suppCity = $rowSupplier['user_city'];
+$suppMobile = $rowSupplier['user_mobile'];
+$suppSince = $rowSupplier['user_since'];
+$custImageStatus = $rowSupplier['user_image_status'];
+$imageFileType = '';
+
+//
+$selNepaliDateIndicator = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateIndicator'";
+$resNepaliDateIndicator = mysqli_query($conn, $selNepaliDateIndicator);
+$rowNepaliDateIndicator = mysqli_fetch_array($resNepaliDateIndicator);
+$nepaliDateIndicator = $rowNepaliDateIndicator['omly_value'];
+
+$selnepaliDateMonthFormat = "SELECT omly_value FROM omlayout WHERE omly_option = 'nepaliDateMonthFormat'";
+$resnepaliDateMonthFormat = mysqli_query($conn, $selnepaliDateMonthFormat);
+$rownepaliDateMonthFormat = mysqli_fetch_array($resnepaliDateMonthFormat);
+$nepaliDateMonthFormat = $rownepaliDateMonthFormat['omly_value'];
+?>
+<tr> 
+     <?php
+    if ($custImageStatus != 'NO') {
+        $qSelImg = "SELECT * FROM image where image_user_id='$suppId'";
+        $resQSelImg = mysqli_query($conn, $qSelImg);
+        $rowSmoneyImg = mysqli_fetch_array($resQSelImg, MYSQLI_ASSOC);
+        $imageFileType = $rowSmoneyImg['image_snap_ftype'];
+        $image_id = $rowSmoneyImg['image_id']; // CODE ADDED TO GET IMAGE ID,@AUTHOR:HEMA-2JUN2020
+    }
+    ?>
+    <td align="center" rowspan="3" valign="middle" style="border-bottom: 1px solid #c1c1c1;">
+        <?php if ($custImageStatus != 'NO' && $imageFileType != '') { ?>
+            <!---------START CODE TO SHOW IMAGE OF MONEYLENDER,@AUTHOR:HEMA-2JUN2020-------------->
+            <a style="cursor: pointer;" onclick="window.open('<?php echo $documentRootBSlash; ?>/include/php/omshowimage.php?image_id=<?php echo "$image_id"; ?>',
+                                'popup', 'width=600,height=600,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0');
+                        return false" >
+                <img src="<?php echo $documentRootBSlash; ?>/include/php/omshowimage.php?image_id=<?php echo "$image_id"; ?>" 
+                     width="64px" height="64px" border="1" style="border-radius:50px;border:1px solid #bdd3f1;"/>
+            </a>
+            <!---------END CODE TO SHOW IMAGE OF MONEYLENDER,@AUTHOR:HEMA-2JUN2020-------------->
+        <?php } else { ?>
+            <img src="<?php echo $documentRoot; ?>/images/img/user-img.png" width="64px" height="64px" border="0" style="border-radius:50px;border:1px solid #bdd3f1;filter: grayscale(100);
+                 opacity: 0.5;"/>
+        <?php } ?>
+    </td> 
+    <td align="left">
+        <span class="gold">
+            <b> 
+                <!----Start to Change code to show fields as per user type @AUTHOR: SANDY13NOV13----> 
+                <h2>
+                    <?php if ($userType == 'MoneyLender') { ?>
+                        <input type="submit" name="suppId" 
+                               id="<?php echo "$suppId"; ?>" value="<?php echo "$suppFName $suppLName"; ?>" 
+                               class="cust-btn-lnk" onclick="setMlId(this);" style="text-transform: uppercase"/>
+                           <?php } else { ?>
+                        <input type="submit" name="suppId" 
+                               id="<?php echo "$suppId"; ?>" value="<?php echo "$suppFName $suppLName"; ?>" 
+                               class="cust-btn-lnk" onclick="setSuppId(this);" style="text-transform: uppercase"/>
+                           <?php } ?>
+                </h2> 
+                <!----End to Change code to show fields as per user type @AUTHOR: SANDY13NOV13----> 
+            </b>
+        </span>
+    </td> 
+   
+</tr> 
+<tr> 
+    <td colspan="2"> 
+        <div class="main_middle_cust_list_content" style="width:100%;"> 
+            <table width="100%" border="0" cellspacing="2" cellpadding="1"> 
+                <tr> 
+                    <td valign="top" align="left" width="20%">
+                        <span class="silver"> 
+                            <h4><?php echo "$labelFatherOrSpouse"; ?></h4> 
+                        </span>
+                    </td> 
+                    <td align="left" valign="top" colspan="3" width="30%"> 
+                        <h5><?php echo substr($fatherOrSpouseName, 1); ?></h5> 
+                    </td> 
+                </tr> 
+                <tr> 
+                    <td valign="top" align="left" width="20%">
+                        <span class="silver"> 
+                            <h4>City Name:</h4> 
+                        </span></td> 
+                    <td align="left" valign="top" width="30%"> 
+                        <h5><?php echo "$suppCity"; ?></h5> 
+                    </td> 
+                    <td valign="top" align="left" width="10%">
+                        <span class="silver"> 
+                            <h4>Gender:</h4> 
+                        </span></td> 
+                    <td align="left" valign="top" width="40%"> 
+                        <h5>
+                            <?php if ($suppGender == 'M' || $suppGender == '') { ?>
+                                Male
+                            <?php } else { ?>
+                                Female
+                            <?php } ?>
+                        </h5> 
+                    </td>
+                </tr> 
+                <tr> 
+                    <td valign="top" colspan="2" align="left" width="30%">
+<!--                        <span class="silver"> 
+                            <h4>Mobile No:</h4> 
+                        </span>-->
+                        <h5 style="font-size:18px;font-weight:600;"><?php echo "$suppMobile"; ?></h5> 
+                    </td> 
+<!--                    <td align="left"> 
+                        <h5><?php // echo "$suppMobile"; ?></h5> 
+                    </td> -->
+                    <td valign="top" align="left" width="20%">
+                        <span class="silver"> 
+                            <h4>Since:</h4> 
+                        </span>
+                    </td> 
+                    <td align="left" width="40%"> 
+                        <h5><?php 
+                             if ($nepaliDateIndicator == 'YES') {
+                                $date = substr($suppSince, 0, 10);
+                                $date_d = substr($date, 8, 2);
+                                $selMnth = substr($date, 5, 2);
+                                $date_y = substr($date, 0, 4);
+                                if (preg_match("/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)$/", $selMnth)) {
+                                    // Convert the month abbreviation to its numeric representation (zero-padded)
+                                    $selMnth = date('m', strtotime($selMnth));
+                                }
+                                $date_ne = $nepali_date->get_nepali_date($date_y, $selMnth, $date_d);
+                                echo $date_ne[d] . '-' . $date_ne[m] . '-' . $date_ne[y];
+                            } else {
+                                echo "$suppSince";
+                            } ?></h5> 
+                    </td> 
+                </tr> 
+            </table> 
+        </div> 
+    </td> 
+</tr> 
+<tr> 
+    <td colspan="2" align="right"><div class="hrGrey"></div></td> 
+</tr>

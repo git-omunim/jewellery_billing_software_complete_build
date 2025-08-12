@@ -1,3 +1,264 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: udhaar serial number
+ * **************************************************************************************
+ * 
+ * Created on Mar 19, 2014 12:26:58 PM
+ *
+ * @FileName: omuusrno.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+$firmId = $_POST['firmNo'];
+$panel = $_GET['panel'];
+if ($firmId == '') {
+    $firmId = $_GET['firmNo'];
+}
+if ($panel == 'AddNewAdvMoney') {
+//    parse_str(getTableValues("SELECT admn_pre_serial_num FROM advance_money where admn_own_id='$sessionOwnerId' and admn_firm_id='$firmId' order by admn_id desc LIMIT 0,1"));
+//    if ($admn_pre_serial_num == NULL || $admn_pre_serial_num == '') {
+//        $admn_pre_serial_num = NULL;
+//        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where (admn_pre_serial_num is NULL OR admn_pre_serial_num = '') and admn_own_id='$sessionOwnerId'"; //query changed @Author:PRIYA17FEB15
+//        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+//        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//    } else {
+//        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where admn_own_id='$sessionOwnerId' and admn_firm_id='$firmId'";
+//        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+//        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//    }
+//    $admn_serial_num = $rowSerialNo['serialNo'] + 1;
+//
+//    $qSelSerialNo = "SELECT admn_serial_num FROM advance_money where admn_serial_num='$admn_serial_num' and admn_pre_serial_num='$admn_pre_serial_num' and admn_own_id='$sessionOwnerId'";
+//    $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+//    $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//    $adMnSerialNo = $rowSerialNo['admn_serial_num'];
+//
+//    if ($adMnSerialNo != '' || $adMnSerialNo != NULL) {
+//        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where admn_pre_serial_num='$admn_pre_serial_num' and admn_own_id='$sessionOwnerId'";
+//        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+//        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//        $admn_serial_num = $rowSerialNo['serialNo'] + 1;
+//    }
+
+    $payInvoiceNo = getInvoiceNum('', 'MONEY', 'ADV MONEY', '', $firmId);
+    $invArr = explode('*', $payInvoiceNo);
+    $admn_pre_serial_num = $invArr[0];
+    $admn_serial_num = $invArr[1];
+    ?>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <input id="advMoneyPreSerialNo" name="advMoneyPreSerialNo" placeholder="SID"
+                       type="text" 
+                       value="<?php echo $admn_pre_serial_num; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('advMoneySerialNo').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('advMoneyFirmId').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="border-no inputBox14CalibriReqCenter background_transparent" size="3" maxlength="3"  />
+                &nbsp;-&nbsp;
+                <input id="advMoneySerialNo" name="advMoneySerialNo" placeholder="SNO"
+                       type="text" value="<?php echo $admn_serial_num; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('udhaarType').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('advMoneyPreSerialNo').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="border-no textLabel14CalibriReq background_transparent" size="10" maxlength="10" />
+            </td>
+        </tr>
+    </table>
+    <?php
+} // Start Code to get serial number in advance metal panel @Author:SHRI16JAN15 
+else if ($panel == 'AddNewAdvMetal') {
+    parse_str(getTableValues("SELECT admn_pre_serial_num FROM advance_money where admn_own_id='$sessionOwnerId' and admn_firm_id='$firmId' order by admn_id desc LIMIT 0,1"));
+    if ($admn_pre_serial_num == NULL || $admn_pre_serial_num == '') {
+        $admn_pre_serial_num = NULL;
+        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where (admn_pre_serial_num is NULL or admn_pre_serial_num = '') and admn_own_id='$sessionOwnerId'";
+        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    } else {
+        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where admn_own_id='$sessionOwnerId' and admn_firm_id='$firmId'";
+        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    }
+    $admn_serial_num = $rowSerialNo['serialNo'] + 1;
+
+    $qSelSerialNo = "SELECT admn_serial_num FROM advance_money where admn_serial_num='$admn_serial_num' and admn_pre_serial_num='$admn_pre_serial_num' and admn_own_id='$sessionOwnerId'";
+    $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+    $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+    $adMnSerialNo = $rowSerialNo['admn_serial_num'];
+
+    if ($adMnSerialNo != '' || $adMnSerialNo != NULL) {
+        $qSelSerialNo = "SELECT max(admn_serial_num) as serialNo FROM advance_money where admn_pre_serial_num='$admn_pre_serial_num' and admn_own_id='$sessionOwnerId'";
+        $resSerialNo = mysqli_query($conn, $qSelSerialNo);
+        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+        $admn_serial_num = $rowSerialNo['serialNo'] + 1;
+    }
+    ?>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">
+                <input id="advMetalPreSerialNo" name="advMetalPreSerialNo" placeholder="SID"
+                       type="text" 
+                       value="<?php echo $admn_pre_serial_num; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('advMetalSerialNo').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('advMetalFirmId').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="form-control-req-height20" size="7" maxlength="3"  />
+
+                <input id="advMetalSerialNo" name="advMetalSerialNo" placeholder="SNO"
+                       type="text" value="<?php echo $admn_serial_num; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('accountId').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('advMetalPreSerialNo').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="form-control-req-height20" size="10" maxlength="10" />
+            </td>
+        </tr>
+    </table>
+    <?php
+    // End Code to get serial number in advance metal panel @Author:SHRI16JAN15
+} else if ($panel == 'AddNewKitty'){
+    $qSelKittyPreSerialNo = "SELECT kitty_pre_serial_num FROM kitty where kitty_own_id='$sessionOwnerId' and kitty_firm_id='$firmId' and kitty_upd_sts!='Planned Scheme' order by kitty_id desc LIMIT 0,1";
+    $resKittyPreSerialNo = mysqli_query($conn, $qSelKittyPreSerialNo) or die(mysqli_error($conn));
+    $rowKittyPreSerialNo = mysqli_fetch_array($resKittyPreSerialNo);
+    $newKittyPreSerialNo = $rowKittyPreSerialNo['kitty_pre_serial_num'];
+    if ($newKittyPreSerialNo == NULL || $newKittyPreSerialNo == '') {
+        $newKittyPreSerialNo = NULL;
+        $qSelKittySerialNo = "SELECT max(kitty_serial_num) as kittySerialNo FROM kitty where (kitty_pre_serial_num is NULL OR kitty_pre_serial_num = '') and kitty_own_id='$sessionOwnerId'"; 
+        $resKittySerialNo = mysqli_query($conn, $qSelKittySerialNo);
+        $rowKittySerialNo = mysqli_fetch_array($resKittySerialNo, MYSQLI_ASSOC);
+        $newKittySerialNo = $rowKittySerialNo['girviSerialNo'] + 1;
+    } else {
+        $qSelKittySerialNo = "SELECT max(kitty_serial_num) as kittySerialNo FROM kitty where kitty_own_id='$sessionOwnerId' and kitty_firm_id='$firmId' and "
+                . " kitty_pre_serial_num = '$newKittyPreSerialNo'"; 
+        $resKittySerialNo = mysqli_query($conn, $qSelKittySerialNo);
+        $rowKittySerialNo = mysqli_fetch_array($resKittySerialNo, MYSQLI_ASSOC);
+    }
+    $newKittySerialNo = $rowKittySerialNo['kittySerialNo'] + 1;
+?>
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <input id="kittyPreSerialNo" name="kittyPreSerialNo" placeholder="SID"
+                   type="text" 
+                   value="<?php echo $newKittyPreSerialNo; ?>" 
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('kittySerialNo').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('kittyFirmId').focus();
+                               return false;
+                           }"
+
+                   spellcheck="false" class="border-no inputBox14CalibriReqCenter background_transparent" size="3" maxlength="3"  
+                   <?php if ($panelName == 'UpdateKitty' || $staffId != '') { ?>readonly="true"<?php } ?> />
+            &nbsp;-&nbsp;
+            <input id="kittySerialNo" name="kittySerialNo" placeholder="SNO"
+                   type="text" value="<?php echo $newKittySerialNo; ?>"
+                   onkeydown="javascript: if (event.keyCode == 13) {
+                               document.getElementById('kittyGiftItem').focus();
+                               return false;
+                           } else if (event.keyCode == 8 && this.value == '') {
+                               document.getElementById('kittyPreSerialNo').focus();
+                               return false;
+                           }"
+                   onkeypress="javascript:return valKeyPressedForNumber(event);"
+                   spellcheck="false" class="border-no textLabel14CalibriReq background_transparent" size="10" maxlength="10" 
+                   <?php if ($panelName == 'UpdateKitty' || $staffId != '') { ?>readonly="true"<?php } ?> />
+        </td>
+    </tr>
+</table>
+<?php
+}else {
+//    parse_str(getTableValues("SELECT udhaar_pre_serial_num FROM udhaar where udhaar_own_id='$sessionOwnerId' and udhaar_firm_id='$firmId' order by UNIX_TIMESTAMP(udhaar_ent_dat) desc LIMIT 0,1"));
+//    if ($udhaar_pre_serial_num == NULL || $udhaar_pre_serial_num == '') {
+//        $udhaar_pre_serial_num = NULL;
+//        $qSelGirviSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where (udhaar_pre_serial_num is NULL OR udhaar_pre_serial_num = '') and udhaar_own_id='$sessionOwnerId'";//query changed @Author:PRIYA17FEB15
+//        $resGirviSerialNo = mysqli_query($conn,$qSelGirviSerialNo);
+//        $rowGirviSerialNo = mysqli_fetch_array($resGirviSerialNo, MYSQLI_ASSOC);
+//    } else {
+//        $qSelGirviSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where udhaar_own_id='$sessionOwnerId' and udhaar_firm_id='$firmId'";
+//        $resGirviSerialNo = mysqli_query($conn,$qSelGirviSerialNo);
+//        $rowGirviSerialNo = mysqli_fetch_array($resGirviSerialNo, MYSQLI_ASSOC);
+//    }
+//    $udhaarSerialNo = $rowGirviSerialNo['udhaarSerialNo'] + 1;
+//    $qSelSerialNo = "SELECT udhaar_serial_num FROM udhaar where udhaar_serial_num='$udhaarSerialNo' and udhaar_pre_serial_num='$udhaar_pre_serial_num' and udhaar_own_id='$sessionOwnerId'";
+//    $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+//    $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//    $uSerialNo = $rowSerialNo['udhaar_serial_num'];
+//
+//    if ($uSerialNo != '' || $uSerialNo != NULL) {
+//        $qSelSerialNo = "SELECT max(udhaar_serial_num) as udhaarSerialNo FROM udhaar where udhaar_pre_serial_num='$udhaar_pre_serial_num' and udhaar_own_id='$sessionOwnerId'";
+//        $resSerialNo = mysqli_query($conn,$qSelSerialNo);
+//        $rowSerialNo = mysqli_fetch_array($resSerialNo, MYSQLI_ASSOC);
+//        $udhaarSerialNo = $rowSerialNo['udhaarSerialNo'] + 1;
+//    }
+    $payInvoiceNo = getInvoiceNum('', 'udhaar', 'UDHAAR', '', $firmId);
+    $invArr = explode('*', $payInvoiceNo);
+    $udhaar_pre_serial_num = $invArr[0];
+    $udhaarSerialNo = $invArr[1];
+    ?>
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <input id="udhaarPreSerialNo" name="udhaarPreSerialNo" placeholder="SID"
+                       type="text" value="<?php echo $udhaar_pre_serial_num; ?>" 
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('udhaarSerialNo').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('udhharFirmId').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="border-no textLabel14CalibriGreyMiddle background_transparent" size="3" maxlength="3"  />
+                &nbsp;-&nbsp;
+                <input id="udhaarSerialNo" name="udhaarSerialNo" placeholder="SNO"
+                       type="text" value="<?php echo $udhaarSerialNo; ?>"
+                       onkeydown="javascript: if (event.keyCode == 13) {
+                                       document.getElementById('udhaarType').focus();
+                                       return false;
+                                   } else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('udhaarPreSerialNo').focus();
+                                       return false;
+                                   }"
+                       spellcheck="false" class="border-no textLabel14CalibriGrey background_transparent" size="10" maxlength="10" />
+            </td>
+        </tr>
+    </table>
+<?php } ?>

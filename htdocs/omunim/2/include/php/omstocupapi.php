@@ -1,3 +1,83 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Update Stock Table & Stock Transaction Table API
+ * **************************************************************************************
+ * 
+ * Created on MAY 31, 2017 12:52:53 PM
+ *
+ * @FileName: omstocupapi.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ * MODIFICATION DATE:
+ * AUTHOR:
+ * REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+/********************************************************************************************/
+/************************* Start Code To Update Stock Transaction Entry *********************/
+/********************************************************************************************/
+
+/**********************  START CODE TO ADD STOCK TRANSACTION FUNCTION  **********************/
+
+function updateStockTransaction($type,array $request) {
+        $conn = $GLOBALS['conn'];
+        if ($type == 'crystal') {
+           include 'omupcrystoc.php';
+        }  else if ($type == 'imitation') {
+           include 'omupimitstoc.php';
+        }  else {
+           include 'omupstoc.php';
+        }
+        
+        $query = "UPDATE stock_transaction SET	
+        sttr_firm_id = '$itemFirmId', sttr_staff_id = '$staffId', sttr_brand_id = '$brandId', sttr_account_id = '$itemAccountId', sttr_bis_mark = '$itemBisMark',
+        sttr_bill_date = '$itemBillDate', sttr_add_date = '$itemAddDate', sttr_add_barcode_date = '$barcodeDate', sttr_barcode = '$itemBarcode',
+        sttr_item_pre_id = '$itemPreId', sttr_item_id = '$itemPostId', sttr_item_code = '$itemItemCode', sttr_metal_type = '$metalType', sttr_item_name = '$itemName',
+        sttr_item_category = '$itemCategory', sttr_item_safe_tray = '$stockItemSafeTray', sttr_item_other_info = '$stockItemOtherInfo',
+        sttr_quantity = '$itemQuantity', sttr_size = '$itemSize', sttr_shape = '$itemShape', sttr_item_length = '$itemLength', sttr_item_width = '$itemWidth', sttr_color = '$itemColor',
+        sttr_clarity = '$itemClarity', sttr_gs_weight = '$itemGrossWt', sttr_pkt_weight = '$itemPacketWt', sttr_pkt_weight_type = '$itemPacketWtTyp',
+        sttr_gs_weight_type = '$itemGrossWtTyp', sttr_nt_weight = '$itemNetWt', sttr_nt_weight_type = '$itemNetWtTyp', sttr_fine_weight = '$itemFineWt', sttr_final_fine_weight = '$itemFinalFineWt',
+        sttr_purity = '$itemPurity', sttr_wastage = '$itemWastage',sttr_final_purity = '$itemFinalPurity', sttr_cust_wastage = '$itemCustWastage', sttr_metal_rate_id = '$metalRateId', 
+        sttr_metal_rate = '$metalRate', sttr_lab_charges = '$itemLabCharges', sttr_lab_charges_type = '$itemLabChargesTyp', sttr_total_lab_charges = '$itemTotLabCharges',
+        sttr_cust_itmnum = '$itemCustItmNum', sttr_cust_itmcalby = '$itemCustCalType', sttr_item_model_no = '$itemModelNo', sttr_item_sales_pkg = '$itemPackage', sttr_cust_itmcode = '$itemCustItmCode', 
+        sttr_purchase_rate = '$itemPurRate', sttr_purchase_rate = '$itemPurRateType', sttr_sell_rate = '$itemSellRate', sttr_sell_rate = '$itemSellRateType',
+        sttr_making_charges = '$itemCustCharges', sttr_making_charges_type = '$itemCustChargesTyp', sttr_tax = '$itemTax', sttr_tot_tax = '$itemTotTax', sttr_valuation = '$itemValuation', 
+        sttr_stone_valuation = '$itemCryFinVal', sttr_final_valuation = '$itemFinalVal', sttr_final_val_by = '$itemWeightBy', 
+        sttr_pkt_qty1 = '$pkt_qt1', sttr_pkt_qty2 = '$pkt_qt2', sttr_pkt_qty3 = '$pkt_qt3', sttr_pkt_qty4 = '$pkt_qt4', sttr_pkt_qty5 = '$pkt_qt5',
+        sttr_pkt_weight1 = '$pkt_wt1', sttr_pkt_weight2 = '$pkt_wt2', sttr_pkt_weight3 = '$pkt_wt3', sttr_pkt_weight4 = '$pkt_wt4', sttr_pkt_weight5 = '$pkt_wt5',
+        sttr_lab_chrg_qty1 = '$pkt_lbr_qt1', sttr_lab_chrg_qty2 = '$pkt_lbr_qt2', sttr_lab_chrg_qty3 = '$pkt_lbr_qt3', sttr_lab_chrg_qty4 = '$pkt_lbr_qt4', sttr_lab_chrg_qty5 = '$pkt_lbr_qt5', 
+        sttr_lab_chrg_val1 = '$pkt_lbr_val1', sttr_lab_chrg_val2 = '$pkt_lbr_val2', sttr_lab_chrg_val3 = '$pkt_lbr_val3', sttr_lab_chrg_val4 = '$pkt_lbr_val4', sttr_lab_chrg_val5 = '$pkt_lbr_val5',
+        sttr_lab_chrg_tot1 = '$pkt_lbr_tot1', sttr_lab_chrg_tot2 = '$pkt_lbr_tot2', sttr_lab_chrg_tot3 = '$pkt_lbr_tot3', sttr_lab_chrg_tot4 = '$pkt_lbr_tot4', sttr_lab_chrg_tot5 = '$pkt_lbr_tot5'
+        WHERE sttr_owner_id = '$ownerId' and sttr_id = '$sttr_id'";
+        
+        //echo '$query:'.$query;
+        //exit();
+         if (!mysqli_query($conn, $query)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+}
+
+/************************  END CODE TO ADD STOCK TRANSACTION FUNCTION  **********************/
+
+/********************************************************************************************/
+/************************* End Code To Update Stock Transaction Entry ***********************/
+/********************************************************************************************/
+
 ?>

@@ -1,3 +1,155 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: DENOMINATIONS TABLE FILE
+ * ************************************************************************************** 
+ *
+ * @FileName: omtbcurrency.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.290
+ * @Copyright (c) 2023 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2023 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+if ($ownerId == '') {
+    $ownerId = $dgGUId;
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessionOwnerId'];
+}
+if ($ownerId == '') {
+    $ownerId = $_SESSION['sessiondgGUId'];
+}
+//
+$query = "CREATE TABLE IF NOT EXISTS currency (
+currency_id              INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+currency_own_id	         VARCHAR(16),
+currency_firm_id         VARCHAR(50),
+currency_value           VARCHAR(10),
+currency_type            VARCHAR(10),
+currency_name	         VARCHAR(64),
+currency_opening_count	 VARCHAR(16),
+currency_in_count	 VARCHAR(16),
+currency_out_count       VARCHAR(16),
+currency_closing_count 	 VARCHAR(16),
+currency_amount          VARCHAR(16),
+currency_last_column     VARCHAR(16)) AUTO_INCREMENT=1";
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+// To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '1', 'coin', 'one_rupee_coin') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'one_rupee_coin' AND currency_type = 'coin') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '2', 'coin', 'two_rupee_coin') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'two_rupee_coin' AND currency_type = 'coin') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '5', 'coin', 'five_rupee_coin') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'five_rupee_coin' AND currency_type = 'coin') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '10', 'coin', 'ten_rupee_coin') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'ten_rupee_coin' AND currency_type = 'coin') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '20', 'coin', 'twenty_rupee_coin') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'twenty_rupee_coin' AND currency_type = 'coin') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '10', 'note', 'ten_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'ten_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '20', 'note', 'twenty_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'twenty_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '50', 'note', 'fifty_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'fifty_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '100', 'note', 'hundred_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'hundred_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '200', 'note', 'twohundred_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'twohundred_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
+$query = "INSERT INTO currency (currency_own_id, currency_value, currency_type, currency_name)
+          SELECT * FROM (SELECT '$ownerId', '500', 'note', 'fivehundred_rupee_notes') AS tmp
+          WHERE NOT EXISTS (SELECT currency_name FROM currency 
+          WHERE currency_name = 'fivehundred_rupee_notes' AND currency_type = 'note') LIMIT 1";
+//
+if (!mysqli_query($conn, $query))
+    die('Query:' . $query . '<br/>Error: ' . mysqli_error($conn));
+//
+//
 ?>

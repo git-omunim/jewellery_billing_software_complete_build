@@ -1,3 +1,314 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: File to search and add new supplier division @MADHUREE-31AUG2019
+ * **************************************************************************************
+ *
+ * Created on 31 AUG, 2019
+ *
+ * @FileName: omsuppsr.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<div id="enterSuppDetailsDiv" title="इस पॅनल की सहायता से आप नये सपलायर को जोड़ अथवा खोज सकते है! &#10;From this panel you can add new supplier or search existing suppliers.">
+    <table border="0" cellspacing="1" cellpadding="4" width="100%" style="background: #f1f8ff;border-right: 0;border-left: 0;padding: 5px 0px 5px 8px;border: 1px dashed #7b8ffa;">
+        <tr align="left">
+            <td align="left" width="25%">
+                <div class="spaceLeft10"> 
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input id="suppFirstNameForAddGirvi" name="suppFirstNameForAddGirvi" title="यहाँ सपलायर का प्रथम नाम एंटर करे!"
+                               type="text" spellcheck="false" class="form-control" placeholder="Supplier First Name"
+                               onkeyup="if (event.keyCode != 112 && event.keyCode != 113 &&
+                                               event.keyCode != 114 && event.keyCode != 115 &&
+                                               event.keyCode != 117 && event.keyCode != 118 &&
+                                               event.keyCode != 119 && event.keyCode != 120 &&
+                                               event.keyCode != 121 && event.keyCode != 123 &&
+                                               event.keyCode != 40 && event.keyCode != 18
+                                               ) {
+                                           searchSuppToAddGirvi(document.getElementById('suppFirstNameForAddGirvi').value,
+                                                   document.getElementById('suppLastNameForAddGirvi').value,
+                                                   document.getElementById('suppFatherNameForAddGirvi').value,
+                                                   document.getElementById('suppCityForAddGirvi').value,
+                                                   document.getElementById('mobileNoToAddGirvi').value,
+                                                   document.getElementById('girviFirmId').value);
+                                       }
+                                       if (event.keyCode == 40) {
+                                           document.getElementById('suppHomeImage1').focus();
+                                       }" 
+                               onkeydown="javascript:if (event.keyCode == 13) {
+                                           document.getElementById('suppLastNameForAddGirvi').focus();
+                                           return false;
+                                       }
+                                       else if (event.keyCode == 8 && this.value == '') {
+                                           return false;
+                                       }"
+                               autocomplete="off" maxlength="30" />
+                    </div>
+                </div>                                    
+            </td>
+            <td align="left" width="25%">
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input id="suppLastNameForAddGirvi" name="suppLastNameForAddGirvi" title="यहाँ सपलायर का सरनेम नाम एंटर करे!"
+                           type="text" spellcheck="false" class="form-control" placeholder="Supplier Last Name"
+                           onkeyup="if (event.keyCode != 112 && event.keyCode != 113 &&
+                                           event.keyCode != 114 && event.keyCode != 115 &&
+                                           event.keyCode != 117 && event.keyCode != 118 &&
+                                           event.keyCode != 119 && event.keyCode != 120 &&
+                                           event.keyCode != 121 && event.keyCode != 123 &&
+                                           event.keyCode != 40 && event.keyCode != 18
+                                           ) {
+                                       searchSuppToAddGirvi(document.getElementById('suppFirstNameForAddGirvi').value,
+                                               document.getElementById('suppLastNameForAddGirvi').value,
+                                               document.getElementById('suppFatherNameForAddGirvi').value,
+                                               document.getElementById('suppCityForAddGirvi').value,
+                                               document.getElementById('mobileNoToAddGirvi').value,
+                                               document.getElementById('girviFirmId').value);
+                                   }
+                                   if (event.keyCode == 40) {
+                                       document.getElementById('suppHomeImage1').focus();
+                                   }" 
+                           onkeydown="javascript:if (event.keyCode == 13) {
+                                       document.getElementById('fatherOrSpouseNameLabel').focus();
+                                       return false;
+                                   }
+                                   else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('suppFirstNameForAddGirvi').focus();
+                                       return false;
+                                   }"
+                           autocomplete="off" maxlength="30" />
+                </div>  
+            </td>
+<!--            <td align="left" width="5%">
+                
+            </td>-->
+            <td align="left" width="25%">
+                <table width="100%">
+                    <tr>
+                        <td width="15%">
+                          <div id="fatherOrSpouseNameDiv" style="width:50px;">
+                    <select id="fatherOrSpouseNameLabel" name="fatherOrSpouseNameLabel" 
+                            onkeydown="javascript:if (event.keyCode == 13) {
+                                        document.getElementById('suppFatherNameForAddGirvi').focus();
+                                        return false;
+                                    } else if (event.keyCode == 8) {
+                                        document.getElementById('suppLastNameForAddGirvi').focus();
+                                        return false;
+                                    }"
+                            class="form-control-select" style="width:100%;height:30px;border:1px solid #c1c1c1;"
+                            onchange="getCareOfNameLabel(this.value, 'SuppHome', document.getElementById('suppFatherNameForAddGirvi').value);">
+                        <option value="S/o">S/o</option>
+                        <option value="D/o">D/o</option>
+                        <option value="W/o">W/o</option>
+                        <option value="C/o">C/o</option>
+                    </select>
+                    <input id="fatherOrSpouseNameIndicator" name="fatherOrSpouseNameIndicator" 
+                           type="hidden" value="S" />
+
+                    <input id="fatherOrSpouseNameIndicator" name="fatherOrSpouseNameIndicator" 
+                           type="hidden" value="W" />
+                </div>
+              </td>
+             <td width="85%">
+                <div id="careOfDiv">
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input id="suppFatherNameForAddGirvi" name="suppFatherNameForAddGirvi" title="यहाँ सपलायर के पिता का नाम एंटर करे!"
+                               type="text" spellcheck="false" class="form-control" placeholder="Supplier Father Name"
+                               onkeyup="if (event.keyCode != 112 && event.keyCode != 113 &&
+                                               event.keyCode != 114 && event.keyCode != 115 &&
+                                               event.keyCode != 117 && event.keyCode != 118 &&
+                                               event.keyCode != 119 && event.keyCode != 120 &&
+                                               event.keyCode != 121 && event.keyCode != 123 &&
+                                               event.keyCode != 40 && event.keyCode != 18
+                                               ) {
+                                           searchSuppToAddGirvi(document.getElementById('suppFirstNameForAddGirvi').value,
+                                                   document.getElementById('suppLastNameForAddGirvi').value,
+                                                   document.getElementById('suppFatherNameForAddGirvi').value,
+                                                   document.getElementById('suppCityForAddGirvi').value,
+                                                   document.getElementById('mobileNoToAddGirvi').value,
+                                                   document.getElementById('girviFirmId').value);
+                                       }
+                                       if (event.keyCode == 40) {
+                                           document.getElementById('suppHomeImage1').focus();
+                                       }" 
+                               onkeydown="javascript:if (event.keyCode == 13) {
+                                           document.getElementById('suppCityForAddGirvi').focus();
+                                           return false;
+                                       }
+                                       else if (event.keyCode == 8 && this.value == '') {
+                                           document.getElementById('fatherOrSpouseNameLabel').focus();
+                                           return false;
+                                       }"
+                               autocomplete="off" maxlength="30" style="width:100%;height:30px"/>
+                    </div>
+                </div>
+                        </td>
+                         </tr>
+                </table>
+            </td>
+            <td align="left" width="25%">
+                <div id="sexToAddGirviDiv" class="frm-lbl">
+                    <INPUT id="gender" TYPE="RADIO" NAME="gender"
+                           class="lgn-field-without-order" VALUE="M" CHECKED /> Male
+                    &nbsp; <INPUT id="gender" TYPE="RADIO" NAME="gender"
+                                  class="lgn-field-without-order" VALUE="F" /> Female
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" width="25%">
+                <div class="spaceLeft10">
+                    <div class="input-icon">
+                        <i class="fa fa-home"></i>
+                        <!--Start Code To Add keyCode 9 @Author:PRIYA29AUG13-->
+                        <input id="suppCityForAddGirvi" name="suppCityForAddGirvi" title="यहाँ सपलायर के ग्राम या शहर का नाम एंटर करे!"
+                               type="text" spellcheck="false" class="form-control" placeholder="Supplier Village / City / State"
+                               onkeyup="javascript: if ((event.keyCode != 9 && event.keyCode != 13) ||
+                                               (event.keyCode == 13 && this.value == '')) {
+                                           searchCityForPanel(document.getElementById('suppCityForAddGirvi').value, event.keyCode, 'directAddSupp');
+                                       }" 
+                               onclick="if (this.value != '') {
+                                           searchCityForPanelBlank('directAddSupp');
+                                           if (event.keyCode != 112 && event.keyCode != 113 &&
+                                                   event.keyCode != 114 && event.keyCode != 115 &&
+                                                   event.keyCode != 117 && event.keyCode != 118 &&
+                                                   event.keyCode != 119 && event.keyCode != 120 &&
+                                                   event.keyCode != 121 && event.keyCode != 123 &&
+                                                   event.keyCode != 40 && event.keyCode != 18) {
+                                               searchSuppToAddGirvi(document.getElementById('suppFirstNameForAddGirvi').value,
+                                                       document.getElementById('suppLastNameForAddGirvi').value,
+                                                       document.getElementById('suppFatherNameForAddGirvi').value,
+                                                       document.getElementById('suppCityForAddGirvi').value,
+                                                       document.getElementById('mobileNoToAddGirvi').value,
+                                                       document.getElementById('girviFirmId').value);
+                                           }
+                                           if (event.keyCode == 40) {
+                                               document.getElementById('suppHomeImage1').focus();
+                                           }
+                                       }"
+                               onkeydown="javascript: if (event.keyCode == 13 || event.keyCode == 9) {
+                                           searchCityForPanelBlank('blank');
+                                           document.getElementById('mobileNoToAddGirvi').focus();
+                                           return false;
+                                       }
+                                       else if (event.keyCode == 8 && this.value == '') {
+                                           searchCityForPanelBlank('blank');
+                                           document.getElementById('suppFatherNameForAddGirvi').focus();
+                                           return false;
+                                       }"
+                               autocomplete="off" maxlength="30" /> 
+                    </div>
+                    <!--End Code To Add keyCode 9 @Author:MADHUREE-31AUG19-->
+                    <div id="cityListDivToAddGirvi" class="cityListDivToAddGirvi"></div>
+                </div>
+            </td>
+            <td align="left">
+                <div class="input-icon">
+                    <i class="fa fa-phone"></i>
+                    <input id="mobileNoToAddGirvi" name="mobileNoToAddGirvi" placeholder="Supplier Mobile Number"
+                           type="text" spellcheck="false" class="form-control"
+                           onblur="javascript:if (document.getElementById('suppFirstNameForAddGirvi').value == '') {
+                                       document.getElementById('suppFirstNameForAddGirvi').value = this.value;
+                                   }"
+                           onkeyup="if (event.keyCode != 112 && event.keyCode != 113 &&
+                                           event.keyCode != 114 && event.keyCode != 115 &&
+                                           event.keyCode != 117 && event.keyCode != 118 &&
+                                           event.keyCode != 119 && event.keyCode != 120 &&
+                                           event.keyCode != 121 && event.keyCode != 123 &&
+                                           event.keyCode != 40 && event.keyCode != 18
+                                           ) {
+                                       searchSuppToAddGirvi(document.getElementById('suppFirstNameForAddGirvi').value,
+                                               document.getElementById('suppLastNameForAddGirvi').value,
+                                               document.getElementById('suppFatherNameForAddGirvi').value,
+                                               document.getElementById('suppCityForAddGirvi').value,
+                                               document.getElementById('mobileNoToAddGirvi').value,
+                                               document.getElementById('girviFirmId').value);
+                                   }
+                                   if (event.keyCode == 40) {
+                                       document.getElementById('suppHomeImage1').focus();
+                                   }" 
+                           onkeydown="javascript:if (event.keyCode == 13) {
+                                       document.getElementById('girviFirmId').focus();
+                                       return false;
+                                   }
+                                   else if (event.keyCode == 8 && this.value == '') {
+                                       document.getElementById('suppCityForAddGirvi').focus();
+                                       return false;
+                                   }"
+                           maxlength="15" />
+                </div>
+            </td>
+            <td align="left" width="25%">
+                
+                            <div id="selectFirmDiv">
+                                <?php
+                                $firmIdName = 'girviFirmId';
+                                // echo '$firmIdName'.$firmIdName;
+                                if ($panelOmunimDivName == 'SellPurchase') {
+                                    $nextFieldId = 'directAddCustButtAndSellPurchase';
+                                    $nextReqFieldId = 'directAddCustButtAndSellPurchase';
+                                } else if ($panelOmunimDivName == 'NewOrder') {
+                                    $nextFieldId = 'directAddCustButtAndNewOrder';
+                                    $nextReqFieldId = 'directAddCustButtAndNewOrder';
+                                } else if ($panelOmunimDivName == 'ItemRepair') {
+                                    $nextFieldId = 'directAddCustButtAndItemRepair';
+                                    $nextReqFieldId = 'directAddCustButtAndItemRepair';
+                                } else {
+                                    //Start Code To Add Condition For (event.keyCode == 13) @AUTHOR:MADHUREE-31AUG19
+                                    if (($_SESSION['sessionProdOMUNIM'] == $globalKeyOMUNIM || $_SESSION['sessionProdOMUNIM'] == $gbKeyOMUNIMDEMO) &&
+                                            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                        if ($_SESSION['sessionOwnIndStr'][32] == 'Y') {
+                                            $nextFieldId = 'directAddCustButtAndXRF';
+                                            $nextReqFieldId = 'directAddCustButtAndXRF';
+                                        } else {
+                                            $nextFieldId = 'directAddCustButtAndSellPurchase';
+                                            $nextReqFieldId = 'directAddCustButtAndSellPurchase';
+                                        }
+                                    } else if (($_SESSION['sessionProdOMGOLD'] == $globalKeyOMGOLD || $_SESSION['sessionProdOMGOLD'] == $gbKeyOMGOLDDEMO) &&
+                                            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                        if ($_SESSION['sessionOwnIndStr'][32] == 'Y') {
+                                            $nextFieldId = 'directAddCustButtAndXRF';
+                                            $nextReqFieldId = 'directAddCustButtAndXRF';
+                                        } else {
+                                            $nextFieldId = 'directAddCustButtAndSellPurchase';
+                                            $nextReqFieldId = 'directAddCustButtAndSellPurchase';
+                                        }
+                                    } else if (($_SESSION['sessionProdOMREVO'] == $globalKeyOMREVO || $_SESSION['sessionProdOMREVO'] == $gbKeyOMREVODEMO) &&
+                                            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                        $nextFieldId = 'directAddCustButtAndGirvi';
+                                    } else if (($_SESSION['sessionProdOMLOAN'] == $globalKeyOMLOAN || $_SESSION['sessionProdOMLOAN'] == $gbKeyOMLOANDEMO) &&
+                                            $_SESSION['sessionProdVer'] == $globalKeyProdVer) {
+                                        $nextFieldId = 'directAddCustButtAndGirvi';
+                                    }
+                                }//End Code To Add Condition For (event.keyCode == 13) @AUTHOR:PRIYA22MAR13
+                                $prevFieldId = 'mobileNoToAddGirvi';
+                                if (!$firmIdSelected) {
+                                    $firmIdSelected = $_SESSION['setFirmSession'];
+                                }
+                                $class = 'form-control-select';
+                                include 'omhpfirm.php';
+                                ?>
+                            </div>
+                        
+            </td>
+
+            <!-- START CODE To ADD CONDITIONS @AUTHOR:PRIYA15FEB13-->
+            
+            <!-- END CODE To ADD CONDITIONS @AUTHOR:PRIYA15FEB13-->
+        </tr>
+    </table>
+</div>

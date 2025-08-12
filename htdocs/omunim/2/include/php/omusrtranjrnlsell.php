@@ -1,3 +1,592 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 16 Sep, 2017 6:14:08 PM
+ *
+ * @FileName: omusrtranjrnlsell.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+?>
+<?php
+//
+if ($transactionType == 'sell' || $transactionType == 'ESTIMATESELL') {
+    //
+    $transType = 'sell';
+    //
+    $jrnlTransCrAccId = $jrnlTransAccId;
+    $jrnlTransCrDesc = $jrnlTransDesc;
+    //
+    $jrnlTransDrAccId = $sundryDebAccId;
+    $jrnlTransDrDesc = $sundryDebAccName;
+    //
+    if ($utinType == 'XRF')
+        $jrnlTransDesc = 'XRF BILL';
+    else
+        $jrnlTransDesc = 'Product Sell';
+    //
+    //
+    // Start JRTR entry data
+    //
+    // CR account details
+    $jrtrMainTransCRDR = 'CR';
+    //
+    $jrtrMainDrAmount = 0;
+    $jrtrTransDrAccId = ''; // $sundryDebAccId
+    $jrtrTransDrDesc = $sundryDebAccName;
+    //
+    //echo '$jrtrEntryIndicator == '.$jrtrEntryIndicator.'<br />';
+    //echo '$jrnlCrAmount == '.$jrnlCrAmount.'<br />';
+    //
+    if (($jrtrEntryIndicator != 'NO' && $sttr_indicator == 'stock' || $sttr_indicator == 'crystal' || $sttr_indicator=='rawMetal') ||
+         $_SESSION['sessionProdName'] == 'OMRETL') {
+        //
+        if ($payRoundOffAmt > 0.5) {
+            //
+            // ADDED CODE FOR TAX (VAT) @PRIYANKA-15MAR2021
+            $jrtrMainCrAmount = ($jrnlCrAmount - $payTotOthChgs - $payTotHallmarkChgs - $payCGSTaxAmt - $paySGSTaxAmt - $payIGSTaxAmt - $payTaxAmt - $payMkgCGSTAmt - $payMkgSGSTAmt - $payHallmarkCGSTAmt - $payHallmarkSGSTAmt - $payHallmarkIGSTAmt) - (1 - $payRoundOffAmt); // - $payMkgIGSTAmt;
+            //
+            //echo '<br/>$jrnlCrAmount @@ : ' . $jrnlCrAmount . ' ' . $payTotOthChgs . ' ' . $payCGSTaxAmt . ' ' . $paySGSTaxAmt . ' ' . $payIGSTaxAmt . ' ' . $payMkgCGSTAmt . ' ' . $payMkgSGSTAmt . ' ' . $payRoundOffAmt;
+            //            
+        } else {
+            //
+            // ADDED CODE FOR TAX (VAT) @PRIYANKA-15MAR2021
+            $jrtrMainCrAmount = ($jrnlCrAmount - $payTotOthChgs - $payTotHallmarkChgs - $payCGSTaxAmt - $paySGSTaxAmt - $payIGSTaxAmt - $payTaxAmt - $payMkgCGSTAmt - $payMkgSGSTAmt - $payHallmarkCGSTAmt - $payHallmarkSGSTAmt - $payHallmarkIGSTAmt) + $payRoundOffAmt; // - $payMkgIGSTAmt;
+            //
+            //echo '<br/>$jrnlCrAmount %% : ' . $jrnlCrAmount . ' ' . $payTotOthChgs . ' ' . $payCGSTaxAmt . ' ' . $paySGSTaxAmt . ' ' . $payIGSTaxAmt . ' ' . $payMkgCGSTAmt . ' ' . $payMkgSGSTAmt . ' ' . $payRoundOffAmt;
+            //            
+        }
+    }
+    //
+    //
+    if ($sttr_indicator == 'stock') {
+        $jrtrTransCrAccId = ''; //$jrnlTransCrAccId;
+    } else {
+        $jrtrTransCrAccId = $jrnlTransCrAccId;
+    }
+    //
+    $jrtrTransCrDesc = $jrnlTransCrDesc;
+    $jrtrTransDesc = $jrnlTransDesc;
+    //
+    //
+    // Cash account
+    $jrtrCashCRDR = 'DR';
+    //
+    $jrtrCashDrAmount = $payCashAmt;
+    $jrtrCashDrAccId = $cashAccId;
+    $jrtrCashDrDesc = $cashAccName;
+    //
+    $jrtrCashCrAmount = 0;
+    $jrtrCashCrAccId = '';
+    $jrtrCashCrDesc = $jrnlTransCrDesc;
+    $jrtrCashDesc = 'Cash Payment';
+    //
+    //
+    //
+    $jrtrBankCRDR = 'DR';
+    //
+    $jrtrBankDrAmount = $payChequeAmt;
+    $jrtrBankDrAccId = $bankAccId;
+    $jrtrBankDrDesc = $bankAccName;
+    //
+    $jrtrBankCrAmount = 0;
+    $jrtrBankCrAccId = '';
+    $jrtrBankCrDesc = $jrnlTransCrDesc;
+    $jrtrBankDesc = 'Bank NEFT/IMPS Payment';
+    //
+    //
+    //
+    $jrtrCardCRDR = 'DR';
+    //
+    $jrtrCardDrAmount = $payCardAmt;
+    $jrtrCardDrAccId = $cardAccId;
+    $jrtrCardDrDesc = $cardAccName;
+    //
+    $jrtrCardCrAmount = 0;
+    $jrtrCardCrAccId = '';
+    $jrtrCardCrDesc = $jrnlTransCrDesc;
+    $jrtrCardDesc = 'Card Payment';
+    //
+    //
+    //
+    $jrtrOnlinePayCRDR = 'DR';
+    //
+    $jrtrOnlinePayDrAmount = $payOnlinePayAmt;
+    $jrtrOnlinePayDrAccId = $onlinePayAccId;
+    $jrtrOnlinePayDrDesc = $onlinePayAccName;
+    //
+    $jrtrOnlinePayCrAmount = 0;
+    $jrtrOnlinePayCrAccId = '';
+    $jrtrOnlinePayCrDesc = $jrnlTransCrDesc;
+    $jrtrOnlinePayDesc = 'Online Payment';
+    //
+    //
+    //
+    $jrtrDiscountCRDR = 'DR';
+    //
+    $jrtrDiscountDrAmount = $payDiscountAmt;
+    $jrtrDiscountDrAccId = $discountAccId;
+    $jrtrDiscountDrDesc = $discountAccName;
+    //
+    $jrtrDiscountCrAmount = 0;
+    $jrtrDiscountCrAccId = '';
+    $jrtrDiscountCrDesc = $jrnlTransCrDesc;
+    $jrtrDiscountDesc = 'Discount Paid';
+    //
+    // START FOR LOYALTY POINTS @PRIYANKA-17APR18
+    $jrtrLpRedeemCRDR = 'DR';
+    //
+    $jrtrLpRedeemDrAmount = $lpRedeem;
+    $jrtrDiscountDrAccId = $discountAccId;
+    $jrtrLpRedeemDrDesc = $discountAccName;
+    //
+    $jrtrLpRedeemCrAmount = 0;
+    $jrtrDiscountCrAccId = '';
+    $jrtrLpRedeemCrDesc = $jrnlTransCrDesc;
+    $jrtrLpRedeemDesc = 'Loyalty Points Redeemed';
+    // END FOR LOYALTY POINTS @PRIYANKA-17APR18
+    //
+    $jrtrCGSTCRDR = 'CR';
+    //
+    $jrtrCGSTDrAmount = 0;
+    $jrtrCGSTDrAccId = '';
+    $jrtrCGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrCGSTCrAmount = ($payCGSTaxAmt + $payHallmarkCGSTAmt);
+    $jrtrCGSTCrAccId = $CGSTAccId;
+    $jrtrCGSTCrDesc = $CGSTAccName;
+    $jrtrCGSTDesc = 'CGST TAX Rec.';
+    //
+    $jrtrMkgCGSTCRDR = 'CR';
+    //
+    $jrtrMkgCGSTDrAmount = 0;
+    $jrtrMkgCGSTDrAccId = '';
+    $jrtrMkgCGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrMkgCGSTCrAmount = $payMkgCGSTAmt;
+    $jrtrMkgCGSTCrAccId = $CGSTAccId;
+    $jrtrMkgCGSTCrDesc = $CGSTAccName;
+    $jrtrMkgCGSTDesc = 'MKG CGST TAX Rec.';
+    //
+    $jrtrSGSTCRDR = 'CR';
+    //
+    $jrtrSGSTDrAmount = 0;
+    $jrtrSGSTDrAccId = '';
+    $jrtrSGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrSGSTCrAmount = ($paySGSTaxAmt + $payHallmarkSGSTAmt);
+    $jrtrSGSTCrAccId = $SGSTAccId;
+    $jrtrSGSTCrDesc = $SGSTAccName;
+    $jrtrSGSTDesc = 'SGST TAX Rec.';
+    //
+    $jrtrMkgSGSTCRDR = 'CR';
+    //
+    $jrtrMkgSGSTDrAmount = 0;
+    $jrtrMkgSGSTDrAccId = '';
+    $jrtrMkgSGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrMkgSGSTCrAmount = $payMkgSGSTAmt;
+    $jrtrMkgSGSTCrAccId = $SGSTAccId;
+    $jrtrMkgSGSTCrDesc = $SGSTAccName;
+    $jrtrMkgSGSTDesc = 'MKG SGST TAX Rec.';
+    //
+    $jrtrIGSTCRDR = 'CR';
+    //
+    $jrtrIGSTDrAmount = 0;
+    $jrtrIGSTDrAccId = '';
+    $jrtrIGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrIGSTCrAmount = ($payIGSTaxAmt + $payHallmarkIGSTAmt);
+    $jrtrIGSTCrAccId = $IGSTAccId;
+    $jrtrIGSTCrDesc = $IGSTAccName;
+    $jrtrIGSTDesc = 'IGST TAX Rec.';
+    //
+    $jrtrMkgIGSTCRDR = 'CR';
+    //
+    $jrtrMkgIGSTDrAmount = 0;
+    $jrtrMkgIGSTDrAccId = '';
+    $jrtrMkgIGSTDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrMkgIGSTCrAmount = $payMkgIGSTAmt;
+    $jrtrMkgIGSTCrAccId = $IGSTAccId;
+    $jrtrMkgIGSTCrDesc = $IGSTAccName;
+    $jrtrMkgIGSTDesc = 'MKG IGST TAX Rec.';
+    //
+    // ***************************************************
+    // START CODE FOR TAX (VAT) @PRIYANKA-15MAR2021
+    // ***************************************************
+    $jrtrTaxVatCRDR = 'CR';
+    //
+    $jrtrTaxVatDrAmount = 0;
+    $jrtrTaxVatDrAccId = '';
+    $jrtrTaxVatDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrTaxVatCrAmount = $payTaxAmt;
+    $jrtrTaxVatCrAccId = $TaxVatAccId;
+    $jrtrTaxVatCrDesc = $TaxVatAccName;
+    $jrtrTaxVatDesc = 'TAX (VAT) Rec.';
+    // ***************************************************
+    // END CODE FOR TAX (VAT) @PRIYANKA-15MAR2021
+    // ***************************************************
+    //
+    //
+    //
+    // ****************************************************************************************************
+    // START CODE FOR MAKING CHARGES @PRIYANKA-15-DEC-17
+    // ****************************************************************************************************
+    $jrtrMKGCRDR = 'CR';
+    //
+    $jrtrMKGDrAmount = 0;
+    $jrtrMKGDrAccId = '';
+    $jrtrMKGDrDesc = $mkgChrgsAccName;
+    //
+    $jrtrMKGCrAmount = $payTotOthChgs;
+    $jrtrMKGCrAccId = $mkgChrgsAccId;
+    $jrtrMKGCrDesc = $mkgChrgsAccName;
+    $jrtrMKGDesc = 'MAKING CHARGES';
+    // ****************************************************************************************************
+    // END CODE FOR MAKING CHARGES @PRIYANKA-15-DEC-17
+    // ****************************************************************************************************
+    //
+    //
+    //
+    // ****************************************************************************************************
+    // START FOR HALLMARKING CHARGES @PRIYANKA-27MAY2022
+    // ****************************************************************************************************
+    // 
+    $jrtrHallmarkCRDR = 'CR';
+    //
+    $jrtrHallmarkDrAmount = 0;
+    $jrtrHallmarkDrAccId = '';
+    $jrtrHallmarkDrDesc = $hallmarkChrgsAccName;
+    //
+    $jrtrHallmarkCrAmount = $payTotHallmarkChgs;
+    $jrtrHallmarkCrAccId = $hallmarkChrgsAccId;
+    $jrtrHallmarkCrDesc = $hallmarkChrgsAccName;
+    $jrtrHallmarkDesc = 'HALLMARK CHARGES';
+    // 
+    // ****************************************************************************************************
+    // END FOR HALLMARKING CHARGES @PRIYANKA-27MAY2022
+    // ****************************************************************************************************
+    // 
+    // 
+    // 
+    // 
+    // ****************************************************************************************************
+    // START FOR TRANSACTION CHARGES @PRIYANKA-08AUG2019
+    // ****************************************************************************************************
+    //
+    $jrtrCardTransChargsCRDR = 'DR';
+    //
+    $jrtrCardTransChargsDrAmount = $payCardTransChgsAmt;
+    $jrtrCardTransChargsDrAccId = $CardTransChgsAmtAccId;
+    $jrtrCardTransChargsDrDesc = $CardTransChgsAmtAccName;
+    //
+    $jrtrCardTransChargsCrAmount = 0;
+    $jrtrCardTransChargsCrAccId = '';
+    $jrtrCardTransChargsCrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrCardTransChargsDesc = 'CARD TRANSACTION CHARGES';
+    //
+    // ****************************************************************************************************
+    // END FOR TRANSACTION CHARGES @PRIYANKA-08AUG2019
+    // ****************************************************************************************************
+    // 
+    // ======================================================================================================= //
+    // START CODE TO SET COURIER CHARGES ACCOUNT & AMOUNT FOR COURIER JOURNAL ENTRY @AUTHOR:MADHUREE-18FEB2020 //
+    // ======================================================================================================= //
+    //
+    $jrtrCourierChargsCRDR = 'CR';
+    //
+    $jrtrCourierChargsCrAmount = $payCourierAmt;
+    $jrtrCourierChargsCrAccId = $courierAccId;
+    $jrtrCourierChargsCrDesc = $courierAccName;
+    //
+    $jrtrCourierChargsDrAmount = 0;
+    $jrtrCourierChargsDrAccId = '';
+    $jrtrCourierChargsDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrCourierChargsDesc = 'COURIER CHARGES';
+    // 
+    // ===================================================================================================== //
+    // END CODE TO SET COURIER CHARGES ACCOUNT & AMOUNT FOR COURIER JOURNAL ENTRY @AUTHOR:MADHUREE-18FEB2020 //
+    // ===================================================================================================== //
+    //
+    // ======================================================================================================= //
+    // START CODE TO SET OTHER CHARGES ACCOUNT JOURNAL ENTRY @AUTHOR:Vinod-26may2023 //
+    // ======================================================================================================= //
+    //
+    $jrtrOtherChargsCRDR = 'DR';
+    //
+    $jrtrOtherChargsDrAmount = $payOtherAmt;
+    $jrtrOtherChargsDrAccId = $otherAccId;
+    $jrtrOtherChargsDrDesc = $otherAccName;
+    //
+    $jrtrOtherChargsCrAmount = 0;
+    $jrtrOtherChargsCrAccId = '';
+    $jrtrOtherChargsCrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrOtherChargsDesc = 'OTHER CHARGES';
+    // 
+    // ===================================================================================================== //
+    // END CODE TO SET OTHER CHARGES ACCOUNT JOURNAL ENTRY @AUTHOR:Vinod-26may2023 //
+    // ===================================================================================================== //
+    //
+    // ===================================================================================================================== //
+    // START CODE  FOR ADDITIONAL CHARGES JOURNAL ENTRY AUTHOR:@DNYANESHWARI 23MARCH2024  //
+    // ===================================================================================================================== //
+    //
+ if($additionalChargesPlusMinus == 'minus')  {
+//$payAdditionalChargsAmt=abs($payAdditionalChargsAmt);
+
+    $jrtrCourierChargsCRDR = 'DR';
+    //
+    $jrtrCourierChargsCrAmount = 0;
+    $jrtrCourierChargsCrAccId = '';
+    $jrtrCourierChargsCrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrCourierChargsDrAmount = $payAdditionalChargsAmt;
+    $jrtrCourierChargsDrAccId = $addtionalChargesAccId;
+    $jrtrCourierChargsDrDesc = $addtionalChargesAccName;
+    //
+    $jrtrCourierChargsDesc = 'ADDITIONAL CHARGES';
+} else {
+
+    $jrtrCourierChargsCRDR = 'CR';
+    //
+    $jrtrCourierChargsCrAmount = $payAdditionalChargsAmt;
+    $jrtrCourierChargsCrAccId = $addtionalChargesAccId;
+    $jrtrCourierChargsCrDesc = $addtionalChargesAccName;
+    //
+    $jrtrCourierChargsDrAmount = 0;
+    $jrtrCourierChargsDrAccId = '';
+    $jrtrCourierChargsDrDesc = $jrnlTransCrDesc;
+    //
+    $jrtrCourierChargsDesc = 'ADDITIONAL CHARGES';    
+}
+    //
+    // =================================================================================================================== //
+    // END CODE FOR ADDITIONAL CHARGES JOURNAL ENTRY AUTHOR:@DNYANESHWARI 23MARCH2024//
+    // =================================================================================================================== //
+    //
+    // ********************************************************************************************************************************************
+    // START CODE FOR GOLD ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Gold Account
+    //
+    if ($payGoldAccId != NULL && $payGoldAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'CR';
+        //
+        $jrtrGoldSilverStockInvCrAmount = $stockGoldVal;
+        $jrtrGoldSilverStockInvCrAccId = $goldAccId;
+        $jrtrGoldSilverStockInvCrDesc = $goldAccName;
+        //
+        $jrtrGoldSilverStockInvDrAmount = 0;
+        $jrtrGoldSilverStockInvDrAccId = '';
+        $jrtrGoldSilverStockInvDrDesc = $jrnlTransDrDesc;
+        $jrtrGoldSilverStockInvDesc = 'Stock Inventory';
+    }
+    //
+    // =============================================================================================== //
+    // START CODE TO ADD ACCOUNT DETAIL FOR SALE GOLD ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-08OCT2020 //
+    // =============================================================================================== //
+    //
+    if ($saleGoldAccId != NULL && $saleGoldAccId != '') {
+        $jrtrGoldSilverSaleCRDR = 'CR';
+        $jrtrGoldSilverSaleDrAmount = 0;
+        $jrtrGoldSilverSaleDrAccId = '';
+        $jrtrGoldSilverSaleDrDesc = '';
+        $jrtrGoldSilverSaleCrAmount = $payGoldCashAmt;
+        $jrtrGoldSilverSaleCrAccId = $saleGdAccId;
+        $jrtrGoldSilverSaleCrDesc = $saleGdName;
+        $jrtrGoldSilverSaleDesc = 'Gold Sale';
+    }
+    //
+    // ============================================================================================= //
+    // END CODE TO ADD ACCOUNT DETAIL FOR SALE GOLD ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-08OCT2020 //
+    // ============================================================================================= //
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR GOLD ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // 
+    // ********************************************************************************************************************************************
+    // START CODE FOR SILVER ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Silver Account
+    //
+    if ($paySilverAccId != NULL && $paySilverAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'CR';
+        //
+        $jrtrGoldSilverStockInvCrAmount = $stockSilverVal;
+        $jrtrGoldSilverStockInvCrAccId = $silverAccId;
+        $jrtrGoldSilverStockInvCrDesc = $silverAccName;
+        //
+        $jrtrGoldSilverStockInvDrAmount = 0;
+        $jrtrGoldSilverStockInvDrAccId = '';
+        $jrtrGoldSilverStockInvDrDesc = $jrnlTransDrDesc;
+        $jrtrGoldSilverStockInvDesc = 'Stock Inventory';
+    }
+    //
+    // ================================================================================================= //
+    // START CODE TO ADD ACCOUNT DETAIL FOR SALE SILEVR ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-08OCT2020 //
+    // ================================================================================================= //
+    //
+    if ($saleSilverAccId != NULL && $saleSilverAccId != '') {
+        $jrtrGoldSilverSaleCRDR = 'CR';
+        $jrtrGoldSilverSaleDrAmount = 0;
+        $jrtrGoldSilverSaleDrAccId = '';
+        $jrtrGoldSilverSaleDrDesc = '';
+        $jrtrGoldSilverSaleCrAmount = $paySilverCashAmt;
+        $jrtrGoldSilverSaleCrAccId = $saleSlAccId;
+        $jrtrGoldSilverSaleCrDesc = $saleSlName;
+        $jrtrGoldSilverSaleDesc = 'Silver Sale';
+    }
+    //
+    // ================================================================================================ //
+    // END CODE TO ADD ACCOUNT DETAIL FOR SALES SILVER ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-08OCT2020 //
+    // ================================================================================================ //
+    //
+    // ============================================================================================================== //
+    // START CODE TO ADD ACCOUNT DETAIL FOR SALE STONE & STOCK STONE ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-07AUG2021 //
+    // ============================================================================================================== //
+    //
+    if ($saleStoneAccId != NULL && $saleStoneAccId != '') {
+        $jrtrStoneSaleCRDR = 'CR';
+        //
+        $jrtrStoneSaleDrAmount = 0;
+        $jrtrStoneSaleDrAccId = '';
+        $jrtrStoneSaleDrDesc = '';
+        //
+        $jrtrStoneSaleCrAmount = $payStoneCashAmt;
+        $jrtrStoneSaleCrAccId = $saleStAccId;
+        $jrtrStoneSaleCrDesc = $saleStName;
+        $jrtrStoneSaleDesc = 'Stone Sale';
+    }
+    //
+    if ($payStoneAccId != NULL && $payStoneAccId != '') {
+        $jrtrStoneStockInvCRDR = 'CR';
+        //       
+        $jrtrStoneStockInvCrAmount = $payStoneCrCashAmt;
+        $jrtrStoneStockInvCrAccId = $stoneAccId;
+        $jrtrStoneStockInvCrDesc = $stoneAccName;
+        //
+        $jrtrStoneStockInvDrAmount = 0;
+        $jrtrStoneStockInvDrAccId = '';
+        $jrtrStoneStockInvDrDesc = $jrnlTransDrDesc;
+        $jrtrStoneStockInvDesc = 'Stock Inventory';
+    }
+    //
+    // ============================================================================================================ //
+    // END CODE TO ADD ACCOUNT DETAIL FOR SALE STONE & STOCK STONE ACCOUNT ENTRY IN JRTR @AUTHOR:MADHUREE-07AUG2021 //
+    // ============================================================================================================ //
+    //
+    // ============================================================================================= //
+    // START CODE TO ADD ACCOUNT DETAIL FOR SETTLED ADVANCE ENTRY IN JRTR @AUTHOR:MADHUREE-28OCT2020 //
+    // ============================================================================================= //
+    //
+    if ($paySettledAccId != NULL && $paySettledAccId != '') {
+        if ($paySettledCRDR == 'DR') {
+            $jrtrSettledEntryCRDR = $paySettledCRDR;
+            $jrtrSettledEntryDrAmount = $paySettledAmt;
+            $jrtrSettledEntryDrAccId = $paySettledAccId;
+            $jrtrSettledEntryDrDesc = $paySettledAccDesc;
+            $jrtrSettledEntryCrAmount = 0;
+            $jrtrSettledEntryCrAccId = '';
+            $jrtrSettledEntryCrDesc = '';
+            $jrtrSettledEntryDesc = $paySettledDesc;
+        } else if ($paySettledCRDR == 'CR') {
+            $jrtrSettledEntryCRDR = $paySettledCRDR;
+            $jrtrSettledEntryDrAmount = 0;
+            $jrtrSettledEntryDrAccId = '';
+            $jrtrSettledEntryDrDesc = '';
+            $jrtrSettledEntryCrAmount = $paySettledAmt;
+            $jrtrSettledEntryCrAccId = $paySettledAccId;
+            $jrtrSettledEntryCrDesc = $paySettledAccDesc;
+            $jrtrSettledEntryDesc = $paySettledDesc;
+        }
+    }
+    //
+    // =========================================================================================== //
+    // END CODE TO ADD ACCOUNT DETAIL FOR SETTLED ADVANCE ENTRY IN JRTR @AUTHOR:MADHUREE-28OCT2020 //
+    // =========================================================================================== //
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR SILVER ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // 
+    // ********************************************************************************************************************************************
+    // START CODE FOR STOCK & INVENTORY ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    // Stock & Inventory Account
+    //
+    if ($payStockInvAccId != NULL && $payStockInvAccId != '') {
+        $jrtrGoldSilverStockInvCRDR = 'CR';
+        //
+        $jrtrGoldSilverStockInvAmount = $payCashAmt;
+        $jrtrGoldSilverStockInvCrAccId = $stockInvAccId;
+        $jrtrGoldSilverStockInvCrDesc = $stockInvAccName;
+        //
+        $jrtrGoldSilverStockInvDrAmount = 0;
+        $jrtrGoldSilverStockInvDrAccId = '';
+        $jrtrGoldSilverStockInvDrDesc = $jrnlTransDrDesc;
+        $jrtrGoldSilverStockInvDesc = 'Stock Inventory';
+    }
+    //
+    // ********************************************************************************************************************************************
+    // END CODE FOR STOCK & INVENTORY ACCOUNT @PRIYANKA-06JUNE18
+    // ********************************************************************************************************************************************
+    //
+    //echo '$payTotalAmtBal @==@ ' . $payTotalAmtBal . '<br />';
+    //
+    //
+    if ($payTotalAmtBal > 0) {
+        //
+        $jrtrAmtBalCRDR = 'DR';
+        //
+        $jrtrAmtBalDrAmount = $payTotalAmtBal;
+        $jrtrAmtBalDrAccId = $totalAmtBalAccId;
+        $jrtrAmtBalDrDesc = $totalAmtBalAccName;
+        //
+        $jrtrAmtBalCrAmount = 0;
+        $jrtrAmtBalCrAccId = '';
+        $jrtrAmtBalCrDesc = $jrnlTransCrDesc;
+        $jrtrAmtBalDesc = 'On Purchase Balance Amt';
+    }
+    //
+    //
+    if ($payTotalAmtBal < 0) {
+        //
+        $jrtrAmtBalCRDR = 'CR';
+        //
+        $jrtrAmtBalDrAmount = 0;
+        $jrtrAmtBalDrAccId = '';
+        $jrtrAmtBalDrDesc = $jrnlTransCrDesc;
+        //
+        $jrtrAmtBalCrAmount = $payTotalAmtBal;
+        $jrtrAmtBalCrAccId = $totalAmtBalAccId;
+        $jrtrAmtBalCrDesc = $totalAmtBalAccName;
+        $jrtrAmtBalDesc = 'On Purchase Balance Amt';
+    }
+}
 ?>

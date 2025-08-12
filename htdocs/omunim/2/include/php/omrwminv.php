@@ -1,3 +1,110 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAABQAAgwExPWWM+sl32HBcT4Gh2w258C1dL8QiOSeej0XD7o2xMRjYtVHEujDQNQUefqfHE8QqHqXXThAT7AVNDZYI6QAMb6p1p+QGIGuiikjiQciixUgwmjsb4nPE4XhyzY4zm9nGl2uImWScXeIxFMAh3+BhTFrrLyMso3ltiyd+ivGAIx2S/+XPPHXEFuOzyiCL1aPS+KTfqMBnmh//yL2pzyWWgSUHqPcWky8M9GknA8HV3VjEOeiJ8vCfONeZUna9/Uupi2zzjnudtxBg1y5lvmViPzmBQ9DKbRh+aUlY8iOdV11paF5WmDjCBWFRypQ7sXgXC4eDkgRk9DYAPrAHxMMK1KHM2WDdMiZv0webCrt11oGUCKXay1dRk2TO5Q9kItAvRp93FBx25z3tGXU3fqqwqcUA9TyjiH43DbSTg36CopQKPy6PwQktNettEl4CG1V20U+FsPyYVtJY5BZwO7P8GOi8e6nwjvi6cDWLfJtpB7J4JTisblWKSSO9TP/Dh4A99uyWoTky+sxbWb9fcf8o8oRnSrm6aWh3zCeKORzPGxo1n2fEQzsBrwsUhfjbvmgsh9M6llZDhB2gDQRI3n32TbB1FR4In5jwZoCld13XL2YJSISPTm0rWHA28/K5IMqIbcZ3Br8XJIIbrnFKQ056aPLqrS/que+C2nfcAfOlIZrjNoebpfvlFw7jrVLepG3K/0Ksof6xN65KvJVC8+qI+GqR7Rsw8LwEV2IM0r2LKiIGFHZ9tZ5fBTzH14QaD2MkJfN0URlQ1rEKT6CPpqvkNyl/lPeqJ4+g+b0i9CHPrHy7ZQbi9teRNXT6MOKNmsp4wKKU4rkJd4mV9M7VzidNAI2Z7aEz+f9k6Kh5lmprSDp18PXmgxP4LCjXzr3lyUMn2f7N2VDg/ArphgPrN6Taj2Xc7UTkAkugaQ05gTIPaCN5XpelJT3jzWfuW68W6JRWXv92dK8/XZUaQj/G1nbCGr4UHQnobCzSpPDjX0BjYL4hlsDr/07PPhcqMTUqDhEboaKL6jNNXI/oBfu2TjnP1ubXdiHCU9JITxNd/GETxzU5kKOI0kCx7NcNv+ca5rZLrEwhv64xc+TKOtL0cT9UmTyM28scN8eAnmn/gy7IzAKYFJqHN4/9YBU7baZB31o4z0Ju69r+KJJauTfunILPK3fqoKflBU9pi/PmBUMRMTN/8aR6mekcEdor5uH11SzwVFW7chb/7YjQq4xzaKE1Wtyou+llDnV4BgzFNH6XieYXM0VHZ9y0gz/auNTvF9kJp4MTriXkz4VmOEdgnzCJbrVShDwl/MgRdGY6woLrzZSESa5/7YIJSSiyp/v8YeQ/Jkm36Gd1s0TBMULNxexRpZ81/XlR3x1MOtV3wKBUQ1ifpdsjbF4aSZXjH15ZSbAKmf+1kaUi0hUbqNB2xIvi4+ZJFQOfjyptJnksEGVgGMfzApd65tnL/5yfqyydTzT3Ef2zLO2aQXNMwVabV60lKxLnmxaNqwxALtzt5VtIUIoepUfK0NxK2nFyx5P1+ge239bC8y3eaMEp7BhWByRkolFeyredxhEukV1byStgaxKQ9S11wBWriMcFYzod3wyfDjl+NRgMQgdqSIXt9ncm4KO6xmOfYIu9Fj5+rUG1hAQBVcSgNEi0bQjO2LokJD+q3vX4/HqfjuutNGPn8H6V+yZEnKpmBuebo8J0Y3QAAAAA');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: OMGOLD Raw Metal Invoice Table
+ * **************************************************************************************
+ *
+ * Created on 17 Dec, 2012 11:31:41 PM
+ *
+ * @FileName: ogtbitmRep.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+
+// Start  code to add columns in raw for payment  @Author:SHE20APR16
+// Start  code to add columns in raw for payment @Author:SHE25APR16
+$query = "CREATE TABLE raw_metal_invoice(
+rmin_id                         INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+rmin_owner_id                   VARCHAR(16),
+rmin_jrnl_id                    INT,
+rmin_firm_id                    VARCHAR(16),
+rmin_supp_id                    VARCHAR(16),
+rmin_date                       VARCHAR(50),
+rmin_pre_invoice_no             VARCHAR(10),
+rmin_invoice_no                 VARCHAR(50),
+rmin_gd_frmid                   VARCHAR(16),
+rmin_sl_frmid                   VARCHAR(16),
+rmin_gd_accid                   VARCHAR(16),
+rmin_sl_accid                   VARCHAR(16),
+rmin_gd_gs_wgt                  VARCHAR(15),
+rmin_gd_gs_wgt_typ              VARCHAR(10),
+rmin_gd_nt_wgt                  VARCHAR(15),
+rmin_gd_nt_wgt_typ              VARCHAR(10),
+rmin_gd_fn_wgt                  VARCHAR(15),
+rmin_gd_fn_wgt_typ              VARCHAR(10),
+rmin_sl_gs_wgt                  VARCHAR(15),
+rmin_sl_gs_wgt_typ              VARCHAR(10),
+rmin_sl_nt_wgt                  VARCHAR(15),
+rmin_sl_nt_wgt_typ              VARCHAR(10),
+rmin_sl_fn_wgt                  VARCHAR(15),
+rmin_sl_fn_wgt_typ              VARCHAR(10),
+rmin_gd_rc_nt_wgt               VARCHAR(15),
+rmin_gd_rc_nt_wgt_typ           VARCHAR(10),
+rmin_sl_rc_nt_wgt               VARCHAR(15),
+rmin_sl_rc_nt_wgt_typ           VARCHAR(10),
+rmin_gd_rc_tunch                VARCHAR(15),
+rmin_sl_rc_tunch                VARCHAR(15),
+rmin_gd_rc_fn_wgt               VARCHAR(15),
+rmin_sl_rc_fn_wgt               VARCHAR(15),
+rmin_gd_rc_rate                 VARCHAR(15),
+rmin_sl_rc_rate                 VARCHAR(15),
+rmin_gd_rc_val                  VARCHAR(20),
+rmin_sl_rc_val                  VARCHAR(20),
+rmin_gd_wgt_bal                 VARCHAR(15),
+rmin_gd_wgt_bal_typ             VARCHAR(10),
+rmin_sl_wgt_bal                 VARCHAR(15),
+rmin_sl_wgt_bal_typ             VARCHAR(10),
+rmin_total_amt                  VARCHAR(20),
+rmin_tot_amt_rec                VARCHAR(20),
+rmin_paym_acc_id                VARCHAR(10),
+rmin_card_type                  VARCHAR(50),
+rmin_card_no                    VARCHAR(50),
+rmin_paym_oth_info              VARCHAR(200),
+rmin_cash_amt_rec               VARCHAR(50),
+rmin_discount_amt               VARCHAR(50),
+rmin_fnl_due_bal                VARCHAR(50),
+rmin_since                      DATETIME,
+rmin_gd_rc_pre_id               VARCHAR(20),
+rmin_gd_rc_post_id              VARCHAR(40),
+rmin_sl_rc_pre_id               VARCHAR(20),
+rmin_sl_rc_post_id              VARCHAR(40),
+rmin_staff_id	                VARCHAR(16),
+rmin_card_amt                   VARCHAR(50),
+rmin_cheque_amt                 VARCHAR(50),
+rmin_cheque_no                 VARCHAR(20),
+rmin_disc_narratn                VARCHAR(50), 
+rmin_cash_narratn                VARCHAR(50),
+rmin_vat_amt                    VARCHAR(50),
+rmin_tax_amt                    VARCHAR(50),
+rmin_gd_othr_chgs_wt           VARCHAR(20),
+rmin_gd_othr_chgs_wt_typ       VARCHAR(20),
+rmin_sl_othr_chgs_wt          VARCHAR(20),
+rmin_sl_othr_chgs_wt_typ     VARCHAR(20),
+rmin_cheque_acc_id              VARCHAR(20),
+rmin_card_acc_id                VARCHAR(20),
+rmin_disc_acc_id                VARCHAR(20),
+rmin_othr_chgs_by                  VARCHAR(10),
+rmin_tot_amt_charges                 VARCHAR(20),
+rmin_vat_acc_id                 VARCHAR(20),UNIQUE KEY (rmin_pre_invoice_no,rmin_invoice_no))AUTO_INCREMENT=1";
+
+if (!mysqli_query($conn,$query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+// End  code to add columns in raw for payment @Author:SHE20APR16
+// End  code to add columns in raw for payment @Author:SHE25APR16
+?>
+  

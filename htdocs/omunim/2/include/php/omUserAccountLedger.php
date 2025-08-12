@@ -1,3 +1,289 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 31 Mar, 2019 4:48:46 PM
+ *
+ * @FileName: omUserAccountLedger.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.6.0
+ * @Copyright (c) 2018 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2018 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'conversions.php';
+include_once 'ommpfndv.php';
+//
+?>
+<!-- START CODE FOR ALL TRANSACTIONS REPORT @PRIYANKA-13FEB19 -->
+<div id="AllTransactionsReportPrintDiv">
+    <table border="0" cellspacing="0" cellpadding="0"> 
+        <tr>
+            <td valign="top">
+                <a class="links" onclick=""
+                   style="cursor: pointer;" title="ALL TRANSACTIONS REPORT!">
+                    <div class="textLabelHeading" style="margin-bottom: 25px;">
+                        ALL TRANSACTIONS REPORT
+                    </div>
+                </a>
+            </td>
+            <td align="right" width="78%">
+                <table border="0" cellpadding="2" cellspacing="2" align="right">
+                    <tr>
+                        <td align="left">
+                            <table>
+                                <tr>
+                                    <td class="textBoxCurve1px backFFFFFF">
+                                        <div class="spaceLeft5">
+                                            <?php include 'omacstdt.php'; ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="textLabel14Calibri">&nbsp;-&nbsp;</td>
+                        <td align="left">
+                            <table>
+                                <tr>
+                                    <td class="textBoxCurve1px backFFFFFF">
+                                        <div class="spaceLeft5">
+                                            <?php include 'omacendt.php'; ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td valign="bottom" align="right">
+                            <div id="accountDetailsSearchDiv">
+                                <a style="cursor: pointer;" 
+                                   onclick="javascript:searchAccountDetailsByDate('', '<?php echo $acntIdString; ?>', document.getElementById('accFirmName').value, document.getElementById('acntDtStartDayDD').value, document.getElementById('acntDtStartMonth').value, document.getElementById('acntDtStartYYYY').value, document.getElementById('acntDtEndDayDD').value, document.getElementById('acntDtEndMonth').value, document.getElementById('acntDtEndYYYY').value, 'ALL FIRM', '<?php echo $userAccount; ?>');">
+                                    <img src="<?php echo $documentRoot; ?>/images/search24.png" alt='Search Account Details' title='Search Account Details'
+                                         width="24px" height="24px" /> 
+                                </a> 
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="hrGold"></div>
+    <div class="transactionDetails p-10" style="margin-top: 10px;">
+        <div class="card">
+            <div class="card-body">
+                <div class="transactionDetailsInnerView">
+                    <table width="100%" style="border: solid 1px; ">
+                        <tr>
+                            <td width="44%" style="border-right: solid 1px #a4a4a4;">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <h4 style="font-weight: bold; ">CUSTOMER NAME</h4>
+                                                    </td>
+                                                    <td>  - </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h4 style="font-weight: bold; ">ADDRESS</h4>
+                                                    </td>
+                                                    <td>  - </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h4 style="font-weight: bold; ">MOBILE NO</h4>
+                                                    </td>
+                                                    <td>  - </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h4 style="font-weight: bold; ">GST NO</h4>
+                                                    </td>
+                                                    <td>  - </td>
+                                                    <td> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h4 style="font-weight: bold; ">PAN NO</h4>
+                                                    </td>
+                                                    <td>  - </td>
+                                                    <td> </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="60%" align="cener">
+                                <table align="center" valign="top" width="100%">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <h1 style="font-weight: bold; ">Statement ( Transacion Details )</h1>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td align="center" valign="top">
+                                            <h4 style="font-weight: bold; ">ABC JEWLLERS</h4>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td align="center" valign="top">
+                                            <h4 style="font-weight: bold; ">ADDRESS</h4>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td align="center" valign="top">
+                                            <h4 style="font-weight: bold; ">MOBILE NO</h4>
+                                        </td>
+                                    </tr>
+                                    <tr >
+                                        <td align="center" valign="top">
+                                            <h4 style="font-weight: bold; ">GST NO</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td with="100%" class="hrGold" colspan="2"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="100%">
+                                <table style=""  width="100%">
+                                    <tr>
+                                        <td width="100%" align="left" valign="top">
+                                            <table width="100%" align="center" cellpadding="" cellspacing="" class="" style="border-collapse: collapse;">
+                                                <tr rowspan="2">
+                                                    <td align="center" class="blackMess14Arial" style="border: solid 1px ; background-color: #89b2ed;" width="3%">Tr. No</td>
+                                                    <td align="center" class="blackMess14Arial" style="border: solid 1px; background-color: #89b2ed;" width="7%">Date</td>
+                                                    <td align="center" class="blackMess14Arial" style="border: solid 1px; background-color: #89b2ed;" width="7%">Inv. No</td>
+                                                    <td align="center" class="blackMess14Arial" style="border: solid 1px ; background-color: #89b2ed;" width="7%">Tr. type</td>
+                                                    <td align="center" class="blackMess14Arial" style="border: solid 1px; background-color: #89b2ed;" width="16%">Tr. Details</td>
+                                                    <td align="center" class="blackMess14Arial" colspan="2" width="12%"  style="border: solid 1px; background-color: #ffe370;">Gold</td>
+                                                    <td align="center" class="blackMess14Arial" colspan="2" width="12%"  style="border: solid 1px; background-color: #e2e2e2;">Silver</td>
+                                                    <td align="center" class="blackMess14Arial" colspan="2" width="12%"  style="border: solid 1px; background-color: #ffacbb;">Stone</td>
+                                                    <td align="center" class="blackMess14Arial" colspan="2" width="12%"  style="border: solid 1px; background-color: #beefbe; ">Amount</td>
+                                                    <td align="center" class="blackMess14Arial" width="12%"  style="border: solid 1px; background-color: #89b2ed;">Total Tran. Amt</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="brownMess16Arial" colspan="5"  style="border: solid 1px ;"></td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px; background-color: #eb9b9b7a;">DR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px ; background-color: #d0f7d0;">CR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px; background-color: #eb9b9b7a;">DR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px ; background-color: #d0f7d0;">CR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px; background-color: #eb9b9b7a;">DR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px ; background-color: #d0f7d0;">CR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px; background-color: #eb9b9b7a;">DR(Balance)</td>
+                                                    <td class="brownMess12Arial"  style="border: solid 1px ; background-color: #d0f7d0;">CR(Balance)</td>
+                                                    <td  style="border: solid 1px;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">1</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">28 feb 2022</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">IS 1</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px;" width="7%">SELL</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="12%">XYZ</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">1</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">2</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">3</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">4</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">5</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">6</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">7</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">8</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="12%">10000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">1</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">28 feb 2022</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="7%">IS 1</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px;" width="7%">SELL</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="12%">XYZ</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">1</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">2</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">3</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">4</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">5</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">6</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">7</td>
+                                                    <td align="center" class="brownMess12Arial"  style="border: solid 1px ;" width="6%">8</td>
+                                                    <td align="center" class="brownMess12Arial" style="border: solid 1px ;" width="12%">10000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #ffe370;" colspan="4">
+                                                        Statement Form 18-feb-2022
+                                                    </td>
+                                                    <td align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #89b2ed;" width="12%">TOTAL</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #f3cccc7a;" width="6%">1</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #e4ffe4;" width="6%">2</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #f3cccc7a;" width="6%">1</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #e4ffe4;" width="6%">2</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #f3cccc7a;" width="6%">1</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #e4ffe4;" width="6%">2</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #f3cccc7a;" width="6%">1</td>
+                                                    <td align="center" class="brownMess14Arial"  style="border: solid 1px; background-color: #e4ffe4;" width="6%">2</td>
+                                                    <td align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #c6deff;" width="12%">10000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="brownMess16Arial" colspan="5"  style="border: solid 1px ;"></td>
+                                                    <td colspan="2" align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #ffe370;">1</td>
+                                                    <td colspan="2" align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #e2e2e2;">1</td>
+                                                    <td colspan="2" align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #ffacbb;">1</td>
+                                                    <td colspan="2" align="center" class="brownMess14Arial" style="border: solid 1px; background-color: #beefbe;">1</td>
+                                                    <td align="center"  style="border: solid 1px;" ></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="100%">
+    <tr>
+        <td>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" align="center" class="noPrint">
+            <a style="cursor: pointer;" 
+               onclick="printOmgoldPageDiv('AllTransactionsReportPrintDiv', '')">
+                <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                     width="32px" height="32px" /> 
+            </a> 
+        </td>
+    </tr>
+</table>

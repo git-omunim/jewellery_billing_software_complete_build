@@ -1,3 +1,117 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: UPDATE HUID FILE @AUTHOR-PRIYANKA-15NOV2021
+ * **************************************************************************************
+ *
+ * Created on NOV 15, 2021 13:43:43 PM
+ *
+ * @FileName: omUpdateStockHUID.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 2.7.96
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR-PRIYANKA-15NOV2021
+ *  AUTHOR: @AUTHOR-PRIYANKA-15NOV2021
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.96 
+ * Version: 2.7.96
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$staffId = $_SESSION['sessionStaffId'];
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+?>
+<div id="mainAddStockDiv">
+    <?php
+    //
+    $panelName = $_GET['panelName'];
+    $invPanelName = $_GET['invPanel'];
+    //
+    $utransInvId = $_GET['utransInvId'];;
+    $stockType = $_GET['stockType'];
+    //
+    //echo '$panelName = '.$panelName.'<br />';
+    //echo '$stockPanelName = '.$stockPanelName.'<br />';
+    //echo '$invPanelName = '.$invPanelName.'<br />';
+    //
+    //echo '$utransInvId = '.$utransInvId.'<br />';
+    //echo '$stockType = '.$stockType.'<br />';
+    //
+    if ($stockType == "wholesale") {
+        $stockType = "wholeSaleStock";
+    }
+    //
+    $mainPanelNew = 'StockPanel';
+    //
+    if ($stockType == '') {
+        $selStockTypOption = callOmLayoutTable('StockTypOption', '', 'select');
+        if ($selStockTypOption == '')
+            callOmLayoutTable('StockTypOption', 'wholeSaleStock', 'insert');
+        $stockType = $selStockTypOption;
+    }
+    //
+    //
+    $showDiv = $_GET['divSubPanel'];
+    //
+    //
+    ?>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" class="portlet grey-crusta box">
+                <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>                       
+                        <?php // class="analysis_div_rows main_link_red_12" ?>   
+                        <td align="center" valign="middle">
+                            <div id="messDisplayDiv"></div>
+                            <div class="analysis_div_rows main_link_green12">
+                                <?php if ($showDiv == 'StockImportedSuccessfully') { ?>
+                                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> 
+                                        ~ Stock Imported Successfully! ~
+                                    </div>
+                                <?php } ?>  
+                            </div>
+                        </td>
+                        <td align="right">
+                            <div id="main_ajax_loading_div" style="visibility: hidden; background:none;">
+                                <img src="<?php echo $documentRootBSlash; ?>/images/ajaxMainLoading.gif" />
+                            </div>
+                        </td>                       
+                    </tr>
+                </table>
+            </td>
+        </tr> 
+    </table> 
+    <div id="stockPanelSubDiv">
+        <?php
+        //
+        $stockDetPanel = $_GET['stockDetPanel'];
+        //
+        $itemPreId = $_GET['preId'];
+        //
+        //if ($stockType == "wholeSaleStock") {
+        //    include 'omUpdateWholeslaeStockHUID.php'; // UPDATE WHOLESALE STOCK HUID PANEL
+        //} else {
+            include 'omUpdateRetailStockHUID.php'; // UPDATE RETAIL STOCK HUID PANEL
+        //}
+        //
+        ?>
+    </div>
+</div>

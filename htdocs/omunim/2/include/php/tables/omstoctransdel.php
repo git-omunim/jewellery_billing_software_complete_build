@@ -1,3 +1,429 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 7 Aug, 2017 5:50:20 PM
+ *
+ * @FileName: omstoctransdel.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 3.0.0
+ * @Copyright (c) 2017 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2017 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+// Create new table stock transaction @PRIYANKA-29-05-17
+$query = "CREATE TABLE IF NOT EXISTS stock_transaction_del (
+sttr_id                                                         INT NOT NULL," .
+// For Main Entry Reference Id
+"sttr_sttr_id                                                   VARCHAR(16),
+sttr_st_id                                                      VARCHAR(16),
+sttr_sttrin_id                                                  VARCHAR(16),
+sttr_trans_id                                                   VARCHAR(16),
+sttr_main_entry                                                 VARCHAR(2),
+sttr_main_entry_count                                           VARCHAR(3),
+sttr_sub_entry_count                                            VARCHAR(3),
+sttr_panel_name                                                 VARCHAR(64)," .
+// SHOPIFY PROD ID @PRIYANKA-27MAR19
+"sttr_shopify_prod_id                                           VARCHAR(60),
+sttr_owner_id                                                   VARCHAR(16),
+sttr_jrnl_id                                                    INT,
+sttr_firm_id                                                    VARCHAR(16),
+sttr_melt_id                                                    VARCHAR(16),
+sttr_user_id                                                    VARCHAR(16),
+sttr_user_billing_name                                          VARCHAR(75),". // ADDED TO STORE USER BILLING NAME
+"sttr_account_id                                                 VARCHAR(10),
+sttr_stock_account_id                                           VARCHAR(10),
+sttr_utin_id 							VARCHAR(16),
+sttr_staff_id 							VARCHAR(16),
+sttr_staff_sale_month						VARCHAR(6),
+sttr_transaction_type                                           VARCHAR(20),
+sttr_item_pre_id 						VARCHAR(20),
+sttr_item_id 							VARCHAR(16)," .
+// Barcode Related Fields        
+"sttr_metal_type 						VARCHAR(30),
+sttr_product_type                                               VARCHAR(30),
+sttr_add_on_weight_product_type                                 VARCHAR(35),
+sttr_stock_type                                                 VARCHAR(16),
+sttr_item_category 						VARCHAR(80),
+sttr_item_name 							VARCHAR(80)," .
+//column added sttr_item_name_online to add product name for online option,@AUTHOR:HEMA-1DEC2020 
+"sttr_item_name_online                                          VARCHAR(80),
+sttr_rfid_no                                                    VARCHAR(64),
+sttr_rfid_tally_profile                                         VARCHAR(24),
+sttr_rfid_tally_status                                          VARCHAR(2),
+sttr_rfid_tally_date                                            VARCHAR(20),
+sttr_rfid_tally_time                                            VARCHAR(20),
+sttr_location                                                   VARCHAR(64),
+sttr_barcode_prefix 						VARCHAR(4),
+sttr_barcode 							VARCHAR(64),
+sttr_add_barcode_date                                           VARCHAR(24)," .
+// Item Combind Code        
+"sttr_item_code                                                 VARCHAR(30)," .
+// Item Description (Indicator) like Stock, Crystal, Imitation
+"sttr_indicator                                                 VARCHAR(30)," .
+// Supplier Name reference with Id
+"sttr_brand_id 							VARCHAR(16),
+sttr_brand_name 					        VARCHAR(32)," .
+// Counter Name @PRIYANKA-16OCT18
+"sttr_counter_name 						VARCHAR(30)," .
+// Barcode Related Fields        
+"sttr_bis_mark 							VARCHAR(10)," .
+// STOCK HALLMARK UID @AUTHOR:MADHUREE-28JUNE2021     
+"sttr_hallmark_uid 						VARCHAR(32),
+sttr_image_id 							VARCHAR(10)," .
+// Date Fields       
+"sttr_add_date 							VARCHAR(32),
+ sttr_other_lang_add_date 					VARCHAR(32),
+sttr_bill_date 							VARCHAR(32),
+sttr_delivery_date 						VARCHAR(32),
+sttr_mfg_date 							VARCHAR(32),
+sttr_exp_date 							VARCHAR(32),
+sttr_tally_date 						VARCHAR(32),
+sttr_del_date 						        VARCHAR(50),
+sttr_del_reason                                                 VARCHAR(100),
+sttr_del_log                                                    VARCHAR(80)," .
+/* START CODE TO ADD NEW COLUMN FOR sttr_tally_status CHECKING TALLY STATUS @AUTHOR:MADHUREE-25FEB2020 */
+"sttr_tally_status                                              VARCHAR(32),
+sttr_tally_quantity 	                                        VARCHAR(20)," .
+/* END CODE TO ADD NEW COLUMN FOR sttr_tally_status CHECKING TALLY STATUS @AUTHOR:MADHUREE-25FEB2020 */
+// Prod HSN number
+"sttr_hsn_no                                                    VARCHAR(25)," .
+// Prod Category, Name and Other Fields        
+"sttr_gender 							VARCHAR(15),
+sttr_size 							VARCHAR(15),
+sttr_shape 							VARCHAR(15),
+sttr_color 							VARCHAR(15),
+sttr_quantity 							INT,
+sttr_clarity 							VARCHAR(10),
+sttr_metal_rate 						VARCHAR(10),
+sttr_metal_rate_id 						VARCHAR(10),
+sttr_product_purchase_rate                                      VARCHAR(10),
+sttr_product_purchase_rate_type                                 VARCHAR(10),
+sttr_purity 							VARCHAR(15),".
+// sttr_purity_ct ADDED FOR PURITY IN CARAT @AUTHOR:MADHUREE-04MAR2020
+"sttr_purity_ct                                                 VARCHAR(15),
+sttr_wastage 							VARCHAR(10),
+sttr_final_purity 						VARCHAR(16),
+sttr_cust_wastage						VARCHAR(10),
+sttr_cust_wastage_wt						VARCHAR(10)," .
+// Weight Related  
+//sttr_pkt_weight - Used this for stock less weight
+//sttr_less_weight - Used this for stock pkt weight
+"sttr_gs_weight 					        VARCHAR(15),
+sttr_gs_weight_type                                             VARCHAR(10),
+sttr_pkt_weight 						VARCHAR(15),
+sttr_pkt_weight_type                                            VARCHAR(10),
+sttr_less_weight 						VARCHAR(15),
+sttr_less_weight_type                                           VARCHAR(10),
+sttr_stone_less_weight 						VARCHAR(15),
+sttr_nt_weight 							VARCHAR(15),
+sttr_nt_weight_type                                             VARCHAR(10),
+sttr_add_weight 						VARCHAR(15),
+sttr_add_weight_type                                            VARCHAR(10),
+sttr_avg_weight 						VARCHAR(15),
+sttr_avg_weight_type                                            VARCHAR(10),
+sttr_fine_weight						VARCHAR(15),
+sttr_final_fine_weight 						VARCHAR(10),
+sttr_final_fine_wt_by                                           VARCHAR(10)," .
+// FINAL FINE WEIGHT BY @AUTHOR:MADHUREE-15DEC2020
+"sttr_sell_final_fine_weight 				        VARCHAR(10),
+sttr_add_on_weight 					        VARCHAR(15),
+sttr_add_on_weight_type                                         VARCHAR(10)," .
+// Charges
+"sttr_lab_charges 						VARCHAR(15),
+sttr_lab_charges_type                                           VARCHAR(10),
+sttr_total_lab_charges                                          VARCHAR(15),
+sttr_making_charges 						VARCHAR(15),
+sttr_total_making_charges					VARCHAR(15),
+sttr_making_charges_type                                        VARCHAR(10)," .
+// Other Charges @Author:PRIYANKA-12OCT2018
+"sttr_other_charges 						VARCHAR(15),
+sttr_other_charges_type                                         VARCHAR(10),
+sttr_total_other_charges					VARCHAR(15),".
+// PURCHASE LAB CHARGES AND OTHER CHARGES IN STOCK TRANSACTION TABLE @AUTHOR-PRIYANKA-11AUG20
+"sttr_pur_lab_chrgs                                             VARCHAR(20),
+sttr_pur_other_chrgs                                            VARCHAR(20),
+sttr_repair_charges         					VARCHAR(16),
+sttr_tax         						VARCHAR(16),
+sttr_total_hallmark_charges         				VARCHAR(20),
+sttr_other_tax_amt         				        VARCHAR(16),
+sttr_tot_tax 							VARCHAR(16)," .
+// Stone Wt & Type
+"sttr_stone_wt                                                  VARCHAR(15),
+sttr_stone_wt_type                                              VARCHAR(10)," .
+// Valuation @Author:AMOL
+"sttr_final_taxable_amt                                         VARCHAR(30),
+sttr_valuation                                                  VARCHAR(30),
+sttr_total_price                                                VARCHAR(30),
+sttr_tot_val_wo_gst                                             VARCHAR(30),
+sttr_stone_valuation                                            VARCHAR(30),
+sttr_final_sell_valuation                                       VARCHAR(30),
+sttr_final_valuation                                            VARCHAR(30),
+sttr_ecom_price                                                VARCHAR(30),
+sttr_ecom_max_price                                            VARCHAR(30), 
+sttr_ecom_metal_valuation                                      VARCHAR(30),
+sttr_ecom_making_charges                                       VARCHAR(30),
+sttr_ecom_other_charges                                        VARCHAR(30),
+sttr_ecom_value_added                                          VARCHAR(30)," .
+// Box Code and Price @Author:PRIYANKA-29JULY19
+"sttr_box_code                                                  VARCHAR(50),
+sttr_box_valuation                                              VARCHAR(30),
+sttr_payment_mode                                               VARCHAR(30),
+sttr_melt_valuation                                             VARCHAR(30)," .
+// Status
+"sttr_status 							VARCHAR(32),
+sttr_current_status 						VARCHAR(30),
+sttr_sell_status 						VARCHAR(10),
+sttr_direct_sell_status 				        VARCHAR(10),
+sttr_bc_print_status                                            VARCHAR(50),
+sttr_ecomm_status                                               VARCHAR(32),
+sttr_jewellers_app_status                                       VARCHAR(40),
+sttr_mkg_cgst_per                                               VARCHAR(30),
+sttr_mkg_cgst_chrg                                              VARCHAR(30),
+sttr_mkg_sgst_per                                               VARCHAR(30),
+sttr_mkg_sgst_chrg                                              VARCHAR(30),
+sttr_mkg_igst_per                                               VARCHAR(30),
+sttr_mkg_igst_chrg                                              VARCHAR(30),
+sttr_tot_price_cgst_per                                         VARCHAR(30),
+sttr_tot_price_cgst_chrg                                        VARCHAR(30),
+sttr_tot_price_sgst_per                                         VARCHAR(30),
+sttr_tot_price_sgst_chrg                                        VARCHAR(30),
+sttr_tot_price_igst_per                                         VARCHAR(30),
+sttr_tot_price_igst_chrg                                        VARCHAR(30),
+sttr_other_cgst_per                                             VARCHAR(30),
+sttr_other_cgst_chrg                                            VARCHAR(30),
+sttr_other_sgst_per                                             VARCHAR(30),
+sttr_other_sgst_chrg                                            VARCHAR(30),
+sttr_other_igst_per                                             VARCHAR(30),
+sttr_other_igst_chrg                                            VARCHAR(30)," .
+// Retail/Wholesale
+"sttr_stock_add                                                 VARCHAR(16),
+sttr_item_ent_type 						VARCHAR(16)," .
+// Description
+"sttr_other_info 						VARCHAR(100),
+sttr_item_other_info                                            VARCHAR(500),
+sttr_item_melt_info                                             VARCHAR(100)," .
+// Invoice Details
+"sttr_pre_invoice_no                                            VARCHAR(20),
+sttr_invoice_no 						VARCHAR(10)," .
+// Crystal Rate       
+"sttr_purchase_rate 						VARCHAR(15),
+sttr_purchase_rate_type                                         VARCHAR(10),
+sttr_sell_rate                                                  VARCHAR(15),
+sttr_sell_rate_type                                             VARCHAR(10),
+sttr_product_sell_rate                                          VARCHAR(15),
+sttr_product_sell_rate_type                                     VARCHAR(10)," .
+// Final QTY,GS WT, NT WT @Author:PRIYANKA-18DEC17   
+"sttr_final_quantity 						VARCHAR(10),
+sttr_final_gs_weight                                            VARCHAR(15),
+sttr_final_nt_weight                                            VARCHAR(15), 
+sttr_final_fn_weight                                            VARCHAR(15)," .
+// Crystal Y/N
+"sttr_crystal_yn 						VARCHAR(10)," .
+// lab charges by
+"sttr_other_charges_by                                          VARCHAR(10)," .
+// Customer Wastage by WT @Author:PRIYANKA-07SEP2018
+"sttr_cust_wastg_by                                             VARCHAR(20)," .
+// WASTAGE CALCULATION BY @AUTHOR:MADHUREE-22SEP2021
+"sttr_wastage_by                                                VARCHAR(20)," .
+// VALUE ADDED AMOUNT BY @AUTHOR:MADHUREE-15DEC2020
+"sttr_value_added_by                                            VARCHAR(20)," .
+// Making charges by @Author:PRIYANKA-28MAR18
+"sttr_mkg_charges_by                                            VARCHAR(16)," .
+// Fine Weight and Final Fine Weight by Column @Author:PRIYANKA-07MAR19
+"sttr_final_val_by 						VARCHAR(16)," .
+// Final Valuation by Column @Author:PRIYANKA-07MAR19
+"sttr_final_valuation_by                                        VARCHAR(16)," .
+// LESS WT OR NOT @Author:PRIYANKA-07APR18
+"sttr_main_gross_wt_by                                          VARCHAR(16)," .
+// Stone WT Less From GS WT/NT WT
+"sttr_stone_less_wt_by 						VARCHAR(16)," .
+// Entry Date
+"sttr_since 							DATETIME," .
+// Comment Field
+"sttr_comments 							VARCHAR(40)," .
+// In case of Jewellery Sell @Author:PRIYANKA-15JUN17
+"sttr_value_added                                               VARCHAR(30),
+sttr_item_safe_tray                                             VARCHAR(40)," .
+// Columns used in Imitation Panel
+// Add New Column for Sell Price Code @Author-PRIYANKA-15JUNE2020
+"sttr_cust_itmpricecode                                         VARCHAR(16),
+sttr_cust_itmcalby                                              VARCHAR(16),
+sttr_cust_itmcode                                               VARCHAR(16),
+sttr_cust_itmnum                                                VARCHAR(16),
+sttr_item_length                                                VARCHAR(16),
+sttr_item_width                                                 VARCHAR(16),
+sttr_item_model_no                                              VARCHAR(16),
+sttr_item_sales_pkg                                             VARCHAR(16)," .
+// Added new columns for OMRETAIL Software @Author-PRIYANKA-28JUNE2020      
+"sttr_period                                                    VARCHAR(16),
+sttr_period_type                                                VARCHAR(16),
+sttr_price                                                      VARCHAR(16),
+sttr_price_without_tax                                          VARCHAR(16),
+sttr_cust_price                                                 VARCHAR(16),
+sttr_unit_price                                                 VARCHAR(16),
+sttr_unit_cust_price                                            VARCHAR(16),
+sttr_taxincl_checked                                            VARCHAR(10),
+sttr_total_cust_price                                           VARCHAR(16)," .
+// Added new columns for discount separately apply on making charges, metal & stone @PRIYANKA-12APR18     
+"sttr_metal_amt                                                 VARCHAR(10),
+sttr_total_making_amt                                           VARCHAR(10),
+sttr_total_lab_amt                                              VARCHAR(10),
+sttr_total_other_amt                                            VARCHAR(10),
+sttr_stone_amt                                                  VARCHAR(10),".
+// Added new columns for PURCHASE GOLD, SILVER AND STOCK & INVENTORY AMOUNTS @PRIYANKA-22JULY2020 
+"sttr_gd_pur_amt                                                VARCHAR(10),    
+sttr_sl_pur_amt                                                 VARCHAR(10),
+sttr_stock_pur_amt                                              VARCHAR(10),
+sttr_mkg_discount_per                                           VARCHAR(10),
+sttr_mkg_discount_type                                          VARCHAR(10),
+sttr_mkg_discount_amt                                           VARCHAR(10),
+sttr_other_discount_per                                         VARCHAR(10),
+sttr_other_discount_type                                        VARCHAR(10),
+sttr_other_discount_amt                                         VARCHAR(10),
+sttr_lab_discount_per                                           VARCHAR(10),
+sttr_lab_discount_type                                          VARCHAR(10),
+sttr_lab_discount_amt                                           VARCHAR(10),
+sttr_metal_discount_per                                         VARCHAR(10),
+sttr_metal_discount_type                                        VARCHAR(10),
+sttr_metal_discount_amt                                         VARCHAR(10),
+sttr_stone_discount_per                                         VARCHAR(10),
+sttr_stone_discount_type                                        VARCHAR(10),
+sttr_stone_discount_amt                                         VARCHAR(10),".
+// Columns Added For Set Product Discount @PRIYANKA-09NOV2020 
+"sttr_disc_start_date                                           VARCHAR(32),
+sttr_disc_end_date                                              VARCHAR(32),
+sttr_disc_product_amount                                        VARCHAR(10),                                        
+sttr_disc_making_discount                                       VARCHAR(10),
+sttr_disc_stone_discount                                        VARCHAR(10),
+sttr_disc_product_discount                                      VARCHAR(10),
+sttr_disc_active                                                VARCHAR(10)," .
+// Product purchase price in case of sell
+"sttr_purchase_price                                            VARCHAR(30)," .
+// Packet Weight Field
+// START CODE TO ADD COLUMNS FOR PKT WEIGHT DESCRIPTION @AUTHOR:MADHUREE-07SEP2021
+"sttr_pkt_desc1                                                 VARCHAR(30),
+sttr_pkt_desc2 							VARCHAR(30),
+sttr_pkt_desc3 							VARCHAR(30),
+sttr_pkt_desc4 							VARCHAR(30),
+sttr_pkt_desc5 							VARCHAR(30),".
+// END CODE TO ADD COLUMNS FOR PKT WEIGHT DESCRIPTION @AUTHOR:MADHUREE-07SEP2021
+"sttr_pkt_qty1 							INT,
+sttr_pkt_qty2 							INT,
+sttr_pkt_qty3 							INT,
+sttr_pkt_qty4 							INT,
+sttr_pkt_qty5 							INT,
+sttr_pkt_weight1 						VARCHAR(15),
+sttr_pkt_weight2 						VARCHAR(15),
+sttr_pkt_weight3 						VARCHAR(15),
+sttr_pkt_weight4 						VARCHAR(15),
+sttr_pkt_weight5 						VARCHAR(15),
+sttr_lab_chrg_type1 						VARCHAR(10),
+sttr_lab_chrg_type2 						VARCHAR(10),
+sttr_lab_chrg_type3 						VARCHAR(10),
+sttr_lab_chrg_type4 						VARCHAR(10),
+sttr_lab_chrg_type5 						VARCHAR(10),
+sttr_lab_chrg_qty1 						INT,
+sttr_lab_chrg_qty2 						INT,
+sttr_lab_chrg_qty3 						INT,
+sttr_lab_chrg_qty4 						INT,
+sttr_lab_chrg_qty5 						INT,
+sttr_lab_chrg_val1 						VARCHAR(15),
+sttr_lab_chrg_val2 						VARCHAR(15),
+sttr_lab_chrg_val3 						VARCHAR(15),
+sttr_lab_chrg_val4 						VARCHAR(15),
+sttr_lab_chrg_val5 						VARCHAR(15),
+sttr_lab_chrg_tot1                                              VARCHAR(15),
+sttr_lab_chrg_tot2 						VARCHAR(15),
+sttr_lab_chrg_tot3 						VARCHAR(15),
+sttr_lab_chrg_tot4 						VARCHAR(15),
+sttr_lab_chrg_tot5 						VARCHAR(15),
+sttr_wt_auto_less 						VARCHAR(50),
+sttr_melting_status 						VARCHAR(3),
+sttr_melting_date 						VARCHAR(32),
+sttr_fixed_price_status 					VARCHAR(5),".
+// 
+// FOR ASSIGN ORDER @AUTHOR:PRIYANKA-14AUG2021        
+"sttr_direct_assign_status                                      VARCHAR(30),
+sttr_assign_status                                              VARCHAR(30),
+sttr_assign_user_id                                             VARCHAR(16),
+sttr_assign_pre_invoice_no                                      VARCHAR(20),
+sttr_assign_invoice_no                                          VARCHAR(10),
+sttr_assign_date 						VARCHAR(32)," .
+// 
+// FOR RETURN ORDER @AUTHOR:PRIYANKA-14AUG2021       
+"sttr_return_status                                             VARCHAR(30),
+sttr_return_user_id                                             VARCHAR(16),
+sttr_return_pre_invoice_no                                      VARCHAR(20),
+sttr_return_invoice_no                                          VARCHAR(10),
+sttr_return_date 						VARCHAR(32),". 
+//
+// Column added for online options:HEMA-19NOV2019        
+"sttr_online_option                                             VARCHAR(100),
+sttr_online_qty                                                 INT,
+sttr_omecom_status                                              VARCHAR(10),
+sttr_online_desc                                                VARCHAR(300)," .
+//
+//added column for store history of transfered firm for stock transfer@AUTHOR:MADHUREE-25OCT2019
+"sttr_stock_trans_history                                       VARCHAR(300),
+sttr_stock_trans_type                                           VARCHAR(25),
+sttr_stock_trans_prev_id                                        VARCHAR(300),".
+//COLUMN ADDED FOR ECOM ORDER DELIVERY STATUS,ECOM ORDER FROM STATUS @AUTHOR:MADHUREE-06JAN2020
+"sttr_delivery_status                                           VARCHAR(100),
+sttr_order_from                                                 VARCHAR(50),".
+//COLUMN ADDED FOR PACKING LIST REFERENCE NUMBER FOR IDENTIFYING LAST ADDED ELEMENT @AUTHOR:MADHUREE-06JAN2020
+"sttr_packing_list_ref                                          VARCHAR(15),                                
+sttr_trans_date                                                 VARCHAR(150)," .
+//COLUMN ADDED FOR VALUATION OF PRODUST WITH GST AMOUNT BY TODAY RATE FOR ECOM,@AUTHOR:HEMA-10JUN2020
+"sttr_today_valuation                                           VARCHAR(30),".
+//COLUMN ADDED TO ADD PRODUCT VIEW COUNTER,@AUTHOR:HEMA-10JUN2020     
+"sttr_view_counter                                              INT,".
+//COLUMN ADDED TO ADD DIFFERECE IN WT BY SIZE,@AUTHOR:HEMA-6AUG2020
+"sttr_Wt_diff_by_size                                           VARCHAR(15),".
+//
+// For Hall Marking Stock Return User Id and Status @AUTHOR:PRIYANKA-06SEP2021
+"sttr_hallmark_user_id                                          VARCHAR(16),
+sttr_hallmark_status                                            VARCHAR(32),".
+//        
+//JEWELLERY INSURANCE POLICY NUMBER - @AUTHOR:SHRI28AUG20
+"sttr_insurance_policy_no                                       VARCHAR(200),".
+//JEWELLERY INSURANCE CERTIFICATE PDF URL - @AUTHOR:SHRI28AUG20
+"sttr_insurance_pdf_url                                         VARCHAR(200),".
+//JEWELLERY INSURANCE API - @AUTHOR:SHRI01SEP20
+"sttr_insurance_api                                             VARCHAR(20),".
+//COLUMN ADDED TO ADD CERTIFICATE NUMBER : AUTHOR @DARSHANA 22 JUNE 2021
+"sttr_certificate_no                                            VARCHAR(20),".
+"sttr_omprocess_date                                            VARCHAR(12),".
+"sttr_pay_cash_amt                                              VARCHAR(12)," .
+"sttr_pay_online_amt                                            VARCHAR(12)," .
+"sttr_pay_cheque_amt                                              VARCHAR(12)," .
+"sttr_pay_card_amt                                              VARCHAR(12)," .
+"sttr_product_details                                            VARCHAR(50),".
+"sttr_previous_invoices                                         VARCHAR(128)," .
+"sttr_other_charges_desc                                        VARCHAR(256)," .
+"sttr_other_charges_amt                                         VARCHAR(256)," .
+"sttr_dia_wt                                                    VARCHAR(16)," .
+"sttr_tunch_code                                                VARCHAR(16)," .
+"last_column                                                     VARCHAR(1))";
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

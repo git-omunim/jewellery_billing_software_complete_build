@@ -1,3 +1,201 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Send bulk sms to unvisit customer
+ * **************************************************************************************
+ *
+ * Created on Feb 06, 2021 10:32:36 AM
+ *
+ * @FileName: omunvisitcust.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2012 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'ommpemac.php';
+include 'system/omsachsc.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+
+$months = $_REQUEST['monthBtn'];
+
+$UnvisitCustSmsTemplateQuery = "SELECT omly_value FROM omlayout WHERE omly_option = 'unvisitCustSmsTemplate'";
+$resUnvisitCustSmsTemplateQuery = mysqli_query($conn, $UnvisitCustSmsTemplateQuery)or die("Error: " . mysqli_error($conn) . " with query " . $UnvisitCustSmsTemplateQuery);
+$rowUnvisitCustSmsTemplate = mysqli_fetch_array($resUnvisitCustSmsTemplateQuery);
+$setUnvisitCustSmsTemplate = $rowUnvisitCustSmsTemplate['omly_value'];
+
+$unvisitCustSmsQuery = "SELECT smtp_text FROM sms_templates WHERE smtp_sub = '$setUnvisitCustSmsTemplate'";
+$resUnvisitCustSmsQuery = mysqli_query($conn, $unvisitCustSmsQuery)or die("Error: " . mysqli_error($conn) . " with query " . $unvisitCustSmsQuery);
+$rowUnvisitCustSms = mysqli_fetch_array($resUnvisitCustSmsQuery);
+$setUnvisitCustSms = $rowUnvisitCustSms['smtp_text'];
+
+if($months == '3month') {
+    $selectCustomer = "SELECT user.user_id, user.user_fname, user.user_lname, user.user_mobile, user.user_city, user_transaction_invoice.utin_date, user.user_mobile, user.user_firm_id FROM user_transaction_invoice JOIN user ON user_transaction_invoice.utin_user_id = user.user_id where UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 3 MONTH)";
+    $res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+        
+    while ($row = mysqli_fetch_array($res)) {
+        $userId = $row['user_id'];
+        $user_fname = $row['user_fname'];
+        $user_lname = $row['user_lname'];
+        $mobileNo = $row['user_mobile'];
+        $userCity = $row['user_city'];
+		$user_firm_id = $row['user_firm_id'];
+        $custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+        $smsTextTemp = $setUnvisitCustSms;
+        $smsSub = $setUnvisitCustSmsTemplate;	// Added variable for sms template sub @Author: Vishal 12APR21
+        $sms_type = 'TSMS';
+
+        if ($custFName == '' || $custFName == NULL)
+            $custFName = 'Customer';
+
+        $userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+		$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+		$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+		$row_firm = mysqli_fetch_array($res_firm);
+		$firm_long_name = $row_firm['firm_long_name'];
+	
+        $smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+		$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+        //
+        include 'omcsmsads.php';
+        flush();
+        if ($omSMSResult == 'SUCCESS') {
+//            echo 'S'; // Msg Count
+        } else {
+//            echo 'F';
+        }
+        //end code for send sms
+    }
+} elseif($months == '6month') {
+    $selectCustomer = "SELECT user.user_id, user.user_fname, user.user_lname, user.user_mobile, user.user_city, user_transaction_invoice.utin_date, user.user_mobile, user.user_firm_id FROM user_transaction_invoice JOIN user ON user_transaction_invoice.utin_user_id = user.user_id where UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 6 MONTH)";
+    $res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+        
+    while ($row = mysqli_fetch_array($res)) {
+        $userId = $row['user_id'];
+        $user_fname = $row['user_fname'];
+        $user_lname = $row['user_lname'];
+        $mobileNo = $row['user_mobile'];
+        $userCity = $row['user_city'];
+		$user_firm_id = $row['user_firm_id'];
+        $custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+        $smsTextTemp = $setUnvisitCustSms;
+        $smsSub = $setUnvisitCustSmsTemplate;	// Added variable for sms template sub @Author: Vishal 12APR21
+        $sms_type = 'TSMS';
+
+        if ($custFName == '' || $custFName == NULL)
+            $custFName = 'Customer';
+
+        $userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+		$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+		$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+		$row_firm = mysqli_fetch_array($res_firm);
+		$firm_long_name = $row_firm['firm_long_name'];
+	
+        $smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+		$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+        //
+        include 'omcsmsads.php';
+        flush();
+        if ($omSMSResult == 'SUCCESS') {
+//            echo 'S'; // Msg Count
+        } else {
+//            echo 'F';
+        }
+        //end code for send sms
+    }
+} elseif($months == '9month') {
+    $selectCustomer = "SELECT user.user_id, user.user_fname, user.user_lname, user.user_mobile, user.user_city, user_transaction_invoice.utin_date, user.user_mobile, user.user_firm_id FROM user_transaction_invoice JOIN user ON user_transaction_invoice.utin_user_id = user.user_id where UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 9 MONTH)";
+    $res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+        
+    while ($row = mysqli_fetch_array($res)) {
+        $userId = $row['user_id'];
+        $user_fname = $row['user_fname'];
+        $user_lname = $row['user_lname'];
+        $mobileNo = $row['user_mobile'];
+        $userCity = $row['user_city'];
+		$user_firm_id = $row['user_firm_id'];
+        $custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+        $smsTextTemp = $setUnvisitCustSms;
+        $smsSub = $setUnvisitCustSmsTemplate;	// Added variable for sms template sub @Author: Vishal 12APR21
+        $sms_type = 'TSMS';
+
+        if ($custFName == '' || $custFName == NULL)
+            $custFName = 'Customer';
+
+        $userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+		$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+		$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+		$row_firm = mysqli_fetch_array($res_firm);
+		$firm_long_name = $row_firm['firm_long_name'];
+	
+        $smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+		$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+        //
+        include 'omcsmsads.php';
+        flush();
+        if ($omSMSResult == 'SUCCESS') {
+//            echo 'S'; // Msg Count
+        } else {
+//            echo 'F';
+        }
+        //end code for send sms
+    }
+} elseif($months == '12month') {
+    $selectCustomer = "SELECT user.user_id, user.user_fname, user.user_lname, user.user_mobile, user.user_city, user_transaction_invoice.utin_date, user.user_mobile, user.user_firm_id FROM user_transaction_invoice JOIN user ON user_transaction_invoice.utin_user_id = user.user_id where UNIX_TIMESTAMP(STR_TO_DATE(utin_date,'%d %b %Y')) < UNIX_TIMESTAMP(DATE(NOW()) - INTERVAL 1 YEAR)";
+    $res = mysqli_query($conn, $selectCustomer) or die(mysqli_error($conn));
+        
+    while ($row = mysqli_fetch_array($res)) {
+        $userId = $row['user_id'];
+        $user_fname = $row['user_fname'];
+        $user_lname = $row['user_lname'];
+        $mobileNo = $row['user_mobile'];
+        $userCity = $row['user_city'];
+		$user_firm_id = $row['user_firm_id'];
+        $custFName = $row['user_fname'] . " " . $row['user_lname'];
+
+        $smsTextTemp = $setUnvisitCustSms;
+        $smsSub = $setUnvisitCustSmsTemplate;	// Added variable for sms template sub @Author: Vishal 12APR21
+        $sms_type = 'TSMS';
+
+        if ($custFName == '' || $custFName == NULL)
+            $custFName = 'Customer';
+
+        $userType = "customers"; //customer to customerS Changed @Author:PRIYA19AUG13
+
+		$firm = "SELECT firm_long_name FROM firm JOIN user ON firm_id = '$user_firm_id'";
+		$res_firm = mysqli_query($conn, $firm) or die(mysqli_error($conn));
+		$row_firm = mysqli_fetch_array($res_firm);
+		$firm_long_name = $row_firm['firm_long_name'];
+	
+        $smsText = str_replace("CUST_NAME", "$custFName", $smsTextTemp);
+		$smsText = str_replace("FIRM_SHOP_NAME", "$firm_long_name", $smsText);
+        //
+        include 'omcsmsads.php';
+        flush();
+        if ($omSMSResult == 'SUCCESS') {
+//            echo 'S'; // Msg Count
+        } else {
+//            echo 'F';
+        }
+        //end code for send sms
+    }
+}
+?>
+

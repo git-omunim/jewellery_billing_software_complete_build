@@ -1,3 +1,337 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Ledger Book
+ * **************************************************************************************
+ * 
+ * Created on Jun 21, 2013 5:28:57 PM
+ *
+ * @FileName: orbbuubs.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: Expression project.name is undefined on line 12, column 20 in Templates/Scripting/EmptyPHP.php.
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include 'ommprspc.php';
+
+require_once 'system/omssopin.php';
+?>
+<div id="udhaarLedgerDetails">
+    <?php
+    $getYear = $_GET['balanceSheetYear'];
+    $getMonth = $_GET['balanceSheetMonth'];
+
+    if ($getYear == '' && $getMonth == '') {
+        $getYear = $_POST['balanceSheetYear'];
+        $getMonth = $_POST['balanceSheetMonth'];
+    }
+    $selFirmId = $_GET['firmId'];
+    if (!isset($selFirmId)) {
+        $firmIdSelected = $_SESSION['setFirmSession'];
+        $selFirmId = $firmIdSelected;
+    } else {
+        $firmIdSelected = $selFirmId;
+    }
+    if ($selFirmId == '' || $selFirmId == NULL) {
+        $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='1'";
+    } else {
+        $qSelectFirm = "SELECT firm_long_name ,firm_address FROM firm where firm_id='$selFirmId'";
+    }
+    $resultFirm = mysqli_query($conn, $qSelectFirm);
+    $rowFirm = mysqli_fetch_array($resultFirm);
+    ?>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="center" colspan="5">
+                <hr color="#B8860B" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table border="0" cellspacing="0" cellpadding="1" width="100%" align="center">      
+                    <tr>
+                        <td valign="middle" align="center" width="200px">
+                            <div id="ajaxLoadShowGirviListDiv" style="visibility: hidden" class="blackMess11">
+                                <?php include 'omzaajld.php'; ?>
+                            </div>
+                        </td>
+                        <td valign="middle" align="right" class="frm-lbl" width="200px">
+                            Select Financial Year:
+                        </td>
+                        <td align="left" valign="middle">
+                            <form name="get_balance_sheet_form" id="get_balance_sheet_form" 
+                                  action="javascript:getGirviLedger('UdhaarLedger');" method="post">        
+                                <!-- *************** Start Code for Year *************** -->
+                                <?php
+                                if ($getMonth != '' || $getMonth != NULL) {
+                                    $todayMMSel = date("n", strtotime($getMonth)) - 1;
+                                } else {
+                                    $todayMMSel = date(n) - 1;
+                                }
+                                if ($getYear != '' || $getYear != NULL) {
+                                    $todayYear = $getYear;
+                                } else {
+                                    $todayYear = date(Y);
+                                }
+                                $todayMainYear = date(Y);
+                                $todayMainMM = date(n);
+                                $todayMM = $todayMMSel + 1;
+                                if ($todayMainMM <= 3) {
+                                    if ($todayMM <= 3) {
+                                        $finStartYear = $todayYear - 1;
+                                        $finEndYear = $todayYear;
+                                    } else {
+                                        $finStartYear = $todayYear;
+                                        $finEndYear = $todayYear - 1;
+                                    }
+                                } else {
+                                    if ($todayMM <= 3) {
+                                        $finStartYear = $todayYear - 1;
+                                        $finEndYear = $todayYear;
+                                    } else {
+                                        $finStartYear = $todayYear;
+                                        $finEndYear = $todayYear + 1;
+                                    }
+                                }
+                                $optYear[$todayYear] = "selected";
+                                ?> 
+                                <select id="balanceSheetYear" name="balanceSheetYear" class="lgn-txtfield">
+                                    <option value="NotSelected">YEAR</option>
+                                    <?php
+                                    if ($todayMainMM <= 3) {
+                                        for ($yy = $todayMainYear; $yy >= 1980; $yy--) {
+                                            $ly = $yy - 1; //TO get previous year
+
+                                            echo "<option value=\"$yy\" $optYear[$yy]>$ly - $yy</option>";
+                                        }
+                                    } else {
+                                        for ($yy = $todayMainYear; $yy >= 1980; $yy--) {
+                                            $ny = $yy + 1; //TO get previous year
+                                            echo "<option value=\"$yy\" $optYear[$yy]>$yy - $ny</option>";
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                                <!-- *************** Start Code for Month *************** -->
+                                <?php
+                                // $todayMMSel = date(n) - 1;
+                                $arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+                                $optMonth[$todayMMSel] = "selected";
+                                ?> 
+                                <input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+                                <select id="balanceSheetMonth" name="balanceSheetMonth" class="lgn-txtfield"
+                                        onkeydown="javascript:  //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                                                        var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                                                gbMonth = document.getElementById('gbMonthId').value;
+                                                if (gbMonth == 1) {
+                                                    if (event.keyCode) {
+                                                        var sel = String.fromCharCode(event.keyCode);
+                                                        if (sel == 0)
+                                                        {
+                                                            this.value = arrMonths[9];
+                                                        } else if (sel == 1)
+                                                        {
+                                                            this.value = arrMonths[10];
+                                                        } else if (sel == 2)
+                                                        {
+                                                            this.value = arrMonths[11];
+                                                        }
+                                                        // this.value = arrMonths[10];
+                                                        document.getElementById('gbMonthId').value = 0;
+                                                    }
+                                                } else if (event.keyCode) {
+                                                    var sel = String.fromCharCode(event.keyCode) - 1;
+                                                    this.value = arrMonths[sel];
+                                                    if (event.keyCode == 49) {
+                                                        document.getElementById('gbMonthId').value = 1;
+                                                    }
+                                                } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13">
+                                    <option value="NotSelected">MONTH</option>
+                                    <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+                                    $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+                                    $engmonformat = mysqli_query($conn, $queryengmonformat);
+                                    $rowengmonformat = mysqli_fetch_array($engmonformat);
+                                    $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+
+                                    for ($mm = 3; $mm <= 11; $mm++) {
+
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+                                        if ($englishMonthFormat == 'displayinnumber') {
+                                            $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                        } else {
+                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                        }
+                                    }
+                                    for ($mm = 0; $mm <= 2; $mm++) {
+
+                                        if ($englishMonthFormat == 'displayinnumber') {
+                                            $billMonth = date('m', strtotime($arrMonths[$mm]));
+                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$billMonth</option>";
+                                        } else {
+                                            echo "<option value=\"$arrMonths[$mm]\" $optMonth[$mm]>$arrMonths[$mm]</option>";
+                                        }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+                                    }
+                                    ?>
+                                </select> 
+                                <input type="submit" value="GO"
+                                       class="frm-btn" 
+                                       maxlength="30" size="15" />
+                            </form>
+                        </td>
+                        <td align="center" width="150px">
+                            <table border="0" cellspacing="0" cellpadding="0" align="right">
+                                <tr>
+                                    <td align="right">
+                                        <div id="selectFirmDiv" class="spaceRight20" >
+                                            <?php
+                                            $firmPanelName = 'UdhaarLedger';
+                                            include 'ombbglfr.php';
+                                            ?>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="5">
+                <hr color="#A4A4A4" size="0.1px" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div id="balanceSheetDiv">
+                    <div id="balanceSheetHeaderDiv">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td valign="middle" align="center" colspan="3">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr><td width="50%"><table align="right"><tr>
+                                                        <td valign="middle" align="right">
+                                                            <img src="<?php echo $documentRoot; ?>/images/udhaar24.png" alt="" onLoad="setScrollIdFun('headerOfUdharTable')"/> <!-- to add image and changes to adjust it @AUTHOR: SANDY30JUL13 -->
+                                                        </td>
+                                                        <td valign="middle" align="right">
+                                                            <div class="main_link_brown18">UDHAAR LEDGER</div>
+                                                        </td> 
+                                                    </tr></table></td>
+                                            <td>
+                                                &nbsp;&nbsp;&nbsp;
+                                            </td>
+                                            <td class="spaceLeft200" align="left">
+                                                <table border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                        <td valign="middle" align="center">
+                                                            <div class="main_link_brown">Daily Maintenances - <span class="blackMess14Arial-BalanceSheet">01/04/</span></div>  
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                            <span class="blackMess14Arial-BalanceSheet"><div id="finStartYearDiv"><?php echo $finStartYear; ?></div></span> 
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                            <div class="main_link_brown">&nbsp;To&nbsp;<span class="blackMess14Arial-BalanceSheet">31/03/</span></div>
+                                                        </td>
+                                                        <td valign="middle" align="center">
+                                                            <span class="blackMess14Arial-BalanceSheet"><div id="finEndYearDiv"><?php echo $finEndYear; ?></div></span> 
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td valign="middle" align="left">
+                                    <table border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td valign="middle" align="right" width="520px">
+                                                <div class="main_link_blue"><?php
+                                            if ($rowFirm['firm_long_name'] != '' || $rowFirm['firm_long_name'] != NULL) {
+                                                echo $rowFirm['firm_long_name'] . ' ' . ',';
+                                            }
+                                            ?>
+                                                </div>
+                                            </td>
+                                            <td valign="middle" align="center">
+                                                <div class="main_link_blue"><?php echo $rowFirm['firm_address']; ?></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" align="center">
+                                    <br/>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td align="left">
+                                <div id="balanceSheetUdhaarSubDiv">
+                                    <?php
+                                    include 'orbbuubd.php';
+                                    ?>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table border="0" cellspacing="0" cellpadding="1" width="100%">
+                    <tr>
+                        <td valign="middle" align="center">
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" class="noPrint">
+                            <div id="ajaxLoadPrintBalanceSheetDiv" style="visibility: hidden">
+                                <?php include 'omzaajld.php'; ?>
+                            </div>
+                            <a style="cursor: pointer;"   class="noPrint"
+                               onclick="printBalanceSheetDiv('balanceSheetHeaderDiv', document.getElementById('get_balance_sheet_form'), 'OMREVO')">
+                                <img src="<?php echo $documentRoot; ?>/images/printer32.png" alt='Print' title='Print'
+                                     width="32px" height="32px" />
+                            </a>   <!---Add noprint class @AUTHOR: SANDY10DEC13--->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br/>
+</div>
+

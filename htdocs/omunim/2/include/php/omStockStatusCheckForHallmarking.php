@@ -1,3 +1,278 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAAgGQAAZ9R2PJk+jkDNw5YrMf40DPKxewqBTBcbR5sGkH659owAzrOqoyHB7Mnqg/UHbHRPEt/7Sii6qna7ZjxLDDbpLIg5DvNeSfjX5HODUreh3cd2vtPIidlsf7msMb/Pu6BT4eoJkcNinnRYH58xm4Yxwmsd4xG3TgSyHxQ1g8Iw3egi0GF0m78saYnsxHYw2adOl7a5LggQL4/BXG+z2kE2IZHTl2yQYJTF3oTR6Jb5P9sV/u/ATfKZZEDiIf762kA6ilXFEeLqO6BCVYafRKWmblFvWT5ovytCUslBdCnVPCN5fFx2mN515wGAwyMb6ci7ajaHILxtdHa22Ex+0+n+7P3eelFIl7JFC4N9Y+3uk2vpgjeTfJ+UOeHLHWfL40QnCDp86b3KAyrswL0P2fsh4v4tM/fsTekBqY4Td+ZPkJ7BIP1bmgyPmM6C6wvS16AfxrX1cbUjoAlNnIqS59DULUwDJYJkIihH7fJGCU9BcoSObuipGUng81EfS43WcaIekjI4iE9vz9mwjTi2wcAmUVfGG8N0PUagYVQHbiRzaBAM+yfBiwQCRnGdxkdbIJ9BY2JlYzq3Oq0tPuGvuMDqE9rkMhGdTCBRrkaiMQUX7Dt20+8MlZQDfMsHH1LfzjmQ+lvfQATZut5TEo+5VdASAUG+OL4fduQCS1P2jle4bdk6RpTbL6WoP6SQ3YoqJ89o3X1AlxsnPGY9Pxib4jEvxpZtpcPnTNbzRQk42Q91lEoE8z7zTK8wxEzpx7L7Yq2aPYqHKwcPc4tsiwvNFW6KaqRx9rEQ8U/P1nVsXPJ6Tt6OH7f9S+N2WiUcDCm2SZacgBAHg8jmVHjQn6nobn2GvlcmEOYic4GKBJIJgpTiZvIYt46vP6fXaHRB6xQh2QI6+S3N0hiYR5Q3YuXzpVjTjM6KWfYWsxLqMd+v/iDVPDv8FTE5kPo4puhXBYO6T0YF10bgrZxexohWPMdeOg/VfGO60BI5Or/dpMqburZRzuCeyHyncKwqsTFTYp3bcXDLoGlyLF+I17IN8lS475fMqnj/KQVyUusPiozGiw57ruvAqllkfnRi78BhcBjCZURhXA1oQ/HOIGeeQLurfEJAFoaz1OfD83PeakTqtJcFK+UwiokBkCfmKQJYdpEsYL+MnpjD6LJpXrCrph2pz9nGenok9HCQBbHC/Szgw+7QeL2TWJ7IhaDkRI1w0VXwEYG/uxkTC9sg4SDlD7iR9NZMv9L2k6dDtFl4SX0cy4HMMptmUh5YnlK51yeS8/RoE3LZoUI2BwNgYjLf2/PmFPVWbWunZ/7rCyKHWaYNpmetEvUpA1lBJpdc4rE8XMuoDTLByjAY0Ejp1q+6QIuYf6RCKmVN0p4VjMSKvmq8d/kRXKbsZDnU4Mbcy7zDU5c4Rw4ds4EFjlAaZnNECM4odK6Jb3w3BDM+RuIswODl8WTTFUWQhbqP5a1tSgimsxzz10ule1b+vG+wod/LDYt8Y+z+l13nGd0mwTHmuc+S0TJx8EonhiBmjmpCNU8rZYbO8j1j49l8Uo3KC2TpXh73pnHFPhl2bn6ETqWuiGd36Oh/lXBGCo2Opf/X0OViw9IJ9g2SqI2xNC27GFluwhL6TuLgqTJf0ql/E678kdJMyCH8q6PGuI+uNqzkO8j9/+jymZiu0L1Zmu1Kq3hKZcbMv+sjANEvogFFLSuDETAjILvYMWFjcxuTqBK44+004ywESb2i7hXg0kxBHhA4MIyAIs1vyu3fiuEDnj0C33sGXxFuq9vTpogD1Wba/k4Qp7J1MQnjjU/Ijh6NncShYx4ia3Nbe9b8Vn1+6zV/WzbJn+Nvqk8wibKKfOHu45/W0WBGHyITSBSBzE61jVqv0kfF4kb0lA7rS4XcBV3LEzB3yYm9DGOPUJci4wgGrsNk0TzO7GNnAwezonV3mKdFz1qWK2iToKwqT36C6WOaIHeumM/s1ow3ScgcJyyHfstrfLpv1r+OXABi+EgZbtuIKsiDx3TVFVNOy9l2cxj/AYX18sje58jmec4vgIPoZYcFFSCVaPjm4IJmJVdM4OSSrLjxCPjTBv/AKRrepVL3sTGBo5ezcrTbcs3UgfQt8XPXu5ucjm/blPiS1vS0NdVyLhHqasEilfVsh00Ji7JgckHusxvhlr9ouXNZrknrzrOmYrJWdvWhrH7ku31pVY+YX4GsCqvCvo7tNVy1pANSV+i7GwiEF5gsUoeK9tBg5Eq+F+nbhhqY1Hqm943J49SikkrrzI4saA+6Tru1I5MjJDt739Tjowo9AiShvX2YMvhsYqZyTMIUB3AIJbZutZBrQSuy0zpoFVfeGluq4ysOtam/iyYXkDrUyALSJvjRXAQqcK+hRiym/FF5YBlJZX9W6OsBF8APoYEehzvoZnUFXK3S1Rk4fiK+u/DtaavlyreD0g9pQRqOhErn1ey2n5eZvEFXL+32m0NPPyzelRzSPEZmTvN48NRjeUBF9c/Hv0koK/571Hc31ae4JmM0B19oXCrcy9hXRBvd4z87pvI/TXkQhC+m5t47iqKnFaJSg5TwnhVhcuwadWpcsqvo7/z1UViM5sO5lLTK/t+S84WZJVLJaP8PHd4HU7lA2KJ7tQzBCeOqr2k/shMl2D8CmDl+NSjs5cpozBMfA86lGkfysg/WGLpgUfMXo3eoNI04GxcqmjZ8ZCTThJf3xiKtIWGG28V5Mx/bJSJfThQD4t/78okpRwSdk4FjFSmvZPQdxX7QLYCJtG95Bex0Ka+eQl3/vflsq4004gjwEIjkAI9XmuKTO5k27QS6Cn5pCTe6Vum2e0E365XHd0GIMb4EhOZxRr+Q7OM0nULD+0XN4JSeHiSJfN9ZcsxrlLlyqk8IDAEbYnA95LtrkVSqK3vZjrSqQWykTJNTfz242pY2J30MNE9AaYXcISm5zKbOkQHlZ0ZaCHaOq4ybaF0C2IevEKlMOoUN1SeH9TQ+FmtoZWx9/tCmG2DuW0RGj9oyag1Tzfy/ZmunWSwNzklJm+O3SRQ+xBel0P5QQYDLfDrbPKEiTLkImYk8M8F53y5GHwjBWD7WOJFLBbgtaYP5/t75xOmw/KRFO259aXAo8KGGq2yXbmAkpYCvlTkJKd4mj2hZ/J/ZGHy3QX8kdOjELZtwfbh55Wfav2YkmvF+hwPk/Af2zG/pc4IMdvlEQHbZWqbeOHu/Cyko01q7NHF58UpZb8wK+lL8B+4oP9aSjHf57hZ0dIqd5xKsBG/rHAkjHfVTBo+QFy6pLDOB0ufJ72Y0veGmJ00w5RN829LboDFdPrqAWmS8mavHcYq3df000cIrJ+lbXCOPzQrF2vJQEarLQFuQfK6wDJZQJDHmJcQ3quqYgcIPqI8Qi2ZVaO/DB7BV7fXESC4/Xni3IrZu8xgX4yUd5RJMexaiBIxIl3n2m8gnWw0Vls/m+kBVO4gR+27ZnGznmIaM2Xli0OeS7Y23C27sAzTt2zKTMwCtNmw8+5AMbp5lUT8qMscEaWKlCtdPXEkhrdFOTX02HVClgRbk8E6q0FS1FSgb0fAQiZIMNzrVIZeieTjNhFiggJzDF1sR2zSD3Y0nHtqImdmTP5ClsGz7xH2U873nhg6L4XHbSuR7knECtevklA4gEBcImrxPB77NLavLPDXk9u5vREPA3blCrcxTnyZf0HOAv39rwuKjXNln6rnyn6Fj+O0EELhUkBbwc6xYvSpwUU3P0ZPRMAXNL79hV/OP/jHZoD2DJHcCPXlhN8L0cb0A8atej/8H6VrdXgTDfPr4tegc5N+EJtNE85fJ80AkM8+Q3zXJtXH/MLfANNYSL6U3AAU3G69rBinevqqfDxS0v63ixq1KbnFPd71jG1o9Qh/Q2FwMly8XaR91+KscEr91ngmMr5z3chBKPKjUtV8J/DjHSubFZvYzg3zXf0L/Qx2bTcamIh7MYqQHpXHlhSHYLWRzBGKn6TtoQH2Ooivxi8i3phUyeAHtr2gVsPXSCmMonzYc9nsPq8CpQgZ0PUm3hvVNmRMJ2pyJV/joVg5mmwM/5C8M1XB2dEPaekUthVv4AwliY6sk/hkAfsgz+ANrcz8g4l0iK9+c8lm7lEe1peX1J31gyzAOQ4ilW4+YASfUTFA5b63xiczeMJqWfV8kwVjvbpzEygT8UZJzzttQHIA2TlolOiPTkUAmZPpnctExL2t7qE/akMiJepVzqIPZnusgCRfkSooc+UqXhKtSJWrhRkTOc+EZlFMGB79tOVs+3WK43W59XJbEzAjw3yrKAZKEFhTPEosZrvVGHPFDeRMTZbMlxC4bH4i9GquaUv1WsVYetMz1qpep50O0DpUeswwj+BXQgJY8o8UB5UaRfAq/Y27EqJZTbe0VPe1J75cWuHeDytBn43Kb5rMQ3w8YxJ7uOF7E91BR7jK5axkhZmJ5hRjjt4qSJvwDj6iV+HGjAtledBNT3hI8W0eUlo7J5D4DgogRXdEJM9uD/EYTdW/BsvHBlVor5CbBXGXQgjXhs+n+cpE3NSoi7PfFuXndVcPGQcrp3XEAKRuvt6QHBXPeLSOyEY79cLAGtLUTT7UX51afBDyuhPyS4B087ksKY/ZpkhplN6qTuFyTwmX/IuXwG/jZskLjDhTz4umRqXbgy9sxrIaDFt7nijTuhR0dwn8QMdkV1imPWZr0GIHuwpugHexko3mFaRnhtROhgHMAQCnTCHOTv3FJB57YIMjXvitCnl2TgHqylV4KFWxLKlw3LICNmbncp/2TgqFmuiWEg3lOdvqzAs3sNxdD/lkkfCApof+XhviIuM7Ma7ZFzr4QcyLg4KQl0kuv+XISOZ4+Rvx8NQOk4+MLGcEpCoGLnKMdijTIprh9501BdLpNKOst+GtKK1uTfFzADX3ANuEzxfVJL/EZFSHnxsgdY5aPsWON13/sjysN2ZB1agfjJTKTp3P6/+GzT9ULU1jNNJSj7GJ0/PDMHPj5EfN5V+zXYMICnPRoOUYLrjpl/obdAWbmLm7F1hGoXOQnDA3aIa4FJDy6tsl/rknH6VixlG37AVwe+6lLhGXDxB/0iOka/dTZRGzoGXNK4Ly2KmZgiTTfAhmDiSfYDX2B5zbNFQw0V6QpX3xi1Z050f8dTDF151tMUIfkcHqZInTd9c9yC09jx0MRTQgCQkfGz7DXVCOIzjP3GSs94VRLFMeBo7VZVoX0JC6UhW21wMEjb9zh+7IGQxozLtVN3BDCUeB9hAqApFtfuKCDNZiQ9gsI+PZRcGvcbFumJQxKZacz/wWzeWgvyDU3juncedlvaurKZGMcYDdzu+gK5id89PgBtfAWOUMnm0obbAaQ59aCn9BuyPN3ruuWSA51fB2bspcNF3f1L84cqFFirKjMw1yY5ErfZRd1y3jJ//IlHejo3ykRbE499u7H9j+KxA+EW6MD78/hxAg5ejj+k41bdJfkl7E3IgU/Br8BVuy+a0zAe/SCZ7/ecdP99sOmGt0TXkcp1d+Vphz9DGTir5T/u31249s1WYIjH9GnL2ntnc8z+dTYJu6UsQAAAijiGuh/HqMLX++qjEgrzYDuCR+9fzS+FRZN2NaTpry6OLHdHogy6EL7qTFbABi6ijks0f+A+Y6ZZxW2YqtD+TQP14+qswB6ByE5GTl/IWtl7qmRsXHTxVWc7B6Y8fpP6Qg+VFvf+WEaX+3OyTN09y8L/duVMYYglXEAz9qoHvN1Tv/m+pt6K50y0LE/jHCtaAKboQvtXE/1qyDofIGwAoSM3N8ck5+yGxFMXlAxbo11dWuavCD3BtCjNZOAO/ueoO3FDW/H6JPbncl7QoamGwp+Xou1KjLgnQJqColCgqWfCfcQ8e6saepPS7aKOm06VcDaiCDrifl7JH0MiV9sfd5OKNuKr1d2I+EuXGdG/9CQ+SkgcYvQWpkMAroUoGevMh2R3b/6ktmiZnckwNnTS9FdqqmLO6YLuzMUFyoGfrvZdfy0/AfGBgzOwKiagHJN1DWnl77w6oveISWf0+3Ehm41+R6dsT6FJoMfnfi9RBeXQ3jXO89tbLGsNpVfQg/E/go8nxthayM7sW+6+SF2MY2WL8nja0+fb/lRVGoQgdmw2WftYDVFhYfwVtEoTJOZCuC+RYcUY+ptfg67KjA0XTqdZ32HWpDvxngpwudkO8PUnWcs4C8ema2nh+t0bUaSQk7VtOoGvElBB3iG77m0XdroVVqu9D1QqVlugM12gpXEAiB3EB8uwNgX48ddNrziQERrM7IZVJfdNVESl+vJ0vqbi7Vf+E5EPILj5hrA/KqylY/MPEYAIbPeuJdZrr1vGUfnClbPAzF9yB6PZFiOyxDmTXIk5ReDqqusxsY+F0D1f924j7CJO/JfBFg9gASZA87FetMITQ4KFG5EhnvCE5vcNlWfqUzk8t1feFOaB1DtPqe2SFy8lIrVYOjSbf9Ionzh6d+ptrkMh9Jzb4xX3aOGw74nLLij3oKKzyILeWoAMPvw0cfql8on7JcK54kwhWH0RUaxX6rqMEAjKsJiNCz8nY7iRFOFytPcwcwtGSjR4GQWSo2hN47A/+/zPbkhFYJkEjKhCNMxH/+dASyHJhkYUdt4oWa309/SaGFySb74sS4dkDye57YV90HVmJUvE64ZiuI24GZR1tkRh2y55NvoiFzi70KPootOGqMjUr5H436K4aqeWPb9SIB6/+J6Z0T1sMutZFfiX0oC6/LRQyqGozsuswoWlduwY8fnpCE+DxjMMI6Xz7mNZ1y+/EebzvP1cnuK+m6Sx9X7CNVLb0IylGhXq9jMX+aEZq8fNn/bwliGoazgdHNUD24h4M/8zhD8MdCwqiKgxOVX3bDZli5fp+vq1gBqyptdj11AGsbhlYf/sIr80MrcVMCsX8EU/vlA4TpNFNlAar96QRHBFESrZZEyK+arOQvCXXcWscQ9O00xMs0obYtPPHGyKFr1DXh5t1JIBECCL9Mt1PVrzu6ko6A+cdSvotGkUXcyweEvpMfgpCONh+nAngot7TX8+45hIWR/BtCrClzWMjC0T6e6ODKS+upMdxLsXqeO4fxmxEmLtBWOMThfR9Ttj5XX6aX4a7/eV0DEDrGKl6yaJPSUYBU+d7rGO4Ni4+1p+9F67Q03C1PamyFqzTBNwMHjkrtLS8YZiiyTJkRoXXeeJeqrryuHc2v4PuyJDPZYQg57e2nxKJG5eTx9zd8V8kOkrERnnMzJbcDqG2JNtj6vkB/DQpQZ6JpDUK5QzRb2NWA7ycW5bdKzlo4yP1HLKSE/RZ3mNNU4HrR7tEQlpsk7c/FJGn0kOs+Fs5hsnySClbOonTZMjZ2If2YsOaBmkdQAiBF2jcFtcFep4YBpkff13Z1zTh9p+EV1404eI7JLyePeDlwh1Ly+0SFCrRySgr8FRAjXfDoVbRdF9zBj/SO78f6+Gx7WxdNOE7v7GzAeqQXG5X9SJ572c4ck9Ajgnq8BLSGj7ydYVh94duXFEfib1LiVghPT068wqbLqqyOfuJsu9r3QfLx5Lfl8pI5H1TF/YnG4gPu6JAbBOlIx1yPqcLczzXJtrX+D1v5Q+heorlB/JZpjPMRnlujye/5qv3JnPAPAV7TPOxCEpGN6V/Ww2eLGfFwsG981TLA++nQsPTtomDBTRxo1znZW6TPhKRLZfI13RqN7+sUJFmKfZpwu0QpKIW/7wUQ+ZSgHRt23muLd4MzGWh75WUf9VUSFfXdRR50COcD2cX/JsmhPzgeSnqB80htS8dARVs/M5BYeiQPtMNJ1tuuOPAjfwgXtsZbym43Fvyahk9CAWDi+hcFsNsvUGybwXl7NDFN9tZ25eofgBmBXA4DWCRexaZx9h/Odar4SHkQZ7zOl/7QzYRSMpHfdKNLU6rnUUbAz4sGtwPeyT6ii2jObG8oqi4M2QzT+WoHAuuUha/EuzSBwUna+j8n6/9wOporTgyp24VliIxq5E8PB8X+6HeTv102gvWneeYhd/H9ZLRSJAbV+13adiQIZk4UKEBGqabrjjKY7DtBNAOGCmU7XO1G3spv6etBFmii84SqzPmEz3Qq+/Zb1mAvAfFUqNowTu2vzYYOthLrwAl9sjNHmTsbw6pELX7W4h7K8ETzwjVoT4IEtuX+ig24+GA35rRDCIJyEs9Ln4piLQouYXHgAppy6IbNf2lJTrdZTgt7d+hDV28yyFd1peDYpsvYw0VF7sBID9eCe7y7HvlFtsbWDlccn6hPdt/zWbJyvflMwZAeW3zb1EvFp7dQK9kj2oQpC74BIWZDpkXXdtclLquu53Qbcbj09hGHis+GiU5cF+inNDO83Fot3U++jnhH5T5XI4QhwoaTCbUO3x6xCZHWk4Gk+gifWEukWK6iVZ6cv1yFClHXO/s/WfSx8oHnyYdI9bDxd5Wd0WuLqW6NZE48fAFKeuf0fpi/VrSmaW3oWP92un2k5gM2Fem+oP/HJmtqecflK/xJW0GNcE5vHYbLR40kaQeOgSjwpiJf6SbT5bArN4ygwth1yDEgf0waP1ltpDcyRghGvp2jguTr6TSLYvNmQQcSzk/MByBNs1FRpususqYudtW7AUQmJHyN9x7VsV+c7AAAAAA==');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: STOCK STATUS CHECK FILE FOR HALLMARKING @AUTHOR:PRIYANKA-10NOV2021
+ * **************************************************************************************
+ * 
+ * Created on 10 NOV, 2021 03:55:00 PM
+ *
+ * @FileName: omStockStatusCheckForHallmarking.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.94
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @AUTHOR:PRIYANKA-10NOV2021
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . 'system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . 'system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . 'system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . 'ommpfndv.php';
+//
+// STAFF ACCESS FILE
+$staffId = $_SESSION['sessionStaffId'];
+//
+?>
+<?php
+//
+$newProductPreId = $_REQUEST['searchProductPreId'];
+$newProductPostId = $_REQUEST['searchProductPostId'];
+$prodCode = $_REQUEST['ItemCode']; //FOR EXCEL STOCK GET AND OPEN MODAL POPUP @YUVRAJ 17012023
+//
+//echo '$newProductPreId == '.$newProductPreId.'<br />';
+//echo '$newProductPostId == '.$newProductPostId.'<br />';
+//
+if ($panelName == '' || $panelName == NULL)
+    $panelName = $_REQUEST['panelName'];
+//
+if ($userId == '' || $userId == NULL)
+    $userId = $_REQUEST['userId'];
+//
+$prodScanWithRFID = NULL;
+//
+$alphaFirstLetter = substr($newProductPreId, 0, 1);
+$alphaId = substr($newProductPreId, 1);
+//
+if ($newProductPreId == '' && $newProductPostId != '') {
+    $productBarCode = substr($newProductPostId, 1);
+}
+//
+//FOR EXCEL STOCK GET AND OPEN MODAL POPUP @YUVRAJ 17012023
+if ($prodCode != '') {
+    $newProductCode = $prodCode;
+} else {
+    $newProductCode = $newProductPreId . $newProductPostId;
+}
+//
+//echo '$productBarCode == '.$productBarCode.'<br />';
+//echo '$newProductCode == '.$newProductCode.'<br />';
+//
+if (strstr($newProductPostId, '#')) {
+    //
+    $newProductPreId = $newProductPreId . '#';
+    //
+    $productPostId = strstr($newProductPostId, '#');
+    //
+    $newProductPostId = substr($productPostId, 1);
+    //
+}
+//
+//
+if ($newProductPreId == '' && $newProductPostId != '') {
+    $productBarCodePreId = substr($newProductPostId, 0, 1);
+    $productBarCode = substr($newProductPostId, 1);
+}
+//
+//echo '$newProductPreId == ' . $newProductPreId . '<br />';
+//echo '$newProductPostId == ' . $newProductPostId . '<br />';
+//die;
+//
+?>
+<table border="0" cellspacing="0" cellpadding="1" width="100%" align="center">
+    <tr>
+        <td align="center">
+            <?php
+            if ($newProductCode != '') {
+                //
+                if ($newProductPostId != '') {
+                    //
+                    if ($newProductPreId == '' && $newProductPostId != '') {
+                        //
+                        $querySelStockProduct = "SELECT sttr_id, sttr_sttrin_id, sttr_sell_status, "
+                                . "sttr_status, sttr_panel_name FROM stock_transaction "
+                                . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND sttr_barcode_prefix = '$productBarCodePreId' "
+                                . "AND sttr_barcode = '$productBarCode' "
+                                . "AND sttr_indicator != 'stockCrystal' ";
+                        //
+                    } else {
+                        //
+                        $querySelStockProduct = "SELECT sttr_id, sttr_sttrin_id, sttr_status, "
+                                . "sttr_sell_status, sttr_panel_name FROM stock_transaction "
+                                . "WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND sttr_item_pre_id = '$newProductPreId' AND sttr_item_id = '$newProductPostId' "
+                                . "AND sttr_stock_type = 'retail' "
+                                . "AND sttr_indicator != 'stockCrystal' ";
+                        //
+                    }
+                    //
+                    //echo '$querySelStockProduct == ' . $querySelStockProduct . '<br />'; die;
+                    //
+                    $resStockProduct = mysqli_query($conn, $querySelStockProduct) or die("<br/>querySelStockProduct: $querySelStockProduct <br/>Error:" . mysqli_error($conn));
+                    $stockAvailable = mysqli_num_rows($resStockProduct);
+                    //
+                    // If Stock Available Count is Zero then check with RFID No.
+                    if ($stockAvailable == 0) {
+                        //
+                        $querySelStockProduct = "SELECT sttr_id, sttr_sttrin_id, sttr_sell_status, "
+                                . "sttr_status, sttr_rfid_no, sttr_panel_name "
+                                . "FROM stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND sttr_rfid_no = '$newProductCode' "
+                                . "AND sttr_indicator != 'stockCrystal' ";
+                        //
+                        //echo '$querySelStockProduct == ' . $querySelStockProduct . '<br />';
+                        //
+                        $resStockProduct = mysqli_query($conn, $querySelStockProduct) or die("<br/>querySelStockProduct: $querySelStockProduct <br/>Error:" . mysqli_error($conn));
+                        $stockAvailable = mysqli_num_rows($resStockProduct);
+                        //
+                        if ($stockAvailable > 0) {
+                            $rowStockProduct = mysqli_fetch_array($resStockProduct, MYSQLI_ASSOC);
+                            $productScanWithRFID = $rowStockProduct['sttr_rfid_no'];
+                        }
+                    }
+                    //
+                    //
+                    // Start Code if Stock Available Count is Zero then check with product code @PRIYANKA-19SEP2022
+                    if ($stockAvailable == 0) {
+                        //
+                        $querySelStockProduct = "SELECT sttr_id, sttr_sttrin_id, sttr_sell_status, "
+                                . "sttr_status, sttr_rfid_no, sttr_panel_name "
+                                . "FROM stock_transaction WHERE sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND sttr_item_code = '$newProductCode' "
+                                . "AND sttr_stock_type = 'retail' "
+                                . "AND sttr_indicator != 'stockCrystal' ";
+                        //
+                        //echo '$querySelStockProduct == ' . $querySelStockProduct . '<br />';
+                        //
+                        $resStockProduct = mysqli_query($conn, $querySelStockProduct) or die("<br/>querySelStockProduct: $querySelStockProduct <br/>Error:" . mysqli_error($conn));
+                        $stockAvailable = mysqli_num_rows($resStockProduct);
+                        //
+                    }
+                    // End Code if Stock Available Count is Zero then check with product code @PRIYANKA-19SEP2022
+                    //
+                    //
+                    //echo '$productStatus == '.$productStatus.'<br />';
+                    //
+                    //
+                    if ($stockAvailable > 0) {
+                        //
+                        $rowStockProduct = mysqli_fetch_array($resStockProduct, MYSQLI_ASSOC);
+                        $productStatus = $rowStockProduct['sttr_status'];
+                        //
+                        //echo '$productStatus == '.$productStatus.'<br />';
+                        //
+                        $sttr_id = $rowStockProduct['sttr_id'];
+                        //
+                        //$sttr_sttrin_id = $rowStockProduct['sttr_sttrin_id'];
+                        //
+                        $panelName = $rowStockProduct['sttr_panel_name'];
+                        $mainPanelName = $rowStockProduct['sttr_panel_name'];
+                        //
+                        if ($productStatus == 'SOLDOUT') { ?>
+                            <div class="fs_14 ff_calibri orange fw_b" style="margin-left: -60px; margin-top: 41px;">
+                                THIS PRODUCT IS ALREADY SOLD OUT
+                            </div>
+                            <?php
+                        } 
+                        else if ($productStatus == 'PaymentPending') { ?>
+                            <!--<div class="fs_14 ff_calibri orange fw_b" style="margin-left: -50px; margin-top: 41px;">
+                                FIRST ADD PRODUCTS INTO AVAILABLE LIST FROM ADD STOCK PANEL
+                            </div>-->
+                            <?php
+                        }
+                    } else {
+                        //
+                        $stockPresent = noOfRowsCheck('st_id', 'stock', "st_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND st_item_code = '$newProductCode'");
+                        //
+                        if ($stockPresent > 0) {
+                            $stockAvailable = 1;
+                        } else {
+                            $stockAvailable = 1; ?>
+                            <div class="fs_14 ff_calibri orange fw_b" style="margin-left: -50px; margin-top: 41px;">
+                                THIS PRODUCT IS NOT PRESENT INTO STOCK LIST
+                            </div>
+                            <?php
+                        }
+                    }
+                } else {
+                    //
+                    $stockPresent = noOfRowsCheck('st_id', 'stock', "st_owner_id = '$_SESSION[sessionOwnerId]' "
+                            . "AND st_item_code = '$newProductCode'");
+                    //
+                    //echo '$stockPresent : '.$stockPresent;die();
+                    //
+                    if ($stockPresent > 0) {
+                        //
+                        $stockAvailable = 1;
+                        //
+                        /* START CODE TO GETTING DETAILS OF WHOLESALE PRODUCT FROM STOCK TABLE IF PRODUCT POSTID IS EMPTY OR NULL @AUTHOR:PRIYANKA-10NOV2021 */
+                        $qSelWholesaleProductDetails = "SELECT * FROM stock WHERE st_item_code = '$newProductCode' "
+                                . "AND st_owner_id = '$_SESSION[sessionOwnerId]'";
+                        //
+                        $resWholesaleProductDetails = mysqli_query($conn, $qSelWholesaleProductDetails);
+                        $rowWholesaleProductDetails = mysqli_fetch_array($resWholesaleProductDetails, MYSQLI_ASSOC);
+                        //
+                        $stItemCode = $rowWholesaleProductDetails['st_item_code'];
+                        $stItemCategory = $rowWholesaleProductDetails['st_item_category'];
+                        $stItemName = $rowWholesaleProductDetails['st_item_name'];
+                        $stItemPurity = $rowWholesaleProductDetails['st_purity'];
+                        $stItemFirmId = $rowWholesaleProductDetails['st_firm_id'];
+                        //
+                        //echo '$stItemCode : '.$stItemCode.'<br>';
+                        //echo '$stItemCategory : '.$stItemCategory.'<br>';
+                        //echo '$stItemName : '.$stItemName.'<br>';
+                        //echo '$stItemPurity : '.$stItemPurity.'<br>';
+                        //echo '$stItemFirmId : '.$stItemFirmId.'<br>';
+                        //
+                        $qSelSttrWholesaleProductDetails = "SELECT * FROM stock_transaction WHERE sttr_item_code = '$stItemCode' "
+                                . "AND sttr_owner_id = '$_SESSION[sessionOwnerId]' "
+                                . "AND sttr_item_category = '$stItemCategory' "
+                                . "AND sttr_item_name = '$stItemName' "
+                                . "AND sttr_purity = '$stItemPurity' "
+                                . "AND sttr_firm_id = '$stItemFirmId' "
+                                . "AND sttr_indicator != 'stockCrystal' ";
+                        //
+                        //echo '$qSelSttrWholesaleProductDetails : '.$qSelSttrWholesaleProductDetails;
+                        //
+                        $resSttrWholesaleProductDetails = mysqli_query($conn, $qSelSttrWholesaleProductDetails);
+                        $rowSttrWholesaleProductDetails = mysqli_fetch_array($resSttrWholesaleProductDetails, MYSQLI_ASSOC);
+                        //
+                        $productStatus = $rowSttrWholesaleProductDetails['sttr_status'];
+                        $sttr_id = $rowSttrWholesaleProductDetails['sttr_id'];
+                        $sttr_sttrin_id = $rowSttrWholesaleProductDetails['sttr_sttrin_id'];
+                        //
+                        $panelName = $rowSttrWholesaleProductDetails['sttr_panel_name'];
+                        $mainPanelName = $rowSttrWholesaleProductDetails['sttr_panel_name'];
+                        //
+                        /* END CODE TO GETTING DETAILS OF WHOLESALE PRODUCT FROM STOCK TABLE IF PRODUCT POSTID IS EMPTY OR NULL @AUTHOR:PRIYANKA-10NOV2021 */
+                        //
+                    } else {
+                        $stockAvailable = 1; ?>
+                        <div class="fs_14 ff_calibri orange fw_b" style="margin-left: -50px; margin-top: 41px;">
+                            THIS PRODUCT IS NOT PRESENT INTO STOCK LIST
+                        </div>
+                        <?php
+                    }
+                }
+            } else {
+                $stockAvailable = 0;
+            }
+            ?>
+        </td>
+    </tr>
+</table>

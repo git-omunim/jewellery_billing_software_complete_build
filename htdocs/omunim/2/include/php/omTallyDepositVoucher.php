@@ -1,3 +1,352 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: TAllY MIGRATION FILE
+ * **************************************************************************************
+ * 
+ * Created on 27 SEP 2022 11:24:00 pm
+ *
+ * @FileName: omTallyDepositVoucher.php
+ * @Author: RENUKA SHARMA
+ * @AuthorEmailId:  renukas@omunim.com
+ * @version 1.0.0
+ * @Copyright (c) 2022 www.omunim.com
+ * @All rights reserved
+ */
+?>
+<?php
+//
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$firmid=$_SESSION['setFirmSession'];
+$queryfirminfo = "select * from firm where firm_id='$firmid'";
+$resAllfirminfo = mysqli_query($conn, $queryfirminfo) or die(mysqli_error($conn));
+$i = 1;
+while ($rowfirminfo = mysqli_fetch_array($resAllfirminfo, MYSQLI_ASSOC)) {
+    $firm_id = $rowfirminfo['firm_id'];
+    $firm_name = $rowfirminfo['firm_name'];
+    $firm_Lname = $rowfirminfo['firm_long_nmae'];
+    $firm_city = $rowfirminfo['firm_city'];
+    $firm_address = $rowfirminfo['firm_address'];
+    $firm_phone = $rowfirminfo['firm_phone_details'];
+    $firm_email = $rowfirminfo['firm_email'];
+     $firm_gst = $rowfirminfo['firm_tin_no'];
+    
+    if ($sellerCity != '' || $sellerCity != null) {
+    $qSelCityPinCode = "SELECT city_pincode FROM city WHERE city_name = '$firm_city' ";
+    $resSelCityPicCode = mysqli_query($conn, $qSelCityPinCode) or die(mysqli_error($conn));
+    $rowSelCityPicCode = mysqli_fetch_array($resSelCityPicCode);
+    $firmPinCode = $rowSelCityPicCode['city_pincode'];
+} else {
+    $qSelCityPinCode = "SELECT city_name,city_pincode FROM city WHERE city_selected = 'selected' ";
+    $resSelCityPicCode = mysqli_query($conn, $qSelCityPinCode) or die(mysqli_error($conn));
+    $rowSelCityPicCode = mysqli_fetch_array($resSelCityPicCode);
+    $firmPinCode = $rowSelCityPicCode['city_pincode'];
+    $firmCity = $rowSelCityPicCode['city_name'];
+}
+    $depositVoucher = '
+<ENVELOPE>
+ <HEADER>
+  <TALLYREQUEST>Import Data</TALLYREQUEST>
+ </HEADER>
+ <BODY>
+  <IMPORTDATA>
+   <REQUESTDESC>
+    <REPORTNAME>All Masters</REPORTNAME>
+    <STATICVARIABLES>
+     <SVCURRENTCOMPANY>'.$firm_name.'</SVCURRENTCOMPANY>
+    </STATICVARIABLES>
+   </REQUESTDESC>
+   <REQUESTDATA>';
+    //
+    $readWritefile = fopen("deposit.xml", "w");
+    fwrite($readWritefile, "\n" . $depositVoucher);
+    fclose($readWritefile);
+    //
+    $queryAllDepositVoucher = "select * from girvi_money_deposit where girv_mondep_firm_id='$firm_id'";
+    $resAllDepositVoucher = mysqli_query($conn, $queryAllDepositVoucher) or die(mysqli_error($conn));
+    $i = 1;
+    while ($rowAllDepositVoucher = mysqli_fetch_array($resAllDepositVoucher, MYSQLI_ASSOC)) {
+        $custId = $rowAllDepositVoucher['girv_mondep_cust_id'];
+        $deposit_amt=$rowAllDepositVoucher['girv_mondep_prin_amt'];
+        $qSelCustomerDetails = "SELECT * FROM user WHERE user_id = '$custId'";
+        $resCustomerDetails = mysqli_query($conn, $qSelCustomerDetails) or die(mysqli_error($conn));
+        $rowCustomerDetails = mysqli_fetch_array($resCustomerDetails);
+       // $custFname = $rowCustomerDetails['user_fname'];
+        $custLname = $rowCustomerDetails['user_lname'];
+        $custAddress = $rowCustomerDetails['user_add'];
+        if ($custAddress == '') {
+            $custAddress = $rowCustomerDetails['user_state'];
+        }
+        $custCity = $rowCustomerDetails['user_city'];
+        $custPinCode = $rowCustomerDetails['user_pincode'];
+        $custState = $rowCustomerDetails['user_state'];
+        $custGST = $rowCustomerDetails['user_cst_no'];
+        $user = $rowCustomerDetails['user_fname'];
+        $user = preg_replace('/[^A-Za-z0-9\-]/', ' ', $user);
+        //
+        $voucherid = $rowAllDepositVoucher['girv_mondep_id'].$custId;
+        $date= $rowAllDepositVoucher['girv_mondep_date'];
+        $tallydate = strtotime($date); //--> which results to 1332866820
+        $tallydate = date('Ymd', $tallydate);
+        
+           $loan_type= $rowAllDepositVoucher['girv_type'];
+        $depositVoucher = ' <TALLYMESSAGE xmlns:UDF="TallyUDF">
+     <LEDGER NAME="' . $user . '" RESERVEDNAME="' . $rowCustomerDetails['user_id'] .'" ACTION="Create">
+      <MAILINGNAME.LIST TYPE="String">
+       <MAILINGNAME>' . $user . '</MAILINGNAME>
+      </MAILINGNAME.LIST>
+      <COUNTRYNAME>India</COUNTRYNAME>
+         <PARENT>Loans &amp; Advances (Asset)</PARENT>
+      <TAXCLASSIFICATIONNAME/>
+      <TAXTYPE>Others</TAXTYPE>
+      <COUNTRYOFRESIDENCE>India</COUNTRYOFRESIDENCE>
+           <LEDSTATENAME>' . $rowCustomerDetails['user_state'] . '</LEDSTATENAME>
+      <LANGUAGENAME.LIST>
+       <NAME.LIST TYPE="String">
+        <NAME>' . $user . '</NAME>
+       </NAME.LIST>
+       <LANGUAGEID> 1033</LANGUAGEID>
+      </LANGUAGENAME.LIST>
+     </LEDGER>
+    </TALLYMESSAGE><TALLYMESSAGE xmlns:UDF="TallyUDF">
+     <VOUCHER REMOTEID="'.$voucherid.'" VCHKEY="05d8befe-9858-4fca-b396-34d40a16e3d3-0000af05:00000020" VCHTYPE="Receipt" ACTION="Create" OBJVIEW="Accounting Voucher View">
+      <OLDAUDITENTRYIDS.LIST TYPE="Number">
+       <OLDAUDITENTRYIDS>-1</OLDAUDITENTRYIDS>
+      </OLDAUDITENTRYIDS.LIST>
+      <DATE>'.$tallydate.'</DATE>
+      <GUID>'.$voucherid.'</GUID>
+      <VOUCHERTYPENAME>Receipt</VOUCHERTYPENAME>
+      <PARTYLEDGERNAME>'.$user.'</PARTYLEDGERNAME>
+      <PARENT>Loans &amp; Advances (Asset)</PARENT>
+      <VOUCHERNUMBER>'.$i.'</VOUCHERNUMBER>
+      <FBTPAYMENTTYPE>Default</FBTPAYMENTTYPE>
+      <PERSISTEDVIEW>Accounting Voucher View</PERSISTEDVIEW>
+      <DIFFACTUALQTY>No</DIFFACTUALQTY>
+      <ISMSTFROMSYNC>No</ISMSTFROMSYNC>
+      <ISDELETED>No</ISDELETED>
+      <ISSECURITYONWHENENTERED>No</ISSECURITYONWHENENTERED>
+      <ASORIGINAL>No</ASORIGINAL>
+      <AUDITED>No</AUDITED>
+      <FORJOBCOSTING>No</FORJOBCOSTING>
+      <ISOPTIONAL>No</ISOPTIONAL>
+      <EFFECTIVEDATE>'.$tallydate.'</EFFECTIVEDATE>
+      <USEFOREXCISE>No</USEFOREXCISE>
+      <ISFORJOBWORKIN>No</ISFORJOBWORKIN>
+      <ALLOWCONSUMPTION>No</ALLOWCONSUMPTION>
+      <USEFORINTEREST>No</USEFORINTEREST>
+      <USEFORGAINLOSS>No</USEFORGAINLOSS>
+      <USEFORGODOWNTRANSFER>No</USEFORGODOWNTRANSFER>
+      <USEFORCOMPOUND>No</USEFORCOMPOUND>
+      <USEFORSERVICETAX>No</USEFORSERVICETAX>
+      <ISONHOLD>No</ISONHOLD>
+      <ISBOENOTAPPLICABLE>No</ISBOENOTAPPLICABLE>
+      <ISGSTSECSEVENAPPLICABLE>No</ISGSTSECSEVENAPPLICABLE>
+      <ISEXCISEVOUCHER>No</ISEXCISEVOUCHER>
+      <EXCISETAXOVERRIDE>No</EXCISETAXOVERRIDE>
+      <USEFORTAXUNITTRANSFER>No</USEFORTAXUNITTRANSFER>
+      <IGNOREPOSVALIDATION>No</IGNOREPOSVALIDATION>
+      <EXCISEOPENING>No</EXCISEOPENING>
+      <USEFORFINALPRODUCTION>No</USEFORFINALPRODUCTION>
+      <ISTDSOVERRIDDEN>No</ISTDSOVERRIDDEN>
+      <ISTCSOVERRIDDEN>No</ISTCSOVERRIDDEN>
+      <ISTDSTCSCASHVCH>No</ISTDSTCSCASHVCH>
+      <INCLUDEADVPYMTVCH>No</INCLUDEADVPYMTVCH>
+      <ISSUBWORKSCONTRACT>No</ISSUBWORKSCONTRACT>
+      <ISVATOVERRIDDEN>No</ISVATOVERRIDDEN>
+      <IGNOREORIGVCHDATE>No</IGNOREORIGVCHDATE>
+      <ISVATPAIDATCUSTOMS>No</ISVATPAIDATCUSTOMS>
+      <ISDECLAREDTOCUSTOMS>No</ISDECLAREDTOCUSTOMS>
+      <ISSERVICETAXOVERRIDDEN>No</ISSERVICETAXOVERRIDDEN>
+      <ISISDVOUCHER>No</ISISDVOUCHER>
+      <ISEXCISEOVERRIDDEN>No</ISEXCISEOVERRIDDEN>
+      <ISEXCISESUPPLYVCH>No</ISEXCISESUPPLYVCH>
+      <ISGSTOVERRIDDEN>No</ISGSTOVERRIDDEN>
+      <GSTNOTEXPORTED>No</GSTNOTEXPORTED>
+      <IGNOREGSTINVALIDATION>No</IGNOREGSTINVALIDATION>
+      <ISGSTREFUND>No</ISGSTREFUND>
+      <OVRDNEWAYBILLAPPLICABILITY>No</OVRDNEWAYBILLAPPLICABILITY>
+      <ISVATPRINCIPALACCOUNT>No</ISVATPRINCIPALACCOUNT>
+      <IGNOREEINVVALIDATION>No</IGNOREEINVVALIDATION>
+      <IRNJSONEXPORTED>No</IRNJSONEXPORTED>
+      <IRNCANCELLED>No</IRNCANCELLED>
+      <ISSHIPPINGWITHINSTATE>No</ISSHIPPINGWITHINSTATE>
+      <ISOVERSEASTOURISTTRANS>No</ISOVERSEASTOURISTTRANS>
+      <ISDESIGNATEDZONEPARTY>No</ISDESIGNATEDZONEPARTY>
+      <ISCANCELLED>No</ISCANCELLED>
+      <HASCASHFLOW>Yes</HASCASHFLOW>
+      <ISPOSTDATED>No</ISPOSTDATED>
+      <USETRACKINGNUMBER>No</USETRACKINGNUMBER>
+      <ISINVOICE>No</ISINVOICE>
+      <MFGJOURNAL>No</MFGJOURNAL>
+      <HASDISCOUNTS>No</HASDISCOUNTS>
+      <ASPAYSLIP>No</ASPAYSLIP>
+      <ISCOSTCENTRE>No</ISCOSTCENTRE>
+      <ISSTXNONREALIZEDVCH>No</ISSTXNONREALIZEDVCH>
+      <ISEXCISEMANUFACTURERON>No</ISEXCISEMANUFACTURERON>
+      <ISBLANKCHEQUE>No</ISBLANKCHEQUE>
+      <ISVOID>No</ISVOID>
+      <ORDERLINESTATUS>No</ORDERLINESTATUS>
+      <VATISAGNSTCANCSALES>No</VATISAGNSTCANCSALES>
+      <VATISPURCEXEMPTED>No</VATISPURCEXEMPTED>
+      <ISVATRESTAXINVOICE>No</ISVATRESTAXINVOICE>
+      <VATISASSESABLECALCVCH>No</VATISASSESABLECALCVCH>
+      <ISVATDUTYPAID>Yes</ISVATDUTYPAID>
+      <ISDELIVERYSAMEASCONSIGNEE>No</ISDELIVERYSAMEASCONSIGNEE>
+      <ISDISPATCHSAMEASCONSIGNOR>No</ISDISPATCHSAMEASCONSIGNOR>
+      <ISDELETEDVCHRETAINED>No</ISDELETEDVCHRETAINED>
+      <CHANGEVCHMODE>No</CHANGEVCHMODE>
+      <RESETIRNQRCODE>No</RESETIRNQRCODE>
+      <VOUCHERKEY>'.$voucherid.'</VOUCHERKEY>
+      <EWAYBILLDETAILS.LIST>      </EWAYBILLDETAILS.LIST>
+      <EXCLUDEDTAXATIONS.LIST>      </EXCLUDEDTAXATIONS.LIST>
+      <OLDAUDITENTRIES.LIST>      </OLDAUDITENTRIES.LIST>
+      <ACCOUNTAUDITENTRIES.LIST>      </ACCOUNTAUDITENTRIES.LIST>
+      <AUDITENTRIES.LIST>      </AUDITENTRIES.LIST>
+      <DUTYHEADDETAILS.LIST>      </DUTYHEADDETAILS.LIST>
+      <SUPPLEMENTARYDUTYHEADDETAILS.LIST>      </SUPPLEMENTARYDUTYHEADDETAILS.LIST>
+      <EWAYBILLERRORLIST.LIST>      </EWAYBILLERRORLIST.LIST>
+      <IRNERRORLIST.LIST>      </IRNERRORLIST.LIST>
+      <INVOICEDELNOTES.LIST>      </INVOICEDELNOTES.LIST>
+      <INVOICEORDERLIST.LIST>      </INVOICEORDERLIST.LIST>
+      <INVOICEINDENTLIST.LIST>      </INVOICEINDENTLIST.LIST>
+      <ATTENDANCEENTRIES.LIST>      </ATTENDANCEENTRIES.LIST>
+      <ORIGINVOICEDETAILS.LIST>      </ORIGINVOICEDETAILS.LIST>
+      <INVOICEEXPORTLIST.LIST>      </INVOICEEXPORTLIST.LIST>
+      <ALLLEDGERENTRIES.LIST>
+       <OLDAUDITENTRYIDS.LIST TYPE="Number">
+        <OLDAUDITENTRYIDS>-1</OLDAUDITENTRYIDS>
+       </OLDAUDITENTRYIDS.LIST>
+       <LEDGERNAME>'.$user.'</LEDGERNAME>
+       <GSTCLASS/>
+       <ISDEEMEDPOSITIVE>No</ISDEEMEDPOSITIVE>
+       <LEDGERFROMITEM>No</LEDGERFROMITEM>
+       <REMOVEZEROENTRIES>No</REMOVEZEROENTRIES>
+       <ISPARTYLEDGER>Yes</ISPARTYLEDGER>
+       <ISLASTDEEMEDPOSITIVE>No</ISLASTDEEMEDPOSITIVE>
+       <ISCAPVATTAXALTERED>No</ISCAPVATTAXALTERED>
+       <ISCAPVATNOTCLAIMED>No</ISCAPVATNOTCLAIMED>
+       <AMOUNT>'.$deposit_amt.'</AMOUNT>
+       <SERVICETAXDETAILS.LIST>       </SERVICETAXDETAILS.LIST>
+       <BANKALLOCATIONS.LIST>       </BANKALLOCATIONS.LIST>
+       <BILLALLOCATIONS.LIST>       </BILLALLOCATIONS.LIST>
+       <INTERESTCOLLECTION.LIST>       </INTERESTCOLLECTION.LIST>
+       <OLDAUDITENTRIES.LIST>       </OLDAUDITENTRIES.LIST>
+       <ACCOUNTAUDITENTRIES.LIST>       </ACCOUNTAUDITENTRIES.LIST>
+       <AUDITENTRIES.LIST>       </AUDITENTRIES.LIST>
+       <INPUTCRALLOCS.LIST>       </INPUTCRALLOCS.LIST>
+       <DUTYHEADDETAILS.LIST>       </DUTYHEADDETAILS.LIST>
+       <EXCISEDUTYHEADDETAILS.LIST>       </EXCISEDUTYHEADDETAILS.LIST>
+       <RATEDETAILS.LIST>       </RATEDETAILS.LIST>
+       <SUMMARYALLOCS.LIST>       </SUMMARYALLOCS.LIST>
+       <STPYMTDETAILS.LIST>       </STPYMTDETAILS.LIST>
+       <EXCISEPAYMENTALLOCATIONS.LIST>       </EXCISEPAYMENTALLOCATIONS.LIST>
+       <TAXBILLALLOCATIONS.LIST>       </TAXBILLALLOCATIONS.LIST>
+       <TAXOBJECTALLOCATIONS.LIST>       </TAXOBJECTALLOCATIONS.LIST>
+       <TDSEXPENSEALLOCATIONS.LIST>       </TDSEXPENSEALLOCATIONS.LIST>
+       <VATSTATUTORYDETAILS.LIST>       </VATSTATUTORYDETAILS.LIST>
+       <COSTTRACKALLOCATIONS.LIST>       </COSTTRACKALLOCATIONS.LIST>
+       <REFVOUCHERDETAILS.LIST>       </REFVOUCHERDETAILS.LIST>
+       <INVOICEWISEDETAILS.LIST>       </INVOICEWISEDETAILS.LIST>
+       <VATITCDETAILS.LIST>       </VATITCDETAILS.LIST>
+       <ADVANCETAXDETAILS.LIST>       </ADVANCETAXDETAILS.LIST>
+      </ALLLEDGERENTRIES.LIST>
+      <ALLLEDGERENTRIES.LIST>
+       <OLDAUDITENTRYIDS.LIST TYPE="Number">
+        <OLDAUDITENTRYIDS>-1</OLDAUDITENTRYIDS>
+       </OLDAUDITENTRYIDS.LIST>
+       <LEDGERNAME>Cash</LEDGERNAME>
+       <GSTCLASS/>
+       <ISDEEMEDPOSITIVE>Yes</ISDEEMEDPOSITIVE>
+       <LEDGERFROMITEM>No</LEDGERFROMITEM>
+       <REMOVEZEROENTRIES>No</REMOVEZEROENTRIES>
+       <ISPARTYLEDGER>Yes</ISPARTYLEDGER>
+       <ISLASTDEEMEDPOSITIVE>Yes</ISLASTDEEMEDPOSITIVE>
+       <ISCAPVATTAXALTERED>No</ISCAPVATTAXALTERED>
+       <ISCAPVATNOTCLAIMED>No</ISCAPVATNOTCLAIMED>
+       <AMOUNT>-'.$deposit_amt.'</AMOUNT>
+       <SERVICETAXDETAILS.LIST>       </SERVICETAXDETAILS.LIST>
+       <BANKALLOCATIONS.LIST>       </BANKALLOCATIONS.LIST>
+       <BILLALLOCATIONS.LIST>       </BILLALLOCATIONS.LIST>
+       <INTERESTCOLLECTION.LIST>       </INTERESTCOLLECTION.LIST>
+       <OLDAUDITENTRIES.LIST>       </OLDAUDITENTRIES.LIST>
+       <ACCOUNTAUDITENTRIES.LIST>       </ACCOUNTAUDITENTRIES.LIST>
+       <AUDITENTRIES.LIST>       </AUDITENTRIES.LIST>
+       <INPUTCRALLOCS.LIST>       </INPUTCRALLOCS.LIST>
+       <DUTYHEADDETAILS.LIST>       </DUTYHEADDETAILS.LIST>
+       <EXCISEDUTYHEADDETAILS.LIST>       </EXCISEDUTYHEADDETAILS.LIST>
+       <RATEDETAILS.LIST>       </RATEDETAILS.LIST>
+       <SUMMARYALLOCS.LIST>       </SUMMARYALLOCS.LIST>
+       <STPYMTDETAILS.LIST>       </STPYMTDETAILS.LIST>
+       <EXCISEPAYMENTALLOCATIONS.LIST>       </EXCISEPAYMENTALLOCATIONS.LIST>
+       <TAXBILLALLOCATIONS.LIST>       </TAXBILLALLOCATIONS.LIST>
+       <TAXOBJECTALLOCATIONS.LIST>       </TAXOBJECTALLOCATIONS.LIST>
+       <TDSEXPENSEALLOCATIONS.LIST>       </TDSEXPENSEALLOCATIONS.LIST>
+       <VATSTATUTORYDETAILS.LIST>       </VATSTATUTORYDETAILS.LIST>
+       <COSTTRACKALLOCATIONS.LIST>       </COSTTRACKALLOCATIONS.LIST>
+       <REFVOUCHERDETAILS.LIST>       </REFVOUCHERDETAILS.LIST>
+       <INVOICEWISEDETAILS.LIST>       </INVOICEWISEDETAILS.LIST>
+       <VATITCDETAILS.LIST>       </VATITCDETAILS.LIST>
+       <ADVANCETAXDETAILS.LIST>       </ADVANCETAXDETAILS.LIST>
+      </ALLLEDGERENTRIES.LIST>
+      <PAYROLLMODEOFPAYMENT.LIST>      </PAYROLLMODEOFPAYMENT.LIST>
+      <ATTDRECORDS.LIST>      </ATTDRECORDS.LIST>
+      <GSTEWAYCONSIGNORADDRESS.LIST>      </GSTEWAYCONSIGNORADDRESS.LIST>
+      <GSTEWAYCONSIGNEEADDRESS.LIST>      </GSTEWAYCONSIGNEEADDRESS.LIST>
+      <TEMPGSTRATEDETAILS.LIST>      </TEMPGSTRATEDETAILS.LIST>
+     </VOUCHER>
+    </TALLYMESSAGE>';
+        $readWritefile = fopen("deposit.xml", "a");
+        fwrite($readWritefile, "\n" . $depositVoucher);
+        fclose($readWritefile);
+        $i++;
+    }
+    $endvar = '<TALLYMESSAGE xmlns:UDF="TallyUDF">
+     <COMPANY>
+      <REMOTECMPINFO.LIST MERGE="Yes">
+       <NAME>'.$firm_name.'</NAME>
+       <REMOTECMPNAME>'.$firm_name.'</REMOTECMPNAME>
+       <REMOTECMPSTATE>Maharashtra</REMOTECMPSTATE>
+      </REMOTECMPINFO.LIST>
+     </COMPANY>
+    </TALLYMESSAGE>
+    </REQUESTDATA>
+  </IMPORTDATA>
+ </BODY>
+</ENVELOPE>';
+    $readWritefile = fopen("deposit.xml", "a");
+    fwrite($readWritefile, "\n" . $endvar);
+    fclose($readWritefile);
+}
+?>
+<?php
+
+if (isset($_GET['path'])) {
+//Read the filename
+    $filename = $_GET['path'];
+//Check the file exists or not
+    if (file_exists($filename)) {
+//Define header information
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header("Cache-Control: no-cache, must-revalidate");
+        header("Expires: 0");
+        header('Content-Disposition: attachment; filename="' . basename($filename) . '"');
+        header('Content-Length: ' . filesize($filename));
+        header('Pragma: public');
+//Clear system output buffer
+        flush();
+//
+//Read the size of the file
+        readfile($filename);
+//
+//Terminate from the script
+        die();
+    } else {
+        echo "File does not exist.";
+    }
+} else
+    echo "Filename is not defined.";
 ?>

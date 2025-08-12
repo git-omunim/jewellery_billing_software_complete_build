@@ -1,3 +1,64 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: 
+ * **************************************************************************************
+ * 
+ * Created on 5 Dec, 2019 2:53:35 PM
+ *
+ * @FileName: omSchemeMetalType.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.0
+ * @Copyright (c) 2019 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2019 SoftwareGen Technologies
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+$panelName = $_GET['panelName'];
+$kittyMetalType = $_GET['schemeMetalType'];
+$staffId = $_SESSION['sessionStaffId'];
+?>
+<select name="kittyMetalType" id="kittyMetalType" style="width:100%;height:30px;" onkeydown="javascript: if (event.keyCode == 13) {
+            document.getElementById('DOBDay').focus();
+            return false;
+        } else if (event.keyCode == 8) {
+            document.getElementById('addSchemePrdTyp').focus();
+            return false;
+        }" <?php if ($staffId || $panelName == 'UpdateKitty') { ?> disabled="true"<?php } ?>>
+            <?php
+            $itemGsType = array(CASH, GOLD, SILVER);
+            if ($panelName == 'UpdateKitty') {
+                for ($i = 0; $i <= 2; $i++) {
+                    if ($itemGsType[$i] == $kittyMetalType)
+                        $optionGsTypeSel[$i] = 'selected';
+                }
+            } else {
+                if ($kittyMetalType != '') {
+                    for ($i = 0; $i <= 2; $i++) {
+                        if ($itemGsType[$i] == $kittyMetalType)
+                            $optionGsTypeSel[$i] = 'selected';
+                    }
+                } else {
+                    $optionGsTypeSel[0] = 'selected';
+                }
+            }
+            ?>
+    <option value="CASH" <?php echo $optionGsTypeSel[0]; ?>>CASH</option>
+    <option value="GOLD" <?php echo $optionGsTypeSel[1]; ?>>GOLD</option>
+    <option value="SILVER" <?php echo $optionGsTypeSel[2]; ?>>SILVER</option>
+</select>
+<?php if ($staffId || $panelName == 'UpdateKitty') { ?>
+    <input type="hidden" name="kittyMetalType" id="kittyMetalType" value="<?php echo $kittyMetalType; ?>"/>
+<?php } ?>

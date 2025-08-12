@@ -1,3 +1,155 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+include_once 'ommpfndv.php';
+?>
+<?php
+$custId = $_POST['custId'];
+$firmId = $_POST['firmId'];
+$udhaarId = $_POST['udhaarId'];
+$udhaarAmtLeft = $_POST['udhaarAmtLeft'];
+$udhaarSerialNum = $_GET['udhaarSerialNum'];
+if ($udhaarSerialNum == '') {
+    $udhaarSerialNum = $_POST['udhaarSerialNum'];
+}
+if ($custId == '') {
+    $custId = $_GET['custId'];
+    $firmId = $_GET['firmId'];
+    $udhaarId = $_GET['udhaarId'];
+    $udhaarAmtLeft = $_GET['udhaarAmtLeft'];
+}
+$panelName = $_GET['panelName'];
+if ($panelName == 'UpdateUdhaar') {
+    $udhaarDepId = $_GET['udhaarDepId'];
+    parse_str(getTableValues("SELECT * FROM udhaar_deposit where udhadepo_id = '$udhaarDepId'"));
+    $selDOBDay = substr($udhadepo_DOB, 0, 2);
+    $selDOBMnth = substr($udhadepo_DOB, 3, -5);
+    $todayMM = date("m", strtotime($selDOBMnth)) - 1;
+    $selDOBYear = substr($udhadepo_DOB, -4);
+} else {
+    $selDOBDay = date(j);
+    $todayMM = date(n) - 1;
+    $selDOBYear = date(Y);
+}
+?>
+<div class="textBoxCurve1px">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td width="100%" colspan="4">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td width="100%" colspan="4">
+                <div class="blackMess">
+                    &nbsp;&nbsp;UDHAAR DEPOSIT MONEY PANEL
+                </div>
+                <div id="ajaxCloseUdhaarDepositMonDiv<?php echo $udhaarId; ?>" style="visibility: visible" class="ajaxClose">
+                    <a style="cursor: pointer;" onclick="closeUdhaarDepositMoneyDiv(<?php echo $udhaarId; ?>)">
+                        <?php include 'omzaajcl.php'; ?>
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <form name="udhaar_deposit_money" id="udhaar_deposit_money"
+          action="javascript:udhaarDepositMoney(document.getElementById('udhaar_deposit_money'),'<?php echo $udhaarId; ?>','<?php echo $firmId; ?>','<?php echo $udhaarSerialNum; ?>');"
+          method="post">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+            <tr>
+                <td>
+                    <img src="<?php echo $documentRoot; ?>/images/spacer.gif" alt="" height="0px" style="visibility:hidden;" onload="
+                        document.getElementById('udhaarDepositAmount<?php echo $udhaarId; ?>').focus();
+                        initFormName('add_udhaar_details', 'addNewUdhaarDetails');"/>
+                </td>
+                <td align="right" valign="middle" width="200px">
+
+                    <h4>DEPOSIT AMOUNT:&nbsp;&nbsp;</h4></td>
+                <td align="left" width="100px">
+                    <input id="udhaarDepositAmount<?php echo $udhaarId; ?>" name="udhaarDepositAmount<?php echo $udhaarId; ?>" 
+                                                      type="text" value="<?php echo $udhadepo_amt; ?>"
+                                                      placeholder="DEPOSIT AMOUNT" spellcheck="false" class="input_border_red" size="20" maxlength="30" />
+                    <input id="custId<?php echo $udhaarId; ?>" name="custId<?php echo $udhaarId; ?>" value="<?php echo $custId; ?>" type="hidden" /> 
+                    <input id="udhaarId<?php echo $udhaarId; ?>" name="udhaarId<?php echo $udhaarId; ?>" value="<?php echo $udhaarId; ?>" type="hidden" /> 
+                    <input id="udhaarAmtLeft<?php echo $udhaarId; ?>" name="udhaarAmtLeft<?php echo $udhaarId; ?>" value="<?php echo $udhaarAmtLeft; ?>" type="hidden" />
+                    <input id="udhaarDepPanel" name="udhaarDepPanel" value="<?php echo $panelName; ?>" type="hidden" />
+                    <input id="udhaarDepId" name="udhaarDepId" value="<?php echo $udhaarDepId; ?>" type="hidden" />
+                </td>
+                
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="right" valign="middle"  width="150px">
+                                <h4>DATE:&nbsp;&nbsp;</h4>
+                            </td>
+                            <td class="textBoxCurve1px margin2pxAll backFFFFFF" width="190px">
+                                <?php include 'omuudate.php'; ?>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <!-----Add td for Discount function @AUTHOR: SHE19OCT15--->
+                 <td align="right" valign="middle" width="200px">
+
+                    <h4>Discount:&nbsp;&nbsp;</h4></td>
+                <td align="left" width="100px">
+                    <input id="udhaarDiscountAmount<?php echo $udhaarId; ?>" name="udhaarDiscountAmount<?php echo $udhaarId; ?>" 
+                                                      type="text" value="<?php echo $udhadepo_disc_amt; ?>"
+                                                      placeholder="DISCOUNT" spellcheck="false" class="input_border_red" size="20" maxlength="30" />
+                    <input id="custId<?php echo $udhaarId; ?>" name="custId<?php echo $udhaarId; ?>" value="<?php echo $custId; ?>" type="hidden" /> 
+                    <input id="udhaarId<?php echo $udhaarId; ?>" name="udhaarId<?php echo $udhaarId; ?>" value="<?php echo $udhaarId; ?>" type="hidden" /> 
+                    <input id="udhaarAmtLeft<?php echo $udhaarId; ?>" name="udhaarAmtLeft<?php echo $udhaarId; ?>" value="<?php echo $udhaarAmtLeft; ?>" type="hidden" />
+                    <input id="udhaarDepPanel" name="udhaarDepPanel" value="<?php echo $panelName; ?>" type="hidden" />
+                    <input id="udhaarDepId" name="udhaarDepId" value="<?php echo $udhaarDepId; ?>" type="hidden" />
+                </td>
+                <!-----Add td for Discount function @AUTHOR: SHE19OCT15--->
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td align="right" valign="middle" width="200px"><h4>OTHER INFORMATION:&nbsp;&nbsp;</h4></td>
+                <td colspan="2" valign="middle">
+                    <textarea id="udhaarOtherInfo" 
+                              spellcheck="false" name="udhaarOtherInfo" 
+                              onkeydown="javascript:if (event.keyCode == 13) {
+                                  document.getElementById('depMoneySubButt').focus();
+                                  return false;
+                              } else if (event.keyCode == 8 && this.value == '') {
+                                  document.getElementById('DOBDay').focus();
+                                  return false;
+                              }"
+                              class="textarea-udhaar-deposit-otherInfo"><?php echo stripslashes($udhadepo_comm); ?></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="4">
+                    <div id="ajaxLoadUdhaarDepositMonSubmit<?php echo "$udhaarId"; ?>" style="visibility: hidden">
+                        <?php include 'omzaajld.php'; ?>
+                    </div>
+                    <div id="udhaarDepMoneySubButDiv<?php echo "$udhaarId"; ?>">
+                        <input type="submit" id="depMoneySubButt" value="<?php
+                        if ($panelName == 'UpdateUdhaar') {
+                            echo 'UPDATE';
+                        } else {
+                            echo 'SUBMIT';
+                        }
+                        ?>" class="frm-btn-without-border"
+                               maxlength="30" size="15" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    &nbsp;   
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

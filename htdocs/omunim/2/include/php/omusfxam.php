@@ -1,3 +1,202 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * Created on Apr 3, 2011 1:18:20 PM
+ *
+ * @FileName: omusfxam.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+require_once 'system/omssopin.php';
+
+//Udhaar Fixed Amount
+$udhaarFixedAmt = $_POST['udhaarFixedAmt'];
+
+if ($udhaarFixedAmt == '') {
+    $udhaarFixedAmt = $_GET['udhaarFixedAmt'];
+}
+
+// how many rows to show per page
+$rowsPerPage = 15;
+$checkNextRows = $rowsPerPage * 2;
+
+// by default we show first page
+$pageNum = 1;
+$gCounter = 0;
+
+// if $_GET['page'] defined, use it as page number
+if (isset($_GET['page'])) {
+    $pageNum = $_GET['page'];
+    $gCounter = ($pageNum - 1) * $rowsPerPage;
+}
+
+// counting the offset
+$perOffset = ($pageNum - 1) * $rowsPerPage;
+ /*****************START code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-23JUN17**********************/
+$qSelTotalUdhaarCount = "SELECT utin_id FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_total_amt='$udhaarFixedAmt' and utin_type = 'udhaar' and utin_status IN ('New','Updated') LIMIT $perOffset, $checkNextRows";
+$resTotalUdhaarCount = mysqli_query($conn,$qSelTotalUdhaarCount);
+$totalUdhaar = mysqli_num_rows($resTotalUdhaarCount);
+//
+$qSelAllUdhaar = "SELECT * FROM user_transaction_invoice where utin_owner_id='$_SESSION[sessionOwnerId]' and utin_total_amt='$udhaarFixedAmt' and utin_type = 'udhaar' and utin_status IN ('New','Updated') order by utin_since desc LIMIT $perOffset, $rowsPerPage";
+$resAllUdhaar = mysqli_query($conn,$qSelAllUdhaar);
+$totalNextUdhaar = mysqli_num_rows($resAllUdhaar);
+/*****************END code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-23JUN17**********************/
+?>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+    <tr>
+        <td>
+            <table border="0" cellspacing="1" cellpadding="1">
+                <tr>
+                    <td>
+                        <div class="spaceLeft20">
+                            <h1>Udhaar List By Amount:</h1>
+                        </div>
+                    </td>
+                    <td align="left">
+                        <div class="h1BlackColor"><?php echo $udhaarFixedAmt; ?></div>
+                    </td>
+                    <td align="right" valign="bottom" class="frm-lbl">
+                        <div class="spaceRight20"></div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td><br />
+        </td>
+    </tr>
+    <tr>
+        <td align="left">
+            <table border="0" cellspacing="1" cellpadding="2" width="100%">
+                <?php
+                if ($totalUdhaar <= 0) {
+                    echo "<div class=" . "spaceLeft40" . "><div class=" . "h7" . "> ~ Udhaar List is empty. ~ </div></div>";
+                } else {
+                    ?>
+                    <tr>
+                        <td align="left" width="7px">
+                            <div class="h7">SN</div>
+                        </td>
+                        <td align="right"  width="75px">
+                            <div class="h7">UDHAAR AMT</div>
+                        </td>
+                        <td align="right"  width="10px">
+                            <div class="h7">&nbsp;</div>
+                        </td>
+                        <td align="left" width="100px">
+                            <div class="h7">CUSTOMER NAME</div>
+                        </td>
+                        <td align="left" width="50px">
+                            <div class="h7">CITY</div>
+                        </td>
+                        <td align="left" width="50px">
+                            <div class="h7">DATE</div>
+                        </td>      
+                    </tr>
+                    <?php
+                }
+                while ($rowAllUdhaar = mysqli_fetch_array($resAllUdhaar, MYSQLI_ASSOC)) {
+                    /*****************START code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-23JUN17**********************/
+                    $udhaarId = $rowAllUdhaar['utin_id'];
+                    $udhaarAmt = $rowAllUdhaar['utin_total_amt'];
+                    $uDOB = $rowAllUdhaar['utin_date'];
+                    $custId = $rowAllUdhaar['utin_user_id']; //custId added @Author:PRIYA19MAR15
+                    /*****************START code to add user table for user details @Author:PRIYANKA-23JUN17********************************************/
+                    $selCustDetails = "SELECT user_city,user_fname,user_lname,user_mobile FROM user WHERE user_owner_id='$_SESSION[sessionOwnerId]' and user_id='$custId'";
+                    $resCustDetails = mysqli_query($conn, $selCustDetails);
+                    $rowCustDetails = mysqli_fetch_array($resCustDetails, MYSQLI_ASSOC);
+                    $uCustName = $rowCustDetails['user_fname'] . ' ' . $rowCustDetails['user_lname'];
+                    $uCustCity = $rowCustDetails['user_city'];
+                    $uCustMobile = $rowCustDetails['user_mobile'];
+                    /*****************END code to add user table for user details @Author:PRIYANKA-23JUN17**********************************************/
+                    /*****************END code to change udhaar table to user_transaction_invoice table @Author:PRIYANKA-23JUN17************************/
+                    ?>
+                    <tr>
+                        <td align="left">
+                            <!--------Start code to add onclick function  @Author:PRIYA19MAR15----------------->
+                            <input type="submit" name="sNo" id="sNo" value="<?php echo $gCounter + 1; ?>" class="frm-btn-without-border" readonly="true"
+                                   onclick="getCustomerDetailsWithCustId('CustUdhaar', '<?php echo $custId; ?>', '<?php echo $firmId; ?>');"/>
+                            <!--------End code to add onclick function @Author:PRIYA19MAR15----------------->
+                            <input type="hidden" name="udhaarId<?php echo $gCounter; ?>" id="udhaarId<?php echo $gCounter; ?>" value="<?php echo $udhaarId; ?>"/>
+                        </td>
+                        <td align="right">
+                            <div class="amount"><?php echo $udhaarAmt; ?></div>
+                        </td>
+                        <td align="right"  width="10px">
+                            <div class="h7">&nbsp;</div>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $uCustName; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo $uCustCity; ?></h5>
+                        </td>
+                        <td align="left">
+                            <h5><?php echo date('d  M  y', strtotime($uDOB)); ?></h5>
+                        </td>
+                    </tr>
+                    <?php
+                    $gCounter++;
+                }
+                ?>
+            </table>
+            <div id="ajaxLoadNextUdhaarPanelList" style="visibility: hidden" align="right">
+            <?php include 'omzaajld.php'; ?>
+            </div>
+            <?php
+            if ($totalNextUdhaar > 0) {
+                ?>
+                <div id="ajaxLoadNextUdhaarPanelListButt">
+                    <table border="0" cellpadding="2" cellspacing="0" align="right">
+                        <tr>
+                            <?php
+                            if ($pageNum > 1) {
+                                ?>
+                                <td align="right">
+                                    <form name="prev_udhaar" id="prev_udhaar"
+                                          action="javascript:navigationUdhaarPanel(<?php echo "$pageNum - 1"; ?>);"
+                                          method="get"><input type="submit" value="Previous Udhaar" class="frm-btn"
+                                                        maxlength="30" size="15" /></form>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                            <?php
+                            if ($totalUdhaar > $rowsPerPage) {
+                                ?>
+                                <td align="right">
+                                    <form name="next_udhaar" id="next_udhaar"
+                                          action="javascript:navigationUdhaarPanel(<?php echo $pageNum + 1; ?>);"
+                                          method="get"><input type="submit" value="Next Udhaar" class="frm-btn"
+                                                        maxlength="30" size="15" /></form>
+                                </td>
+                                <?php
+                            }
+                            ?>
+                        </tr>
+                    </table>
+                </div>
+                <?php
+            }
+            ?>
+        </td>
+    </tr>
+</table>

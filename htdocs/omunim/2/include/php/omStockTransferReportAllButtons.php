@@ -1,3 +1,694 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: STOCK TRANSFER REPORT ALL BUTTONS FILE @PRIYANKA-22JULY2022
+ * **************************************************************************************
+ *
+ * Created on JULY 22, 2022 03:00:00 PM 
+ * **************************************************************************************
+ * @FileName: omStockTransferReportAllButtons.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.166
+ * @version 2.7.166
+ * @Copyright (c) 2022 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2022 SoftwareGen, Inc
+ * *****************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE: @PRIYANKA-22JULY2022
+ *  AUTHOR: 
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.166
+ * Version: 2.7.166
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+$staffId = $_SESSION['sessionStaffId'];
+//
+$styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:20px;z-index:1;position:relative;";
+//
+?>
+<table align="left" width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td>
+            <div class="textLabelHeading">
+                <?php if ($headingNameForPanel == 'STOCK TRANSFER') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:20px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                STOCK TRANSFER
+                <?php                
+                } else if ($headingNameForPanel == 'STOCK TRANSFER REPORT') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:52px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                STOCK TRANSFER REPORT
+                <?php                 
+                } else if ($headingNameForPanel == 'STOCK TRANSFER HISTORY') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:53px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                STOCK TRANSFER HISTORY
+                <?php                
+                } else if ($headingNameForPanel == 'STOCK TRANSFER LIST') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:47px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                <span>STOCK TRANSFER LIST</span>
+                <?php                 
+                } else if ($headingNameForPanel == 'STOCK TRANSFER PENDING APPROVAL LIST') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:82px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                <span>STOCK TRANSFER - PENDING APPROVAL LIST</span>
+                <?php                 
+                } else if ($headingNameForPanel == 'STOCK TRANSFER APPROVED LIST') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:66px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                <span>STOCK TRANSFER - APPROVED LIST</span>
+                <?php                
+                } else if ($headingNameForPanel == 'STOCK TRANSFER RETURN LIST') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:62px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                <span>STOCK TRANSFER - RETURN LIST</span>
+               <?php } else if ($headingNameForPanel == 'STOCK TRANSFER VOUCHER LIST') { 
+                    $styleButton = "border-radius: 4px !important; background-color: #ebedf2; width:62px;z-index:1;position:relative;";
+                ?>
+                <img src="<?php echo $documentRootBSlash; ?>/images/transfer24.png" alt="">
+                <span>STOCK TRANSFER - VOUCHER LIST</span>
+                <?php } ?>
+            </div>
+        </td> 
+        <?php if ($headingNameForPanel == 'STOCK TRANSFER LIST') { ?>
+        <td align="center" valign="middle">
+            <div id="messDisplayDiv"></div>
+            <div <?php if ($showDiv == 'StockTransferSuccessfully') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php } else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php } ?> >
+                    <?php if ($showDiv == 'StockTransferSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Transfer Successfully ~ </div>
+                <?php } ?>  
+            </div>
+        </td>
+        <?php } ?> 
+        <?php if ($headingNameForPanel == 'STOCK TRANSFER PENDING APPROVAL LIST') { ?>
+        <td align="center" valign="middle">
+            <div id="messDisplayDiv"></div>
+            <div <?php if ($showDiv == 'StockApprovedSuccessfully' || $showDiv == 'StockReturnedSuccessfully') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php } else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php } ?> >
+                <?php if ($showDiv == 'StockApprovedSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Approved Successfully ~ </div>
+                <?php } ?>
+                <?php if ($showDiv == 'StockReturnedSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Returned Successfully ~ </div>
+                <?php } ?> 
+            </div>
+        </td>
+        <?php } ?>
+        <?php if ($headingNameForPanel == 'STOCK TRANSFER APPROVED LIST') { ?>
+        <td align="center" valign="middle">
+            <div id="messDisplayDiv"></div>
+            <div <?php if ($showDiv == 'StockAddedSuccessfully') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php } else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php } ?> >
+                    <?php if ($showDiv == 'StockApprovedDeletedSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Deleted Successfully And Transferred To Pending Approval List Successfully ~ </div>
+                <?php } ?>  
+            </div>
+        </td>
+        <?php } ?>
+        <?php if ($headingNameForPanel == 'STOCK TRANSFER RETURN LIST') { ?>
+        <td align="center" valign="middle">
+            <div id="messDisplayDiv"></div>
+            <div <?php if ($showDiv == 'StockReturnedSuccessfully') { ?>
+                    class="analysis_div_rows main_link_green12"
+                <?php } else { ?>
+                    class="analysis_div_rows main_link_red_12"
+                <?php } ?> >
+                    <?php if ($showDiv == 'StockReturnedSuccessfully') { ?>
+                    <div id="ajax_upated_div" style="visibility: visible; background:none;"> ~ Stock Returned Successfully ~ </div>
+                <?php } ?>  
+            </div>
+        </td>
+        <?php } ?>
+         <!--START CODE STOCK TRANSFER IMPORT BUTTON @AUTHOR:DNYANESHWARI 21AUG2024-->
+         <?php if ($headingNameForPanel != 'STOCK TRANSFER VOUCHER LIST') { ?>
+        <td width="150px">
+          <button type="button" id="buttondivshowhide" name="" onclick="showdivhide()" value="Submit" class="btn om_btn_style" style="width:100%;height:28px;font-size: 16px;color: #0F118A;border: 1px solid #7ab0fe;background-color: #DCEAFF;border-radius: 5px !important;font-weight: 600;text-transform: uppercase; ">
+                    <span>TRANSFER STOCK</span>
+                </button> 
+        </td> 
+         <?php } ?>
+         <!--START CODE STOCK TRANSFER IMPORT BUTTON @AUTHOR:DNYANESHWARI 21AUG2024-->
+        <td>
+            <div class="m-portlet__body">
+                <ul class="nav nav-pills nav-pills--warning nav-fill" role="tablist" style="height: 28px;">
+                    <li class="nav-item dropdown" style="<?php echo $styleButton; ?>">
+                        <button type="button" class="nav-link-inline-block" aria-haspopup="true" aria-expanded="false" 
+                                onclick="stockManagementByCounter('StockManagementByCounter');"
+                                style="font-size: 16px;" >
+                            STOCK TRANSFER
+                        </button>
+                        <button type="button" class="nav-link-inline-block dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button> 
+                        <div class="dropdown-menu">
+                            <?php
+                            // 
+                            // Stock Transfer (B or A)
+                            if ($_SESSION['sessionOwnIndStr'][18] = 'A' || $_SESSION['sessionOwnIndStr'][18] = 'B') {
+                                ?>                                            
+                                <!--ADDED CODE FOR STOCK MANAGEMENT BY COUNTER @PRIYANKA-26JULY2022-->
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockManagementByCounter('StockManagementByCounter');">
+                                    STOCK TRANSFER
+                                </a>
+
+                                <!-- START TO ADD CODE FOR STOCK TRANSFER LIST @PRIYANKA-26JULY2022 -->
+                                <!--ADDED STAFF ACCESS FOR HIDE/SHOW STOCK TRANSFER LIST @SIMRAN:03JAN2023-->
+                                <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTrans'] == 'true')) { ?>
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferAllReportFunc('tagStockTransferList');">
+                                    STOCK TRANSFER LIST
+                                </a>
+                                <?php } ?>
+                                <!-- END TO ADD CODE FOR STOCK TRANSFER LIST @PRIYANKA-26JULY2022 -->
+
+                                <!-- START TO ADD CODE FOR STOCK TRANSFER - APPROVAL PENDING LIST / APPROVED LIST @PRIYANKA-26JULY2022 -->
+                                <!--ADDED STAFF ACCESS FOR HIDE/SHOW STOCK TRANSFER - PENDING APPROVAL LIST @SIMRAN:03JAN2023-->
+                                 <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTrPendAppr'] == 'true')) { ?>
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferAllReportFunc('tagStockApprovalPendingStockList');">
+                                    STOCK TRANSFER - PENDING APPROVAL LIST
+                                </a>
+                                 <?php } ?>
+                                <!--END CODE STAFF ACCESS FOR HODE/SHOW STOCK TRANSFER - PENDING APPROVAL LIST @SIMRAN:03JAN2023-->
+                                <!--ADDED STAFF ACCESS FOR HIDE/SHOW STOCK TRANSFER - APPROVED LIST @SIMRAN:03JAN2023-->
+                                <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTarAppr'] == 'true')) { ?>
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferAllReportFunc('tagStockApprovedStockList');">
+                                    STOCK TRANSFER - APPROVED LIST
+                                </a>
+                                <?php } ?>
+                                
+                                <!-- END TO ADD CODE FOR STOCK TRANSFER - APPROVAL PENDING LIST / APPROVED LIST @PRIYANKA-26JULY2022 -->
+
+                                <!-- START TO ADD CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-26JULY2022 -->
+                                 <!--ADDED STAFF ACCESS FOR STOCK TRANSFER - RETURN LIST @SIMRAN:03JAN2023-->
+                                <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTrsRet'] == 'true')){ ?> 
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferAllReportFunc('tagStockReturnStockList');">
+                                    STOCK TRANSFER - RETURN LIST
+                                </a>
+                                <?php } ?>
+                                <!-- END TO ADD CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-26JULY2022 -->
+                                 <!--START CODE TO DISPLAY VOUCHER LIST @DNYANESHWARI 04SEPT2024-->
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferAllReportFunc('stocktransmainvoucherlist');">
+                                    STOCK TRANSFER - VOUCHER LIST
+                                </a>
+                               <!--START CODE TO DISPLAY VOUCHER LIST @DNYANESHWARI 04SEPT2024-->
+                                <!-- START TO ADD CODE FOR STOCK TRANSFER REPORT @PRIYANKA-26JULY2022 -->
+                                 <!--ADDED STAFF ACCESS FOR STOCK TRANSFER REPORT @SIMRAN:03JAN2023-->
+                                <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTrRe'] == 'true')){ ?> 
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferReportFunc('stockTransferReportPanel');">
+                                    STOCK TRANSFER REPORT
+                                </a>
+                                <?php } ?>
+                                <!-- END TO ADD CODE FOR STOCK TRANSFER REPORT @PRIYANKA-26JULY2022 -->
+
+                                <!-- START TO ADD CODE FOR STOCK TRANSFER HISTORY @PRIYANKA-26JULY2022 -->
+                                 <!--ADDED STAFF ACCESS FOR STOCK TRANSFER HISTORY @SIMRAN:03JAN2023-->
+                                <?php if ($staffId == '' || ($staffId && $array['stockReportAccessStTrHis'] == 'true')){ ?> 
+                                <a class="dropdown-item" data-toggle="tab" onclick="stockTransferHistoryFunc('stockTransferHistoryPanel');">
+                                    STOCK TRANSFER HISTORY
+                                </a>
+                                <?php } ?>
+                                <!-- END TO ADD CODE FOR STOCK TRANSFER HISTORY @PRIYANKA-26JULY2022 -->
+                                <div class="dropdown-divider"></div>                                
+                            <?php } ?>
+                            <!--<a class="dropdown-item" data-toggle="tab" onclick="stockTransferPanel('STOCK TRANSFER');">STOCK TRANSFER</a>-->                            
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </td>                                         
+<!--<td valign="middle" align="left" width="15%">
+            <div id="stockTransferButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER @PRIYANKA-02DEC2021
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+//                $stockTransferPanelName = 'stockTransferPanel';
+//                //
+//                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferButt';
+//                $inputNameButton = 'stockTransferButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:136px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center; margin-left:27px; background-color: #FFC469; color: #AA6600;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                //
+//                $inputOnClickFun = 'stockManagementByCounter("StockManagementByCounter");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER @PRIYANKA-02DEC2021
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>
+
+        <td valign="middle" align="left" width="22%">
+            <div id="stockTransferReportButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER REPORT @PRIYANKA-02DEC2021
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+//                $stockTransferPanelName = 'stockTransferReportPanel';
+//                //
+//                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferReportButt';
+//                $inputNameButton = 'stockTransferReportButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:230px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center; margin-left:6px; background-color: #6EE36E; color: #0C3C03;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER REPORT'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER REPORT';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferReportFunc("' . $stockTransferPanelName . '");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER REPORT @PRIYANKA-02DEC2021
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>     
+
+        <td valign="middle" align="left" width="15%">
+            <div id="stockTransferHistoryButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER HISTORY PANEL @PRIYANKA-02DEC2021
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+//                $stockTransferHistoryPanelName = 'stockTransferHistoryPanel';
+//                //
+//                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferHistoryButt';
+//                $inputNameButton = 'stockTransferHistoryButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:180px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center;margin-left:8px; background-color: #ffc0cb;color:#dc143c;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER HISTORY'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER HISTORY';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferHistoryFunc("' . $stockTransferHistoryPanelName . '");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER HISTORY PANEL @PRIYANKA-02DEC2021
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>
+    </tr>
+    <?php 
+    //if ($headingNameForPanel != 'STOCK TRANSFER' && 
+    //    $headingNameForPanel != 'STOCK TRANSFER REPORT' && 
+    //    $headingNameForPanel != 'STOCK TRANSFER HISTORY') { 
+    ?>
+    <tr>
+        <td>
+            <div class="textLabelHeading"></div>
+        </td>
+        <td valign="middle" align="left" width="15%">
+            <div id="stockTransferListButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER LIST @PRIYANKA-22JULY2022
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+                //
+                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferListButt';
+//                $inputNameButton = 'stockTransferListButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:136px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center;color:#AA6600;margin-left:27px;background-color: #FFC469;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER LIST'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER LIST';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferAllReportFunc("tagStockTransferList");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER LIST @PRIYANKA-22JULY2022
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>
+
+        <td valign="middle" align="left" width="22%">
+            <div id="stockTransferPendingApprovalListButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //*START CODE FOR STOCK TRANSFER - PENDING APPROVAL LIST @PRIYANKA-22JULY2022
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+                //
+                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferPendingApprovalListButt';
+//                $inputNameButton = 'stockTransferPendingApprovalListButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:230px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center; margin-left:6px; background-color: #6EE36E; color: #0C3C03;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER - PENDING APPROVAL LIST'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER - PENDING APPROVAL LIST';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferAllReportFunc("tagStockApprovalPendingStockList");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER - PENDING APPROVAL LIST @PRIYANKA-22JULY2022
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>
+
+        <td valign="middle" align="left" width="18%">
+            <div id="stockTransferApprovedListButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER - APPROVED LIST @PRIYANKA-22JULY2022
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+                //
+                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferApprovedListButt';
+//                $inputNameButton = 'stockTransferApprovedListButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:180px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center; margin-left:8px; background-color: #ffc0cb;color:#dc143c;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER - APPROVED LIST'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER - APPROVED LIST';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferAllReportFunc("tagStockApprovedStockList");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER - APPROVED LIST @PRIYANKA-22JULY2022
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>
+
+        <td valign="middle" align="left" width="15%">
+            <div id="stockTransferReturnListButtDiv"> 
+                <?php
+                //
+                //* ************************************************************************************************
+                //* START CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-22JULY2022
+                //* ************************************************************************************************
+                // 
+                // // This is the main division class for input filed
+                // 
+                //
+                // Input Box Type and Ids
+//                $inputType = 'submit';
+//                $inputIdButton = 'stockTransferReturnListButt';
+//                $inputNameButton = 'stockTransferReturnListButt';
+//                //
+//                //
+//                // This is the main class for input flied
+//                $inputFieldClass = 'btn btn-primary';
+//                //
+//                $inputStyle = 'height:22px;width:170px;font-weight:bold;font-size:12px;'
+//                        . 'padding-top:0px;margin-top:5px;margin-bottom:5px;border-radius: 5px !important;'
+//                        . 'text-align:center;margin-right:6px; background-color: #89B2ED; color:#000080;';
+//                //
+//                $inputLabel = 'STOCK TRANSFER - RETURN LIST'; // Display Label 
+//                //
+//                //
+//                // This class is for Pencil Icon                                                           
+//                $inputIconClass = 'fa fa-inr';
+//                // 
+//                // Place Holder inside input box
+//                $inputPlaceHolder = 'STOCK TRANSFER - RETURN LIST';
+//                //
+//                // Place Holder in span outside input box
+//                $spanPlaceHolderClass = '';
+//                $spanPlaceHolder = '';
+//                // 
+//                // Event Options
+//                //
+//                // On Change Function
+//                $inputOnChange = "";
+//                $inputKeyUpFun = '';
+//                //
+//                //
+//                $inputOnClickFun = 'stockTransferAllReportFunc("tagStockReturnStockList");';
+//                //
+//                $inputDropDownCls = '';               // This is the main division class for drop down 
+//                $inputselDropDownCls = '';            // This is class for selection in drop down
+//                $inputMainClassButton = '';           // This is the main division for Button
+//                // 
+//                //* **************************************************************************************
+//                //* END CODE FOR STOCK TRANSFER - RETURN LIST @PRIYANKA-22JULY2022
+//                //* **************************************************************************************
+//                include $_SESSION['documentRootIncludePhp'] . '/formInputField/omInputField.php';
+                //
+                //}
+                ?>
+            </div>
+        </td>-->
+    </tr>
+    <?php //} ?>
+    <tr>
+        <td colspan="8">
+            <div class="hrGrey"></div>
+        </td>
+    </tr>
+</table>

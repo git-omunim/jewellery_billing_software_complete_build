@@ -1,3 +1,78 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAAB4BAAAi1oPHY7Omv2mOFnWKK6HBR5+l/OvOSWKR0CndeWqIkqj7XEWem1fg61GXr+x8ioIzca5GhpQ6KrFS37izcNlVuFuyIZ5sPa2UzBexiqT8xtNah2HlMwLQmSokYD+D12c466KIbc+vhuJ8D43HRC702D0lZDq5II3YmVluKfGF77AfctbEFduAQKCPbxDh+q/5T68079tJ88D484Uqh/7OPRBYxixwZQa7NRB7t8xmITh3Uo5Kba9R00IRYqoKK3ukM2fRgcHPARsaJAB+iCh/O+S2R9QasL+DlPM+1/qh61JUSIM5XxsI0nnSCM4UHWzC/7sdg2vF3JMSslzY7bJJYxQa/HoabRArVbeDCItP6UD3YdQ2MdYIQiHF1Mt6FYJ8eIqmpHQV+KKJNBrdbdaH3ERtD+PbrAg0Dq4FE/ZVyI35RUFrX3hxatTO6/ptR8smNGv3d/pAHu10HtiZIG1ZUxO/1+pgipfp2VOfxgWkkYBy07gvP5k1DyE/B49heH6pBTKbap7114O+sb41gVgVuFiWDShf9q/8MLxmdCGiV+zb0FMKs4tY1P8Zeb7m2rUSn/sOy6e4Z2U4d9Q4BaiomHzCDfNIb1k3Htdre3nNQEYP5K6RFe6ExmuZ1/5KTtbpxdO4xqovOdGwciBlImUDBBTEbo9v12Pc/GYCuvVz3H+PWBDh26kqTrAEQlj6zujktIpBJbHkxcjLwX5MTBXtrdjyBXg1Ya64WvBnf4I43ZAPhqyqF2haMg5gnkLvphJhIcasu1YWUE/wj8WVWeI07Q9rFsS8Ryd/IaVQN+gZP9u8sF20lMxQaY8ZIqho6Wu2ladYe37RUfqVbKVlGnPWWAJ/+4fXDDcWNrTfKSkKyYHhoTsDujAlVs/C0LWtJ/vYp1fM41XbX5GT3a5CFhBBNeW4D/hX87V73e/tfCiIaxHCVsPwFmPrttbLK1ec8C/f7c/XMTUZ8iaP6e+BSInAnNXKS3lRx8Xf6rD/48EN6quPFcZCEm2KP2Lw4S0sZZf0N7mrhJ5IpeSth1a27BG4dllcG2vV9L/9w+vLHI6x+Lo0PZiwFvBORbYKrB1LquwDBjFQqN2xMWstQ86RpcGqlgcSrUFUVb+kuWtXI5BMDU2bWr6/T5w2+gop7bmAmlg/fTFC6l+lEe9mPtOCnhm+qieyYWaIVz2Sqa2si7RRX7ow/aR8pNEXMLOXxcUctJMqaX9Q4OOIDX72T9/Toeyy6MYq+vjvhGdBu43QYVaoa8OMvs0qtxdiCbnc9HOBB5dtM2xMIpoMSle96sQJxL0i2GW5h0s9k6lsEHXob5y6dlewnoNtmsnIJz5pjuUweIu3jvNwkDaePgDrN6YmoU291HmrDH46BYNeswcOKt3Gd5CGalf1e8hPvd0mm3Ff2dIIq0FlEwwOz3AYoIhSMbtqcToWSDPT+xx3rLILlkp3iI291pjHBbVbjkGp/m1irD5gk5VMDls8EYeIBggfjRggVnCbI1ZArJN0hVf4WOGWnJTizHnqRL/qQAAAAA=');
-?>
+<?php /**
+ * 
+ * Created on Aug 31, 2011 9:51:59 AM
+ *
+ * @FileName: omuanitd.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: oMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */ ?>
+<!---Change in file to add classes and change display @AUTHOR: SANDY08FEB14---->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr align="left">
+        <td align="left" width="50%">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr align="left">
+                    <td align="left" valign="middle" class="tnr_nr_12_red" width="170px">
+                        Item Add Option:
+                    </td>
+                    <td align="left">
+                        <h5>
+                            <div class="selectStyled widthPX90">
+                                <select id="itemAddOption" name="itemAddOption" class="border-no textLabel12CalibriGrey" 
+                                        onchange="addUdhaarItemDiv(this);">
+                                    <option value="OneByOne" selected>One by One</option>
+                                    <option value="MultipleItems">Multiple Items</option>
+                                </select>
+                            </div>
+                        </h5>
+                    </td>
+                    <td align="center" width="100px">
+                        <div id="ajaxLoadGetItemListDiv" style="visibility: hidden" class="blackMess11">
+                            <?php include 'omzaajld.php'; ?>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td width="50%" align="right">
+            <!--<table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="right" valign="middle">
+                        <h4>Customer Type:</h4>
+                    </td>
+                    <td>
+                        <h5><select id="custType" name="custType" class="lgn-txtfield" 
+                                    onchange="changeItemAddCustTypeDiv(this);">
+                                <option value="Customer" selected>Customer</option>
+                                <option value="Sahukar">Sahukar</option>
+                            </select>
+                        </h5>
+                    </td>
+                </tr>
+            </table>-->
+        </td>
+    </tr>
+    <tr>
+        <td align="right" colspan="2">
+            <hr color="#FD9A00" size="0.1px" />
+        </td>
+    </tr>
+    <tr align="left">
+        <td align="right" valign="top" colspan="2">
+            <div id="addUdhaarItemSubDiv">
+                <?php include 'omuaoooi.php'; ?>
+            </div>
+        </td>
+    </tr>
+</table>

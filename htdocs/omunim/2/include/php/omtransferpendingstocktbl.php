@@ -1,3 +1,208 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @Description: Pending Stock Transfer Table @DNYANESHWARI21AUG2024
+ * **************************************************************************************
+ *
+ * Created on AUG 21, 2021 07:12:00 PM 
+ * **************************************************************************************
+ * @FileName: omtransferpendingstocktbl.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 2.7.102
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * *****************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: 
+ *  REASON:
+ *
+ * 
+ * Project Name: Online Munim ERP Accounting Software 2.7.102
+ * Version: 2.7.102
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+$accFileName = $currentFileName;
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include 'ommpsbac.php';
+include_once 'ommpfndv.php';
+include_once 'conversions.php';
+require_once 'ommpincr.php';
+$staffId = $_SESSION['sessionStaffId'];
+$documentRoot = $_SESSION['documentRoot'];
+?>
+<table align="center" border="0" cellspacing="0" cellpadding="0" style="background-color: #e6f7ff;border: 1px dashed #36b0ea;border-top:0;" width="70%">
+    <?php
+    //
+//    echo "<pre>";
+//    print_r($_REQUEST);
+//    echo "</pre>";
+    $selectedFirm = $_REQUEST['selectedFirm'];
+    $operation = $_REQUEST['operation'];
+    $stTransId = $_REQUEST['stTransId'];
+    $sttransPreVoucherNo = $_REQUEST['sttransPreVoucherNo'];
+    $sttransVoucherNo = $_REQUEST['sttransVoucherNo'];
+    //
+    $sessionOwnerId = $_SESSION['sessionOwnerId'];
+    //
+    //WORKING OF CANCEL BUTTON WHEN WE TAKE DATA FOR TRANSFER
+    if ($operation == 'cancelStockTransfer') {
+        $qDelCancelStTrans = "DELETE FROM stock_transfer where sttrans_id='$stTransId' and sttrans_status='readyToTransfer'";
+        //
+        if (!mysqli_query($conn, $qDelCancelStTrans)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //WORKING OF RESET BUTTON TO RESET AT A TIME
+    if ($operation == 'resetStockTransfer') {
+//              echo $delCancelStTrans = "DELETE FROM stock_transfer where sttrans_id='$stTransId'";
+        $qDelresetStTrans = "DELETE FROM stock_transfer where sttrans_status='readyToTransfer' and sttrans_pre_voucher_no='$sttransPreVoucherNo' and sttrans_voucher_no='$sttransVoucherNo'";
+        //
+        if (!mysqli_query($conn, $qDelresetStTrans)) {
+            die('Error: ' . mysqli_error($conn));
+        }
+    }
+    //
+    //START TABLE
+    if ($selectedFirm == '' || $selectedFirm == NULL) {
+        $qSelPerFirm = "SELECT firm_id,firm_name,firm_type FROM firm where "
+                . "firm_own_id = '$_SESSION[sessionOwnerId]' and firm_id='$_SESSION[setFirmSession]' order by firm_since desc limit 0,1";
+        $resSelPerFirm = mysqli_query($conn, $qSelPerFirm);
+        $rowSelPerFirm = mysqli_fetch_array($resSelPerFirm);
+        $selectedFirm = $rowSelPerFirm['firm_id'];
+    }
+    //
+    if ($_SESSION['setFirmSession'] != '') {
+        $strFrmId = $_SESSION['setFirmSession'];
+    } else {
+        $strFrmId = getFirmByPass($globalOwnPass, $globalOwnIPass);
+    }
+
+//   echo $getTransferedStock = "SELECT sttr_id,sttr_item_code,sttr_item_name,sttr_item_category,sttr_quantity,sttr_gs_weight,sttr_stock_transfer_previous_firm_id,sttr_firm_id FROM stock_transaction where sttr_stock_transfer_success_status='transferPending' and sttr_firm_id='$selectedFirm' and sttr_indicator NOT IN ('stockCrystal')";
+    $getTransferedStock = "SELECT sttrans_sttr_id,sttrans_item_code,sttrans_item_name,sttrans_item_category,sttrans_qty,sttrans_gs_wt,sttrans_prev_firm,sttrans_new_firm,sttrans_id FROM stock_transfer where sttrans_own_id='$sessionOwnerId' and sttrans_status='readyToTransfer' and sttrans_new_firm='$selectedFirm' and sttrans_prev_firm IN($strFrmId) order by sttrans_id";
+
+// 
+    $resTransferedStock = mysqli_query($conn, $getTransferedStock);
+    $noOfRows = mysqli_num_rows($resTransferedStock);
+    //
+    ?>
+
+    <?php
+    if ($noOfRows > 0) {
+        $qGetVoucherDetails = "SELECT sttrans_pre_voucher_no,sttrans_voucher_no FROM stock_transfer where sttrans_own_id='$sessionOwnerId' and sttrans_status='readyToTransfer' and sttrans_new_firm='$selectedFirm'";
+        $resGetVoucherDetails = mysqli_query($conn, $qGetVoucherDetails);
+        $rowGetVoucherDetails = mysqli_fetch_array($resGetVoucherDetails);
+        $SttransPreVoucherNo = $rowGetVoucherDetails['sttrans_pre_voucher_no'];
+        $SttransVoucherNo = $rowGetVoucherDetails['sttrans_voucher_no'];
+        ?>
+        <tr>
+            <td colspan="6" class="itemAddPnLabels14 paddingTop5" width="550px" align="center">
+                <span class="main_link_brown">VOUCHER NO: </span><span class="ff_arial fw_b fs_12 black"> <?php echo $SttransPreVoucherNo; ?> | <?php echo $SttransVoucherNo; ?></span>
+            </td>
+        </tr>
+        <tr><td colspan="7">
+                <table class="brdrgry-dashed" style="border-bottom: 0" width="80%" cellspacing="0" cellpadding="5" align="center">
+                    <tbody>
+                        <tr class="height28" style="background:#e3edf4;color:#000080;">
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="ITEM NAME" width="50px" align="center" style="color:#000080;">
+                                <div class="spaceLeft5">IT ID</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="ITEM NAME" width="60px" align="center" style="color:#000080;">
+                                <div class="spaceLeft5">ITEM NAME</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="ITEM CATEGORY" width="50px" align="center" style="color:#000080;">
+                                <div class="spaceLeft5">ITEM CATEGORY</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="QTY" width="50px" align="center" style="color:#000080;">
+                                <div class="spaceLeft5">QTY</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="GROSS WEIGHT" width="70px" align="center" style="color:#000080;">
+                                GS WT
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="PREVIOUS FIRM" width="60px" align="center" style="color:#000080;">
+                                <div class="spaceRight5">PREVIOUS FIRM</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="NEW FIRM" width="60px" align="center" style="color:#000080;">
+                                <div class="spaceRight5">NEW FIRM</div>
+                            </td>
+                            <td class="brwnCalibri12Font border-color-grey-rb" title="NEW FIRM" width="60px" align="center" style="color:#000080;">
+                                <div class="spaceRight5">CANCEL</div>
+                            </td>
+                        </tr>
+                        <?php while ($rowTransferedStock = mysqli_fetch_array($resTransferedStock)) { ?>
+                            <tr style="background:#fff;">
+                                <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                                    <?php echo $rowTransferedStock['sttrans_item_code'] ?>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                                    <?php echo $rowTransferedStock['sttrans_item_name'] ?>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                                    <div class="spaceLeft5"> <?php echo $rowTransferedStock['sttrans_item_category'] ?></div>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" title="fsdf" align="center">
+                                    <div class="spaceLeft5"> <?php echo $rowTransferedStock['sttrans_qty'] ?></div>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" align="center">
+                                    <?php echo $rowTransferedStock['sttrans_gs_wt'] ?>                 
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" width="80px" align="center">
+                                    <?php
+                                    $prevFirmId = $rowTransferedStock['sttrans_prev_firm'];
+                                    $qSelPerFirmPrev = "select firm_name from firm where firm_own_id='$_SESSION[sessionOwnerId]' and firm_id='$prevFirmId'";
+                                    $resSelPerFirmPrev = mysqli_query($conn, $qSelPerFirmPrev);
+                                    $rowSelPerFirmPrev = mysqli_fetch_array($resSelPerFirmPrev);
+                                    $prevFirmName = $rowSelPerFirmPrev['firm_name'];
+                                    ?>
+                                    <div class="spaceRight5"> <?php echo $prevFirmName ?></div>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" width="80px" align="center">
+                                    <?php
+                                    $currFirmId = $rowTransferedStock['sttrans_new_firm'];
+                                    $qSelPerFirmCurr = "select firm_name from firm where firm_own_id='$_SESSION[sessionOwnerId]' and firm_id='$currFirmId'";
+                                    $resSelPerFirmCurr = mysqli_query($conn, $qSelPerFirmCurr);
+                                    $rowSelPerFirmCurr = mysqli_fetch_array($resSelPerFirmCurr);
+                                    $currFirmName = $rowSelPerFirmCurr['firm_name'];
+                                    ?>
+                                    <div class="spaceRight5"><span style="font-weight: 900;color:#4cae4c;"> <?php echo $currFirmName; ?></span></div>
+                                </td>
+                                <td class="blackCalibri12Font border-color-grey-rb" width="60px" align="center" style="cursor: pointer;" onclick="showTransferData('<?php echo $selectedFirm ?>', '<?php echo $rowTransferedStock['sttrans_id'] ?>', 'cancelStockTransfer');">
+                                    <div class="spaceRight5"><span style="font-weight: 900;color:red;"><img src="<?php echo $documentRoot; ?>/images/delete16.png" style="vertical-align: bottom;"></span></div>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                        <tr>
+                        </tr></tbody></table>
+            </td>  
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <button type="button" id="button" name="" onclick="showTransferData('<?php echo $selectedFirm ?>', '', 'resetStockTransfer', '<?php echo $SttransPreVoucherNo ?>', '<?php echo $SttransVoucherNo ?>');" value="Submit" class="btn om_btn_style" style="width:120px;height:32px;font-size: 14px;border: 1px solid #7ab0fe;border-radius: 5px !important;font-weight: 600;text-transform: uppercase;margin-top:10px; ">
+                    <span>RESET</span>
+                </button>
+                <button type="button" id="button" name="" onclick="stockTransManagementByCsvFile('sendData', '<?php echo $SttransPreVoucherNo ?>', '<?php echo $SttransVoucherNo ?>');
+                            getStockTransferSelectedOptionsFunc(document.getElementById('productCounter').value, document.getElementById('selectedStaff').value,
+                                    document.getElementById('FirmName').value, '<?php echo $stockTransferNavPanelName; ?>', '');" value="Submit" class="btn om_btn_style" style="width:120px;height:32px;font-size: 14px;border: 1px solid #7ab0fe;border-radius: 5px !important;font-weight: 600;text-transform: uppercase;margin-top:10px; ">
+                    <span>SEND</span>
+                </button>
+            </td>
+        </tr>
+    <?php }
+    ?>
+</table>
+<!--END TABLE-->

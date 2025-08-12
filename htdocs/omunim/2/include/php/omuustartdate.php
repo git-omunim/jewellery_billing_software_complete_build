@@ -1,3 +1,279 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Date File
+ * **************************************************************************************
+ * 
+ * Created on Jun 22, 2013 4:07:37 PM
+ *
+ * @FileName: omuustartdate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<!-- *************** Start Code for DOBDay *************** -->
+<?php
+$todayDay = $selDOBDay;
+//
+$arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+    '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+    '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+//$optDay[$todayDay] = "selected";
+// 
+// ADDED ONCLICK FUNCTION FOR IF DEPOSIT DATE CHANGE, CALCUALTE NEW INTEREST @AUTHOR-PRIYANKA-10AUG2022
+//
+?> 
+<div class="selectStyledBorderLess floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="DOBDay<?php echo $udCounter ?>" name="DOBDay" class="select_border_red" style="width:100%;height:30px;"
+    <?php if ($datePanelName == 'udhaarDepositPanel' && $udhaarIntChk == 'true') { ?>
+                onchange="showUdhaarDepositMoneyInterestChangeDiv('<?php echo $custId; ?>', '<?php echo $udhaarId; ?>','<?php echo $udCounter ?>',
+                                this.value,
+                                document.getElementById('DOBMonth<?php echo $udCounter ?>').value,
+                                document.getElementById('DOBYear<?php echo $udCounter ?>').value);"
+            <?php } ?>          
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('DOBMonth').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('udhaarMainAmount').focus();
+                        return false;
+                    }"
+            <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                disabled
+            <?php } ?>        
+            >
+        <option value="NotSelected">DAY</option>
+        <?php
+        for ($dd = 0; $dd <= 30; $dd++) {
+            if ($changeCounter == $udCounter) {
+              if($selDOBDay == $arrDays[$dd])
+              {
+               $daySelected="selected";   
+              }else{
+               $daySelected="";  
+              }
+            }else{
+                if($todayDay == $arrDays[$dd])
+              {
+                 $daySelected="selected"; 
+              }else{
+                 $daySelected="";   
+              }
+            }
+            echo "<option value=\"$arrDays[$dd]\" $daySelected $optDay[$dd]>$arrDays[$dd]</option>";
+              }
+        ?>
+    </select> 
+    <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+        <input id="DOBDay<?php echo $udCounter ?>" name="DOBDay" type="hidden" value="<?php echo $selDOBDay; ?>"/>
+    <?php } ?>
+</div>
+<!-- *************** Start Code for Month *************** -->
+<?php
+//$todayMM = date(n) - 1;
+$arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+$optMonth[$todayMM] = "selected";
+// 
+// ADDED ONCLICK FUNCTION FOR IF DEPOSIT DATE CHANGE, CALCUALTE NEW INTEREST @AUTHOR-PRIYANKA-10AUG2022
+//
+?> 
+<input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+<div class="selectStyledBorderLess background_transparent floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="DOBMonth<?php echo $udCounter ?>" name="DOBMonth" class="select_border_red" style="width:100%;height:30px;"
+    <?php if ($datePanelName == 'udhaarDepositPanel' && $udhaarIntChk == 'true') { ?>
+                onchange="showUdhaarDepositMoneyInterestChangeDiv('<?php echo $custId; ?>', '<?php echo $udhaarId; ?>','<?php echo $udCounter ?>',
+                                document.getElementById('DOBDay<?php echo $udCounter ?>').value,
+                                this.value,
+                                document.getElementById('DOBYear<?php echo $udCounter ?>').value);"
+            <?php } ?>
+                                     onkeydown="javascript: 
+                                     var key = event.keyCode || event.which;
+                                     if (key === 13) {
+                                         document.getElementById('DOBYear').focus();
+                                         return false;
+                                     } else if (key === 8) {
+                                         document.getElementById('DOBDay').focus();
+                                         return false;
+                                     } else if (key === 9) {
+                                         return true; // allow TAB key without interference
+                                     } else if (key >= 65 && key <= 90) {
+                                         return true; // allow letters like J, F, M to auto-jump in select
+                                     }
+                                 
+                                     // Number key month shortcuts
+                                     var arrMonths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+                                     var gbMonth = document.getElementById('gbMonthId').value;
+                                     if (gbMonth == 1) {
+                                         if (key >= 48 && key <= 57) {
+                                             var sel = String.fromCharCode(key);
+                                             if (sel == 0) this.value = arrMonths[9];
+                                             else if (sel == 1) this.value = arrMonths[10];
+                                             else if (sel == 2) this.value = arrMonths[11];
+                                             document.getElementById('gbMonthId').value = 0;
+                                         }
+                                     } else if (key >= 49 && key <= 57) {
+                                         this.value = arrMonths[key - 49];
+                                         if (key == 49) {
+                                             document.getElementById('gbMonthId').value = 1;
+                                         }
+                                     }
+                                     return false;"
+
+            <?php  
+            /*        
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('DOBYear').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('DOBDay').focus();
+                        return false;
+                    }
+                    //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                    var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                    gbMonth = document.getElementById('gbMonthId').value;
+                    if (gbMonth == 1) {
+                        if (event.keyCode) {
+                            var sel = String.fromCharCode(event.keyCode);
+                            if (sel == 0)
+                            {
+                                this.value = arrMonths[9];
+                            } else if (sel == 1)
+                            {
+                                this.value = arrMonths[10];
+                            } else if (sel == 2)
+                            {
+                                this.value = arrMonths[11];
+                            }
+                            // this.value = arrMonths[10];
+                            document.getElementById('gbMonthId').value = 0;
+                        }
+                    } else if (event.keyCode) {
+                        var sel = String.fromCharCode(event.keyCode) - 1;
+                        this.value = arrMonths[sel];
+                        if (event.keyCode == 49) {
+                            document.getElementById('gbMonthId').value = 1;
+                        }
+                    } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13 " */?>
+            <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                disabled
+            <?php } ?>        
+            >
+        <option value="NotSelected" disabled hidden>MON</option>
+        <?php
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+        $queryengmonformat = "SELECT omly_value FROM omlayout WHERE omly_own_id = '$sessionOwnerId' and omly_option = 'englishMonthformat'";
+        $engmonformat = mysqli_query($conn, $queryengmonformat);
+        $rowengmonformat = mysqli_fetch_array($engmonformat);
+        $englishMonthFormat = $rowengmonformat['omly_value'];
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+////**********************************************************************************************************************************
+        for ($mm = 0; $mm <= 11; $mm++) {
+            if ($changeCounter == $udCounter) {
+              if($selDOBMnth == $arrMonths[$mm])
+              {
+               $monthSelected="selected";   
+              }else{
+               $monthSelected="";  
+              }
+            }else{
+                if($todayMM == $arrMonths[$mm])
+              {
+                 $monthSelected="selected"; 
+              }else{
+                 $monthSelected="";   
+              }
+            }
+//************************************************************************************************************************************
+//***********************START CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022************************
+//************************************************************************************************************************************
+            if ($englishMonthFormat == 'displayinnumber') {
+                $engMonth = date('m', strtotime($arrMonths[$mm]));
+                echo "<option value=\"$arrMonths[$mm]\" $monthSelected $optMonth[$mm]>$engMonth</option>";
+            } else {
+                echo "<option value=\"$arrMonths[$mm]\" $monthSelected $optMonth[$mm]>$arrMonths[$mm]</option>";
+            }
+//************************************************************************************************************************************
+//***********************END CODE TO SHOW ENGLISH DATE MONTH IN NUMERIC/WORD FORMAT@RENUKA SHARMA-07-12-2022**************************
+//************************************************************************************************************************************ 
+        }
+        $monthSelected ='';
+        unset($optMonth);
+        ?>
+    </select> 
+    <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) {
+        ?>
+        <input id="DOBMonth<?php echo $udCounter ?>" name="DOBMonth" type="hidden" value="<?php echo $selDOBMnth; ?>"/>
+    <?php } ?>
+</div>
+<!-- *************** Start Code for Year *************** -->
+<?php
+$todayYear = date(Y); //chnaged @Author:PRIYA30APR14
+$optYear[$selDOBYear] = "selected";
+// 
+// ADDED ONCLICK FUNCTION FOR IF DEPOSIT DATE CHANGE, CALCUALTE NEW INTEREST @AUTHOR-PRIYANKA-10AUG2022
+//
+?> 
+<div class="selectStyledBorderLess background_transparent floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="DOBYear<?php echo $udCounter ?>" name="DOBYear" class="select_border_red" style="width:100%;height:30px;"
+    <?php if ($datePanelName == 'udhaarDepositPanel' && $udhaarIntChk == 'true') { ?>
+                onchange="showUdhaarDepositMoneyInterestChangeDiv('<?php echo $custId; ?>', '<?php echo $udhaarId; ?>','<?php echo $udCounter ?>',
+                                document.getElementById('DOBDay<?php echo $udCounter ?>').value,
+                                document.getElementById('DOBMonth<?php echo $udCounter ?>').value,
+                                this.value);"
+            <?php } ?>
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('udhharFirmId').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('DOBMonth').focus();
+                        return false;
+                    }"
+            <?php if (($staffId != '' && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+                disabled
+            <?php } ?>        
+            >
+        <option value="NotSelected">YEAR</option>
+        <?php
+        for ($yy = $todayYear; $yy >= 1900; $yy--) {
+            if ($changeCounter == $udCounter) {
+              if($selDOBYear == $yy)
+              {
+               $yearSelected="selected";   
+              }else{
+               $yearSelected="";  
+              }
+            }else{
+                if($selDOBYear == $yy)
+              {
+                 $yearSelected="selected"; 
+              }else{
+                 $yearSelected="";   
+              }
+            }
+            echo "<option value=\"$yy\" $yearSelected>$yy</option>";
+        }
+        ?>
+    </select>
+    <?php if (($staffId && $array['backDateTransactionForAllpanel'] != 'true')) { ?>
+        <input id="DOBYear<?php echo $udCounter ?>" name="DOBYear" type="hidden" value="<?php echo $selDOBYear; ?>"/>
+    <?php } ?>
+</div>

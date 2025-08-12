@@ -1,3 +1,862 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **********************************************************************************************************************************
+ * @tutorial:  Import Data From CSV File to Mysql Database for Purchase List Payment Details @PRIYANKA-20SEP21
+ * **********************************************************************************************************************************
+ *
+ * Created on 20 SEP, 2021 11.15.00 AM
+ * 
+ * @FileName: omSuppPurchaseListPaymentDetailsImportFile.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 2.7.82
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ * Copyright 2021 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR: @PRIYANKA-20SEP21
+ *  REASON:
+ *
+ */
+?>
+<?php
+//
+if (!isset($_SESSION)) {
+    session_start();
+}
+//
+include $_SESSION['documentRootIncludePhp'] . '/system/omsachsc.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omsgeagb.php';
+require_once $_SESSION['documentRootIncludePhp'] . '/system/omssopin.php';
+include_once $_SESSION['documentRootIncludePhp'] . '/ommpfndv.php';
+//
+$currentFileName = basename(__FILE__);
+$sessionOwnerId = $_SESSION['sessionOwnerId'];
+$conn = $GLOBALS['conn'];
+$currentDateTime = $GLOBALS['currentDateTime'];
+//
+?>
+<?php
+//
+//
+// print_r($_REQUEST);
+//
+//
+// USER ID @PRIYANKA-20SEP21
+$userId = $sttr_user_id;
+//
+//
+// FIRM ID @PRIYANKA-20SEP21
+$firmId = $sttr_firm_id;
+//
+//
+parse_str(getTableValues("SELECT firm_type FROM firm WHERE firm_own_id = '$_SESSION[sessionOwnerId]' and firm_id = '$firmId'"));
+//
+//
+// INVOICE NUMBER @PRIYANKA-20SEP21
+$payPreInvoiceNo = $sttr_pre_invoice_no;
+$payInvoiceNo = $sttr_invoice_no;
+//
+//
+// FOR CR ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Sundry Debtors';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$utin_cr_acc_id = $acc_id;
+//
+//
+// FOR BANK ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Bank Account';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$bankAccId = $acc_id;
+//
+//
+// FOR CASH IN HAND ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Cash in Hand';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$cashInHandAccId = $acc_id;
+//
+//
+// FOR COURIER CHARGES ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Courier Charges';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$courierChargesAccId = $acc_id;
+//
+//
+// FOR DUTIES AND TAXES ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Duties & Taxes';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$dutiesAndTaxesAccId = $acc_id;
+//
+//
+// FOR LABOUR CHRGS ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Labour Charges';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$labChargesAccId = $acc_id;
+//
+//
+// FOR IGST ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'IGST';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$igstAccId = $acc_id;
+//
+//
+// FOR SGST ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'SGST';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$sgstAccId = $acc_id;
+//
+//
+// FOR CGST ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'CGST';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$cgstAccId = $acc_id;
+//
+//
+// FOR INDIRECT INCOME ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Indirect Incomes';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$indirectIncomeAccId = $acc_id;
+//
+//
+// FOR DISCOUNT RECEIVED ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'Discount Rec';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$discountRecAccId = $acc_id;
+//
+//
+// FOR RAW GOLD ACCOUNT DETAILS @PRIYANKA-20SEP21
+$accName = 'RAW Gold';
+//
+parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id = '$_SESSION[sessionOwnerId]' "
+                       . "and acc_firm_id = '$sttr_firm_id' and acc_user_acc = '$accName'"));
+//
+$rawGoldAccId = $acc_id;
+//
+//
+//echo '$sttr_final_valuation == ' . $sttr_final_valuation;
+//echo("<br/>"); 
+//
+//
+$whole = intval($sttr_final_valuation); 
+$decimalAmount = decimalVal(($sttr_final_valuation - $whole),2);
+//
+//echo '$decimalAmount == ' . $decimalAmount;
+//echo("<br/>"); 
+//
+//
+$roundOffAmount = 0;
+$rndOff = 0.5;
+if ($decimalAmount > 0) {
+    //
+    //echo '$sttr_final_valuation == ' . $sttr_final_valuation;
+    //echo("<br/>"); 
+    //
+    $roundOffAmount = $decimalAmount;
+    //
+    //echo '$roundOffAmount == ' . $roundOffAmount;
+    //echo("<br/>"); 
+    //
+    if ($roundOffAmount > $rndOff) {
+        //
+        $rndOffAmount = (1 - $roundOffAmount);
+        //
+        // START CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+           $PayRoundOffDisplay = '+ ' . decimalVal($rndOffAmount,2);
+        // END CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+        //
+        $PayRoundOffDisp = decimalVal($rndOffAmount,2);
+        $PayRoundOffAmt = decimalVal($roundOffAmount,2);
+        //
+        //
+    } else {
+        //
+        // START CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+           $PayRoundOffDisplay =  '- ' . decimalVal($roundOffAmount,2);
+        // END CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+        //
+        $PayRoundOffDisp = decimalVal($roundOffAmount,2);
+        $PayRoundOffAmt = decimalVal($roundOffAmount,2);
+        //
+        //
+    }
+    //
+    //echo '$PayRoundOffDisplay == ' . $PayRoundOffDisplay;
+    //echo("<br/>"); 
+    //echo '$PayRoundOffDisp == ' . $PayRoundOffDisp;
+    //echo("<br/>"); 
+    //echo '$PayRoundOffAmt == ' . $PayRoundOffAmt;
+    //echo("<br/>"); 
+    //
+    $sttr_final_valuation = decimalVal(round($sttr_final_valuation),2);
+    //
+    //echo '$sttr_final_valuation @==@ ' . $sttr_final_valuation;
+    //echo("<br/>"); 
+    //
+} 
+else if ($decimalAmount == 0 || $decimalAmount == '0.00') {
+    ///
+    // START CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+       $PayRoundOffDisplay = decimalVal($roundOffAmount,2);
+    // END CODE FOR METAL RECEIVED CALCULATION ON PAYMENT PANEL @PRIYANKA-21-SEP-21
+    //
+    // START CODE FOR ROUND OFF TOTAL AMT STORE IN DATABASE @PRIYANKA-21-SEP-21
+       $PayRoundOffDisp = decimalVal($roundOffAmount,2);
+       $PayRoundOffAmt = decimalVal($roundOffAmount,2);
+    // END CODE FOR ROUND OFF TOTAL AMT STORE IN DATABASE @PRIYANKA-21-SEP-21
+    //   
+    //echo '$PayRoundOffDisplay 2== ' . $PayRoundOffDisplay;
+    //echo("<br/>"); 
+    //echo '$PayRoundOffDisp 2== ' . $PayRoundOffDisp;
+    //echo("<br/>"); 
+    //echo '$PayRoundOffAmt 2== ' . $PayRoundOffAmt;
+    //echo("<br/>"); 
+    //
+}
+//
+//
+//
+//
+// *********************************************************************************************************
+// START CODE TO CREATE REQUEST FOR PAYMENT DETAILS @PRIYANKA-20-SEP-21
+// *********************************************************************************************************
+//
+$paymentInfo = Array ('cgstPer' => 'checked', 
+'sgstPer' => 'checked', 
+'cgstChk' => 'checked', 
+'sgstChk' => 'checked',
+'utin_pay_tax_on_total_amt_chk' => 'on',
+'stockGoldTotQty' => $sttr_quantity_gd, 
+'stockGoldTotGrosssWt' => $sttr_gs_weight_gd, 
+'stockGoldTotGrosssWtType' => 'GM', 
+'stockGoldTotNetWt' => $sttr_nt_weight_gd, 
+'stockGoldTotNetWtType' => 'GM', 
+'stockGoldTotFFineWt' => $sttr_final_fine_weight_gd, 
+'stockGoldTotFFineWtType' => 'GM', 
+'stockGoldTotOthChgsWt' => 0.000, 
+'stockGoldTotOthChgsWtType' => 'GM', 
+'stockGoldTotFineWt' => $sttr_fine_weight_gd, 
+'stockGoldTotFineWtType' => 'GM', 
+'stockGoldTotFinalBalance' => $sttr_valuation_gd, 
+'stockGoldCrystalAmt' => 0, 
+'stockGoldTotPurValuation' => '', 
+'stockSilverTotQty' => $sttr_quantity_sl, 
+'stockSilverTotGrosssWt' => $sttr_gs_weight_sl, 
+'stockSilverTotGrosssWtType' => 'GM', 
+'stockSilverTotNetWt' => $sttr_nt_weight_sl, 
+'stockSilverTotNetWtType' => 'GM', 
+'stockSilverTotFFineWt' => $sttr_final_fine_weight_sl, 
+'stockSilverTotFFineWtType' => 'GM', 
+'stockSilverTotOthChgsWt' => 0.000, 
+'stockSilverTotOthChgsWtType' => 'GM', 
+'stockSilverTotFineWt' => $sttr_fine_weight_sl, 
+'stockSilverTotFineWtType' => 'GM', 
+'stockSilverTotFinalBalance' => $sttr_valuation_sl, 
+'stockSilverCrystalAmt' => '', 
+'stockSilverTotPurValuation' => '', 
+'stockCrystalTotQty' => '', 
+'stockCrystalTotGrosssWt' => '', 
+'stockCrystalTotGrosssWtType' => 'CT', 
+'stockCrystalTotNetWt' => '', 
+'stockCrystalTotNetWtType' => 'CT', 
+'stockCrystalTotFFineWt' => '', 
+'stockCrystalTotFFineWtType' => 'CT', 
+'stockCrystalTotOthChgsWt' => '', 
+'stockCrystalTotOthChgsWtType' => '', 
+'stockCrystalTotFineWt' => '', 
+'stockCrystalTotFineWtType' => 'CT', 
+'stockCrystalTotFinalBalance' => '', 
+'stockCrystalTotPurValuation' => '', 
+'stockTransCRDR' => 'CR', 
+'stockAccId' => $sttr_account_id, 
+'userPanelName' => 'Customer', 
+'valueAdded' => 0, 
+'goldValuationCashMode' => $sttr_final_valuation_gd, 
+'silverValuationCashMode' => $sttr_final_valuation_sl, 
+'crystalValuationCashMode' => '', 
+'valuationCashMode' => '', 
+'indicator' => '', 
+'stockFirmId' => $sttr_firm_id, 
+'stockDOBDay' => $day, 
+'gbMonthId' => 0, 
+'stockDOBMonth' => $month, 
+'stockDOBYear' => $year, 
+'gmWtInGm' => 10, 
+'gmWtInKg' => 100, 
+'gmWtInMg' => 10000, 
+'srGmWtInGm' => 1000, 
+'srGmWtInKg' => 1, 
+'srGmWtInMg' => 1000000, 
+'cryWtInGm' => 0.2, 
+'cryWtInKg' => 0.0002, 
+'cryWtInMg' => 200, 
+'cryWtInCt' => 1, 
+'noOfRawMet' => 1, 
+'totMetal' => 1, 
+'sttr_transaction_type1' => 'PAID', 
+'sttr_pre_invoice_no' => $payPreInvoiceNo, 
+'sttr_invoice_no' => $payInvoiceNo, 
+'sttr_indicator1' => 'rawMetal', 
+'sttr_user_id1' => $sttr_user_id, 
+'sttr_stock_type1' => 'retail', 
+'sttr_type1' => 'rawMetal', 
+'metalDiv1' => '', 
+'metalDel1' => 1, 
+'rawId' => '', 
+'metalPanel' => 'StockPayment', 
+'metalCount' => 1, 
+'totPrevMetal' => '', 
+'sttr_metal_type1' => 'Gold', 
+'sttr_item_pre_id1' => '', 
+'sttr_item_id1' => '', 
+'payRawMetalSelId1' => '', 
+'firmId1' => $sttr_firm_id, 
+'sttr_account_id1' => $rawGoldAccId, 
+'sttr_item_category1' => 'RawGold', 
+'sttr_item_name1' => 'RAW GOLD', 
+'sttr_gs_weight_hidden1' => '', 
+'sttr_gs_weight1' => '', 
+'sttr_gs_weight_type1' => 'GM', 
+'sttr_pkt_weight_hidden1' => '', 
+'sttr_pkt_weight1' => '', 
+'sttr_pkt_weight_type1' => 'GM', 
+'sttr_nt_weight1' => '', 
+'sttr_nt_weight_type1' => 'GM', 
+'sttr_purity1' => '', 
+'sttr_fine_weight1' => '', 
+'lbrWtAddMinusValue1' => 'minus', 
+'sttr_lab_charges1' => '', 
+'sttr_final_fine_weight1' => '', 
+'sttr_metal_rate1' => $sttr_metal_rate, 
+'sttr_valuation1' => '', 
+'PayMetal1AvgRate1' => $sttr_metal_rate, 
+'PayMetal1Pnl1' => '', 
+'PayMetal1Bal1' => 0, 
+'PayMetalBal1Type1' => 'GM', 
+'PaymentReceiptPanel' => 'PurchasePayment', 
+'PrevCashBalCRDR' => '', 
+'stockGoldWtPrevBal' => 0, 
+'stockGoldWtPrevBalType' => 'GM', 
+'stockGoldWtPrevBalCRAmt' => '', 
+'stockGoldWtPrevBalDRAmt' => '', 
+'stockSilverWtPrevBal' => 0, 
+'stockSilverWtPrevBalType' => 'GM', 
+'stockSilverWtPrevBalCRAmt' => '', 
+'stockSilverWtPrevBalDRAmt' => '', 
+'stockCrystalWtPrevBal' => 0, 
+'stockCrystalWtPrevBalType' => 'CT', 
+'stockCrystalWtPrevBalCRAmt' => '', 
+'stockCrystalWtPrevBalDRAmt' => '', 
+'stockGoldPrevAmount' => '', 
+'stockSilverPrevAmount' => '', 
+'stockCrystalPrevAmount' => '', 
+'stockGoldWtRecBal' => '', 
+'stockGoldWtRecBalType' => '', 
+'stockSilverWtRecBal' => '', 
+'stockSilverWtRecBalType' => '', 
+'stockCrystalWtRecBal' => '', 
+'stockCrystalWtRecBalType' => '', 
+'stockPayTotGoldAmtRec' => '', 
+'stockPayTotSilverAmtRec' => '', 
+'stockPayTotCrystalAmtRec' => '', 
+'stockGoldWtFinBal' => 0, 
+'stockGoldWtFinBalType' => '', 
+'stockSilverWtFinBal' => 0, 
+'stockSilverWtFinBalType' => '', 
+'stockCrystalWtFinBal' => 0, 
+'stockCrystalWtFinBalType' => '', 
+'stockGoldPrevRate' => $sttr_metal_rate_gd, 
+'stockSilverPrevRate' => $sttr_metal_rate_sl, 
+'stockCrystalPrevRate' => '', 
+'stockGoldPurRate' => $sttr_metal_rate_gd, 
+'stockSilverPurRate' => $sttr_metal_rate_sl, 
+'stockCrystalPurRate' => '', 
+'paymentMode' => 'ByCash', 
+'utin_crystal_amt_temp' => '', 
+'payPanelNameHidden' => 'PurchasePayment', 
+'stockRtCtGdCRDR' => '', 
+'stockRtCtSlCRDR' => '', 
+'stockRtCtStCRDR' => '', 
+'stockRtCtCashCRDR' => 'CR', 
+'firmId' => $sttr_firm_id, 
+'stockPayTotFinAmt' => '', 
+'stockPayTotAmtRec' => 0, 
+'metal1WtPrevBal' => '0.000 GM', 
+'stockGoldWtPrevBalCRDR' => '', 
+'metal2WtPrevBal' => '0.000 GM', 
+'stockSilverWtPrevBalCRDR' => '', 
+'metal3WtPrevBal' => '0.000 CT', 
+'stockCrystalWtPrevBalCRDR' => '', 
+'payPanelName' => 'StockPayment', 
+'sellReverseCalculation' => '', 
+'utin_reverse_cal_by' => '', 
+'panDetailsPresentForValidation' => 'NO', 
+'payCashAmtLimitForPanValidation' => 0, 
+'returnOrderPanelName' => '', 
+'assignPanelName' => '', 
+'lpAmtValue' => 100, 
+'lpCloseValue' => '', 
+'mainPanelName' => 'stock', 
+'transPanelName' => 'PurchasePayment', 
+'prefix' => 'stock', 
+'udhaar_deposit_amt' => $sttr_valuation, 
+'stockPayPrevTotAmt' => 0, 
+'stockPayCrystalAmt' => 0.00, 
+'mainSalePreInvNo' => '', 
+'mainSalePostInvNo' => '', 
+'otherInfo' => '', 
+'setByDefaultPaymentMode' => '', 
+'sttr_panel_name' => '', 
+'sttr_taxincl_checked' => '', 
+'utin_cr_acc_id' => $utin_cr_acc_id, 
+'utin_dr_acc_id' => $sttr_account_id, 
+'utin_udhaar_type' => '', 
+'utin_udhaar_int_amt' => '', 
+'utin_pay_int_acc_id' => '', 
+'stockPayTotOthChgs' => 0.00, 
+'totMkngOrLabChgs' => 0, 
+'stockPayTotAmt' => $sttr_valuation, 
+'stockPayTotAmtAccess' => $sttr_valuation, 
+'stockUserId' => $sttr_user_id, 
+'stockPreInvoiceNo' => $sttr_pre_invoice_no, 
+'stockPostInvoiceNo' => $sttr_invoice_no, 
+'stockPayId' => '', 
+'utin_utin_id' => '', 
+'stockPayTotAmtBal' => $sttr_final_valuation, 
+'stockPayRoundOffAmt' => $PayRoundOffAmt, 
+'stockPayTotCashAmt' => ($sttr_final_valuation + $PayRoundOffAmt), 
+'endDate' => '', 
+'PrevTotOpeningAmt' => 0.00, 
+'PrevTotOpeningAmtCRDR' => '', 
+'reverseCalculation' => 'No',
+'firmPublicPrivate' => $firm_type, 
+'nonTaxableInvoiceSetting' => '', 
+'HiddenFirmTransfer' => '', 
+'HiddenEstimateSell' => '', 
+'HiddenEstimateSellConvert' => '', 
+'HiddenSellEstimateConvert' => '', 
+'stockPayPrevCashBalCRAmt' => '', 
+'stockPayPrevCashBalDRAmt' => '', 
+'stockUdhaarId' => '', 
+'stocktransactionMode' => '', 
+'stockuserMainPanel' => '', 
+'preOrdInvNo' => '', 
+'postOrdInvNo' => '', 
+'CGSTCheck' => 'on', 
+'SGSTCheck' => 'on', 
+'stockPayDiscAccId' => $discountRecAccId, 
+'utin_disc_narratn_discup' => '', 
+'utin_discount_per_discup' => '', 
+'utin_discount_amt_discup' => '', 
+'utin_additional_charges_acc_id' => $indirectIncomeAccId, 
+'utin_additional_charges_narratn' => '', 
+'utin_additional_charges' => '', 
+'stockPayCGSTAccId' => $cgstAccId, 
+'stockCGST' => 1.5, 
+'taxOnCGSTTotAmt' => $sttr_valuation, 
+'stockCGSTAmt' => $sttr_tot_price_cgst_chrg, 
+'stockPaySGSTAccId' => $sgstAccId, 
+'stockSGST' => 1.5, 
+'taxOnSGSTTotAmt' => $sttr_valuation, 
+'stockSGSTAmt' => $sttr_tot_price_sgst_chrg, 
+'stockPayIGSTAccId' => $igstAccId, 
+'stockIGST' => '', 
+'taxOnIGSTTotAmt' => $sttr_valuation, 
+'stockIGSTAmt' => 0.00, 
+'stockPayMkgCGSTAccId' => $labChargesAccId, 
+'stockMkgChrgCGST' => 0, 
+'taxOnTotMkgCGSTChrg' => 0.00, 
+'stockMkgChrgCGSTAmt' => 0.00, 
+'stockPayMkgSGSTAccId' => $labChargesAccId, 
+'stockMkgChrgSGST' => 0, 
+'taxOnTotMkgSGSTChrg' => 0.00, 
+'stockMkgChrgSGSTAmt' => 0.00, 
+'stockPayTaxAccId' => $dutiesAndTaxesAccId, 
+'stockTax' => '', 
+'taxOnTotAmt' => $sttr_valuation, 
+'stockTaxAmt' => 0.00, 
+'stockPayCourierAccId' => $courierChargesAccId, 
+'courierInfo' => '', 
+'stockPayCourierAmt' => '', 
+'stockPayAccId' => $cashInHandAccId, 
+'cashNarration' => '', 
+'stockPayCashAmtRec' => '', 
+'stockPayChequeAccId' => $bankAccId, 
+'chequeNo' => '', 
+'stockPayChequeAmt' => '', 
+'stockPayCardAccId' => $bankAccId, 
+'cardNo' => '', 
+'stockPayCardAmt' => '', 
+'transChargesIncludeExclude' => '', 
+'totalCardAmt' => 0, 
+'stockPayTransChrgPer' => '', 
+'stockPayTransChrgAmt' => '', 
+'stockPayCardFinalAmt' => '', 
+'stockPayOnlinePaymentAccId' => $bankAccId, 
+'onlinePaymentNarration' => '', 
+'stockPayOnlinePaymentAmt' => '', 
+'totalOnlineAmt' => 0, 
+'commPaidIncludeExclude' => '', 
+'stockPayCommPayPer' => '', 
+'stockPayCommPayAmt' => '', 
+'stockPayOnlinePaymentFinalAmt' => '', 
+'lpOpening' => 0.00, 
+'lpClosing' => 0.00, 
+'lpGain' => 0.00, 
+'lpRedeem' => 0.00, 
+'discNarration' => '', 
+'utin_discount_per' => 0, 
+'stockPayDiscount' => 0, 
+'remSelect' => 'NotSelected', 
+'stockPayOtherInfo' => '', 
+'stockPayPrevAmtDisp' => 0.00, 
+'stockPayPrevCashBalCRDR' => 'CR', 
+'stockPayTotAmtExchangeDisp' => 0.00, 
+'stockPayTotAmtBalDisp' => $sttr_valuation, 
+'stockPayCrystalAmtDisp' => 0.00, 
+'utin_othr_chgs_by' => '', 
+'stockPayCashOthChgsDisp' => $sttr_total_lab_charges, 
+'utin_total_taxable_amt' => $sttr_valuation, 
+'discountAmtDisp' => 0.00, 
+'utin_additional_charges_disp' => 0.00, 
+'taxableAmount' => $sttr_valuation, 
+'stockPayCGSTAmtDisp' => $sttr_tot_price_cgst_chrg, 
+'stockPaySGSTAmtDisp' => $sttr_tot_price_sgst_chrg, 
+'stockPayIGSTAmtDisp' => 0.00, 
+'stockPayMkgCGSTAmtDisp' => 0.00, 
+'stockPayMkgSGSTAmtDisp' => 0.00, 
+'stockPayTaxAmtDisp' => 0.00, 
+'stockPayCourierAmtDisp' => 0.00, 
+'stockPayRoundOffDisplay' => $PayRoundOffDisplay, 
+'stockPayTotCashAmtDisp' => $sttr_final_valuation, 
+'stockPayableCashCRDR' => 'CR', 
+'stockPayTotAmtRecDisp' => 0.00, 
+'stockPayCashRecDisp' => 0.00, 
+'lpRedeemDisp' => 0.00, 
+'stockPayDiscountDisp' => 0.00, 
+'stockPayRoundOffDisp' => $PayRoundOffDisp, 
+'stockPayFinAmtBalDisp' => $sttr_final_valuation, 
+'stockFinalCashCRDR' => 'CR',
+'utin_transaction_type' => 'PURBYSUPP', 
+'utin_type' => 'stock');
+//
+// *********************************************************************************************************
+// END CODE TO CREATE REQUEST FOR PAYMENT DETAILS @PRIYANKA-20-SEP-21
+// *********************************************************************************************************
+//
+//
+//
+//
+// MERGE PAYMENT DETAILS INTO REQUEST @PRIYANKA-20-SEP-21
+$_REQUEST = array_merge($_REQUEST, $paymentInfo);
+//
+//
+// ALL INPUTS @PRIYANKA-20-SEP-21
+$request = $_REQUEST;
+//
+//
+// REQUEST VARIABLE FILE @PRIYANKA-20-SEP-21
+include 'ompyamtid.php';
+//
+//
+// INSERT OPERATION - user_transaction_invoice @PRIYANKA-20-SEP-21
+user_transaction_invoice('insert', $_REQUEST);
+//
+//
+// PAYMENT MODE @PRIYANKA-20-SEP-21
+$paymentMode = $_REQUEST['paymentMode'];
+//
+//
+// GET LAST ENTERED USER TRANSACTION INVOICE ID @PRIYANKA-20-SEP-21
+parse_str(getTableValues("SELECT utin_id FROM user_transaction_invoice "
+                       . "WHERE utin_owner_id = '$_SESSION[sessionOwnerId]' AND utin_user_id = '$userId' "
+                       . "AND utin_type = 'stock' AND utin_transaction_type IN ('PURBYSUPP') "
+                       . "order by utin_id DESC LIMIT 0,1"));
+//
+//
+// PURCHASE ENTRY STATUS @PRIYANKA-20-SEP-21
+$query = "UPDATE stock_transaction SET 
+                 sttr_status = 'PaymentDone', sttr_utin_id = '$utin_id'
+                 WHERE sttr_owner_id = '$sessionOwnerId' AND sttr_pre_invoice_no = '$payPreInvoiceNo' 
+                 AND sttr_invoice_no = '$payInvoiceNo' 
+                 AND sttr_user_id = '$userId' AND sttr_status NOT IN ('DELETED') 
+                 AND sttr_transaction_type IN ('PURBYSUPP', 'PURCHASE') 
+                 AND sttr_indicator IN ('AddInvoice', 'PURCHASE', 'stock')";
+//
+//echo '$query == ' . $query . '<br />'; die;
+//
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//
+//
+//
+//
+// PREVIOUS INVOICE PAYMENT @PRIYANKA-20-SEP-21
+include 'omprvinup.php';
+//
+//
+$utinType = 'OnPurchase';
+$transactionType = 'DEPOSIT';
+//
+//
+$_REQUEST['utin_transaction_type'] = $transactionType;
+$_REQUEST['utin_type'] = $utinType;
+$_REQUEST['mainUtinId'] = $utin_id;
+//
+//
+// INSERT - user_transaction_invoice @PRIYANKA-20-SEP-21
+user_transaction_invoice('insert', $_REQUEST);
+//
+// 
+// 
+// 
+// PAYMENT MODE @PRIYANKA-20-SEP-21
+$paymentMode = $_REQUEST['paymentMode'];
+//
+//
+// PREFIX @PRIYANKA-20-SEP-21
+$prefix = $_REQUEST['prefix'];
+//
+//
+//
+//
+// *********************************************************************************************************
+// START CODE TO ADD CODE FOR SUPPLIER PURCHASE STOCK ACCOUNT JOURNAL ENTRIES @PRIYANKA-20-SEP-21
+// *********************************************************************************************************
+//
+if ($paymentMode == 'RateCut' || $paymentMode == 'ByCash') { // PAYMENT MODE @PRIYANKA-20-SEP-21
+    //       
+    // 
+    // FIRM ID @PRIYANKA-20-SEP-21
+    $firmId = $_REQUEST[$prefix . 'FirmId']; // FIRM ID @PRIYANKA-20-SEP-21
+    //
+    //
+    // USER ID @PRIYANKA-01FEB19
+    $userId = $_REQUEST[$prefix . 'UserId']; // USER ID @PRIYANKA-20-SEP-21
+    //
+    //
+    // DATE @PRIYANKA-01FEB19
+    $date = trim($_REQUEST[$prefix . 'DOBDay']) . ' ' . trim($_REQUEST[$prefix . 'DOBMonth']) . ' ' . trim($_REQUEST[$prefix . 'DOBYear']);
+    $payAddDate = mysqli_real_escape_string($conn, stripslashes($date)); // DATE @PRIYANKA-20-SEP-21
+    //
+    //
+    //print_r($_REQUEST);
+    //
+    //
+    // PAYMENT MODE @PRIYANKA-20-SEP-21
+    if ($paymentMode == 'RateCut') { // RATE CUT CASE @PRIYANKA-20-SEP-21
+        $goldValuation = $_REQUEST[$prefix . 'GoldValuation']; // GOLD METAL VALUATION @PRIYANKA-20-SEP-21
+        $silverValuation = $_REQUEST[$prefix . 'SilverValuation']; // SILVER METAL VALUATION @PRIYANKA-20-SEP-21
+        $stoneValuation = $_REQUEST[$prefix . 'PayCrystalAmt']; // STONE VALUATION @PRIYANKA-20-SEP-21
+    } 
+    else if ($paymentMode == 'ByCash') { // CASH CASE @PRIYANKA-20-SEP-21
+        $goldValuation = $_REQUEST[$prefix . 'GoldTotFinalBalance']; // GOLD METAL VALUATION@PRIYANKA-20-SEP-21
+        $silverValuation = $_REQUEST[$prefix . 'SilverTotFinalBalance']; // SILVER METAL VALUATION @PRIYANKA-20-SEP-21
+        $stoneValuation = $_REQUEST[$prefix . 'PayCrystalAmt']; // STONE VALUATION @PRIYANKA-20-SEP-21
+    }
+    //
+    //
+    // UPDATE PURCHASE GOLD, SILVER AMOUNTS IN USER TRANSACTION INVOICE TABLE @PRIYANKA-20-SEP-21
+    $updatePurAmtQuery = "UPDATE user_transaction_invoice "
+                       . "SET utin_gd_pur_amt = '$goldValuation', utin_sl_pur_amt = '$silverValuation' "
+                       . "WHERE utin_owner_id = '$_SESSION[sessionOwnerId]' AND utin_user_id = '$userId' "
+                       . "AND utin_type = 'stock' AND utin_transaction_type IN ('PURBYSUPP') "
+                       . "AND utin_id = '$utin_id'";
+    //
+    if (!mysqli_query($conn, $updatePurAmtQuery)) {
+        die('Error: ' . mysqli_error($conn));
+    }
+    //
+    //
+    //
+    // PREVIOUS ENTRY ACCOUNT ID SET TO NULL @PRIYANKA-20-SEP-21
+            $accId = NULL;
+            $payGoldAccId = NULL;
+            $paySilverAccId = NULL;
+            $puchaseGoldAccId = NULL;
+            $puchaseSilverAccId = NULL;
+            $payStoneAccId = NULL;
+            $puchaseStoneAccId = NULL;
+            $payStockInvAccId = NULL;
+            $payCashAccId = NULL;
+            $payCashAmt = 0;
+            $payCardAmt = 0;
+            $payChequeAccId = NULL;
+            $payCardAccId = NULL;
+            $payOnlinePayAccId = NULL;
+            $payDiscountAccId = NULL;
+            $payTaxAccId = NULL; // ADDED FOR TAX (VAT) @PRIYANKA-20-SEP-21
+            $payCGSTAccId = NULL;
+            $paySGSTAccId = NULL;
+            $payIGSTAccId = NULL;
+            $payRoundOffAmt = 0;
+            $payTaxAmt = 0; // ADDED FOR TAX (VAT) @PRIYANKA-20-SEP-21
+            $payCGSTaxAmt = 0;
+            $paySGSTaxAmt = 0;
+            $payIGSTaxAmt = 0;
+            $payMkgCGSTAmt = 0;
+            $payMkgSGSTAmt = 0;
+            $userAccId = NULL;
+            $user_acc_id = NULL;
+            $payTotOthChgs = 0;
+            $udhaarCashRecAmount = 0;
+            $payTotalAmtBal = 0;
+            $payGoldCashAmt = 0;
+            $paySilverCashAmt = 0;
+            $payStoneCashAmt = 0;
+            $sttr_indicator = '';
+            //
+            //
+            // GOLD METAL VALUATION @PRIYANKA-20-SEP-21
+            if ($goldValuation > 0) {
+                //
+                $metalType = 'Gold'; // METAL TYPE - GOLD @PRIYANKA-20-SEP-21
+                $payFinalPayableAmt = $goldValuation; // GOLD METAL VALUATION @PRIYANKA-20-SEP-21
+                $payGoldCashAmt = $goldValuation;
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Stock Gold'"));
+                //
+                $payGoldAccId = $acc_id;
+                //
+                // ================================================================================================================ //
+                // START CODE TO GET GOLD PURCHASE ACCOUNT DETAIL FOR PURCHASE GOLD ACCOUNT ENTRY IN JRTR @PRIYANKA-20-SEP-21        //
+                // ================================================================================================================ //
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Purchase Gold'"));
+                //
+                $puchaseGoldAccId = $acc_id;
+                //
+                // ============================================================================================================== //
+                // END CODE TO GET GOLD PURCHASE ACCOUNT DETAIL FOR PURCHASE GOLD ACCOUNT ENTRY IN JRTR @PRIYANKA-20-SEP-21        //
+                // ============================================================================================================== //
+                //
+                $stockAccountEntry = 'No'; // CREATE MAIN JRNL ENTRY YES/NO @PRIYANKA-20-SEP-21
+                $transApiType = 'insert';
+                $transactionType = 'PURBYSUPP';
+                $sttr_indicator = 'stock';
+                include 'omusrtranjrnl.php';
+                //
+            }
+            //
+            //
+            //
+            // SILVER METAL VALUATION @PRIYANKA-20-SEP-21
+            if ($silverValuation > 0) {
+                //
+                $metalType = 'Silver'; // METAL TYPE - SILVER @PRIYANKA-20-SEP-21
+                $payFinalPayableAmt = $silverValuation; // SILVER METAL VALUATION @PRIYANKA-20-SEP-21
+                $paySilverCashAmt = $silverValuation;
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Stock Silver'"));
+                //
+                $paySilverAccId = $acc_id;
+                //
+                // ==================================================================================================================== //
+                // START CODE TO GET SILVER PURCHASE ACCOUNT DETAIL FOR PURCHASE SILVER ACCOUNT ENTRY IN JRTR @PRIYANKA-20-SEP-21        //
+                // ==================================================================================================================== //
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Purchase Silver'"));
+                //
+                $puchaseSilverAccId = $acc_id;
+                //
+                // ================================================================================================================== //
+                // END CODE TO GET SILVER PURCHASE ACCOUNT DETAIL FOR PURCHASE SILVER ACCOUNT ENTRY IN JRTR @PRIYANKA-20-SEP-21        //
+                // ================================================================================================================== //
+                //
+                $stockAccountEntry = 'No'; // CREATE MAIN JRNL ENTRY YES/NO @PRIYANKA-20-SEP-21
+                $transApiType = 'insert';
+                $transactionType = 'PURBYSUPP';
+                $sttr_indicator = 'stock';
+                include 'omusrtranjrnl.php';
+                //
+            }
+            //
+            //
+            // ============================================================================================= //
+            // START CODE TO GET STONE ACCOUNT DETAILS FOR STONE JOURNAL ENTRY @PRIYANKA-20-SEP-21           //
+            // ============================================================================================= //
+            //
+            if ($stoneValuation > 0) {
+                //
+                $metalType = 'stockCrystal'; // METAL TYPE - GOLD @PRIYANKA-20-SEP-21
+                $payFinalPayableAmt = $stoneValuation; // GOLD METAL VALUATION @PRIYANKA-20-SEP-21
+                $payStoneCashAmt = $stoneValuation;
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Stock Stone'"));
+                //
+                $payStoneAccId = $acc_id;
+                $payGoldAccId = '';
+                $paySilverAccId = '';
+                //
+                parse_str(getTableValues("SELECT acc_id FROM accounts WHERE acc_own_id='$sessionOwnerId' and "
+                                       . "acc_firm_id='$firmId' and acc_user_acc='Purchase Stone'"));
+                //
+                $puchaseStoneAccId = $acc_id;
+                $puchaseGoldAccId = '';
+                $puchaseSilverAccId = '';
+                //
+                $jrtrGoldSilverStockInvDesc = NULL;
+                $jrtrGoldSilverPurchaseDesc = NULL;
+                //
+                $stockAccountEntry = 'No'; // CREATE MAIN JRNL ENTRY YES/NO @PRIYANKA-20-SEP-21
+                $transApiType = 'insert';
+                $transactionType = 'PURBYSUPP';
+                $sttr_indicator = 'stockCrystal';
+                include 'omusrtranjrnl.php';
+                //
+                //
+            }
+            //
+            // ============================================================================================= //
+            // END CODE TO GET STONE ACCOUNT DETAILS FOR STONE JOURNAL ENTRY @PRIYANKA-20-SEP-21             //
+            // ============================================================================================= //
+            //
+            //
+}
+//
+// *********************************************************************************************************
+// END CODE TO ADD CODE FOR SUPPLIER PURCHASE STOCK ACCOUNT JOURNAL ENTRIES @PRIYANKA-20-SEP-21
+// *********************************************************************************************************
+//
 ?>

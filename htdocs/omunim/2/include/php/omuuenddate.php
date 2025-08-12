@@ -1,3 +1,172 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************
+ * @tutorial: Udhaar Date File
+ * **************************************************************************************
+ * 
+ * Created on Jun 22, 2013 4:07:37 PM
+ *
+ * @FileName: omuuenddate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: omunim
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:14/1/15
+ *  AUTHOR:ATHULYA
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<!-- *************** Start Code for DOBDay *************** -->
+<?php
+
+$todayendDay = $selendDOBDay - 1;
+
+$arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+    '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+    '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+$optendDay[$todayendDay] = "selected";
+?> 
+<div class="selectStyledBorderLess background_transparent floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="endDOBDay" name="endDOBDay" class="select_border_red" style="width:100%;height:30px;"
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('endDOBMonth').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('udhaarMainAmount').focus();
+                        return false;
+                    }">
+        <option value="NotSelected">DAY</option>
+        <?php
+        for ($dd = 0; $dd <= 30; $dd++) {
+            echo "<option value=\"$arrDays[$dd]\" $optendDay[$dd]>$arrDays[$dd]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<!-- *************** Start Code for Month *************** -->
+<?php
+//$todayMM = date(n) - 1;
+$arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); //change in month names upto 3 letter @AUTHOR: SANDY21AUG13
+$optendMonth[$todayendMM] = "selected";
+?> 
+<input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> <!-- ADD INPUT FIELD @AUTHOR: SANDY21AUG13 -->
+<div class="selectStyledBorderLess background_transparent floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="endDOBMonth" name="endDOBMonth" class="select_border_red" style="width:100%;height:30px;"
+
+                  onkeydown="javascript: 
+                    var key = event.keyCode || event.which;
+                    if (key === 13) {
+                        document.getElementById('DOBYear').focus();
+                        return false;
+                    } else if (key === 8) {
+                        document.getElementById('DOBDay').focus();
+                        return false;
+                    } else if (key === 9) {
+                        return true; // allow TAB key without interference
+                    } else if (key >= 65 && key <= 90) {
+                        return true; // allow letters like J, F, M to auto-jump in select
+                    }
+                
+                    // Number key month shortcuts
+                    var arrMonths = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+                    var gbMonth = document.getElementById('gbMonthId').value;
+                    if (gbMonth == 1) {
+                        if (key >= 48 && key <= 57) {
+                            var sel = String.fromCharCode(key);
+                            if (sel == 0) this.value = arrMonths[9];
+                            else if (sel == 1) this.value = arrMonths[10];
+                            else if (sel == 2) this.value = arrMonths[11];
+                            document.getElementById('gbMonthId').value = 0;
+                        }
+                    } else if (key >= 49 && key <= 57) {
+                        this.value = arrMonths[key - 49];
+                        if (key == 49) {
+                            document.getElementById('gbMonthId').value = 1;
+                        }
+                    }
+                    return false;"
+    <?php /*
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('endDOBYear').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('endDOBDay').focus();
+                        return false;
+                    }
+                    //START CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13
+                    var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                    gbMonth = document.getElementById('gbMonthId').value;
+                    if (gbMonth == 1) {
+                        if (event.keyCode) {
+                            var sel = String.fromCharCode(event.keyCode);
+                            if (sel == 0)
+                            {
+                                this.value = arrMonths[9];
+                            }
+                            else if (sel == 1)
+                            {
+                                this.value = arrMonths[10];
+                            }
+                            else if (sel == 2)
+                            {
+                                this.value = arrMonths[11];
+                            }
+                            // this.value = arrMonths[10];
+                            document.getElementById('gbMonthId').value = 0;
+                        }
+                    }
+                    else if (event.keyCode) {
+                        var sel = String.fromCharCode(event.keyCode) - 1;
+                        this.value = arrMonths[sel];
+                        if (event.keyCode == 49) {
+                            document.getElementById('gbMonthId').value = 1;
+                        }
+                    } //END CODE TO GET MONTH FROM KEYS @AUTHOR: SANDY21AUG13"  */?>>
+        <option value="NotSelected" disabled hidden>MON</option>
+        <?php
+        for ($mm = 0; $mm <= 11; $mm++) {
+            echo "<option value=\"$arrMonths[$mm]\" $optendMonth[$mm]>$arrMonths[$mm]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<!-- *************** Start Code for Year *************** -->
+<?php
+$todayendYear = date(Y);//chnaged @Author:PRIYA30APR14
+$optendYear[$selendDOBYear] = "selected";
+?> 
+<div class="selectStyledBorderLess background_transparent floatLeft" style="background:#fff;width:33.33%;height:30px;">
+    <select id="endDOBYear" name="endDOBYear" class="select_border_red" style="width:100%;height:30px;"
+            onkeydown="javascript: if (event.keyCode == 13) {
+                        document.getElementById('udhharFirmId').focus();
+                        return false;
+                    } else if (event.keyCode == 8) {
+                        document.getElementById('endDOBMonth').focus();
+                        return false;
+                    }">
+        <option value="NotSelected">YEAR</option>
+        <?php
+        for ($yy = $todayendYear+10; $yy >= 1900; $yy--) {
+            echo "<option value=\"$yy\" $optendYear[$yy]>$yy</option>";
+        }
+        ?>
+    </select>
+</div><?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+

@@ -1,3 +1,124 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+
+/*
+ * Created on Aug 24, 2016 
+ *
+ * @FileName: omtbkttb.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: eMunim
+ * @version 1.0
+ * @Copyright (c) 2010 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2010 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE: Modified by @Author: KHUSH24JAN13
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
+?>
+<?php
+
+//AUTHOR:GAUR24AUG16
+//include 'omssopin.php';
+$query = "CREATE TABLE IF NOT EXISTS kitty (
+kitty_id			        INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+kitty_kitty_id				VARCHAR(16),
+kitty_cust_id				VARCHAR(16),
+kitty_own_id				VARCHAR(16), 
+kitty_jrnlid     			INT,
+kitty_jrmnid                            INT,
+kitty_firm_id 				VARCHAR(16),
+kitty_firm_kitty_no			INT,
+kitty_cust_fname 			VARCHAR(50),
+kitty_cust_lname 			VARCHAR(50),
+kitty_cust_mobile_no			VARCHAR(50),
+kitty_cust_Address 			VARCHAR(500),
+kitty_cust_city				VARCHAR(50),
+kitty_stock_prod_id                     VARCHAR(12),
+kitty_stock_image_id			VARCHAR(12),
+kitty_EMI_amt			        INT,
+kitty_EMI_tot_amt			INT,
+kitty_bonus_amt			        VARCHAR(10),
+kitty_EMI_multiple                      INT," //ADDED FOR KITTY EMI MULTIPLE AMOUNT @AUTHOR:MADHUREE-08JUN2020
+."kitty_gift_item                       VARCHAR(100),
+kitty_gift_item_del_sts                 VARCHAR(5),
+kitty_main_prin_amt			INT,
+kitty_prin_amt				INT,
+kitty_pre_serial_num			VARCHAR(5),
+kitty_serial_num			INT,
+kitty_token_num                         INT,
+kitty_start_token_num                   INT,
+kitty_end_token_num                     INT,
+kitty_barcode                           VARCHAR(50),
+kitty_no_of_users                       VARCHAR(50),
+kitty_staff_id                          INT,
+kitty_DOB				VARCHAR(50),
+kitty_end_DOB				VARCHAR(50),
+kitty_new_DOB				VARCHAR(50),
+kitty_DOR				VARCHAR(50),
+kitty_scheme                            VARCHAR(100),
+kitty_group                             VARCHAR(100),
+kitty_metal_type                        VARCHAR(50),
+kitty_ent_dat 				DATETIME,
+kitty_upd_sts				VARCHAR(50),
+kitty_final_sts				VARCHAR(100),
+kitty_win_date				VARCHAR(50),
+kitty_EMI_days                          VARCHAR(40),
+kitty_EMI_occurrences                   VARCHAR(40),
+kitty_scheme_prd_typ                    VARCHAR(20),
+kitty_scheme_occ_prd_typ                VARCHAR(20),
+kitty_EMI_status                        VARCHAR(20),
+kitty_Close_Date                        VARCHAR(50),
+kitty_comm 				VARCHAR(2000),
+kitty_total_amt				FLOAT,
+kitty_paid_amt				FLOAT,
+kitty_paid_bonus_amt			FLOAT,
+kitty_bonus_percent                     FLOAT,
+kitty_rate_amt				FLOAT,
+kitty_wt_amt				FLOAT,".
+        //kitty_bonus_wt
+"kitty_bonus_metal_wt                   FLOAT,
+kitty_cr_acc_id				VARCHAR(50),
+kitty_dr_acc_id				VARCHAR(50),
+kitty_pay_other_info			VARCHAR(100),
+kitty_frequency                         INT,
+kitty_period                            VARCHAR(50),
+kitty_csv_reference_no                  INT,
+kitty_EMI_auto_SMS                      VARCHAR(10),"
+//COLUMN ADDED TO ADD KITTY ECOM STATUS, KITTY DEFAULT STATUS AND KITTY PLAN,@AUTHOR:HEMA-3SEP2020
+."kitty_ecom_status                     VARCHAR(10),
+ kitty_default_status                   VARCHAR(10),"
+        //Adding these 2 columns for GST checking for cash to gold amount in gold scheme and emi late fee after scheme closed
+."kitty_emi_late_fee                    INT,"
+."kitty_cash_to_gold                    VARCHAR(10)," 
+ //       
+. "kitty_late_fee_days                  VARCHAR(20),"
+ //Adding this column for GST checking for adding in EMI amount
+ ."kitty_gst_check_status               VARCHAR(10),
+ kitty_plan                             VARCHAR(100),"
+//COLUMN ADDED TO ADD KITTY REQUEST ID WHEN ONLINE KITTY IS ADDED,@AUTHOR:HEMA-23SEP2020
+."kitty_request_id                      VARCHAR(50),
+kitty_indicator                         VARCHAR(20)," //COLUMN ADDED TO STORE SCHEME INDICATOR @AUTHOR:MADHUREE-6APRIL2021
+."kitty_other_info			VARCHAR(100),"
+."kitty_gold_bonus_per                  FLOAT," 
+."kitty_diamond_bonus_per               FLOAT," 
+."kitty_bullion_bonus_per               FLOAT,"
+."kitty_gold_making_per                 FLOAT," 
+."kitty_diamond_making_per              FLOAT," 
+."kitty_bullion_making_per              FLOAT,"
+."kitty_dep_metal_wt                    VARCHAR(16),"          
+."kitty_metal_tunch                     VARCHAR(16),"//Prathamesh Added To Decide Metal tunch while booking
+."kitty_lucky_draw                      VARCHAR(16),"//Prathamesh Added Set Lucky draw
+."kitty_paid_EMI                        VARCHAR(16),"//Prathamesh Added Set Lucky draw
+. "last_column                VARCHAR(1))";
+
+
+if (!mysqli_query($conn, $query)) {
+    die('Error: ' . mysqli_error($conn));
+}
+//To check new columns added into table or not 
+include 'ommptbauprdwrfl.php';
 ?>

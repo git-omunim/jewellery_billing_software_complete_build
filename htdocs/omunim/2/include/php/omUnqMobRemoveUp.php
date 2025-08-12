@@ -1,3 +1,39 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('A27FEAAF0F783BBEAAQAAAASAAAABIgAAACABAAAAAAAAAD/CdIm+7LaWKtIqUNe5fu6JD2SJVtTU1msxRNCOEcsPpOg7APYyAQZO6Vn4tMjki6+h+F8dYPV1Q5HRf7zrX34e+Cikq3Ya5P3jqH70v14Ozx7faDLmxtYpkx5huy0DRfpyXyQALkMHbT+FmwP9Uo5HUl+mAqCUdOa64bug6XWcKBxy79Y0s3gbjUAAACIAgAAdT1rbGnrLxmPy/QK5s5VjUScTKMB0neOO6AzVn+REscSGj0lN7YGZgg/iWm2Aa1TUMknqcWYU7L/IuMKIeyiDj9ti0zb2KcpMS9HPQhWrZnQcDZ6kb+bujIatKGJ7pLox9XWdLKI7EdT6e5aHcKfMHz1cosS6/YRweXWAe2hAnDxpaiB6qyDRshJeeoGXA/RaCiVY4PEMgDwFVML5kyJsmZc2k+aoKAAuuw+tkNXcTqtADyk6EEtKqCcJEmHZZkhTBvtaFIKS/8JVYbsk03AlcOJ8rj5GpRrIXb5EM70c5Cw85X3bd9x5b/7cE4KOrpFN7zTGggk9fmDhTPeVI+zF+EBTh5IAFtI0ZVhtaE3o4+ozQag47KK7JKL6YgrwuBnb3j7egyxtE/a7br8Yzyi4S1MC3k3lQhR8cCZycpCzyh6Quxr7sCVVg0sBPLJNWEUqhJ+8jvgy3/NgzyuMEZr3k9PUFCa1fbrq1ijk1Maf5Vpi0Vj0S941rbVnuzBJYXbZN530WCzFTV9FcyIVKLjk82xSli7LhPwwEPAifqPhkyNHYgir8BcXVmCInWK6WlTOxcRL8HmJCjFF6DNATipR4kv1JBWSX1RSmSbQfyVvSoCUsNZLjg99YCrc4J/bpI+/dMsK+6ZSvj0DkfVeprGKfylVSqZ67/lTIJQRfh/5ykx7EAqYlHiY4L5353UmJ9roG3vIcvav6ZklZIjmBUAx75yEFKymI3gd+F4cYDq13zvIGmWtgkNjk2CZO7COqW+GnRlIkGbW6NBEqQiwbXicG2sosY9ke7YO8Tlc/xSkBoMjKv4kkBr+vM8s4GMyPdhR4xpm7vyD6jVSUrraHLE5dEbo9tf91T9AAAAAA==');
+<?php
+
+/*
+ * **************************************************************************************
+ * @tutorial: File to remove mobile no unique key @SANSKRUTI
+ * **************************************************************************************
+ * 
+ * Created on 21 July, 2023
+ *
+ * @FileName: omUnqMobRemoveUp.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: 2
+ * @version 1.0.1
+ * @Copyright (c) 2013 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2013 SoftwareGen, Inc
+ *
+ * @ModificaionHistory
+ *  MODIFICATION DATE:
+ *  AUTHOR:
+ *  REASON:
+ *
+ */
 ?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+require_once 'system/omssopin.php';
+include_once 'ommpfndv.php';
+$sessionOwnerId = $_SESSION[sessionOwnerId];
+?>
+<?php
+
+    $query = "ALTER TABLE user
+          DROP INDEX user_mobile";
+    $resQuery = mysqli_query($conn, $query) or die(mysqli_error($conn));
+ ?>

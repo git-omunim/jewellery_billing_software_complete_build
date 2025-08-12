@@ -1,3 +1,171 @@
-<?php @"SourceGuardian"; //v9.0.3
-if(!function_exists('sg_load')){$__v=phpversion();$__x=explode('.',$__v);$__v2=$__x[0].'.'.(int)$__x[1];$__u=strtolower(substr(php_uname(),0,3));$__ts=(@constant('PHP_ZTS') || @constant('ZEND_THREAD_SAFE')?'ts':'');$__f=$__f0='ixed.'.$__v2.$__ts.'.'.$__u;$__ff=$__ff0='ixed.'.$__v2.'.'.(int)$__x[2].$__ts.'.'.$__u;$__ed=@ini_get('extension_dir');$__e=$__e0=@realpath($__ed);$__dl=function_exists('dl') && function_exists('file_exists') && @ini_get('enable_dl') && !@ini_get('safe_mode');if($__dl && $__e && version_compare($__v,'5.2.5','<') && function_exists('getcwd') && function_exists('dirname')){$__d=$__d0=getcwd();if(@$__d[1]==':') {$__d=str_replace('\\','/',substr($__d,2));$__e=str_replace('\\','/',substr($__e,2));}$__e.=($__h=str_repeat('/..',substr_count($__e,'/')));$__f='/ixed/'.$__f0;$__ff='/ixed/'.$__ff0;while(!file_exists($__e.$__d.$__ff) && !file_exists($__e.$__d.$__f) && strlen($__d)>1){$__d=dirname($__d);}if(file_exists($__e.$__d.$__ff)) dl($__h.$__d.$__ff); else if(file_exists($__e.$__d.$__f)) dl($__h.$__d.$__f);}if(!function_exists('sg_load') && $__dl && $__e0){if(file_exists($__e0.'/'.$__ff0)) dl($__ff0); else if(file_exists($__e0.'/'.$__f0)) dl($__f0);}if(!function_exists('sg_load')){$__ixedurl='http://www.sourceguardian.com/loaders/download.php?php_v='.urlencode($__v).'&php_ts='.($__ts?'1':'0').'&php_is='.@constant('PHP_INT_SIZE').'&os_s='.urlencode(php_uname('s')).'&os_r='.urlencode(php_uname('r')).'&os_m='.urlencode(php_uname('m'));$__sapi=php_sapi_name();if(!$__e0) $__e0=$__ed;if(function_exists('php_ini_loaded_file')) $__ini=php_ini_loaded_file(); else $__ini='php.ini';if((substr($__sapi,0,3)=='cgi')||($__sapi=='cli')||($__sapi=='embed')){$__msg="\nPHP script '".__FILE__."' is protected by SourceGuardian and requires a SourceGuardian loader '".$__f0."' to be installed.\n\n1) Download the required loader '".$__f0."' from the SourceGuardian site: ".$__ixedurl."\n2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="\n3) Edit ".$__ini." and add 'extension=".$__f0."' directive";}}$__msg.="\n\n";}else{$__msg="<html><body>PHP script '".__FILE__."' is protected by <a href=\"http://www.sourceguardian.com/\">SourceGuardian</a> and requires a SourceGuardian loader '".$__f0."' to be installed.<br><br>1) <a href=\"".$__ixedurl."\" target=\"_blank\">Click here</a> to download the required '".$__f0."' loader from the SourceGuardian site<br>2) Install the loader to ";if(isset($__d0)){$__msg.=$__d0.DIRECTORY_SEPARATOR.'ixed';}else{$__msg.=$__e0;if(!$__dl){$__msg.="<br>3) Edit ".$__ini." and add 'extension=".$__f0."' directive<br>4) Restart the web server";}}$msg.="</body></html>";}	die($__msg);exit();}}return sg_load('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');
+<?php
+/*
+ * **************************************************************************************************
+ * @Description: STOCK TRANSFER REPORT - FROM DATE FILE @Author-PRIYANKA-04DEC2021
+ * **************************************************************************************************
+ *
+ * Created on DEC 04, 2021 08:45:58 PM  
+ * **************************************************************************************
+ * @FileName: omStockTransferReportFromDate.php
+ * @Author: SoftwareGen Developement Team
+ * @AuthorEmailId:  info@softwaregen.com
+ * @ProjectName: OMUNIM 
+ * @version 2.7.102
+ * @Copyright (c) 2021 www.softwaregen.com
+ * @All rights reserved
+ *  Copyright 2021 SoftwareGen, Inc
+ * ******************************************************************************************
+ * @ModificaionHistory
+ *  MODIFICATION DATE:PRIYANKA-04DEC2021
+ *  AUTHOR: PRIYANKA
+ *  REASON:
+ *
+ * Project Name: Online Munim ERP Accounting Software
+ * Version: 2.7.102
+ * Website: http://www.omunim.com/
+ * Contact: info@omunim.com
+ * Follow: www.twitter.com/omunim
+ * Like: www.facebook.com/omunim
+ * Purchase: http://www.omunim.com/buy.html
+ * License: You must have a valid license purchased only from Online Munim.
+ */
+?>
+<?php
+$currentFileName = basename(__FILE__);
+include 'system/omsachsc.php';
+require_once 'system/omsgeagb.php';
+?>
+<?php
+//
+// Start Code for Day @Author-PRIYANKA-04DEC2021
+$todayDay = date("j", strtotime($date)) - 1;
+//
+$arrDays = array('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
+                 '11', '12', '13', '14', '15', '16', '17', '18', '19', '20',
+                 '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31');
+//
+$optDay[$todayDay] = "selected";
+//
+?> 
+<div class="floatLeft">
+    <select id="<?php echo $Day; ?>" name="<?php echo $Day; ?>" 
+            class="form-control-select-borderless" title="Select Day!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('<?php echo $Month; ?>').focus();  
+                return false; 
+            } else if (event.keyCode == 8) { 
+                document.getElementById('FirmName').focus();  
+                return false; 
+            }" >
+        <option value="NotSelected" class="textLabel14CalibriGrey">DAY</option>
+        <?php
+        for ($dd = 0; $dd <= 30; $dd++) {
+            echo "<option value=\"$arrDays[$dd]\" " . " class=" . "\"ff_calibri fs_14\"" . " $optDay[$dd]>$arrDays[$dd]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<?php 
+// End Code for Day @Author-PRIYANKA-04DEC2021 
+?>
+<?php
+//
+// Start Code for Month @Author-PRIYANKA-04DEC2021
+if ($panelName == 'FromPanel') {
+    $todayMM = date("n", strtotime($fromDate)) - 1;
+} else {
+    $todayMM = date("n", strtotime($toDate)) - 1;
+}
+//
+$todayMM = date("n", strtotime($date)) - 1;
+//
+$arrMonths = array(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC); 
+//
+$arrMM = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12');
+//
+$optMonth[$todayMM] = "selected";
+//
+?> 
+<input  id="gbMonthId" name="gbMonthId" type="hidden" value="0" /> 
+<div class="floatLeft">
+    <select id="<?php echo $Month; ?>" name="<?php echo $Month; ?>" 
+            class="form-control-select-borderless" title="Select Month!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('<?php echo $Year; ?>').focus();  
+                return false; 
+            } else if (event.keyCode == 8) {  
+                document.getElementById('<?php echo $Day; ?>').focus(); 
+                return false; 
+            }
+                var arrMonths = new Array('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC');
+                gbMonth = document.getElementById('gbMonthId').value;
+                if(gbMonth==1){
+                    if(event.keyCode){
+                        var sel=String.fromCharCode(event.keyCode);
+                        if(sel==0)
+                        {
+                            this.value = arrMonths[9];
+                        }
+                        else if(sel==1)
+                        {
+                            this.value = arrMonths[10];
+                        }
+                        else if(sel==2)
+                        {
+                            this.value = arrMonths[11]; 
+                        }
+                        document.getElementById('gbMonthId').value = 0;
+                    } 
+                }
+                else if(event.keyCode){
+                    var sel=String.fromCharCode(event.keyCode)-1;
+                    this.value = arrMonths[sel];
+                    if(event.keyCode==49){
+                       document.getElementById('gbMonthId').value = 1;
+                   }
+                }" >
+        <option value="NotSelected" class="textLabel14CalibriGrey">MON</option>
+        <?php
+        for ($mm = 0; $mm <= 11; $mm++) {
+            echo "<option value=\"$arrMM[$mm]\" " . " class=" . "\"ff_calibri fs_14\"" . " $optMonth[$mm]>$arrMonths[$mm]</option>";
+        }
+        ?>
+    </select> 
+</div>
+<?php 
+// End Code for Month @Author-PRIYANKA-04DEC2021 
+?>
+<?php
+//
+// Start Code for Year @Author-PRIYANKA-04DEC2021
+$todayMaxYY = date("Y", strtotime(date("Y-m-d")));
+//
+$todayYear = date("Y", strtotime($date));
+//
+$optYear[$todayYear] = "selected";
+//
+?> 
+<div class="floatLeft">
+    <select id="<?php echo $Year; ?>" name="<?php echo $Year; ?>" 
+            class="form-control-select-borderless" title="Select Year!"
+            onkeydown="javascript: 
+            if (event.keyCode == 13) { 
+                document.getElementById('ToDateDay').focus();  
+                return false; 
+            } else if (event.keyCode == 8) {  
+                document.getElementById('FromMonth').focus(); 
+                return false; 
+            }" >
+        <option value="NotSelected" class="textLabel14CalibriGrey">YEAR</option>
+        <?php
+        for ($yy = $todayMaxYY; $yy >= 1900; $yy--) {
+            echo "<option value=\"$yy\" " . " class=" . "\"ff_calibri fs_14\"" . " $optYear[$yy]>$yy</option>";
+        }
+        ?>
+    </select>
+</div>
+<?php 
+// End Code for Year @Author-PRIYANKA-04DEC2021 
 ?>
